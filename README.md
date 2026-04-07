@@ -1,112 +1,170 @@
-# Smart Urban Farming
+# 🌱 Smart Urban Farming System
 
-A scalable smart urban farming system designed to provide plant care recommendations, plant data management, and future AI-based plant monitoring and smart agriculture solutions.
+A scalable smart urban farming platform designed to provide plant care recommendations, plant data management, and future AI-based plant monitoring and smart agriculture solutions.
 
-This project aims to build a modular backend system using FastAPI and PostgreSQL while integrating real-world plant databases and supporting future AI and IoT expansion.
+This project builds a modular backend system using **FastAPI** and **PostgreSQL**, integrates real-world plant databases, and supports future **AI and IoT expansion** for smart agriculture research and development.
 
 ---
 
-## Project Goals
+## 📌 Repository
+
+GitHub: https://github.com/xueshuijing/Smart_Watering_System
+
+---
+
+## 🎯 Project Goals
 
 - Build a smart plant care management system
 - Provide plant watering and sunlight recommendations
 - Store and manage plant data
 - Integrate external plant databases
-- Support future AI-based plant recommendations
+- Support AI-based plant recommendations
 - Enable smart urban farming research and development
+- Develop a scalable smart agriculture platform
 
 ---
 
-## System Overview
+## 🧠 System Overview
 
-The system uses a modular architecture:
+The system follows a **modular and scalable architecture**:
 
 - FastAPI backend
 - PostgreSQL database
 - External plant APIs
+- Streamlit dashboard
 - Future AI and IoT integration
 
-The project starts as a working MVP and expands into a smart agriculture platform.
+The project starts as a **working MVP** and gradually evolves into a **smart agriculture research platform**.
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 ### Version 1 (MVP)
 
-![Version 1 Architecture](docs/system-architecture-v1.png)
+![Version 1 Architecture](docs/system-architecture-v1.drawio.png)
+
+**Focus:**
+
+- FastAPI backend
+- PostgreSQL database
+- Plant data management
+- Perenual API integration
+- Smart irrigation logic
 
 ---
 
 ### Future Architecture (Version 2 & Version 3)
 
-![Future Architecture](docs/system-architecture-future.png)
+![Future Architecture](docs/system-architecture-future.drawio.png)
+
+**Future Expansion:**
+
+- AI recommendation system
+- Trefle plant database integration
+- IoT sensor monitoring
+- Cloud deployment
+- Smart irrigation automation
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 ### Backend
 - FastAPI
 - Python
+- Uvicorn
 
 ### Database
 - PostgreSQL
+- SQLAlchemy
 
 ### External APIs
 - Perenual API
 - Trefle API (future)
 
+### Frontend
+- Streamlit
+
 ### Future Expansion
-- AI models
-- IoT sensors
-- Smart irrigation
-- Cloud deployment
+- Machine Learning
+- IoT Sensors
+- Cloud Infrastructure
+- Smart Irrigation System
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
-smart-urban-farming/
+smart-farming-system/
 
 backend/
-    app/
-        api/
-        models/
-        services/
-        database/
-        main.py
-
-database/
-    schema.sql
-
+│
+├── app/
+│   ├── main.py
+│   └── routes/
+│       ├── plants.py
+│       └── irrigation.py
+│
+├── database/
+│   └── db.py
+│
+├── models/
+│   └── plant.py
+│
+├── services/
+│   ├── plant_service.py
+│   └── irrigation_service.py
+│
+├── utils/
+│   └── config.py
+│
 docs/
-    system-architecture.md
-    system-architecture-v1.png
-    system-architecture-future.png
-    technology-selection.md
-
-frontend/ (future)
+│   ├── system-architecture.md
+│   ├── system-architecture-v1.drawio.png
+│   ├── system-architecture-future.drawio.png
+│   └── technology-selection.md
+│
+frontend/
+│   └── streamlit_app.py
+│
+tests/
 
 README.md
 requirements.txt
+venv/
 ```
 
 ---
 
-## Installation
+## 📁 Folder Description
 
-### 1. Clone Repository
+| Folder | Purpose |
+|------|--------|
+| backend/app | FastAPI entry point and API routes |
+| backend/database | PostgreSQL connection and session |
+| backend/models | SQLAlchemy data models |
+| backend/services | Business logic (plants, irrigation) |
+| backend/utils | Configuration and environment settings |
+| docs | Architecture and technical documentation |
+| frontend | Streamlit monitoring dashboard |
+| tests | Unit and integration testing |
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/xueshuijing/Smart_Watering_System.git
-cd smart-urban-farming
+cd Smart_Watering_System
 ```
 
 ---
 
-### 2. Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 
 ```bash
 python3 -m venv venv
@@ -115,7 +173,7 @@ source venv/bin/activate
 
 ---
 
-### 3. Install Dependencies
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -123,7 +181,7 @@ pip install -r requirements.txt
 
 ---
 
-### 4. Setup PostgreSQL
+### 4️⃣ Setup PostgreSQL
 
 Create database:
 
@@ -131,7 +189,7 @@ Create database:
 createdb smart_farming
 ```
 
-Or using PostgreSQL:
+or
 
 ```sql
 CREATE DATABASE smart_farming;
@@ -139,39 +197,43 @@ CREATE DATABASE smart_farming;
 
 ---
 
-### 5. Run FastAPI
+### 5️⃣ Run FastAPI
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn backend.app.main:app --reload
 ```
 
 ---
 
-### 6. Open API
+### 6️⃣ Open API Documentation
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
-This opens the Swagger API interface.
+This opens the **Swagger API interface** for testing endpoints.
 
 ---
 
-## API Example
+## 🔌 API Example
 
-Get plants:
+### Get All Plants
 
 ```
 GET /plants
 ```
 
-Get plant by ID:
+---
+
+### Get Plant by ID
 
 ```
 GET /plants/{id}
 ```
 
-Add plant:
+---
+
+### Add Plant
 
 ```
 POST /plants
@@ -179,25 +241,36 @@ POST /plants
 
 ---
 
-## Documentation
+## 📊 Streamlit Dashboard
 
-Detailed project documentation is available in the docs folder.
+Run frontend:
 
-- Technology Selection → docs/technology-selection.md
-- System Architecture → docs/system-architecture.md
+```bash
+streamlit run frontend/streamlit_app.py
+```
 
 ---
 
-## Version Roadmap
+## 📚 Documentation
 
-### Version 1
+Detailed documentation is available in the **docs** folder.
+
+- Technology Selection → `docs/technology-selection.md`
+- System Architecture → `docs/system-architecture.md`
+
+---
+
+## 🚀 Version Roadmap
+
+### Version 1 (MVP)
 
 - FastAPI backend
 - PostgreSQL database
 - Perenual API
 - Plant care system
+- Smart irrigation logic
 
-Goal:
+**Goal:**
 
 Working smart urban farming API.
 
@@ -205,12 +278,12 @@ Working smart urban farming API.
 
 ### Version 2
 
-- Frontend dashboard
+- Streamlit dashboard
 - Trefle integration
 - AI plant recommendation
 - Cloud deployment
 
-Goal:
+**Goal:**
 
 Intelligent plant system.
 
@@ -219,27 +292,28 @@ Intelligent plant system.
 ### Version 3
 
 - IoT sensors
-- Smart irrigation
+- Smart irrigation automation
 - Plant disease detection
 - Predictive AI
 
-Goal:
+**Goal:**
 
 Smart urban farming research platform.
 
 ---
 
-## Design Principles
+## 🎯 Design Principles
 
 - Modular architecture
 - Scalable system
 - Data-driven decisions
 - Research-oriented development
 - Real-world usability
+- Clean software engineering practices
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 - Web dashboard
 - Mobile application
@@ -248,17 +322,19 @@ Smart urban farming research platform.
 - Smart irrigation automation
 - Cloud hosting
 - AI plant health prediction
+- Smart agriculture analytics
 
 ---
 
-## License
+## 📜 License
 
-This project is open-source and available for educational and research purposes.
+This project is open-source and available for **educational and research purposes**.
 
 ---
 
-## Author
+## 👤 Author
 
-Smart Urban Farming Project  
+**Smart Urban Farming Project**  
 AI and Smart Agriculture Research Portfolio
 
+GitHub: https://github.com/xueshuijing

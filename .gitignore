@@ -1,8 +1,34 @@
+# Virtual Environment
 venv/
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Logs
 *.log
+
+# Environment Variables
 .env
+.env.*
+
+# Database
+*.sqlite3
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# LibreOffice / DrawIO
 *.odt
 .~lock*
-.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
