@@ -1,3 +1,5 @@
+#Prevents leaking credentials by not sharing the following datas online
+
 # Virtual Environment
 venv/
 

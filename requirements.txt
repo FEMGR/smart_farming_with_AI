@@ -27,3 +27,5 @@ python-dotenv==1.0.1   # Load .env variables
 # ===============================
 
 pydantic==2.7.1        # Request and response validation
+
+starlette

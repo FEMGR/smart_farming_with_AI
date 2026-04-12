@@ -1,3 +1,8 @@
+"""
+Plant service layer contains business logic related to plants.
+Routes --> call services--> talk to database.
+"""
+
 from sqlalchemy.orm import Session
 from app.models.plant import Plant
 from app.schemas.plant_schema import PlantCreate, PlantUpdate

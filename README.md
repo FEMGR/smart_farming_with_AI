@@ -98,42 +98,57 @@ The project starts as a **working MVP** and gradually evolves into a **smart agr
 
 ```
 smart-farming-system/
-
+│
 backend/
 │
+├── main.py
+│
 ├── app/
-│   ├── main.py
-│   └── routes/
-│       ├── plants.py
-│       └── irrigation.py
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── logger.py
+│   │   ├── error_handler.py
+│   │   └── security.py
+│   │
+│   ├── api/
+│   │   └── v1/
+│   │       └── routes/
+│   │           ├── plants.py
+│   │           └── irrigation.py
+│   │
+│   ├── database/
+│   │   └── db.py
+│   │
+│   ├── models/
+│   │   └── plant.py
+│   │
+│   ├── schemas/
+│   │   └── plant_schema.py
+│   │
+│   ├── services/
+│   │   ├── plant_service.py
+│   │   └── irrigation_service.py
+│   │
+│   ├── integrations/
+│   │
+│   └── utils/
 │
-├── database/
-│   └── db.py
-│
-├── models/
-│   └── plant.py
-│
-├── services/
-│   ├── plant_service.py
-│   └── irrigation_service.py
-│
-├── utils/
-│   └── config.py
-│
-docs/
-│   ├── system-architecture.md
-│   ├── system-architecture-v1.drawio.png
-│   ├── system-architecture-future.drawio.png
-│   └── technology-selection.md
+├── logs/
+│   └── app.log
 │
 frontend/
 │   └── streamlit_app.py
 │
+docs/
+│
 tests/
-
+│
+.env
 README.md
 requirements.txt
-venv/
+
+
 ```
 
 ---
