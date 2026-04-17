@@ -19,7 +19,6 @@ Why important:
 - Keeps routes clean
 - Makes logic reusable and testable
 """
-
 from sqlalchemy.orm import Session
 
 from app.models.user import User
@@ -42,7 +41,7 @@ def register_user(db: Session, email: str, password: str):
 
     user = User(
         email=email,
-        hashed_password=hashed
+        password_hash=hashed   # ✅ FIXED
     )
 
     db.add(user)
@@ -60,7 +59,7 @@ def authenticate_user(db: Session, email: str, password: str):
     if not user:
         return None
 
-    if not verify_password(password, user.hashed_password):
+    if not verify_password(password, user.password_hash):  # ✅ FIXED
         return None
 
     return user
@@ -75,7 +74,12 @@ def login_user(db: Session, email: str, password: str):
         raise ValueError("Invalid credentials")
 
     token = create_access_token(
-        data={"sub": user.email}
+        data={
+
+            "sub": str(user.id),
+            "email": user.email
+
+        }
     )
 
     return token

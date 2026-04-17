@@ -16,9 +16,9 @@ Key Principles:
 - Handle HTTP errors only
 """
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
-
 from app.database.db import get_db
 from app.schemas.auth_schema import UserCreate, UserLogin, Token
 from app.services.auth_service import register_user, login_user
@@ -44,11 +44,21 @@ def register(user: UserCreate, db: Session = Depends(get_db)):
 
 
 @router.post("/login", response_model=Token)
-def login(user: UserLogin, db: Session = Depends(get_db)):
-    """Login endpoint"""
+def login(
+    form_data: OAuth2PasswordRequestForm = Depends(),
+    db: Session = Depends(get_db)
+):
+    """
+    OAuth2-compatible login for Swagger UI
+    """
 
     try:
-        token = login_user(db, user.email, user.password)
+        # ⚠️ Swagger uses "username", we treat it as email
+        token = login_user(
+            db,
+            form_data.username,
+            form_data.password
+        )
 
         return {
             "access_token": token,
@@ -56,4 +66,7 @@ def login(user: UserLogin, db: Session = Depends(get_db)):
         }
 
     except ValueError as e:
-        raise HTTPException(status_code=401, detail=str(e))
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=str(e)
+        )

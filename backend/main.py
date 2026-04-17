@@ -26,56 +26,81 @@ Architecture Role:
 - Starts the backend server
 """
 
+
+
+#backend/main.py
+
+# ===============================
+# FORCE MODEL REGISTRATION
+# ===============================
+# Ensures SQLAlchemy detects all tables
+from app.models.user import User
+from app.models.location import Location
+from app.models.plant_group import PlantGroup
+from app.models.plant import Plant
+from app.models.plant_growth import PlantGrowth
+from app.models.soil_condition import SoilCondition
+from app.models.plant_action import PlantAction
+from app.models.notification import Notification
+from app.models.plant_species_cache import PlantSpeciesCache
+
+
+# ===============================
+# IMPORTS
+# ===============================
 from fastapi import FastAPI
 
-from app.api.v1.routes import plants, auth
+from app.api.v1.routes import plants, auth, locations, irrigation, notifications
 from app.database.db import Base, engine
-
+from app.workers.scheduler import start_scheduler
 from app.core.logger import setup_logger
-from app.core.error_handler import (
-    http_exception_handler,
-    validation_exception_handler,
-    general_exception_handler
-)
-
-from fastapi.exceptions import RequestValidationError
-from starlette.exceptions import HTTPException as StarletteHTTPException
+from app.core.error_handler import add_exception_handlers
 
 
-# ✅ 1. Create app FIRST
+# ===============================
+# CREATE APP
+# ===============================
 app = FastAPI(
     title="Smart Farming API",
     version="1.0"
 )
+@app.on_event("startup")
+def startup_event():
+    start_scheduler()
 
-# ✅ 2. Setup logger
+
+# ===============================
+# LOGGER SETUP
+# ===============================
 logger = setup_logger()
 logger.info("Starting Smart Farming API")
 
-# ✅ 3. Create database tables
+
+# ===============================
+# DATABASE INIT
+# ===============================
+print("Using DB:", engine.url)
 Base.metadata.create_all(bind=engine)
 
-# ✅ 4. Register routes
+
+# ===============================
+# ROUTES
+# ===============================
 app.include_router(auth.router)
 app.include_router(plants.router)
+app.include_router(locations.router)
+app.include_router(irrigation.router)
+app.include_router(notifications.router, prefix="/notifications",tags=["Notifications"])
 
-# ✅ 5. Register exception handlers
-app.add_exception_handler(
-    StarletteHTTPException,
-    http_exception_handler
-)
-
-app.add_exception_handler(
-    RequestValidationError,
-    validation_exception_handler
-)
-
-app.add_exception_handler(
-    Exception,
-    general_exception_handler
-)
+# ===============================
+# ERROR HANDLERS (CENTRALIZED)
+# ===============================
+add_exception_handlers(app)
 
 
+# ===============================
+# ROOT ENDPOINT
+# ===============================
 @app.get("/")
 def root():
     logger.info("Root endpoint accessed")

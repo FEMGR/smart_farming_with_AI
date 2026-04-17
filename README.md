@@ -8,7 +8,7 @@ This project builds a modular backend system using **FastAPI** and **PostgreSQL*
 
 ## 📌 Repository
 
-GitHub: https://github.com/xueshuijing/Smart_Watering_System
+GitHub: https://github.com/xueshuijing/Smart_Urban_Farming_System
 
 ---
 
@@ -17,8 +17,8 @@ GitHub: https://github.com/xueshuijing/Smart_Watering_System
 - Build a smart plant care management system
 - Provide plant watering and sunlight recommendations
 - Store and manage plant data
-- Integrate external plant databases
-- Support AI-based plant recommendations
+- Integrate external plant databases for companion planting recommendation to support organic planting
+- Support AI-based plant recommendations and analysis 
 - Enable smart urban farming research and development
 - Develop a scalable smart agriculture platform
 
@@ -60,7 +60,7 @@ The project starts as a **working MVP** and gradually evolves into a **smart agr
 
 **Future Expansion:**
 
-- AI recommendation system
+- AI recommendation system for companion planting and disease analysis
 - Trefle plant database integration
 - IoT sensor monitoring
 - Cloud deployment
@@ -85,6 +85,7 @@ The project starts as a **working MVP** and gradually evolves into a **smart agr
 
 ### Frontend
 - Streamlit
+- Kotlin & Swift
 
 ### Future Expansion
 - Machine Learning
