@@ -1,4 +1,4 @@
-# 🌱 Smart Urban Farming System
+# 🌱 Smart Urban Farming System (beta version)
 
 A scalable smart urban farming platform designed to provide plant care recommendations, plant data management, and future AI-based monitoring and smart agriculture solutions.
 
