@@ -1,62 +1,62 @@
 # Smart Urban Farming – System Architecture
 
+## Overview
 
-# Smart Urban Farming – System Architecture
+The Smart Urban Farming system is designed using a modular, scalable, and layered backend architecture.  
+It enables plant data management, irrigation automation, and future integration with AI and IoT systems.
+
+The system follows a modern API-driven design using FastAPI, with clear separation between request handling, business logic, and data storage.
+
+This architecture allows the project to start as a functional MVP and evolve into a smart agriculture research platform.
+
+---
 
 ## Version 1 Architecture (MVP)
 
-![Version 1 Architecture](system-architecture-v1.png)
+![Version 1 Architecture](SystemArchitecture.png)
 
 ---
 
-## Future Architecture (Version 2 & Version 3)
-
-![Future Architecture](system-architecture-future.png)
-
-
-## Overview
-
-The Smart Urban Farming system is designed using a modular and scalable architecture.  
-The goal is to create a clean structure that supports plant data management, user interaction, and future AI and IoT expansion.
-
-The system follows a standard backend architecture where the API communicates with external plant databases and stores structured data in PostgreSQL.
-
-This architecture allows the project to start as a simple MVP and gradually evolve into a smart agriculture research platform.
-
----
 
 ## System Components
 
-The system consists of five main components:
+The system consists of the following core components:
 
-1. Frontend (Future Development)
+1. Frontend (Optional / Future)
 2. Backend API (FastAPI)
 3. PostgreSQL Database
 4. External Plant APIs
-5. Future AI and IoT Modules
+5. Background Workers (Scheduler)
+6. Future AI & IoT Modules
 
 ---
 
-## Architecture Diagram
+## Backend Architecture (Layered Design)
 
-```
-User
-  |
-  v
-Frontend (Future Web or Mobile App)
-  |
-  v
-FastAPI Backend
-  |
-  |----------------------|
-  |                      |
-  v                      v
-PostgreSQL Database    External Plant APIs
-                         (Perenual, Trefle)
-  |
-  v
-Future AI & IoT Modules
-```
+The backend follows a structured layered architecture:
+
+Client (Swagger / Frontend)
+↓
+Routes (API Endpoints)
+↓
+Dependencies (Authentication - JWT)
+↓
+Schemas (Validation & Serialization)
+↓
+Services (Business Logic)
+↓
+Models (ORM)
+↓
+Database (PostgreSQL)
+
+
+### Key Principles
+
+- **Routes** handle HTTP requests  
+- **Dependencies** manage authentication and shared logic  
+- **Schemas** validate and structure data  
+- **Services** contain business logic  
+- **Models** represent database structure  
 
 ---
 
@@ -64,309 +64,225 @@ Future AI & IoT Modules
 
 ### 1. Frontend
 
-The frontend will be developed in future versions.
+The frontend is optional in Version 1 and can be replaced by Swagger or Postman.
 
-Possible technologies:
-
-- React
-- Next.js
+Future implementations may use:
+- React / Next.js
 - Flutter
-- Simple Web Interface
+- Simple web dashboards
 
-Role:
-
-- User interacts with the system
-- Search for plants
-- Track plant growth
-- View plant care recommendations
-- Monitor plant status
-
-In Version 1, the system can run without a full frontend using API testing tools such as Postman or a simple web interface.
+Responsibilities:
+- User interaction
+- Viewing plant data and notifications
+- Managing plant collections
 
 ---
 
-### 2. Backend (FastAPI)
+### 2. Backend API (FastAPI)
 
-FastAPI is the core of the system.
+The FastAPI backend is the core system.
 
 Responsibilities:
+- Handle HTTP requests
+- Validate input data
+- Execute business logic
+- Manage authentication (JWT)
+- Trigger irrigation and notifications
+- Communicate with database and external APIs
 
-- Handle API requests
-- Communicate with PostgreSQL
-- Fetch plant data from external APIs
-- Process plant care data
-- Store plant information
-- Manage user plant collections
-- Provide plant recommendations
-
-Example API Endpoints:
-
-```
-GET /plants
-GET /plants/{id}
-POST /plants
-GET /plant-care
-GET /recommendations
-```
-
-This layer connects all system components.
 
 ---
 
 ### 3. PostgreSQL Database
 
-PostgreSQL stores all structured data.
+The database stores all persistent system data.
 
-Main tables:
-
-- plants
-- plant_care
+Core entities:
 - users
-- user_plants
-- growth_tracking
-- recommendations
+- plants
+- locations
+- plant_groups
+- notifications
+- soil_conditions
 
 Responsibilities:
-
-- Store plant data
-- Store user data
-- Store care schedules
-- Store growth records
-- Store environmental data in future versions
-
-PostgreSQL ensures reliability and scalability.
+- Store structured data
+- Maintain relationships between entities
+- Support query operations for services
 
 ---
 
 ### 4. External Plant APIs
 
-The system retrieves plant information from external data sources.
+The system integrates with external plant data providers.
 
-### Perenual API
+Used APIs:
+- Perenual API (current)
+- Trefle API (future)
 
-Used for:
-
-- Plant care data
-- Watering requirements
-- Sunlight requirements
-- Basic plant information
-
-### Trefle API
-
-Used in future versions for:
-
-- Global plant database
-- Scientific taxonomy
-- Advanced plant information
-
-These APIs allow the system to access real-world plant data.
+Responsibilities:
+- Provide plant care data
+- Supply species information
+- Support recommendation features
 
 ---
 
-### 5. Future AI and IoT Modules
+### 5. Background Workers (Scheduler)
 
-Planned for Version 2 and Version 3.
+A background scheduler runs automated system tasks.
 
-AI Modules:
+Responsibilities:
+- Periodically check plant conditions
+- Trigger irrigation logic
+- Generate notifications
 
-- Plant recommendation system
+Flow:
+Scheduler → Irrigation Service → Database → Notifications
+
+This operates independently of user requests.
+
+---
+
+### 6. Future AI & IoT Modules
+
+Planned extensions for advanced functionality.
+
+AI:
+- Companion plant recommendations
 - Growth prediction
-- Plant disease detection
-- Smart irrigation decision system
+- Smart irrigation decisions
 
-IoT Modules:
-
+IoT:
 - Soil moisture sensors
-- Temperature sensors
-- Humidity sensors
-- Smart watering system
-
-This will transform the project into a smart urban farming platform.
+- Temperature and humidity monitoring
+- Automated watering systems
 
 ---
 
-## Data Flow
+## Data Flow (Request Lifecycle)
 
-### Step 1
+### Standard API Flow
 
-User requests plant data.
+Client Request
+↓
+Routes (HTTP Endpoint)
+↓
+Authentication (JWT Dependency)
+↓
+Schema Validation
+↓
+Service Layer (Business Logic)
+↓
+Database Query (Models)
+↓
+Service Processing
+↓
+Response Schema
+↓
+Return to Client
 
-```
-User -> Frontend -> FastAPI
-```
-
----
-
-### Step 2
-
-FastAPI checks database.
-
-```
-FastAPI -> PostgreSQL
-```
-
-If plant exists, return data.
-
-If not, fetch from external API.
-
----
-
-### Step 3
-
-Fetch plant data from API.
-
-```
-FastAPI -> Perenual API
-```
 
 ---
 
-### Step 4
+## Background Job Flow (Irrigation System)
 
-Store plant data.
+Scheduler Trigger
+↓
+Irrigation Service
+↓
+Check plant conditions
+↓
+Update plant state
+↓
+Create or resolve notifications
+↓
+Database update
 
-```
-FastAPI -> PostgreSQL
-```
-
----
-
-### Step 5
-
-Return result to user.
-
-```
-PostgreSQL -> FastAPI -> Frontend -> User
-```
 
 ---
 
-## System Flow Summary
+## External Data Flow
 
-```
-User
-  |
-  v
-Frontend
-  |
-  v
-FastAPI
-  |
-  |---- PostgreSQL
-  |
-  |---- Perenual API
-  |
-  v
-Response to User
-```
+Client Request
+↓
+FastAPI Backend
+↓
+Check PostgreSQL
+↓
+If data missing:
+→ Call External API (Perenual)
+↓
+→ Store in database
+↓
+Return result to client
 
-Future expansion:
-
-```
-FastAPI -> AI Model
-FastAPI -> IoT Sensors
-```
 
 ---
 
-## Folder Structure
+## Version Roadmap
 
-```
-smart-urban-farming/
+### Version 1 (Current MVP)
 
-backend/
-    app/
-        api/
-        models/
-        services/
-        database/
-        main.py
-
-database/
-    schema.sql
-
-docs/
-    system-architecture.md
-    technology-selection.md
-
-frontend/ (future)
-
-README.md
-```
-
-This structure keeps the project organized and scalable.
-
----
-
-## Version Architecture
-
-### Version 1
-
-- FastAPI
-- PostgreSQL
-- Perenual API
-- Local deployment
+- FastAPI backend
+- PostgreSQL database
+- Perenual API integration
+- Irrigation + notification system
 
 Goal:
-
-Working smart urban farming API.
+A functional smart farming backend system.
 
 ---
 
 ### Version 2
 
-- Trefle API
-- AI plant recommendations
+- AI-based plant recommendations
+- Companion planting logic
 - Cloud deployment
-- Environmental data
+- Enhanced data models
 
 Goal:
-
-Intelligent plant system.
+An intelligent decision-support system.
 
 ---
 
 ### Version 3
 
-- AI models
-- IoT sensors
-- Smart irrigation
+- IoT sensor integration
+- Real-time environmental monitoring
+- Automated irrigation
 - Predictive analytics
 
 Goal:
-
-Smart urban farming research platform.
+A fully automated smart farming platform.
 
 ---
 
 ## Design Principles
 
 ### Modular
-
-Each component works independently.
+Each layer is independent and replaceable.
 
 ### Scalable
+New features (AI, IoT) can be added without restructuring.
 
-System can grow without restructuring.
+### Separation of Concerns
+Each layer has a clear responsibility.
 
 ### Data-Driven
-
-Uses real plant data and scientific sources.
-
-### Research Ready
-
-Supports AI and smart agriculture development.
+Decisions are based on real plant and environmental data.
 
 ---
 
 ## Summary
 
-The Smart Urban Farming system architecture consists of:
+The Smart Urban Farming system is built on:
 
-- FastAPI backend
-- PostgreSQL database
-- External plant APIs
-- Future AI and IoT modules
-- Modular and scalable structure
+- A layered FastAPI backend
+- PostgreSQL for persistent storage
+- External plant data integration
+- Background automation via scheduler
+- Future-ready AI and IoT extensions
 
-This architecture allows gradual development from MVP to a smart agriculture research
+This architecture supports gradual evolution from a simple API into a full smart agriculture platform.
+
+

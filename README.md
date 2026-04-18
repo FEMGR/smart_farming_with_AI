@@ -1,8 +1,8 @@
 # 🌱 Smart Urban Farming System
 
-A scalable smart urban farming platform designed to provide plant care recommendations, plant data management, and future AI-based plant monitoring and smart agriculture solutions.
+A scalable smart urban farming platform designed to provide plant care recommendations, plant data management, and future AI-based monitoring and smart agriculture solutions.
 
-This project builds a modular backend system using **FastAPI** and **PostgreSQL**, integrates real-world plant databases, and supports future **AI and IoT expansion** for smart agriculture research and development.
+This project implements a modular backend using **FastAPI** and **PostgreSQL**, integrates real-world plant databases, and is designed for future **AI and IoT expansion**.
 
 ---
 
@@ -14,13 +14,13 @@ GitHub: https://github.com/xueshuijing/Smart_Urban_Farming_System
 
 ## 🎯 Project Goals
 
-- Build a smart plant care management system
-- Provide plant watering and sunlight recommendations
-- Store and manage plant data
-- Integrate external plant databases for companion planting recommendation to support organic planting
-- Support AI-based plant recommendations and analysis 
-- Enable smart urban farming research and development
-- Develop a scalable smart agriculture platform
+- Build a smart plant care management system  
+- Provide plant watering and sunlight recommendations  
+- Store and manage plant data  
+- Integrate external plant databases for companion planting recommendations  
+- Support AI-based plant analysis  
+- Enable smart urban farming research  
+- Develop a scalable agriculture platform  
 
 ---
 
@@ -28,13 +28,13 @@ GitHub: https://github.com/xueshuijing/Smart_Urban_Farming_System
 
 The system follows a **modular and scalable architecture**:
 
-- FastAPI backend
-- PostgreSQL database
-- External plant APIs
-- Streamlit dashboard
-- Future AI and IoT integration
+- FastAPI backend  
+- PostgreSQL database  
+- External plant APIs  
+- Streamlit dashboard  
+- Future AI and IoT integration  
 
-The project starts as a **working MVP** and gradually evolves into a **smart agriculture research platform**.
+The project starts as a **working MVP** and evolves into a **smart agriculture research platform**.
 
 ---
 
@@ -42,56 +42,41 @@ The project starts as a **working MVP** and gradually evolves into a **smart agr
 
 ### Version 1 (MVP)
 
-![Version 1 Architecture](docs/system-architecture-v1.drawio.png)
+![Version 1 Architecture](docs/SystemArchitecture.png)
 
 **Focus:**
 
-- FastAPI backend
-- PostgreSQL database
-- Plant data management
-- Perenual API integration
-- Smart irrigation logic
-
----
-
-### Future Architecture (Version 2 & Version 3)
-
-![Future Architecture](docs/system-architecture-future.drawio.png)
-
-**Future Expansion:**
-
-- AI recommendation system for companion planting and disease analysis
-- Trefle plant database integration
-- IoT sensor monitoring
-- Cloud deployment
-- Smart irrigation automation
+- FastAPI backend  
+- PostgreSQL database  
+- Plant data management  
+- Perenual API integration  
+- Smart irrigation logic  
 
 ---
 
 ## 🛠️ Technology Stack
 
 ### Backend
-- FastAPI
-- Python
-- Uvicorn
+- FastAPI  
+- Python  
+- Uvicorn  
 
 ### Database
-- PostgreSQL
-- SQLAlchemy
+- PostgreSQL  
+- SQLAlchemy  
 
 ### External APIs
-- Perenual API
-- Trefle API (future)
+- Perenual API  
+- Trefle API (future)  
 
 ### Frontend
-- Streamlit
-- Kotlin & Swift
+- Streamlit  
 
 ### Future Expansion
-- Machine Learning
-- IoT Sensors
-- Cloud Infrastructure
-- Smart Irrigation System
+- Machine Learning  
+- IoT Sensors  
+- Cloud Infrastructure  
+- Smart Irrigation  
 
 ---
 
@@ -131,15 +116,17 @@ smart-farming-system/
 ## 📁 Folder Description
 
 | Folder | Purpose |
-|------|--------|
-| backend/app | FastAPI entry point and API routes |
-| backend/database | PostgreSQL connection and session |
-| backend/models | SQLAlchemy data models |
-| backend/services | Business logic (plants, irrigation) |
-| backend/utils | Configuration and environment settings |
-| docs | Architecture and technical documentation |
-| frontend | Streamlit monitoring dashboard |
-| tests | Unit and integration testing |
+|--------|--------|
+| backend/main.py | Application entry point |
+| backend/app/api | API routes |
+| backend/app/services | Business logic |
+| backend/app/models | Database models |
+| backend/app/schemas | Data validation |
+| backend/app/core | Config, security, logging |
+| backend/app/database | DB connection |
+| docs | Architecture documentation |
+| frontend | Streamlit dashboard |
+| tests | Unit and integration tests |
 
 ---
 
@@ -148,8 +135,9 @@ smart-farming-system/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/xueshuijing/Smart_Watering_System.git
-cd Smart_Watering_System
+git clone https://github.com/xueshuijing/Smart_Urban_Farming_System.git
+cd Smart_Urban_Farming_System
+
 ```
 
 ---
@@ -257,12 +245,7 @@ Detailed documentation is available in the **docs** folder.
 - FastAPI backend
 - PostgreSQL database
 - Perenual API
-- Plant care system
-- Smart irrigation logic
-
-**Goal:**
-
-Working smart urban farming API.
+- Irrigation + notifications
 
 ---
 
@@ -273,22 +256,13 @@ Working smart urban farming API.
 - AI plant recommendation
 - Cloud deployment
 
-**Goal:**
-
-Intelligent plant system.
-
 ---
 
 ### Version 3
 
 - IoT sensors
 - Smart irrigation automation
-- Plant disease detection
-- Predictive AI
-
-**Goal:**
-
-Smart urban farming research platform.
+- Predictive analytics
 
 ---
 
@@ -297,9 +271,8 @@ Smart urban farming research platform.
 - Modular architecture
 - Scalable system
 - Data-driven decisions
-- Research-oriented development
 - Real-world usability
-- Clean software engineering practices
+- Clean engineering practices
 
 ---
 
@@ -309,8 +282,6 @@ Smart urban farming research platform.
 - Mobile application
 - Plant image recognition
 - Environmental monitoring
-- Smart irrigation automation
-- Cloud hosting
 - AI plant health prediction
 - Smart agriculture analytics
 
@@ -318,13 +289,12 @@ Smart urban farming research platform.
 
 ## 📜 License
 
-This project is open-source and available for **educational and research purposes**.
+Open-source for educational and research purposes
 
 ---
 
 ## 👤 Author
 
 **Smart Urban Farming Project**  
-AI and Smart Agriculture Research Portfolio
-
+AI & Smart Agriculture Portfolio
 GitHub: https://github.com/xueshuijing

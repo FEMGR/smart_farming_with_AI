@@ -17,7 +17,6 @@ The system is built to support a functional MVP (Version 1) while allowing expan
 
 - Lightweight and fast performance
 - Easy REST API development
-- Strong Python ecosystem
 - Good integration with machine learning libraries
 - Simple database connectivity
 - Suitable for modular and scalable systems
@@ -232,11 +231,4 @@ The Smart Urban Farming system uses:
 - Trefle for global plant database
 - Future AI and IoT integration
 
-This approach ensures:
-
-- scalability
-- low cost
-- research readiness
-- real-world usability
-- long-term sustainability
 
