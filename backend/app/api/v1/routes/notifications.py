@@ -28,6 +28,7 @@ Database accessed via models
         ↓
 Response returned to client
 """
+from datetime import date
 
 #app.api.routes.notifications.py
 
@@ -36,7 +37,7 @@ from sqlalchemy.orm import Session
 
 from app.database.db import get_db
 from app.api.dependencies import get_current_user_id
-from app.services import notification_service
+from app.services import notification_service, irrigation_service
 
 router = APIRouter()
 
@@ -49,8 +50,8 @@ def get_notifications(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id)
 ):
-    return notification_service.get_notifications(db, user_id)
 
+    return notification_service.get_notifications(db, user_id)
 
 # ===============================
 # MARK AS READ

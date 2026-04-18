@@ -71,7 +71,6 @@ def needs_watering(db: Session, plant: Plant) -> bool:
 
     # SENSOR MODE
     if plant.use_sensor and soil and soil.moisture is not None:
-
         return float(soil.moisture) < MOISTURE_THRESHOLD
 
     # SCHEDULE MODE (fallback)
@@ -95,26 +94,36 @@ def get_plants_needing_water(db: Session, user_id: int):
     result = []
 
     for plant in plants:
-        if needs_watering(db, plant):
+        # 1. Check if the plant currently needs water
+        is_thirsty = needs_watering(db, plant)
+
+        # 2. Check if a notification already exists
+        existing_notification = db.query(Notification).filter(
+            Notification.plant_id == plant.id,
+            Notification.user_id == user_id,
+            Notification.type == "irrigation"
+        ).first()
+
+        # CASE A: Plant is thirsty but has no notification -> CREATE ONE
+        if is_thirsty and not existing_notification:
+            notification_service.create_notification(
+                db=db,
+                user_id=user_id,
+                plant=plant,
+                message=f"Plant '{plant.name}' needs watering"
+            )
             result.append(plant)
 
-            # AUTO CREATE NOTIFICATION (no duplicates)
-            exists = notification_service.notification_exists_today(
-                db, user_id, plant.id
-            )
+        # CASE B: Plant is NOT thirsty but a notification still exists -> DELETE IT
+        elif not is_thirsty and existing_notification:
+            db.delete(existing_notification)
+            db.commit()
 
-            if not exists:
-                message = f"Plant '{plant.name}' needs watering"
-
-                notification_service.create_notification(
-                    db=db,
-                    user_id=user_id,
-                    plant=plant,
-                    message=message
-                )
+        # CASE C: Plant is thirsty and notification exists -> JUST ADD TO RESULT
+        elif is_thirsty:
+            result.append(plant)
 
     return result
-
 
 # ===============================
 # WATER PLANT
@@ -128,39 +137,37 @@ def water_plant(db: Session, plant_id: int, user_id: int):
     if not plant:
         return None
 
-    #update watering date
+    # update watering date
     plant.last_watered = date.today()
 
+    # Find the "unwatered" notification and delete it
     db.query(Notification).filter(
         Notification.plant_id == plant.id,
         Notification.user_id == user_id,
-        Notification.type == "irrigation",
-        Notification.is_read == False
-    ).update({"is_read": True})
+        Notification.type == "irrigation"
+    ).delete(synchronize_session=False)
 
     db.commit()
     db.refresh(plant)
-
     return plant
-
 
 # ===============================
 # BULK WATERING
 # ===============================
 def water_all_due_plants(db: Session, user_id: int):
+    # This calls your earlier logic that finds thirsty plants
     plants = get_plants_needing_water(db, user_id)
 
     for plant in plants:
         plant.last_watered = date.today()
 
+        # Delete the active notification for each plant
         db.query(Notification).filter(
             Notification.plant_id == plant.id,
             Notification.user_id == user_id,
-            Notification.type == "irrigation",
-            Notification.is_read == False
-        ).update({"is_read": True})
+            Notification.type == "irrigation"
+        ).delete(synchronize_session=False)
 
     db.commit()
-
     return plants
 

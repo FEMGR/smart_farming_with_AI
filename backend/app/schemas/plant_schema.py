@@ -38,7 +38,7 @@ class PlantCreate(BaseModel):
     source: Optional[str] = "manual"
     use_sensor: Optional[bool] = False
 
-    # 🌱 NEW
+    # common watering interval
     watering_interval_days: Optional[int] = 3
 
 
@@ -48,17 +48,12 @@ class PlantCreate(BaseModel):
 class PlantUpdate(BaseModel):
     name: Optional[str] = None
     species: Optional[str] = None
-
     location_id: Optional[int] = None
     group_id: Optional[int] = None
-
     environment_type: Optional[str] = None
     planting_date: Optional[date] = None
-
     is_synced: Optional[bool] = None
     use_sensor: Optional[bool] = None
-
-    # 🌱 NEW
     watering_interval_days: Optional[int] = None
     last_watered: Optional[date] = None
 
@@ -70,24 +65,16 @@ class PlantResponse(BaseModel):
     id: int
     name: str
     species: Optional[str]
-
     user_id: int
     location_id: Optional[int]
     group_id: Optional[int]
-
     environment_type: str
     planting_date: Optional[date]
-
     is_synced: bool
     source: str
     use_sensor: bool
-
     created_at: datetime
-
-    # 🌱 NEW
     last_watered: Optional[date]
     watering_interval_days: int
-
     location: Optional[LocationResponse] = None
-
     model_config = ConfigDict(from_attributes=True)

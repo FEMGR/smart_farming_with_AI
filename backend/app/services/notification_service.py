@@ -35,6 +35,7 @@ Returned to client
 from sqlalchemy.orm import Session
 from app.models.notification import Notification
 from app.models.plant import Plant
+from datetime import date
 
 
 # ===============================
@@ -45,7 +46,7 @@ def create_notification(db: Session, user_id: int, plant: Plant, message: str):
         user_id=user_id,
         plant_id=plant.id,
         message=message,
-        type="irrigation"
+        type="irrigation",
     )
 
     db.add(notification)
@@ -88,12 +89,10 @@ def mark_as_read(db: Session, notification_id: int, user_id: int):
 # PREVENT DUPLICATES (IMPORTANT)
 # ===============================
 def notification_exists_today(db: Session, user_id: int, plant_id: int):
-    from datetime import date
-
     today = date.today()
-
     return db.query(Notification).filter(
         Notification.user_id == user_id,
         Notification.plant_id == plant_id,
         Notification.created_at >= today
     ).first() is not None
+
