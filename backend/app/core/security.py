@@ -1,31 +1,49 @@
 """
-This file handles all authentication and security logic.
+Core security module.
 
-Purpose:
-- Hash and verify passwords
-- Generate JWT tokens
-- Validate JWT tokens (authentication)
+Key Point:
+Provides authentication and security utilities for the application.
+
+Responsibilities:
+- Hash and verify user passwords
+- Generate JWT access tokens
+- Decode and validate JWT tokens
+- Provide authenticated user via dependency injection
 
 Architecture Role:
-- Part of the "core" layer (system-level functionality)
-- Used by services and routes
+- System-level utility for authentication and security
+- Used by services (token generation) and dependencies (token validation)
 
-Key Features:
-- Uses bcrypt for password hashing
-- Uses JWT for stateless authentication
-- Provides dependency to protect endpoints
+Layer Interaction:
+- Communicates with: Database (user lookup), Models (user), Config
+- Used by: Services (auth_service), Dependencies (get_current_user)
 
-Security Notes:
-- SECRET_KEY must be kept safe (.env)
-- Never store plain passwords
+Data Flow:
+User credentials processed (login)
+        ↓
+Password hashed or verified
+        ↓
+JWT token generated with payload
+        ↓
+Client sends token in Authorization header
+        ↓
+Token extracted via OAuth2PasswordBearer
+        ↓
+Token decoded and validated
+        ↓
+User retrieved from database
+        ↓
+User object returned to route
+
 """
 
+#app.core.security.py
+
 from datetime import datetime, timedelta
-from jose import jwt, JWTError
-from passlib.context import CryptContext
-from app.core.config import SECRET_KEY, ALGORITHM
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
+from jose import jwt, JWTError
+from passlib.context import CryptContext
 
 from app.core.config import (
     SECRET_KEY,
@@ -34,8 +52,6 @@ from app.core.config import (
 )
 from app.database.db import SessionLocal
 from app.models.user import User
-
-
 
 # Password hashing setup
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -92,35 +108,6 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
         raise HTTPException(status_code=401, detail="Invalid token")
 
 def decode_token(token: str):
-    """
-    Decode and validate a JWT token.
-
-    Purpose:
-    - Verify token integrity using SECRET_KEY
-    - Extract payload data (e.g., user_id)
-
-    Parameters:
-        token (str): JWT token from client request
-
-    Returns:
-        dict | None:
-            - Decoded payload if valid
-            - None if token is invalid or expired
-
-    Security Notes:
-    - Uses HS256 algorithm (or configured ALGORITHM)
-    - Prevents tampered tokens from being accepted
-
-    Typical Payload Structure:
-    {
-        "sub": "user_id",
-        "exp": expiration_timestamp
-    }
-
-    Why important:
-    - Central point for JWT validation
-    - Keeps authentication logic reusable across the app
-    """
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         return payload

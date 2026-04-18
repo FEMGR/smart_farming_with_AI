@@ -1,3 +1,40 @@
+"""
+Service layer for FastAPI (Irrigation).
+
+Key Point:
+Handles business logic for irrigation processes.
+
+Responsibilities:
+- Determine irrigation needs
+- Execute watering logic (manual or automated)
+- Update plant or soil conditions
+- Trigger related actions (e.g., notifications)
+
+Architecture Role:
+- Core logic layer for irrigation system
+- Integrates plant data and environmental conditions
+
+Layer Interaction:
+- Communicates with: Models (plant, soil_condition), Database
+- Called by: Routes, Workers (scheduler)
+
+Data Flow:
+Irrigation request or scheduled trigger received
+        ↓
+Plant and soil data retrieved
+        ↓
+Irrigation logic evaluated
+        ↓
+Database updated with results
+        ↓
+Optional notifications triggered
+        ↓
+Result returned to caller
+"""
+
+#app.services.irrigation_service.py
+
+
 from datetime import date, timedelta
 from sqlalchemy.orm import Session
 from app.models.plant import Plant
@@ -6,9 +43,9 @@ from app.services import notification_service
 from app.models.notification import Notification
 
 # ===============================
-# CONFIG (simple thresholds)
+# CONFIG (sample thresholds)
 # ===============================
-MOISTURE_THRESHOLD = 30  # below = dry (you can tune later)
+MOISTURE_THRESHOLD = 30  # below = dry
 
 
 # ===============================
@@ -32,12 +69,12 @@ def needs_watering(db: Session, plant: Plant) -> bool:
 
     soil = get_latest_soil_condition(db, plant.id)
 
-    # 🌱 SENSOR MODE
+    # SENSOR MODE
     if plant.use_sensor and soil and soil.moisture is not None:
 
         return float(soil.moisture) < MOISTURE_THRESHOLD
 
-    # 🌱 SCHEDULE MODE (fallback)
+    # SCHEDULE MODE (fallback)
     if not plant.watering_interval_days:
         return False
 
@@ -61,7 +98,7 @@ def get_plants_needing_water(db: Session, user_id: int):
         if needs_watering(db, plant):
             result.append(plant)
 
-            # 🔔 AUTO CREATE NOTIFICATION (no duplicates)
+            # AUTO CREATE NOTIFICATION (no duplicates)
             exists = notification_service.notification_exists_today(
                 db, user_id, plant.id
             )
@@ -91,10 +128,9 @@ def water_plant(db: Session, plant_id: int, user_id: int):
     if not plant:
         return None
 
-    # ✅ update watering date
+    #update watering date
     plant.last_watered = date.today()
 
-    # ✅ FIX: mark irrigation notifications as read
     db.query(Notification).filter(
         Notification.plant_id == plant.id,
         Notification.user_id == user_id,

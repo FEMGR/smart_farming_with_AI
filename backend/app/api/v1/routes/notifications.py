@@ -1,8 +1,41 @@
+"""
+Route layer for FastAPI (Notifications).
+
+Key Point:
+Handles API endpoints for user notifications.
+
+Responsibilities:
+- Receive notification-related requests
+- Retrieve or update notification data
+- Call notification service layer
+- Return notification responses
+
+Architecture Role:
+- Entry point for notification handling
+- Delegates logic to notification service
+
+Layer Interaction:
+- Communicates with: Services (notification_service), Dependencies
+
+Data Flow:
+Client Request (notification action)
+        ↓
+Route receives request
+        ↓
+Service processes notification logic
+        ↓
+Database accessed via models
+        ↓
+Response returned to client
+"""
+
+#app.api.routes.notifications.py
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database.db import get_db
-from app.api.deps import get_current_user_id
+from app.api.dependencies import get_current_user_id
 from app.services import notification_service
 
 router = APIRouter()

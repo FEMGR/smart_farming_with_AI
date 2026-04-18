@@ -1,32 +1,38 @@
 """
-Main is FastAPI application entry point.
-the system launcher and central hub
+Main application entry point.
+
+Key Point:
+Initializes and launches the FastAPI backend application.
+
+Responsibilities:
+- Create FastAPI app instance
+- Register API routes
+- Configure logging and error handling
+- Initialize database connections and tables
+- Start application server
+
+Architecture Role:
+- Acts as the composition root of the system
+- Connects all layers without containing business logic
+
+Layer Interaction:
+- Communicates with: Routes, Core (config, logger, error handler), Database
+- Indirectly connects: Services, Models, Schemas (through routes)
+
+Data Flow:
 Client (Swagger / Frontend)
         ↓
-Routes (API endpoints/ handle HTTP)
+Routes (handle HTTP requests, validate using schemas)
         ↓
-Services (handle business logic)
-        ↓
-Schemas (data validation)
+Services (business logic)
         ↓
 Models (database structure)
         ↓
-db.py (database connection)
+Database Layer (db.py)
         ↓
 PostgreSQL
 
-Purpose:
-- Initialize FastAPI app
-- Register routes
-- Setup logging and error handling
-- Create database tables
-
-Architecture Role:
-- Connects all layers together
-- Starts the backend server
 """
-
-
 
 #backend/main.py
 

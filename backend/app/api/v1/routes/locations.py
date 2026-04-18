@@ -1,9 +1,44 @@
+"""
+Route layer for FastAPI (Locations).
+
+Key Point:
+Handles API endpoints for managing plant locations.
+
+Responsibilities:
+- Receive location-related requests
+- Validate input using schemas
+- Call location service layer
+- Return location data responses
+
+Architecture Role:
+- Entry point for location management
+- Delegates business logic to services
+
+Layer Interaction:
+- Communicates with: Services (location_service), Schemas, Dependencies
+
+Data Flow:
+Client Request (location operation)
+        ↓
+Route receives request
+        ↓
+Schema validates input
+        ↓
+Location service processes logic
+        ↓
+Database updated via models
+        ↓
+Response returned to client
+"""
+
+#app.api.routes.locations.py
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
 from app.database.db import get_db
-from app.api.deps import get_current_user_id
+from app.api.dependencies import get_current_user_id
 from app.schemas.location_schema import LocationCreate, LocationUpdate, LocationResponse
 from app.services import location_service
 

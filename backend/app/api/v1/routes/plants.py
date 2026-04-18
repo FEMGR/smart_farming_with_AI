@@ -1,30 +1,42 @@
 """
-Plant API routes.
+Route layer for FastAPI (Plants).
 
-Defines what the API can do by defining endpoints (HTTP methods) and hand it over to service layer.
-HTTP methods used:
-GET     → retrieve data
-POST    → create new data
-PUT     → update existing data
-DELETE  → remove data
+Key Point:
+Handles API endpoints for plant management.
 
-Receives request with JSON
-↓
-Call services
-↓
-Uses schema to validate
-↓
-Uses model to create object
-↓
-Uses db session saves
-↓
-Returns response
+Responsibilities:
+- Receive plant-related HTTP requests
+- Validate input using schemas
+- Call plant service layer
+- Return plant data responses
+
+Architecture Role:
+- Entry point for plant-related operations
+- Keeps routes clean by delegating logic to services
+
+Layer Interaction:
+- Communicates with: Services (plant_service), Schemas, Dependencies
+
+Data Flow:
+Client Request (plant operation)
+        ↓
+Route receives request
+        ↓
+Schema validates input
+        ↓
+Plant service processes logic
+        ↓
+Database updated via models
+        ↓
+Response returned to client
 """
+
+#app.api.routes.plants.py
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-from app.api.deps import get_current_user_id
+from app.api.dependencies import get_current_user_id
 from app.database.db import get_db
 from app.schemas.plant_schema import PlantCreate, PlantUpdate, PlantResponse
 from app.services import plant_service
@@ -33,7 +45,6 @@ router = APIRouter(
     prefix="/plants",
     tags=["Plants"]
 )
-
 
 
 # ===============================

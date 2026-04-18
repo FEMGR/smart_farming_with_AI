@@ -1,16 +1,26 @@
 """
-Plant database model.
+Database model for Plant.
 
-This defines the structure of the plants table in PostgreSQL.
-Defines how data or the structure of the table is stored inside PostgreSQL.
+Key Point:
+Represents an individual plant owned by a user.
 
-defines database table
-defines columns
-defines types
-defines primary keys
-SQLAlchemy converts this to SQL
+Responsibilities:
+- Store plant-specific data (name, species, environment)
+- Maintain relationships with user, location, and groups
 
+Architecture Role:
+- Core data representation for plant management
+
+Layer Interaction:
+- Used by: Services, Database layer
+
+Notes:
+- Each plant belongs to a user
+- Can be associated with a location or group
 """
+
+#app.models.plant.py
+
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Date, TIMESTAMP, func
 from sqlalchemy.orm import relationship
 from app.database.db import Base

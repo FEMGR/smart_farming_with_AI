@@ -1,24 +1,37 @@
 """
-This file contains authentication business logic.
+Service layer for FastAPI (Authentication).
 
-Purpose:
-- Handle user registration
-- Handle login validation
+Key Point:
+Handles business logic for user authentication and authorization.
+
+Responsibilities:
+- Validate user credentials (login)
+- Handle user registration logic
 - Generate JWT tokens
+- Verify authentication data
 
 Architecture Role:
-- Part of the "services" layer (business logic)
-- Called by routes, interacts with models
+- Central logic layer for authentication processes
+- Delegates cryptographic operations to core security module
 
-Key Principles:
-- No HTTP logic here
-- No FastAPI dependencies
-- Pure logic only
+Layer Interaction:
+- Communicates with: Models (user), Database, Core (security)
+- Called by: Routes
 
-Why important:
-- Keeps routes clean
-- Makes logic reusable and testable
+Data Flow:
+Validated credentials received from route
+        ↓
+User retrieved from database
+        ↓
+Password verified
+        ↓
+JWT token generated
+        ↓
+Result returned to route
 """
+
+#app.services.auth_service.py
+
 from sqlalchemy.orm import Session
 
 from app.models.user import User
@@ -41,7 +54,7 @@ def register_user(db: Session, email: str, password: str):
 
     user = User(
         email=email,
-        password_hash=hashed   # ✅ FIXED
+        password_hash=hashed
     )
 
     db.add(user)
@@ -58,10 +71,8 @@ def authenticate_user(db: Session, email: str, password: str):
 
     if not user:
         return None
-
-    if not verify_password(password, user.password_hash):  # ✅ FIXED
+    if not verify_password(password, user.password_hash):
         return None
-
     return user
 
 
@@ -75,10 +86,8 @@ def login_user(db: Session, email: str, password: str):
 
     token = create_access_token(
         data={
-
             "sub": str(user.id),
             "email": user.email
-
         }
     )
 

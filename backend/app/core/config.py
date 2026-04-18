@@ -1,23 +1,49 @@
 """
-config.py
+Core configuration module.
 
-This file centralizes all configuration settings for the Smart Urban Farming system to
-make the project easier to maintain, secure, and support scalability.
+Key Point:
+Centralizes all application settings and environment variables.
 
-Purpose:
-- Load environment variables
-- Store database settings
-- Store API keys
-- Store security configuration
-- Provide a single source of truth
+Responsibilities:
+- Load environment variables from .env file
+- Store database configuration
+- Store security settings (JWT)
+- Store external API keys
+- Provide a single source of truth for application settings
+
+Architecture Role:
+- System-level configuration provider
+- Ensures consistency and scalability across all layers
+
+Layer Interaction:
+- Used by: Core modules, Services, Database layer
+- Communicates with: Environment variables (.env)
+
+Data Flow:
+Application starts
+        ↓
+Environment variables loaded from .env
+        ↓
+Configuration values initialized
+        ↓
+Other modules import config values
+        ↓
+System operates using centralized settings
+
+Notes:
+- Sensitive values (e.g., SECRET_KEY, DATABASE_URL) must be stored securely
+- Missing critical variables will raise errors at startup
+- Supports environment-based configuration (development vs production)
 """
+
+#app.core.config.py
+
 
 import os
 from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-
 
 # --------------------------------------------------
 # DATABASE CONFIGURATION

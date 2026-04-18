@@ -1,3 +1,37 @@
+"""
+Service layer for FastAPI (Locations).
+
+Key Point:
+Handles business logic for managing plant locations.
+
+Responsibilities:
+- Create and manage locations
+- Associate plants with locations
+- Apply location-based rules
+
+Architecture Role:
+- Core logic layer for location management
+- Maintains relationship between plants and environments
+
+Layer Interaction:
+- Communicates with: Models (location, plant), Database
+- Called by: Routes
+
+Data Flow:
+Validated location data received from route
+        ↓
+Business rules applied
+        ↓
+Location model created or updated
+        ↓
+Database transaction executed
+        ↓
+Result returned to route
+"""
+
+#app.services.location_service.py
+
+
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 
@@ -63,7 +97,7 @@ def update_location(db: Session, location_id: int, location_update: LocationUpda
 
 
 # ===============================
-# DELETE (FIXED 🔥)
+# DELETE
 # ===============================
 def delete_location(db: Session, location_id: int, user_id: int):
     location = db.query(Location).filter(
@@ -74,7 +108,7 @@ def delete_location(db: Session, location_id: int, user_id: int):
     if not location:
         return None
 
-    # 🔥 Prevent deletion if plants exist
+    # Prevent deletion if plants exist
     plant_exists = db.query(Plant).filter(
         Plant.location_id == location_id
     ).first()

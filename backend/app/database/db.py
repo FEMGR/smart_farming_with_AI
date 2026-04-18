@@ -1,103 +1,80 @@
 """
-Database connection and session management.The bridge between FastAPI and PostgreSQL.
+Database module for connection and session management.
 
-This file is responsible for:
+Key Point:
+Provides database connection, session handling, and base model configuration.
 
-1. Connecting FastAPI to PostgreSQL
-2. Creating SQLAlchemy engine : Connects FastAPI to PostgreSQL.
-3. Creating database session: opens database connection
-4. Providing Base class for models
-5. Managing database dependency for API routes: provides safe connection to routes.
+Responsibilities:
+- Create SQLAlchemy engine (database connection)
+- Provide session factory for database operations
+- Define base class for ORM models
+- Manage database session lifecycle for API requests
+
+Architecture Role:
+- Acts as the bridge between application and PostgreSQL
+- Centralizes database configuration and access
+
+Layer Interaction:
+- Used by: Models, Services, Dependencies (get_db), Core modules
+- Communicates with: PostgreSQL database
+
+Data Flow:
+Application starts
+        ↓
+Database engine created using configuration
+        ↓
+Session factory (SessionLocal) initialized
+        ↓
+Routes request database session via dependency
+        ↓
+Session used for database operations
+        ↓
+Session closed after request completes
+
+Notes:
+- Each request gets its own database session
+- Sessions are safely closed after use
+- Engine configuration is loaded from environment variables
 """
 
-# SQLAlchemy core tools
+# app.database.db.py
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Import DATABASE_URL from config
 from app.core.config import DATABASE_URL
 
-
-
 # ===============================
 # CREATE DATABASE ENGINE
 # ===============================
 
-"""
-Engine is the core connection between Python and PostgreSQL.
-
-It uses the DATABASE_URL from .env
-
-Example:
-postgresql://postgres:password@localhost:5432/smart_farming
-"""
+#Engine is the core connection between Python and PostgreSQL, uses the DATABASE_URL from .env
 engine = create_engine(
     DATABASE_URL,
-    echo=False  # set True if you want SQL logs in terminal
+    echo=False  # set True to log SQL in terminal
 )
-
 
 # ===============================
 # CREATE SESSION
 # ===============================
-
-"""
-Session is used to talk to the database.
-
-Every API request will open a session,
-do database operations,
-and then close the session.
-
-Think of it like:
-
-Open connection → Do work → Close connection
-"""
-
+#Session is used to talk to the database. Open->operations->close session
 SessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,
     bind=engine
 )
 
-
 # ===============================
 # BASE MODEL
 # ===============================
-
-"""
-Base is the parent class for all database models.
-
-Example:
-
-class Plant(Base):
-    __tablename__ = "plants"
-
-This allows SQLAlchemy to create tables.
-In SQLAlchemy, declarative_base() is a factory function used to create a base class for your database models. 
-When you define classes that inherit from this base, SQLAlchemy's "Declarative" system automatically maps those classes to database tables
-"""
-
-Base = declarative_base()
-
+Base = declarative_base() #a factory function used to create a base class for the db
 
 # ===============================
 # DATABASE DEPENDENCY
 # ===============================
 
-"""
-This function will be used in FastAPI routes.
-
-Example:
-
-def get_plants(db: Session = Depends(get_db)):
-
-It ensures:
-
-1. Open database session
-2. Use it
-3. Close it safely
-"""
-
+# used in FastAPI routes
 def get_db():
     db = SessionLocal()
     try:

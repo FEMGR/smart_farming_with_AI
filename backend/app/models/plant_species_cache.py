@@ -1,10 +1,32 @@
+"""
+Database model for PlantSpeciesCache.
+
+Key Point:
+Stores cached plant species data from external APIs.
+
+Responsibilities:
+- Cache plant species information
+- Reduce external API calls and improve performance
+
+Architecture Role:
+- Acts as a local data cache for external plant data
+
+Layer Interaction:
+- Used by: Services, Integrations
+
+Notes:
+- Improves efficiency and reduces dependency on third-party APIs
+"""
+
+#app.models.plant_species_cache.py
+
 from sqlalchemy import Column, Integer, String, TIMESTAMP, func, JSON , DateTime
 from sqlalchemy.dialects.postgresql import JSONB
 from app.database.db import Base
 
 
 class PlantSpeciesCache(Base):
-    __tablename__ = "plant_species_cache"
+    __tablename__ = "plant_species"
 
     id = Column(Integer, primary_key=True, index=True)
     external_id = Column(String(100), unique=True)

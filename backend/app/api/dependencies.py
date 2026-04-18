@@ -1,31 +1,35 @@
 """
 Dependency layer for FastAPI.
 
-Purpose:
+Key Point:
+Provides reusable dependencies for authentication and request handling.
+
+Responsibilities:
 - Extract authentication data from incoming requests
-- Decode JWT tokens
-- Provide current user identity to routes
+- Decode and validate JWT tokens
+- Provide current user identity to route handlers
 
 Architecture Role:
-- Acts as a bridge between authentication (JWT) and route handlers
-- Keeps routes clean by separating auth logic
+- Acts as a bridge between authentication (JWT) and route layer
+- Keeps routes clean by separating authentication logic
 
-Key Flow:
-Client Request → Authorization Header (Bearer Token)
-↓
+Layer Interaction:
+- Communicates with: Routes, Core (security)
+
+Data Flow:
+Client Request (Authorization Header: Bearer Token)
+        ↓
 OAuth2PasswordBearer extracts token
-↓
-decode_token() verifies JWT
-↓
-user_id extracted from payload
-↓
+        ↓
+Token is decoded and verified
+        ↓
+User identity extracted from payload
+        ↓
 Injected into route via Depends()
 
-Why important:
-- Avoids hardcoding user_id
-- Ensures all protected routes use consistent authentication
-- Makes the system scalable and secure
 """
+
+#app.api.dependencies.py
 
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer

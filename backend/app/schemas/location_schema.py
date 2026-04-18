@@ -1,3 +1,22 @@
+"""
+Schema definitions for Location.
+
+Key Point:
+Defines validation and data structure for location-related operations.
+
+Responsibilities:
+- Validate incoming location data
+- Structure location data returned to clients
+
+Architecture Role:
+- Acts as a contract between client and location API endpoints
+
+Layer Interaction:
+- Used by: Routes, Services
+"""
+
+#app.schemas.location_schema.py
+
 from pydantic import BaseModel, ConfigDict
 from typing import Optional
 from datetime import datetime

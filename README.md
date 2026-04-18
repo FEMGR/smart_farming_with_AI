@@ -100,55 +100,29 @@ The project starts as a **working MVP** and gradually evolves into a **smart agr
 ```
 smart-farming-system/
 │
-backend/
+├── backend/
+│ ├── main.py # FastAPI entry point
+│ ├── alembic/ # Database migrations
+│ ├── app/
+│   ├── core/ # Config, security, logging
+│   ├── api/ # API routes (v1)
+│   ├── database/ # Database connection
+│   ├── models/ # Database models
+│   ├── schemas/ # Data validation
+│   ├── services/ # Business logic
+│   ├── ai/ # AI features
+│   ├── integrations/ # External APIs / IoT
+│   ├── workers/ # Background tasks
+│   └── utils/ # Helper functions
 │
-├── main.py
+├── frontend/
+│ └── streamlit_app.py # Streamlit UI
 │
-├── app/
-│   │
-│   ├── core/
-│   │   ├── config.py
-│   │   ├── logger.py
-│   │   ├── error_handler.py
-│   │   └── security.py
-│   │
-│   ├── api/
-│   │   └── v1/
-│   │       └── routes/
-│   │           ├── plants.py
-│   │           └── irrigation.py
-│   │
-│   ├── database/
-│   │   └── db.py
-│   │
-│   ├── models/
-│   │   └── plant.py
-│   │
-│   ├── schemas/
-│   │   └── plant_schema.py
-│   │
-│   ├── services/
-│   │   ├── plant_service.py
-│   │   └── irrigation_service.py
-│   │
-│   ├── integrations/
-│   │
-│   └── utils/
-│
-├── logs/
-│   └── app.log
-│
-frontend/
-│   └── streamlit_app.py
-│
-docs/
-│
-tests/
-│
-.env
-README.md
-requirements.txt
-
+├── docs/ # Documentation
+├── tests/ # Tests
+├── logs/ # Application logs
+├── requirements.txt
+└── README.md
 
 ```
 

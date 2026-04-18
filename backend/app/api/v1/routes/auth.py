@@ -1,20 +1,37 @@
 """
-This file defines authentication API endpoints.
+Route layer for FastAPI (Authentication).
 
-Purpose:
-- Handle user registration requests
-- Handle login requests
-- Return JWT tokens
+Key Point:
+Handles user authentication endpoints such as login and registration.
+
+Responsibilities:
+- Receive authentication requests (login/register)
+- Validate input using schemas
+- Call authentication service
+- Return JWT tokens and user responses
 
 Architecture Role:
-- Part of the "routes" layer
-- Entry point for authentication operations
+- Entry point for authentication-related operations
+- Delegates business logic to auth service layer
 
-Key Principles:
-- Routes should be thin
-- Delegate logic to services
-- Handle HTTP errors only
+Layer Interaction:
+- Communicates with: Services (auth_service), Schemas, Dependencies
+
+Data Flow:
+Client Request (login/register)
+        ↓
+Route receives request
+        ↓
+Schema validates input
+        ↓
+Auth service processes credentials
+        ↓
+JWT token generated
+        ↓
+Response returned to client
 """
+
+#app.api.routes.auth.py
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
@@ -53,10 +70,9 @@ def login(
     """
 
     try:
-        # ⚠️ Swagger uses "username", we treat it as email
         token = login_user(
             db,
-            form_data.username,
+            form_data.username, #email
             form_data.password
         )
 

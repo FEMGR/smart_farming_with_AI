@@ -1,16 +1,21 @@
 """
-Plant schemas.
+Schema definitions for Plant.
 
-Schemas define how data is received and returned by the API. What kind of data is allowed to enter or leave the system.
-Defines what data looks like when entering or leaving the API.
-Pydantic also checks and validates the data automatically.
-validates input
-structures output
-controls request/response format
-prevents bad data
-documents API automatically
+Key Point:
+Defines validation and data structure for plant-related operations.
+
+Responsibilities:
+- Validate plant input data
+- Structure plant response data
+
+Architecture Role:
+- Acts as a contract between client and plant API endpoints
+
+Layer Interaction:
+- Used by: Routes, Services
 """
 
+#app.schemas.plant_schema.py
 
 from pydantic import BaseModel, ConfigDict
 from typing import Optional

@@ -1,3 +1,26 @@
+"""
+Database model for PlantGrowth.
+
+Key Point:
+Tracks growth-related data for plants over time.
+
+Responsibilities:
+- Store growth metrics and observations
+- Associate growth records with plants
+
+Architecture Role:
+- Enables tracking and analysis of plant development
+
+Layer Interaction:
+- Used by: Services, Database layer
+
+Notes:
+- Each record is linked to a specific plant
+- Can be used for analytics or AI recommendations
+"""
+
+#app.models.plant_growth.py
+
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, Numeric, func
 from sqlalchemy.orm import relationship
 from app.database.db import Base

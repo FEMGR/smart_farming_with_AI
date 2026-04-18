@@ -1,7 +1,41 @@
 """
-Centralized error handling + logging for the application.
+Core error handling module.
+
+Key Point:
+Provides centralized exception handling and logging for the application.
+
+Responsibilities:
+- Handle application-specific exceptions (e.g., NotFoundError, PermissionDeniedError)
+- Handle FastAPI and validation errors
+- Provide a catch-all handler for unexpected exceptions
+- Log errors consistently across the system
+
+Architecture Role:
+- Acts as the bridge between internal exceptions and HTTP responses
+- Ensures services remain independent of HTTP-specific logic
+
+Layer Interaction:
+- Communicates with: Core (exceptions), Logger
+- Used by: Main application (main.py) during startup
+- Handles errors from: Routes, Services, Dependencies
+- Does NOT depend on: Business logic, Database
+
+Data Flow:
+Exception raised in service or route
+        ↓
+Exception intercepted by FastAPI
+        ↓
+Mapped to appropriate handler
+        ↓
+Error logged using logger
+        ↓
+Converted into standardized JSON response
+        ↓
+Returned to client
+
 """
 
+#app.core.error_handler.py
 import logging
 from fastapi import Request
 from fastapi.responses import JSONResponse
@@ -44,7 +78,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 # UNEXPECTED ERROR (Catch-all)
 # ===============================
 async def general_exception_handler(request: Request, exc: Exception):
-    logger.error(f"Unexpected error: {str(exc)}")
+    logger.exception("Unexpected error occurred")
 
     return JSONResponse(
         status_code=500,

@@ -1,3 +1,27 @@
+"""
+Database model for PlantGroup.
+
+Key Point:
+Represents a grouping of plants, including companion planting arrangements.
+
+Responsibilities:
+- Group plants based on compatibility or user-defined organization
+- Maintain relationships with user and plants
+
+Architecture Role:
+- Supports companion planting features and plant organization
+
+Layer Interaction:
+- Used by: Services, Database layer
+
+Notes:
+- Companion plant recommendations are determined in the service layer
+- A group belongs to a user and can contain multiple plants
+"""
+
+
+#app.models.plant_group.py
+
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, func
 from sqlalchemy.orm import relationship
 from app.database.db import Base

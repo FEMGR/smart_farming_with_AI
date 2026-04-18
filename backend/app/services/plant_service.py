@@ -1,7 +1,37 @@
 """
-Plant service layer contains business logic related to plants.
-Routes --> call services--> talk to database.
+Service layer for FastAPI (Plants).
+
+Key Point:
+Handles business logic for plant management.
+
+Responsibilities:
+- Create, update, delete plants
+- Enforce user ownership and access control
+- Validate related entities (e.g., location)
+- Interact with database models
+
+Architecture Role:
+- Core logic layer for plant operations
+- Ensures separation between routes and database
+
+Layer Interaction:
+- Communicates with: Models (plant, location), Database, Core (exceptions)
+- Called by: Routes
+
+Data Flow:
+Validated plant data received from route
+        ↓
+Business rules and ownership checks applied
+        ↓
+Plant model created, updated, or deleted
+        ↓
+Database transaction executed
+        ↓
+Result returned to route
 """
+
+
+#app.services.plant_service.py
 
 
 from sqlalchemy.orm import Session
@@ -44,8 +74,6 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
     db.refresh(new_plant)
 
     return new_plant
-
-
 
 # ===============================
 # GET ALL PLANTS (USER-SCOPED)

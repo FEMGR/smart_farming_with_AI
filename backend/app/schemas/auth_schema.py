@@ -1,18 +1,20 @@
 """
-This file defines Pydantic schemas for authentication.
+Schema definitions for authentication.
 
-Purpose:
-- Validate incoming request data (register/login)
-- Define response structure (JWT token)
+Key Point:
+Defines validation and data structure for user registration and login.
+
+Responsibilities:
+- Validate incoming user data
+- Structure registration and login response data
 
 Architecture Role:
-- Part of the "schemas" layer
-- Ensures clean and validated data between client and API
+- Acts as a contract between client and authentication API endpoints
 
-Key Notes:
-- Prevents invalid input (e.g. wrong email format)
-- Separates API data from database models
+Layer Interaction:
+- Used by: Routes, Services
 """
+#app.schemas.auth_schema.py
 
 from pydantic import BaseModel, EmailStr
 

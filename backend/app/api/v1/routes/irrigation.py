@@ -1,18 +1,50 @@
+"""
+Route layer for FastAPI (Irrigation).
+
+Key Point:
+Handles irrigation-related API endpoints.
+
+Responsibilities:
+- Receive irrigation requests (manual/automatic)
+- Validate input using schemas
+- Call irrigation service
+- Return irrigation status or results
+
+Architecture Role:
+- Entry point for irrigation logic
+- Delegates execution to service layer
+
+Layer Interaction:
+- Communicates with: Services (irrigation_service), Schemas, Dependencies
+
+Data Flow:
+Client Request (irrigation action)
+        ↓
+Route receives request
+        ↓
+Schema validates input
+        ↓
+Irrigation service processes logic
+        ↓
+Database updated if needed
+        ↓
+Response returned to client
+"""
+
 # backend/app/api/v1/routes/irrigation.py
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database.db import get_db
-from app.api.deps import get_current_user_id
+from app.api.dependencies import get_current_user_id
 from app.services import irrigation_service
 
-# ✅ Add prefix here for clean routing
+#  Prefix for clean routing
 router = APIRouter(
     prefix="/irrigation",
     tags=["Irrigation"]
 )
-
 
 # ===============================
 # CHECK PLANTS NEEDING WATER

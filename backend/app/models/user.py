@@ -1,18 +1,22 @@
 """
-This file defines the User database model.
+Database model for User.
 
-Purpose:
-- Represents users in the database
-- Stores authentication data (email + hashed password)
+Key Point:
+Represents a system user and their authentication data.
+
+Responsibilities:
+- Store user credentials (email and hashed password)
+- Maintain relationships with user-owned entities
 
 Architecture Role:
-- Part of the "models" layer
-- Maps Python objects to database tables using SQLAlchemy
+- Core data representation for user accounts
 
-Key Notes:
-- Passwords are NOT stored in plain text
-- Only hashed_password is stored for security
+Layer Interaction:
+- Used by: Services, Database layer
+
 """
+
+#app.models.user.py
 
 from sqlalchemy import Column, Integer, String, TIMESTAMP, func
 from sqlalchemy.orm import relationship

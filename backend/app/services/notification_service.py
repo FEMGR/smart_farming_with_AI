@@ -1,3 +1,37 @@
+"""
+Service layer for FastAPI (Notifications).
+
+Key Point:
+Handles business logic for generating and managing notifications.
+
+Responsibilities:
+- Create and store notifications
+- Retrieve user notifications
+- Mark notifications as read
+- Trigger alerts based on system events
+
+Architecture Role:
+- Core logic layer for notification system
+- Connects system events to user-facing alerts
+
+Layer Interaction:
+- Communicates with: Models (notification), Database
+- Called by: Routes, Services (e.g., irrigation_service)
+
+Data Flow:
+Trigger event received (e.g., irrigation alert)
+        ↓
+Notification created
+        ↓
+Stored in database
+        ↓
+Retrieved when requested by route
+        ↓
+Returned to client
+"""
+
+#app.services.notification_service.py
+
 from sqlalchemy.orm import Session
 from app.models.notification import Notification
 from app.models.plant import Plant
