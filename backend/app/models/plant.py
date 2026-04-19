@@ -28,7 +28,6 @@ from app.database.db import Base
 
 class Plant(Base):
     __tablename__ = "plants"
-
     id = Column(Integer, primary_key=True, index=True)
 
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"))
@@ -61,7 +60,7 @@ class Plant(Base):
     updated_at = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
 
     # Relationships
-    user = relationship("User", back_populates="plants")
+    owner = relationship("User", back_populates="plants")
     group = relationship("PlantGroup", back_populates="plants")
     location = relationship("Location", back_populates="plants")
 

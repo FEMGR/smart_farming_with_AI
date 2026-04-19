@@ -25,14 +25,13 @@ from app.database.db import Base
 
 class User(Base):
     __tablename__ = "users"
-
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String(255), unique=True, nullable=False)
     password_hash = Column(String, nullable=False)
-    created_at = Column(TIMESTAMP, server_default=func.now())
+    member_since = Column(TIMESTAMP, server_default=func.now())
 
     # Relationships
-    locations = relationship("Location", back_populates="user", cascade="all, delete")
-    plants = relationship("Plant", back_populates="user", cascade="all, delete")
-    plant_groups = relationship("PlantGroup", back_populates="user", cascade="all, delete")
-    notifications = relationship("Notification", back_populates="user", cascade="all, delete")
+    planting_zone = relationship("Location", back_populates="owner", cascade="all, delete")
+    plants = relationship("Plant", back_populates="owner", cascade="all, delete")
+    plant_groups = relationship("PlantGroup", back_populates="owner", cascade="all, delete")
+    notifications = relationship("Notification", back_populates="owner", cascade="all, delete")

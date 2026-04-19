@@ -96,4 +96,12 @@ def start_scheduler():
         )
 
         scheduler.start()
+        logger.info("Scheduler started.")
 
+# ===============================
+# STOP SCHEDULER
+# ===============================
+def stop_scheduler():
+    if scheduler.running:
+        scheduler.shutdown()
+        logger.info("Scheduler stopped.")

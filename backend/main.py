@@ -55,10 +55,10 @@ from app.models.plant_species_cache import PlantSpeciesCache
 # IMPORTS
 # ===============================
 from fastapi import FastAPI
-
+from contextlib import asynccontextmanager
 from app.api.v1.routes import plants, auth, locations, irrigation, notifications
 from app.database.db import Base, engine
-from app.workers.scheduler import start_scheduler
+from app.workers.scheduler import start_scheduler, stop_scheduler
 from app.core.logger import setup_logger
 from app.core.error_handler import add_exception_handlers
 
@@ -66,14 +66,21 @@ from app.core.error_handler import add_exception_handlers
 # ===============================
 # CREATE APP
 # ===============================
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # on startup
+    start_scheduler()
+    # The app is running
+    yield
+    # on shutdown
+    stop_scheduler()
+
+
 app = FastAPI(
     title="Smart Farming API",
-    version="1.0"
+    version="1.0",
+    lifespan=lifespan
 )
-@app.on_event("startup")
-def startup_event():
-    start_scheduler()
-
 
 # ===============================
 # LOGGER SETUP
@@ -81,13 +88,11 @@ def startup_event():
 logger = setup_logger()
 logger.info("Starting Smart Farming API")
 
-
 # ===============================
 # DATABASE INIT
 # ===============================
-print("Using DB:", engine.url)
+logger.info("Using DB:", engine.url)
 Base.metadata.create_all(bind=engine)
-
 
 # ===============================
 # ROUTES

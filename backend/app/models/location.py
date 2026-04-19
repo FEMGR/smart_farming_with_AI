@@ -37,5 +37,5 @@ class Location(Base):
     created_at = Column(TIMESTAMP, server_default=func.now())
 
     # Relationships
-    user = relationship("User", back_populates="locations")
+    owner = relationship("User", back_populates="planting_zone")
     plants = relationship("Plant", back_populates="location")

@@ -44,19 +44,14 @@ from app.core.security import (
 
 def register_user(db: Session, email: str, password: str):
     """Register a new user"""
-
     existing_user = db.query(User).filter(User.email == email).first()
-
     if existing_user:
         raise ValueError("Email already registered")
-
     hashed = hash_password(password)
-
     user = User(
         email=email,
         password_hash=hashed
     )
-
     db.add(user)
     db.commit()
     db.refresh(user)

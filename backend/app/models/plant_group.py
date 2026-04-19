@@ -37,5 +37,5 @@ class PlantGroup(Base):
     created_at = Column(TIMESTAMP, server_default=func.now())
 
     # Relationships
-    user = relationship("User", back_populates="plant_groups")
+    owner = relationship("User", back_populates="plant_groups")
     plants = relationship("Plant", back_populates="group")

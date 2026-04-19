@@ -54,7 +54,6 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL is not set in .env file")
 
-
 # --------------------------------------------------
 # JWT SECURITY CONFIGURATION
 # --------------------------------------------------
@@ -70,14 +69,12 @@ ACCESS_TOKEN_EXPIRE_MINUTES = int(
     os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 60)
 )
 
-
 # --------------------------------------------------
 # EXTERNAL API CONFIGURATION
 # --------------------------------------------------
 
 PERENUAL_API_KEY = os.getenv("PERENUAL_API_KEY", "")
 TREFLE_API_KEY = os.getenv("TREFLE_API_KEY", "")
-
 
 # --------------------------------------------------
 # APPLICATION SETTINGS
