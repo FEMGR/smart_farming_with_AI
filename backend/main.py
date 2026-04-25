@@ -56,7 +56,7 @@ from app.models.plant_species_cache import PlantSpeciesCache
 # ===============================
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from app.api.v1.routes import plants, auth, locations, irrigation, notifications
+from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species
 from app.database.db import Base, engine
 from app.workers.scheduler import start_scheduler, stop_scheduler
 from app.core.logger import setup_logger
@@ -99,6 +99,7 @@ Base.metadata.create_all(bind=engine)
 # ===============================
 app.include_router(auth.router)
 app.include_router(plants.router)
+app.include_router(species.router)
 app.include_router(locations.router)
 app.include_router(irrigation.router)
 app.include_router(notifications.router, prefix="/notifications",tags=["Notifications"])

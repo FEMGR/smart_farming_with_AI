@@ -106,7 +106,7 @@ def delete_location(db: Session, location_id: int, user_id: int):
     ).first()
 
     if not location:
-        return None
+        return False
 
     # Prevent deletion if plants exist
     plant_exists = db.query(Plant).filter(

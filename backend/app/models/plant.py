@@ -28,33 +28,30 @@ from app.database.db import Base
 
 class Plant(Base):
     __tablename__ = "plants"
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True)
 
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"))
     group_id = Column(Integer, ForeignKey("plant_groups.id", ondelete="SET NULL"))
     location_id = Column(Integer, ForeignKey("locations.id", ondelete="SET NULL"))
 
     name = Column(String(100), nullable=False)
-    species = Column(String(100))
 
-    external_species_id = Column(String(100))
-    is_synced = Column(Boolean, default=False)
+    # Link to species cache (IMPORTANT)
+    species_id = Column(Integer, ForeignKey("plant_species.id"), nullable=True)
+    # Relationships
+    species = relationship("PlantSpeciesCache", backref="plants")
+    # User-specific overrides
+    watering_interval_days = Column(Integer, default=3)
 
+    # Runtime state
+    last_watered = Column(Date)
+
+    # Metadata
     environment_type = Column(String(50), default="outdoor")
-
     planting_date = Column(Date)
-    source = Column(String(50), default="manual")
+    data_source = Column(String(50), default="manual") #{"manual", "perenual", "import", "sensor", "ai"}
 
-    # 🌱 ===============================
-    # IRRIGATION FIELDS (NEW)
-    # ===============================
-    last_watered = Column(Date, nullable=True)  # last watering date
-    watering_interval_days = Column(Integer, default=3)  # default every 3 days
-
-    # 🌱 SENSOR CONTROL (NEW)
     use_sensor = Column(Boolean, default=False, nullable=False)
-
-    # ===============================
 
     created_at = Column(TIMESTAMP, server_default=func.now())
     updated_at = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())

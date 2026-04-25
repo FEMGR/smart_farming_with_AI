@@ -27,10 +27,17 @@ from app.database.db import Base
 
 class PlantSpeciesCache(Base):
     __tablename__ = "plant_species"
-
+    #Fields
     id = Column(Integer, primary_key=True, index=True)
-    external_id = Column(String(100), unique=True)
-    species_name = Column(String(100))
+    external_species_id = Column(String(100))
+    scientific_name = Column(String(100))
+    common_name = Column(String(100))
+    life_cycle = Column(String(50))
+    sunlight_requirement = Column(String(255))
+    watering_interval_days = Column(Integer, default=3)  # default every 3 days
+    recommended_soil = Column(String(255))
+    propagation_method = Column(String(255))
+    pest_susceptibility = Column(String(255))
 
     # Cross-compatible JSON column
     data = Column(JSON().with_variant(JSONB, "postgresql"))

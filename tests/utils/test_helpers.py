@@ -6,7 +6,7 @@ from app.models.plant import Plant
 def create_test_plant_db(db, user_id=1, use_sensor=False):
     plant = Plant(
         name="Test Plant",
-        species="Test",
+        species_id=1,
         user_id=user_id,
         watering_interval_days=3,
         last_watered=None,
@@ -27,7 +27,7 @@ def create_test_plant(client, token):
         "/plants/",
         json={
             "name": "Test Plant",
-            "species": "Test Species",
+            "species_name": "Test Species",
             "environment_type": "indoor",
             "is_synced": True,
             "source": "test"

@@ -17,29 +17,32 @@ Layer Interaction:
 
 #app.schemas.plant_schema.py
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, computed_field
 from typing import Optional
 from datetime import date, datetime
+
 from app.schemas.location_schema import LocationResponse
+from app.schemas.species_schema import SpeciesResponse
+from app.utils.plant_logic import get_effective_watering
+
 
 # ===============================
 # CREATE
 # ===============================
 class PlantCreate(BaseModel):
     name: str
-    species: Optional[str] = None
-
+    species_name: Optional[str] = None
     location_id: Optional[int] = None
     group_id: Optional[int] = None
 
     environment_type: Optional[str] = "outdoor"
     planting_date: Optional[date] = None
 
-    source: Optional[str] = "manual"
+    data_source: Optional[str] = "manual"
     use_sensor: Optional[bool] = False
 
-    # common watering interval
-    watering_interval_days: Optional[int] = 3
+    # Optional override
+    watering_interval_days: Optional[int] = None
 
 
 # ===============================
@@ -47,12 +50,13 @@ class PlantCreate(BaseModel):
 # ===============================
 class PlantUpdate(BaseModel):
     name: Optional[str] = None
-    species: Optional[str] = None
+
     location_id: Optional[int] = None
     group_id: Optional[int] = None
+
     environment_type: Optional[str] = None
     planting_date: Optional[date] = None
-    is_synced: Optional[bool] = None
+
     use_sensor: Optional[bool] = None
     watering_interval_days: Optional[int] = None
     last_watered: Optional[date] = None
@@ -64,17 +68,35 @@ class PlantUpdate(BaseModel):
 class PlantResponse(BaseModel):
     id: int
     name: str
-    species: Optional[str]
+    species_id: Optional[int]
+    # Linked species (from cache)
+    species: Optional[SpeciesResponse] = None
+
     user_id: int
+
     location_id: Optional[int]
+    location: Optional[LocationResponse] = None
+
     group_id: Optional[int]
+
     environment_type: str
     planting_date: Optional[date]
-    is_synced: bool
-    source: str
+
+    data_source: str
     use_sensor: bool
+
     created_at: datetime
     last_watered: Optional[date]
-    watering_interval_days: int
-    location: Optional[LocationResponse] = None
+
+    # Raw DB value (user override)
+    watering_interval_days: Optional[int] = None
+
     model_config = ConfigDict(from_attributes=True)
+
+    # ===============================
+    # COMPUTED FIELD
+    # ===============================
+    @computed_field
+    @property
+    def effective_watering_interval(self) -> int:
+        return get_effective_watering(self)
