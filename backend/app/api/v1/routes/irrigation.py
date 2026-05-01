@@ -35,10 +35,10 @@ Response returned to client
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-
+from app.schemas.irrigation_schema import PlantNeedsWaterResponse
 from app.database.db import get_db
 from app.api.dependencies import get_current_user_id
-from app.services import irrigation_service
+from app.services import irrigation_service, plant_service
 
 #  Prefix for clean routing
 router = APIRouter(
@@ -49,7 +49,7 @@ router = APIRouter(
 # ===============================
 # CHECK PLANTS NEEDING WATER
 # ===============================
-@router.get("/needs-water")
+@router.get("/needs-water", response_model=list[PlantNeedsWaterResponse])
 def get_plants_needing_water(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id)
@@ -62,8 +62,8 @@ def get_plants_needing_water(
         db=db,
         user_id=user_id
     )
-
     return plants
+    #return [plant_service._attach_metadata(p) for p in plants]
 
 
 # ===============================

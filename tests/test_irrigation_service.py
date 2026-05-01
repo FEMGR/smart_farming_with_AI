@@ -1,49 +1,72 @@
-# tests/test_irrigation_service.py
-
 from datetime import date, timedelta
-from app.services.irrigation_service import needs_watering
+from app.services.irrigation_service import _needs_watering_with_soil
+from app.models.soil_condition import SoilCondition
 
 
-def test_schedule_watering(db, plant):
+def test_schedule_watering(plant):
     plant.last_watered = date.today() - timedelta(days=5)
-    db.commit()
 
-    assert needs_watering(db, plant) is True
+    assert _needs_watering_with_soil(plant, None) is True
 
+def test_no_watering_interval(plant):
+    plant.watering_interval_days = None
 
-def test_sensor_dry(db, sensor_plant, dry_soil):
-    assert needs_watering(db, sensor_plant) is True
+    assert _needs_watering_with_soil(plant, None) is False
 
+def test_future_last_watered(plant):
+    plant.last_watered = date.today() + timedelta(days=5)
 
-def test_sensor_wet(db, sensor_plant, wet_soil):
-    assert needs_watering(db, sensor_plant) is False
+    assert _needs_watering_with_soil(plant, None) is False
 
+def test_bulk_watering_updates_plants(client, token):
+    headers = {"Authorization": f"Bearer {token}"}
 
-def test_use_sensor_disabled(db, plant):
+    plant = client.post("/plants/", json={"name": "BulkPlant"}, headers=headers).json()
+
+    client.get("/irrigation/needs-water", headers=headers)
+
+    client.post("/irrigation/water-all", headers=headers)
+
+    plants = client.get("/plants/", headers=headers).json()
+
+    updated = next(p for p in plants if p["id"] == plant["id"])
+
+    assert updated["last_watered"] is not None
+
+def test_sensor_dry(sensor_plant):
+    soil = SoilCondition(moisture=10)
+
+    assert _needs_watering_with_soil(sensor_plant, soil) is True
+
+def test_sensor_wet(sensor_plant):
+    soil = SoilCondition(moisture=80)
+
+    assert _needs_watering_with_soil(sensor_plant, soil) is False
+
+def test_use_sensor_disabled(plant):
+    plant.use_sensor = False
     plant.last_watered = date.today()
-    db.commit()
 
-    assert needs_watering(db, plant) is False
+    assert _needs_watering_with_soil(plant, None) is False
 
-#sensor enabled but no data ever recorded
-def test_sensor_enabled_no_data_fallback(db, sensor_plant):
-    assert needs_watering(db, sensor_plant) is True
+def test_sensor_enabled_null_moisture(sensor_plant):
+    soil = SoilCondition(moisture=None)
+
+    assert _needs_watering_with_soil(sensor_plant, soil) is True
+
+# sensor enabled but no data ever recorded
+def test_sensor_enabled_no_data_fallback(sensor_plant):
+    assert _needs_watering_with_soil(sensor_plant, None) is True
+
+def test_moisture_exact_threshold(sensor_plant):
+    soil = SoilCondition(moisture=30)  # threshold
+
+    assert _needs_watering_with_soil(sensor_plant, soil) is False
 
 
-
-def test_full_irrigation_flow(client, token):
-    # create plant
-    response = client.post(
-        "/plants/",
-        json={"name": "Tomato"},
-        headers={"Authorization": f"Bearer {token}"}
-    )
-    plant_id = response.json()["id"]
-
-    # trigger irrigation check
-    response = client.get(
-        "/irrigation/needs-water",
-        headers={"Authorization": f"Bearer {token}"}
-    )
-
+def test_irrigation_handles_many_plants(client, token):
+    headers = {"Authorization": f"Bearer {token}"}
+    for i in range(50):
+        client.post("/plants/", json={"name": f"Plant{i}"}, headers=headers)
+    response = client.get("/irrigation/needs-water", headers=headers)
     assert response.status_code == 200

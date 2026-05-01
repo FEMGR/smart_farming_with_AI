@@ -50,7 +50,7 @@ def create_notification(db: Session, user_id: int, plant: Plant, message: str):
     )
 
     db.add(notification)
-    db.commit()
+    db.flush() #db.commit()
     db.refresh(notification)
 
     return notification

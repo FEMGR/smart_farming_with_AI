@@ -20,7 +20,7 @@ Notes:
 
 #app.models.plant_species_cache.py
 
-from sqlalchemy import Column, Integer, String, TIMESTAMP, func, JSON , DateTime
+from sqlalchemy import Column, Integer, String, TIMESTAMP, func, JSON, DateTime, Boolean
 from sqlalchemy.dialects.postgresql import JSONB
 from app.database.db import Base
 
@@ -32,6 +32,10 @@ class PlantSpeciesCache(Base):
     external_species_id = Column(String(100))
     scientific_name = Column(String(100))
     common_name = Column(String(100))
+    is_edible = Column(Boolean, default=False)
+    is_fruit = Column(Boolean, default=False)
+    is_veg = Column(Boolean, default=False)
+    growth_rate = Column(String(10))
     life_cycle = Column(String(50))
     sunlight_requirement = Column(String(255))
     watering_interval_days = Column(Integer, default=3)  # default every 3 days

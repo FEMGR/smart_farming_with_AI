@@ -1,3 +1,34 @@
+"""
+Route layer for FastAPI (Species).
+
+Key Point:
+Handles API endpoints related to plant species search and suggestions.
+
+Responsibilities:
+- Accept user input for species queries
+- Validate and sanitize query parameters
+- Call service layer to retrieve species suggestions
+- Return structured species data to client
+
+Architecture Role:
+- Entry point for species-related API requests
+- Bridges client requests with species service logic
+
+Layer Interaction:
+- Communicates with: Services (plant_service), Database (via dependency)
+- Called by: Client applications (frontend, API consumers)
+
+Data Flow:
+User sends species query (e.g., search input)
+        ↓
+Query validated and cleaned
+        ↓
+Service layer retrieves matching species
+        ↓
+Results formatted using schema
+        ↓
+List of species suggestions returned to client
+"""
 
 
 #app/api/v1/routes/species.py

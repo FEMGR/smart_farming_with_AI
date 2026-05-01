@@ -55,7 +55,7 @@ def plant_api(client, user_token,species):
         json={
             "name": "API Plant",
             "species_id": species.id,
-            "environment_type": "indoor"
+            "plant_type": "Test type",
         },
         headers={"Authorization": f"Bearer {user_token}"}
     )

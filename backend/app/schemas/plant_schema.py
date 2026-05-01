@@ -17,20 +17,24 @@ Layer Interaction:
 
 #app.schemas.plant_schema.py
 
-from pydantic import BaseModel, ConfigDict, computed_field
+from pydantic import BaseModel, ConfigDict, computed_field, model_validator
 from typing import Optional
 from datetime import date, datetime
 
 from app.schemas.location_schema import LocationResponse
 from app.schemas.species_schema import SpeciesResponse
 from app.utils.plant_logic import get_effective_watering
+from typing import Literal
+from app.core.constants import PLANT_TYPES
 
-
+# Convert the list to a Type that Pydantic understands
+PlantType = Literal[tuple(PLANT_TYPES)]
 # ===============================
 # CREATE
 # ===============================
 class PlantCreate(BaseModel):
     name: str
+    plant_type: PlantType = "vegetable"
     species_name: Optional[str] = None
     location_id: Optional[int] = None
     group_id: Optional[int] = None
@@ -50,7 +54,8 @@ class PlantCreate(BaseModel):
 # ===============================
 class PlantUpdate(BaseModel):
     name: Optional[str] = None
-
+    # This forces the user to pick one of these specific words
+    plant_type: PlantType = "vegetable"
     location_id: Optional[int] = None
     group_id: Optional[int] = None
 
@@ -68,6 +73,7 @@ class PlantUpdate(BaseModel):
 class PlantResponse(BaseModel):
     id: int
     name: str
+    plant_type: Optional[str] = "fruit"
     species_id: Optional[int]
     # Linked species (from cache)
     species: Optional[SpeciesResponse] = None
@@ -76,10 +82,9 @@ class PlantResponse(BaseModel):
 
     location_id: Optional[int]
     location: Optional[LocationResponse] = None
+    environment_type: Optional[str] = "outdoor"
 
     group_id: Optional[int]
-
-    environment_type: str
     planting_date: Optional[date]
 
     data_source: str
@@ -98,5 +103,14 @@ class PlantResponse(BaseModel):
     # ===============================
     @computed_field
     @property
+    #If user override exists, use it; otherwise, use the species value
     def effective_watering_interval(self) -> int:
         return get_effective_watering(self)
+
+    @model_validator(mode="before")
+    @classmethod
+    def get_environment_from_location(cls, data):
+        # If the plant has a location, use the location's type
+        if hasattr(data, "location") and data.location:
+            data.environment_type = data.location.environment_type
+        return data

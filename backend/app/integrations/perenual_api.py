@@ -113,6 +113,13 @@ def normalize_species_data(api_data: dict) -> dict:
     Convert Perenual API response into internal format.
     Ensures safe handling of missing or inconsistent fields.
     """
+    # Get the specific parts
+    is_fruit = api_data.get("edible_fruit", False)
+    is_veg = api_data.get("edible_leaf", False)
+    # Cuisine often covers herbs or flowers used in cooking
+    is_cuisine = api_data.get("cuisine", False)
+    # General 'is_edible' is true if ANY part is edible
+    is_edible = is_fruit or is_veg or is_cuisine
 
     def safe_join(value):
         if isinstance(value, list):
@@ -147,7 +154,11 @@ def normalize_species_data(api_data: dict) -> dict:
     return {
         "species": scientific,
         "cycle": api_data.get("cycle"),
-
+        "is_fruit": is_fruit,
+        "is_veg": is_veg,
+        "is_edible": is_edible,
+        "type": api_data.get("type", "unknown"),
+        "growth_rate": api_data.get("growth_rate"),
         "sunlight": safe_join(api_data.get("sunlight")),
         "soil": safe_join(api_data.get("soil")),
         "propagation": safe_join(api_data.get("propagation")),
