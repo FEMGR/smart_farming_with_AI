@@ -100,6 +100,10 @@ def compute_match_score(query: str, candidate: dict, plant_type: str = None) -> 
             else:
                 bonus += 15
 
+    # Penalize if "false" is in the common name
+    if "false" in commonName:
+        bonus -= 80  # Significantly reduce score for "false" matches
+
     # 3. Final Score (0-100)
     final_score = base_score + bonus
     return max(0, min(100, int(final_score)))
