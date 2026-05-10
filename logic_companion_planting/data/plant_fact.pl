@@ -1,28 +1,44 @@
-#logic_companion_planting/data/plant_fact.pl
+% FILE: logic_companion_planting/data/plant_fact.pl
+%
+% PURPOSE:
+% This file serves as the central registry for all plant entities within the Smart Farming System's
+% companion planting logic. It declares individual plant names using the `plant/1` predicate.
+%
+% It also defines aliases for certain plants using the `alias/2` predicate and
+% ecological traits using the `trait/2` predicate.
+%
+% PREDICATES:
+% - plant(PlantName): Declares a unique plant by its atom name.
+% - alias(AliasName, CanonicalName): Defines an alternative name for a plant.
+% - trait(PlantName, Trait): Associates an ecological trait (e.g., pest_repellent, nitrogen_fixer) with a plant.
+%
+% RELATED MODULES:
+% - `category_fact.pl`: Defines categories and assigns plants to them using `belongs_to/2`.
+% - `insect_fact.pl`: References plant names for pest-plant interactions.
+% - `disease_fact.pl`: References plant names for disease-host relationships.
+% - `companion_fact.pl`: Uses plant names to define beneficial and antagonistic relationships.
+%
+% USAGE:
+% This file is consulted by other Prolog modules to retrieve a comprehensive list of plants,
+% their aliases, and their inherent ecological traits. It ensures a consistent and
+% canonical representation of plant entities across the system.
 
+% =========================================================
+% PLANT REGISTRY
+% =========================================================
 
-% =========================
-% LEGUMES
-% =========================
-plant(bean).
 plant(bean_bush).
 plant(bean_pole).
 plant(pea).
 plant(pea_english).
 plant(peanut).
 
-% =========================
-% FRUITING CROPS
-% =========================
 plant(tomato).
 plant(melons).
 plant(watermelon).
 plant(squash).
 plant(gourd).
 
-% =========================
-% ROOT CROPS
-% =========================
 plant(carrot).
 plant(beets).
 plant(radish).
@@ -30,11 +46,8 @@ plant(turnip).
 plant(sweet_potato).
 plant(taro).
 plant(horseradish).
-plant(potato). % Added
+plant(potato).
 
-% =========================
-% LEAFY GREENS
-% =========================
 plant(lettuce).
 plant(spinach).
 plant(cabbage).
@@ -47,9 +60,6 @@ plant(swiss_chard).
 plant(water_spinach).
 plant(purslane).
 
-% =========================
-% ALLIUMS
-% =========================
 plant(onion).
 plant(chives).
 plant(garlic).
@@ -57,9 +67,6 @@ plant(green_onion).
 plant(leek).
 plant(shallot).
 
-% =========================
-% VEGETABLES (GENERAL)
-% =========================
 plant(celery).
 plant(asparagus).
 plant(artichokes).
@@ -72,18 +79,12 @@ plant(chili_pepper).
 plant(okra).
 plant(sweet_corn).
 
-% =========================
-% BRASSICAS (subset already included above)
-% =========================
 plant(broccoli).
 plant(brussels_sprout).
 plant(cauliflower).
 plant(kohlrabi).
 plant(mustard).
 
-% =========================
-% HERBS
-% =========================
 plant(basil).
 plant(parsley).
 plant(rosemary).
@@ -108,10 +109,6 @@ plant(catnip).
 plant(lemongrass).
 plant(tansy).
 
-
-% =========================
-% GRAIN CROPS
-% =========================
 plant(amaranth).
 plant(corn).
 plant(rice).
@@ -121,14 +118,9 @@ plant(spelt).
 plant(sorghum).
 plant(sugarcane).
 
-
-% =========================
-% RHIZOMES (INDONESIAN SPICES)
-% =========================
 plant(ginger).
 plant(turmeric).
 plant(galangal).
-alias(lengkuas, galangal).
 plant(lesser_galangal).
 plant(fingerroot).
 plant(temulawak).
@@ -137,10 +129,6 @@ plant(temu_kunci).
 plant(temu_mangga).
 plant(kencur).
 
-
-% =========================
-% EDIBLE FLOWERS (EXTENDED)
-% =========================
 plant(calendula).
 plant(viola).
 plant(rose).
@@ -160,89 +148,73 @@ plant(pyrethrum).
 plant(tulip).
 plant(dahlia).
 
-% =========================
-% FRUITS
-% =========================
 plant(grapes).
 plant(apple).
 plant(pear).
 
-
-% =========================
-% BERRIES
-% =========================
 plant(strawberries).
 plant(blackberries).
 plant(blueberries).
 plant(raspberries).
 
-% =========================
-% SPICES
-% =========================
 plant(cinnamon).
 plant(nutmeg).
 plant(black_pepper).
 plant(white_pepper).
 plant(juniper).
 
-% =========================
-% ORNAMENTALS / FRUIT TREES
-% =========================
-plant(privet). % Added
-plant(lilac). % Added
-plant(viburnum). % Added
-plant(prunus). % Added
-plant(phlox). % Added
-plant(cotoneaster). % Added
-plant(buxus). % Added
-plant(rhododendron). % Added
-plant(yew). % Added
-plant(cyclamen). % Added
+plant(privet).
+plant(lilac).
+plant(viburnum).
+plant(prunus).
+plant(phlox).
+plant(cotoneaster).
+plant(buxus).
+plant(rhododendron).
+plant(yew).
+plant(cyclamen).
 
-% =========================
-% WEEDS / INVASIVE
-% =========================
 plant(johnson_grass).
 
 
-% ====================================================================================================
-% PLANT FUNCTIONAL TRAITS
-% ====================================================================================================
+% =========================================================
+% ALIASES
+% =========================================================
 
-% Pest repellents
-function(lemongrass, pest_repellent).
-function(catnip, pest_repellent).
-function(rue, pest_repellent).
-function(tansy, pest_repellent).
-function(chives, pest_repellent).
-function(garlic, pest_repellent).
+alias(lengkuas, galangal).
 
-% Trap crops
-function(nasturtium, pest_trap).
 
-% Pollinator attractors
-function(borage, pollinator_attractor).
-function(clover, pollinator_attractor).
-function(yarrow, pollinator_attractor).
+% =========================================================
+% ECOLOGICAL TRAITS
+% =========================================================
 
-% Soil improvers
-function(comfrey, nutrient_accumulator).
-function(bean, nitrogen_fixer).
-function(bean_bush, nitrogen_fixer).
-function(bean_pole, nitrogen_fixer).
-function(pea, nitrogen_fixer).
-function(peanut, nitrogen_fixer).
+trait(lemongrass, pest_repellent).
+trait(catnip, pest_repellent).
+trait(rue, pest_repellent).
+trait(tansy, pest_repellent).
+trait(chives, pest_repellent).
+trait(garlic, pest_repellent).
 
-% Ground cover
-function(sweet_potato, ground_cover).
-function(squash, ground_cover).
+trait(nasturtium, pest_trap).
 
-% Tropical rhizomes (key for YOUR system)
-function(ginger, pest_repellent).
-function(turmeric, pest_repellent).
-function(galangal, pest_repellent).
-function(kencur, pest_repellent).
-function(temulawak, pest_repellent).
+trait(borage, pollinator_attractor).
+trait(clover, pollinator_attractor).
+trait(yarrow, pollinator_attractor).
 
-% Aggressive / invasive
-function(johnson_grass, invasive).
+trait(comfrey, nutrient_accumulator).
+
+trait(bean_bush, nitrogen_fixer).
+trait(bean_pole, nitrogen_fixer).
+trait(pea, nitrogen_fixer).
+trait(peanut, nitrogen_fixer).
+
+trait(sweet_potato, ground_cover).
+trait(squash, ground_cover).
+
+trait(ginger, pest_repellent).
+trait(turmeric, pest_repellent).
+trait(galangal, pest_repellent).
+trait(kencur, pest_repellent).
+trait(temulawak, pest_repellent).
+
+trait(johnson_grass, invasive).

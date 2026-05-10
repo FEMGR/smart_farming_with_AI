@@ -1,5 +1,26 @@
-
-#logic_companion_planting/data/insect_fact.pl
+% FILE: logic_companion_planting/data/disease_fact.pl
+%
+% PURPOSE:
+% This file contains facts related to plant diseases within the Smart Farming System's
+% companion planting logic. It defines various diseases, their host plants, symptoms,
+% and recommended treatments. This knowledge base helps in identifying plant health issues
+% and suggesting appropriate interventions, potentially influencing companion planting advice.
+%
+% PREDICATES DEFINED:
+% - disease(DiseaseName, HostPlantOrFamily, Type): Declares a disease, its primary host, and type (e.g., fungal, pest).
+% - symptom(DiseaseName, Symptom): Associates a specific symptom with a disease.
+% - treatment(DiseaseName, TreatmentAction, Confidence): Recommends a treatment for a disease with a confidence level.
+% - disease_host_treatment(DiseaseName, HostPlantOrFamily, TreatmentAction): A specific format for RHS-sourced data.
+%
+% RELATED MODULES:
+% - `plant_fact.pl`: Provides the canonical list of plant names that can be hosts.
+% - `rules/companion_rules.pl`: Utilizes these facts for inference regarding disease prevention and management.
+%
+% USAGE:
+% This file is consulted by the reasoning engine to diagnose plant diseases, understand
+% their characteristics, and propose solutions, which can then be integrated into
+% companion planting strategies (e.g., recommending plants that deter certain diseases).
+%
 
 % -----------------------------
 % DISEASE KNOWLEDGE BASE
