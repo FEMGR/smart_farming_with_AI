@@ -35,17 +35,22 @@ Logs written to console and log file
 import logging
 import os
 
+# Determine the base directory of the project
+# This assumes logger.py is located at smart-farming-system/backend/app/core/logger.py
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+LOG_DIR = os.path.join(BASE_DIR, 'logs')
+LOG_FILE_PATH = os.path.join(LOG_DIR, 'app.log')
+
 
 def setup_logger():
-
-    if not os.path.exists("logs"):
-        os.makedirs("logs")
+    # Create the logs directory if it doesn't exist
+    if not os.path.exists(LOG_DIR):
+        os.makedirs(LOG_DIR)
 
     logger = logging.getLogger("smart_farming")
     logger.setLevel(logging.INFO)
 
     if not logger.handlers:
-
         formatter = logging.Formatter(
             "%(asctime)s - %(levelname)s - %(name)s - %(message)s"
         )
@@ -53,7 +58,7 @@ def setup_logger():
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(formatter)
 
-        file_handler = logging.FileHandler("logs/app.log")
+        file_handler = logging.FileHandler(LOG_FILE_PATH)
         file_handler.setFormatter(formatter)
 
         logger.addHandler(console_handler)
