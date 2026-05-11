@@ -91,7 +91,7 @@ logger.info("Starting Smart Farming API")
 # ===============================
 # DATABASE INIT
 # ===============================
-logger.info("Using DB:", engine.url)
+logger.info(f"Using DB: {engine.url}") # Corrected to f-string
 Base.metadata.create_all(bind=engine)
 
 # ===============================

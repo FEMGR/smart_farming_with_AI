@@ -15,7 +15,7 @@ Architecture Role:
 - Bridges client requests with species service logic
 
 Layer Interaction:
-- Communicates with: Services (plant_service), Database (via dependency)
+- Communicates with: Services (perenual_service), Database (via dependency)
 - Called by: Client applications (frontend, API consumers)
 
 Data Flow:
@@ -39,7 +39,7 @@ from typing import List
 
 from app.database.db import get_db
 from app.schemas.species_schema import SpeciesSuggestion
-from app.services.plant_service import suggest_species
+from app.services.perenual_service import suggest_species
 
 router = APIRouter(
     prefix="/species",
@@ -61,5 +61,3 @@ def suggest_species_route(
         return []
 
     return suggest_species(db, query)
-
-

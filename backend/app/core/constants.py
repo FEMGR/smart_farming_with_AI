@@ -36,3 +36,10 @@ PLANT_TYPES = ["fruit", "vegetable", "flower", "herb", "evergreen", "succulent"]
 # Default values
 DEFAULT_PLANT_TYPE = "vegetable"
 DEFAULT_WATERING_INTERVAL = 4
+
+# API Cooldown
+COOLDOWN_SECONDS = 5
+
+# In-memory Cache settings
+DEFAULT_TTL = 60 * 60  # 1 hour
+MAX_CACHE_SIZE = 500
