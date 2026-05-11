@@ -41,6 +41,10 @@ Notes:
 
 import os
 from dotenv import load_dotenv
+from app.core.logger import setup_logger
+
+# Initialize logger
+logger = setup_logger()
 
 # Load environment variables
 load_dotenv()
@@ -95,7 +99,7 @@ API_VERSION = os.getenv("API_VERSION", "v1")
 # --------------------------------------------------
 
 if DEBUG:
-    print("Configuration Loaded")
-    print("Database: Connected")
-    print("Debug Mode:", DEBUG)
-    print("App:", APP_NAME)
+    logger.info("Configuration Loaded")
+    logger.info("Database: Connected")
+    logger.info(f"Debug Mode: {DEBUG}")
+    logger.info(f"App: {APP_NAME}")

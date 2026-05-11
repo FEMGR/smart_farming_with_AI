@@ -37,6 +37,9 @@ Best match selected or fallback returned
 
 #app/utils/species_matching.py
 from rapidfuzz import fuzz
+from app.core.logger import setup_logger
+
+logger = setup_logger()
 
 
 # Data cleaning & reformating
@@ -128,9 +131,9 @@ def rank_species_matches(query: str, candidates: list, plant_type: str = None):
     scored.sort(key=lambda x: x["score"], reverse=True)
 
     #DEBUG
-    print(f"\n[DEBUG] Ranking for query: '{query}'")
+    logger.info(f"\n[DEBUG] Ranking for query: '{query}'")
     for s in scored[:5]:
-        print(f"  → {s['common_name']} ({s['scientific_name']}) | score={s['score']} | {s['source']}")
+        logger.info(f"  → {s['common_name']} ({s['scientific_name']}) | score={s['score']} | {s['source']}")
 
     return scored
 
@@ -145,14 +148,14 @@ def select_best_match(query: str, candidates: list, threshold: int = 70, plant_t
     best = ranked[0]
     score = best.get("score", 0)
 
-    print(f"[DEBUG] Best match: {best['common_name']} (score={score})")
+    logger.info(f"[DEBUG] Best match: {best['common_name']} (score={score})")
 
     if score >= threshold:
         return best
 
     if score >= 50 and len(query) > 5:
-        print("[DEBUG] Using fallback match")
+        logger.info("[DEBUG] Using fallback match")
         return best
 
-    print("[DEBUG] No confident match")
+    logger.info("[DEBUG] No confident match")
     return None

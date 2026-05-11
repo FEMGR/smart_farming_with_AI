@@ -1,7 +1,7 @@
 from unittest.mock import patch
 
 
-@patch("app.services.perenual_service.search_plant_species")
+@patch("app.services.perenual_service.search_plant_species_api")
 def test_create_plant_with_perenual_match(mock_search, client, token):
     mock_search.return_value = [
         {
