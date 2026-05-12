@@ -27,19 +27,52 @@ Values applied in validation or default assignment
 Consistent behavior across system
 """
 
-
 # app/core/constants.py
+from pathlib import Path
 
-# Central list of allowed plant types
-PLANT_TYPES = ["fruit", "vegetable", "flower", "herb", "evergreen", "succulent"]
+# =========================================
+# PLANT TYPES
+# =========================================
 
-# Default values
+PLANT_TYPES = [
+    "fruit",
+    "vegetable",
+    "flower",
+    "herb",
+    "evergreen",
+    "succulent"
+]
+
 DEFAULT_PLANT_TYPE = "vegetable"
+
 DEFAULT_WATERING_INTERVAL = 4
 
-# API Cooldown
-COOLDOWN_SECONDS = 5
+# =========================================
+# API SETTINGS
+# =========================================
 
-# In-memory Cache settings
+COOLDOWN_SECONDS = 5 # Cooldown between API calls for rate limiting
+API_REQUEST_TIMEOUT_SECONDS = 60 # Timeout for a single API request
+
+# =========================================
+# IN-MEMORY CACHE
+# =========================================
+
 DEFAULT_TTL = 60 * 60  # 1 hour
 MAX_CACHE_SIZE = 500
+
+# =========================================
+# SPECIES SNAPSHOT SETTINGS
+# =========================================
+
+SNAPSHOT_DIR = Path("cache/species_snapshots")
+SNAPSHOT_MAX_AGE_HOURS = 6
+MAX_SNAPSHOT_FILES = 50
+
+# =========================================
+# SPECIES SUGGESTION CACHE SETTINGS
+# =========================================
+
+SUGGESTION_CACHE_FILE = "temp/species_suggestions.json"
+SUGGESTION_MAX_AGE_SECONDS = 60 * 60 * 24
+MAX_SUGGESTION_ENTRIES = 15
