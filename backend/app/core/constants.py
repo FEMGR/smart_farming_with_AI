@@ -65,14 +65,14 @@ MAX_CACHE_SIZE = 500
 # SPECIES SNAPSHOT SETTINGS
 # =========================================
 
-SNAPSHOT_DIR = Path("cache/species_snapshots")
-SNAPSHOT_MAX_AGE_HOURS = 6
-MAX_SNAPSHOT_FILES = 50
+SNAPSHOT_DIR = Path("backend/cache/species_snapshots") # Corrected path
+SNAPSHOT_MAX_AGE_HOURS = 5
+MAX_SNAPSHOT_FILES = 10
 
 # =========================================
 # SPECIES SUGGESTION CACHE SETTINGS
 # =========================================
 
-SUGGESTION_CACHE_FILE = "temp/species_suggestions.json"
+SUGGESTION_CACHE_FILE = "backend/temp/species_suggestions.json"
 SUGGESTION_MAX_AGE_SECONDS = 60 * 60 * 24
 MAX_SUGGESTION_ENTRIES = 15

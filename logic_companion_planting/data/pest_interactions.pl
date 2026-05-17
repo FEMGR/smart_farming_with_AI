@@ -62,7 +62,7 @@ deters(radish, cucumber_beetle, attra, medium).
 deters(catnip, flea_beetle, cornell, medium).
 deters(leek, carrot_rust_fly, attra, high).
 deters(horseradish, colorado_potato_beetle, attra, medium).
-deters(chives, aphid, cornell, high).
+deters(chive, aphid, cornell, high).
 deters(tomato, asparagus_beetle, cornell, high).
 deters(thyme, armyworm, attra, medium).
 
@@ -73,9 +73,9 @@ deters(thyme, armyworm, attra, medium).
 
 % --- Scent Masking & Deterrents ---
 deters(onion, carrot_fly, ua, high).
-deters(chives, aphid, ua, high).
-deters(chives, slug, ua, medium).
-deters(chives, snail, ua, medium).
+deters(chive, aphid, ua, high).
+deters(chive, slug, ua, medium).
+deters(chive, snail, ua, medium).
 
 % --- General Pest Protection ---
 deters(marigold, nematode, ua, high).
@@ -89,4 +89,4 @@ attracts_beneficial(chamomile, wasp, ua, medium).
 attracts_beneficial(carrot, ladybug, ua, high). % Carrots in flower
 
 % --- Disease Suppression ---
-prevents(chives, apple_scab, ua, high).
+prevents(chive, apple_scab, ua, high).

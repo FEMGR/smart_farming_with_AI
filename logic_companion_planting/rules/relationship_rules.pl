@@ -77,43 +77,27 @@ expanded_conflict(X, Y, Source, Confidence) :-
     member_of(Y, GroupB).
 
 % =========================================================
-% SAFE ECOLOGICAL RELATIONSHIPS
+% SAFE COMPANION (WITH NORMALIZATION WRAPPER)
 % =========================================================
 
 safe_companion(X, Y, Source, Confidence) :-
-
     normalize(X, NX),
     normalize(Y, NY),
+    safe_companion_normalized(NX, NY, Source, Confidence).
 
-    (
-        direct_support(
-            NX,
-            NY,
-            Source,
-            Confidence
-        )
+% ---------------------------------------------------------
 
-        ;
-
-        expanded_support(
-            NX,
-            NY,
-            Source,
-            Confidence
-        )
-    ),
-
+safe_companion_normalized(NX, NY, Source, Confidence) :-
     NX \= NY,
-
+    \+ is_unknown(NX),
+    \+ is_unknown(NY),
+    (
+        direct_support(NX, NY, Source, Confidence)
+        ;
+        expanded_support(NX, NY, Source, Confidence)
+    ),
     \+ direct_conflict(NX, NY),
-
-    \+ expanded_conflict(
-        NX,
-        NY,
-        _,
-        _
-    ).
-
+    \+ expanded_conflict(NX, NY, _, _).
 
 % =========================================================
 % DIRECT CONFLICT CHECK
@@ -134,17 +118,13 @@ good_neighbor(X, Y) :-
     safe_companion(X, Y, _, _).
 
 should_plant_with(X, Y) :-
-
     good_neighbor(X, Y).
 
 bba(X, Y) :-
     expanded_conflict(X, Y, _, _).
 
 should_avoid(X, Y) :-
-
     direct_conflict(X, Y).
 
 should_avoid(X, Y) :-
-
     expanded_conflict(X, Y, _, _).
-

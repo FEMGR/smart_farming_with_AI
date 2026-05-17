@@ -1,13 +1,11 @@
 """
-Service layer for managing a file-based cache of species search suggestions.
+Service layer for saving a file-based cache of each suggested species returned with score > 50.
 
 Key Point:
-Implements a temporary caching mechanism for search queries to reduce redundant
-API calls for common searches and improve user experience by providing faster
-suggestion results.
+Implements a temporary caching mechanism for returned species from search queries to reduce redundant
 
 Responsibilities:
-- Store search query results (suggestions) in a local JSON file.
+- Store search query results (suggestions) in a local JSON file for each species ID.
 - Retrieve cached suggestions based on a query.
 - Implement cache expiration for individual entries.
 - Manage the overall size of the cache file to prevent excessive growth.
@@ -47,18 +45,13 @@ from app.core.constants import SUGGESTION_CACHE_FILE, SUGGESTION_MAX_AGE_SECONDS
 logger = setup_logger()
 
 # =====================================
-# CONFIGURATION - REMOVED, NOW IN app.core.constants
+# CACHE MANAGEMENT
 # =====================================
-# """
-# The file path for the JSON cache storing species suggestions.
-# """
 def ensure_cache_dir():
     """
     Ensures that the directory for the cache file exists.
     Creates the 'temp' directory if it does not already exist.
     """
-    # The directory for SUGGESTION_CACHE_FILE is 'temp/', so we ensure that exists.
-    # We extract the directory from the full file path.
     cache_dir = os.path.dirname(SUGGESTION_CACHE_FILE)
     if cache_dir: # Only create if cache_dir is not empty (i.e., not just a filename)
         os.makedirs(cache_dir, exist_ok=True)
@@ -67,17 +60,14 @@ def ensure_cache_dir():
 def load_suggestion_cache() -> Dict:
     """
     Loads the entire suggestion cache from the CACHE_FILE.
-
     Returns:
         A dictionary representing the loaded cache. Returns an empty dictionary
         if the file does not exist or an error occurs during loading.
     """
     ensure_cache_dir()
-
     if not os.path.exists(SUGGESTION_CACHE_FILE):
         logger.info(f"[SUGGESTION CACHE] Cache file not found at {SUGGESTION_CACHE_FILE}. Returning empty cache.")
         return {}
-
     try:
         with open(SUGGESTION_CACHE_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -93,16 +83,13 @@ def load_suggestion_cache() -> Dict:
 def save_suggestion_cache(data: Dict):
     """
     Saves the current state of the suggestion cache to the CACHE_FILE.
-
     Args:
         data: The dictionary representing the cache to be saved.
     """
     ensure_cache_dir()
-
     try:
         with open(SUGGESTION_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-
     except Exception as e:
         logger.error(f"[SUGGESTION CACHE] Failed to save cache to {SUGGESTION_CACHE_FILE}: {e}")
 
@@ -111,12 +98,8 @@ def cleanup_cache(cache: Dict) -> Dict:
     """
     Cleans up the suggestion cache by removing expired entries and
     enforcing the maximum number of entries.
-
-    Args:
-        cache: The current cache dictionary.
-
-    Returns:
-        A new dictionary with cleaned-up cache entries.
+    Args: The current cache dictionary.
+    Returns:A new dictionary with cleaned-up cache entries.
     """
     now = time.time()
     cleaned = {}
@@ -148,10 +131,6 @@ def cache_species_suggestions(
 ):
     """
     Adds or updates a list of species suggestions for a given query in the cache.
-
-    Args:
-        query: The search query string.
-        suggestions: A list of dictionaries, each representing a species suggestion.
     """
     cache = load_suggestion_cache()
     cache = cleanup_cache(cache)  # Clean up before adding new entry
@@ -173,13 +152,8 @@ def get_cached_species_suggestions(
 ) -> Optional[List[Dict]]:
     """
     Retrieves cached species suggestions for a given query.
-
-    Args:
-        query: The search query string.
-
-    Returns:
-        A list of dictionaries representing the cached suggestions if found and valid,
-        otherwise None.
+    Args:The search query string.
+    Returns: A dictionaries representing the cached suggestions if found and valid,otherwise None.
     """
     cache = load_suggestion_cache()
     item = cache.get(query.lower())

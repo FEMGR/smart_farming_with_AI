@@ -43,6 +43,8 @@
 % ua
 % traditional
 % =========================================================
+:- discontiguous beneficial_relation/4.
+:- discontiguous harmful_relation/4.
 
 % =========================================================
 % ALLIUM (ONION, GARLIC, CHIVE)
@@ -108,7 +110,7 @@ harmful_relation(bean, gladiolus, attra, 3).
 beneficial_relation(bean_bush, potato, attra, 3).
 beneficial_relation(bean_bush, cucumber, attra, 3).
 beneficial_relation(bean_bush, corn, attra, 3).
-beneficial_relation(bean_bush, strawberries, attra, 3).
+beneficial_relation(bean_bush, strawberry, attra, 3).
 beneficial_relation(bean_bush, celery, attra, 3).
 beneficial_relation(bean_bush, summer_savory, attra, 3).
 
@@ -125,7 +127,7 @@ beneficial_relation(bean_pole, summer_savory, attra, 3).
 beneficial_relation(bean_pole, radish, attra, 3).
 
 harmful_relation(bean_pole, allium_family, attra, 3).
-harmful_relation(bean_pole, beets, attra, 3).
+harmful_relation(bean_pole, beet, attra, 3).
 harmful_relation(bean_pole, kohlrabi, attra, 3).
 harmful_relation(bean_pole, sunflower, attra, 3).
 
@@ -134,21 +136,22 @@ harmful_relation(bean_pole, sunflower, attra, 3).
 % BEETS
 % =========================================================
 
-beneficial_relation(beets, brassica_family, attra, 3).
-beneficial_relation(beets, allium_family, attra, 3).
-beneficial_relation(beets, lettuce, attra, 3).
+beneficial_relation(beet, brassica_family, attra, 3).
+beneficial_relation(beet, allium_family, attra, 3).
+beneficial_relation(beet, lettuce, attra, 3).
 
-harmful_relation(beets, bean_pole, attra, 3).
+harmful_relation(beet, bean_pole, attra, 3).
 
 
 % =========================================================
 % BRASSICA (CABBAGE, BROCCOLI, KALE)
 % =========================================================
 
-beneficial_relation(brassica, sage, cornell, 3).
-beneficial_relation(brassica, mint, ua, 2).
-
-harmful_relation(brassica, strawberries, traditional, 1).
+beneficial_relation(brassica_family, sage, cornell, 3).
+beneficial_relation(brassica_family, mint, ua, 2).
+beneficial_relation(brassica_family, nasturtium, traditional, 2). % Added for broccoli
+harmful_relation(brassica_family, strawberry, traditional, 1).
+harmful_relation(brassica_family, tomato, traditional, 2). % Added for broccoli
 
 
 % =========================================================
@@ -163,7 +166,7 @@ beneficial_relation(cabbage, spinach, attra, 3).
 
 harmful_relation(cabbage, dill, attra, 3).
 harmful_relation(cabbage, bean_pole, attra, 3).
-harmful_relation(cabbage, strawberries, attra, 3).
+harmful_relation(cabbage, strawberry, attra, 3).
 harmful_relation(cabbage, tomato, attra, 3).
 
 
@@ -227,18 +230,18 @@ harmful_relation(fennel, vegetable, attra, 3).
 beneficial_relation(lettuce, carrot, attra, 3).
 beneficial_relation(lettuce, cucumber, attra, 3).
 beneficial_relation(lettuce, radish, attra, 3).
-beneficial_relation(lettuce, strawberries, attra, 3).
+beneficial_relation(lettuce, strawberry, attra, 3).
 
 % =========================================================
-% MELONS
+% MELON
 % =========================================================
 
-beneficial_relation(melons, amaranth, attra, 3).
-beneficial_relation(melons, bean, attra, 3).
-beneficial_relation(melons, chamomile, attra, 3).
-beneficial_relation(melons, corn, attra, 3).
+beneficial_relation(melon, amaranth, attra, 3).
+beneficial_relation(melon, bean, attra, 3).
+beneficial_relation(melon, chamomile, attra, 3).
+beneficial_relation(melon, corn, attra, 3).
 
-harmful_relation(melons, brassica_family, attra, 3).
+harmful_relation(melon, brassica_family, attra, 3).
 
 % =========================================================
 % OKRA
@@ -255,7 +258,7 @@ harmful_relation(okra, pea_english, attra, 3).
 % ONION
 % =========================================================
 
-beneficial_relation(onion, beets, attra, 3).
+beneficial_relation(onion, beet, attra, 3).
 beneficial_relation(onion, brassica_family, attra, 3).
 beneficial_relation(onion, carrot, attra, 3).
 beneficial_relation(onion, lettuce, attra, 3).
@@ -318,22 +321,22 @@ harmful_relation(radish, potato, attra, 3).
 % =========================================================
 
 beneficial_relation(spinach, celery, attra, 3).
-beneficial_relation(spinach, strawberries, attra, 3).
+beneficial_relation(spinach, strawberry, attra, 3).
 
 harmful_relation(spinach, hyssop, attra, 3).
 
 
 % =========================================================
-% STRAWBERRIES
+% STRAWBERRY
 % =========================================================
 
-beneficial_relation(strawberries, borage, attra, 3).
-beneficial_relation(strawberries, bean_bush, attra, 3).
-beneficial_relation(strawberries, lettuce, attra, 3).
-beneficial_relation(strawberries, pyrethrum, attra, 3).
-beneficial_relation(strawberries, caraway, attra, 3).
+beneficial_relation(strawberry, borage, attra, 3).
+beneficial_relation(strawberry, bean_bush, attra, 3).
+beneficial_relation(strawberry, lettuce, attra, 3).
+beneficial_relation(strawberry, pyrethrum, attra, 3).
+beneficial_relation(strawberry, caraway, attra, 3).
 
-harmful_relation(strawberries, potato, attra, 3).
+harmful_relation(strawberry, potato, attra, 3).
 
 % =========================================================
 % SUNFLOWER
@@ -342,7 +345,7 @@ harmful_relation(strawberries, potato, attra, 3).
 beneficial_relation(sunflower, bean, attra, 3).
 beneficial_relation(sunflower, corn, attra, 3).
 beneficial_relation(sunflower, cucumber, attra, 3).
-beneficial_relation(sunflower, melons, attra, 3).
+beneficial_relation(sunflower, melon, attra, 3).
 beneficial_relation(sunflower, peanut, attra, 3).
 
 harmful_relation(sunflower, potato, attra, 3).
@@ -384,3 +387,10 @@ beneficial_relation(watermelon, marigold, attra, 3).
 
 harmful_relation(watermelon, potato, attra, 3).
 harmful_relation(watermelon, mustard, attra, 3).
+
+% =========================================================
+% NEWLY ADDED RELATIONSHIPS
+% =========================================================
+beneficial_relation(brassica_family, nasturtium, traditional, 2).
+harmful_relation(brassica_family, tomato, traditional, 2).
+beneficial_relation(artichoke, cabbage, traditional, 2).
