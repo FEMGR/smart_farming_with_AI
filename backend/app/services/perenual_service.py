@@ -37,21 +37,16 @@ Returned to calling service or utility
 
 #app/services/perenual_service.py
 
-import requests
-import os
 import time
-from typing import List, Any, Dict, Tuple
+from typing import List, Any, Dict, Tuple, Optional
+
+import requests
 from sqlalchemy.orm import Session
 
 from app.core.config import PERENUAL_API_KEY
 from app.core.constants import COOLDOWN_SECONDS, DEFAULT_TTL, MAX_CACHE_SIZE, API_REQUEST_TIMEOUT_SECONDS
 from app.core.logger import setup_logger
 from app.models.plant_species_cache import PlantSpeciesCache
-from app.utils.species_matching import (
-    select_best_match,
-    rank_species_matches,
-    normalize_candidate
-)
 from app.services.species_snapshot_service import (
     save_species_snapshot,
     load_species_snapshot
@@ -59,6 +54,11 @@ from app.services.species_snapshot_service import (
 from app.services.species_suggestion_cache_service import (
     cache_species_suggestions,
     get_cached_species_suggestions
+)
+from app.utils.species_matching import (
+    select_best_match,
+    rank_species_matches,
+    normalize_candidate
 )
 
 logger = setup_logger()
@@ -70,7 +70,6 @@ BASE_URL = "https://perenual.com/api/v2"
 # ===============================
 
 CACHE: Dict[str, Tuple[float, Any]] = {}
-
 
 def _get_cache(key: str):
     """Retrieve cached value if not expired."""
@@ -99,7 +98,6 @@ def _set_cache(key: str, value: Any, ttl: int = DEFAULT_TTL):
 
 # Using a simple global variable for last API call timestamp
 _last_api_call_time = 0
-
 
 # =====================================
 # SAFE FLOAT PARSER
@@ -246,51 +244,33 @@ def search_plant_species_api(query: str, limit: int = 5) -> List[Dict]:
     return results
 
 
-def get_species_details_api(species_id: int) -> Dict:
-    """Retrieve detailed plant data from Perenual API."""
-    logger.debug(f"[PERENUAL API] Attempting to get details for species_id={species_id}")
-    # =====================================
-    # TRY SNAPSHOT FIRST
-    # =====================================
+def _get_species_details_from_source(species_id: int) -> Optional[Dict]:
+    """
+    Helper to retrieve species details, checking snapshot first, then API.
+    Handles saving snapshot if API is called.
+    """
+    logger.debug(f"[PERENUAL API] Attempting to get details for species_id={species_id} from source.")
 
+    # 1. Try Snapshot
     snapshot = load_species_snapshot(species_id)
-
     if snapshot:
-        logger.info(
-            f"[PERENUAL API] Using snapshot for species_id={species_id}"
-        )
-        logger.debug(f"[PERENUAL API] Snapshot data for {species_id}: {snapshot.get('id')}")
+        logger.info(f"[PERENUAL API] Using snapshot for species_id={species_id}")
         return snapshot
 
-    # =====================================
-    # API CALL
-    # =====================================
-
+    # 2. Fallback to API
     url = f"{BASE_URL}/species/details/{species_id}"
+    params = {"key": PERENUAL_API_KEY}
+    cache_key = f"details:{species_id}" # In-memory cache key
 
-    params = {
-        "key": PERENUAL_API_KEY
-    }
-
-    cache_key = f"details:{species_id}"
-
-    api_response = _make_api_call_with_cooldown(
-        url,
-        params,
-        cache_key
-    )
-    logger.debug(f"[PERENUAL API] API response for {species_id}: {api_response.get('id') if api_response else 'None'}")
+    api_response = _make_api_call_with_cooldown(url, params, cache_key)
 
     if api_response and api_response.get("id"):
         save_species_snapshot(species_id, api_response)
         logger.info(f"[PERENUAL API] Saved new snapshot for species_id={species_id}")
-
-    logger.info(
-        f"[PERENUAL API] Details for species_id={species_id}: "
-        f"{api_response.get('id')}"
-    )
-
-    return api_response
+        return api_response
+    else:
+        logger.warning(f"[PERENUAL API] Failed to get valid details for species ID {species_id} from API.")
+        return None
 
 
 # =========================================
@@ -605,20 +585,32 @@ def get_or_create_species_cache(
     fallback_name: str = None
 ) -> PlantSpeciesCache:
     """
-    Retrieves species from DB cache or fetches from API and caches it.
+    Retrieves species from DB cache or fetches from snapshot/API and caches it.
     """
     logger.info(f"[DB CACHE] Attempting to get or create species with external_species_id={external_species_id}")
 
+    # 1. Check DB cache first
     cached = db.query(PlantSpeciesCache).filter(
         PlantSpeciesCache.external_species_id == str(external_species_id)
     ).first()
 
+    # --- BEGIN MODIFICATION ---
+    # More comprehensive needs_sync check for backfilling new columns
     needs_sync = (
         not cached or
         cached.scientific_name == "Unknown Species" or # Placeholder
-        cached.is_fruit is None or
-        cached.watering_interval_days is None
+        cached.is_fruit is None or # Original check
+        cached.watering_interval_days is None or # Original check
+        # Add checks for newly added columns that might be "empty" but not None
+        cached.description == "" or
+        cached.max_height_ft == 0.0 or
+        cached.default_image_url == "" or
+        cached.plant_type == "" or
+        cached.care_level == "" or
+        cached.sunlight_requirement == ""
+        # You can add more checks here for other specific columns if needed
     )
+    # --- END MODIFICATION ---
 
     if cached and not needs_sync:
         logger.info(f"[DB CACHE] Found species {external_species_id} in DB cache. Internal ID: {cached.id}")
@@ -626,15 +618,16 @@ def get_or_create_species_cache(
     elif cached and needs_sync:
         logger.info(f"[DB CACHE] Species {external_species_id} found but needs sync.")
     else:
-        logger.info(f"[DB CACHE] Species {external_species_id} not found in DB cache. Fetching from API.")
+        logger.info(f"[DB CACHE] Species {external_species_id} not found in DB cache. Attempting to fetch from snapshot/API.")
 
-    api_data = get_species_details_api(external_species_id)
+    # 2. If not in DB or needs sync, get data from snapshot/API
+    api_data = _get_species_details_from_source(external_species_id)
 
     # -------------------------------
-    # API FAILURE (or no valid data)
+    # DATA ACQUISITION FAILURE
     # -------------------------------
     if not api_data or not api_data.get("id"):
-        logger.warning(f"[DB CACHE] API call for species {external_species_id} failed or returned no valid data. Creating/updating placeholder.")
+        logger.warning(f"[DB CACHE] Failed to acquire valid species data for {external_species_id}. Creating/updating placeholder.")
         if cached: # Update existing placeholder
             cached.scientific_name = fallback_name or "Unknown Species"
             cached.common_name = fallback_name or "Unknown Species"
@@ -657,9 +650,9 @@ def get_or_create_species_cache(
             return new_species
 
     # -------------------------------
-    # API SUCCESS
+    # DATA ACQUISITION SUCCESS
     # -------------------------------
-    logger.info(f"[DB CACHE] API call for species {external_species_id} successful. Processing data.")
+    logger.info(f"[DB CACHE] Acquired species data for {external_species_id}. Processing data.")
     enriched = normalize_species_data(api_data)
 
     if cached:
@@ -704,7 +697,7 @@ def get_or_create_species_cache(
     else:
         logger.info(
             f"[DB CACHE] Creating new DB cached species "
-            f"{external_species_id}."
+            f"{external_species_id}. "
         )
 
         new_species = PlantSpeciesCache(
@@ -982,17 +975,15 @@ def suggest_species(
         logger.debug(f"[SUGGESTION CACHE] Processing suggestion {i+1}: ID={species_id}, Score={score}")
 
         # Only save if species_id is valid and score is > 50 or == 100
-        if species_id and (score >= 50 ):
+        if species_id and (score is not None and (score > 50 or score == 100)):
             logger.debug(f"[SUGGESTION CACHE] Score {score} meets criteria for species ID {species_id}. Attempting to get details.")
-            details = get_species_details_api(species_id)
+            # Directly use the new helper to get details, which handles snapshot/API
+            details = _get_species_details_from_source(species_id)
 
             if details and details.get("id"):
-                save_species_snapshot(
-                    species_id,
-                    details
-                )
+                # save_species_snapshot is already called inside _get_species_details_from_source if API is hit
                 saved_count += 1
-                logger.debug(f"[SUGGESTION CACHE] Successfully saved snapshot for species ID {species_id}.")
+                logger.debug(f"[SUGGESTION CACHE] Successfully processed details for species ID {species_id}.")
             else:
                 logger.warning(f"[SUGGESTION CACHE] Failed to get valid details for species ID {species_id}. Snapshot not saved.")
         else:

@@ -4,11 +4,14 @@
 % SMART FARMING KNOWLEDGE ENGINE LOADER
 % =========================================================
 
-
-
 load_all :-
 
-    writeln('Loading Smart Farming Knowledge Base...'),
+    (   current_prolog_flag(argv, Argv),
+        member('--quiet', Argv)
+    ->  true
+    ;   writeln('Loading Smart Farming Knowledge Base...')
+    ),
+
     % =====================================================
     % BASE ONTOLOGY
     % =====================================================
@@ -21,7 +24,7 @@ load_all :-
     % =====================================================
     % CORE FACTUAL DATA
     % =====================================================
-
+    consult('data/alias_fact.pl'),
     consult('data/plant_fact.pl'),
     consult('data/insect_fact.pl'),
     consult('data/disease_fact.pl'),
@@ -52,4 +55,9 @@ load_all :-
     consult('rules/environment_rules.pl'),
     consult('rules/diagnostic_rules.pl'),
     consult('rules/recommendation_rules.pl'),
-    writeln('Knowledge Base Loaded Successfully.').
+
+    (   current_prolog_flag(argv, Argv),
+        member('--quiet', Argv)
+    ->  true
+    ;   writeln('Knowledge Base Loaded Successfully.')
+    ).

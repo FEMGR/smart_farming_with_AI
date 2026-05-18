@@ -40,8 +40,11 @@ backend/Dockerfile
 backend/entrypoint.sh
 backend/docker-compose.yml
 
+
 #Prolog
 logic_companion_planting/bin/
 *.qlf
 
 scripts/
+backend/temp
+backend/cache

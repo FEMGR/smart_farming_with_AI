@@ -29,6 +29,11 @@ Consistent behavior across system
 
 # app/core/constants.py
 from pathlib import Path
+import os
+
+# Determine the absolute path to the project root
+# This assumes constants.py is in backend/app/core/
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent # smart-farming-system/
 
 # =========================================
 # PLANT TYPES
@@ -51,7 +56,7 @@ DEFAULT_WATERING_INTERVAL = 4
 # API SETTINGS
 # =========================================
 
-COOLDOWN_SECONDS = 5 # Cooldown between API calls for rate limiting
+COOLDOWN_SECONDS = 7 # Cooldown between API calls for rate limiting
 API_REQUEST_TIMEOUT_SECONDS = 60 # Timeout for a single API request
 
 # =========================================
@@ -65,14 +70,14 @@ MAX_CACHE_SIZE = 500
 # SPECIES SNAPSHOT SETTINGS
 # =========================================
 
-SNAPSHOT_DIR = Path("cache/species_snapshots")
-SNAPSHOT_MAX_AGE_HOURS = 6
-MAX_SNAPSHOT_FILES = 50
+SNAPSHOT_DIR = BASE_DIR / "backend" / "cache" / "species_snapshots"
+SNAPSHOT_MAX_AGE_HOURS = 5
+MAX_SNAPSHOT_FILES = 10
 
 # =========================================
 # SPECIES SUGGESTION CACHE SETTINGS
 # =========================================
 
-SUGGESTION_CACHE_FILE = "temp/species_suggestions.json"
+SUGGESTION_CACHE_FILE = BASE_DIR / "backend" / "temp" / "species_suggestions.json"
 SUGGESTION_MAX_AGE_SECONDS = 60 * 60 * 24
 MAX_SUGGESTION_ENTRIES = 15

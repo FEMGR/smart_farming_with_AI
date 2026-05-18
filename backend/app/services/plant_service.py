@@ -41,6 +41,8 @@ from app.schemas.plant_schema import PlantCreate, PlantUpdate
 from app.core.exceptions import NotFoundError, PermissionDeniedError
 from app.models.plant_species_cache import PlantSpeciesCache
 from app.core.logger import setup_logger
+from app.services.prolog.prolog_service import get_recommendations, get_companion_suggestions # Import get_companion_suggestions
+from app.utils.prolog_normalizer import to_prolog_atom
 
 # Import species-related services from perenual_service
 from app.services.perenual_service import (
@@ -250,3 +252,51 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
     db.refresh(new_plant)
 
     return _attach_metadata(new_plant)
+
+# ===============================
+# Companion Planting Reccomendation
+# ===============================
+def get_companion_recommendations(db: Session, user_id: int):
+
+    plants = db.query(Plant).options(
+        joinedload(Plant.species)
+    ).filter(
+        Plant.user_id == user_id
+    ).all()
+
+    # Normalize and deduplicate plant names for Prolog
+    atoms = get_unique_prolog_atoms(plants)
+
+    logger.info(f"[PROLOG INPUT] {atoms}")
+
+    # Get interactions among existing plants
+    existing_interactions = get_recommendations(atoms)
+
+    # Get suggestions for new companion plants
+    new_suggestions = get_companion_suggestions(atoms)
+
+    # Combine results
+    return {
+        "existing_plant_interactions": existing_interactions,
+        "new_companion_suggestions": new_suggestions
+    }
+
+
+def get_unique_prolog_atoms(plants):
+    atoms = set()
+
+    for plant in plants:
+        plant_data = {
+            "name": plant.name,
+            "species": {
+                "common_name": plant.species.common_name if plant.species else None,
+                "scientific_name": plant.species.scientific_name if plant.species else None,
+            } if plant.species else None
+        }
+
+        atom = to_prolog_atom(plant_data)
+
+        if atom:
+            atoms.add(atom)
+
+    return list(atoms)

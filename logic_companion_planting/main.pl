@@ -2,112 +2,118 @@
 
 :- ['load.pl'].
 
-main :-
+
+write_list([]).
+write_list([X]) :-
+    write(X).
+write_list([X | Rest]) :-
+    write(X),
+    write(','),
+    write_list(Rest).
+
+% New predicate for writing lists of atoms (single plants)
+write_atom_list([]).
+write_atom_list([X]) :-
+    write(X).
+write_atom_list([X | Rest]) :-
+    write(X),
+    write(','),
+    write_atom_list(Rest).
+
+% -------------------------------------
+% UNKNOWN FILTER HELPER
+% -------------------------------------
+
+is_unknown(unknown(_)).
+
+
+recommend_all(InputList) :-
     load_all,
-    run_demo.
 
-:- initialization(main).
 
-% =========================================================
-% SAMPLE QUERIES
-% =========================================================
+    % -------------------------------------
+    % NORMALIZE INPUT
+    % -------------------------------------
 
-run_demo :-
+    maplist(normalize, InputList, Normalized),
+    exclude(is_unknown, Normalized, CleanList),
 
-    writeln('====================================='),
-    writeln('SMART FARMING RECOMMENDATION ENGINE'),
-    writeln('====================================='),
-
-    nl,
-
-    % =====================================================
-    % RECOMMENDED COMPANIONS
-    % =====================================================
-
-    writeln('Recommended companions for tomato:'),
+    % -------------------------------------
+    % GOOD PAIRS
+    % -------------------------------------
 
     (
-        setof(
-            (Plant, Reason),
-            recommended_companion(
-                tomato,
-                Plant,
-                Reason
+        setof(X-Y,
+            (
+                member(X, CleanList),
+                member(Y, CleanList),
+                X @< Y,
+                should_plant_with(X, Y)
             ),
-            Recommendations
-        ),
-
-        forall(
-            member((Plant, Reason), Recommendations),
-            (
-                write('- '),
-                write(Plant),
-                write(' : '),
-                writeln(Reason)
-            )
+            GoodPairs
         )
-
-        ;
-
-        writeln('No recommendations found.')
+    -> true ; GoodPairs = []
     ),
 
-    nl,
-
-    % =====================================================
-    % PLANTS TO AVOID
-    % =====================================================
-
-    writeln('Plants tomato should avoid:'),
+    % -------------------------------------
+    % BAD PAIRS
+    % -------------------------------------
 
     (
-        setof(
-            BadPlant,
-            should_avoid(tomato, BadPlant),
-            BadPlants
-        ),
-
-        forall(
-            member(BadPlant, BadPlants),
+        setof(X-Y,
             (
-                write('- '),
-                writeln(BadPlant)
-            )
+                member(X, CleanList),
+                member(Y, CleanList),
+                X @< Y,
+                should_avoid(X, Y)
+            ),
+            BadPairs
         )
-
-        ;
-
-        writeln('No conflicts detected.')
+    -> true ; BadPairs = []
     ),
 
-    nl,
+    % -------------------------------------
+    % OUTPUT
+    % -------------------------------------
 
-    % =====================================================
-    % ECOLOGICAL RISKS
-    % =====================================================
+    write('GOOD:'), write_list(GoodPairs), nl,
 
-    writeln('Plants currently at ecological risk:'),
+    write('BAD:'), write_list(BadPairs), nl.
 
-    (
-        setof(
-            Plant,
-            at_risk(Plant),
-            Risks
+
+% -------------------------------------
+% SUGGEST COMPANIONS
+% -------------------------------------
+
+suggest_companions(InputList) :-
+    load_all,
+    maplist(normalize, InputList, NormalizedInput),
+    exclude(is_unknown, NormalizedInput, CleanInput),
+
+    % Get all known plants from the knowledge base
+    (setof(P, plant(P), AllKnownPlants) -> true ; AllKnownPlants = []),
+
+    % Find good companions for each plant in CleanInput
+    (setof(ExistingPlant-GoodCompanion,
+        (Source, Confidence)^( % Quantify Source and Confidence
+            member(ExistingPlant, CleanInput),
+            member(GoodCompanion, AllKnownPlants),
+            \+ member(GoodCompanion, CleanInput), % Ensure it's not already in the input list
+            should_plant_with(ExistingPlant, GoodCompanion)
         ),
+        GoodSuggestions
+    ) -> true ; GoodSuggestions = []),
 
-        forall(
-            member(Plant, Risks),
-            (
-                write('- '),
-                writeln(Plant)
-            )
-        )
+    % Find bad companions for each plant in CleanInput
+    (setof(ExistingPlant-BadCompanion,
+        (Source, Confidence)^( % Quantify Source and Confidence
+            member(ExistingPlant, CleanInput),
+            member(BadCompanion, AllKnownPlants),
+            \+ member(BadCompanion, CleanInput), % Ensure it's not already in the input list
+            should_avoid(ExistingPlant, BadCompanion)
+        ),
+        BadSuggestions
+    ) -> true ; BadSuggestions = []),
 
-        ;
-
-        writeln('No ecological risks detected.')
-    ),
-
-    nl,
-
-    writeln('Done.').
+    write('SUGGEST_GOOD:'), write_list(GoodSuggestions), nl,
+    write('SUGGEST_BAD:'), write_list(BadSuggestions), nl.

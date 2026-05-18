@@ -140,7 +140,8 @@ def rank_species_matches(query: str, candidates: list, plant_type: str = None):
 
 # pick best (used for auto-selection)
 def select_best_match(query: str, candidates: list, threshold: int = 70, plant_type: str = None):
-    ranked = rank_species_matches(query, candidates, plant_type=plant_type)
+    # The 'candidates' list is already expected to be ranked from suggest_species
+    ranked = candidates
 
     if not ranked:
         return None

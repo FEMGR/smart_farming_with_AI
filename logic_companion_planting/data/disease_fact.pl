@@ -22,6 +22,10 @@
 % companion planting strategies (e.g., recommending plants that deter certain diseases).
 %
 
+:- discontiguous disease/3.
+:- discontiguous symptom/2.
+:- discontiguous treatment/3.
+
 % -----------------------------
 % DISEASE KNOWLEDGE BASE
 % -----------------------------

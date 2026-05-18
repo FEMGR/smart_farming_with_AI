@@ -41,25 +41,25 @@ member_of(peanut, legume_family).
 % =========================================
 
 member_of(tomato, fruiting_crop).
-member_of(peppers, fruiting_crop).
+member_of(pepper, fruiting_crop).
 member_of(eggplant, fruiting_crop).
 member_of(cucumber, fruiting_crop).
-member_of(melons, fruiting_crop).
+member_of(melon, fruiting_crop).
 member_of(watermelon, fruiting_crop).
 member_of(squash, fruiting_crop).
-member_of(pumpkins, fruiting_crop).
-member_of(gourds, fruiting_crop).
+member_of(pumpkin, fruiting_crop).
+member_of(gourd, fruiting_crop).
 member_of(okra, fruiting_crop).
 
 % =========================================
 % FRUITS
 % =========================================
 
-member_of(melons, fruit).
+member_of(melon, fruit).
 member_of(watermelon, fruit).
 member_of(cucumber, fruit).
-member_of(grapes, fruit).
-member_of(blackberries, fruit).
+member_of(grape, fruit).
+member_of(blackberry, fruit).
 
 % =========================================
 % LEAFY GREENS
@@ -72,7 +72,7 @@ member_of(kale, leafy_green).
 member_of(arugula, leafy_green).
 member_of(bok_choy, leafy_green).
 member_of(choy_sum, leafy_green).
-member_of(mustard_greens, leafy_green).
+member_of(mustard_green, leafy_green).
 member_of(swiss_chard, leafy_green).
 member_of(water_spinach, leafy_green).
 
@@ -81,7 +81,7 @@ member_of(water_spinach, leafy_green).
 % =========================================
 
 member_of(onion, allium_family).
-member_of(chives, allium_family).
+member_of(chive, allium_family).
 member_of(garlic, allium_family).
 member_of(green_onion, allium_family).
 member_of(leek, allium_family).
@@ -98,7 +98,7 @@ member_of(cauliflower, brassica_family).
 member_of(kale, brassica_family).
 member_of(bok_choy, brassica_family).
 member_of(choy_sum, brassica_family).
-member_of(mustard_greens, brassica_family).
+member_of(mustard_green, brassica_family).
 member_of(turnip, brassica_family).
 member_of(radish, brassica_family).
 member_of(arugula, brassica_family).
@@ -136,7 +136,7 @@ member_of(tansy, herb).
 % =========================================
 
 member_of(carrot, root_crop).
-member_of(beets, root_crop).
+member_of(beet, root_crop).
 member_of(radish, root_crop).
 member_of(turnip, root_crop).
 member_of(potato, root_crop).
@@ -162,6 +162,7 @@ member_of(clover, flower).
 member_of(sunflower, flower).
 member_of(gladiolus, flower).
 member_of(nasturtium, flower).
+member_of(hydrangea, flower).
 
 % =========================================
 % GRAINS
@@ -173,6 +174,7 @@ member_of(rice, grain_crop).
 member_of(barley, grain_crop).
 member_of(wheat, grain_crop).
 member_of(spelt, grain_crop).
+member_of(rye, grain_crop).
 
 % =========================================
 % SPICES
@@ -198,18 +200,24 @@ member_of(white_pepper, pepper_family).
 % VINES
 % =========================================
 
-member_of(gourds, vine).
-member_of(grapes, vine).
-member_of(blackberries, vine).
+member_of(gourd, vine).
+member_of(grape, vine).
+member_of(blackbery, vine).
 
 % =========================================
 % BERRIES
 % =========================================
 
-member_of(strawberries, berry).
-member_of(blackberries, berry).
-member_of(blueberries, berry).
-member_of(raspberries, berry).
+member_of(strawberry, berry).
+member_of(blackbery, berry).
+member_of(blueberry, berry).
+member_of(raspberry, berry).
+
+% =========================================
+% VEGETABLES
+% =========================================
+
+member_of(artichoke, vegetable).
 
 % =========================================
 % WEEDS
