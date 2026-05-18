@@ -55,12 +55,14 @@ class MockSession:
                 MockPlant(p['name'], p['type'], p['species_name']) for p in mock_plants_data
             ]
             return MockQuery(mock_plant_objects)
-        return MockQuery([]) # Return empty for other models
+        return MockQuery([])   # Return empty for other models
 
 # Instantiate our mock database session and a dummy user ID
 mock_db_session = MockSession()
+
 test_user_id = 1
 
 # --- Call the combined recommendation function ---
 combined_recommendations = get_companion_recommendations(mock_db_session, test_user_id)
+
 print(combined_recommendations)
