@@ -32,9 +32,10 @@ List of species suggestions returned to client
 
 # app/api/v1/routes/species.py
 
+from typing import List
+
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
-from typing import List
 
 from app.database.db import get_db
 from app.schemas.species_schema import SpeciesSuggestion

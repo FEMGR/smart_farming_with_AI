@@ -1,15 +1,15 @@
 # tests/conftest.py
 
-import pytest
 import uuid
+
+import pytest
+from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
-from fastapi.testclient import TestClient
 
-from main import app
 from app.database.db import Base, get_db
-import pytest
+from main import app
 
 """
 from unittest.mock import patch
