@@ -32,6 +32,10 @@ jobs:
       ALGORITHM: HS256
       ACCESS_TOKEN_EXPIRE_MINUTES: 60
       PYTHONPATH: .
+    run: |
+      # Run flake8 while excluding the auto-generated alembic versions
+      flake8 . --exclude=backend/alembic/versions/*
+      pytest
 
     steps:
       # 1. Checkout code
