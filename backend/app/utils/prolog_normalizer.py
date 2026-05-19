@@ -1,9 +1,10 @@
 """
-    Convert DB plant name to Prolog-safe atom.
-    Example:
-    "Bell Pepper" → bell_pepper
-    "Solanum lycopersicum" → solanum_lycopersicum
+Convert DB plant name to Prolog-safe atom.
+Example:
+"Bell Pepper" → bell_pepper
+"Solanum lycopersicum" → solanum_lycopersicum
 """
+
 # app/utils/prolog_normalizer.py
 
 import re
@@ -14,12 +15,8 @@ from typing import Dict
 # --- Configuration for Prolog Path ---
 CURRENT_FILE = os.path.abspath(__file__)
 PROJECT_ROOT = os.path.dirname(  # smart-farming-system
-    os.path.dirname(             # backend
-        os.path.dirname(         # app
-            os.path.dirname(     # services (this level is missing in original)
-                CURRENT_FILE
-            )
-        )
+    os.path.dirname(  # backend
+        os.path.dirname(os.path.dirname(CURRENT_FILE))  # app  # services (this level is missing in original)
     )
 )
 PROLOG_MAIN_PATH = os.path.join(PROJECT_ROOT, "logic_companion_planting", "main.pl")
@@ -41,12 +38,13 @@ NORMALIZATION_MAP = {
     "tree_form_pee_gee_hydrangea": "hydrangea",
     "oregon_grape_holly": "grape",
     "lobelia_cardinali_fried_green_tomato": "tomato",
-    "ipomoea_batata": "sweet_potato", # Added specific mapping for sweet potato scientific name
-    "ipomoea_batatas": "sweet_potato", # Added specific mapping for sweet potato scientific name
+    "ipomoea_batata": "sweet_potato",  # Added specific mapping for sweet potato scientific name
+    "ipomoea_batatas": "sweet_potato",  # Added specific mapping for sweet potato scientific name
 }
 
 # --- Dynamic Scientific Name to Common Name Map (loaded from Prolog) ---
 SCIENTIFIC_TO_COMMON_MAP: Dict[str, str] = {}
+
 
 def _load_scientific_name_mappings():
     """
@@ -54,26 +52,26 @@ def _load_scientific_name_mappings():
     This function runs a Prolog query to get all scientific_name/2 facts.
     """
     global SCIENTIFIC_TO_COMMON_MAP
-    if SCIENTIFIC_TO_COMMON_MAP: # Load only once
+    if SCIENTIFIC_TO_COMMON_MAP:  # Load only once
         return
 
     # Prolog query to extract all scientific_name facts
     # Example output: [common1-'scientific1',common2-'scientific2']
     query = "findall(Common-Scientific, scientific_name(Common, Scientific), List), write(List), halt."
-    
+
     try:
         result = subprocess.run(
             ["swipl", "-s", PROLOG_MAIN_PATH, "-g", query, "-t", "halt"],
             capture_output=True,
             text=True,
             cwd=os.path.dirname(PROLOG_MAIN_PATH),
-            check=True # Raise an exception for non-zero exit codes
+            check=True,  # Raise an exception for non-zero exit codes
         )
         output = result.stdout.strip()
-        
+
         # Parse the Prolog list output
         # Expected format: [common1-'scientific1',common2-'scientific2']
-        if output.startswith('[') and output.endswith(']'):
+        if output.startswith("[") and output.endswith("]"):
             output = output[1:-1]  # Remove brackets
             if not output:
                 return
@@ -97,14 +95,15 @@ def _load_scientific_name_mappings():
     except Exception as e:
         print(f"An unexpected error occurred during Prolog mapping load: {e}")
 
+
 # Load mappings when the module is imported
 _load_scientific_name_mappings()
 
 
 def clean_text(text: str) -> str:
     text = text.lower()
-    text = re.sub(r'[^a-z0-9]+', '_', text)
-    return text.strip('_')
+    text = re.sub(r"[^a-z0-9]+", "_", text)
+    return text.strip("_")
 
 
 def singularize(word: str) -> str:

@@ -19,8 +19,7 @@ Notes:
 - A group belongs to a user and can contain multiple plants
 """
 
-
-#app.models.plant_group.py
+# app.models.plant_group.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, func
 from sqlalchemy.orm import relationship

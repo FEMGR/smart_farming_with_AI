@@ -10,7 +10,7 @@ def create_test_plant_db(db, user_id=1, use_sensor=False):
         user_id=user_id,
         watering_interval_days=3,
         last_watered=None,
-        use_sensor=use_sensor
+        use_sensor=use_sensor,
     )
     db.add(plant)
     db.commit()
@@ -30,9 +30,9 @@ def create_test_plant(client, token):
             "species_name": "Test Species",
             "environment_type": "indoor",
             "is_synced": True,
-            "source": "test"
+            "source": "test",
         },
-        headers={"Authorization": f"Bearer {token}"}
+        headers={"Authorization": f"Bearer {token}"},
     )
 
 
@@ -45,9 +45,9 @@ def create_test_location(client, token):
         json={
             "name": "Test Location",
             "description": "Test Desc",
-            "environment_type": "indoor"
+            "environment_type": "indoor",
         },
-        headers={"Authorization": f"Bearer {token}"}
+        headers={"Authorization": f"Bearer {token}"},
     )
 
     assert response.status_code in [200, 201]

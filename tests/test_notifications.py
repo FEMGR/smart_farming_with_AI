@@ -35,6 +35,7 @@ def test_notification_created_for_thirsty_plant(client, token):
 
     assert any("needs watering" in n["message"] for n in notif)
 
+
 def test_notification_removed_after_watering(client, token):
     headers = {"Authorization": f"Bearer {token}"}
 

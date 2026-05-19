@@ -32,7 +32,7 @@ Optional notifications triggered
 Result returned to caller
 """
 
-#app.services.irrigation_service.py
+# app.services.irrigation_service.py
 
 
 from datetime import date, timedelta
@@ -48,6 +48,7 @@ from app.models.plant import Plant
 # ===============================
 MOISTURE_THRESHOLD = 30  # below = dry
 
+
 def _get_thirsty_plants(db: Session, user_id: int):
     plants = db.query(Plant).filter(Plant.user_id == user_id).all()
     plant_ids = [p.id for p in plants]
@@ -56,21 +57,28 @@ def _get_thirsty_plants(db: Session, user_id: int):
         return []
 
     # Subquery: get latest timestamp per plant
-    subquery = db.query(
-        SoilCondition.plant_id,
-        func.max(SoilCondition.recorded_at).label("max_time")
-    ).filter(
-        SoilCondition.plant_id.in_(plant_ids)
-    ).group_by(SoilCondition.plant_id).subquery()
+    subquery = (
+        db.query(
+            SoilCondition.plant_id,
+            func.max(SoilCondition.recorded_at).label("max_time"),
+        )
+        .filter(SoilCondition.plant_id.in_(plant_ids))
+        .group_by(SoilCondition.plant_id)
+        .subquery()
+    )
 
     # Join to get full row of latest soil condition
-    latest_soils = db.query(SoilCondition).join(
-        subquery,
-        and_(
-            SoilCondition.plant_id == subquery.c.plant_id,
-            SoilCondition.recorded_at == subquery.c.max_time
+    latest_soils = (
+        db.query(SoilCondition)
+        .join(
+            subquery,
+            and_(
+                SoilCondition.plant_id == subquery.c.plant_id,
+                SoilCondition.recorded_at == subquery.c.max_time,
+            ),
         )
-    ).all()
+        .all()
+    )
 
     # Build lookup map
     soil_map = {s.plant_id: s for s in latest_soils}
@@ -86,13 +94,17 @@ def _get_thirsty_plants(db: Session, user_id: int):
 
     return result
 
+
 # ===============================
 # GET LATEST SOIL DATA
 # ===============================
 def get_latest_soil_condition(db: Session, plant_id: int):
-    return db.query(SoilCondition).filter(
-        SoilCondition.plant_id == plant_id
-    ).order_by(SoilCondition.recorded_at.desc()).first()
+    return (
+        db.query(SoilCondition)
+        .filter(SoilCondition.plant_id == plant_id)
+        .order_by(SoilCondition.recorded_at.desc())
+        .first()
+    )
 
 
 # ===============================
@@ -122,11 +134,15 @@ def get_plants_needing_water(db: Session, user_id: int):
     thirsty_plants = _get_thirsty_plants(db, user_id)
     plant_ids = [p.id for p in thirsty_plants]
 
-    existing_notifications = db.query(Notification).filter(
-        Notification.user_id == user_id,
-        Notification.type == "irrigation",
-        Notification.plant_id.in_(plant_ids)
-    ).all()
+    existing_notifications = (
+        db.query(Notification)
+        .filter(
+            Notification.user_id == user_id,
+            Notification.type == "irrigation",
+            Notification.plant_id.in_(plant_ids),
+        )
+        .all()
+    )
     notification_map = {n.plant_id: n for n in existing_notifications}
 
     result = []
@@ -140,17 +156,19 @@ def get_plants_needing_water(db: Session, user_id: int):
                 db=db,
                 user_id=user_id,
                 plant=plant,
-                message=f"Plant '{plant.name}' needs watering"
+                message=f"Plant '{plant.name}' needs watering",
             )
 
-        result.append({
-            "plant_id": plant.id,
-            "name": plant.name,
-            "last_watered": plant.last_watered,
-            "watering_interval_days": plant.watering_interval_days,
-            "use_sensor": plant.use_sensor,
-            "needs_water": True
-        })
+        result.append(
+            {
+                "plant_id": plant.id,
+                "name": plant.name,
+                "last_watered": plant.last_watered,
+                "watering_interval_days": plant.watering_interval_days,
+                "use_sensor": plant.use_sensor,
+                "needs_water": True,
+            }
+        )
     db.commit()
     return result
 
@@ -159,10 +177,7 @@ def get_plants_needing_water(db: Session, user_id: int):
 # WATER PLANT
 # ===============================
 def water_plant(db: Session, plant_id: int, user_id: int):
-    plant = db.query(Plant).filter(
-        Plant.id == plant_id,
-        Plant.user_id == user_id
-    ).first()
+    plant = db.query(Plant).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
 
     if not plant:
         return None
@@ -174,12 +189,13 @@ def water_plant(db: Session, plant_id: int, user_id: int):
     db.query(Notification).filter(
         Notification.plant_id == plant.id,
         Notification.user_id == user_id,
-        Notification.type == "irrigation"
+        Notification.type == "irrigation",
     ).delete(synchronize_session=False)
 
     db.commit()
     db.refresh(plant)
     return plant
+
 
 # ===============================
 # BULK WATERING
@@ -194,9 +210,8 @@ def water_all_due_plants(db: Session, user_id: int):
         db.query(Notification).filter(
             Notification.plant_id == plant.id,
             Notification.user_id == user_id,
-            Notification.type == "irrigation"
+            Notification.type == "irrigation",
         ).delete(synchronize_session=False)
 
     db.commit()
     return plants
-

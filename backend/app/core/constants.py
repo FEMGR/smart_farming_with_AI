@@ -33,20 +33,13 @@ import os
 
 # Determine the absolute path to the project root
 # This assumes constants.py is in backend/app/core/
-BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent # smart-farming-system/
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent  # smart-farming-system/
 
 # =========================================
 # PLANT TYPES
 # =========================================
 
-PLANT_TYPES = [
-    "fruit",
-    "vegetable",
-    "flower",
-    "herb",
-    "evergreen",
-    "succulent"
-]
+PLANT_TYPES = ["fruit", "vegetable", "flower", "herb", "evergreen", "succulent"]
 
 DEFAULT_PLANT_TYPE = "vegetable"
 
@@ -56,8 +49,8 @@ DEFAULT_WATERING_INTERVAL = 4
 # API SETTINGS
 # =========================================
 
-COOLDOWN_SECONDS = 7 # Cooldown between API calls for rate limiting
-API_REQUEST_TIMEOUT_SECONDS = 60 # Timeout for a single API request
+COOLDOWN_SECONDS = 7  # Cooldown between API calls for rate limiting
+API_REQUEST_TIMEOUT_SECONDS = 60  # Timeout for a single API request
 
 # =========================================
 # IN-MEMORY CACHE

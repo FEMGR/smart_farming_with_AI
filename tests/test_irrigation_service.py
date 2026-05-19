@@ -8,15 +8,18 @@ def test_schedule_watering(plant):
 
     assert _needs_watering_with_soil(plant, None) is True
 
+
 def test_no_watering_interval(plant):
     plant.watering_interval_days = None
 
     assert _needs_watering_with_soil(plant, None) is False
 
+
 def test_future_last_watered(plant):
     plant.last_watered = date.today() + timedelta(days=5)
 
     assert _needs_watering_with_soil(plant, None) is False
+
 
 def test_bulk_watering_updates_plants(client, token):
     headers = {"Authorization": f"Bearer {token}"}
@@ -33,15 +36,18 @@ def test_bulk_watering_updates_plants(client, token):
 
     assert updated["last_watered"] is not None
 
+
 def test_sensor_dry(sensor_plant):
     soil = SoilCondition(moisture=10)
 
     assert _needs_watering_with_soil(sensor_plant, soil) is True
 
+
 def test_sensor_wet(sensor_plant):
     soil = SoilCondition(moisture=80)
 
     assert _needs_watering_with_soil(sensor_plant, soil) is False
+
 
 def test_use_sensor_disabled(plant):
     plant.use_sensor = False
@@ -49,14 +55,17 @@ def test_use_sensor_disabled(plant):
 
     assert _needs_watering_with_soil(plant, None) is False
 
+
 def test_sensor_enabled_null_moisture(sensor_plant):
     soil = SoilCondition(moisture=None)
 
     assert _needs_watering_with_soil(sensor_plant, soil) is True
 
+
 # sensor enabled but no data ever recorded
 def test_sensor_enabled_no_data_fallback(sensor_plant):
     assert _needs_watering_with_soil(sensor_plant, None) is True
+
 
 def test_moisture_exact_threshold(sensor_plant):
     soil = SoilCondition(moisture=30)  # threshold

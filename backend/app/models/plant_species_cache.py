@@ -18,16 +18,9 @@ Notes:
 - Improves efficiency and reduces dependency on third-party APIs
 """
 
-#app.models.plant_species_cache.py
+# app.models.plant_species_cache.py
 
-from sqlalchemy import (
-    Column,
-    Integer,
-    String,
-    DateTime,
-    Boolean,
-    Float
-)
+from sqlalchemy import Column, Integer, String, DateTime, Boolean, Float
 
 from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import JSONB
@@ -46,12 +39,7 @@ class PlantSpeciesCache(Base):
 
     id = Column(Integer, primary_key=True, index=True)
 
-    external_species_id = Column(
-        String(100),
-        unique=True,
-        nullable=False,
-        index=True
-    )
+    external_species_id = Column(String(100), unique=True, nullable=False, index=True)
 
     # =====================================
     # CORE IDENTITY
@@ -147,25 +135,15 @@ class PlantSpeciesCache(Base):
     # RAW PAYLOAD
     # =====================================
 
-    data = Column(
-        JSON().with_variant(JSONB, "postgresql")
-    )
+    data = Column(JSON().with_variant(JSONB, "postgresql"))
 
     # =====================================
     # TIMESTAMPS
     # =====================================
 
-    created_at = Column(
-        DateTime,
-        server_default=func.now()
-    )
+    created_at = Column(DateTime, server_default=func.now())
 
-    last_updated = Column(
-        DateTime,
-        server_default=func.now(),
-        onupdate=func.now()
-    )
-
+    last_updated = Column(DateTime, server_default=func.now(), onupdate=func.now())
 
 
 """ 

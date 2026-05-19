@@ -41,29 +41,21 @@ from app.api.dependencies import get_current_user_id
 from app.services import irrigation_service, plant_service
 
 #  Prefix for clean routing
-router = APIRouter(
-    prefix="/irrigation",
-    tags=["Irrigation"]
-)
+router = APIRouter(prefix="/irrigation", tags=["Irrigation"])
+
 
 # ===============================
 # CHECK PLANTS NEEDING WATER
 # ===============================
 @router.get("/needs-water", response_model=list[PlantNeedsWaterResponse])
-def get_plants_needing_water(
-    db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
-):
+def get_plants_needing_water(db: Session = Depends(get_db), user_id: int = Depends(get_current_user_id)):
     """
     Returns plants that need watering for the logged-in user.
     Also triggers notification creation if needed.
     """
-    plants = irrigation_service.get_plants_needing_water(
-        db=db,
-        user_id=user_id
-    )
+    plants = irrigation_service.get_plants_needing_water(db=db, user_id=user_id)
     return plants
-    #return [plant_service._attach_metadata(p) for p in plants]
+    # return [plant_service._attach_metadata(p) for p in plants]
 
 
 # ===============================
@@ -73,46 +65,27 @@ def get_plants_needing_water(
 def water_plant(
     plant_id: int,
     db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
+    user_id: int = Depends(get_current_user_id),
 ):
     """
     Marks a plant as watered (only if it belongs to the user).
     """
-    plant = irrigation_service.water_plant(
-        db=db,
-        plant_id=plant_id,
-        user_id=user_id
-    )
+    plant = irrigation_service.water_plant(db=db, plant_id=plant_id, user_id=user_id)
 
     if not plant:
-        raise HTTPException(
-            status_code=404,
-            detail="Plant not found or not owned by user"
-        )
+        raise HTTPException(status_code=404, detail="Plant not found or not owned by user")
 
-    return {
-        "message": "Plant watered successfully",
-        "plant_id": plant.id
-    }
+    return {"message": "Plant watered successfully", "plant_id": plant.id}
 
 
 # ===============================
 # BULK WATERING (OPTIONAL)
 # ===============================
 @router.post("/water-all")
-def water_all_plants(
-    db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
-):
+def water_all_plants(db: Session = Depends(get_db), user_id: int = Depends(get_current_user_id)):
     """
     Waters all plants that are currently due.
     """
-    plants = irrigation_service.water_all_due_plants(
-        db=db,
-        user_id=user_id
-    )
+    plants = irrigation_service.water_all_due_plants(db=db, user_id=user_id)
 
-    return {
-        "message": f"{len(plants)} plants watered",
-        "count": len(plants)
-    }
+    return {"message": f"{len(plants)} plants watered", "count": len(plants)}

@@ -15,7 +15,7 @@ Layer Interaction:
 - Used by: Services, Database layer
 """
 
-#app.models.location.py
+# app.models.location.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, Numeric, func
 from sqlalchemy.orm import relationship

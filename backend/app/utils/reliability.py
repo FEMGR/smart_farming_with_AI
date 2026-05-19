@@ -30,8 +30,7 @@ Score normalized between 0 and 1
 Reliability score returned to caller
 """
 
-
-#app/utils/reliability.py
+# app/utils/reliability.py
 
 from datetime import datetime
 

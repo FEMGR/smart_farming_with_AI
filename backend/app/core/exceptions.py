@@ -33,13 +33,16 @@ Notes:
 - Promotes consistent error responses across the system
 """
 
+# app.core.exceptions.py
 
-#app.core.exceptions.py
 
 class NotFoundError(Exception):
     """Raised when a resource is not found."""
+
     pass
+
 
 class PermissionDeniedError(Exception):
     """Raised when user is not allowed to access resource."""
+
     pass

@@ -12,24 +12,20 @@ def test_create_plant_with_perenual_match(mock_search, client, token):
             "is_fruit": False,
             "is_veg": False,
             "edible": True,
-            "growth_rate": "medium"
+            "growth_rate": "medium",
         }
     ]
 
     headers = {"Authorization": f"Bearer {token}"}
     response = client.post(
         "/plants/",
-        json={
-            "name": "Nasturtium",
-            "plant_type": "flower"  # ✅ CRITICAL
-        },
-        headers=headers
+        json={"name": "Nasturtium", "plant_type": "flower"},  # ✅ CRITICAL
+        headers=headers,
     )
 
     data = response.json()
 
     assert data["data_source"] == "perenual"
-
 
 
 def test_plant_inherits_watering_from_species(client, token):
@@ -83,7 +79,7 @@ def test_create_plant_schema_cleanup(client, token):
         "name": "Cleanup Test",
         "plant_type": "vegetable",
         "species_name": "Fake Name",  # This caused a crash before
-        "data_source": "hacker"  # This caused a crash before
+        "data_source": "hacker",  # This caused a crash before
     }
 
     response = client.post("/plants/", json=plant_data, headers=headers)

@@ -30,16 +30,12 @@ JWT token generated
 Result returned to route
 """
 
-#app.services.auth_service.py
+# app.services.auth_service.py
 
 from sqlalchemy.orm import Session
 
 from app.models.user import User
-from app.core.security import (
-    hash_password,
-    verify_password,
-    create_access_token
-)
+from app.core.security import hash_password, verify_password, create_access_token
 
 
 def register_user(db: Session, email: str, password: str):
@@ -48,10 +44,7 @@ def register_user(db: Session, email: str, password: str):
     if existing_user:
         raise ValueError("Email already registered")
     hashed = hash_password(password)
-    user = User(
-        email=email,
-        password_hash=hashed
-    )
+    user = User(email=email, password_hash=hashed)
     db.add(user)
     db.commit()
     db.refresh(user)
@@ -79,11 +72,6 @@ def login_user(db: Session, email: str, password: str):
     if not user:
         raise ValueError("Invalid credentials")
 
-    token = create_access_token(
-        data={
-            "sub": str(user.id),
-            "email": user.email
-        }
-    )
+    token = create_access_token(data={"sub": str(user.id), "email": user.email})
 
     return token

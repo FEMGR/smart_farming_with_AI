@@ -6,7 +6,7 @@ import os
 import sys
 
 # 🔥 Add backend root to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # 🔥 Import config + Base
 from app.core.config import DATABASE_URL

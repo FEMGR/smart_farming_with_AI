@@ -1,4 +1,4 @@
-#tests/fixtures/user_fixtures.py
+# tests/fixtures/user_fixtures.py
 
 
 import pytest
@@ -11,15 +11,9 @@ def user_token(client):
     password = "test12345"
 
     # Register
-    client.post("/auth/register", json={
-        "email": email,
-        "password": password
-    })
+    client.post("/auth/register", json={"email": email, "password": password})
 
     # Login
-    response = client.post("/auth/login", data={
-        "username": email,
-        "password": password
-    })
+    response = client.post("/auth/login", data={"username": email, "password": password})
 
     return response.json()["access_token"]

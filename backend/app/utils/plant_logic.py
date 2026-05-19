@@ -27,9 +27,7 @@ Fallback to species default if available
 Return final computed value
 """
 
-
-
-#app/utils/plant_logic.py
+# app/utils/plant_logic.py
 
 from datetime import timedelta, date
 from app.models import Plant, SoilCondition
@@ -52,6 +50,7 @@ def get_effective_watering(plant) -> int:
         return plant.species.watering_interval_days
 
     return 3
+
 
 # ===============================
 # CHECK IF PLANT NEEDS WATER

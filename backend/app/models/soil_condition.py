@@ -18,7 +18,7 @@ Notes:
 - Can be populated manually or via sensors (IoT integration)
 """
 
-#app.models.soil_condition.py
+# app.models.soil_condition.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, Numeric, func
 from sqlalchemy.orm import relationship

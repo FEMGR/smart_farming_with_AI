@@ -31,7 +31,7 @@ Database updated via models
 Response returned to client
 """
 
-#app.api.routes.locations.py
+# app.api.routes.locations.py
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
@@ -42,10 +42,7 @@ from app.api.dependencies import get_current_user_id
 from app.schemas.location_schema import LocationCreate, LocationUpdate, LocationResponse
 from app.services import location_service
 
-router = APIRouter(
-    prefix="/locations",
-    tags=["Locations"]
-)
+router = APIRouter(prefix="/locations", tags=["Locations"])
 
 
 # ===============================
@@ -55,7 +52,7 @@ router = APIRouter(
 def create_location(
     location: LocationCreate,
     db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
+    user_id: int = Depends(get_current_user_id),
 ):
     return location_service.create_location(db, location, user_id)
 
@@ -64,10 +61,7 @@ def create_location(
 # GET ALL
 # ===============================
 @router.get("/", response_model=List[LocationResponse])
-def get_locations(
-    db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
-):
+def get_locations(db: Session = Depends(get_db), user_id: int = Depends(get_current_user_id)):
     return location_service.get_locations(db, user_id)
 
 
@@ -78,7 +72,7 @@ def get_locations(
 def get_location(
     location_id: int,
     db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
+    user_id: int = Depends(get_current_user_id),
 ):
     location = location_service.get_location(db, location_id, user_id)
 
@@ -96,7 +90,7 @@ def update_location(
     location_id: int,
     location_update: LocationUpdate,
     db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
+    user_id: int = Depends(get_current_user_id),
 ):
     updated = location_service.update_location(db, location_id, location_update, user_id)
 
@@ -113,7 +107,7 @@ def update_location(
 def delete_location(
     location_id: int,
     db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id)
+    user_id: int = Depends(get_current_user_id),
 ):
     deleted = location_service.delete_location(db, location_id, user_id)
 

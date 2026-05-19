@@ -38,6 +38,10 @@ Best match selected or fallback returned
 #app/utils/species_matching.py
 from rapidfuzz import fuzz
 from app.core.logger import setup_logger
+# app/utils/species_matching.py
+from rapidfuzz import fuzz
+
+from app.core.logger import setup_logger
 
 logger = setup_logger()
 

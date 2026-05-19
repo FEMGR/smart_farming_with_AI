@@ -29,7 +29,7 @@ Database transaction executed
 Result returned to route
 """
 
-#app.services.location_service.py
+# app.services.location_service.py
 
 
 from sqlalchemy.orm import Session
@@ -48,7 +48,7 @@ def create_location(db: Session, location: LocationCreate, user_id: int):
         name=location.name,
         description=location.description,
         environment_type=location.environment_type,
-        user_id=user_id
+        user_id=user_id,
     )
 
     db.add(new_location)
@@ -69,20 +69,14 @@ def get_locations(db: Session, user_id: int):
 # GET ONE
 # ===============================
 def get_location(db: Session, location_id: int, user_id: int):
-    return db.query(Location).filter(
-        Location.id == location_id,
-        Location.user_id == user_id
-    ).first()
+    return db.query(Location).filter(Location.id == location_id, Location.user_id == user_id).first()
 
 
 # ===============================
 # UPDATE
 # ===============================
 def update_location(db: Session, location_id: int, location_update: LocationUpdate, user_id: int):
-    location = db.query(Location).filter(
-        Location.id == location_id,
-        Location.user_id == user_id
-    ).first()
+    location = db.query(Location).filter(Location.id == location_id, Location.user_id == user_id).first()
 
     if not location:
         return None
@@ -100,24 +94,16 @@ def update_location(db: Session, location_id: int, location_update: LocationUpda
 # DELETE
 # ===============================
 def delete_location(db: Session, location_id: int, user_id: int):
-    location = db.query(Location).filter(
-        Location.id == location_id,
-        Location.user_id == user_id
-    ).first()
+    location = db.query(Location).filter(Location.id == location_id, Location.user_id == user_id).first()
 
     if not location:
         return False
 
     # Prevent deletion if plants exist
-    plant_exists = db.query(Plant).filter(
-        Plant.location_id == location_id
-    ).first()
+    plant_exists = db.query(Plant).filter(Plant.location_id == location_id).first()
 
     if plant_exists:
-        raise HTTPException(
-            status_code=400,
-            detail="Cannot delete location with existing plants"
-        )
+        raise HTTPException(status_code=400, detail="Cannot delete location with existing plants")
 
     db.delete(location)
     db.commit()

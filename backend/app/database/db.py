@@ -49,30 +49,24 @@ from app.core.config import DATABASE_URL
 # CREATE DATABASE ENGINE
 # ===============================
 
-#Engine is the core connection between Python and PostgreSQL, uses the DATABASE_URL from .env
-engine = create_engine(
-    DATABASE_URL,
-    echo=False  # set True to log SQL in terminal
-)
+# Engine is the core connection between Python and PostgreSQL, uses the DATABASE_URL from .env
+engine = create_engine(DATABASE_URL, echo=False)  # set True to log SQL in terminal
 
 # ===============================
 # CREATE SESSION
 # ===============================
-#Session is used to talk to the database. Open->operations->close session
-SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
+# Session is used to talk to the database. Open->operations->close session
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # ===============================
 # BASE MODEL
 # ===============================
-Base = declarative_base() #a factory function used to create a base class for the db
+Base = declarative_base()  # a factory function used to create a base class for the db
 
 # ===============================
 # DATABASE DEPENDENCY
 # ===============================
+
 
 # used in FastAPI routes
 def get_db():

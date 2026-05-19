@@ -2,6 +2,7 @@
 
 from tests.utils.test_helpers import create_test_location
 
+
 def test_get_plants(client, token):
     """Test retrieving plants using the token fixture."""
     headers = {"Authorization": f"Bearer {token}"}
@@ -22,10 +23,7 @@ def test_get_plants(client, token):
 def test_create_plant(client, token):
     headers = {"Authorization": f"Bearer {token}"}
 
-    plant_data = {
-        "name": "Nasturtium",  # High-confidence name
-        "plant_type": "flower"
-    }
+    plant_data = {"name": "Nasturtium", "plant_type": "flower"}  # High-confidence name
 
     response = client.post("/plants/", json=plant_data, headers=headers)
     assert response.status_code in [200, 201]
@@ -52,12 +50,16 @@ def test_create_and_get_plants(client, token):
     """
     headers = {"Authorization": f"Bearer {token}"}
 
-    client.post("/plants/", json={
-        "name": "TestPlant",
-        "plant_type": "evergreen",
-        "is_synced": True,
-        "data_source": "test"
-    }, headers=headers)
+    client.post(
+        "/plants/",
+        json={
+            "name": "TestPlant",
+            "plant_type": "evergreen",
+            "is_synced": True,
+            "data_source": "test",
+        },
+        headers=headers,
+    )
 
     response = client.get("/plants/", headers=headers)
 
@@ -82,7 +84,7 @@ def test_create_plant_with_location(client, token):
         "plant_type": "evergreen",
         "is_synced": True,
         "data_source": "test",
-        "location_id": location_id   # key relationship
+        "location_id": location_id,  # key relationship
     }
 
     response = client.post("/plants/", json=plant_data, headers=headers)
@@ -106,7 +108,7 @@ def test_create_plant_invalid_location(client, token):
         "plant_type": "evergreen",
         "is_synced": True,
         "data_source": "test",
-        "location_id": 999999  # fake ID
+        "location_id": 999999,  # fake ID
     }
 
     response = client.post("/plants/", json=plant_data, headers=headers)
@@ -125,11 +127,7 @@ def test_create_plant_wrong_user_location(client, create_user):
     headers_b = {"Authorization": f"Bearer {token_b}"}
 
     # User A creates location
-    location = client.post(
-        "/locations/",
-        json={"name": "Private Location"},
-        headers=headers_a
-    ).json()
+    location = client.post("/locations/", json={"name": "Private Location"}, headers=headers_a).json()
 
     # User B tries to use it
     response = client.post(
@@ -140,9 +138,9 @@ def test_create_plant_wrong_user_location(client, create_user):
             "plant_type": "evergreen",
             "is_synced": True,
             "data_source": "test",
-            "location_id": location["id"]
+            "location_id": location["id"],
         },
-        headers=headers_b
+        headers=headers_b,
     )
 
     assert response.status_code in [403, 404]
@@ -155,19 +153,21 @@ def test_delete_location_blocked_if_has_plants(client, token):
     headers = {"Authorization": f"Bearer {token}"}
 
     # Create location
-    loc = client.post("/locations/", json={
-        "name": "Temp Location"
-    }, headers=headers).json()
+    loc = client.post("/locations/", json={"name": "Temp Location"}, headers=headers).json()
 
     # Create plant linked to location
-    client.post("/plants/", json={
-        "name": "Temp Plant",
-        "species_name": "Test",
-        "plant_type": "evergreen",
-        "is_synced": True,
-        "data_source": "test",
-        "location_id": loc["id"]
-    }, headers=headers)
+    client.post(
+        "/plants/",
+        json={
+            "name": "Temp Plant",
+            "species_name": "Test",
+            "plant_type": "evergreen",
+            "is_synced": True,
+            "data_source": "test",
+            "location_id": loc["id"],
+        },
+        headers=headers,
+    )
 
     # Attempt delete
     response = client.delete(f"/locations/{loc['id']}", headers=headers)
@@ -177,10 +177,7 @@ def test_delete_location_blocked_if_has_plants(client, token):
 
 def test_create_plant_with_ai_linking(client, token):
     headers = {"Authorization": f"Bearer {token}"}
-    plant_data = {
-        "name": "Nasturtium",
-        "plant_type": "flower"
-    }
+    plant_data = {"name": "Nasturtium", "plant_type": "flower"}
 
     response = client.post("/plants/", json=plant_data, headers=headers)
     assert response.status_code == 200  # Should pass now

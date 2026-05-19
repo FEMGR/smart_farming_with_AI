@@ -25,8 +25,7 @@ Schema validates and structures response
 Clean, minimal data returned to client
 """
 
-
-#app/schemas/irrigation_schema.py
+# app/schemas/irrigation_schema.py
 
 from pydantic import BaseModel
 from datetime import date

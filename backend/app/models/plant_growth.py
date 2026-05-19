@@ -19,7 +19,7 @@ Notes:
 - Can be used for analytics or AI recommendations
 """
 
-#app.models.plant_growth.py
+# app.models.plant_growth.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, Numeric, func
 from sqlalchemy.orm import relationship

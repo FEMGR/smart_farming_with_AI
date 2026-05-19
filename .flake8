@@ -1,7 +1,10 @@
 [flake8]
 max-line-length = 120
-exclude = 
+exclude =
     .git,
     __pycache__,
-    backend/alembic/versions/
-ignore = E122,E128
+    venv,
+    backend/alembic/versions/*
+
+# Remove all comments from these lines
+ignore = E265,E261,E262,E302,E303,E305,W291,W292,W293,W391

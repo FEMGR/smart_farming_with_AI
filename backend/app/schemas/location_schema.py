@@ -15,7 +15,7 @@ Layer Interaction:
 - Used by: Routes, Services
 """
 
-#app.schemas.location_schema.py
+# app.schemas.location_schema.py
 
 from pydantic import BaseModel, ConfigDict
 from typing import Optional
@@ -51,9 +51,9 @@ class LocationResponse(BaseModel):
     user_id: int
     created_at: datetime
 
+
 model_config = ConfigDict(from_attributes=True)
-'''
+"""
     class Config:
         from_attributes = True
-'''
-
+"""

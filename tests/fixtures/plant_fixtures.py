@@ -1,4 +1,4 @@
-#tests/fixtures/plant_fixtures.py
+# tests/fixtures/plant_fixtures.py
 
 
 import pytest
@@ -18,16 +18,18 @@ def plant(db, species):
         user_id=1,
         watering_interval_days=3,
         last_watered=None,
-        use_sensor=False
+        use_sensor=False,
     )
     db.add(plant)
     db.commit()
     db.refresh(plant)
     return plant
 
+
 # -------------------------
 # DB LEVEL PLANT
 # -------------------------
+
 
 @pytest.fixture
 def sensor_plant(db, species):
@@ -37,7 +39,7 @@ def sensor_plant(db, species):
         user_id=1,
         watering_interval_days=3,
         last_watered=None,
-        use_sensor=True
+        use_sensor=True,
     )
     db.add(plant)
     db.commit()
@@ -49,7 +51,7 @@ def sensor_plant(db, species):
 # API LEVEL PLANT
 # -------------------------
 @pytest.fixture
-def plant_api(client, user_token,species):
+def plant_api(client, user_token, species):
     response = client.post(
         "/plants/",
         json={
@@ -57,7 +59,7 @@ def plant_api(client, user_token,species):
             "species_id": species.id,
             "plant_type": "Test type",
         },
-        headers={"Authorization": f"Bearer {user_token}"}
+        headers={"Authorization": f"Bearer {user_token}"},
     )
 
     return response.json()
@@ -72,10 +74,9 @@ def species(db):
         external_species_id="7405",  # Use a real or dummy Perenual ID
         scientific_name="Solanum melongena",
         common_name="Eggplant",
-        watering_interval_days=4
+        watering_interval_days=4,
     )
     db.add(sp)
     db.commit()
     db.refresh(sp)
     return sp
-

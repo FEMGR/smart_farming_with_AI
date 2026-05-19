@@ -14,17 +14,21 @@ Architecture Role:
 Layer Interaction:
 - Used by: Routes, Services
 """
-#app.schemas.auth_schema.py
+
+# app.schemas.auth_schema.py
 
 from pydantic import BaseModel, EmailStr
+
 
 class UserCreate(BaseModel):
     email: EmailStr
     password: str
 
+
 class UserLogin(BaseModel):
     email: EmailStr
     password: str
+
 
 class Token(BaseModel):
     access_token: str

@@ -35,7 +35,7 @@ Data normalized and enriched (placeholders added)
 Returned to calling service or utility
 """
 
-#app/services/perenual_service.py
+# app/services/perenual_service.py
 
 import time
 from typing import List, Any, Dict, Tuple, Optional
@@ -44,21 +44,26 @@ import requests
 from sqlalchemy.orm import Session
 
 from app.core.config import PERENUAL_API_KEY
-from app.core.constants import COOLDOWN_SECONDS, DEFAULT_TTL, MAX_CACHE_SIZE, API_REQUEST_TIMEOUT_SECONDS
+from app.core.constants import (
+    COOLDOWN_SECONDS,
+    DEFAULT_TTL,
+    MAX_CACHE_SIZE,
+    API_REQUEST_TIMEOUT_SECONDS,
+)
 from app.core.logger import setup_logger
 from app.models.plant_species_cache import PlantSpeciesCache
 from app.services.species_snapshot_service import (
     save_species_snapshot,
-    load_species_snapshot
+    load_species_snapshot,
 )
 from app.services.species_suggestion_cache_service import (
     cache_species_suggestions,
-    get_cached_species_suggestions
+    get_cached_species_suggestions,
 )
 from app.utils.species_matching import (
     select_best_match,
     rank_species_matches,
-    normalize_candidate
+    normalize_candidate,
 )
 
 logger = setup_logger()
@@ -70,6 +75,7 @@ BASE_URL = "https://perenual.com/api/v2"
 # ===============================
 
 CACHE: Dict[str, Tuple[float, Any]] = {}
+
 
 def _get_cache(key: str):
     """Retrieve cached value if not expired."""
@@ -85,6 +91,7 @@ def _get_cache(key: str):
         logger.info(f"[IN-MEMORY CACHE EXPIRED] {key}")
 
     return None
+
 
 def _set_cache(key: str, value: Any, ttl: int = DEFAULT_TTL):
     if len(CACHE) > MAX_CACHE_SIZE:
@@ -102,6 +109,7 @@ _last_api_call_time = 0
 # =====================================
 # SAFE FLOAT PARSER
 # =====================================
+
 
 def safe_float(value):
 
@@ -123,14 +131,11 @@ def safe_float(value):
     except (ValueError, TypeError):
         return None
 
+
 # =========================================
 # EXTERNAL API CALLS (Perenual)
 # =========================================
-def _make_api_call_with_cooldown(
-    url: str,
-    params: Dict,
-    cache_key: str = None
-) -> Dict | List:
+def _make_api_call_with_cooldown(url: str, params: Dict, cache_key: str = None) -> Dict | List:
     """Handles API call with global cooldown and in-memory caching."""
     global _last_api_call_time
 
@@ -153,11 +158,9 @@ def _make_api_call_with_cooldown(
 
     if time_since_last_call < COOLDOWN_SECONDS:
         wait_time = COOLDOWN_SECONDS - time_since_last_call
-        logger.info(
-            f"[PERENUAL API] Cooldown active. Waiting {wait_time:.2f}s before calling {url}"
-        )
+        logger.info(f"[PERENUAL API] Cooldown active. Waiting {wait_time:.2f}s before calling {url}")
         time.sleep(wait_time)
-        now = time.time() # Update now after waiting
+        now = time.time()  # Update now after waiting
 
     _last_api_call_time = now
 
@@ -171,11 +174,7 @@ def _make_api_call_with_cooldown(
         response = requests.get(url, params=params, timeout=API_REQUEST_TIMEOUT_SECONDS)
 
         if response.status_code != 200:
-            logger.error(
-                f"[PERENUAL API] Call failed "
-                f"with status={response.status_code} "
-                f"for {url}"
-            )
+            logger.error(f"[PERENUAL API] Call failed " f"with status={response.status_code} " f"for {url}")
 
             return {} if "details" in url else []
 
@@ -188,27 +187,19 @@ def _make_api_call_with_cooldown(
 
     except requests.exceptions.Timeout:
 
-        logger.error(
-            f"[PERENUAL API] Timeout during API call to {url}"
-        )
+        logger.error(f"[PERENUAL API] Timeout during API call to {url}")
 
         return {} if "details" in url else []
 
     except requests.exceptions.RequestException as e:
 
-        logger.error(
-            f"[PERENUAL API] Request error during API call "
-            f"to {url}: {e}"
-        )
+        logger.error(f"[PERENUAL API] Request error during API call " f"to {url}: {e}")
 
         return {} if "details" in url else []
 
     except Exception as e:
 
-        logger.error(
-            f"[PERENUAL API] Unexpected error "
-            f"during API call to {url}: {e}"
-        )
+        logger.error(f"[PERENUAL API] Unexpected error " f"during API call to {url}: {e}")
 
         return {} if "details" in url else []
 
@@ -233,14 +224,16 @@ def search_plant_species_api(query: str, limit: int = 5) -> List[Dict]:
     results = []
     for plant in data[:limit]:
         scientific_names = plant.get("scientific_name", [])
-        results.append({
-            "id": plant.get("id"),
-            "common_name": plant.get("common_name", "Unknown"),
-            "scientific_name": scientific_names[0] if scientific_names else "Unknown",
-            "type": plant.get("type"), # Include type for matching
-            "is_fruit": plant.get("edible_fruit"),
-            "is_veg": plant.get("edible_leaf"),
-        })
+        results.append(
+            {
+                "id": plant.get("id"),
+                "common_name": plant.get("common_name", "Unknown"),
+                "scientific_name": (scientific_names[0] if scientific_names else "Unknown"),
+                "type": plant.get("type"),  # Include type for matching
+                "is_fruit": plant.get("edible_fruit"),
+                "is_veg": plant.get("edible_leaf"),
+            }
+        )
     return results
 
 
@@ -260,7 +253,7 @@ def _get_species_details_from_source(species_id: int) -> Optional[Dict]:
     # 2. Fallback to API
     url = f"{BASE_URL}/species/details/{species_id}"
     params = {"key": PERENUAL_API_KEY}
-    cache_key = f"details:{species_id}" # In-memory cache key
+    cache_key = f"details:{species_id}"  # In-memory cache key
 
     api_response = _make_api_call_with_cooldown(url, params, cache_key)
 
@@ -285,9 +278,7 @@ def normalize_species_data(api_data: dict) -> dict:
     def safe_join(value):
 
         if isinstance(value, list):
-            return ", ".join(
-                [str(v) for v in value if v]
-            )
+            return ", ".join([str(v) for v in value if v])
 
         if isinstance(value, str):
             return value
@@ -296,23 +287,14 @@ def normalize_species_data(api_data: dict) -> dict:
 
     def map_watering(text: str) -> int:
 
-        mapping = {
-            "Frequent": 1,
-            "Average": 3,
-            "Minimum": 7,
-            "None": 30
-        }
+        mapping = {"Frequent": 1, "Average": 3, "Minimum": 7, "None": 30}
 
         return mapping.get(text, 3)
 
     scientific = api_data.get("scientific_name")
 
     if isinstance(scientific, list):
-        scientific = (
-            scientific[0]
-            if scientific
-            else None
-        )
+        scientific = scientific[0] if scientific else None
 
     if not scientific:
         scientific = api_data.get("common_name")
@@ -324,11 +306,7 @@ def normalize_species_data(api_data: dict) -> dict:
     # DIMENSIONS
     # =====================================
 
-    dimension_data = (
-        api_data.get("dimension")
-        or api_data.get("dimensions")
-        or {}
-    )
+    dimension_data = api_data.get("dimension") or api_data.get("dimensions") or {}
 
     logger.info(dimension_data)
 
@@ -341,15 +319,9 @@ def normalize_species_data(api_data: dict) -> dict:
 
     if isinstance(dimension_data, dict):
 
-        height = (
-            dimension_data.get("height")
-            or dimension_data.get("height_ft")
-        )
+        height = dimension_data.get("height") or dimension_data.get("height_ft")
 
-        width = (
-            dimension_data.get("width")
-            or dimension_data.get("spread")
-        )
+        width = dimension_data.get("width") or dimension_data.get("spread")
 
     # -------------------------------------
     # CASE 2 → LIST FORMAT
@@ -362,26 +334,14 @@ def normalize_species_data(api_data: dict) -> dict:
             if not isinstance(item, dict):
                 continue
 
-            dimension_type = str(
-                item.get("type", "")
-            ).lower()
+            dimension_type = str(item.get("type", "")).lower()
 
-            max_value = (
-                item.get("max_value")
-                or item.get("max")
-                or item.get("value")
-            )
+            max_value = item.get("max_value") or item.get("max") or item.get("value")
 
-            if (
-                "height" in dimension_type
-                and height is None
-            ):
+            if "height" in dimension_type and height is None:
                 height = max_value
 
-            if (
-                "width" in dimension_type
-                or "spread" in dimension_type
-            ) and width is None:
+            if ("width" in dimension_type or "spread" in dimension_type) and width is None:
 
                 width = max_value
 
@@ -389,225 +349,104 @@ def normalize_species_data(api_data: dict) -> dict:
     # MEDIA
     # =====================================
 
-    image_data = api_data.get(
-        "default_image",
-        {}
-    )
+    image_data = api_data.get("default_image", {})
 
     # =====================================
     # RETURN NORMALIZED DATA
     # =====================================
 
     return {
-
         # =====================================
         # CORE
         # =====================================
-
         "species": scientific,
         "common_name": api_data.get("common_name"),
-        "other_names": safe_join(
-            api_data.get("other_name")
-        ),
-
+        "other_names": safe_join(api_data.get("other_name")),
         "plant_type": api_data.get("type"),
         "description": api_data.get("description"),
-
         # =====================================
         # EDIBILITY
         # =====================================
-
-        "is_fruit": api_data.get(
-            "edible_fruit",
-            False
-        ),
-
-        "is_veg": api_data.get(
-            "edible_leaf",
-            False
-        ),
-
-        "cuisine": api_data.get(
-            "cuisine",
-            False
-        ),
-
-        "medicinal": api_data.get(
-            "medicinal",
-            False
-        ),
-
-        "poisonous_to_humans": api_data.get(
-            "poisonous_to_humans"
-        ),
-
-        "poisonous_to_pets": api_data.get(
-            "poisonous_to_pets"
-        ),
-
+        "is_fruit": api_data.get("edible_fruit", False),
+        "is_veg": api_data.get("edible_leaf", False),
+        "cuisine": api_data.get("cuisine", False),
+        "medicinal": api_data.get("medicinal", False),
+        "poisonous_to_humans": api_data.get("poisonous_to_humans"),
+        "poisonous_to_pets": api_data.get("poisonous_to_pets"),
         "is_edible": (
-            api_data.get(
-                "edible_fruit",
-                False
-            )
-            or api_data.get(
-                "edible_leaf",
-                False
-            )
-            or api_data.get(
-                "cuisine",
-                False
-            )
+            api_data.get("edible_fruit", False) or api_data.get("edible_leaf", False) or api_data.get("cuisine", False)
         ),
-
         # =====================================
         # GROWTH
         # =====================================
-
         "cycle": api_data.get("cycle"),
-
-        "growth_rate": api_data.get(
-            "growth_rate"
-        ),
-
-        "care_level": api_data.get(
-            "care_level"
-        ),
-
-        "watering": api_data.get(
-            "watering"
-        ),
-
-        "watering_interval_days": map_watering(
-            api_data.get(
-                "watering",
-                "Average"
-            )
-        )
-        ,
-
-        "drought_tolerant": api_data.get(
-            "drought_tolerant"
-        ),
-
-        "salt_tolerant": api_data.get(
-            "salt_tolerant"
-        ),
-
-        "thorny": api_data.get(
-            "thorny"
-        ),
-
-        "invasive": api_data.get(
-            "invasive"
-        ),
-
-        "tropical": api_data.get(
-            "tropical"
-        ),
-
-        "indoor": api_data.get(
-            "indoor"
-        ),
-
+        "growth_rate": api_data.get("growth_rate"),
+        "care_level": api_data.get("care_level"),
+        "watering": api_data.get("watering"),
+        "watering_interval_days": map_watering(api_data.get("watering", "Average")),
+        "drought_tolerant": api_data.get("drought_tolerant"),
+        "salt_tolerant": api_data.get("salt_tolerant"),
+        "thorny": api_data.get("thorny"),
+        "invasive": api_data.get("invasive"),
+        "tropical": api_data.get("tropical"),
+        "indoor": api_data.get("indoor"),
         # =====================================
         # ENVIRONMENT
         # =====================================
-
-        "sunlight": safe_join(
-            api_data.get("sunlight")
-        ),
-
-        "soil": safe_join(
-            api_data.get("soil")
-        ),
-
-        "propagation": safe_join(
-            api_data.get("propagation")
-        ),
-
-        "pest_susceptibility": safe_join(
-            api_data.get(
-                "pest_susceptibility"
-            )
-        ),
-
+        "sunlight": safe_join(api_data.get("sunlight")),
+        "soil": safe_join(api_data.get("soil")),
+        "propagation": safe_join(api_data.get("propagation")),
+        "pest_susceptibility": safe_join(api_data.get("pest_susceptibility")),
         "hardiness": (
-            f"{api_data.get('hardiness', {}).get('min')} "
-            f"to "
-            f"{api_data.get('hardiness', {}).get('max')}"
+            f"{api_data.get('hardiness', {}).get('min')} " f"to " f"{api_data.get('hardiness', {}).get('max')}"
             if api_data.get("hardiness")
             else None
         ),
-
         "hardiness_location": (
-            api_data.get(
-                "hardiness_location",
-                {}
-            ).get("full_url")
-            if api_data.get(
-                "hardiness_location"
-            )
-            else None
+            api_data.get("hardiness_location", {}).get("full_url") if api_data.get("hardiness_location") else None
         ),
-
         # =====================================
         # DIMENSIONS
         # =====================================
-
-        "max_height_ft": safe_float(
-            height
-        ),
-
-        "max_width_ft": safe_float(
-            width
-        ),
-
+        "max_height_ft": safe_float(height),
+        "max_width_ft": safe_float(width),
         # =====================================
         # MEDIA
         # =====================================
-
-        "default_image_url": image_data.get(
-            "regular_url"
-        ),
-
-        "thumbnail_url": image_data.get(
-            "thumbnail"
-        )
+        "default_image_url": image_data.get("regular_url"),
+        "thumbnail_url": image_data.get("thumbnail"),
     }
+
 
 # ===============================
 # DATABASE CACHE LAYER (PlantSpeciesCache)
 # ===============================
-def get_or_create_species_cache(
-    db: Session,
-    external_species_id: int,
-    fallback_name: str = None
-) -> PlantSpeciesCache:
+def get_or_create_species_cache(db: Session, external_species_id: int, fallback_name: str = None) -> PlantSpeciesCache:
     """
     Retrieves species from DB cache or fetches from snapshot/API and caches it.
     """
     logger.info(f"[DB CACHE] Attempting to get or create species with external_species_id={external_species_id}")
 
     # 1. Check DB cache first
-    cached = db.query(PlantSpeciesCache).filter(
-        PlantSpeciesCache.external_species_id == str(external_species_id)
-    ).first()
+    cached = (
+        db.query(PlantSpeciesCache).filter(PlantSpeciesCache.external_species_id == str(external_species_id)).first()
+    )
 
     # --- BEGIN MODIFICATION ---
     # More comprehensive needs_sync check for backfilling new columns
     needs_sync = (
-        not cached or
-        cached.scientific_name == "Unknown Species" or # Placeholder
-        cached.is_fruit is None or # Original check
-        cached.watering_interval_days is None or # Original check
+        not cached
+        or cached.scientific_name == "Unknown Species"  # Placeholder
+        or cached.is_fruit is None  # Original check
+        or cached.watering_interval_days is None  # Original check
+        or
         # Add checks for newly added columns that might be "empty" but not None
-        cached.description == "" or
-        cached.max_height_ft == 0.0 or
-        cached.default_image_url == "" or
-        cached.plant_type == "" or
-        cached.care_level == "" or
-        cached.sunlight_requirement == ""
+        cached.description == ""
+        or cached.max_height_ft == 0.0
+        or cached.default_image_url == ""
+        or cached.plant_type == ""
+        or cached.care_level == ""
+        or cached.sunlight_requirement == ""
         # You can add more checks here for other specific columns if needed
     )
     # --- END MODIFICATION ---
@@ -618,7 +457,9 @@ def get_or_create_species_cache(
     elif cached and needs_sync:
         logger.info(f"[DB CACHE] Species {external_species_id} found but needs sync.")
     else:
-        logger.info(f"[DB CACHE] Species {external_species_id} not found in DB cache. Attempting to fetch from snapshot/API.")
+        logger.info(
+            f"[DB CACHE] Species {external_species_id} not found in DB cache. Attempting to fetch from snapshot/API."
+        )
 
     # 2. If not in DB or needs sync, get data from snapshot/API
     api_data = _get_species_details_from_source(external_species_id)
@@ -627,21 +468,23 @@ def get_or_create_species_cache(
     # DATA ACQUISITION FAILURE
     # -------------------------------
     if not api_data or not api_data.get("id"):
-        logger.warning(f"[DB CACHE] Failed to acquire valid species data for {external_species_id}. Creating/updating placeholder.")
-        if cached: # Update existing placeholder
+        logger.warning(
+            f"[DB CACHE] Failed to acquire valid species data for {external_species_id}. Creating/updating placeholder."
+        )
+        if cached:  # Update existing placeholder
             cached.scientific_name = fallback_name or "Unknown Species"
             cached.common_name = fallback_name or "Unknown Species"
-            cached.watering_interval_days = 7 # Default
+            cached.watering_interval_days = 7  # Default
             db.commit()
             db.refresh(cached)
             logger.info(f"[DB CACHE] Updated placeholder species {external_species_id}. Internal ID: {cached.id}")
             return cached
-        else: # Create new placeholder
+        else:  # Create new placeholder
             new_species = PlantSpeciesCache(
                 external_species_id=str(external_species_id),
                 scientific_name=fallback_name or "Unknown Species",
                 common_name=fallback_name or "Unknown Species",
-                watering_interval_days=7
+                watering_interval_days=7,
             )
             db.add(new_species)
             db.commit()
@@ -695,129 +538,72 @@ def get_or_create_species_cache(
         db.refresh(cached)
         return cached
     else:
-        logger.info(
-            f"[DB CACHE] Creating new DB cached species "
-            f"{external_species_id}. "
-        )
+        logger.info(f"[DB CACHE] Creating new DB cached species " f"{external_species_id}. ")
 
         new_species = PlantSpeciesCache(
             external_species_id=str(external_species_id),
-
             # =====================================
             # CORE IDENTITY
             # =====================================
-
             scientific_name=enriched.get("species"),
-            common_name=api_data.get("common_name")
-                        or enriched.get("species"),
-
+            common_name=api_data.get("common_name") or enriched.get("species"),
             other_names=enriched.get("other_names"),
             plant_type=enriched.get("plant_type"),
             description=enriched.get("description"),
-
             # =====================================
             # EDIBILITY
             # =====================================
-
             is_edible=enriched.get("is_edible"),
             is_fruit=enriched.get("is_fruit"),
             is_veg=enriched.get("is_veg"),
             cuisine=enriched.get("cuisine"),
             medicinal=enriched.get("medicinal"),
-
-            poisonous_to_humans=enriched.get(
-                "poisonous_to_humans"
-            ),
-
-            poisonous_to_pets=enriched.get(
-                "poisonous_to_pets"
-            ),
-
+            poisonous_to_humans=enriched.get("poisonous_to_humans"),
+            poisonous_to_pets=enriched.get("poisonous_to_pets"),
             # =====================================
             # GROWTH & CARE
             # =====================================
-
             growth_rate=enriched.get("growth_rate"),
             life_cycle=enriched.get("cycle"),
             care_level=enriched.get("care_level"),
-
             watering=enriched.get("watering"),
-
-            watering_interval_days=enriched.get(
-                "watering_interval_days",
-                4
-            ),
-
-            drought_tolerant=enriched.get(
-                "drought_tolerant"
-            ),
-
-            salt_tolerant=enriched.get(
-                "salt_tolerant"
-            ),
-
+            watering_interval_days=enriched.get("watering_interval_days", 4),
+            drought_tolerant=enriched.get("drought_tolerant"),
+            salt_tolerant=enriched.get("salt_tolerant"),
             thorny=enriched.get("thorny"),
             invasive=enriched.get("invasive"),
             tropical=enriched.get("tropical"),
             indoor=enriched.get("indoor"),
-
             # =====================================
             # ENVIRONMENT
             # =====================================
-
             sunlight_requirement=enriched.get("sunlight"),
-
             recommended_soil=enriched.get("soil"),
-
-            propagation_method=enriched.get(
-                "propagation"
-            ),
-
-            pest_susceptibility=enriched.get(
-                "pest_susceptibility"
-            ),
-
+            propagation_method=enriched.get("propagation"),
+            pest_susceptibility=enriched.get("pest_susceptibility"),
             hardiness=enriched.get("hardiness"),
-
-            hardiness_location=enriched.get(
-                "hardiness_location"
-            ),
-
+            hardiness_location=enriched.get("hardiness_location"),
             # =====================================
             # DIMENSIONS
             # =====================================
-
             max_height_ft=enriched.get("max_height_ft"),
             max_width_ft=enriched.get("max_width_ft"),
-
             # =====================================
             # MEDIA
             # =====================================
-
-            default_image_url=enriched.get(
-                "default_image_url"
-            ),
-
-            thumbnail_url=enriched.get(
-                "thumbnail_url"
-            ),
-
+            default_image_url=enriched.get("default_image_url"),
+            thumbnail_url=enriched.get("thumbnail_url"),
             # =====================================
             # RAW API PAYLOAD
             # =====================================
-
-            data=api_data
+            data=api_data,
         )
 
         db.add(new_species)
         db.commit()
         db.refresh(new_species)
 
-        logger.info(
-            f"[DB CACHE] Created new species "
-            f"{external_species_id}. "
-            f"Internal ID: {new_species.id}"
-        )
+        logger.info(f"[DB CACHE] Created new species " f"{external_species_id}. " f"Internal ID: {new_species.id}")
 
         return new_species
 
@@ -826,12 +612,8 @@ def get_or_create_species_cache(
 # SPECIES SUGGESTION & RESOLUTION
 # ===============================
 
-def suggest_species(
-    db: Session,
-    query: str,
-    plant_type: str = None,
-    pre_cache_limit: int = 5
-):
+
+def suggest_species(db: Session, query: str, plant_type: str = None, pre_cache_limit: int = 5):
     """
     Suggests species based on query.
     """
@@ -844,54 +626,30 @@ def suggest_species(
 
     search_query_like = f"%{query}%"
 
-    cached_matches = db.query(
-        PlantSpeciesCache
-    ).filter(
-        (
-            PlantSpeciesCache.common_name.ilike(
-                search_query_like
-            )
+    cached_matches = (
+        db.query(PlantSpeciesCache)
+        .filter(
+            (PlantSpeciesCache.common_name.ilike(search_query_like))
+            | (PlantSpeciesCache.scientific_name.ilike(search_query_like))
         )
-        |
-        (
-            PlantSpeciesCache.scientific_name.ilike(
-                search_query_like
-            )
-        )
-    ).all()
+        .all()
+    )
 
     for species in cached_matches:
 
         candidates.append(
             normalize_candidate(
                 {
-                    "id": int(
-                        species.external_species_id
-                    ),
-
+                    "id": int(species.external_species_id),
                     "common_name": species.common_name,
-
-                    "scientific_name": (
-                        species.scientific_name
-                    ),
-
+                    "scientific_name": (species.scientific_name),
                     "is_edible": species.is_edible,
-
                     "is_fruit": species.is_fruit,
-
                     "is_veg": species.is_veg,
-
-                    "growth_rate": (
-                        species.growth_rate
-                    ),
-
-                    "type": (
-                        species.data.get("type")
-                        if species.data
-                        else None
-                    )
+                    "growth_rate": (species.growth_rate),
+                    "type": (species.data.get("type") if species.data else None),
                 },
-                "db_cache"
+                "db_cache",
             )
         )
 
@@ -903,10 +661,7 @@ def suggest_species(
 
     if cached_suggestions:
 
-        logger.info(
-            f"[SPECIES SUGGEST] Using cached suggestions "
-            f"for '{query}'"
-        )
+        logger.info(f"[SPECIES SUGGEST] Using cached suggestions " f"for '{query}'")
 
         api_results = cached_suggestions
 
@@ -915,50 +670,26 @@ def suggest_species(
         api_results = search_plant_species_api(query)
 
         if api_results:
-            cache_species_suggestions(
-                query,
-                api_results
-            )
+            cache_species_suggestions(query, api_results)
     for item in api_results:
 
         candidates.append(
             normalize_candidate(
                 {
                     "id": item.get("id"),
-
-                    "common_name": item.get(
-                        "common_name"
-                    ),
-
-                    "scientific_name": item.get(
-                        "scientific_name"
-                    ),
-
+                    "common_name": item.get("common_name"),
+                    "scientific_name": item.get("scientific_name"),
                     "type": item.get("type"),
-
-                    "is_fruit": item.get(
-                        "edible_fruit"
-                    ),
-
-                    "is_veg": item.get(
-                        "edible_leaf"
-                    ),
+                    "is_fruit": item.get("edible_fruit"),
+                    "is_veg": item.get("edible_leaf"),
                 },
-                "api"
+                "api",
             )
         )
     # 3. RANKING
-    ranked = rank_species_matches(
-        query,
-        candidates,
-        plant_type=plant_type
-    )
+    ranked = rank_species_matches(query, candidates, plant_type=plant_type)
 
-    logger.info(
-        f"[SPECIES SUGGEST] Ranked {len(ranked)} "
-        f"candidates for query='{query}'. "
-        f"Top 5: {ranked[:5]}"
-    )
+    logger.info(f"[SPECIES SUGGEST] Ranked {len(ranked)} " f"candidates for query='{query}'. " f"Top 5: {ranked[:5]}")
 
     # =====================================
     # SAVE TOP SUGGESTIONS TO JSON
@@ -966,7 +697,9 @@ def suggest_species(
     saved_count = 0
     for i, suggestion in enumerate(ranked):
         if saved_count >= pre_cache_limit:
-            logger.debug(f"[SUGGESTION CACHE] Reached pre_cache_limit ({pre_cache_limit}). Stopping further snapshot saves.")
+            logger.debug(
+                f"[SUGGESTION CACHE] Reached pre_cache_limit ({pre_cache_limit}). Stopping further snapshot saves."
+            )
             break
 
         species_id = suggestion.get("id")
@@ -976,7 +709,9 @@ def suggest_species(
 
         # Only save if species_id is valid and score is > 50 or == 100
         if species_id and (score is not None and (score > 50 or score == 100)):
-            logger.debug(f"[SUGGESTION CACHE] Score {score} meets criteria for species ID {species_id}. Attempting to get details.")
+            logger.debug(
+                f"[SUGGESTION CACHE] Score {score} meets criteria for species ID {species_id}. Attempting to get details."
+            )
             # Directly use the new helper to get details, which handles snapshot/API
             details = _get_species_details_from_source(species_id)
 
@@ -985,48 +720,30 @@ def suggest_species(
                 saved_count += 1
                 logger.debug(f"[SUGGESTION CACHE] Successfully processed details for species ID {species_id}.")
             else:
-                logger.warning(f"[SUGGESTION CACHE] Failed to get valid details for species ID {species_id}. Snapshot not saved.")
+                logger.warning(
+                    f"[SUGGESTION CACHE] Failed to get valid details for species ID {species_id}. Snapshot not saved."
+                )
         else:
-            logger.debug(f"[SUGGESTION CACHE] Species ID {species_id} or score {score} does not meet criteria. Snapshot not saved.")
+            logger.debug(
+                f"[SUGGESTION CACHE] Species ID {species_id} or score {score} does not meet criteria. Snapshot not saved."
+            )
 
-
-    logger.info(
-        f"[SUGGESTION CACHE] Saved {saved_count} "
-        f"species snapshots for '{query}' based on score criteria."
-    )
+    logger.info(f"[SUGGESTION CACHE] Saved {saved_count} " f"species snapshots for '{query}' based on score criteria.")
 
     return ranked[:5]
 
 
-def resolve_species(
-    db: Session,
-    plant_name: str,
-    plant_type: str = None
-) -> int | None:
+def resolve_species(db: Session, plant_name: str, plant_type: str = None) -> int | None:
     """
     Main entry used by plant_service
     to get an internal species_id.
     """
 
-    logger.info(
-        f"[SPECIES RESOLVE] "
-        f"Attempting to resolve species "
-        f"for '{plant_name}' "
-        f"(type: {plant_type})."
-    )
+    logger.info(f"[SPECIES RESOLVE] " f"Attempting to resolve species " f"for '{plant_name}' " f"(type: {plant_type}).")
 
-    suggestions = suggest_species(
-        db,
-        plant_name,
-        plant_type
-    )
+    suggestions = suggest_species(db, plant_name, plant_type)
 
-    best_match = select_best_match(
-        plant_name,
-        suggestions,
-        threshold=65,
-        plant_type=plant_type
-    )
+    best_match = select_best_match(plant_name, suggestions, threshold=65, plant_type=plant_type)
 
     # =====================================
     # NO GOOD MATCH
@@ -1034,11 +751,7 @@ def resolve_species(
 
     if not best_match:
 
-        logger.info(
-            f"[SPECIES RESOLVE] "
-            f"No confident best match found "
-            f"for '{plant_name}'."
-        )
+        logger.info(f"[SPECIES RESOLVE] " f"No confident best match found " f"for '{plant_name}'.")
 
         return None
 
@@ -1056,23 +769,12 @@ def resolve_species(
 
     try:
 
-        species = get_or_create_species_cache(
-            db,
-            best_match["id"],
-            fallback_name=best_match.get(
-                "scientific_name"
-            )
-        )
+        species = get_or_create_species_cache(db, best_match["id"], fallback_name=best_match.get("scientific_name"))
 
         return species.id if species else None
 
     except Exception as e:
 
-        logger.error(
-            f"[SPECIES RESOLVE] "
-            f"Failed to get or create "
-            f"species cache for "
-            f"{best_match['id']}: {e}"
-        )
+        logger.error(f"[SPECIES RESOLVE] " f"Failed to get or create " f"species cache for " f"{best_match['id']}: {e}")
 
         return None

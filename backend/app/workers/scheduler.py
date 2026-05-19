@@ -37,7 +37,7 @@ Notes:
 - Interval can be adjusted based on system needs
 """
 
-#app.workers.scheduler.py
+# app.workers.scheduler.py
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy.orm import Session
@@ -49,6 +49,7 @@ from app.core.logger import setup_logger
 
 scheduler = BackgroundScheduler()
 logger = setup_logger()
+
 
 # ===============================
 # JOB: CHECK ALL USERS
@@ -66,14 +67,12 @@ def irrigation_job():
     try:
         users = db.query(User).all()
         for user in users:
-            irrigation_service.get_plants_needing_water(
-                db=db,
-                user_id=user.id
-            )
+            irrigation_service.get_plants_needing_water(db=db, user_id=user.id)
         logger.info("Irrigation job executed")
 
     finally:
         db.close()
+
 
 # ===============================
 # START SCHEDULER
@@ -85,18 +84,14 @@ def start_scheduler():
             "interval",
             minutes=10,
             id="irrigation_interval",
-            replace_existing=True
+            replace_existing=True,
         )
 
-        scheduler.add_job(
-            irrigation_job,
-            "date",
-            id="irrigation_startup",
-            replace_existing=True
-        )
+        scheduler.add_job(irrigation_job, "date", id="irrigation_startup", replace_existing=True)
 
         scheduler.start()
         logger.info("Scheduler started.")
+
 
 # ===============================
 # STOP SCHEDULER

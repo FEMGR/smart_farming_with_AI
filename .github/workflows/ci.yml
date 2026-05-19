@@ -55,11 +55,12 @@ jobs:
             sleep 2
           done
 
-      # Linter and Tests now have their environment variables defined locally
-      - name: Run Linter (flake8)
+      - name: Run Linter (flake8) and Formatter (black)
         env:
           PYTHONPATH: .
-        run: flake8 . --exclude=backend/alembic/versions/*
+        run: |
+          flake8 . --exclude=backend/alembic/versions/*
+          black --check . --exclude "backend/alembic/versions/.*"
 
       - name: Run Test Suite with Coverage
         env:

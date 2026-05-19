@@ -11,7 +11,7 @@ from main import app
 from app.database.db import Base, get_db
 import pytest
 
-'''
+"""
 from unittest.mock import patch
 
 @pytest.fixture(autouse=True)
@@ -34,8 +34,7 @@ def mock_perenual_api():
         mock_suggest.side_effect = side_effect
         yield mock_suggest
 
-'''
-
+"""
 
 
 pytest_plugins = [
@@ -51,14 +50,10 @@ SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
     connect_args={"check_same_thread": False},
-    poolclass=StaticPool
+    poolclass=StaticPool,
 )
 
-TestingSessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
+TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
 # -----------------------------
@@ -109,21 +104,16 @@ def user_factory(client):
         if not email:
             email = f"test_{uuid.uuid4()}@example.com"
 
-        client.post("/auth/register", json={
-            "email": email,
-            "password": password
-        })
+        client.post("/auth/register", json={"email": email, "password": password})
 
-        response = client.post("/auth/login", data={
-            "username": email,
-            "password": password
-        })
+        response = client.post("/auth/login", data={"username": email, "password": password})
 
         assert response.status_code == 200
 
         return response.json()["access_token"]
 
     return _create_user
+
 
 # -----------------------------
 # BACKWARD COMPATIBILITY FIXTURE

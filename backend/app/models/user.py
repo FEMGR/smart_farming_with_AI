@@ -16,7 +16,7 @@ Layer Interaction:
 
 """
 
-#app.models.user.py
+# app.models.user.py
 
 from sqlalchemy import Column, Integer, String, TIMESTAMP, func
 from sqlalchemy.orm import relationship

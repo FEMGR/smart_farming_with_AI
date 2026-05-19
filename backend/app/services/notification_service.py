@@ -30,7 +30,7 @@ Retrieved when requested by route
 Returned to client
 """
 
-#app.services.notification_service.py
+# app.services.notification_service.py
 
 from sqlalchemy.orm import Session
 from app.models.notification import Notification
@@ -50,7 +50,7 @@ def create_notification(db: Session, user_id: int, plant: Plant, message: str):
     )
 
     db.add(notification)
-    db.flush() #db.commit()
+    db.flush()  # db.commit()
     db.refresh(notification)
 
     return notification
@@ -60,19 +60,16 @@ def create_notification(db: Session, user_id: int, plant: Plant, message: str):
 # GET USER NOTIFICATIONS
 # ===============================
 def get_notifications(db: Session, user_id: int):
-    return db.query(Notification).filter(
-        Notification.user_id == user_id
-    ).order_by(Notification.created_at.desc()).all()
+    return db.query(Notification).filter(Notification.user_id == user_id).order_by(Notification.created_at.desc()).all()
 
 
 # ===============================
 # MARK AS READ
 # ===============================
 def mark_as_read(db: Session, notification_id: int, user_id: int):
-    notification = db.query(Notification).filter(
-        Notification.id == notification_id,
-        Notification.user_id == user_id
-    ).first()
+    notification = (
+        db.query(Notification).filter(Notification.id == notification_id, Notification.user_id == user_id).first()
+    )
 
     if not notification:
         return None
@@ -90,9 +87,13 @@ def mark_as_read(db: Session, notification_id: int, user_id: int):
 # ===============================
 def notification_exists_today(db: Session, user_id: int, plant_id: int):
     today = date.today()
-    return db.query(Notification).filter(
-        Notification.user_id == user_id,
-        Notification.plant_id == plant_id,
-        Notification.created_at >= today
-    ).first() is not None
-
+    return (
+        db.query(Notification)
+        .filter(
+            Notification.user_id == user_id,
+            Notification.plant_id == plant_id,
+            Notification.created_at >= today,
+        )
+        .first()
+        is not None
+    )

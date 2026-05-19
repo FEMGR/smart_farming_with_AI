@@ -1,5 +1,6 @@
 # tests/test_locations.py
 
+
 def test_create_location(client, token):
     """
     Test creating a new location (authenticated).
@@ -9,7 +10,7 @@ def test_create_location(client, token):
     location_data = {
         "name": "Greenhouse A",
         "description": "Main greenhouse",
-        "environment_type": "greenhouse"
+        "environment_type": "greenhouse",
     }
 
     response = client.post("/locations/", json=location_data, headers=headers)
@@ -49,6 +50,7 @@ def test_get_locations_unauthorized(client):
 
     assert response.status_code == 401
 
+
 def test_user_cannot_access_other_users_locations(client, create_user):
     """
     Ensure user cannot access another user's locations.
@@ -60,9 +62,7 @@ def test_user_cannot_access_other_users_locations(client, create_user):
     headers_b = {"Authorization": f"Bearer {token_b}"}
 
     # User A creates location
-    client.post("/locations/", json={
-        "name": "User A Location"
-    }, headers=headers_a)
+    client.post("/locations/", json={"name": "User A Location"}, headers=headers_a)
 
     # User B fetches locations
     response = client.get("/locations/", headers=headers_b)

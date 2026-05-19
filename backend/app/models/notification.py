@@ -19,7 +19,7 @@ Notes:
 - Triggered by system events (e.g., irrigation alerts)
 """
 
-#app.models.notification.py
+# app.models.notification.py
 
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, TIMESTAMP, func
 from sqlalchemy.orm import relationship

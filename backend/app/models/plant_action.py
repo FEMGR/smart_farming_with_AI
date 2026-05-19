@@ -19,7 +19,7 @@ Notes:
 - Helps support automation and auditing of plant care
 """
 
-#app.models.plant_action.py
+# app.models.plant_action.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, Numeric, func
 from sqlalchemy.orm import relationship
