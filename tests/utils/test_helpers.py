@@ -35,6 +35,7 @@ def create_test_plant(client, token):
         headers={"Authorization": f"Bearer {token}"}
     )
 
+
 def create_test_location(client, token):
     """
     Create a location and return its response JSON.
