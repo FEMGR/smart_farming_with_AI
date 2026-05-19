@@ -1,7 +1,23 @@
 [flake8]
+# Increase max line length so we stop hitting E501 errors
 max-line-length = 120
-exclude = 
+
+# Ignore stylistic warnings that are often subjective or too noisy
+ignore =
+    E265,  # block comment should start with '# '
+    E261,  # at least two spaces before inline comment
+    E262,  # inline comment should start with '# '
+    E302,  # expected 2 blank lines, found 1
+    E303,  # too many blank lines
+    E305,  # expected 2 blank lines after class/function
+    W291,  # trailing whitespace
+    W292,  # no newline at end of file
+    W293,  # blank line contains whitespace
+    W391   # blank line at end of file
+
+# Exclude auto-generated or external code that you don't control
+exclude =
     .git,
     __pycache__,
-    backend/alembic/versions/
-ignore = E122,E128
+    venv,
+    backend/alembic/versions/*

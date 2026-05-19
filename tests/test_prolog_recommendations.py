@@ -1,5 +1,6 @@
-from app.services.plant_service import get_companion_recommendations
 from app.models.plant import Plant
+from app.services.plant_service import get_companion_recommendations
+
 
 # --- Mocking Database and Plant Objects ---
 
