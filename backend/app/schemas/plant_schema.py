@@ -17,15 +17,16 @@ Layer Interaction:
 
 # app.schemas.plant_schema.py
 
-from pydantic import BaseModel, ConfigDict, computed_field, model_validator
-from typing import Optional
 from datetime import date, datetime
+from typing import Literal
+from typing import Optional
 
+from pydantic import BaseModel, ConfigDict, computed_field, model_validator
+
+from app.core.constants import PLANT_TYPES
 from app.schemas.location_schema import LocationResponse
 from app.schemas.species_schema import SpeciesResponse
 from app.utils.plant_logic import get_effective_watering
-from typing import Literal
-from app.core.constants import PLANT_TYPES
 
 # Convert the list to a Type that Pydantic understands
 PlantType = Literal[tuple(PLANT_TYPES)]

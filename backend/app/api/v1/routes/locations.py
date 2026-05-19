@@ -33,12 +33,13 @@ Response returned to client
 
 # app.api.routes.locations.py
 
-from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.orm import Session
 from typing import List
 
-from app.database.db import get_db
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+
 from app.api.dependencies import get_current_user_id
+from app.database.db import get_db
 from app.schemas.location_schema import LocationCreate, LocationUpdate, LocationResponse
 from app.services import location_service
 
