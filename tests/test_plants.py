@@ -18,6 +18,7 @@ def test_get_plants(client, token):
         assert "id" in data[0]
         assert "name" in data[0]
 
+
 def test_create_plant(client, token):
     headers = {"Authorization": f"Bearer {token}"}
 
@@ -35,6 +36,7 @@ def test_create_plant(client, token):
     assert data["data_source"] == "perenual"
     assert data["name"] == "Nasturtium"
 
+
 def test_get_plants_unauthorized(client):
     """
     Ensure endpoint rejects requests without token.
@@ -42,6 +44,7 @@ def test_get_plants_unauthorized(client):
     response = client.get("/plants/")
 
     assert response.status_code == 401
+
 
 def test_create_and_get_plants(client, token):
     """
@@ -61,6 +64,7 @@ def test_create_and_get_plants(client, token):
     data = response.json()
 
     assert any(p["name"] == "TestPlant" for p in data)
+
 
 def test_create_plant_with_location(client, token):
     """
@@ -90,6 +94,7 @@ def test_create_plant_with_location(client, token):
     # Validate relationship
     assert data["location_id"] == location_id
 
+
 def test_create_plant_invalid_location(client, token):
     """
     Should fail if location does not exist.
@@ -107,6 +112,7 @@ def test_create_plant_invalid_location(client, token):
     response = client.post("/plants/", json=plant_data, headers=headers)
 
     assert response.status_code in [400, 404]
+
 
 def test_create_plant_wrong_user_location(client, create_user):
     """
@@ -140,6 +146,7 @@ def test_create_plant_wrong_user_location(client, create_user):
     )
 
     assert response.status_code in [403, 404]
+
 
 def test_delete_location_blocked_if_has_plants(client, token):
     """

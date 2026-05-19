@@ -1,6 +1,5 @@
 from app.services.plant_service import get_companion_recommendations
 from app.models.plant import Plant
-from sqlalchemy.orm import Session
 
 # --- Mocking Database and Plant Objects ---
 
