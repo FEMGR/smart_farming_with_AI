@@ -1,10 +1,8 @@
 from app.services.plant_service import get_companion_recommendations
-from app.models.plant import Plant  # Import the actual Plant model for type hinting, though we'll mock its behavior
-from sqlalchemy.orm import Session  # Import Session for type hinting
+from app.models.plant import Plant
+from sqlalchemy.orm import Session
 
 # --- Mocking Database and Plant Objects ---
-# In a real test suite, you'd use a proper testing database or more sophisticated mocking.
-# For this quick demonstration, we'll create simple mock objects.
 
 
 class MockSpecies:
@@ -17,7 +15,7 @@ class MockPlant:
     def __init__(self, name, plant_type, species_scientific_name):
         self.name = name
         self.plant_type = plant_type
-        self.species = MockSpecies(species_scientific_name)  # Attach a mock species object
+        self.species = MockSpecies(species_scientific_name)
 
 # Mock a query object that returns our list of plants
 
@@ -35,14 +33,13 @@ class MockQuery:
     def all(self):
         return self._plants
 
+
 # Mock a database session that returns our mock plants when queried for Plant
 
 
 class MockSession:
     def query(self, model):
         if model == Plant:
-            # Define the plants we want to test with
-            # These should ideally match the plants you've been testing with
             mock_plants_data = [
                 {
                     'name': 'tomato',
