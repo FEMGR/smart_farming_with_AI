@@ -39,11 +39,15 @@ import os
 import time
 from typing import List, Dict, Optional
 
-from app.core.constants import SUGGESTION_CACHE_FILE, SUGGESTION_MAX_AGE_SECONDS, \
-    MAX_SUGGESTION_ENTRIES  # Import constants
+from app.core.constants import (
+    SUGGESTION_CACHE_FILE,
+    SUGGESTION_MAX_AGE_SECONDS,
+    MAX_SUGGESTION_ENTRIES,
+)  # Import constants
 from app.core.logger import setup_logger
 
 logger = setup_logger()
+
 
 # =====================================
 # CACHE MANAGEMENT
@@ -54,7 +58,7 @@ def ensure_cache_dir():
     Creates the 'temp' directory if it does not already exist.
     """
     cache_dir = os.path.dirname(SUGGESTION_CACHE_FILE)
-    if cache_dir: # Only create if cache_dir is not empty (i.e., not just a filename)
+    if cache_dir:  # Only create if cache_dir is not empty (i.e., not just a filename)
         os.makedirs(cache_dir, exist_ok=True)
 
 
@@ -74,10 +78,14 @@ def load_suggestion_cache() -> Dict:
             return json.load(f)
 
     except json.JSONDecodeError as e:
-        logger.error(f"[SUGGESTION CACHE] JSON decode error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache.")
+        logger.error(
+            f"[SUGGESTION CACHE] JSON decode error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache."
+        )
         return {}
     except Exception as e:
-        logger.error(f"[SUGGESTION CACHE] Unexpected error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache.")
+        logger.error(
+            f"[SUGGESTION CACHE] Unexpected error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache."
+        )
         return {}
 
 
@@ -115,42 +123,32 @@ def cleanup_cache(cache: Dict) -> Dict:
 
     # Enforce maximum number of entries by keeping the most recent ones
     if len(cleaned) > MAX_SUGGESTION_ENTRIES:
-        logger.info(f"[SUGGESTION CACHE] Cache size ({len(cleaned)}) exceeds MAX_SUGGESTION_ENTRIES ({MAX_SUGGESTION_ENTRIES}). Trimming oldest entries.")
+        logger.info(
+            f"[SUGGESTION CACHE] Cache size ({len(cleaned)}) exceeds MAX_SUGGESTION_ENTRIES ({MAX_SUGGESTION_ENTRIES}). Trimming oldest entries."
+        )
         sorted_items = sorted(
-            cleaned.items(),
-            key=lambda x: x[1].get("timestamp", 0),
-            reverse=True  # Sort by most recent first
+            cleaned.items(), key=lambda x: x[1].get("timestamp", 0), reverse=True  # Sort by most recent first
         )
         cleaned = dict(sorted_items[:MAX_SUGGESTION_ENTRIES])
 
     return cleaned
 
 
-def cache_species_suggestions(
-    query: str,
-    suggestions: List[Dict]
-):
+def cache_species_suggestions(query: str, suggestions: List[Dict]):
     """
     Adds or updates a list of species suggestions for a given query in the cache.
     """
     cache = load_suggestion_cache()
     cache = cleanup_cache(cache)  # Clean up before adding new entry
 
-    cache[query.lower()] = {
-        "timestamp": time.time(),
-        "suggestions": suggestions
-    }
+    cache[query.lower()] = {"timestamp": time.time(), "suggestions": suggestions}
 
     save_suggestion_cache(cache)
 
-    logger.info(
-        f"[SUGGESTION CACHE] Cached {len(suggestions)} suggestions for query: '{query}'"
-    )
+    logger.info(f"[SUGGESTION CACHE] Cached {len(suggestions)} suggestions for query: '{query}'")
 
 
-def get_cached_species_suggestions(
-    query: str
-) -> Optional[List[Dict]]:
+def get_cached_species_suggestions(query: str) -> Optional[List[Dict]]:
     """
     Retrieves cached species suggestions for a given query.
     Args:The search query string.
@@ -172,8 +170,6 @@ def get_cached_species_suggestions(
         # save_suggestion_cache(cache)
         return None
 
-    logger.info(
-        f"[SUGGESTION CACHE] Cache hit for query: '{query}'"
-    )
+    logger.info(f"[SUGGESTION CACHE] Cache hit for query: '{query}'")
 
     return item.get("suggestions")

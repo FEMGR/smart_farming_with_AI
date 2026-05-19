@@ -28,6 +28,7 @@ Database accessed via models
         ↓
 Response returned to client
 """
+
 from datetime import date
 
 # app.api.routes.notifications.py

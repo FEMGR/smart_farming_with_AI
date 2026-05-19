@@ -42,7 +42,6 @@ from app.schemas.plant_schema import PlantCreate, PlantUpdate, PlantResponse
 from app.services import plant_service
 from app.core.exceptions import NotFoundError, PermissionDeniedError
 
-
 router = APIRouter(prefix="/plants", tags=["Plants"])
 
 

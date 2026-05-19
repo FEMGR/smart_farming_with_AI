@@ -34,10 +34,10 @@ Candidates ranked by score
 Best match selected or fallback returned
 """
 
-
-#app/utils/species_matching.py
+# app/utils/species_matching.py
 from rapidfuzz import fuzz
 from app.core.logger import setup_logger
+
 # app/utils/species_matching.py
 from rapidfuzz import fuzz
 
@@ -70,7 +70,7 @@ def normalize_candidate(c: dict, source: str):
         "scientific_name": sci,
         "edible": c.get("edible"),  # 👈 Added
         "growth_rate": c.get("growth_rate"),  # 👈 Added
-        "source": source
+        "source": source,
     }
 
 
@@ -116,7 +116,6 @@ def compute_match_score(query: str, candidate: dict, plant_type: str = None) -> 
     return max(0, min(100, int(final_score)))
 
 
-
 # rank everything (used for suggestions)
 def rank_species_matches(query: str, candidates: list, plant_type: str = None):
     scored = []
@@ -124,17 +123,19 @@ def rank_species_matches(query: str, candidates: list, plant_type: str = None):
     for c in candidates:
         score = compute_match_score(query, c, plant_type=plant_type)
 
-        scored.append({
-            "score": score,
-            "id": c.get("id"),
-            "common_name": c.get("common_name"),
-            "scientific_name": c.get("scientific_name"),
-            "source": c.get("source", "unknown")
-        })
+        scored.append(
+            {
+                "score": score,
+                "id": c.get("id"),
+                "common_name": c.get("common_name"),
+                "scientific_name": c.get("scientific_name"),
+                "source": c.get("source", "unknown"),
+            }
+        )
 
     scored.sort(key=lambda x: x["score"], reverse=True)
 
-    #DEBUG
+    # DEBUG
     logger.info(f"\n[DEBUG] Ranking for query: '{query}'")
     for s in scored[:5]:
         logger.info(f"  → {s['common_name']} ({s['scientific_name']}) | score={s['score']} | {s['source']}")

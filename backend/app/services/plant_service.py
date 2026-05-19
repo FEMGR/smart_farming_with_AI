@@ -30,7 +30,6 @@ Database transaction executed
 Result returned to route
 """
 
-
 # app/services/plant_service.py
 
 
@@ -42,13 +41,16 @@ from app.models.location import Location
 from app.models.plant import Plant
 from app.models.plant_species_cache import PlantSpeciesCache
 from app.schemas.plant_schema import PlantCreate, PlantUpdate
+
 # Import species-related services from perenual_service
 from app.services.perenual_service import (
     get_or_create_species_cache,
-    resolve_species  # This is the main entry for species resolution
+    resolve_species,  # This is the main entry for species resolution
 )
-from app.services.prolog.prolog_service import get_recommendations, \
-    get_companion_suggestions  # Import get_companion_suggestions
+from app.services.prolog.prolog_service import (
+    get_recommendations,
+    get_companion_suggestions,
+)  # Import get_companion_suggestions
 from app.utils.prolog_normalizer import to_prolog_atom
 
 logger = setup_logger()
@@ -57,6 +59,7 @@ logger = setup_logger()
 # ===============================
 # HELPERS
 # ===============================
+
 
 def _validate_location(db: Session, location_id: int, user_id: int):
     """Reusable location ownership check."""
@@ -95,16 +98,16 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
 
     if species_internal_id:
         species_record = db.query(PlantSpeciesCache).get(species_internal_id)
-        logger.info(f"[PLANT SERVICE] Linked '{plant.name}' → {species_record.scientific_name} (DB ID: {species_record.id})")
+        logger.info(
+            f"[PLANT SERVICE] Linked '{plant.name}' → {species_record.scientific_name} (DB ID: {species_record.id})"
+        )
     else:
         logger.info(f"[PLANT SERVICE] No confident species match found for '{plant.name}'.")
-
 
     # 3. Determine Watering Interval
     user_interval = getattr(plant, "watering_interval_days", None)
     final_interval = (
-        user_interval if user_interval else
-        (species_record.watering_interval_days if species_record else 4)
+        user_interval if user_interval else (species_record.watering_interval_days if species_record else 4)
     )
 
     # 4. Save to Database
@@ -118,7 +121,7 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
         data_source="perenual" if species_internal_id else "manual",
         user_id=user_id,
         use_sensor=plant.use_sensor,
-        watering_interval_days= final_interval
+        watering_interval_days=final_interval,
     )
 
     db.add(new_plant)
@@ -127,42 +130,46 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
 
     return _attach_metadata(new_plant)
 
+
 # ===============================
 # GET ALL PLANTS (USER-SCOPED)
 # ===============================
 def get_plants(db: Session, user_id: int):
     # We use joinedload to get species and location in one query
-    plants = db.query(Plant).options(
-        joinedload(Plant.species),
-        joinedload(Plant.location)
-    ).filter(
-        Plant.user_id == user_id
-    ).all()
+    plants = (
+        db.query(Plant)
+        .options(joinedload(Plant.species), joinedload(Plant.location))
+        .filter(Plant.user_id == user_id)
+        .all()
+    )
 
     return [_attach_metadata(p) for p in plants]
+
 
 # ===============================
 # GET PLANT BY ID (USER-SCOPED)
 # ===============================
 def get_plant(db: Session, plant_id: int, user_id: int):
-    plant = db.query(Plant).options(
-        joinedload(Plant.species),
-        joinedload(Plant.location)
-    ).filter(
-        Plant.id == plant_id,
-        Plant.user_id == user_id
-    ).first()
+    plant = (
+        db.query(Plant)
+        .options(joinedload(Plant.species), joinedload(Plant.location))
+        .filter(Plant.id == plant_id, Plant.user_id == user_id)
+        .first()
+    )
 
     return _attach_metadata(plant)
+
 
 # ===============================
 # UPDATE PLANT (USER-SCOPED)
 # ===============================
 def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id: int):
-    plant = db.query(Plant).options(
-        joinedload(Plant.species),
-        joinedload(Plant.location)
-    ).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
+    plant = (
+        db.query(Plant)
+        .options(joinedload(Plant.species), joinedload(Plant.location))
+        .filter(Plant.id == plant_id, Plant.user_id == user_id)
+        .first()
+    )
 
     if not plant:
         return None
@@ -205,14 +212,12 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
     db.refresh(plant)
     return _attach_metadata(plant)
 
+
 # ===============================
 # DELETE PLANT (USER-SCOPED)
 # ===============================
 def delete_plant(db: Session, plant_id: int, user_id: int):
-    plant = db.query(Plant).filter(
-        Plant.id == plant_id,
-        Plant.user_id == user_id
-    ).first()
+    plant = db.query(Plant).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
 
     if not plant:
         return None
@@ -221,6 +226,7 @@ def delete_plant(db: Session, plant_id: int, user_id: int):
     db.commit()
 
     return {"message": "Successfully deleted plant"}
+
 
 # ===============================
 # CREATE PLANT WITH PERENUAL DATA
@@ -238,7 +244,7 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
     new_plant = Plant(
         name=plant.name,
         plant_type=plant.plant_type,
-        species_id=species_record.id, # Use the internal ID of the cached species
+        species_id=species_record.id,  # Use the internal ID of the cached species
         location_id=plant.location_id,
         group_id=plant.group_id,
         planting_date=plant.planting_date,
@@ -254,16 +260,13 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
 
     return _attach_metadata(new_plant)
 
+
 # ===============================
 # Companion Planting Reccomendation
 # ===============================
 def get_companion_recommendations(db: Session, user_id: int):
 
-    plants = db.query(Plant).options(
-        joinedload(Plant.species)
-    ).filter(
-        Plant.user_id == user_id
-    ).all()
+    plants = db.query(Plant).options(joinedload(Plant.species)).filter(Plant.user_id == user_id).all()
 
     # Normalize and deduplicate plant names for Prolog
     atoms = get_unique_prolog_atoms(plants)
@@ -277,10 +280,7 @@ def get_companion_recommendations(db: Session, user_id: int):
     new_suggestions = get_companion_suggestions(atoms)
 
     # Combine results
-    return {
-        "existing_plant_interactions": existing_interactions,
-        "new_companion_suggestions": new_suggestions
-    }
+    return {"existing_plant_interactions": existing_interactions, "new_companion_suggestions": new_suggestions}
 
 
 def get_unique_prolog_atoms(plants):
@@ -289,10 +289,14 @@ def get_unique_prolog_atoms(plants):
     for plant in plants:
         plant_data = {
             "name": plant.name,
-            "species": {
-                "common_name": plant.species.common_name if plant.species else None,
-                "scientific_name": plant.species.scientific_name if plant.species else None,
-            } if plant.species else None
+            "species": (
+                {
+                    "common_name": plant.species.common_name if plant.species else None,
+                    "scientific_name": plant.species.scientific_name if plant.species else None,
+                }
+                if plant.species
+                else None
+            ),
         }
 
         atom = to_prolog_atom(plant_data)

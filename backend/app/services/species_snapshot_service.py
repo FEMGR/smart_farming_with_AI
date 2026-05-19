@@ -33,12 +33,13 @@ API response is saved as a new snapshot by this service
 Data returned to `perenual_service`
 """
 
-#app/services/species_snapshot_service.py
+# app/services/species_snapshot_service.py
 import json
 import time
 from app.core.logger import setup_logger
-from app.core.constants import SNAPSHOT_DIR, SNAPSHOT_MAX_AGE_HOURS, MAX_SNAPSHOT_FILES # Import constants
+from app.core.constants import SNAPSHOT_DIR, SNAPSHOT_MAX_AGE_HOURS, MAX_SNAPSHOT_FILES  # Import constants
 from pathlib import Path
+
 # app/services/species_snapshot_service.py
 import json
 import time
@@ -48,19 +49,15 @@ from app.core.constants import SNAPSHOT_DIR, SNAPSHOT_MAX_AGE_HOURS, MAX_SNAPSHO
 from app.core.logger import setup_logger
 
 logger = setup_logger()
-#The directory where species snapshots will be stored. Created if it doesn't exist.
-SNAPSHOT_DIR.mkdir(
-    parents=True,
-    exist_ok=True
-)
+# The directory where species snapshots will be stored. Created if it doesn't exist.
+SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
 
 # =====================================
 # UTILITY FUNCTIONS
 # =====================================
 
-def get_snapshot_path(
-    species_id: int
-) -> Path:
+
+def get_snapshot_path(species_id: int) -> Path:
     """
     Constructs the absolute file path for a given species snapshot.
     Args:species_id: The unique identifier of the species.
@@ -73,10 +70,8 @@ def get_snapshot_path(
 # SNAPSHOT MANAGEMENT
 # =====================================
 
-def save_species_snapshot(
-    species_id: int,
-    data: dict
-):
+
+def save_species_snapshot(species_id: int, data: dict):
     """
     Saves the provided species data as a JSON snapshot file.
     Before saving, it triggers a cleanup of old snapshots to manage disk space.
@@ -85,35 +80,18 @@ def save_species_snapshot(
     try:
         cleanup_old_snapshots()
 
-        path = get_snapshot_path(
-            species_id
-        )
+        path = get_snapshot_path(species_id)
 
-        with open(
-            path,
-            "w",
-            encoding="utf-8"
-        ) as f:
-            json.dump(
-                data,
-                f,
-                ensure_ascii=False,
-                indent=2
-            )
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
-        logger.info(
-            f"[SNAPSHOT] Saved species snapshot for ID: {species_id}"
-        )
+        logger.info(f"[SNAPSHOT] Saved species snapshot for ID: {species_id}")
 
     except Exception as e:
-        logger.error(
-            f"[SNAPSHOT] Failed to save species snapshot for ID {species_id}: {e}"
-        )
+        logger.error(f"[SNAPSHOT] Failed to save species snapshot for ID {species_id}: {e}")
 
 
-def load_species_snapshot(
-    species_id: int
-):
+def load_species_snapshot(species_id: int):
     """
     Loads species data from a snapshot file if it exists and is not expired.
     If the snapshot is expired, it is deleted.
@@ -121,48 +99,29 @@ def load_species_snapshot(
     Returns:The loaded species data as a dictionary if valid, otherwise None.
     """
     try:
-        path = get_snapshot_path(
-            species_id
-        )
+        path = get_snapshot_path(species_id)
 
         if not path.exists():
             logger.debug(f"[SNAPSHOT] No snapshot found for ID: {species_id}")
             return None
 
-        file_age = (
-            time.time()
-            - path.stat().st_mtime
-        )
+        file_age = time.time() - path.stat().st_mtime
 
         # =====================================
         # EXPIRED SNAPSHOT
         # =====================================
 
-        if file_age > (
-            SNAPSHOT_MAX_AGE_HOURS * 3600
-        ):
-            logger.info(
-                f"[SNAPSHOT] Expired snapshot for ID {species_id}. Deleting."
-            )
-            path.unlink(
-                missing_ok=True
-            )
+        if file_age > (SNAPSHOT_MAX_AGE_HOURS * 3600):
+            logger.info(f"[SNAPSHOT] Expired snapshot for ID {species_id}. Deleting.")
+            path.unlink(missing_ok=True)
             return None
 
-        with open(
-            path,
-            "r",
-            encoding="utf-8"
-        ) as f:
-            logger.info(
-                f"[SNAPSHOT] Loaded species snapshot for ID: {species_id}"
-            )
+        with open(path, "r", encoding="utf-8") as f:
+            logger.info(f"[SNAPSHOT] Loaded species snapshot for ID: {species_id}")
             return json.load(f)
 
     except Exception as e:
-        logger.error(
-            f"[SNAPSHOT] Failed to load species snapshot for ID {species_id}: {e}"
-        )
+        logger.error(f"[SNAPSHOT] Failed to load species snapshot for ID {species_id}: {e}")
         return None
 
 
@@ -173,10 +132,7 @@ def cleanup_old_snapshots():
     This function is called before saving new snapshots.
     """
     try:
-        files = sorted(
-            SNAPSHOT_DIR.glob("*.json"),
-            key=lambda p: p.stat().st_mtime
-        )
+        files = sorted(SNAPSHOT_DIR.glob("*.json"), key=lambda p: p.stat().st_mtime)
 
         # =====================================
         # REMOVE OLDEST FILES IF LIMIT EXCEEDED
@@ -184,14 +140,8 @@ def cleanup_old_snapshots():
 
         while len(files) > MAX_SNAPSHOT_FILES:
             oldest = files.pop(0)
-            logger.info(
-                f"[SNAPSHOT] Removing oldest snapshot due to limit: {oldest.name}"
-            )
-            oldest.unlink(
-                missing_ok=True
-            )
+            logger.info(f"[SNAPSHOT] Removing oldest snapshot due to limit: {oldest.name}")
+            oldest.unlink(missing_ok=True)
 
     except Exception as e:
-        logger.error(
-            f"[SNAPSHOT] Cleanup failed: {e}"
-        )
+        logger.error(f"[SNAPSHOT] Cleanup failed: {e}")

@@ -33,6 +33,7 @@ from datetime import timedelta, date
 from app.models import Plant, SoilCondition
 from app.services.irrigation_service import MOISTURE_THRESHOLD
 
+
 def get_effective_watering(plant) -> int:
     """
     Determine the final watering interval for a plant.

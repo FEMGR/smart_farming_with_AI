@@ -34,7 +34,7 @@ PostgreSQL
 
 """
 
-#backend/main.py
+# backend/main.py
 
 # ===============================
 # FORCE MODEL REGISTRATION
@@ -69,11 +69,7 @@ async def lifespan(app: FastAPI):
     stop_scheduler()
 
 
-app = FastAPI(
-    title="Smart Farming API",
-    version="1.0",
-    lifespan=lifespan
-)
+app = FastAPI(title="Smart Farming API", version="1.0", lifespan=lifespan)
 
 # ===============================
 # LOGGER SETUP
@@ -84,7 +80,7 @@ logger.info("Starting Smart Farming API")
 # ===============================
 # DATABASE INIT
 # ===============================
-logger.info(f"Using DB: {engine.url}") # Corrected to f-string
+logger.info(f"Using DB: {engine.url}")  # Corrected to f-string
 Base.metadata.create_all(bind=engine)
 
 # ===============================
@@ -95,7 +91,7 @@ app.include_router(plants.router)
 app.include_router(species.router)
 app.include_router(locations.router)
 app.include_router(irrigation.router)
-app.include_router(notifications.router, prefix="/notifications",tags=["Notifications"])
+app.include_router(notifications.router, prefix="/notifications", tags=["Notifications"])
 
 # ===============================
 # ERROR HANDLERS (CENTRALIZED)
@@ -109,6 +105,4 @@ add_exception_handlers(app)
 @app.get("/")
 def root():
     logger.info("Root endpoint accessed")
-    return {
-        "message": "Smart Farming API running"
-    }
+    return {"message": "Smart Farming API running"}

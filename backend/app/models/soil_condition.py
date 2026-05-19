@@ -24,6 +24,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, Numeric, 
 from sqlalchemy.orm import relationship
 from app.database.db import Base
 
+
 class SoilCondition(Base):
     __tablename__ = "soil_conditions"
 

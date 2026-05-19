@@ -35,6 +35,7 @@ from sqlalchemy.orm import relationship
 from app.database.db import Base
 from app.core.constants import DEFAULT_PLANT_TYPE
 
+
 class Plant(Base):
     __tablename__ = "plants"
     id = Column(Integer, primary_key=True)
