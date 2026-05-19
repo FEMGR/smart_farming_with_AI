@@ -1,8 +1,9 @@
 
 
-#app/schemas/species_schema.py
-from pydantic import BaseModel, ConfigDict
 from typing import Optional
+
+# app/schemas/species_schema.py
+from pydantic import BaseModel, ConfigDict
 
 
 # ===============================

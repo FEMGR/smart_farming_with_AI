@@ -1,6 +1,7 @@
 from datetime import date, timedelta
-from app.services.irrigation_service import _needs_watering_with_soil
+
 from app.models.soil_condition import SoilCondition
+from app.services.irrigation_service import _needs_watering_with_soil
 
 
 def test_schedule_watering(plant):

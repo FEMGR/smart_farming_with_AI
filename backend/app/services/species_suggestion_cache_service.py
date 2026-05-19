@@ -39,8 +39,9 @@ import os
 import time
 from typing import List, Dict, Optional
 
+from app.core.constants import SUGGESTION_CACHE_FILE, SUGGESTION_MAX_AGE_SECONDS, \
+    MAX_SUGGESTION_ENTRIES  # Import constants
 from app.core.logger import setup_logger
-from app.core.constants import SUGGESTION_CACHE_FILE, SUGGESTION_MAX_AGE_SECONDS, MAX_SUGGESTION_ENTRIES # Import constants
 
 logger = setup_logger()
 

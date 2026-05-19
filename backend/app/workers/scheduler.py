@@ -42,10 +42,10 @@ Notes:
 from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy.orm import Session
 
+from app.core.logger import setup_logger
 from app.database.db import SessionLocal
 from app.models.user import User
 from app.services import irrigation_service
-from app.core.logger import setup_logger
 
 scheduler = BackgroundScheduler()
 logger = setup_logger()

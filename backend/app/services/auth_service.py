@@ -34,12 +34,12 @@ Result returned to route
 
 from sqlalchemy.orm import Session
 
-from app.models.user import User
 from app.core.security import (
     hash_password,
     verify_password,
     create_access_token
 )
+from app.models.user import User
 
 
 def register_user(db: Session, email: str, password: str):

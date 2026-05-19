@@ -29,7 +29,6 @@ Consistent behavior across system
 
 # app/core/constants.py
 from pathlib import Path
-import os
 
 # Determine the absolute path to the project root
 # This assumes constants.py is in backend/app/core/

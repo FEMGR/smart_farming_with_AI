@@ -28,9 +28,10 @@ Clean, minimal data returned to client
 
 #app/schemas/irrigation_schema.py
 
-from pydantic import BaseModel
 from datetime import date
 from typing import Optional
+
+from pydantic import BaseModel
 
 
 class PlantNeedsWaterResponse(BaseModel):

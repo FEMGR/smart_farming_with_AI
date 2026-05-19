@@ -24,6 +24,7 @@ Notes:
 
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, func
 from sqlalchemy.orm import relationship
+
 from app.database.db import Base
 
 

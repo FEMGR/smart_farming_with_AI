@@ -32,10 +32,12 @@ Returned to client
 
 #app.services.notification_service.py
 
+from datetime import date
+
 from sqlalchemy.orm import Session
+
 from app.models.notification import Notification
 from app.models.plant import Plant
-from datetime import date
 
 
 # ===============================

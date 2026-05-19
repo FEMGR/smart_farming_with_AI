@@ -35,20 +35,21 @@ Result returned to route
 
 
 from sqlalchemy.orm import Session, joinedload
-from app.models.plant import Plant
-from app.models.location import Location
-from app.schemas.plant_schema import PlantCreate, PlantUpdate
-from app.core.exceptions import NotFoundError, PermissionDeniedError
-from app.models.plant_species_cache import PlantSpeciesCache
-from app.core.logger import setup_logger
-from app.services.prolog.prolog_service import get_recommendations, get_companion_suggestions # Import get_companion_suggestions
-from app.utils.prolog_normalizer import to_prolog_atom
 
+from app.core.exceptions import NotFoundError, PermissionDeniedError
+from app.core.logger import setup_logger
+from app.models.location import Location
+from app.models.plant import Plant
+from app.models.plant_species_cache import PlantSpeciesCache
+from app.schemas.plant_schema import PlantCreate, PlantUpdate
 # Import species-related services from perenual_service
 from app.services.perenual_service import (
     get_or_create_species_cache,
-    resolve_species # This is the main entry for species resolution
+    resolve_species  # This is the main entry for species resolution
 )
+from app.services.prolog.prolog_service import get_recommendations, \
+    get_companion_suggestions  # Import get_companion_suggestions
+from app.utils.prolog_normalizer import to_prolog_atom
 
 logger = setup_logger()
 

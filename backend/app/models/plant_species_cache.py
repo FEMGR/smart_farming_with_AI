@@ -28,9 +28,8 @@ from sqlalchemy import (
     Boolean,
     Float
 )
-
-from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.sql import func
 from sqlalchemy.types import JSON
 
 from app.database.db import Base

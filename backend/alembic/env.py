@@ -1,9 +1,9 @@
-from logging.config import fileConfig
-from sqlalchemy import engine_from_config, pool
-from alembic import context
-
 import os
 import sys
+from logging.config import fileConfig
+
+from alembic import context
+from sqlalchemy import engine_from_config, pool
 
 # 🔥 Add backend root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -13,15 +13,6 @@ from app.core.config import DATABASE_URL
 from app.database.db import Base
 
 # 🔥 Import ALL models (critical for autogenerate)
-from app.models.plant import Plant
-from app.models.location import Location
-from app.models.user import User
-from app.models.notification import Notification
-from app.models.plant_action import PlantAction
-from app.models.plant_group import PlantGroup
-from app.models.plant_growth import PlantGrowth
-from app.models.soil_condition import SoilCondition
-from app.models.plant_species_cache import PlantSpeciesCache
 
 config = context.config
 

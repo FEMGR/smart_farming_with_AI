@@ -1,11 +1,10 @@
 
 #app/services/prolog/prolog_service.py
 
-import subprocess
-from typing import List, Dict
-from app.utils.prolog_normalizer import to_prolog_atom
 import os
+import subprocess
 from collections import defaultdict
+from typing import List, Dict
 
 CURRENT_FILE = os.path.abspath(__file__)
 

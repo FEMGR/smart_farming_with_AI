@@ -32,8 +32,8 @@ Result returned to route
 #app.services.location_service.py
 
 
-from sqlalchemy.orm import Session
 from fastapi import HTTPException
+from sqlalchemy.orm import Session
 
 from app.models.location import Location
 from app.models.plant import Plant

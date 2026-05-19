@@ -6,8 +6,8 @@
 """
 # app/utils/prolog_normalizer.py
 
-import re
 import os
+import re
 import subprocess
 from typing import Dict
 

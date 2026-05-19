@@ -23,8 +23,10 @@ Notes:
 
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Date, TIMESTAMP, func
 from sqlalchemy.orm import relationship
-from app.database.db import Base
+
 from app.core.constants import DEFAULT_PLANT_TYPE
+from app.database.db import Base
+
 
 class Plant(Base):
     __tablename__ = "plants"

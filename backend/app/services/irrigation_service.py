@@ -36,12 +36,14 @@ Result returned to caller
 
 
 from datetime import date, timedelta
+
 from sqlalchemy import func, and_
 from sqlalchemy.orm import Session
-from app.models.soil_condition import SoilCondition
-from app.services import notification_service
+
 from app.models.notification import Notification
 from app.models.plant import Plant
+from app.models.soil_condition import SoilCondition
+from app.services import notification_service
 
 # ===============================
 # CONFIG (sample thresholds)

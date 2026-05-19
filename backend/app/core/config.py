@@ -40,7 +40,9 @@ Notes:
 
 
 import os
+
 from dotenv import load_dotenv
+
 from app.core.logger import setup_logger
 
 # Initialize logger

@@ -40,27 +40,20 @@ PostgreSQL
 # FORCE MODEL REGISTRATION
 # ===============================
 # Ensures SQLAlchemy detects all tables
-from app.models.user import User
-from app.models.location import Location
-from app.models.plant_group import PlantGroup
-from app.models.plant import Plant
-from app.models.plant_growth import PlantGrowth
-from app.models.soil_condition import SoilCondition
-from app.models.plant_action import PlantAction
-from app.models.notification import Notification
-from app.models.plant_species_cache import PlantSpeciesCache
 
+
+from contextlib import asynccontextmanager
 
 # ===============================
 # IMPORTS
 # ===============================
 from fastapi import FastAPI
-from contextlib import asynccontextmanager
+
 from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species
+from app.core.error_handler import add_exception_handlers
+from app.core.logger import setup_logger
 from app.database.db import Base, engine
 from app.workers.scheduler import start_scheduler, stop_scheduler
-from app.core.logger import setup_logger
-from app.core.error_handler import add_exception_handlers
 
 
 # ===============================

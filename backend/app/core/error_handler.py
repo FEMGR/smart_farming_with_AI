@@ -43,6 +43,15 @@ from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from app.core.exceptions import NotFoundError, PermissionDeniedError
+# app.core.error_handler.py
+import logging
+
+from fastapi import Request
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
+from starlette.exceptions import HTTPException as StarletteHTTPException
+
+from app.core.exceptions import NotFoundError, PermissionDeniedError
 
 logger = logging.getLogger("smart_farming")
 

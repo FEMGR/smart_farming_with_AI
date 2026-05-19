@@ -33,15 +33,16 @@ Response returned to client
 
 #app.api.routes.plants.py
 
-from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy.orm import Session
 from typing import List
+
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+
 from app.api.dependencies import get_current_user_id
+from app.core.exceptions import NotFoundError, PermissionDeniedError
 from app.database.db import get_db
 from app.schemas.plant_schema import PlantCreate, PlantUpdate, PlantResponse
 from app.services import plant_service
-from app.core.exceptions import NotFoundError, PermissionDeniedError
-
 
 router = APIRouter(
     prefix="/plants",

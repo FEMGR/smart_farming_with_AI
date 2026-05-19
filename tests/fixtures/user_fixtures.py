@@ -1,8 +1,9 @@
 #tests/fixtures/user_fixtures.py
 
 
-import pytest
 import uuid
+
+import pytest
 
 
 @pytest.fixture
