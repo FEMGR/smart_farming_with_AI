@@ -1,10 +1,6 @@
 from app.services.plant_service import get_companion_recommendations
-<<<<<<< HEAD
-from app.models.plant import Plant  # Import the actual Plant model for type hinting, though we'll mock its behavior
-from sqlalchemy.orm import Session  # Import Session for type hinting
-=======
 from app.models.plant import Plant
->>>>>>> c552230 (fixing test)
+from sqlalchemy.orm import Session
 
 # --- Mocking Database and Plant Objects ---
 
@@ -19,11 +15,7 @@ class MockPlant:
     def __init__(self, name, plant_type, species_scientific_name):
         self.name = name
         self.plant_type = plant_type
-<<<<<<< HEAD
-        self.species = MockSpecies(species_scientific_name)  # Attach a mock species object
-=======
         self.species = MockSpecies(species_scientific_name)
->>>>>>> c552230 (fixing test)
 
 # Mock a query object that returns our list of plants
 
@@ -41,12 +33,10 @@ class MockQuery:
     def all(self):
         return self._plants
 
-<<<<<<< HEAD
+
 # Mock a database session that returns our mock plants when queried for Plant
 
 
-=======
->>>>>>> c552230 (fixing test)
 class MockSession:
     def query(self, model):
         if model == Plant:
