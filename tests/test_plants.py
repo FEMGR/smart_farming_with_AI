@@ -167,6 +167,7 @@ def test_delete_location_blocked_if_has_plants(client, token):
 
     assert response.status_code == 400
 
+
 def test_create_plant_with_ai_linking(client, token):
     headers = {"Authorization": f"Bearer {token}"}
     plant_data = {
@@ -175,7 +176,4 @@ def test_create_plant_with_ai_linking(client, token):
     }
 
     response = client.post("/plants/", json=plant_data, headers=headers)
-    assert response.status_code == 200 # Should pass now
-
-
-
+    assert response.status_code == 200  # Should pass now
