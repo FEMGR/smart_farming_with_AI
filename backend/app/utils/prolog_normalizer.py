@@ -16,7 +16,7 @@ from typing import Dict
 CURRENT_FILE = os.path.abspath(__file__)
 PROJECT_ROOT = os.path.dirname(  # smart-farming-system
     os.path.dirname(  # backend
-        os.path.dirname(os.path.dirname(CURRENT_FILE))  # app  # services (this level is missing in original)
+        os.path.dirname(os.path.dirname(CURRENT_FILE))  # app
     )
 )
 PROLOG_MAIN_PATH = os.path.join(PROJECT_ROOT, "logic_companion_planting", "main.pl")
@@ -38,8 +38,8 @@ NORMALIZATION_MAP = {
     "tree_form_pee_gee_hydrangea": "hydrangea",
     "oregon_grape_holly": "grape",
     "lobelia_cardinali_fried_green_tomato": "tomato",
-    "ipomoea_batata": "sweet_potato",  # Added specific mapping for sweet potato scientific name
-    "ipomoea_batatas": "sweet_potato",  # Added specific mapping for sweet potato scientific name
+    "ipomoea_batata": "sweet_potato",
+    "ipomoea_batatas": "sweet_potato",
 }
 
 # --- Dynamic Scientific Name to Common Name Map (loaded from Prolog) ---

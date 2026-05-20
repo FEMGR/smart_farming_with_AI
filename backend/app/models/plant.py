@@ -37,7 +37,6 @@ from app.core.constants import DEFAULT_PLANT_TYPE
 from app.database.db import Base
 
 
-
 class Plant(Base):
     __tablename__ = "plants"
     id = Column(Integer, primary_key=True)

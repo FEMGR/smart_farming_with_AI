@@ -98,17 +98,13 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
 
     if species_internal_id:
         species_record = db.query(PlantSpeciesCache).get(species_internal_id)
-        logger.info(
-            f"[PLANT SERVICE] Linked '{plant.name}' → {species_record.scientific_name} (DB ID: {species_record.id})"
-        )
+        logger.info(f"[PLANT SERVICE] Linked '{plant.name}' → {species_record.scientific_name} (DB ID: {species_record.id})")
     else:
         logger.info(f"[PLANT SERVICE] No confident species match found for '{plant.name}'.")
 
     # 3. Determine Watering Interval
     user_interval = getattr(plant, "watering_interval_days", None)
-    final_interval = (
-        user_interval if user_interval else (species_record.watering_interval_days if species_record else 4)
-    )
+    final_interval = user_interval if user_interval else (species_record.watering_interval_days if species_record else 4)
 
     # 4. Save to Database
     new_plant = Plant(
@@ -136,12 +132,7 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
 # ===============================
 def get_plants(db: Session, user_id: int):
     # We use joinedload to get species and location in one query
-    plants = (
-        db.query(Plant)
-        .options(joinedload(Plant.species), joinedload(Plant.location))
-        .filter(Plant.user_id == user_id)
-        .all()
-    )
+    plants = db.query(Plant).options(joinedload(Plant.species), joinedload(Plant.location)).filter(Plant.user_id == user_id).all()
 
     return [_attach_metadata(p) for p in plants]
 
@@ -150,12 +141,7 @@ def get_plants(db: Session, user_id: int):
 # GET PLANT BY ID (USER-SCOPED)
 # ===============================
 def get_plant(db: Session, plant_id: int, user_id: int):
-    plant = (
-        db.query(Plant)
-        .options(joinedload(Plant.species), joinedload(Plant.location))
-        .filter(Plant.id == plant_id, Plant.user_id == user_id)
-        .first()
-    )
+    plant = db.query(Plant).options(joinedload(Plant.species), joinedload(Plant.location)).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
 
     return _attach_metadata(plant)
 
@@ -164,12 +150,7 @@ def get_plant(db: Session, plant_id: int, user_id: int):
 # UPDATE PLANT (USER-SCOPED)
 # ===============================
 def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id: int):
-    plant = (
-        db.query(Plant)
-        .options(joinedload(Plant.species), joinedload(Plant.location))
-        .filter(Plant.id == plant_id, Plant.user_id == user_id)
-        .first()
-    )
+    plant = db.query(Plant).options(joinedload(Plant.species), joinedload(Plant.location)).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
 
     if not plant:
         return None

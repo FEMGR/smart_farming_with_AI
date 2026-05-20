@@ -373,9 +373,7 @@ def normalize_species_data(api_data: dict) -> dict:
         "medicinal": api_data.get("medicinal", False),
         "poisonous_to_humans": api_data.get("poisonous_to_humans"),
         "poisonous_to_pets": api_data.get("poisonous_to_pets"),
-        "is_edible": (
-            api_data.get("edible_fruit", False) or api_data.get("edible_leaf", False) or api_data.get("cuisine", False)
-        ),
+        "is_edible": (api_data.get("edible_fruit", False) or api_data.get("edible_leaf", False) or api_data.get("cuisine", False)),
         # =====================================
         # GROWTH
         # =====================================
@@ -398,13 +396,9 @@ def normalize_species_data(api_data: dict) -> dict:
         "propagation": safe_join(api_data.get("propagation")),
         "pest_susceptibility": safe_join(api_data.get("pest_susceptibility")),
         "hardiness": (
-            f"{api_data.get('hardiness', {}).get('min')} " f"to " f"{api_data.get('hardiness', {}).get('max')}"
-            if api_data.get("hardiness")
-            else None
+            f"{api_data.get('hardiness', {}).get('min')} " f"to " f"{api_data.get('hardiness', {}).get('max')}" if api_data.get("hardiness") else None
         ),
-        "hardiness_location": (
-            api_data.get("hardiness_location", {}).get("full_url") if api_data.get("hardiness_location") else None
-        ),
+        "hardiness_location": (api_data.get("hardiness_location", {}).get("full_url") if api_data.get("hardiness_location") else None),
         # =====================================
         # DIMENSIONS
         # =====================================
@@ -428,9 +422,7 @@ def get_or_create_species_cache(db: Session, external_species_id: int, fallback_
     logger.info(f"[DB CACHE] Attempting to get or create species with external_species_id={external_species_id}")
 
     # 1. Check DB cache first
-    cached = (
-        db.query(PlantSpeciesCache).filter(PlantSpeciesCache.external_species_id == str(external_species_id)).first()
-    )
+    cached = db.query(PlantSpeciesCache).filter(PlantSpeciesCache.external_species_id == str(external_species_id)).first()
 
     # --- BEGIN MODIFICATION ---
     # More comprehensive needs_sync check for backfilling new columns
@@ -457,9 +449,7 @@ def get_or_create_species_cache(db: Session, external_species_id: int, fallback_
     elif cached and needs_sync:
         logger.info(f"[DB CACHE] Species {external_species_id} found but needs sync.")
     else:
-        logger.info(
-            f"[DB CACHE] Species {external_species_id} not found in DB cache. Attempting to fetch from snapshot/API."
-        )
+        logger.info(f"[DB CACHE] Species {external_species_id} not found in DB cache. Attempting to fetch from snapshot/API.")
 
     # 2. If not in DB or needs sync, get data from snapshot/API
     api_data = _get_species_details_from_source(external_species_id)
@@ -468,9 +458,7 @@ def get_or_create_species_cache(db: Session, external_species_id: int, fallback_
     # DATA ACQUISITION FAILURE
     # -------------------------------
     if not api_data or not api_data.get("id"):
-        logger.warning(
-            f"[DB CACHE] Failed to acquire valid species data for {external_species_id}. Creating/updating placeholder."
-        )
+        logger.warning(f"[DB CACHE] Failed to acquire valid species data for {external_species_id}. Creating/updating placeholder.")
         if cached:  # Update existing placeholder
             cached.scientific_name = fallback_name or "Unknown Species"
             cached.common_name = fallback_name or "Unknown Species"
@@ -628,10 +616,7 @@ def suggest_species(db: Session, query: str, plant_type: str = None, pre_cache_l
 
     cached_matches = (
         db.query(PlantSpeciesCache)
-        .filter(
-            (PlantSpeciesCache.common_name.ilike(search_query_like))
-            | (PlantSpeciesCache.scientific_name.ilike(search_query_like))
-        )
+        .filter((PlantSpeciesCache.common_name.ilike(search_query_like)) | (PlantSpeciesCache.scientific_name.ilike(search_query_like)))
         .all()
     )
 
@@ -697,9 +682,7 @@ def suggest_species(db: Session, query: str, plant_type: str = None, pre_cache_l
     saved_count = 0
     for i, suggestion in enumerate(ranked):
         if saved_count >= pre_cache_limit:
-            logger.debug(
-                f"[SUGGESTION CACHE] Reached pre_cache_limit ({pre_cache_limit}). Stopping further snapshot saves."
-            )
+            logger.debug(f"[SUGGESTION CACHE] Reached pre_cache_limit ({pre_cache_limit}). Stopping further snapshot saves.")
             break
 
         species_id = suggestion.get("id")
@@ -709,9 +692,7 @@ def suggest_species(db: Session, query: str, plant_type: str = None, pre_cache_l
 
         # Only save if species_id is valid and score is > 50 or == 100
         if species_id and (score is not None and (score > 50 or score == 100)):
-            logger.debug(
-                f"[SUGGESTION CACHE] Score {score} meets criteria for species ID {species_id}. Attempting to get details."
-            )
+            logger.debug(f"[SUGGESTION CACHE] Score {score} meets criteria for species ID {species_id}. Attempting to get details.")
             # Directly use the new helper to get details, which handles snapshot/API
             details = _get_species_details_from_source(species_id)
 
@@ -720,13 +701,9 @@ def suggest_species(db: Session, query: str, plant_type: str = None, pre_cache_l
                 saved_count += 1
                 logger.debug(f"[SUGGESTION CACHE] Successfully processed details for species ID {species_id}.")
             else:
-                logger.warning(
-                    f"[SUGGESTION CACHE] Failed to get valid details for species ID {species_id}. Snapshot not saved."
-                )
+                logger.warning(f"[SUGGESTION CACHE] Failed to get valid details for species ID {species_id}. Snapshot not saved.")
         else:
-            logger.debug(
-                f"[SUGGESTION CACHE] Species ID {species_id} or score {score} does not meet criteria. Snapshot not saved."
-            )
+            logger.debug(f"[SUGGESTION CACHE] Species ID {species_id} or score {score} does not meet criteria. Snapshot not saved.")
 
     logger.info(f"[SUGGESTION CACHE] Saved {saved_count} " f"species snapshots for '{query}' based on score criteria.")
 
@@ -756,11 +733,7 @@ def resolve_species(db: Session, plant_name: str, plant_type: str = None) -> int
         return None
 
     logger.info(
-        f"[SPECIES RESOLVE] "
-        f"Best match for '{plant_name}': "
-        f"{best_match['common_name']} "
-        f"(ID: {best_match['id']}, "
-        f"Score: {best_match['score']})."
+        f"[SPECIES RESOLVE] " f"Best match for '{plant_name}': " f"{best_match['common_name']} " f"(ID: {best_match['id']}, " f"Score: {best_match['score']})."
     )
 
     # =====================================

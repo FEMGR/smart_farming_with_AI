@@ -69,9 +69,7 @@ def get_notifications(db: Session, user_id: int):
 # MARK AS READ
 # ===============================
 def mark_as_read(db: Session, notification_id: int, user_id: int):
-    notification = (
-        db.query(Notification).filter(Notification.id == notification_id, Notification.user_id == user_id).first()
-    )
+    notification = db.query(Notification).filter(Notification.id == notification_id, Notification.user_id == user_id).first()
 
     if not notification:
         return None

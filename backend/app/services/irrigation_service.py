@@ -101,12 +101,7 @@ def _get_thirsty_plants(db: Session, user_id: int):
 # GET LATEST SOIL DATA
 # ===============================
 def get_latest_soil_condition(db: Session, plant_id: int):
-    return (
-        db.query(SoilCondition)
-        .filter(SoilCondition.plant_id == plant_id)
-        .order_by(SoilCondition.recorded_at.desc())
-        .first()
-    )
+    return db.query(SoilCondition).filter(SoilCondition.plant_id == plant_id).order_by(SoilCondition.recorded_at.desc()).first()
 
 
 # ===============================

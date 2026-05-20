@@ -34,11 +34,7 @@ Result returned to route
 
 from sqlalchemy.orm import Session
 
-from app.core.security import (
-    hash_password,
-    verify_password,
-    create_access_token
-)
+from app.core.security import hash_password, verify_password, create_access_token
 from app.models.user import User
 
 

@@ -78,14 +78,10 @@ def load_suggestion_cache() -> Dict:
             return json.load(f)
 
     except json.JSONDecodeError as e:
-        logger.error(
-            f"[SUGGESTION CACHE] JSON decode error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache."
-        )
+        logger.error(f"[SUGGESTION CACHE] JSON decode error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache.")
         return {}
     except Exception as e:
-        logger.error(
-            f"[SUGGESTION CACHE] Unexpected error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache."
-        )
+        logger.error(f"[SUGGESTION CACHE] Unexpected error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache.")
         return {}
 
 
@@ -123,12 +119,8 @@ def cleanup_cache(cache: Dict) -> Dict:
 
     # Enforce maximum number of entries by keeping the most recent ones
     if len(cleaned) > MAX_SUGGESTION_ENTRIES:
-        logger.info(
-            f"[SUGGESTION CACHE] Cache size ({len(cleaned)}) exceeds MAX_SUGGESTION_ENTRIES ({MAX_SUGGESTION_ENTRIES}). Trimming oldest entries."
-        )
-        sorted_items = sorted(
-            cleaned.items(), key=lambda x: x[1].get("timestamp", 0), reverse=True  # Sort by most recent first
-        )
+        logger.info(f"[SUGGESTION CACHE] Cache size ({len(cleaned)}) exceeds MAX_SUGGESTION_ENTRIES ({MAX_SUGGESTION_ENTRIES}). Trimming oldest entries.")
+        sorted_items = sorted(cleaned.items(), key=lambda x: x[1].get("timestamp", 0), reverse=True)  # Sort by most recent first
         cleaned = dict(sorted_items[:MAX_SUGGESTION_ENTRIES])
 
     return cleaned

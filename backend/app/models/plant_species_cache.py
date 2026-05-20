@@ -20,14 +20,7 @@ Notes:
 
 # app.models.plant_species_cache.py
 
-from sqlalchemy import (
-    Column,
-    Integer,
-    String,
-    DateTime,
-    Boolean,
-    Float
-)
+from sqlalchemy import Column, Integer, String, DateTime, Boolean, Float
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.sql import func
 from sqlalchemy.types import JSON
