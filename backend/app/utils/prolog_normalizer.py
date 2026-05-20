@@ -14,11 +14,7 @@ from typing import Dict
 
 # --- Configuration for Prolog Path ---
 CURRENT_FILE = os.path.abspath(__file__)
-PROJECT_ROOT = os.path.dirname(  # smart-farming-system
-    os.path.dirname(  # backend
-        os.path.dirname(os.path.dirname(CURRENT_FILE))  # app
-    )
-)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(CURRENT_FILE))))  # smart-farming-system  # backend  # app
 PROLOG_MAIN_PATH = os.path.join(PROJECT_ROOT, "logic_companion_planting", "main.pl")
 
 # --- Static Normalization Map ---
