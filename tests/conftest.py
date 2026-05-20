@@ -11,30 +11,6 @@ from sqlalchemy.pool import StaticPool
 from backend.main import app
 from app.database.db import Base, get_db
 
-"""
-from unittest.mock import patch
-
-@pytest.fixture(autouse=True)
-def mock_perenual_api():
-    with patch("app.services.plant_service.suggest_species") as mock_suggest:
-        # Define a side_effect function to handle different inputs
-        def side_effect(db, query):
-            if "Xylo-Zorg" in query:
-                return []  # Return nothing for the gibberish test
-            return [
-                {
-                    "id": 8042,
-                    "common_name": "Nasturtium",
-                    "scientific_name": "Tropaeolum",
-                    "score": 100.0,
-                    "source": "api"
-                }
-            ]
-
-        mock_suggest.side_effect = side_effect
-        yield mock_suggest
-
-"""
 
 
 pytest_plugins = [

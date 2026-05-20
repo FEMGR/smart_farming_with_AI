@@ -31,7 +31,8 @@ Return final computed value
 
 from datetime import timedelta, date
 
-from app.models import Plant, SoilCondition
+from app.models.plant import Plant
+from app.models.soil_condition import SoilCondition
 from app.services.irrigation_service import MOISTURE_THRESHOLD
 
 
