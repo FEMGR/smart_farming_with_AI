@@ -11,8 +11,6 @@ from sqlalchemy.pool import StaticPool
 from backend.main import app
 from app.database.db import Base, get_db
 
-
-
 pytest_plugins = [
     "tests.fixtures.plant_fixtures",
     "tests.fixtures.soil_fixtures",
