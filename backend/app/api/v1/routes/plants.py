@@ -33,7 +33,7 @@ Response returned to client
 
 # app.api.routes.plants.py
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 from app.api.dependencies import get_current_user_id

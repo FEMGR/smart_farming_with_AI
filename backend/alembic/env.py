@@ -2,18 +2,15 @@
 import os
 import sys
 
+# Add backend root to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
 from alembic import context
 
-# Add backend root to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-# Import config + Base
 from app.core.config import DATABASE_URL
 from app.database.db import Base
-
-# Import ALL models (critical for autogenerate)
 from app.models.plant import Plant
 from app.models.location import Location
 from app.models.user import User

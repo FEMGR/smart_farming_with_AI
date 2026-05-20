@@ -36,16 +36,9 @@ Data returned to `perenual_service`
 # app/services/species_snapshot_service.py
 import json
 import time
-from app.core.logger import setup_logger
-from app.core.constants import SNAPSHOT_DIR, SNAPSHOT_MAX_AGE_HOURS, MAX_SNAPSHOT_FILES  # Import constants
 from pathlib import Path
 
-# app/services/species_snapshot_service.py
-import json
-import time
-from pathlib import Path
-
-from app.core.constants import SNAPSHOT_DIR, SNAPSHOT_MAX_AGE_HOURS, MAX_SNAPSHOT_FILES  # Import constants
+from app.core.constants import SNAPSHOT_DIR, SNAPSHOT_MAX_AGE_HOURS, MAX_SNAPSHOT_FILES
 from app.core.logger import setup_logger
 
 logger = setup_logger()
