@@ -16,6 +16,7 @@ alembic
 # ENVIRONMENT & CONFIGURATION
 # ===============================
 python-dotenv==1.0.1
+python-multipart
 pydantic==2.7.1
 pydantic-settings
 email-validator # Required for Pydantic email validation
