@@ -85,12 +85,18 @@ def user_factory(client):
         if not email:
             email = f"test_{uuid.uuid4()}@example.com"
 
-        reg_response = client.post("/auth/register", json={"email": email, "password": password})
+        # Truncate password by bytes to prevent "password too long" errors from bcrypt
+        password_bytes = password.encode('utf-8')
+        truncated_password_bytes = password_bytes[:72]
+        final_password = truncated_password_bytes.decode('utf-8', errors='ignore') # Decode back to string for JSON
 
+        print(f"DEBUG: Registering user with password (length {len(final_password)} chars, {len(final_password.encode('utf-8'))} bytes): '{final_password}'")
+
+        reg_response = client.post("/auth/register", json={"email": email, "password": final_password})
         if reg_response.status_code not in [200, 201]:
             raise RuntimeError(f"Registration failed: {reg_response.status_code}: {reg_response.text}")
 
-        response = client.post("/auth/login", data={"username": email, "password": password})
+        response = client.post("/auth/login", data={"username": email, "password": final_password})
 
         if response.status_code != 200:
             raise RuntimeError(f"Login failed with {response.status_code}: {response.text}")
