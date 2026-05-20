@@ -1,5 +1,53 @@
 
+# FASTAPI FRAMEWORK
+# DATABASE
+# OTHER
 # ===============================
+
+starlette
+httpx<0.25
+requests
+rapidfuzz
+alembic
+=======
+# ===============================
+# HTTP CLIENTS
+# ===============================
+
+httpx<0.25               # Next-generation HTTP client
+requests                 # Python HTTP library
+
+
+# ===============================
+# OTHER
+# ===============================
+
+rapidfuzz                # Rapid fuzzy string matching
+=======
+
+sqlalchemy==2.0.29       # ORM for database interaction
+psycopg2-binary==2.9.9 # PostgreSQL driver
+=======
+# ===============================
+# DATABASE
+# ===============================
+
+sqlalchemy==2.0.29       # ORM for database interaction
+psycopg2-binary==2.9.9   # PostgreSQL driver
+alembic                  # Database migrations tool
+=======
+
+fastapi==0.110.0          # Web framework for building APIs
+uvicorn==0.29.0          # ASGI server to run FastAPI
+=======
+# ===============================
+# FASTAPI FRAMEWORK
+# ===============================
+
+fastapi==0.110.0          # Web framework for building APIs
+uvicorn==0.29.0          # ASGI server to run FastAPI
+starlette                 # ASGI framework used by FastAPI
+=======
 # FASTAPI FRAMEWORK
 # ===============================
 
@@ -27,10 +75,33 @@ python-dotenv==1.0.1   # Load .env variables
 # ===============================
 
 pydantic==2.7.1        # Request and response validation
+pydantic-settings      # For BaseSettings
+
+
+# ===============================
+# AUTHENTICATION & SECURITY
+# ===============================
+
+python-jose            # JWT (JSON Web Token) library
+passlib[bcrypt]        # Password hashing (includes bcrypt backend)
+
+
+# ===============================
+# TESTING & LINTING
+# ===============================
+
+pytest                 # Testing framework
+pytest-cov             # Coverage reporting for pytest
+flake8                 # Linter
+black                  # Formatter
+
+
+# ===============================
+# OTHER
+# ===============================
 
 starlette
 httpx<0.25
-pytest
 requests
 rapidfuzz
 alembic
