@@ -10,6 +10,7 @@ from sqlalchemy.pool import StaticPool
 
 from backend.main import app
 from app.database.db import Base, get_db
+from app.workers.scheduler import scheduler
 
 pytest_plugins = [
     "tests.fixtures.plant_fixtures",
@@ -65,6 +66,12 @@ def client(db):
     with TestClient(app) as c:
         yield c
 
+    try:
+        if scheduler.running:
+            scheduler.shutdown(wait=False)
+    except Exception:
+        pass
+
     Base.metadata.drop_all(bind=engine)
     app.dependency_overrides.clear()
 
@@ -78,11 +85,15 @@ def user_factory(client):
         if not email:
             email = f"test_{uuid.uuid4()}@example.com"
 
-        client.post("/auth/register", json={"email": email, "password": password})
+        reg_response = client.post("/auth/register", json={"email": email, "password": password})
+
+        if reg_response.status_code not in [200, 201]:
+            raise RuntimeError(f"Registration failed: {reg_response.status_code}: {reg_response.text}")
 
         response = client.post("/auth/login", data={"username": email, "password": password})
 
-        assert response.status_code == 200
+        if response.status_code != 200:
+            raise RuntimeError(f"Login failed with {response.status_code}: {response.text}")
 
         return response.json()["access_token"]
 
