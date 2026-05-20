@@ -51,7 +51,6 @@ def _load_scientific_name_mappings():
     Loads scientific name to common name mappings from Prolog's plant_fact.pl.
     This function runs a Prolog query to get all scientific_name/2 facts.
     """
-    global SCIENTIFIC_TO_COMMON_MAP
     if SCIENTIFIC_TO_COMMON_MAP:  # Load only once
         return
 

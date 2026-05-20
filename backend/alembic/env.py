@@ -1,16 +1,13 @@
-
 import os
 import sys
-
-# Add backend root to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 from logging.config import fileConfig
+
 from sqlalchemy import engine_from_config, pool
 from alembic import context
 
 from app.core.config import DATABASE_URL
 from app.database.db import Base
+
 from app.models.plant import Plant
 from app.models.location import Location
 from app.models.user import User
@@ -22,6 +19,9 @@ from app.models.soil_condition import SoilCondition
 from app.models.plant_species_cache import PlantSpeciesCache
 
 config = context.config
+
+# Add backend root to path - This must come after all imports to satisfy E402
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Inject DB URL from config
 config.set_main_option("sqlalchemy.url", DATABASE_URL)
