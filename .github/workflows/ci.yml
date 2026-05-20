@@ -57,7 +57,7 @@ jobs:
 
       - name: Run Linter (flake8) and Formatter (black)
         env:
-          PYTHONPATH: .
+          PYTHONPATH: ./backend
         run: |
           flake8 . --exclude=backend/alembic/versions/*
           black --check . --exclude "backend/alembic/versions/.*"
@@ -68,7 +68,7 @@ jobs:
           SECRET_KEY: test_secret_key
           ALGORITHM: HS256
           ACCESS_TOKEN_EXPIRE_MINUTES: 60
-          PYTHONPATH: .
+          PYTHONPATH: ./backend
         run: pytest --cov=app --cov-report=term --cov-report=xml
 
       - name: Upload Coverage Artifact
