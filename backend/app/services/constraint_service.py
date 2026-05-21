@@ -3,7 +3,6 @@
 from typing import List
 from app.models.plant import Plant
 
-
 # ===============================
 # NORMALIZATION
 # ===============================

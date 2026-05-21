@@ -3,7 +3,6 @@
 from typing import List, Dict, Set
 from app.models.plant import Plant
 
-
 # ===============================
 # BUILD GRAPH
 # ===============================
