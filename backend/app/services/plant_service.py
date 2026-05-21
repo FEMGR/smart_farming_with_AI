@@ -41,6 +41,12 @@ from app.models.location import Location
 from app.models.plant import Plant
 from app.models.plant_species_cache import PlantSpeciesCache
 from app.schemas.plant_schema import PlantCreate, PlantUpdate
+from app.services.constraint_service import filter_valid_pairs
+from app.services.grouping_service import (
+    generate_groups_internal,
+    generate_groups_display,
+)
+from app.services.positioning_service import generate_layout
 
 # Import species-related services from perenual_service
 from app.services.perenual_service import (
@@ -257,11 +263,50 @@ def get_companion_recommendations(db: Session, user_id: int):
     # Get interactions among existing plants
     existing_interactions = get_recommendations(atoms)
 
-    # Get suggestions for new companion plants
+    recommended_items = existing_interactions.get("recommended", [])
+    avoid_items = existing_interactions.get("avoid", [])
+
+    recommended_pairs = [item["pair"] for item in recommended_items]
+    avoid_pairs = [item["pair"] for item in avoid_items]
+
+    filtered_pairs = filter_valid_pairs(plants, recommended_pairs)
+
+    filtered_pairs = [pair for pair in filtered_pairs if pair not in avoid_pairs and "-".join(pair.split("-")[::-1]) not in avoid_pairs]
+
+    filtered_recommended_items = [item for item in recommended_items if item["pair"] in filtered_pairs]
+
+    pair_reasons = {item["pair"]: item for item in filtered_recommended_items}
+
+    groups_internal = generate_groups_internal(
+        plants=plants,
+        valid_pairs=filtered_pairs,
+    )
+
+    groups_display = generate_groups_display(
+        plants=plants,
+        valid_pairs=filtered_pairs,
+        pair_reasons=pair_reasons,
+    )
+
+    layout = generate_layout(
+        groups=groups_internal,
+        recommended_pairs=filtered_pairs,
+        avoid_pairs=avoid_pairs,
+        grid_width=10,
+        grid_height=10,
+    )
+
+    existing_interactions["recommended"] = filtered_recommended_items
+    existing_interactions["avoid"] = avoid_items
+
     new_suggestions = get_companion_suggestions(atoms)
 
-    # Combine results
-    return {"existing_plant_interactions": existing_interactions, "new_companion_suggestions": new_suggestions}
+    return {
+        "existing_plant_interactions": existing_interactions,
+        "groups": groups_display,
+        "layout": layout,
+        "new_companion_suggestions": new_suggestions,
+    }
 
 
 def get_unique_prolog_atoms(plants):

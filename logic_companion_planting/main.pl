@@ -30,7 +30,6 @@ is_unknown(unknown(_)).
 recommend_all(InputList) :-
     load_all,
 
-
     % -------------------------------------
     % NORMALIZE INPUT
     % -------------------------------------
@@ -43,12 +42,13 @@ recommend_all(InputList) :-
     % -------------------------------------
 
     (
-        setof(X-Y,
+        setof(
+            (X, Y, Reason),
             (
                 member(X, CleanList),
                 member(Y, CleanList),
                 X @< Y,
-                should_plant_with(X, Y)
+                recommended_companion(X, Y, Reason)
             ),
             GoodPairs
         )
@@ -60,12 +60,13 @@ recommend_all(InputList) :-
     % -------------------------------------
 
     (
-        setof(X-Y,
+        setof(
+            (X, Y, Source, Confidence),
             (
                 member(X, CleanList),
                 member(Y, CleanList),
                 X @< Y,
-                should_avoid(X, Y)
+                expanded_conflict(X, Y, Source, Confidence)
             ),
             BadPairs
         )
@@ -76,11 +77,13 @@ recommend_all(InputList) :-
     % OUTPUT
     % -------------------------------------
 
-    write('GOOD:'), write_list(GoodPairs), nl,
+    write('GOOD:'),
+    write_recommendation_list(GoodPairs),
+    nl,
 
-    write('BAD:'), write_list(BadPairs), nl.
-
-
+    write('BAD:'),
+    write_bad_recommendation_list(BadPairs),
+    nl.
 % -------------------------------------
 % SUGGEST COMPANIONS
 % -------------------------------------
@@ -93,27 +96,124 @@ suggest_companions(InputList) :-
     % Get all known plants from the knowledge base
     (setof(P, plant(P), AllKnownPlants) -> true ; AllKnownPlants = []),
 
-    % Find good companions for each plant in CleanInput
-    (setof(ExistingPlant-GoodCompanion,
-        (Source, Confidence)^( % Quantify Source and Confidence
-            member(ExistingPlant, CleanInput),
-            member(GoodCompanion, AllKnownPlants),
-            \+ member(GoodCompanion, CleanInput), % Ensure it's not already in the input list
-            should_plant_with(ExistingPlant, GoodCompanion)
-        ),
-        GoodSuggestions
-    ) -> true ; GoodSuggestions = []),
+    % Find good companion suggestions with reasons
+    (
+        setof(
+            (ExistingPlant, GoodCompanion, Reason),
+            (
+                member(ExistingPlant, CleanInput),
+                member(GoodCompanion, AllKnownPlants),
+                \+ member(GoodCompanion, CleanInput),
+                recommended_companion(ExistingPlant, GoodCompanion, Reason)
+            ),
+            GoodSuggestions
+        )
+    -> true ; GoodSuggestions = []
+    ),
 
-    % Find bad companions for each plant in CleanInput
-    (setof(ExistingPlant-BadCompanion,
-        (Source, Confidence)^( % Quantify Source and Confidence
-            member(ExistingPlant, CleanInput),
-            member(BadCompanion, AllKnownPlants),
-            \+ member(BadCompanion, CleanInput), % Ensure it's not already in the input list
-            should_avoid(ExistingPlant, BadCompanion)
-        ),
-        BadSuggestions
-    ) -> true ; BadSuggestions = []),
+    % Find bad companion suggestions with source/confidence
+    (
+        setof(
+            (ExistingPlant, BadCompanion, Source, Confidence),
+            (
+                member(ExistingPlant, CleanInput),
+                member(BadCompanion, AllKnownPlants),
+                \+ member(BadCompanion, CleanInput),
+                expanded_conflict(ExistingPlant, BadCompanion, Source, Confidence)
+            ),
+            BadSuggestions
+        )
+    -> true ; BadSuggestions = []
+    ),
 
-    write('SUGGEST_GOOD:'), write_list(GoodSuggestions), nl,
-    write('SUGGEST_BAD:'), write_list(BadSuggestions), nl.
+    write('SUGGEST_GOOD:'),
+    write_recommendation_list(GoodSuggestions),
+    nl,
+
+    write('SUGGEST_BAD:'),
+    write_bad_recommendation_list(BadSuggestions),
+    nl.
+
+% -------------------------------------
+% FORMAT GOOD RECOMMENDATION
+% -------------------------------------
+
+write_recommendation((X, Y, reason(companion, Source, Confidence))) :-
+    write(X-Y),
+    write('|companion'),
+    write('|Ecological companion support'),
+    write('|'),
+    write(Confidence),
+    write('|'),
+    write(Source).
+
+write_recommendation((X, Y, reason(protection, Pest, Source, Confidence))) :-
+    write(X-Y),
+    write('|protection'),
+    write('|Protects against '),
+    write(Pest),
+    write('|'),
+    write(Confidence),
+    write('|'),
+    write(Source).
+
+write_recommendation((X, Y, reason(attracts_beneficial, Beneficial, Source, Confidence))) :-
+    write(X-Y),
+    write('|beneficial_insect'),
+    write('|Attracts beneficial insect '),
+    write(Beneficial),
+    write('|'),
+    write(Confidence),
+    write('|'),
+    write(Source).
+
+write_recommendation((X, Y, reason(trait, Trait))) :-
+    write(X-Y),
+    write('|trait'),
+    write('|Shared ecological trait '),
+    write(Trait),
+    write('|0.6|ecology').
+
+
+% -------------------------------------
+% WRITE GOOD RECOMMENDATION LIST
+% -------------------------------------
+
+write_recommendation_list([]).
+
+write_recommendation_list([X]) :-
+    write_recommendation(X).
+
+write_recommendation_list([X | Rest]) :-
+    write_recommendation(X),
+    write(','),
+    write_recommendation_list(Rest).
+
+
+% -------------------------------------
+% FORMAT BAD RECOMMENDATION
+% -------------------------------------
+
+write_bad_recommendation((X, Y, Source, Confidence)) :-
+    write(X-Y),
+    write('|conflict'),
+    write('|Conflict detected'),
+    write('|'),
+    write(Confidence),
+    write('|'),
+    write(Source).
+
+
+% -------------------------------------
+% WRITE BAD RECOMMENDATION LIST
+% -------------------------------------
+
+write_bad_recommendation_list([]).
+
+write_bad_recommendation_list([X]) :-
+    write_bad_recommendation(X).
+
+write_bad_recommendation_list([X | Rest]) :-
+    write_bad_recommendation(X),
+    write(','),
+    write_bad_recommendation_list(Rest).

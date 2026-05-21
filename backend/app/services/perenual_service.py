@@ -276,97 +276,76 @@ def normalize_species_data(api_data: dict) -> dict:
     """
 
     def safe_join(value):
-
         if isinstance(value, list):
-            return ", ".join([str(v) for v in value if v])
-
+            return ", ".join([str(v).strip() for v in value if v])
         if isinstance(value, str):
-            return value
-
+            return value.strip()
         return None
 
     def map_watering(text: str) -> int:
+        mapping = {"frequent": 1, "average": 3, "minimum": 7, "none": 30}
+        if not text:
+            return 3
+        return mapping.get(text.lower(), 3)
 
-        mapping = {"Frequent": 1, "Average": 3, "Minimum": 7, "None": 30}
-
-        return mapping.get(text, 3)
-
+    # ===============================
+    # SCIENTIFIC NAME
+    # ===============================
     scientific = api_data.get("scientific_name")
 
     if isinstance(scientific, list):
         scientific = scientific[0] if scientific else None
 
     if not scientific:
-        scientific = api_data.get("common_name")
+        scientific = api_data.get("common_name") or "Unknown Species"
 
-    if not scientific:
-        scientific = "Unknown Species"
-
-    # =====================================
+    # ===============================
     # DIMENSIONS
-    # =====================================
-
+    # ===============================
     dimension_data = api_data.get("dimension") or api_data.get("dimensions") or {}
-
-    logger.info(dimension_data)
 
     height = None
     width = None
 
-    # -------------------------------------
-    # CASE 1 → DICT FORMAT
-    # -------------------------------------
-
     if isinstance(dimension_data, dict):
-
         height = dimension_data.get("height") or dimension_data.get("height_ft")
-
         width = dimension_data.get("width") or dimension_data.get("spread")
 
-    # -------------------------------------
-    # CASE 2 → LIST FORMAT
-    # -------------------------------------
-
     elif isinstance(dimension_data, list):
-
         for item in dimension_data:
-
             if not isinstance(item, dict):
                 continue
 
-            dimension_type = str(item.get("type", "")).lower()
+            dtype = str(item.get("type", "")).lower()
+            value = item.get("max_value") or item.get("value")
 
-            max_value = item.get("max_value") or item.get("max") or item.get("value")
+            if "height" in dtype and height is None:
+                height = value
+            if ("width" in dtype or "spread" in dtype) and width is None:
+                width = value
 
-            if "height" in dimension_type and height is None:
-                height = max_value
+    # ===============================
+    # NORMALIZED FIELDS (CRITICAL)
+    # ===============================
+    raw_watering = api_data.get("watering") or "Average"
+    raw_sunlight = safe_join(api_data.get("sunlight")) or "Full Sun"
+    raw_soil = safe_join(api_data.get("soil")) or "Well-drained"
 
-            if ("width" in dimension_type or "spread" in dimension_type) and width is None:
-
-                width = max_value
-
-    # =====================================
+    # ===============================
     # MEDIA
-    # =====================================
+    # ===============================
+    image_data = api_data.get("default_image") or {}
 
-    image_data = api_data.get("default_image", {})
-
-    # =====================================
-    # RETURN NORMALIZED DATA
-    # =====================================
-
+    # ===============================
+    # RETURN STRUCTURE
+    # ===============================
     return {
-        # =====================================
         # CORE
-        # =====================================
         "species": scientific,
-        "common_name": api_data.get("common_name"),
+        "common_name": api_data.get("common_name") or scientific,
         "other_names": safe_join(api_data.get("other_name")),
-        "plant_type": api_data.get("type"),
-        "description": api_data.get("description"),
-        # =====================================
+        "plant_type": api_data.get("type") or "",
         # EDIBILITY
-        # =====================================
         "is_fruit": api_data.get("edible_fruit", False),
         "is_veg": api_data.get("edible_leaf", False),
         "cuisine": api_data.get("cuisine", False),
@@ -374,41 +353,36 @@ def normalize_species_data(api_data: dict) -> dict:
         "poisonous_to_humans": api_data.get("poisonous_to_humans"),
         "poisonous_to_pets": api_data.get("poisonous_to_pets"),
         "is_edible": (api_data.get("edible_fruit", False) or api_data.get("edible_leaf", False) or api_data.get("cuisine", False)),
-        # =====================================
         # GROWTH
-        # =====================================
         "cycle": api_data.get("cycle"),
         "growth_rate": api_data.get("growth_rate"),
-        "care_level": api_data.get("care_level"),
-        "watering": api_data.get("watering"),
-        "watering_interval_days": map_watering(api_data.get("watering", "Average")),
+        "care_level": api_data.get("care_level") or "",
+        # 🔑 IMPORTANT (used by constraint system)
+        "watering": raw_watering,
+        "watering_interval_days": map_watering(raw_watering),
+        # ENVIRONMENT (CRITICAL)
+        "sunlight": raw_sunlight,
+        "soil": raw_soil,
+        # OTHER ENVIRONMENT
         "drought_tolerant": api_data.get("drought_tolerant"),
         "salt_tolerant": api_data.get("salt_tolerant"),
         "thorny": api_data.get("thorny"),
         "invasive": api_data.get("invasive"),
         "tropical": api_data.get("tropical"),
         "indoor": api_data.get("indoor"),
-        # =====================================
-        # ENVIRONMENT
-        # =====================================
-        "sunlight": safe_join(api_data.get("sunlight")),
-        "soil": safe_join(api_data.get("soil")),
         "propagation": safe_join(api_data.get("propagation")),
         "pest_susceptibility": safe_join(api_data.get("pest_susceptibility")),
-        "hardiness": (
-            f"{api_data.get('hardiness', {}).get('min')} " f"to " f"{api_data.get('hardiness', {}).get('max')}" if api_data.get("hardiness") else None
-        ),
+        # HARDINESS
+        "hardiness": (f"{api_data.get('hardiness', {}).get('min')} to {api_data.get('hardiness', {}).get('max')}" if api_data.get("hardiness") else None),
         "hardiness_location": (api_data.get("hardiness_location", {}).get("full_url") if api_data.get("hardiness_location") else None),
-        # =====================================
         # DIMENSIONS
-        # =====================================
         "max_height_ft": safe_float(height),
         "max_width_ft": safe_float(width),
-        # =====================================
         # MEDIA
-        # =====================================
-        "default_image_url": image_data.get("regular_url"),
-        "thumbnail_url": image_data.get("thumbnail"),
+        "default_image_url": image_data.get("regular_url") or "",
+        "thumbnail_url": image_data.get("thumbnail") or "",
+        # RAW
+        "description": api_data.get("description") or "",
     }
 
 

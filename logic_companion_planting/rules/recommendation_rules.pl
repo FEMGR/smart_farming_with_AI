@@ -73,11 +73,11 @@ recommended_companion(
 recommended_companion(
     Plant,
     Companion,
-    reason(attracts_beneficial, Beneficial)
+    reason(attracts_beneficial, Beneficial, Source, Confidence)
 ) :-
     normalize(Plant, NP),
     safe_companion(NP, Companion, _, _),
-    attracts_defender(Companion, Beneficial).
+    attracts_beneficial(Companion, Beneficial, Source, Confidence).
 
 % =========================================================
 % UNIQUE RECOMMENDATION WRAPPER
