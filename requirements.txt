@@ -26,6 +26,7 @@ email-validator # Required for Pydantic email validation
 # ===============================
 python-jose
 passlib[bcrypt]>=1.7.4 # Updated to a more recent version
+bcrypt<4.1.0
 
 # ===============================
 # HTTP CLIENTS
