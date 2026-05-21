@@ -86,9 +86,9 @@ def user_factory(client):
             email = f"test_{uuid.uuid4()}@example.com"
 
         # Truncate password by bytes to prevent "password too long" errors from bcrypt
-        password_bytes = password.encode('utf-8')
+        password_bytes = password.encode("utf-8")
         truncated_password_bytes = password_bytes[:72]
-        final_password = truncated_password_bytes.decode('utf-8', errors='ignore') # Decode back to string for JSON
+        final_password = truncated_password_bytes.decode("utf-8", errors="ignore")  # Decode back to string for JSON
 
         print(f"DEBUG: Registering user with password (length {len(final_password)} chars, {len(final_password.encode('utf-8'))} bytes): '{final_password}'")
 
