@@ -1,300 +1,230 @@
-# 🌱 Smart Urban Farming System (beta version)
+# Smart Urban Farming System
 
-A scalable smart urban farming platform designed to provide plant care recommendations, plant data management, and future AI-based monitoring and smart agriculture solutions.
+A FastAPI-based smart farming backend for managing plants, locations, irrigation, notifications, species data, and companion planting recommendations.
 
-This project implements a modular backend using **FastAPI** and **PostgreSQL**, integrates real-world plant databases, and is designed for future **AI and IoT expansion**.
+The system has moved beyond the original MVP. It now includes JWT authentication, user-scoped plant and location management, Perenual species enrichment with local caching, Prolog-backed companion planting logic, scheduled watering checks, and an automated test suite.
 
----
-
-## 📌 Repository
+## Repository
 
 GitHub: https://github.com/xueshuijing/Smart_Urban_Farming_System
 
----
+## Current Capabilities
 
-## 🎯 Project Goals
+- User registration and OAuth2-compatible JWT login
+- User-scoped CRUD for plants and growing locations
+- Species search and enrichment through the Perenual API
+- Persistent species cache and local JSON species snapshots
+- Smart irrigation checks based on plant watering intervals
+- Manual and bulk watering actions
+- Notification creation and read tracking for watering reminders
+- Companion planting recommendations powered by Prolog rules
+- Companion grouping and basic layout generation for planting plans
+- Centralized configuration, logging, error handling, and database access
+- Alembic database migrations
+- Pytest coverage for auth, plants, locations, irrigation, notifications, species, and Prolog recommendations
 
-- Build a smart plant care management system  
-- Provide plant watering and sunlight recommendations  
-- Store and manage plant data  
-- Integrate external plant databases for companion planting recommendations  
-- Support AI-based plant analysis  
-- Enable smart urban farming research  
-- Develop a scalable agriculture platform  
+## Architecture
 
----
+![System Architecture](docs/SystemArchitecture.png)
 
-## 🧠 System Overview
+The backend is organized as a layered FastAPI application:
 
-The system follows a **modular and scalable architecture**:
+- Routes receive HTTP requests and validate payloads.
+- Schemas define request and response contracts.
+- Services contain business logic for auth, plants, locations, species, irrigation, notifications, and recommendations.
+- Models define SQLAlchemy database tables.
+- The database layer provides sessions and engine configuration.
+- Prolog rules provide companion planting reasoning through SWI-Prolog.
+- Background workers run scheduled watering checks.
 
-- FastAPI backend  
-- PostgreSQL database  
-- External plant APIs  
-- Streamlit dashboard  
-- Future AI and IoT integration  
+Additional documentation:
 
-The project starts as a **working MVP** and evolves into a **smart agriculture research platform**.
+- [System architecture](docs/system-architecture.md)
+- [Technology selection](docs/technology-selection.md)
+- [Data flow diagram](docs/DataFlowDiagram.png)
 
----
+## Technology Stack
 
-## 🏗️ Architecture
+| Area | Tools |
+| --- | --- |
+| Backend API | FastAPI, Uvicorn, Starlette |
+| Language | Python 3.10 |
+| Database | PostgreSQL, SQLAlchemy, Alembic |
+| Authentication | JWT, OAuth2 password flow, Passlib, bcrypt |
+| External data | Perenual API |
+| Reasoning engine | SWI-Prolog |
+| Scheduling | APScheduler |
+| Testing and quality | Pytest, pytest-cov, Black, Flake8, pre-commit |
+| Frontend | Streamlit placeholder in `frontend/streamlit_app.py` |
 
-### Version 1 (MVP)
+## Project Structure
 
-![Version 1 Architecture](docs/SystemArchitecture.png)
-
-**Focus:**
-
-- FastAPI backend  
-- PostgreSQL database  
-- Plant data management  
-- Perenual API integration  
-- Smart irrigation logic  
-
----
-
-## 🛠️ Technology Stack
-
-### Backend
-- FastAPI  
-- Python  
-- Uvicorn  
-
-### Database
-- PostgreSQL  
-- SQLAlchemy  
-
-### External APIs
-- Perenual API  
-- Trefle API (future)  
-
-### Frontend
-- Streamlit  
-
-### Future Expansion
-- Machine Learning  
-- IoT Sensors  
-- Cloud Infrastructure  
-- Smart Irrigation  
-
----
-
-## 📂 Project Structure
-
-```
+```text
 smart-farming-system/
-│
 ├── backend/
-│ ├── main.py # FastAPI entry point
-│ ├── alembic/ # Database migrations
-│ ├── app/
-│   ├── core/ # Config, security, logging
-│   ├── api/ # API routes (v1)
-│   ├── database/ # Database connection
-│   ├── models/ # Database models
-│   ├── schemas/ # Data validation
-│   ├── services/ # Business logic
-│   ├── ai/ # AI features
-│   ├── integrations/ # External APIs / IoT
-│   ├── workers/ # Background tasks
-│   └── utils/ # Helper functions
-│
-├── frontend/
-│ └── streamlit_app.py # Streamlit UI
-│
-├── docs/ # Documentation
-├── tests/ # Tests
-├── logs/ # Application logs
+│   ├── main.py                       # FastAPI application entry point
+│   ├── alembic/                      # Database migrations
+│   ├── app/
+│   │   ├── api/                      # API dependencies and v1 routes
+│   │   ├── core/                     # Config, constants, security, logging, errors
+│   │   ├── database/                 # SQLAlchemy engine/session setup
+│   │   ├── models/                   # SQLAlchemy models
+│   │   ├── schemas/                  # Pydantic schemas
+│   │   ├── services/                 # Business logic
+│   │   │   └── prolog/               # Prolog service bridge
+│   │   ├── utils/                    # Normalization, matching, reliability helpers
+│   │   └── workers/                  # Background scheduler
+│   ├── cache/species_snapshots/      # Local species detail snapshots
+│   └── docker-compose.yml            # Backend/PostgreSQL compose file
+├── logic_companion_planting/         # Prolog facts, rules, and loader
+├── docs/                            # Architecture and technology documentation
+├── scripts/                         # Data backfill and conversion utilities
+├── tests/                           # Automated tests and fixtures
+├── frontend/                        # Streamlit app placeholder
 ├── requirements.txt
+├── pyproject.toml
 └── README.md
-
 ```
 
----
+## Prerequisites
 
-## 📁 Folder Description
+- Python 3.10
+- PostgreSQL
+- SWI-Prolog, available as `swipl`
+- A Perenual API key for live species search and detail lookups
 
-| Folder | Purpose |
-|--------|--------|
-| backend/main.py | Application entry point |
-| backend/app/api | API routes |
-| backend/app/services | Business logic |
-| backend/app/models | Database models |
-| backend/app/schemas | Data validation |
-| backend/app/core | Config, security, logging |
-| backend/app/database | DB connection |
-| docs | Architecture documentation |
-| frontend | Streamlit dashboard |
-| tests | Unit and integration tests |
+## Environment Variables
 
----
+Create a `.env` file in the project root:
 
-## ⚙️ Installation
-
-### 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/xueshuijing/Smart_Urban_Farming_System.git
-cd Smart_Urban_Farming_System
-
+```env
+DATABASE_URL=postgresql://postgres:password@localhost:5432/smart_farming
+SECRET_KEY=replace-with-a-long-random-secret
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+PERENUAL_API_KEY=your-perenual-api-key
+DEBUG=True
+APP_NAME=Smart Urban Farming System
+API_VERSION=v1
 ```
 
----
+`DATABASE_URL` and `SECRET_KEY` are required at startup.
 
-### 2️⃣ Create Virtual Environment
+## Local Setup
+
+1. Create and activate a virtual environment:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
----
-
-### 3️⃣ Install Dependencies
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-### 4️⃣ Setup PostgreSQL
-
-Create database:
+3. Create the PostgreSQL database:
 
 ```bash
 createdb smart_farming
 ```
 
-or
-
-```sql
-CREATE DATABASE smart_farming;
-```
-
----
-
-### 5️⃣ Run FastAPI
+4. Run migrations:
 
 ```bash
-uvicorn backend.app.main:app --reload
+cd backend
+PYTHONPATH=. alembic upgrade head
+cd ..
 ```
 
----
+5. Start the API from the repository root:
 
-### 6️⃣ Open API Documentation
-
+```bash
+PYTHONPATH=backend uvicorn backend.main:app --reload
 ```
+
+6. Open the API docs:
+
+```text
 http://127.0.0.1:8000/docs
 ```
 
-This opens the **Swagger API interface** for testing endpoints.
+## API Overview
 
----
+The current API is mounted directly at the root path. Authentication is required for plant, location, irrigation, notification, and recommendation endpoints.
 
-## 🔌 API Example
+| Area | Endpoint |
+| --- | --- |
+| Health | `GET /` |
+| Auth | `POST /auth/register` |
+| Auth | `POST /auth/login` |
+| Species | `GET /species/suggest?query=tomato` |
+| Plants | `GET /plants/` |
+| Plants | `POST /plants/` |
+| Plants | `POST /plants/with-species?species_id=...` |
+| Plants | `GET /plants/{plant_id}` |
+| Plants | `PATCH /plants/{plant_id}` |
+| Plants | `DELETE /plants/{plant_id}` |
+| Recommendations | `GET /plants/recommendations` |
+| Locations | `GET /locations/` |
+| Locations | `POST /locations/` |
+| Locations | `GET /locations/{location_id}` |
+| Locations | `PATCH /locations/{location_id}` |
+| Locations | `DELETE /locations/{location_id}` |
+| Irrigation | `GET /irrigation/needs-water` |
+| Irrigation | `POST /irrigation/water/{plant_id}` |
+| Irrigation | `POST /irrigation/water-all` |
+| Notifications | `GET /notifications/` |
+| Notifications | `PUT /notifications/{notification_id}/read` |
 
-### Get All Plants
+## Companion Planting Logic
 
-```
-GET /plants
-```
+Companion planting recommendations are generated by the Prolog knowledge base in `logic_companion_planting/`.
 
----
+The Python service at `backend/app/services/prolog/prolog_service.py` calls SWI-Prolog with `swipl`, parses the output, and returns structured recommendation data to the plant service. The recommendation response includes:
 
-### Get Plant by ID
+- Existing plant interactions
+- Recommended and avoided pairs
+- Grouped planting suggestions
+- Generated layout data
+- New companion suggestions for the user's current plants
 
-```
-GET /plants/{id}
-```
+## Species Data and Caching
 
----
+Species search and enrichment are handled by `backend/app/services/perenual_service.py`.
 
-### Add Plant
+The service uses:
 
-```
-POST /plants
-```
+- Perenual API search and detail endpoints
+- In-memory response caching
+- Database-backed species cache records
+- Local JSON snapshots in `backend/cache/species_snapshots/`
+- Fuzzy species matching through `rapidfuzz`
 
----
+Plants can still be created manually when no confident species match is found.
 
-## 📊 Streamlit Dashboard
+## Running Tests
 
-Run frontend:
+Run the full test suite from the repository root:
 
 ```bash
-streamlit run frontend/streamlit_app.py
+PYTHONPATH=backend pytest
 ```
 
----
+Run with coverage:
 
-## 📚 Documentation
+```bash
+PYTHONPATH=backend pytest --cov=backend --cov=tests
+```
 
-Detailed documentation is available in the **docs** folder.
+The tests use an in-memory SQLite database and override the FastAPI database dependency.
 
-- Technology Selection → `docs/technology-selection.md`
-- System Architecture → `docs/system-architecture.md`
+## Development Notes
 
----
-
-## 🚀 Version Roadmap
-
-### Version 1 (MVP)
-
-- FastAPI backend
-- PostgreSQL database
-- Perenual API
-- Irrigation + notifications
-
----
-
-### Version 2
-
-- Streamlit dashboard
-- Trefle integration
-- AI plant recommendation
-- Cloud deployment
-
----
-
-### Version 3
-
-- IoT sensors
-- Smart irrigation automation
-- Predictive analytics
-
----
-
-## 🎯 Design Principles
-
-- Modular architecture
-- Scalable system
-- Data-driven decisions
-- Real-world usability
-- Clean engineering practices
-
----
-
-## 🔮 Future Improvements
-
-- Web dashboard
-- Mobile application
-- Plant image recognition
-- Environmental monitoring
-- AI plant health prediction
-- Smart agriculture analytics
-
----
-
-## 📜 License
-
-Open-source for educational and research purposes
-
----
-
-## 👤 Author
-
-**Smart Urban Farming Project**  
-AI & Smart Agriculture Portfolio
-GitHub: https://github.com/xueshuijing
+- The FastAPI app entry point is `backend.main:app`.
+- Most protected routes depend on the JWT current-user dependency.
+- The scheduler starts with the FastAPI lifespan hook and shuts down when the app stops.
+- Alembic migrations live under `backend/alembic/versions/`.
+- `frontend/streamlit_app.py` currently exists as a placeholder and does not yet implement a dashboard UI.
