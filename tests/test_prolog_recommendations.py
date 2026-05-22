@@ -5,10 +5,25 @@ from app.services.plant_service import get_companion_recommendations
 
 
 class MockSpecies:
-    def __init__(self, scientific_name, common_name=None, id=None):
+    def __init__(
+        self,
+        scientific_name,
+        common_name=None,
+        id=None,
+        sunlight_requirement="full_sun",
+        watering="medium",
+        recommended_soil="well_drained",
+        max_height_ft=5,
+        max_width_ft=2,
+    ):
         self.id = id if id is not None else 9999  # Assign a default ID if not provided
         self.scientific_name = scientific_name
         self.common_name = common_name
+        self.sunlight_requirement = sunlight_requirement
+        self.watering = watering
+        self.recommended_soil = recommended_soil
+        self.max_height_ft = max_height_ft
+        self.max_width_ft = max_width_ft
 
 
 class MockGroup:
@@ -18,14 +33,27 @@ class MockGroup:
 
 
 class MockPlant:
-    def __init__(self, id, name, plant_type, species_scientific_name, group_id=None, group_name=None):
+    def __init__(
+        self,
+        id,
+        name,
+        plant_type,
+        species_scientific_name,
+        group_id=None,
+        group_name=None,
+        watering_interval_days=3,
+        location_id=1,
+    ):
         self.id = id
         self.name = name
         self.plant_type = plant_type
         self.species = MockSpecies(species_scientific_name, id=id * 100)  # Pass ID to species mock
+        self.species_id = self.species.id  # Add species_id directly to MockPlant
         self.group_id = group_id
         self.group = MockGroup(group_name, id=group_id) if group_name else None
-        print(f"DEBUG: MockPlant created: id={self.id}, name={self.name}")
+        self.watering_interval_days = watering_interval_days
+        self.location_id = location_id
+        print(f"DEBUG: MockPlant created: id={self.id}, name={self.name}, species_id={self.species_id}")
 
 
 # Mock a query object that returns our list of plants
