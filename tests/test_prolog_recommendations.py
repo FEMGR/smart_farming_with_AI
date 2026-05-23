@@ -32,6 +32,12 @@ class MockGroup:
         self.name = name
 
 
+class MockLocation:
+    def __init__(self, width_m=None, length_m=None):
+        self.width_m = width_m
+        self.length_m = length_m
+
+
 class MockPlant:
     def __init__(
         self,
@@ -43,6 +49,10 @@ class MockPlant:
         group_name=None,
         watering_interval_days=3,
         location_id=1,
+        bed_x=None,
+        bed_y=None,
+        location_width_m=None,
+        location_length_m=None,
     ):
         self.id = id
         self.name = name
@@ -53,6 +63,9 @@ class MockPlant:
         self.group = MockGroup(group_name, id=group_id) if group_name else None
         self.watering_interval_days = watering_interval_days
         self.location_id = location_id
+        self.location = MockLocation(location_width_m, location_length_m)
+        self.bed_x = bed_x
+        self.bed_y = bed_y
         print(f"DEBUG: MockPlant created: id={self.id}, name={self.name}, species_id={self.species_id}")
 
 

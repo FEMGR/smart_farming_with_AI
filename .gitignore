@@ -34,6 +34,9 @@ __pycache__/
 # Testing
 .pytest_cache/
 .coverage
+.coverage.*
+coverage.xml
+htmlcov/
 
 #docker
 backend/Dockerfile
@@ -48,5 +51,5 @@ logic_companion_planting/bin/
 scripts/
 backend/temp
 backend/cache
-
-.junie
+.agents
+.codex
