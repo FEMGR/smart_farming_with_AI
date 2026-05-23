@@ -35,6 +35,8 @@ class Location(Base):
     # CONTEXT DATA (for farming logic)
     description = Column(String, nullable=True)
     environment_type = Column(String, nullable=True)  # indoor/outdoor/greenhouse
+    width_m = Column(Numeric(8, 2), nullable=True)
+    length_m = Column(Numeric(8, 2), nullable=True)
     created_at = Column(TIMESTAMP, server_default=func.now())
 
     # Relationships

@@ -41,6 +41,8 @@ class PlantCreate(BaseModel):
     species_name: Optional[str] = None
     location_id: Optional[int] = None
     group_id: Optional[int] = None
+    bed_x: Optional[int] = None
+    bed_y: Optional[int] = None
 
     environment_type: Optional[str] = "outdoor"
     planting_date: Optional[date] = None
@@ -61,6 +63,8 @@ class PlantUpdate(BaseModel):
     plant_type: PlantType = "vegetable"
     location_id: Optional[int] = None
     group_id: Optional[int] = None
+    bed_x: Optional[int] = None
+    bed_y: Optional[int] = None
 
     environment_type: Optional[str] = None
     planting_date: Optional[date] = None
@@ -88,6 +92,8 @@ class PlantResponse(BaseModel):
     environment_type: Optional[str] = "outdoor"
 
     group_id: Optional[int]
+    bed_x: Optional[int]
+    bed_y: Optional[int]
     planting_date: Optional[date]
 
     data_source: str

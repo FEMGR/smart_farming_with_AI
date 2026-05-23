@@ -38,7 +38,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent  # smart-farming
 # PLANT TYPES
 # =========================================
 
-PLANT_TYPES = ["fruit", "vegetable", "flower", "herb", "evergreen", "succulent", "spice"]
+PLANT_TYPES = ["fruit", "vegetable", "flower", "herb", "evergreen", "succulent", "spice", "onion"]
 
 DEFAULT_PLANT_TYPE = "vegetable"
 

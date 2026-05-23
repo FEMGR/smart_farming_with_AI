@@ -116,6 +116,28 @@ def get_plant(
 
 
 # ===============================
+# DUPLICATE PLANT
+# ===============================
+@router.post("/{plant_id}/duplicate", response_model=PlantResponse)
+def duplicate_plant(
+    plant_id: int,
+    group_id: int | None = None,
+    db: Session = Depends(get_db),
+    user_id: int = Depends(get_current_user_id),
+):
+    try:
+        duplicate = plant_service.duplicate_plant(db, plant_id, user_id, group_id)
+
+        if not duplicate:
+            raise HTTPException(status_code=404, detail="Plant not found")
+
+        return duplicate
+
+    except PermissionDeniedError as e:
+        raise HTTPException(status_code=403, detail=str(e))
+
+
+# ===============================
 # UPDATE PLANT
 # ===============================
 @router.patch("/{plant_id}", response_model=PlantResponse)

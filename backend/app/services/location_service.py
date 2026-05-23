@@ -48,6 +48,8 @@ def create_location(db: Session, location: LocationCreate, user_id: int):
         name=location.name,
         description=location.description,
         environment_type=location.environment_type,
+        width_m=location.width_m,
+        length_m=location.length_m,
         user_id=user_id,
     )
 

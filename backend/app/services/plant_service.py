@@ -39,9 +39,9 @@ from app.core.exceptions import NotFoundError, PermissionDeniedError
 from app.core.logger import setup_logger
 from app.models.location import Location
 from app.models.plant import Plant
+from app.models.plant_group import PlantGroup
 from app.models.plant_species_cache import PlantSpeciesCache
 from app.schemas.plant_schema import PlantCreate, PlantUpdate
-from app.services.constraint_service import filter_valid_pairs
 from app.services.grouping_service import (
     generate_groups_internal,
     generate_groups_display,
@@ -78,6 +78,23 @@ def _validate_location(db: Session, location_id: int, user_id: int):
         raise PermissionDeniedError("Not allowed to use this location")
 
 
+def _ensure_user_group(db: Session, group_id: int | None, user_id: int):
+    if group_id is None:
+        return None
+
+    group = db.query(PlantGroup).filter(PlantGroup.id == group_id).first()
+
+    if group:
+        if group.user_id != user_id:
+            raise PermissionDeniedError("Not allowed to use this plant group")
+        return group
+
+    group = PlantGroup(id=group_id, user_id=user_id, name=f"Companion Group {group_id}")
+    db.add(group)
+    db.flush()
+    return group
+
+
 def _attach_metadata(plant: Plant):
     if plant:
         # Relationship name should be 'species'
@@ -95,6 +112,7 @@ def _attach_metadata(plant: Plant):
 # ===============================
 def create_plant(db: Session, plant: PlantCreate, user_id: int):
     _validate_location(db, plant.location_id, user_id)
+    _ensure_user_group(db, plant.group_id, user_id)
 
     # 1. Initialize variables
     species_record = None
@@ -119,6 +137,8 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
         species_id=species_internal_id,
         location_id=plant.location_id,
         group_id=plant.group_id,
+        bed_x=plant.bed_x,
+        bed_y=plant.bed_y,
         planting_date=plant.planting_date,
         data_source="perenual" if species_internal_id else "manual",
         user_id=user_id,
@@ -153,6 +173,40 @@ def get_plant(db: Session, plant_id: int, user_id: int):
 
 
 # ===============================
+# DUPLICATE PLANT (USER-SCOPED)
+# ===============================
+def duplicate_plant(db: Session, plant_id: int, user_id: int, group_id: int | None = None):
+    plant = db.query(Plant).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
+
+    if not plant:
+        return None
+
+    target_group_id = plant.group_id if group_id is None else group_id
+    _ensure_user_group(db, target_group_id, user_id)
+
+    duplicate = Plant(
+        name=plant.name,
+        plant_type=plant.plant_type,
+        species_id=plant.species_id,
+        location_id=plant.location_id,
+        group_id=target_group_id,
+        bed_x=None,
+        bed_y=None,
+        planting_date=plant.planting_date,
+        data_source=plant.data_source,
+        user_id=user_id,
+        use_sensor=plant.use_sensor,
+        watering_interval_days=plant.watering_interval_days,
+    )
+
+    db.add(duplicate)
+    db.commit()
+    db.refresh(duplicate)
+
+    return _attach_metadata(duplicate)
+
+
+# ===============================
 # UPDATE PLANT (USER-SCOPED)
 # ===============================
 def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id: int):
@@ -165,6 +219,24 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
         _validate_location(db, plant_update.location_id, user_id)
 
     update_data = plant_update.dict(exclude_unset=True)
+    layout_fields = {"group_id", "bed_x", "bed_y"}
+    logs_layout_update = bool(layout_fields.intersection(update_data))
+
+    if logs_layout_update:
+        logger.info(
+            "plant_service.update_plant.layout_request plant_id=%s user_id=%s " "payload=%s before=%s",
+            plant_id,
+            user_id,
+            {field: update_data.get(field) for field in sorted(layout_fields) if field in update_data},
+            {
+                "group_id": plant.group_id,
+                "bed_x": plant.bed_x,
+                "bed_y": plant.bed_y,
+            },
+        )
+
+    if "group_id" in update_data:
+        _ensure_user_group(db, update_data["group_id"], user_id)
 
     # --- RE-DETECTION LOGIC ---
     # Trigger if name changes OR if type changes on a manual plant
@@ -197,6 +269,19 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
 
     db.commit()
     db.refresh(plant)
+
+    if logs_layout_update:
+        logger.info(
+            "plant_service.update_plant.layout_response plant_id=%s user_id=%s after=%s",
+            plant_id,
+            user_id,
+            {
+                "group_id": plant.group_id,
+                "bed_x": plant.bed_x,
+                "bed_y": plant.bed_y,
+            },
+        )
+
     return _attach_metadata(plant)
 
 
@@ -234,6 +319,8 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
         species_id=species_record.id,  # Use the internal ID of the cached species
         location_id=plant.location_id,
         group_id=plant.group_id,
+        bed_x=plant.bed_x,
+        bed_y=plant.bed_y,
         planting_date=plant.planting_date,
         data_source="perenual",
         user_id=user_id,
@@ -253,7 +340,7 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
 # ===============================
 def get_companion_recommendations(db: Session, user_id: int):
 
-    plants = db.query(Plant).options(joinedload(Plant.species)).filter(Plant.user_id == user_id).all()
+    plants = db.query(Plant).options(joinedload(Plant.species), joinedload(Plant.location)).filter(Plant.user_id == user_id).all()
 
     # Normalize and deduplicate plant names for Prolog
     atoms = get_unique_prolog_atoms(plants)
@@ -269,9 +356,7 @@ def get_companion_recommendations(db: Session, user_id: int):
     recommended_pairs = [item["pair"] for item in recommended_items]
     avoid_pairs = [item["pair"] for item in avoid_items]
 
-    filtered_pairs = filter_valid_pairs(plants, recommended_pairs)
-
-    filtered_pairs = [pair for pair in filtered_pairs if pair not in avoid_pairs and "-".join(pair.split("-")[::-1]) not in avoid_pairs]
+    filtered_pairs = [pair for pair in recommended_pairs if pair not in avoid_pairs and "-".join(pair.split("-")[::-1]) not in avoid_pairs]
 
     filtered_recommended_items = [item for item in recommended_items if item["pair"] in filtered_pairs]
 
@@ -280,11 +365,13 @@ def get_companion_recommendations(db: Session, user_id: int):
     groups_internal = generate_groups_internal(
         plants=plants,
         valid_pairs=filtered_pairs,
+        avoid_pairs=avoid_pairs,
     )
 
     groups_display = generate_groups_display(
         plants=plants,
         valid_pairs=filtered_pairs,
+        avoid_pairs=avoid_pairs,
         pair_reasons=pair_reasons,
     )
 

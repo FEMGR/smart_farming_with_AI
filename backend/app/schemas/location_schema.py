@@ -30,6 +30,8 @@ class LocationCreate(BaseModel):
     name: str  # e.g. "Backyard", "Balcony"
     description: Optional[str] = None
     environment_type: Optional[str] = None  # indoor / outdoor / greenhouse
+    width_m: Optional[float] = None
+    length_m: Optional[float] = None
 
 
 # ===============================
@@ -39,6 +41,8 @@ class LocationUpdate(BaseModel):
     name: Optional[str] = None
     description: Optional[str] = None
     environment_type: Optional[str] = None
+    width_m: Optional[float] = None
+    length_m: Optional[float] = None
 
 
 # ===============================
@@ -49,12 +53,9 @@ class LocationResponse(BaseModel):
     name: str
     description: Optional[str]
     environment_type: Optional[str]
+    width_m: Optional[float]
+    length_m: Optional[float]
     user_id: int
     created_at: datetime
 
-
-model_config = ConfigDict(from_attributes=True)
-"""
-    class Config:
-        from_attributes = True
-"""
+    model_config = ConfigDict(from_attributes=True)

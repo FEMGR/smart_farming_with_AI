@@ -44,6 +44,8 @@ class Plant(Base):
     plant_type = Column(String(50), default=DEFAULT_PLANT_TYPE)
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"))
     group_id = Column(Integer, ForeignKey("plant_groups.id", ondelete="SET NULL"))
+    bed_x = Column(Integer, nullable=True)
+    bed_y = Column(Integer, nullable=True)
 
     # Link to species cache
     species_id = Column(Integer, ForeignKey("plant_species.id"), nullable=True)

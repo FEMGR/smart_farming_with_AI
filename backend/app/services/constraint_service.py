@@ -2,6 +2,7 @@
 
 from typing import List
 from app.models.plant import Plant
+from app.utils.prolog_normalizer import to_prolog_atom
 
 # ===============================
 # NORMALIZATION
@@ -127,12 +128,28 @@ def is_fully_compatible(p1, p2) -> bool:
 # ===============================
 
 
+def plant_to_prolog_atom(plant: Plant) -> str:
+    return to_prolog_atom(
+        {
+            "name": plant.name,
+            "species": (
+                {
+                    "common_name": plant.species.common_name if plant.species else None,
+                    "scientific_name": plant.species.scientific_name if plant.species else None,
+                }
+                if plant.species
+                else None
+            ),
+        }
+    )
+
+
 def filter_valid_pairs(plants: List[Plant], pairs: List[str]) -> List[str]:
     """
     pairs = ["tomato-basil", "cabbage-tomato"]
     """
 
-    plant_map = {p.name.lower(): p for p in plants}
+    plant_map = {plant_to_prolog_atom(p): p for p in plants}
 
     valid = []
 

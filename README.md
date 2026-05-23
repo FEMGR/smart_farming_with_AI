@@ -221,10 +221,24 @@ PYTHONPATH=backend pytest --cov=backend --cov=tests
 
 The tests use an in-memory SQLite database and override the FastAPI database dependency.
 
+## Streamlit Frontend
+
+Start the FastAPI backend first, then run the dashboard from the repository root:
+
+```bash
+streamlit run frontend/streamlit_app.py
+```
+
+The dashboard uses `http://127.0.0.1:8000` by default. To point it at a different backend:
+
+```bash
+SMART_FARMING_API_URL=http://localhost:8000 streamlit run frontend/streamlit_app.py
+```
+
 ## Development Notes
 
 - The FastAPI app entry point is `backend.main:app`.
 - Most protected routes depend on the JWT current-user dependency.
 - The scheduler starts with the FastAPI lifespan hook and shuts down when the app stops.
 - Alembic migrations live under `backend/alembic/versions/`.
-- `frontend/streamlit_app.py` currently exists as a placeholder and does not yet implement a dashboard UI.
+- The Streamlit frontend is implemented in `frontend/streamlit_app.py`.
