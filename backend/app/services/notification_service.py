@@ -35,6 +35,7 @@ Returned to client
 from datetime import date
 
 from sqlalchemy.orm import Session
+from sqlalchemy.orm import joinedload
 
 from app.models.notification import Notification
 from app.models.plant import Plant
@@ -62,7 +63,32 @@ def create_notification(db: Session, user_id: int, plant: Plant, message: str):
 # GET USER NOTIFICATIONS
 # ===============================
 def get_notifications(db: Session, user_id: int):
-    return db.query(Notification).filter(Notification.user_id == user_id).order_by(Notification.created_at.desc()).all()
+    notifications = (
+        db.query(Notification).options(joinedload(Notification.plant)).filter(Notification.user_id == user_id).order_by(Notification.created_at.desc()).all()
+    )
+
+    return [
+        {
+            "id": notification.id,
+            "user_id": notification.user_id,
+            "plant_id": notification.plant_id,
+            "message": notification.message,
+            "type": notification.type,
+            "is_read": notification.is_read,
+            "created_at": notification.created_at,
+            "plant": (
+                {
+                    "id": notification.plant.id,
+                    "name": notification.plant.name,
+                    "bed_x": notification.plant.bed_x,
+                    "bed_y": notification.plant.bed_y,
+                }
+                if notification.plant
+                else None
+            ),
+        }
+        for notification in notifications
+    ]
 
 
 # ===============================

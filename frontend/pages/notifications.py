@@ -44,6 +44,26 @@ from state import refresh_data
 from utils.formatting import format_date
 
 
+def _notification_location_label(notification: dict) -> str:
+    plant = notification.get("plant") or {}
+    bed_x = plant.get("bed_x")
+    bed_y = plant.get("bed_y")
+    location = plant.get("location") or {}
+    location_name = location.get("name")
+
+    parts = []
+    if bed_x is not None and bed_y is not None:
+        parts.append(f"Bed {int(bed_x) + 1} Row {int(bed_y) + 1}")
+
+    if location_name:
+        parts.append(location_name)
+
+    if parts:
+        return " • ".join(parts)
+
+    return notification.get("type", "notification").title()
+
+
 def render_notifications() -> None:
     """
     Renders the notifications page, displaying a list of user notifications
@@ -61,8 +81,8 @@ def render_notifications() -> None:
         with st.container(border=True):
             cols = st.columns([3, 1, 1])
 
-            cols[0].write(f"**{notification.get('type', 'notification').title()}**")
-            cols[0].caption(notification.get("message", ""))
+            cols[0].write(f"**{notification.get('message', '')}**")
+            cols[0].caption(_notification_location_label(notification))
 
             cols[1].write("Unread" if not notification.get("is_read") else "Read")
             cols[1].caption(format_date(notification.get("created_at")))

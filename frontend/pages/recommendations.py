@@ -1,8 +1,8 @@
 """
-Frontend page for displaying companion planting recommendations and layout.
+Frontend page for displaying companion planting recommendations.
 
 Key Point:
-Generates and visualizes companion planting suggestions and an optimized plant layout based on user's existing plants.
+Generates and visualizes companion planting suggestions based on user's existing plants.
 
 Responsibilities:
 - Trigger the generation of companion planting recommendations from the backend.
@@ -10,12 +10,10 @@ Responsibilities:
 - Show "Suggested Additions By Plant" for more detailed recommendations.
 - Present "Avoid Adding" suggestions for incompatible plants.
 - Summarize "Existing Plant Pairs" with recommended and avoid interactions.
-- Display generated plant "Groups" based on compatibility.
-- Render a visual "Recommended Layout" of plants on a grid.
 - Handle user interactions for adding suggested plants and refreshing recommendations.
 
 Architecture Role:
-- User interface component for companion planting and layout visualization.
+- User interface component for companion planting analysis.
 - Orchestrates calls to the backend API for recommendation generation and plant creation.
 
 Layer Interaction:
@@ -27,11 +25,11 @@ User triggers recommendation generation
         ↓
 API call to `get_recommendations`
         ↓
-Backend processes companion planting rules and layout
+Backend processes companion planting rules
         ↓
-Frontend receives recommendations and layout data
+Frontend receives recommendations data
         ↓
-Recommendations and layout are displayed to the user
+Recommendations are displayed to the user
         ↓
 User selects and adds new plants
         ↓
@@ -48,7 +46,6 @@ Frontend refreshes data and re-renders
 import streamlit as st
 
 from api.plants import create_plant, get_recommendations
-from components.layout_matrix import render_layout_matrix
 from config import PLANT_TYPES
 from state import invalidate_recommendations, refresh_data
 from utils.formatting import display_plant_name, location_options, plant_name_key
@@ -260,25 +257,3 @@ def render_recommendations() -> None:
                         f'<span class="status-pill">{recommendation_purpose(item)}</span>',
                         unsafe_allow_html=True,
                     )
-
-    groups = recommendations.get("groups") or []
-
-    with st.expander("Groups", expanded=False):
-        if not groups:
-            st.caption("No group layout was generated.")
-
-        for idx, group in enumerate(groups, start=1):
-            with st.container(border=True):
-                st.write(f"**Group {idx}**")
-                plant_names = [plant.get("name", "Unknown") for plant in group.get("plants", [])]
-
-                if plant_names:
-                    st.write(", ".join(plant_names))
-
-                reasons = group.get("reasons") or []
-
-                for reason in reasons:
-                    st.caption(f"{reason.get('pair')}: {reason.get('description')}")
-
-    with st.expander("Recommended Layout", expanded=False):
-        render_layout_matrix(recommendations.get("layout") or {}, groups)

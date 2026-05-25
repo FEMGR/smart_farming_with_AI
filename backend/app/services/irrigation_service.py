@@ -153,7 +153,7 @@ def get_plants_needing_water(db: Session, user_id: int):
                 db=db,
                 user_id=user_id,
                 plant=plant,
-                message=f"Plant '{plant.name}' needs watering",
+                message=f"plant '{plant.name}' needs watering",
             )
 
         result.append(
