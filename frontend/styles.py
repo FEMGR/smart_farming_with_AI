@@ -1,7 +1,35 @@
+"""
+Frontend styling and page configuration for the Streamlit application.
+
+Key Point:
+Centralizes the visual theme and initial page settings for the Streamlit application,
+ensuring a consistent look and feel across all pages.
+
+Responsibilities:
+- Configure Streamlit page settings (title, layout, sidebar state).
+- Apply custom CSS styles to override Streamlit's defaults and define a visual system.
+
+Architecture Role:
+- Defines the presentation layer of the frontend.
+- Separates styling concerns from application logic.
+
+Layer Interaction:
+- Communicates with: Streamlit's `st.set_page_config` and `st.markdown` functions.
+- Called by: The main Streamlit application file (`streamlit_app.py`) or individual pages
+  to set up their appearance.
+
+Data Flow:
+Application starts
+        ↓
+`apply_page_config()` sets global page properties
+        ↓
+`apply_styles()` injects custom CSS rules into the Streamlit app
+        ↓
+UI components render according to the defined styles
+"""
+
 # frontend/styles.py
-# Streamlit page setup and shared CSS.
-# - apply_page_config controls the browser/page shell.
-# - apply_styles defines the dashboard visual system.
+
 import streamlit as st
 
 

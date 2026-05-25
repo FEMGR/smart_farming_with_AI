@@ -1,7 +1,38 @@
+"""
+Frontend page for managing growing locations.
+
+Key Point:
+Allows users to create, view, and edit details of their growing locations.
+
+Responsibilities:
+- Display a form for adding new locations.
+- List existing locations with their details.
+- Provide an interface for editing location metadata (name, description, environment type).
+- Handle form submissions for creating and updating locations.
+- Trigger data refresh and invalidate recommendations upon successful updates.
+
+Architecture Role:
+- User interface component for location management.
+- Interacts with the backend API to persist location data.
+
+Layer Interaction:
+- Communicates with: Streamlit (UI rendering), API (locations.py for backend calls), State management (for data refresh).
+- Called by: Streamlit application routing.
+
+Data Flow:
+User input for new/edited location details
+        ↓
+Frontend form captures input
+        ↓
+API call to `create_location` or `update_location`
+        ↓
+Backend processes request and updates database
+        ↓
+Frontend receives response, refreshes local data, and re-renders
+"""
+
 # frontend/pages/locations.py
-# Locations page.
-# - Creates growing locations.
-# - Edits location metadata and dimensions used by layout capacity.
+
 
 import streamlit as st
 

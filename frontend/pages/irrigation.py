@@ -1,7 +1,45 @@
+"""
+Frontend page for managing plant irrigation.
+
+Key Point:
+Provides an interface for users to check watering status, water individual plants,
+or water all plants that are currently due.
+
+Responsibilities:
+- Display the current watering status of all plants.
+- List plants that are due for watering ("Due" section).
+- List plants that are currently watered ("Current" section).
+- Allow users to manually mark individual plants as watered.
+- Provide a "Water all due" button to water all plants that need it.
+- Display success or error messages related to irrigation actions.
+- Trigger data refresh upon any irrigation action.
+
+Architecture Role:
+- User interface component for irrigation management.
+- Interacts with the backend API to update plant watering records.
+
+Layer Interaction:
+- Communicates with: Streamlit (UI rendering), API (irrigation.py for backend calls), State management (for data refresh).
+- Called by: Streamlit application routing.
+
+Data Flow:
+User navigates to irrigation page
+        ↓
+Frontend fetches watering status of all plants from session state
+        ↓
+Plants are categorized into "Due" and "Current" and displayed
+        ↓
+User clicks "Water" for a plant or "Water all due"
+        ↓
+API call to `water_plant` or `water_all_due`
+        ↓
+Backend updates plant watering records
+        ↓
+Frontend receives response, updates session state, and re-renders
+"""
+
 # frontend/pages/irrigation.py
-# Irrigation page.
-# - Shows plants due for watering.
-# - Supports watering one plant or all due plants.
+
 
 import streamlit as st
 
@@ -11,6 +49,10 @@ from utils.formatting import format_date
 
 
 def render_irrigation() -> None:
+    """
+    Renders the irrigation management page.
+    Allows users to check watering status, water individual plants, or water all due plants.
+    """
     st.subheader("Irrigation")
 
     cols = st.columns([1, 1, 3])

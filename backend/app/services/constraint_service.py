@@ -1,3 +1,33 @@
+"""
+Service layer for FastAPI (Plant Constraints and Compatibility).
+
+Key Point:
+Manages the rules and logic for determining environmental compatibility between plants.
+
+Responsibilities:
+- Normalize various plant environmental requirements (water, sunlight, soil).
+- Extract species-specific constraint data for individual plants.
+- Implement compatibility checks for water, sunlight, and soil between plant pairs.
+- Filter and validate plant compatibility pairs based on environmental constraints.
+
+Architecture Role:
+- Provides a central module for evaluating if plants can co-exist based on their needs.
+- Delegates data normalization to internal helper functions.
+
+Layer Interaction:
+- Communicates with: Models (Plant, Species).
+- Called by: Positioning service, Grouping service, Routes (for compatibility checks).
+
+Data Flow:
+Plant objects received for compatibility assessment
+        ↓
+Environmental constraints (water, sunlight, soil) extracted and normalized for each plant
+        ↓
+Compatibility rules applied to plant pairs
+        ↓
+Boolean result (compatible/not compatible) or filtered list of valid pairs returned
+"""
+
 # app/services/constraint_service.py
 
 from typing import List

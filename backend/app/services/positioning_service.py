@@ -1,3 +1,39 @@
+"""
+Service layer for FastAPI (Plant Positioning).
+
+Key Point:
+Handles the complex logic for optimally placing plants within a grid, considering various horticultural constraints and relationships.
+
+Responsibilities:
+- Normalize plant-related environmental data (sunlight, water).
+- Identify and manage plant compatibility (avoid/recommend pairs).
+- Calculate distances and scores for potential plant positions.
+- Generate a layout grid based on plant requirements and group structures.
+- Detect potential shade relationships between plants.
+- Validate and integrate user-defined saved plant positions.
+
+Architecture Role:
+- Central logic layer for spatial arrangement and environmental suitability of plants.
+- Delegates data normalization and scoring to internal helper functions.
+
+Layer Interaction:
+- Communicates with: Models (plant data, compatibility rules).
+- Called by: Routes (e.g., layout generation endpoints).
+
+Data Flow:
+Plant groups, compatibility rules, and grid dimensions received from route
+        ↓
+Grid dimensions derived/adjusted
+        ↓
+Saved plant positions validated and placed
+        ↓
+Remaining plants arranged based on scoring (conflicts, benefits, environmental factors)
+        ↓
+Shade relationships identified
+        ↓
+Final layout (placements, grid dimensions, warnings) returned to route
+"""
+
 # app/services/positioning_service.py
 
 import math

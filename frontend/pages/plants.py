@@ -1,7 +1,40 @@
+"""
+Frontend page for managing individual plant records.
+
+Key Point:
+Allows users to create, view, edit, duplicate, and delete their plant entries,
+including associating them with species and locations, and managing watering settings.
+
+Responsibilities:
+- Display a form for adding new plants, optionally linking to a species.
+- List existing plants with their key details (type, location, watering).
+- Provide quick actions like watering and duplicating plants.
+- Offer an expandable section for editing plant details.
+- Handle form submissions for creating, updating, and deleting plants.
+- Trigger data refresh and invalidate recommendations upon successful changes.
+
+Architecture Role:
+- User interface component for detailed plant management.
+- Interacts with the backend API for all plant-related CRUD operations.
+
+Layer Interaction:
+- Communicates with: Streamlit (UI rendering), API (plants.py, irrigation.py for backend calls), State management (for data refresh).
+- Called by: Streamlit application routing.
+
+Data Flow:
+User input for new/edited plant details
+        ↓
+Frontend form captures input
+        ↓
+API call to `create_plant`, `create_plant_with_species`, `update_plant`, `delete_plant`, `water_plant`, or `duplicate_plant`
+        ↓
+Backend processes request and updates database
+        ↓
+Frontend receives response, refreshes local data, and re-renders
+"""
+
 # frontend/pages/plants.py
-# Plants page.
-# - Creates plants manually or from species suggestions.
-# - Edits care/location fields and supports duplicate/delete actions.
+
 
 from datetime import date
 
@@ -21,9 +54,13 @@ from api.plants import (
 
 
 def render_plants() -> None:
+    """
+    Renders the plants management page, allowing users to add, view, edit,
+    duplicate, and delete their plant records.
+    """
     st.subheader("Plants")
 
-    # Create form for new plant records.
+    # Form for creating new plant records
     with st.expander("Add plant", expanded=not st.session_state.get("plants")):
         location_labels, location_ids = location_options()
 
@@ -72,6 +109,7 @@ def render_plants() -> None:
             except RuntimeError as exc:
                 st.error(str(exc))
 
+    # Display existing plants
     plants = st.session_state.get("plants", [])
 
     if not plants:
@@ -91,6 +129,8 @@ def render_plants() -> None:
 
             cols[2].write(f"{plant.get('effective_watering_interval', plant.get('watering_interval_days') or 4)} days")
             cols[2].caption(f"Last watered: {format_date(plant.get('last_watered'))}")
+
+            # Quick action buttons for duplicating and watering
             quick_cols = st.columns([1, 2])
 
             if quick_cols[0].button(
@@ -115,6 +155,7 @@ def render_plants() -> None:
                 except RuntimeError as exc:
                     st.error(str(exc))
 
+            # Expandable section for editing plant details
             with st.expander("Edit"):
                 location_labels, location_ids = location_options()
 

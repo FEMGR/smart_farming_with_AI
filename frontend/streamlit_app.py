@@ -1,8 +1,10 @@
-# frontend/streamlit_app.py
 # Main Streamlit entry point.
 # - Applies page config and custom styles.
 # - Initializes session state and sidebar auth controls.
 # - Routes signed-in users through the dashboard tabs.
+
+# frontend/streamlit_app.py
+
 import streamlit as st
 
 from components.sidebar import render_sidebar

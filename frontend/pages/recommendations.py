@@ -1,7 +1,49 @@
+"""
+Frontend page for displaying companion planting recommendations and layout.
+
+Key Point:
+Generates and visualizes companion planting suggestions and an optimized plant layout based on user's existing plants.
+
+Responsibilities:
+- Trigger the generation of companion planting recommendations from the backend.
+- Display "Highest Value Additions" for new plants, allowing users to select and add them.
+- Show "Suggested Additions By Plant" for more detailed recommendations.
+- Present "Avoid Adding" suggestions for incompatible plants.
+- Summarize "Existing Plant Pairs" with recommended and avoid interactions.
+- Display generated plant "Groups" based on compatibility.
+- Render a visual "Recommended Layout" of plants on a grid.
+- Handle user interactions for adding suggested plants and refreshing recommendations.
+
+Architecture Role:
+- User interface component for companion planting and layout visualization.
+- Orchestrates calls to the backend API for recommendation generation and plant creation.
+
+Layer Interaction:
+- Communicates with: Streamlit (UI rendering), API (plants.py for recommendations and plant creation), State management (for data refresh).
+- Called by: Streamlit application routing.
+
+Data Flow:
+User triggers recommendation generation
+        ↓
+API call to `get_recommendations`
+        ↓
+Backend processes companion planting rules and layout
+        ↓
+Frontend receives recommendations and layout data
+        ↓
+Recommendations and layout are displayed to the user
+        ↓
+User selects and adds new plants
+        ↓
+API call to `create_plant`
+        ↓
+Backend creates new plant entries
+        ↓
+Frontend refreshes data and re-renders
+"""
+
 # frontend/pages/recommendations.py
-# Companion planting page.
-# - Runs the recommendation engine.
-# - Shows suggested additions, pair analysis, groups, and layout tools.
+
 
 import streamlit as st
 

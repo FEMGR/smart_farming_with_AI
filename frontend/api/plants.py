@@ -1,7 +1,37 @@
+"""
+API client for plant-related operations in the Smart Urban Farming application.
+
+Key Point:
+Provides a set of functions to interact with the backend's plant management endpoints,
+including CRUD operations, companion plant recommendations, and plant duplication.
+
+Responsibilities:
+- Abstract the API endpoint paths and HTTP methods for plant operations.
+- Facilitate data exchange for creating, retrieving, updating, and deleting plant entries.
+- Provide specific functions for fetching companion plant recommendations and duplicating plants.
+
+Architecture Role:
+- Acts as a dedicated interface for the frontend to manage plant data on the backend.
+- Simplifies API calls for plant-related features, making them reusable and consistent.
+
+Layer Interaction:
+- Communicates with: `api.client.api_request` (for underlying HTTP requests).
+- Called by: Frontend pages and components that need to interact with plant data.
+
+Data Flow:
+Frontend UI action (e.g., "Add Plant", "View Plants", "Get Recommendations")
+        ↓
+Corresponding function in `frontend/api/plants.py` is called
+        ↓
+`api_request()` sends the HTTP request to the backend `/plants` endpoints
+        ↓
+Backend processes the request and returns data or status
+        ↓
+Data (e.g., list of plants, a single plant object, recommendations) is returned to the frontend UI
+"""
+
 # frontend/api/plants.py
-# Plant API helpers.
-# - CRUD wrappers for plants.
-# - Companion recommendation and duplication endpoints.
+
 
 from typing import Any
 

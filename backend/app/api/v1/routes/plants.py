@@ -2,31 +2,31 @@
 Route layer for FastAPI (Plants).
 
 Key Point:
-Handles API endpoints for plant management.
+Handles API endpoints for plant management and recommendations.
 
 Responsibilities:
 - Receive plant-related HTTP requests
 - Validate input using schemas
-- Call plant service layer
+- Call plant service layer for CRUD operations and recommendations
 - Return plant data responses
 
 Architecture Role:
 - Entry point for plant-related operations
-- Keeps routes clean by delegating logic to services
+- Keeps routes clean by delegating business logic to services
 
 Layer Interaction:
 - Communicates with: Services (plant_service), Schemas, Dependencies
 
 Data Flow:
-Client Request (plant operation)
+Client Request (plant operation or recommendation)
         ↓
 Route receives request
         ↓
-Schema validates input
+Schema validates input (for CRUD operations)
         ↓
-Plant service processes logic
+Plant service processes logic (CRUD, recommendations)
         ↓
-Database updated via models
+Database updated/queried via models
         ↓
 Response returned to client
 """
@@ -46,10 +46,13 @@ router = APIRouter(prefix="/plants", tags=["Plants"])
 
 
 # ===============================
-# COMPANION PLANT
+# COMPANION PLANT RECOMMENDATIONS
 # ===============================
 @router.get("/recommendations")
 def get_recommendations_endpoint(db: Session = Depends(get_db), user_id: int = Depends(get_current_user_id)):
+    """
+    Retrieves companion plant recommendations for the user's existing plants.
+    """
     return plant_service.get_companion_recommendations(db, user_id)
 
 
@@ -62,6 +65,9 @@ def create_plant(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    """
+    Creates a new plant entry for the current user.
+    """
     try:
         return plant_service.create_plant(db, plant, user_id)
     except ValueError as e:
@@ -71,7 +77,7 @@ def create_plant(
 
 
 # ===============================
-# CREATE PLANT WITH SUGGESTION
+# CREATE PLANT WITH SPECIES
 # ===============================
 @router.post("/with-species", response_model=PlantResponse)
 def create_plant_with_species(
@@ -80,6 +86,9 @@ def create_plant_with_species(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    """
+    Creates a new plant entry linked to an existing species for the current user.
+    """
     try:
         return plant_service.create_plant_with_species(db, plant, user_id, species_id)
 
@@ -95,6 +104,9 @@ def create_plant_with_species(
 # ===============================
 @router.get("/", response_model=List[PlantResponse])
 def get_plants(db: Session = Depends(get_db), user_id: int = Depends(get_current_user_id)):
+    """
+    Retrieves all plants belonging to the current user.
+    """
     return plant_service.get_plants(db, user_id)
 
 
@@ -107,6 +119,9 @@ def get_plant(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    """
+    Retrieves a single plant by its ID for the current user.
+    """
     plant = plant_service.get_plant(db, plant_id, user_id)
 
     if not plant:
@@ -125,6 +140,9 @@ def duplicate_plant(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    """
+    Duplicates an existing plant entry for the current user.
+    """
     try:
         duplicate = plant_service.duplicate_plant(db, plant_id, user_id, group_id)
 
@@ -147,6 +165,9 @@ def update_plant(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    """
+    Updates an existing plant's details for the current user.
+    """
     try:
         updated = plant_service.update_plant(db, plant_id, plant_update, user_id)
 
@@ -170,6 +191,9 @@ def delete_plant(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    """
+    Deletes a plant entry by its ID for the current user.
+    """
     deleted = plant_service.delete_plant(db, plant_id, user_id)
 
     if not deleted:

@@ -1,7 +1,41 @@
+"""
+Frontend page for displaying a system overview.
+
+Key Point:
+Provides a summary of key metrics, watering tasks, recent notifications, and a visual representation of the saved plant layout.
+
+Responsibilities:
+- Display metrics for total plants, locations, plants needing water, and unread alerts.
+- Show a "Watering Queue" with plants due for watering and allow users to mark them as watered.
+- Present "Recent Notifications" with their read status and messages.
+- Render a tabular representation of the saved plant layout, if available.
+- Handle user interactions like watering a plant, triggering data refresh.
+
+Architecture Role:
+- Dashboard-like component providing a quick glance at the system's status.
+- Aggregates and displays data from various parts of the application.
+
+Layer Interaction:
+- Communicates with: Streamlit (UI rendering), API (irrigation.py for watering), State management (for data refresh).
+- Called by: Streamlit application routing.
+
+Data Flow:
+Session state data (plants, locations, notifications, needs_water)
+        ↓
+Metrics calculated and displayed
+        ↓
+Watering queue and notifications filtered and rendered
+        ↓
+User waters a plant
+        ↓
+API call to `water_plant`
+        ↓
+Backend updates plant status
+        ↓
+Frontend receives response, refreshes local data, and re-renders
+"""
+
 # frontend/pages/overview.py
-# Overview page.
-# - Shows dashboard metrics, watering queue, recent notifications.
-# - Displays the current saved bed layout.
 
 import streamlit as st
 

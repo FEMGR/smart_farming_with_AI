@@ -1,7 +1,44 @@
+"""
+Shared HTTP client for making requests to the FastAPI backend.
+
+Key Point:
+Provides a centralized function for all API interactions, handling authentication
+headers, error responses, and JSON parsing consistently.
+
+Responsibilities:
+- Construct full API URLs using the base URL from `config.py`.
+- Attach authentication headers (JWT bearer token) from Streamlit's session state.
+- Execute HTTP requests (GET, POST, PUT, DELETE, PATCH).
+- Handle network errors and API-specific error responses, raising `RuntimeError` for clarity.
+- Parse JSON responses or return raw text if JSON parsing fails.
+
+Architecture Role:
+- Acts as the foundational layer for all frontend-to-backend communication.
+- Ensures consistency and robustness in API calls.
+
+Layer Interaction:
+- Communicates with: `config` (for `API_BASE_URL`), `streamlit` (for `st.session_state`),
+  `requests` library (for HTTP operations).
+- Called by: All other API client modules (e.g., `api.auth`, `api.plants`).
+
+Data Flow:
+Frontend component needs to interact with backend
+        ↓
+Calls a specific API helper function (e.g., `api.plants.get_plants()`)
+        ↓
+API helper function calls `api_request()`
+        ↓
+`api_request()` constructs URL, adds auth headers, sends HTTP request
+        ↓
+Backend processes request and sends response
+        ↓
+`api_request()` handles response (error checking, JSON parsing)
+        ↓
+Result (data or error) returned to the calling API helper function
+"""
+
 # frontend/api/client.py
-# Shared HTTP client for backend requests.
-# - Adds auth headers from Streamlit session state.
-# - Converts backend error responses into RuntimeError.
+
 
 from __future__ import annotations
 

@@ -1,3 +1,41 @@
+"""
+Service layer for FastAPI (Plant Grouping).
+
+Key Point:
+Organizes plants into compatible groups based on companion planting rules and environmental constraints.
+
+Responsibilities:
+- Build a graph representing plant compatibilities.
+- Identify and manage conflicts between plants within groups.
+- Distribute duplicate plants across different groups if necessary.
+- Enforce conflict-free grouping based on 'avoid' pairs.
+- Apply user-defined group overrides.
+- Generate structured plant groups with associated reasons for compatibility.
+
+Architecture Role:
+- Central logic layer for creating coherent plant groupings for layout generation.
+- Delegates plant atom conversion to `constraint_service`.
+
+Layer Interaction:
+- Communicates with: Models (Plant), Constraint Service (for compatibility checks and atom conversion).
+- Called by: Positioning service, Routes (for group generation endpoints).
+
+Data Flow:
+List of plants and compatibility pairs (valid/avoid) received from route
+        ↓
+Compatibility graph constructed
+        ↓
+Initial groups formed based on positive links
+        ↓
+Duplicate plants distributed
+        ↓
+Conflict-free grouping enforced
+        ↓
+User-defined group overrides applied
+        ↓
+Final structured groups (with members and reasons) returned to route
+"""
+
 # app/services/grouping_service.py
 
 from typing import List, Dict, Set, Tuple

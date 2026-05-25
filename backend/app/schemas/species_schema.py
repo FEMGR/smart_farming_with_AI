@@ -1,6 +1,34 @@
-from typing import Optional
+"""
+Schema layer for FastAPI (Species).
+
+Key Point:
+Defines the data structures for representing plant species information, both in full detail and as lightweight suggestions.
+
+Responsibilities:
+- Structure the data for full species details (SpeciesResponse).
+- Structure the data for species suggestions, including a relevance score (SpeciesSuggestion).
+- Ensure data consistency and type validation for species-related API responses.
+
+Architecture Role:
+- Acts as the data contract between the API and its consumers for species data.
+- Facilitates clear and consistent data exchange.
+
+Layer Interaction:
+- Communicates with: API routes (for input/output validation), Services (for data transformation).
+- Called by: API routes when returning species data.
+
+Data Flow:
+Species data retrieved from database/external sources
+        ↓
+Transformed into SpeciesResponse or SpeciesSuggestion schema
+        ↓
+Returned as API response
+"""
 
 # app/schemas/species_schema.py
+
+
+from typing import Optional
 from pydantic import BaseModel, ConfigDict
 
 

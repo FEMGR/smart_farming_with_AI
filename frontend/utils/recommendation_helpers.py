@@ -1,7 +1,32 @@
+"""
+Utility functions for processing and presenting companion planting recommendations in the frontend.
+
+Key Point:
+Provides helper functions to format recommendation reasons, aggregate companion suggestions,
+and filter group options for plants based on recommendation data.
+
+Responsibilities:
+- Translate recommendation reason types and sources into human-readable strings.
+- Aggregate and rank "good" companion suggestions based on support count and average score.
+- Filter and present relevant group options for a given plant, considering compatibility and conflicts.
+
+Architecture Role:
+- Supports the `recommendations.py` page by preparing and structuring data for display.
+- Encapsulates presentation logic related to recommendations.
+
+Layer Interaction:
+- Communicates with: `frontend/pages/recommendations.py` (for data processing).
+- Called by: Frontend UI components that display companion planting information.
+
+Data Flow:
+Raw recommendation data received from backend API
+        ↓
+Processed by helper functions to format and aggregate
+        ↓
+Formatted and aggregated data passed to Streamlit UI for rendering
+"""
+
 # frontend/utils/recommendation_helpers.py
-# Helper functions for recommendation display.
-# - Converts backend recommendation payloads into user-facing labels.
-# - Aggregates suggested additions by value and supporting plants.
 
 from __future__ import annotations
 
@@ -11,6 +36,14 @@ from utils.formatting import companion_atom_key, display_plant_name
 
 
 def recommendation_purpose(item: dict[str, Any]) -> str:
+    """
+    Generates a human-readable string explaining the purpose and source of a recommendation.
+
+    Responsibilities:
+    - Map internal reason types (e.g., "companion", "protection") to descriptive phrases.
+    - Map internal source identifiers (e.g., "attra", "prolog") to descriptive labels.
+    - Combine the reason and source into a single informative string.
+    """
     reason_type = item.get("reason_type") or "companion"
     source = item.get("source") or "prolog"
 

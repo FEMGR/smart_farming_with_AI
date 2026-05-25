@@ -89,20 +89,23 @@ class MockSession:
     def query(self, model):
         if model == Plant:
             mock_plants_data = [
-                {"id": 1, "name": "tomato", "type": "vegetable", "species_name": "solanum lycopersicum"},
-                {"id": 2, "name": "ginger", "type": "spice", "species_name": "zingiber officinale"},
-                {"id": 3, "name": "cucumber", "type": "vegetable", "species_name": "cucumis sativus"},
-                {"id": 4, "name": "dandelion", "type": "flower", "species_name": "taraxacum officinale"},
-                {"id": 5, "name": "rye", "type": "grain", "species_name": "secale cereale"},
-                {"id": 6, "name": "grape", "type": "fruit", "species_name": "vitis vinifera"},
-                {"id": 7, "name": "hydrangea", "type": "flower", "species_name": "hydrangea spp."},
-                {"id": 8, "name": "artichoke", "type": "vegetable", "species_name": "cynara scolymus"},
-                {"id": 9, "name": "dahlia", "type": "flower", "species_name": "dahlia spp."},
-                {"id": 10, "name": "nasturtium", "type": "flower", "species_name": "tropaeolum majus"},
-                {"id": 11, "name": "cabbage", "type": "vegetable", "species_name": "brassica oleracea var. capitata"},
-                {"id": 12, "name": "broccoli", "type": "vegetable", "species_name": "brassica oleracea var. italica"},
+                {"id": 1, "name": "tomato", "type": "vegetable", "species_name": "solanum lycopersicum", "x": 0, "y": 0},
+                {"id": 2, "name": "ginger", "type": "spice", "species_name": "zingiber officinale", "x": 1, "y": 0},
+                {"id": 3, "name": "cucumber", "type": "vegetable", "species_name": "cucumis sativus", "x": 0, "y": 1},
+                {"id": 4, "name": "dandelion", "type": "flower", "species_name": "taraxacum officinale", "x": 2, "y": 2},
+                {"id": 5, "name": "rye", "type": "grain", "species_name": "secale cereale", "x": 5, "y": 5},
+                {"id": 6, "name": "grape", "type": "fruit", "species_name": "vitis vinifera", "x": 8, "y": 8},
+                {"id": 7, "name": "hydrangea", "type": "flower", "species_name": "hydrangea spp.", "x": 9, "y": 9},
+                {"id": 8, "name": "artichoke", "type": "vegetable", "species_name": "cynara scolymus", "x": 4, "y": 1},
+                {"id": 9, "name": "dahlia", "type": "flower", "species_name": "dahlia spp.", "x": 1, "y": 4},
+                {"id": 10, "name": "nasturtium", "type": "flower", "species_name": "tropaeolum majus", "x": 3, "y": 3},
+                {"id": 11, "name": "cabbage", "type": "vegetable", "species_name": "brassica oleracea var. capitata", "x": 0, "y": 5},
+                {"id": 12, "name": "broccoli", "type": "vegetable", "species_name": "brassica oleracea var. italica", "x": 1, "y": 5},
             ]
-            mock_plant_objects = [MockPlant(p["id"], p["name"], p["type"], p["species_name"]) for p in mock_plants_data]
+            mock_plant_objects = [
+                MockPlant(p["id"], p["name"], p["type"], p["species_name"], bed_x=p["x"], bed_y=p["y"], location_width_m=10.0, location_length_m=10.0)
+                for p in mock_plants_data
+            ]
             return MockQuery(mock_plant_objects)
         return MockQuery([])  # Return empty for other models
 

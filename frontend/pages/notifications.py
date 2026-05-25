@@ -1,7 +1,41 @@
+"""
+Frontend page for displaying and managing user notifications.
+
+Key Point:
+Allows users to view a list of their notifications and mark them as read.
+
+Responsibilities:
+- Fetch and display all notifications for the current user.
+- Show notification details including type, message, and creation date.
+- Provide a button to mark unread notifications as read.
+- Trigger data refresh upon marking a notification as read.
+
+Architecture Role:
+- User interface component for notification management.
+- Interacts with the backend API to update notification status.
+
+Layer Interaction:
+- Communicates with: Streamlit (UI rendering), API (notifications.py for backend calls), State management (for data refresh).
+- Called by: Streamlit application routing.
+
+Data Flow:
+User navigates to notifications page
+        ↓
+Frontend fetches notifications from session state
+        ↓
+Notifications are displayed in a list
+        ↓
+User clicks "Mark read" for an unread notification
+        ↓
+API call to `mark_notification_read`
+        ↓
+Backend updates notification status in the database
+        ↓
+Frontend receives response, refreshes local data, and re-renders
+"""
+
 # frontend/pages/notifications.py
-# Notifications page.
-# - Lists backend alerts.
-# - Marks unread notifications as read.
+
 
 import streamlit as st
 
@@ -11,6 +45,10 @@ from utils.formatting import format_date
 
 
 def render_notifications() -> None:
+    """
+    Renders the notifications page, displaying a list of user notifications
+    and allowing them to be marked as read.
+    """
     st.subheader("Notifications")
 
     notifications = st.session_state.get("notifications", [])
