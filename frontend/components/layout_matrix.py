@@ -283,7 +283,7 @@ def render_layout_matrix(
             if action_cols[0].button(
                 "Save plant position",
                 key="save_manual_layout_position",
-                use_container_width=True,
+                width="stretch",
             ):
                 try:
                     recommended_pairs = [
@@ -443,7 +443,7 @@ def render_layout_matrix(
             if action_cols[1].button(
                 "Clear saved layout",
                 key="clear_saved_layout_manual_adjustment",
-                use_container_width=True,
+                width="stretch",
             ):
                 clear_saved_layout()
 
@@ -519,7 +519,7 @@ def render_layout_matrix(
 
     st.table(group_matrix)
 
-    if st.button("Save generated groups", use_container_width=True):
+    if st.button("Save generated groups", width="stretch"):
         errors = []
 
         # Sort by group_id first so saved data follows the displayed group order
@@ -579,7 +579,7 @@ def render_layout_matrix(
     if st.button(
         "Clear saved layout",
         key="clear_saved_layout_group_table",
-        use_container_width=True,
+        width="stretch",
     ):
         clear_saved_layout()
 

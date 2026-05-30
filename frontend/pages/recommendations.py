@@ -65,7 +65,7 @@ def render_recommendations() -> None:
         st.info("Add plants before generating recommendations.")
         return
 
-    if st.button("Generate recommendations", use_container_width=False):
+    if st.button("Generate recommendations", width="content"):
         try:
             with st.spinner("Running companion planting rules..."):
                 refresh_data(show_errors=True)
@@ -145,7 +145,7 @@ def render_recommendations() -> None:
                     selected_plants.append(item["plant"])
 
         if ranked_suggestions:
-            if st.button("Add selected plants", use_container_width=True, disabled=not selected_plants):
+            if st.button("Add selected plants", width="stretch", disabled=not selected_plants):
                 added = []
                 errors = []
 

@@ -36,20 +36,17 @@ PostgreSQL
 
 # backend/main.py
 
+from contextlib import asynccontextmanager
+
+from app import models as _models  # noqa: F401
+from fastapi import FastAPI
+
 # ===============================
 # FORCE MODEL REGISTRATION
 # ===============================
 # Ensures SQLAlchemy detects all tables
 
-
-from contextlib import asynccontextmanager
-
-# ===============================
-# IMPORTS
-# ===============================
-from fastapi import FastAPI
-
-from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species
+from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species, planning, lifecycle, production
 from app.core.error_handler import add_exception_handlers
 from app.core.logger import setup_logger
 from app.database.db import Base, engine
@@ -60,7 +57,7 @@ from app.workers.scheduler import start_scheduler, stop_scheduler
 # CREATE APP
 # ===============================
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(_app: FastAPI):
     # on startup
     start_scheduler()
     # The app is running
@@ -90,6 +87,9 @@ app.include_router(auth.router)
 app.include_router(plants.router)
 app.include_router(species.router)
 app.include_router(locations.router)
+app.include_router(planning.router)
+app.include_router(lifecycle.router)
+app.include_router(production.router)
 app.include_router(irrigation.router)
 app.include_router(notifications.router, prefix="/notifications", tags=["Notifications"])
 
