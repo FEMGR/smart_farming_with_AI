@@ -1,3 +1,10 @@
+"""
+Planning capacity calculations.
+
+Key Point:
+Calculates required sections and area allocation for production plans.
+"""
+
 # app/services/planning/capacity_calculator.py
 
 import math

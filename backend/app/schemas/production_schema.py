@@ -1,3 +1,10 @@
+"""
+Schema definitions for production tracking.
+
+Key Point:
+Defines request and response contracts for harvest records and batch updates.
+"""
+
 # app/schemas/production_schema.py
 
 from datetime import date, datetime

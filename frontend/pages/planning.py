@@ -1,3 +1,11 @@
+"""
+Streamlit planning page.
+
+Key Point:
+Renders farm section management, polyculture preview generation, saved plan
+review, and plan confirmation workflows.
+"""
+
 # frontend/pages/planning.py
 
 import math

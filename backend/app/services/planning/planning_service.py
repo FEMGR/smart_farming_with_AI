@@ -1,3 +1,10 @@
+"""
+Service layer for planning resources.
+
+Key Point:
+Manages farm sections, simple crop plans, and generated production batches.
+"""
+
 # app/services/planning/planning_service.py
 
 from decimal import Decimal

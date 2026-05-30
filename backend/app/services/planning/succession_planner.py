@@ -1,3 +1,10 @@
+"""
+Service layer for succession planning.
+
+Key Point:
+Previews repeated planting batches for continuous harvest schedules.
+"""
+
 # app/services/planning/succession_planner.py
 
 from decimal import Decimal

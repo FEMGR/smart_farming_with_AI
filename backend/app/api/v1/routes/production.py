@@ -1,3 +1,15 @@
+"""
+Route layer for FastAPI (Production).
+
+Key Point:
+Exposes harvest and yield endpoints for production tracking.
+
+Responsibilities:
+- Record harvest quantities
+- Return harvest history
+- Summarize total yield for the authenticated user
+"""
+
 # app/api/v1/routes/production.py
 
 from fastapi import APIRouter, Depends
