@@ -1,3 +1,10 @@
+"""
+Service layer for lifecycle timelines.
+
+Key Point:
+Builds estimated germination, transplant, and harvest timelines for crop groups.
+"""
+
 # app/services/lifecycle/timeline_service.py
 
 from datetime import date, timedelta

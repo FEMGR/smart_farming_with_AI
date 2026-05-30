@@ -1,3 +1,11 @@
+"""
+Service layer for section allocation.
+
+Key Point:
+Assigns production sections to generated batches when explicit grouping is not
+used.
+"""
+
 # app/services/planning/section_allocator.py
 
 from sqlalchemy.orm import Session

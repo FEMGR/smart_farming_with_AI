@@ -1,3 +1,5 @@
+"""Production model exports."""
+
 from app.models.production.farm_section import FarmSection
 from app.models.production.crop_plan import CropPlan
 from app.models.production.production_batch import ProductionBatch

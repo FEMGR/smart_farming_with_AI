@@ -1,3 +1,10 @@
+"""
+Service layer for harvest records.
+
+Key Point:
+Creates harvest records and updates related production batch yield data.
+"""
+
 # app/services/production/harvest_service.py
 
 from sqlalchemy.orm import Session

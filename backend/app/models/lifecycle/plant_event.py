@@ -1,3 +1,10 @@
+"""
+Database model for lifecycle events.
+
+Key Point:
+Stores dated plant or batch events such as transplanting, pruning, and notes.
+"""
+
 # app/models/lifecycle/plant_event.py
 from sqlalchemy import Column, Integer, String, ForeignKey, TIMESTAMP, Date, JSON, func
 from sqlalchemy.orm import relationship

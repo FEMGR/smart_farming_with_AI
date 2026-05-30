@@ -1,3 +1,11 @@
+"""
+Planning API helpers for Streamlit pages.
+
+Key Point:
+Wraps FastAPI planning endpoints used by the farm section and polyculture
+planning screens.
+"""
+
 # frontend/api/planning.py
 from api.client import api_request
 

@@ -1,3 +1,11 @@
+"""
+Service layer for polyculture planning.
+
+Key Point:
+Connects crop lists, companion compatibility, section assignment, layout
+generation, saved crop plan groups, and production batches.
+"""
+
 from datetime import date, datetime
 from decimal import Decimal
 from types import SimpleNamespace

@@ -1,3 +1,10 @@
+"""
+Service layer for production batch scheduling.
+
+Key Point:
+Builds repeated batches that support continuous harvest planning.
+"""
+
 # app/services/planning/batch_scheduler.py
 
 from datetime import date, timedelta
