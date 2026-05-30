@@ -1,9 +1,8 @@
-# app/services/planning/polyculture_planner.py
-
+from datetime import date, datetime
 from decimal import Decimal
 from types import SimpleNamespace
 
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, selectinload
 
 from app.models.location import Location
 from app.models.production.farm_section import FarmSection
@@ -108,6 +107,55 @@ def _section_to_dict(section: FarmSection):
     }
 
 
+def _json_safe(value):
+    if isinstance(value, Decimal):
+        return float(value)
+
+    if isinstance(value, (date, datetime)):
+        return value.isoformat()
+
+    if isinstance(value, list):
+        return [_json_safe(item) for item in value]
+
+    if isinstance(value, tuple):
+        return [_json_safe(item) for item in value]
+
+    if isinstance(value, dict):
+        return {key: _json_safe(item) for key, item in value.items()}
+
+    return value
+
+
+def _layout_warning_matches_group(warning: str, group_id: int) -> bool:
+    return warning.startswith(f"Group {group_id} ")
+
+
+def _build_group_layout(group: dict, layout: dict) -> dict:
+    group_id = int(group.get("group_id"))
+    section_id = group.get("section_id")
+    section_layout = next((section for section in layout.get("sections", []) if section.get("section_id") == section_id), {})
+    placements = [
+        placement for placement in layout.get("placements", []) if int(placement.get("group_id") or 0) == group_id and placement.get("section_id") == section_id
+    ]
+    warnings = [warning for warning in layout.get("warnings", []) if _layout_warning_matches_group(warning, group_id)]
+
+    return _json_safe(
+        {
+            "group_id": group_id,
+            "section_id": section_id,
+            "section_name": group.get("section_name"),
+            "grid_width": section_layout.get("grid_width", layout.get("grid_width")),
+            "grid_height": section_layout.get("grid_height", layout.get("grid_height")),
+            "placements": placements,
+            "warnings": warnings,
+        }
+    )
+
+
+def _build_layout_json(groups: list[dict], layout: dict) -> dict:
+    return {"groups": [_build_group_layout(group, layout) for group in groups]}
+
+
 def _allocate_sections_to_groups(groups: list[dict], sections: list[FarmSection]):
     """
     Basic allocation:
@@ -176,6 +224,20 @@ def _extract_group_companion_suggestions(group_main_crops: list[str], suggestion
     return unique
 
 
+def _remaining_plant_slots(main_crops: list[str], plant_variations_per_group: int | None) -> int | None:
+    if plant_variations_per_group is None:
+        return None
+
+    return max(0, plant_variations_per_group - len(main_crops))
+
+
+def _recommended_additions(companions: list[dict], remaining_slots: int | None) -> list[dict]:
+    if remaining_slots is None:
+        return companions
+
+    return companions[:remaining_slots]
+
+
 def generate_polyculture_preview(
     db: Session,
     user_id: int,
@@ -184,12 +246,20 @@ def generate_polyculture_preview(
     intended_crops: list[str],
     start_date,
     harvest_interval_days: int,
+    desired_harvest_batches: int | None = None,
+    plant_variations_per_group: int | None = None,
 ):
     if not intended_crops:
         raise ValueError("intended_crops cannot be empty")
 
     if harvest_interval_days <= 0:
         raise ValueError("harvest_interval_days must be greater than 0")
+
+    if desired_harvest_batches is not None and desired_harvest_batches <= 0:
+        raise ValueError("desired_harvest_batches must be greater than 0")
+
+    if plant_variations_per_group is not None and plant_variations_per_group <= 0:
+        raise ValueError("plant_variations_per_group must be greater than 0")
 
     location = db.query(Location).filter(Location.id == location_id, Location.user_id == user_id).first()
 
@@ -217,6 +287,7 @@ def generate_polyculture_preview(
         plants=virtual_plants,
         valid_pairs=recommended_pairs,
         avoid_pairs=avoid_pairs,
+        max_group_size=plant_variations_per_group,
     )
 
     groups_display = generate_groups_display(
@@ -224,6 +295,7 @@ def generate_polyculture_preview(
         valid_pairs=recommended_pairs,
         avoid_pairs=avoid_pairs,
         pair_reasons=pair_reasons,
+        max_group_size=plant_variations_per_group,
     )
 
     groups, allocation_warnings = _allocate_sections_to_groups(groups_internal, sections)
@@ -235,6 +307,8 @@ def generate_polyculture_preview(
         grid_width=10,
         grid_height=10,
     )
+    layout_json = _build_layout_json(groups, layout)
+    layouts_by_group_id = {group_layout["group_id"]: group_layout for group_layout in layout_json["groups"]}
 
     suggestions = get_companion_suggestions(atoms)
 
@@ -245,10 +319,12 @@ def generate_polyculture_preview(
     for group in groups:
         main_crops = _extract_group_main_crops(group)
         companions = _extract_group_companion_suggestions(main_crops, suggestions)
+        remaining_plant_slots = _remaining_plant_slots(main_crops, plant_variations_per_group)
+        recommended_additions = _recommended_additions(companions, remaining_plant_slots)
 
         group_timeline_basis = get_group_timeline(main_crops)
 
-        required_batches = calculate_required_sections(
+        required_batches = desired_harvest_batches or calculate_required_sections(
             harvest_days=group_timeline_basis["harvest_days"],
             desired_harvest_interval_days=harvest_interval_days,
         )
@@ -267,8 +343,11 @@ def generate_polyculture_preview(
                 "section_name": group.get("section_name"),
                 "main_crops": main_crops,
                 "suggested_companions": companions,
+                "recommended_additions": recommended_additions,
+                "remaining_plant_slots": remaining_plant_slots,
                 "allocated_area_m2": group.get("allocated_area_m2"),
                 "warnings": group.get("warnings", []),
+                "layout": layouts_by_group_id.get(int(group.get("group_id"))),
                 "required_batches": required_batches,
                 "timeline_basis": group_timeline_basis,
                 "timeline": timeline,
@@ -297,11 +376,14 @@ def generate_polyculture_preview(
     return {
         "location_id": location_id,
         "section_ids": section_ids,
+        "desired_harvest_batches": desired_harvest_batches,
+        "plant_variations_per_group": plant_variations_per_group,
         "group_count": len(preview_groups),
         "total_available_area_m2": total_area,
         "groups": preview_groups,
         "groups_display": groups_display,
         "layout": layout,
+        "layout_json": layout_json,
         "warnings": warnings,
         "suggested_additional_sections": suggested_additional_sections,
         "avoid_pairs": avoid_items,
@@ -317,6 +399,8 @@ def confirm_polyculture_plan(
     intended_crops: list[str],
     start_date,
     harvest_interval_days: int,
+    desired_harvest_batches: int | None = None,
+    plant_variations_per_group: int | None = None,
     name: str | None = None,
 ):
     preview = generate_polyculture_preview(
@@ -327,6 +411,8 @@ def confirm_polyculture_plan(
         intended_crops=intended_crops,
         start_date=start_date,
         harvest_interval_days=harvest_interval_days,
+        desired_harvest_batches=desired_harvest_batches,
+        plant_variations_per_group=plant_variations_per_group,
     )
 
     plan = CropPlan(
@@ -354,6 +440,7 @@ def confirm_polyculture_plan(
             group_name=f"Group {group['group_id']}",
             main_crops=group["main_crops"],
             suggested_companions=group["suggested_companions"],
+            layout_json=group.get("layout"),
             warnings=group["warnings"],
             allocated_area_m2=group.get("allocated_area_m2"),
         )
@@ -388,3 +475,96 @@ def confirm_polyculture_plan(
         "crop_plan_id": plan.id,
         "preview": preview,
     }
+
+
+def _batch_to_dict(batch: ProductionBatch) -> dict:
+    return _json_safe(
+        {
+            "id": batch.id,
+            "batch_number": batch.batch_number,
+            "section_id": batch.section_id,
+            "seed_start_date": batch.seed_start_date,
+            "expected_germination_date": batch.expected_germination_date,
+            "expected_transplant_date": batch.expected_transplant_date,
+            "expected_harvest_date": batch.expected_harvest_date,
+            "allocated_area_m2": batch.allocated_area_m2,
+            "status": batch.status,
+        }
+    )
+
+
+def _group_to_dict(group: CropPlanGroup) -> dict:
+    layout_json = group.layout_json or {}
+
+    return _json_safe(
+        {
+            "id": group.id,
+            "group_id": group.group_number,
+            "group_name": group.group_name,
+            "section_id": group.section_id,
+            "section_name": group.section.name if group.section else layout_json.get("section_name"),
+            "main_crops": group.main_crops or [],
+            "suggested_companions": group.suggested_companions or [],
+            "warnings": group.warnings or [],
+            "allocated_area_m2": group.allocated_area_m2,
+            "layout": layout_json,
+            "batches": sorted((_batch_to_dict(batch) for batch in group.batches), key=lambda item: item["batch_number"]),
+        }
+    )
+
+
+def _plan_to_dict(plan: CropPlan) -> dict:
+    groups = sorted((_group_to_dict(group) for group in plan.groups), key=lambda item: item["group_id"])
+
+    return _json_safe(
+        {
+            "id": plan.id,
+            "name": plan.name,
+            "location_id": plan.location_id,
+            "plan_type": plan.plan_type,
+            "planned_start_date": plan.planned_start_date,
+            "desired_harvest_interval_days": plan.desired_harvest_interval_days,
+            "status": plan.status,
+            "created_at": plan.created_at,
+            "group_count": len(groups),
+            "groups": groups,
+        }
+    )
+
+
+def get_saved_polyculture_plans(db: Session, user_id: int) -> list[dict]:
+    plans = (
+        db.query(CropPlan)
+        .options(
+            selectinload(CropPlan.groups).selectinload(CropPlanGroup.section),
+            selectinload(CropPlan.groups).selectinload(CropPlanGroup.batches),
+        )
+        .filter(
+            CropPlan.user_id == user_id,
+            CropPlan.plan_type == "polyculture",
+        )
+        .order_by(CropPlan.created_at.desc(), CropPlan.id.desc())
+        .all()
+    )
+
+    return [_plan_to_dict(plan) for plan in plans]
+
+
+def delete_saved_polyculture_plan(db: Session, user_id: int, crop_plan_id: int) -> bool:
+    plan = (
+        db.query(CropPlan)
+        .filter(
+            CropPlan.id == crop_plan_id,
+            CropPlan.user_id == user_id,
+            CropPlan.plan_type == "polyculture",
+        )
+        .first()
+    )
+
+    if not plan:
+        return False
+
+    db.delete(plan)
+    db.commit()
+
+    return True
