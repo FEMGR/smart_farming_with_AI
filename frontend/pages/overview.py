@@ -104,7 +104,7 @@ def render_overview() -> None:
             cols[0].write(f"**{item.get('name')}**")
             cols[0].caption(f"Last watered: {format_date(item.get('last_watered'))}")
 
-            if cols[1].button("Water", key=f"overview_water_{item['plant_id']}", use_container_width=True):
+            if cols[1].button("Water", key=f"overview_water_{item['plant_id']}", width="stretch"):
                 try:
                     water_plant(item["plant_id"])
                     refresh_data(show_errors=True)

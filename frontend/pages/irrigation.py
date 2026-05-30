@@ -57,12 +57,12 @@ def render_irrigation() -> None:
 
     cols = st.columns([1, 1, 3])
 
-    if cols[0].button("Check watering", use_container_width=True):
+    if cols[0].button("Check watering", width="stretch"):
         st.session_state.irrigation_message = ""
         refresh_data(show_errors=True)
         st.rerun()
 
-    if cols[1].button("Water all due", use_container_width=True):
+    if cols[1].button("Water all due", width="stretch"):
         try:
             result = water_all_due()
             watered_count = result.get("count", 0) if isinstance(result, dict) else 0

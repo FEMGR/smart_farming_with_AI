@@ -36,7 +36,7 @@ Frontend receives response, refreshes local data, and re-renders
 
 import streamlit as st
 
-from api.locations import create_location, update_location
+from api.locations import create_location, delete_location, update_location
 from config import ENVIRONMENT_TYPES
 from state import invalidate_recommendations, refresh_data
 from utils.formatting import format_date
@@ -50,6 +50,11 @@ def render_locations() -> None:
             name = st.text_input("Name", placeholder="Balcony, backyard, greenhouse shelf")
             description = st.text_area("Description", height=80)
             environment_type = st.selectbox("Environment", ENVIRONMENT_TYPES)
+            col1, col2 = st.columns(2)
+            with col1:
+                width_m = st.number_input("Width (m)", min_value=0.1, value=5.0, step=0.1)
+            with col2:
+                length_m = st.number_input("Length (m)", min_value=0.1, value=5.0, step=0.1)
             submitted = st.form_submit_button("Create location")
 
         if submitted:
@@ -59,6 +64,8 @@ def render_locations() -> None:
                         "name": name,
                         "description": description or None,
                         "environment_type": environment_type,
+                        "width_m": width_m,
+                        "length_m": length_m,
                     }
                 )
                 refresh_data(show_errors=True)
@@ -79,6 +86,7 @@ def render_locations() -> None:
             cols[0].write(f"**{location.get('name')}**")
             cols[0].caption(location.get("description") or "No description")
             cols[1].write(location.get("environment_type") or "unspecified")
+            cols[1].caption(f"{location.get('width_m') or '-'} m x {location.get('length_m') or '-'} m")
             cols[2].caption(f"Created {format_date(location.get('created_at'))}")
 
             with st.expander("Edit location"):
@@ -94,6 +102,23 @@ def render_locations() -> None:
                         ENVIRONMENT_TYPES,
                         index=ENVIRONMENT_TYPES.index(location.get("environment_type")) if location.get("environment_type") in ENVIRONMENT_TYPES else 0,
                     )
+                    edit_col1, edit_col2 = st.columns(2)
+                    with edit_col1:
+                        new_width = st.number_input(
+                            "Width (m)",
+                            min_value=0.1,
+                            value=float(location.get("width_m") or 5.0),
+                            step=0.1,
+                            key=f"edit_location_width_{location['id']}",
+                        )
+                    with edit_col2:
+                        new_length = st.number_input(
+                            "Length (m)",
+                            min_value=0.1,
+                            value=float(location.get("length_m") or 5.0),
+                            step=0.1,
+                            key=f"edit_location_length_{location['id']}",
+                        )
                     save = st.form_submit_button("Save")
 
                 if save:
@@ -104,8 +129,30 @@ def render_locations() -> None:
                                 "name": new_name,
                                 "description": new_description or None,
                                 "environment_type": new_environment,
+                                "width_m": new_width,
+                                "length_m": new_length,
                             },
                         )
+                        invalidate_recommendations()
+                        refresh_data(show_errors=True)
+                        st.rerun()
+                    except RuntimeError as exc:
+                        st.error(str(exc))
+
+            with st.expander("Delete location"):
+                confirm_delete = st.checkbox(
+                    f"Delete {location.get('name')}",
+                    key=f"confirm_delete_location_{location['id']}",
+                )
+
+                if st.button(
+                    "Delete location",
+                    key=f"delete_location_{location['id']}",
+                    disabled=not confirm_delete,
+                    width="stretch",
+                ):
+                    try:
+                        delete_location(location["id"])
                         invalidate_recommendations()
                         refresh_data(show_errors=True)
                         st.rerun()
