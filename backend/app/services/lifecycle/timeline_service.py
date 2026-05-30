@@ -2,7 +2,6 @@
 
 from datetime import date, timedelta
 
-
 DEFAULT_CROP_TIMELINES = {
     "lettuce": {"germination_days": 5, "transplant_days": 14, "harvest_days": 45},
     "cabbage": {"germination_days": 7, "transplant_days": 28, "harvest_days": 80},
