@@ -126,6 +126,24 @@ def test_generate_groups_internal_includes_saved_layout_fields():
     assert tomato["location_length_m"] == 3.0
 
 
+def test_generate_groups_internal_can_limit_plant_variations_per_group():
+    plants = [
+        _model_plant(1, "Tomato"),
+        _model_plant(2, "Basil"),
+        _model_plant(3, "Carrot"),
+    ]
+
+    groups = generate_groups_internal(
+        plants,
+        valid_pairs=["tomato-basil", "tomato-carrot", "basil-carrot"],
+        avoid_pairs=[],
+        max_group_size=2,
+    )
+
+    assert len(groups) == 2
+    assert all(group["member_count"] <= 2 for group in groups)
+
+
 def test_generate_layout_uses_section_dimensions_for_group_capacity():
     groups = [
         {
