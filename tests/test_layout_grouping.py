@@ -124,3 +124,33 @@ def test_generate_groups_internal_includes_saved_layout_fields():
     assert tomato["bed_y"] == 1
     assert tomato["location_width_m"] == 5.0
     assert tomato["location_length_m"] == 3.0
+
+
+def test_generate_layout_uses_section_dimensions_for_group_capacity():
+    groups = [
+        {
+            "group_id": 1,
+            "section_id": 10,
+            "section_name": "Section A",
+            "section_width_m": 1,
+            "section_length_m": 1,
+            "plants": [
+                _layout_plant(1, "Tomato"),
+                _layout_plant(2, "Basil"),
+            ],
+        }
+    ]
+
+    layout = generate_layout(groups, recommended_pairs=[], avoid_pairs=[], grid_width=10, grid_height=10)
+
+    assert layout["sections"] == [
+        {
+            "section_id": 10,
+            "section_name": "Section A",
+            "grid_width": 1,
+            "grid_height": 1,
+        }
+    ]
+    assert len(layout["placements"]) == 1
+    assert layout["placements"][0]["section_id"] == 10
+    assert any("only has 1 layout cell" in warning for warning in layout["warnings"])

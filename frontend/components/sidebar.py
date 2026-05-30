@@ -20,11 +20,11 @@ def render_sidebar() -> None:
 
             cols = st.columns(2)
 
-            if cols[0].button("Refresh", use_container_width=True):
+            if cols[0].button("Refresh", width="stretch"):
                 refresh_data(show_errors=True)
                 st.rerun()
 
-            if cols[1].button("Sign out", use_container_width=True):
+            if cols[1].button("Sign out", width="stretch"):
                 clear_auth()
                 st.rerun()
 
@@ -37,7 +37,7 @@ def render_sidebar() -> None:
         with st.form("auth_form"):
             email = st.text_input("Email")
             password = st.text_input("Password", type="password")
-            submitted = st.form_submit_button(mode, use_container_width=True)
+            submitted = st.form_submit_button(mode, width="stretch")
 
         if submitted:
             try:

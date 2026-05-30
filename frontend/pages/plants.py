@@ -136,7 +136,7 @@ def render_plants() -> None:
             if quick_cols[0].button(
                 "Add same plant",
                 key=f"duplicate_plant_{plant['id']}",
-                use_container_width=True,
+                width="stretch",
             ):
                 try:
                     duplicate = duplicate_plant(plant["id"])
@@ -147,7 +147,7 @@ def render_plants() -> None:
                 except RuntimeError as exc:
                     st.error(str(exc))
 
-            if cols[3].button("Water", key=f"water_plant_{plant['id']}", use_container_width=True):
+            if cols[3].button("Water", key=f"water_plant_{plant['id']}", width="stretch"):
                 try:
                     water_plant(plant["id"])
                     refresh_data(show_errors=True)

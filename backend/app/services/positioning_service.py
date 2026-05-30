@@ -327,11 +327,19 @@ def find_next_position(
 
 
 def derive_grid_dimensions(groups: List[dict], default_width: int, default_height: int) -> tuple[int, int]:
+    section_widths = []
+    section_lengths = []
     widths = []
     lengths = []
     plant_count = 0
 
     for group in groups:
+        if group.get("section_width_m"):
+            section_widths.append(float(group["section_width_m"]))
+
+        if group.get("section_length_m"):
+            section_lengths.append(float(group["section_length_m"]))
+
         for plant in group.get("plants", []):
             plant_count += 1
 
@@ -341,7 +349,10 @@ def derive_grid_dimensions(groups: List[dict], default_width: int, default_heigh
             if plant.get("location_length_m"):
                 lengths.append(float(plant["location_length_m"]))
 
-    if widths or lengths:
+    if section_widths or section_lengths:
+        width = max(1, math.ceil(max(section_widths) if section_widths else default_width))
+        height = max(1, math.ceil(max(section_lengths) if section_lengths else default_height))
+    elif widths or lengths:
         width = max(1, math.ceil(max(widths) if widths else default_width))
         height = max(1, math.ceil(max(lengths) if lengths else default_height))
     else:
@@ -451,10 +462,40 @@ def has_saved_position(plant: dict) -> bool:
     return plant.get("bed_x") is not None and plant.get("bed_y") is not None
 
 
-def placement_from_saved_position(plant: dict, group_id: int, grid_width: int, grid_height: int) -> tuple[dict | None, str | None]:
+def _section_grid_dimensions(group: dict, default_width: int, default_height: int) -> tuple[int, int]:
+    if group.get("section_width_m") and group.get("section_length_m"):
+        return (
+            max(1, math.ceil(float(group["section_width_m"]))),
+            max(1, math.ceil(float(group["section_length_m"]))),
+        )
+
+    return default_width, default_height
+
+
+def _section_position_key(section_id, x: int, y: int):
+    return (section_id or "layout", x, y)
+
+
+def _section_fields(group: dict) -> dict:
+    return {
+        "section_id": group.get("section_id"),
+        "section_name": group.get("section_name"),
+        "section_width_m": group.get("section_width_m"),
+        "section_length_m": group.get("section_length_m"),
+    }
+
+
+def placement_from_saved_position(
+    plant: dict,
+    group_id: int,
+    grid_width: int,
+    grid_height: int,
+    section: dict | None = None,
+) -> tuple[dict | None, str | None]:
     x = int(plant.get("bed_x"))
     y = int(plant.get("bed_y"))
     saved_group_id = int(plant.get("group_id") or group_id)
+    section = section or {}
 
     if x < 0 or y < 0 or x >= grid_width or y >= grid_height:
         return None, f"Saved position for {plant['name']} is outside the current layout grid."
@@ -476,12 +517,15 @@ def placement_from_saved_position(plant: dict, group_id: int, grid_width: int, g
             "max_height_ft": plant.get("max_height_ft"),
             "max_width_ft": plant.get("max_width_ft"),
             "saved_position": True,
+            **section,
         },
         None,
     )
 
 
-def placement_from_generated_position(plant: dict, group_id: int, x: int, y: int) -> dict:
+def placement_from_generated_position(plant: dict, group_id: int, x: int, y: int, section: dict | None = None) -> dict:
+    section = section or {}
+
     return {
         "plant_id": plant["id"],
         "name": plant["name"],
@@ -498,6 +542,7 @@ def placement_from_generated_position(plant: dict, group_id: int, x: int, y: int
         "max_height_ft": plant.get("max_height_ft"),
         "max_width_ft": plant.get("max_width_ft"),
         "saved_position": False,
+        **section,
     }
 
 
@@ -526,17 +571,35 @@ def generate_layout(
         plants = group.get("plants", [])
 
         group_id = int(group.get("group_id") or group_index + 1)
-        preferred_y = min(group_id - 1, grid_height - 1)
-        group_entries.append((group, group_id, preferred_y, plants))
+        section_width, section_height = _section_grid_dimensions(group, grid_width, grid_height)
+        preferred_y = min(group_id - 1, section_height - 1)
+        section = _section_fields(group)
+
+        if group.get("section_id") is None and group.get("allocated_area_m2") is None and group.get("section_name") is None:
+            section = {}
+
+        if len(plants) > section_width * section_height:
+            warnings.append(
+                f"Group {group_id} has {len(plants)} crop(s), but section "
+                f"{group.get('section_name') or 'layout'} only has {section_width * section_height} layout cell(s)."
+            )
+
+        group_entries.append((group, group_id, preferred_y, plants, section_width, section_height, section))
 
         for plant in [p for p in plants if has_saved_position(p)]:
-            saved_placement, warning = placement_from_saved_position(plant, group_id, grid_width, grid_height)
+            saved_placement, warning = placement_from_saved_position(
+                plant,
+                group_id,
+                section_width,
+                section_height,
+                section,
+            )
 
             if warning:
                 warnings.append(warning)
                 continue
 
-            position = (saved_placement["x"], saved_placement["y"])
+            position = _section_position_key(saved_placement.get("section_id"), saved_placement["x"], saved_placement["y"])
 
             if position in occupied:
                 warnings.append(f"Saved position for {plant['name']} is already occupied; it was left for manual review.")
@@ -545,17 +608,20 @@ def generate_layout(
             occupied.add(position)
             placements.append(saved_placement)
 
-    for group, group_id, preferred_y, plants in group_entries:
+    for group, group_id, preferred_y, plants, section_width, section_height, section in group_entries:
         plants = [p for p in plants if not has_saved_position(p)]
         plants = arrange_group_plants(plants, recommended_pairs, avoid_pairs)
 
+        section_occupied = {(x, y) for placed_section, x, y in occupied if placed_section == (section.get("section_id") or "layout")}
+
         for plant in plants:
+            section_placements = [placement for placement in placements if placement.get("section_id") == section.get("section_id")]
             pos = find_next_position(
                 plant=plant,
-                grid_width=grid_width,
-                grid_height=grid_height,
-                occupied=occupied,
-                placements=placements,
+                grid_width=section_width,
+                grid_height=section_height,
+                occupied=section_occupied,
+                placements=section_placements,
                 recommended_pairs=recommended_pairs,
                 avoid_pairs=avoid_pairs,
                 preferred_y=preferred_y,
@@ -566,9 +632,10 @@ def generate_layout(
                 continue
 
             x, y = pos
-            occupied.add((x, y))
+            occupied.add(_section_position_key(section.get("section_id"), x, y))
+            section_occupied.add((x, y))
 
-            placements.append(placement_from_generated_position(plant, group_id, x, y))
+            placements.append(placement_from_generated_position(plant, group_id, x, y, section))
 
         # Detect shade relationships inside the same group
         for provider in plants:
@@ -591,6 +658,16 @@ def generate_layout(
         "grid_width": grid_width,
         "grid_height": grid_height,
         "placements": placements,
+        "sections": [
+            {
+                "section_id": group.get("section_id"),
+                "section_name": group.get("section_name"),
+                "grid_width": _section_grid_dimensions(group, grid_width, grid_height)[0],
+                "grid_height": _section_grid_dimensions(group, grid_width, grid_height)[1],
+            }
+            for group in groups
+            if group.get("section_id") is not None
+        ],
         "shade_relationships": shade_relationships,
         "warnings": warnings,
     }

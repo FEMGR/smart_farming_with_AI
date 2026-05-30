@@ -19,6 +19,7 @@ from pages.species_lookup import render_species_lookup
 from pages.layout import render_layout  # Import the new layout page
 from state import init_state
 from styles import apply_page_config, apply_styles
+from pages.planning import render_planning_page
 
 
 def main() -> None:
@@ -44,6 +45,7 @@ def main() -> None:
             "Locations",
             "Irrigation",
             "Recommendations",
+            "Planning",
             "Layout",
             "Notifications",
             "Species Lookup",
@@ -65,13 +67,16 @@ def main() -> None:
     with tabs[4]:
         render_recommendations()
 
-    with tabs[5]:  # This will be the new Layout tab
-        render_layout()
+    with tabs[5]:
+        render_planning_page()
 
     with tabs[6]:
-        render_notifications()
+        render_layout()
 
     with tabs[7]:
+        render_notifications()
+
+    with tabs[8]:
         render_species_lookup()
 
 
