@@ -1,3 +1,10 @@
+"""
+Service layer for yield summaries.
+
+Key Point:
+Aggregates harvested quantity for the authenticated user.
+"""
+
 # app/services/production/yield_service.py
 
 from sqlalchemy import func

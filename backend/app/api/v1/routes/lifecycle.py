@@ -1,4 +1,16 @@
-# app/api/v1/routes/lifecycyle.py
+"""
+Route layer for FastAPI (Lifecycle).
+
+Key Point:
+Exposes plant event and growth snapshot endpoints.
+
+Responsibilities:
+- Record lifecycle events
+- Record growth measurements
+- Return lifecycle history scoped to the authenticated user
+"""
+
+# app/api/v1/routes/lifecycle.py
 
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session

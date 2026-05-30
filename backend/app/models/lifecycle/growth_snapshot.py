@@ -1,4 +1,11 @@
-# app/models/lifecycyle/growth_snapshot.py
+"""
+Database model for plant growth snapshots.
+
+Key Point:
+Stores time-based plant measurements and health observations.
+"""
+
+# app/models/lifecycle/growth_snapshot.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, Date, TIMESTAMP, func
 

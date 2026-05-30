@@ -1,3 +1,10 @@
+"""
+Database model for production batches.
+
+Key Point:
+Represents scheduled planting and harvest windows within a crop plan.
+"""
+
 # app/models/production/production_batch.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, Date, TIMESTAMP, func

@@ -1,3 +1,10 @@
+"""
+Database model for planning notifications.
+
+Key Point:
+Stores scheduled reminders generated from production plans and batches.
+"""
+
 # app/models/production/planning_notification.py
 
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Date, TIMESTAMP, func
