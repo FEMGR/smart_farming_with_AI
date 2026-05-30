@@ -72,7 +72,7 @@ def render_species_lookup() -> None:
 
             # Display thumbnail image if available
             if thumbnail:
-                cols[0].image(thumbnail, use_container_width=True)
+                cols[0].image(thumbnail, width="stretch")
             else:
                 cols[0].caption("No image")
 

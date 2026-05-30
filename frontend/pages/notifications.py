@@ -90,7 +90,7 @@ def render_notifications() -> None:
             if not notification.get("is_read") and cols[2].button(
                 "Mark read",
                 key=f"read_{notification['id']}",
-                use_container_width=True,
+                width="stretch",
             ):
                 try:
                     mark_notification_read(notification["id"])
