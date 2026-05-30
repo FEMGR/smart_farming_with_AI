@@ -115,9 +115,37 @@ def polyculture_preview(
             intended_crops=request.intended_crops,
             start_date=request.start_date,
             harvest_interval_days=request.harvest_interval_days,
+            desired_harvest_batches=request.desired_harvest_batches,
+            plant_variations_per_group=request.plant_variations_per_group,
         )
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.get("/polyculture-plans")
+def get_saved_polyculture_plans(
+    db: Session = Depends(get_db),
+    user_id: int = Depends(get_current_user_id),
+):
+    return polyculture_planner.get_saved_polyculture_plans(db=db, user_id=user_id)
+
+
+@router.delete("/polyculture-plans/{crop_plan_id}")
+def delete_saved_polyculture_plan(
+    crop_plan_id: int,
+    db: Session = Depends(get_db),
+    user_id: int = Depends(get_current_user_id),
+):
+    deleted = polyculture_planner.delete_saved_polyculture_plan(
+        db=db,
+        user_id=user_id,
+        crop_plan_id=crop_plan_id,
+    )
+
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Saved polyculture plan not found")
+
+    return {"message": "Saved polyculture plan deleted successfully"}
 
 
 @router.post("/polyculture-confirm")
@@ -135,6 +163,8 @@ def polyculture_confirm(
             intended_crops=request.intended_crops,
             start_date=request.start_date,
             harvest_interval_days=request.harvest_interval_days,
+            desired_harvest_batches=request.desired_harvest_batches,
+            plant_variations_per_group=request.plant_variations_per_group,
             name=request.name,
         )
     except ValueError as e:

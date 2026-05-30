@@ -20,6 +20,7 @@ class CropPlanGroup(Base):
 
     main_crops = Column(JSON, nullable=False, default=list)
     suggested_companions = Column(JSON, nullable=True, default=list)
+    layout_json = Column(JSON, nullable=True)
     warnings = Column(JSON, nullable=True, default=list)
 
     allocated_area_m2 = Column(Numeric(10, 2), nullable=True)

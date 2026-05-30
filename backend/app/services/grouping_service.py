@@ -197,6 +197,24 @@ def apply_saved_group_overrides(
     return [group for group in groups if group]
 
 
+def split_groups_by_size(raw_groups: List[Set[str]], max_group_size: int | None = None) -> List[Set[str]]:
+    if max_group_size is None:
+        return raw_groups
+
+    if max_group_size <= 0:
+        raise ValueError("max_group_size must be greater than 0")
+
+    split_groups = []
+
+    for group in raw_groups:
+        ordered_nodes = sorted(group)
+
+        for start in range(0, len(ordered_nodes), max_group_size):
+            split_groups.append(set(ordered_nodes[start : start + max_group_size]))
+
+    return split_groups
+
+
 def group_has_same_atom(group: Set[str], node: str, node_atoms: Dict[str, str]) -> bool:
     node_atom = node_atoms.get(node, node)
     return any(node_atoms.get(member, member) == node_atom for member in group)
@@ -336,12 +354,18 @@ def enforce_conflict_free_groups(
 # ===============================
 
 
-def generate_groups_internal(plants: List[Plant], valid_pairs: List[str], avoid_pairs: List[str] | None = None) -> List[dict]:
+def generate_groups_internal(
+    plants: List[Plant],
+    valid_pairs: List[str],
+    avoid_pairs: List[str] | None = None,
+    max_group_size: int | None = None,
+) -> List[dict]:
     graph, node_atoms = build_graph(plants, valid_pairs)
     raw_groups = find_groups(graph, node_atoms, avoid_pairs)
     raw_groups = distribute_duplicate_plants(raw_groups, graph, node_atoms, avoid_pairs)
     raw_groups = enforce_conflict_free_groups(raw_groups, graph, node_atoms, avoid_pairs)
     raw_groups = apply_saved_group_overrides(raw_groups, plants, graph, node_atoms, avoid_pairs)
+    raw_groups = split_groups_by_size(raw_groups, max_group_size)
 
     plant_map = {plant_node_key(plant): plant for plant in plants}
 
@@ -394,6 +418,7 @@ def generate_groups_display(
     valid_pairs: List[str],
     avoid_pairs: List[str] | None = None,
     pair_reasons: Dict[str, dict] | None = None,
+    max_group_size: int | None = None,
 ) -> List[dict]:
 
     graph, node_atoms = build_graph(plants, valid_pairs)
@@ -401,6 +426,7 @@ def generate_groups_display(
     raw_groups = distribute_duplicate_plants(raw_groups, graph, node_atoms, avoid_pairs)
     raw_groups = enforce_conflict_free_groups(raw_groups, graph, node_atoms, avoid_pairs)
     raw_groups = apply_saved_group_overrides(raw_groups, plants, graph, node_atoms, avoid_pairs)
+    raw_groups = split_groups_by_size(raw_groups, max_group_size)
 
     plant_map = {plant_node_key(plant): plant for plant in plants}
     pair_reasons = pair_reasons or {}

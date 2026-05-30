@@ -90,6 +90,8 @@ class PolyculturePreviewRequest(BaseModel):
     intended_crops: list[str]
     start_date: date
     harvest_interval_days: int = 14
+    desired_harvest_batches: Optional[int] = Field(default=None, ge=1)
+    plant_variations_per_group: Optional[int] = Field(default=None, ge=1)
 
 
 class PolycultureConfirmRequest(PolyculturePreviewRequest):
@@ -101,17 +103,23 @@ class PolycultureGroupPreview(BaseModel):
     section_id: Optional[int] = None
     main_crops: list[str]
     suggested_companions: list[dict] = []
+    recommended_additions: list[dict] = []
+    remaining_plant_slots: Optional[int] = None
     allocated_area_m2: Optional[Decimal] = None
     warnings: list[str] = []
+    layout: Optional[dict] = None
     timeline: list[dict] = []
 
 
 class PolyculturePreviewResponse(BaseModel):
     location_id: int
     section_ids: list[int]
+    desired_harvest_batches: Optional[int] = None
+    plant_variations_per_group: Optional[int] = None
     group_count: int
     total_available_area_m2: Decimal
     groups: list[dict]
     layout: dict
+    layout_json: dict
     warnings: list[str]
     suggested_additional_sections: list[dict]

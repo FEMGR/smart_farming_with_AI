@@ -37,20 +37,26 @@ PostgreSQL
 # backend/main.py
 
 from contextlib import asynccontextmanager
+from pathlib import Path
+import sys
 
-from app import models as _models  # noqa: F401
 from fastapi import FastAPI
+
+backend_dir = Path(__file__).resolve().parent
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
 
 # ===============================
 # FORCE MODEL REGISTRATION
 # ===============================
 # Ensures SQLAlchemy detects all tables
 
-from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species, planning, lifecycle, production
-from app.core.error_handler import add_exception_handlers
-from app.core.logger import setup_logger
-from app.database.db import Base, engine
-from app.workers.scheduler import start_scheduler, stop_scheduler
+import app.models as _models  # noqa: F401,E402
+from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species, planning, lifecycle, production  # noqa: E402
+from app.core.error_handler import add_exception_handlers  # noqa: E402
+from app.core.logger import setup_logger  # noqa: E402
+from app.database.db import Base, engine  # noqa: E402
+from app.workers.scheduler import start_scheduler, stop_scheduler  # noqa: E402
 
 
 # ===============================
