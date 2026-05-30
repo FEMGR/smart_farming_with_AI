@@ -1,3 +1,11 @@
+"""
+Database model for production crop plans.
+
+Key Point:
+Represents a saved monoculture or polyculture production plan and owns its
+groups and batches.
+"""
+
 # app/models/production/crop_plan.py
 from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, Date, TIMESTAMP, func
 from sqlalchemy.orm import relationship

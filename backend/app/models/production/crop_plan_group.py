@@ -1,3 +1,10 @@
+"""
+Database model for crop plan groups.
+
+Key Point:
+Stores compatible crop groups, assigned farm sections, and saved layout data.
+"""
+
 # app/models/production/crop_plan_group.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, JSON, TIMESTAMP, func

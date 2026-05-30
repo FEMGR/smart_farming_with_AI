@@ -1,3 +1,15 @@
+"""
+Route layer for FastAPI (Planning).
+
+Key Point:
+Exposes farm section, crop plan, polyculture preview, and saved plan endpoints.
+
+Responsibilities:
+- Validate planning requests with schemas
+- Delegate planning logic to service modules
+- Scope all planning data to the authenticated user
+"""
+
 # app/api/v1/routes/planning.py
 
 from fastapi import APIRouter, Depends, HTTPException

@@ -1,3 +1,10 @@
+"""
+Database model for farm sections.
+
+Key Point:
+Represents user-defined production areas inside a location.
+"""
+
 # app/models/production/farm_section.py
 
 from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, Boolean, TIMESTAMP, func

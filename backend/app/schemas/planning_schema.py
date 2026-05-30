@@ -1,4 +1,12 @@
-# app/schemas/planning_schema.py <<'PY'
+"""
+Schema definitions for production planning.
+
+Key Point:
+Defines request and response contracts for farm sections, crop plans,
+succession planning, and polyculture planning.
+"""
+
+# app/schemas/planning_schema.py
 from datetime import date
 from decimal import Decimal
 from typing import Optional

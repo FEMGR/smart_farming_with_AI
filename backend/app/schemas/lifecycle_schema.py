@@ -1,3 +1,10 @@
+"""
+Schema definitions for lifecycle tracking.
+
+Key Point:
+Defines request and response contracts for plant events and growth snapshots.
+"""
+
 # app/schemas/lifecycle_schema.py
 from datetime import date, datetime
 from decimal import Decimal

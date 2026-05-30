@@ -1,3 +1,10 @@
+"""
+Service layer for lifecycle tracking.
+
+Key Point:
+Creates and retrieves plant events and growth snapshots.
+"""
+
 # app/services/lifecycle/lifecycle_service.py
 
 from sqlalchemy.orm import Session

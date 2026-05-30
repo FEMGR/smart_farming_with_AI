@@ -1,4 +1,11 @@
-# app/models/production/harvest_record.py <<'PY'
+"""
+Database model for harvest records.
+
+Key Point:
+Stores harvested quantity, unit, quality, and notes for production batches.
+"""
+
+# app/models/production/harvest_record.py
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, Numeric, TIMESTAMP, func
 from sqlalchemy.orm import relationship
 
