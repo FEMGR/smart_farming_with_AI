@@ -1,16 +1,12 @@
 # app/services/prolog/prolog_service.py
 
-import os
 import subprocess
+from pathlib import Path
 from collections import defaultdict
 from typing import List, Dict, Any
 
-CURRENT_FILE = os.path.abspath(__file__)
-
-PROJECT_ROOT = os.path.dirname(  # smart-farming-system
-    os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(CURRENT_FILE))))  # backend  # app  # services
-)
-PROLOG_PATH = os.path.join(PROJECT_ROOT, "logic_companion_planting", "main.pl")
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
+PROLOG_PATH = PROJECT_ROOT / "logic_companion_planting" / "main.pl"
 
 
 # ===============================
@@ -20,10 +16,10 @@ PROLOG_PATH = os.path.join(PROJECT_ROOT, "logic_companion_planting", "main.pl")
 
 def run_query(query: str) -> str:
     result = subprocess.run(
-        ["swipl", "-s", PROLOG_PATH, "-g", query, "-t", "halt"],
+        ["swipl", "-s", str(PROLOG_PATH), "-g", query, "-t", "halt"],
         capture_output=True,
         text=True,
-        cwd=os.path.dirname(PROLOG_PATH),
+        cwd=PROLOG_PATH.parent,
     )
 
     if result.stderr:

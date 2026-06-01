@@ -1,0 +1,24 @@
+# Backend runtime dependencies only.
+fastapi==0.110.0
+uvicorn==0.29.0
+starlette>=0.36.3,<0.37.0
+
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+alembic
+
+python-dotenv==1.0.1
+python-multipart
+pydantic==2.7.1
+pydantic-settings
+email-validator
+
+python-jose
+passlib[bcrypt]>=1.7.4
+bcrypt<4.1.0
+
+httpx<0.25
+requests
+
+apscheduler
+rapidfuzz
