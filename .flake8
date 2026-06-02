@@ -6,7 +6,6 @@ exclude =
     venv,
     backend/alembic/versions/*
 
-# Remove all comments from these lines
 ignore = E203,E265,E261,E262,E302,E303,E305,W291,W292,W293,W391,W503,W504
 per-file-ignores =
     backend/alembic/env.py:F401
