@@ -15,3 +15,5 @@ from app.models.production.planning_notification import PlanningNotification
 from app.models.production.crop_plan_group import CropPlanGroup
 from app.models.lifecycle.plant_event import PlantEvent
 from app.models.lifecycle.growth_snapshot import GrowthSnapshot
+from app.models.lifecycle.plant_timeline_snapshot import PlantTimelineSnapshot
+from app.models.plant_growth_fact import PlantGrowthFact

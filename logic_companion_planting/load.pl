@@ -17,6 +17,7 @@ load_all :-
     % =====================================================
 
     consult('base/plant_group.pl'),
+    consult('base/plant_taxonomy.pl'),
     consult('base/insect_group.pl'),
     consult('base/soil_profile.pl'),
     consult('base/weather_taxonomy.pl'),
@@ -31,6 +32,7 @@ load_all :-
     consult('data/weather_fact.pl'),
     consult('data/layout_fact.pl'),
     consult('data/environment_fact.pl'),
+    consult('data/growth_facts.pl'),
 
     % =====================================================
     % ECOLOGICAL RELATIONSHIPS

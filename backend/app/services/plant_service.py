@@ -37,6 +37,7 @@ from sqlalchemy.orm import Session, joinedload
 
 from app.core.exceptions import NotFoundError, PermissionDeniedError
 from app.core.logger import setup_logger
+from app.database.db import sync_postgres_sequence
 from app.models.location import Location
 from app.models.plant import Plant
 from app.models.plant_group import PlantGroup
@@ -50,9 +51,12 @@ from app.services.positioning_service import generate_layout
 
 # Import species-related services from perenual_service
 from app.services.perenual_service import (
+    correct_species_query,
     get_or_create_species_cache,
-    resolve_species,  # This is the main entry for species resolution
+    resolve_species,
 )
+from app.services.lifecycle.plant_timeline_service import save_plant_timeline_snapshot
+from app.services.plant_taxonomy_service import PlantIdentity, normalize_plant_input
 from app.services.prolog.prolog_service import (
     get_recommendations,
     get_companion_suggestions,
@@ -95,6 +99,10 @@ def _ensure_user_group(db: Session, group_id: int | None, user_id: int):
     return group
 
 
+def _sync_plant_id_sequence(db: Session):
+    sync_postgres_sequence(db, Plant.__tablename__)
+
+
 def _attach_metadata(plant: Plant):
     if plant:
         # Relationship name should be 'species'
@@ -107,6 +115,108 @@ def _attach_metadata(plant: Plant):
     return plant
 
 
+def _identity_from_plant(plant: Plant) -> PlantIdentity:
+    return PlantIdentity(
+        plant_atom=plant.plant_atom or to_prolog_atom({"name": plant.name}),
+        scientific_name=plant.scientific_name,
+        genus=plant.genus,
+        family=plant.family,
+        taxonomy_confidence=plant.taxonomy_confidence,
+    )
+
+
+def _apply_identity(plant: Plant, identity: PlantIdentity) -> None:
+    plant.plant_atom = identity.plant_atom
+    plant.scientific_name = identity.scientific_name
+    plant.genus = identity.genus
+    plant.family = identity.family
+    plant.taxonomy_confidence = identity.taxonomy_confidence
+
+
+def _canonical_scientific_override(value: str | None) -> str | None:
+    value = str(value or "").strip()
+    if not value:
+        return None
+
+    parts = value.split()
+    if len(parts) < 2:
+        return None
+
+    genus = parts[0].capitalize()
+    rest = " ".join(part.lower() if part != "x" else "x" for part in parts[1:])
+    return f"{genus} {rest}"
+
+
+def _identity_for_plant_input(plant_name: str, species_name: str | None = None) -> PlantIdentity:
+    base_identity = normalize_plant_input(plant_name)
+    scientific_override = _canonical_scientific_override(species_name)
+
+    if not scientific_override:
+        return base_identity
+
+    override_identity = normalize_plant_input(scientific_override)
+    genus = override_identity.genus or scientific_override.split()[0].lower()
+
+    return PlantIdentity(
+        plant_atom=base_identity.plant_atom,
+        scientific_name=scientific_override,
+        alternate_scientific_names=override_identity.alternate_scientific_names or base_identity.alternate_scientific_names,
+        genus=genus,
+        family=override_identity.family or base_identity.family,
+        taxonomy_confidence="user_override",
+        taxonomy_source=override_identity.taxonomy_source or base_identity.taxonomy_source,
+        taxonomy_note=override_identity.taxonomy_note or base_identity.taxonomy_note,
+    )
+
+
+def _preferred_scientific_names(identity: PlantIdentity) -> list[str]:
+    names = [identity.scientific_name, *(identity.alternate_scientific_names or [])]
+    result: list[str] = []
+    seen: set[str] = set()
+    for name in names:
+        name = str(name or "").strip()
+        key = name.lower()
+        if name and key not in seen:
+            result.append(name)
+            seen.add(key)
+    return result
+
+
+def _preferred_common_names(*names: str | None) -> list[str]:
+    result: list[str] = []
+    seen: set[str] = set()
+    for name in names:
+        name = str(name or "").strip()
+        key = name.lower()
+        if name and key not in seen:
+            result.append(name)
+            seen.add(key)
+    return result
+
+
+def _identity_from_species_record(species_record: PlantSpeciesCache, fallback_name: str) -> PlantIdentity:
+    data = species_record.data or {}
+    common_name = species_record.common_name or fallback_name
+    scientific_name = species_record.scientific_name
+    genus = data.get("genus")
+    family = data.get("family")
+
+    if not genus and scientific_name:
+        genus = scientific_name.split()[0]
+
+    base_identity = normalize_plant_input(common_name)
+    return PlantIdentity(
+        plant_atom=base_identity.plant_atom,
+        scientific_name=scientific_name or base_identity.scientific_name,
+        alternate_scientific_names=base_identity.alternate_scientific_names,
+        genus=genus or base_identity.genus,
+        family=family or base_identity.family,
+        taxonomy_confidence="perenual_selected",
+        taxonomy_source=base_identity.taxonomy_source,
+        taxonomy_note=base_identity.taxonomy_note,
+    )
+
+
 # ===============================
 # CREATE PLANT
 # ===============================
@@ -114,17 +224,37 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
     _validate_location(db, plant.location_id, user_id)
     _ensure_user_group(db, plant.group_id, user_id)
 
+    stored_name = correct_species_query(plant.name) or plant.name
+    if stored_name != plant.name:
+        logger.info("[PLANT SERVICE] Corrected plant name '%s' -> '%s' before storing.", plant.name, stored_name)
+
+    identity = _identity_for_plant_input(stored_name, plant.species_name)
+
     # 1. Initialize variables
     species_record = None
 
-    # 2. Resolve species using the centralized service
-    species_internal_id = resolve_species(db, plant.name, plant_type=plant.plant_type)
+    # 2. Resolve species from the user-entered name.
+    species_internal_id = resolve_species(
+        db,
+        stored_name,
+        plant_type=plant.plant_type,
+        preferred_scientific_names=_preferred_scientific_names(identity),
+        preferred_common_names=_preferred_common_names(stored_name, plant.name),
+        preferred_genus=identity.genus,
+        preferred_family=identity.family,
+    )
 
     if species_internal_id:
         species_record = db.query(PlantSpeciesCache).get(species_internal_id)
-        logger.info(f"[PLANT SERVICE] Linked '{plant.name}' → {species_record.scientific_name} (DB ID: {species_record.id})")
+        logger.info(f"[PLANT SERVICE] Linked '{stored_name}' → {species_record.scientific_name} (DB ID: {species_record.id})")
+    elif identity.scientific_name:
+        logger.info(
+            "[PLANT SERVICE] No Perenual detail cache linked for '%s'; using normalized taxonomy identity %s.",
+            stored_name,
+            identity.scientific_name,
+        )
     else:
-        logger.info(f"[PLANT SERVICE] No confident species match found for '{plant.name}'.")
+        logger.info(f"[PLANT SERVICE] No confident species match found for '{stored_name}'.")
 
     # 3. Determine Watering Interval
     user_interval = getattr(plant, "watering_interval_days", None)
@@ -132,7 +262,7 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
 
     # 4. Save to Database
     new_plant = Plant(
-        name=plant.name,
+        name=stored_name,
         plant_type=plant.plant_type,
         species_id=species_internal_id,
         location_id=plant.location_id,
@@ -145,8 +275,12 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
         use_sensor=plant.use_sensor,
         watering_interval_days=final_interval,
     )
+    _apply_identity(new_plant, identity)
 
+    _sync_plant_id_sequence(db)
     db.add(new_plant)
+    db.flush()
+    save_plant_timeline_snapshot(db, new_plant, identity)
     db.commit()
     db.refresh(new_plant)
 
@@ -158,7 +292,12 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
 # ===============================
 def get_plants(db: Session, user_id: int):
     # We use joinedload to get species and location in one query
-    plants = db.query(Plant).options(joinedload(Plant.species), joinedload(Plant.location)).filter(Plant.user_id == user_id).all()
+    plants = (
+        db.query(Plant)
+        .options(joinedload(Plant.species), joinedload(Plant.location), joinedload(Plant.timeline_snapshots))
+        .filter(Plant.user_id == user_id)
+        .all()
+    )
 
     return [_attach_metadata(p) for p in plants]
 
@@ -167,7 +306,12 @@ def get_plants(db: Session, user_id: int):
 # GET PLANT BY ID (USER-SCOPED)
 # ===============================
 def get_plant(db: Session, plant_id: int, user_id: int):
-    plant = db.query(Plant).options(joinedload(Plant.species), joinedload(Plant.location)).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
+    plant = (
+        db.query(Plant)
+        .options(joinedload(Plant.species), joinedload(Plant.location), joinedload(Plant.timeline_snapshots))
+        .filter(Plant.id == plant_id, Plant.user_id == user_id)
+        .first()
+    )
 
     return _attach_metadata(plant)
 
@@ -198,8 +342,12 @@ def duplicate_plant(db: Session, plant_id: int, user_id: int, group_id: int | No
         use_sensor=plant.use_sensor,
         watering_interval_days=plant.watering_interval_days,
     )
+    _apply_identity(duplicate, _identity_from_plant(plant))
 
+    _sync_plant_id_sequence(db)
     db.add(duplicate)
+    db.flush()
+    save_plant_timeline_snapshot(db, duplicate, _identity_from_plant(duplicate))
     db.commit()
     db.refresh(duplicate)
 
@@ -210,7 +358,12 @@ def duplicate_plant(db: Session, plant_id: int, user_id: int, group_id: int | No
 # UPDATE PLANT (USER-SCOPED)
 # ===============================
 def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id: int):
-    plant = db.query(Plant).options(joinedload(Plant.species), joinedload(Plant.location)).filter(Plant.id == plant_id, Plant.user_id == user_id).first()
+    plant = (
+        db.query(Plant)
+        .options(joinedload(Plant.species), joinedload(Plant.location), joinedload(Plant.timeline_snapshots))
+        .filter(Plant.id == plant_id, Plant.user_id == user_id)
+        .first()
+    )
 
     if not plant:
         return None
@@ -219,6 +372,13 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
         _validate_location(db, plant_update.location_id, user_id)
 
     update_data = plant_update.dict(exclude_unset=True)
+    species_name_supplied = "species_name" in update_data or "scientific_name" in update_data
+    species_name_override = update_data.pop("species_name", None)
+    scientific_name_override = update_data.pop("scientific_name", None)
+    species_name_override = species_name_override if species_name_override is not None else scientific_name_override
+    canonical_species_override = _canonical_scientific_override(species_name_override)
+    current_scientific_name = _canonical_scientific_override(plant.scientific_name) or plant.scientific_name
+    species_name_changed = species_name_supplied and (canonical_species_override or "") != (current_scientific_name or "")
     layout_fields = {"group_id", "bed_x", "bed_y"}
     logs_layout_update = bool(layout_fields.intersection(update_data))
 
@@ -243,13 +403,39 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
     name_changed = "name" in update_data and update_data["name"] != plant.name
     type_changed = "plant_type" in update_data and update_data["plant_type"] != plant.plant_type
 
-    if name_changed or (type_changed and plant.data_source == "manual"):
+    if name_changed or species_name_changed or (type_changed and plant.data_source == "manual"):
         # Use the NEW name if provided, otherwise the existing name
-        search_name = update_data.get("name", plant.name)
+        raw_search_name = update_data.get("name", plant.name)
+        search_name = correct_species_query(raw_search_name) or raw_search_name
+        if search_name != raw_search_name:
+            logger.info("[PLANT SERVICE] Corrected plant name '%s' -> '%s' before storing.", raw_search_name, search_name)
+            update_data["name"] = search_name
         # Use the NEW type if provided, otherwise the existing type
         search_type = update_data.get("plant_type", plant.plant_type)
+        identity = _identity_for_plant_input(search_name, species_name_override)
+        logger.info(
+            "plant_service.update_plant.identity_request plant_id=%s "
+            "species_name_supplied=%s species_name_override=%s current_scientific=%s "
+            "identity=%s perenual_query=%s",
+            plant_id,
+            species_name_supplied,
+            species_name_override,
+            plant.scientific_name,
+            identity.as_dict(),
+            search_name,
+        )
 
-        new_species_internal_id = resolve_species(db, search_name, plant_type=search_type)
+        new_species_internal_id = resolve_species(
+            db,
+            search_name,
+            plant_type=search_type,
+            force_refresh=True,
+            preferred_scientific_names=_preferred_scientific_names(identity),
+            preferred_common_names=_preferred_common_names(search_name, raw_search_name),
+            preferred_genus=identity.genus,
+            preferred_family=identity.family,
+        )
+        _apply_identity(plant, identity)
 
         if new_species_internal_id:
             plant.species_id = new_species_internal_id
@@ -259,6 +445,12 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
             if species_rec:
                 plant.watering_interval_days = species_rec.watering_interval_days
         else:
+            if identity.scientific_name:
+                logger.info(
+                    "[PLANT SERVICE] No Perenual detail cache linked for updated plant '%s'; keeping normalized taxonomy identity %s.",
+                    search_name,
+                    identity.scientific_name,
+                )
             # If name changed to something unmatchable, reset to manual
             plant.species_id = None
             plant.data_source = "manual"
@@ -266,6 +458,9 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
     # Apply other fields
     for field, value in update_data.items():
         setattr(plant, field, value)
+
+    if name_changed or species_name_changed or "planting_date" in update_data:
+        save_plant_timeline_snapshot(db, plant, _identity_from_plant(plant))
 
     db.commit()
     db.refresh(plant)
@@ -306,6 +501,7 @@ def delete_plant(db: Session, plant_id: int, user_id: int):
 def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, external_species_id: int):
     # Validate location
     _validate_location(db, plant.location_id, user_id)
+    _ensure_user_group(db, plant.group_id, user_id)
 
     # Use get_or_create_species_cache from perenual_service
     species_record = get_or_create_species_cache(db, external_species_id, fallback_name=plant.name)
@@ -313,8 +509,19 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
     if not species_record:
         raise NotFoundError("Species not found")
 
+    stored_name = species_record.common_name or plant.name
+    identity = _identity_from_species_record(species_record, stored_name)
+    logger.info(
+        "[PLANT SERVICE] Using selected species for plant name/identity: input_name=%s stored_name=%s scientific=%s genus=%s family=%s.",
+        plant.name,
+        stored_name,
+        identity.scientific_name,
+        identity.genus,
+        identity.family,
+    )
+
     new_plant = Plant(
-        name=plant.name,
+        name=stored_name,
         plant_type=plant.plant_type,
         species_id=species_record.id,  # Use the internal ID of the cached species
         location_id=plant.location_id,
@@ -327,8 +534,12 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
         use_sensor=plant.use_sensor,
         watering_interval_days=species_record.watering_interval_days,
     )
+    _apply_identity(new_plant, identity)
 
+    _sync_plant_id_sequence(db)
     db.add(new_plant)
+    db.flush()
+    save_plant_timeline_snapshot(db, new_plant, identity)
     db.commit()
     db.refresh(new_plant)
 

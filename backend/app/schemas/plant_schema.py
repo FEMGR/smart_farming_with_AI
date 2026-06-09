@@ -59,6 +59,8 @@ class PlantCreate(BaseModel):
 # ===============================
 class PlantUpdate(BaseModel):
     name: Optional[str] = None
+    species_name: Optional[str] = None
+    scientific_name: Optional[str] = None
     # This forces the user to pick one of these specific words
     plant_type: PlantType = "vegetable"
     location_id: Optional[int] = None
@@ -98,6 +100,13 @@ class PlantResponse(BaseModel):
 
     data_source: str
     use_sensor: bool
+
+    plant_atom: Optional[str] = None
+    scientific_name: Optional[str] = None
+    genus: Optional[str] = None
+    family: Optional[str] = None
+    taxonomy_confidence: Optional[str] = None
+    # timeline_snapshot: Optional[dict[str, Any]] = None
 
     created_at: datetime
     last_watered: Optional[date]
