@@ -28,6 +28,7 @@ Consistent behavior across system
 """
 
 # app/core/constants.py
+import os
 from pathlib import Path
 
 # Determine the absolute path to the project root
@@ -38,7 +39,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent  # smart-farming
 # PLANT TYPES
 # =========================================
 
-PLANT_TYPES = ["fruit", "vegetable", "flower", "herb", "evergreen", "succulent", "spice", "onion"]
+PLANT_TYPES = ["fruit", "vegetable", "flower", "herb", "evergreen", "succulent", "spice", "onion", "berries"]
 
 DEFAULT_PLANT_TYPE = "vegetable"
 
@@ -50,6 +51,20 @@ DEFAULT_WATERING_INTERVAL = 4
 
 COOLDOWN_SECONDS = 7  # Cooldown between API calls for rate limiting
 API_REQUEST_TIMEOUT_SECONDS = 60  # Timeout for a single API request
+
+# =========================================
+# PERENUAL API SETTINGS
+# =========================================
+
+PERENUAL_BASE_URL = "https://perenual.com/api/v2"
+PERENUAL_DAILY_REQUEST_LIMIT = int(os.getenv("PERENUAL_DAILY_REQUEST_LIMIT", "100"))
+PERENUAL_DAILY_SOFT_LIMIT = min(int(os.getenv("PERENUAL_DAILY_SOFT_LIMIT", "90")), PERENUAL_DAILY_REQUEST_LIMIT)
+PERENUAL_429_DEFAULT_BACKOFF_SECONDS = int(os.getenv("PERENUAL_429_DEFAULT_BACKOFF_SECONDS", "60"))
+PERENUAL_429_MAX_BACKOFF_SECONDS = int(os.getenv("PERENUAL_429_MAX_BACKOFF_SECONDS", str(60 * 60)))
+# 0 means "do not pre-block by ID"; let Perenual decide via the HTTP response.
+PERENUAL_SPECIES_DETAILS_MAX_ID = int(os.getenv("PERENUAL_SPECIES_DETAILS_MAX_ID", "0"))
+PERENUAL_MAX_DETAIL_FALLBACK_ATTEMPTS = 3
+PERENUAL_RATE_LIMIT_STATE_FILE = BASE_DIR / "backend" / "temp" / "perenual_rate_limit.json"
 
 # =========================================
 # IN-MEMORY CACHE
@@ -64,7 +79,7 @@ MAX_CACHE_SIZE = 500
 
 SNAPSHOT_DIR = BASE_DIR / "backend" / "cache" / "species_snapshots"
 SNAPSHOT_MAX_AGE_HOURS = 5
-MAX_SNAPSHOT_FILES = 10
+MAX_SNAPSHOT_FILES = 100
 
 # =========================================
 # SPECIES SUGGESTION CACHE SETTINGS
@@ -72,4 +87,4 @@ MAX_SNAPSHOT_FILES = 10
 
 SUGGESTION_CACHE_FILE = BASE_DIR / "backend" / "temp" / "species_suggestions.json"
 SUGGESTION_MAX_AGE_SECONDS = 60 * 60 * 24
-MAX_SUGGESTION_ENTRIES = 15
+MAX_SUGGESTION_ENTRIES = 100

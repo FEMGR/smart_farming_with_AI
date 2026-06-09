@@ -202,14 +202,14 @@ member_of(white_pepper, pepper_family).
 
 member_of(gourd, vine).
 member_of(grape, vine).
-member_of(blackbery, vine).
+member_of(blackberry, vine).
 
 % =========================================
 % BERRIES
 % =========================================
 
 member_of(strawberry, berry).
-member_of(blackbery, berry).
+member_of(blackberry, berry).
 member_of(blueberry, berry).
 member_of(raspberry, berry).
 

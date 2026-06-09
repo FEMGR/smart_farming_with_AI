@@ -181,6 +181,7 @@ scientific_name(peanut, 'arachis hypogaea').
 
 % Fruits & Gourds
 scientific_name(tomato, 'solanum lycopersicum').
+scientific_name(tomato, 'lycopersicon esculentum').
 scientific_name(melons, 'cucumis melo').
 scientific_name(watermelon, 'citrullus lanatus').
 scientific_name(squash, 'cucurbita spp.').
@@ -311,7 +312,7 @@ scientific_name(hydrangea, 'hydrangea spp.').
 scientific_name(grapes, 'vitis vinifera').
 scientific_name(apple, 'malus domestica').
 scientific_name(pear, 'pyrus communis').
-scientific_name(strawberry, 'fragaria x ananassa').
+scientific_name(strawberry, 'fragaria ananassa').
 scientific_name(blackberry, 'rubus subg. rubus').
 scientific_name(blueberry, 'vaccinium corymbosum').
 scientific_name(raspberry, 'rubus idaeus').

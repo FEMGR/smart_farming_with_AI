@@ -55,7 +55,9 @@ import app.models as _models  # noqa: F401,E402
 from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species, planning, lifecycle, production  # noqa: E402
 from app.core.error_handler import add_exception_handlers  # noqa: E402
 from app.core.logger import setup_logger  # noqa: E402
-from app.database.db import Base, engine  # noqa: E402
+from app.database.db import Base, SessionLocal, engine, sync_all_postgres_id_sequences  # noqa: E402
+from app.services.growth_fact_service import ensure_local_growth_facts_loaded  # noqa: E402
+from app.services.plant_taxonomy_service import load_plant_taxonomy_cache  # noqa: E402
 from app.workers.scheduler import start_scheduler, stop_scheduler  # noqa: E402
 
 
@@ -65,6 +67,16 @@ from app.workers.scheduler import start_scheduler, stop_scheduler  # noqa: E402
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
     # on startup
+    load_plant_taxonomy_cache()
+    db = SessionLocal()
+    try:
+        synced_sequences = sync_all_postgres_id_sequences(db, Base.metadata)
+        if synced_sequences:
+            logger.info("database.sequence.startup_sync count=%s", synced_sequences)
+        ensure_local_growth_facts_loaded(db, force=True)
+        db.commit()
+    finally:
+        db.close()
     start_scheduler()
     # The app is running
     yield
