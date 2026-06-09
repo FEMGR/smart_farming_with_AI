@@ -54,4 +54,4 @@ def suggest_species_route(query: str = Query(..., min_length=2, max_length=50), 
     if not query:
         return []
 
-    return suggest_species(db, query)
+    return suggest_species(db, query, pre_cache_limit=0)

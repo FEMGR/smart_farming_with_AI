@@ -66,6 +66,7 @@ def render_plants() -> None:
 
         with st.form("create_plant"):
             name = st.text_input("Plant name", placeholder="Tomato")
+            species_name = st.text_input("Scientific name override", placeholder="Solanum lycopersicum")
             plant_type = st.selectbox("Plant type", PLANT_TYPES)
             selected_location = st.selectbox("Location", location_labels)
 
@@ -91,6 +92,7 @@ def render_plants() -> None:
             payload = {
                 "name": name,
                 "plant_type": plant_type,
+                "species_name": species_name.strip() or None,
                 "location_id": location_ids[selected_location],
                 "planting_date": planting_date.isoformat() if set_planting_date else None,
                 "use_sensor": use_sensor,
@@ -130,6 +132,33 @@ def render_plants() -> None:
             cols[2].write(f"{plant.get('effective_watering_interval', plant.get('watering_interval_days') or 4)} days")
             cols[2].caption(f"Last watered: {format_date(plant.get('last_watered'))}")
 
+            identity_parts = [
+                plant.get("plant_atom"),
+                plant.get("scientific_name"),
+                plant.get("genus"),
+            ]
+            identity_text = " · ".join(str(part) for part in identity_parts if part)
+            if identity_text:
+                st.caption(f"Identity: {identity_text}")
+
+            timeline = plant.get("timeline_snapshot") or {}
+            timeline_events = timeline.get("events") or []
+            if timeline_events:
+                with st.expander("Timeline snapshot"):
+                    guidance = timeline.get("guidance") or {}
+                    if timeline.get("growth_fact_match_level"):
+                        st.caption(f"Basis: {timeline.get('growth_fact_match_level')} · " f"Confidence: {timeline.get('confidence') or 'unknown'}")
+                    if guidance.get("sowing_depth_cm") is not None:
+                        st.write(f"Sowing depth: `{guidance.get('sowing_depth_cm')}` cm")
+                    if guidance.get("germination_days_min") is not None:
+                        st.write("Germination: " f"`{guidance.get('germination_days_min')}`-" f"`{guidance.get('germination_days_max')}` days")
+
+                    for event in timeline_events:
+                        st.write(f"- {event.get('date')}: {event.get('label')}")
+
+                    for warning in timeline.get("warnings") or []:
+                        st.warning(warning)
+
             # Quick action buttons for duplicating and watering
             quick_cols = st.columns([1, 2])
 
@@ -167,6 +196,12 @@ def render_plants() -> None:
 
                 with st.form(f"edit_plant_{plant['id']}"):
                     new_name = st.text_input("Name", value=plant.get("name") or "")
+                    current_species_name = plant.get("scientific_name") or ""
+                    new_species_name = st.text_input(
+                        "Scientific name override",
+                        value=current_species_name,
+                        help="Optional. Example: Fragaria vesca. Only sent when changed.",
+                    )
 
                     new_type = st.selectbox(
                         "Type",
@@ -198,15 +233,18 @@ def render_plants() -> None:
 
                 if save:
                     try:
+                        payload = {
+                            "name": new_name,
+                            "plant_type": new_type,
+                            "location_id": location_ids[new_location],
+                            "watering_interval_days": new_interval or None,
+                            "use_sensor": new_use_sensor,
+                        }
+                        payload["species_name"] = new_species_name.strip() or None
+
                         update_plant(
                             plant["id"],
-                            {
-                                "name": new_name,
-                                "plant_type": new_type,
-                                "location_id": location_ids[new_location],
-                                "watering_interval_days": new_interval or None,
-                                "use_sensor": new_use_sensor,
-                            },
+                            payload,
                         )
 
                         invalidate_recommendations()

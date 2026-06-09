@@ -63,6 +63,13 @@ class Plant(Base):
     planting_date = Column(Date)
     data_source = Column(String(50), default="manual")  # {"manual", "perenual", "import", "sensor", "ai"}
 
+    # Stable local identity used by Prolog facts and timeline generation.
+    plant_atom = Column(String(120), nullable=True, index=True)
+    scientific_name = Column(String(255), nullable=True, index=True)
+    genus = Column(String(120), nullable=True, index=True)
+    family = Column(String(120), nullable=True, index=True)
+    taxonomy_confidence = Column(String(50), nullable=True)
+
     use_sensor = Column(Boolean, default=False, nullable=False)
 
     created_at = Column(TIMESTAMP, server_default=func.now())
@@ -76,3 +83,15 @@ class Plant(Base):
     soil_records = relationship("SoilCondition", back_populates="plant", cascade="all, delete")
     actions = relationship("PlantAction", back_populates="plant", cascade="all, delete")
     notifications = relationship("Notification", back_populates="plant", cascade="all, delete")
+    timeline_snapshots = relationship(
+        "PlantTimelineSnapshot",
+        back_populates="plant",
+        cascade="all, delete",
+        order_by="PlantTimelineSnapshot.updated_at.desc()",
+    )
+
+    @property
+    def timeline_snapshot(self):
+        if not self.timeline_snapshots:
+            return None
+        return self.timeline_snapshots[0].timeline_data

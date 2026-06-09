@@ -17,6 +17,8 @@ from app.models.plant_group import PlantGroup
 from app.models.plant_growth import PlantGrowth
 from app.models.soil_condition import SoilCondition
 from app.models.plant_species_cache import PlantSpeciesCache
+from app.models.plant_growth_fact import PlantGrowthFact
+from app.models.lifecycle.plant_timeline_snapshot import PlantTimelineSnapshot
 
 config = context.config
 

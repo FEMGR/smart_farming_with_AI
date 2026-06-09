@@ -36,6 +36,7 @@ Suggestions returned to `perenual_service`
 
 import json
 import os
+import tempfile
 import time
 from typing import List, Dict, Optional
 
@@ -78,7 +79,8 @@ def load_suggestion_cache() -> Dict:
             return json.load(f)
 
     except json.JSONDecodeError as e:
-        logger.error(f"[SUGGESTION CACHE] JSON decode error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache.")
+        logger.error(f"[SUGGESTION CACHE] JSON decode error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Resetting cache.")
+        save_suggestion_cache({})
         return {}
     except Exception as e:
         logger.error(f"[SUGGESTION CACHE] Unexpected error loading cache from {SUGGESTION_CACHE_FILE}: {e}. Returning empty cache.")
@@ -92,10 +94,15 @@ def save_suggestion_cache(data: Dict):
         data: The dictionary representing the cache to be saved.
     """
     ensure_cache_dir()
+    cache_dir = os.path.dirname(SUGGESTION_CACHE_FILE) or "."
     try:
-        with open(SUGGESTION_CACHE_FILE, "w", encoding="utf-8") as f:
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=cache_dir, delete=False) as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
+            temp_path = f.name
+        os.replace(temp_path, SUGGESTION_CACHE_FILE)
     except Exception as e:
+        if "temp_path" in locals() and os.path.exists(temp_path):
+            os.unlink(temp_path)
         logger.error(f"[SUGGESTION CACHE] Failed to save cache to {SUGGESTION_CACHE_FILE}: {e}")
 
 
@@ -165,3 +172,27 @@ def get_cached_species_suggestions(query: str) -> Optional[List[Dict]]:
     logger.info(f"[SUGGESTION CACHE] Cache hit for query: '{query}'")
 
     return item.get("suggestions")
+
+
+def remove_cached_species_suggestion(query: str, species_id) -> None:
+    """Remove one stale species suggestion from a cached query result."""
+    cache = load_suggestion_cache()
+    key = query.lower()
+    item = cache.get(key)
+
+    if not item:
+        return
+
+    suggestions = item.get("suggestions") or []
+    filtered = [suggestion for suggestion in suggestions if str(suggestion.get("id")) != str(species_id)]
+
+    if len(filtered) == len(suggestions):
+        return
+
+    if filtered:
+        item["suggestions"] = filtered
+    else:
+        cache.pop(key, None)
+
+    save_suggestion_cache(cache)
+    logger.warning("[SUGGESTION CACHE] Removed stale species_id=%s for query='%s'", species_id, query)
