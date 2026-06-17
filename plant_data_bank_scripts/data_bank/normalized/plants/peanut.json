@@ -1,0 +1,251 @@
+{
+  "plant_atom": "peanut",
+  "identity": {
+    "common_name": "Peanut",
+    "scientific_name": "Arachis hypogaea",
+    "genus": "Arachis",
+    "family": "Fabaceae",
+    "synonyms": [
+      "Arachis nambyquarae",
+      "Lathyrus esquirolii"
+    ],
+    "common_names": [
+      "Peanut"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop"
+    ],
+    "edible_parts": [
+      "leaf",
+      "oil",
+      "seed"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 4.3,
+    "soil_ph_max": 8.7,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Prefers a light humus-rich well-drained soil in a warm sunny sheltered position, though it will tolerate heavier soils[200, 269]. Plants prefer hot dry conditions when the crop is ripening[200]. Peanuts are quite tolerant of acid soils, and aluminium, requiring a minimum of lime for acceptable yields[269]. Tolerates a pH in the range 4.3 to 8.7[269]. Plants are not frost-hardy and most cultivars require too long a growing season to make them a viable crop in Britain. Some cultivars, however (listed below), have a shorter growing season and are worthy of more research in this country[K]. The peanut is widely cultivated in the tropics and sub-tropics for its edible seed and oil contained in the seed, there are many named varieties[200]. It grows best between latitudes 40° south and 40° north[200]. Yields average about 1 tonne of unshelled nuts per hectare, about 80% of this weight is edible seeds (erect forms) and 60 - 75% (running forms)[200]. Crops can be grown at further distances from the equator but yields are likely to be poor[200]. There are three main groups of cultivars:- 'Virginia' has large seeds, 'Valencia' has four seeds per pod and 'Spanish' has the smallest seeds[200]. There are running and erect forms in each group[200]. The erect forms mature more quickly and are therefore more likely to succeed in colder areas[200]. 'Early Spanish' matures in 105 days and has cropped reliably as far north as Canada[183]. 'Spanish' matures in 110 days and crops in Canada if grown in a light sandy soil with southern exposure[183]. Plants are, in general, self-pollinating, though occasional outcrossing by bees occurs[269]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - pre-soak for 12 hours in warm water and sow the seed in mid spring in a warm greenhouse. Germination should take place within 2 weeks. When large enough to handle, prick the seedlings out into individual pots of fairly rich soil and grow them on fast, planting them out after the last expected frosts and giving them some protection (such as a cloche) until they have settled down and are growing well.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Prefers a light humus-rich well-drained soil in a warm sunny sheltered position, though it will tolerate heavier soils[200, 269]. Plants prefer hot dry conditions when the crop is ripening[200]. Peanuts are quite tolerant of acid soils, and aluminium, requiring a minimum of lime for acceptable yields[269]. Tolerates a pH in the range 4.3 to 8.7[269]. Plants are not frost-hardy and most cultivars require too long a growing season to make them a viable crop in Britain. Some cultivars, however (listed below), have a shorter growing season and are worthy of more research in this country[K]. The peanut is widely cultivated in the tropics and sub-tropics for its edible seed and oil contained in the seed, there are many named varieties[200]. It grows best between latitudes 40° south and 40° north[200]. Yields average about 1 tonne of unshelled nuts per hectare, about 80% of this weight is edible seeds (erect forms) and 60 - 75% (running forms)[200]. Crops can be grown at further distances from the equator but yields are likely to be poor[200]. There are three main groups of cultivars:- 'Virginia' has large seeds, 'Valencia' has four seeds per pod and 'Spanish' has the smallest seeds[200]. There are running and erect forms in each group[200]. The erect forms mature more quickly and are therefore more likely to succeed in colder areas[200]. 'Early Spanish' matures in 105 days and has cropped reliably as far north as Canada[183]. 'Spanish' matures in 110 days and crops in Canada if grown in a light sandy soil with southern exposure[183]. Plants are, in general, self-pollinating, though occasional outcrossing by bees occurs[269]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antiseborrheic Aperient Demulcent Emollient Pectoral The oil from the seed is aperient, demulcent, emollient and pectoral[218]. The seed is used mainly as a nutritive food[268]. The seeds have been used in folk medicine as an anti-inflammatory, aphrodisiac and decoagulant[269]. Peanuts play a small role in various folk pharmacopoeias. In China the nuts are considered demulcent, pectoral, and peptic; the oil aperient and emollient, taken internally in milk for treating gonorrhoea, externally for treating rheumatism[269]. In Zimbabwe the peanut is used in folk remedies for plantar warts. Haemostatic and vasoconstrictor activity are reported. The alcoholic extract is said to affect isolated smooth muscles and frog hearts like acetylcholine. The alcoholic lipoid fraction of the seed is said to prevent haemophiliac tendencies and for the treatment of some blood disorders (mucorrhagia and arthritic haemorrhages) in haemophilia[269].",
+    "cautions": "Of greatest concern is possible contamination of damaged or spoiled seeds with the teratogenic, carcinogenic aflatoxins. Two principal toxins, aflatoxins B, and G, and their less toxic dihydro derivatives, aflatoxins B2 and G2 are formed by the aflatoxin producing moulds (Aspergillus flavus et al). Prevention of mould growth is the mainstay, there being no satisfactory way to remove the toxins from feed and foods (however, peanut oils are free of aflatoxins because of alkaline processing)[269]. Avoid if any suggestion of allergy.",
+    "other_uses_notes": "Biomass Oil Oil The seeds yield a non-drying oil that has a wide range of uses including the manufacture of pharmaceuticals, soaps, cold creams, pomades and lubricants, paints, emulsions for insect control, and fuel for diesel engines[268, 269]. Peanut hulls are used for furfural, fuel, as a filler for fertilizers or for sweeping compounds[269].",
+    "edible_uses_notes": "Edible Parts: Leaves Oil Oil Seed Seedpod Edible Uses: Coffee Oil Oil Seed - raw, cooked or ground into a powder. Peanuts are a staple food in many tropical zones and are widely exported to temperate area of the world. The seeds have a delicious nutty flavour and can be eaten on their own either raw or roasted[K]. The seeds are commonly ground up and used as peanut butter in sandwiches etc[269]. They can also be cooked in a variety of dishes and are also ground into a powder when they can be used with cereals to greatly improve the protein content of breads, cakes etc[K]. The seed is very rich in protein and oil, it is also a good source of minerals and vitamins, especially the B complex[200]. A nutritional analysis is available[218]. A non-drying edible oil is obtained from the seed[200]. This is one of the most commonly used edible oils is the world. It is similar in composition to olive oil and is often used in cooking, making margarines, salad oils etc[200]. The oilseed cake is said to be a good source of arginine and glutamic acid, used in treating mental deficiencies[269]. The roasted seed makes an excellent coffee substitute[7, 269]. Young pods may be consumed as a vegetable[269]. Young leaves and tips are suitable as a cooked green vegetable[269]. Javanese use the tips for lablab, and germinating seeds to make toge[269]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.synonyms": "Plants For A Future",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:37.063331+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Arachis+hypogaea",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "crop_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:53.662664+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Peanut",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:54.582953+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Arachis+hypogaea",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:35:07.898067+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Peanut",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:35:11.538450+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=peanut",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:35:15.222392+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.885199+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

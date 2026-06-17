@@ -1,0 +1,251 @@
+{
+  "plant_atom": "cucumber",
+  "identity": {
+    "common_name": "Cucumber",
+    "scientific_name": "Cucumis sativus",
+    "genus": "Cucumis",
+    "family": "Cucurbitaceae",
+    "synonyms": [],
+    "common_names": [
+      "Cucumber",
+      "Garden cucumber"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "fruit",
+      "leaf",
+      "oil",
+      "seed"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Requires a rich, well-drained moisture retentive soil and a warm very sunny position[200]. A frost-tender plant, the cucumber is commonly cultivated for its edible fruit, there are many named varieties[46, 183]. Many of these varieties are only suitable for protected cropping in Britain though there are a number that have been specifically bred for cool temperate areas and these succeed outdoors in most summers[200]. Many of the cultivars, especially the greenhouse forms, should have their male flowers removed in order to prevent fertilization, since the fertilized fruits have a bitter taste. A number of cultivars have been developed that only produce female flowers[142]. Cucumbers make good companion plants for sweet corn, beans and sunflowers[18], but they dislike growing with potatoes and aromatic herbs[20]. The roots of cucumber plants secrete a substance that inhibits the growth of most weeds[201].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early to mid spring in a greenhouse in a rich soil. Germination should take place within 2 weeks. Sow 2 or 3 seeds per pot and thin out to the best plant. Grow them on fast and plant out after the last expected frosts, giving them cloche or frame protection for at least their first few weeks if you are trying them outdoors.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Requires a rich, well-drained moisture retentive soil and a warm very sunny position[200]. A frost-tender plant, the cucumber is commonly cultivated for its edible fruit, there are many named varieties[46, 183]. Many of these varieties are only suitable for protected cropping in Britain though there are a number that have been specifically bred for cool temperate areas and these succeed outdoors in most summers[200]. Many of the cultivars, especially the greenhouse forms, should have their male flowers removed in order to prevent fertilization, since the fertilized fruits have a bitter taste. A number of cultivars have been developed that only produce female flowers[142]. Cucumbers make good companion plants for sweet corn, beans and sunflowers[18], but they dislike growing with potatoes and aromatic herbs[20]. The roots of cucumber plants secrete a substance that inhibits the growth of most weeds[201].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Aperient Diuretic Skin Tonic Vermifuge The leaf juice is emetic, it is used to treat dyspepsia in children[218]. The fruit is depurative, diuretic, emollient, purgative and resolvent[7, 21, 201, 218]. The fresh fruit is used internally in the treatment of blemished skin, heat rash etc, whilst it is used externally as a poultice for burns, sores etc and also as a cosmetic for softening the skin[218, 238]. The seed is cooling, diuretic, tonic and vermifuge[4, 218]. 25 - 50 grams of the thoroughly ground seeds (including the seed coat) is a standard dose as a vermifuge and usually needs to be followed by a purgative to expel the worms from the body[4]. A decoction of the root is diuretic[218].",
+    "cautions": "The sprouting seed produces a toxic substance in its embryo[65].",
+    "other_uses_notes": "Cosmetic Oil Repellent Cucumber skins have been shown to repel cockroaches in laboratory experiments[218]. The fruit is applied to the skin as a cleansing cosmetic to soften and whiten it[4, 7, 238]. The juice is used in many beauty products[4, 7].",
+    "edible_uses_notes": "Edible Parts: Fruit Leaves Oil Seed Edible Uses: Oil Fruit - raw or cooked. The cucumber is a common ingredient of salads, being valued mainly for its crisp texture and juiciness[1, 2, 7, 46]. However, it is very watery, with little flavour and is not very nutritious[K]. Many people find the fruit to be indigestible, this is due to the high cellulose content[7]. The fruit varies widely in size between cultivars but can be up to 1 metre long. It can be available from mid summer until early autumn from outdoor grown plants. Seed - raw[57, 86]. Rich in oil with a nutty flavour but very fiddly to use because the seed is small and covered with a fibrous coat[K]. Young leaves and stems - cooked as a potherb. Oil from seed[61]. Said to resemble olive oil, it is used in salad dressings and French cooking[183]. The oil contains 22.3% linoleic acid, 58.5% oleic acid, 6.8% palmitic acid and 3.7% stearic acid[218]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:24.569186+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Cucumis+sativus",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "crop_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:35.449668+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Cucumber",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:36.193855+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Cucumis+sativus",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:33:29.751360+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Cucumber",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:33:33.429466+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=cucumber",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:33:37.166788+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.853662+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

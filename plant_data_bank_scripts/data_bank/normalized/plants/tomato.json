@@ -1,0 +1,372 @@
+{
+  "plant_atom": "tomato",
+  "identity": {
+    "common_name": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "synonyms": [
+      "Lycopersicon cerasiforme Dunal Lycopersicon esculentum Mill",
+      "Lycopersicon humboldtii (Willd"
+    ],
+    "common_names": [
+      "dumádu",
+      "garden tomato",
+      "Garden Tomato",
+      "love apple",
+      "lycopersicum esculentum",
+      "tomate",
+      "Tomato",
+      "tomato",
+      "tomato extract containing lycopene",
+      "tomato|thakkali",
+      "tumatis."
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "fruit",
+      "oil",
+      "seed"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": "annual",
+    "life_cycle_context": {
+      "native_habitat": "perennial",
+      "cultivation": "annual",
+      "notes": "PFAF says perennial in native habitat but grown as annual in cultivation/temperate climates."
+    }
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 5.8,
+    "soil_ph_max": 6.8,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "A plant of the tropics, it is also widely cultivated in the subtropics and temperate zone (where it is often grown under protection). In the tropics it can be grown at elevations from sea level up to 2,000 metres, but generally fruits better above 1,000 metres[418 ]. It grows best in areas where annual daytime temperatures are within the range 20 - 27°c, but can tolerate 7 - 35°c[418 ]. It prefers a diurnal temperature variation of at least 5 - 6°c[300 ]. The plant cannot tolerate frosts[K ]. It prefers a mean annual rainfall in the range 600 - 1,300mm, but tolerates 400 - 1,800mm[418 ]. High rainfall and high relative humidity adversely affect growth[300 ]. Requires a fertile, humus-rich, well-drained soil in a warm sunny position[300 ]. Slightly acid conditions, with a pH in the range 5.8 - 6.8, are preferred, though the plant can tolerate 5 - 7.5[300 , 418 ]. Yields of ripe fruit from upright forms of the plant can commence 2 - 3 months after sowing the seed; other forms might take 4 - 5 months[300 , 418 ]. Yields of 15 tonnes per hectare can be obtained[300 ]. Yields are mainly between 20 - 40 tonnes per hectare, but yields up to 150 tonnes have been recorded[418 ]. There are many named varieties and over the considerable period of cultivation by humans two distinct types have emerged[183 ]. These are:- L. Esculentum cerasiforme (Dunal.)A.Gray. This is the cherry tomato. Closer to the original species, it produces a large crop of small fruits with a delicious sweetness. L. Esculentum esculentum. This is the more commonly grown tomato with much larger fruits. There are a very large number of cultivars with a wide variety of colours and fruit shapes and sizes. This species hybridizes with the currant tomato (S. Pimpinellifolium), but does not hybridize with the wild tomato (S. Peruvianum)[114 ].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": "Best daytime temperature range mentioned: 20-27°C.",
+    "rainfall_notes": "Mean annual rainfall range mentioned: 600-1,300 mm."
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow in containers or in a seedbed. Germination is usually quick and good. Plant out into permanent positions when about 8 - 10cm tall[300 ]. Seed can also be sown in situ. The seedcoat may carry tomato mosaic virus. However, by sowing the seed 15mm deep the seedcoat will remain below the soil surface when the seed germinates and the disease will be inactivated[124 ].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": 1.5,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "A plant of the tropics, it is also widely cultivated in the subtropics and temperate zone (where it is often grown under protection). In the tropics it can be grown at elevations from sea level up to 2,000 metres, but generally fruits better above 1,000 metres[418 ]. It grows best in areas where annual daytime temperatures are within the range 20 - 27°c, but can tolerate 7 - 35°c[418 ]. It prefers a diurnal temperature variation of at least 5 - 6°c[300 ]. The plant cannot tolerate frosts[K ]. It prefers a mean annual rainfall in the range 600 - 1,300mm, but tolerates 400 - 1,800mm[418 ]. High rainfall and high relative humidity adversely affect growth[300 ]. Requires a fertile, humus-rich, well-drained soil in a warm sunny position[300 ]. Slightly acid conditions, with a pH in the range 5.8 - 6.8, are preferred, though the plant can tolerate 5 - 7.5[300 , 418 ]. Yields of ripe fruit from upright forms of the plant can commence 2 - 3 months after sowing the seed; other forms might take 4 - 5 months[300 , 418 ]. Yields of 15 tonnes per hectare can be obtained[300 ]. Yields are mainly between 20 - 40 tonnes per hectare, but yields up to 150 tonnes have been recorded[418 ]. There are many named varieties and over the considerable period of cultivation by humans two distinct types have emerged[183 ]. These are:- L. Esculentum cerasiforme (Dunal.)A.Gray. This is the cherry tomato. Closer to the original species, it produces a large crop of small fruits with a delicious sweetness. L. Esculentum esculentum. This is the more commonly grown tomato with much larger fruits. There are a very large number of cultivars with a wide variety of colours and fruit shapes and sizes. This species hybridizes with the currant tomato (S. Pimpinellifolium), but does not hybridize with the wild tomato (S. Peruvianum)[114 ].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antirheumatic Leprosy Odontalgic Skin The pulped fruit is an extremely beneficial skin-wash for people with oily skin. Sliced fruits are a quick and easy first aid treatment for burns, scalds and sunburn[201 ]. A decoction of the root is ingested in the treatment of toothache[218 ]. The skin of tomato fruits is a good source of lycopine, a substance that has been shown to protect people from heart attacks. It seems to be more effective when it is cooked and so can be obtained from food products such as tomato ketchup and tinned tomatoes[246 ]. Lycopine has also been shown to have a very beneficial effect upon the prostate and is being used increasingly to treat enlarge prostate and the difficulties in urination that accompany this disorder. The leaves, in a mixture with castor oil (Ricinus communis), is used in the treatment of incipient leprosy spots[348 ]. A paste of the leaves is applied to filarial worm swellings on a painful groin[348 ]. A homeopathic remedy is made from the plant[7 ]. It is used in the treatment of rheumatism and severe headaches[7 ].",
+    "cautions": "All green parts of the plant are poisonous[19 , 76 ]. Although providing many well-known foods for people, including the potato, tomato, pepper and aubergine, most plants in the family Solanaceae also contain poisonous alkaloids. Unless there are specific entries with information on edible uses, it would be unwise to ingest any part of this plant[K ].",
+    "other_uses_notes": "Companion Cosmetic Insecticide Oil Repellent Soap making Teeth Agroforestry Uses: Tomatoes grow well with asparagus, parsley, brassicas and stinging nettles[18 , 54 ]. They are also a good companion for gooseberries, helping to keep them free of insect pests[201 ]. They dislike growing near fennel, kohl-rabi, potatoes[18 , 20 ] and brassicas[20 ] (this is not a typing error, merely a difference of opinion between different books). Other Uses The strong aroma of this plant is said to repel insects from nearby plants[7 , 18 , 20 ]. A semi-drying oil is obtained from the seed. It can be used in making soap[46 , 61 , 171 ]. See the notes above regarding utilization. A spray made from tomato leaves is an effective but very poisonous insecticide[201 ]. It is especially effective against ants[7 ] but should be used with great caution because it will also kill beneficial insects and, if ingested, is toxic to humans[K ]. The pulp of the fruit is used cosmetically in face-packs[7 ].",
+    "edible_uses_notes": "Edible Parts: Fruit Oil Seed Edible Uses: Drink Oil Fruit - raw or cooked[1 , 2 , 3 , 37 ]. It can be used as a savoury vegetable or flavouring in cooked foods, or can be eaten out of hand as a dessert fruit. It is much used in salads and as a flavouring in soups and other cooked foods[183 ]. A juice made from the fruit is often sold in health food shops[183 ]. The fruit can also be dried and ground into a powder that can be used as a flavouring and thickening agent in soups, breads, pancakes etc[183 ]. An edible oil is obtained from the seed[46 , 61 , 171 ]. Suitable for culinary purposes[183 ]. It can be used raw in salads, or used to make margarine[418 ]. The seed is small and it would be very fiddly to utilize. It is only viable to use the seed as a source of oil if large quantities of the plants are being grown for their fruits and the seed is not wanted."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "asparagus",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "parsley",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "brassica",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "stinging_nettle",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "gooseberry",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      }
+    ],
+    "conflicts": [
+      {
+        "plant": "fennel",
+        "relationship": "dislikes_growing_near",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'dislikes_growing_near' wording."
+      },
+      {
+        "plant": "kohlrabi",
+        "relationship": "dislikes_growing_near",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'dislikes_growing_near' wording."
+      },
+      {
+        "plant": "potato",
+        "relationship": "dislikes_growing_near",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'dislikes_growing_near' wording."
+      }
+    ],
+    "repels_pests": [
+      {
+        "target": "insect_pests",
+        "mechanism": "companion_effect",
+        "source_name": "Plants For A Future",
+        "confidence": 0.7,
+        "notes": "PFAF says companion planting helps keep nearby plants free of insect pests."
+      },
+      {
+        "target": "insect_pests",
+        "mechanism": "aroma",
+        "source_name": "Plants For A Future",
+        "confidence": 0.7,
+        "notes": "PFAF says strong aroma repels insects from nearby plants."
+      },
+      {
+        "target": "insects",
+        "mechanism": "insecticidal_extract",
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF mentions insecticidal use."
+      },
+      {
+        "target": "ants",
+        "mechanism": "insecticidal_extract",
+        "source_name": "Plants For A Future",
+        "confidence": 0.7,
+        "notes": "PFAF says it is especially effective against ants."
+      }
+    ],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.synonyms": "Plants For A Future",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.life_cycle_context": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "germination.sowing_depth_cm": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "growth.temperature_notes": "Plants For A Future",
+    "growth.rainfall_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.conflicts": "Plants For A Future",
+    "biodiversity.repels_pests": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:56.715852+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Solanum+lycopersicum",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "crop_life_cycle",
+          "life_cycle_context",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "sowing_depth_cm",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:40:23.247734+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Tomato",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:24.455795+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Solanum+lycopersicum",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:28:29.460182+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Tomato",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:28:32.738039+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=tomato",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:28:36.014167+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.778565+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "pests_and_diseases.known_diseases"
+  ]
+}

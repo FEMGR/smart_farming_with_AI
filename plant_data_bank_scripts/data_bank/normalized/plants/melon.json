@@ -1,0 +1,300 @@
+{
+  "plant_atom": "melon",
+  "identity": {
+    "common_name": "Melon",
+    "scientific_name": "Cucumis melo",
+    "genus": "Cucumis",
+    "family": "Cucurbitaceae",
+    "synonyms": [],
+    "common_names": [
+      "Akobokobo",
+      "Akolil",
+      "Armenian cucumber",
+      "Atimon",
+      "Blewah",
+      "Bluwak",
+      "Budamakaya",
+      "Cantalope",
+      "Cantaloupe",
+      "Chiratu",
+      "Chukkangai",
+      "Dudaim melon",
+      "Itimon",
+      "Kaachri",
+      "Kachri",
+      "Karitu",
+      "Kayimbe",
+      "Kharbuja",
+      "Kharbujadosa",
+      "Kharmuj",
+      "Kothimdu",
+      "Luwinbe",
+      "Madhupaka",
+      "Melon",
+      "Milon",
+      "Mpombe",
+      "Mulampazham",
+      "Musk-melon",
+      "Muskmelon",
+      "Putzakova",
+      "Queen Anne's melon",
+      "Sane",
+      "Semangka londo",
+      "Snake cucumber",
+      "Syrian cucumber",
+      "Taena-thai",
+      "Teeng laay",
+      "Thumattikai",
+      "Trasak srow."
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop"
+    ],
+    "edible_parts": [
+      "fruit",
+      "oil",
+      "seed"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Requires a rich, well-drained moisture retentive soil and a warm, very sunny position[200]. A frost-tender annual plant, the melon is widely cultivated in gardens and commercially, especially in warmer climates than Britain, for its edible fruit. Some varieties may succeed outdoors in Britain in hot summers but in general it is best to grow melons under protection in this country[1, 200]. This is a very variable species that has long been cultivated for its edible fruit. As a result, a number of distinct forms have arisen and there are many named varieties within each of these forms[1, 46, 183]. These forms have been classified by botanists into groups as detailed below. Each of these groups has been given a separate entry in the database. C. melo agrestis. A wild form of the melon. It is not usually grown for its fruit but is of potential value in breeding programmes. C. melo cantalupensis. The cantaloupe or netted melons. C. melo chito. The orange melon. This form occasionally escapes from cultivation and is naturalized in some tropical and sub-tropical areas. C. melo conomon. The pickling or sweet melon. This form is also of value in breeding programmes for disease resistance. C. melo flexuosus. The serpent melon. C. melo inodorus. The honeydew melon. C. melo momordica. The snap melon. This form is also of value in breeding programmes for pest and disease resistance. Grows well with corn and sunflowers but dislikes potatoes[20, 201]. The weeds fat hen and sow thistle improve the growth and cropping of melons[201].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early to mid spring in a greenhouse in a rich soil. Germination should take place within 2 weeks. Sow 2 or 3 seeds per pot and thin out to the best plant. Grow them on fast and plant out after the last expected frosts, giving them cloche or frame protection for at least their first few weeks if you are trying them outdoors.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Requires a rich, well-drained moisture retentive soil and a warm, very sunny position[200]. A frost-tender annual plant, the melon is widely cultivated in gardens and commercially, especially in warmer climates than Britain, for its edible fruit. Some varieties may succeed outdoors in Britain in hot summers but in general it is best to grow melons under protection in this country[1, 200]. This is a very variable species that has long been cultivated for its edible fruit. As a result, a number of distinct forms have arisen and there are many named varieties within each of these forms[1, 46, 183]. These forms have been classified by botanists into groups as detailed below. Each of these groups has been given a separate entry in the database. C. melo agrestis. A wild form of the melon. It is not usually grown for its fruit but is of potential value in breeding programmes. C. melo cantalupensis. The cantaloupe or netted melons. C. melo chito. The orange melon. This form occasionally escapes from cultivation and is naturalized in some tropical and sub-tropical areas. C. melo conomon. The pickling or sweet melon. This form is also of value in breeding programmes for disease resistance. C. melo flexuosus. The serpent melon. C. melo inodorus. The honeydew melon. C. melo momordica. The snap melon. This form is also of value in breeding programmes for pest and disease resistance. Grows well with corn and sunflowers but dislikes potatoes[20, 201]. The weeds fat hen and sow thistle improve the growth and cropping of melons[201].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antitussive Digestive Diuretic Emetic Expectorant Febrifuge Stomachic Vermifuge The fruits can be used as a cooling light cleanser or moisturiser for the skin[201]. They are also used as a first aid treatment for burns and abrasions[201]. The flowers are expectorant and emetic[218]. The fruit is stomachic[218]. The seed is antitussive, digestive, febrifuge and vermifuge[218]. When used as a vermifuge, the whole seed complete with the seed coat is ground into a fine flour, then made into an emulsion with water and eaten. It is then necessary to take a purge in order to expel the tapeworms or other parasites from the body[7]. The root is diuretic and emetic[218].",
+    "cautions": "The sprouting seed produces a toxic substance in its embryo[65].",
+    "other_uses_notes": "Oil None known",
+    "edible_uses_notes": "Edible Parts: Fruit Oil Seed Edible Uses: Oil Fruit - raw[1, 2, 46, 105]. Very watery but with a delicate flavour, it is very refreshing. Rich in vitamins B and C[201]. The flesh of the fruit can be dried, ground into a powder and used with cereals when making bread, biscuits etc[257]. The size of the fruit varies widely between cultivars but is up to 10cm long and 7cm wide[200]. Seed - raw[57, 86, 105]. Rich in oil with a nutty flavour but very fiddly to use because the seed is small and covered with a fibrous coat[K]. The seed contains between 12.5 - 39.1% oil[218]. An edible oil is obtained from the seed[105, 183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "corn",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "sunflowers_but_dislikes_potatoes",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:25.796308+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Cucumis+melo",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "crop_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:37.341831+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Melon",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:38.200945+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Cucumis+melo",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:33:40.748312+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Melon",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:33:44.297225+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=melon",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:33:47.981288+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.857394+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

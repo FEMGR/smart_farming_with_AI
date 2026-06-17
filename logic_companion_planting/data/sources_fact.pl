@@ -39,3 +39,14 @@ source(rhs).
 source(cornell).
 source(usda).
 source(traditional).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: sources_fact
+% Review before editing manually.
+% =========================================================
+
+source(pfaf).
+source(perenual).
+source(gbif).
+source(fpi).

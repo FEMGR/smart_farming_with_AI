@@ -1,0 +1,155 @@
+{
+  "aloe": [
+    "aloe_vera"
+  ],
+  "malus": [
+    "apple"
+  ],
+  "cynara": [
+    "artichoke"
+  ],
+  "eruca": [
+    "arugula"
+  ],
+  "ocimum": [
+    "basil"
+  ],
+  "phaseolus": [
+    "bean_common"
+  ],
+  "momordica": [
+    "bitter_melon"
+  ],
+  "rubus": [
+    "blackberry",
+    "raspberry"
+  ],
+  "brassica": [
+    "bok_choy",
+    "broccoli",
+    "cabbage",
+    "cauliflower",
+    "kale",
+    "turnip"
+  ],
+  "daucus": [
+    "carrot"
+  ],
+  "apium": [
+    "celery"
+  ],
+  "cicer": [
+    "chickpea"
+  ],
+  "cichorium": [
+    "chicory"
+  ],
+  "allium": [
+    "chive",
+    "garlic",
+    "leek",
+    "onion"
+  ],
+  "coriandrum": [
+    "coriander"
+  ],
+  "cucumis": [
+    "cucumber",
+    "melon"
+  ],
+  "taraxacum": [
+    "dandelion"
+  ],
+  "anethum": [
+    "dill"
+  ],
+  "solanum": [
+    "eggplant",
+    "potato",
+    "tomato"
+  ],
+  "foeniculum": [
+    "fennel"
+  ],
+  "ficus": [
+    "fig"
+  ],
+  "alpinia": [
+    "galangal"
+  ],
+  "zingiber": [
+    "ginger"
+  ],
+  "centella": [
+    "gotu_kola"
+  ],
+  "vitis": [
+    "grape"
+  ],
+  "lavandula": [
+    "lavender"
+  ],
+  "melissa": [
+    "lemon_balm"
+  ],
+  "vicia": [
+    "lentil"
+  ],
+  "lactuca": [
+    "lettuce"
+  ],
+  "moringa": [
+    "moringa"
+  ],
+  "origanum": [
+    "oregano"
+  ],
+  "petroselinum": [
+    "parsley"
+  ],
+  "lathyrus": [
+    "pea"
+  ],
+  "arachis": [
+    "peanut"
+  ],
+  "pyrus": [
+    "pear"
+  ],
+  "mentha": [
+    "peppermint",
+    "spearmint"
+  ],
+  "cucurbita": [
+    "pumpkin",
+    "zucchini"
+  ],
+  "raphanus": [
+    "radish"
+  ],
+  "salvia": [
+    "rosemary",
+    "sage"
+  ],
+  "glycine": [
+    "soybean"
+  ],
+  "fragaria": [
+    "strawberry"
+  ],
+  "helianthus": [
+    "sunflower"
+  ],
+  "ipomoea": [
+    "sweet_potato"
+  ],
+  "thymus": [
+    "thyme"
+  ],
+  "curcuma": [
+    "turmeric"
+  ],
+  "citrullus": [
+    "watermelon"
+  ]
+}

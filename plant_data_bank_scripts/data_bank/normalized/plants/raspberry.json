@@ -1,0 +1,251 @@
+{
+  "plant_atom": "raspberry",
+  "identity": {
+    "common_name": "Raspberry",
+    "scientific_name": "Rubus idaeus",
+    "genus": "Rubus",
+    "family": "Rosaceae",
+    "synonyms": [],
+    "common_names": [
+      "American red raspberry",
+      "Grayleaf red raspberry",
+      "Raspberry"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "fruit_crop",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ],
+    "edible_parts": [
+      "fruit",
+      "root",
+      "stem"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Prefers a good deep well-drained loamy soil on the acid side[1, 34]. Dislikes very heavy soils[1, 200], light soils[4] and alkaline soils[200]. Prefers an open position but tolerates some shade[1]. Plants crop less well when grown in the shade of trees though they do well in the open on a north-facing slope[200]. Requires a position sheltered from strong winds[200]. Prefers a pH between 6 and 6.5[200]. Raspberries are frequently cultivated in temperate regions of the world, both in the garden and commercially, for their edible fruit. There are many named varieties able to supply fresh fruit from mid-summer to the autumn[1, 200]. High costs of picking the fruit means that little is actually sold fresh, most of the commercially cultivated crops either being used for preserves or grown for the 'Pick Your Own' trade. All the cultivars are self-fertile[200]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. It is best not to grow raspberries near blackberries or potatoes[18]. PlanFor polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Heat zone: 9-1.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "division",
+      "layering",
+      "seed"
+    ],
+    "propagation_notes": "Seed - requires stratification and is best sown in early autumn in a cold frame. Stored seed requires one month stratification at about 3°c and is best sown as early as possible in the year. Prick out the seedlings when they are large enough to handle and grow on in a cold frame. Plant them out into their permanent positions in late spring of the following year. Cuttings of half-ripe wood, July/August in a frame[200]. Tip layering in July. Plant out in autumn. Division in early spring or just before leaf-fall in the autumn[200].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Prefers a good deep well-drained loamy soil on the acid side[1, 34]. Dislikes very heavy soils[1, 200], light soils[4] and alkaline soils[200]. Prefers an open position but tolerates some shade[1]. Plants crop less well when grown in the shade of trees though they do well in the open on a north-facing slope[200]. Requires a position sheltered from strong winds[200]. Prefers a pH between 6 and 6.5[200]. Raspberries are frequently cultivated in temperate regions of the world, both in the garden and commercially, for their edible fruit. There are many named varieties able to supply fresh fruit from mid-summer to the autumn[1, 200]. High costs of picking the fruit means that little is actually sold fresh, most of the commercially cultivated crops either being used for preserves or grown for the 'Pick Your Own' trade. All the cultivars are self-fertile[200]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. It is best not to grow raspberries near blackberries or potatoes[18]. PlanFor polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Heat zone: 9-1.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antiinflammatory Astringent Birthing aid Cardiac Decongestant Oxytoxic Antiemetic[13, 165]. The leaves and roots are anti-inflammatory, astringent, decongestant, ophthalmic, oxytocic and stimulant[4, 13, 165, 222, 254]. A tea made from them is used in the treatment of diarrhoea, as a tonic for the uterus to strengthen pregnant women, and as an aid in childbirth[4, 222, 257]. The tea has also been shown as effective in relieving painful menstrual cramps[222]. The active ingredients both stimulate and relax the uterus[222]. They can be used during the last three months of pregnancy and during childbirth, but should not be used earlier[238]. Externally, the leaves and roots are used as a gargle to treat tonsillitis and mouth inflammations, as a poultice and wash to treat sores, conjunctivitis, minor wounds, burns and varicose ulcers[238, 257]. The leaves are harvested in the summer and dried for later use[9]. The fruit is antiscorbutic and diuretic[7]. Fresh raspberry juice, mixed with a little honey, makes an excellent refrigerant beverage to be taken in the heat of a fever[21]. Made into a syrup, it is said to have a beneficial effect on the heart[21].",
+    "cautions": "None known",
+    "other_uses_notes": "Cosmetic Dye Paper Landscape Uses:Erosion control, Foundation, Ground cover, Massing, Rock garden, Seashore. ts in this genus are notably susceptible to honey fungus[200]. Special Features: Not North American native, Attracts butterflies, Inconspicuous flowers or blooms. A purple to dull blue dye is obtained from the fruit[168]. A fibre obtained from the stems is used in making paper[189]. The stems are harvested in the summer after the fruit has been eaten, the leaves are removed and the stems are steamed until the fibres can be stripped. The fibres are cooked for 2 hours with lye and then hand beaten with mallets or ball milled for 3 hours. The paper is light brown in colour[189]. A decongestant face-mask made from the fruit is used cosmetically to soothe reddened skin[7].",
+    "edible_uses_notes": "Edible Parts: Fruit Root Shoots Stem Edible Uses: Coffee Tea Fruit - raw or cooked[2, 5, 7, 61]. Delicious when eaten out of hand, the fruit is also used in pies, preserves etc[183]. Root - cooked. The root, which should be neither too young nor too old, requires a lot of boiling[7]. Young shoots - peeled and eaten raw or cooked like asparagus[172]. They are harvested as they emerge through the ground in the spring and whilst they are still tender. A herb tea is made from the dried leaves[21, 46, 183]. Another report says that a type of tea made from raspberry and blackberry leaves is an excellent coffee substitute[7]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:01.227781+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Rubus+idaeus",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:35.878832+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Raspberry",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:36.539913+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Rubus+idaeus",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:48.225831+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Raspberry",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:51.893827+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=raspberry",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:55.572594+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.956152+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

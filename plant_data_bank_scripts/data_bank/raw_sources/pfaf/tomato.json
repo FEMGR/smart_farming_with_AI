@@ -1,0 +1,352 @@
+{
+  "plant": {
+    "plant_atom": "tomato",
+    "common_name": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Solanum+lycopersicum",
+      "query": "Solanum lycopersicum",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:40:23.247734+00:00",
+      "response_hash": "b0a1d5c3dc364fc34deadc3dd17098721a1e3457d636b6f3d40c22e5de67ba93",
+      "parsed": {
+        "title": "Solanum lycopersicum Tomato, Garden Tomato PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Solanum lycopersicum - L.",
+          "common_name": "Tomato, Garden Tomato",
+          "family": "Solanaceae",
+          "usda_hardiness": "10-12",
+          "known_hazards": "All green parts of the plant are poisonous[19 , 76 ]. Although providing many well-known foods for people, including the potato, tomato, pepper and aubergine, most plants in the family Solanaceae also contain poisonous alkaloids. Unless there are specific entries with information on edible uses, it would be unwise to ingest any part of this plant[K ].",
+          "habitats": "Not known in a truly wild situation.",
+          "range": "Original habitat is obscure, probably Western S. America[132 ].",
+          "summary": "Solanum lycopersicum, Tomato, is a species belonging to the Solanaceae family that originated in Central and South America and now grown worldwide for its edible fruits. It is perennial in its native habitat but grown as an annual in temperate climates, usually growing about 3 m in height. It is covered with fine short hairs. The leaves are compound, odd pinnate, with five to nine leaflets on petioles. The flowers are yellow in cyme inflorescence. The fruits are classified as berries. Tomato fruits can be used for first aid treatment for burns, scalds, and sunburn. Root decoction is ingested for relief from tooth pain. Tomatoes are rich in lycopene, a substance with beneficial effects on the heart and prostate. It is also used for rheumatism and headaches.Tomato fruits are consumed in many various ways and forms, either raw or cooked. It can also be made into juice, or dried and ground into a powder. The seeds yield edible oil. The oil can also be used in making soap. Tomato leaves can be made into a spray as an effective insecticide.",
+          "physical_characteristics": "Solanum lycopersicum is a ANNUAL growing to 2 m (6ft) by 1.5 m (5ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 10. The flowers are pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid and neutral soils and can grow in very acid soils. It cannot grow in the shade. It prefers moist soil.",
+          "synonyms": "Lycopersicon cerasiforme Dunal Lycopersicon esculentum Mill. Lycopersicon humboldtii (Willd.) Dunal",
+          "plant_habitats": null,
+          "edible_uses": "Edible Parts: Fruit Oil Seed Edible Uses: Drink Oil Fruit - raw or cooked[1 , 2 , 3 , 37 ]. It can be used as a savoury vegetable or flavouring in cooked foods, or can be eaten out of hand as a dessert fruit. It is much used in salads and as a flavouring in soups and other cooked foods[183 ]. A juice made from the fruit is often sold in health food shops[183 ]. The fruit can also be dried and ground into a powder that can be used as a flavouring and thickening agent in soups, breads, pancakes etc[183 ]. An edible oil is obtained from the seed[46 , 61 , 171 ]. Suitable for culinary purposes[183 ]. It can be used raw in salads, or used to make margarine[418 ]. The seed is small and it would be very fiddly to utilize. It is only viable to use the seed as a source of oil if large quantities of the plants are being grown for their fruits and the seed is not wanted.",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antirheumatic Leprosy Odontalgic Skin The pulped fruit is an extremely beneficial skin-wash for people with oily skin. Sliced fruits are a quick and easy first aid treatment for burns, scalds and sunburn[201 ]. A decoction of the root is ingested in the treatment of toothache[218 ]. The skin of tomato fruits is a good source of lycopine, a substance that has been shown to protect people from heart attacks. It seems to be more effective when it is cooked and so can be obtained from food products such as tomato ketchup and tinned tomatoes[246 ]. Lycopine has also been shown to have a very beneficial effect upon the prostate and is being used increasingly to treat enlarge prostate and the difficulties in urination that accompany this disorder. The leaves, in a mixture with castor oil (Ricinus communis), is used in the treatment of incipient leprosy spots[348 ]. A paste of the leaves is applied to filarial worm swellings on a painful groin[348 ]. A homeopathic remedy is made from the plant[7 ]. It is used in the treatment of rheumatism and severe headaches[7 ].",
+          "other_uses": "Companion Cosmetic Insecticide Oil Repellent Soap making Teeth Agroforestry Uses: Tomatoes grow well with asparagus, parsley, brassicas and stinging nettles[18 , 54 ]. They are also a good companion for gooseberries, helping to keep them free of insect pests[201 ]. They dislike growing near fennel, kohl-rabi, potatoes[18 , 20 ] and brassicas[20 ] (this is not a typing error, merely a difference of opinion between different books). Other Uses The strong aroma of this plant is said to repel insects from nearby plants[7 , 18 , 20 ]. A semi-drying oil is obtained from the seed. It can be used in making soap[46 , 61 , 171 ]. See the notes above regarding utilization. A spray made from tomato leaves is an effective but very poisonous insecticide[201 ]. It is especially effective against ants[7 ] but should be used with great caution because it will also kill beneficial insects and, if ingested, is toxic to humans[K ]. The pulp of the fruit is used cosmetically in face-packs[7 ].",
+          "special_uses": "Food Forest",
+          "cultivation": "A plant of the tropics, it is also widely cultivated in the subtropics and temperate zone (where it is often grown under protection). In the tropics it can be grown at elevations from sea level up to 2,000 metres, but generally fruits better above 1,000 metres[418 ]. It grows best in areas where annual daytime temperatures are within the range 20 - 27°c, but can tolerate 7 - 35°c[418 ]. It prefers a diurnal temperature variation of at least 5 - 6°c[300 ]. The plant cannot tolerate frosts[K ]. It prefers a mean annual rainfall in the range 600 - 1,300mm, but tolerates 400 - 1,800mm[418 ]. High rainfall and high relative humidity adversely affect growth[300 ]. Requires a fertile, humus-rich, well-drained soil in a warm sunny position[300 ]. Slightly acid conditions, with a pH in the range 5.8 - 6.8, are preferred, though the plant can tolerate 5 - 7.5[300 , 418 ]. Yields of ripe fruit from upright forms of the plant can commence 2 - 3 months after sowing the seed; other forms might take 4 - 5 months[300 , 418 ]. Yields of 15 tonnes per hectare can be obtained[300 ]. Yields are mainly between 20 - 40 tonnes per hectare, but yields up to 150 tonnes have been recorded[418 ]. There are many named varieties and over the considerable period of cultivation by humans two distinct types have emerged[183 ]. These are:- L. Esculentum cerasiforme (Dunal.)A.Gray. This is the cherry tomato. Closer to the original species, it produces a large crop of small fruits with a delicious sweetness. L. Esculentum esculentum. This is the more commonly grown tomato with much larger fruits. There are a very large number of cultivars with a wide variety of colours and fruit shapes and sizes. This species hybridizes with the currant tomato (S. Pimpinellifolium), but does not hybridize with the wild tomato (S. Peruvianum)[114 ].",
+          "propagation": "Seed - sow in containers or in a seedbed. Germination is usually quick and good. Plant out into permanent positions when about 8 - 10cm tall[300 ]. Seed can also be sown in situ. The seedcoat may carry tomato mosaic virus. However, by sowing the seed 15mm deep the seedcoat will remain below the soil surface when the seed germinates and the disease will be inactivated[124 ].",
+          "other_names": "dumádu, garden tomato, love apple, lycopersicum esculentum, tomate, tomato, tomato extract containing lycopene, tomato|thakkali, tumatis.",
+          "native_range": "Coming Soon",
+          "conservation_status": "IUCN Red List of Threatened Plants Status : This taxon has not yet been assessed"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "dumádu",
+            "scientific_name": "Solanum lycopersicum",
+            "genus": "Solanum",
+            "family": "Solanaceae",
+            "synonyms": [
+              "Lycopersicon cerasiforme Dunal Lycopersicon esculentum Mill",
+              "Lycopersicon humboldtii (Willd"
+            ],
+            "common_names": [
+              "dumádu",
+              "garden tomato",
+              "Garden Tomato",
+              "love apple",
+              "lycopersicum esculentum",
+              "tomate",
+              "Tomato",
+              "tomato",
+              "tomato extract containing lycopene",
+              "tomato|thakkali",
+              "tumatis."
+            ]
+          },
+          "pfaf_display_latin_name": "Solanum lycopersicum - L.",
+          "pfaf_common_name": "Tomato, Garden Tomato",
+          "pfaf_family": "Solanaceae",
+          "pfaf_synonyms": "Lycopersicon cerasiforme Dunal Lycopersicon esculentum Mill. Lycopersicon humboldtii (Willd.) Dunal",
+          "pfaf_other_names": "dumádu, garden tomato, love apple, lycopersicum esculentum, tomate, tomato, tomato extract containing lycopene, tomato|thakkali, tumatis.",
+          "edible_parts": [
+            "fruit",
+            "oil",
+            "seed"
+          ],
+          "use_categories": [
+            "beverage_plant",
+            "companion_plant",
+            "fruit_crop",
+            "medicinal_plant",
+            "oil_crop",
+            "repellent_plant"
+          ],
+          "life_cycle": "annual",
+          "botanical_life_cycle": "perennial",
+          "crop_life_cycle": "annual",
+          "life_cycle_context": {
+            "native_habitat": "perennial",
+            "cultivation": "annual",
+            "notes": "PFAF says perennial in native habitat but grown as annual in cultivation/temperate climates."
+          },
+          "growth": {
+            "sunlight": [
+              "full_sun"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": 5.8,
+            "soil_ph_max": 6.8,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "A plant of the tropics, it is also widely cultivated in the subtropics and temperate zone (where it is often grown under protection). In the tropics it can be grown at elevations from sea level up to 2,000 metres, but generally fruits better above 1,000 metres[418 ]. It grows best in areas where annual daytime temperatures are within the range 20 - 27°c, but can tolerate 7 - 35°c[418 ]. It prefers a diurnal temperature variation of at least 5 - 6°c[300 ]. The plant cannot tolerate frosts[K ]. It prefers a mean annual rainfall in the range 600 - 1,300mm, but tolerates 400 - 1,800mm[418 ]. High rainfall and high relative humidity adversely affect growth[300 ]. Requires a fertile, humus-rich, well-drained soil in a warm sunny position[300 ]. Slightly acid conditions, with a pH in the range 5.8 - 6.8, are preferred, though the plant can tolerate 5 - 7.5[300 , 418 ]. Yields of ripe fruit from upright forms of the plant can commence 2 - 3 months after sowing the seed; other forms might take 4 - 5 months[300 , 418 ]. Yields of 15 tonnes per hectare can be obtained[300 ]. Yields are mainly between 20 - 40 tonnes per hectare, but yields up to 150 tonnes have been recorded[418 ]. There are many named varieties and over the considerable period of cultivation by humans two distinct types have emerged[183 ]. These are:- L. Esculentum cerasiforme (Dunal.)A.Gray. This is the cherry tomato. Closer to the original species, it produces a large crop of small fruits with a delicious sweetness. L. Esculentum esculentum. This is the more commonly grown tomato with much larger fruits. There are a very large number of cultivars with a wide variety of colours and fruit shapes and sizes. This species hybridizes with the currant tomato (S. Pimpinellifolium), but does not hybridize with the wild tomato (S. Peruvianum)[114 ].",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": "Best daytime temperature range mentioned: 20-27°C.",
+            "rainfall_notes": "Mean annual rainfall range mentioned: 600-1,300 mm."
+          },
+          "propagation_methods": [
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow in containers or in a seedbed. Germination is usually quick and good. Plant out into permanent positions when about 8 - 10cm tall[300 ]. Seed can also be sown in situ. The seedcoat may carry tomato mosaic virus. However, by sowing the seed 15mm deep the seedcoat will remain below the soil surface when the seed germinates and the disease will be inactivated[124 ].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": 1.5,
+          "summary_notes": "Solanum lycopersicum, Tomato, is a species belonging to the Solanaceae family that originated in Central and South America and now grown worldwide for its edible fruits. It is perennial in its native habitat but grown as an annual in temperate climates, usually growing about 3 m in height. It is covered with fine short hairs. The leaves are compound, odd pinnate, with five to nine leaflets on petioles. The flowers are yellow in cyme inflorescence. The fruits are classified as berries. Tomato fruits can be used for first aid treatment for burns, scalds, and sunburn. Root decoction is ingested for relief from tooth pain. Tomatoes are rich in lycopene, a substance with beneficial effects on the heart and prostate. It is also used for rheumatism and headaches.Tomato fruits are consumed in many various ways and forms, either raw or cooked. It can also be made into juice, or dried and ground into a powder. The seeds yield edible oil. The oil can also be used in making soap. Tomato leaves can be made into a spray as an effective insecticide.",
+          "edible_uses_notes": "Edible Parts: Fruit Oil Seed Edible Uses: Drink Oil Fruit - raw or cooked[1 , 2 , 3 , 37 ]. It can be used as a savoury vegetable or flavouring in cooked foods, or can be eaten out of hand as a dessert fruit. It is much used in salads and as a flavouring in soups and other cooked foods[183 ]. A juice made from the fruit is often sold in health food shops[183 ]. The fruit can also be dried and ground into a powder that can be used as a flavouring and thickening agent in soups, breads, pancakes etc[183 ]. An edible oil is obtained from the seed[46 , 61 , 171 ]. Suitable for culinary purposes[183 ]. It can be used raw in salads, or used to make margarine[418 ]. The seed is small and it would be very fiddly to utilize. It is only viable to use the seed as a source of oil if large quantities of the plants are being grown for their fruits and the seed is not wanted.",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antirheumatic Leprosy Odontalgic Skin The pulped fruit is an extremely beneficial skin-wash for people with oily skin. Sliced fruits are a quick and easy first aid treatment for burns, scalds and sunburn[201 ]. A decoction of the root is ingested in the treatment of toothache[218 ]. The skin of tomato fruits is a good source of lycopine, a substance that has been shown to protect people from heart attacks. It seems to be more effective when it is cooked and so can be obtained from food products such as tomato ketchup and tinned tomatoes[246 ]. Lycopine has also been shown to have a very beneficial effect upon the prostate and is being used increasingly to treat enlarge prostate and the difficulties in urination that accompany this disorder. The leaves, in a mixture with castor oil (Ricinus communis), is used in the treatment of incipient leprosy spots[348 ]. A paste of the leaves is applied to filarial worm swellings on a painful groin[348 ]. A homeopathic remedy is made from the plant[7 ]. It is used in the treatment of rheumatism and severe headaches[7 ].",
+          "other_uses_notes": "Companion Cosmetic Insecticide Oil Repellent Soap making Teeth Agroforestry Uses: Tomatoes grow well with asparagus, parsley, brassicas and stinging nettles[18 , 54 ]. They are also a good companion for gooseberries, helping to keep them free of insect pests[201 ]. They dislike growing near fennel, kohl-rabi, potatoes[18 , 20 ] and brassicas[20 ] (this is not a typing error, merely a difference of opinion between different books). Other Uses The strong aroma of this plant is said to repel insects from nearby plants[7 , 18 , 20 ]. A semi-drying oil is obtained from the seed. It can be used in making soap[46 , 61 , 171 ]. See the notes above regarding utilization. A spray made from tomato leaves is an effective but very poisonous insecticide[201 ]. It is especially effective against ants[7 ] but should be used with great caution because it will also kill beneficial insects and, if ingested, is toxic to humans[K ]. The pulp of the fruit is used cosmetically in face-packs[7 ].",
+          "cultivation_notes": "A plant of the tropics, it is also widely cultivated in the subtropics and temperate zone (where it is often grown under protection). In the tropics it can be grown at elevations from sea level up to 2,000 metres, but generally fruits better above 1,000 metres[418 ]. It grows best in areas where annual daytime temperatures are within the range 20 - 27°c, but can tolerate 7 - 35°c[418 ]. It prefers a diurnal temperature variation of at least 5 - 6°c[300 ]. The plant cannot tolerate frosts[K ]. It prefers a mean annual rainfall in the range 600 - 1,300mm, but tolerates 400 - 1,800mm[418 ]. High rainfall and high relative humidity adversely affect growth[300 ]. Requires a fertile, humus-rich, well-drained soil in a warm sunny position[300 ]. Slightly acid conditions, with a pH in the range 5.8 - 6.8, are preferred, though the plant can tolerate 5 - 7.5[300 , 418 ]. Yields of ripe fruit from upright forms of the plant can commence 2 - 3 months after sowing the seed; other forms might take 4 - 5 months[300 , 418 ]. Yields of 15 tonnes per hectare can be obtained[300 ]. Yields are mainly between 20 - 40 tonnes per hectare, but yields up to 150 tonnes have been recorded[418 ]. There are many named varieties and over the considerable period of cultivation by humans two distinct types have emerged[183 ]. These are:- L. Esculentum cerasiforme (Dunal.)A.Gray. This is the cherry tomato. Closer to the original species, it produces a large crop of small fruits with a delicious sweetness. L. Esculentum esculentum. This is the more commonly grown tomato with much larger fruits. There are a very large number of cultivars with a wide variety of colours and fruit shapes and sizes. This species hybridizes with the currant tomato (S. Pimpinellifolium), but does not hybridize with the wild tomato (S. Peruvianum)[114 ].",
+          "known_hazards": "All green parts of the plant are poisonous[19 , 76 ]. Although providing many well-known foods for people, including the potato, tomato, pepper and aubergine, most plants in the family Solanaceae also contain poisonous alkaloids. Unless there are specific entries with information on edible uses, it would be unwise to ingest any part of this plant[K ].",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "asparagus",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              },
+              {
+                "plant": "parsley",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              },
+              {
+                "plant": "brassica",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              },
+              {
+                "plant": "stinging_nettle",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              },
+              {
+                "plant": "gooseberry",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              }
+            ],
+            "conflicts": [
+              {
+                "plant": "fennel",
+                "relationship": "dislikes_growing_near",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'dislikes_growing_near' wording."
+              },
+              {
+                "plant": "kohlrabi",
+                "relationship": "dislikes_growing_near",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'dislikes_growing_near' wording."
+              },
+              {
+                "plant": "potato",
+                "relationship": "dislikes_growing_near",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'dislikes_growing_near' wording."
+              }
+            ],
+            "repels_pests": [
+              {
+                "target": "insect_pests",
+                "mechanism": "companion_effect",
+                "source_name": "Plants For A Future",
+                "confidence": 0.7,
+                "notes": "PFAF says companion planting helps keep nearby plants free of insect pests."
+              },
+              {
+                "target": "insect_pests",
+                "mechanism": "aroma",
+                "source_name": "Plants For A Future",
+                "confidence": 0.7,
+                "notes": "PFAF says strong aroma repels insects from nearby plants."
+              },
+              {
+                "target": "insects",
+                "mechanism": "insecticidal_extract",
+                "source_name": "Plants For A Future",
+                "confidence": 0.65,
+                "notes": "PFAF mentions insecticidal use."
+              },
+              {
+                "target": "ants",
+                "mechanism": "insecticidal_extract",
+                "source_name": "Plants For A Future",
+                "confidence": 0.7,
+                "notes": "PFAF says it is especially effective against ants."
+              }
+            ],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting."
+            ]
+          }
+        },
+        "page_text_excerpt": "Solanum lycopersicum Tomato, Garden Tomato PFAF Plant Database Follow Us: Solanum lycopersicum - L. Common Name Tomato, Garden Tomato Family Solanaceae USDA hardiness 10-12 Known Hazards All green parts of the plant are poisonous[19 , 76 ]. Although providing many well-known foods for people, including the potato, tomato, pepper and aubergine, most plants in the family Solanaceae also contain poisonous alkaloids. Unless there are specific entries with information on edible uses, it would be unwise to ingest any part of this plant[K ]. Habitats Not known in a truly wild situation. Range Original habitat is obscure, probably Western S. America[132 ]. Edibility Rating (5 of 5) Other Uses (3 of 5) Weed Potential No Medicinal Rating (3 of 5) Care (info) http://www.edibleplants.org http://www.edibleplants.org Translate this page: Summary Solanum lycopersicum, Tomato, is a species belonging to the Solanaceae family that originated in Central and South America and now grown worldwide for its edible fruits. It is perennial in its native habitat but grown as an annual in temperate climates, usually growing about 3 m in height. It is covered with fine short hairs. The leaves are compound, odd pinnate, with five to nine leaflets on petioles. The flowers are yellow in cyme inflorescence. The fruits are classified as berries. Tomato fruits can be used for first aid treatment for burns, scalds, and sunburn. Root decoction is ingested for relief from tooth pain. Tomatoes are rich in lycopene, a substance with beneficial effects on the heart and prostate. It is also used for rheumatism and headaches.Tomato fruits are consumed in many various ways and forms, either raw or cooked. It can also be made into juice, or dried and ground into a powder. The seeds yield edible oil. The oil can also be used in making soap. Tomato leaves can be made into a spray as an effective insecticide. Physical Characteristics Solanum lycopersicum is a ANNUAL growing to 2 m (6ft) by 1.5 m (5ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 10. The flowers are pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid and neutral soils and can grow in very acid soils. It cannot grow in the shade. It prefers moist soil. UK Hardiness Map US Hardiness Map Synonyms Lycopersicon cerasiforme Dunal Lycopersicon esculentum Mill. Lycopersicon humboldtii (Willd.) Dunal Plant Habitats Edible Uses Edible Parts: Fruit Oil Seed Edible Uses: Drink Oil Fruit - raw or cooked[1 , 2 , 3 , 37 ]. It can be used as a savoury vegetable or flavouring in cooked foods, or can be eaten out of hand as a dessert fruit. It is much used in salads and as a flavouring in soups and other cooked foods[183 ]. A juice made from the fruit is often sold in health food shops[183 ]. The fruit can also be dried and ground into a powder that can be used as a flavouring and thickening agent in so"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tSolanum lycopersicum Tomato, Garden Tomato PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Solanum lycopersicum is a ANNUAL growing to 2 m (6ft) by 1.5 m (5ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 10. The flowers are pollinated by Insects. The plant is self-fertile.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers  well-drained soil. Suitable pH: mildly acid and neutral soils and  can grow in very acid soils. It cannot grow in the shade. It prefers  moist soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Solanum+lycopersicum\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BbUDU29sYW51bSBseWNvcGVyc2ljdW0gaXMgYSBBTk5VQUwgZ3Jvd2luZyB0byAyIG0gKDZmdCkgYnkgMS41IG0gKDVmdCkgYXQgYSBmYXN0IHJhdGUuIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgMTAuIFRoZSBmbG93ZXJzIGFyZSBwb2xsaW5hdGVkIGJ5IEluc2VjdHMuIFRoZSBwbGFudCBpcyBzZWxmLWZlcnRpbGUuICBTdWl0YWJsZSBmb3I6IGxpZ2h0IChzYW5keSksIG1lZGl1bSAobG9hbXkpIGFuZCBoZWF2eSAoY2xheSkgc29pbHMgYW5kIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsLiBTdWl0YWJsZSBwSDogbWlsZGx5IGFjaWQgYW5kIG5ldXRyYWwgc29pbHMgYW5kICBjYW4gZ3JvdyBpbiB2ZXJ5IGFjaWQgc29pbHMuIEl0IGNhbm5vdCBncm93IGluIHRoZSBzaGFkZS4gSXQgcHJlZmVycyAgbW9pc3Qgc29pbC5kAgMPZBYCAgMPZBZiAgEPDxYCHgRUZXh0BRlTb2xhbnVtIGx5Y29wZXJzaWN1bSAtIEwuZGQCAw8PFgIfAwUVVG9tYXRvLCBHYXJkZW4gVG9tYXRvZGQCBQ8PFgIfAwUKU29sYW5hY2VhZWRkAgcPDxYCHwMFBTEwLTEyZGQCCQ8PFgIeB1Zpc2libGVnZGQCCw8PFgIfAwXhAkFsbCBncmVlbiBwYXJ0cyBvZiB0aGUgcGxhbnQgYXJlIHBvaXNvbm91c1sxOSAsIDc2IF0uIEFsdGhvdWdoIHByb3ZpZGluZyBtYW55IHdlbGwta25vd24gZm9vZHMgZm9yIHBlb3BsZSwgaW5jbHVkaW5nIHRoZSBwb3RhdG8sIHRvbWF0bywgcGVwcGVyIGFuZCBhdWJlcmdpbmUsIG1vc3QgcGxhbnRzIGluIHRoZSBmYW1pbHkgU29sYW5hY2VhZSBhbHNvIGNvbnRhaW4gcG9pc29ub3VzIGFsa2Fsb2lkcy4gVW5sZXNzIHRoZXJlIGFyZSBzcGVjaWZpYyBlbnRyaWVzIHdpdGggaW5mb3JtYXRpb24gb24gZWRpYmxlIHVzZXMsIGl0IHdvdWxkIGJlIHVud2lzZSB0byBpbmdlc3QgYW55IHBhcnQgb2YgdGhpcyBwbGFudFtLIF0uZGQCDQ8PFgIfAwUkTm90IGtub3duIGluIGEgdHJ1bHkgd2lsZCBzaXR1YXRpb24uZGQCDw8PFgIfAwU/T3JpZ2luYWwgaGFiaXRhdCBpcyBvYnNjdXJlLCBwcm9iYWJseSBXZXN0ZXJuIFMuIEFtZXJpY2FbMTMyIF0uZGQCEQ8PFgIeCEltYWdlVXJsBStpbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZWFyY2hWMWJfMTAuZ2lmZGQCEw8PFgIfBQUraW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwLmdpZmRkAhUPDxYCHwUFK2ltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFYxYl8xMC5naWZkZAIXDw8WAh8FBS"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Tomato",
+      "query": "Solanum lycopersicum",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:40:24.455795+00:00",
+      "response_hash": "ea1c20523df822485c1c3f34ad96d4d22fe8e68d5a03ca10d4e0973647fee55a",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Tomato",
+            "scientific_name": "Solanum lycopersicum",
+            "genus": "Solanum",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Tomato\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Me"
+    }
+  ]
+}

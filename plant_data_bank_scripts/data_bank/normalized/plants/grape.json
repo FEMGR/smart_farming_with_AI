@@ -1,0 +1,347 @@
+{
+  "plant_atom": "grape",
+  "identity": {
+    "common_name": "Grape",
+    "scientific_name": "Vitis vinifera",
+    "genus": "Vitis",
+    "family": "Vitaceae",
+    "synonyms": [],
+    "common_names": [
+      "aanab",
+      "ainab",
+      "aitoviiniköynnös",
+      "angoor",
+      "angur",
+      "Angur",
+      "blad",
+      "blad från vinranka",
+      "bortermo szolo levél",
+      "cervený list vinné révy",
+      "cognac oil",
+      "Common Grape",
+      "common grape vine",
+      "dakh",
+      "darakh",
+      "Diva loza",
+      "drak?a (fruit)",
+      "drakh",
+      "draksa",
+      "draksh",
+      "draksha",
+      "draksha kottai",
+      "draksha pondu",
+      "drakshai",
+      "drakya",
+      "dry grapes",
+      "european grape",
+      "feuille de vigne rouge",
+      "flos",
+      "foglia",
+      "folha de videira",
+      "frunze de vita-de-vie",
+      "gostani",
+      "gostoni",
+      "Grape",
+      "grape",
+      "grape seeds oligomeric proanthocyanidins",
+      "grape vine",
+      "grapevine",
+      "grapevine leaf",
+      "Grozde yagorida",
+      "hoja de",
+      "ista vinkoka lapas.",
+      "kashmish",
+      "kishmish",
+      "kottai drakshai",
+      "lambrusca",
+      "lambrusque",
+      "lehti",
+      "lie de vin",
+      "lisc winorosli wlasciwej",
+      "list vinica",
+      "list vinske trte",
+      "m?dvika",
+      "maneka",
+      "maweez munaqqa",
+      "maweezak kohi",
+      "munaca",
+      "munaqqa",
+      "munkka",
+      "munthringya",
+      "parra",
+      "Purpleleaf Grape",
+      "raisins",
+      "rote weinrebenblätter",
+      "rød vinranke",
+      "tikruju vynmedžiu lapai",
+      "Tumpeang ba'y chu",
+      "Uva",
+      "Vid",
+      "vid",
+      "vigne",
+      "Vigne",
+      "vigne rouge",
+      "vigne vinifère",
+      "viinapuu lehed",
+      "vinblad",
+      "vine",
+      "vinho",
+      "vino",
+      "Vino",
+      "vite",
+      "vitis vinifera",
+      "vitis viniferae folium",
+      "vínviðarlauf",
+      "weinrebe",
+      "Weinrebe",
+      "werqa tad-dielja",
+      "wijnstokblad",
+      "wine",
+      "Wine grape",
+      "wine grape",
+      "zabeeb-ul-jabal"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop"
+    ],
+    "edible_parts": [
+      "flower",
+      "fruit",
+      "leaf",
+      "oil",
+      "stem"
+    ],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 6.5,
+    "soil_ph_max": 7.0,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "Prefers a deep rich moist well-drained moderately fertile loam[1, 200]. Grows best in a calcareous soil, but dislikes excessively chalky soils[200]. Prefers a pH in the range 6.5 to 7[200] but tolerates a range from 4.3 to 8.6. Succeeds in sun or partial shade though a warm sunny sheltered position is required for the fruit to ripen[200]. Very commonly grown in the temperate zones of the world for its edible fruit, there are many named varieties, some of which have been developed for their use as a dried fruit, others for dessert use and others for wine[132, 183]. Good and regular crops are a bit problematical in Britain, grapes are on the northern most limits of their range in this country and the British summer often does not provide enough heat to properly ripen the fruit. Late frosts can also damage young growth in spring, though dormant shoots are very hardy, tolerating temperatures down to about -20°c[11]. Nonetheless, there are a number of commercial vineyards in Britain (usually producing wine grapes) and, given a suitably sunny and sheltered position, good dessert grapes can also be grown. In general it is best to grow the dessert varieties against the shelter of a south or west facing wall[219]. There are a number of varieties that have been bred to cope with cooler summers. Grapes are very susceptible to attacks by phylloxera, this disease is especially prevalent in some areas of Europe and it almost destroyed the grape industry. However, American species of grapes that are resistant to phylloxera are now used as rootstocks and this allows grapes to be grown in areas where the disease is common. Britain is free of the disease at the present (1989) and grapes are usually grown on their own roots. Plants in this genus are notably susceptible to honey fungus[200]. The flowers are intensely fragrant[245]. Grapes grow well in the company of hyssop, chives, basil and charlock[201]. They grow badly with radishes, both the grapes and the radishes developing an off taste[201]. Plants climb by means of tendrils[182]. Any pruning should be carried out in winter when the plants are dormant otherwise they bleed profusely[182]. The cultivated grape is thought to have been derived from V. vinifera sylvestris. (Gmel.)Hegi. This form has dioecious flowers and produces small black grapes. Special Features:Attractive foliage, Inconspicuous flowers or blooms. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. Woody. Growth habit is a single or multiple shooting vine from a crown [1-2]. Grapes are usually harvested in late summer to early autumn, specifically from late summer through fall, depending on the variety and climate. Grapes typically flower in late spring to early summer. Grapes are considered fast-growing vines, often reaching maturity within 3 to 4 years, depending on the variety and growing conditions. Many varieties of Vitis vinifera are self-fertile, meaning they can produce fruit without cross-pollination.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "layering",
+      "seed"
+    ],
+    "propagation_notes": "Seed - best sown in a cold frame as soon as it is ripe[K]. Six weeks cold stratification improves the germination rate, and so stored seed is best sown in a cold frame as soon as it is obtained. Germination should take place in the first spring, but sometimes takes another 12 months. Prick out the seedlings into individual pots when they are large enough to handle and grow them on in a cold frame for their first winter. Plant out in early summer. Cuttings of mature wood of the current seasons growth, December/January in a frame. These cuttings can be of wood 15 - 30cm long or they can be of short sections of the stem about 5cm long with just one bud at the top of the section. In this case a thin, narrow strip of the bark about 3cm long is removed from the bottom half of the side of the stem. This will encourage callusing and the formation of roots. Due to the size of these cuttings they need to be kept in a more protected environment than the longer cuttings. Layering.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Prefers a deep rich moist well-drained moderately fertile loam[1, 200]. Grows best in a calcareous soil, but dislikes excessively chalky soils[200]. Prefers a pH in the range 6.5 to 7[200] but tolerates a range from 4.3 to 8.6. Succeeds in sun or partial shade though a warm sunny sheltered position is required for the fruit to ripen[200]. Very commonly grown in the temperate zones of the world for its edible fruit, there are many named varieties, some of which have been developed for their use as a dried fruit, others for dessert use and others for wine[132, 183]. Good and regular crops are a bit problematical in Britain, grapes are on the northern most limits of their range in this country and the British summer often does not provide enough heat to properly ripen the fruit. Late frosts can also damage young growth in spring, though dormant shoots are very hardy, tolerating temperatures down to about -20°c[11]. Nonetheless, there are a number of commercial vineyards in Britain (usually producing wine grapes) and, given a suitably sunny and sheltered position, good dessert grapes can also be grown. In general it is best to grow the dessert varieties against the shelter of a south or west facing wall[219]. There are a number of varieties that have been bred to cope with cooler summers. Grapes are very susceptible to attacks by phylloxera, this disease is especially prevalent in some areas of Europe and it almost destroyed the grape industry. However, American species of grapes that are resistant to phylloxera are now used as rootstocks and this allows grapes to be grown in areas where the disease is common. Britain is free of the disease at the present (1989) and grapes are usually grown on their own roots. Plants in this genus are notably susceptible to honey fungus[200]. The flowers are intensely fragrant[245]. Grapes grow well in the company of hyssop, chives, basil and charlock[201]. They grow badly with radishes, both the grapes and the radishes developing an off taste[201]. Plants climb by means of tendrils[182]. Any pruning should be carried out in winter when the plants are dormant otherwise they bleed profusely[182]. The cultivated grape is thought to have been derived from V. vinifera sylvestris. (Gmel.)Hegi. This form has dioecious flowers and produces small black grapes. Special Features:Attractive foliage, Inconspicuous flowers or blooms. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. Woody. Growth habit is a single or multiple shooting vine from a crown [1-2]. Grapes are usually harvested in late summer to early autumn, specifically from late summer through fall, depending on the variety and climate. Grapes typically flower in late spring to early summer. Grapes are considered fast-growing vines, often reaching maturity within 3 to 4 years, depending on the variety and growing conditions. Many varieties of Vitis vinifera are self-fertile, meaning they can produce fruit without cross-pollination.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Analgesic Antiinflammatory Astringent Bach Cholera Demulcent Diuretic Hepatic Laxative Lithontripic Miscellany Skin Stomachic Grapes are a nourishing and slightly laxative fruit that can support the body through illness, especially of the gastro-intestinal tract and liver[254]. Because the nutrient content of grapes is close to that of blood plasma, grape fasts are recommended for detoxification[254]. Analgesic[178]. The fresh fruit is antilithic, constructive, cooling, diuretic and strengthening[4, 218]. A period of time on a diet based entirely on the fruit is especially recommended in the treatment of torpid liver or sluggish biliary function[7]. The fruit is also helpful in the treatment of varicose veins, haemorrhoids and capillary fragility[254]. The dried fruit is demulcent, cooling, mildly expectorant, laxative and stomachic[218]. It has a slight effect in easing coughs[254]. The leaves, especially red leaves, are anti-inflammatory and astringent[4, 7, 218, 254]. A decoction is used in the treatment of threatened abortion, internal and external bleeding, cholera, dropsy, diarrhoea and nausea[4, 218, 254]. It is also used as a wash for mouth ulcers and as douche for treating vaginal discharge[254]. Red grape leaves are also helpful in the treatment of varicose veins, haemorrhoids and capillary fragility[254]. The leaves are harvested in early summer and used fresh or dried[238]. The seed is anti-inflammatory and astringent[4, 7, 218]. The sap of young branches is diuretic[7]. It is used as a remedy for skin diseases[218, 240] and is also an excellent lotion for the eyes[4, 7, 254]. The tendrils are astringent and a decoction is used in the treatment of diarrhoea[7]. The plant is used in Bach flower remedies - the keywords for prescribing it are 'Dominating', 'Inflexible' and 'Ambitious'[209].",
+    "cautions": "None known",
+    "other_uses_notes": "Dye Miscellany Oil Agroforestry uses: Grapes can be used as ground cover to prevent soil erosion and enhance biodiversity. They also provide habitat for various beneficial insects and wildlife. Landscape Uses: Arbor. A yellow dye is obtained from the fresh or dried leaves[168]. An oil from the seed is used for lighting and as an ingredient in soaps, paints etc[46, 61]. Cream of tartar, extracted from the residue of pressed grapes, is used in making fluxes for soldering[238]. Especially when growing in hotter countries than Britain, the stems of very old vines attain a good size and have been used to supply a very durable timber[4]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Grape flowers are attractive to a variety of pollinators, including bees and other beneficial insects, as they produce nectar. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The fruit (grapes) is highly nutritious and consumed by birds, mammals, and insects. The leaves can also provide some shelter, though they are not typically used for nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The foliage and associated leaf litter can provide shelter for various invertebrates, although they are not specifically known for providing overwintering sites. 4. Pest Confuser (Smell): Yes – The leaves and fruits of grapevines can have aromatic properties that may help confuse certain pests, although they are also susceptible to various pests.",
+    "edible_uses_notes": "Edible Parts: Flowers Fruit Leaves Oil Shoots Edible Uses: Oil Fruit - raw or dried for winter use[1, 2, 11, 46]. The dried fruits are the raisins, sultanas and currants of commerce, different varieties producing the different types of dried fruit. A fully ripened fresh fruit is sweet, juicy and delicious[K]. The fruit juice can be concentrated and used as a sweetener[183]. This fruit is widely used in making wine[183]. Leaves - cooked[55]. Young leaves are wrapped around other foods and then baked, they impart a pleasant flavour[183]. Young tendrils - raw or cooked[85]. The flower clusters are used as a vegetable[183]. An edible oil similar to sunflower oil is obtained from the seed[7, 183]. It needs to be refined before it can be eaten[46]. A polyunsaturated oil, it is suitable for mayonnaise and cooking, especially frying[238]. Sap - raw. Used as a drink, it has a sweet taste. The sap can be harvested in spring and early summer, though it should not be taken in quantity or it will weaken the plant. The roasted seed is a coffee substitute[7]. Cream of tartar, also known as potassium bitartrate, a crystalline salt, is extracted from the residue of pressed grapes, and from the sediment of wine barrels. It is used in making baking powder[238]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:06.347237+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Vitis+vinifera",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:44.949938+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Grape",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:45.821468+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Vitis+vinifera",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:31.352372+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Grape",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:34.912964+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=grape",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:38.375931+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.970918+00:00"
+  },
+  "missing_fields": [
+    "classification.life_cycle",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

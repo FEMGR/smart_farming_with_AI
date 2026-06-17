@@ -1,0 +1,79 @@
+{
+  "plant": {
+    "plant_atom": "fennel",
+    "common_name": "Fennel",
+    "scientific_name": "Foeniculum vulgare",
+    "genus": "Foeniculum",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Foeniculum vulgare",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:06.342417+00:00",
+      "response_hash": "1b6dec8ae7ae27d9d24176882931bdd0d8f869117c50f4657adcede52de686f7",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 3034922,
+          "scientificName": "Foeniculum vulgare Mill.",
+          "canonicalName": "Foeniculum vulgare",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=3",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 7710259,
+              "scientificName": "Foeniculum vulgare Hill",
+              "canonicalName": "Foeniculum vulgare",
+              "rank": "SPECIES",
+              "status": "DOUBTFUL",
+              "confidence": 97,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=-5; score=115",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Apiales",
+              "family": "Apiaceae",
+              "genus": "Foeniculum",
+              "species": "Foeniculum vulgare",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1351,
+              "familyKey": 6720,
+              "genusKey": 3034921,
+              "speciesKey": 7710259,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Apiales",
+          "family": "Apiaceae",
+          "genus": "Foeniculum",
+          "species": "Foeniculum vulgare",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 1351,
+          "familyKey": 6720,
+          "genusKey": 10704390,
+          "speciesKey": 3034922,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

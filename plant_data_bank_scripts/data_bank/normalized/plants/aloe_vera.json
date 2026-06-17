@@ -1,0 +1,254 @@
+{
+  "plant_atom": "aloe_vera",
+  "identity": {
+    "common_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "genus": "Aloe",
+    "family": "Asphodelaceae",
+    "synonyms": [
+      "Aloe barbadensis, Aloe vulgaris"
+    ],
+    "common_names": [
+      "Aloe Vera",
+      "Barbados aloe",
+      "First Aid Plant",
+      "Medicinal Aloe"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "leaf",
+      "seed"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Landscape Uses: Container, Ground cover, Rock garden. Requires well-drained soil and a very sunny position[1]. Plants are tolerant of poor soils[200]. If trying to grow this plant outdoors, it will need the sunniest and warmest area in the garden and some protection from winter cold (perhaps a glass frame)[K]. This species is not very cold-hardy outdoors in Britain, it is best grown in a pot placed outdoors in the summer and put in a greenhouse for the winter[1]. It grows very well in a sunny windowsill[K]. Special Features: Attractive foliage, North American native, naturalizing blooms appear periodically throughout the year, and attractive flowers or blooms. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements, including nutrients and water. The root pattern is rhizomatous, with underground stems sending roots and shoots along their length [2-1]. Aloe species are not self-fertile and often require cross-pollination with other plants for successful seed production. Aloe leaves can be harvested year-round, but mature leaves are generally harvested in late spring to summer when the plant is most vigorous for specific products like aloe vera gel. Aloe species typically flower in late winter to early spring, depending on the species and local climate conditions. Growth rates can vary among species, but generally, aloe plants are considered moderate to slow growers, with many species taking several years to reach maturity.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "division",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring in a warm greenhouse. The seed usually germinates in 1 - 6 months at 16°c. Prick out the seedlings into individual pots of very well-drained soil when they are large enough to handle. Grow them on in a sunny part of the greenhouse for at least their first two winters. If trying them outdoors then plant them out in early summer to allow them to become established before the winter, and give them some protection from the cold in winter[K]. Division of offsets when available, usually in spring. The plants produce offsets quite freely and they can be divided at any time of the year as long as it is warm enough to encourage fresh root growth to allow re-establishment of the plants[K]. Pot up and grow on in the greenhouse until established.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Landscape Uses: Container, Ground cover, Rock garden. Requires well-drained soil and a very sunny position[1]. Plants are tolerant of poor soils[200]. If trying to grow this plant outdoors, it will need the sunniest and warmest area in the garden and some protection from winter cold (perhaps a glass frame)[K]. This species is not very cold-hardy outdoors in Britain, it is best grown in a pot placed outdoors in the summer and put in a greenhouse for the winter[1]. It grows very well in a sunny windowsill[K]. Special Features: Attractive foliage, North American native, naturalizing blooms appear periodically throughout the year, and attractive flowers or blooms. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements, including nutrients and water. The root pattern is rhizomatous, with underground stems sending roots and shoots along their length [2-1]. Aloe species are not self-fertile and often require cross-pollination with other plants for successful seed production. Aloe leaves can be harvested year-round, but mature leaves are generally harvested in late spring to summer when the plant is most vigorous for specific products like aloe vera gel. Aloe species typically flower in late winter to early spring, depending on the species and local climate conditions. Growth rates can vary among species, but generally, aloe plants are considered moderate to slow growers, with many species taking several years to reach maturity.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Cancer Emmenagogue Emollient Laxative Miscellany Purgative Skin Stimulant Stomachic Tonic Vermifuge Vulnerary Aloe vera is a fairly well known herbal preparation with a long history of use. It is widely used in modern herbal practice and is often available in proprietary herbal preparations[K]. It has two distinct types of medicinal use. The clear gel contained within the leaf makes an excellent treatment for wounds, burns and other skin disorders, placing a protective coat over the affected area, speeding up the rate of healing and reducing the risk of infection[254] [K]. This action is in part due to the presence of aloectin B, which stimulates the immune system[254]. To obtain this gel, the leaves can be cut in half along their length and the inner pulp rubbed over the affected area of skin[K]. This has an immediate soothing effect on all sorts of burns and other skin problems[K]. The second use comes from the yellow sap at the base of the leaf. The leaves are cut transversally at their base and the liquid that exudes from this cut is dried[4]. It is called bitter aloes and contains anthraquinones which are a useful digestive stimulant and a strong laxative[254]. When plants are grown in pots the anthraquinone content is greatly reduced[254]. The plant is emmenagogue, emollient, laxative, purgative, stimulant, stomachic, tonic, vermifuge and vulnerary[4, 21, 46, 57, 61, 165, 176]. Extracts of the plant have antibacterial activity[218]. Apart from its external use on the skin, aloe vera (usually the bitter aloes) is also taken internally in the treatment of chronic constipation, poor appetite, digestive problems etc[238]. It should not be given to pregnant women or people with haemorrhoids or irritable bowel syndrome[238, 243]. The plant is strongly purgative so great care should be taken over the dosage[238]. The plant is used to test if there is blood in the faeces[61]. This plant has a folk history of treatment in cases of cancer[218]. The German Commission E Monographs, a therapeutic guide to herbal medicine approve Aloe vera for constipation (see [302] for critics of commission E). In Chinese medicine it is used for fungal diseases. In Indian medicine it is used for stomach tumours, constipation, colic, skin diseases, amenorrhoea, worm infestation and infections [301]. Chemical Constituents: **Amino acids:** Isoleucine, leucine, lysine, methionine, phenylalanine, threonine, valine **Anthraquinones:** Aloe-emodin, aloetic acid, aloin, anthracene, anthranol, barbaloin, chryscophanoic acid, emodin, ester of cinnamic acid, ethereal oil, isobarbaloin, resistannol **Enzymes:** Alkaline phosphatase, amylase, catalase, lipase, oxidase **Minerals:** Calcium, chromium, copper, magnesium, manganese, sodium, zinc **Prostanoids:** gamma-linolenic acid **Saccharides:** Aldopentose, cellulose, glucose, L-rhamnose, mannose **Vitamins:** Alpha-tocopherol, beta-carotene, choline, folic acid, vitamins B1, B2, B6, C, and E **Other:** Beta-sitosterol, cholesterol, gibberellin, lignins, salicylic acid, steroids, uric acid, triglycerides",
+    "cautions": "Taken by mouth may cause cramping pain in the gastrointestinal tract and diarrhoea (reduce dose). Skin rashes with long term use of gel. Rare adverse effects are on heart rhythm, kidney damage and oedema. Long term use can cause electrolytes loss esp. potassium and may therefore enhance the effect of drugs that act on the heart (e.g. digoxin) [301].",
+    "other_uses_notes": "Cosmetic Miscellany Pollution Aloe species can be used as a drought-resistant ground cover, helping to prevent soil erosion and improve soil health. They may also provide a habitat for beneficial insects. The leaf extracts are used in skin-care cosmetic products[238, 254]. Plants have been grown indoors in pots to help remove toxins from the atmosphere. It is also unusual in that it continues to release oxygen and absorb carbon dioxide in the dark, making it very suitable for growing in bedrooms[259]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Aloe species produce tubular flowers rich in nectar, attracting pollinators such as bees and hummingbirds. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Aloe plants are primarily known for their medicinal properties and edible gel, but they can provide food for some wildlife. The flowers are edible and may attract pollinators. Aloe’s dense foliage can offer some shelter for small animals. 3. Invertebrate Shelter (Overwintering Sites, Leaf Litter, Groundcover): No – Aloe species do not typically provide significant overwintering sites for invertebrates, nor do they produce leaf litter in a way that contributes to ground cover or shelter. 4. Pest Confuser (Smell): No – Aloe species do not have a strong scent known to confuse pests, although their presence may help deter some pests due to their sap.",
+    "edible_uses_notes": "Edible Parts: Leaves Seed Edible Uses: Leaves - cooked[105]. Very bitter, they are an emergency food that is only used when all else fails[177]. A gel in the leaves is sometimes used as an ingredient of commercial jellies[183]. Seed[105, 183]. An emergency food used when all else fails[177]. It is very unlikely that the seed will be produced in Britain[238]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "bees",
+          "butterflies"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "PFAF says this plant attracts pollinators."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.synonyms": "Plants For A Future",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:10.033990+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Aloe+vera",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:51.984025+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Aloe+Vera",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:52.719354+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Aloe+vera",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:03.159220+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Aloe+Vera",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:06.824825+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=aloe_vera",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:10.522586+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.982974+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

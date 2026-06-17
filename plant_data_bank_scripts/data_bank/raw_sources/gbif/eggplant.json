@@ -1,0 +1,104 @@
+{
+  "plant": {
+    "plant_atom": "eggplant",
+    "common_name": "Eggplant",
+    "scientific_name": "Solanum melongena",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Solanum melongena",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:42:57.741658+00:00",
+      "response_hash": "98ef73d3618e5952cc738e30b64a2a5a3a0b13f7b401ad8a858b36d35bf459d5",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2930617,
+          "scientificName": "Solanum melongena L.",
+          "canonicalName": "Solanum melongena",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=0",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 8347557,
+              "acceptedUsageKey": 2929920,
+              "scientificName": "Solanum melongena Wall.",
+              "canonicalName": "Solanum melongena",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 99,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=0; score=120",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Solanales",
+              "family": "Solanaceae",
+              "genus": "Solanum",
+              "species": "Solanum virginianum",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1176,
+              "familyKey": 7717,
+              "genusKey": 2928997,
+              "speciesKey": 2929920,
+              "class": "Magnoliopsida"
+            },
+            {
+              "usageKey": 2930633,
+              "acceptedUsageKey": 2930617,
+              "scientificName": "Solanum melongenum St.-Lag.",
+              "canonicalName": "Solanum melongenum",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 96,
+              "note": "Similarity: name=100; authorship=0; classification=4; rank=6; status=0; score=110",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Solanales",
+              "family": "Solanaceae",
+              "genus": "Solanum",
+              "species": "Solanum melongena",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1176,
+              "familyKey": 7717,
+              "genusKey": 2928997,
+              "speciesKey": 2930617,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Solanales",
+          "family": "Solanaceae",
+          "genus": "Solanum",
+          "species": "Solanum melongena",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 1176,
+          "familyKey": 7717,
+          "genusKey": 2928997,
+          "speciesKey": 2930617,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

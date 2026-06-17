@@ -1,0 +1,80 @@
+{
+  "plant": {
+    "plant_atom": "moringa",
+    "common_name": "Moringa",
+    "scientific_name": "Moringa oleifera",
+    "genus": "Moringa",
+    "family": "Moringaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Moringa oleifera",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:44:08.804828+00:00",
+      "response_hash": "80bd19c897bca71dc1173d34e318506393e79a8b643e9776d60944b373f660fa",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 3054181,
+          "scientificName": "Moringa oleifera Lam.",
+          "canonicalName": "Moringa oleifera",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=0",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 11368286,
+              "acceptedUsageKey": 3752366,
+              "scientificName": "Moringa oleifera Exell & Mendonça",
+              "canonicalName": "Moringa oleifera",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 99,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=0; score=120",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Brassicales",
+              "family": "Moringaceae",
+              "genus": "Moringa",
+              "species": "Moringa ovalifolia",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 7225535,
+              "familyKey": 6753,
+              "genusKey": 3054180,
+              "speciesKey": 3752366,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Brassicales",
+          "family": "Moringaceae",
+          "genus": "Moringa",
+          "species": "Moringa oleifera",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 7225535,
+          "familyKey": 6753,
+          "genusKey": 3054180,
+          "speciesKey": 3054181,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

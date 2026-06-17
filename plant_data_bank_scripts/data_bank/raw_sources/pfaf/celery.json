@@ -1,0 +1,258 @@
+{
+  "plant": {
+    "plant_atom": "celery",
+    "common_name": "Celery",
+    "scientific_name": "Apium graveolens",
+    "genus": "Apium",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Apium+graveolens",
+      "query": "Apium graveolens",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:40:58.822454+00:00",
+      "response_hash": "2f336774359e323cb6ee7a650a1c570bf02df4134708e3428173df7e5d4eda7f",
+      "parsed": {
+        "title": "Apium graveolens Wild Celery. Ajmod, Ajwain-ka-patta (Indian) PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Apium graveolens - L.",
+          "common_name": "Wild Celery. Ajmod, Ajwain-ka-patta (Indian)",
+          "family": "Apiaceae",
+          "usda_hardiness": "5-9",
+          "known_hazards": "If the plant is infected with the fungus Sclerotinia sclerotiorum, skin contact with the sap can cause dermatitis in sensitive people[65]. This is more likely to happen to Caucasians[218]. Allergic responses include anaphylaxis in sensitive individuals. Cross-allergenicity between celery, cucumber, carrot, watermelon and possibly apples. Avoid during pregnancy as emmenagogue, abortifacient and uterine stimulant activity reported [301].",
+          "habitats": "Ditches, by rivers and in other damp locations, especially near the sea in salt marshes[9, 17, 100].",
+          "range": "Central and southern Europe, including Britain, to temperate areas of Africa and Asia.",
+          "summary": null,
+          "physical_characteristics": "Apium graveolens is a BIENNIAL growing to 0.6 m (2ft) by 0.3 m (1ft in). See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender. It is in flower from June to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Flies. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and can grow in saline soils. It can grow in semi-shade (light woodland). It prefers moist soil.",
+          "synonyms": "Apium celleri. Apium decumbens. Celeria graveolens. Carum graveolens.",
+          "plant_habitats": "Cultivated Beds;",
+          "edible_uses": "Edible Parts: Leaves Root Seed Edible Uses: Condiment Leaves - raw or cooked[52, 105]. Mainly used as a flavouring in soups etc[5, 7, 9, 46]. They can be eaten raw but have a very strong flavour[52]. They are toxic if consumed in large amounts[238]. Seed - a flavouring. Used in small quantities to flavour soups and stews[238]. An essential oil from the seed is also used as a flavouring[46, 105]. Root - cooked[74].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antianxiety Antirheumatic Aperient Appetizer Carminative Diuretic Emmenagogue Galactogogue Nervine Stimulant Tonic Wild celery has a long history of medicinal and food use. it is an aromatic bitter tonic herb that reduces blood pressure, relieves indigestion, stimulates the uterus and is anti-inflammatory[238]. The ripe seeds, herb and root are aperient, carminative, diuretic, emmenagogue, galactogogue, nervine, stimulant and tonic[4, 7, 21, 165]. Wild celery is said to be useful in cases of hysteria, promoting restfulness and sleep and diffusing through the system a mild sustaining influence[4]. The herb should not be prescribed for pregnant women[238]. Seeds purchased for cultivation purposes are often dressed with a fungicide, they should not be used for medicinal purposes[238]. The root is harvested in the autumn and can be used fresh or dried[238]. The whole plant is harvested when fruiting and is usually liquidized to extract the juice[238]. The seeds are harvested as they ripen and are dried for later use[238]. An essential oil obtained from the plant has a calming effect on the central nervous system. Some of its constituents have antispasmodic, sedative and anticonvulsant actions. It has been shown to be of value in treating high blood pressure[254]. A homeopathic remedy is made from the herb[9]. It is used in treating rheumatism and kidney complaints[9].",
+          "other_uses": "Essential The growing plant is an insect repellent, it repels the cabbage white butterfly so is a good companion for brassicas[20].",
+          "special_uses": "Food Forest Scented Plants",
+          "cultivation": "Prefers a rich moist soil in sun or semi-shade[238], but with some shade in the summer[52]. It is tolerant of saline soils[238]. The plants are fairly hardy, though they can be damaged by hard frosts[238]. Wild celery is the parent of the cultivated celery (A. graveolens dulce) as well as celery leaf (A. graveolens secalinum) and celeriac (A. graveolens rapaceum). This entry only deals with the wild celery, the other plants are dealt with separately. A very aromatic plant, the aroma being most noticeable when the foliage is bruised. The growing plant is a good companion for leeks, tomatoes, French beans and brassicas[18].",
+          "propagation": "Seed - sow spring or autumn in situ. If seed is in short supply it can be sown in a cold frame in spring. The seed can harbour certain diseases of celery, it is usually treated by seed companies before being sold but if you save your own seed you should make sure that only seed from healthy plants is used[1].",
+          "other_names": null,
+          "native_range": "TEMPERATE ASIA: Yemen, Afghanistan, Iran, Iraq, Israel, Jordan, Lebanon, Syria, Turkey, Armenia, Azerbaijan, Georgia, Kyrgyzstan, Tajikistan, Turkmenistan, Uzbekistan EUROPE: Denmark, United Kingdom, Ireland, Austria, Belgium, Germany, Netherlands, Poland, Albania, Bulgaria, Greece (incl. Crete), Croatia, Italy (incl. Sardinia, Sicily), North Macedonia, Montenegro, Romania, Serbia, Spain (incl. Baleares), France (incl. Corsica), Portugal AFRICA: Spain (Canarias), Portugal (Madeira Islands, Algeria, Morocco, Tunisia",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Ajwain-ka-patta (Indian)",
+            "scientific_name": "Apium graveolens",
+            "genus": "Apium",
+            "family": "Apiaceae",
+            "synonyms": [
+              "Apium celleri",
+              "Apium decumbens",
+              "Carum graveolens",
+              "Celeria graveolens"
+            ],
+            "common_names": [
+              "Ajwain-ka-patta (Indian)",
+              "Wild Celery. Ajmod"
+            ]
+          },
+          "pfaf_display_latin_name": "Apium graveolens - L.",
+          "pfaf_common_name": "Wild Celery. Ajmod, Ajwain-ka-patta (Indian)",
+          "pfaf_family": "Apiaceae",
+          "pfaf_synonyms": "Apium celleri. Apium decumbens. Celeria graveolens. Carum graveolens.",
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "leaf",
+            "root",
+            "seed"
+          ],
+          "use_categories": [
+            "companion_plant",
+            "culinary_herb",
+            "medicinal_plant",
+            "repellent_plant",
+            "root_tuber_crop"
+          ],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": null,
+            "soil_notes": "Prefers a rich moist soil in sun or semi-shade[238], but with some shade in the summer[52]. It is tolerant of saline soils[238]. The plants are fairly hardy, though they can be damaged by hard frosts[238]. Wild celery is the parent of the cultivated celery (A. graveolens dulce) as well as celery leaf (A. graveolens secalinum) and celeriac (A. graveolens rapaceum). This entry only deals with the wild celery, the other plants are dealt with separately. A very aromatic plant, the aroma being most noticeable when the foliage is bruised. The growing plant is a good companion for leeks, tomatoes, French beans and brassicas[18].",
+            "light_notes": null,
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow spring or autumn in situ. If seed is in short supply it can be sown in a cold frame in spring. The seed can harbour certain diseases of celery, it is usually treated by seed companies before being sold but if you save your own seed you should make sure that only seed from healthy plants is used[1].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": "Edible Parts: Leaves Root Seed Edible Uses: Condiment Leaves - raw or cooked[52, 105]. Mainly used as a flavouring in soups etc[5, 7, 9, 46]. They can be eaten raw but have a very strong flavour[52]. They are toxic if consumed in large amounts[238]. Seed - a flavouring. Used in small quantities to flavour soups and stews[238]. An essential oil from the seed is also used as a flavouring[46, 105]. Root - cooked[74].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antianxiety Antirheumatic Aperient Appetizer Carminative Diuretic Emmenagogue Galactogogue Nervine Stimulant Tonic Wild celery has a long history of medicinal and food use. it is an aromatic bitter tonic herb that reduces blood pressure, relieves indigestion, stimulates the uterus and is anti-inflammatory[238]. The ripe seeds, herb and root are aperient, carminative, diuretic, emmenagogue, galactogogue, nervine, stimulant and tonic[4, 7, 21, 165]. Wild celery is said to be useful in cases of hysteria, promoting restfulness and sleep and diffusing through the system a mild sustaining influence[4]. The herb should not be prescribed for pregnant women[238]. Seeds purchased for cultivation purposes are often dressed with a fungicide, they should not be used for medicinal purposes[238]. The root is harvested in the autumn and can be used fresh or dried[238]. The whole plant is harvested when fruiting and is usually liquidized to extract the juice[238]. The seeds are harvested as they ripen and are dried for later use[238]. An essential oil obtained from the plant has a calming effect on the central nervous system. Some of its constituents have antispasmodic, sedative and anticonvulsant actions. It has been shown to be of value in treating high blood pressure[254]. A homeopathic remedy is made from the herb[9]. It is used in treating rheumatism and kidney complaints[9].",
+          "other_uses_notes": "Essential The growing plant is an insect repellent, it repels the cabbage white butterfly so is a good companion for brassicas[20].",
+          "cultivation_notes": "Prefers a rich moist soil in sun or semi-shade[238], but with some shade in the summer[52]. It is tolerant of saline soils[238]. The plants are fairly hardy, though they can be damaged by hard frosts[238]. Wild celery is the parent of the cultivated celery (A. graveolens dulce) as well as celery leaf (A. graveolens secalinum) and celeriac (A. graveolens rapaceum). This entry only deals with the wild celery, the other plants are dealt with separately. A very aromatic plant, the aroma being most noticeable when the foliage is bruised. The growing plant is a good companion for leeks, tomatoes, French beans and brassicas[18].",
+          "known_hazards": "If the plant is infected with the fungus Sclerotinia sclerotiorum, skin contact with the sap can cause dermatitis in sensitive people[65]. This is more likely to happen to Caucasians[218]. Allergic responses include anaphylaxis in sensitive individuals. Cross-allergenicity between celery, cucumber, carrot, watermelon and possibly apples. Avoid during pregnancy as emmenagogue, abortifacient and uterine stimulant activity reported [301].",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "brassica",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              },
+              {
+                "plant": "leeks",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              }
+            ],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting."
+            ]
+          }
+        },
+        "page_text_excerpt": "Apium graveolens Wild Celery. Ajmod, Ajwain-ka-patta (Indian) PFAF Plant Database Follow Us: Apium graveolens - L. Common Name Wild Celery. Ajmod, Ajwain-ka-patta (Indian) Family Apiaceae USDA hardiness 5-9 Known Hazards If the plant is infected with the fungus Sclerotinia sclerotiorum, skin contact with the sap can cause dermatitis in sensitive people[65]. This is more likely to happen to Caucasians[218]. Allergic responses include anaphylaxis in sensitive individuals. Cross-allergenicity between celery, cucumber, carrot, watermelon and possibly apples. Avoid during pregnancy as emmenagogue, abortifacient and uterine stimulant activity reported [301]. Habitats Ditches, by rivers and in other damp locations, especially near the sea in salt marshes[9, 17, 100]. Range Central and southern Europe, including Britain, to temperate areas of Africa and Asia. Edibility Rating (3 of 5) Other Uses (2 of 5) Weed Potential No Medicinal Rating (3 of 5) Care (info) http://commons.wikimedia.org/wiki/File:Illustration_Apium_graveolens0.jpg http://en.wikipedia.org/wiki/User:Fir0002 Translate this page: Summary Physical Characteristics Apium graveolens is a BIENNIAL growing to 0.6 m (2ft) by 0.3 m (1ft in). See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender. It is in flower from June to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Flies. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and can grow in saline soils. It can grow in semi-shade (light woodland). It prefers moist soil. UK Hardiness Map US Hardiness Map Synonyms Apium celleri. Apium decumbens. Celeria graveolens. Carum graveolens. Plant Habitats Cultivated Beds; Edible Uses Edible Parts: Leaves Root Seed Edible Uses: Condiment Leaves - raw or cooked[52, 105]. Mainly used as a flavouring in soups etc[5, 7, 9, 46]. They can be eaten raw but have a very strong flavour[52]. They are toxic if consumed in large amounts[238]. Seed - a flavouring. Used in small quantities to flavour soups and stews[238]. An essential oil from the seed is also used as a flavouring[46, 105]. Root - cooked[74]. References More on Edible Uses Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antianxiety Antirheumatic Aperient Appetizer Carminative Diuretic Emmenagogue Galactogogue Nervine Stimulant Tonic Wild celery has a long history of medicinal and food use. it is an aromatic bitter tonic herb that reduces blood pressure, relieves indigestion, stimulates the uterus and is anti-inflammatory[238]. The ripe seeds, herb and root are aperient, carminative, diuretic, emmenagogue, galactogogue, nervine, stimulant and tonic[4, 7, 21, 165]. Wild celery is said to be usefu"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tApium graveolens Wild Celery. Ajmod, Ajwain-ka-patta (Indian) PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Apium graveolens is a BIENNIAL growing to 0.6 m (2ft) by 0.3 m (1ft&amp;nbsp;in).  See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender.  It is in flower from June to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Flies. The plant is self-fertile.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and can grow in saline soils. It can grow in  semi-shade (light woodland). It prefers  moist soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Apium+graveolens\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BdQEQXBpdW0gZ3JhdmVvbGVucyBpcyBhIEJJRU5OSUFMIGdyb3dpbmcgdG8gMC42IG0gKDJmdCkgYnkgMC4zIG0gKDFmdCZuYnNwO2luKS4gIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgNiBhbmQgaXMgbm90IGZyb3N0IHRlbmRlci4gIEl0IGlzIGluIGZsb3dlciBmcm9tIEp1bmUgdG8gQXVndXN0LCBhbmQgdGhlIHNlZWRzIHJpcGVuIGZyb20gQXVndXN0IHRvIFNlcHRlbWJlci4gVGhlIHNwZWNpZXMgaXMgaGVybWFwaHJvZGl0ZSAoaGFzIGJvdGggbWFsZSBhbmQgZmVtYWxlIG9yZ2FucykgYW5kIGlzIHBvbGxpbmF0ZWQgYnkgRmxpZXMuIFRoZSBwbGFudCBpcyBzZWxmLWZlcnRpbGUuICBTdWl0YWJsZSBmb3I6IGxpZ2h0IChzYW5keSksIG1lZGl1bSAobG9hbXkpIGFuZCBoZWF2eSAoY2xheSkgc29pbHMuIFN1aXRhYmxlIHBIOiBtaWxkbHkgYWNpZCwgbmV1dHJhbCBhbmQgYmFzaWMgKG1pbGRseSBhbGthbGluZSkgc29pbHMgYW5kIGNhbiBncm93IGluIHNhbGluZSBzb2lscy4gSXQgY2FuIGdyb3cgaW4gIHNlbWktc2hhZGUgKGxpZ2h0IHdvb2RsYW5kKS4gSXQgcHJlZmVycyAgbW9pc3Qgc29pbC5kAgMPZBYCAgMPZBZkAgEPDxYCHgRUZXh0BRVBcGl1bSBncmF2ZW9sZW5zIC0gTC5kZAIDDw8WAh8DBSxXaWxkIENlbGVyeS4gQWptb2QsIEFqd2Fpbi1rYS1wYXR0YSAoSW5kaWFuKWRkAgUPDxYCHwMFCEFwaWFjZWFlZGQCBw8PFgIfAwUDNS05ZGQCCQ8PFgIeB1Zpc2libGVnZGQCCw8PFgIfAwW3A0lmIHRoZSBwbGFudCBpcyBpbmZlY3RlZCB3aXRoIHRoZSBmdW5ndXMgU2NsZXJvdGluaWEgc2NsZXJvdGlvcnVtLCBza2luIGNvbnRhY3Qgd2l0aCB0aGUgc2FwIGNhbiBjYXVzZSBkZXJtYXRpdGlzIGluIHNlbnNpdGl2ZSBwZW9wbGVbNjVdLiBUaGlzIGlzIG1vcmUgbGlrZWx5IHRvIGhhcHBlbiB0byBDYXVjYXNpYW5zWzIxOF0uIEFsbGVyZ2ljIHJlc3BvbnNlcyBpbmNsdWRlIGFuYXBoeWxheGlzIGluIHNlbnNpdGl2ZSBpbmRpdmlkdWFscy4gQ3Jvc3MtYWxsZXJnZW5pY2l0eSBiZXR3ZWVuIGNlbGVyeSwgY3VjdW1iZXIsIGNhcnJvdCwgd2F0ZXJtZWxvbiBhbmQgcG9zc2libHkgYXBwbGVzLiBBdm9pZCBkdXJpbmcg"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Celery",
+      "query": "Apium graveolens",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:40:59.478475+00:00",
+      "response_hash": "00ea1128f7be1ecc8639b24a4ab3a78a6867a75c1028fd0ccf1e4f619932d9d4",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Celery",
+            "scientific_name": "Apium graveolens",
+            "genus": "Apium",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Celery\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Me"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "plant": {
+    "plant_atom": "artichoke",
+    "common_name": "Globe Artichoke",
+    "scientific_name": "Cynara cardunculus",
+    "genus": "Cynara",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Cynara cardunculus",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:11.257842+00:00",
+      "response_hash": "963b54d760aaaeeedfaac1035f26b0132327288704137214c2b4627445024508",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 3112364,
+          "scientificName": "Cynara cardunculus L.",
+          "canonicalName": "Cynara cardunculus",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=5",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 8536254,
+              "acceptedUsageKey": 7223279,
+              "scientificName": "Cynara carduncellus Willd.",
+              "canonicalName": "Cynara carduncellus",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 95,
+              "note": "Similarity: name=95; authorship=0; classification=4; rank=6; status=0; score=105",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Asterales",
+              "family": "Asteraceae",
+              "genus": "Cynara",
+              "species": "Cynara cardunculus",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 414,
+              "familyKey": 3065,
+              "genusKey": 3112344,
+              "speciesKey": 3112364,
+              "class": "Magnoliopsida"
+            },
+            {
+              "usageKey": 4241141,
+              "acceptedUsageKey": 7223279,
+              "scientificName": "Cynara carduncellus Willd. ex Steud.",
+              "canonicalName": "Cynara carduncellus",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 95,
+              "note": "Similarity: name=95; authorship=0; classification=4; rank=6; status=0; score=105",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Asterales",
+              "family": "Asteraceae",
+              "genus": "Cynara",
+              "species": "Cynara cardunculus",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 414,
+              "familyKey": 3065,
+              "genusKey": 3112344,
+              "speciesKey": 3112364,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Asterales",
+          "family": "Asteraceae",
+          "genus": "Cynara",
+          "species": "Cynara cardunculus",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 414,
+          "familyKey": 3065,
+          "genusKey": 3112344,
+          "speciesKey": 3112364,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

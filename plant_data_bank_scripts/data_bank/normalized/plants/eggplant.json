@@ -1,0 +1,278 @@
+{
+  "plant_atom": "eggplant",
+  "identity": {
+    "common_name": "Eggplant",
+    "scientific_name": "Solanum melongena",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "synonyms": [],
+    "common_names": [
+      "Aubergine",
+      "Eggplant"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "fruit",
+      "leaf"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 5.5,
+    "soil_ph_max": 6.8,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Requires a very warm, sheltered sunny position, though it succeeds in most soils[1]. Requires plenty of moisture[132], though the soil should be well-drained. Requires a pH in the range 5.5 to 6.8[200]. The aubergine is often cultivated, especially in tropical areas, for its edible fruit, there are many named varieties[183, 200]. The plant is not frost-hardy, though it can be grown as an annual in temperate zones. It can, however, be difficult to ripen the fruit from outdoor grown plants in cooler temperate climates such as Britain. In this country they are more commonly grown in a warm or cool greenhouse or in a frame. A steady temperature of 25 - 30°c is required during the growing season for the best production of flowers and fruit[200]. A short-lived perennial plant, it is usually cultivated as an annual[142, 200]. Plants should be restricted to no more than 4 fruits to make sure they reach a good size and ripen properly[33]. Plants are rarely bothered by pests or diseases[132]. Slugs, snails and caterpillars love this plant[201]. Aubergines grow well with beans, tarragon and thyme[201]. Aromatic plants such as lavender, tansy, marigolds or wormwood help to keep aphids at bay[201]. Grows badly with potatoes, onions and garlic[201].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early spring in a warm greenhouse with a minimum temperature of 15°c[200]. Prick out the seedlings into individual pots once they are large enough to handle and grow them on fast. If growing them outdoors, plant out after the last expected frosts.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Requires a very warm, sheltered sunny position, though it succeeds in most soils[1]. Requires plenty of moisture[132], though the soil should be well-drained. Requires a pH in the range 5.5 to 6.8[200]. The aubergine is often cultivated, especially in tropical areas, for its edible fruit, there are many named varieties[183, 200]. The plant is not frost-hardy, though it can be grown as an annual in temperate zones. It can, however, be difficult to ripen the fruit from outdoor grown plants in cooler temperate climates such as Britain. In this country they are more commonly grown in a warm or cool greenhouse or in a frame. A steady temperature of 25 - 30°c is required during the growing season for the best production of flowers and fruit[200]. A short-lived perennial plant, it is usually cultivated as an annual[142, 200]. Plants should be restricted to no more than 4 fruits to make sure they reach a good size and ripen properly[33]. Plants are rarely bothered by pests or diseases[132]. Slugs, snails and caterpillars love this plant[201]. Aubergines grow well with beans, tarragon and thyme[201]. Aromatic plants such as lavender, tansy, marigolds or wormwood help to keep aphids at bay[201]. Grows badly with potatoes, onions and garlic[201].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anticholesterolemic Antidote Astringent Narcotic Poultice Vitamin C The aubergine is used mainly as a food crop, but it does also have various medicinal uses that make it a valuable addition to the diet. In particular the fruit helps to lower blood cholesterol levels and is suitable as part of a diet to help regulate high blood pressure[7, 254]. The fruit is antihaemorrhoidal and hypotensive[7]. It is also used as an antidote to poisonous mushrooms[218]. It is bruised with vinegar and used as a poultice for cracked nipples, abscesses and haemorrhoids[178, 218, 254]. The leaves are narcotic[240]. A decoction is applied to discharging sores and internal haemorrhages[218]. A soothing and emollient poultice for the treatment of burns, abscesses, cold sores and similar conditions can be made from the leaves[254]. Aubergine leaves are toxic and should only be used externally[254]. The ashes of the peduncle are used in the treatment of intestinal haemorrhages, piles and toothache[218]. A decoction of the root is astringent[178, 218].",
+    "cautions": "All green parts of the plant are poisonous[19].",
+    "other_uses_notes": "None known",
+    "edible_uses_notes": "Edible Parts: Fruit Leaves Edible Uses: Fruit - raw or cooked[1, 2, 16, 27, 33]. The fruit should not be eaten raw[132]. It can be baked, stewed or added to soups, curries etc[183]. The fruit is said to be very nutritious[7]. It is a good source of vitamin C and potassium[201]. The fruit can be up to 20cm long in cultivated plants[200]. Leaves - mixed with rice bran and salt in which 'Daikon' (a form of radish [Raphanus sativa]) roots have been pickled[183]. Caution is advised, see the notes on toxicity above."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "beans",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "tarragon",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "thyme",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      }
+    ],
+    "conflicts": [
+      {
+        "plant": "potato",
+        "relationship": "grows_badly_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_badly_with' wording."
+      }
+    ],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.conflicts": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:57.741658+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Solanum+melongena",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:40:48.182019+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Eggplant",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:49.028468+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Solanum+melongena",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:28:39.691809+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Eggplant",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:28:43.801880+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=eggplant",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:28:46.802153+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.782184+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

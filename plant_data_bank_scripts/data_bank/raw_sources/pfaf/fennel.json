@@ -1,0 +1,261 @@
+{
+  "plant": {
+    "plant_atom": "fennel",
+    "common_name": "Fennel",
+    "scientific_name": "Foeniculum vulgare",
+    "genus": "Foeniculum",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Foeniculum+vulgare",
+      "query": "Foeniculum vulgare",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:41:04.327964+00:00",
+      "response_hash": "a1fd09f752bdac1a971159bcde7d4b000ac10fed5e5f4104af0990dad7355cbe",
+      "parsed": {
+        "title": "Foeniculum vulgare Fennel, Sweet fennel PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Foeniculum vulgare - Mill.",
+          "common_name": "Fennel, Sweet fennel",
+          "family": "Apiaceae",
+          "usda_hardiness": "3-10",
+          "known_hazards": "Skin contact with the sap or essential oil is said to cause photo-sensitivity and/or dermatitis in some people[218, 222]. Ingestion of the oil can cause vomiting, seizures and pulmonary oedema[222]. Avoid for small children. Avoid if cirrhosis/liver disorders. Diabetics check sugar content of preparation [301].",
+          "habitats": "Found most often in dry stony calcareous soils near the sea[1, 16, 190].",
+          "range": "S. Europe. Naturalized in Britain.",
+          "summary": "Foeniculum vulgare, Fennel has aromatic and flavorful leaves, stalks, flowers, seeds, and roots, all of which are edible. The young leaves are good raw or cooked due to their aniseed flavour. They are used as a garnish or in salads and can help improve digestion, especially with oily foods. The leaves are challenging to dry for long-term storage but can be harvested year-round in warmer, sheltered conditions. Stalks and Flower Heads are eaten raw or cooked, offering a flavour similar to the leaves. The aromatic seeds is a flavouring in various dishes such as cakes, bread, and stuffings. They improve digestion and can be added to salads or used to brew herbal tea. Roots are cooked and have a flavour reminiscent of parsnip. The leaves and seeds can be used to make a pleasant herbal tea. Fennel has been valued for centuries as a herbal remedy. It is instrumental in treating digestive disorders and can alleviate symptoms such as indigestion, bloating, and flatulence. While all parts of the plant are used, the seeds are the most potent and commonly used for medicinal purposes. Fennel prefers sunny, dry positions and grows well in sandy soils. Once established, fennel is drought-tolerant and can self-seed freely in the garden. Occasionally, cutting plants back to ground level is recommended to encourage fresh shoots and maintain a continuous harvest. Fennel attracts beneficial insects such as bees, hoverflies, and parasitic wasps, which help control garden pests naturally. Fennel and dill (Anethum graveolens) should not be grown near each other, as they may hybridise, producing seedlings with unpredictable flavours. Fennel's native range stretches from the Mediterranean to parts of Ethiopia and West Nepal. It has spread worldwide in regions including California, Arizona, South Africa, Australia, South America, India, Pakistan, and parts of Europe and Asia. Due to its adaptability and ease of growth, it has become naturalised in many of these areas. Harvesting: bulbs are harvested from late summer to early autumn, Seeds in late summer, and flowers in summer.",
+          "physical_characteristics": "Foeniculum vulgare is an evergreen Perennial growing to 1.5 m (5ft) by 1 m (3ft 3in) at a medium rate. See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender. It is in leaf all year, in flower from August to October, and the seeds ripen from September to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers dry or moist soil and can tolerate drought. The plant can tolerates strong winds but not maritime exposure.",
+          "synonyms": "Anethum dulce. Anethum foeniculum. Foeniculum divaricatum. Foeniculum officinale. Seseli foeniculum.",
+          "plant_habitats": "Meadow; Cultivated Beds;",
+          "edible_uses": "Edible Parts: Flowers Leaves Oil Root Seed Stem Edible Uses: Condiment Drink Oil Tea Leaves - raw or cooked[2, 4, 5, 9, 27]. A delicious aniseed flavour[183], the young leaves are best since older ones soon become tough[K]. They are often used as a garnish on raw or cooked dishes and make a very pleasant addition to salads[183]. They help to improve digestion and so are particularly useful with oily foods[244]. The leaves are difficult to store dried[200], though this does not really matter since they can often be harvested all year round, especially if the plants are in a warm, sheltered position[K]. Leaf stalks and flower heads - raw or cooked[14, 37, 52, 183]. A similar aniseed flavour to the leaves[K]. The aromatic seeds are used as a flavouring in cakes, bread, stuffings etc[2, 4, 5, 21, 27, 183]. They have a similar flavour to the leaves[K] and also improve the digestion[244]. The sprouted seeds can be added to salads[183]. An essential oil from the fully ripened and dried seed is used as a food flavouring in similar ways to the whole seed[1, 46, 183, 245]. Root - cooked[53]. Somewhat parsnip-like. The leaves or the seeds can be used to make a pleasant-tasting herbal tea[16, 183].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Analgesic Antiinflammatory Antispasmodic Aromatherapy Aromatic Carminative Diuretic Emmenagogue Expectorant Galactogogue Hallucinogenic Stimulant Stomachic Urinary Fennel has a long history of herbal use and is a commonly used household remedy, being useful in the treatment of a variety of complaints, especially those of the digestive system[244]. The seeds, leaves and roots can be used, but the seeds are most active medicinally and are the part normally used[4]. An essential oil is often extracted from the fully ripened and dried seed for medicinal use, though it should not be given to pregnant women[4, 238]. The plant is analgesic, anti-inflammatory, antispasmodic, aromatic, carminative, diuretic, emmenagogue, expectorant, galactogogue, hallucinogenic, laxative, stimulant and stomachic[4, 7, 9, 21, 147, 165, 176, 192, 238]. An infusion is used in the treatment of indigestion, abdominal distension, stomach pains etc[254]. It helps in the treatment of kidney stones and, when combined with a urinary disinfectant like Arctostaphylos uva-ursi, makes an effective treatment for cystitis[254]. It can also be used as a gargle for sore throats and as an eyewash for sore eyes and conjunctivitis[254]. Fennel is often added to purgatives in order to allay their tendency to cause gripe, and also to improve the flavour[4]. An infusion of the seeds is a safe and effective cure for wind in babies[244]. An infusion of the root is used to treat urinary disorders[238]. An essential oil obtained from the seed is used in aromatherapy. Its keyword is 'Normalising'[210]. The essential oil is bactericidal, carminative and stimulant[218]. Some caution is advised, see notes above on toxicity[222]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Foeniculum vulgare for cough, bronchitis, dyspeptic complaints (see [302] for critics of commission E).",
+          "other_uses": "Dye Essential Oil Repellent Strewing Agroforestry uses: Fennel can attract beneficial insects, including pollinators, and can also be used as a companion plant to deter pests. Its deep roots can help improve soil structure. The seed yields up to 5% of an essential oil[1, 4, 46]. This is used medicinally, as a food flavouring, in toothpastes, soaps, perfumery, air fresheners etc[1, 46, 238]. The flavour of fennel oil depends upon its two main constituents. 'Fenchone' is a bitter tasting element whilst 'anethole' has a sweet anise-like flavour[238]. The proportions of these two ingredients varies according to strain and region. Plants growing in the Mediterranean and southern Europe usually have a sweet oil whilst plants growing in central and northern Europe usually produce a more bitter oil[238]. The quality of the oil also depends upon how well the seed has been dried - the oil from fully ripened and dried seeds being much sweeter and more fragrant[245]. The dried plant is an insect repellent[14, 53], the crushed leaves are effective for keeping dogs free of fleas[201]. The plant was formerly used as a strewing herb[201]. Yellow and brown dyes are obtained from the flowers and leaves combined[168].",
+          "special_uses": "Attracts Wildlife Dynamic accumulator Food Forest Scented Plants",
+          "cultivation": "An easily grown plant, it succeeds in most soils but prefers a sunny dry position[4, 16, 37, 200]. It grows well in sandy soils[188] and is drought tolerant once established[190]. Plants often self-sow freely in the garden[K]. Plants can be grown in quite coarse grass, which can be cut annually in the autumn[233]. Although hardy in most parts of Britain, plants are liable to die out over the winter if the soil is not well-drained or the weather is persistently cold and wet[238]. Fennel is often cultivated in the herb garden for its edible and medicinal uses, there are some named varieties[183]. Especially in mild winters, the leaves can be available all year round[K]. It is best to cut a few plants back to ground level occasionally during the growing season, thus ensuring a constant supply of fresh young shoots[4]. In a dry summer make sure that you water the cut-down clump or it might not regrow that year[K]. Fennel is also grown commercially as a medicinal plant and for its essential oil[4, 238]. Fennel is in general a poor companion plant in the garden. It inhibits the growth of nearby plants, especially beans, tomatoes and kohl rabi[14, 18]. It is itself inhibited by wormwood and coriander[14, 18]. However, the flowering plant attracts beneficial insects such as bees, parasitic wasps, tachinid flies and hoverflies to the garden. The presence of these creatures will help to maintain a natural balance of insects in the garden and help prevent infestations by aphis etc[238]. It is best not to grow fennel and dill (Anethum graveolens) close to each other since hybridisation can occur and the resulting seedlings will be of indeterminate flavour[238]. The plant is heat tolerant in zones 9 through 6. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. Fennel bulbs are usually harvested in late summer to early autumn (August to October), while the seeds are harvested in late summer. Fennel typically flowers in summer. Fennel has a moderate growth rate and typically reaches maturity within 80 to 120 days after sowing, depending on the variety.",
+          "propagation": "Seed - best sown in early spring in situ[1]. The seed can also be sown in situ in the autumn[4, 37]. In many gardens it self sows freely. Division in March as the new growth appears[16, 200]. The plants are very tolerant of disturbance, we have found divisions to take well at any time of the year, though these divisions are never as good as seed-sown plants[K].",
+          "other_names": null,
+          "native_range": "TEMPERATE ASIA: Egypt, Georgia, Iran, Israel, Jordan, Lebanon, Sinai, Syria, Turkey,Afghanistan. TROPICAL ASIA: Pakistan, EUROPE: Ukraine (incl. Krym), Albania, Bulgaria, Bosnia and Herzegovina, Greece (incl. Crete), Croatia, Italy (incl. Sardinia, Sicily), Montenegro, Spain (incl. Baleares), France (incl. Corsica), Portugal, AFRICA: Spain, Canarias, Portugal, Madeira Islands, Algeria, Egypt, Libya, Morocco, Tunisia.",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Fennel",
+            "scientific_name": "Foeniculum vulgare",
+            "genus": "Foeniculum",
+            "family": "Apiaceae",
+            "synonyms": [
+              "Anethum dulce",
+              "Anethum foeniculum",
+              "Foeniculum divaricatum",
+              "Foeniculum officinale",
+              "Seseli foeniculum"
+            ],
+            "common_names": [
+              "Fennel",
+              "Sweet fennel"
+            ]
+          },
+          "pfaf_display_latin_name": "Foeniculum vulgare - Mill.",
+          "pfaf_common_name": "Fennel, Sweet fennel",
+          "pfaf_family": "Apiaceae",
+          "pfaf_synonyms": "Anethum dulce. Anethum foeniculum. Foeniculum divaricatum. Foeniculum officinale. Seseli foeniculum.",
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "flower",
+            "leaf",
+            "oil",
+            "root",
+            "seed",
+            "stem"
+          ],
+          "use_categories": [
+            "beverage_plant",
+            "companion_plant",
+            "culinary_herb",
+            "medicinal_plant",
+            "oil_crop",
+            "repellent_plant",
+            "root_tuber_crop"
+          ],
+          "life_cycle": "perennial",
+          "botanical_life_cycle": "perennial",
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": null,
+            "soil_notes": "An easily grown plant, it succeeds in most soils but prefers a sunny dry position[4, 16, 37, 200]. It grows well in sandy soils[188] and is drought tolerant once established[190]. Plants often self-sow freely in the garden[K]. Plants can be grown in quite coarse grass, which can be cut annually in the autumn[233]. Although hardy in most parts of Britain, plants are liable to die out over the winter if the soil is not well-drained or the weather is persistently cold and wet[238]. Fennel is often cultivated in the herb garden for its edible and medicinal uses, there are some named varieties[183]. Especially in mild winters, the leaves can be available all year round[K]. It is best to cut a few plants back to ground level occasionally during the growing season, thus ensuring a constant supply of fresh young shoots[4]. In a dry summer make sure that you water the cut-down clump or it might not regrow that year[K]. Fennel is also grown commercially as a medicinal plant and for its essential oil[4, 238]. Fennel is in general a poor companion plant in the garden. It inhibits the growth of nearby plants, especially beans, tomatoes and kohl rabi[14, 18]. It is itself inhibited by wormwood and coriander[14, 18]. However, the flowering plant attracts beneficial insects such as bees, parasitic wasps, tachinid flies and hoverflies to the garden. The presence of these creatures will help to maintain a natural balance of insects in the garden and help prevent infestations by aphis etc[238]. It is best not to grow fennel and dill (Anethum graveolens) close to each other since hybridisation can occur and the resulting seedlings will be of indeterminate flavour[238]. The plant is heat tolerant in zones 9 through 6. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. Fennel bulbs are usually harvested in late summer to early autumn (August to October), while the seeds are harvested in late summer. Fennel typically flowers in summer. Fennel has a moderate growth rate and typically reaches maturity within 80 to 120 days after sowing, depending on the variety.",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "division",
+            "seed"
+          ],
+          "propagation_notes": "Seed - best sown in early spring in situ[1]. The seed can also be sown in situ in the autumn[4, 37]. In many gardens it self sows freely. Division in March as the new growth appears[16, 200]. The plants are very tolerant of disturbance, we have found divisions to take well at any time of the year, though these divisions are never as good as seed-sown plants[K].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Foeniculum vulgare, Fennel has aromatic and flavorful leaves, stalks, flowers, seeds, and roots, all of which are edible. The young leaves are good raw or cooked due to their aniseed flavour. They are used as a garnish or in salads and can help improve digestion, especially with oily foods. The leaves are challenging to dry for long-term storage but can be harvested year-round in warmer, sheltered conditions. Stalks and Flower Heads are eaten raw or cooked, offering a flavour similar to the leaves. The aromatic seeds is a flavouring in various dishes such as cakes, bread, and stuffings. They improve digestion and can be added to salads or used to brew herbal tea. Roots are cooked and have a flavour reminiscent of parsnip. The leaves and seeds can be used to make a pleasant herbal tea. Fennel has been valued for centuries as a herbal remedy. It is instrumental in treating digestive disorders and can alleviate symptoms such as indigestion, bloating, and flatulence. While all parts of the plant are used, the seeds are the most potent and commonly used for medicinal purposes. Fennel prefers sunny, dry positions and grows well in sandy soils. Once established, fennel is drought-tolerant and can self-seed freely in the garden. Occasionally, cutting plants back to ground level is recommended to encourage fresh shoots and maintain a continuous harvest. Fennel attracts beneficial insects such as bees, hoverflies, and parasitic wasps, which help control garden pests naturally. Fennel and dill (Anethum graveolens) should not be grown near each other, as they may hybridise, producing seedlings with unpredictable flavours. Fennel's native range stretches from the Mediterranean to parts of Ethiopia and West Nepal. It has spread worldwide in regions including California, Arizona, South Africa, Australia, South America, India, Pakistan, and parts of Europe and Asia. Due to its adaptability and ease of growth, it has become naturalised in many of these areas. Harvesting: bulbs are harvested from late summer to early autumn, Seeds in late summer, and flowers in summer.",
+          "edible_uses_notes": "Edible Parts: Flowers Leaves Oil Root Seed Stem Edible Uses: Condiment Drink Oil Tea Leaves - raw or cooked[2, 4, 5, 9, 27]. A delicious aniseed flavour[183], the young leaves are best since older ones soon become tough[K]. They are often used as a garnish on raw or cooked dishes and make a very pleasant addition to salads[183]. They help to improve digestion and so are particularly useful with oily foods[244]. The leaves are difficult to store dried[200], though this does not really matter since they can often be harvested all year round, especially if the plants are in a warm, sheltered position[K]. Leaf stalks and flower heads - raw or cooked[14, 37, 52, 183]. A similar aniseed flavour to the leaves[K]. The aromatic seeds are used as a flavouring in cakes, bread, stuffings etc[2, 4, 5, 21, 27, 183]. They have a similar flavour to the leaves[K] and also improve the digestion[244]. The sprouted seeds can be added to salads[183]. An essential oil from the fully ripened and dried seed is used as a food flavouring in similar ways to the whole seed[1, 46, 183, 245]. Root - cooked[53]. Somewhat parsnip-like. The leaves or the seeds can be used to make a pleasant-tasting herbal tea[16, 183].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Analgesic Antiinflammatory Antispasmodic Aromatherapy Aromatic Carminative Diuretic Emmenagogue Expectorant Galactogogue Hallucinogenic Stimulant Stomachic Urinary Fennel has a long history of herbal use and is a commonly used household remedy, being useful in the treatment of a variety of complaints, especially those of the digestive system[244]. The seeds, leaves and roots can be used, but the seeds are most active medicinally and are the part normally used[4]. An essential oil is often extracted from the fully ripened and dried seed for medicinal use, though it should not be given to pregnant women[4, 238]. The plant is analgesic, anti-inflammatory, antispasmodic, aromatic, carminative, diuretic, emmenagogue, expectorant, galactogogue, hallucinogenic, laxative, stimulant and stomachic[4, 7, 9, 21, 147, 165, 176, 192, 238]. An infusion is used in the treatment of indigestion, abdominal distension, stomach pains etc[254]. It helps in the treatment of kidney stones and, when combined with a urinary disinfectant like Arctostaphylos uva-ursi, makes an effective treatment for cystitis[254]. It can also be used as a gargle for sore throats and as an eyewash for sore eyes and conjunctivitis[254]. Fennel is often added to purgatives in order to allay their tendency to cause gripe, and also to improve the flavour[4]. An infusion of the seeds is a safe and effective cure for wind in babies[244]. An infusion of the root is used to treat urinary disorders[238]. An essential oil obtained from the seed is used in aromatherapy. Its keyword is 'Normalising'[210]. The essential oil is bactericidal, carminative and stimulant[218]. Some caution is advised, see notes above on toxicity[222]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Foeniculum vulgare for cough, bronchitis, dyspeptic complaints (see [302] for critics of commission E).",
+          "other_uses_notes": "Dye Essential Oil Repellent Strewing Agroforestry uses: Fennel can attract beneficial insects, including pollinators, and can also be used as a companion plant to deter pests. Its deep roots can help improve soil structure. The seed yields up to 5% of an essential oil[1, 4, 46]. This is used medicinally, as a food flavouring, in toothpastes, soaps, perfumery, air fresheners etc[1, 46, 238]. The flavour of fennel oil depends upon its two main constituents. 'Fenchone' is a bitter tasting element whilst 'anethole' has a sweet anise-like flavour[238]. The proportions of these two ingredients varies according to strain and region. Plants growing in the Mediterranean and southern Europe usually have a sweet oil whilst plants growing in central and northern Europe usually produce a more bitter oil[238]. The quality of the oil also depends upon how well the seed has been dried - the oil from fully ripened and dried seeds being much sweeter and more fragrant[245]. The dried plant is an insect repellent[14, 53], the crushed leaves are effective for keeping dogs free of fleas[201]. The plant was formerly used as a strewing herb[201]. Yellow and brown dyes are obtained from the flowers and leaves combined[168].",
+          "cultivation_notes": "An easily grown plant, it succeeds in most soils but prefers a sunny dry position[4, 16, 37, 200]. It grows well in sandy soils[188] and is drought tolerant once established[190]. Plants often self-sow freely in the garden[K]. Plants can be grown in quite coarse grass, which can be cut annually in the autumn[233]. Although hardy in most parts of Britain, plants are liable to die out over the winter if the soil is not well-drained or the weather is persistently cold and wet[238]. Fennel is often cultivated in the herb garden for its edible and medicinal uses, there are some named varieties[183]. Especially in mild winters, the leaves can be available all year round[K]. It is best to cut a few plants back to ground level occasionally during the growing season, thus ensuring a constant supply of fresh young shoots[4]. In a dry summer make sure that you water the cut-down clump or it might not regrow that year[K]. Fennel is also grown commercially as a medicinal plant and for its essential oil[4, 238]. Fennel is in general a poor companion plant in the garden. It inhibits the growth of nearby plants, especially beans, tomatoes and kohl rabi[14, 18]. It is itself inhibited by wormwood and coriander[14, 18]. However, the flowering plant attracts beneficial insects such as bees, parasitic wasps, tachinid flies and hoverflies to the garden. The presence of these creatures will help to maintain a natural balance of insects in the garden and help prevent infestations by aphis etc[238]. It is best not to grow fennel and dill (Anethum graveolens) close to each other since hybridisation can occur and the resulting seedlings will be of indeterminate flavour[238]. The plant is heat tolerant in zones 9 through 6. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. Fennel bulbs are usually harvested in late summer to early autumn (August to October), while the seeds are harvested in late summer. Fennel typically flowers in summer. Fennel has a moderate growth rate and typically reaches maturity within 80 to 120 days after sowing, depending on the variety.",
+          "known_hazards": "Skin contact with the sap or essential oil is said to cause photo-sensitivity and/or dermatitis in some people[218, 222]. Ingestion of the oil can cause vomiting, seizures and pulmonary oedema[222]. Avoid for small children. Avoid if cirrhosis/liver disorders. Diabetics check sugar content of preparation [301].",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting."
+            ]
+          }
+        },
+        "page_text_excerpt": "Foeniculum vulgare Fennel, Sweet fennel PFAF Plant Database Follow Us: Foeniculum vulgare - Mill. Common Name Fennel, Sweet fennel Family Apiaceae USDA hardiness 3-10 Known Hazards Skin contact with the sap or essential oil is said to cause photo-sensitivity and/or dermatitis in some people[218, 222]. Ingestion of the oil can cause vomiting, seizures and pulmonary oedema[222]. Avoid for small children. Avoid if cirrhosis/liver disorders. Diabetics check sugar content of preparation [301]. Habitats Found most often in dry stony calcareous soils near the sea[1, 16, 190]. Range S. Europe. Naturalized in Britain. Edibility Rating (5 of 5) Other Uses (4 of 5) Weed Potential Yes Medicinal Rating (3 of 5) Care (info) http://commons.wikimedia.org/wiki/File:Finocchio.jpg Translate this page: Summary Foeniculum vulgare, Fennel has aromatic and flavorful leaves, stalks, flowers, seeds, and roots, all of which are edible. The young leaves are good raw or cooked due to their aniseed flavour. They are used as a garnish or in salads and can help improve digestion, especially with oily foods. The leaves are challenging to dry for long-term storage but can be harvested year-round in warmer, sheltered conditions. Stalks and Flower Heads are eaten raw or cooked, offering a flavour similar to the leaves. The aromatic seeds is a flavouring in various dishes such as cakes, bread, and stuffings. They improve digestion and can be added to salads or used to brew herbal tea. Roots are cooked and have a flavour reminiscent of parsnip. The leaves and seeds can be used to make a pleasant herbal tea. Fennel has been valued for centuries as a herbal remedy. It is instrumental in treating digestive disorders and can alleviate symptoms such as indigestion, bloating, and flatulence. While all parts of the plant are used, the seeds are the most potent and commonly used for medicinal purposes. Fennel prefers sunny, dry positions and grows well in sandy soils. Once established, fennel is drought-tolerant and can self-seed freely in the garden. Occasionally, cutting plants back to ground level is recommended to encourage fresh shoots and maintain a continuous harvest. Fennel attracts beneficial insects such as bees, hoverflies, and parasitic wasps, which help control garden pests naturally. Fennel and dill (Anethum graveolens) should not be grown near each other, as they may hybridise, producing seedlings with unpredictable flavours. Fennel's native range stretches from the Mediterranean to parts of Ethiopia and West Nepal. It has spread worldwide in regions including California, Arizona, South Africa, Australia, South America, India, Pakistan, and parts of Europe and Asia. Due to its adaptability and ease of growth, it has become naturalised in many of these areas. Harvesting: bulbs are harvested from late summer to early autumn, Seeds in late summer, and flowers in summer. Physical Characteristics Foeniculum vulgare is an evergreen Perennial growing to 1.5 m (5ft) by 1 m (3ft 3in) "
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tFoeniculum vulgare Fennel, Sweet fennel PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Foeniculum vulgare is an evergreen Perennial growing to 1.5 m (5ft) by 1 m (3ft&amp;nbsp;3in) at a medium rate.  See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender. It is in leaf all year, in flower from August to October, and the seeds ripen from September to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. It is noted for attracting wildlife.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers  well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers dry or  moist soil and can tolerate drought. The plant can tolerates strong winds but not maritime exposure.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Foeniculum+vulgare\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BYAGRm9lbmljdWx1bSB2dWxnYXJlIGlzIGFuIGV2ZXJncmVlbiBQZXJlbm5pYWwgZ3Jvd2luZyB0byAxLjUgbSAoNWZ0KSBieSAxIG0gKDNmdCZuYnNwOzNpbikgYXQgYSBtZWRpdW0gcmF0ZS4gIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgNSBhbmQgaXMgbm90IGZyb3N0IHRlbmRlci4gSXQgaXMgaW4gbGVhZiBhbGwgeWVhciwgaW4gZmxvd2VyIGZyb20gQXVndXN0IHRvIE9jdG9iZXIsIGFuZCB0aGUgc2VlZHMgcmlwZW4gZnJvbSBTZXB0ZW1iZXIgdG8gT2N0b2Jlci4gVGhlIHNwZWNpZXMgaXMgaGVybWFwaHJvZGl0ZSAoaGFzIGJvdGggbWFsZSBhbmQgZmVtYWxlIG9yZ2FucykgYW5kIGlzIHBvbGxpbmF0ZWQgYnkgSW5zZWN0cy4gVGhlIHBsYW50IGlzIHNlbGYtZmVydGlsZS4gSXQgaXMgbm90ZWQgZm9yIGF0dHJhY3Rpbmcgd2lsZGxpZmUuICBTdWl0YWJsZSBmb3I6IGxpZ2h0IChzYW5keSksIG1lZGl1bSAobG9hbXkpIGFuZCBoZWF2eSAoY2xheSkgc29pbHMgYW5kIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsLiBTdWl0YWJsZSBwSDogbWlsZGx5IGFjaWQsIG5ldXRyYWwgYW5kIGJhc2ljIChtaWxkbHkgYWxrYWxpbmUpIHNvaWxzLiBJdCBjYW5ub3QgZ3JvdyBpbiB0aGUgc2hhZGUuIEl0IHByZWZlcnMgZHJ5IG9yICBtb2lzdCBzb2lsIGFuZCBjYW4gdG9sZXJhdGUgZHJvdWdodC4gVGhlIHBsYW50IGNhbiB0b2xlcmF0ZXMgc3Ryb25nIHdpbmRzIGJ1dCBub3QgbWFyaXRpbWUgZXhwb3N1cmUuZAIDD2QWAgIDD2QWZAIBDw8WAh4EVGV4dAUaRm9lbmljdWx1bSB2dWxnYXJlIC0gTWlsbC5kZAIDDw8WAh8DBRRGZW5uZWwsIFN3ZWV0IGZlbm5lbGRkAgUPDxYCHwMFCEFwaWFjZWFlZGQCBw8PFgIfAwUEMy0xMGRkAgkPDxYCHgdWaXNpYmxlZ2RkAgsPDxYCHwMFuAJTa2luIGNvbnRhY3Qgd2l0aCB0aGUgc2FwIG9yIGVzc2VudGlhbCBvaWwgaXMgc2FpZCB0byBjYXVzZSBwaG90by1zZW5zaXRpdml0eSBhbmQvb3Ig"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Fennel",
+      "query": "Foeniculum vulgare",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:41:05.425323+00:00",
+      "response_hash": "a6a303028627f089531e4f55af4a2876a8c4a068e054d14c151027b74a177904",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Fennel",
+            "scientific_name": "Foeniculum vulgare",
+            "genus": "Foeniculum",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Fennel\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Me"
+    }
+  ]
+}
