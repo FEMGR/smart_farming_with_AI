@@ -1,0 +1,550 @@
+{
+  "aloe_vera": {
+    "edible_parts": [
+      "leaf",
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant"
+    ]
+  },
+  "apple": {
+    "edible_parts": [
+      "fruit",
+      "oil"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop"
+    ]
+  },
+  "artichoke": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "root",
+      "stem"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "arugula": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant"
+    ]
+  },
+  "basil": {
+    "edible_parts": [
+      "leaf",
+      "seed"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "bean_common": {
+    "edible_parts": [
+      "leaf",
+      "seed"
+    ],
+    "use_categories": [
+      "culinary_herb",
+      "medicinal_plant"
+    ]
+  },
+  "blackberry": {
+    "edible_parts": [
+      "fruit",
+      "leaf",
+      "root",
+      "stem"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "fruit_crop",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "cabbage": {
+    "edible_parts": [
+      "leaf"
+    ],
+    "use_categories": [
+      "medicinal_plant"
+    ]
+  },
+  "carrot": {
+    "edible_parts": [
+      "flower",
+      "root"
+    ],
+    "use_categories": [
+      "culinary_herb",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "celery": {
+    "edible_parts": [
+      "leaf",
+      "root",
+      "seed"
+    ],
+    "use_categories": [
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "cucumber": {
+    "edible_parts": [
+      "fruit",
+      "leaf",
+      "oil",
+      "seed"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant"
+    ]
+  },
+  "dandelion": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "root"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "eggplant": {
+    "edible_parts": [
+      "fruit",
+      "leaf"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ]
+  },
+  "fennel": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "oil",
+      "root",
+      "seed",
+      "stem"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "fig": {
+    "edible_parts": [
+      "fruit"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ]
+  },
+  "ginger": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "oil",
+      "root",
+      "stem"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "oil_crop",
+      "root_tuber_crop"
+    ]
+  },
+  "gotu_kola": {
+    "edible_parts": [
+      "leaf"
+    ],
+    "use_categories": [
+      "medicinal_plant"
+    ]
+  },
+  "grape": {
+    "edible_parts": [
+      "flower",
+      "fruit",
+      "leaf",
+      "oil",
+      "stem"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop"
+    ]
+  },
+  "lavender": {
+    "edible_parts": [
+      "flower",
+      "leaf"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "lemon_balm": {
+    "edible_parts": [
+      "leaf"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "lentil": {
+    "edible_parts": [
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant"
+    ]
+  },
+  "lettuce": {
+    "edible_parts": [
+      "leaf",
+      "oil",
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop"
+    ]
+  },
+  "melon": {
+    "edible_parts": [
+      "fruit",
+      "oil",
+      "seed"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop"
+    ]
+  },
+  "moringa": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "oil",
+      "root",
+      "seed",
+      "stem"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "oil_crop",
+      "root_tuber_crop"
+    ]
+  },
+  "onion": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "root",
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "repellent_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "oregano": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "stem"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "parsley": {
+    "edible_parts": [
+      "leaf"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "pea": {
+    "edible_parts": [
+      "leaf",
+      "seed",
+      "stem"
+    ],
+    "use_categories": [
+      "companion_plant",
+      "medicinal_plant"
+    ]
+  },
+  "peanut": {
+    "edible_parts": [
+      "leaf",
+      "oil",
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop"
+    ]
+  },
+  "pear": {
+    "edible_parts": [
+      "fruit"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "peppermint": {
+    "edible_parts": [
+      "leaf"
+    ],
+    "use_categories": [
+      "culinary_herb",
+      "medicinal_plant"
+    ]
+  },
+  "potato": {
+    "edible_parts": [
+      "root"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "pumpkin": {
+    "edible_parts": [
+      "flower",
+      "fruit",
+      "leaf",
+      "oil",
+      "root",
+      "seed"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop",
+      "root_tuber_crop"
+    ]
+  },
+  "radish": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "oil",
+      "root",
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "raspberry": {
+    "edible_parts": [
+      "fruit",
+      "root",
+      "stem"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "fruit_crop",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "sage": {
+    "edible_parts": [
+      "flower",
+      "leaf"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "soybean": {
+    "edible_parts": [
+      "leaf",
+      "oil",
+      "seed"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant"
+    ]
+  },
+  "spearmint": {
+    "edible_parts": [
+      "leaf"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "strawberry": {
+    "edible_parts": [
+      "fruit",
+      "leaf"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ]
+  },
+  "sunflower": {
+    "edible_parts": [
+      "flower",
+      "oil",
+      "seed",
+      "stem"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop"
+    ]
+  },
+  "sweet_potato": {
+    "edible_parts": [
+      "leaf",
+      "root",
+      "stem"
+    ],
+    "use_categories": [
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
+  },
+  "thyme": {
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "stem"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ]
+  },
+  "tomato": {
+    "edible_parts": [
+      "fruit",
+      "oil",
+      "seed"
+    ],
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant"
+    ]
+  },
+  "watermelon": {
+    "edible_parts": [
+      "fruit",
+      "leaf",
+      "oil",
+      "seed"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop"
+    ]
+  },
+  "zucchini": {
+    "edible_parts": [
+      "flower",
+      "fruit",
+      "leaf",
+      "oil",
+      "root",
+      "seed"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "oil_crop",
+      "root_tuber_crop"
+    ]
+  }
+}

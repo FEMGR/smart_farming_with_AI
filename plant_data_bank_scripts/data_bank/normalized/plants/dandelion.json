@@ -1,0 +1,264 @@
+{
+  "plant_atom": "dandelion",
+  "identity": {
+    "common_name": "Dandelion",
+    "scientific_name": "Taraxacum officinale",
+    "genus": "Taraxacum",
+    "family": "Asteraceae",
+    "synonyms": [],
+    "common_names": [
+      "Common dandelion",
+      "Dandelion",
+      "Kanphool",
+      "Kukraundha"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ],
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "root"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "A very easily grown plant, it succeeds in most soils[1], though it prefers a well-drained humus-rich neutral to alkaline soil in full sun or light shade[37, 238]. A very hardy plant, tolerating temperatures down to at least -29°c[238]. The dandelion is a common weed of lawns and grassy places. Though it has a bitter flavour, the plant is often cultivated as a salad crop and as a medicinal plant, especially in parts of Europe. There are some named varieties with larger, more tender and less bitter leaves[183]. Dandelions can provide edible leaves all year round, especially if they are given a small amount of protection in the winter[K]. A valuable bee plant and an important food plant for the caterpillars of many butterfly and moth species[4, 24, 30, 54], it grows well in a spring meadow[24]. A deep rooting plant, it has roots up to 1 metre long and brings up nutrients from lower levels of the soil[201]. An excellent plant to grow in lawns, if the lawn is cut no more than fortnightly then the dandelions will provide a good quantity of edible leaves[K]. Grows well with alfalfa[18, 201]. Another report says that it inhibits the growth of nearby plants[54]. This is probably a reference to the fact that the plant gives off ethylene gas, this gas is a hormone that promotes the premature ripening of fruits and also induces the premature fruiting of plants, thereby stunting their growth[14, 18]. T. officinale is not a valid name for this species, but no valid name has as yet been ascribed to it[200]. This is actually an aggregate species of many hundreds of slightly differing species. Most seed production is apomictic which means that plants produce seed non-sexually and all seedlings are clones of the parent, thus small differences are maintained. Special Features:Edible, Not North American native, Invasive, Naturalizing, Suitable for dried flowers, Extended bloom season in Zones 9A and above. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. The leaves can be harvested in early spring to late autumn (March to November, Northern Hemisphere), while the roots are typically harvested in late autumn (September to November). Dandelions typically flower from early spring to early summer (April to June, Northern Hemisphere). Dandelions grow rapidly and can establish themselves within a few weeks, often appearing shortly after the last frost in spring.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "division",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring in a cold frame and either surface-sow or only just cover the seed. Make sure the compost does not dry out. Germination should take place within 2 weeks, though 2 weeks cold stratification may improve germination. Prick out the seedlings into individual pots when they are large enough to handle, choosing relatively deep pots to accommodate the tap root. Plant them out in early summer. Division in early spring as the plant comes into growth.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "A very easily grown plant, it succeeds in most soils[1], though it prefers a well-drained humus-rich neutral to alkaline soil in full sun or light shade[37, 238]. A very hardy plant, tolerating temperatures down to at least -29°c[238]. The dandelion is a common weed of lawns and grassy places. Though it has a bitter flavour, the plant is often cultivated as a salad crop and as a medicinal plant, especially in parts of Europe. There are some named varieties with larger, more tender and less bitter leaves[183]. Dandelions can provide edible leaves all year round, especially if they are given a small amount of protection in the winter[K]. A valuable bee plant and an important food plant for the caterpillars of many butterfly and moth species[4, 24, 30, 54], it grows well in a spring meadow[24]. A deep rooting plant, it has roots up to 1 metre long and brings up nutrients from lower levels of the soil[201]. An excellent plant to grow in lawns, if the lawn is cut no more than fortnightly then the dandelions will provide a good quantity of edible leaves[K]. Grows well with alfalfa[18, 201]. Another report says that it inhibits the growth of nearby plants[54]. This is probably a reference to the fact that the plant gives off ethylene gas, this gas is a hormone that promotes the premature ripening of fruits and also induces the premature fruiting of plants, thereby stunting their growth[14, 18]. T. officinale is not a valid name for this species, but no valid name has as yet been ascribed to it[200]. This is actually an aggregate species of many hundreds of slightly differing species. Most seed production is apomictic which means that plants produce seed non-sexually and all seedlings are clones of the parent, thus small differences are maintained. Special Features:Edible, Not North American native, Invasive, Naturalizing, Suitable for dried flowers, Extended bloom season in Zones 9A and above. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. The leaves can be harvested in early spring to late autumn (March to November, Northern Hemisphere), while the roots are typically harvested in late autumn (September to November). Dandelions typically flower from early spring to early summer (April to June, Northern Hemisphere). Dandelions grow rapidly and can establish themselves within a few weeks, often appearing shortly after the last frost in spring.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Aperient Cholagogue Depurative Diuretic Eczema Hepatic Hypoglycaemic Laxative Miscellany Stomachic Tonic Urinary Vitamin C Warts The dandelion is a commonly used herbal remedy. It is especially effective and valuable as a diuretic because it contains high levels of potassium salts and therefore can replace the potassium that is lost from the body when diuretics are used[238]. All parts of the plant, but especially the root, are slightly aperient, cholagogue, depurative, strongly diuretic, hepatic, laxative, stomachic and tonic[4, 7, 9, 21, 54, 165, 176, 222, 238]. The root is also experimentally cholagogue, hypoglycaemic and a weak antibiotic against yeast infections[222]. The dried root has a weaker action[222]. The roots can be used fresh or dried and should be harvested in the autumn when 2 years old[4]. The leaves are harvested in the spring when the plant is in flower and can be dried for later use[9]. A tea can be made from the leaves or, more commonly, from the roots[213]. The plant is used internally in the treatment of gall bladder and urinary disorders, gallstones, jaundice, cirrhosis, dyspepsia with constipation, oedema associated with high blood pressure and heart weakness, chronic joint and skin complaints, gout, eczema and acne[238]. The plant has an antibacterial action, inhibiting the growth of Staphylococcus aureus, Pneumococci, Meningococci, Bacillus dysenteriae, B. typhi, C. diphtheriae, Proteus etc[176]. The latex contained in the plant sap can be used to remove corns, warts and verrucae[7]. The latex has a specific action on inflammations of the gall bladder and is also believed to remove stones in the liver[7]. A tea made from the leaves is laxative[222]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Taraxacum officinale for dyspepsia, urnary tract infections, liver and gallbladder complaints, appetite loss (see [302] for critics of commission E).",
+    "cautions": "This plant has been mentioned in various books on poisonous plants but any possible toxins will be of very low concentration and toxicity[10]. There are reports that some people have suffered dermatitis as a result of touching the plant, this is probably caused by the latex in the leaves and stems[222].",
+    "other_uses_notes": "Compost Cosmetic Dye Fruit ripening Latex Miscellany Agroforestry uses: Dandelions are valuable for soil improvement and can serve as a ground cover. They attract pollinators and beneficial insects. Their deep taproots help aerate the soil. The flowers are an ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. A liquid plant feed can be made from the root and leaves[54]. A low quality latex, which can be used for making rubber, can be obtained from the roots of this plant. A magenta-brown dye is obtained from the root[141]. The plant releases ethylene gas, this stunts the growth of nearby plants and causes premature ripening of fruits[14, 18]. A distilled water made from the ligules (thin appendages at the base of the leaf blades) is used cosmetically to clear the skin and is particularly effective in fading freckles[7]. A dynamic accumulator gathering minerals or nutrients from the soil and storing them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Dandelion flowers are rich in nectar and pollen, making them an excellent food source for bees and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Dandelions provide food through their leaves and flowers, which are edible for humans and wildlife. The seeds can also serve as food for birds. The leaf litter can offer some shelter for small insects. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Dandelions can provide overwintering sites in their leaf litter, and their presence in the garden can support a range of beneficial insects. 4. Pest Confuser (Smell): No – Dandelions do not have a strong smell that would effectively confuse pests.",
+    "edible_uses_notes": "Edible Parts: Flowers Leaves Root Edible Uses: Coffee Tea Leaves - raw or cooked[1, 2, 4, 5, 7, 9, 12, 14, 33, 154]. When used in salads, they are rather bitter, though less so in the winter. Tender young leaves are considerably less bitter than older leaves[K]. The leaves are often blanched (by excluding light from the growing plant) before use[183]. This will make them less bitter, but they will also contain less vitamins and minerals[K]. A very nutritious food, 100g of the raw leaves contain about 2.7g. protein, 9.2g. carbohydrate, 187mg Calcium, 66mg phosphorus, 3.1mg iron, 76mg sodium, 397mg potassium, 36mg magnesium, 14000iu vitamin A, 0.19mg vitamin B1, 0.26mg vitamin B2, 35mg vitamin C[173]. Root - raw or cooked[5, 9, 12, 183]. Bitter. A turnip-like flavour[159]. Flowers - raw or cooked[102, 159]. A rather bitter flavour[K], the unopened flower buds can be used in fritters[183] and they can also be preserved in vinegar and used like capers[7]. Both the leaves and the roots are used to flavour herbal beers and soft drinks such as 'Dandelion and Burdock'[238]. The roots of 2 year old plants are harvested in the autumn, dried and roasted to make a very good coffee substitute[2, 4, 5, 12, 54, 159]. It is caffeine-free[213]. A pleasant tea is made from the flowers[12, 102]. They are also used to make wine - all green parts should be removed when making wine to prevent a bitter flavour[238]. The leaves and the roots can also be used to make tea."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "alfalfa",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:12.316679+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Taraxacum+officinale",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:13.656688+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Dandelion",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:14.158300+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Taraxacum+officinale",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:30:48.984723+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Dandelion",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:30:52.631050+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=dandelion",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:30:55.946590+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.822539+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

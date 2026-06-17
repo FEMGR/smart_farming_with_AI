@@ -1517,3 +1517,16 @@ genus(moss_rose, portulaca).
 family(moss_rose, portulacaceae).
 taxonomy_confidence(moss_rose, high).
 taxonomy_source(moss_rose, 'Kew POWO / USDA PLANTS / WFO cross-check').
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_taxonomy
+% Review before editing manually.
+% =========================================================
+
+accepted_scientific_name(gotu_kola, 'Centella asiatica').
+alternate_scientific_name(gotu_kola, 'Hydrocotyle asiatica').
+genus(gotu_kola, centella).
+family(gotu_kola, apiaceae).
+taxonomy_confidence(gotu_kola, high).
+taxonomy_source(gotu_kola, 'GBIF / Plants For A Future').

@@ -1,0 +1,264 @@
+{
+  "plant": {
+    "plant_atom": "lettuce",
+    "common_name": "Lettuce",
+    "scientific_name": "Lactuca sativa",
+    "genus": "Lactuca",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa",
+      "query": "Lactuca sativa",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:41:08.599677+00:00",
+      "response_hash": "cfde1b370941cf8db612281af009a60173a3600b9c0de53bfc323a8f688c650f",
+      "parsed": {
+        "title": "Lactuca sativa Lettuce, Garden lettuce PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Lactuca sativa - L.",
+          "common_name": "Lettuce, Garden lettuce",
+          "family": "Asteraceae",
+          "usda_hardiness": "5-9",
+          "known_hazards": "The mature plant is mildly toxic[13].",
+          "habitats": "Not known in the wild.",
+          "range": "Of garden origin, probably derived from L. serriola.",
+          "summary": null,
+          "physical_characteristics": "Lactuca sativa is a ANNUAL/BIENNIAL growing to 0.9 m (3ft) by 0.3 m (1ft in). See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender. It is in flower from July to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Flies. The plant is self-fertile. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil.",
+          "synonyms": null,
+          "plant_habitats": "Cultivated Beds;",
+          "edible_uses": "Edible Parts: Leaves Oil Seed Edible Uses: Oil Leaves - raw or cooked[7, 37]. A mild slightly sweet flavour with a crisp texture, lettuce is a very commonly used salad leaf and can also be cooked as a potherb or be added to soups etc[183]. A nutritional analysis is available[218]. Seed - sprouted and used in salads or sandwiches[183]. An edible oil is obtained from the seed[7]. The seed is very small, extraction of the oil on any scale would not be very feasible[K].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anaphrodisiac Anodyne Antispasmodic Carminative Diuretic Emollient Expectorant Febrifuge Galactogogue Hypnotic Hypoglycaemic Narcotic Parasiticide Parasiticide Sedative The whole plant is rich in a milky sap that flows freely from any wounds. This hardens and dries when in contact with the air[4]. The sap contains 'lactucarium', which is used in medicine for its anodyne, antispasmodic, digestive, diuretic, hypnotic, narcotic and sedative properties[9, 21, 46, 165, 192, 213, 238]. Lactucarium has the effects of a feeble opium, but without its tendency to cause digestive upsets[4], nor is it addictive[7]. It is taken internally in the treatment of insomnia, anxiety, neuroses, hyperactivity in children, dry coughs, whooping cough, rheumatic pain etc[238]. Concentrations of lactucarium are low in young plants and most concentrated when the plant comes into flower[238]. It is collected commercially by cutting the heads of the plants and scraping the juice into china vessels several times a day until the plant is exhausted[4]. The cultivated lettuce does not contain as much lactucarium as the wild species, most being produced when the plant is in flower[4]. An infusion of the fresh or dried flowering plant can also be used[9]. The plant should be used with caution, and never without the supervision of a skilled practitioner. Even normal doses can cause drowsiness whilst excess causes restlessness[238] and overdoses can cause death through cardiac paralysis[7, 9]. Some physicians believe that any effects of this medicine are caused by the mind of the patient rather than by the medicine[213]. The sap has also been applied externally in the treatment of warts[222]. The seed is anodyne and galactogogue[218]. Lettuce has acquired a folk reputation as an anaphrodisiac, anodyne, carminative, diuretic, emollient, febrifuge, hypoglycaemic, hypnotic, narcotic, parasiticide and sedative[218].",
+          "other_uses": "Hair Oil Parasiticide Parasiticide Parasiticide[178]. No further details are given, but it is probably the sap of flowering plants that is used. The seed is said to be used to make hair grow on scar tissue[218].",
+          "special_uses": "Food Forest",
+          "cultivation": "Prefers a light sandy loam[1]. Succeeds in most well-drained, humus-rich soils but dislikes acid conditions[1, 16]. Plants strongly dislike dry conditions, quickly running to seed in such a situation. Early and late sowings are best in a sunny position, but summer crops are best given a position with some shade in order to slow down the plants tendency to go to seed and to prevent the leaves becoming bitter[18, 20]. The garden lettuce is widely cultivated in many parts of the world for its edible leaves and is probably the most commonly grown salad plant. There are many named varieties[183] capable of providing fresh leaves throughout the year if winter protection is given in temperate areas. Over the centuries a number of more or less distinct forms have arisen in cultivation. These forms have been classified as follows. They are treated separately in more detail:- L. sativa angustana. L.H.Bailey. is the Celtuce. The leaves of this form are not of such good quality as the other lettuces and the plant is grown more for its thick central stem which is used in the same ways as celery[1]. L. sativa capitata. L. is the heading lettuce, it forms a heart in a similar way to cabbages. Examples of this include the Iceberg and Butterhead lettuces. L. sativa crispa. L. is the curled or leaf lettuce. This does not form a central heart but produces a loose rosette of basal leaves. It can be harvested on a cut and come again basis. L. sativa longifolia Lam. is the cos lettuce. This has longer, thinner leaves and a more erect habit, it does not form a compact heart. Lettuces are quite a problematic crop to grow. They require quite a lot of attention to protect them from pests such as slugs, aphids and birds. If the weather is hot and dry the plants tend to run very quickly to seed, developing a bitter flavour as they do so. In wet weather they are likely to develop fungal diseases. In addition, the seed needs to be sown at regular intervals of 2- 3 weeks during the growing season in order to provide a regular supply of leaves. Lettuces make a good companion plant for strawberries, carrots, radishes and onions[18, 20, 201]. They also grow well with cucumbers, cabbages and beetroot[201].",
+          "propagation": "Seed - sow a small quantity of seed in situ every 2 or 3 weeks from March (with protection in cooler areas) to June and make another sowing in August/September for a winter/spring crop. Only just cover the seed. Germination is usually rapid and good, thin the plants if necessary, these thinnings can be transplanted to produce a slightly later crop (but they will need to be well watered in dry weather). More certain winter crops can be obtained by sowing in a frame in September/October and again in January/February.",
+          "other_names": null,
+          "native_range": "Coming Soon",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Garden lettuce",
+            "scientific_name": "Lactuca sativa",
+            "genus": "Lactuca",
+            "family": "Asteraceae",
+            "synonyms": [],
+            "common_names": [
+              "Garden lettuce",
+              "Lettuce"
+            ]
+          },
+          "pfaf_display_latin_name": "Lactuca sativa - L.",
+          "pfaf_common_name": "Lettuce, Garden lettuce",
+          "pfaf_family": "Asteraceae",
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "leaf",
+            "oil",
+            "seed"
+          ],
+          "use_categories": [
+            "medicinal_plant",
+            "oil_crop"
+          ],
+          "life_cycle": "annual",
+          "botanical_life_cycle": null,
+          "crop_life_cycle": "annual",
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun",
+              "partial_shade"
+            ],
+            "soil_type": [
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": null,
+            "soil_notes": "Prefers a light sandy loam[1]. Succeeds in most well-drained, humus-rich soils but dislikes acid conditions[1, 16]. Plants strongly dislike dry conditions, quickly running to seed in such a situation. Early and late sowings are best in a sunny position, but summer crops are best given a position with some shade in order to slow down the plants tendency to go to seed and to prevent the leaves becoming bitter[18, 20]. The garden lettuce is widely cultivated in many parts of the world for its edible leaves and is probably the most commonly grown salad plant. There are many named varieties[183] capable of providing fresh leaves throughout the year if winter protection is given in temperate areas. Over the centuries a number of more or less distinct forms have arisen in cultivation. These forms have been classified as follows. They are treated separately in more detail:- L. sativa angustana. L.H.Bailey. is the Celtuce. The leaves of this form are not of such good quality as the other lettuces and the plant is grown more for its thick central stem which is used in the same ways as celery[1]. L. sativa capitata. L. is the heading lettuce, it forms a heart in a similar way to cabbages. Examples of this include the Iceberg and Butterhead lettuces. L. sativa crispa. L. is the curled or leaf lettuce. This does not form a central heart but produces a loose rosette of basal leaves. It can be harvested on a cut and come again basis. L. sativa longifolia Lam. is the cos lettuce. This has longer, thinner leaves and a more erect habit, it does not form a compact heart. Lettuces are quite a problematic crop to grow. They require quite a lot of attention to protect them from pests such as slugs, aphids and birds. If the weather is hot and dry the plants tend to run very quickly to seed, developing a bitter flavour as they do so. In wet weather they are likely to develop fungal diseases. In addition, the seed needs to be sown at regular intervals of 2- 3 weeks during the growing season in order to provide a regular supply of leaves. Lettuces make a good companion plant for strawberries, carrots, radishes and onions[18, 20, 201]. They also grow well with cucumbers, cabbages and beetroot[201].",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow a small quantity of seed in situ every 2 or 3 weeks from March (with protection in cooler areas) to June and make another sowing in August/September for a winter/spring crop. Only just cover the seed. Germination is usually rapid and good, thin the plants if necessary, these thinnings can be transplanted to produce a slightly later crop (but they will need to be well watered in dry weather). More certain winter crops can be obtained by sowing in a frame in September/October and again in January/February.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": "Edible Parts: Leaves Oil Seed Edible Uses: Oil Leaves - raw or cooked[7, 37]. A mild slightly sweet flavour with a crisp texture, lettuce is a very commonly used salad leaf and can also be cooked as a potherb or be added to soups etc[183]. A nutritional analysis is available[218]. Seed - sprouted and used in salads or sandwiches[183]. An edible oil is obtained from the seed[7]. The seed is very small, extraction of the oil on any scale would not be very feasible[K].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anaphrodisiac Anodyne Antispasmodic Carminative Diuretic Emollient Expectorant Febrifuge Galactogogue Hypnotic Hypoglycaemic Narcotic Parasiticide Parasiticide Sedative The whole plant is rich in a milky sap that flows freely from any wounds. This hardens and dries when in contact with the air[4]. The sap contains 'lactucarium', which is used in medicine for its anodyne, antispasmodic, digestive, diuretic, hypnotic, narcotic and sedative properties[9, 21, 46, 165, 192, 213, 238]. Lactucarium has the effects of a feeble opium, but without its tendency to cause digestive upsets[4], nor is it addictive[7]. It is taken internally in the treatment of insomnia, anxiety, neuroses, hyperactivity in children, dry coughs, whooping cough, rheumatic pain etc[238]. Concentrations of lactucarium are low in young plants and most concentrated when the plant comes into flower[238]. It is collected commercially by cutting the heads of the plants and scraping the juice into china vessels several times a day until the plant is exhausted[4]. The cultivated lettuce does not contain as much lactucarium as the wild species, most being produced when the plant is in flower[4]. An infusion of the fresh or dried flowering plant can also be used[9]. The plant should be used with caution, and never without the supervision of a skilled practitioner. Even normal doses can cause drowsiness whilst excess causes restlessness[238] and overdoses can cause death through cardiac paralysis[7, 9]. Some physicians believe that any effects of this medicine are caused by the mind of the patient rather than by the medicine[213]. The sap has also been applied externally in the treatment of warts[222]. The seed is anodyne and galactogogue[218]. Lettuce has acquired a folk reputation as an anaphrodisiac, anodyne, carminative, diuretic, emollient, febrifuge, hypoglycaemic, hypnotic, narcotic, parasiticide and sedative[218].",
+          "other_uses_notes": "Hair Oil Parasiticide Parasiticide Parasiticide[178]. No further details are given, but it is probably the sap of flowering plants that is used. The seed is said to be used to make hair grow on scar tissue[218].",
+          "cultivation_notes": "Prefers a light sandy loam[1]. Succeeds in most well-drained, humus-rich soils but dislikes acid conditions[1, 16]. Plants strongly dislike dry conditions, quickly running to seed in such a situation. Early and late sowings are best in a sunny position, but summer crops are best given a position with some shade in order to slow down the plants tendency to go to seed and to prevent the leaves becoming bitter[18, 20]. The garden lettuce is widely cultivated in many parts of the world for its edible leaves and is probably the most commonly grown salad plant. There are many named varieties[183] capable of providing fresh leaves throughout the year if winter protection is given in temperate areas. Over the centuries a number of more or less distinct forms have arisen in cultivation. These forms have been classified as follows. They are treated separately in more detail:- L. sativa angustana. L.H.Bailey. is the Celtuce. The leaves of this form are not of such good quality as the other lettuces and the plant is grown more for its thick central stem which is used in the same ways as celery[1]. L. sativa capitata. L. is the heading lettuce, it forms a heart in a similar way to cabbages. Examples of this include the Iceberg and Butterhead lettuces. L. sativa crispa. L. is the curled or leaf lettuce. This does not form a central heart but produces a loose rosette of basal leaves. It can be harvested on a cut and come again basis. L. sativa longifolia Lam. is the cos lettuce. This has longer, thinner leaves and a more erect habit, it does not form a compact heart. Lettuces are quite a problematic crop to grow. They require quite a lot of attention to protect them from pests such as slugs, aphids and birds. If the weather is hot and dry the plants tend to run very quickly to seed, developing a bitter flavour as they do so. In wet weather they are likely to develop fungal diseases. In addition, the seed needs to be sown at regular intervals of 2- 3 weeks during the growing season in order to provide a regular supply of leaves. Lettuces make a good companion plant for strawberries, carrots, radishes and onions[18, 20, 201]. They also grow well with cucumbers, cabbages and beetroot[201].",
+          "known_hazards": "The mature plant is mildly toxic[13].",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "cucumbers",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              },
+              {
+                "plant": "cabbage",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              },
+              {
+                "plant": "beetroot",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              },
+              {
+                "plant": "strawberries",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              }
+            ],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting."
+            ]
+          }
+        },
+        "page_text_excerpt": "Lactuca sativa Lettuce, Garden lettuce PFAF Plant Database Follow Us: Lactuca sativa - L. Common Name Lettuce, Garden lettuce Family Asteraceae USDA hardiness 5-9 Known Hazards The mature plant is mildly toxic[13]. Habitats Not known in the wild. Range Of garden origin, probably derived from L. serriola. Edibility Rating (3 of 5) Other Uses (1 of 5) Weed Potential No Medicinal Rating (3 of 5) Care (info) http://commons.wikimedia.org/wiki/User:4028mdk09 http://commons.wikimedia.org/wiki/User:Daderot Translate this page: Summary Physical Characteristics Lactuca sativa is a ANNUAL/BIENNIAL growing to 0.9 m (3ft) by 0.3 m (1ft in). See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender. It is in flower from July to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Flies. The plant is self-fertile. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil. UK Hardiness Map US Hardiness Map Synonyms Plant Habitats Cultivated Beds; Edible Uses Edible Parts: Leaves Oil Seed Edible Uses: Oil Leaves - raw or cooked[7, 37]. A mild slightly sweet flavour with a crisp texture, lettuce is a very commonly used salad leaf and can also be cooked as a potherb or be added to soups etc[183]. A nutritional analysis is available[218]. Seed - sprouted and used in salads or sandwiches[183]. An edible oil is obtained from the seed[7]. The seed is very small, extraction of the oil on any scale would not be very feasible[K]. References More on Edible Uses Composition Figures in grams (g) or miligrams (mg) per 100g of food. Leaves (Fresh weight) 0 Calories per 100g Water : 92.9% Protein: 2.1g; Fat: 0g; Carbohydrate: 3g; Fibre: 0.5g; Ash: 1.2g; Minerals - Calcium: 26mg; Phosphorus: 30mg; Iron: 0.7mg; Magnesium: 10mg; Sodium: 3mg; Potassium: 208mg; Zinc: 0mg; Vitamins - A: 2200mg; Thiamine (B1): 0mg; Riboflavin (B2): 0mg; Niacin: 0.4mg; B6: 0mg; C: 15mg; Reference: [ ] Notes: Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anaphrodisiac Anodyne Antispasmodic Carminative Diuretic Emollient Expectorant Febrifuge Galactogogue Hypnotic Hypoglycaemic Narcotic Parasiticide Parasiticide Sedative The whole plant is rich in a milky sap that flows freely from any wounds. This hardens and dries when in contact with the air[4]. The sap contains 'lactucarium', which is used in medicine for its anodyne, antispasmodic, digestive, diuretic, hypnotic, narcotic and sedative properties[9, 21, 46, 165, 192, 213, 238]. Lactucarium has the effects of a feeble opium, but without its tendency to cause digestive upsets[4], nor is it addictive[7]. It is taken internally in the treatment of insomni"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tLactuca sativa Lettuce, Garden lettuce PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Lactuca sativa is a ANNUAL/BIENNIAL growing to 0.9 m (3ft) by 0.3 m (1ft&amp;nbsp;in).  See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender.  It is in flower from July to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Flies. The plant is self-fertile.  Suitable for: light (sandy) and medium (loamy) soils and prefers  well-drained soil. Suitable pH: neutral and basic (mildly alkaline) soils. It can grow in  semi-shade (light woodland) or no shade. It prefers  moist soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Lactuca+sativa\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BcwETGFjdHVjYSBzYXRpdmEgaXMgYSBBTk5VQUwvQklFTk5JQUwgZ3Jvd2luZyB0byAwLjkgbSAoM2Z0KSBieSAwLjMgbSAoMWZ0Jm5ic3A7aW4pLiAgU2VlIGFib3ZlIGZvciBVU0RBIGhhcmRpbmVzcy4gSXQgaXMgaGFyZHkgdG8gVUsgem9uZSA2IGFuZCBpcyBub3QgZnJvc3QgdGVuZGVyLiAgSXQgaXMgaW4gZmxvd2VyIGZyb20gSnVseSB0byBBdWd1c3QsIGFuZCB0aGUgc2VlZHMgcmlwZW4gZnJvbSBBdWd1c3QgdG8gU2VwdGVtYmVyLiBUaGUgc3BlY2llcyBpcyBoZXJtYXBocm9kaXRlIChoYXMgYm90aCBtYWxlIGFuZCBmZW1hbGUgb3JnYW5zKSBhbmQgaXMgcG9sbGluYXRlZCBieSBGbGllcy4gVGhlIHBsYW50IGlzIHNlbGYtZmVydGlsZS4gIFN1aXRhYmxlIGZvcjogbGlnaHQgKHNhbmR5KSBhbmQgbWVkaXVtIChsb2FteSkgc29pbHMgYW5kIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsLiBTdWl0YWJsZSBwSDogbmV1dHJhbCBhbmQgYmFzaWMgKG1pbGRseSBhbGthbGluZSkgc29pbHMuIEl0IGNhbiBncm93IGluICBzZW1pLXNoYWRlIChsaWdodCB3b29kbGFuZCkgb3Igbm8gc2hhZGUuIEl0IHByZWZlcnMgIG1vaXN0IHNvaWwuZAIDD2QWAgIDD2QWZgIBDw8WAh4EVGV4dAUTTGFjdHVjYSBzYXRpdmEgLSBMLmRkAgMPDxYCHwMFF0xldHR1Y2UsIEdhcmRlbiBsZXR0dWNlZGQCBQ8PFgIfAwUKQXN0ZXJhY2VhZWRkAgcPDxYCHwMFAzUtOWRkAgkPDxYCHgdWaXNpYmxlZ2RkAgsPDxYCHwMFJVRoZSBtYXR1cmUgcGxhbnQgaXMgbWlsZGx5IHRveGljWzEzXS5kZAINDw8WAh8DBRZOb3Qga25vd24gaW4gdGhlIHdpbGQuZGQCDw8PFgIfAwU0T2YgZ2FyZGVuIG9yaWdpbiwgcHJvYmFibHkgZGVyaXZlZCBmcm9tIEwuIHNlcnJpb2xhLmRkAhEPDxYCHghJbWFnZVVybAUraW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwLmdpZmRkAhMPDxYCHwUFK2ltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFYxYl8xMC5naWZkZAIVDw8WAh8FBStpbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZWFyY2hWMWJfMTAuZ2lmZGQCFw8PFgIfBQUvaW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwR3JleS5naWZkZAIZDw8WAh8FBS9pbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZ"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Lettuce",
+      "query": "Lactuca sativa",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:41:09.238335+00:00",
+      "response_hash": "7fd03e23022b380d9d9b8f81cac7af1b01fb246ff43f63e2d62fcaa8ad21f09b",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Lettuce",
+            "scientific_name": "Lactuca sativa",
+            "genus": "Lactuca",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Lettuce\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for M"
+    }
+  ]
+}

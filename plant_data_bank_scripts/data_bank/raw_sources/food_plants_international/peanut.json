@@ -1,0 +1,939 @@
+{
+  "plant": {
+    "plant_atom": "peanut",
+    "common_name": "Peanut",
+    "scientific_name": "Arachis hypogaea",
+    "genus": "Arachis",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "Food Plants International",
+  "snapshots": [
+    {
+      "source_name": "Food Plants International",
+      "source_url": "https://foodplantsinternational.com/?s=Arachis+hypogaea",
+      "query": "Arachis hypogaea",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:35:07.898067+00:00",
+      "response_hash": "e5e15856956217523c73dfb85bb84807ec3cd8dac2def37b033b5839072353e6",
+      "parsed": {
+        "title": "You searched for Arachis hypogaea - Food Plants International",
+        "page_text": "You searched for Arachis hypogaea - Food Plants International ↓ Skip to Main Content Main Navigation Menu Home Our Database Countries Cambodia Columbia – fruit Ethiopian Food Plants Ethiopian – Food Plants 2 Fiji Vegetables of Fiji 1 Vegetables of Fiji 2 Vegetables of Fiji 3 Fruit of Fiji 1 Fruit of Fiji 2 Ghana Ghana Lowlands – Vegetables Malawi Nigeria Nigeria – Lowland food plants Papua New Guinea Solomon Islands Swaziland Tasmania (Australia) Thailand and Indochina – Less common food plants Timor Leste Vanuatu – Fruit Vanuatu – Growing Food Plants in Vanuatu Vanuatu – Foods and Diets Vanuatu – Fruit Vanuatu – Greens and Vegetables Vanuatu – Local Vegetables: Vanuatu – Leafy Greens Vanuatu – Nuts Vanuatu- Posters of Food Plants Vanuatu – Root Crops Vanuatu – Starchy Staples Vietnam Vietnam Edible Leaves – Part 1 Vietnam Edible Leaves – Part 2 Zambia Zambia Food Plants Zimbabwe Other Articles & Books Newsletters 2022 Newsletters 2021 Newsletters 2020 Newsletters 2019 Newsletters 2018 Newsletters 2017 Newsletters 2016 Newsletters 2015 Newsletters 2014 Newsletters 2013 Newsletters Links About Us About our Logo Contact & Connect Home › Search results for: Arachis hypogaea Search results for: Arachis hypogaea Scientific Names By Our Admin Posted on September 12, 2013 Posted in Below is a list of the scientific names in our database. Search this page to see if the plant you are interested in is listed then check its details in our database by clicking HERE. AAA Information and references Abelia … Scientific Names Read more » Search for: Copyright © 2026 Food Plants International Please Note Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 3.0 License | Powered by Responsive Theme",
+        "links": [
+          {
+            "text": "↓ Skip to Main Content",
+            "href": "#primary"
+          },
+          {
+            "text": "Home",
+            "href": "https://foodplantsinternational.com/"
+          },
+          {
+            "text": "Our Database",
+            "href": "https://foodplantsinternational.com/plants/"
+          },
+          {
+            "text": "Countries",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/"
+          },
+          {
+            "text": "Cambodia",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/cambodia/"
+          },
+          {
+            "text": "Columbia – fruit",
+            "href": "https://foodplantsinternational.com/columbia-fruit/"
+          },
+          {
+            "text": "Ethiopian Food Plants",
+            "href": "https://foodplantsinternational.com/ethiopian-food-plants/"
+          },
+          {
+            "text": "Ethiopian – Food Plants 2",
+            "href": "https://foodplantsinternational.com/ethiopian-food-plants-2/"
+          },
+          {
+            "text": "Fiji",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/fiji/"
+          },
+          {
+            "text": "Vegetables of Fiji 1",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-1/"
+          },
+          {
+            "text": "Vegetables of Fiji 2",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-2/"
+          },
+          {
+            "text": "Vegetables of Fiji 3",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-3/"
+          },
+          {
+            "text": "Fruit of Fiji 1",
+            "href": "https://foodplantsinternational.com/fiji-foods-fruit-1/"
+          },
+          {
+            "text": "Fruit of Fiji 2",
+            "href": "https://foodplantsinternational.com/fruit-of-fiji-2/"
+          },
+          {
+            "text": "Ghana",
+            "href": "https://foodplantsinternational.com/ghana/"
+          },
+          {
+            "text": "Ghana Lowlands – Vegetables",
+            "href": "https://foodplantsinternational.com/ghana-lowlands-vegetables/"
+          },
+          {
+            "text": "Malawi",
+            "href": "https://foodplantsinternational.com/malawi/"
+          },
+          {
+            "text": "Nigeria",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/nigeria/"
+          },
+          {
+            "text": "Nigeria – Lowland food plants",
+            "href": "https://foodplantsinternational.com/nigeria-lowland-food-plants/"
+          },
+          {
+            "text": "Papua New Guinea",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/png/"
+          },
+          {
+            "text": "Solomon Islands",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/solomons/"
+          },
+          {
+            "text": "Swaziland",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/swaziland/"
+          },
+          {
+            "text": "Tasmania (Australia)",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/tasmania/"
+          },
+          {
+            "text": "Thailand and Indochina – Less common food plants",
+            "href": "https://foodplantsinternational.com/thailand-and-indochina-less-common-food-plants/"
+          },
+          {
+            "text": "Timor Leste",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/timor/"
+          },
+          {
+            "text": "Vanuatu – Fruit",
+            "href": "https://foodplantsinternational.com/vanuatu-2/"
+          },
+          {
+            "text": "Vanuatu – Growing Food Plants in Vanuatu",
+            "href": "https://foodplantsinternational.com/vanuatu-growing-food-plants-in-vanuatu/"
+          },
+          {
+            "text": "Vanuatu – Foods and Diets",
+            "href": "https://foodplantsinternational.com/vanuatu/"
+          },
+          {
+            "text": "Vanuatu – Fruit",
+            "href": "https://foodplantsinternational.com/vanuatu-2/"
+          },
+          {
+            "text": "Vanuatu – Greens and Vegetables",
+            "href": "https://foodplantsinternational.com/vanuatu-greens-and-vegetables/"
+          },
+          {
+            "text": "Vanuatu – Local Vegetables:",
+            "href": "https://foodplantsinternational.com/vanuatu-local-vegetables/"
+          },
+          {
+            "text": "Vanuatu – Leafy Greens",
+            "href": "https://foodplantsinternational.com/vanuatu-leafy-greens/"
+          },
+          {
+            "text": "Vanuatu – Nuts",
+            "href": "https://foodplantsinternational.com/vanuatu-nuts/"
+          },
+          {
+            "text": "Vanuatu- Posters of Food Plants",
+            "href": "https://foodplantsinternational.com/vanuatu-posters-of-food-plants/"
+          },
+          {
+            "text": "Vanuatu – Root Crops",
+            "href": "https://foodplantsinternational.com/vanuatu-root-crops/"
+          },
+          {
+            "text": "Vanuatu – Starchy Staples",
+            "href": "https://foodplantsinternational.com/vanuatu-starchy-staples/"
+          },
+          {
+            "text": "Vietnam",
+            "href": "https://foodplantsinternational.com/vietnam/"
+          },
+          {
+            "text": "Vietnam Edible Leaves – Part 1",
+            "href": "https://foodplantsinternational.com/vietnam-edible-leaves-part-1/"
+          },
+          {
+            "text": "Vietnam Edible Leaves – Part 2",
+            "href": "https://foodplantsinternational.com/vietnam-edible-leaves-part-2/"
+          },
+          {
+            "text": "Zambia",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/zambia/"
+          },
+          {
+            "text": "Zambia Food Plants",
+            "href": "https://foodplantsinternational.com/food-plants-and-good-gardening-for-healthy-diets-in-zambia/"
+          },
+          {
+            "text": "Zimbabwe",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/zimbabwe/"
+          },
+          {
+            "text": "Other",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/general/"
+          },
+          {
+            "text": "Articles & Books",
+            "href": "https://foodplantsinternational.com/articles/"
+          },
+          {
+            "text": "Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/"
+          },
+          {
+            "text": "2022 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2022/"
+          },
+          {
+            "text": "2021 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2021/"
+          },
+          {
+            "text": "2020 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2020/"
+          },
+          {
+            "text": "2019 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2019/"
+          },
+          {
+            "text": "2018 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2018/"
+          },
+          {
+            "text": "2017 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2017/"
+          },
+          {
+            "text": "2016 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2016/"
+          },
+          {
+            "text": "2015 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2015/"
+          },
+          {
+            "text": "2014 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "2013 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2013/"
+          },
+          {
+            "text": "Links",
+            "href": "https://foodplantsinternational.com/links/"
+          },
+          {
+            "text": "About Us",
+            "href": "https://foodplantsinternational.com/about-us/"
+          },
+          {
+            "text": "About our Logo",
+            "href": "https://foodplantsinternational.com/about-our-logo/"
+          },
+          {
+            "text": "Contact & Connect",
+            "href": "https://foodplantsinternational.com/contact-us/"
+          },
+          {
+            "text": "Home",
+            "href": "https://foodplantsinternational.com/"
+          },
+          {
+            "text": "Scientific Names",
+            "href": "https://foodplantsinternational.com/plants/scientific-names/"
+          },
+          {
+            "text": "Our Admin",
+            "href": "https://foodplantsinternational.com/author/our-admin/"
+          },
+          {
+            "text": "September 12, 2013",
+            "href": "https://foodplantsinternational.com/plants/scientific-names/"
+          },
+          {
+            "text": "Scientific Names Read more »",
+            "href": "https://foodplantsinternational.com/plants/scientific-names/"
+          },
+          {
+            "text": "Creative Commons Attribution 3.0 License",
+            "href": "https://creativecommons.org/licenses/by-nc-nd/3.0/"
+          },
+          {
+            "text": "Responsive Theme",
+            "href": "\n\t\thttps://cyberchimps.com/\t\t\t"
+          }
+        ],
+        "guessed_fields": {
+          "life_cycle": null,
+          "edible_parts": [
+            "fruit",
+            "leaf",
+            "root"
+          ],
+          "use_categories": [
+            "fruit_crop",
+            "root_tuber_crop"
+          ],
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "cultivation_notes": "You searched for Arachis hypogaea - Food Plants International ↓ Skip to Main Content Main Navigation Menu Home Our Database Countries Cambodia Columbia – fruit Ethiopian Food Plants Ethiopian – Food Plants 2 Fiji Vegetables of Fiji 1 Vegetables of Fiji 2 Vegetables of Fiji 3 Fruit of Fiji 1 Fruit of Fiji 2 Ghana Ghana Lowlands – Vegetables Malawi Nigeria Nigeria – Lowland food plants Papua New Guinea Solomon Islands Swaziland Tasmania (Australia) Thailand and Indochina – Less common food plants Timor Leste Vanuatu – Fruit Vanuatu – Growing Food Plants in Vanuatu Vanuatu – Foods and Diets Vanuatu – Fruit Vanuatu – Greens and Vegetables Vanuatu – Local Vegetables: Vanuatu – Leafy Greens Vanuatu – Nuts Vanuatu- Posters of Food Plants Vanuatu – Root Crops Vanuatu – Starchy Staples Vietnam Vietnam Edible Leaves – Part 1 Vietnam Edible Leaves – Part 2 Zambia Zambia Food Plants Zimbabwe Other Articles & Books Newsletters 2022 Newsletters 2021 Newsletters 2020 Newsletters 2019 Newsletters 2018 Newsletters 2017 Newsletters 2016 Newsletters 2015 Newsletters 2014 Newsletters 2013 Newsletters Links About Us About our Logo Contact & Connect Home › Search results for: Arachis hypogaea Search results for: Arachis hypogaea Scientific Names By Our Admin Posted on September 12, 2013 Posted in Below is a list of the scientific names in our database.",
+          "nutrition_notes": null,
+          "pest_disease_notes": null,
+          "cautions": null
+        }
+      },
+      "raw_text_excerpt": "<!doctype html>\n<html class=\"no-js\" lang=\"en-AU\" > <!--<![endif]-->\n\n\t<head>\n\t\t<meta charset=\"UTF-8\"/>\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\"/>\n\t\t<link rel=\"pingback\" href=\"https://foodplantsinternational.com/xmlrpc.php\"/>\n\t\t<meta name='robots' content='noindex, follow' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v24.5 - https://yoast.com/wordpress/plugins/seo/ -->\n\t<title>You searched for Arachis hypogaea - Food Plants International</title>\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"You searched for Arachis hypogaea - Food Plants International\" />\n\t<meta property=\"og:url\" content=\"https://foodplantsinternational.com/search/Arachis hypogaea/\" />\n\t<meta property=\"og:site_name\" content=\"Food Plants International\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":[\"CollectionPage\",\"SearchResultsPage\"],\"@id\":\"https://foodplantsinternational.com/?s=Arachis%20hypogaea\",\"url\":\"https://foodplantsinternational.com/?s=Arachis%20hypogaea\",\"name\":\"You searched for Arachis hypogaea - Food Plants International\",\"isPartOf\":{\"@id\":\"https://foodplantsinternational.com/#website\"},\"breadcrumb\":{\"@id\":\"#breadcrumb\"},\"inLanguage\":\"en-AU\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://foodplantsinternational.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"You searched for Arachis hypogaea\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://foodplantsinternational.com/#website\",\"url\":\"https://foodplantsinternational.com/\",\"name\":\"Food Plants International\",\"description\":\"Helping the hungry feed themselves through the strategic use of God&#039;s amazing resources\",\"publisher\":{\"@id\":\"https://foodplantsinternational.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://foodplantsinternational.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-AU\"},{\"@type\":\"Organization\",\"@id\":\"https://foodplantsinternational.com/#organization\",\"name\":\"Food Plants International\",\"url\":\"https://foodplantsinternational.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-AU\",\"@id\":\"https://foodplantsinternational.com/#/schema/logo/image/\",\"url\":\"https://foodplantsinternational.com/wp-content/uploads/2012/09/fpback-960x148a11.jpg\",\"contentUrl\":\"https://foodplantsinternational.com/wp-content/uploads/2012/09/fpback-960x148a11.jpg\",\"width\":\"960\",\"height\":\"148\",\"caption\":\"Food Plants International\"},\"image\":{\"@id\":\"https://foodplantsinternational.com/#/schema/logo/image/\"}}]}</script>\n\t<!-- / Yoast SEO plugin. -->\n\n\n<link rel='dns-prefetch' href='//platform-api.sharethis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Feed\" href=\"https://foodplantsinternational.com/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Comments Feed\" href=\"https://foodplantsinternational.com/comments/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Search Results for &#8220;Arachis hypogaea&#8221; Feed\" href=\"https://foodplantsinternational.com/search/Arachis+hypogaea/feed/rss2/\" />\n<script>\nwindow._wpemojiSettings = {\"baseUrl\":\"https:\\/\\/s.w.org\\/images\\/core\\/emoji\\/15.0.3\\/72x72\\/\",\"ext\":\".png\",\"svgUrl\":\"https:\\/\\/s.w.org\\/images\\/core\\/emoji\\/15.0.3\\/svg\\/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https:\\/\\/foodplantsinternational.com\\/wp-includes\\/js\\/wp-emoji-release.min.js?ver=6.5.8\"}};\n/*! This file is auto-generated */\n!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\uddfa\\ud83c\\uddf3\",\"\\ud83c\\uddfa\\u200b\\ud83c\\uddf3\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!n(e,\"\\ud83d\\udc26\\u200d\\u2b1b\",\"\\ud83d\\udc26\\u200b\\u2b1b\")}return!1}function f(e,t,n){var r=\"undefined\"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.creat"
+    },
+    {
+      "source_name": "Food Plants International",
+      "source_url": "https://foodplantsinternational.com/?s=Peanut",
+      "query": "Arachis hypogaea",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:35:11.538450+00:00",
+      "response_hash": "b419a2a5998322428e839ccb568e497db25bbf6dc48996849e8389fb5d39cea2",
+      "parsed": {
+        "title": "You searched for Peanut - Food Plants International",
+        "page_text": "You searched for Peanut - Food Plants International ↓ Skip to Main Content Main Navigation Menu Home Our Database Countries Cambodia Columbia – fruit Ethiopian Food Plants Ethiopian – Food Plants 2 Fiji Vegetables of Fiji 1 Vegetables of Fiji 2 Vegetables of Fiji 3 Fruit of Fiji 1 Fruit of Fiji 2 Ghana Ghana Lowlands – Vegetables Malawi Nigeria Nigeria – Lowland food plants Papua New Guinea Solomon Islands Swaziland Tasmania (Australia) Thailand and Indochina – Less common food plants Timor Leste Vanuatu – Fruit Vanuatu – Growing Food Plants in Vanuatu Vanuatu – Foods and Diets Vanuatu – Fruit Vanuatu – Greens and Vegetables Vanuatu – Local Vegetables: Vanuatu – Leafy Greens Vanuatu – Nuts Vanuatu- Posters of Food Plants Vanuatu – Root Crops Vanuatu – Starchy Staples Vietnam Vietnam Edible Leaves – Part 1 Vietnam Edible Leaves – Part 2 Zambia Zambia Food Plants Zimbabwe Other Articles & Books Newsletters 2022 Newsletters 2021 Newsletters 2020 Newsletters 2019 Newsletters 2018 Newsletters 2017 Newsletters 2016 Newsletters 2015 Newsletters 2014 Newsletters 2013 Newsletters Links About Us About our Logo Contact & Connect Home › Search results for: Peanut Search results for: Peanut Newsletters 2014 By Ableside Posted on January 21, 2015 Posted in Each month we will publish a newsletter explaining our beliefs and highlighting some plants. Click on the buttons below to download the PDF files. [wpdm_file id=78] Making information accessible is a major challenge. Many scientists write in exceedingly academic language … Newsletters 2014 Read more » Newsletters By Our Admin Posted on May 18, 2013 Posted in Each month we will publish a newsletter explaining our beliefs and highlighting some plants. Click on the buttons below to download the PDF files. [wpdm_file id=78] Making information accessible is a major challenge. Many scientists write in exceedingly academic language … Newsletters Read more » Search for: Copyright © 2026 Food Plants International Please Note Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 3.0 License | Powered by Responsive Theme",
+        "links": [
+          {
+            "text": "↓ Skip to Main Content",
+            "href": "#primary"
+          },
+          {
+            "text": "Home",
+            "href": "https://foodplantsinternational.com/"
+          },
+          {
+            "text": "Our Database",
+            "href": "https://foodplantsinternational.com/plants/"
+          },
+          {
+            "text": "Countries",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/"
+          },
+          {
+            "text": "Cambodia",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/cambodia/"
+          },
+          {
+            "text": "Columbia – fruit",
+            "href": "https://foodplantsinternational.com/columbia-fruit/"
+          },
+          {
+            "text": "Ethiopian Food Plants",
+            "href": "https://foodplantsinternational.com/ethiopian-food-plants/"
+          },
+          {
+            "text": "Ethiopian – Food Plants 2",
+            "href": "https://foodplantsinternational.com/ethiopian-food-plants-2/"
+          },
+          {
+            "text": "Fiji",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/fiji/"
+          },
+          {
+            "text": "Vegetables of Fiji 1",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-1/"
+          },
+          {
+            "text": "Vegetables of Fiji 2",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-2/"
+          },
+          {
+            "text": "Vegetables of Fiji 3",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-3/"
+          },
+          {
+            "text": "Fruit of Fiji 1",
+            "href": "https://foodplantsinternational.com/fiji-foods-fruit-1/"
+          },
+          {
+            "text": "Fruit of Fiji 2",
+            "href": "https://foodplantsinternational.com/fruit-of-fiji-2/"
+          },
+          {
+            "text": "Ghana",
+            "href": "https://foodplantsinternational.com/ghana/"
+          },
+          {
+            "text": "Ghana Lowlands – Vegetables",
+            "href": "https://foodplantsinternational.com/ghana-lowlands-vegetables/"
+          },
+          {
+            "text": "Malawi",
+            "href": "https://foodplantsinternational.com/malawi/"
+          },
+          {
+            "text": "Nigeria",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/nigeria/"
+          },
+          {
+            "text": "Nigeria – Lowland food plants",
+            "href": "https://foodplantsinternational.com/nigeria-lowland-food-plants/"
+          },
+          {
+            "text": "Papua New Guinea",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/png/"
+          },
+          {
+            "text": "Solomon Islands",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/solomons/"
+          },
+          {
+            "text": "Swaziland",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/swaziland/"
+          },
+          {
+            "text": "Tasmania (Australia)",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/tasmania/"
+          },
+          {
+            "text": "Thailand and Indochina – Less common food plants",
+            "href": "https://foodplantsinternational.com/thailand-and-indochina-less-common-food-plants/"
+          },
+          {
+            "text": "Timor Leste",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/timor/"
+          },
+          {
+            "text": "Vanuatu – Fruit",
+            "href": "https://foodplantsinternational.com/vanuatu-2/"
+          },
+          {
+            "text": "Vanuatu – Growing Food Plants in Vanuatu",
+            "href": "https://foodplantsinternational.com/vanuatu-growing-food-plants-in-vanuatu/"
+          },
+          {
+            "text": "Vanuatu – Foods and Diets",
+            "href": "https://foodplantsinternational.com/vanuatu/"
+          },
+          {
+            "text": "Vanuatu – Fruit",
+            "href": "https://foodplantsinternational.com/vanuatu-2/"
+          },
+          {
+            "text": "Vanuatu – Greens and Vegetables",
+            "href": "https://foodplantsinternational.com/vanuatu-greens-and-vegetables/"
+          },
+          {
+            "text": "Vanuatu – Local Vegetables:",
+            "href": "https://foodplantsinternational.com/vanuatu-local-vegetables/"
+          },
+          {
+            "text": "Vanuatu – Leafy Greens",
+            "href": "https://foodplantsinternational.com/vanuatu-leafy-greens/"
+          },
+          {
+            "text": "Vanuatu – Nuts",
+            "href": "https://foodplantsinternational.com/vanuatu-nuts/"
+          },
+          {
+            "text": "Vanuatu- Posters of Food Plants",
+            "href": "https://foodplantsinternational.com/vanuatu-posters-of-food-plants/"
+          },
+          {
+            "text": "Vanuatu – Root Crops",
+            "href": "https://foodplantsinternational.com/vanuatu-root-crops/"
+          },
+          {
+            "text": "Vanuatu – Starchy Staples",
+            "href": "https://foodplantsinternational.com/vanuatu-starchy-staples/"
+          },
+          {
+            "text": "Vietnam",
+            "href": "https://foodplantsinternational.com/vietnam/"
+          },
+          {
+            "text": "Vietnam Edible Leaves – Part 1",
+            "href": "https://foodplantsinternational.com/vietnam-edible-leaves-part-1/"
+          },
+          {
+            "text": "Vietnam Edible Leaves – Part 2",
+            "href": "https://foodplantsinternational.com/vietnam-edible-leaves-part-2/"
+          },
+          {
+            "text": "Zambia",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/zambia/"
+          },
+          {
+            "text": "Zambia Food Plants",
+            "href": "https://foodplantsinternational.com/food-plants-and-good-gardening-for-healthy-diets-in-zambia/"
+          },
+          {
+            "text": "Zimbabwe",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/zimbabwe/"
+          },
+          {
+            "text": "Other",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/general/"
+          },
+          {
+            "text": "Articles & Books",
+            "href": "https://foodplantsinternational.com/articles/"
+          },
+          {
+            "text": "Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/"
+          },
+          {
+            "text": "2022 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2022/"
+          },
+          {
+            "text": "2021 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2021/"
+          },
+          {
+            "text": "2020 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2020/"
+          },
+          {
+            "text": "2019 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2019/"
+          },
+          {
+            "text": "2018 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2018/"
+          },
+          {
+            "text": "2017 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2017/"
+          },
+          {
+            "text": "2016 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2016/"
+          },
+          {
+            "text": "2015 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2015/"
+          },
+          {
+            "text": "2014 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "2013 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2013/"
+          },
+          {
+            "text": "Links",
+            "href": "https://foodplantsinternational.com/links/"
+          },
+          {
+            "text": "About Us",
+            "href": "https://foodplantsinternational.com/about-us/"
+          },
+          {
+            "text": "About our Logo",
+            "href": "https://foodplantsinternational.com/about-our-logo/"
+          },
+          {
+            "text": "Contact & Connect",
+            "href": "https://foodplantsinternational.com/contact-us/"
+          },
+          {
+            "text": "Home",
+            "href": "https://foodplantsinternational.com/"
+          },
+          {
+            "text": "Newsletters 2014",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "Ableside",
+            "href": "https://foodplantsinternational.com/author/karl/"
+          },
+          {
+            "text": "January 21, 2015",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "Newsletters 2014 Read more »",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "Newsletters",
+            "href": "https://foodplantsinternational.com/newsletters2013/"
+          },
+          {
+            "text": "Our Admin",
+            "href": "https://foodplantsinternational.com/author/our-admin/"
+          },
+          {
+            "text": "May 18, 2013",
+            "href": "https://foodplantsinternational.com/newsletters2013/"
+          },
+          {
+            "text": "Newsletters Read more »",
+            "href": "https://foodplantsinternational.com/newsletters2013/"
+          },
+          {
+            "text": "Creative Commons Attribution 3.0 License",
+            "href": "https://creativecommons.org/licenses/by-nc-nd/3.0/"
+          },
+          {
+            "text": "Responsive Theme",
+            "href": "\n\t\thttps://cyberchimps.com/\t\t\t"
+          }
+        ],
+        "guessed_fields": {
+          "life_cycle": null,
+          "edible_parts": [
+            "fruit",
+            "leaf",
+            "root"
+          ],
+          "use_categories": [
+            "fruit_crop",
+            "root_tuber_crop"
+          ],
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "cultivation_notes": "You searched for Peanut - Food Plants International ↓ Skip to Main Content Main Navigation Menu Home Our Database Countries Cambodia Columbia – fruit Ethiopian Food Plants Ethiopian – Food Plants 2 Fiji Vegetables of Fiji 1 Vegetables of Fiji 2 Vegetables of Fiji 3 Fruit of Fiji 1 Fruit of Fiji 2 Ghana Ghana Lowlands – Vegetables Malawi Nigeria Nigeria – Lowland food plants Papua New Guinea Solomon Islands Swaziland Tasmania (Australia) Thailand and Indochina – Less common food plants Timor Leste Vanuatu – Fruit Vanuatu – Growing Food Plants in Vanuatu Vanuatu – Foods and Diets Vanuatu – Fruit Vanuatu – Greens and Vegetables Vanuatu – Local Vegetables: Vanuatu – Leafy Greens Vanuatu – Nuts Vanuatu- Posters of Food Plants Vanuatu – Root Crops Vanuatu – Starchy Staples Vietnam Vietnam Edible Leaves – Part 1 Vietnam Edible Leaves – Part 2 Zambia Zambia Food Plants Zimbabwe Other Articles & Books Newsletters 2022 Newsletters 2021 Newsletters 2020 Newsletters 2019 Newsletters 2018 Newsletters 2017 Newsletters 2016 Newsletters 2015 Newsletters 2014 Newsletters 2013 Newsletters Links About Us About our Logo Contact & Connect Home › Search results for: Peanut Search results for: Peanut Newsletters 2014 By Ableside Posted on January 21, 2015 Posted in Each month we will publish a newsletter explaining our beliefs and highlighting some plants.",
+          "nutrition_notes": null,
+          "pest_disease_notes": null,
+          "cautions": null
+        }
+      },
+      "raw_text_excerpt": "<!doctype html>\n<html class=\"no-js\" lang=\"en-AU\" > <!--<![endif]-->\n\n\t<head>\n\t\t<meta charset=\"UTF-8\"/>\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\"/>\n\t\t<link rel=\"pingback\" href=\"https://foodplantsinternational.com/xmlrpc.php\"/>\n\t\t<meta name='robots' content='noindex, follow' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v24.5 - https://yoast.com/wordpress/plugins/seo/ -->\n\t<title>You searched for Peanut - Food Plants International</title>\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"You searched for Peanut - Food Plants International\" />\n\t<meta property=\"og:url\" content=\"https://foodplantsinternational.com/search/Peanut/\" />\n\t<meta property=\"og:site_name\" content=\"Food Plants International\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":[\"CollectionPage\",\"SearchResultsPage\"],\"@id\":\"https://foodplantsinternational.com/?s=Peanut\",\"url\":\"https://foodplantsinternational.com/?s=Peanut\",\"name\":\"You searched for Peanut - Food Plants International\",\"isPartOf\":{\"@id\":\"https://foodplantsinternational.com/#website\"},\"breadcrumb\":{\"@id\":\"#breadcrumb\"},\"inLanguage\":\"en-AU\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://foodplantsinternational.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"You searched for Peanut\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://foodplantsinternational.com/#website\",\"url\":\"https://foodplantsinternational.com/\",\"name\":\"Food Plants International\",\"description\":\"Helping the hungry feed themselves through the strategic use of God&#039;s amazing resources\",\"publisher\":{\"@id\":\"https://foodplantsinternational.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://foodplantsinternational.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-AU\"},{\"@type\":\"Organization\",\"@id\":\"https://foodplantsinternational.com/#organization\",\"name\":\"Food Plants International\",\"url\":\"https://foodplantsinternational.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-AU\",\"@id\":\"https://foodplantsinternational.com/#/schema/logo/image/\",\"url\":\"https://foodplantsinternational.com/wp-content/uploads/2012/09/fpback-960x148a11.jpg\",\"contentUrl\":\"https://foodplantsinternational.com/wp-content/uploads/2012/09/fpback-960x148a11.jpg\",\"width\":\"960\",\"height\":\"148\",\"caption\":\"Food Plants International\"},\"image\":{\"@id\":\"https://foodplantsinternational.com/#/schema/logo/image/\"}}]}</script>\n\t<!-- / Yoast SEO plugin. -->\n\n\n<link rel='dns-prefetch' href='//platform-api.sharethis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Feed\" href=\"https://foodplantsinternational.com/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Comments Feed\" href=\"https://foodplantsinternational.com/comments/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Search Results for &#8220;Peanut&#8221; Feed\" href=\"https://foodplantsinternational.com/search/Peanut/feed/rss2/\" />\n<script>\nwindow._wpemojiSettings = {\"baseUrl\":\"https:\\/\\/s.w.org\\/images\\/core\\/emoji\\/15.0.3\\/72x72\\/\",\"ext\":\".png\",\"svgUrl\":\"https:\\/\\/s.w.org\\/images\\/core\\/emoji\\/15.0.3\\/svg\\/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https:\\/\\/foodplantsinternational.com\\/wp-includes\\/js\\/wp-emoji-release.min.js?ver=6.5.8\"}};\n/*! This file is auto-generated */\n!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\uddfa\\ud83c\\uddf3\",\"\\ud83c\\uddfa\\u200b\\ud83c\\uddf3\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!n(e,\"\\ud83d\\udc26\\u200d\\u2b1b\",\"\\ud83d\\udc26\\u200b\\u2b1b\")}return!1}function f(e,t,n){var r=\"undefined\"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement(\"canvas\"),a=r.getContext(\"2d\",{willReadFrequently:!0}),o=(a.textBaseline=\"top\",a.font"
+    },
+    {
+      "source_name": "Food Plants International",
+      "source_url": "https://foodplantsinternational.com/?s=peanut",
+      "query": "Arachis hypogaea",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:35:15.222392+00:00",
+      "response_hash": "dbbb4f160a26bfbfcb3a9782d3398fa07474d7b1a60c83e325ea35859c5b48bd",
+      "parsed": {
+        "title": "You searched for peanut - Food Plants International",
+        "page_text": "You searched for peanut - Food Plants International ↓ Skip to Main Content Main Navigation Menu Home Our Database Countries Cambodia Columbia – fruit Ethiopian Food Plants Ethiopian – Food Plants 2 Fiji Vegetables of Fiji 1 Vegetables of Fiji 2 Vegetables of Fiji 3 Fruit of Fiji 1 Fruit of Fiji 2 Ghana Ghana Lowlands – Vegetables Malawi Nigeria Nigeria – Lowland food plants Papua New Guinea Solomon Islands Swaziland Tasmania (Australia) Thailand and Indochina – Less common food plants Timor Leste Vanuatu – Fruit Vanuatu – Growing Food Plants in Vanuatu Vanuatu – Foods and Diets Vanuatu – Fruit Vanuatu – Greens and Vegetables Vanuatu – Local Vegetables: Vanuatu – Leafy Greens Vanuatu – Nuts Vanuatu- Posters of Food Plants Vanuatu – Root Crops Vanuatu – Starchy Staples Vietnam Vietnam Edible Leaves – Part 1 Vietnam Edible Leaves – Part 2 Zambia Zambia Food Plants Zimbabwe Other Articles & Books Newsletters 2022 Newsletters 2021 Newsletters 2020 Newsletters 2019 Newsletters 2018 Newsletters 2017 Newsletters 2016 Newsletters 2015 Newsletters 2014 Newsletters 2013 Newsletters Links About Us About our Logo Contact & Connect Home › Search results for: peanut Search results for: peanut Newsletters 2014 By Ableside Posted on January 21, 2015 Posted in Each month we will publish a newsletter explaining our beliefs and highlighting some plants. Click on the buttons below to download the PDF files. [wpdm_file id=78] Making information accessible is a major challenge. Many scientists write in exceedingly academic language … Newsletters 2014 Read more » Newsletters By Our Admin Posted on May 18, 2013 Posted in Each month we will publish a newsletter explaining our beliefs and highlighting some plants. Click on the buttons below to download the PDF files. [wpdm_file id=78] Making information accessible is a major challenge. Many scientists write in exceedingly academic language … Newsletters Read more » Search for: Copyright © 2026 Food Plants International Please Note Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 3.0 License | Powered by Responsive Theme",
+        "links": [
+          {
+            "text": "↓ Skip to Main Content",
+            "href": "#primary"
+          },
+          {
+            "text": "Home",
+            "href": "https://foodplantsinternational.com/"
+          },
+          {
+            "text": "Our Database",
+            "href": "https://foodplantsinternational.com/plants/"
+          },
+          {
+            "text": "Countries",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/"
+          },
+          {
+            "text": "Cambodia",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/cambodia/"
+          },
+          {
+            "text": "Columbia – fruit",
+            "href": "https://foodplantsinternational.com/columbia-fruit/"
+          },
+          {
+            "text": "Ethiopian Food Plants",
+            "href": "https://foodplantsinternational.com/ethiopian-food-plants/"
+          },
+          {
+            "text": "Ethiopian – Food Plants 2",
+            "href": "https://foodplantsinternational.com/ethiopian-food-plants-2/"
+          },
+          {
+            "text": "Fiji",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/fiji/"
+          },
+          {
+            "text": "Vegetables of Fiji 1",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-1/"
+          },
+          {
+            "text": "Vegetables of Fiji 2",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-2/"
+          },
+          {
+            "text": "Vegetables of Fiji 3",
+            "href": "https://foodplantsinternational.com/vegetables-of-fiji-3/"
+          },
+          {
+            "text": "Fruit of Fiji 1",
+            "href": "https://foodplantsinternational.com/fiji-foods-fruit-1/"
+          },
+          {
+            "text": "Fruit of Fiji 2",
+            "href": "https://foodplantsinternational.com/fruit-of-fiji-2/"
+          },
+          {
+            "text": "Ghana",
+            "href": "https://foodplantsinternational.com/ghana/"
+          },
+          {
+            "text": "Ghana Lowlands – Vegetables",
+            "href": "https://foodplantsinternational.com/ghana-lowlands-vegetables/"
+          },
+          {
+            "text": "Malawi",
+            "href": "https://foodplantsinternational.com/malawi/"
+          },
+          {
+            "text": "Nigeria",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/nigeria/"
+          },
+          {
+            "text": "Nigeria – Lowland food plants",
+            "href": "https://foodplantsinternational.com/nigeria-lowland-food-plants/"
+          },
+          {
+            "text": "Papua New Guinea",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/png/"
+          },
+          {
+            "text": "Solomon Islands",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/solomons/"
+          },
+          {
+            "text": "Swaziland",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/swaziland/"
+          },
+          {
+            "text": "Tasmania (Australia)",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/tasmania/"
+          },
+          {
+            "text": "Thailand and Indochina – Less common food plants",
+            "href": "https://foodplantsinternational.com/thailand-and-indochina-less-common-food-plants/"
+          },
+          {
+            "text": "Timor Leste",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/timor/"
+          },
+          {
+            "text": "Vanuatu – Fruit",
+            "href": "https://foodplantsinternational.com/vanuatu-2/"
+          },
+          {
+            "text": "Vanuatu – Growing Food Plants in Vanuatu",
+            "href": "https://foodplantsinternational.com/vanuatu-growing-food-plants-in-vanuatu/"
+          },
+          {
+            "text": "Vanuatu – Foods and Diets",
+            "href": "https://foodplantsinternational.com/vanuatu/"
+          },
+          {
+            "text": "Vanuatu – Fruit",
+            "href": "https://foodplantsinternational.com/vanuatu-2/"
+          },
+          {
+            "text": "Vanuatu – Greens and Vegetables",
+            "href": "https://foodplantsinternational.com/vanuatu-greens-and-vegetables/"
+          },
+          {
+            "text": "Vanuatu – Local Vegetables:",
+            "href": "https://foodplantsinternational.com/vanuatu-local-vegetables/"
+          },
+          {
+            "text": "Vanuatu – Leafy Greens",
+            "href": "https://foodplantsinternational.com/vanuatu-leafy-greens/"
+          },
+          {
+            "text": "Vanuatu – Nuts",
+            "href": "https://foodplantsinternational.com/vanuatu-nuts/"
+          },
+          {
+            "text": "Vanuatu- Posters of Food Plants",
+            "href": "https://foodplantsinternational.com/vanuatu-posters-of-food-plants/"
+          },
+          {
+            "text": "Vanuatu – Root Crops",
+            "href": "https://foodplantsinternational.com/vanuatu-root-crops/"
+          },
+          {
+            "text": "Vanuatu – Starchy Staples",
+            "href": "https://foodplantsinternational.com/vanuatu-starchy-staples/"
+          },
+          {
+            "text": "Vietnam",
+            "href": "https://foodplantsinternational.com/vietnam/"
+          },
+          {
+            "text": "Vietnam Edible Leaves – Part 1",
+            "href": "https://foodplantsinternational.com/vietnam-edible-leaves-part-1/"
+          },
+          {
+            "text": "Vietnam Edible Leaves – Part 2",
+            "href": "https://foodplantsinternational.com/vietnam-edible-leaves-part-2/"
+          },
+          {
+            "text": "Zambia",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/zambia/"
+          },
+          {
+            "text": "Zambia Food Plants",
+            "href": "https://foodplantsinternational.com/food-plants-and-good-gardening-for-healthy-diets-in-zambia/"
+          },
+          {
+            "text": "Zimbabwe",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/zimbabwe/"
+          },
+          {
+            "text": "Other",
+            "href": "https://foodplantsinternational.com/free-resources-for-download/general/"
+          },
+          {
+            "text": "Articles & Books",
+            "href": "https://foodplantsinternational.com/articles/"
+          },
+          {
+            "text": "Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/"
+          },
+          {
+            "text": "2022 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2022/"
+          },
+          {
+            "text": "2021 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2021/"
+          },
+          {
+            "text": "2020 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2020/"
+          },
+          {
+            "text": "2019 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2019/"
+          },
+          {
+            "text": "2018 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2018/"
+          },
+          {
+            "text": "2017 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2017/"
+          },
+          {
+            "text": "2016 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2016/"
+          },
+          {
+            "text": "2015 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2015/"
+          },
+          {
+            "text": "2014 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "2013 Newsletters",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2013/"
+          },
+          {
+            "text": "Links",
+            "href": "https://foodplantsinternational.com/links/"
+          },
+          {
+            "text": "About Us",
+            "href": "https://foodplantsinternational.com/about-us/"
+          },
+          {
+            "text": "About our Logo",
+            "href": "https://foodplantsinternational.com/about-our-logo/"
+          },
+          {
+            "text": "Contact & Connect",
+            "href": "https://foodplantsinternational.com/contact-us/"
+          },
+          {
+            "text": "Home",
+            "href": "https://foodplantsinternational.com/"
+          },
+          {
+            "text": "Newsletters 2014",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "Ableside",
+            "href": "https://foodplantsinternational.com/author/karl/"
+          },
+          {
+            "text": "January 21, 2015",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "Newsletters 2014 Read more »",
+            "href": "https://foodplantsinternational.com/newslettermenu/newsletters-2014/"
+          },
+          {
+            "text": "Newsletters",
+            "href": "https://foodplantsinternational.com/newsletters2013/"
+          },
+          {
+            "text": "Our Admin",
+            "href": "https://foodplantsinternational.com/author/our-admin/"
+          },
+          {
+            "text": "May 18, 2013",
+            "href": "https://foodplantsinternational.com/newsletters2013/"
+          },
+          {
+            "text": "Newsletters Read more »",
+            "href": "https://foodplantsinternational.com/newsletters2013/"
+          },
+          {
+            "text": "Creative Commons Attribution 3.0 License",
+            "href": "https://creativecommons.org/licenses/by-nc-nd/3.0/"
+          },
+          {
+            "text": "Responsive Theme",
+            "href": "\n\t\thttps://cyberchimps.com/\t\t\t"
+          }
+        ],
+        "guessed_fields": {
+          "life_cycle": null,
+          "edible_parts": [
+            "fruit",
+            "leaf",
+            "root"
+          ],
+          "use_categories": [
+            "fruit_crop",
+            "root_tuber_crop"
+          ],
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "cultivation_notes": "You searched for peanut - Food Plants International ↓ Skip to Main Content Main Navigation Menu Home Our Database Countries Cambodia Columbia – fruit Ethiopian Food Plants Ethiopian – Food Plants 2 Fiji Vegetables of Fiji 1 Vegetables of Fiji 2 Vegetables of Fiji 3 Fruit of Fiji 1 Fruit of Fiji 2 Ghana Ghana Lowlands – Vegetables Malawi Nigeria Nigeria – Lowland food plants Papua New Guinea Solomon Islands Swaziland Tasmania (Australia) Thailand and Indochina – Less common food plants Timor Leste Vanuatu – Fruit Vanuatu – Growing Food Plants in Vanuatu Vanuatu – Foods and Diets Vanuatu – Fruit Vanuatu – Greens and Vegetables Vanuatu – Local Vegetables: Vanuatu – Leafy Greens Vanuatu – Nuts Vanuatu- Posters of Food Plants Vanuatu – Root Crops Vanuatu – Starchy Staples Vietnam Vietnam Edible Leaves – Part 1 Vietnam Edible Leaves – Part 2 Zambia Zambia Food Plants Zimbabwe Other Articles & Books Newsletters 2022 Newsletters 2021 Newsletters 2020 Newsletters 2019 Newsletters 2018 Newsletters 2017 Newsletters 2016 Newsletters 2015 Newsletters 2014 Newsletters 2013 Newsletters Links About Us About our Logo Contact & Connect Home › Search results for: peanut Search results for: peanut Newsletters 2014 By Ableside Posted on January 21, 2015 Posted in Each month we will publish a newsletter explaining our beliefs and highlighting some plants.",
+          "nutrition_notes": null,
+          "pest_disease_notes": null,
+          "cautions": null
+        }
+      },
+      "raw_text_excerpt": "<!doctype html>\n<html class=\"no-js\" lang=\"en-AU\" > <!--<![endif]-->\n\n\t<head>\n\t\t<meta charset=\"UTF-8\"/>\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\"/>\n\t\t<link rel=\"pingback\" href=\"https://foodplantsinternational.com/xmlrpc.php\"/>\n\t\t<meta name='robots' content='noindex, follow' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v24.5 - https://yoast.com/wordpress/plugins/seo/ -->\n\t<title>You searched for peanut - Food Plants International</title>\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"You searched for peanut - Food Plants International\" />\n\t<meta property=\"og:url\" content=\"https://foodplantsinternational.com/search/peanut/\" />\n\t<meta property=\"og:site_name\" content=\"Food Plants International\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":[\"CollectionPage\",\"SearchResultsPage\"],\"@id\":\"https://foodplantsinternational.com/?s=peanut\",\"url\":\"https://foodplantsinternational.com/?s=peanut\",\"name\":\"You searched for peanut - Food Plants International\",\"isPartOf\":{\"@id\":\"https://foodplantsinternational.com/#website\"},\"breadcrumb\":{\"@id\":\"#breadcrumb\"},\"inLanguage\":\"en-AU\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://foodplantsinternational.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"You searched for peanut\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://foodplantsinternational.com/#website\",\"url\":\"https://foodplantsinternational.com/\",\"name\":\"Food Plants International\",\"description\":\"Helping the hungry feed themselves through the strategic use of God&#039;s amazing resources\",\"publisher\":{\"@id\":\"https://foodplantsinternational.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://foodplantsinternational.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-AU\"},{\"@type\":\"Organization\",\"@id\":\"https://foodplantsinternational.com/#organization\",\"name\":\"Food Plants International\",\"url\":\"https://foodplantsinternational.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-AU\",\"@id\":\"https://foodplantsinternational.com/#/schema/logo/image/\",\"url\":\"https://foodplantsinternational.com/wp-content/uploads/2012/09/fpback-960x148a11.jpg\",\"contentUrl\":\"https://foodplantsinternational.com/wp-content/uploads/2012/09/fpback-960x148a11.jpg\",\"width\":\"960\",\"height\":\"148\",\"caption\":\"Food Plants International\"},\"image\":{\"@id\":\"https://foodplantsinternational.com/#/schema/logo/image/\"}}]}</script>\n\t<!-- / Yoast SEO plugin. -->\n\n\n<link rel='dns-prefetch' href='//platform-api.sharethis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Feed\" href=\"https://foodplantsinternational.com/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Comments Feed\" href=\"https://foodplantsinternational.com/comments/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Food Plants International &raquo; Search Results for &#8220;peanut&#8221; Feed\" href=\"https://foodplantsinternational.com/search/peanut/feed/rss2/\" />\n<script>\nwindow._wpemojiSettings = {\"baseUrl\":\"https:\\/\\/s.w.org\\/images\\/core\\/emoji\\/15.0.3\\/72x72\\/\",\"ext\":\".png\",\"svgUrl\":\"https:\\/\\/s.w.org\\/images\\/core\\/emoji\\/15.0.3\\/svg\\/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https:\\/\\/foodplantsinternational.com\\/wp-includes\\/js\\/wp-emoji-release.min.js?ver=6.5.8\"}};\n/*! This file is auto-generated */\n!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\uddfa\\ud83c\\uddf3\",\"\\ud83c\\uddfa\\u200b\\ud83c\\uddf3\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!n(e,\"\\ud83d\\udc26\\u200d\\u2b1b\",\"\\ud83d\\udc26\\u200b\\u2b1b\")}return!1}function f(e,t,n){var r=\"undefined\"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement(\"canvas\"),a=r.getContext(\"2d\",{willReadFrequently:!0}),o=(a.textBaseline=\"top\",a.font"
+    }
+  ]
+}

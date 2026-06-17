@@ -1,0 +1,79 @@
+{
+  "plant": {
+    "plant_atom": "cucumber",
+    "common_name": "Cucumber",
+    "scientific_name": "Cucumis sativus",
+    "genus": "Cucumis",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Cucumis sativus",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:24.569186+00:00",
+      "response_hash": "1f502f2794fb53f7eaa816c42d2531418cf956a163997503f5312f5e8ac036c4",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2874569,
+          "scientificName": "Cucumis sativus L.",
+          "canonicalName": "Cucumis sativus",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=5",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 3625692,
+              "scientificName": "Cucumis × hytivus Jin F.Chen & J.H.Kirkbr.",
+              "canonicalName": "Cucumis hytivus",
+              "rank": "SPECIES",
+              "status": "ACCEPTED",
+              "confidence": 16,
+              "note": "Similarity: name=5; authorship=0; classification=4; rank=6; status=1; score=16",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Cucurbitales",
+              "family": "Cucurbitaceae",
+              "genus": "Cucumis",
+              "species": "Cucumis hytivus",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 7224005,
+              "familyKey": 6634,
+              "genusKey": 2874568,
+              "speciesKey": 3625692,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Cucurbitales",
+          "family": "Cucurbitaceae",
+          "genus": "Cucumis",
+          "species": "Cucumis sativus",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 7224005,
+          "familyKey": 6634,
+          "genusKey": 2874568,
+          "speciesKey": 2874569,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

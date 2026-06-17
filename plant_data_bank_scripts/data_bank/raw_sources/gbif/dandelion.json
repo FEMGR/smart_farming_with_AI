@@ -1,0 +1,103 @@
+{
+  "plant": {
+    "plant_atom": "dandelion",
+    "common_name": "Dandelion",
+    "scientific_name": "Taraxacum officinale",
+    "genus": "Taraxacum",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Taraxacum officinale",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:12.316679+00:00",
+      "response_hash": "3e62ba590104e350cbeeb052e3a561e11877573b8f58a3be6849e0ebcc3b6c9c",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 5394163,
+          "scientificName": "Taraxacum officinale Weber ex F.H.Wigg.",
+          "canonicalName": "Taraxacum officinale",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=3",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 8121923,
+              "scientificName": "Taraxacum officinale Weber",
+              "canonicalName": "Taraxacum officinale",
+              "rank": "SPECIES",
+              "status": "DOUBTFUL",
+              "confidence": 97,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=-5; score=115",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Asterales",
+              "family": "Asteraceae",
+              "genus": "Taraxacum",
+              "species": "Taraxacum officinale",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 414,
+              "familyKey": 3065,
+              "genusKey": 7787708,
+              "speciesKey": 8121923,
+              "class": "Magnoliopsida"
+            },
+            {
+              "usageKey": 5696707,
+              "scientificName": "Taraxacum officinarum Rupr.",
+              "canonicalName": "Taraxacum officinarum",
+              "rank": "SPECIES",
+              "status": "DOUBTFUL",
+              "confidence": 91,
+              "note": "Similarity: name=90; authorship=0; classification=4; rank=6; status=-5; score=95",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Asterales",
+              "family": "Asteraceae",
+              "genus": "Taraxacum",
+              "species": "Taraxacum officinarum",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 414,
+              "familyKey": 3065,
+              "genusKey": 8322495,
+              "speciesKey": 5696707,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Asterales",
+          "family": "Asteraceae",
+          "genus": "Taraxacum",
+          "species": "Taraxacum officinale",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 414,
+          "familyKey": 3065,
+          "genusKey": 7787708,
+          "speciesKey": 5394163,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

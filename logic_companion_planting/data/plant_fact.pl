@@ -371,3 +371,17 @@ trait(kencur, pest_repellent).
 trait(temulawak, pest_repellent).
 
 trait(johnson_grass, invasive).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_fact
+% Review before editing manually.
+% =========================================================
+
+plant(gotu_kola).
+scientific_name(gotu_kola, 'centella asiatica').
+edible(gotu_kola, true).
+edible_part(gotu_kola, leaf).
+use_category(gotu_kola, medicinal_plant).
+trait(gotu_kola, medicinal).
+trait(gotu_kola, pollinator_attractor).

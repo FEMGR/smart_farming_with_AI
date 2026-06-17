@@ -1,0 +1,270 @@
+{
+  "plant": {
+    "plant_atom": "peppermint",
+    "common_name": "Peppermint",
+    "scientific_name": "Mentha x piperita",
+    "genus": "Mentha",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Mentha+x+piperita",
+      "query": "Mentha x piperita",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:42:10.897573+00:00",
+      "response_hash": "361e14b62b46d633f188ee986fade1a5bf3bbc5563f831f3121e58cad92f8c7d",
+      "parsed": {
+        "title": "Mentha x piperita Eau De Cologne Mint, Eau de Cologne Mint, Peppermint PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Mentha x piperita - (Ehrh.)Briq.",
+          "common_name": "Eau De Cologne Mint, Eau de Cologne Mint, Peppermint",
+          "family": "Lamiaceae",
+          "usda_hardiness": "3-9",
+          "known_hazards": "Although no specific mention has been seen for this sub-species, it should be noted that, in large quantities, the closely allied M. x piperita vulgaris can cause abortions, especially when used in the form of the extracted essential oil, so it should not be used by pregnant women.",
+          "habitats": "A natural hybrid, M. aquatica x M. spicata found in moist soils on the sides of ditches, roadsides etc in S. England[5, 17].",
+          "range": "Britain.",
+          "summary": "Main Bloom Time: Late summer, Mid summer. Form: Spreading or horizontal.",
+          "physical_characteristics": "Mentha x piperita is a PERENNIAL growing to 0.3 m (1ft) by 1 m (3ft 3in) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 3 and is not frost tender. It is in flower from August to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. It is noted for attracting wildlife. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and can grow in heavy clay soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil.",
+          "synonyms": "M. aquatica citrata. M. citrata.",
+          "plant_habitats": null,
+          "edible_uses": "Leaves - raw or cooked. Used as a flavouring in salads or cooked foods[5]. A very pungent flavour, the leaves of the true eau-de-cologne mint are too aromatic for most tastes, though the cultivar 'Basil' has an excellent flavour and makes a very good substitute for basil in pesto[K]. A herb tea is made from the fresh or dried leaves[21, 183].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Eau de Cologne mint, like many other members of this genus, is often used as a domestic herbal remedy, being valued especially for its antiseptic properties and its beneficial effect on the digestion. Like other members of the genus, it is best not used by pregnant women because large doses can cause an abortion. The leaves and flowering plant are anodyne, antiseptic, antispasmodic, carminative, cholagogue, diaphoretic, refrigerant, stomachic, tonic, vasodilator[4, 9, 21, 165]. A tea made from the leaves has traditionally been used in the treatment of fevers, headaches, digestive disorders and various minor ailments[222]. The medicinal uses of this herb are more akin to lavender (Lavandula spp) than the mints. It is used to treat infertility, rapid heartbeat, nervous exhaustion etc[238]. The leaves are harvested as the plant comes into flower and can be dried for later use[238]. The essential oil in the leaves is antiseptic, though it is toxic in large doses[222].",
+          "other_uses": "Landscape Uses: Container, Ground cover, Woodland garden. An essential oil obtained from the whole plant is a source of lavender oil which is used in perfumery[46, 105, 238]. It is also used in oral hygiene preparations, toiletries etc[238]. Formerly used as a strewing herb[14], the plant repels insects, rats etc[14, 18, 20]. Rats and mice intensely dislike the smell of mint. The plant was therefore used in homes as a strewing herb and has also been spread in granaries to keep the rodents off the grain[244]. Dynamic accumulator.",
+          "special_uses": null,
+          "cultivation": "A very easily grown plant, it succeeds in most soils and situations so long as the soil is not too dry[1, 200]. Grows well in heavy clay soils. A sunny position is best for the production of essential oils, but the plant also succeeds in partial shade. Prefers a slightly acid soil[16]. Plants are very tolerant of neglect, succeeding in long grass[K]. Hybridizes freely with other members of this genus. Most mints have fairly aggressive spreading roots and, unless you have the space to let them roam, they need to be restrained by some means such as planting them in containers that are buried in the soil[K]. The flowers are very attractive to bees and butterflies[24]. A good companion for growing near cabbages and tomatoes, helping to keep them free of insect pests[14, 20]. The mint will need to be grown in containers to prevent it spreading too aggressively into the other plants. The whole plant has a strong minty aroma with a hint of ginger[245]. The plant produces a better quality essential oil if the plant is grown in dry ground[115]. Members of this genus are rarely if ever troubled by browsing deer[233]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Invasive, Naturalizing, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is rhizomatous with underground stems sending roots and shoots along their length [2-1].",
+          "propagation": "Seed - sow spring in a cold frame. Germination is usually fairly quick. Prick out the seedlings into individual pots when they are large enough to handle and plant them out in the summer. Mentha species are very prone to hybridisation and so the seed cannot be relied on to breed true. Even without hybridisation, seedlings will not be uniform and so the content of medicinal oils etc will vary. When growing plants with a particular aroma it is best to propagate them by division[K]. Division can be easily carried out at almost any time of the year, though it is probably best done in the spring or autumn to allow the plant to establish more quickly. Virtually any part of the root is capable of growing into a new plant. Larger divisions can be planted out direct into their permanent positions. However, for maximum increase it is possible to divide the roots up into sections no more than 3cm long and pot these up in light shade in a cold frame. They will quickly become established and can be planted out in the summer.",
+          "other_names": "Bergamot mint",
+          "native_range": "The hybrid formula is M. aquatica × M. spicata. Altay, Austria, Belgium, Bulgaria, Czechoslovakia, Denmark, France, Germany, Greece, Hungary, Iran, Italy, Kirgizstan, Lebanon-Syria, Netherlands, North Caucasus, Palestine, Poland, Romania, Sicilia, Switzerland, Turkey, Ukraine, Yugoslavia.",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Bergamot mint",
+            "scientific_name": "Mentha x piperita",
+            "genus": "Mentha",
+            "family": "Lamiaceae",
+            "synonyms": [],
+            "common_names": [
+              "Bergamot mint",
+              "Eau de Cologne Mint",
+              "Eau De Cologne Mint",
+              "Peppermint"
+            ]
+          },
+          "pfaf_display_latin_name": "Mentha x piperita - (Ehrh.)Briq.",
+          "pfaf_common_name": "Eau De Cologne Mint, Eau de Cologne Mint, Peppermint",
+          "pfaf_family": "Lamiaceae",
+          "pfaf_synonyms": "M. aquatica citrata. M. citrata.",
+          "pfaf_other_names": "Bergamot mint",
+          "edible_parts": [
+            "leaf"
+          ],
+          "use_categories": [
+            "culinary_herb",
+            "medicinal_plant"
+          ],
+          "life_cycle": "perennial",
+          "botanical_life_cycle": "perennial",
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun",
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "A very easily grown plant, it succeeds in most soils and situations so long as the soil is not too dry[1, 200]. Grows well in heavy clay soils. A sunny position is best for the production of essential oils, but the plant also succeeds in partial shade. Prefers a slightly acid soil[16]. Plants are very tolerant of neglect, succeeding in long grass[K]. Hybridizes freely with other members of this genus. Most mints have fairly aggressive spreading roots and, unless you have the space to let them roam, they need to be restrained by some means such as planting them in containers that are buried in the soil[K]. The flowers are very attractive to bees and butterflies[24]. A good companion for growing near cabbages and tomatoes, helping to keep them free of insect pests[14, 20]. The mint will need to be grown in containers to prevent it spreading too aggressively into the other plants. The whole plant has a strong minty aroma with a hint of ginger[245]. The plant produces a better quality essential oil if the plant is grown in dry ground[115]. Members of this genus are rarely if ever troubled by browsing deer[233]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Invasive, Naturalizing, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is rhizomatous with underground stems sending roots and shoots along their length [2-1].",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "division",
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow spring in a cold frame. Germination is usually fairly quick. Prick out the seedlings into individual pots when they are large enough to handle and plant them out in the summer. Mentha species are very prone to hybridisation and so the seed cannot be relied on to breed true. Even without hybridisation, seedlings will not be uniform and so the content of medicinal oils etc will vary. When growing plants with a particular aroma it is best to propagate them by division[K]. Division can be easily carried out at almost any time of the year, though it is probably best done in the spring or autumn to allow the plant to establish more quickly. Virtually any part of the root is capable of growing into a new plant. Larger divisions can be planted out direct into their permanent positions. However, for maximum increase it is possible to divide the roots up into sections no more than 3cm long and pot these up in light shade in a cold frame. They will quickly become established and can be planted out in the summer.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Main Bloom Time: Late summer, Mid summer. Form: Spreading or horizontal.",
+          "edible_uses_notes": "Leaves - raw or cooked. Used as a flavouring in salads or cooked foods[5]. A very pungent flavour, the leaves of the true eau-de-cologne mint are too aromatic for most tastes, though the cultivar 'Basil' has an excellent flavour and makes a very good substitute for basil in pesto[K]. A herb tea is made from the fresh or dried leaves[21, 183].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Eau de Cologne mint, like many other members of this genus, is often used as a domestic herbal remedy, being valued especially for its antiseptic properties and its beneficial effect on the digestion. Like other members of the genus, it is best not used by pregnant women because large doses can cause an abortion. The leaves and flowering plant are anodyne, antiseptic, antispasmodic, carminative, cholagogue, diaphoretic, refrigerant, stomachic, tonic, vasodilator[4, 9, 21, 165]. A tea made from the leaves has traditionally been used in the treatment of fevers, headaches, digestive disorders and various minor ailments[222]. The medicinal uses of this herb are more akin to lavender (Lavandula spp) than the mints. It is used to treat infertility, rapid heartbeat, nervous exhaustion etc[238]. The leaves are harvested as the plant comes into flower and can be dried for later use[238]. The essential oil in the leaves is antiseptic, though it is toxic in large doses[222].",
+          "other_uses_notes": "Landscape Uses: Container, Ground cover, Woodland garden. An essential oil obtained from the whole plant is a source of lavender oil which is used in perfumery[46, 105, 238]. It is also used in oral hygiene preparations, toiletries etc[238]. Formerly used as a strewing herb[14], the plant repels insects, rats etc[14, 18, 20]. Rats and mice intensely dislike the smell of mint. The plant was therefore used in homes as a strewing herb and has also been spread in granaries to keep the rodents off the grain[244]. Dynamic accumulator.",
+          "cultivation_notes": "A very easily grown plant, it succeeds in most soils and situations so long as the soil is not too dry[1, 200]. Grows well in heavy clay soils. A sunny position is best for the production of essential oils, but the plant also succeeds in partial shade. Prefers a slightly acid soil[16]. Plants are very tolerant of neglect, succeeding in long grass[K]. Hybridizes freely with other members of this genus. Most mints have fairly aggressive spreading roots and, unless you have the space to let them roam, they need to be restrained by some means such as planting them in containers that are buried in the soil[K]. The flowers are very attractive to bees and butterflies[24]. A good companion for growing near cabbages and tomatoes, helping to keep them free of insect pests[14, 20]. The mint will need to be grown in containers to prevent it spreading too aggressively into the other plants. The whole plant has a strong minty aroma with a hint of ginger[245]. The plant produces a better quality essential oil if the plant is grown in dry ground[115]. Members of this genus are rarely if ever troubled by browsing deer[233]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Invasive, Naturalizing, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is rhizomatous with underground stems sending roots and shoots along their length [2-1].",
+          "known_hazards": "Although no specific mention has been seen for this sub-species, it should be noted that, in large quantities, the closely allied M. x piperita vulgaris can cause abortions, especially when used in the form of the extracted essential oil, so it should not be used by pregnant women.",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "cabbage",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              },
+              {
+                "plant": "tomato",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              }
+            ],
+            "conflicts": [],
+            "repels_pests": [
+              {
+                "target": "insect_pests",
+                "mechanism": "companion_effect",
+                "source_name": "Plants For A Future",
+                "confidence": 0.7,
+                "notes": "PFAF says companion planting helps keep nearby plants free of insect pests."
+              }
+            ],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting."
+            ]
+          }
+        },
+        "page_text_excerpt": "Mentha x piperita Eau De Cologne Mint, Eau de Cologne Mint, Peppermint PFAF Plant Database Follow Us: Mentha x piperita - (Ehrh.)Briq. Common Name Eau De Cologne Mint, Eau de Cologne Mint, Peppermint Family Lamiaceae USDA hardiness 3-9 Known Hazards Although no specific mention has been seen for this sub-species, it should be noted that, in large quantities, the closely allied M. x piperita vulgaris can cause abortions, especially when used in the form of the extracted essential oil, so it should not be used by pregnant women. Habitats A natural hybrid, M. aquatica x M. spicata found in moist soils on the sides of ditches, roadsides etc in S. England[5, 17]. Range Britain. Edibility Rating (2 of 5) Other Uses (3 of 5) Weed Potential No Medicinal Rating (2 of 5) Care (info) Mentha x piperita citrata http://commons.wikimedia.org/wiki/User:Magnus_Manske Translate this page: Summary Main Bloom Time: Late summer, Mid summer. Form: Spreading or horizontal. Physical Characteristics Mentha x piperita is a PERENNIAL growing to 0.3 m (1ft) by 1 m (3ft 3in) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 3 and is not frost tender. It is in flower from August to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. It is noted for attracting wildlife. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and can grow in heavy clay soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil. UK Hardiness Map US Hardiness Map Synonyms M. aquatica citrata. M. citrata. Plant Habitats Edible Uses Leaves - raw or cooked. Used as a flavouring in salads or cooked foods[5]. A very pungent flavour, the leaves of the true eau-de-cologne mint are too aromatic for most tastes, though the cultivar 'Basil' has an excellent flavour and makes a very good substitute for basil in pesto[K]. A herb tea is made from the fresh or dried leaves[21, 183]. References More on Edible Uses Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Eau de Cologne mint, like many other members of this genus, is often used as a domestic herbal remedy, being valued especially for its antiseptic properties and its beneficial effect on the digestion. Like other members of the genus, it is best not used by pregnant women because large doses can cause an abortion. The leaves and flowering plant are anodyne, antiseptic, antispasmodic, carminative, cholagogue, diaphoretic, refrigerant, stomachic, tonic, vasodilator[4, 9, 21, 165]. A tea made from the leaves has traditionally been used in the treatment of fevers, headaches, digestive disorders and various minor ailments[222]. The medicinal uses of this herb are more akin to lavender (Lavandula spp) than the mints. It is used to treat infertility, rap"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tMentha x piperita Eau De Cologne Mint,  Eau de Cologne Mint, Peppermint PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Mentha x piperita is a PERENNIAL growing to 0.3 m (1ft) by 1 m (3ft&amp;nbsp;3in) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 3 and is not frost tender.  It is in flower from August to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. It is noted for attracting wildlife.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and can grow in heavy clay soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in  semi-shade (light woodland) or no shade. It prefers  moist soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Mentha+x+piperita\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BdMETWVudGhhIHggcGlwZXJpdGEgaXMgYSBQRVJFTk5JQUwgZ3Jvd2luZyB0byAwLjMgbSAoMWZ0KSBieSAxIG0gKDNmdCZuYnNwOzNpbikgYXQgYSBmYXN0IHJhdGUuIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgMyBhbmQgaXMgbm90IGZyb3N0IHRlbmRlci4gIEl0IGlzIGluIGZsb3dlciBmcm9tIEF1Z3VzdCB0byBPY3RvYmVyLiBUaGUgc3BlY2llcyBpcyBoZXJtYXBocm9kaXRlIChoYXMgYm90aCBtYWxlIGFuZCBmZW1hbGUgb3JnYW5zKSBhbmQgaXMgcG9sbGluYXRlZCBieSBJbnNlY3RzLiBJdCBpcyBub3RlZCBmb3IgYXR0cmFjdGluZyB3aWxkbGlmZS4gIFN1aXRhYmxlIGZvcjogbGlnaHQgKHNhbmR5KSwgbWVkaXVtIChsb2FteSkgYW5kIGhlYXZ5IChjbGF5KSBzb2lscyBhbmQgY2FuIGdyb3cgaW4gaGVhdnkgY2xheSBzb2lsLiBTdWl0YWJsZSBwSDogbWlsZGx5IGFjaWQsIG5ldXRyYWwgYW5kIGJhc2ljIChtaWxkbHkgYWxrYWxpbmUpIHNvaWxzLiBJdCBjYW4gZ3JvdyBpbiAgc2VtaS1zaGFkZSAobGlnaHQgd29vZGxhbmQpIG9yIG5vIHNoYWRlLiBJdCBwcmVmZXJzICBtb2lzdCBzb2lsLmQCAw9kFgICAw9kFmACAQ8PFgIeBFRleHQFIE1lbnRoYSB4IHBpcGVyaXRhIC0gKEVocmguKUJyaXEuZGQCAw8PFgIfAwU1RWF1IERlIENvbG9nbmUgTWludCwgIEVhdSBkZSBDb2xvZ25lIE1pbnQsIFBlcHBlcm1pbnRkZAIFDw8WAh8DBQlMYW1pYWNlYWVkZAIHDw8WAh8DBQMzLTlkZAIJDw8WAh4HVmlzaWJsZWdkZAILDw8WAh8DBZoCQWx0aG91Z2ggbm8gc3BlY2lmaWMgbWVudGlvbiBoYXMgYmVlbiBzZWVuIGZvciB0aGlzIHN1Yi1zcGVjaWVzLCBpdCBzaG91bGQgYmUgbm90ZWQgdGhhdCwgaW4gbGFyZ2UgcXVhbnRpdGllcywgdGhlIGNsb3NlbHkgYWxsaWVkIE0uIHggcGlwZXJpdGEgdnVsZ2FyaXMgY2FuIGNhdXNlIGFib3J0aW9ucywgZXNwZWNpYWxseSB3aGVuIHVzZWQgaW4gdGhlIGZvcm0gb2YgdGhlIGV4dHJhY3RlZCBlc3NlbnRpYWwgb2lsLCBzbyBpdCBzaG91bGQgbm90IGJlIHVzZWQgYnkgcHJlZ25hbnQgd29tZW4uZGQCDQ8PFgIfAwV8QSBuYXR1cmFsIGh5YnJpZCwgTS4gYXF1YXRpY2EgeC"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Peppermint",
+      "query": "Mentha x piperita",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:42:11.553690+00:00",
+      "response_hash": "c9021ebad856edc7094ccfa9a4afaadfd72162ff370e6a9d3dee6675f8135775",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Peppermint",
+            "scientific_name": "Mentha x piperita",
+            "genus": "Mentha",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Peppermint\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants fo"
+    }
+  ]
+}

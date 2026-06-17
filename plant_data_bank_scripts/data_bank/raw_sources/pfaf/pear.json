@@ -1,0 +1,245 @@
+{
+  "plant": {
+    "plant_atom": "pear",
+    "common_name": "Pear",
+    "scientific_name": "Pyrus communis",
+    "genus": "Pyrus",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Pyrus+communis",
+      "query": "Pyrus communis",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:42:42.790025+00:00",
+      "response_hash": "5dd5fab8d2354bcc33a444ac125dc0ead878ea680e128c81109e6b67f7e68503",
+      "parsed": {
+        "title": "Pyrus communis Wild Pear, Common pear PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Pyrus communis - L.",
+          "common_name": "Wild Pear, Common pear",
+          "family": "Rosaceae",
+          "usda_hardiness": "4-9",
+          "known_hazards": "None known",
+          "habitats": "Hedges, woodland margins etc in Britain[17].",
+          "range": "Europe. Naturalized in Britain[17].",
+          "summary": "Pyrus species are deciduous trees or shrubs up to 20m (66ft) high with scented white flowers in spring and green or brown fruits. Several species of pears are valued for their edible fruit, while others are ornamental cultivated trees. Depending on the species and cultivar, fruit is available from summer to late autumn. The European Pear or Common Pear (P. communis) is native to Europe and Southwest Asia and widely planted in North America. Many cultivars are available for garden fruit production. The cultivar choice depends on the site conditions, garden size, taste, use (eating or cooking), disease resistance and storage. For high yields, pears need pollination from a different cultivar that flowers simultaneously. European pear trees can be dwarf to large trees depending on the rootstock. Asian pears have similar cultivation needs to European pears. Pears, like apples, require a certain number of hours of exposure to cold temperatures, called ‘chill hours,’ to produce fruit. Some pear varieties have lower chill hour requirements than others, making them well-suited for growing in regions with mild winters, such as California, Florida and Texas. Low-chill pear varieties include: Bartlett: This is a sweet and juicy variety with a yellow colour and a soft texture. It requires around 400 chill hours and ripens in late summer to early autumn. Comice: This is a sweet and juicy variety with a green colour and a soft texture. It requires around 400 chill hours and ripens in mid-autumn. Warren: This is a sweet and juicy variety with a green colour and a soft texture. It requires around 400 chill hours and ripens in late autumn. Magness: This is a sweet and juicy variety with a red colour and a firm texture. It requires around 200 chill hours and ripens in autumn. Shinseiki: This is a sweet and juicy variety with a yellow colour and a crisp texture. It requires around 100 chill hours and ripens from late summer to autumn. Harvesting: Summer to autumn, depending on the variety and climate. Bloom Color: White. Main Bloom Time: Early spring, Late spring, Mid spring. Form: Oval, Rounded.",
+          "physical_characteristics": "Pyrus communis is a deciduous Tree growing to 13 m (42ft 8in) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 4 and is not frost tender. It is in flower from April to May, and the seeds ripen from October to December. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils, prefers well-drained soil and can grow in heavy clay soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil and can tolerate drought. It can tolerate atmospheric pollution.",
+          "synonyms": null,
+          "plant_habitats": "Woodland Garden Secondary; Sunny Edge; Dappled Shade;",
+          "edible_uses": "Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[2, 5]. The fruit of wild pears often remains very hard unless bletted[186]. It is more suitable for use in pies etc. The fruit is up to 5cm long[200].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Astringent Febrifuge Sedative The fruit is astringent, febrifuge and sedative[240].",
+          "other_uses": "Dye Shelterbelt Wood Agroforestry uses: Pear trees can be used as part of agroforestry systems for shade and windbreaks. They can also contribute to biodiversity and provide food for wildlife. A yellow-tan dye is obtained from the leaves[106, 115]. Trees are sometimes used as part of a shelterbelt planting[227]. Wood - heavy, tough, durable, fine grained, hard. It weighs 51lb per cubic foot[227]. Used by cabinet and instrument makers[11, 61, 100, 149]. When covered with black varnish it is an excellent ebony substitute[74]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Pear flowers are rich in nectar and pollen, attracting pollinators like bees, which are beneficial to gardens and ecosystems. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Pear fruit provides food for wildlife, including birds and small mammals. The dense foliage offers some shelter, and the structure of the tree can be used by birds for perching or nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The rough bark and leaf litter can provide overwintering sites for invertebrates. Fallen leaves can create habitat for ground-dwelling organisms. 4. Pest Confuser (Smell): No – Pear trees do not have a strong pest-repellent smell and are not typically used for pest confusion.",
+          "special_uses": "Food Forest",
+          "cultivation": "Prefers a good well-drained loam in full sun[1, 200]. Grows well in heavy clay soils. Tolerates light shade but does not fruit so well in such a position. Tolerates atmospheric pollution, excessive moisture and a range of soil types, if they are moderately fertile[200], avoiding only the most acid soils[186]. Dislikes very exposed positions[186]. Established plants are drought tolerant[200]. A very hardy plant, tolerating temperatures down to below -15°c[200]. Plants often sucker and can form dense thickets[186]. A parent of the cultivated pear, possibly by crossing with P. nivalis and P. cordata[11]. There are many hundreds of varieties of cultivated pears and they are widely cultivated in the temperate zone for their edible fruits. By selection of varieties fresh fruits can be obtained from late July to April or May of the following year. Special Features: Edible, Not North American native, Naturalizing, Attractive flowers or blooms. The plant is heat tolerant in zones 9 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a standard with a non-suckering single trunk [1-2]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is branching: a heart root, dividing from the crown into several primary roots going down and out [2-1]. Some pear species and varieties are self-fertile, but many require cross-pollination with another compatible pear variety to produce fruit. Pears are generally harvested in late Summer to early Autumn, depending on the variety and climate. Pear trees usually flower in Spring, typically around April to May (Northern Hemisphere), depending on the region. Pear trees typically grow at a moderate rate, reaching maturity in about 4 to 6 years, with some varieties taking longer.",
+          "propagation": "Seed - best sown in a cold frame as soon as it is ripe in the autumn, it will then usually germinate in mid to late winter. Stored seed requires 8 - 10 weeks cold stratification at 1°c and should be sown as early in the year as possible[200]. Temperatures over 15 - 20°c induce a secondary dormancy in the seed[200]. Prick out the seedlings into individual pots when they are large enough to handle and grow them on in light shade in a cold frame or greenhouse for their first year. Plant them out in late spring or early summer of the following year.",
+          "other_names": null,
+          "native_range": "TEMPERATE ASIA: Iraq,Turkey. EUROPE: Albania, Austria, Baltic States, Estonia, Latvia, Lithuania, Belarus, Belgium, Bulgaria, Ukraine, Belarus, Corse, Corsica, Cyprus, Czech Republic, Slovakia, East Aegean Is., East European Russia, France, Germany, Greece, Hungary, Italy, Netherlands, North Caucasus, Poland, Romania, Sardegna, Sardinia, Sicilia, South European Russi, Spain, Switzerland, Transcaucasus, Turkey, Slovenia, Croatia, Bosnia, Herzegovina, Serbia, Montenegro, North Macedonia, Kosovo,",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Common pear",
+            "scientific_name": "Pyrus communis",
+            "genus": "Pyrus",
+            "family": "Rosaceae",
+            "synonyms": [],
+            "common_names": [
+              "Common pear",
+              "Wild Pear"
+            ]
+          },
+          "pfaf_display_latin_name": "Pyrus communis - L.",
+          "pfaf_common_name": "Wild Pear, Common pear",
+          "pfaf_family": "Rosaceae",
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "fruit"
+          ],
+          "use_categories": [
+            "fruit_crop",
+            "medicinal_plant",
+            "repellent_plant"
+          ],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun",
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "Prefers a good well-drained loam in full sun[1, 200]. Grows well in heavy clay soils. Tolerates light shade but does not fruit so well in such a position. Tolerates atmospheric pollution, excessive moisture and a range of soil types, if they are moderately fertile[200], avoiding only the most acid soils[186]. Dislikes very exposed positions[186]. Established plants are drought tolerant[200]. A very hardy plant, tolerating temperatures down to below -15°c[200]. Plants often sucker and can form dense thickets[186]. A parent of the cultivated pear, possibly by crossing with P. nivalis and P. cordata[11]. There are many hundreds of varieties of cultivated pears and they are widely cultivated in the temperate zone for their edible fruits. By selection of varieties fresh fruits can be obtained from late July to April or May of the following year. Special Features: Edible, Not North American native, Naturalizing, Attractive flowers or blooms. The plant is heat tolerant in zones 9 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a standard with a non-suckering single trunk [1-2]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is branching: a heart root, dividing from the crown into several primary roots going down and out [2-1]. Some pear species and varieties are self-fertile, but many require cross-pollination with another compatible pear variety to produce fruit. Pears are generally harvested in late Summer to early Autumn, depending on the variety and climate. Pear trees usually flower in Spring, typically around April to May (Northern Hemisphere), depending on the region. Pear trees typically grow at a moderate rate, reaching maturity in about 4 to 6 years, with some varieties taking longer.",
+            "light_notes": null,
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "seed"
+          ],
+          "propagation_notes": "Seed - best sown in a cold frame as soon as it is ripe in the autumn, it will then usually germinate in mid to late winter. Stored seed requires 8 - 10 weeks cold stratification at 1°c and should be sown as early in the year as possible[200]. Temperatures over 15 - 20°c induce a secondary dormancy in the seed[200]. Prick out the seedlings into individual pots when they are large enough to handle and grow them on in light shade in a cold frame or greenhouse for their first year. Plant them out in late spring or early summer of the following year.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Pyrus species are deciduous trees or shrubs up to 20m (66ft) high with scented white flowers in spring and green or brown fruits. Several species of pears are valued for their edible fruit, while others are ornamental cultivated trees. Depending on the species and cultivar, fruit is available from summer to late autumn. The European Pear or Common Pear (P. communis) is native to Europe and Southwest Asia and widely planted in North America. Many cultivars are available for garden fruit production. The cultivar choice depends on the site conditions, garden size, taste, use (eating or cooking), disease resistance and storage. For high yields, pears need pollination from a different cultivar that flowers simultaneously. European pear trees can be dwarf to large trees depending on the rootstock. Asian pears have similar cultivation needs to European pears. Pears, like apples, require a certain number of hours of exposure to cold temperatures, called ‘chill hours,’ to produce fruit. Some pear varieties have lower chill hour requirements than others, making them well-suited for growing in regions with mild winters, such as California, Florida and Texas. Low-chill pear varieties include: Bartlett: This is a sweet and juicy variety with a yellow colour and a soft texture. It requires around 400 chill hours and ripens in late summer to early autumn. Comice: This is a sweet and juicy variety with a green colour and a soft texture. It requires around 400 chill hours and ripens in mid-autumn. Warren: This is a sweet and juicy variety with a green colour and a soft texture. It requires around 400 chill hours and ripens in late autumn. Magness: This is a sweet and juicy variety with a red colour and a firm texture. It requires around 200 chill hours and ripens in autumn. Shinseiki: This is a sweet and juicy variety with a yellow colour and a crisp texture. It requires around 100 chill hours and ripens from late summer to autumn. Harvesting: Summer to autumn, depending on the variety and climate. Bloom Color: White. Main Bloom Time: Early spring, Late spring, Mid spring. Form: Oval, Rounded.",
+          "edible_uses_notes": "Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[2, 5]. The fruit of wild pears often remains very hard unless bletted[186]. It is more suitable for use in pies etc. The fruit is up to 5cm long[200].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Astringent Febrifuge Sedative The fruit is astringent, febrifuge and sedative[240].",
+          "other_uses_notes": "Dye Shelterbelt Wood Agroforestry uses: Pear trees can be used as part of agroforestry systems for shade and windbreaks. They can also contribute to biodiversity and provide food for wildlife. A yellow-tan dye is obtained from the leaves[106, 115]. Trees are sometimes used as part of a shelterbelt planting[227]. Wood - heavy, tough, durable, fine grained, hard. It weighs 51lb per cubic foot[227]. Used by cabinet and instrument makers[11, 61, 100, 149]. When covered with black varnish it is an excellent ebony substitute[74]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Pear flowers are rich in nectar and pollen, attracting pollinators like bees, which are beneficial to gardens and ecosystems. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Pear fruit provides food for wildlife, including birds and small mammals. The dense foliage offers some shelter, and the structure of the tree can be used by birds for perching or nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The rough bark and leaf litter can provide overwintering sites for invertebrates. Fallen leaves can create habitat for ground-dwelling organisms. 4. Pest Confuser (Smell): No – Pear trees do not have a strong pest-repellent smell and are not typically used for pest confusion.",
+          "cultivation_notes": "Prefers a good well-drained loam in full sun[1, 200]. Grows well in heavy clay soils. Tolerates light shade but does not fruit so well in such a position. Tolerates atmospheric pollution, excessive moisture and a range of soil types, if they are moderately fertile[200], avoiding only the most acid soils[186]. Dislikes very exposed positions[186]. Established plants are drought tolerant[200]. A very hardy plant, tolerating temperatures down to below -15°c[200]. Plants often sucker and can form dense thickets[186]. A parent of the cultivated pear, possibly by crossing with P. nivalis and P. cordata[11]. There are many hundreds of varieties of cultivated pears and they are widely cultivated in the temperate zone for their edible fruits. By selection of varieties fresh fruits can be obtained from late July to April or May of the following year. Special Features: Edible, Not North American native, Naturalizing, Attractive flowers or blooms. The plant is heat tolerant in zones 9 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a standard with a non-suckering single trunk [1-2]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is branching: a heart root, dividing from the crown into several primary roots going down and out [2-1]. Some pear species and varieties are self-fertile, but many require cross-pollination with another compatible pear variety to produce fruit. Pears are generally harvested in late Summer to early Autumn, depending on the variety and climate. Pear trees usually flower in Spring, typically around April to May (Northern Hemisphere), depending on the region. Pear trees typically grow at a moderate rate, reaching maturity in about 4 to 6 years, with some varieties taking longer.",
+          "known_hazards": "None known",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": true,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+            ]
+          }
+        },
+        "page_text_excerpt": "Pyrus communis Wild Pear, Common pear PFAF Plant Database Follow Us: Pyrus communis - L. Common Name Wild Pear, Common pear Family Rosaceae USDA hardiness 4-9 Known Hazards None known Habitats Hedges, woodland margins etc in Britain[17]. Range Europe. Naturalized in Britain[17]. Edibility Rating (2 of 5) Other Uses (3 of 5) Weed Potential No Medicinal Rating (1 of 5) Care (info) http://commons.wikimedia.org/wiki/User:Josemanuel http://commons.wikimedia.org/wiki/File:Illustration_Pyrus_communis0.jpg Translate this page: Summary Pyrus species are deciduous trees or shrubs up to 20m (66ft) high with scented white flowers in spring and green or brown fruits. Several species of pears are valued for their edible fruit, while others are ornamental cultivated trees. Depending on the species and cultivar, fruit is available from summer to late autumn. The European Pear or Common Pear (P. communis) is native to Europe and Southwest Asia and widely planted in North America. Many cultivars are available for garden fruit production. The cultivar choice depends on the site conditions, garden size, taste, use (eating or cooking), disease resistance and storage. For high yields, pears need pollination from a different cultivar that flowers simultaneously. European pear trees can be dwarf to large trees depending on the rootstock. Asian pears have similar cultivation needs to European pears. Pears, like apples, require a certain number of hours of exposure to cold temperatures, called ‘chill hours,’ to produce fruit. Some pear varieties have lower chill hour requirements than others, making them well-suited for growing in regions with mild winters, such as California, Florida and Texas. Low-chill pear varieties include: Bartlett: This is a sweet and juicy variety with a yellow colour and a soft texture. It requires around 400 chill hours and ripens in late summer to early autumn. Comice: This is a sweet and juicy variety with a green colour and a soft texture. It requires around 400 chill hours and ripens in mid-autumn. Warren: This is a sweet and juicy variety with a green colour and a soft texture. It requires around 400 chill hours and ripens in late autumn. Magness: This is a sweet and juicy variety with a red colour and a firm texture. It requires around 200 chill hours and ripens in autumn. Shinseiki: This is a sweet and juicy variety with a yellow colour and a crisp texture. It requires around 100 chill hours and ripens from late summer to autumn. Harvesting: Summer to autumn, depending on the variety and climate. Bloom Color: White. Main Bloom Time: Early spring, Late spring, Mid spring. Form: Oval, Rounded. Physical Characteristics Pyrus communis is a deciduous Tree growing to 13 m (42ft 8in) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 4 and is not frost tender. It is in flower from April to May, and the seeds ripen from October to December. The species is hermaphrodite (has both male and female organs) and is pollinated by Insec"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPyrus communis Wild Pear, Common pear PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Pyrus communis is a deciduous Tree growing to 13 m (42ft&amp;nbsp;8in) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 4 and is not frost tender.  It is in flower from April to May, and the seeds ripen from October to December. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. It is noted for attracting wildlife.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils, prefers  well-drained soil and can grow in heavy clay soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in  semi-shade (light woodland) or no shade. It prefers  moist soil and can tolerate drought. It can tolerate atmospheric pollution.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Pyrus+communis\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BegFUHlydXMgY29tbXVuaXMgaXMgYSBkZWNpZHVvdXMgVHJlZSBncm93aW5nIHRvIDEzIG0gKDQyZnQmbmJzcDs4aW4pIGF0IGEgZmFzdCByYXRlLiBTZWUgYWJvdmUgZm9yIFVTREEgaGFyZGluZXNzLiBJdCBpcyBoYXJkeSB0byBVSyB6b25lIDQgYW5kIGlzIG5vdCBmcm9zdCB0ZW5kZXIuICBJdCBpcyBpbiBmbG93ZXIgZnJvbSBBcHJpbCB0byBNYXksIGFuZCB0aGUgc2VlZHMgcmlwZW4gZnJvbSBPY3RvYmVyIHRvIERlY2VtYmVyLiBUaGUgc3BlY2llcyBpcyBoZXJtYXBocm9kaXRlIChoYXMgYm90aCBtYWxlIGFuZCBmZW1hbGUgb3JnYW5zKSBhbmQgaXMgcG9sbGluYXRlZCBieSBJbnNlY3RzLiBUaGUgcGxhbnQgaXMgc2VsZi1mZXJ0aWxlLiBJdCBpcyBub3RlZCBmb3IgYXR0cmFjdGluZyB3aWxkbGlmZS4gIFN1aXRhYmxlIGZvcjogbGlnaHQgKHNhbmR5KSwgbWVkaXVtIChsb2FteSkgYW5kIGhlYXZ5IChjbGF5KSBzb2lscywgcHJlZmVycyAgd2VsbC1kcmFpbmVkIHNvaWwgYW5kIGNhbiBncm93IGluIGhlYXZ5IGNsYXkgc29pbC4gU3VpdGFibGUgcEg6IG1pbGRseSBhY2lkLCBuZXV0cmFsIGFuZCBiYXNpYyAobWlsZGx5IGFsa2FsaW5lKSBzb2lscy4gSXQgY2FuIGdyb3cgaW4gIHNlbWktc2hhZGUgKGxpZ2h0IHdvb2RsYW5kKSBvciBubyBzaGFkZS4gSXQgcHJlZmVycyAgbW9pc3Qgc29pbCBhbmQgY2FuIHRvbGVyYXRlIGRyb3VnaHQuIEl0IGNhbiB0b2xlcmF0ZSBhdG1vc3BoZXJpYyBwb2xsdXRpb24uZAIDD2QWAgIDD2QWYgIBDw8WAh4EVGV4dAUTUHlydXMgY29tbXVuaXMgLSBMLmRkAgMPDxYCHwMFFldpbGQgUGVhciwgQ29tbW9uIHBlYXJkZAIFDw8WAh8DBQhSb3NhY2VhZWRkAgcPDxYCHwMFAzQtOWRkAgsPDxYCHwMFCk5vbmUga25vd25kZAINDw8WAh8DBSxIZWRnZXMsIHdvb2RsYW5kIG1hcmdpbnMgZXRjIGluIEJyaXRhaW5bMTddLmRkAg8PDxYCHwMFI0V1cm9wZS4gTmF0dXJhbGl6ZWQgaW4gQnJpdGFpblsxN10uZGQCEQ8PFgIeCEltYWdlVXJsBStpbWFnZXMvUEZBRl9zZWFyY2hWMWIvUE"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Pear",
+      "query": "Pyrus communis",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:42:43.504838+00:00",
+      "response_hash": "e5bf5ba95e665416b1a5be145363db3e7954db65d23f5d148d3b5b62af15cd6f",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Pear",
+            "scientific_name": "Pyrus communis",
+            "genus": "Pyrus",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Pear\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Medi"
+    }
+  ]
+}

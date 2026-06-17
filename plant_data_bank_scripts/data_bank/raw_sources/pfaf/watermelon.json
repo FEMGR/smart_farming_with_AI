@@ -1,0 +1,254 @@
+{
+  "plant": {
+    "plant_atom": "watermelon",
+    "common_name": "Watermelon",
+    "scientific_name": "Citrullus lanatus",
+    "genus": "Citrullus",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Citrullus+lanatus",
+      "query": "Citrullus lanatus",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:41:39.533313+00:00",
+      "response_hash": "a2177004c40e73ea2f9cd54515a1bfb4959bc92b3fe87a81a391f748d05cb8f6",
+      "parsed": {
+        "title": "Citrullus lanatus Water Melon PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 0.8500000000000002,
+        "sections": {
+          "display_latin_name": "Citrullus lanatus - (Thunb.)Matsum.&Nakai.",
+          "common_name": "Water Melon",
+          "family": "Cucurbitaceae",
+          "usda_hardiness": "8-11",
+          "known_hazards": "The sprouting seed produces a toxic substance in its embryo[65].",
+          "habitats": "A weed of roadsides and open ground in desert areas[117].",
+          "range": "Tropical and S. Africa.",
+          "summary": null,
+          "physical_characteristics": "Citrullus lanatus is a ANNUAL growing to 0.5 m (1ft 8in) by 2 m (6ft). See above for USDA hardiness. It is hardy to UK zone 9 and is frost tender. It is in flower from July to August. The species is monoecious (individual flowers are either male or female, but both sexes can be found on the same plant) and is pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers dry or moist soil and can tolerate drought.",
+          "synonyms": "C. vulgaris.",
+          "plant_habitats": "Cultivated Beds;",
+          "edible_uses": "Edible Parts: Fruit Leaves Oil Oil Seed Edible Uses: Oil Oil Pectin Fruit - raw. A very refreshing fruit[1, 2, 22, 46, 183], it has a delicate sweetness with an extremely high water content, the fruit is often used as a refreshing drink[183]. The unripe fruits are added to soups[183]. A syrup can also be made from the juice[183]. The fruit is a rich source of pectin[218, 240], and can be added to pectin-low fruits when making jam[K]. Pectin is said to protect the body against radiation[201]. The fruit varies considerably in size from cultivar to cultivar, but can be up to 1 metre long and 40cm wide[200]. A nutritional analysis is available[218]. Leaves - cooked. Seed - raw or cooked[63, 86, 117, 183]. They can be roasted or ground into a powder and used with cereal flours when making bread, cakes etc, or added to soups and stews[163, 105, 83]. The seed contains about 30% protein, 20 - 40% oil[61]. An edible oil is obtained from the seed[63, 105, 183, 266].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Cardiac Demulcent Diuretic Enuresis Febrifuge Pectoral Purgative Tonic Urinary Vermifuge The seed is demulcent, diuretic, pectoral and tonic[4, 218]. It is sometimes used in the treatment of the urinary passages[4] and has been used to treat bed wetting[257]. The seed is also a good vermifuge[4] and has a hypotensive action[7]. A fatty oil in the seed, as well as aqueous or alcoholic extracts, paralyze tapeworms and roundworms[240]. The fruit, eaten when fully ripe or even when almost putrid, is used as a febrifuge[4] The fruit is also diuretic, being effective in the treatment of dropsy and renal stones[7]. The fruit contains the substance lycopine (which is also found in the skins of tomatoes). This substance has been shown to protect the body from heart attacks and, in the case of the tomato at least, is more effective when it is cooked[246]. The rind of the fruit is prescribed in cases of alcoholic poisoning and diabetes[218]. The root is purgative and in large dose is said to be a certain emetic[4].",
+          "other_uses": "Oil Oil Pectin The seed contains 20 - 40% oil. As well as being edible, it is also used for making soap and for lighting[117]. Face masks made from the fruit are used as a cosmetic on delicate skins[7].",
+          "special_uses": null,
+          "cultivation": "Prefers a rich sandy loam and a very sunny position[1, 117, 200]. A drought resistant plant once established, it is intolerant of wet soils[117]. Tolerates a pH in the range 5.3 to 8. The water melon is frequently grown for its edible fruit in warm temperate and tropical areas, there are many named varieties[183]. It is not frost hardy and requires a long hot summer if it is to fruit well. It is not really a suitable crop for growing outdoors in Britain at the present time, though it is possible that new faster maturing cultivars will be developed. It is best grown in greenhouse conditions in Britain[K]. The cultivars 'Fordbrook hybrid', New Hampshire midget' and 'Sugar baby' mature in 80 - 85 days in Long Island, New York[200]. A good companion plant for potatoes[20].",
+          "propagation": "Seed - sow spring in a rich compost in a greenhouse. Either put 2-3 seeds in each pot and thin to the best plant, or prick out the seedlings into individual pots of rich soil as soon as they are large enough to handle. Grow them on fast and, if trying them outside, plant out after the last expected frosts. Give them some protection, such as a cloche or a frame, at least until they are growing away vigorously.",
+          "other_names": null,
+          "native_range": "AFRICA: Egypt (south), Sudan, Kenya (north).",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 0.8500000000000002,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Water Melon",
+            "scientific_name": "Citrullus lanatus",
+            "genus": "Citrullus",
+            "family": "Cucurbitaceae",
+            "synonyms": [],
+            "common_names": [
+              "Water Melon"
+            ]
+          },
+          "pfaf_display_latin_name": "Citrullus lanatus - (Thunb.)Matsum.&Nakai.",
+          "pfaf_common_name": "Water Melon",
+          "pfaf_family": "Cucurbitaceae",
+          "pfaf_synonyms": "C. vulgaris.",
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "fruit",
+            "leaf",
+            "oil",
+            "seed"
+          ],
+          "use_categories": [
+            "fruit_crop",
+            "medicinal_plant",
+            "oil_crop"
+          ],
+          "life_cycle": "annual",
+          "botanical_life_cycle": null,
+          "crop_life_cycle": "annual",
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun"
+            ],
+            "soil_type": [
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": 5.3,
+            "soil_ph_max": 8.0,
+            "water_need": "moderate",
+            "growth_speed": null,
+            "soil_notes": "Prefers a rich sandy loam and a very sunny position[1, 117, 200]. A drought resistant plant once established, it is intolerant of wet soils[117]. Tolerates a pH in the range 5.3 to 8. The water melon is frequently grown for its edible fruit in warm temperate and tropical areas, there are many named varieties[183]. It is not frost hardy and requires a long hot summer if it is to fruit well. It is not really a suitable crop for growing outdoors in Britain at the present time, though it is possible that new faster maturing cultivars will be developed. It is best grown in greenhouse conditions in Britain[K]. The cultivars 'Fordbrook hybrid', New Hampshire midget' and 'Sugar baby' mature in 80 - 85 days in Long Island, New York[200]. A good companion plant for potatoes[20].",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow spring in a rich compost in a greenhouse. Either put 2-3 seeds in each pot and thin to the best plant, or prick out the seedlings into individual pots of rich soil as soon as they are large enough to handle. Grow them on fast and, if trying them outside, plant out after the last expected frosts. Give them some protection, such as a cloche or a frame, at least until they are growing away vigorously.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": "Edible Parts: Fruit Leaves Oil Oil Seed Edible Uses: Oil Oil Pectin Fruit - raw. A very refreshing fruit[1, 2, 22, 46, 183], it has a delicate sweetness with an extremely high water content, the fruit is often used as a refreshing drink[183]. The unripe fruits are added to soups[183]. A syrup can also be made from the juice[183]. The fruit is a rich source of pectin[218, 240], and can be added to pectin-low fruits when making jam[K]. Pectin is said to protect the body against radiation[201]. The fruit varies considerably in size from cultivar to cultivar, but can be up to 1 metre long and 40cm wide[200]. A nutritional analysis is available[218]. Leaves - cooked. Seed - raw or cooked[63, 86, 117, 183]. They can be roasted or ground into a powder and used with cereal flours when making bread, cakes etc, or added to soups and stews[163, 105, 83]. The seed contains about 30% protein, 20 - 40% oil[61]. An edible oil is obtained from the seed[63, 105, 183, 266].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Cardiac Demulcent Diuretic Enuresis Febrifuge Pectoral Purgative Tonic Urinary Vermifuge The seed is demulcent, diuretic, pectoral and tonic[4, 218]. It is sometimes used in the treatment of the urinary passages[4] and has been used to treat bed wetting[257]. The seed is also a good vermifuge[4] and has a hypotensive action[7]. A fatty oil in the seed, as well as aqueous or alcoholic extracts, paralyze tapeworms and roundworms[240]. The fruit, eaten when fully ripe or even when almost putrid, is used as a febrifuge[4] The fruit is also diuretic, being effective in the treatment of dropsy and renal stones[7]. The fruit contains the substance lycopine (which is also found in the skins of tomatoes). This substance has been shown to protect the body from heart attacks and, in the case of the tomato at least, is more effective when it is cooked[246]. The rind of the fruit is prescribed in cases of alcoholic poisoning and diabetes[218]. The root is purgative and in large dose is said to be a certain emetic[4].",
+          "other_uses_notes": "Oil Oil Pectin The seed contains 20 - 40% oil. As well as being edible, it is also used for making soap and for lighting[117]. Face masks made from the fruit are used as a cosmetic on delicate skins[7].",
+          "cultivation_notes": "Prefers a rich sandy loam and a very sunny position[1, 117, 200]. A drought resistant plant once established, it is intolerant of wet soils[117]. Tolerates a pH in the range 5.3 to 8. The water melon is frequently grown for its edible fruit in warm temperate and tropical areas, there are many named varieties[183]. It is not frost hardy and requires a long hot summer if it is to fruit well. It is not really a suitable crop for growing outdoors in Britain at the present time, though it is possible that new faster maturing cultivars will be developed. It is best grown in greenhouse conditions in Britain[K]. The cultivars 'Fordbrook hybrid', New Hampshire midget' and 'Sugar baby' mature in 80 - 85 days in Long Island, New York[200]. A good companion plant for potatoes[20].",
+          "known_hazards": "The sprouting seed produces a toxic substance in its embryo[65].",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "potato",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              }
+            ],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting."
+            ]
+          }
+        },
+        "page_text_excerpt": "Citrullus lanatus Water Melon PFAF Plant Database Follow Us: Citrullus lanatus - (Thunb.)Matsum.&Nakai. Common Name Water Melon Family Cucurbitaceae USDA hardiness 8-11 Known Hazards The sprouting seed produces a toxic substance in its embryo[65]. Habitats A weed of roadsides and open ground in desert areas[117]. Range Tropical and S. Africa. Edibility Rating (4 of 5) Other Uses (1 of 5) Weed Potential No Medicinal Rating (3 of 5) Care (info) http://www.flickr.com/photos/93965446@N00 Translate this page: Summary Physical Characteristics Citrullus lanatus is a ANNUAL growing to 0.5 m (1ft 8in) by 2 m (6ft). See above for USDA hardiness. It is hardy to UK zone 9 and is frost tender. It is in flower from July to August. The species is monoecious (individual flowers are either male or female, but both sexes can be found on the same plant) and is pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers dry or moist soil and can tolerate drought. UK Hardiness Map US Hardiness Map Synonyms C. vulgaris. Plant Habitats Cultivated Beds; Edible Uses Edible Parts: Fruit Leaves Oil Oil Seed Edible Uses: Oil Oil Pectin Fruit - raw. A very refreshing fruit[1, 2, 22, 46, 183], it has a delicate sweetness with an extremely high water content, the fruit is often used as a refreshing drink[183]. The unripe fruits are added to soups[183]. A syrup can also be made from the juice[183]. The fruit is a rich source of pectin[218, 240], and can be added to pectin-low fruits when making jam[K]. Pectin is said to protect the body against radiation[201]. The fruit varies considerably in size from cultivar to cultivar, but can be up to 1 metre long and 40cm wide[200]. A nutritional analysis is available[218]. Leaves - cooked. Seed - raw or cooked[63, 86, 117, 183]. They can be roasted or ground into a powder and used with cereal flours when making bread, cakes etc, or added to soups and stews[163, 105, 83]. The seed contains about 30% protein, 20 - 40% oil[61]. An edible oil is obtained from the seed[63, 105, 183, 266]. References More on Edible Uses Composition Figures in grams (g) or miligrams (mg) per 100g of food. Fruit (Dry weight) 344 Calories per 100g Water : 0% Protein: 7.8g; Fat: 1.6g; Carbohydrate: 85.9g; Fibre: 6.3g; Ash: 4.7g; Minerals - Calcium: 125mg; Phosphorus: 141mg; Iron: 4.7mg; Magnesium: 0mg; Sodium: 0mg; Potassium: 1351mg; Zinc: 0mg; Vitamins - A: 4300mg; Thiamine (B1): 0.5mg; Riboflavin (B2): 0.6mg; Niacin: 0mg; B6: 0mg; C: 0mg; Reference: [ 218] Notes: Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Cardiac Demulcent Diuretic Enuresis Febrifuge Pectoral Purgative Tonic Urinary Vermifuge The seed is demulcent, diuretic, pectoral and t"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tCitrullus lanatus Water Melon PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Citrullus lanatus is a ANNUAL growing to 0.5 m (1ft&amp;nbsp;8in) by 2 m (6ft).  See above for USDA hardiness. It is hardy to UK zone 9 and is frost tender.  It is in flower from July to August. The species is monoecious (individual flowers are either male or female, but both sexes can be found on the same plant) and is pollinated by Insects. The plant is self-fertile.  Suitable for: light (sandy) and medium (loamy) soils and prefers  well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers dry or  moist soil and can tolerate drought.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Citrullus+lanatus\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50Bd8EQ2l0cnVsbHVzIGxhbmF0dXMgaXMgYSBBTk5VQUwgZ3Jvd2luZyB0byAwLjUgbSAoMWZ0Jm5ic3A7OGluKSBieSAyIG0gKDZmdCkuICBTZWUgYWJvdmUgZm9yIFVTREEgaGFyZGluZXNzLiBJdCBpcyBoYXJkeSB0byBVSyB6b25lIDkgYW5kIGlzIGZyb3N0IHRlbmRlci4gIEl0IGlzIGluIGZsb3dlciBmcm9tIEp1bHkgdG8gQXVndXN0LiBUaGUgc3BlY2llcyBpcyBtb25vZWNpb3VzIChpbmRpdmlkdWFsIGZsb3dlcnMgYXJlIGVpdGhlciBtYWxlIG9yIGZlbWFsZSwgYnV0IGJvdGggc2V4ZXMgY2FuIGJlIGZvdW5kIG9uIHRoZSBzYW1lIHBsYW50KSBhbmQgaXMgcG9sbGluYXRlZCBieSBJbnNlY3RzLiBUaGUgcGxhbnQgaXMgc2VsZi1mZXJ0aWxlLiAgU3VpdGFibGUgZm9yOiBsaWdodCAoc2FuZHkpIGFuZCBtZWRpdW0gKGxvYW15KSBzb2lscyBhbmQgcHJlZmVycyAgd2VsbC1kcmFpbmVkIHNvaWwuIFN1aXRhYmxlIHBIOiBtaWxkbHkgYWNpZCwgbmV1dHJhbCBhbmQgYmFzaWMgKG1pbGRseSBhbGthbGluZSkgc29pbHMuIEl0IGNhbm5vdCBncm93IGluIHRoZSBzaGFkZS4gSXQgcHJlZmVycyBkcnkgb3IgIG1vaXN0IHNvaWwgYW5kIGNhbiB0b2xlcmF0ZSBkcm91Z2h0LmQCAw9kFgICAw9kFmQCAQ8PFgIeBFRleHQFKkNpdHJ1bGx1cyBsYW5hdHVzIC0gKFRodW5iLilNYXRzdW0uJk5ha2FpLmRkAgMPDxYCHwMFC1dhdGVyIE1lbG9uZGQCBQ8PFgIfAwUNQ3VjdXJiaXRhY2VhZWRkAgcPDxYCHwMFBDgtMTFkZAIJDw8WAh4HVmlzaWJsZWdkZAILDw8WAh8DBUBUaGUgc3Byb3V0aW5nIHNlZWQgcHJvZHVjZXMgYSB0b3hpYyBzdWJzdGFuY2UgaW4gaXRzIGVtYnJ5b1s2NV0uZGQCDQ8PFgIfAwU5QSB3ZWVkIG9mIHJvYWRzaWRlcyBhbmQgb3BlbiBncm91bmQgaW4gZGVzZXJ0IGFyZWFzWzExN10uZGQCDw8PFgIfAwUXVHJvcGljYWwgYW5kIFMuIEFmcmljYS5kZAIRDw8WAh4ISW1hZ2VVcmwFK2ltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFYxYl8xMC5naWZkZAITDw8WAh8FBStpbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZWFyY2hWMWJfMTAuZ2lmZGQCFQ8PFgIfBQUraW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwLmdpZmRkAhcPDxYCHwUFK2ltYWdlcy9QRkFG"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Watermelon",
+      "query": "Citrullus lanatus",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:41:40.231343+00:00",
+      "response_hash": "bca8a8bbaa0e4047730d1eb7cf9b0d919ac2ff8677edf8d97697f8096595e245",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Watermelon",
+            "scientific_name": "Citrullus lanatus",
+            "genus": "Citrullus",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Watermelon\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants fo"
+    }
+  ]
+}

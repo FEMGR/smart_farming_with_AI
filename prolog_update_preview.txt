@@ -1,0 +1,84 @@
+# Prolog update preview
+Total missing facts: 35
+
+No files were modified.
+Run again with --apply to append these facts.
+
+================================================================================
+logic_companion_planting/data/plant_fact.pl
+Missing facts: 7
+================================================================================
+
+plant(gotu_kola).
+scientific_name(gotu_kola, 'centella asiatica').
+edible(gotu_kola, true).
+edible_part(gotu_kola, leaf).
+use_category(gotu_kola, medicinal_plant).
+trait(gotu_kola, medicinal).
+trait(gotu_kola, pollinator_attractor).
+
+================================================================================
+logic_companion_planting/data/alias_fact.pl
+Missing facts: 3
+================================================================================
+
+alias('gotu kola', gotu_kola).
+alias('spadeleaf', gotu_kola).
+alias('hydrocotyle asiatica', gotu_kola).
+
+================================================================================
+logic_companion_planting/base/plant_taxonomy.pl
+Missing facts: 6
+================================================================================
+
+accepted_scientific_name(gotu_kola, 'Centella asiatica').
+alternate_scientific_name(gotu_kola, 'Hydrocotyle asiatica').
+genus(gotu_kola, centella).
+family(gotu_kola, apiaceae).
+taxonomy_confidence(gotu_kola, high).
+taxonomy_source(gotu_kola, 'GBIF / Plants For A Future').
+
+================================================================================
+logic_companion_planting/data/growth_facts.pl
+Missing facts: 15
+================================================================================
+
+life_cycle(gotu_kola, perennial).
+botanical_life_cycle(gotu_kola, perennial).
+fact_scope(gotu_kola, extracted_profile).
+accepted_scientific_name(gotu_kola, 'Centella asiatica').
+genus(gotu_kola, centella).
+family(gotu_kola, apiaceae).
+propagation_method(gotu_kola, division).
+propagation_method(gotu_kola, seed).
+sunlight(gotu_kola, partial_shade).
+soil_type(gotu_kola, heavy_clay).
+soil_type(gotu_kola, light_sandy).
+soil_type(gotu_kola, medium_loamy).
+source_name(gotu_kola, 'Plants For A Future').
+source_url(gotu_kola, 'https://pfaf.org/user/Plant.aspx?LatinName=Centella+asiatica').
+confidence(gotu_kola, high).
+
+================================================================================
+logic_companion_planting/data/interaction_support.pl
+Missing facts: 0
+================================================================================
+
+(none)
+
+================================================================================
+logic_companion_planting/data/pest_interactions.pl
+Missing facts: 0
+================================================================================
+
+(none)
+
+================================================================================
+logic_companion_planting/data/sources_fact.pl
+Missing facts: 4
+================================================================================
+
+source(pfaf).
+source(perenual).
+source(gbif).
+source(fpi).

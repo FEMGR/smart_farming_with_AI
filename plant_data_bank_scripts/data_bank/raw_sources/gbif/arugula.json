@@ -1,0 +1,79 @@
+{
+  "plant": {
+    "plant_atom": "arugula",
+    "common_name": "Arugula",
+    "scientific_name": "Eruca vesicaria",
+    "genus": "Eruca",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Eruca vesicaria",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:23.340512+00:00",
+      "response_hash": "1060f02385d3db014492abdf08ba14e3cb386e5315ccfa58d78b1a824ef4b039",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 5375920,
+          "scientificName": "Eruca vesicaria (L.) Cav.",
+          "canonicalName": "Eruca vesicaria",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=5",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 5682002,
+              "acceptedUsageKey": 7733638,
+              "scientificName": "Erica vesicaria Salisb.",
+              "canonicalName": "Erica vesicaria",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 85,
+              "note": "Similarity: name=75; authorship=0; classification=4; rank=6; status=0; score=85",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Ericales",
+              "family": "Ericaceae",
+              "genus": "Erica",
+              "species": "Erica glumiflora",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1353,
+              "familyKey": 2505,
+              "genusKey": 2882780,
+              "speciesKey": 7733638,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Brassicales",
+          "family": "Brassicaceae",
+          "genus": "Eruca",
+          "species": "Eruca vesicaria",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 7225535,
+          "familyKey": 3112,
+          "genusKey": 3049319,
+          "speciesKey": 5375920,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

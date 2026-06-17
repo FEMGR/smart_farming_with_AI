@@ -1,0 +1,53 @@
+{
+  "plant": {
+    "plant_atom": "basil",
+    "common_name": "Basil",
+    "scientific_name": "Ocimum basilicum",
+    "genus": "Ocimum",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Ocimum basilicum",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:45.662882+00:00",
+      "response_hash": "9a0fbee6f9eb5dc8d4dfe84e61c6deb92e7308f6217a0635592bf2400bafe7fe",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2927096,
+          "scientificName": "Ocimum basilicum L.",
+          "canonicalName": "Ocimum basilicum",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; singleMatch=5",
+          "matchType": "EXACT",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Lamiales",
+          "family": "Lamiaceae",
+          "genus": "Ocimum",
+          "species": "Ocimum basilicum",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 408,
+          "familyKey": 2497,
+          "genusKey": 2874693,
+          "speciesKey": 2927096,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "plant_atom": "bean_common",
+  "identity": {
+    "common_name": "Common Bean",
+    "scientific_name": "Phaseolus vulgaris",
+    "genus": "Phaseolus",
+    "family": "Fabaceae",
+    "synonyms": [],
+    "common_names": [
+      "Bush bean",
+      "French Bean",
+      "Kidney bean"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "culinary_herb",
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "leaf",
+      "seed"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 5.5,
+    "soil_ph_max": 6.5,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Requires a warm sunny position in a rich well-drained preferably light soil with plenty of moisture in the growing season[27, 37, 200]. Dislikes heavy, wet or acid soils[16, 37]. Prefers a pH in the range 5.5 to 6.5[200]. The French bean is commonly cultivated in the temperate and subtropical zones and in montane valleys of the tropics for its edible mature seeds and immature seedpods. It is often grown to provide a major part of the protein requirement[183, 269]. A very variable plant, there are more than 1,000 named varieties ranging from dwarf forms about 30cm tall to climbing forms up to 3 metres tall[183, 186, 200, 269]. Plants are not frost-tolerant, air temperatures below 10°c can cause damage to seedlings[200]. When grown for their edible pods, the immature pods should be harvested regularly in order to promote extra flower production and therefore higher yields[200]. Yields of green pods averages about 3kg per square metre, though double this can be achieved[200]. French beans grow well with strawberries, carrots, cauliflowers, cucumbers, cabbage, beet, leek and celeriac[18, 20]. They are inhibited by alliums and fennel growing nearby[18, 20]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Pre-soak the seed for 12 hours in warm water and sow in mid spring in a greenhouse. Germination should take place within 10 days. When they are large enough to handle, prick the seedlings out into individual pots and plant them out after the last expected frosts. The seed can also be sown in situ in late spring though it may not ripen its seed in a cool summer.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Requires a warm sunny position in a rich well-drained preferably light soil with plenty of moisture in the growing season[27, 37, 200]. Dislikes heavy, wet or acid soils[16, 37]. Prefers a pH in the range 5.5 to 6.5[200]. The French bean is commonly cultivated in the temperate and subtropical zones and in montane valleys of the tropics for its edible mature seeds and immature seedpods. It is often grown to provide a major part of the protein requirement[183, 269]. A very variable plant, there are more than 1,000 named varieties ranging from dwarf forms about 30cm tall to climbing forms up to 3 metres tall[183, 186, 200, 269]. Plants are not frost-tolerant, air temperatures below 10°c can cause damage to seedlings[200]. When grown for their edible pods, the immature pods should be harvested regularly in order to promote extra flower production and therefore higher yields[200]. Yields of green pods averages about 3kg per square metre, though double this can be achieved[200]. French beans grow well with strawberries, carrots, cauliflowers, cucumbers, cabbage, beet, leek and celeriac[18, 20]. They are inhibited by alliums and fennel growing nearby[18, 20]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antiarthritic Antirheumatic Antitussive Cancer Diuretic Homeopathy Hypoglycaemic Hypotensive Miscellany Narcotic Narcotic Urinary The green pods are mildly diuretic and contain a substance that reduces the blood sugar level[218]. The dried mature pod is used according to another report[9]. It is used in the treatment of diabetes[9]. The seed is diuretic, hypoglycaemic and hypotensive[7]. Ground into a flour, it is used externally in the treatment of ulcers[7]. The seed is also used in the treatment of cancer of the blood[218]. When bruised and boiled with garlic they have cured intractable coughs[4]. The root is dangerously narcotic[4]. A homeopathic remedy is made from the entire fresh herb[9]. It is used in the treatment of rheumatism and arthritis, plus disorders of the urinary tract[9].",
+    "cautions": "Large quantities of the raw mature seed are poisonous[10, 65]. Children eating just a few seeds have shown mild forms of poisoning with nausea and diarrhoea, though complete recovery took place in 12 - 24 hours[269]. The toxins play a role in protecting the plant from insect predation[76].",
+    "other_uses_notes": "Biomass Dye Fungicide Miscellany A brown dye is obtained from red kidney beans[168]. The plant contains phaseolin, which has fungicidal activity[218]. Water from the cooked beans is very effective in reviving woollen fabrics[7]. The plant residue remaining after harvesting the dried beans is a source of biomass[269].",
+    "edible_uses_notes": "Edible Parts: Leaves Seed Seedpod Edible Uses: Coffee Coffee Condiment Immature seedpods - raw or cooked[46, 105]. The green pods are commonly used as a vegetable, they have a mild flavour and should only be cooked for a short time. When growing the plant for its seedpods, be sure to pick them whilst they are still small and tender. This will ensure the continued production of more pods by the plant. Flowering is reduced once the seeds begin to form inside the pods. The immature seeds are boiled or steamed and used as a vegetable[183]. The mature seeds are dried and stored for future use. They must be thoroughly cooked before being eaten and are best soaked in water for about 12 hours prior to this. They can be boiled, baked, pureed, ground into a powder or fermented into 'tempeh' etc[183]. The powdered seed makes a protein-enriching additive to flour, it can also be used in soups etc[K]. The seed can also be sprouted and used in salads or cooked[183]. The roasted seeds have been used as a coffee substitute[7]. Young leaves - raw or cooked as a potherb[177, 183]. The very young laves are sometimes eaten as a salad, the older leaves are cooked[269]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "strawberries",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "carrots",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "cauliflowers",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "cucumbers",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "cabbage",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "beet",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "leek",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      },
+      {
+        "plant": "celeriac",
+        "relationship": "grows_well_with",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:32.145807+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Phaseolus+vulgaris",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 0.8500000000000002,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "crop_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:47.347840+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Common+Bean",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:48.226238+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Phaseolus+vulgaris",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:34:35.077810+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Common+Bean",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:34:38.760596+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=bean_common",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:34:42.238236+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.873381+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

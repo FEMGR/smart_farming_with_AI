@@ -1,0 +1,251 @@
+{
+  "plant": {
+    "plant_atom": "soybean",
+    "common_name": "Soybean",
+    "scientific_name": "Glycine max",
+    "genus": "Glycine",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Glycine+max",
+      "query": "Glycine max",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:41:51.600473+00:00",
+      "response_hash": "1c7d9332d5fb681ee1ae15969488c06a34110981fad91cb9c783f3016cf68492",
+      "parsed": {
+        "title": "Glycine max Soya Bean PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Glycine max - (L.)Merr.",
+          "common_name": "Soya Bean",
+          "family": "Fabaceae",
+          "usda_hardiness": "7-10",
+          "known_hazards": "The raw mature seed is toxic and must be thoroughly cooked before being eaten[76]. The sprouted raw seed is sometimes eaten and is considered to be a wholesome food.",
+          "habitats": "Lowland thickets, C. and S. Japan[58].",
+          "range": "E. Asia.",
+          "summary": null,
+          "physical_characteristics": "Glycine max is a ANNUAL growing to 0.6 m (2ft). See above for USDA hardiness. It is hardy to UK zone 8. It is in flower from July to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. It can fix Nitrogen. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers moist soil.",
+          "synonyms": "G. hispida. G. soja. Sieb.&Zucc.",
+          "plant_habitats": "Cultivated Beds;",
+          "edible_uses": "Edible Parts: Leaves Oil Oil Seed Seedpod Edible Uses: Coffee Milk Oil Oil Mature seed - cooked[2, 33]. The seeds furnish one of the world's most important sources of oil and protein, they can be eaten as they are in soups, stews etc[183, 269], though they are also very commonly used in the preparation of various meat substitutes[34, 46]. The dried seed can be ground into a flour and added to cereal flours or used for making noodles etc[183]. The Japanese make a powder from the roasted and ground seed, it is called 'Kinako' and has a nutty flavour and fragrance - it is used in many popular confections[183]. The sprouted seed is eaten raw or added to cooked dishes. The toasted seeds can be eaten as a peanut-like snack[183]. The seed is also made into numerous fermented foods such as miso and tempeh[183] and is also used to make soya milk, a valuable protein supplement in infant feeding which also provides curds and cheese[269]. The seed contains 20% oil and 30 - 45% protein[100]. All seeds on a soybean plant mature at essentially the same time. Maturity of the seed is accompanied by a rapid dropping of the leaves and drying of the stems[269]. Average yield of beans is about 1700 kg/ha[269]. High-yielding cvs, adapted to the locality and grown under proper culture and favourable conditions will yield more than twice the average yield[269]. The immature seed is cooked and used like peas or eaten raw in salads[105, 183]. The strongly roasted and ground seeds are used as a coffee substitute[183]. The young seedpods are cooked and used like French beans[116, 183]. An edible semi-drying oil is obtained from the seed[269]. It is cooked or can be used as a dressing in salads etc and for manufacture of margarine and shortening[34, 183, 269]. Young leaves - raw or cooked[179, 183].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidote Astringent Diaphoretic Laxative Ophthalmic Resolvent Stomachic The fermented seed is weakly diaphoretic and stomachic[176]. It is used in the treatment of colds, fevers and headaches, insomnia, irritability and a stuffy sensation in the chest[176]. The bruised leaves are applied to snakebite[218]. The flowers are used in the treatment of blindness and opacity of the cornea[218]. The ashes of the stems are applied to granular haemorrhoids or fungus growths on the anus[218]. The immature seedpods are chewed to a pulp and applied to corneal and smallpox ulcers[218]. The seed is antidote[218]. It is considered to be specific for the healthy functioning of bowels, heart, kidney, liver and stomach[218, 269]. The seed sprouts are constructive, laxative and resolvent[218]. They show an oestrogen-like activity in the body and are also antispasmodic[279].The sprous are used in the treatment of oedema, dysuria, chest fullness, decreased perspiration, the initial stages of flu and arthralgia[176]. A decoction of the bark or root is astringent[240, 269]. Soybean diets are valued for treating acidosis[269]. Since soybean oil has a high proportion of unsaturated fatty acid, it is recommended, like safflower, poppy seed, etc. to combat hypercholesteremia[269]. Commercial grades of natural lecithin, which are often derived from soybean, are reported to contain a potent vasopressor. Medicinally lecithin is indicated as a lipotropic agent[269]. Soybean is listed as a major starting material for stigmasterol, once known as an antistiffness factor. Sitosterol, also a soy by-product, has been used to replace diosgenin in some antihypertensive drugs[269].",
+          "other_uses": "Biomass Green manure Oil Oil Paper The seed contains up to 20% of an edible semi-drying oil[171, 269]. It is non-drying according to another report[57]. This oil has a very wide range of applications and is commonly used in the chemical industry[171, 206]. The oil is used industrially in the manufacture of paints, linoleum, oilcloth, printing inks, soap, insecticides, and disinfectants[34, 46, 100, 269]. Lecithin phospholipids, obtained as a by-product of the oil industry, are used as a wetting and stabilizing agent in food, cosmetic, pharmaceutical, leather, paint, plastic, soap, and detergent industries[269]. Both the meal and the soy bean protein are used in the manufacture of synthetic fibre, adhesives, textile sizing, waterproofing, fire-fighting foam and many other uses[269]. The plant is sometimes grown as a green manure[269]. The straw can be used to make paper, stiffer than that made from wheat straw[269]. The plant is an excellent source of biomass. The oil from the seeds can be used as a diesel fuel whilst the stems can be burnt as a fuel[269].",
+          "special_uses": "Nitrogen Fixer",
+          "cultivation": "A fairly easily-grown plant, it grows best in a sunny position on fertile, well-drained soils[33, 38], but does tolerate a wide range of soil conditions[269]. Soybeans will brow better than many crops on soils that are low in fertility, droughty or poorly drained[269]. Prefers a well-drained sandy soil[1]. Prefers a slightly acid soil[200, 206]. Soya does not grow well in a wet climate[132], nor will it withstand excessive heat or severe cold winters[269]. The plant has been reported to tolerate an annual precipitation in the range of 31 to 410cm (though it requires at least 50cm for a good crop), an annual mean temperature range of 5.9 to 27°C and a pH in the range of 4.3 to 8.4 (preferring 6 - 6.5)[269]. Soya is one of the most widely cultivated plants in the world, being grown for its oil and protein rich edible seed, there are many named varieties[183, 206, 269]. A subtropical plant, but its cultivation extends from the tropics to as far north as latitude 52°N[269]. The species, and most of its cultivars, is a short-day plant and does not flower or set seed unless the daylight hours are less than 13 hours per day[269]. There are three basic types of soya bean, those with green seeds are considered to be the most tender and best flavoured and are the type best suited for northern climates. Black seeded forms are normally used dried and yellow seeded forms are used for making soya milk, flour etc[206]. The plant requires a hot summer with a mean July temperature between 16 and 18°c[206] and a dry autumn if it is to do well in Britain[1, 33], though it is as hardy as the runner bean, Phaseolus coccineus[1]. The best crops outdoors in Britain are obtained if the plants are started off in a greenhouse and planted out in late spring although a direct sowing outdoors in early May can succeed in good summers but yields will then normally be low. Many cultivars will not flower in the shorter days of late summer in the northern hemisphere and so are not suitable for growing in Britain[206]. Some botanists separate the cultivated forms of soya from this species and call them G. soja. Sieb.&Zucc[200]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. Soybean soils must contain the proper nitrogen-fixing bacteria. When grown on the same land for 2 - 3 successive years, increasing yields are obtained year after year[269]. Seed can be purchased that has been treated with this rhizobium, it is unnecessary on soils with a pH below 5.5 but can be helpful on other soils[206]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen. Research at the University of Illinois has crossed Glycine max (annual soybean) with Glycine tomentella (perennial) which could lead to the production of a perennial edible soybean [1-1].",
+          "propagation": "Pre-soak the seed for 12 hours in warm water and then sow in early spring in a greenhouse. The seed should germinate within two weeks at a temperature between 12 - 16°c[206]. When they are large enough to handle, prick the seedlings out into individual pots and plant them out in late spring or early summer, after the last expected frosts. Seed can also be pre-soaked for 12 hours in warm water and then sown in situ in late spring, though this will not yield well unless the summer is very hot.",
+          "other_names": null,
+          "native_range": "Coming Soon",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Soya Bean",
+            "scientific_name": "Glycine max",
+            "genus": "Glycine",
+            "family": "Fabaceae",
+            "synonyms": [],
+            "common_names": [
+              "Soya Bean"
+            ]
+          },
+          "pfaf_display_latin_name": "Glycine max - (L.)Merr.",
+          "pfaf_common_name": "Soya Bean",
+          "pfaf_family": "Fabaceae",
+          "pfaf_synonyms": "G. hispida. G. soja. Sieb.&Zucc.",
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "leaf",
+            "oil",
+            "seed"
+          ],
+          "use_categories": [
+            "medicinal_plant",
+            "oil_crop",
+            "repellent_plant"
+          ],
+          "life_cycle": "annual",
+          "botanical_life_cycle": null,
+          "crop_life_cycle": "annual",
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun"
+            ],
+            "soil_type": [
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": null,
+            "soil_notes": "A fairly easily-grown plant, it grows best in a sunny position on fertile, well-drained soils[33, 38], but does tolerate a wide range of soil conditions[269]. Soybeans will brow better than many crops on soils that are low in fertility, droughty or poorly drained[269]. Prefers a well-drained sandy soil[1]. Prefers a slightly acid soil[200, 206]. Soya does not grow well in a wet climate[132], nor will it withstand excessive heat or severe cold winters[269]. The plant has been reported to tolerate an annual precipitation in the range of 31 to 410cm (though it requires at least 50cm for a good crop), an annual mean temperature range of 5.9 to 27°C and a pH in the range of 4.3 to 8.4 (preferring 6 - 6.5)[269]. Soya is one of the most widely cultivated plants in the world, being grown for its oil and protein rich edible seed, there are many named varieties[183, 206, 269]. A subtropical plant, but its cultivation extends from the tropics to as far north as latitude 52°N[269]. The species, and most of its cultivars, is a short-day plant and does not flower or set seed unless the daylight hours are less than 13 hours per day[269]. There are three basic types of soya bean, those with green seeds are considered to be the most tender and best flavoured and are the type best suited for northern climates. Black seeded forms are normally used dried and yellow seeded forms are used for making soya milk, flour etc[206]. The plant requires a hot summer with a mean July temperature between 16 and 18°c[206] and a dry autumn if it is to do well in Britain[1, 33], though it is as hardy as the runner bean, Phaseolus coccineus[1]. The best crops outdoors in Britain are obtained if the plants are started off in a greenhouse and planted out in late spring although a direct sowing outdoors in early May can succeed in good summers but yields will then normally be low. Many cultivars will not flower in the shorter days of late summer in the northern hemisphere and so are not suitable for growing in Britain[206]. Some botanists separate the cultivated forms of soya from this species and call them G. soja. Sieb.&Zucc[200]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. Soybean soils must contain the proper nitrogen-fixing bacteria. When grown on the same land for 2 - 3 successive years, increasing yields are obtained year after year[269]. Seed can be purchased that has been treated with this rhizobium, it is unnecessary on soils with a pH below 5.5 but can be helpful on other soils[206]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen. Research at the University of Illinois has crossed Glycine max (annual soybean) with Glycine tomentella (perennial) which could lead to the production of a perennial edible soybean [1-1].",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "seed"
+          ],
+          "propagation_notes": "Pre-soak the seed for 12 hours in warm water and then sow in early spring in a greenhouse. The seed should germinate within two weeks at a temperature between 12 - 16°c[206]. When they are large enough to handle, prick the seedlings out into individual pots and plant them out in late spring or early summer, after the last expected frosts. Seed can also be pre-soaked for 12 hours in warm water and then sown in situ in late spring, though this will not yield well unless the summer is very hot.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": "Edible Parts: Leaves Oil Oil Seed Seedpod Edible Uses: Coffee Milk Oil Oil Mature seed - cooked[2, 33]. The seeds furnish one of the world's most important sources of oil and protein, they can be eaten as they are in soups, stews etc[183, 269], though they are also very commonly used in the preparation of various meat substitutes[34, 46]. The dried seed can be ground into a flour and added to cereal flours or used for making noodles etc[183]. The Japanese make a powder from the roasted and ground seed, it is called 'Kinako' and has a nutty flavour and fragrance - it is used in many popular confections[183]. The sprouted seed is eaten raw or added to cooked dishes. The toasted seeds can be eaten as a peanut-like snack[183]. The seed is also made into numerous fermented foods such as miso and tempeh[183] and is also used to make soya milk, a valuable protein supplement in infant feeding which also provides curds and cheese[269]. The seed contains 20% oil and 30 - 45% protein[100]. All seeds on a soybean plant mature at essentially the same time. Maturity of the seed is accompanied by a rapid dropping of the leaves and drying of the stems[269]. Average yield of beans is about 1700 kg/ha[269]. High-yielding cvs, adapted to the locality and grown under proper culture and favourable conditions will yield more than twice the average yield[269]. The immature seed is cooked and used like peas or eaten raw in salads[105, 183]. The strongly roasted and ground seeds are used as a coffee substitute[183]. The young seedpods are cooked and used like French beans[116, 183]. An edible semi-drying oil is obtained from the seed[269]. It is cooked or can be used as a dressing in salads etc and for manufacture of margarine and shortening[34, 183, 269]. Young leaves - raw or cooked[179, 183].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidote Astringent Diaphoretic Laxative Ophthalmic Resolvent Stomachic The fermented seed is weakly diaphoretic and stomachic[176]. It is used in the treatment of colds, fevers and headaches, insomnia, irritability and a stuffy sensation in the chest[176]. The bruised leaves are applied to snakebite[218]. The flowers are used in the treatment of blindness and opacity of the cornea[218]. The ashes of the stems are applied to granular haemorrhoids or fungus growths on the anus[218]. The immature seedpods are chewed to a pulp and applied to corneal and smallpox ulcers[218]. The seed is antidote[218]. It is considered to be specific for the healthy functioning of bowels, heart, kidney, liver and stomach[218, 269]. The seed sprouts are constructive, laxative and resolvent[218]. They show an oestrogen-like activity in the body and are also antispasmodic[279].The sprous are used in the treatment of oedema, dysuria, chest fullness, decreased perspiration, the initial stages of flu and arthralgia[176]. A decoction of the bark or root is astringent[240, 269]. Soybean diets are valued for treating acidosis[269]. Since soybean oil has a high proportion of unsaturated fatty acid, it is recommended, like safflower, poppy seed, etc. to combat hypercholesteremia[269]. Commercial grades of natural lecithin, which are often derived from soybean, are reported to contain a potent vasopressor. Medicinally lecithin is indicated as a lipotropic agent[269]. Soybean is listed as a major starting material for stigmasterol, once known as an antistiffness factor. Sitosterol, also a soy by-product, has been used to replace diosgenin in some antihypertensive drugs[269].",
+          "other_uses_notes": "Biomass Green manure Oil Oil Paper The seed contains up to 20% of an edible semi-drying oil[171, 269]. It is non-drying according to another report[57]. This oil has a very wide range of applications and is commonly used in the chemical industry[171, 206]. The oil is used industrially in the manufacture of paints, linoleum, oilcloth, printing inks, soap, insecticides, and disinfectants[34, 46, 100, 269]. Lecithin phospholipids, obtained as a by-product of the oil industry, are used as a wetting and stabilizing agent in food, cosmetic, pharmaceutical, leather, paint, plastic, soap, and detergent industries[269]. Both the meal and the soy bean protein are used in the manufacture of synthetic fibre, adhesives, textile sizing, waterproofing, fire-fighting foam and many other uses[269]. The plant is sometimes grown as a green manure[269]. The straw can be used to make paper, stiffer than that made from wheat straw[269]. The plant is an excellent source of biomass. The oil from the seeds can be used as a diesel fuel whilst the stems can be burnt as a fuel[269].",
+          "cultivation_notes": "A fairly easily-grown plant, it grows best in a sunny position on fertile, well-drained soils[33, 38], but does tolerate a wide range of soil conditions[269]. Soybeans will brow better than many crops on soils that are low in fertility, droughty or poorly drained[269]. Prefers a well-drained sandy soil[1]. Prefers a slightly acid soil[200, 206]. Soya does not grow well in a wet climate[132], nor will it withstand excessive heat or severe cold winters[269]. The plant has been reported to tolerate an annual precipitation in the range of 31 to 410cm (though it requires at least 50cm for a good crop), an annual mean temperature range of 5.9 to 27°C and a pH in the range of 4.3 to 8.4 (preferring 6 - 6.5)[269]. Soya is one of the most widely cultivated plants in the world, being grown for its oil and protein rich edible seed, there are many named varieties[183, 206, 269]. A subtropical plant, but its cultivation extends from the tropics to as far north as latitude 52°N[269]. The species, and most of its cultivars, is a short-day plant and does not flower or set seed unless the daylight hours are less than 13 hours per day[269]. There are three basic types of soya bean, those with green seeds are considered to be the most tender and best flavoured and are the type best suited for northern climates. Black seeded forms are normally used dried and yellow seeded forms are used for making soya milk, flour etc[206]. The plant requires a hot summer with a mean July temperature between 16 and 18°c[206] and a dry autumn if it is to do well in Britain[1, 33], though it is as hardy as the runner bean, Phaseolus coccineus[1]. The best crops outdoors in Britain are obtained if the plants are started off in a greenhouse and planted out in late spring although a direct sowing outdoors in early May can succeed in good summers but yields will then normally be low. Many cultivars will not flower in the shorter days of late summer in the northern hemisphere and so are not suitable for growing in Britain[206]. Some botanists separate the cultivated forms of soya from this species and call them G. soja. Sieb.&Zucc[200]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. Soybean soils must contain the proper nitrogen-fixing bacteria. When grown on the same land for 2 - 3 successive years, increasing yields are obtained year after year[269]. Seed can be purchased that has been treated with this rhizobium, it is unnecessary on soils with a pH below 5.5 but can be helpful on other soils[206]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen. Research at the University of Illinois has crossed Glycine max (annual soybean) with Glycine tomentella (perennial) which could lead to the production of a perennial edible soybean [1-1].",
+          "known_hazards": "The raw mature seed is toxic and must be thoroughly cooked before being eaten[76]. The sprouted raw seed is sometimes eaten and is considered to be a wholesome food.",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [
+              {
+                "target": "insects",
+                "mechanism": "insecticidal_extract",
+                "source_name": "Plants For A Future",
+                "confidence": 0.65,
+                "notes": "PFAF mentions insecticidal use."
+              }
+            ],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Glycine max Soya Bean PFAF Plant Database Follow Us: Glycine max - (L.)Merr. Common Name Soya Bean Family Fabaceae USDA hardiness 7-10 Known Hazards The raw mature seed is toxic and must be thoroughly cooked before being eaten[76]. The sprouted raw seed is sometimes eaten and is considered to be a wholesome food. Habitats Lowland thickets, C. and S. Japan[58]. Range E. Asia. Edibility Rating (4 of 5) Other Uses (4 of 5) Weed Potential Yes Medicinal Rating (2 of 5) Care (info) http://commons.wikimedia.org/wiki/User:Llez http://www.ars.usda.gov/is/graphics/photos/ Translate this page: Summary Physical Characteristics Glycine max is a ANNUAL growing to 0.6 m (2ft). See above for USDA hardiness. It is hardy to UK zone 8. It is in flower from July to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. It can fix Nitrogen. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers moist soil. UK Hardiness Map US Hardiness Map Synonyms G. hispida. G. soja. Sieb.&Zucc. Plant Habitats Cultivated Beds; Edible Uses Edible Parts: Leaves Oil Oil Seed Seedpod Edible Uses: Coffee Milk Oil Oil Mature seed - cooked[2, 33]. The seeds furnish one of the world's most important sources of oil and protein, they can be eaten as they are in soups, stews etc[183, 269], though they are also very commonly used in the preparation of various meat substitutes[34, 46]. The dried seed can be ground into a flour and added to cereal flours or used for making noodles etc[183]. The Japanese make a powder from the roasted and ground seed, it is called 'Kinako' and has a nutty flavour and fragrance - it is used in many popular confections[183]. The sprouted seed is eaten raw or added to cooked dishes. The toasted seeds can be eaten as a peanut-like snack[183]. The seed is also made into numerous fermented foods such as miso and tempeh[183] and is also used to make soya milk, a valuable protein supplement in infant feeding which also provides curds and cheese[269]. The seed contains 20% oil and 30 - 45% protein[100]. All seeds on a soybean plant mature at essentially the same time. Maturity of the seed is accompanied by a rapid dropping of the leaves and drying of the stems[269]. Average yield of beans is about 1700 kg/ha[269]. High-yielding cvs, adapted to the locality and grown under proper culture and favourable conditions will yield more than twice the average yield[269]. The immature seed is cooked and used like peas or eaten raw in salads[105, 183]. The strongly roasted and ground seeds are used as a coffee substitute[183]. The young seedpods are cooked and used like French beans[116, 183]. An edible semi-drying oil is obtained from the seed[269]. It is cooked or can be used as a dressing in salads etc and for manufacture of margarine and shortening[34, 183, 269]. Young leaves - raw or cooked[179"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tGlycine max Soya Bean PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Glycine max is a ANNUAL growing to 0.6 m (2ft).  See above for USDA hardiness. It is hardy to UK zone 8.  It is in flower from July to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. It can fix Nitrogen.  Suitable for: light (sandy) and medium (loamy) soils and prefers  well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers  moist soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Glycine+max\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BdMDR2x5Y2luZSBtYXggaXMgYSBBTk5VQUwgZ3Jvd2luZyB0byAwLjYgbSAoMmZ0KS4gIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgOC4gIEl0IGlzIGluIGZsb3dlciBmcm9tIEp1bHkgdG8gU2VwdGVtYmVyLiBUaGUgc3BlY2llcyBpcyBoZXJtYXBocm9kaXRlIChoYXMgYm90aCBtYWxlIGFuZCBmZW1hbGUgb3JnYW5zKSBhbmQgaXMgcG9sbGluYXRlZCBieSBJbnNlY3RzLiBJdCBjYW4gZml4IE5pdHJvZ2VuLiAgU3VpdGFibGUgZm9yOiBsaWdodCAoc2FuZHkpIGFuZCBtZWRpdW0gKGxvYW15KSBzb2lscyBhbmQgcHJlZmVycyAgd2VsbC1kcmFpbmVkIHNvaWwuIFN1aXRhYmxlIHBIOiBtaWxkbHkgYWNpZCwgbmV1dHJhbCBhbmQgYmFzaWMgKG1pbGRseSBhbGthbGluZSkgc29pbHMuIEl0IGNhbm5vdCBncm93IGluIHRoZSBzaGFkZS4gSXQgcHJlZmVycyAgbW9pc3Qgc29pbC5kAgMPZBYCAgMPZBZkAgEPDxYCHgRUZXh0BRdHbHljaW5lIG1heCAtIChMLilNZXJyLmRkAgMPDxYCHwMFCVNveWEgQmVhbmRkAgUPDxYCHwMFCEZhYmFjZWFlZGQCBw8PFgIfAwUENy0xMGRkAgkPDxYCHgdWaXNpYmxlZ2RkAgsPDxYCHwMFpQFUaGUgcmF3IG1hdHVyZSBzZWVkIGlzIHRveGljIGFuZCBtdXN0IGJlIHRob3JvdWdobHkgY29va2VkIGJlZm9yZSBiZWluZyBlYXRlbls3Nl0uIFRoZSBzcHJvdXRlZCByYXcgc2VlZCBpcyBzb21ldGltZXMgZWF0ZW4gYW5kIGlzIGNvbnNpZGVyZWQgdG8gYmUgYSB3aG9sZXNvbWUgZm9vZC5kZAINDw8WAh8DBSZMb3dsYW5kIHRoaWNrZXRzLCBDLiBhbmQgUy4gSmFwYW5bNThdLmRkAg8PDxYCHwMFCEUuIEFzaWEuZGQCEQ8PFgIeCEltYWdlVXJsBStpbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZWFyY2hWMWJfMTAuZ2lmZGQCEw8PFgIfBQUraW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwLmdpZmRkAhUPDxYCHwUFK2ltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFYxYl8xMC5naWZkZAIXDw8WAh8FBStpbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZWFyY2hWMWJfMTAuZ2lmZGQCGQ8PFgIfBQUvaW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwR3JleS5naWZkZAIbDw8WAh8DBRombmJzcDsmbmJzcDsmbmJzcDsoNCBvZiA1KRYCHgVzdHlsZQUOdmFsaWduOmJvdHRvbTtkAh0PDxYCHwUFKWltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFVzZXMucG5nZGQCHw8PFgIfBQ"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Soybean",
+      "query": "Glycine max",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:41:52.324380+00:00",
+      "response_hash": "12defc938f7fd01d04a1989d307da383cd09648482663c9fcff971c57c56a5ee",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Soybean",
+            "scientific_name": "Glycine max",
+            "genus": "Glycine",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Soybean\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for M"
+    }
+  ]
+}

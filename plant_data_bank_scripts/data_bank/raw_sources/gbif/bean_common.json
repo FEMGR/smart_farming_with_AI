@@ -1,0 +1,103 @@
+{
+  "plant": {
+    "plant_atom": "bean_common",
+    "common_name": "Common Bean",
+    "scientific_name": "Phaseolus vulgaris",
+    "genus": "Phaseolus",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Phaseolus vulgaris",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:32.145807+00:00",
+      "response_hash": "4743293af949b4da50cf53ab2dba4a7d328b40dc059ca503b574d4e941fa604c",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 5350452,
+          "scientificName": "Phaseolus vulgaris L.",
+          "canonicalName": "Phaseolus vulgaris",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=0",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 11237894,
+              "acceptedUsageKey": 5350438,
+              "scientificName": "Phaseolus vulgaris Blanco",
+              "canonicalName": "Phaseolus vulgaris",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 99,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=0; score=120",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Fabales",
+              "family": "Fabaceae",
+              "genus": "Phaseolus",
+              "species": "Phaseolus lunatus",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1370,
+              "familyKey": 5386,
+              "genusKey": 2947798,
+              "speciesKey": 5350438,
+              "class": "Magnoliopsida"
+            },
+            {
+              "usageKey": 7515595,
+              "scientificName": "Phaseolus vulgaris Wall.",
+              "canonicalName": "Phaseolus vulgaris",
+              "rank": "SPECIES",
+              "status": "DOUBTFUL",
+              "confidence": 97,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=-5; score=115",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Fabales",
+              "family": "Fabaceae",
+              "genus": "Phaseolus",
+              "species": "Phaseolus vulgaris",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1370,
+              "familyKey": 5386,
+              "genusKey": 2947798,
+              "speciesKey": 7515595,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Fabales",
+          "family": "Fabaceae",
+          "genus": "Phaseolus",
+          "species": "Phaseolus vulgaris",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 1370,
+          "familyKey": 5386,
+          "genusKey": 2947798,
+          "speciesKey": 5350452,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}
