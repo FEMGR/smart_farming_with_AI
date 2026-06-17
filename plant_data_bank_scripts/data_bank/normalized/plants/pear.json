@@ -1,0 +1,246 @@
+{
+  "plant_atom": "pear",
+  "identity": {
+    "common_name": "Pear",
+    "scientific_name": "Pyrus communis",
+    "genus": "Pyrus",
+    "family": "Rosaceae",
+    "synonyms": [],
+    "common_names": [
+      "Common pear",
+      "Wild Pear"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "fruit"
+    ],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "Prefers a good well-drained loam in full sun[1, 200]. Grows well in heavy clay soils. Tolerates light shade but does not fruit so well in such a position. Tolerates atmospheric pollution, excessive moisture and a range of soil types, if they are moderately fertile[200], avoiding only the most acid soils[186]. Dislikes very exposed positions[186]. Established plants are drought tolerant[200]. A very hardy plant, tolerating temperatures down to below -15°c[200]. Plants often sucker and can form dense thickets[186]. A parent of the cultivated pear, possibly by crossing with P. nivalis and P. cordata[11]. There are many hundreds of varieties of cultivated pears and they are widely cultivated in the temperate zone for their edible fruits. By selection of varieties fresh fruits can be obtained from late July to April or May of the following year. Special Features: Edible, Not North American native, Naturalizing, Attractive flowers or blooms. The plant is heat tolerant in zones 9 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a standard with a non-suckering single trunk [1-2]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is branching: a heart root, dividing from the crown into several primary roots going down and out [2-1]. Some pear species and varieties are self-fertile, but many require cross-pollination with another compatible pear variety to produce fruit. Pears are generally harvested in late Summer to early Autumn, depending on the variety and climate. Pear trees usually flower in Spring, typically around April to May (Northern Hemisphere), depending on the region. Pear trees typically grow at a moderate rate, reaching maturity in about 4 to 6 years, with some varieties taking longer.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - best sown in a cold frame as soon as it is ripe in the autumn, it will then usually germinate in mid to late winter. Stored seed requires 8 - 10 weeks cold stratification at 1°c and should be sown as early in the year as possible[200]. Temperatures over 15 - 20°c induce a secondary dormancy in the seed[200]. Prick out the seedlings into individual pots when they are large enough to handle and grow them on in light shade in a cold frame or greenhouse for their first year. Plant them out in late spring or early summer of the following year.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Prefers a good well-drained loam in full sun[1, 200]. Grows well in heavy clay soils. Tolerates light shade but does not fruit so well in such a position. Tolerates atmospheric pollution, excessive moisture and a range of soil types, if they are moderately fertile[200], avoiding only the most acid soils[186]. Dislikes very exposed positions[186]. Established plants are drought tolerant[200]. A very hardy plant, tolerating temperatures down to below -15°c[200]. Plants often sucker and can form dense thickets[186]. A parent of the cultivated pear, possibly by crossing with P. nivalis and P. cordata[11]. There are many hundreds of varieties of cultivated pears and they are widely cultivated in the temperate zone for their edible fruits. By selection of varieties fresh fruits can be obtained from late July to April or May of the following year. Special Features: Edible, Not North American native, Naturalizing, Attractive flowers or blooms. The plant is heat tolerant in zones 9 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a standard with a non-suckering single trunk [1-2]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is branching: a heart root, dividing from the crown into several primary roots going down and out [2-1]. Some pear species and varieties are self-fertile, but many require cross-pollination with another compatible pear variety to produce fruit. Pears are generally harvested in late Summer to early Autumn, depending on the variety and climate. Pear trees usually flower in Spring, typically around April to May (Northern Hemisphere), depending on the region. Pear trees typically grow at a moderate rate, reaching maturity in about 4 to 6 years, with some varieties taking longer.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Astringent Febrifuge Sedative The fruit is astringent, febrifuge and sedative[240].",
+    "cautions": "None known",
+    "other_uses_notes": "Dye Shelterbelt Wood Agroforestry uses: Pear trees can be used as part of agroforestry systems for shade and windbreaks. They can also contribute to biodiversity and provide food for wildlife. A yellow-tan dye is obtained from the leaves[106, 115]. Trees are sometimes used as part of a shelterbelt planting[227]. Wood - heavy, tough, durable, fine grained, hard. It weighs 51lb per cubic foot[227]. Used by cabinet and instrument makers[11, 61, 100, 149]. When covered with black varnish it is an excellent ebony substitute[74]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Pear flowers are rich in nectar and pollen, attracting pollinators like bees, which are beneficial to gardens and ecosystems. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Pear fruit provides food for wildlife, including birds and small mammals. The dense foliage offers some shelter, and the structure of the tree can be used by birds for perching or nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The rough bark and leaf litter can provide overwintering sites for invertebrates. Fallen leaves can create habitat for ground-dwelling organisms. 4. Pest Confuser (Smell): No – Pear trees do not have a strong pest-repellent smell and are not typically used for pest confusion.",
+    "edible_uses_notes": "Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[2, 5]. The fruit of wild pears often remains very hard unless bletted[186]. It is more suitable for use in pies etc. The fruit is up to 5cm long[200]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:05.119515+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Pyrus+communis",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:42.790025+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Pear",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:43.504838+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Pyrus+communis",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:20.155088+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Pear",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:23.867914+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=pear",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:27.556135+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.967393+00:00"
+  },
+  "missing_fields": [
+    "classification.life_cycle",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

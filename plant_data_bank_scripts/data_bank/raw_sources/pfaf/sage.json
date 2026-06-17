@@ -1,0 +1,287 @@
+{
+  "plant": {
+    "plant_atom": "sage",
+    "common_name": "Sage",
+    "scientific_name": "Salvia officinalis",
+    "genus": "Salvia",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Salvia+officinalis",
+      "query": "Salvia officinalis",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:42:15.267977+00:00",
+      "response_hash": "40ac87f6c8dfbfa5802bf18dec1474c4c5e4f5269ca77ab4b6542ca054a92480",
+      "parsed": {
+        "title": "Salvia officinalis Sage, Kitchen sage, Small Leaf Sage, Garden Sage PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Salvia officinalis - L.",
+          "common_name": "Sage, Kitchen sage, Small Leaf Sage, Garden Sage",
+          "family": "Lamiaceae",
+          "usda_hardiness": "5-10",
+          "known_hazards": "The plant can be toxic when used in excess or when taken for extended periods[238] symptoms include: restlessness, vomiting, vertigo, tremors, seizures. Contraindicated during pregnancy. Avoid if predisposed to convulsions [301].",
+          "habitats": "Dry banks and stony places[100], usually in limestone areas and often where there is very little soil[4].",
+          "range": "S. Europe.",
+          "summary": "Common or Garden Sage (S. officinalis), widely used in Mediterranean cuisine, thrives in dry, well-drained soils and is highly drought-tolerant once established. Bloom Color: Purple. Main Bloom Time: Early summer, Mid summer. Form: Upright or erect. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions. Salvias are a large group of plants in the mint family. They are native to many parts of the world, including Europe, Asia, Africa, and the Americas, and they are distributed throughout the temperate and tropical regions. There are over 900 species of Salvia, making it one of the largest genera in the mint family. The centre of diversity for Salvia is Mexico, with about 500 species. Salvias have aromatic leaves and flowers, typically purple, blue, or white. The leaves are usually green, but some species have variegated foliage. Harvest all year from the first year.",
+          "physical_characteristics": "Salvia officinalis is an evergreen Shrub growing to 0.6 m (2ft) by 0.6 m (2ft in) at a medium rate. See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender. It is in leaf all year, in flower from June to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees. The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: neutral and basic (mildly alkaline) soils and can grow in very alkaline soils. It cannot grow in the shade. It prefers dry or moist soil and can tolerate drought.",
+          "synonyms": null,
+          "plant_habitats": "Woodland Garden Sunny Edge; Dappled Shade; Ground Cover; Cultivated Beds;",
+          "edible_uses": "Edible Parts: Flowers Leaves Edible Uses: Condiment Tea Leaves and flowers - raw or cooked[2, 14, 27, 46, 52]. A very common herb, the strongly aromatic leaves are used as a flavouring in cooked foods[183]. They are an aid to digestion and so are often used with heavy, oily foods[244]. They impart a sausage-like flavour to savoury dishes. The young leaves and flowers can be eaten raw, boiled, pickled or used in sandwiches[183]. The flowers can also be sprinkled on salads to add colour and fragrance[183]. A herb tea is made from the fresh or dried leaves[183], it is said to improve the digestion[13, 21]. An essential oil obtained from the plant is used commercially to flavour ice cream, sweets, baked goods etc[61, 183].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidiarrhoeal Antihydrotic Antiseptic Antispasmodic Appetizer Aromatherapy Astringent Carminative Cholagogue Galactofuge Stimulant Tonic Vasodilator Sage has a very long history of effective medicinal use and is an important domestic herbal remedy for disorders of the digestive system. Its antiseptic qualities make it an effective gargle for the mouth where it can heal sore throats, ulcers etc[K]. The leaves applied to an aching tooth will often relieve the pain[4, K]. The whole herb is antihydrotic, antiseptic, antispasmodic, astringent, carminative, cholagogue, galactofuge, stimulant, tonic and vasodilator[4, 9, 13, 21, 165, 238]. Sage is also used internally in the treatment of excessive lactation, night sweats, excessive salivation (as in Parkinson's disease), profuse perspiration (as in TB), anxiety, depression, female sterility and menopausal problems[238]. Many herbalists believe that the purple-leafed forms of this species are more potent medicinally[238]. This remedy should not be prescribed to pregnant women or to people who have epileptic fits[238]. The plant is toxic in excess or when taken for extended periods[238] - though the toxic dose is very large. Externally, it is used to treat insect bites, skin, throat, mouth and gum infections and vaginal discharge[238]. The leaves are best harvested before the plant comes into flower and are dried for later use[4]. The essential oil from the plant is used in small doses to remove heavy collections of mucous from the respiratory organs and mixed in embrocations for treating rheumatism[4]. In larger doses, however, it can cause epileptic fits, giddiness etc[4]. The essential oil is used in aromatherapy. Its keyword is 'Tonic'[210]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Salvia officinalis Sage for loss of appetite, inflammation of the mouth, excessive perspiration (see [302] for critics of commission E).",
+          "other_uses": "Compost Essential Repellent Strewing Teeth Agroforestry uses: Sage can be used as a companion plant to attract pollinators and beneficial insects. Its aromatic leaves may also deter some pests, making it useful in pest management strategies. The leaves make excellent tooth cleaners[14, 21], simply rub the top side of the leaf over the teeth and gums[K]. The purple-leafed form of sage has tougher leaves and is better for cleaning the teeth[K]. The leaves have antiseptic properties and can heal diseased gums[201]. An essential oil from the leaves is used in perfumery, hair shampoos (it is good for dark hair) and as a food flavouring[14, 57, 61]. It is a very effective 'fixer' in perfumes[7], and is also used to flavour toothpastes and is added to bio-activating cosmetics[238]. The plant (the flowers?) is an alternative ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. The growing or dried plant is said to repel insects, it is especially useful when grown amongst cabbages and carrots[14, 18, 20, 201]. It was formerly used as a strewing herb[201] and has been burnt in rooms to fumigate them[244]. A good dense ground cover plant for sunny positions, though it needs weeding for the first year or two[197]. They are best spaced about 60cm apart each way[208]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Salvia species are excellent for pollinators. The flowers are rich in nectar, attracting bees, butterflies, and even hummingbirds. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Although the seeds and fruits are not significant food sources, the dense foliage can provide some shelter for wildlife, and it can serve as ground cover for small animals or invertebrates. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Sage plants provide ground cover and their woody stems and dense leaf litter can offer overwintering sites and protection for beneficial insects. 4. Pest Confuser (Smell): Yes – Sage has a strong, aromatic smell that can repel pests like insects and herbivores. It is often planted as a companion plant to deter harmful pests.",
+          "special_uses": "Dynamic accumulator Food Forest Ground cover Scented Plants",
+          "cultivation": "Landscape Uses:Border, Container, Massing, Rock garden, Seashore, Specimen. Requires a very well-drained light sandy soil in a sunny position[200]. Prefers a calcareous soil[4, 14]. Dislikes heavy or acid soils[1, 16]. Succeeds in dry soils, tolerating drought once it is established[190]. Sage can be killed by excessive winter wet[200] and winter-planted bushes often die[208]. A very ornamental plant[1], sage is commonly grown in the herb garden for culinary and medicinal purposes. There are some named varieties[182, 183]. 'Albiflora' is said to be the best culinary sage[11]. 'Purpurea' has tougher leaves than the type and makes a better tooth cleaner[K]. Plants need to be trimmed in late spring in order to keep them compact[200]. They tend to degenerate after a few years and are best replaced after about 4 years[4]. The leaves emit a unique pungent aroma when pressed[245]. A good companion for many plants, including rosemary, cabbages and carrots[14, 18, 20, 54], the growing plant is said to repel insects. It is inhibited by wormwood growing nearby and dislikes growing with basil, rue or the cucumber and squash family[14, 18, 20, 54]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for cut flowers. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is multistemmed with multiple stems from the crown [1-2]. An evergreen. The root pattern is a heart root, dividing from the crown into several primary roots going down and out [1-2]. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions.",
+          "propagation": "Seed - sow March/April in a greenhouse[1]. Germination usually takes place within 2 weeks. Prick out the seedlings into individual pots when they are large enough to handle and plant them out in early summer. In areas where the plant is towards the limits of its hardiness, it is best to grow the plants on in a greenhouse for their first winter and plant them out in late spring of the following year. Cuttings of heeled shoots, taken off the stem in May and planted out directly into the garden grow away well[182]. Cuttings of half-ripe wood, 5 - 10cm with a heel, June to August in a frame[78]. Easy. Cuttings of mature wood, 7 - 10cm with a heel, November/December in a cold frame[78]. Layering in spring or autumn. Mound soil up into the plants, the branches will root into this soil and they can be removed and planted out 6 - 12 months later.",
+          "other_names": "Adacayi,Broadleaf sage, Ching-chieh, Common sage, Echter salbei, Mariyamiya, Sa er wei ya, Salbei, Salie, Salva, Salvia, Sauge commune, Sauge officinale, Sauge, Shalfey, True sage,",
+          "native_range": "EUROPE: Former Yugoslavia, Albania, Greece, Italy,",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Adacayi",
+            "scientific_name": "Salvia officinalis",
+            "genus": "Salvia",
+            "family": "Lamiaceae",
+            "synonyms": [],
+            "common_names": [
+              "Adacayi",
+              "Broadleaf sage",
+              "Ching-chieh",
+              "Common sage",
+              "Echter salbei",
+              "Garden Sage",
+              "Kitchen sage",
+              "Mariyamiya",
+              "Sa er wei ya",
+              "Sage",
+              "Salbei",
+              "Salie",
+              "Salva",
+              "Salvia",
+              "Sauge",
+              "Sauge commune",
+              "Sauge officinale",
+              "Shalfey",
+              "Small Leaf Sage",
+              "True sage"
+            ]
+          },
+          "pfaf_display_latin_name": "Salvia officinalis - L.",
+          "pfaf_common_name": "Sage, Kitchen sage, Small Leaf Sage, Garden Sage",
+          "pfaf_family": "Lamiaceae",
+          "pfaf_synonyms": null,
+          "pfaf_other_names": "Adacayi,Broadleaf sage, Ching-chieh, Common sage, Echter salbei, Mariyamiya, Sa er wei ya, Salbei, Salie, Salva, Salvia, Sauge commune, Sauge officinale, Sauge, Shalfey, True sage,",
+          "edible_parts": [
+            "flower",
+            "leaf"
+          ],
+          "use_categories": [
+            "beverage_plant",
+            "companion_plant",
+            "culinary_herb",
+            "medicinal_plant",
+            "repellent_plant"
+          ],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "Landscape Uses:Border, Container, Massing, Rock garden, Seashore, Specimen. Requires a very well-drained light sandy soil in a sunny position[200]. Prefers a calcareous soil[4, 14]. Dislikes heavy or acid soils[1, 16]. Succeeds in dry soils, tolerating drought once it is established[190]. Sage can be killed by excessive winter wet[200] and winter-planted bushes often die[208]. A very ornamental plant[1], sage is commonly grown in the herb garden for culinary and medicinal purposes. There are some named varieties[182, 183]. 'Albiflora' is said to be the best culinary sage[11]. 'Purpurea' has tougher leaves than the type and makes a better tooth cleaner[K]. Plants need to be trimmed in late spring in order to keep them compact[200]. They tend to degenerate after a few years and are best replaced after about 4 years[4]. The leaves emit a unique pungent aroma when pressed[245]. A good companion for many plants, including rosemary, cabbages and carrots[14, 18, 20, 54], the growing plant is said to repel insects. It is inhibited by wormwood growing nearby and dislikes growing with basil, rue or the cucumber and squash family[14, 18, 20, 54]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for cut flowers. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is multistemmed with multiple stems from the crown [1-2]. An evergreen. The root pattern is a heart root, dividing from the crown into several primary roots going down and out [1-2]. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions.",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "cutting",
+            "layering",
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow March/April in a greenhouse[1]. Germination usually takes place within 2 weeks. Prick out the seedlings into individual pots when they are large enough to handle and plant them out in early summer. In areas where the plant is towards the limits of its hardiness, it is best to grow the plants on in a greenhouse for their first winter and plant them out in late spring of the following year. Cuttings of heeled shoots, taken off the stem in May and planted out directly into the garden grow away well[182]. Cuttings of half-ripe wood, 5 - 10cm with a heel, June to August in a frame[78]. Easy. Cuttings of mature wood, 7 - 10cm with a heel, November/December in a cold frame[78]. Layering in spring or autumn. Mound soil up into the plants, the branches will root into this soil and they can be removed and planted out 6 - 12 months later.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Common or Garden Sage (S. officinalis), widely used in Mediterranean cuisine, thrives in dry, well-drained soils and is highly drought-tolerant once established. Bloom Color: Purple. Main Bloom Time: Early summer, Mid summer. Form: Upright or erect. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions. Salvias are a large group of plants in the mint family. They are native to many parts of the world, including Europe, Asia, Africa, and the Americas, and they are distributed throughout the temperate and tropical regions. There are over 900 species of Salvia, making it one of the largest genera in the mint family. The centre of diversity for Salvia is Mexico, with about 500 species. Salvias have aromatic leaves and flowers, typically purple, blue, or white. The leaves are usually green, but some species have variegated foliage. Harvest all year from the first year.",
+          "edible_uses_notes": "Edible Parts: Flowers Leaves Edible Uses: Condiment Tea Leaves and flowers - raw or cooked[2, 14, 27, 46, 52]. A very common herb, the strongly aromatic leaves are used as a flavouring in cooked foods[183]. They are an aid to digestion and so are often used with heavy, oily foods[244]. They impart a sausage-like flavour to savoury dishes. The young leaves and flowers can be eaten raw, boiled, pickled or used in sandwiches[183]. The flowers can also be sprinkled on salads to add colour and fragrance[183]. A herb tea is made from the fresh or dried leaves[183], it is said to improve the digestion[13, 21]. An essential oil obtained from the plant is used commercially to flavour ice cream, sweets, baked goods etc[61, 183].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidiarrhoeal Antihydrotic Antiseptic Antispasmodic Appetizer Aromatherapy Astringent Carminative Cholagogue Galactofuge Stimulant Tonic Vasodilator Sage has a very long history of effective medicinal use and is an important domestic herbal remedy for disorders of the digestive system. Its antiseptic qualities make it an effective gargle for the mouth where it can heal sore throats, ulcers etc[K]. The leaves applied to an aching tooth will often relieve the pain[4, K]. The whole herb is antihydrotic, antiseptic, antispasmodic, astringent, carminative, cholagogue, galactofuge, stimulant, tonic and vasodilator[4, 9, 13, 21, 165, 238]. Sage is also used internally in the treatment of excessive lactation, night sweats, excessive salivation (as in Parkinson's disease), profuse perspiration (as in TB), anxiety, depression, female sterility and menopausal problems[238]. Many herbalists believe that the purple-leafed forms of this species are more potent medicinally[238]. This remedy should not be prescribed to pregnant women or to people who have epileptic fits[238]. The plant is toxic in excess or when taken for extended periods[238] - though the toxic dose is very large. Externally, it is used to treat insect bites, skin, throat, mouth and gum infections and vaginal discharge[238]. The leaves are best harvested before the plant comes into flower and are dried for later use[4]. The essential oil from the plant is used in small doses to remove heavy collections of mucous from the respiratory organs and mixed in embrocations for treating rheumatism[4]. In larger doses, however, it can cause epileptic fits, giddiness etc[4]. The essential oil is used in aromatherapy. Its keyword is 'Tonic'[210]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Salvia officinalis Sage for loss of appetite, inflammation of the mouth, excessive perspiration (see [302] for critics of commission E).",
+          "other_uses_notes": "Compost Essential Repellent Strewing Teeth Agroforestry uses: Sage can be used as a companion plant to attract pollinators and beneficial insects. Its aromatic leaves may also deter some pests, making it useful in pest management strategies. The leaves make excellent tooth cleaners[14, 21], simply rub the top side of the leaf over the teeth and gums[K]. The purple-leafed form of sage has tougher leaves and is better for cleaning the teeth[K]. The leaves have antiseptic properties and can heal diseased gums[201]. An essential oil from the leaves is used in perfumery, hair shampoos (it is good for dark hair) and as a food flavouring[14, 57, 61]. It is a very effective 'fixer' in perfumes[7], and is also used to flavour toothpastes and is added to bio-activating cosmetics[238]. The plant (the flowers?) is an alternative ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. The growing or dried plant is said to repel insects, it is especially useful when grown amongst cabbages and carrots[14, 18, 20, 201]. It was formerly used as a strewing herb[201] and has been burnt in rooms to fumigate them[244]. A good dense ground cover plant for sunny positions, though it needs weeding for the first year or two[197]. They are best spaced about 60cm apart each way[208]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Salvia species are excellent for pollinators. The flowers are rich in nectar, attracting bees, butterflies, and even hummingbirds. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Although the seeds and fruits are not significant food sources, the dense foliage can provide some shelter for wildlife, and it can serve as ground cover for small animals or invertebrates. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Sage plants provide ground cover and their woody stems and dense leaf litter can offer overwintering sites and protection for beneficial insects. 4. Pest Confuser (Smell): Yes – Sage has a strong, aromatic smell that can repel pests like insects and herbivores. It is often planted as a companion plant to deter harmful pests.",
+          "cultivation_notes": "Landscape Uses:Border, Container, Massing, Rock garden, Seashore, Specimen. Requires a very well-drained light sandy soil in a sunny position[200]. Prefers a calcareous soil[4, 14]. Dislikes heavy or acid soils[1, 16]. Succeeds in dry soils, tolerating drought once it is established[190]. Sage can be killed by excessive winter wet[200] and winter-planted bushes often die[208]. A very ornamental plant[1], sage is commonly grown in the herb garden for culinary and medicinal purposes. There are some named varieties[182, 183]. 'Albiflora' is said to be the best culinary sage[11]. 'Purpurea' has tougher leaves than the type and makes a better tooth cleaner[K]. Plants need to be trimmed in late spring in order to keep them compact[200]. They tend to degenerate after a few years and are best replaced after about 4 years[4]. The leaves emit a unique pungent aroma when pressed[245]. A good companion for many plants, including rosemary, cabbages and carrots[14, 18, 20, 54], the growing plant is said to repel insects. It is inhibited by wormwood growing nearby and dislikes growing with basil, rue or the cucumber and squash family[14, 18, 20, 54]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for cut flowers. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is multistemmed with multiple stems from the crown [1-2]. An evergreen. The root pattern is a heart root, dividing from the crown into several primary roots going down and out [1-2]. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions.",
+          "known_hazards": "The plant can be toxic when used in excess or when taken for extended periods[238] symptoms include: restlessness, vomiting, vertigo, tremors, seizures. Contraindicated during pregnancy. Avoid if predisposed to convulsions [301].",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "many_plants",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              }
+            ],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "bees",
+                "examples": [
+                  "bees"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.65,
+                "notes": "PFAF states flowers are pollinated by bees."
+              },
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "bees",
+                  "butterflies"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "PFAF says this plant attracts pollinators."
+              }
+            ],
+            "pest_confuser": true,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting.",
+              "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+            ]
+          }
+        },
+        "page_text_excerpt": "Salvia officinalis Sage, Kitchen sage, Small Leaf Sage, Garden Sage PFAF Plant Database Follow Us: Salvia officinalis - L. Common Name Sage, Kitchen sage, Small Leaf Sage, Garden Sage Family Lamiaceae USDA hardiness 5-10 Known Hazards The plant can be toxic when used in excess or when taken for extended periods[238] symptoms include: restlessness, vomiting, vertigo, tremors, seizures. Contraindicated during pregnancy. Avoid if predisposed to convulsions [301]. Habitats Dry banks and stony places[100], usually in limestone areas and often where there is very little soil[4]. Range S. Europe. Edibility Rating (4 of 5) Other Uses (5 of 5) Weed Potential No Medicinal Rating (5 of 5) Care (info) http://commons.wikimedia.org/wiki/User:Liné1 http://commons.wikimedia.org/wiki/File:Salvia_officinalis0.jpg Translate this page: Summary Common or Garden Sage (S. officinalis), widely used in Mediterranean cuisine, thrives in dry, well-drained soils and is highly drought-tolerant once established. Bloom Color: Purple. Main Bloom Time: Early summer, Mid summer. Form: Upright or erect. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions. Salvias are a large group of plants in the mint family. They are native to many parts of the world, including Europe, Asia, Africa, and the Americas, and they are distributed throughout the temperate and tropical regions. There are over 900 species of Salvia, making it one of the largest genera in the mint family. The centre of diversity for Salvia is Mexico, with about 500 species. Salvias have aromatic leaves and flowers, typically purple, blue, or white. The leaves are usually green, but some species have variegated foliage. Harvest all year from the first year. Physical Characteristics Salvia officinalis is an evergreen Shrub growing to 0.6 m (2ft) by 0.6 m (2ft in) at a medium rate. See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender. It is in leaf all year, in flower from June to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees. The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy) and medium (loamy) soils and prefers well-drained soil. Suitable pH: neutral and basic (mildly alkaline) soils and can grow in very alkaline soils. It cannot grow in the shade. It prefers dry or moist soil and can tolerate drought. UK Hardiness Map US Hardiness Map Synonyms Plant Habitats Woodland Garden Sunny Edge; Dappled Shade; Ground Cover; Cultivated Beds; Edible Uses Edible Parts: Flowers Leaves Edible Uses: Condiment Tea Le"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tSalvia officinalis Sage, Kitchen sage, Small Leaf Sage, Garden  Sage PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Salvia officinalis is an evergreen Shrub growing to 0.6 m (2ft) by 0.6 m (2ft&amp;nbsp;in) at a medium rate.  See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender. It is in leaf all year, in flower from June to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees. The plant is self-fertile. It is noted for attracting wildlife.  Suitable for: light (sandy) and medium (loamy) soils and prefers  well-drained soil. Suitable pH: neutral and basic (mildly alkaline) soils and can grow in very alkaline soils. It cannot grow in the shade. It prefers dry or  moist soil and can tolerate drought.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Salvia+officinalis\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50Bb8FU2FsdmlhIG9mZmljaW5hbGlzIGlzIGFuIGV2ZXJncmVlbiBTaHJ1YiBncm93aW5nIHRvIDAuNiBtICgyZnQpIGJ5IDAuNiBtICgyZnQmbmJzcDtpbikgYXQgYSBtZWRpdW0gcmF0ZS4gIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgNSBhbmQgaXMgbm90IGZyb3N0IHRlbmRlci4gSXQgaXMgaW4gbGVhZiBhbGwgeWVhciwgaW4gZmxvd2VyIGZyb20gSnVuZSB0byBBdWd1c3QsIGFuZCB0aGUgc2VlZHMgcmlwZW4gZnJvbSBBdWd1c3QgdG8gU2VwdGVtYmVyLiBUaGUgc3BlY2llcyBpcyBoZXJtYXBocm9kaXRlIChoYXMgYm90aCBtYWxlIGFuZCBmZW1hbGUgb3JnYW5zKSBhbmQgaXMgcG9sbGluYXRlZCBieSBCZWVzLiBUaGUgcGxhbnQgaXMgc2VsZi1mZXJ0aWxlLiBJdCBpcyBub3RlZCBmb3IgYXR0cmFjdGluZyB3aWxkbGlmZS4gIFN1aXRhYmxlIGZvcjogbGlnaHQgKHNhbmR5KSBhbmQgbWVkaXVtIChsb2FteSkgc29pbHMgYW5kIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsLiBTdWl0YWJsZSBwSDogbmV1dHJhbCBhbmQgYmFzaWMgKG1pbGRseSBhbGthbGluZSkgc29pbHMgYW5kIGNhbiBncm93IGluIHZlcnkgYWxrYWxpbmUgc29pbHMuIEl0IGNhbm5vdCBncm93IGluIHRoZSBzaGFkZS4gSXQgcHJlZmVycyBkcnkgb3IgIG1vaXN0IHNvaWwgYW5kIGNhbiB0b2xlcmF0ZSBkcm91Z2h0LmQCAw9kFgICAw9kFmQCAQ8PFgIeBFRleHQFF1NhbHZpYSBvZmZpY2luYWxpcyAtIEwuZGQCAw8PFgIfAwUxU2FnZSwgS2l0Y2hlbiBzYWdlLCBTbWFsbCBMZWFmIFNhZ2UsIEdhcmRlbiAgU2FnZWRkAgUPDxYCHwMFCUxhbWlhY2VhZWRkAgcPDxYCHwMFBDUtMTBkZAIJDw8WAh4HVmlzaWJsZWdkZAILDw8WAh8DBeUBVGhlIHBsYW50IGNhbiBiZSB0b3hpYyB3aGVuIHVzZWQgaW4gZXhjZXNzIG9yIHdoZW4gdGFrZW4gZm9yIGV4dGVuZGVkIHBlcmlvZHNbMjM4XSBzeW1wdG9tcyBpbmNsdWRlOiByZXN0bGVzc25lc3MsIHZvbWl0aW5nLCB2ZXJ0aWdvLCB0cmVtb3JzLCBzZWl6dXJl"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Sage",
+      "query": "Salvia officinalis",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:42:16.266910+00:00",
+      "response_hash": "ac117df8e390210d860538a545122d18fad77754bb3f85dff99c4a4bef6b36ec",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Sage",
+            "scientific_name": "Salvia officinalis",
+            "genus": "Salvia",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Sage\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Medi"
+    }
+  ]
+}

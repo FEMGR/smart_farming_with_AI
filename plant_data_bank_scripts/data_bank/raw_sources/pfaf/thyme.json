@@ -1,0 +1,281 @@
+{
+  "plant": {
+    "plant_atom": "thyme",
+    "common_name": "Thyme",
+    "scientific_name": "Thymus vulgaris",
+    "genus": "Thymus",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Thymus+vulgaris",
+      "query": "Thymus vulgaris",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:42:17.466020+00:00",
+      "response_hash": "dacfd6f1d53cc3b55390f4723470a6e8cfc5fc12d45f63f91efed2807a211ca8",
+      "parsed": {
+        "title": "Thymus vulgaris Common Thyme, Garden thyme, Wild Thyme PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Thymus vulgaris - L.",
+          "common_name": "Common Thyme, Garden thyme, Wild Thyme",
+          "family": "Lamiaceae",
+          "usda_hardiness": "5-11",
+          "known_hazards": "A comment has been made in one report on medicinal uses that the plant should be used with caution[21]. No explanation was given. It quite possibly refers to overuse of the essential oil. All essential oils, since they are so concentrated, can be harmful in large doses[K]. Avoid if inflammatory disease of the gastrointestinal tract. Internal use contraindicated especially in pregnancy. Caution if sensitive to grasses [301]. Dilute oil in carrier oil before topical use.",
+          "habitats": "Dry slopes, rocks and maquis. Always found on clay or limestone soils[89].",
+          "range": "S. Europe.",
+          "summary": "Thymus vulgaris Thyme is native to Baleares, France, Italy, and Spain. It is a low-growing shrubby evergreen herb popular in the kitchen and sometimes used as ground cover. It has attractive, edible, fragrant foliage, slightly spicier than oregano and sweeter than sage. The leaves and flowering tops are eaten raw in salads, used as a garnish or added as a flavouring to cooked foods, going exceptionally well with mushrooms and courgettes. The leaves can be fresh or dried and retain their flavour well in long, slow cooking. Harvest stems after three months once the plant is established. Thyme is an essential ingredient of the herb mix 'Bouquet Garni'. Make an aromatic, savoury and spicy tea from fresh or dried leaves. Common thyme has a very long history of folk use for a wide range of ailments. The Silver Queen cultivar with white-margined leaves has gained the Royal Horticultural Society's Award of Garden Merit. Common thyme flowers are rich in nectar and attractive to honey bees. Common thyme is an excellent companion for most plants. Harvest all year. Other notable Thymes include Lemon Thyme (T. x citriodorus), a creeping plant making good ground cover, and Wild Thyme (T. serpyllum), which tolerates light treading and grows well between stepping stones on paths and in walls. Bloom Color: Lavender. Main Bloom Time: Early summer, Late summer, Mid summer. Form: Rounded.",
+          "physical_characteristics": "Thymus vulgaris is an evergreen Shrub growing to 0.2 m (0ft 8in) by 0.3 m (1ft) at a medium rate. See above for USDA hardiness. It is hardy to UK zone 7 and is not frost tender. It is in leaf all year, in flower from June to August. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees, flies, Lepidoptera (Moths & Butterflies). The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy) and medium (loamy) soils, prefers well-drained soil and can grow in nutritionally poor soil. Suitable pH: neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers dry or moist soil. The plant can tolerates strong winds but not maritime exposure.",
+          "synonyms": "Origanum thymus Kuntze. Thymus collinus Salisb. [Illegitimate] .",
+          "plant_habitats": "Ground Cover; Cultivated Beds; East Wall. In. South Wall. In. West Wall. In.",
+          "edible_uses": "Edible Parts: Flowers Leaves Shoots Edible Uses: Condiment Tea Leaves and flowering tops - raw in salads, used as a garnish or added as a flavouring to cooked foods, going especially well with mushrooms and courgettes[2, 4, 21, 46, 183, 238]. It is an essential ingredient of the herb mix 'bouquet garni'[238]. It retains its flavour well in long slow cooking[200]. The leaves can be used either fresh or dried[183]. If the leaves are to be dried, the plants should be harvested in early and late summer just before the flowers open and the leaves should be dried quickly[200]. A nutritional analysis is available[218]. An aromatic tea is made from the fresh or dried leaves[21, 183]. Pungent and spicy[183].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anthelmintic Antiseptic Antispasmodic Aromatherapy Carminative Deodorant Diaphoretic Disinfectant Expectorant Sedative Tonic Common thyme has a very long history of folk use for a wide range of ailments[218]. It is very rich in essential oils and these are the active ingredients responsible for most of the medicinal properties[218]. In particular, thyme is valued for its antiseptic and antioxidant properties, it is an excellent tonic and is used in treating respiratory diseases and a variety of other ailments[254]. The flowering tops are anthelmintic, strongly antiseptic, antispasmodic, carminative, deodorant, diaphoretic, disinfectant, expectorant, sedative and tonic[4, 7, 21, 200, 218]. The plant is used internally in the treatment of dry coughs, whooping cough, bronchitis, bronchial catarrh, asthma, laryngitis, indigestion, gastritis and diarrhoea and enuresis in children[238]. It should not be prescribed for pregnant women[238]. Externally, it is used in the treatment of tonsillitis, gum diseases, rheumatism, arthritis and fungal infections[238]. The plant can be used fresh at any time of the year, or it can be harvested as it comes into flower and either be distilled for the oil or dried for later use[238]. Thyme has an antioxidant effect, thus regular use of this herb improves the health and longevity of individual body cells and therefore prolongs the life of the body[254, K]. The essential oil is strongly antiseptic[4]. The whole herb is used in the treatment of digestive disorders, sore throats, fevers etc[4]. The essential oil is one of the most important oils used in aromatherapy[7, 210]. Its keyword is 'Bacterial'[210]. It is used especially in cases of exhaustion, depression, upper respiratory tract infections, skin and scalp complaints etc[238]. The oil can cause allergic reactions and irritation to the skin and mucous membranes[238].",
+          "other_uses": "Deodorant Disinfectant Essential Fungicide Pot-pourri Repellent Agroforestry uses: Thyme can be used as a ground cover and is beneficial for attracting pollinators. Its aromatic properties may also repel certain pests, making it a useful companion plant in gardens. An essential oil from the leaves is frequently used in perfumery, soaps, toothpastes, mouthwashes, medicinally etc[11, 21, 57, 89, 238]. It has fungicidal properties[171] and is also used to prevent mildew[218]. The leaves are dried and used in pot-pourri[238]. The plant makes an attractive ground cover for a sunny position[201]. Plants are best spaced about 30cm apart each way[208]. The dried flowers are used to repel moths from clothing[4] whilst the growing plant is said to repel cabbage root fly[18, 20]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Thyme flowers are rich in nectar and pollen, making them attractive to pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – While thyme does not produce significant fruit, its leaves are edible for many herbivores and insects. The dense foliage can also provide shelter for small wildlife. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Thyme can offer shelter for beneficial insects, and its groundcover can protect invertebrates during the winter months. 4. Pest Confuser (Smell): Yes – The strong aroma of thyme can confuse or repel pests, making it a beneficial companion plant in gardens.",
+          "special_uses": "Attracts Wildlife Dynamic accumulator Food Forest Ground cover Scented Plants",
+          "cultivation": "Landscape Uses:Border, Container, Ground cover, Rock garden. Prefers a light, dry calcareous soil and a sunny position[4, 7, 11, 27, 37]. Succeeds in dry soils, poor soils and tolerates drought once it is established[190]. Plants can be grown on old walls. Thymes dislike wet conditions, especially in the winter. A layer of gravel on the soil around them will help protect the foliage from wet soils[238]. Thyme is hardy to about -15°c[200], though it is even hardier when grown on old walls are in well-drained poor light soils[4]. Thyme is commonly grown in the herb garden, there are many named varieties[182]. It is also harvested commercially for its essential oil[218]. The leaves are very aromatic[190]. It is sometimes grown as an annual from seed when used for culinary purposes[200]. The flowers are rich in nectar and are very attractive to honey bees[4, 7, 200]. Thyme is a good companion for most plants[20, 54], it is said to repel cabbage root flies when grown near brassicas[18, 20]. This is a very difficult genus taxonomically, the species hybridize freely with each other and often intergrade into each other[200]. Special Features: Attractive foliage, Edible, Fragrant foliage, Not North American native. The plant is heat tolerant in zones 9 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. A clumping mat former. Forming a dense prostrate carpet with a limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. Common thyme is primarily self-pollinating. This means it can fertilize itself without relying on pollen from another plant. Thyme is typically harvested in late spring to early summer, just before the plant flowers for the best flavor. Thyme usually flowers in late spring to early summer, generally from June to August (Northern Hemisphere). Thyme is considered a slow to moderate grower, reaching maturity in about 1 to 2 years under optimal conditions.",
+          "propagation": "Seed - sow spring in a cold frame. Seed can also be sown in autumn in a greenhouse. Surface sow or barely cover the seed. Germination can be erratic. When they are large enough to handle, prick the seedlings out into individual pots and grow them on in the greenhouse for at least their first winter. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. The seed can keep for three years in normal storage[4]. Division in spring or autumn[200]. Larger divisions can be planted out direct into their permanent positions. We have found that it is best to pot up smaller divisions and grow them on in light shade in a greenhouse or cold frame until they are growing away well. Plant them out in the summer or the following spring. Cuttings of young shoots, 5 - 8cm with a heel, May/June in a frame[200]. Cuttings of half-ripe wood, 5 - 8cm with a heel, July/August in a frame[200]. Layering.",
+          "other_names": "Samon-phyu, Timo, Tomillo, Thym, Common thyme, German thyme, Garden thyme, Thyme",
+          "native_range": "EUROPE: Italy (southeast), Spain (incl. Baleares), France (s. & Corsica), AFRICA: Morocco.",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Common Thyme",
+            "scientific_name": "Thymus vulgaris",
+            "genus": "Thymus",
+            "family": "Lamiaceae",
+            "synonyms": [
+              "Origanum thymus Kuntze",
+              "Thymus collinus Salisb"
+            ],
+            "common_names": [
+              "Common Thyme",
+              "Common thyme",
+              "Garden thyme",
+              "German thyme",
+              "Samon-phyu",
+              "Thym",
+              "Thyme",
+              "Timo",
+              "Tomillo",
+              "Wild Thyme"
+            ]
+          },
+          "pfaf_display_latin_name": "Thymus vulgaris - L.",
+          "pfaf_common_name": "Common Thyme, Garden thyme, Wild Thyme",
+          "pfaf_family": "Lamiaceae",
+          "pfaf_synonyms": "Origanum thymus Kuntze. Thymus collinus Salisb. [Illegitimate] .",
+          "pfaf_other_names": "Samon-phyu, Timo, Tomillo, Thym, Common thyme, German thyme, Garden thyme, Thyme",
+          "edible_parts": [
+            "flower",
+            "leaf",
+            "stem"
+          ],
+          "use_categories": [
+            "beverage_plant",
+            "companion_plant",
+            "culinary_herb",
+            "medicinal_plant",
+            "repellent_plant"
+          ],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun"
+            ],
+            "soil_type": [
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": null,
+            "soil_notes": "Landscape Uses:Border, Container, Ground cover, Rock garden. Prefers a light, dry calcareous soil and a sunny position[4, 7, 11, 27, 37]. Succeeds in dry soils, poor soils and tolerates drought once it is established[190]. Plants can be grown on old walls. Thymes dislike wet conditions, especially in the winter. A layer of gravel on the soil around them will help protect the foliage from wet soils[238]. Thyme is hardy to about -15°c[200], though it is even hardier when grown on old walls are in well-drained poor light soils[4]. Thyme is commonly grown in the herb garden, there are many named varieties[182]. It is also harvested commercially for its essential oil[218]. The leaves are very aromatic[190]. It is sometimes grown as an annual from seed when used for culinary purposes[200]. The flowers are rich in nectar and are very attractive to honey bees[4, 7, 200]. Thyme is a good companion for most plants[20, 54], it is said to repel cabbage root flies when grown near brassicas[18, 20]. This is a very difficult genus taxonomically, the species hybridize freely with each other and often intergrade into each other[200]. Special Features: Attractive foliage, Edible, Fragrant foliage, Not North American native. The plant is heat tolerant in zones 9 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. A clumping mat former. Forming a dense prostrate carpet with a limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. Common thyme is primarily self-pollinating. This means it can fertilize itself without relying on pollen from another plant. Thyme is typically harvested in late spring to early summer, just before the plant flowers for the best flavor. Thyme usually flowers in late spring to early summer, generally from June to August (Northern Hemisphere). Thyme is considered a slow to moderate grower, reaching maturity in about 1 to 2 years under optimal conditions.",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "cutting",
+            "division",
+            "layering",
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow spring in a cold frame. Seed can also be sown in autumn in a greenhouse. Surface sow or barely cover the seed. Germination can be erratic. When they are large enough to handle, prick the seedlings out into individual pots and grow them on in the greenhouse for at least their first winter. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. The seed can keep for three years in normal storage[4]. Division in spring or autumn[200]. Larger divisions can be planted out direct into their permanent positions. We have found that it is best to pot up smaller divisions and grow them on in light shade in a greenhouse or cold frame until they are growing away well. Plant them out in the summer or the following spring. Cuttings of young shoots, 5 - 8cm with a heel, May/June in a frame[200]. Cuttings of half-ripe wood, 5 - 8cm with a heel, July/August in a frame[200]. Layering.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Thymus vulgaris Thyme is native to Baleares, France, Italy, and Spain. It is a low-growing shrubby evergreen herb popular in the kitchen and sometimes used as ground cover. It has attractive, edible, fragrant foliage, slightly spicier than oregano and sweeter than sage. The leaves and flowering tops are eaten raw in salads, used as a garnish or added as a flavouring to cooked foods, going exceptionally well with mushrooms and courgettes. The leaves can be fresh or dried and retain their flavour well in long, slow cooking. Harvest stems after three months once the plant is established. Thyme is an essential ingredient of the herb mix 'Bouquet Garni'. Make an aromatic, savoury and spicy tea from fresh or dried leaves. Common thyme has a very long history of folk use for a wide range of ailments. The Silver Queen cultivar with white-margined leaves has gained the Royal Horticultural Society's Award of Garden Merit. Common thyme flowers are rich in nectar and attractive to honey bees. Common thyme is an excellent companion for most plants. Harvest all year. Other notable Thymes include Lemon Thyme (T. x citriodorus), a creeping plant making good ground cover, and Wild Thyme (T. serpyllum), which tolerates light treading and grows well between stepping stones on paths and in walls. Bloom Color: Lavender. Main Bloom Time: Early summer, Late summer, Mid summer. Form: Rounded.",
+          "edible_uses_notes": "Edible Parts: Flowers Leaves Shoots Edible Uses: Condiment Tea Leaves and flowering tops - raw in salads, used as a garnish or added as a flavouring to cooked foods, going especially well with mushrooms and courgettes[2, 4, 21, 46, 183, 238]. It is an essential ingredient of the herb mix 'bouquet garni'[238]. It retains its flavour well in long slow cooking[200]. The leaves can be used either fresh or dried[183]. If the leaves are to be dried, the plants should be harvested in early and late summer just before the flowers open and the leaves should be dried quickly[200]. A nutritional analysis is available[218]. An aromatic tea is made from the fresh or dried leaves[21, 183]. Pungent and spicy[183].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anthelmintic Antiseptic Antispasmodic Aromatherapy Carminative Deodorant Diaphoretic Disinfectant Expectorant Sedative Tonic Common thyme has a very long history of folk use for a wide range of ailments[218]. It is very rich in essential oils and these are the active ingredients responsible for most of the medicinal properties[218]. In particular, thyme is valued for its antiseptic and antioxidant properties, it is an excellent tonic and is used in treating respiratory diseases and a variety of other ailments[254]. The flowering tops are anthelmintic, strongly antiseptic, antispasmodic, carminative, deodorant, diaphoretic, disinfectant, expectorant, sedative and tonic[4, 7, 21, 200, 218]. The plant is used internally in the treatment of dry coughs, whooping cough, bronchitis, bronchial catarrh, asthma, laryngitis, indigestion, gastritis and diarrhoea and enuresis in children[238]. It should not be prescribed for pregnant women[238]. Externally, it is used in the treatment of tonsillitis, gum diseases, rheumatism, arthritis and fungal infections[238]. The plant can be used fresh at any time of the year, or it can be harvested as it comes into flower and either be distilled for the oil or dried for later use[238]. Thyme has an antioxidant effect, thus regular use of this herb improves the health and longevity of individual body cells and therefore prolongs the life of the body[254, K]. The essential oil is strongly antiseptic[4]. The whole herb is used in the treatment of digestive disorders, sore throats, fevers etc[4]. The essential oil is one of the most important oils used in aromatherapy[7, 210]. Its keyword is 'Bacterial'[210]. It is used especially in cases of exhaustion, depression, upper respiratory tract infections, skin and scalp complaints etc[238]. The oil can cause allergic reactions and irritation to the skin and mucous membranes[238].",
+          "other_uses_notes": "Deodorant Disinfectant Essential Fungicide Pot-pourri Repellent Agroforestry uses: Thyme can be used as a ground cover and is beneficial for attracting pollinators. Its aromatic properties may also repel certain pests, making it a useful companion plant in gardens. An essential oil from the leaves is frequently used in perfumery, soaps, toothpastes, mouthwashes, medicinally etc[11, 21, 57, 89, 238]. It has fungicidal properties[171] and is also used to prevent mildew[218]. The leaves are dried and used in pot-pourri[238]. The plant makes an attractive ground cover for a sunny position[201]. Plants are best spaced about 30cm apart each way[208]. The dried flowers are used to repel moths from clothing[4] whilst the growing plant is said to repel cabbage root fly[18, 20]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Thyme flowers are rich in nectar and pollen, making them attractive to pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – While thyme does not produce significant fruit, its leaves are edible for many herbivores and insects. The dense foliage can also provide shelter for small wildlife. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Thyme can offer shelter for beneficial insects, and its groundcover can protect invertebrates during the winter months. 4. Pest Confuser (Smell): Yes – The strong aroma of thyme can confuse or repel pests, making it a beneficial companion plant in gardens.",
+          "cultivation_notes": "Landscape Uses:Border, Container, Ground cover, Rock garden. Prefers a light, dry calcareous soil and a sunny position[4, 7, 11, 27, 37]. Succeeds in dry soils, poor soils and tolerates drought once it is established[190]. Plants can be grown on old walls. Thymes dislike wet conditions, especially in the winter. A layer of gravel on the soil around them will help protect the foliage from wet soils[238]. Thyme is hardy to about -15°c[200], though it is even hardier when grown on old walls are in well-drained poor light soils[4]. Thyme is commonly grown in the herb garden, there are many named varieties[182]. It is also harvested commercially for its essential oil[218]. The leaves are very aromatic[190]. It is sometimes grown as an annual from seed when used for culinary purposes[200]. The flowers are rich in nectar and are very attractive to honey bees[4, 7, 200]. Thyme is a good companion for most plants[20, 54], it is said to repel cabbage root flies when grown near brassicas[18, 20]. This is a very difficult genus taxonomically, the species hybridize freely with each other and often intergrade into each other[200]. Special Features: Attractive foliage, Edible, Fragrant foliage, Not North American native. The plant is heat tolerant in zones 9 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. A clumping mat former. Forming a dense prostrate carpet with a limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. Common thyme is primarily self-pollinating. This means it can fertilize itself without relying on pollen from another plant. Thyme is typically harvested in late spring to early summer, just before the plant flowers for the best flavor. Thyme usually flowers in late spring to early summer, generally from June to August (Northern Hemisphere). Thyme is considered a slow to moderate grower, reaching maturity in about 1 to 2 years under optimal conditions.",
+          "known_hazards": "A comment has been made in one report on medicinal uses that the plant should be used with caution[21]. No explanation was given. It quite possibly refers to overuse of the essential oil. All essential oils, since they are so concentrated, can be harmful in large doses[K]. Avoid if inflammatory disease of the gastrointestinal tract. Internal use contraindicated especially in pregnancy. Caution if sensitive to grasses [301]. Dilute oil in carrier oil before topical use.",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "most_plants",
+                "relationship": "good_companion",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'good_companion' wording."
+              }
+            ],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "bees",
+                "examples": [
+                  "bees"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.65,
+                "notes": "PFAF states flowers are pollinated by bees."
+              },
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "bees",
+                  "butterflies"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "PFAF says this plant attracts pollinators."
+              }
+            ],
+            "pest_confuser": true,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF describes this plant as relevant to companion planting.",
+              "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+            ]
+          }
+        },
+        "page_text_excerpt": "Thymus vulgaris Common Thyme, Garden thyme, Wild Thyme PFAF Plant Database Follow Us: Thymus vulgaris - L. Common Name Common Thyme, Garden thyme, Wild Thyme Family Lamiaceae USDA hardiness 5-11 Known Hazards A comment has been made in one report on medicinal uses that the plant should be used with caution[21]. No explanation was given. It quite possibly refers to overuse of the essential oil. All essential oils, since they are so concentrated, can be harmful in large doses[K]. Avoid if inflammatory disease of the gastrointestinal tract. Internal use contraindicated especially in pregnancy. Caution if sensitive to grasses [301]. Dilute oil in carrier oil before topical use. Habitats Dry slopes, rocks and maquis. Always found on clay or limestone soils[89]. Range S. Europe. Edibility Rating (4 of 5) Other Uses (5 of 5) Weed Potential No Medicinal Rating (3 of 5) Care (info) http://commons.wikimedia.org/wiki/User:Llez Translate this page: Summary Thymus vulgaris Thyme is native to Baleares, France, Italy, and Spain. It is a low-growing shrubby evergreen herb popular in the kitchen and sometimes used as ground cover. It has attractive, edible, fragrant foliage, slightly spicier than oregano and sweeter than sage. The leaves and flowering tops are eaten raw in salads, used as a garnish or added as a flavouring to cooked foods, going exceptionally well with mushrooms and courgettes. The leaves can be fresh or dried and retain their flavour well in long, slow cooking. Harvest stems after three months once the plant is established. Thyme is an essential ingredient of the herb mix 'Bouquet Garni'. Make an aromatic, savoury and spicy tea from fresh or dried leaves. Common thyme has a very long history of folk use for a wide range of ailments. The Silver Queen cultivar with white-margined leaves has gained the Royal Horticultural Society's Award of Garden Merit. Common thyme flowers are rich in nectar and attractive to honey bees. Common thyme is an excellent companion for most plants. Harvest all year. Other notable Thymes include Lemon Thyme (T. x citriodorus), a creeping plant making good ground cover, and Wild Thyme (T. serpyllum), which tolerates light treading and grows well between stepping stones on paths and in walls. Bloom Color: Lavender. Main Bloom Time: Early summer, Late summer, Mid summer. Form: Rounded. Physical Characteristics Thymus vulgaris is an evergreen Shrub growing to 0.2 m (0ft 8in) by 0.3 m (1ft) at a medium rate. See above for USDA hardiness. It is hardy to UK zone 7 and is not frost tender. It is in leaf all year, in flower from June to August. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees, flies, Lepidoptera (Moths & Butterflies). The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy) and medium (loamy) soils, prefers well-drained soil and can grow in nutritionally poor soil. Suitable pH: neutral and basic (mildly alkaline) soils. It cannot grow in "
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tThymus vulgaris Common Thyme, Garden thyme, Wild Thyme PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Thymus vulgaris is an evergreen Shrub growing to 0.2 m (0ft&amp;nbsp;8in) by 0.3 m (1ft) at a medium rate.  See above for USDA hardiness. It is hardy to UK zone 7 and is not frost tender. It is in leaf all year, in flower from June to August. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees, flies, Lepidoptera (Moths &amp; Butterflies). The plant is self-fertile. It is noted for attracting wildlife.  Suitable for: light (sandy) and medium (loamy) soils, prefers  well-drained soil and can grow in nutritionally poor soil. Suitable pH: neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers dry or  moist soil. The plant can tolerates strong winds but not maritime exposure.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Thymus+vulgaris\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BeEFVGh5bXVzIHZ1bGdhcmlzIGlzIGFuIGV2ZXJncmVlbiBTaHJ1YiBncm93aW5nIHRvIDAuMiBtICgwZnQmbmJzcDs4aW4pIGJ5IDAuMyBtICgxZnQpIGF0IGEgbWVkaXVtIHJhdGUuICBTZWUgYWJvdmUgZm9yIFVTREEgaGFyZGluZXNzLiBJdCBpcyBoYXJkeSB0byBVSyB6b25lIDcgYW5kIGlzIG5vdCBmcm9zdCB0ZW5kZXIuIEl0IGlzIGluIGxlYWYgYWxsIHllYXIsIGluIGZsb3dlciBmcm9tIEp1bmUgdG8gQXVndXN0LiBUaGUgc3BlY2llcyBpcyBoZXJtYXBocm9kaXRlIChoYXMgYm90aCBtYWxlIGFuZCBmZW1hbGUgb3JnYW5zKSBhbmQgaXMgcG9sbGluYXRlZCBieSBCZWVzLCBmbGllcywgTGVwaWRvcHRlcmEgKE1vdGhzICYgQnV0dGVyZmxpZXMpLiBUaGUgcGxhbnQgaXMgc2VsZi1mZXJ0aWxlLiBJdCBpcyBub3RlZCBmb3IgYXR0cmFjdGluZyB3aWxkbGlmZS4gIFN1aXRhYmxlIGZvcjogbGlnaHQgKHNhbmR5KSBhbmQgbWVkaXVtIChsb2FteSkgc29pbHMsIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsIGFuZCBjYW4gZ3JvdyBpbiBudXRyaXRpb25hbGx5IHBvb3Igc29pbC4gU3VpdGFibGUgcEg6IG5ldXRyYWwgYW5kIGJhc2ljIChtaWxkbHkgYWxrYWxpbmUpIHNvaWxzLiBJdCBjYW5ub3QgZ3JvdyBpbiB0aGUgc2hhZGUuIEl0IHByZWZlcnMgZHJ5IG9yICBtb2lzdCBzb2lsLiBUaGUgcGxhbnQgY2FuIHRvbGVyYXRlcyBzdHJvbmcgd2luZHMgYnV0IG5vdCBtYXJpdGltZSBleHBvc3VyZS5kAgMPZBYCAgMPZBZmAgEPDxYCHgRUZXh0BRRUaHltdXMgdnVsZ2FyaXMgLSBMLmRkAgMPDxYCHwMFJkNvbW1vbiBUaHltZSwgR2FyZGVuIHRoeW1lLCBXaWxkIFRoeW1lZGQCBQ8PFgIfAwUJTGFtaWFjZWFlZGQCBw8PFgIfAwUENS0xMWRkAgkPDxYCHgdWaXNpYmxlZ2RkAgsPDxYCHwMF2QNBIGNvbW1lbnQgaGFzIGJlZW4gbWFkZSBpbiBvbmUgcmVwb3J0IG9uIG1lZGljaW5hbCB1c2VzIHRoYXQgdGhlIHBsYW50IHNob3VsZCBiZSB1c2VkIHdpdGggY2F1dGlvblsyMV0uIE5vIGV4cGxhbmF"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Thyme",
+      "query": "Thymus vulgaris",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:42:18.322893+00:00",
+      "response_hash": "d2ef129b8375eaba93efe1344142f044fbd43347cd492e53d03a7fe4478c93b0",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Thyme",
+            "scientific_name": "Thymus vulgaris",
+            "genus": "Thymus",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Thyme\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Med"
+    }
+  ]
+}

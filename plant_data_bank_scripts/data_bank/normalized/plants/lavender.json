@@ -1,0 +1,268 @@
+{
+  "plant_atom": "lavender",
+  "identity": {
+    "common_name": "Lavender",
+    "scientific_name": "Lavandula angustifolia",
+    "genus": "Lavandula",
+    "family": "Lamiaceae",
+    "synonyms": [],
+    "common_names": [
+      "English Lavender",
+      "True Lavender"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "flower",
+      "leaf"
+    ],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Landscape Uses:Alpine garden, Border, Container, Ground cover, Massing, Rock garden, Seashore, Specimen. Succeeds in almost any soil so long as it is well-drained and not too acid[1, 200]. Prefers a sunny position in a neutral to alkaline soil[1, 4, 14]. Prefers a light warm dry soil[37]. When grown in rich soils the plants tend to produce more leaves but less essential oils[4]. Established plants are drought tolerant[190]. Plants are very tolerant of salt wind exposure[K]. When growing for maximum essential oil content, the plant must be given a very warm sunny position and will do best in a light sandy soil, the fragrance being especially pronounced in a chalky soil[245]. Plants are hardy to between -10 and -15°c[184]. Lavender is a very ornamental plant that is often grown in the herb garden and is also grown commercially for its essential oil[1, 4]. There are several named varieties[182, 183]. Not a very long-lived plant, it can be trimmed to keep it tidy but is probably best replaced every 10 years[200]. Any trimming is best done in spring and should not be done in the autumn since this can encourage new growth that will not be very cold-hardy[200]. A good bee plant, also attracting butterflies and moths[7, 24, 30]. Lavender makes a good companion for most plants[54], growing especially well with cabbages[14]. Special Features: Attractive foliage, Fragrant foliage, Not North American native, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers, Fragrant flowers, Attractive flowers or blooms. many species of lavender are self-fertile, meaning they can produce seeds without cross-pollination. Lavender is typically harvested in mid to late summer when the flowers are in full bloom. Lavender flowers in late spring to summer, depending on the species and growing conditions. Lavender is a moderate grower, typically reaching maturity within 2 to 3 years. Plants usually grow to a height of about 1 to 3 feet (30 to 90 cm), depending on the species and growing conditions.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "layering",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring in a greenhouse and only just cover the seed[4]. It usually germinates in 1 - 3 months at 15°c. When large enough to handle, prick the seedlings out into individual pots and grow them on in the greenhouse or cold frame for their first winter, planting them out in late spring after the last expected frosts. Cuttings of half-ripe wood 7 - 10cm with a heel, July/August in a frame. Usually very east, a high percentage will root within a few weeks[78]. Grow them on in the greenhouse for their first winter and plant them out in late spring after the last expected frosts. Cuttings 7cm with a heel succeed at almost any time of the year[1]. Layering.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Landscape Uses:Alpine garden, Border, Container, Ground cover, Massing, Rock garden, Seashore, Specimen. Succeeds in almost any soil so long as it is well-drained and not too acid[1, 200]. Prefers a sunny position in a neutral to alkaline soil[1, 4, 14]. Prefers a light warm dry soil[37]. When grown in rich soils the plants tend to produce more leaves but less essential oils[4]. Established plants are drought tolerant[190]. Plants are very tolerant of salt wind exposure[K]. When growing for maximum essential oil content, the plant must be given a very warm sunny position and will do best in a light sandy soil, the fragrance being especially pronounced in a chalky soil[245]. Plants are hardy to between -10 and -15°c[184]. Lavender is a very ornamental plant that is often grown in the herb garden and is also grown commercially for its essential oil[1, 4]. There are several named varieties[182, 183]. Not a very long-lived plant, it can be trimmed to keep it tidy but is probably best replaced every 10 years[200]. Any trimming is best done in spring and should not be done in the autumn since this can encourage new growth that will not be very cold-hardy[200]. A good bee plant, also attracting butterflies and moths[7, 24, 30]. Lavender makes a good companion for most plants[54], growing especially well with cabbages[14]. Special Features: Attractive foliage, Fragrant foliage, Not North American native, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers, Fragrant flowers, Attractive flowers or blooms. many species of lavender are self-fertile, meaning they can produce seeds without cross-pollination. Lavender is typically harvested in mid to late summer when the flowers are in full bloom. Lavender flowers in late spring to summer, depending on the species and growing conditions. Lavender is a moderate grower, typically reaching maturity within 2 to 3 years. Plants usually grow to a height of about 1 to 3 feet (30 to 90 cm), depending on the species and growing conditions.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antianxiety Antihalitosis Antiseptic Antispasmodic Appetizer Aromatherapy Aromatic Carminative Cholagogue Diuretic Nervine Sedative Stimulant Stomachic Tonic Lavender is a commonly used household herb, though it is better known for its sweet-scented aroma than for its medicinal qualities[254]. However, it is an important relaxing herb, having a soothing and relaxing affect upon the nervous system[254]. The flowering spikes can be dried and used internally in a tincture, though the extracted essential oil is more commonly used. The essential oil is much more gentle in its action than most other essential oils and can be safely applied direct to the skin as an antiseptic to help heal wounds, burns etc[254]. An essential oil obtained from the flowers is antihalitosis, powerfully antiseptic, antispasmodic, aromatic, carminative, cholagogue, diuretic, nervine, sedative, stimulant, stomachic and tonic[4, 7, 9, 21, 165, 238]. It is not often used internally, though it is a useful carminative and nervine[4]. It is mainly used externally where it is an excellent restorative and tonic - when rubbed into the temples, for example, it can cure a nervous headache, and it is a delightful addition to the bath-water[4]. Its powerful antiseptic properties are able to kill many of the common bacteria such as typhoid, diphtheria, streptococcus and Pneumococcus, as well as being a powerful antidote to some snake venoms[244]. It is very useful in the treatment of burns, sunburn, scalds, bites, vaginal discharge, anal fissure etc, where it also soothes the affected part of the body and can prevent the formation of permanent scar tissue[4, 238]. The essential oil is used in aromatherapy. Its keyword is 'Immune system'[210]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Lavandula angustifolia for loss of appetite, nervousness and insomnia, circulatory disorders, dyspeptic complaints (see [302] for critics of commission E).",
+    "cautions": "The volatile oil may rarely cause sensitization [301].",
+    "other_uses_notes": "Companion Essential Hedge Incense Pot-pourri Repellent Agroforestry uses: Lavender is excellent for attracting pollinators and beneficial insects. It can also be used as a ground cover, hedge, or ornamental plant. Its essential oils have pest-repellent properties, making it beneficial in organic farming. The essential oil that is obtained from the flowers is exquisitely scented and has a very wide range of applications, both in the home and commercially. It is commonly used in soap making, in making high quality perfumes (it is also used in 'Eau de Cologne'), it is also used as a detergent and cleaning agent, a food flavouring etc[21, 46, 57, 171, 238] and as an insect repellent[201]. When growing the plant for its essential oil content, it is best to harvest the flowering stems as soon as the flowers have faded[245]. Yields of 0.8 - 1% of the oil are obtained[7]. The aromatic leaves and flowers are used in pot-pourri[238] and as an insect repellent in the linen cupboard etc[14, 18, 20]. They have been used in the past as a strewing herb in order to impart a sweet smell to rooms and to deter insects[244]. The leaves are also added to bath water for their fragrance and therapeutic properties[244]. They are also said to repel mice[20]. The flowering stems, once the flowers have been removed for use in pot-pourri etc, can be tied in small bundles and burnt as incense sticks[245]. Lavender can be grown as a low hedge, responding well to trimming[29]. There are several varieties, such as 'Hidcote Variety', 'Loddon Pink' and 'Folgate Blue' that are suitable for using as dwarf hedges 30 - 50cm tall[245]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Lavender flowers are well-known for being rich in nectar and pollen, attracting a wide range of pollinators, including bees, butterflies, and other beneficial insects. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): No – While lavender attracts many insects for its nectar, it does not produce fruit or seeds that are widely consumed by birds or mammals. Its foliage is not typically dense enough to provide shelter, nesting, or roosting sites for wildlife. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Lavender’s dense, woody stems and leaf litter can offer shelter and overwintering sites for invertebrates, especially beneficial insects. 4. Pest Confuser (Smell): Yes – Lavender’s strong scent is often used as a natural pest deterrent, confusing and repelling pests such as moths, mosquitoes, and flies.",
+    "edible_uses_notes": "Edible Parts: Edible Uses: Condiment Tea Leaves, petals and flowering tips - raw. Used as a condiment in salads, soups, stews etc[2, 15, 183]. They provide a very aromatic flavour[7] and are too strong to be used in any quantity[K]. The fresh or dried flowers are used as a tea[183]. The fresh flowers are also crystallized or added to jams, ice-creams, vinegars etc as a flavouring[238]. An essential oil from the flowers is used as a food flavouring[183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "most_plants",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      },
+      {
+        "plant": "many_species_due_to_its_pest_repellent_properties",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting.",
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:53.854746+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Lavandula+angustifolia",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:24.208554+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Lavender",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:25.280587+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Lavandula+angustifolia",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:42.214055+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Lavender",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:45.743946+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=lavender",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:49.420245+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.935370+00:00"
+  },
+  "missing_fields": [
+    "classification.life_cycle",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

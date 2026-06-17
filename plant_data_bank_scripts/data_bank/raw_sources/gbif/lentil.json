@@ -1,0 +1,79 @@
+{
+  "plant": {
+    "plant_atom": "lentil",
+    "common_name": "Lentil",
+    "scientific_name": "Lens culinaris",
+    "genus": "Lens",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Lens culinaris",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:39.519233+00:00",
+      "response_hash": "3e6d7948a93831e378f13a22f55adce527ec85ba4bd36cf72323d19353af2551",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 5350010,
+          "acceptedUsageKey": 3973001,
+          "scientificName": "Lens culinaris Medik.",
+          "canonicalName": "Lens culinaris",
+          "rank": "SPECIES",
+          "status": "SYNONYM",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=0; score=120; nextMatch=2",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 11099195,
+              "scientificName": "Lens culinaris Moric.",
+              "canonicalName": "Lens culinaris",
+              "rank": "SPECIES",
+              "status": "DOUBTFUL",
+              "confidence": 97,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=-5; score=115",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Fabales",
+              "family": "Fabaceae",
+              "genus": "Vicia",
+              "species": "Lens culinaris",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1370,
+              "familyKey": 5386,
+              "genusKey": 2974751,
+              "speciesKey": 11099195,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Fabales",
+          "family": "Fabaceae",
+          "genus": "Vicia",
+          "species": "Vicia lens",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 1370,
+          "familyKey": 5386,
+          "genusKey": 2974751,
+          "speciesKey": 3973001,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

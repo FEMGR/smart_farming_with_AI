@@ -1,0 +1,103 @@
+{
+  "plant": {
+    "plant_atom": "chive",
+    "common_name": "Chive",
+    "scientific_name": "Allium schoenoprasum",
+    "genus": "Allium",
+    "family": "Amaryllidaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Allium schoenoprasum",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:43.205618+00:00",
+      "response_hash": "d22d4e05c536129eda14acfce165eea7aa7ed6d840d8b9720bc87d7ac96de49d",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2855860,
+          "scientificName": "Allium schoenoprasum L.",
+          "canonicalName": "Allium schoenoprasum",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=3",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 7672980,
+              "scientificName": "Allium schoenoprasum Regel & Tiling, 1858",
+              "canonicalName": "Allium schoenoprasum",
+              "rank": "SPECIES",
+              "status": "DOUBTFUL",
+              "confidence": 97,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=-5; score=115",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Asparagales",
+              "family": "Amaryllidaceae",
+              "genus": "Allium",
+              "species": "Allium schoenoprasum",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 196,
+              "orderKey": 1169,
+              "familyKey": 7682,
+              "genusKey": 9624496,
+              "speciesKey": 7672980,
+              "class": "Liliopsida"
+            },
+            {
+              "usageKey": 3697947,
+              "scientificName": "Allium euschoenoprasum Syme",
+              "canonicalName": "Allium euschoenoprasum",
+              "rank": "SPECIES",
+              "status": "ACCEPTED",
+              "confidence": 16,
+              "note": "Similarity: name=5; authorship=0; classification=4; rank=6; status=1; score=16",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Asparagales",
+              "family": "Amaryllidaceae",
+              "genus": "Allium",
+              "species": "Allium euschoenoprasum",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 196,
+              "orderKey": 1169,
+              "familyKey": 7682,
+              "genusKey": 9624496,
+              "speciesKey": 3697947,
+              "class": "Liliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Asparagales",
+          "family": "Amaryllidaceae",
+          "genus": "Allium",
+          "species": "Allium schoenoprasum",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 196,
+          "orderKey": 1169,
+          "familyKey": 7682,
+          "genusKey": 9624496,
+          "speciesKey": 2855860,
+          "class": "Liliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

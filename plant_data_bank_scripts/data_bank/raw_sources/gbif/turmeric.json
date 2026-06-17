@@ -1,0 +1,103 @@
+{
+  "plant": {
+    "plant_atom": "turmeric",
+    "common_name": "Turmeric",
+    "scientific_name": "Curcuma longa",
+    "genus": "Curcuma",
+    "family": "Zingiberaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Curcuma longa",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:57.541226+00:00",
+      "response_hash": "de397f1b59b4c2a4c4c15c3ce7e283f34b1061ad0f1cf88eb324b7d81da1c819",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2757624,
+          "scientificName": "Curcuma longa L.",
+          "canonicalName": "Curcuma longa",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=5",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 2757639,
+              "scientificName": "Curcuma mangga Valeton & Zijp",
+              "canonicalName": "Curcuma mangga",
+              "rank": "SPECIES",
+              "status": "ACCEPTED",
+              "confidence": 16,
+              "note": "Similarity: name=5; authorship=0; classification=4; rank=6; status=1; score=16",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Zingiberales",
+              "family": "Zingiberaceae",
+              "genus": "Curcuma",
+              "species": "Curcuma mangga",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 196,
+              "orderKey": 627,
+              "familyKey": 4687,
+              "genusKey": 2757518,
+              "speciesKey": 2757639,
+              "class": "Liliopsida"
+            },
+            {
+              "usageKey": 10687104,
+              "scientificName": "Curcuma tongii Y.H.Tan & Li X.Zhang",
+              "canonicalName": "Curcuma tongii",
+              "rank": "SPECIES",
+              "status": "ACCEPTED",
+              "confidence": 16,
+              "note": "Similarity: name=5; authorship=0; classification=4; rank=6; status=1; score=16",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Zingiberales",
+              "family": "Zingiberaceae",
+              "genus": "Curcuma",
+              "species": "Curcuma tongii",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 196,
+              "orderKey": 627,
+              "familyKey": 4687,
+              "genusKey": 2757518,
+              "speciesKey": 10687104,
+              "class": "Liliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Zingiberales",
+          "family": "Zingiberaceae",
+          "genus": "Curcuma",
+          "species": "Curcuma longa",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 196,
+          "orderKey": 627,
+          "familyKey": 4687,
+          "genusKey": 2757518,
+          "speciesKey": 2757624,
+          "class": "Liliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "plant": {
+    "plant_atom": "onion",
+    "common_name": "Onion",
+    "scientific_name": "Allium cepa",
+    "genus": "Allium",
+    "family": "Amaryllidaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Allium cepa",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:40.747979+00:00",
+      "response_hash": "ae1384db0ef12e6e7af844588dea8c992499a7b58476f5aed0413132599bf719",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2857697,
+          "scientificName": "Allium cepa L.",
+          "canonicalName": "Allium cepa",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; singleMatch=5",
+          "matchType": "EXACT",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Asparagales",
+          "family": "Amaryllidaceae",
+          "genus": "Allium",
+          "species": "Allium cepa",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 196,
+          "orderKey": 1169,
+          "familyKey": 7682,
+          "genusKey": 9624496,
+          "speciesKey": 2857697,
+          "class": "Liliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "plant_atom": "basil",
+    "common_name": "Basil",
+    "scientific_name": "Ocimum basilicum",
+    "genus": "Ocimum",
+    "family": "Lamiaceae",
+    "synonyms": [],
+    "source_names": [
+      "example_source"
+    ],
+    "source_files": [
+      "example_source.csv"
+    ],
+    "source_urls": [
+      "https://example.com/basil"
+    ],
+    "use_categories": [
+      "culinary_herb"
+    ],
+    "edible_parts": [
+      "leaf"
+    ],
+    "life_cycle": "annual",
+    "confidence": 0.95,
+    "duplicate_group_id": "ocimum_basilicum"
+  },
+  {
+    "plant_atom": "mint",
+    "common_name": "Mint",
+    "scientific_name": "Mentha spp",
+    "genus": "Mentha",
+    "family": "Lamiaceae",
+    "synonyms": [],
+    "source_names": [
+      "example_source"
+    ],
+    "source_files": [
+      "example_source.csv"
+    ],
+    "source_urls": [
+      "https://example.com/mint"
+    ],
+    "use_categories": [
+      "culinary_herb"
+    ],
+    "edible_parts": [
+      "leaf"
+    ],
+    "life_cycle": "perennial",
+    "confidence": 0.95,
+    "duplicate_group_id": "mentha_spp"
+  },
+  {
+    "plant_atom": "sage",
+    "common_name": "Sage",
+    "scientific_name": "Salvia officinalis",
+    "genus": "Salvia",
+    "family": "Lamiaceae",
+    "synonyms": [],
+    "source_names": [
+      "example_source"
+    ],
+    "source_files": [
+      "example_source.csv"
+    ],
+    "source_urls": [
+      "https://example.com/sage"
+    ],
+    "use_categories": [
+      "culinary_herb"
+    ],
+    "edible_parts": [
+      "leaf"
+    ],
+    "life_cycle": "perennial",
+    "confidence": 0.95,
+    "duplicate_group_id": "salvia_officinalis"
+  },
+  {
+    "plant_atom": "tomato",
+    "common_name": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "synonyms": [],
+    "source_names": [
+      "example_source"
+    ],
+    "source_files": [
+      "example_source.csv"
+    ],
+    "source_urls": [
+      "https://example.com/tomato"
+    ],
+    "use_categories": [
+      "fruit_crop"
+    ],
+    "edible_parts": [
+      "fruit"
+    ],
+    "life_cycle": "annual",
+    "confidence": 0.95,
+    "duplicate_group_id": "solanum_lycopersicum"
+  }
+]

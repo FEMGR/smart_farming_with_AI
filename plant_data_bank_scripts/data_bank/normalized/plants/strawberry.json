@@ -1,0 +1,253 @@
+{
+  "plant_atom": "strawberry",
+  "identity": {
+    "common_name": "Strawberry",
+    "scientific_name": "Fragaria x ananassa",
+    "genus": "Fragaria",
+    "family": "Rosaceae",
+    "synonyms": [],
+    "common_names": [
+      "Strawberry"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "fruit",
+      "leaf"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "Prefers a fertile, well-drained, moisture retentive soil in a sunny position[200]. Tolerates semi-shade though fruit production will be reduced when plants grow in such a position. Strawberries appreciate a mulch of pine or spruce leaves[18]. The strawberry is widely cultivated in temperate areas for its edible fruit, there are many named varieties[183] that can supply fruit from late spring (under cloches) to late autumn. Most strawberry varieties are day-length sensitive and only flower at certain times of the year. However, a number of cultivars have been selected that are not sensitive to day-length and can produce fruit for most of the summer. These cultivars are normally referred to as 'remontants'. The blossom can be damaged by late spring frosts[1]. Oat straw should not be used as a mulch since this can infect the strawberries with stem and bulb eelworm. Strawberry plants are very subject to virus diseases, these are usually spread by an aphid. Plants tend to degenerate after a few years and need to be replaced. Seed is a safe means of propagation though, since this species is of hybrid origin, the seed will not breed true. Strawberries are a good companion plant, growing well with bush beans, spinach, borage, lettuce and pyrethrum[20]. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a runner spreading indefinitely by rhizomes or stolons [1-2]. The root pattern is fibrous dividing into a large number of fine roots [1-2]. The root pattern is stoloniferous rooting from creeping stems above the ground [1-2]. Strawberries are typically harvested in late spring to early summer, depending on the variety and climate. Strawberries usually flower in spring. Strawberries grow relatively quickly, with plants producing fruit within the first year of planting, especially when propagated through runners. The hybrid formula is F. chiloensis × F. virginiana.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "division",
+      "runner",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early spring in a greenhouse. The seed can take 4 weeks or more to germinate. The seedlings are very small and slow-growing at first, but then grow rapidly. Prick them out into individual pots when they are large enough to handle and plant them out during the summer. This is a hybrid species and seed will not breed true, though this is the only way to develop new varieties. Division of runners, preferably done in July/August in order to allow the plants to become established for the following years crop[200]. They can also be moved in the following spring if required though should not then be allowed to fruit in their first year. The runners can be planted out direct into their permanent positions.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Prefers a fertile, well-drained, moisture retentive soil in a sunny position[200]. Tolerates semi-shade though fruit production will be reduced when plants grow in such a position. Strawberries appreciate a mulch of pine or spruce leaves[18]. The strawberry is widely cultivated in temperate areas for its edible fruit, there are many named varieties[183] that can supply fruit from late spring (under cloches) to late autumn. Most strawberry varieties are day-length sensitive and only flower at certain times of the year. However, a number of cultivars have been selected that are not sensitive to day-length and can produce fruit for most of the summer. These cultivars are normally referred to as 'remontants'. The blossom can be damaged by late spring frosts[1]. Oat straw should not be used as a mulch since this can infect the strawberries with stem and bulb eelworm. Strawberry plants are very subject to virus diseases, these are usually spread by an aphid. Plants tend to degenerate after a few years and need to be replaced. Seed is a safe means of propagation though, since this species is of hybrid origin, the seed will not breed true. Strawberries are a good companion plant, growing well with bush beans, spinach, borage, lettuce and pyrethrum[20]. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a runner spreading indefinitely by rhizomes or stolons [1-2]. The root pattern is fibrous dividing into a large number of fine roots [1-2]. The root pattern is stoloniferous rooting from creeping stems above the ground [1-2]. Strawberries are typically harvested in late spring to early summer, depending on the variety and climate. Strawberries usually flower in spring. Strawberries grow relatively quickly, with plants producing fruit within the first year of planting, especially when propagated through runners. The hybrid formula is F. chiloensis × F. virginiana.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. None known",
+    "cautions": "None known",
+    "other_uses_notes": "Agroforestry uses: Strawberries can serve as ground cover, helping to prevent soil erosion. They can also be integrated into mixed cropping systems to enhance biodiversity. A dynamic accumulator gathering minerals or nutrients from the soil and storing them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Strawberry flowers are rich in nectar and pollen, attracting various pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Strawberries provide food in the form of fruit for birds and other wildlife. The plants can also create some ground cover and habitat. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Strawberries can provide shelter for invertebrates and the leaf litter can contribute to habitat diversity. 4. Pest Confuser (Smell): No – Strawberries do not have a strong smell that would effectively confuse or deter pests.",
+    "edible_uses_notes": "Edible Parts: Fruit Leaves Edible Uses: Fruit - raw. Fruits of the best cultivars are sweet and succulent with an exquisite flavour[K]. Strawberries are a very popular fruit and are widely available in the summer. The fruit of some cultivars is up to 3cm in diameter[200]. Young leaves - raw."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting.",
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:00.004132+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Fragaria+x+ananassa",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:33.470880+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Strawberry",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:34.324951+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Fragaria+x+ananassa",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:37.149709+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Strawberry",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:40.819421+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=strawberry",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:44.511516+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.952893+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

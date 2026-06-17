@@ -1,0 +1,264 @@
+{
+  "plant_atom": "lemon_balm",
+  "identity": {
+    "common_name": "Lemon Balm",
+    "scientific_name": "Melissa officinalis",
+    "genus": "Melissa",
+    "family": "Lamiaceae",
+    "synonyms": [
+      "Faucibarba officinalis",
+      "Mutelia officinalis",
+      "Thymus melissa"
+    ],
+    "common_names": [
+      "Bee Balm",
+      "Common balm",
+      "Faucibarba officinalis. Mutelia officinalis. Thymus melissa.",
+      "Lemon Balm",
+      "Sweet Balm"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "leaf"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "A very easily grown plant, it succeeds in any well-drained soil in a sunny sheltered position[200]. It prefers a light rich moist soil[37, 52],a warm position[27, 37] and partial shade[4]. Once established, this is a drought tolerant species[190, 200], it is a useful plant to try in difficult dry places[187], usually succeeding in the dustiest of soils once it is established[190]. Lemon balm is often grown in the herb garden, and sometimes also commercially[46], there are some named varieties[183]. Plants can often self-sow so freely as to become a menace[187]. If the plants are cut back hard after flowering, they will produce a fresh flush of leaves[238]. Members of this genus are rarely if ever troubled by browsing deer or rabbits[233]. A good bee plant[4, 8, 24]. A good companion plant, especially for brassicas[14]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Invasive, Naturalizing, Suitable for cut flowers, Suitable for dried flowers. The plant is heat tolerant in zones 12 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is fibrous dividing into a large number of fine roots [1-2]. The root pattern is stoloniferous rooting from creeping stems above the ground [1-2]. Lemon Balm is typically self-fertile. Leaves can be harvested from late spring to early autumn, ideally just before flowering for the best flavor. Lemon Balm usually flowers in mid to late summer. Lemon Balm has a fast growth rate and can reach full size within one growing season, typically about 2-3 feet tall.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "division",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring or autumn in a cold frame. Germination can be slow[200]. Prick out the seedlings into individual pots as soon as they are large enough to handle and plant out into their permanent positions when the plants are at least 15cm tall[K]. If there is plenty of seed it can be sown in an outdoor seed bed in April. Plant out into their permanent positions the following spring. Division in spring or autumn[111]. Very easy, larger clumps can be replanted direct into their permanent positions, though it is best to pot up smaller clumps and grow them on in a cold frame until they are rooting well. Plant them out in the spring. Cuttings in July/August.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "A very easily grown plant, it succeeds in any well-drained soil in a sunny sheltered position[200]. It prefers a light rich moist soil[37, 52],a warm position[27, 37] and partial shade[4]. Once established, this is a drought tolerant species[190, 200], it is a useful plant to try in difficult dry places[187], usually succeeding in the dustiest of soils once it is established[190]. Lemon balm is often grown in the herb garden, and sometimes also commercially[46], there are some named varieties[183]. Plants can often self-sow so freely as to become a menace[187]. If the plants are cut back hard after flowering, they will produce a fresh flush of leaves[238]. Members of this genus are rarely if ever troubled by browsing deer or rabbits[233]. A good bee plant[4, 8, 24]. A good companion plant, especially for brassicas[14]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Invasive, Naturalizing, Suitable for cut flowers, Suitable for dried flowers. The plant is heat tolerant in zones 12 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is fibrous dividing into a large number of fine roots [1-2]. The root pattern is stoloniferous rooting from creeping stems above the ground [1-2]. Lemon Balm is typically self-fertile. Leaves can be harvested from late spring to early autumn, ideally just before flowering for the best flavor. Lemon Balm usually flowers in mid to late summer. Lemon Balm has a fast growth rate and can reach full size within one growing season, typically about 2-3 feet tall.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antianxiety Antibacterial Antidepressant Antiemetic Antispasmodic Antiviral Aromatherapy Carminative Diaphoretic Digestive Emmenagogue Febrifuge Sedative Tonic Lemon balm is a commonly grown household remedy with a long tradition as a tonic remedy that raises the spirits and lifts the heart[254]. Modern research has shown that it can help significantly in the treatment of cold sores[254]. The leaves and young flowering shoots are antibacterial, antispasmodic, antiviral, carminative, diaphoretic, digestive, emmenagogue, febrifuge, sedative, and tonic[4, 7, 9, 21, 165, 238]. It also acts to inhibit thyroid activity[238]. An infusion of the leaves is used in the treatment of fevers and colds, indigestion associated with nervous tension, excitability and digestive upsets in children, hyperthyroidism, depression, mild insomnia, headaches etc[4, 9, 238]. Externally, it is used to treat herpes, sores, gout, insect bites and as an insect repellent[238]. The plant can be used fresh or dried, for drying it is harvested just before or just after flowering[9]. The essential oil contains citral and citronella, which act to calm the central nervous system and are strongly antispasmodic[254]. The plant also contains polyphenols, in particular these combat the herpes simplex virus which produces cold sores[254]. The essential oil is used in aromatherapy. Its keyword is 'Female aspects'[210]. It is used to relax and rejuvenate, especially in cases of depression and nervous tension[238]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Melissa officinalis for nervousness and insomnia (see [302] for critics of commission E).",
+    "cautions": "Can cause irritation in high concentrates. Avoid during pregnancy. Care if sensitive skin [301].",
+    "other_uses_notes": "Essential Pot-pourri Repellent Agroforestry uses: Lemon Balm is beneficial for attracting pollinators and can be used as a companion plant. Its aromatic foliage can help repel certain pests. Landscape Uses: Border, Container, Rock garden. The growing plant is said to repel flies and ants[14]. It is also rubbed on the skin as a repellent[238], though the essential oil would be more effective here[K]. An essential oil is obtained from the plant[100] (the exact part is not specified; it is probably the entire plant and especially the flowering stems). It is used medicinally. The whole plant is very pleasantly aromatic, the aroma lasting long after the plant has been harvested. It is, therefore, a very useful ingredient in pot-pourri[4]. A dynamic accumulator gathers minerals or nutrients from the soil and stores them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Lemon Balm produces attractive flowers to pollinators, especially bees, providing a good nectar source. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The leaves are edible and can be used in teas, salads, or flavouring. While it doesn’t produce significant fruit or seeds, its foliage can provide some cover for wildlife. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The dense growth habit of Lemon Balm can provide shelter for beneficial insects and invertebrates. It may also offer some overwintering sites due to its robust foliage. 4. Pest Confuser (Smell): Yes – The strong, lemony scent of Lemon Balm can help repel certain pests, acting as a natural pest confuser due to its aromatic properties.",
+    "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Condiment Tea Leaves - raw or cooked. A pleasant lemon-like aroma and flavour, they are used mainly as a flavouring in salads and cooked foods[5, 7, 8, 9, 14, 27, 183]. A lemon-flavoured tea can be made from the fresh or dried leaves[21, 183]. A bunch of the leaves can be added to china tea, much improving the flavour, the leaves are also added to fruit cups etc[4]. They are used as a flavouring in various alcoholic beverages including Chartreuse and Benedictine[238]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting.",
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.synonyms": "Plants For A Future",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:55.083953+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Melissa+officinalis",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:26.460770+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Lemon+Balm",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:27.127357+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Melissa+officinalis",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:53.122585+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Lemon+Balm",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:56.583973+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=lemon_balm",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:00.221498+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.938698+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

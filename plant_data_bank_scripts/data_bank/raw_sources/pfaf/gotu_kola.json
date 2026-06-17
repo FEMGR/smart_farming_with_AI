@@ -1,0 +1,243 @@
+{
+  "plant": {
+    "plant_atom": "gotu_kola",
+    "common_name": "Gotu Kola",
+    "scientific_name": "Centella asiatica",
+    "genus": "Centella",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Centella+asiatica",
+      "query": "Centella asiatica",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:42:54.069099+00:00",
+      "response_hash": "c9016b709713b85942eeceba2ad9c5e7f2852842e17ccb4dbea631be3525a99a",
+      "parsed": {
+        "title": "Centella asiatica Gotu Kola, Spadeleaf PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Centella asiatica - (L.)Urb.",
+          "common_name": "Gotu Kola, Spadeleaf",
+          "family": "Apiaceae",
+          "usda_hardiness": "7-10",
+          "known_hazards": "There is a warning that the plant can irritate the skin[238], though it is widely used to treat skin complaints[238].",
+          "habitats": "Old stone walls and rocky sunny places in lowland hills and especially by the coast in central and southern Japan[58]. Shady, damp and wet places such as paddy fields, and in grass thickets[147, 238].",
+          "range": "E. Asia - India, China and Japan. Australia.",
+          "summary": null,
+          "physical_characteristics": "Centella asiatica is an evergreen Perennial growing to 0.2 m (0ft 8in) by 1 m (3ft 3in). See above for USDA hardiness. It is hardy to UK zone 8 and is frost tender. It is in leaf all year, in flower from July to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist or wet soil.",
+          "synonyms": "Hydrocotyle asiatica. L. H. cordifolia. H. repanda.",
+          "plant_habitats": "Bog Garden; Cultivated Beds; East Wall. In. South Wall. In. West Wall. In.",
+          "edible_uses": "Edible Parts: Leaves Edible Uses: Leaves - raw or cooked. Used in salads and in curries[238]. Cooked as a vegetable[272]. An aromatic flavour, we have found them to be rather overpowering in salads when used in any but small quantities[K].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Adaptogen Anticonvulsant Antidiarrhoeal Antiinflammatory Antipanic Antirheumatic Cardiac Depurative Diuretic Febrifuge Hypotensive Leprosy Malaria Nervine Sedative Skin Tonic Gotu kola is an outstandingly important medicinal herb that is widely used in the Orient[238] and is becoming increasingly popular in the West[254]. Its Indian name is 'Brahmi' which means 'bringing knowledge of the Supreme Reality' and it has long been used there medicinally and as an aid to meditation[238]. It is a useful tonic and cleansing herb for skin problems and digestive disorders[254]. In India it is chiefly valued as a revitalizing herb that strengthens nervous function and memory[254]. The whole plant is alterative, cardio-depressant, hypotensive, weakly sedative and tonic[240]. It is a rejuvenating diuretic herb that clears toxins, reduces inflammations and fevers, improves healing and immunity, improves the memory and has a balancing effect on the nervous system[147, 152, 238, 240]. It has been suggested that regular use of the herb can rejuvenate the nervous system and it therefore deserves attention as a possible cure for a wide range of nervous disorders including multiple sclerosis[K]. Recent research has shown that gotu kola reduces scarring, improves circulatory problems in the lower limbs and speeds the healing process[238]. It is used internally in the treatment of wounds, chronic skin conditions (including leprosy), venereal diseases, malaria, varicose veins, ulcers, nervous disorders and senility[238, 240]. Caution should be observed since excess doses cause headaches and transient unconsciousness[238]. Externally, the herb is applied to wounds, haemorrhoids and rheumatic joints[238]. The plant can be harvested at any time of the year and is used fresh or dried[238]. Another report says that the dried herb quickly loses its medicinal properties and so is best used fresh[237].",
+          "other_uses": "Cosmetic Extracts of the plant are added to cosmetic masks and creams to increase collagen and firm the skin[238].",
+          "special_uses": null,
+          "cultivation": "Prefers a moist to wet soil in sun or partial shade[238]. Plants also grow on walls in the wild and so should tolerate drier conditions[K]. This species is not hardy in the colder areas of the country, it tolerates temperatures down to between -5 and -10°c[200]. It grows and spreads very well outdoors during the summer in most parts of the country and is very easy to increase by division. It can therefore be grown as a summer crop with divisions being taken during the growing season and overwintered in a greenhouse in case the outdoor plants are killed by winter cold[K].",
+          "propagation": "Seed - sow spring in a greenhouse[238]. Prick out the seedlings into individual pots when they are large enough to handle and grow them on in a greenhouse for their first winter. Plant them out in late spring or early summer of the following year, after the last expected frosts[K]. Division is simple at any time in the growing season, though the spring is probably best[K]. We find that it is best to pot up the divisions until they are rooting away well, though in selected mild gardens it should be possible to plant the divisions out directly into their permanent positions[K].",
+          "other_names": null,
+          "native_range": "TEMPERATE ASIA: China (Anhui Sheng, Fujian Sheng, Guangdong Sheng, Guangxi Zhuangzu Zizhiqu, Hubei Sheng, Hunan Sheng, Jiangsu Sheng (south), Jiangxi Sheng, Shaanxi Sheng (south), Sichuan Sheng, Yunnan Sheng, Zhejiang Sheng), Korea, Japan, Taiwan TROPICAL ASIA: Bhutan, India, Sri Lanka, Nepal, Pakistan, Solomon Islands, Laos, Myanmar, Thailand, Vietnam, Indonesia, Malaysia, Philippines SOUTHERN AMERICA: Venezuela, Brazil, Argentina, Chile, Paraguay, Uruguay PACIFIC: Micronesia, Palau, United States (Northern Mariana Islands) AUSTRALASIA: Australia (New South Wales (east), Queensland) AFRICA: Kenya, Tanzania, Uganda, Cameroon, Equatorial Guinea, Côte D‘Ivoire, Guinea-Bissau, Liberia, Mali, Nigeria, Senegal, Sierra Leone, Mozambique, Malawi, Zambia, Zimbabwe, Botswana, Lesotho, Namibia, Eswatini, South Africa",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Gotu Kola",
+            "scientific_name": "Centella asiatica",
+            "genus": "Centella",
+            "family": "Apiaceae",
+            "synonyms": [
+              "Hydrocotyle asiatica"
+            ],
+            "common_names": [
+              "Gotu Kola",
+              "Spadeleaf"
+            ]
+          },
+          "pfaf_display_latin_name": "Centella asiatica - (L.)Urb.",
+          "pfaf_common_name": "Gotu Kola, Spadeleaf",
+          "pfaf_family": "Apiaceae",
+          "pfaf_synonyms": "Hydrocotyle asiatica. L. H. cordifolia. H. repanda.",
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "leaf"
+          ],
+          "use_categories": [
+            "medicinal_plant"
+          ],
+          "life_cycle": "perennial",
+          "botanical_life_cycle": "perennial",
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": "Prefers a moist to wet soil in sun or partial shade[238]. Plants also grow on walls in the wild and so should tolerate drier conditions[K]. This species is not hardy in the colder areas of the country, it tolerates temperatures down to between -5 and -10°c[200]. It grows and spreads very well outdoors during the summer in most parts of the country and is very easy to increase by division. It can therefore be grown as a summer crop with divisions being taken during the growing season and overwintered in a greenhouse in case the outdoor plants are killed by winter cold[K].",
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "division",
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow spring in a greenhouse[238]. Prick out the seedlings into individual pots when they are large enough to handle and grow them on in a greenhouse for their first winter. Plant them out in late spring or early summer of the following year, after the last expected frosts[K]. Division is simple at any time in the growing season, though the spring is probably best[K]. We find that it is best to pot up the divisions until they are rooting away well, though in selected mild gardens it should be possible to plant the divisions out directly into their permanent positions[K].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Leaves - raw or cooked. Used in salads and in curries[238]. Cooked as a vegetable[272]. An aromatic flavour, we have found them to be rather overpowering in salads when used in any but small quantities[K].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Adaptogen Anticonvulsant Antidiarrhoeal Antiinflammatory Antipanic Antirheumatic Cardiac Depurative Diuretic Febrifuge Hypotensive Leprosy Malaria Nervine Sedative Skin Tonic Gotu kola is an outstandingly important medicinal herb that is widely used in the Orient[238] and is becoming increasingly popular in the West[254]. Its Indian name is 'Brahmi' which means 'bringing knowledge of the Supreme Reality' and it has long been used there medicinally and as an aid to meditation[238]. It is a useful tonic and cleansing herb for skin problems and digestive disorders[254]. In India it is chiefly valued as a revitalizing herb that strengthens nervous function and memory[254]. The whole plant is alterative, cardio-depressant, hypotensive, weakly sedative and tonic[240]. It is a rejuvenating diuretic herb that clears toxins, reduces inflammations and fevers, improves healing and immunity, improves the memory and has a balancing effect on the nervous system[147, 152, 238, 240]. It has been suggested that regular use of the herb can rejuvenate the nervous system and it therefore deserves attention as a possible cure for a wide range of nervous disorders including multiple sclerosis[K]. Recent research has shown that gotu kola reduces scarring, improves circulatory problems in the lower limbs and speeds the healing process[238]. It is used internally in the treatment of wounds, chronic skin conditions (including leprosy), venereal diseases, malaria, varicose veins, ulcers, nervous disorders and senility[238, 240]. Caution should be observed since excess doses cause headaches and transient unconsciousness[238]. Externally, the herb is applied to wounds, haemorrhoids and rheumatic joints[238]. The plant can be harvested at any time of the year and is used fresh or dried[238]. Another report says that the dried herb quickly loses its medicinal properties and so is best used fresh[237].",
+          "other_uses_notes": "Cosmetic Extracts of the plant are added to cosmetic masks and creams to increase collagen and firm the skin[238].",
+          "cultivation_notes": "Prefers a moist to wet soil in sun or partial shade[238]. Plants also grow on walls in the wild and so should tolerate drier conditions[K]. This species is not hardy in the colder areas of the country, it tolerates temperatures down to between -5 and -10°c[200]. It grows and spreads very well outdoors during the summer in most parts of the country and is very easy to increase by division. It can therefore be grown as a summer crop with divisions being taken during the growing season and overwintered in a greenhouse in case the outdoor plants are killed by winter cold[K].",
+          "known_hazards": "There is a warning that the plant can irritate the skin[238], though it is widely used to treat skin complaints[238].",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Centella asiatica Gotu Kola, Spadeleaf PFAF Plant Database Follow Us: Centella asiatica - (L.)Urb. Common Name Gotu Kola, Spadeleaf Family Apiaceae USDA hardiness 7-10 Known Hazards There is a warning that the plant can irritate the skin[238], though it is widely used to treat skin complaints[238]. Habitats Old stone walls and rocky sunny places in lowland hills and especially by the coast in central and southern Japan[58]. Shady, damp and wet places such as paddy fields, and in grass thickets[147, 238]. Range E. Asia - India, China and Japan. Australia. Edibility Rating (2 of 5) Other Uses (1 of 5) Weed Potential No Medicinal Rating (5 of 5) Care (info) http://www.hear.org/starr/ Translate this page: Summary Physical Characteristics Centella asiatica is an evergreen Perennial growing to 0.2 m (0ft 8in) by 1 m (3ft 3in). See above for USDA hardiness. It is hardy to UK zone 8 and is frost tender. It is in leaf all year, in flower from July to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist or wet soil. UK Hardiness Map US Hardiness Map Synonyms Hydrocotyle asiatica. L. H. cordifolia. H. repanda. Plant Habitats Bog Garden; Cultivated Beds; East Wall. In. South Wall. In. West Wall. In. Edible Uses Edible Parts: Leaves Edible Uses: Leaves - raw or cooked. Used in salads and in curries[238]. Cooked as a vegetable[272]. An aromatic flavour, we have found them to be rather overpowering in salads when used in any but small quantities[K]. References More on Edible Uses Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Adaptogen Anticonvulsant Antidiarrhoeal Antiinflammatory Antipanic Antirheumatic Cardiac Depurative Diuretic Febrifuge Hypotensive Leprosy Malaria Nervine Sedative Skin Tonic Gotu kola is an outstandingly important medicinal herb that is widely used in the Orient[238] and is becoming increasingly popular in the West[254]. Its Indian name is 'Brahmi' which means 'bringing knowledge of the Supreme Reality' and it has long been used there medicinally and as an aid to meditation[238]. It is a useful tonic and cleansing herb for skin problems and digestive disorders[254]. In India it is chiefly valued as a revitalizing herb that strengthens nervous function and memory[254]. The whole plant is alterative, cardio-depressant, hypotensive, weakly sedative and tonic[240]. It is a rejuvenating diuretic herb that clears toxins, reduces inflammations and fevers, improves healing and immunity, improves the memory and has a balancing effect on the nervous system[147, 152, 238, 240]. It has b"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tCentella asiatica Gotu Kola, Spadeleaf PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Centella asiatica is an evergreen Perennial growing to 0.2 m (0ft&amp;nbsp;8in) by 1 m (3ft&amp;nbsp;3in).  See above for USDA hardiness. It is hardy to UK zone 8 and is frost tender. It is in leaf all year, in flower from July to August, and the seeds ripen from August to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in  semi-shade (light woodland) or no shade. It prefers  moist or  wet soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Centella+asiatica\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50Be8EQ2VudGVsbGEgYXNpYXRpY2EgaXMgYW4gZXZlcmdyZWVuIFBlcmVubmlhbCBncm93aW5nIHRvIDAuMiBtICgwZnQmbmJzcDs4aW4pIGJ5IDEgbSAoM2Z0Jm5ic3A7M2luKS4gIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgOCBhbmQgaXMgZnJvc3QgdGVuZGVyLiBJdCBpcyBpbiBsZWFmIGFsbCB5ZWFyLCBpbiBmbG93ZXIgZnJvbSBKdWx5IHRvIEF1Z3VzdCwgYW5kIHRoZSBzZWVkcyByaXBlbiBmcm9tIEF1Z3VzdCB0byBTZXB0ZW1iZXIuIFRoZSBzcGVjaWVzIGlzIGhlcm1hcGhyb2RpdGUgKGhhcyBib3RoIG1hbGUgYW5kIGZlbWFsZSBvcmdhbnMpIGFuZCBpcyBwb2xsaW5hdGVkIGJ5IEluc2VjdHMuIFRoZSBwbGFudCBpcyBzZWxmLWZlcnRpbGUuICBTdWl0YWJsZSBmb3I6IGxpZ2h0IChzYW5keSksIG1lZGl1bSAobG9hbXkpIGFuZCBoZWF2eSAoY2xheSkgc29pbHMuIFN1aXRhYmxlIHBIOiBtaWxkbHkgYWNpZCwgbmV1dHJhbCBhbmQgYmFzaWMgKG1pbGRseSBhbGthbGluZSkgc29pbHMuIEl0IGNhbiBncm93IGluICBzZW1pLXNoYWRlIChsaWdodCB3b29kbGFuZCkgb3Igbm8gc2hhZGUuIEl0IHByZWZlcnMgIG1vaXN0IG9yICB3ZXQgc29pbC5kAgMPZBYCAgMPZBZiAgEPDxYCHgRUZXh0BRxDZW50ZWxsYSBhc2lhdGljYSAtIChMLilVcmIuZGQCAw8PFgIfAwUUR290dSBLb2xhLCBTcGFkZWxlYWZkZAIFDw8WAh8DBQhBcGlhY2VhZWRkAgcPDxYCHwMFBDctMTBkZAIJDw8WAh4HVmlzaWJsZWdkZAILDw8WAh8DBXVUaGVyZSBpcyBhIHdhcm5pbmcgdGhhdCB0aGUgcGxhbnQgY2FuIGlycml0YXRlIHRoZSBza2luWzIzOF0sIHRob3VnaCBpdCBpcyB3aWRlbHkgdXNlZCB0byB0cmVhdCBza2luIGNvbXBsYWludHNbMjM4XS5kZAINDw8WAh8DBcgBT2xkIHN0b25lIHdhbGxzIGFuZCByb2NreSBzdW5ueSBwbGFjZXMgaW4gbG93bGFuZCBoaWxscyBhbmQgZXNwZWNpYWxseSBieSB0aGUgY29hc3QgaW4gY2VudHJhbCBhbmQgc291dGhlcm4gSmFwYW5bNThdLiBTaGFkeSwgZGFtcCBhbmQgd2V0IHBsYWNlcyBzdWNoIGFzIHBhZGR5IGZpZWxkcywgYW5kIGluIGdyYXNzIHRoaWNrZXRzWzE0NywgMjM4XS5kZAIPDw8"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Gotu+Kola",
+      "query": "Centella asiatica",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:42:54.766386+00:00",
+      "response_hash": "430ead9cd0f5526d5ee4b62ee583f463b51d935a7f6446e58325fd3cb1edf8b6",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Gotu Kola",
+            "scientific_name": "Centella asiatica",
+            "genus": "Centella",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Gotu+Kola\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for"
+    }
+  ]
+}

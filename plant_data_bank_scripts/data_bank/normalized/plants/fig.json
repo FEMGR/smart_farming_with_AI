@@ -1,0 +1,303 @@
+{
+  "plant_atom": "fig",
+  "identity": {
+    "common_name": "Fig",
+    "scientific_name": "Ficus carica",
+    "genus": "Ficus",
+    "family": "Moraceae",
+    "synonyms": [],
+    "common_names": [
+      "Adriatic fig",
+      "Anjeer",
+      "Anjir",
+      "Anjira",
+      "anjoora",
+      "Anjura",
+      "Anjuru",
+      "Black Mission fig",
+      "brevo",
+      "Brown Turkey fig",
+      "Calimyrna fig",
+      "caricae fructus",
+      "carique",
+      "common fig",
+      "echte feige",
+      "Edible fig",
+      "essfeige",
+      "fagari",
+      "feige",
+      "feigenbaum",
+      "fico",
+      "Fico",
+      "fig",
+      "Fig",
+      "Fig Common",
+      "fig tree",
+      "Figo",
+      "Figo-roxo",
+      "Figueira",
+      "figueira-comum",
+      "figueira-da-europa",
+      "figueira-do-reino",
+      "figuier",
+      "figuier commun",
+      "fikon",
+      "Fique",
+      "Flowerless fruit",
+      "getfikon",
+      "higo",
+      "Higo",
+      "Higuera",
+      "Higuera comun",
+      "higuera común",
+      "Ichijiku",
+      "Inzer",
+      "Manjimedi",
+      "manjimedi",
+      "medi",
+      "muhwagwanamu",
+      "Muhwagwanamu",
+      "simaayatti",
+      "Simaiyatti",
+      "Simayatti",
+      "simayatti",
+      "simeyetti",
+      "Smokinya",
+      "Smyrna fig",
+      "Te biku",
+      "teen",
+      "Tenatti",
+      "tenatti",
+      "teneyatti",
+      "Wu hua guo",
+      "wu hua guo"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "fruit"
+    ],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 6.0,
+    "soil_ph_max": 7.0,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Figs are plants of temperate and subtropical climates. They do not generally grow well in the wet tropics, but can be grown at higher elevations in the drier to moist tropics[418 ]. The fruits develop best when plants are grown in relatively dry climates where a cool-season alternates with a hot season[335 ]. They grow best in areas where annual daytime temperatures are within the range of 16 - 26°c, but can tolerate 4 - 38°c[418 ]. Dormant plants are hardy to about -15°c[202 ]. The top growth is susceptible to frost damage and can be killed back to the base in severe winters, though plants usually recover well[3 ]. They prefer a mean annual rainfall in the range 700 - 1,500mm, but tolerate 300 - 2,700mm[418 ]. Prefers a very sunny position but tolerates part-day shade when grown on a warm wall[202 ]. Requires a well-drained medium to light loam and some lime rubble incorporated into the soil[1 ]. Succeeds in dry soils. A heavy wet soil tends to encourage excessive plant growth at the expense of fruit production[1 ]. Prefers a pH in the range 6 - 7, but tolerates 4.3 - 8.6[418 ]. Seedling trees can commence cropping when only 3 - 4 years old, whilst cuttings can start fruiting in only 1 - 2 years[335 ]. Up to three crops of fruit a year can be obtained in some countries[46 ]. Trees have been known to live for as long as 200 years[418 ]. There are many named varieties[183 , 301 ]. There are two primary types of fig:- the Adriatic fig which produces fruit without pollination; and the Symrna fig that require the presents of a fig wasp for pollination[418 ]. It is a good idea to restrict the roots of fig trees on most soil types in order to discourage excessive vegetative growth at the expense of fruit production[3 ]. This can be done by root pruning, but it is easier to place some kind of permanent restriction around the roots - planting into a large tub that is then buried into the ground is one method. It is important to make sure that the tree still gets ample moisture, especially when the fruits are ripening. Fig trees have a unique form of fertilization, each species relying on a single, highly specialized species of wasp that is itself totally dependant upon that fig species in order to breed. The trees produce three types of flowers; a male, a long-styled female and a short-styled female flower, often called the gall flower. All three types of flowers are contained within the structure we usually think of as the fruit. The female fig wasp enters a fig and lays its eggs on the short styled female flowers while pollinating the long-styled female flowers. Wingless male fig wasps emerge first, inseminate the emerging females and then bore exit tunnels out of the fig for the winged females. Females emerge, collect pollen from the male flowers and fly off in search of figs whose female flowers are receptive. In order to support a population of its pollinator, individuals of a Ficus spp. must flower asynchronously. A population must exceed a critical minimum size to ensure that at any time of the year at least some plants have an overlap of emission and reception of fig wasps. Without this temporal overlap, the short-lived pollinator wasps will go locally extinct[413 ]. When grown outdoors in Britain only one crop is usually obtained, though in exceptionally hot years two crops are sometimes produced. The fruit usually takes about 12 months to mature in Britain, baby fruits no larger than about 15mm long in the autumn usually overwinter to form the following year's crop of fruit. If plants are grown in pots in a conservatory or cold greenhouse, two crops of fruit can be obtained, one in early summer and one in late summer to autumn[260]. Pinch back the new shoots to about six leaves in order to encourage the second crop[260]. Special Features: Attractive foliage, Not North American native, Invasive, Inconspicuous flowers or blooms. In garden design, as well as the above-ground architecture of a plant, root structure considerations help choose plants that work together for their optimal soil requirements, including nutrients and water. The root pattern is suckering with new plants from underground runners away from the plant [2-1]. Figs are typically harvested in Summer to early Autumn. Figs produce their flowers in Spring, though they are often hidden inside the fruit structure. Figs grow moderately fast, often reaching maturity and starting to bear fruit in 3-5 years.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": "Mean annual rainfall range mentioned: 700-1,500 mm."
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "layering",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring in a warm greenhouse. Prick out the seedlings as soon as they are large enough to handle and overwinter the young plants in a greenhouse for at least their first year. Plant out in late spring after the last expected frosts and give some protection for their first winter outdoors. Cuttings of mature wood 10 - 12cm with a heel, winter in a frame. Fairly easy, but the cuttings must be kept frost free. It is probably best if the cuttings are put in individual pots[78]. Layering.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Figs are plants of temperate and subtropical climates. They do not generally grow well in the wet tropics, but can be grown at higher elevations in the drier to moist tropics[418 ]. The fruits develop best when plants are grown in relatively dry climates where a cool-season alternates with a hot season[335 ]. They grow best in areas where annual daytime temperatures are within the range of 16 - 26°c, but can tolerate 4 - 38°c[418 ]. Dormant plants are hardy to about -15°c[202 ]. The top growth is susceptible to frost damage and can be killed back to the base in severe winters, though plants usually recover well[3 ]. They prefer a mean annual rainfall in the range 700 - 1,500mm, but tolerate 300 - 2,700mm[418 ]. Prefers a very sunny position but tolerates part-day shade when grown on a warm wall[202 ]. Requires a well-drained medium to light loam and some lime rubble incorporated into the soil[1 ]. Succeeds in dry soils. A heavy wet soil tends to encourage excessive plant growth at the expense of fruit production[1 ]. Prefers a pH in the range 6 - 7, but tolerates 4.3 - 8.6[418 ]. Seedling trees can commence cropping when only 3 - 4 years old, whilst cuttings can start fruiting in only 1 - 2 years[335 ]. Up to three crops of fruit a year can be obtained in some countries[46 ]. Trees have been known to live for as long as 200 years[418 ]. There are many named varieties[183 , 301 ]. There are two primary types of fig:- the Adriatic fig which produces fruit without pollination; and the Symrna fig that require the presents of a fig wasp for pollination[418 ]. It is a good idea to restrict the roots of fig trees on most soil types in order to discourage excessive vegetative growth at the expense of fruit production[3 ]. This can be done by root pruning, but it is easier to place some kind of permanent restriction around the roots - planting into a large tub that is then buried into the ground is one method. It is important to make sure that the tree still gets ample moisture, especially when the fruits are ripening. Fig trees have a unique form of fertilization, each species relying on a single, highly specialized species of wasp that is itself totally dependant upon that fig species in order to breed. The trees produce three types of flowers; a male, a long-styled female and a short-styled female flower, often called the gall flower. All three types of flowers are contained within the structure we usually think of as the fruit. The female fig wasp enters a fig and lays its eggs on the short styled female flowers while pollinating the long-styled female flowers. Wingless male fig wasps emerge first, inseminate the emerging females and then bore exit tunnels out of the fig for the winged females. Females emerge, collect pollen from the male flowers and fly off in search of figs whose female flowers are receptive. In order to support a population of its pollinator, individuals of a Ficus spp. must flower asynchronously. A population must exceed a critical minimum size to ensure that at any time of the year at least some plants have an overlap of emission and reception of fig wasps. Without this temporal overlap, the short-lived pollinator wasps will go locally extinct[413 ]. When grown outdoors in Britain only one crop is usually obtained, though in exceptionally hot years two crops are sometimes produced. The fruit usually takes about 12 months to mature in Britain, baby fruits no larger than about 15mm long in the autumn usually overwinter to form the following year's crop of fruit. If plants are grown in pots in a conservatory or cold greenhouse, two crops of fruit can be obtained, one in early summer and one in late summer to autumn[260]. Pinch back the new shoots to about six leaves in order to encourage the second crop[260]. Special Features: Attractive foliage, Not North American native, Invasive, Inconspicuous flowers or blooms. In garden design, as well as the above-ground architecture of a plant, root structure considerations help choose plants that work together for their optimal soil requirements, including nutrients and water. The root pattern is suckering with new plants from underground runners away from the plant [2-1]. Figs are typically harvested in Summer to early Autumn. Figs produce their flowers in Spring, though they are often hidden inside the fruit structure. Figs grow moderately fast, often reaching maturity and starting to bear fruit in 3-5 years.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Cancer Demulcent Digestive Emollient Galactogogue Laxative Pectoral Stings Stomachic Tonic Warts A decoction of the leaves is stomachic[218]. The leaves are also added to boiling water and used as a steam bath for painful or swollen piles[218]. The latex from the stems is used to treat corns, warts and piles[4, 89, 218]. It also has an analgesic effect against insect stings and bites[7]. The fruit is mildly laxative, demulcent, digestive and pectoral[4, 7, 218]. The unripe green fruits are cooked with other foods as a galactogogue and tonic[218]. The roasted fruit is emollient and used as a poultice in the treatment of gumboils, dental abscesses etc[4]. Syrup of figs, made from the fruit, is a well-known and effective gentle laxative that is also suitable for the young and very old[254, K]. A decoction of the young branches is an excellent pectoral[7]. The plant has anticancer properties[218].",
+    "cautions": "The sap and the half-ripe fruits are said to be poisonous[20, 89]. The sap can be a serious eye irritant[238].",
+    "other_uses_notes": "Agroforestry uses: Figs can be used as shade trees and for erosion control. Their leaves can also provide ground cover. Landscape Uses: Container, Espalier, Specimen. Wood - pliable but porous and of little value[4, 89]. It is used for hoops, garlands, ornaments, etc[89]. When saturated with oil and covered with emery is used as a substitute for a hone[4]. 1. Nectary - Flowers rich in nectar and pollen: No – Fig flowers are enclosed inside the fruit (syconium), and while fig wasps pollinate them, they are not typically rich in nectar accessible to other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Figs produce edible fruits that are a valuable food source for birds, mammals, and insects. The dense foliage can provide shelter, nesting, and roosting sites for birds and small animals. Leaf litter also supports insect life. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The rough bark, dense foliage, and leaf litter offer shelter and overwintering sites for beneficial invertebrates. 4. Pest Confuser (Smell): No – Fig trees do not have a strong odor that functions as a pest confuser.",
+    "edible_uses_notes": "Edible Parts: Fruit Sap Edible Uses: Curdling agent Fruit - raw or cooked[1, 3, 3, 4, 46]. Sweet and succulent, a fully ripe specimen is an exquisite fruit that almost literally melts in the mouth[K]. The fruit is often dried for later use[183] and this dried fruit is a major item of commerce. Figs are usually pear-shaped and up to 5cm in diameter[200]. A nutritional analysis is available[218]. The latex from the sap can be used to coagulate plant milks[183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [],
+    "pollinator_support": false,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "growth.rainfall_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:07.580483+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Ficus+carica",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:47.203510+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Fig",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:48.007700+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Ficus+carica",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:42.236800+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Fig",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:45.618969+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=fig",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:48.992876+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.974686+00:00"
+  },
+  "missing_fields": [
+    "classification.life_cycle",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

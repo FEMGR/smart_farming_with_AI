@@ -1,0 +1,80 @@
+{
+  "plant": {
+    "plant_atom": "galangal",
+    "common_name": "Galangal",
+    "scientific_name": "Alpinia galanga",
+    "genus": "Alpinia",
+    "family": "Zingiberaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Alpinia galanga",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:58.769992+00:00",
+      "response_hash": "355407b554e7140a6a792a8dea788cfebd9b5b0efebe234872096370e38a03a8",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 5302225,
+          "scientificName": "Alpinia galanga (L.) Willd.",
+          "canonicalName": "Alpinia galanga",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=5",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 5302509,
+              "acceptedUsageKey": 2760176,
+              "scientificName": "Alpinia walang (Blume) D.Dietr.",
+              "canonicalName": "Alpinia walang",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 15,
+              "note": "Similarity: name=5; authorship=0; classification=4; rank=6; status=0; score=15",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Zingiberales",
+              "family": "Zingiberaceae",
+              "genus": "Etlingera",
+              "species": "Etlingera walang",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 196,
+              "orderKey": 627,
+              "familyKey": 4687,
+              "genusKey": 2759895,
+              "speciesKey": 2760176,
+              "class": "Liliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Zingiberales",
+          "family": "Zingiberaceae",
+          "genus": "Alpinia",
+          "species": "Alpinia galanga",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 196,
+          "orderKey": 627,
+          "familyKey": 4687,
+          "genusKey": 5301253,
+          "speciesKey": 5302225,
+          "class": "Liliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

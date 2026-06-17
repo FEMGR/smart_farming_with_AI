@@ -1,0 +1,255 @@
+{
+  "plant_atom": "pea",
+  "identity": {
+    "common_name": "Pea",
+    "scientific_name": "Pisum sativum",
+    "genus": "Lathyrus",
+    "family": "Fabaceae",
+    "synonyms": [],
+    "common_names": [
+      "Garden Pea"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "companion_plant",
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "leaf",
+      "seed",
+      "stem"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 6.0,
+    "soil_ph_max": 7.5,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Requires a well-drained moisture retentive soil[1, 16, 37]. Prefers a calcareous soil[37]. Prefers a pH in the range 6 to 7.5[200]. Prefers a rich loamy soil[1]. A light soil and a sheltered position is best for early sowings[1]. Peas have long been cultivated as a food crop and a number of distinct forms have emerged which have been classified as follows. A separate record has been made for each form:- P. sativum. The garden pea, including petit pois. Widely cultivated for its sweet-tasting edible immature seeds, as well as the immature seedpods and mature seeds, there are many named varieties[183] and these can provide a crop from May to October. P. sativum arvense. The field pea. Hardier than the garden pea, but not of such good culinary value, it is more often grown as a green manure or for the dried seeds. P. sativum elatius. This is the original form of the species and is still found growing wild in Turkey. P. sativum elatius pumilio. A short, small-flowered form of the above. P. sativum macrocarpon. The edible-pod pea has a swollen, fibre-free and very sweet seedpod which is eaten when immature. The garden pea is widely cultivated and there are many named varieties. There are two basic types of varieties, those with round seeds and those with wrinkled seeds. Round seeded varieties are hardier and can be sown in the autumn to provide an early crop in May or June, wrinkled varieties are sweeter and tastier but are not so hardy and are sown in spring to early summer. Within these two categories, there are dwarf cultivars and climbing cultivars, the taller types tend to yield more heavily and for a longer period but smaller forms are easier to grow, often do not need supports and can give heavier crops from the area of land used (though less from each plant). Cultivars developed for their edible young seeds tend to have pods containing a lot of fibre but some cultivars have now been selected for their larger and fibre-free pods - these cultivars are harder to grow for their seed, especially in damp climates, because the seed has a greater tendency to rot in wet weather. Peas are good growing companions for radishes, carrots, cucumbers, sweet corn, beans and turnips[18, 20, 201]. They are inhibited by alliums, gladiolus, fennel and strawberries growing nearby[18, 20, 201]. There is some evidence that if Chinese mustard (Brassica juncea) is grown as a green manure before sowing peas this will reduce the incidence of soil-borne root rots[206]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen. Pisum sativum (common pea) is typically grown as a cool-season annual and is suited to USDA Hardiness Zones 2 through 9. It is not frost-tender during early stages and can be sown very early in spring, often as soon as the soil is workable. In warmer zones (8–9), it can also be grown as a fall or winter crop, as peas prefer cool temperatures and tend to struggle in the heat of summer. While not a perennial, the plant can tolerate light frosts, especially before flowering. Because of its adaptability and short growing season, Pisum sativum is widely cultivated across a broad range of temperate climates.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Pre-soak the seed for 24 hours in warm water and then sow in situ in succession from late winter until early summer. A minimum temperature of 10°c is required for germination, which should take place in about 7 - 10 days. The earlier sowings should be of suitably hardy varieties, the 'round seeded', whilst later sowings can be of the tastier varieties, the 'wrinkle seeded'. By making fresh sowings every 3 weeks you will have a continuous supply of fresh young seeds from early summer until early autumn. If you want to grow the peas to maturity then the seed needs to be sown by the middle of spring. You may need to protect the seed from the ravages of mice. Another sowing can be made in middle to late autumn. This has to be timed according to the area where the plants are being grown. The idea is that the plants will make some growth in the autumn and be perhaps 15 - 20cm tall by the time the colder part of winter sets in. As long as the winter is not too severe, the plants should stand well and will grow away rapidly in the spring to produce an earlier crop. Make sure you choose a suitably hardy variety for this sowing.",
+    "germination_days_min": 7,
+    "germination_days_max": 10,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Requires a well-drained moisture retentive soil[1, 16, 37]. Prefers a calcareous soil[37]. Prefers a pH in the range 6 to 7.5[200]. Prefers a rich loamy soil[1]. A light soil and a sheltered position is best for early sowings[1]. Peas have long been cultivated as a food crop and a number of distinct forms have emerged which have been classified as follows. A separate record has been made for each form:- P. sativum. The garden pea, including petit pois. Widely cultivated for its sweet-tasting edible immature seeds, as well as the immature seedpods and mature seeds, there are many named varieties[183] and these can provide a crop from May to October. P. sativum arvense. The field pea. Hardier than the garden pea, but not of such good culinary value, it is more often grown as a green manure or for the dried seeds. P. sativum elatius. This is the original form of the species and is still found growing wild in Turkey. P. sativum elatius pumilio. A short, small-flowered form of the above. P. sativum macrocarpon. The edible-pod pea has a swollen, fibre-free and very sweet seedpod which is eaten when immature. The garden pea is widely cultivated and there are many named varieties. There are two basic types of varieties, those with round seeds and those with wrinkled seeds. Round seeded varieties are hardier and can be sown in the autumn to provide an early crop in May or June, wrinkled varieties are sweeter and tastier but are not so hardy and are sown in spring to early summer. Within these two categories, there are dwarf cultivars and climbing cultivars, the taller types tend to yield more heavily and for a longer period but smaller forms are easier to grow, often do not need supports and can give heavier crops from the area of land used (though less from each plant). Cultivars developed for their edible young seeds tend to have pods containing a lot of fibre but some cultivars have now been selected for their larger and fibre-free pods - these cultivars are harder to grow for their seed, especially in damp climates, because the seed has a greater tendency to rot in wet weather. Peas are good growing companions for radishes, carrots, cucumbers, sweet corn, beans and turnips[18, 20, 201]. They are inhibited by alliums, gladiolus, fennel and strawberries growing nearby[18, 20, 201]. There is some evidence that if Chinese mustard (Brassica juncea) is grown as a green manure before sowing peas this will reduce the incidence of soil-borne root rots[206]. This species has a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby[200]. When removing plant remains at the end of the growing season, it is best to only remove the aerial parts of the plant, leaving the roots in the ground to decay and release their nitrogen. Pisum sativum (common pea) is typically grown as a cool-season annual and is suited to USDA Hardiness Zones 2 through 9. It is not frost-tender during early stages and can be sown very early in spring, often as soon as the soil is workable. In warmer zones (8–9), it can also be grown as a fall or winter crop, as peas prefer cool temperatures and tend to struggle in the heat of summer. While not a perennial, the plant can tolerate light frosts, especially before flowering. Because of its adaptability and short growing season, Pisum sativum is widely cultivated across a broad range of temperate climates.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Contraceptive Skin The seed is contraceptive, fungistatic and spermacidal[218]. The dried and powdered seed has been used as a poultice on the skin where it has an appreciable affect on many types of skin complaint including acne[7]. The oil from the seed, given once a month to women, has shown promise of preventing pregnancy by interfering with the working of progesterone[218]. The oil inhibits endometrial development[240]. In trials, the oil reduced pregnancy rate in women by 60% in a 2 year period and 50% reduction in male sperm count was achieved[240].",
+    "cautions": "None known",
+    "other_uses_notes": "Pisum sativum—the common pea—is best known for its edible pods and seeds, but it also has a range of valuable non-edible uses, particularly in agriculture, ecology, and soil health. As a nitrogen-fixing legume, it plays a key role in improving soil fertility. Through a symbiotic relationship with Rhizobium bacteria in its root nodules, it captures atmospheric nitrogen and makes it available in the soil, benefiting subsequent crops in a rotation. This makes it an excellent choice in regenerative and organic farming systems, where it’s used as a green manure or cover crop. Even after harvest, its plant residues contribute organic matter that enhances soil structure and microbial life. In ecological and permaculture settings, Pisum sativum is often used in polycultures or companion planting to support the growth of other species. Its relatively low stature and climbing habit make it useful for interplanting with taller crops that can act as natural trellises. From a biodiversity standpoint, pea flowers are attractive to pollinators and beneficial insects, such as bees and predatory wasps, particularly in early spring when few other plants are in bloom. The flowers and leafy growth can also provide habitat or shelter for invertebrates, supporting a more complex agroecosystem. In traditional practices, dried pea vines have been used as bedding for livestock, and the fibrous stems can even be added to mulch or compost. Some regions also use the dried plants for low-grade fodder, though this is secondary to their primary food or soil-enhancing roles. Altogether, Pisum sativum is a highly multifunctional plant, valuable not just for human consumption but for its benefits to soil regeneration, insect habitat, and sustainable agriculture.",
+    "edible_uses_notes": "Edible Parts: Leaves Seed Shoots Edible Uses: Immature seedpods - raw or cooked[1, 2, 13, 16, 46]. The young seedpods have a sweet flavour, but there is only a thin layer of flesh with a fibrous layer beneath it. Immature seeds - raw or cooked. Sweet and delicious, they can be added to salads, or lightly cooked[K]. A nutritional analysis is available[218]. The mature seeds are rich in protein and can be cooked as a vegetable or added to soups etc[183]. They can also be sprouted and added to salads, soups etc[183]. The mature seed can also be dried and ground into a powder, then used to enrich the protein content of flour when making bread etc[K]. The roasted seed is a coffee substitute[183]. Leaves and young shoots - cooked and used as a potherb[177, 183]. The young shoots taste like fresh peas, they are exceptionally tender and can be used in salads[206]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "bees",
+          "butterflies"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "PFAF says this plant attracts pollinators."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "germination.germination_days_min": "Plants For A Future",
+    "germination.germination_days_max": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:33.579502+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Pisum+sativum",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "crop_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "germination_days_min",
+          "germination_days_max",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:49.573979+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Pea",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:50.259624+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Pisum+sativum",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:34:45.929491+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Pea",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:34:49.464944+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=pea",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:34:53.155367+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.877059+00:00"
+  },
+  "missing_fields": [
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

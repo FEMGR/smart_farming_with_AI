@@ -1,0 +1,265 @@
+{
+  "plant_atom": "blackberry",
+  "identity": {
+    "common_name": "Blackberry",
+    "scientific_name": "Rubus fruticosus",
+    "genus": "Rubus",
+    "family": "Rosaceae",
+    "synonyms": [],
+    "common_names": [
+      "Alish",
+      "Baganrra",
+      "Blackberry",
+      "Bramble",
+      "Chanch",
+      "Pakana",
+      "Rovo",
+      "Scepe",
+      "Shrubby blackberry",
+      "Spino",
+      "Szeder"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "fruit_crop",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ],
+    "edible_parts": [
+      "fruit",
+      "leaf",
+      "root",
+      "stem"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "Easily grown in a good well-drained loamy soil[1, 11, 200]. Succeeds in acid and calcareous soils[186]. Tolerates poor soils[202]. Established plants are drought resistant[132]. Succeeds in sun or semi-shade[1, 11, 200], though it fruits less well in the shade[202]. Plants will also fruit when grown in fairly deep shade or against a north facing wall, though the fruit will ripen later[219]. Plants tolerate quite severe exposure[186]. Hardy to at least -18°c[202]. R. fruticosus is an aggregate species made up of several hundred slightly differing species. The reason for this is that most seed is produced by a non-sexual method (Apomixis) and is therefore genetically identical to the parent plant. On occasions when sexual production of seed takes place the offspring will all be slightly different from the parent plant and will then usually reproduce as a new species by means of apomixy. Modern treatment of this aggregate usually does not use the name R. fruticosus because of the confusion over which species it should apply to, the type species of the aggregate should be called R. ulmifolius[150]. The following members of the aggregate have been highly recommended for their fruit[150]. R. badius. R. cyclophorus. R. gratus. R. nemoralis. R. oxyanchus. R. pyramidalis. R. separinus. R. winteri. The following members are said to be nearly as good. R. balfourianus. R. broensis. R. carpinifolius. R. foliosus. R. fuscoviridis. R. infestus. R. insericatus newbouldianus. R. koehleri. R. largificus. R. londinensis. R. ludensis. R. macrophyllus. R. obscurus. R. pseudo-bifrons. R. rhombifolius. R. riddelsdellii. R. scaber. R. thyrsiflorus. R. vallisparsus. R. vestitus. Plants form dense thickets and this makes excellent cover for birds[186]. They regenerate freely after being cut back[186]. This species is also a good plant for bees and butterflies[24]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. Plants in this genus are notably susceptible to honey fungus[200]. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Many Rubus species are self-fertile, meaning that a single plant can produce fruit on its own. However, some varieties may benefit from cross-pollination to increase yield.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "division",
+      "layering",
+      "seed"
+    ],
+    "propagation_notes": "Seed - requires stratification and is best sown in early autumn in a cold frame. Stored seed requires one month stratification at about 3°c and is best sown as early as possible in the year. Prick out the seedlings when they are large enough to handle and grow on in a cold frame. Plant them out into their permanent positions in late spring of the following year. Cuttings of half-ripe wood, July/August in a frame[200]. Tip layering in July. Plant out in autumn. Division in early spring or just before leaf-fall in the autumn[200].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Easily grown in a good well-drained loamy soil[1, 11, 200]. Succeeds in acid and calcareous soils[186]. Tolerates poor soils[202]. Established plants are drought resistant[132]. Succeeds in sun or semi-shade[1, 11, 200], though it fruits less well in the shade[202]. Plants will also fruit when grown in fairly deep shade or against a north facing wall, though the fruit will ripen later[219]. Plants tolerate quite severe exposure[186]. Hardy to at least -18°c[202]. R. fruticosus is an aggregate species made up of several hundred slightly differing species. The reason for this is that most seed is produced by a non-sexual method (Apomixis) and is therefore genetically identical to the parent plant. On occasions when sexual production of seed takes place the offspring will all be slightly different from the parent plant and will then usually reproduce as a new species by means of apomixy. Modern treatment of this aggregate usually does not use the name R. fruticosus because of the confusion over which species it should apply to, the type species of the aggregate should be called R. ulmifolius[150]. The following members of the aggregate have been highly recommended for their fruit[150]. R. badius. R. cyclophorus. R. gratus. R. nemoralis. R. oxyanchus. R. pyramidalis. R. separinus. R. winteri. The following members are said to be nearly as good. R. balfourianus. R. broensis. R. carpinifolius. R. foliosus. R. fuscoviridis. R. infestus. R. insericatus newbouldianus. R. koehleri. R. largificus. R. londinensis. R. ludensis. R. macrophyllus. R. obscurus. R. pseudo-bifrons. R. rhombifolius. R. riddelsdellii. R. scaber. R. thyrsiflorus. R. vallisparsus. R. vestitus. Plants form dense thickets and this makes excellent cover for birds[186]. They regenerate freely after being cut back[186]. This species is also a good plant for bees and butterflies[24]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. Plants in this genus are notably susceptible to honey fungus[200]. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Many Rubus species are self-fertile, meaning that a single plant can produce fruit on its own. However, some varieties may benefit from cross-pollination to increase yield.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidiarrhoeal Astringent Depurative Diuretic Dysentery Tonic Vulnerary The root-bark and the leaves are strongly astringent, depurative, diuretic, tonic and vulnerary[4, 7, 9, 165, 254]. They make an excellent remedy for dysentery, diarrhoea, haemorrhoids, cystitis etc, the root is the more astringent[4, 238]. Externally, they are used as a gargle to treat sore throats, mouth ulcers and gum inflammations[238, 254]. A decoction of the leaves is useful as a gargle in treating thrush and also makes a good general mouthwash[7].",
+    "cautions": "None known",
+    "other_uses_notes": "Dye Fibre Pioneer Agroforestry uses: Rubus species can serve as ground cover, helping to prevent soil erosion. They provide habitat and food for various wildlife species, including birds and beneficial insects. Their thorns can also act as a natural barrier. A purple to dull blue dye is obtained from the fruit[168]. A fibre is obtained from the stem and used to make twine[66]. Plants are spread by seed deposited in the droppings of birds and mammals. They often spring up in burnt-over, logged or abandoned land and make an excellent pioneer species, creating the right conditions for woodland trees to move in. The trees will often grow in the middle of a clump of blackberries, the prickly stems protecting them from rabbits[K]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Rubus species (including blackberries, raspberries, etc.) produce flowers that are rich in nectar and pollen, attracting bees, butterflies, and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Rubus species produce abundant berries that are a significant food source for birds, mammals, and insects. Their dense thickets also provide shelter and nesting sites for small animals and birds. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The dense, sprawling growth habit of Rubus species provides excellent cover and shelter for invertebrates, with leaf litter creating ground habitat. They also offer overwintering sites in their stems and leaf litter. 4. Pest Confuser (Smell): No – Rubus species are not typically known for emitting scents that confuse pests.",
+    "edible_uses_notes": "Edible Parts: Fruit Leaves Root Shoots Edible Uses: Tea Fruit - raw or cooked[5, 7, 9, 12, 183]. The best forms have delicious fruits and, with a range of types, it is possible to obtain ripe fruits from late July to November[K]. The fruit is also made into syrups, jams and other preserves[238]. Some people find that if they eat the fruit before it is very ripe and quite soft then it can give them stomach upsets[K]. Root - cooked. The root should be neither to young nor too old and requires a lot of boiling[7]. A tea is made from the dried leaves[21] - the young leaves are best[61]. The leaves are often used in herbal tea blends[238]. Young shoots - raw. They are harvested as they emerge through the ground in the spring, peeled and then eaten in salads[244]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:02.870113+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Rubus+fruticosus",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:37.776646+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Blackberry",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:38.591992+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Rubus+fruticosus",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:38:59.268385+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Blackberry",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:02.734342+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=blackberry",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:39:06.223845+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.960203+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

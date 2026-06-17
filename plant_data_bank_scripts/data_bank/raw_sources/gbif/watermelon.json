@@ -1,0 +1,80 @@
+{
+  "plant": {
+    "plant_atom": "watermelon",
+    "common_name": "Watermelon",
+    "scientific_name": "Citrullus lanatus",
+    "genus": "Citrullus",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Citrullus lanatus",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:27.027852+00:00",
+      "response_hash": "6a41844b6c4664453d6404aa32108822b33ab12accdd8602570f11024a145ad0",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2874621,
+          "scientificName": "Citrullus lanatus (Thunb.) Matsum. & Nakai",
+          "canonicalName": "Citrullus lanatus",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=0",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 7980853,
+              "acceptedUsageKey": 2874621,
+              "scientificName": "Citrullus lanatus (Thunb.) Mansf.",
+              "canonicalName": "Citrullus lanatus",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 99,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=0; score=120",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Cucurbitales",
+              "family": "Cucurbitaceae",
+              "genus": "Citrullus",
+              "species": "Citrullus lanatus",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 7224005,
+              "familyKey": 6634,
+              "genusKey": 8257011,
+              "speciesKey": 2874621,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Cucurbitales",
+          "family": "Cucurbitaceae",
+          "genus": "Citrullus",
+          "species": "Citrullus lanatus",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 7224005,
+          "familyKey": 6634,
+          "genusKey": 8257011,
+          "speciesKey": 2874621,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

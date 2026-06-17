@@ -1,0 +1,282 @@
+{
+  "plant_atom": "spearmint",
+  "identity": {
+    "common_name": "Spearmint",
+    "scientific_name": "Mentha spicata",
+    "genus": "Mentha",
+    "family": "Lamiaceae",
+    "synonyms": [],
+    "common_names": [
+      "Spearmint"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "leaf"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "A very easily grown plant, it succeeds in most soils and situations so long as the soil is not too dry[200]. Grows well in heavy clay soils. A sunny position is best for production of essential oils, but it also succeeds in partial shade[4]. Prefers partial shade and a slightly acid soil[4, 16]. Often grown as a culinary herb in the herb garden, spearmint is also commercially cultivated for its essential oil, the yields are about 3.5 to 4.5 kilos per tonne of leaves. There are some named varieties[200, 238]. Most mints have fairly aggressive spreading roots and, unless you have the space to let them roam, they need to be restrained by some means such as planting them in containers that are buried in the soil[K]. Hybridizes freely with other members of this genus. The whole plant has a strong spearmint smell. The flowers are very attractive to bees and butterflies[24]. A good companion plant for growing near cabbages and tomatoes, helping to keep them free of insect pests[14, 20]. Members of this genus are rarely if ever troubled by browsing deer[233]. The plant is heat tolerant in zones 7 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a runner spreading indefinitely by rhizomes or stolons [1-2]. The root pattern is rhizomatous with underground stems sending roots and shoots along their length [1-2]. The root pattern is stoloniferous rooting from creeping stems above the ground [1-2]. Can be grown in containers. Mint species are generally self-fertile. Mint leaves can be harvested throughout the growing season, from spring to autumn, but they are best harvested just before flowering for optimal flavor. Mint typically flowers from late spring to early summer. Mint is a fast-growing plant, often establishing itself quickly and spreading aggressively, making it suitable for quick ground cover in gardens.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "division",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring in a cold frame. Germination is usually fairly quick. Prick out the seedlings into individual pots when they are large enough to handle and plant them out in the summer. Mentha species are very prone to hybridisation and so the seed cannot be relied on to breed true. Even without hybridisation, seedlings will not be uniform and so the content of medicinal oils etc will vary. When growing plants with a particular aroma it is best to propagate them by division[K]. Division can be easily carried out at almost any time of the year, though it is probably best done in the spring or autumn to allow the plant to establish more quickly. Virtually any part of the root is capable of growing into a new plant. Larger divisions can be planted out direct into their permanent positions. However, for maximum increase it is possible to divide the roots up into sections no more than 3cm long and pot these up in light shade in a cold frame. They will quickly become established and can be planted out in the summer.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [
+      "division"
+    ],
+    "propagation_warning": "Seed may not breed true; division is preferred for consistent aroma, cultivar traits, and medicinal oil profile."
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "A very easily grown plant, it succeeds in most soils and situations so long as the soil is not too dry[200]. Grows well in heavy clay soils. A sunny position is best for production of essential oils, but it also succeeds in partial shade[4]. Prefers partial shade and a slightly acid soil[4, 16]. Often grown as a culinary herb in the herb garden, spearmint is also commercially cultivated for its essential oil, the yields are about 3.5 to 4.5 kilos per tonne of leaves. There are some named varieties[200, 238]. Most mints have fairly aggressive spreading roots and, unless you have the space to let them roam, they need to be restrained by some means such as planting them in containers that are buried in the soil[K]. Hybridizes freely with other members of this genus. The whole plant has a strong spearmint smell. The flowers are very attractive to bees and butterflies[24]. A good companion plant for growing near cabbages and tomatoes, helping to keep them free of insect pests[14, 20]. Members of this genus are rarely if ever troubled by browsing deer[233]. The plant is heat tolerant in zones 7 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a runner spreading indefinitely by rhizomes or stolons [1-2]. The root pattern is rhizomatous with underground stems sending roots and shoots along their length [1-2]. The root pattern is stoloniferous rooting from creeping stems above the ground [1-2]. Can be grown in containers. Mint species are generally self-fertile. Mint leaves can be harvested throughout the growing season, from spring to autumn, but they are best harvested just before flowering for optimal flavor. Mint typically flowers from late spring to early summer. Mint is a fast-growing plant, often establishing itself quickly and spreading aggressively, making it suitable for quick ground cover in gardens.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antiemetic Antiseptic Antispasmodic Cancer Carminative Diuretic Poultice Restorative Stimulant Stomachic Spearmint is a commonly used domestic herbal remedy. A tea made from the leaves has traditionally been used in the treatment of fevers, headaches, digestive disorders and various minor ailments[222]. The herb is antiemetic, antispasmodic, carminative, diuretic, restorative, stimulant and stomachic[4, 21, 46, 218]. The leaves should be harvested when the plant is just coming into flower, and can be dried for later use[4]. The stems are macerated and used as a poultice on bruises[218]. The essential oil in the leaves is antiseptic, though it is toxic in large doses[222]. Both the essential oil and the stems are used in folk remedies for cancer[218]. A poultice prepared from the leaves is said to remedy tumours[218].",
+    "cautions": "Although no records of toxicity have been seen for this species, large quantities of some members of this genus, especially when taken in the form of the extracted essential oil, can cause abortions so some caution is advised.",
+    "other_uses_notes": "Essential Repellent Strewing An essential oil is obtained from the whole plant, the yield is about 4K of oil from 1 tonne of leaves[46, 57]. The oil is used commercially as a food flavouring and oral hygiene preparation[238]. The plant repels insects and was formerly used as an strewing herb[14, 18, 20]. Rats and mice intensely dislike the smell of mint. The plant was therefore used in homes as a strewing herb and has also been spread in granaries to keep the rodents off the grain[244]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Mint species produce small flowers that are rich in nectar, attracting various pollinators, including bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The leaves of mint are edible and can be used as food for both humans and some wildlife. While mint plants do not typically provide nesting sites, their dense foliage can offer some shelter. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Mint can provide habitat for invertebrates, and its foliage contributes to leaf litter. Mint species can spread and act as ground cover, which can help create a suitable environment for beneficial insects. 4. Pest Confuser (Smell): Yes – Mint has a strong aroma that can help deter certain pests, making it beneficial in companion planting and pest management strategies.",
+    "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Condiment Tea Leaves - raw or cooked. A strong spearmint flavour, they are used as a flavouring in salads or cooked foods[2, 4, 5, 183]. The leaves are often used in 'mint sauce', which is used as a flavouring in meals[238]. A herb tea is made from the fresh or dried leaves[21, 183]. It has a very pleasant and refreshing taste of spearmint, leaving the mouth and digestive system feeling clean[K]. An essential oil from the leaves and flowers is used as a flavouring in sweets, ice cream, drinks etc[46, 57, 183]. A spearmint flavour[183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "cabbage",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      },
+      {
+        "plant": "tomato",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [
+      {
+        "target": "insect_pests",
+        "mechanism": "companion_effect",
+        "source_name": "Plants For A Future",
+        "confidence": 0.7,
+        "notes": "PFAF says companion planting helps keep nearby plants free of insect pests."
+      }
+    ],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting.",
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.repels_pests": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future",
+    "germination.preferred_propagation_methods": "Plants For A Future",
+    "germination.propagation_warning": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:47.789086+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Mentha+spicata",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:13.062489+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Spearmint",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:13.805640+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Mentha+spicata",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:36:46.806146+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Spearmint",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:36:50.850476+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=spearmint",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:36:54.406596+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.912042+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

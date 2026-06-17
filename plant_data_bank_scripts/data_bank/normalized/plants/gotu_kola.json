@@ -1,0 +1,244 @@
+{
+  "plant_atom": "gotu_kola",
+  "identity": {
+    "common_name": "Gotu Kola",
+    "scientific_name": "Centella asiatica",
+    "genus": "Centella",
+    "family": "Apiaceae",
+    "synonyms": [
+      "Hydrocotyle asiatica"
+    ],
+    "common_names": [
+      "Gotu Kola",
+      "Spadeleaf"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "leaf"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "partial_shade"
+    ],
+    "water_need": null,
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Prefers a moist to wet soil in sun or partial shade[238]. Plants also grow on walls in the wild and so should tolerate drier conditions[K]. This species is not hardy in the colder areas of the country, it tolerates temperatures down to between -5 and -10°c[200]. It grows and spreads very well outdoors during the summer in most parts of the country and is very easy to increase by division. It can therefore be grown as a summer crop with divisions being taken during the growing season and overwintered in a greenhouse in case the outdoor plants are killed by winter cold[K].",
+    "water_notes": null,
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "division",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring in a greenhouse[238]. Prick out the seedlings into individual pots when they are large enough to handle and grow them on in a greenhouse for their first winter. Plant them out in late spring or early summer of the following year, after the last expected frosts[K]. Division is simple at any time in the growing season, though the spring is probably best[K]. We find that it is best to pot up the divisions until they are rooting away well, though in selected mild gardens it should be possible to plant the divisions out directly into their permanent positions[K].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Prefers a moist to wet soil in sun or partial shade[238]. Plants also grow on walls in the wild and so should tolerate drier conditions[K]. This species is not hardy in the colder areas of the country, it tolerates temperatures down to between -5 and -10°c[200]. It grows and spreads very well outdoors during the summer in most parts of the country and is very easy to increase by division. It can therefore be grown as a summer crop with divisions being taken during the growing season and overwintered in a greenhouse in case the outdoor plants are killed by winter cold[K].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Adaptogen Anticonvulsant Antidiarrhoeal Antiinflammatory Antipanic Antirheumatic Cardiac Depurative Diuretic Febrifuge Hypotensive Leprosy Malaria Nervine Sedative Skin Tonic Gotu kola is an outstandingly important medicinal herb that is widely used in the Orient[238] and is becoming increasingly popular in the West[254]. Its Indian name is 'Brahmi' which means 'bringing knowledge of the Supreme Reality' and it has long been used there medicinally and as an aid to meditation[238]. It is a useful tonic and cleansing herb for skin problems and digestive disorders[254]. In India it is chiefly valued as a revitalizing herb that strengthens nervous function and memory[254]. The whole plant is alterative, cardio-depressant, hypotensive, weakly sedative and tonic[240]. It is a rejuvenating diuretic herb that clears toxins, reduces inflammations and fevers, improves healing and immunity, improves the memory and has a balancing effect on the nervous system[147, 152, 238, 240]. It has been suggested that regular use of the herb can rejuvenate the nervous system and it therefore deserves attention as a possible cure for a wide range of nervous disorders including multiple sclerosis[K]. Recent research has shown that gotu kola reduces scarring, improves circulatory problems in the lower limbs and speeds the healing process[238]. It is used internally in the treatment of wounds, chronic skin conditions (including leprosy), venereal diseases, malaria, varicose veins, ulcers, nervous disorders and senility[238, 240]. Caution should be observed since excess doses cause headaches and transient unconsciousness[238]. Externally, the herb is applied to wounds, haemorrhoids and rheumatic joints[238]. The plant can be harvested at any time of the year and is used fresh or dried[238]. Another report says that the dried herb quickly loses its medicinal properties and so is best used fresh[237].",
+    "cautions": "There is a warning that the plant can irritate the skin[238], though it is widely used to treat skin complaints[238].",
+    "other_uses_notes": "Cosmetic Extracts of the plant are added to cosmetic masks and creams to increase collagen and firm the skin[238].",
+    "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Leaves - raw or cooked. Used in salads and in curries[238]. Cooked as a vegetable[272]. An aromatic flavour, we have found them to be rather overpowering in salads when used in any but small quantities[K]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.synonyms": "Plants For A Future",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:44:11.261330+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Centella+asiatica",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:54.069099+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Gotu+Kola",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:54.766386+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Centella+asiatica",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:14.159426+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Gotu+Kola",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:17.493147+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=gotu_kola",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:21.174731+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.986971+00:00"
+  },
+  "missing_fields": [
+    "growth.water_need",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

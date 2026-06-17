@@ -1,0 +1,80 @@
+{
+  "plant": {
+    "plant_atom": "grape",
+    "common_name": "Grape",
+    "scientific_name": "Vitis vinifera",
+    "genus": "Vitis",
+    "family": "Vitaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Vitis vinifera",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:44:06.347237+00:00",
+      "response_hash": "c962a95bf424d39563902c9569eb5ee81cfe7cb0ce9ce864bc9c7b5d432ed9ec",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 5372392,
+          "scientificName": "Vitis vinifera L.",
+          "canonicalName": "Vitis vinifera",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=0",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 8311626,
+              "acceptedUsageKey": 5372400,
+              "scientificName": "Vitis vinifera Marshall",
+              "canonicalName": "Vitis vinifera",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 99,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=0; score=120",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Vitales",
+              "family": "Vitaceae",
+              "genus": "Vitis",
+              "species": "Vitis aestivalis",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 7222050,
+              "familyKey": 6672,
+              "genusKey": 7467468,
+              "speciesKey": 5372400,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Vitales",
+          "family": "Vitaceae",
+          "genus": "Vitis",
+          "species": "Vitis vinifera",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 7222050,
+          "familyKey": 6672,
+          "genusKey": 7467468,
+          "speciesKey": 5372392,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

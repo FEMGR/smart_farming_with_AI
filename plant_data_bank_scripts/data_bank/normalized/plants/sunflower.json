@@ -1,0 +1,249 @@
+{
+  "plant_atom": "sunflower",
+  "identity": {
+    "common_name": "Sunflower",
+    "scientific_name": "Helianthus annuus",
+    "genus": "Helianthus",
+    "family": "Asteraceae",
+    "synonyms": [],
+    "common_names": [
+      "Common sunflower",
+      "Sunflower"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop"
+    ],
+    "edible_parts": [
+      "flower",
+      "oil",
+      "seed",
+      "stem"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "An easily grown plant, it succeeds in most soils[1, 34, 117], including poor soils provided they are deep and well-drained[269], but it grows best in a deep rich soil[1, 200]. Plants are intolerant of acid or waterlogged conditions[269]. Especially when grown for its edible seed, the plant prefers a sunny position[1, 34, 117, 269] though it also tolerates light shade[1]. Requires a neutral or preferably calcareous soil[200]. As sunflowers have highly efficient root systems, they can be grown in areas which are too dry for many other crops[269]. Established plants are quite drought-resistant except during flowering[117, 269]. The sunflower tolerates an annual precipitation of 20 - 400cm, an average annual temperature in the range of 6 - 28°C and a pH in the range of 4.5 - 8.7[269]. The young growth is extremely attractive to slugs, plants can be totally destroyed by them[K]. Members of this genus are rarely if ever troubled by browsing deer or rabbits[233]. The sunflower is a very ornamental plant that is widely grown in gardens and is also a major commercial crop for its edible seed and many other uses[1, 4]. It grows well in Britain, but it does not ripen its seed reliably in this country and so is not suitable for commercial cultivation at the present[K]. It is the state flower of Kansas[85]. Three distinct groups of sunflowers are cultivated:- Giant types grow from 1.8 - 4.2 metres tall with flower heads 30 - 50cm in diameter. The seeds are large, white or gray in colour, sometimes with black stripes, and are the best for culinary purposes, though the oil content is lower than for other types. 'Grey Stripe', 'Hopi Black Dye', 'Mammoth Russian' and 'Sundak' are examples of this type[183, 200, 269]. Semi-dwarf types grow from 1.3 - 1.8 m tall, are early maturing and have heads 17 - 23 cm diameter. The seeds are smaller, black, gray or striped, the oil content is also higher. Examples include 'Pole Star' and 'Jupiter' Dwarf types grow from 0.6 - 1.4 m tall, are early maturing and have heads 14 - 16 cm in diameter[269. The seeds are small but the oil content is the highest. Examples include 'Advance' and 'Sunset'[269]. Some forms are being bred for greater cold tolerance and should be more reliable in Britain[117, 141]. Plants tend to grow better in the south and south-west of England[4]. Most forms require a four month frost-free growing season[117], though some Russian cultivars can mature a crop in 70 days[269]. When plants are grown in cooler latitudes the seed contains higher proportions of polyunsaturated fatty oils[117]. The plant has a strong taproot that can penetrate the soil to depth of 3 metres, it also has a large lateral spread of surface roots[269]. Sunflowers grow badly with potatoes but they do well with cucumbers and corn[18, 20, 201]. A very greedy and vigorous plant, it can inhibit the growth of nearby plants[20]. Plants tend to impoverish the soil if they are grown too often in the same place[117]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is clumping, giving the plant a clumping habit. The predictable growth behaviour makes it easier to maintain without having to apply containment methods[2-1].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow in mid spring in situ. An earlier start can be made by sowing 2 - 3 seeds per pot in a greenhouse in early spring. Use a fairly rich compost. Thin to the strongest seedling, give them an occasional liquid feed to make sure they do not become nutrient deficient and plant them out in late spring or early summer. Seed, harvested at 12% moisture content and stored, will retain its viability for several years[269].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "An easily grown plant, it succeeds in most soils[1, 34, 117], including poor soils provided they are deep and well-drained[269], but it grows best in a deep rich soil[1, 200]. Plants are intolerant of acid or waterlogged conditions[269]. Especially when grown for its edible seed, the plant prefers a sunny position[1, 34, 117, 269] though it also tolerates light shade[1]. Requires a neutral or preferably calcareous soil[200]. As sunflowers have highly efficient root systems, they can be grown in areas which are too dry for many other crops[269]. Established plants are quite drought-resistant except during flowering[117, 269]. The sunflower tolerates an annual precipitation of 20 - 400cm, an average annual temperature in the range of 6 - 28°C and a pH in the range of 4.5 - 8.7[269]. The young growth is extremely attractive to slugs, plants can be totally destroyed by them[K]. Members of this genus are rarely if ever troubled by browsing deer or rabbits[233]. The sunflower is a very ornamental plant that is widely grown in gardens and is also a major commercial crop for its edible seed and many other uses[1, 4]. It grows well in Britain, but it does not ripen its seed reliably in this country and so is not suitable for commercial cultivation at the present[K]. It is the state flower of Kansas[85]. Three distinct groups of sunflowers are cultivated:- Giant types grow from 1.8 - 4.2 metres tall with flower heads 30 - 50cm in diameter. The seeds are large, white or gray in colour, sometimes with black stripes, and are the best for culinary purposes, though the oil content is lower than for other types. 'Grey Stripe', 'Hopi Black Dye', 'Mammoth Russian' and 'Sundak' are examples of this type[183, 200, 269]. Semi-dwarf types grow from 1.3 - 1.8 m tall, are early maturing and have heads 17 - 23 cm diameter. The seeds are smaller, black, gray or striped, the oil content is also higher. Examples include 'Pole Star' and 'Jupiter' Dwarf types grow from 0.6 - 1.4 m tall, are early maturing and have heads 14 - 16 cm in diameter[269. The seeds are small but the oil content is the highest. Examples include 'Advance' and 'Sunset'[269]. Some forms are being bred for greater cold tolerance and should be more reliable in Britain[117, 141]. Plants tend to grow better in the south and south-west of England[4]. Most forms require a four month frost-free growing season[117], though some Russian cultivars can mature a crop in 70 days[269]. When plants are grown in cooler latitudes the seed contains higher proportions of polyunsaturated fatty oils[117]. The plant has a strong taproot that can penetrate the soil to depth of 3 metres, it also has a large lateral spread of surface roots[269]. Sunflowers grow badly with potatoes but they do well with cucumbers and corn[18, 20, 201]. A very greedy and vigorous plant, it can inhibit the growth of nearby plants[20]. Plants tend to impoverish the soil if they are grown too often in the same place[117]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is clumping, giving the plant a clumping habit. The predictable growth behaviour makes it easier to maintain without having to apply containment methods[2-1].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antipsoriatic Antirheumatic Diuretic Expectorant Febrifuge Malaria Stomachic A tea made from the leaves is astringent, diuretic and expectorant, it is used in the treatment of high fevers[222]. The crushed leaves are used as a poultice on sores, swellings, snakebites and spider bites[222, 257]. The leaves are harvested as the plant comes into flower and are dried for later use[238]. A tea made from the flowers is used in the treatment of malaria and lung ailments[222, 257]. The flowering head and seeds are febrifuge, nutritive and stomachic[7]. The seed is also considered to be diuretic and expectorant[4, 218, 222]. It has been used with success in the treatment of many pulmonary complaints[4]. A decoction of the roots has been used as a warm wash on rheumatic aches and pains[257].",
+    "cautions": "The growing plant can accumulate nitrates, especially when fed on artificial fertilizers[76]. The pollen or plant extracts may cause allergic reactions[222].",
+    "other_uses_notes": "Blotting paper Dye Fibre Fuel Green manure Herbicide Kindling Microscope Oil Paper Landscape Uses: Border, Container, Foundation, Massing, Seashore, Specimen. An edible semi-drying oil is obtained from the seed. Some varieties contain up to 45% oil[61]. The oil is also used, often mixed with a drying oil such as linseed (Linum usitatissimum) to make soap, candles, varnishes, paint etc, as well as for lighting. The oil is said to be unrivalled as a lubricant[4, 21, 34, 46, 100, 269]. A blotting paper is made from the seed receptacles[2, 4, 101, 117]. A high quality writing paper is made from the inner stalk[4, 14, 100, 101]. The pith of the stems is one of the lightest substances known, having a specific gravity of 0.028[4]. It has a wide range of applications, being used for purposes such as making life-saving appliances and slides for microscopes[4, 46, 61]. The dried stems make an excellent fuel, the ash is rich in potassium[4]. Both the dried stems and the empty seed receptacles are an excellent kindling[4]. A fibre from the stem is used to make paper[4] and a fine quality cloth[1, 94, 101]. A yellow dye is obtained from the flowers[4, 14, 94, 95]. A purple-black dye is obtained from the seed of certain varieties that were grown by the Hopi Indians of S.W. North America[117, 169]. Sunflowers can be grown as a spring-sown green manure, they produce a good bulk of material[87]. Root secretions from the plant can inhibit the growth of nearby plants[201]. A good bee plant, providing large quantities of nectar[18, 34, 244]. The flowers attract beneficial insects such as lacewings and parasitic wasps[238]. These prey on various insect pests, especially aphis[238]. Special Features: Attracts birds, Attractive foliage, North American native, Edible, Naturalizing, Wetlands plant, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers. Dynamic accumulator.",
+    "edible_uses_notes": "Edible Parts: Flowers Oil Seed Stem Edible Uses: Coffee Oil Seed - raw or cooked[4, 14, 94, 101, 183]. A delicious nut-like flavour, but very fiddly to extract due to the small size of the seed. Commercially there are machines designed to do this. Rich in fats, the seed can be ground into a powder[95], made into sunflower butter or used to make seed yoghurt. When mixed with cereal flours, it makes a nutritious bread[244]. Cultivars with up to 50% oil have been developed in Russia[218]. The oil contains between 44 - 72% linoleic acid[218]. The germinated seed is said to be best for seed yoghurt, it is blended with water and left to ferment[183]. The sprouted seed can be eaten raw[183]. A nutritional analysis of the seed is available[218]. Young flower buds - steamed and served like globe artichokes[2, 85, 101, 117, 183]. A mild and pleasant enough flavour, but rather fiddly[K]. Average yields range from 900 - 1,575 kg/ha of seed, however yields of over 3,375 kg/ha have been reported[269]. A high quality edible semi-drying oil is obtained from the seed[4]. It is low in cholesterol[244], and is said to be equal in quality to olive oil[4]. Used in salads, margarines, or in cooking[2, 34, 46, 57, 94, 95, 183, 269]. The roasted seed is a coffee and drinking chocolate substitute[4, 7, 100, 102]. Another report says the roasted hulls are used[183]. The leaf petioles are boiled and mixed in with other foodstuffs[7]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:13.510603+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Helianthus+annuus",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "crop_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:16.050329+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Sunflower",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:16.606233+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Helianthus+annuus",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:30:59.639376+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Sunflower",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:31:03.360819+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=sunflower",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:31:06.799759+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.825865+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

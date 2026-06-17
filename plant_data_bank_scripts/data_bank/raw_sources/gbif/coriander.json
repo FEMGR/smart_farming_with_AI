@@ -1,0 +1,53 @@
+{
+  "plant": {
+    "plant_atom": "coriander",
+    "common_name": "Coriander",
+    "scientific_name": "Coriandrum sativum",
+    "genus": "Coriandrum",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Coriandrum sativum",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:05.318479+00:00",
+      "response_hash": "b5b92d753a980577ad7e8bb0bba0a6ae055f9664d72b1e09776f2abafa060346",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 3034871,
+          "scientificName": "Coriandrum sativum L.",
+          "canonicalName": "Coriandrum sativum",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; singleMatch=5",
+          "matchType": "EXACT",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Apiales",
+          "family": "Apiaceae",
+          "genus": "Coriandrum",
+          "species": "Coriandrum sativum",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 1351,
+          "familyKey": 6720,
+          "genusKey": 3034870,
+          "speciesKey": 3034871,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

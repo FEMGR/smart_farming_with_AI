@@ -1,0 +1,261 @@
+{
+  "plant": {
+    "plant_atom": "blackberry",
+    "common_name": "Blackberry",
+    "scientific_name": "Rubus fruticosus",
+    "genus": "Rubus",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Rubus+fruticosus",
+      "query": "Rubus fruticosus",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:42:37.776646+00:00",
+      "response_hash": "c2f9e5043b55fbd6a1cfe4332bd382aeb6515289b7f05f0dfd963606d3eb6371",
+      "parsed": {
+        "title": "Rubus fruticosus Blackberry, Shrubby blackberry PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Rubus fruticosus - L.",
+          "common_name": "Blackberry, Shrubby blackberry",
+          "family": "Rosaceae",
+          "usda_hardiness": "5-9",
+          "known_hazards": "None known",
+          "habitats": "A very common and adaptable plant, found in hedgerows, woodland, meadows, waste ground etc[17, 244].",
+          "range": "Europe, including Britain, to the Mediterraneanand Macaronesia.",
+          "summary": "Common Blackberry (R. fruticosus) is widely naturalized in regions with dry summers and can thrive in poor soils with minimal water. Sweet, edible blackberries can be eaten raw or cooked. Ripe fruits can be obtained from late summer to winter. The leaves are often used in herbal tea blends. Young shoots eaten raw are harvested as they emerge through the ground in the spring, peeled, and then eaten in salads. Rubus are a diverse group of plants, including blackberries, raspberries and dewberries. They are all rose family members and are mainly native to the Northern Hemisphere. They are found in various habitats, including forests, meadows, and even deserts. Rubus plants are important food sources for humans and animals, and their berries are used in jams, pies and wines. Several species of Rubus are adaptable to dry, arid, semi-arid, or Mediterranean climates. These species tend to be drought-tolerant, surviving in regions with limited rainfall and thriving in well-drained soils.",
+          "physical_characteristics": "Rubus fruticosus is a deciduous Shrub growing to 3 m (9ft) by 3 m (9ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender. It is in leaf from March to November, in flower from May to September, and the seeds ripen from July to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects, Apomictic (reproduce by seeds formed without sexual fusion). The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils, prefers well-drained soil and can grow in nutritionally poor soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and can grow in very acid and very alkaline soils. It can grow in full shade (deep woodland) semi-shade (light woodland) or no shade. It prefers moist soil and can tolerate drought. The plant can tolerates strong winds but not maritime exposure.",
+          "synonyms": null,
+          "plant_habitats": "Woodland Garden Sunny Edge; Dappled Shade; Shady Edge; not Deep Shade; Hedgerow;",
+          "edible_uses": "Edible Parts: Fruit Leaves Root Shoots Edible Uses: Tea Fruit - raw or cooked[5, 7, 9, 12, 183]. The best forms have delicious fruits and, with a range of types, it is possible to obtain ripe fruits from late July to November[K]. The fruit is also made into syrups, jams and other preserves[238]. Some people find that if they eat the fruit before it is very ripe and quite soft then it can give them stomach upsets[K]. Root - cooked. The root should be neither to young nor too old and requires a lot of boiling[7]. A tea is made from the dried leaves[21] - the young leaves are best[61]. The leaves are often used in herbal tea blends[238]. Young shoots - raw. They are harvested as they emerge through the ground in the spring, peeled and then eaten in salads[244].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidiarrhoeal Astringent Depurative Diuretic Dysentery Tonic Vulnerary The root-bark and the leaves are strongly astringent, depurative, diuretic, tonic and vulnerary[4, 7, 9, 165, 254]. They make an excellent remedy for dysentery, diarrhoea, haemorrhoids, cystitis etc, the root is the more astringent[4, 238]. Externally, they are used as a gargle to treat sore throats, mouth ulcers and gum inflammations[238, 254]. A decoction of the leaves is useful as a gargle in treating thrush and also makes a good general mouthwash[7].",
+          "other_uses": "Dye Fibre Pioneer Agroforestry uses: Rubus species can serve as ground cover, helping to prevent soil erosion. They provide habitat and food for various wildlife species, including birds and beneficial insects. Their thorns can also act as a natural barrier. A purple to dull blue dye is obtained from the fruit[168]. A fibre is obtained from the stem and used to make twine[66]. Plants are spread by seed deposited in the droppings of birds and mammals. They often spring up in burnt-over, logged or abandoned land and make an excellent pioneer species, creating the right conditions for woodland trees to move in. The trees will often grow in the middle of a clump of blackberries, the prickly stems protecting them from rabbits[K]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Rubus species (including blackberries, raspberries, etc.) produce flowers that are rich in nectar and pollen, attracting bees, butterflies, and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Rubus species produce abundant berries that are a significant food source for birds, mammals, and insects. Their dense thickets also provide shelter and nesting sites for small animals and birds. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The dense, sprawling growth habit of Rubus species provides excellent cover and shelter for invertebrates, with leaf litter creating ground habitat. They also offer overwintering sites in their stems and leaf litter. 4. Pest Confuser (Smell): No – Rubus species are not typically known for emitting scents that confuse pests.",
+          "special_uses": "Attracts Wildlife Food Forest",
+          "cultivation": "Easily grown in a good well-drained loamy soil[1, 11, 200]. Succeeds in acid and calcareous soils[186]. Tolerates poor soils[202]. Established plants are drought resistant[132]. Succeeds in sun or semi-shade[1, 11, 200], though it fruits less well in the shade[202]. Plants will also fruit when grown in fairly deep shade or against a north facing wall, though the fruit will ripen later[219]. Plants tolerate quite severe exposure[186]. Hardy to at least -18°c[202]. R. fruticosus is an aggregate species made up of several hundred slightly differing species. The reason for this is that most seed is produced by a non-sexual method (Apomixis) and is therefore genetically identical to the parent plant. On occasions when sexual production of seed takes place the offspring will all be slightly different from the parent plant and will then usually reproduce as a new species by means of apomixy. Modern treatment of this aggregate usually does not use the name R. fruticosus because of the confusion over which species it should apply to, the type species of the aggregate should be called R. ulmifolius[150]. The following members of the aggregate have been highly recommended for their fruit[150]. R. badius. R. cyclophorus. R. gratus. R. nemoralis. R. oxyanchus. R. pyramidalis. R. separinus. R. winteri. The following members are said to be nearly as good. R. balfourianus. R. broensis. R. carpinifolius. R. foliosus. R. fuscoviridis. R. infestus. R. insericatus newbouldianus. R. koehleri. R. largificus. R. londinensis. R. ludensis. R. macrophyllus. R. obscurus. R. pseudo-bifrons. R. rhombifolius. R. riddelsdellii. R. scaber. R. thyrsiflorus. R. vallisparsus. R. vestitus. Plants form dense thickets and this makes excellent cover for birds[186]. They regenerate freely after being cut back[186]. This species is also a good plant for bees and butterflies[24]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. Plants in this genus are notably susceptible to honey fungus[200]. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Many Rubus species are self-fertile, meaning that a single plant can produce fruit on its own. However, some varieties may benefit from cross-pollination to increase yield.",
+          "propagation": "Seed - requires stratification and is best sown in early autumn in a cold frame. Stored seed requires one month stratification at about 3°c and is best sown as early as possible in the year. Prick out the seedlings when they are large enough to handle and grow on in a cold frame. Plant them out into their permanent positions in late spring of the following year. Cuttings of half-ripe wood, July/August in a frame[200]. Tip layering in July. Plant out in autumn. Division in early spring or just before leaf-fall in the autumn[200].",
+          "other_names": "Alish, Baganrra, Blackberry, Bramble, Chanch, Pakana, Rovo, Scepe, Spino, Szeder,",
+          "native_range": "EUROPE: Austria, Baltic States, Belarus, Belgium, Czechoslovakia (Czech Republic and Slovakia), Denmark, France, Germany, Great Britain, Hungary, Ireland, Italy, Netherlands, Norway, Poland, Sweden, Switzerland, Ukraine, Slovenia, Croatia, Bosnia and Herzegovina, Serbia, Montenegro, North Macedonia, Kosovo,",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Alish",
+            "scientific_name": "Rubus fruticosus",
+            "genus": "Rubus",
+            "family": "Rosaceae",
+            "synonyms": [],
+            "common_names": [
+              "Alish",
+              "Baganrra",
+              "Blackberry",
+              "Bramble",
+              "Chanch",
+              "Pakana",
+              "Rovo",
+              "Scepe",
+              "Shrubby blackberry",
+              "Spino",
+              "Szeder"
+            ]
+          },
+          "pfaf_display_latin_name": "Rubus fruticosus - L.",
+          "pfaf_common_name": "Blackberry, Shrubby blackberry",
+          "pfaf_family": "Rosaceae",
+          "pfaf_synonyms": null,
+          "pfaf_other_names": "Alish, Baganrra, Blackberry, Bramble, Chanch, Pakana, Rovo, Scepe, Spino, Szeder,",
+          "edible_parts": [
+            "fruit",
+            "leaf",
+            "root",
+            "stem"
+          ],
+          "use_categories": [
+            "beverage_plant",
+            "fruit_crop",
+            "medicinal_plant",
+            "root_tuber_crop"
+          ],
+          "life_cycle": "perennial",
+          "botanical_life_cycle": "perennial",
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "Easily grown in a good well-drained loamy soil[1, 11, 200]. Succeeds in acid and calcareous soils[186]. Tolerates poor soils[202]. Established plants are drought resistant[132]. Succeeds in sun or semi-shade[1, 11, 200], though it fruits less well in the shade[202]. Plants will also fruit when grown in fairly deep shade or against a north facing wall, though the fruit will ripen later[219]. Plants tolerate quite severe exposure[186]. Hardy to at least -18°c[202]. R. fruticosus is an aggregate species made up of several hundred slightly differing species. The reason for this is that most seed is produced by a non-sexual method (Apomixis) and is therefore genetically identical to the parent plant. On occasions when sexual production of seed takes place the offspring will all be slightly different from the parent plant and will then usually reproduce as a new species by means of apomixy. Modern treatment of this aggregate usually does not use the name R. fruticosus because of the confusion over which species it should apply to, the type species of the aggregate should be called R. ulmifolius[150]. The following members of the aggregate have been highly recommended for their fruit[150]. R. badius. R. cyclophorus. R. gratus. R. nemoralis. R. oxyanchus. R. pyramidalis. R. separinus. R. winteri. The following members are said to be nearly as good. R. balfourianus. R. broensis. R. carpinifolius. R. foliosus. R. fuscoviridis. R. infestus. R. insericatus newbouldianus. R. koehleri. R. largificus. R. londinensis. R. ludensis. R. macrophyllus. R. obscurus. R. pseudo-bifrons. R. rhombifolius. R. riddelsdellii. R. scaber. R. thyrsiflorus. R. vallisparsus. R. vestitus. Plants form dense thickets and this makes excellent cover for birds[186]. They regenerate freely after being cut back[186]. This species is also a good plant for bees and butterflies[24]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. Plants in this genus are notably susceptible to honey fungus[200]. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Many Rubus species are self-fertile, meaning that a single plant can produce fruit on its own. However, some varieties may benefit from cross-pollination to increase yield.",
+            "light_notes": null,
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "cutting",
+            "division",
+            "layering",
+            "seed"
+          ],
+          "propagation_notes": "Seed - requires stratification and is best sown in early autumn in a cold frame. Stored seed requires one month stratification at about 3°c and is best sown as early as possible in the year. Prick out the seedlings when they are large enough to handle and grow on in a cold frame. Plant them out into their permanent positions in late spring of the following year. Cuttings of half-ripe wood, July/August in a frame[200]. Tip layering in July. Plant out in autumn. Division in early spring or just before leaf-fall in the autumn[200].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Common Blackberry (R. fruticosus) is widely naturalized in regions with dry summers and can thrive in poor soils with minimal water. Sweet, edible blackberries can be eaten raw or cooked. Ripe fruits can be obtained from late summer to winter. The leaves are often used in herbal tea blends. Young shoots eaten raw are harvested as they emerge through the ground in the spring, peeled, and then eaten in salads. Rubus are a diverse group of plants, including blackberries, raspberries and dewberries. They are all rose family members and are mainly native to the Northern Hemisphere. They are found in various habitats, including forests, meadows, and even deserts. Rubus plants are important food sources for humans and animals, and their berries are used in jams, pies and wines. Several species of Rubus are adaptable to dry, arid, semi-arid, or Mediterranean climates. These species tend to be drought-tolerant, surviving in regions with limited rainfall and thriving in well-drained soils.",
+          "edible_uses_notes": "Edible Parts: Fruit Leaves Root Shoots Edible Uses: Tea Fruit - raw or cooked[5, 7, 9, 12, 183]. The best forms have delicious fruits and, with a range of types, it is possible to obtain ripe fruits from late July to November[K]. The fruit is also made into syrups, jams and other preserves[238]. Some people find that if they eat the fruit before it is very ripe and quite soft then it can give them stomach upsets[K]. Root - cooked. The root should be neither to young nor too old and requires a lot of boiling[7]. A tea is made from the dried leaves[21] - the young leaves are best[61]. The leaves are often used in herbal tea blends[238]. Young shoots - raw. They are harvested as they emerge through the ground in the spring, peeled and then eaten in salads[244].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidiarrhoeal Astringent Depurative Diuretic Dysentery Tonic Vulnerary The root-bark and the leaves are strongly astringent, depurative, diuretic, tonic and vulnerary[4, 7, 9, 165, 254]. They make an excellent remedy for dysentery, diarrhoea, haemorrhoids, cystitis etc, the root is the more astringent[4, 238]. Externally, they are used as a gargle to treat sore throats, mouth ulcers and gum inflammations[238, 254]. A decoction of the leaves is useful as a gargle in treating thrush and also makes a good general mouthwash[7].",
+          "other_uses_notes": "Dye Fibre Pioneer Agroforestry uses: Rubus species can serve as ground cover, helping to prevent soil erosion. They provide habitat and food for various wildlife species, including birds and beneficial insects. Their thorns can also act as a natural barrier. A purple to dull blue dye is obtained from the fruit[168]. A fibre is obtained from the stem and used to make twine[66]. Plants are spread by seed deposited in the droppings of birds and mammals. They often spring up in burnt-over, logged or abandoned land and make an excellent pioneer species, creating the right conditions for woodland trees to move in. The trees will often grow in the middle of a clump of blackberries, the prickly stems protecting them from rabbits[K]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Rubus species (including blackberries, raspberries, etc.) produce flowers that are rich in nectar and pollen, attracting bees, butterflies, and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Rubus species produce abundant berries that are a significant food source for birds, mammals, and insects. Their dense thickets also provide shelter and nesting sites for small animals and birds. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The dense, sprawling growth habit of Rubus species provides excellent cover and shelter for invertebrates, with leaf litter creating ground habitat. They also offer overwintering sites in their stems and leaf litter. 4. Pest Confuser (Smell): No – Rubus species are not typically known for emitting scents that confuse pests.",
+          "cultivation_notes": "Easily grown in a good well-drained loamy soil[1, 11, 200]. Succeeds in acid and calcareous soils[186]. Tolerates poor soils[202]. Established plants are drought resistant[132]. Succeeds in sun or semi-shade[1, 11, 200], though it fruits less well in the shade[202]. Plants will also fruit when grown in fairly deep shade or against a north facing wall, though the fruit will ripen later[219]. Plants tolerate quite severe exposure[186]. Hardy to at least -18°c[202]. R. fruticosus is an aggregate species made up of several hundred slightly differing species. The reason for this is that most seed is produced by a non-sexual method (Apomixis) and is therefore genetically identical to the parent plant. On occasions when sexual production of seed takes place the offspring will all be slightly different from the parent plant and will then usually reproduce as a new species by means of apomixy. Modern treatment of this aggregate usually does not use the name R. fruticosus because of the confusion over which species it should apply to, the type species of the aggregate should be called R. ulmifolius[150]. The following members of the aggregate have been highly recommended for their fruit[150]. R. badius. R. cyclophorus. R. gratus. R. nemoralis. R. oxyanchus. R. pyramidalis. R. separinus. R. winteri. The following members are said to be nearly as good. R. balfourianus. R. broensis. R. carpinifolius. R. foliosus. R. fuscoviridis. R. infestus. R. insericatus newbouldianus. R. koehleri. R. largificus. R. londinensis. R. ludensis. R. macrophyllus. R. obscurus. R. pseudo-bifrons. R. rhombifolius. R. riddelsdellii. R. scaber. R. thyrsiflorus. R. vallisparsus. R. vestitus. Plants form dense thickets and this makes excellent cover for birds[186]. They regenerate freely after being cut back[186]. This species is also a good plant for bees and butterflies[24]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. Plants in this genus are notably susceptible to honey fungus[200]. For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Many Rubus species are self-fertile, meaning that a single plant can produce fruit on its own. However, some varieties may benefit from cross-pollination to increase yield.",
+          "known_hazards": "None known",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": true,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+            ]
+          }
+        },
+        "page_text_excerpt": "Rubus fruticosus Blackberry, Shrubby blackberry PFAF Plant Database Follow Us: Rubus fruticosus - L. Common Name Blackberry, Shrubby blackberry Family Rosaceae USDA hardiness 5-9 Known Hazards None known Habitats A very common and adaptable plant, found in hedgerows, woodland, meadows, waste ground etc[17, 244]. Range Europe, including Britain, to the Mediterraneanand Macaronesia. Edibility Rating (5 of 5) Other Uses (3 of 5) Weed Potential Yes Medicinal Rating (3 of 5) Care (info) http://commons.wikimedia.org/wiki/User:B.navez http://commons.wikimedia.org/wiki/File:Rubus_fruticosus_10_ies.jpg Translate this page: Summary Common Blackberry (R. fruticosus) is widely naturalized in regions with dry summers and can thrive in poor soils with minimal water. Sweet, edible blackberries can be eaten raw or cooked. Ripe fruits can be obtained from late summer to winter. The leaves are often used in herbal tea blends. Young shoots eaten raw are harvested as they emerge through the ground in the spring, peeled, and then eaten in salads. Rubus are a diverse group of plants, including blackberries, raspberries and dewberries. They are all rose family members and are mainly native to the Northern Hemisphere. They are found in various habitats, including forests, meadows, and even deserts. Rubus plants are important food sources for humans and animals, and their berries are used in jams, pies and wines. Several species of Rubus are adaptable to dry, arid, semi-arid, or Mediterranean climates. These species tend to be drought-tolerant, surviving in regions with limited rainfall and thriving in well-drained soils. Physical Characteristics Rubus fruticosus is a deciduous Shrub growing to 3 m (9ft) by 3 m (9ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender. It is in leaf from March to November, in flower from May to September, and the seeds ripen from July to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects, Apomictic (reproduce by seeds formed without sexual fusion). The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils, prefers well-drained soil and can grow in nutritionally poor soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and can grow in very acid and very alkaline soils. It can grow in full shade (deep woodland) semi-shade (light woodland) or no shade. It prefers moist soil and can tolerate drought. The plant can tolerates strong winds but not maritime exposure. UK Hardiness Map US Hardiness Map Synonyms Plant Habitats Woodland Garden Sunny Edge; Dappled Shade; Shady Edge; not Deep Shade; Hedgerow; Edible Uses Edible Parts: Fruit Leaves Root Shoots Edible Uses: Tea Fruit - raw or cooked[5, 7, 9, 12, 183]. The best forms have delicious fruits and, with a range of types, it is possible to obtain ripe fruits from late July to November[K]. The fruit is also mad"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tRubus fruticosus Blackberry, Shrubby blackberry PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Rubus fruticosus is a deciduous Shrub growing to 3 m (9ft) by 3 m (9ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 6 and is not frost tender. It is in leaf from March to November, in flower from May to September, and the seeds ripen from July to October. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects, Apomictic (reproduce by seeds formed without sexual fusion). The plant is self-fertile. It is noted for attracting wildlife.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils, prefers  well-drained soil and can grow in nutritionally poor soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and  can grow in very acid and very alkaline soils. It can grow in full shade (deep woodland) semi-shade (light woodland) or no shade. It prefers  moist soil and can tolerate drought. The plant can tolerates strong winds but not maritime exposure.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Rubus+fruticosus\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BbcHUnVidXMgZnJ1dGljb3N1cyBpcyBhIGRlY2lkdW91cyBTaHJ1YiBncm93aW5nIHRvIDMgbSAoOWZ0KSBieSAzIG0gKDlmdCkgYXQgYSBmYXN0IHJhdGUuIFNlZSBhYm92ZSBmb3IgVVNEQSBoYXJkaW5lc3MuIEl0IGlzIGhhcmR5IHRvIFVLIHpvbmUgNiBhbmQgaXMgbm90IGZyb3N0IHRlbmRlci4gSXQgaXMgaW4gbGVhZiBmcm9tIE1hcmNoIHRvIE5vdmVtYmVyLCBpbiBmbG93ZXIgZnJvbSBNYXkgdG8gU2VwdGVtYmVyLCBhbmQgdGhlIHNlZWRzIHJpcGVuIGZyb20gSnVseSB0byBPY3RvYmVyLiBUaGUgc3BlY2llcyBpcyBoZXJtYXBocm9kaXRlIChoYXMgYm90aCBtYWxlIGFuZCBmZW1hbGUgb3JnYW5zKSBhbmQgaXMgcG9sbGluYXRlZCBieSBJbnNlY3RzLCBBcG9taWN0aWMgKHJlcHJvZHVjZSBieSBzZWVkcyBmb3JtZWQgd2l0aG91dCBzZXh1YWwgZnVzaW9uKS4gVGhlIHBsYW50IGlzIHNlbGYtZmVydGlsZS4gSXQgaXMgbm90ZWQgZm9yIGF0dHJhY3Rpbmcgd2lsZGxpZmUuICBTdWl0YWJsZSBmb3I6IGxpZ2h0IChzYW5keSksIG1lZGl1bSAobG9hbXkpIGFuZCBoZWF2eSAoY2xheSkgc29pbHMsIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsIGFuZCBjYW4gZ3JvdyBpbiBudXRyaXRpb25hbGx5IHBvb3Igc29pbC4gU3VpdGFibGUgcEg6IG1pbGRseSBhY2lkLCBuZXV0cmFsIGFuZCBiYXNpYyAobWlsZGx5IGFsa2FsaW5lKSBzb2lscyBhbmQgIGNhbiBncm93IGluIHZlcnkgYWNpZCBhbmQgdmVyeSBhbGthbGluZSBzb2lscy4gSXQgY2FuIGdyb3cgaW4gZnVsbCBzaGFkZSAoZGVlcCB3b29kbGFuZCkgc2VtaS1zaGFkZSAobGlnaHQgd29vZGxhbmQpIG9yIG5vIHNoYWRlLiBJdCBwcmVmZXJzICBtb2lzdCBzb2lsIGFuZCB"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Blackberry",
+      "query": "Rubus fruticosus",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:42:38.591992+00:00",
+      "response_hash": "ac3025b7de29e162d6fe720cb4b8eb0ceb596072c14e4bb5cf722eb10336ba05",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Blackberry",
+            "scientific_name": "Rubus fruticosus",
+            "genus": "Rubus",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Blackberry\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants fo"
+    }
+  ]
+}

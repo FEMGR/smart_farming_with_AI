@@ -1,0 +1,259 @@
+{
+  "plant": {
+    "plant_atom": "dandelion",
+    "common_name": "Dandelion",
+    "scientific_name": "Taraxacum officinale",
+    "genus": "Taraxacum",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Taraxacum+officinale",
+      "query": "Taraxacum officinale",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:41:13.656688+00:00",
+      "response_hash": "040158d0f5982cf6d974e3781ae32dc041d12dc8232af58e85a113b011c7e81e",
+      "parsed": {
+        "title": "Taraxacum officinale Dandelion PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Taraxacum officinale - Webb.",
+          "common_name": "Dandelion",
+          "family": "Asteraceae",
+          "usda_hardiness": "5-9",
+          "known_hazards": "This plant has been mentioned in various books on poisonous plants but any possible toxins will be of very low concentration and toxicity[10]. There are reports that some people have suffered dermatitis as a result of touching the plant, this is probably caused by the latex in the leaves and stems[222].",
+          "habitats": "A very common weed of grassland and cultivated ground[17].",
+          "range": "Throughout most of the northern hemisphere, including Britain.",
+          "summary": "Taraxacum officinale, Dandelions are valued for their nutritious leaves, roots, and flowers. The leaves are eaten raw or cooked but have a bitter flavour, especially as they age. Young leaves are more tender and less bitter, making them more suitable for salads. Blanching the leaves (covering the plant to exclude light) can reduce the bitterness, though it also decreases their vitamin and mineral content. Dandelion leaves are highly nutritious, offering protein, carbohydrates, calcium, potassium, vitamins A, B1, B2, and C. The roots are eaten raw or cooked, with a flavour similar to turnips, though bitter. They can be dried and roasted to make a caffeine-free coffee substitute. Dandelion flowers are eaten raw or cooked. Unopened flower buds are made into fritters or preserved in vinegar as a caper substitute. The flowers are used in the preparation of herbal teas and wine. Dandelion tea is made from the leaves and roots. Dandelion is widely used in herbal medicine, particularly for its diuretic properties. Due to its high potassium content, it helps replace potassium lost during diuretics. The plant has laxative, digestive stimulant (stomachic), hepatic, depurative, and tonic effects. Dandelion root is beneficial for treating liver and digestive disorders, while the leaves are used to promote urine production and cleanse the body. The native range of Dandelion is Macaronesia, Europe to Siberia, and NW. Africa. Harvesting: Leaves are harvested from early spring to late autumn, roots are typically harvested in late autumn, and flowers are harvested from early spring to early summer. Bloom Color: Yellow. Main Bloom Time: Early summer, Early spring, Late summer, Late spring, Mid summer, Mid spring. Form: Spreading or horizontal.",
+          "physical_characteristics": "Taraxacum officinale is a PERENNIAL growing to 0.5 m (1ft 8in) by 0.3 m (1ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender. It is in flower from April to May, and the seeds ripen from May to June. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects, Apomictic (reproduce by seeds formed without sexual fusion). The plant is self-fertile. It is noted for attracting wildlife. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and can grow in very alkaline soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil. The plant can tolerate maritime exposure.",
+          "synonyms": null,
+          "plant_habitats": "Lawn; Meadow; Cultivated Beds;",
+          "edible_uses": "Edible Parts: Flowers Leaves Root Edible Uses: Coffee Tea Leaves - raw or cooked[1, 2, 4, 5, 7, 9, 12, 14, 33, 154]. When used in salads, they are rather bitter, though less so in the winter. Tender young leaves are considerably less bitter than older leaves[K]. The leaves are often blanched (by excluding light from the growing plant) before use[183]. This will make them less bitter, but they will also contain less vitamins and minerals[K]. A very nutritious food, 100g of the raw leaves contain about 2.7g. protein, 9.2g. carbohydrate, 187mg Calcium, 66mg phosphorus, 3.1mg iron, 76mg sodium, 397mg potassium, 36mg magnesium, 14000iu vitamin A, 0.19mg vitamin B1, 0.26mg vitamin B2, 35mg vitamin C[173]. Root - raw or cooked[5, 9, 12, 183]. Bitter. A turnip-like flavour[159]. Flowers - raw or cooked[102, 159]. A rather bitter flavour[K], the unopened flower buds can be used in fritters[183] and they can also be preserved in vinegar and used like capers[7]. Both the leaves and the roots are used to flavour herbal beers and soft drinks such as 'Dandelion and Burdock'[238]. The roots of 2 year old plants are harvested in the autumn, dried and roasted to make a very good coffee substitute[2, 4, 5, 12, 54, 159]. It is caffeine-free[213]. A pleasant tea is made from the flowers[12, 102]. They are also used to make wine - all green parts should be removed when making wine to prevent a bitter flavour[238]. The leaves and the roots can also be used to make tea.",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Aperient Cholagogue Depurative Diuretic Eczema Hepatic Hypoglycaemic Laxative Miscellany Stomachic Tonic Urinary Vitamin C Warts The dandelion is a commonly used herbal remedy. It is especially effective and valuable as a diuretic because it contains high levels of potassium salts and therefore can replace the potassium that is lost from the body when diuretics are used[238]. All parts of the plant, but especially the root, are slightly aperient, cholagogue, depurative, strongly diuretic, hepatic, laxative, stomachic and tonic[4, 7, 9, 21, 54, 165, 176, 222, 238]. The root is also experimentally cholagogue, hypoglycaemic and a weak antibiotic against yeast infections[222]. The dried root has a weaker action[222]. The roots can be used fresh or dried and should be harvested in the autumn when 2 years old[4]. The leaves are harvested in the spring when the plant is in flower and can be dried for later use[9]. A tea can be made from the leaves or, more commonly, from the roots[213]. The plant is used internally in the treatment of gall bladder and urinary disorders, gallstones, jaundice, cirrhosis, dyspepsia with constipation, oedema associated with high blood pressure and heart weakness, chronic joint and skin complaints, gout, eczema and acne[238]. The plant has an antibacterial action, inhibiting the growth of Staphylococcus aureus, Pneumococci, Meningococci, Bacillus dysenteriae, B. typhi, C. diphtheriae, Proteus etc[176]. The latex contained in the plant sap can be used to remove corns, warts and verrucae[7]. The latex has a specific action on inflammations of the gall bladder and is also believed to remove stones in the liver[7]. A tea made from the leaves is laxative[222]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Taraxacum officinale for dyspepsia, urnary tract infections, liver and gallbladder complaints, appetite loss (see [302] for critics of commission E).",
+          "other_uses": "Compost Cosmetic Dye Fruit ripening Latex Miscellany Agroforestry uses: Dandelions are valuable for soil improvement and can serve as a ground cover. They attract pollinators and beneficial insects. Their deep taproots help aerate the soil. The flowers are an ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. A liquid plant feed can be made from the root and leaves[54]. A low quality latex, which can be used for making rubber, can be obtained from the roots of this plant. A magenta-brown dye is obtained from the root[141]. The plant releases ethylene gas, this stunts the growth of nearby plants and causes premature ripening of fruits[14, 18]. A distilled water made from the ligules (thin appendages at the base of the leaf blades) is used cosmetically to clear the skin and is particularly effective in fading freckles[7]. A dynamic accumulator gathering minerals or nutrients from the soil and storing them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Dandelion flowers are rich in nectar and pollen, making them an excellent food source for bees and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Dandelions provide food through their leaves and flowers, which are edible for humans and wildlife. The seeds can also serve as food for birds. The leaf litter can offer some shelter for small insects. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Dandelions can provide overwintering sites in their leaf litter, and their presence in the garden can support a range of beneficial insects. 4. Pest Confuser (Smell): No – Dandelions do not have a strong smell that would effectively confuse pests.",
+          "special_uses": "Attracts Wildlife Dynamic accumulator Food Forest Scented Plants",
+          "cultivation": "A very easily grown plant, it succeeds in most soils[1], though it prefers a well-drained humus-rich neutral to alkaline soil in full sun or light shade[37, 238]. A very hardy plant, tolerating temperatures down to at least -29°c[238]. The dandelion is a common weed of lawns and grassy places. Though it has a bitter flavour, the plant is often cultivated as a salad crop and as a medicinal plant, especially in parts of Europe. There are some named varieties with larger, more tender and less bitter leaves[183]. Dandelions can provide edible leaves all year round, especially if they are given a small amount of protection in the winter[K]. A valuable bee plant and an important food plant for the caterpillars of many butterfly and moth species[4, 24, 30, 54], it grows well in a spring meadow[24]. A deep rooting plant, it has roots up to 1 metre long and brings up nutrients from lower levels of the soil[201]. An excellent plant to grow in lawns, if the lawn is cut no more than fortnightly then the dandelions will provide a good quantity of edible leaves[K]. Grows well with alfalfa[18, 201]. Another report says that it inhibits the growth of nearby plants[54]. This is probably a reference to the fact that the plant gives off ethylene gas, this gas is a hormone that promotes the premature ripening of fruits and also induces the premature fruiting of plants, thereby stunting their growth[14, 18]. T. officinale is not a valid name for this species, but no valid name has as yet been ascribed to it[200]. This is actually an aggregate species of many hundreds of slightly differing species. Most seed production is apomictic which means that plants produce seed non-sexually and all seedlings are clones of the parent, thus small differences are maintained. Special Features:Edible, Not North American native, Invasive, Naturalizing, Suitable for dried flowers, Extended bloom season in Zones 9A and above. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. The leaves can be harvested in early spring to late autumn (March to November, Northern Hemisphere), while the roots are typically harvested in late autumn (September to November). Dandelions typically flower from early spring to early summer (April to June, Northern Hemisphere). Dandelions grow rapidly and can establish themselves within a few weeks, often appearing shortly after the last frost in spring.",
+          "propagation": "Seed - sow spring in a cold frame and either surface-sow or only just cover the seed. Make sure the compost does not dry out. Germination should take place within 2 weeks, though 2 weeks cold stratification may improve germination. Prick out the seedlings into individual pots when they are large enough to handle, choosing relatively deep pots to accommodate the tap root. Plant them out in early summer. Division in early spring as the plant comes into growth.",
+          "other_names": "Kukraundha, Kanphool, Common dandelion, Dandelion",
+          "native_range": "TEMPERATE ASIA: Armenia, Azerbaijan, Ciscaucasia, Eastern Siberia, Far East, Georgia, Kazakhstan, Kyrgyzstan, Mongolia, Russian Federation-Ciscaucasia, Russian Federation-Eastern Siberia, Russian Federation-Far East, Russian Federation-Western Siberia, Syria, Tajikistan, Turkey, Turkmenistan, Western Siberia,Lebanon. TROPICAL ASIA: India (north), EUROPE: Denmark, Finland, Faroe Islands, United Kingdom (U.K.), Ireland, Iceland, Norway, Sweden, Austria, Belgium, Switzerland, Czech Republic, Germany, Hungary, Netherlands, Poland, Slovakia, Russian Federation-European part, European part, Belarus, Estonia, Lithuania, Latvia, Moldova, Ukraine (incl. Krym), Albania, Bulgaria, Bosnia and Herzegovina, Greece, Croatia, Italy (incl. Sicily), North Macedonia, Montenegro, Romania, Serbia, Slovenia, Spain (incl. Baleares), France (incl. Corsica), Portugal, AFRICA: Spain, Canarias, Portugal, Azores, Madeira Islands, Morocco.",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Common dandelion",
+            "scientific_name": "Taraxacum officinale",
+            "genus": "Taraxacum",
+            "family": "Asteraceae",
+            "synonyms": [],
+            "common_names": [
+              "Common dandelion",
+              "Dandelion",
+              "Kanphool",
+              "Kukraundha"
+            ]
+          },
+          "pfaf_display_latin_name": "Taraxacum officinale - Webb.",
+          "pfaf_common_name": "Dandelion",
+          "pfaf_family": "Asteraceae",
+          "pfaf_synonyms": null,
+          "pfaf_other_names": "Kukraundha, Kanphool, Common dandelion, Dandelion",
+          "edible_parts": [
+            "flower",
+            "leaf",
+            "root"
+          ],
+          "use_categories": [
+            "beverage_plant",
+            "medicinal_plant",
+            "root_tuber_crop"
+          ],
+          "life_cycle": "perennial",
+          "botanical_life_cycle": "perennial",
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun",
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "A very easily grown plant, it succeeds in most soils[1], though it prefers a well-drained humus-rich neutral to alkaline soil in full sun or light shade[37, 238]. A very hardy plant, tolerating temperatures down to at least -29°c[238]. The dandelion is a common weed of lawns and grassy places. Though it has a bitter flavour, the plant is often cultivated as a salad crop and as a medicinal plant, especially in parts of Europe. There are some named varieties with larger, more tender and less bitter leaves[183]. Dandelions can provide edible leaves all year round, especially if they are given a small amount of protection in the winter[K]. A valuable bee plant and an important food plant for the caterpillars of many butterfly and moth species[4, 24, 30, 54], it grows well in a spring meadow[24]. A deep rooting plant, it has roots up to 1 metre long and brings up nutrients from lower levels of the soil[201]. An excellent plant to grow in lawns, if the lawn is cut no more than fortnightly then the dandelions will provide a good quantity of edible leaves[K]. Grows well with alfalfa[18, 201]. Another report says that it inhibits the growth of nearby plants[54]. This is probably a reference to the fact that the plant gives off ethylene gas, this gas is a hormone that promotes the premature ripening of fruits and also induces the premature fruiting of plants, thereby stunting their growth[14, 18]. T. officinale is not a valid name for this species, but no valid name has as yet been ascribed to it[200]. This is actually an aggregate species of many hundreds of slightly differing species. Most seed production is apomictic which means that plants produce seed non-sexually and all seedlings are clones of the parent, thus small differences are maintained. Special Features:Edible, Not North American native, Invasive, Naturalizing, Suitable for dried flowers, Extended bloom season in Zones 9A and above. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. The leaves can be harvested in early spring to late autumn (March to November, Northern Hemisphere), while the roots are typically harvested in late autumn (September to November). Dandelions typically flower from early spring to early summer (April to June, Northern Hemisphere). Dandelions grow rapidly and can establish themselves within a few weeks, often appearing shortly after the last frost in spring.",
+            "light_notes": null,
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "division",
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow spring in a cold frame and either surface-sow or only just cover the seed. Make sure the compost does not dry out. Germination should take place within 2 weeks, though 2 weeks cold stratification may improve germination. Prick out the seedlings into individual pots when they are large enough to handle, choosing relatively deep pots to accommodate the tap root. Plant them out in early summer. Division in early spring as the plant comes into growth.",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Taraxacum officinale, Dandelions are valued for their nutritious leaves, roots, and flowers. The leaves are eaten raw or cooked but have a bitter flavour, especially as they age. Young leaves are more tender and less bitter, making them more suitable for salads. Blanching the leaves (covering the plant to exclude light) can reduce the bitterness, though it also decreases their vitamin and mineral content. Dandelion leaves are highly nutritious, offering protein, carbohydrates, calcium, potassium, vitamins A, B1, B2, and C. The roots are eaten raw or cooked, with a flavour similar to turnips, though bitter. They can be dried and roasted to make a caffeine-free coffee substitute. Dandelion flowers are eaten raw or cooked. Unopened flower buds are made into fritters or preserved in vinegar as a caper substitute. The flowers are used in the preparation of herbal teas and wine. Dandelion tea is made from the leaves and roots. Dandelion is widely used in herbal medicine, particularly for its diuretic properties. Due to its high potassium content, it helps replace potassium lost during diuretics. The plant has laxative, digestive stimulant (stomachic), hepatic, depurative, and tonic effects. Dandelion root is beneficial for treating liver and digestive disorders, while the leaves are used to promote urine production and cleanse the body. The native range of Dandelion is Macaronesia, Europe to Siberia, and NW. Africa. Harvesting: Leaves are harvested from early spring to late autumn, roots are typically harvested in late autumn, and flowers are harvested from early spring to early summer. Bloom Color: Yellow. Main Bloom Time: Early summer, Early spring, Late summer, Late spring, Mid summer, Mid spring. Form: Spreading or horizontal.",
+          "edible_uses_notes": "Edible Parts: Flowers Leaves Root Edible Uses: Coffee Tea Leaves - raw or cooked[1, 2, 4, 5, 7, 9, 12, 14, 33, 154]. When used in salads, they are rather bitter, though less so in the winter. Tender young leaves are considerably less bitter than older leaves[K]. The leaves are often blanched (by excluding light from the growing plant) before use[183]. This will make them less bitter, but they will also contain less vitamins and minerals[K]. A very nutritious food, 100g of the raw leaves contain about 2.7g. protein, 9.2g. carbohydrate, 187mg Calcium, 66mg phosphorus, 3.1mg iron, 76mg sodium, 397mg potassium, 36mg magnesium, 14000iu vitamin A, 0.19mg vitamin B1, 0.26mg vitamin B2, 35mg vitamin C[173]. Root - raw or cooked[5, 9, 12, 183]. Bitter. A turnip-like flavour[159]. Flowers - raw or cooked[102, 159]. A rather bitter flavour[K], the unopened flower buds can be used in fritters[183] and they can also be preserved in vinegar and used like capers[7]. Both the leaves and the roots are used to flavour herbal beers and soft drinks such as 'Dandelion and Burdock'[238]. The roots of 2 year old plants are harvested in the autumn, dried and roasted to make a very good coffee substitute[2, 4, 5, 12, 54, 159]. It is caffeine-free[213]. A pleasant tea is made from the flowers[12, 102]. They are also used to make wine - all green parts should be removed when making wine to prevent a bitter flavour[238]. The leaves and the roots can also be used to make tea.",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Aperient Cholagogue Depurative Diuretic Eczema Hepatic Hypoglycaemic Laxative Miscellany Stomachic Tonic Urinary Vitamin C Warts The dandelion is a commonly used herbal remedy. It is especially effective and valuable as a diuretic because it contains high levels of potassium salts and therefore can replace the potassium that is lost from the body when diuretics are used[238]. All parts of the plant, but especially the root, are slightly aperient, cholagogue, depurative, strongly diuretic, hepatic, laxative, stomachic and tonic[4, 7, 9, 21, 54, 165, 176, 222, 238]. The root is also experimentally cholagogue, hypoglycaemic and a weak antibiotic against yeast infections[222]. The dried root has a weaker action[222]. The roots can be used fresh or dried and should be harvested in the autumn when 2 years old[4]. The leaves are harvested in the spring when the plant is in flower and can be dried for later use[9]. A tea can be made from the leaves or, more commonly, from the roots[213]. The plant is used internally in the treatment of gall bladder and urinary disorders, gallstones, jaundice, cirrhosis, dyspepsia with constipation, oedema associated with high blood pressure and heart weakness, chronic joint and skin complaints, gout, eczema and acne[238]. The plant has an antibacterial action, inhibiting the growth of Staphylococcus aureus, Pneumococci, Meningococci, Bacillus dysenteriae, B. typhi, C. diphtheriae, Proteus etc[176]. The latex contained in the plant sap can be used to remove corns, warts and verrucae[7]. The latex has a specific action on inflammations of the gall bladder and is also believed to remove stones in the liver[7]. A tea made from the leaves is laxative[222]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Taraxacum officinale for dyspepsia, urnary tract infections, liver and gallbladder complaints, appetite loss (see [302] for critics of commission E).",
+          "other_uses_notes": "Compost Cosmetic Dye Fruit ripening Latex Miscellany Agroforestry uses: Dandelions are valuable for soil improvement and can serve as a ground cover. They attract pollinators and beneficial insects. Their deep taproots help aerate the soil. The flowers are an ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. A liquid plant feed can be made from the root and leaves[54]. A low quality latex, which can be used for making rubber, can be obtained from the roots of this plant. A magenta-brown dye is obtained from the root[141]. The plant releases ethylene gas, this stunts the growth of nearby plants and causes premature ripening of fruits[14, 18]. A distilled water made from the ligules (thin appendages at the base of the leaf blades) is used cosmetically to clear the skin and is particularly effective in fading freckles[7]. A dynamic accumulator gathering minerals or nutrients from the soil and storing them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Dandelion flowers are rich in nectar and pollen, making them an excellent food source for bees and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Dandelions provide food through their leaves and flowers, which are edible for humans and wildlife. The seeds can also serve as food for birds. The leaf litter can offer some shelter for small insects. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Dandelions can provide overwintering sites in their leaf litter, and their presence in the garden can support a range of beneficial insects. 4. Pest Confuser (Smell): No – Dandelions do not have a strong smell that would effectively confuse pests.",
+          "cultivation_notes": "A very easily grown plant, it succeeds in most soils[1], though it prefers a well-drained humus-rich neutral to alkaline soil in full sun or light shade[37, 238]. A very hardy plant, tolerating temperatures down to at least -29°c[238]. The dandelion is a common weed of lawns and grassy places. Though it has a bitter flavour, the plant is often cultivated as a salad crop and as a medicinal plant, especially in parts of Europe. There are some named varieties with larger, more tender and less bitter leaves[183]. Dandelions can provide edible leaves all year round, especially if they are given a small amount of protection in the winter[K]. A valuable bee plant and an important food plant for the caterpillars of many butterfly and moth species[4, 24, 30, 54], it grows well in a spring meadow[24]. A deep rooting plant, it has roots up to 1 metre long and brings up nutrients from lower levels of the soil[201]. An excellent plant to grow in lawns, if the lawn is cut no more than fortnightly then the dandelions will provide a good quantity of edible leaves[K]. Grows well with alfalfa[18, 201]. Another report says that it inhibits the growth of nearby plants[54]. This is probably a reference to the fact that the plant gives off ethylene gas, this gas is a hormone that promotes the premature ripening of fruits and also induces the premature fruiting of plants, thereby stunting their growth[14, 18]. T. officinale is not a valid name for this species, but no valid name has as yet been ascribed to it[200]. This is actually an aggregate species of many hundreds of slightly differing species. Most seed production is apomictic which means that plants produce seed non-sexually and all seedlings are clones of the parent, thus small differences are maintained. Special Features:Edible, Not North American native, Invasive, Naturalizing, Suitable for dried flowers, Extended bloom season in Zones 9A and above. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is a tap root similar to a carrot going directly down [1-2]. The leaves can be harvested in early spring to late autumn (March to November, Northern Hemisphere), while the roots are typically harvested in late autumn (September to November). Dandelions typically flower from early spring to early summer (April to June, Northern Hemisphere). Dandelions grow rapidly and can establish themselves within a few weeks, often appearing shortly after the last frost in spring.",
+          "known_hazards": "This plant has been mentioned in various books on poisonous plants but any possible toxins will be of very low concentration and toxicity[10]. There are reports that some people have suffered dermatitis as a result of touching the plant, this is probably caused by the latex in the leaves and stems[222].",
+          "biodiversity": {
+            "companions": [
+              {
+                "plant": "alfalfa",
+                "relationship": "grows_well_with",
+                "source_name": "Plants For A Future",
+                "confidence": 0.75,
+                "notes": "Extracted from PFAF 'grows_well_with' wording."
+              }
+            ],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": true,
+            "pollinator_support": true,
+            "biodiversity_notes": [
+              "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+            ]
+          }
+        },
+        "page_text_excerpt": "Taraxacum officinale Dandelion PFAF Plant Database Follow Us: Taraxacum officinale - Webb. Common Name Dandelion Family Asteraceae USDA hardiness 5-9 Known Hazards This plant has been mentioned in various books on poisonous plants but any possible toxins will be of very low concentration and toxicity[10]. There are reports that some people have suffered dermatitis as a result of touching the plant, this is probably caused by the latex in the leaves and stems[222]. Habitats A very common weed of grassland and cultivated ground[17]. Range Throughout most of the northern hemisphere, including Britain. Edibility Rating (4 of 5) Other Uses (3 of 5) Weed Potential Yes Medicinal Rating (3 of 5) Care (info) http://de.wikipedia.org/wiki/Benutzer:MatthiasKabel Translate this page: Summary Taraxacum officinale, Dandelions are valued for their nutritious leaves, roots, and flowers. The leaves are eaten raw or cooked but have a bitter flavour, especially as they age. Young leaves are more tender and less bitter, making them more suitable for salads. Blanching the leaves (covering the plant to exclude light) can reduce the bitterness, though it also decreases their vitamin and mineral content. Dandelion leaves are highly nutritious, offering protein, carbohydrates, calcium, potassium, vitamins A, B1, B2, and C. The roots are eaten raw or cooked, with a flavour similar to turnips, though bitter. They can be dried and roasted to make a caffeine-free coffee substitute. Dandelion flowers are eaten raw or cooked. Unopened flower buds are made into fritters or preserved in vinegar as a caper substitute. The flowers are used in the preparation of herbal teas and wine. Dandelion tea is made from the leaves and roots. Dandelion is widely used in herbal medicine, particularly for its diuretic properties. Due to its high potassium content, it helps replace potassium lost during diuretics. The plant has laxative, digestive stimulant (stomachic), hepatic, depurative, and tonic effects. Dandelion root is beneficial for treating liver and digestive disorders, while the leaves are used to promote urine production and cleanse the body. The native range of Dandelion is Macaronesia, Europe to Siberia, and NW. Africa. Harvesting: Leaves are harvested from early spring to late autumn, roots are typically harvested in late autumn, and flowers are harvested from early spring to early summer. Bloom Color: Yellow. Main Bloom Time: Early summer, Early spring, Late summer, Late spring, Mid summer, Mid spring. Form: Spreading or horizontal. Physical Characteristics Taraxacum officinale is a PERENNIAL growing to 0.5 m (1ft 8in) by 0.3 m (1ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender. It is in flower from April to May, and the seeds ripen from May to June. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects, Apomictic (reproduce by seeds formed without sexual fusion). The plant is self-fertile. It"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tTaraxacum officinale Dandelion PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Taraxacum officinale is a PERENNIAL growing to 0.5 m (1ft&amp;nbsp;8in) by 0.3 m (1ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 5 and is not frost tender.  It is in flower from April to May, and the seeds ripen from May to June. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects, Apomictic (reproduce by seeds formed without sexual fusion). The plant is self-fertile. It is noted for attracting wildlife.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers  well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils and can grow in very alkaline soils. It can grow in  semi-shade (light woodland) or no shade. It prefers  moist soil. The plant can tolerate maritime exposure.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Taraxacum+officinale\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BZ4GVGFyYXhhY3VtIG9mZmljaW5hbGUgaXMgYSBQRVJFTk5JQUwgZ3Jvd2luZyB0byAwLjUgbSAoMWZ0Jm5ic3A7OGluKSBieSAwLjMgbSAoMWZ0KSBhdCBhIGZhc3QgcmF0ZS4gU2VlIGFib3ZlIGZvciBVU0RBIGhhcmRpbmVzcy4gSXQgaXMgaGFyZHkgdG8gVUsgem9uZSA1IGFuZCBpcyBub3QgZnJvc3QgdGVuZGVyLiAgSXQgaXMgaW4gZmxvd2VyIGZyb20gQXByaWwgdG8gTWF5LCBhbmQgdGhlIHNlZWRzIHJpcGVuIGZyb20gTWF5IHRvIEp1bmUuIFRoZSBzcGVjaWVzIGlzIGhlcm1hcGhyb2RpdGUgKGhhcyBib3RoIG1hbGUgYW5kIGZlbWFsZSBvcmdhbnMpIGFuZCBpcyBwb2xsaW5hdGVkIGJ5IEluc2VjdHMsIEFwb21pY3RpYyAocmVwcm9kdWNlIGJ5IHNlZWRzIGZvcm1lZCB3aXRob3V0IHNleHVhbCBmdXNpb24pLiBUaGUgcGxhbnQgaXMgc2VsZi1mZXJ0aWxlLiBJdCBpcyBub3RlZCBmb3IgYXR0cmFjdGluZyB3aWxkbGlmZS4gIFN1aXRhYmxlIGZvcjogbGlnaHQgKHNhbmR5KSwgbWVkaXVtIChsb2FteSkgYW5kIGhlYXZ5IChjbGF5KSBzb2lscyBhbmQgcHJlZmVycyAgd2VsbC1kcmFpbmVkIHNvaWwuIFN1aXRhYmxlIHBIOiBtaWxkbHkgYWNpZCwgbmV1dHJhbCBhbmQgYmFzaWMgKG1pbGRseSBhbGthbGluZSkgc29pbHMgYW5kIGNhbiBncm93IGluIHZlcnkgYWxrYWxpbmUgc29pbHMuIEl0IGNhbiBncm93IGluICBzZW1pLXNoYWRlIChsaWdodCB3b29kbGFuZCkgb3Igbm8gc2hhZGUuIEl0IHByZWZlcnMgIG1vaXN0IHNvaWwuIFRoZSBwbGFudCBjYW4gdG9sZXJhdGUgbWFyaXRpbWUgZXhwb3N1cmUuZAIDD2QWAgIDD2QWZAIBDw8WAh4EVGV4dAUcVGFyYXhhY3VtIG9mZmljaW5hbGUgLSBXZWJiLmRkAgMPDxYCHwMFCURhbmRlbGlvbmRkAgUPDxYCHwMFCkFzdGVyYWNlYWVkZAIHDw8WAh8DBQM1LTlkZAIJDw8WAh4HVmlzaWJsZWdkZAILDw8WAh8DBbACVGhpcyBwbGFudCBoYXMgYmVlbiBtZW50aW9uZWQgaW4gdmFyaW91cyBib29rc"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Dandelion",
+      "query": "Taraxacum officinale",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:41:14.158300+00:00",
+      "response_hash": "811228b03db97825a7a711f8f76e506d733484cea657d58031a625d78c5fc1d2",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Dandelion",
+            "scientific_name": "Taraxacum officinale",
+            "genus": "Taraxacum",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Dandelion\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for"
+    }
+  ]
+}
