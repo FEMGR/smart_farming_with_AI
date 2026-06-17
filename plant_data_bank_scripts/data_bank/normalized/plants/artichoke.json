@@ -1,0 +1,251 @@
+{
+  "plant_atom": "artichoke",
+  "identity": {
+    "common_name": "Globe Artichoke",
+    "scientific_name": "Cynara cardunculus",
+    "genus": "Cynara",
+    "family": "Asteraceae",
+    "synonyms": [],
+    "common_names": [
+      "Artichoke; desert artichoke; European cardoon; globe artichoke; scotch thistle; Scottish thistle; Spanish artichoke; wild artichoke; wild cardoon. Spanish: alcachofa; alcaucil; cardo; cardo de comer. French: artichaut commun; carde; cardon d’Espagne. Russian: artišok ispanskij. Arabic: al harshuff. England and Wales: march-ysgall. Finland: Isoartisokka. Germany: artishocke; gemüseartishocke; gemüse-artishocke; kardone. Italy: carciofo. Netherlands: kardoen. Portugal: alcachofra; cardo. Spain: card; card comestible; card comú; herbacol. Sweden: kardon.",
+      "Cardoon"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "medicinal_plant",
+      "root_tuber_crop"
+    ],
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "root",
+      "stem"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Industrial Crop: Biomass Management: Hay Management: Standard Staple Crop: Oil Prefers a light warm soil and an open position in full sun[37, 200]. For best results, this plant requires plenty of moisture in the growing season and a good rich soil[16, 27, 33, 37], though another report says that it is drought tolerant once established[190]. Plants grew very well with us in the hot and very dry summer of 1995, though they were looking very tatty by September[K]. Tolerates most soils including heavy clays of both acid and alkaline nature, especially when grown in heavier or more spartan soils[200]. Plants are reasonably wind resistant[200, K]. This species is hardy to about -10°c[187]. Plants are more likely to require protection from winter cold when they are grown in a heavy soil[190]. Wet winters can do more harm than cold ones[K]. At one time the cardoon was often grown for its edible stems but it has now fallen into virtual disuse[132]. There are some named varieties[183]. It is a very ornamental foliage plant and makes a very attractive feature in the garden. The leaves are long lasting in water and are often used in flower arrangements[233]. Recent taxonomic revisions (1999) have seen the globe artichoke being merged into this species. However, since from the gardener's point of view it is quite a distinctive plant, we have decided to leave it with its own entry in the database under Cynara scolymus[K]. Plants seem to be immune to the predations of rabbits[233]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is fleshy. Thick or swollen - fibrous or tap root [2-1]. Cardoon and Globe Artichoke have moderate growth rates, taking about 2-3 years to establish fully and produce significant yields. Cardoon stalks are typically harvested in late summer to autumn, while Globe Artichokes are harvested in late spring to summer. Both plants flower in late summer to early autumn",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "division",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early spring in a greenhouse. Germination is usually quick and good, prick out the seedlings into individual pots as soon as they are large enough to handle and plant them out into their permanent positions during the summer. It would be prudent to give the plants some winter protection in their first year. The seed can also be sown in situ in April. Sow the seed 2cm deep, putting 2 or 3 seeds at each point that you want a plant[1]. Protect the seed from mice[1]. Division of suckers. This is best done in November and the suckers overwintered in a cold frame then planted out in April. Division can also be carried out in March/April with the divisions being planted out straight into their permanent positions, though the plants will be smaller in their first year.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Industrial Crop: Biomass Management: Hay Management: Standard Staple Crop: Oil Prefers a light warm soil and an open position in full sun[37, 200]. For best results, this plant requires plenty of moisture in the growing season and a good rich soil[16, 27, 33, 37], though another report says that it is drought tolerant once established[190]. Plants grew very well with us in the hot and very dry summer of 1995, though they were looking very tatty by September[K]. Tolerates most soils including heavy clays of both acid and alkaline nature, especially when grown in heavier or more spartan soils[200]. Plants are reasonably wind resistant[200, K]. This species is hardy to about -10°c[187]. Plants are more likely to require protection from winter cold when they are grown in a heavy soil[190]. Wet winters can do more harm than cold ones[K]. At one time the cardoon was often grown for its edible stems but it has now fallen into virtual disuse[132]. There are some named varieties[183]. It is a very ornamental foliage plant and makes a very attractive feature in the garden. The leaves are long lasting in water and are often used in flower arrangements[233]. Recent taxonomic revisions (1999) have seen the globe artichoke being merged into this species. However, since from the gardener's point of view it is quite a distinctive plant, we have decided to leave it with its own entry in the database under Cynara scolymus[K]. Plants seem to be immune to the predations of rabbits[233]. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is fleshy. Thick or swollen - fibrous or tap root [2-1]. Cardoon and Globe Artichoke have moderate growth rates, taking about 2-3 years to establish fully and produce significant yields. Cardoon stalks are typically harvested in late summer to autumn, while Globe Artichokes are harvested in late spring to summer. Both plants flower in late summer to early autumn",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anticholesterolemic Cholagogue Digestive Diuretic The cardoon has become important as a medicinal herb in recent years following the discovery of cynarin. This bitter-tasting compound, which is found in the leaves, improves liver and gall bladder function, stimulates the secretion of digestive juices, especially bile, and lowers blood cholesterol levels[238, 254]. The leaves are anticholesterolemic, antirheumatic, cholagogue, digestive, diuretic, hypoglycaemic and lithontripic[7, 21, 165]. They are used internally in the treatment of chronic liver and gall bladder diseases, jaundice, hepatitis, arteriosclerosis and the early stages of late-onset diabetes[238, 254]. The leaves are best harvested just before the plant flowers, and can be used fresh or dried[238].",
+    "cautions": "None known",
+    "other_uses_notes": "Dye Agroforestry uses: They can be used as a hedge or border plant, and the dense foliage can provide a habitat for beneficial insects. The plant is said to yield a good yellow dye[4], though the report does not say which part of the plant is used. 1. Nectary - Flowers rich in nectar and pollen: Yes – Both Cardoon and Globe Artichoke produce large, vibrant flowers that are rich in nectar and pollen, attracting various pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The edible parts of these plants (flower buds, leaves, and stems) provide food for humans and some wildlife. The dense foliage can offer some shelter, but they are not typically used for nesting or roosting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The plants can create a habitat for invertebrates, particularly in leaf litter. Their growth habit can provide ground cover, offering some protection and habitat for various species. 4. Pest Confuser (Smell): No – There is no significant evidence that Cardoon or Globe Artichoke serves as a pest confuser through smell.",
+    "edible_uses_notes": "Edible Parts: Flowers Leaves Root Stem Edible Uses: Curdling agent Flower buds - raw or cooked[33, 105]. A globe artichoke substitute[183]. The flower buds are a bit smaller than the globe artichoke and so are even more fiddly to use[K]. The buds are harvested just before the flowers open, they are then usually boiled before being eaten. Only the base of each bract is eaten, plus the 'heart' or base that the petals grow from [K]. The flavour is mild and pleasant and is felt by some people to be more delicate than the globe artichoke[K]. Stems - cooked and used as a celery substitute[2, 27, 33, 46, 61]. It is best to earth up the stems as they grow in order to blanch them and reduce their bitterness[4], these blanched stems can then be eaten cooked or in salads[105, 132, 183]. In Italy raw strips of the stems are dipped into olive oil[183]. We find these stems to be too bitter when eaten raw[K]. Young leaves - raw or cooked. Eaten as a salad by the ancient Romans[183]. Rather bitter[K]. Root - cooked like parsnips[27, 105, 183]. Tender, thick and fleshy, with an agreeable flavour[183]. The dried flowers are a rennet substitute, used for curdling plant milks[105, 183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:11.257842+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Cynara+cardunculus",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:11.763798+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Globe+Artichoke",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:12.307466+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Cynara+cardunculus",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:30:38.472739+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Globe+Artichoke",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:30:41.815528+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=artichoke",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:30:45.435867+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.818807+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

@@ -1406,3 +1406,25 @@ special_treatment(wax_begonia, surface_sow).
 source_name(wax_begonia, 'Iowa State University Extension').
 source_url(wax_begonia, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(wax_begonia, high).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: growth_facts
+% Review before editing manually.
+% =========================================================
+
+life_cycle(gotu_kola, perennial).
+botanical_life_cycle(gotu_kola, perennial).
+fact_scope(gotu_kola, extracted_profile).
+accepted_scientific_name(gotu_kola, 'Centella asiatica').
+genus(gotu_kola, centella).
+family(gotu_kola, apiaceae).
+propagation_method(gotu_kola, division).
+propagation_method(gotu_kola, seed).
+sunlight(gotu_kola, partial_shade).
+soil_type(gotu_kola, heavy_clay).
+soil_type(gotu_kola, light_sandy).
+soil_type(gotu_kola, medium_loamy).
+source_name(gotu_kola, 'Plants For A Future').
+source_url(gotu_kola, 'https://pfaf.org/user/Plant.aspx?LatinName=Centella+asiatica').
+confidence(gotu_kola, high).

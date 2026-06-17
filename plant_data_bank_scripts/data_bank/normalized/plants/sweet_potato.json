@@ -1,0 +1,340 @@
+{
+  "plant_atom": "sweet_potato",
+  "identity": {
+    "common_name": "Sweet Potato",
+    "scientific_name": "Ipomoea batatas",
+    "genus": "Ipomoea",
+    "family": "Convolvulaceae",
+    "synonyms": [],
+    "common_names": [
+      "Agietu",
+      "Anago-te",
+      "Anamo",
+      "apichu",
+      "Atomo anago",
+      "Bambaira",
+      "batat",
+      "batata",
+      "batata-da-terra",
+      "batata-doce",
+      "batate",
+      "Bath-ala",
+      "Black Sweet Potato",
+      "Blofo atomo",
+      "boniato",
+      "Boniato",
+      "Buteta",
+      "bíme mábi",
+      "Camote",
+      "Chakarakilangu",
+      "Chelagada",
+      "Chokeh",
+      "Damloong chhvie",
+      "Dankali",
+      "Dinkale",
+      "Dukuma",
+      "E-muna",
+      "Ekomeko",
+      "Faan shu",
+      "Fanshu",
+      "Genasu",
+      "goguma",
+      "Hila",
+      "Hongshu",
+      "Huwi boled",
+      "Huwi matang",
+      "Imbambaila",
+      "Ji-oyibo",
+      "Kalembula wa lungu",
+      "Kamote",
+      "Kanangi",
+      "Kanda",
+      "Kaukau",
+      "Kawai-ni-vulagi",
+      "Keladi",
+      "Keledek",
+      "Ketela",
+      "Khoai lang",
+      "kkumara",
+      "Klawang",
+      "Kudaku",
+      "Kukunduku",
+      "Kumala",
+      "Kumara",
+      "kuumara",
+      "Lal alu",
+      "Luzu vaka",
+      "Man-thet",
+      "Mitha alu",
+      "N jowo",
+      "Ntommo",
+      "Odunkum",
+      "papa dulce",
+      "patate douce",
+      "Petete",
+      "Phan-karo",
+      "Pilau katelo",
+      "Pot-ecok",
+      "Ranga alu",
+      "Ratalu",
+      "Sakaria",
+      "Sakarkenda",
+      "Sakarkhand",
+      "Sakkareivelleikilangu",
+      "Satsuma inno",
+      "Setilo",
+      "Shakar-kandi",
+      "Shakarkand",
+      "Sweet Potato",
+      "Sweet Potato Vine",
+      "sweet-potato",
+      "süßkartoffel",
+      "tuktuka",
+      "wild potato vine",
+      "wild potato wit",
+      "yam",
+      "zoete aardappel."
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "medicinal_plant",
+      "root_tuber_crop"
+    ],
+    "edible_parts": [
+      "leaf",
+      "root",
+      "stem"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": 5.0,
+    "soil_ph_max": 7.0,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "An easily grown plant. Sweet potato is a plant of the tropics, but can also be grown in the subtropics and, if there is a sufficient growing season of 110 - 170 days, as an annual crop in warmer parts of the temperate zone. It is grown in the tropics at elevations up to 2,800 metres. It grows best in areas where annual daytime temperatures are within the range 18 - 28°c, but can tolerate 10 - 38°c[418 ]. When dormant, the roots can survive temperatures down to about 1°c, but young growth can be killed by temperatures of 5°c[418 ]. It prefers a mean annual rainfall in the range 750 - 2,000mm, but tolerates 350 - 5,000mm[418 ]. An easily grown plant, it prefers a well-drained, sandy loam soil and requires a sunny position[200 , 264 ]. Ample potash in the soil is essential for a good crop[264 ]. Prefers a pH in the range 5 - 7, tolerating 4 - 8.7[418 ]. A low humidity as the plants reach maturity is beneficial[200 ]. Plants grow very vigorously in the tropics. They have escaped from cultivation in some areas and become invasive[296 , 305 ]. Unlike many root crops, the sweet potato begins to store starch at an early age, making early harvests possible[298 ]. It is one of the most efficient plants to capture the energy of the sun as calories[298 ]. The plant can mature a crop within 2 months in tropical areas, though at least three months are required in sub-tropical regions[264 ]. Optimum yields vary from 17.5 - 27.5 tonnes per hectare depending on the cultivar and growing conditions, while average yields are 5 tonnes per hectare in Africa, 10 tonnes in South America and 16 tonnes in Asia. The world highest production yield at 80 tonnes has been obtained in Israel[418 ]. A short-day plant, it requires less than 11 hours of sunlight per day to initiate flowering[200 ]. However, day length variation appears to have little effect upon tuber production[200 ]. Special Features: Attractive foliage, Edible. Sweet Potato Vine is self-fertile. Harvest typically occurs in late summer to early autumn, usually around 90-120 days after planting, depending on the variety. Sweet Potato Vine flowers in late summer to early autumn. Sweet Potato Vine is a fast-growing plant, often covering ground quickly and reaching full size within a few months.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": "Best daytime temperature range mentioned: 18-28°C.",
+    "rainfall_notes": "Mean annual rainfall range mentioned: 750-2,000 mm."
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "seed"
+    ],
+    "propagation_notes": "Pre-soak the seed for 12 hours in warm water, or scarify the seed, and sow in individual pots in a greenhouse in early spring. The seed usually germinates in 1 - 3 weeks at 22°c. Plants are extremely resentful of root disturbance, even when they are quite small, and should be potted up almost as soon as they germinate. Grow them on in the greenhouse for at least their first winter then plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Seedlings can be very variable and are likely to be less productive than vegetatively produced plants[200]. Stem cuttings obtained from terminal shoots[200]. Remove the lower leaves and insert the cuttings to half their depth in individual pots.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "An easily grown plant. Sweet potato is a plant of the tropics, but can also be grown in the subtropics and, if there is a sufficient growing season of 110 - 170 days, as an annual crop in warmer parts of the temperate zone. It is grown in the tropics at elevations up to 2,800 metres. It grows best in areas where annual daytime temperatures are within the range 18 - 28°c, but can tolerate 10 - 38°c[418 ]. When dormant, the roots can survive temperatures down to about 1°c, but young growth can be killed by temperatures of 5°c[418 ]. It prefers a mean annual rainfall in the range 750 - 2,000mm, but tolerates 350 - 5,000mm[418 ]. An easily grown plant, it prefers a well-drained, sandy loam soil and requires a sunny position[200 , 264 ]. Ample potash in the soil is essential for a good crop[264 ]. Prefers a pH in the range 5 - 7, tolerating 4 - 8.7[418 ]. A low humidity as the plants reach maturity is beneficial[200 ]. Plants grow very vigorously in the tropics. They have escaped from cultivation in some areas and become invasive[296 , 305 ]. Unlike many root crops, the sweet potato begins to store starch at an early age, making early harvests possible[298 ]. It is one of the most efficient plants to capture the energy of the sun as calories[298 ]. The plant can mature a crop within 2 months in tropical areas, though at least three months are required in sub-tropical regions[264 ]. Optimum yields vary from 17.5 - 27.5 tonnes per hectare depending on the cultivar and growing conditions, while average yields are 5 tonnes per hectare in Africa, 10 tonnes in South America and 16 tonnes in Asia. The world highest production yield at 80 tonnes has been obtained in Israel[418 ]. A short-day plant, it requires less than 11 hours of sunlight per day to initiate flowering[200 ]. However, day length variation appears to have little effect upon tuber production[200 ]. Special Features: Attractive foliage, Edible. Sweet Potato Vine is self-fertile. Harvest typically occurs in late summer to early autumn, usually around 90-120 days after planting, depending on the variety. Sweet Potato Vine flowers in late summer to early autumn. Sweet Potato Vine is a fast-growing plant, often covering ground quickly and reaching full size within a few months.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. None known",
+    "cautions": "None known",
+    "other_uses_notes": "Biomass Fuel Agroforestry uses: It can be used as ground cover to prevent soil erosion, improve soil structure, and suppress weeds. The vines also provide habitat for beneficial organisms. Landscape Uses: Alpine garden, Arbor, Container, Groundcover, Specimen. The root is a source of starch[200]. Sweet potato tubers are being examined as a valuable raw material for producing alcohol bio-fuel[418]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Sweet potato vines produce attractive flowers that can provide nectar and pollen for pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The tubers (sweet potatoes) are a valuable food source for both humans and wildlife. The leaves can also be consumed by herbivores. While the plant itself may not serve as a primary nesting site, it can provide some cover and shelter due to its dense foliage. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The sprawling nature of the sweet potato vine can create ground cover, providing habitat for invertebrates and helping to retain moisture in the soil. Additionally, the leaf litter can serve as shelter. 4. Pest Confuser (Smell): Yes – The aromatic leaves may have pest-repelling properties and can help confuse some pests, benefiting neighboring plants.",
+    "edible_uses_notes": "Edible Parts: Leaves Root Shoots Edible Uses: Root - cooked[200]. Sweet and fleshy, it is a delicious staple food and is also very nutritious providing a rich source of vitamins and minerals[200, K]. There are cultivars with soft, moist flesh and also forms with a more dry flesh[200]. There are also less sweet cultivars, bred for industrial production of starch[200]. In order for the roots to store through the winter, they need to be cured in the sunshine at temperatures around 25°c fr about a week before being stored at around 14°c[264]. Young shoot tips[264]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "insects"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.6,
+        "notes": "PFAF states flowers are pollinated by insects."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "growth.temperature_notes": "Plants For A Future",
+    "growth.rainfall_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:00.405569+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Ipomoea+batatas",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:40:54.139964+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Sweet+Potato",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:54.966829+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Ipomoea+batatas",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:00.366746+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Sweet+Potato",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:03.545123+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=sweet_potato",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:06.928615+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.789346+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

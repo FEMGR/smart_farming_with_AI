@@ -1,0 +1,291 @@
+{
+  "plant_atom": "lentil",
+  "identity": {
+    "common_name": "Lentil",
+    "scientific_name": "Lens culinaris",
+    "genus": "Vicia",
+    "family": "Fabaceae",
+    "synonyms": [],
+    "common_names": [
+      "adas",
+      "adas msallam",
+      "Aoi mame",
+      "Bagali",
+      "Bing dou",
+      "bing dou",
+      "chanam payar",
+      "Chanangi",
+      "Chirisanagalu",
+      "dhal|parippu",
+      "gram",
+      "Kacang koro",
+      "Kacang serinding",
+      "Kursam bulle pullie",
+      "Lente",
+      "lenteja",
+      "lenticchia",
+      "Lenticchia",
+      "Lentil",
+      "lentil",
+      "lentilha",
+      "Lentilha",
+      "Lentille",
+      "lentille",
+      "lentille comestible",
+      "lentillon",
+      "Lentja",
+      "lins",
+      "linse",
+      "Linse",
+      "Malka masur",
+      "Masar",
+      "masara",
+      "masoor",
+      "masoor paruppu",
+      "masooralu",
+      "Masser",
+      "massora",
+      "masur",
+      "Masur",
+      "masura",
+      "masura (seed)",
+      "masura bele",
+      "masura pappu",
+      "masuri",
+      "Masuri",
+      "Masurmoha",
+      "Masuro",
+      "Misurpappu",
+      "Musri",
+      "Patani",
+      "Pe ni",
+      "pittabhe?aja",
+      "Pothundhambala",
+      "Red Dahl",
+      "Sai min dou",
+      "supya",
+      "Thua daeng",
+      "Thua raatcha maat",
+      "vattupparupu."
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "medicinal_plant"
+    ],
+    "edible_parts": [
+      "seed"
+    ],
+    "life_cycle": "annual",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "An easily grown plant[K], it prefers a sandy soil in a warm sunny sheltered position[27, 37, 200]. Another report says that it does best on clay[37]. It produces most seed when grown on poorer soils[37]. Lentils are widely cultivated in warm temperate and tropical zones for their edible and very nutritious seed, there are many named varieties[183]. The plants are much hardier than is commonly supposed and many of these varieties can succeed in Britain, particularly in warm summers. There is at least one, called 'WH2040', that can withstand temperatures as low as -23°c in the seedling stage[200]. 'Chilean' is a low-growing plant that can be grown in the winter in areas where winter vegetables can be grown[183]. 'HarLen' tolerates temperatures down to -10°c and performs very well in gardens[183]. The plants take the same time as peas to mature, so lentils are a potential commercial crop for Britain[141]. Yields of up to 2 tonnes per hectare are possible[200]. The main problem with growing them as a commercial crop is that they are produced by using cheap labour in many countries which makes it very difficult for British farmers to compete on prices. However, this does not preclude their being grown in the garden and allotment. Lentils are also beneficial to grow as part of a rotation on the farm or garden. They have a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby and, if the roots are left in the ground when the seeds are harvested, this will provide a source of nitrogen for the next crop[200].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early April in situ[1]. Some cultivars are probably suitable for sowing outdoors in the autumn, at least in the milder parts of the country[200].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "An easily grown plant[K], it prefers a sandy soil in a warm sunny sheltered position[27, 37, 200]. Another report says that it does best on clay[37]. It produces most seed when grown on poorer soils[37]. Lentils are widely cultivated in warm temperate and tropical zones for their edible and very nutritious seed, there are many named varieties[183]. The plants are much hardier than is commonly supposed and many of these varieties can succeed in Britain, particularly in warm summers. There is at least one, called 'WH2040', that can withstand temperatures as low as -23°c in the seedling stage[200]. 'Chilean' is a low-growing plant that can be grown in the winter in areas where winter vegetables can be grown[183]. 'HarLen' tolerates temperatures down to -10°c and performs very well in gardens[183]. The plants take the same time as peas to mature, so lentils are a potential commercial crop for Britain[141]. Yields of up to 2 tonnes per hectare are possible[200]. The main problem with growing them as a commercial crop is that they are produced by using cheap labour in many countries which makes it very difficult for British farmers to compete on prices. However, this does not preclude their being grown in the garden and allotment. Lentils are also beneficial to grow as part of a rotation on the farm or garden. They have a symbiotic relationship with certain soil bacteria, these bacteria form nodules on the roots and fix atmospheric nitrogen. Some of this nitrogen is utilized by the growing plant but some can also be used by other plants growing nearby and, if the roots are left in the ground when the seeds are harvested, this will provide a source of nitrogen for the next crop[200].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Laxative Poultice The seeds are mucilaginous and laxative[240]. They are considered to be useful in the treatment of constipation and other intestinal affections[240]. Made into a paste, they are a useful cleansing application in foul and indolent ulcers[240].",
+    "cautions": "None known",
+    "other_uses_notes": "Fuel Green manure Agroforestry Uses: The plant can be used as a green manure[418 ]. Lentil is mainly grown as a sole crop, but sometimes mixed with other crops, e.g. in India with barley, mustard or castor[299 ]. Other Uses: The seeds are a source of starch for the textile and printing industries[310 , 418 ]. The plant remains, after the seed has been harvested, can be used as a fuel[299 ].",
+    "edible_uses_notes": "Edible Parts: Seed Seedpod Edible Uses: Seed - cooked or sprouted and eaten raw[1]. A very nutritious food[171, 177], the seeds can be cooked on their own or added to soups, stews etc[183]. The seed can be soaked for 12 hours in warm water and then allowed to sprout for about 5 days[244]. They have a crunchy, fresh flavour[244]. Lentils are more digestible than many legumes[K]. The dried seed can also be ground into a powder and used with cereal flours in making bread etc[183], this greatly enhances the value of the protein in the bread. The seed stores better if it is left in its husk[200]. Young seedpods - used fresh or cooked like green beans[61, 177, 183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [],
+    "pollinator_support": false,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:39.519233+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Lens+culinaris",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "crop_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:41:58.100086+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Lentil",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:41:58.858601+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Lens+culinaris",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:35:29.555865+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Lentil",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:35:33.243752+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=lentil",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:35:36.927941+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.891230+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

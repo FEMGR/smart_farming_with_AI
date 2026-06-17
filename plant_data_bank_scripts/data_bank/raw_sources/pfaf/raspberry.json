@@ -1,0 +1,250 @@
+{
+  "plant": {
+    "plant_atom": "raspberry",
+    "common_name": "Raspberry",
+    "scientific_name": "Rubus idaeus",
+    "genus": "Rubus",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Rubus+idaeus",
+      "query": "Rubus idaeus",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-17T04:42:35.878832+00:00",
+      "response_hash": "da0b8d4d95975a3db01356fada73e4b2d09b24747b1749f8664d80ad6412c446",
+      "parsed": {
+        "title": "Rubus idaeus Raspberry, American red raspberry, Grayleaf red raspberry PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Rubus idaeus - L.",
+          "common_name": "Raspberry, American red raspberry, Grayleaf red raspberry",
+          "family": "Rosaceae",
+          "usda_hardiness": "4-8",
+          "known_hazards": "None known",
+          "habitats": "Moist neglected land, hedgerows and woodland edges[7, 11, 244].",
+          "range": "Europe, including Britain, from Iceland south and east to Spain and temperate Asia.",
+          "summary": "Bloom Color: Green, Yellow. Main Bloom Time: Early spring, Late spring, Mid spring. Form: Spreading or horizontal, Upright or erect.",
+          "physical_characteristics": "Rubus idaeus is a deciduous Shrub growing to 2 m (6ft) by 1.5 m (5ft) at a medium rate. See above for USDA hardiness. It is hardy to UK zone 3 and is not frost tender. It is in leaf from April to November, in flower from June to August, and the seeds ripen from July to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees, flies. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil.",
+          "synonyms": null,
+          "plant_habitats": "Woodland Garden Sunny Edge; Dappled Shade; Shady Edge;",
+          "edible_uses": "Edible Parts: Fruit Root Shoots Stem Edible Uses: Coffee Tea Fruit - raw or cooked[2, 5, 7, 61]. Delicious when eaten out of hand, the fruit is also used in pies, preserves etc[183]. Root - cooked. The root, which should be neither too young nor too old, requires a lot of boiling[7]. Young shoots - peeled and eaten raw or cooked like asparagus[172]. They are harvested as they emerge through the ground in the spring and whilst they are still tender. A herb tea is made from the dried leaves[21, 46, 183]. Another report says that a type of tea made from raspberry and blackberry leaves is an excellent coffee substitute[7].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antiinflammatory Astringent Birthing aid Cardiac Decongestant Oxytoxic Antiemetic[13, 165]. The leaves and roots are anti-inflammatory, astringent, decongestant, ophthalmic, oxytocic and stimulant[4, 13, 165, 222, 254]. A tea made from them is used in the treatment of diarrhoea, as a tonic for the uterus to strengthen pregnant women, and as an aid in childbirth[4, 222, 257]. The tea has also been shown as effective in relieving painful menstrual cramps[222]. The active ingredients both stimulate and relax the uterus[222]. They can be used during the last three months of pregnancy and during childbirth, but should not be used earlier[238]. Externally, the leaves and roots are used as a gargle to treat tonsillitis and mouth inflammations, as a poultice and wash to treat sores, conjunctivitis, minor wounds, burns and varicose ulcers[238, 257]. The leaves are harvested in the summer and dried for later use[9]. The fruit is antiscorbutic and diuretic[7]. Fresh raspberry juice, mixed with a little honey, makes an excellent refrigerant beverage to be taken in the heat of a fever[21]. Made into a syrup, it is said to have a beneficial effect on the heart[21].",
+          "other_uses": "Cosmetic Dye Paper Landscape Uses:Erosion control, Foundation, Ground cover, Massing, Rock garden, Seashore. ts in this genus are notably susceptible to honey fungus[200]. Special Features: Not North American native, Attracts butterflies, Inconspicuous flowers or blooms. A purple to dull blue dye is obtained from the fruit[168]. A fibre obtained from the stems is used in making paper[189]. The stems are harvested in the summer after the fruit has been eaten, the leaves are removed and the stems are steamed until the fibres can be stripped. The fibres are cooked for 2 hours with lye and then hand beaten with mallets or ball milled for 3 hours. The paper is light brown in colour[189]. A decongestant face-mask made from the fruit is used cosmetically to soothe reddened skin[7].",
+          "special_uses": "Food Forest",
+          "cultivation": "Prefers a good deep well-drained loamy soil on the acid side[1, 34]. Dislikes very heavy soils[1, 200], light soils[4] and alkaline soils[200]. Prefers an open position but tolerates some shade[1]. Plants crop less well when grown in the shade of trees though they do well in the open on a north-facing slope[200]. Requires a position sheltered from strong winds[200]. Prefers a pH between 6 and 6.5[200]. Raspberries are frequently cultivated in temperate regions of the world, both in the garden and commercially, for their edible fruit. There are many named varieties able to supply fresh fruit from mid-summer to the autumn[1, 200]. High costs of picking the fruit means that little is actually sold fresh, most of the commercially cultivated crops either being used for preserves or grown for the 'Pick Your Own' trade. All the cultivars are self-fertile[200]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. It is best not to grow raspberries near blackberries or potatoes[18]. PlanFor polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Heat zone: 9-1.",
+          "propagation": "Seed - requires stratification and is best sown in early autumn in a cold frame. Stored seed requires one month stratification at about 3°c and is best sown as early as possible in the year. Prick out the seedlings when they are large enough to handle and grow on in a cold frame. Plant them out into their permanent positions in late spring of the following year. Cuttings of half-ripe wood, July/August in a frame[200]. Tip layering in July. Plant out in autumn. Division in early spring or just before leaf-fall in the autumn[200].",
+          "other_names": null,
+          "native_range": "TEMPERATE ASIA: Armenia, Azerbaijan, China, Ciscaucasia, Dagestan, Eastern Siberia, Georgia, Hebei Sheng, Heilongjiang Sheng (south), Jilin Sheng, Kazakhstan, Kyrgyzstan, Liaoning Sheng, Nei Mongol Zizhiqu, Russian Federation, Russian Federation-Ciscaucasia, Russian Federation-Eastern Siberia, Russian Federation-Western Siberia, Shanxi Sheng, Western Siberia, Xinjiang Uygur Zizhiqu,Turkey (north). NORTHERN AMERICA: Canada, Northwest Territories, Yukon, Québec, Nova Scotia, Ontario, Prince Edward Island, New Brunswick, Newfoundland and Labrador, Saskatchewan, Alberta, Manitoba, British Columbia, United States, Alaska, Connecticut, Indiana (north), Maine, Massachusetts, Michigan, New Hampshire, New Jersey, New York, Ohio, Pennsylvania, Rhode Island, Vermont, West Virginia, Illinois (north), Iowa, Minnesota, Missouri, Nebraska (Brown & Dawes Cos.), North Dakota, South Dakota, Wisconsin, Colorado, Idaho, Montana, Oregon (east), Washington, Wyoming, Maryland (west), North Carolina (west), Tennessee, Virginia (west), New Mexico, Arizona, Nevada (east), Utah, Mexico, Chihuahua, EUROPE: Denmark, Finland, United Kingdom (U.K.), Ireland, Norway, Sweden, Austria, Belgium, Switzerland, Czech Republic, Germany, Hungary, Netherlands, Poland, Slovakia, Russian Federation-European part, European part, Estonia, Lithuania, Latvia, Moldova, Ukraine (incl. Krym), Bulgaria, Bosnia and Herzegovina, Greece, Croatia, Italy, Montenegro, Romania, Serbia, Slovenia, Spain, France, AFRICA: Algeria.",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "American red raspberry",
+            "scientific_name": "Rubus idaeus",
+            "genus": "Rubus",
+            "family": "Rosaceae",
+            "synonyms": [],
+            "common_names": [
+              "American red raspberry",
+              "Grayleaf red raspberry",
+              "Raspberry"
+            ]
+          },
+          "pfaf_display_latin_name": "Rubus idaeus - L.",
+          "pfaf_common_name": "Raspberry, American red raspberry, Grayleaf red raspberry",
+          "pfaf_family": "Rosaceae",
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "fruit",
+            "root",
+            "stem"
+          ],
+          "use_categories": [
+            "beverage_plant",
+            "fruit_crop",
+            "medicinal_plant",
+            "root_tuber_crop"
+          ],
+          "life_cycle": "perennial",
+          "botanical_life_cycle": "perennial",
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": null,
+            "soil_notes": "Prefers a good deep well-drained loamy soil on the acid side[1, 34]. Dislikes very heavy soils[1, 200], light soils[4] and alkaline soils[200]. Prefers an open position but tolerates some shade[1]. Plants crop less well when grown in the shade of trees though they do well in the open on a north-facing slope[200]. Requires a position sheltered from strong winds[200]. Prefers a pH between 6 and 6.5[200]. Raspberries are frequently cultivated in temperate regions of the world, both in the garden and commercially, for their edible fruit. There are many named varieties able to supply fresh fruit from mid-summer to the autumn[1, 200]. High costs of picking the fruit means that little is actually sold fresh, most of the commercially cultivated crops either being used for preserves or grown for the 'Pick Your Own' trade. All the cultivars are self-fertile[200]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. It is best not to grow raspberries near blackberries or potatoes[18]. PlanFor polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Heat zone: 9-1.",
+            "light_notes": null,
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "cutting",
+            "division",
+            "layering",
+            "seed"
+          ],
+          "propagation_notes": "Seed - requires stratification and is best sown in early autumn in a cold frame. Stored seed requires one month stratification at about 3°c and is best sown as early as possible in the year. Prick out the seedlings when they are large enough to handle and grow on in a cold frame. Plant them out into their permanent positions in late spring of the following year. Cuttings of half-ripe wood, July/August in a frame[200]. Tip layering in July. Plant out in autumn. Division in early spring or just before leaf-fall in the autumn[200].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Bloom Color: Green, Yellow. Main Bloom Time: Early spring, Late spring, Mid spring. Form: Spreading or horizontal, Upright or erect.",
+          "edible_uses_notes": "Edible Parts: Fruit Root Shoots Stem Edible Uses: Coffee Tea Fruit - raw or cooked[2, 5, 7, 61]. Delicious when eaten out of hand, the fruit is also used in pies, preserves etc[183]. Root - cooked. The root, which should be neither too young nor too old, requires a lot of boiling[7]. Young shoots - peeled and eaten raw or cooked like asparagus[172]. They are harvested as they emerge through the ground in the spring and whilst they are still tender. A herb tea is made from the dried leaves[21, 46, 183]. Another report says that a type of tea made from raspberry and blackberry leaves is an excellent coffee substitute[7].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antiinflammatory Astringent Birthing aid Cardiac Decongestant Oxytoxic Antiemetic[13, 165]. The leaves and roots are anti-inflammatory, astringent, decongestant, ophthalmic, oxytocic and stimulant[4, 13, 165, 222, 254]. A tea made from them is used in the treatment of diarrhoea, as a tonic for the uterus to strengthen pregnant women, and as an aid in childbirth[4, 222, 257]. The tea has also been shown as effective in relieving painful menstrual cramps[222]. The active ingredients both stimulate and relax the uterus[222]. They can be used during the last three months of pregnancy and during childbirth, but should not be used earlier[238]. Externally, the leaves and roots are used as a gargle to treat tonsillitis and mouth inflammations, as a poultice and wash to treat sores, conjunctivitis, minor wounds, burns and varicose ulcers[238, 257]. The leaves are harvested in the summer and dried for later use[9]. The fruit is antiscorbutic and diuretic[7]. Fresh raspberry juice, mixed with a little honey, makes an excellent refrigerant beverage to be taken in the heat of a fever[21]. Made into a syrup, it is said to have a beneficial effect on the heart[21].",
+          "other_uses_notes": "Cosmetic Dye Paper Landscape Uses:Erosion control, Foundation, Ground cover, Massing, Rock garden, Seashore. ts in this genus are notably susceptible to honey fungus[200]. Special Features: Not North American native, Attracts butterflies, Inconspicuous flowers or blooms. A purple to dull blue dye is obtained from the fruit[168]. A fibre obtained from the stems is used in making paper[189]. The stems are harvested in the summer after the fruit has been eaten, the leaves are removed and the stems are steamed until the fibres can be stripped. The fibres are cooked for 2 hours with lye and then hand beaten with mallets or ball milled for 3 hours. The paper is light brown in colour[189]. A decongestant face-mask made from the fruit is used cosmetically to soothe reddened skin[7].",
+          "cultivation_notes": "Prefers a good deep well-drained loamy soil on the acid side[1, 34]. Dislikes very heavy soils[1, 200], light soils[4] and alkaline soils[200]. Prefers an open position but tolerates some shade[1]. Plants crop less well when grown in the shade of trees though they do well in the open on a north-facing slope[200]. Requires a position sheltered from strong winds[200]. Prefers a pH between 6 and 6.5[200]. Raspberries are frequently cultivated in temperate regions of the world, both in the garden and commercially, for their edible fruit. There are many named varieties able to supply fresh fruit from mid-summer to the autumn[1, 200]. High costs of picking the fruit means that little is actually sold fresh, most of the commercially cultivated crops either being used for preserves or grown for the 'Pick Your Own' trade. All the cultivars are self-fertile[200]. This species has biennial stems, it produces a number of new stems each year from the perennial rootstock, these stems fruit in their second year and then die[200]. It is best not to grow raspberries near blackberries or potatoes[18]. PlanFor polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a running thicket former forming a colony from shoots away from the crown spreading indefinitely [1-2]. The root pattern is suckering with new plants from underground runners away from the plant [1-2]. Heat zone: 9-1.",
+          "known_hazards": "None known",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "bees",
+                "examples": [
+                  "bees"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.65,
+                "notes": "PFAF states flowers are pollinated by bees."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Rubus idaeus Raspberry, American red raspberry, Grayleaf red raspberry PFAF Plant Database Follow Us: Rubus idaeus - L. Common Name Raspberry, American red raspberry, Grayleaf red raspberry Family Rosaceae USDA hardiness 4-8 Known Hazards None known Habitats Moist neglected land, hedgerows and woodland edges[7, 11, 244]. Range Europe, including Britain, from Iceland south and east to Spain and temperate Asia. Edibility Rating (5 of 5) Other Uses (3 of 5) Weed Potential No Medicinal Rating (3 of 5) Care (info) Translate this page: Summary Bloom Color: Green, Yellow. Main Bloom Time: Early spring, Late spring, Mid spring. Form: Spreading or horizontal, Upright or erect. Physical Characteristics Rubus idaeus is a deciduous Shrub growing to 2 m (6ft) by 1.5 m (5ft) at a medium rate. See above for USDA hardiness. It is hardy to UK zone 3 and is not frost tender. It is in leaf from April to November, in flower from June to August, and the seeds ripen from July to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees, flies. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in semi-shade (light woodland) or no shade. It prefers moist soil. UK Hardiness Map US Hardiness Map Synonyms Plant Habitats Woodland Garden Sunny Edge; Dappled Shade; Shady Edge; Edible Uses Edible Parts: Fruit Root Shoots Stem Edible Uses: Coffee Tea Fruit - raw or cooked[2, 5, 7, 61]. Delicious when eaten out of hand, the fruit is also used in pies, preserves etc[183]. Root - cooked. The root, which should be neither too young nor too old, requires a lot of boiling[7]. Young shoots - peeled and eaten raw or cooked like asparagus[172]. They are harvested as they emerge through the ground in the spring and whilst they are still tender. A herb tea is made from the dried leaves[21, 46, 183]. Another report says that a type of tea made from raspberry and blackberry leaves is an excellent coffee substitute[7]. References More on Edible Uses Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antiinflammatory Astringent Birthing aid Cardiac Decongestant Oxytoxic Antiemetic[13, 165]. The leaves and roots are anti-inflammatory, astringent, decongestant, ophthalmic, oxytocic and stimulant[4, 13, 165, 222, 254]. A tea made from them is used in the treatment of diarrhoea, as a tonic for the uterus to strengthen pregnant women, and as an aid in childbirth[4, 222, 257]. The tea has also been shown as effective in relieving painful menstrual cramps[222]. The active ingredients both stimulate and relax the uterus[222]. They can be used during the last three months of pregnancy and during childbirth, but should not be used earlier[238]. Externally, the leaves and ro"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tRubus idaeus Raspberry, American red raspberry, Grayleaf red raspberry PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Rubus idaeus is a deciduous Shrub growing to 2 m (6ft) by 1.5 m (5ft) at a medium rate.  See above for USDA hardiness. It is hardy to UK zone 3 and is not frost tender. It is in leaf from April to November, in flower from June to August, and the seeds ripen from July to September. The species is hermaphrodite (has both male and female organs) and is pollinated by Bees, flies. The plant is self-fertile.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers  well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It can grow in  semi-shade (light woodland) or no shade. It prefers  moist soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Rubus+idaeus\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BY8FUnVidXMgaWRhZXVzIGlzIGEgZGVjaWR1b3VzIFNocnViIGdyb3dpbmcgdG8gMiBtICg2ZnQpIGJ5IDEuNSBtICg1ZnQpIGF0IGEgbWVkaXVtIHJhdGUuICBTZWUgYWJvdmUgZm9yIFVTREEgaGFyZGluZXNzLiBJdCBpcyBoYXJkeSB0byBVSyB6b25lIDMgYW5kIGlzIG5vdCBmcm9zdCB0ZW5kZXIuIEl0IGlzIGluIGxlYWYgZnJvbSBBcHJpbCB0byBOb3ZlbWJlciwgaW4gZmxvd2VyIGZyb20gSnVuZSB0byBBdWd1c3QsIGFuZCB0aGUgc2VlZHMgcmlwZW4gZnJvbSBKdWx5IHRvIFNlcHRlbWJlci4gVGhlIHNwZWNpZXMgaXMgaGVybWFwaHJvZGl0ZSAoaGFzIGJvdGggbWFsZSBhbmQgZmVtYWxlIG9yZ2FucykgYW5kIGlzIHBvbGxpbmF0ZWQgYnkgQmVlcywgZmxpZXMuIFRoZSBwbGFudCBpcyBzZWxmLWZlcnRpbGUuICBTdWl0YWJsZSBmb3I6IGxpZ2h0IChzYW5keSksIG1lZGl1bSAobG9hbXkpIGFuZCBoZWF2eSAoY2xheSkgc29pbHMgYW5kIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsLiBTdWl0YWJsZSBwSDogbWlsZGx5IGFjaWQsIG5ldXRyYWwgYW5kIGJhc2ljIChtaWxkbHkgYWxrYWxpbmUpIHNvaWxzLiBJdCBjYW4gZ3JvdyBpbiAgc2VtaS1zaGFkZSAobGlnaHQgd29vZGxhbmQpIG9yIG5vIHNoYWRlLiBJdCBwcmVmZXJzICBtb2lzdCBzb2lsLmQCAw9kFgICAw9kFmICAQ8PFgIeBFRleHQFEVJ1YnVzIGlkYWV1cyAtIEwuZGQCAw8PFgIfAwU5UmFzcGJlcnJ5LCBBbWVyaWNhbiByZWQgcmFzcGJlcnJ5LCBHcmF5bGVhZiByZWQgcmFzcGJlcnJ5ZGQCBQ8PFgIfAwUIUm9zYWNlYWVkZAIHDw8WAh8DBQM0LThkZAILDw8WAh8DBQpOb25lIGtub3duZGQCDQ8PFgIfAwU/TW9pc3QgbmVnbGVjdGVkIGxhbmQsIGhlZGdlcm93cyBhbmQgd29vZGxhbmQgZWRnZXNbNywgMTEsIDI0NF0uZGQCDw8PFgIfAwVTRXVyb3BlLCBpbmNsdWRpbmcgQnJpdGFpbiwgZnJvbSBJY2VsYW5kIHNvdXRoIGFuZCBlYXN0IHRvIFNwYWluIGFuZCB0ZW1wZXJhdGUgQXNpYS5kZAIRDw8WAh4ISW1hZ2VVcmwFK2ltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFYxYl8xMC5naWZkZAITDw8WAh8EBStpbWFn"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Raspberry",
+      "query": "Rubus idaeus",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-17T04:42:36.539913+00:00",
+      "response_hash": "7b5372411ab3761f46aa44fd8888abe5e0d7ca7fa63fdc35d8afc184ecace089",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "Raspberry",
+            "scientific_name": "Rubus idaeus",
+            "genus": "Rubus",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=Raspberry\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for"
+    }
+  ]
+}

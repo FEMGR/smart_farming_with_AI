@@ -101,3 +101,13 @@ alias('bramble', blackberries).
 alias('ceylon cinnamon', cinnamon).
 alias('peppercorn', black_pepper).
 alias('english yew', yew).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: alias_fact
+% Review before editing manually.
+% =========================================================
+
+alias('gotu kola', gotu_kola).
+alias('spadeleaf', gotu_kola).
+alias('hydrocotyle asiatica', gotu_kola).

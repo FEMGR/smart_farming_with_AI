@@ -1,0 +1,78 @@
+{
+  "plant": {
+    "plant_atom": "tomato",
+    "common_name": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Solanum lycopersicum",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:42:56.715852+00:00",
+      "response_hash": "a58ac392ec9bae09a1ff1bd412cc98523c30f62def1b0fd03a80746157d67d4c",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2930137,
+          "scientificName": "Solanum lycopersicum L.",
+          "canonicalName": "Solanum lycopersicum",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=3",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 7815295,
+              "scientificName": "Solanum lycopersicum Blanco, 1837",
+              "canonicalName": "Solanum lycopersicum",
+              "rank": "SPECIES",
+              "status": "DOUBTFUL",
+              "confidence": 97,
+              "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=-5; score=115",
+              "matchType": "EXACT",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Solanales",
+              "family": "Solanaceae",
+              "genus": "Solanum",
+              "species": "Solanum lycopersicum",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 1176,
+              "familyKey": 7717,
+              "genusKey": 2928997,
+              "speciesKey": 7815295,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Solanales",
+          "family": "Solanaceae",
+          "genus": "Solanum",
+          "species": "Solanum lycopersicum",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 1176,
+          "familyKey": 7717,
+          "genusKey": 2928997,
+          "speciesKey": 2930137,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

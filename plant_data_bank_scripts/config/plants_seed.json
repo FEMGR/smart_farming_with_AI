@@ -1,0 +1,560 @@
+[
+  {
+    "plant_atom": "tomato",
+    "common_name": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "eggplant",
+    "common_name": "Eggplant",
+    "scientific_name": "Solanum melongena",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "potato",
+    "common_name": "Potato",
+    "scientific_name": "Solanum tuberosum",
+    "genus": "Solanum",
+    "family": "Solanaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "sweet_potato",
+    "common_name": "Sweet Potato",
+    "scientific_name": "Ipomoea batatas",
+    "genus": "Ipomoea",
+    "family": "Convolvulaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "carrot",
+    "common_name": "Carrot",
+    "scientific_name": "Daucus carota",
+    "genus": "Daucus",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "celery",
+    "common_name": "Celery",
+    "scientific_name": "Apium graveolens",
+    "genus": "Apium",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "parsley",
+    "common_name": "Parsley",
+    "scientific_name": "Petroselinum crispum",
+    "genus": "Petroselinum",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "coriander",
+    "common_name": "Coriander",
+    "scientific_name": "Coriandrum sativum",
+    "genus": "Coriandrum",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "fennel",
+    "common_name": "Fennel",
+    "scientific_name": "Foeniculum vulgare",
+    "genus": "Foeniculum",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "dill",
+    "common_name": "Dill",
+    "scientific_name": "Anethum graveolens",
+    "genus": "Anethum",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+
+  {
+    "plant_atom": "lettuce",
+    "common_name": "Lettuce",
+    "scientific_name": "Lactuca sativa",
+    "genus": "Lactuca",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "chicory",
+    "common_name": "Chicory",
+    "scientific_name": "Cichorium intybus",
+    "genus": "Cichorium",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "artichoke",
+    "common_name": "Globe Artichoke",
+    "scientific_name": "Cynara cardunculus",
+    "genus": "Cynara",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "dandelion",
+    "common_name": "Dandelion",
+    "scientific_name": "Taraxacum officinale",
+    "genus": "Taraxacum",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "sunflower",
+    "common_name": "Sunflower",
+    "scientific_name": "Helianthus annuus",
+    "genus": "Helianthus",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+
+  {
+    "plant_atom": "cabbage",
+    "common_name": "Cabbage",
+    "scientific_name": "Brassica oleracea",
+    "genus": "Brassica",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "broccoli",
+    "common_name": "Broccoli",
+    "scientific_name": "Brassica oleracea var. italica",
+    "genus": "Brassica",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "cauliflower",
+    "common_name": "Cauliflower",
+    "scientific_name": "Brassica oleracea var. botrytis",
+    "genus": "Brassica",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "kale",
+    "common_name": "Kale",
+    "scientific_name": "Brassica oleracea var. acephala",
+    "genus": "Brassica",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "bok_choy",
+    "common_name": "Bok Choy",
+    "scientific_name": "Brassica rapa subsp. chinensis",
+    "genus": "Brassica",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "turnip",
+    "common_name": "Turnip",
+    "scientific_name": "Brassica rapa subsp. rapa",
+    "genus": "Brassica",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "radish",
+    "common_name": "Radish",
+    "scientific_name": "Raphanus sativus",
+    "genus": "Raphanus",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "arugula",
+    "common_name": "Arugula",
+    "scientific_name": "Eruca vesicaria",
+    "genus": "Eruca",
+    "family": "Brassicaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+
+  {
+    "plant_atom": "cucumber",
+    "common_name": "Cucumber",
+    "scientific_name": "Cucumis sativus",
+    "genus": "Cucumis",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "melon",
+    "common_name": "Melon",
+    "scientific_name": "Cucumis melo",
+    "genus": "Cucumis",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "watermelon",
+    "common_name": "Watermelon",
+    "scientific_name": "Citrullus lanatus",
+    "genus": "Citrullus",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "pumpkin",
+    "common_name": "Pumpkin",
+    "scientific_name": "Cucurbita pepo",
+    "genus": "Cucurbita",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "zucchini",
+    "common_name": "Zucchini",
+    "scientific_name": "Cucurbita pepo",
+    "genus": "Cucurbita",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "bitter_melon",
+    "common_name": "Bitter Melon",
+    "scientific_name": "Momordica charantia",
+    "genus": "Momordica",
+    "family": "Cucurbitaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+
+  {
+    "plant_atom": "bean_common",
+    "common_name": "Common Bean",
+    "scientific_name": "Phaseolus vulgaris",
+    "genus": "Phaseolus",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "pea",
+    "common_name": "Pea",
+    "scientific_name": "Pisum sativum",
+    "genus": "Pisum",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "soybean",
+    "common_name": "Soybean",
+    "scientific_name": "Glycine max",
+    "genus": "Glycine",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "peanut",
+    "common_name": "Peanut",
+    "scientific_name": "Arachis hypogaea",
+    "genus": "Arachis",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "chickpea",
+    "common_name": "Chickpea",
+    "scientific_name": "Cicer arietinum",
+    "genus": "Cicer",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+  {
+    "plant_atom": "lentil",
+    "common_name": "Lentil",
+    "scientific_name": "Lens culinaris",
+    "genus": "Lens",
+    "family": "Fabaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+
+  {
+    "plant_atom": "onion",
+    "common_name": "Onion",
+    "scientific_name": "Allium cepa",
+    "genus": "Allium",
+    "family": "Amaryllidaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "garlic",
+    "common_name": "Garlic",
+    "scientific_name": "Allium sativum",
+    "genus": "Allium",
+    "family": "Amaryllidaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "chive",
+    "common_name": "Chive",
+    "scientific_name": "Allium schoenoprasum",
+    "genus": "Allium",
+    "family": "Amaryllidaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "leek",
+    "common_name": "Leek",
+    "scientific_name": "Allium ampeloprasum",
+    "genus": "Allium",
+    "family": "Amaryllidaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+
+  {
+    "plant_atom": "basil",
+    "common_name": "Basil",
+    "scientific_name": "Ocimum basilicum",
+    "genus": "Ocimum",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "peppermint",
+    "common_name": "Peppermint",
+    "scientific_name": "Mentha x piperita",
+    "genus": "Mentha",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "spearmint",
+    "common_name": "Spearmint",
+    "scientific_name": "Mentha spicata",
+    "genus": "Mentha",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "sage",
+    "common_name": "Sage",
+    "scientific_name": "Salvia officinalis",
+    "genus": "Salvia",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "thyme",
+    "common_name": "Thyme",
+    "scientific_name": "Thymus vulgaris",
+    "genus": "Thymus",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "oregano",
+    "common_name": "Oregano",
+    "scientific_name": "Origanum vulgare",
+    "genus": "Origanum",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "rosemary",
+    "common_name": "Rosemary",
+    "scientific_name": "Salvia rosmarinus",
+    "genus": "Salvia",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "lavender",
+    "common_name": "Lavender",
+    "scientific_name": "Lavandula angustifolia",
+    "genus": "Lavandula",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["medicinal", "aromatic"]
+  },
+  {
+    "plant_atom": "lemon_balm",
+    "common_name": "Lemon Balm",
+    "scientific_name": "Melissa officinalis",
+    "genus": "Melissa",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+
+  {
+    "plant_atom": "ginger",
+    "common_name": "Ginger",
+    "scientific_name": "Zingiber officinale",
+    "genus": "Zingiber",
+    "family": "Zingiberaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "turmeric",
+    "common_name": "Turmeric",
+    "scientific_name": "Curcuma longa",
+    "genus": "Curcuma",
+    "family": "Zingiberaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "galangal",
+    "common_name": "Galangal",
+    "scientific_name": "Alpinia galanga",
+    "genus": "Alpinia",
+    "family": "Zingiberaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+
+  {
+    "plant_atom": "strawberry",
+    "common_name": "Strawberry",
+    "scientific_name": "Fragaria x ananassa",
+    "genus": "Fragaria",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "raspberry",
+    "common_name": "Raspberry",
+    "scientific_name": "Rubus idaeus",
+    "genus": "Rubus",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "blackberry",
+    "common_name": "Blackberry",
+    "scientific_name": "Rubus fruticosus",
+    "genus": "Rubus",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "apple",
+    "common_name": "Apple",
+    "scientific_name": "Malus domestica",
+    "genus": "Malus",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "pear",
+    "common_name": "Pear",
+    "scientific_name": "Pyrus communis",
+    "genus": "Pyrus",
+    "family": "Rosaceae",
+    "profile_type": "species",
+    "main_uses": ["edible"]
+  },
+
+  {
+    "plant_atom": "grape",
+    "common_name": "Grape",
+    "scientific_name": "Vitis vinifera",
+    "genus": "Vitis",
+    "family": "Vitaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "fig",
+    "common_name": "Fig",
+    "scientific_name": "Ficus carica",
+    "genus": "Ficus",
+    "family": "Moraceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "moringa",
+    "common_name": "Moringa",
+    "scientific_name": "Moringa oleifera",
+    "genus": "Moringa",
+    "family": "Moringaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  },
+  {
+    "plant_atom": "aloe_vera",
+    "common_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "genus": "Aloe",
+    "family": "Asphodelaceae",
+    "profile_type": "species",
+    "main_uses": ["medicinal"]
+  },
+  {
+    "plant_atom": "gotu_kola",
+    "common_name": "Gotu Kola",
+    "scientific_name": "Centella asiatica",
+    "genus": "Centella",
+    "family": "Apiaceae",
+    "profile_type": "species",
+    "main_uses": ["edible", "medicinal"]
+  }
+]

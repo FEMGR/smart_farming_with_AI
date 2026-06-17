@@ -1,0 +1,52 @@
+{
+  "plant": {
+    "plant_atom": "lettuce",
+    "common_name": "Lettuce",
+    "scientific_name": "Lactuca sativa",
+    "genus": "Lactuca",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Lactuca sativa",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:08.800237+00:00",
+      "response_hash": "4a2c0a54204711fe0ea504c8f9417071c0012ad80db4c62ae52d2d808b203a06",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 7403263,
+          "scientificName": "Lactuca sativa L.",
+          "canonicalName": "Lactuca sativa",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; singleMatch=5",
+          "matchType": "EXACT",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Asterales",
+          "family": "Asteraceae",
+          "genus": "Lactuca",
+          "species": "Lactuca sativa",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 414,
+          "familyKey": 3065,
+          "genusKey": 3140231,
+          "speciesKey": 7403263,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

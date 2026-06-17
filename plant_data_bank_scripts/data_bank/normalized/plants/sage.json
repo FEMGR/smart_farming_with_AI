@@ -1,0 +1,290 @@
+{
+  "plant_atom": "sage",
+  "identity": {
+    "common_name": "Sage",
+    "scientific_name": "Salvia officinalis",
+    "genus": "Salvia",
+    "family": "Lamiaceae",
+    "synonyms": [],
+    "common_names": [
+      "Adacayi",
+      "Broadleaf sage",
+      "Ching-chieh",
+      "Common sage",
+      "Echter salbei",
+      "Garden Sage",
+      "Kitchen sage",
+      "Mariyamiya",
+      "Sa er wei ya",
+      "Sage",
+      "Salbei",
+      "Salie",
+      "Salva",
+      "Salvia",
+      "Sauge",
+      "Sauge commune",
+      "Sauge officinale",
+      "Shalfey",
+      "Small Leaf Sage",
+      "True sage"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "flower",
+      "leaf"
+    ],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "fast",
+    "climate_notes": null,
+    "soil_notes": "Landscape Uses:Border, Container, Massing, Rock garden, Seashore, Specimen. Requires a very well-drained light sandy soil in a sunny position[200]. Prefers a calcareous soil[4, 14]. Dislikes heavy or acid soils[1, 16]. Succeeds in dry soils, tolerating drought once it is established[190]. Sage can be killed by excessive winter wet[200] and winter-planted bushes often die[208]. A very ornamental plant[1], sage is commonly grown in the herb garden for culinary and medicinal purposes. There are some named varieties[182, 183]. 'Albiflora' is said to be the best culinary sage[11]. 'Purpurea' has tougher leaves than the type and makes a better tooth cleaner[K]. Plants need to be trimmed in late spring in order to keep them compact[200]. They tend to degenerate after a few years and are best replaced after about 4 years[4]. The leaves emit a unique pungent aroma when pressed[245]. A good companion for many plants, including rosemary, cabbages and carrots[14, 18, 20, 54], the growing plant is said to repel insects. It is inhibited by wormwood growing nearby and dislikes growing with basil, rue or the cucumber and squash family[14, 18, 20, 54]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for cut flowers. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is multistemmed with multiple stems from the crown [1-2]. An evergreen. The root pattern is a heart root, dividing from the crown into several primary roots going down and out [1-2]. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "layering",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow March/April in a greenhouse[1]. Germination usually takes place within 2 weeks. Prick out the seedlings into individual pots when they are large enough to handle and plant them out in early summer. In areas where the plant is towards the limits of its hardiness, it is best to grow the plants on in a greenhouse for their first winter and plant them out in late spring of the following year. Cuttings of heeled shoots, taken off the stem in May and planted out directly into the garden grow away well[182]. Cuttings of half-ripe wood, 5 - 10cm with a heel, June to August in a frame[78]. Easy. Cuttings of mature wood, 7 - 10cm with a heel, November/December in a cold frame[78]. Layering in spring or autumn. Mound soil up into the plants, the branches will root into this soil and they can be removed and planted out 6 - 12 months later.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Landscape Uses:Border, Container, Massing, Rock garden, Seashore, Specimen. Requires a very well-drained light sandy soil in a sunny position[200]. Prefers a calcareous soil[4, 14]. Dislikes heavy or acid soils[1, 16]. Succeeds in dry soils, tolerating drought once it is established[190]. Sage can be killed by excessive winter wet[200] and winter-planted bushes often die[208]. A very ornamental plant[1], sage is commonly grown in the herb garden for culinary and medicinal purposes. There are some named varieties[182, 183]. 'Albiflora' is said to be the best culinary sage[11]. 'Purpurea' has tougher leaves than the type and makes a better tooth cleaner[K]. Plants need to be trimmed in late spring in order to keep them compact[200]. They tend to degenerate after a few years and are best replaced after about 4 years[4]. The leaves emit a unique pungent aroma when pressed[245]. A good companion for many plants, including rosemary, cabbages and carrots[14, 18, 20, 54], the growing plant is said to repel insects. It is inhibited by wormwood growing nearby and dislikes growing with basil, rue or the cucumber and squash family[14, 18, 20, 54]. Special Features:Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for cut flowers. The plant is heat tolerant in zones 8 through 5. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is multistemmed with multiple stems from the crown [1-2]. An evergreen. The root pattern is a heart root, dividing from the crown into several primary roots going down and out [1-2]. Sage leaves can be harvested throughout the growing season, with the best flavor typically from spring to early summer, just before flowering. Sage usually flowers in late spring to early summer, generally between May and June (Northern Hemisphere), depending on the specific species and growing conditions. Sage is a moderately fast-growing herb, often reaching maturity in about 1 to 2 years under optimal conditions.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antidiarrhoeal Antihydrotic Antiseptic Antispasmodic Appetizer Aromatherapy Astringent Carminative Cholagogue Galactofuge Stimulant Tonic Vasodilator Sage has a very long history of effective medicinal use and is an important domestic herbal remedy for disorders of the digestive system. Its antiseptic qualities make it an effective gargle for the mouth where it can heal sore throats, ulcers etc[K]. The leaves applied to an aching tooth will often relieve the pain[4, K]. The whole herb is antihydrotic, antiseptic, antispasmodic, astringent, carminative, cholagogue, galactofuge, stimulant, tonic and vasodilator[4, 9, 13, 21, 165, 238]. Sage is also used internally in the treatment of excessive lactation, night sweats, excessive salivation (as in Parkinson's disease), profuse perspiration (as in TB), anxiety, depression, female sterility and menopausal problems[238]. Many herbalists believe that the purple-leafed forms of this species are more potent medicinally[238]. This remedy should not be prescribed to pregnant women or to people who have epileptic fits[238]. The plant is toxic in excess or when taken for extended periods[238] - though the toxic dose is very large. Externally, it is used to treat insect bites, skin, throat, mouth and gum infections and vaginal discharge[238]. The leaves are best harvested before the plant comes into flower and are dried for later use[4]. The essential oil from the plant is used in small doses to remove heavy collections of mucous from the respiratory organs and mixed in embrocations for treating rheumatism[4]. In larger doses, however, it can cause epileptic fits, giddiness etc[4]. The essential oil is used in aromatherapy. Its keyword is 'Tonic'[210]. The German Commission E Monographs, a therapeutic guide to herbal medicine, approve Salvia officinalis Sage for loss of appetite, inflammation of the mouth, excessive perspiration (see [302] for critics of commission E).",
+    "cautions": "The plant can be toxic when used in excess or when taken for extended periods[238] symptoms include: restlessness, vomiting, vertigo, tremors, seizures. Contraindicated during pregnancy. Avoid if predisposed to convulsions [301].",
+    "other_uses_notes": "Compost Essential Repellent Strewing Teeth Agroforestry uses: Sage can be used as a companion plant to attract pollinators and beneficial insects. Its aromatic leaves may also deter some pests, making it useful in pest management strategies. The leaves make excellent tooth cleaners[14, 21], simply rub the top side of the leaf over the teeth and gums[K]. The purple-leafed form of sage has tougher leaves and is better for cleaning the teeth[K]. The leaves have antiseptic properties and can heal diseased gums[201]. An essential oil from the leaves is used in perfumery, hair shampoos (it is good for dark hair) and as a food flavouring[14, 57, 61]. It is a very effective 'fixer' in perfumes[7], and is also used to flavour toothpastes and is added to bio-activating cosmetics[238]. The plant (the flowers?) is an alternative ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. The growing or dried plant is said to repel insects, it is especially useful when grown amongst cabbages and carrots[14, 18, 20, 201]. It was formerly used as a strewing herb[201] and has been burnt in rooms to fumigate them[244]. A good dense ground cover plant for sunny positions, though it needs weeding for the first year or two[197]. They are best spaced about 60cm apart each way[208]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Salvia species are excellent for pollinators. The flowers are rich in nectar, attracting bees, butterflies, and even hummingbirds. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Although the seeds and fruits are not significant food sources, the dense foliage can provide some shelter for wildlife, and it can serve as ground cover for small animals or invertebrates. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Sage plants provide ground cover and their woody stems and dense leaf litter can offer overwintering sites and protection for beneficial insects. 4. Pest Confuser (Smell): Yes – Sage has a strong, aromatic smell that can repel pests like insects and herbivores. It is often planted as a companion plant to deter harmful pests.",
+    "edible_uses_notes": "Edible Parts: Flowers Leaves Edible Uses: Condiment Tea Leaves and flowers - raw or cooked[2, 14, 27, 46, 52]. A very common herb, the strongly aromatic leaves are used as a flavouring in cooked foods[183]. They are an aid to digestion and so are often used with heavy, oily foods[244]. They impart a sausage-like flavour to savoury dishes. The young leaves and flowers can be eaten raw, boiled, pickled or used in sandwiches[183]. The flowers can also be sprinkled on salads to add colour and fragrance[183]. A herb tea is made from the fresh or dried leaves[183], it is said to improve the digestion[13, 21]. An essential oil obtained from the plant is used commercially to flavour ice cream, sweets, baked goods etc[61, 183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "many_plants",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      },
+      {
+        "insect_group": "pollinators",
+        "examples": [
+          "bees",
+          "butterflies"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "PFAF says this plant attracts pollinators."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting.",
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:48.938879+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Salvia+officinalis",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:15.267977+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Sage",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:16.266910+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Salvia+officinalis",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:36:58.838698+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Sage",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:02.532740+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=sage",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:06.212926+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.916592+00:00"
+  },
+  "missing_fields": [
+    "classification.life_cycle",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

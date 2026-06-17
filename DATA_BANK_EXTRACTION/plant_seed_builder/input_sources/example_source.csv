@@ -1,0 +1,5 @@
+scientific_name,common_name,family,edible_parts,uses,category,life_cycle,source_url
+Salvia officinalis,Sage,Lamiaceae,leaf,"Culinary herb; leaves used for flavouring",culinary_herb,perennial,https://example.com/sage
+Mentha spp.,Mint,Lamiaceae,leaf,"Culinary herb; leaves used fresh or dried",culinary_herb,perennial,https://example.com/mint
+Ocimum basilicum,Basil,Lamiaceae,leaf,"Culinary herb; aromatic leaves",culinary_herb,annual,https://example.com/basil
+Solanum lycopersicum,Tomato,Solanaceae,fruit,"Fruit crop; vegetable use",fruit_crop,annual,https://example.com/tomato

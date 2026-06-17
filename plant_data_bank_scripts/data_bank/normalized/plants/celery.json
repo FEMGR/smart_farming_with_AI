@@ -1,0 +1,258 @@
+{
+  "plant_atom": "celery",
+  "identity": {
+    "common_name": "Celery",
+    "scientific_name": "Apium graveolens",
+    "genus": "Apium",
+    "family": "Apiaceae",
+    "synonyms": [
+      "Apium celleri",
+      "Apium decumbens",
+      "Carum graveolens",
+      "Celeria graveolens"
+    ],
+    "common_names": [
+      "Ajwain-ka-patta (Indian)",
+      "Wild Celery. Ajmod"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant",
+      "root_tuber_crop"
+    ],
+    "edible_parts": [
+      "leaf",
+      "root",
+      "seed"
+    ],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Prefers a rich moist soil in sun or semi-shade[238], but with some shade in the summer[52]. It is tolerant of saline soils[238]. The plants are fairly hardy, though they can be damaged by hard frosts[238]. Wild celery is the parent of the cultivated celery (A. graveolens dulce) as well as celery leaf (A. graveolens secalinum) and celeriac (A. graveolens rapaceum). This entry only deals with the wild celery, the other plants are dealt with separately. A very aromatic plant, the aroma being most noticeable when the foliage is bruised. The growing plant is a good companion for leeks, tomatoes, French beans and brassicas[18].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring or autumn in situ. If seed is in short supply it can be sown in a cold frame in spring. The seed can harbour certain diseases of celery, it is usually treated by seed companies before being sold but if you save your own seed you should make sure that only seed from healthy plants is used[1].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Prefers a rich moist soil in sun or semi-shade[238], but with some shade in the summer[52]. It is tolerant of saline soils[238]. The plants are fairly hardy, though they can be damaged by hard frosts[238]. Wild celery is the parent of the cultivated celery (A. graveolens dulce) as well as celery leaf (A. graveolens secalinum) and celeriac (A. graveolens rapaceum). This entry only deals with the wild celery, the other plants are dealt with separately. A very aromatic plant, the aroma being most noticeable when the foliage is bruised. The growing plant is a good companion for leeks, tomatoes, French beans and brassicas[18].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antianxiety Antirheumatic Aperient Appetizer Carminative Diuretic Emmenagogue Galactogogue Nervine Stimulant Tonic Wild celery has a long history of medicinal and food use. it is an aromatic bitter tonic herb that reduces blood pressure, relieves indigestion, stimulates the uterus and is anti-inflammatory[238]. The ripe seeds, herb and root are aperient, carminative, diuretic, emmenagogue, galactogogue, nervine, stimulant and tonic[4, 7, 21, 165]. Wild celery is said to be useful in cases of hysteria, promoting restfulness and sleep and diffusing through the system a mild sustaining influence[4]. The herb should not be prescribed for pregnant women[238]. Seeds purchased for cultivation purposes are often dressed with a fungicide, they should not be used for medicinal purposes[238]. The root is harvested in the autumn and can be used fresh or dried[238]. The whole plant is harvested when fruiting and is usually liquidized to extract the juice[238]. The seeds are harvested as they ripen and are dried for later use[238]. An essential oil obtained from the plant has a calming effect on the central nervous system. Some of its constituents have antispasmodic, sedative and anticonvulsant actions. It has been shown to be of value in treating high blood pressure[254]. A homeopathic remedy is made from the herb[9]. It is used in treating rheumatism and kidney complaints[9].",
+    "cautions": "If the plant is infected with the fungus Sclerotinia sclerotiorum, skin contact with the sap can cause dermatitis in sensitive people[65]. This is more likely to happen to Caucasians[218]. Allergic responses include anaphylaxis in sensitive individuals. Cross-allergenicity between celery, cucumber, carrot, watermelon and possibly apples. Avoid during pregnancy as emmenagogue, abortifacient and uterine stimulant activity reported [301].",
+    "other_uses_notes": "Essential The growing plant is an insect repellent, it repels the cabbage white butterfly so is a good companion for brassicas[20].",
+    "edible_uses_notes": "Edible Parts: Leaves Root Seed Edible Uses: Condiment Leaves - raw or cooked[52, 105]. Mainly used as a flavouring in soups etc[5, 7, 9, 46]. They can be eaten raw but have a very strong flavour[52]. They are toxic if consumed in large amounts[238]. Seed - a flavouring. Used in small quantities to flavour soups and stews[238]. An essential oil from the seed is also used as a flavouring[46, 105]. Root - cooked[74]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "brassica",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      },
+      {
+        "plant": "leeks",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [],
+    "pollinator_support": false,
+    "pest_confuser": false,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.synonyms": "Plants For A Future",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:02.861423+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Apium+graveolens",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:40:58.822454+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Celery",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:59.478475+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Apium+graveolens",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:21.129758+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Celery",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:25.084264+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=celery",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:28.705166+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.796275+00:00"
+  },
+  "missing_fields": [
+    "classification.life_cycle",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

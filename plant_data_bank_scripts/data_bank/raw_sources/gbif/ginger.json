@@ -1,0 +1,53 @@
+{
+  "plant": {
+    "plant_atom": "ginger",
+    "common_name": "Ginger",
+    "scientific_name": "Zingiber officinale",
+    "genus": "Zingiber",
+    "family": "Zingiberaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Zingiber officinale",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:56.311979+00:00",
+      "response_hash": "bb1a0716d5056e05fdd1c9e50f1ba3c77820969f1ff7dd385293d88d3500ae07",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 2757280,
+          "scientificName": "Zingiber officinale Roscoe",
+          "canonicalName": "Zingiber officinale",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; singleMatch=5",
+          "matchType": "EXACT",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Zingiberales",
+          "family": "Zingiberaceae",
+          "genus": "Zingiber",
+          "species": "Zingiber officinale",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 196,
+          "orderKey": 627,
+          "familyKey": 4687,
+          "genusKey": 2756693,
+          "speciesKey": 2757280,
+          "class": "Liliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

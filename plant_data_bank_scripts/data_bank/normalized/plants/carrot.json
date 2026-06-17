@@ -1,0 +1,241 @@
+{
+  "plant_atom": "carrot",
+  "identity": {
+    "common_name": "Carrot",
+    "scientific_name": "Daucus carota",
+    "genus": "Daucus",
+    "family": "Apiaceae",
+    "synonyms": [],
+    "common_names": [
+      "bird's nest; bishop's lace; Queen Anne's lace; wild carrot. Spanish: zanahoria. French: carotte. Arabic: gazar. Portuguese: cenoura-brava. Germany: Karotten; Mohren. Italy: carota selvatica. Japan: noraninjin. Netherlands: wilde peen. Sweden: vild morot. Also Divlja mrkva",
+      "Carrot",
+      "Frustinaca agreste",
+      "Mrkvica.",
+      "Queen Anne's Lace",
+      "Queen anne's lace",
+      "Wild Carrot"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "culinary_herb",
+      "medicinal_plant",
+      "root_tuber_crop"
+    ],
+    "edible_parts": [
+      "flower",
+      "root"
+    ],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Wild carrot is one of the best wild roots in temperate disturbed habitats when young, correctly identified, and gathered at the right stage. It combines high food quality with serious identification caution. In the Southwest US it is usually too uncommon to be a major resource, but as a species profile it remains essential because of its agricultural importance and because it teaches the crucial biennial root-harvest pattern shared by many edible plants. Growing Conditions: Wild carrot grows best in full sun and disturbed, well-drained ground, especially fields, roadsides, fence lines, and open meadows. Go Botany lists anthropogenic habitats, meadows, and fields among its common settings, which fits your description well. It tolerates poor soils but usually develops better roots in lighter, looser ground. Habitat & Range: It is now widespread across the United States, including all 50 states, it is much more common in the East than in the Southwest. Size & Landscape Performance: As a landscape plant, wild carrot is more often a self-sown meadow or roadside biennial than a deliberate ornamental, though its lace-like umbels can be visually attractive. In naturalistic plantings, it performs as a tall, airy second-year flower over a low, ferny rosette in the first year. Its main drawback in designed landscapes is its weediness and its resemblance to less welcome apiaceous volunteers. Cultivation (Horticulture): It is easy to grow from seed in open ground, but it is rarely worth cultivating for food when domestic carrots are available. It is more relevant in pollinator gardens, wildflower meadows, and educational plantings focused on crop ancestry. It should be handled with the same caution as any other self-seeding member of Apiaceae, where confusion with toxic relatives is possible. Pests & Problems: The greatest “problem” is not a pest but the rapid decline in root quality once flowering begins. In fields and disturbed places it can also behave as a persistent weed. Like other carrots, it may host insects and fungal issues, but for foragers the real challenge is finding clean, uncontaminated, correctly identified young plants. Its frequent occurrence in human-disturbed habitats, which reinforces the contamination concern. Identification & Habit: Wild carrot is a hirsute biennial with alternate, deeply pinnately dissected leaves and dense compound umbels of white flowers. The bracts and bractlets are usually well developed and pinnately divided into narrow segments. The fruits are strongly flattened and bristly, with barbed tips. Your source description is solid and matches the broader botanical treatment of the species. Pollinators: The broad, open umbels attract a wide range of small pollinators, especially flies, small native bees, beetles, and wasps. Like many open-umbel Apiaceae, it functions as a generalist insect resource rather than a specialist-pollinated plant. Wild carrot, now best referred to as Daucus carota, belongs to the parsley family (Apiaceae) and the genus Daucus. Common names include wild carrot and Queen Anne’s lace. It is a biennial herb introduced from Europe and Asia and is now widespread across North America. In practical garden terms it behaves well in roughly USDA Zones 3–9, depending on moisture and winter severity. First-year plants usually form low basal rosettes, while second-year flowering stems commonly reach about 30–120 cm tall, with a spread of roughly 20–45 cm for the leafy rosette and wider branching in flower. It is widespread in disturbed habitats, and the root is edible when young but quickly becomes woody with age. Prefers a sunny position and a well-drained neutral to alkaline soil[24, 238]. A good plant for the summer meadow[24], it is a food plant for caterpillars of the Swallow-tail Butterfly[200]. This species is the parent of the cultivated carrot[200]. It can act as an alternative host for pests and diseases of the cultivated carrots. The plant has become a pest weed in N. America, where it is spreading rapidly and crowding out native vegetation[274]. The whole plant, when bruised, gives off an aniseed-like scent[245]. Special Features: Edible, Not North American native, Naturalizing, Attracts butterflies, Suitable for cut flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is fleshy. Thick or swollen - fibrous or tap root [2-1].",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "seed"
+    ],
+    "propagation_notes": "Propagation is by seed. As a biennial, it germinates and forms a root-and-rosette stage in the first season, then flowers and seeds in the second. It self-sows readily in suitable disturbed habitats. Seed - sow August/September or April in situ. The seed germinates better if it is given a period of cold stratification.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Wild carrot is one of the best wild roots in temperate disturbed habitats when young, correctly identified, and gathered at the right stage. It combines high food quality with serious identification caution. In the Southwest US it is usually too uncommon to be a major resource, but as a species profile it remains essential because of its agricultural importance and because it teaches the crucial biennial root-harvest pattern shared by many edible plants. Growing Conditions: Wild carrot grows best in full sun and disturbed, well-drained ground, especially fields, roadsides, fence lines, and open meadows. Go Botany lists anthropogenic habitats, meadows, and fields among its common settings, which fits your description well. It tolerates poor soils but usually develops better roots in lighter, looser ground. Habitat & Range: It is now widespread across the United States, including all 50 states, it is much more common in the East than in the Southwest. Size & Landscape Performance: As a landscape plant, wild carrot is more often a self-sown meadow or roadside biennial than a deliberate ornamental, though its lace-like umbels can be visually attractive. In naturalistic plantings, it performs as a tall, airy second-year flower over a low, ferny rosette in the first year. Its main drawback in designed landscapes is its weediness and its resemblance to less welcome apiaceous volunteers. Cultivation (Horticulture): It is easy to grow from seed in open ground, but it is rarely worth cultivating for food when domestic carrots are available. It is more relevant in pollinator gardens, wildflower meadows, and educational plantings focused on crop ancestry. It should be handled with the same caution as any other self-seeding member of Apiaceae, where confusion with toxic relatives is possible. Pests & Problems: The greatest “problem” is not a pest but the rapid decline in root quality once flowering begins. In fields and disturbed places it can also behave as a persistent weed. Like other carrots, it may host insects and fungal issues, but for foragers the real challenge is finding clean, uncontaminated, correctly identified young plants. Its frequent occurrence in human-disturbed habitats, which reinforces the contamination concern. Identification & Habit: Wild carrot is a hirsute biennial with alternate, deeply pinnately dissected leaves and dense compound umbels of white flowers. The bracts and bractlets are usually well developed and pinnately divided into narrow segments. The fruits are strongly flattened and bristly, with barbed tips. Your source description is solid and matches the broader botanical treatment of the species. Pollinators: The broad, open umbels attract a wide range of small pollinators, especially flies, small native bees, beetles, and wasps. Like many open-umbel Apiaceae, it functions as a generalist insect resource rather than a specialist-pollinated plant. Wild carrot, now best referred to as Daucus carota, belongs to the parsley family (Apiaceae) and the genus Daucus. Common names include wild carrot and Queen Anne’s lace. It is a biennial herb introduced from Europe and Asia and is now widespread across North America. In practical garden terms it behaves well in roughly USDA Zones 3–9, depending on moisture and winter severity. First-year plants usually form low basal rosettes, while second-year flowering stems commonly reach about 30–120 cm tall, with a spread of roughly 20–45 cm for the leafy rosette and wider branching in flower. It is widespread in disturbed habitats, and the root is edible when young but quickly becomes woody with age. Prefers a sunny position and a well-drained neutral to alkaline soil[24, 238]. A good plant for the summer meadow[24], it is a food plant for caterpillars of the Swallow-tail Butterfly[200]. This species is the parent of the cultivated carrot[200]. It can act as an alternative host for pests and diseases of the cultivated carrots. The plant has become a pest weed in N. America, where it is spreading rapidly and crowding out native vegetation[274]. The whole plant, when bruised, gives off an aniseed-like scent[245]. Special Features: Edible, Not North American native, Naturalizing, Attracts butterflies, Suitable for cut flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is fleshy. Thick or swollen - fibrous or tap root [2-1].",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anthelmintic Carminative Contraceptive Deobstruent Diuretic Emmenagogue Galactogogue Ophthalmic Stimulant Urinary The wild carrot is an aromatic herb that acts as a diuretic, soothes the digestive tract and stimulates the uterus[238]. A wonderfully cleansing medicine, it supports the liver, stimulates the flow of urine and the removal of waste by the kidneys[254]. The whole plant is anthelmintic, carminative, deobstruent, diuretic, galactogogue, ophthalmic, stimulant[4, 7, 9, 13, 21, 165]. An infusion is used in the treatment of various complaints including digestive disorders, kidney and bladder diseases and in the treatment of dropsy[4, 238]. An infusion of the leaves has been used to counter cystitis and kidney stone formation, and to diminish stones that have already formed[254]. Carrot leaves contain significant amounts of porphyrins, which stimulate the pituitary gland and lead to the release of increased levels of sex hormones[254]. The plant is harvested in July and dried for later use. A warm water infusion of the flowers has been used in the treatment of diabetes[213]. The grated raw root, especially of the cultivated forms, is used as a remedy for threadworms[213, 222, 254]. The root is also used to encourage delayed menstruation[213]. The root of the wild plant can induce uterine contractions and so should not be used by pregnant women[213]. A tea made from the roots is diuretic and has been used in the treatment of urinary stones[222]. The seeds are diuretic[213, 218], carminative, emmenagogue and anthelmintic[4, 218]. An infusion is used in the treatment of oedema, flatulent indigestion and menstrual problems[238]. The seed is a traditional 'morning after' contraceptive and there is some evidence to uphold this belief. It requires further investigation[222]. Carrot seeds can be abortifacient and so should not be used by pregnant women[254].",
+    "cautions": "Carrots sometimes cause allergic reactions in some people[46]. Skin contact with the sap is said to cause photo-sensitivity and/or dermatitis in some people[218]. Daucus has been reported to contain acetone, asarone, choline, ethanol, formic acid, HCN, isobutyric acid, limonene, malic acid, maltose, oxalic acid, palmitic acid, pyrrolidine, and quinic acid. Reviewing research on myristicin, which occurs in nutmeg, mace, black pepper, carrot seed, celery seed, and parsley, Buchanan (J. Food Safety 1: 275, 1979) noted that the psychoactive and hallucinogenic properties of mace, nutmeg, and purified myristicin have been studied. It has been hypothesized that myristicin and elemicin can be readily modified in the body to amphetamines. Handling carrot foliage, especially wet foliage, can cause irritation and vesication. Sensitized photosensitive persons may get an exact reproduction of the leaf on the skin by placing the leaf on the skin for a while, followed by exposure to sunshine[269]. This is one of the most important caution plants in a foraging guide because the carrot family contains deadly species. Wild carrot must never be collected casually unless identification is certain. The strong carrot smell of crushed root and foliage is helpful but should not be treated as the only test. Poisonous look-alikes may grow nearby. In addition, once the plant sets mature bristly fruits, those fruits are more identification tools than food, and they should not be used casually because they are not the main edible target. Correct identification, first-year harvest timing, and habitat awareness are essential. Human-disturbed habitats as typical sites, which means roadside contamination can be another practical hazard.",
+    "other_uses_notes": "Cosmetic Essential Landscape Uses:Border, Seashore. An essential oil obtained from the seed has an orris-like scent[238]. It is used in perfumery and as a food flavouring[46, 238]. The oil has also been used cosmetically in anti-wrinkle creams[238]. It provides nectar and pollen to small insects, contributes fine-textured cover beneath desert shrubs, and likely feeds small seed-eating animals once fruits mature. Its role as an early seasonal annual makes it especially relevant in desert food webs that depend on winter and spring moisture pulses.",
+    "edible_uses_notes": "Edible Parts: Flowers Root Edible Uses: Coffee Condiment The edible parts are the root, leaves, and flowers, though the root is by far the most important food part. Roots are best gathered from first-year plants before flowering stems appear. Leaves and flowers are also edible, but in practical use they are secondary and usually treated as aromatic additions rather than staple foods. Your notes align well with the broader botanical understanding that the root is the main value and that timing is everything [2-3]. Edible Uses & Rating: Wild carrot is a high-quality wild root when gathered young and correctly identified. It is not merely “edible”; it is the wild source from which cultivated carrots were domesticated 2,000–3,000 years ago, with orange forms arising later in Europe. The main limitation is not flavor but opportunity: in the Southwest US, it is too uncommon to matter much, while in eastern and more mesic parts of North America, it can be a genuinely useful foraged root. The young root is edible, the key practical point being that older roots quickly become woody and inferior. Taste, Processing & Kitchen Notes.: Wild carrot roots are generally smaller, whiter, tougher, and more aromatic than cultivated carrots, but they still taste recognizably carrot-like. We stress that wild roots lack the orange beta-carotene richness of domestic forms yet still resemble cultivated carrots in smell and flavor. Young roots can be eaten fresh or cooked, while older roots become woody and are better avoided. The leaves and flowers, though edible, are best treated as aromatic greens or seasonings rather than major vegetables. In practical kitchen use, the best approach is to gather first-year roots in cool seasons, wash them well, trim them, and then either eat them raw when tender or simmer/roast them like small white carrots [2-3]. Seasonality (Phenology): Autumn through spring is the best root-gathering season because first-year roots are developed and second-year plants have not yet spent their reserves on flowering. Summer is a weaker season because young new roots have not filled out, while older plants are already depleting their resources. That biennial timing pattern is one of the most important practical facts for the successful use of the plant. Safety & Cautions (Food Use): This is one of the most important caution plants in a foraging guide because the carrot family contains deadly species. Wild carrot must never be collected casually unless identification is certain. The strong carrot smell of crushed root and foliage is helpful but should not be treated as the only test. Poisonous look-alikes may grow nearby. In addition, once the plant sets mature bristly fruits, those fruits are more identification tools than food, and they should not be used casually because they are not the main edible target. Correct identification, first-year harvest timing, and habitat awareness are essential. Human-disturbed habitats as typical sites, which means roadside contamination can be another practical hazard [2-3]. Harvest & Processing Workflow: Locate first-year rosettes in autumn, winter, or spring, ideally near second-year flowering plants that help confirm the colony’s identity. Dig carefully to preserve the taproot, wash thoroughly, and test tenderness before gathering more. Use roots immediately when fresh or refrigerate briefly. If roots are small but tender, cook them whole; if somewhat fibrous but still usable, slice and simmer. Leaves and flowers can be used in small amounts after identification is secure, but the root remains the primary objective. Cultivar/Selection Notes: Wild carrot is not generally grown as a food cultivar because cultivated carrots are vastly more productive, but it is important as the ancestral gene pool behind modern carrot breeding. Historically, white, purple, and yellow carrots preceded the later orange forms. For modern users, “selection” mostly means finding young, thick-rooted first-year plants rather than choosing named varieties. Look-Alikes & Confusion Risks: The risk of confusion is high because many Apiaceae species resemble one another. Wild carrot is easier to identify than the small western species because of its well-developed, lacy umbels, fork-like involucral bracts, and strongly carrot-scented root, but none of these should be used carelessly in isolation. The fruits are especially useful for identification because they are strongly flattened and armed with stout barbed bristles. Your source notes correctly emphasize the distinctive fork-like involucral bracts and bristly fruits. In practical foraging, any uncertainty should stop the harvest immediately [2-3]. Traditional/Indigenous Use Summary: The plant’s greatest historical significance is arguably agricultural rather than specifically Indigenous to North America, because it is the wild ancestor of the domestic carrot. Still, once introduced and naturalized, it became an obvious edible weed in North America. Your notes position it as a top-quality wild food with limited practical relevance in the southwestern United States because of its scarcity there, and that is a sensible interpretation. Root - cooked[55]. Thin and stringy[K]. The flower clusters can be french-fried to produce a carrot-flavoured gourmet's delight[183]. The aromatic seed is used as a flavouring in stews etc[55, 183]. The dried roasted roots are ground into a powder and are used for making coffee[183]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [],
+    "pollinator_support": false,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:01.640598+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Daucus+carota",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_other_names",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:40:56.549336+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Carrot",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:40:57.198413+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Daucus+carota",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:10.214275+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Carrot",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:13.561899+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=carrot",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes",
+          "pest_disease_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:29:17.188920+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.792796+00:00"
+  },
+  "missing_fields": [
+    "classification.life_cycle",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

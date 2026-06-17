@@ -1,0 +1,53 @@
+{
+  "plant": {
+    "plant_atom": "lemon_balm",
+    "common_name": "Lemon Balm",
+    "scientific_name": "Melissa officinalis",
+    "genus": "Melissa",
+    "family": "Lamiaceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Melissa officinalis",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:55.083953+00:00",
+      "response_hash": "83c7e77f2b8ff22717d2d6a7ea4d5be4623411b97e4586e966440f8789ca2670",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 5341501,
+          "scientificName": "Melissa officinalis L.",
+          "canonicalName": "Melissa officinalis",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; singleMatch=5",
+          "matchType": "EXACT",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Lamiales",
+          "family": "Lamiaceae",
+          "genus": "Melissa",
+          "species": "Melissa officinalis",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 408,
+          "familyKey": 2497,
+          "genusKey": 2927330,
+          "speciesKey": 5341501,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "plant": {
+    "plant_atom": "sunflower",
+    "common_name": "Sunflower",
+    "scientific_name": "Helianthus annuus",
+    "genus": "Helianthus",
+    "family": "Asteraceae",
+    "profile_type": "species",
+    "main_uses": [
+      "edible",
+      "medicinal"
+    ]
+  },
+  "source": "GBIF",
+  "snapshots": [
+    {
+      "source_name": "GBIF",
+      "source_url": "https://api.gbif.org/v1/species/match",
+      "query": "Helianthus annuus",
+      "status": "ok",
+      "fetched_at": "2026-06-17T04:43:13.510603+00:00",
+      "response_hash": "be11fbf7233d8d2e0bd6c16b9a560a22fbb09a251f7523e2be5b322c34a79bf8",
+      "parsed": {
+        "endpoint": "species/match",
+        "payload": {
+          "usageKey": 9206251,
+          "scientificName": "Helianthus annuus L.",
+          "canonicalName": "Helianthus annuus",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 100,
+          "note": "Similarity: name=110; authorship=0; classification=4; rank=6; status=1; score=121; nextMatch=5",
+          "matchType": "EXACT",
+          "alternatives": [
+            {
+              "usageKey": 4252034,
+              "acceptedUsageKey": 4250528,
+              "scientificName": "Helianthus canus (Britton) Wooton & Standl.",
+              "canonicalName": "Helianthus canus",
+              "rank": "SPECIES",
+              "status": "SYNONYM",
+              "confidence": 15,
+              "note": "Similarity: name=5; authorship=0; classification=4; rank=6; status=0; score=15",
+              "matchType": "FUZZY",
+              "kingdom": "Plantae",
+              "phylum": "Tracheophyta",
+              "order": "Asterales",
+              "family": "Asteraceae",
+              "genus": "Helianthus",
+              "species": "Helianthus petiolaris",
+              "kingdomKey": 6,
+              "phylumKey": 7707728,
+              "classKey": 220,
+              "orderKey": 414,
+              "familyKey": 3065,
+              "genusKey": 3119134,
+              "speciesKey": 3119225,
+              "class": "Magnoliopsida"
+            }
+          ],
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Asterales",
+          "family": "Asteraceae",
+          "genus": "Helianthus",
+          "species": "Helianthus annuus",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 414,
+          "familyKey": 3065,
+          "genusKey": 3119134,
+          "speciesKey": 9206251,
+          "class": "Magnoliopsida"
+        }
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

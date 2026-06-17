@@ -1,0 +1,264 @@
+{
+  "plant_atom": "oregano",
+  "identity": {
+    "common_name": "Oregano",
+    "scientific_name": "Origanum vulgare",
+    "genus": "Origanum",
+    "family": "Lamiaceae",
+    "synonyms": [],
+    "common_names": [
+      "Oregano",
+      "Pot Marjoram"
+    ]
+  },
+  "classification": {
+    "edible": true,
+    "use_categories": [
+      "beverage_plant",
+      "companion_plant",
+      "culinary_herb",
+      "medicinal_plant",
+      "repellent_plant"
+    ],
+    "edible_parts": [
+      "flower",
+      "leaf",
+      "stem"
+    ],
+    "life_cycle": "perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "water_need": "moderate",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": "Landscape Uses:Border, Container, Ground cover, Rock garden, Seashore. Requires a rather dry, warm, well-drained soil in full sun, but is not fussy as to soil type, thriving on chalk[1, 27]. Prefers slightly alkaline conditions[200]. Tolerates poor soils[24]. Dislikes wet soils[37]. Hardy to about -20°c[187]. Oregano has a long history of culinary and medicinal use and is often cultivated in modern gardens as a culinary herb, there are some named varieties[183, 187, 238, 244]. Plants growing near the sea have the most fragrance[7]. A good companion plant, improving the flavour of nearby plants[201]. The flowers are very attractive to bees and butterflies[5, 30]. A good companion for the cucumber family[14], it is beneficial to all nearby plants[20]. The whole plant has a sweet yet slightly peppery aroma[245]. Members of this genus are rarely if ever troubled by browsing deer[233]. Special Features: Attractive foliage, Fragrant foliage, Not North American native, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers, Fragrant flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is rhizomatous with underground stems sending roots and shoots along their length [2-1]. Oregano is self-fertile. Oregano is typically harvested in late spring to summer, just before the plant begins to flower. Oregano generally flowers from mid-summer to early autumn. Oregano grows relatively quickly, reaching maturity in about 2-3 months under optimal conditions.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "cutting",
+      "division",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early spring at 10 - 13°c and only just cover the seed. Germination usually takes place within 2 weeks. Prick out the seedlings into individual pots when they are large enough to handle and plant them out into their permanent positions in early summer. The seed can also be sown in situ in late spring. Division in March or October. Very easy, larger divisions can be planted out direct into their permanent positions. We have found that it is better to pot up the smaller divisions and grow them on in light shade in a cold frame until they are well established before planting them out in late spring or early summer. Basal cuttings of young barren shoots in June. Very easy. Harvest the shoots with plenty of underground stem when they are about 8 - 10cm above the ground. Pot them up into individual pots and keep them in light shade in a cold frame or greenhouse until they are rooting well. Plant them out in the summer.",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Landscape Uses:Border, Container, Ground cover, Rock garden, Seashore. Requires a rather dry, warm, well-drained soil in full sun, but is not fussy as to soil type, thriving on chalk[1, 27]. Prefers slightly alkaline conditions[200]. Tolerates poor soils[24]. Dislikes wet soils[37]. Hardy to about -20°c[187]. Oregano has a long history of culinary and medicinal use and is often cultivated in modern gardens as a culinary herb, there are some named varieties[183, 187, 238, 244]. Plants growing near the sea have the most fragrance[7]. A good companion plant, improving the flavour of nearby plants[201]. The flowers are very attractive to bees and butterflies[5, 30]. A good companion for the cucumber family[14], it is beneficial to all nearby plants[20]. The whole plant has a sweet yet slightly peppery aroma[245]. Members of this genus are rarely if ever troubled by browsing deer[233]. Special Features: Attractive foliage, Fragrant foliage, Not North American native, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers, Fragrant flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is rhizomatous with underground stems sending roots and shoots along their length [2-1]. Oregano is self-fertile. Oregano is typically harvested in late spring to summer, just before the plant begins to flower. Oregano generally flowers from mid-summer to early autumn. Oregano grows relatively quickly, reaching maturity in about 2-3 months under optimal conditions.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antirheumatic Antiseptic Antispasmodic Aromatherapy Carminative Cholagogue Diaphoretic Emmenagogue Expectorant Odontalgic Parasiticide Stimulant Stomachic Tonic Oregano has been used as a culinary and medicinal herb for thousands of years. It has a beneficial effect upon the digestive and respiratory systems and is also used to promote menstruation[254]. It should not be used medicinally by pregnant women though it is perfectly safe in small amounts for culinary purposes[254]. The leaves and flowering stems are strongly antiseptic, antispasmodic, carminative, cholagogue, diaphoretic, emmenagogue, expectorant, stimulant, stomachic and mildly tonic[4, 7, 9, 21, 254]. The plant is taken internally in the treatment of colds, influenza, mild feverish illnesses, indigestion, stomach upsets and painful menstruation[238]. It is strongly sedative and should not be taken in large doses, though mild teas have a soothing effect and aid restful sleep[244]. It should not be prescribed for pregnant women[238]. Externally, oregano is used to treat bronchitis, asthma, arthritis and muscular pain[238]. The plant can be used fresh or dried - harvest the whole plant (but not the roots) in late summer to dry and store for winter use[244]. Oregano is often used in the form of an essential oil that is distilled from the flowering plant[4]. A few drops of the essential oil, put on cotton wool and placed in the hollow of an aching tooth, frequently relieves the pain of toothache[4, 207]. This plant is one of the best natural antiseptics because of its high thymol content[7]. The essential oil is used in aromatherapy to treat the same kinds of complaints that the herb is used for[238].",
+    "cautions": "None known",
+    "other_uses_notes": "Dye Essential Parasiticide Repellent Strewing Agroforestry uses: Oregano can be used as a companion plant, helping to attract beneficial insects and improving the overall health of surrounding plants. It may also help deter certain pests. An essential oil from the plant is used as a food flavouring, in soaps and perfumery[115, 171]. The herb contains 0.15 - 0.4% essential oil[218] and makes good herbal pillows and baths[244]. The plant was formerly used as a strewing herb[201]. The essential oil has also been used to kill lice, though some caution is advised since it can cause skin irritations[238]. A red or purple dye is obtained from the flowering tops[4, 7, 13, 100], it is neither brilliant nor durable[115]. The plant repels ants[46]. The growing plant repels many insect pests so it is a good plant to grow in the vegetable area[201]. A useful ground cover for sunny positions, forming a slowly spreading clump[197, K]. Plants should be spaced about 30cm apart each way[208]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Oregano produces small flowers that are rich in nectar, attracting various pollinators such as bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – While oregano itself does not produce significant fruit or seeds, the leaves are edible and nutritious for humans and can provide some food value for wildlife. Its dense foliage can offer shelter, although it is not typically used for nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Oregano can provide habitat for beneficial insects and contribute to ground cover. Its structure may support some invertebrates, and leaf litter can provide overwintering sites for various organisms. 4. Pest Confuser (Smell): Yes – Oregano has a strong aromatic scent that can help confuse or deter some pests, making it beneficial in companion planting scenarios.",
+    "edible_uses_notes": "Edible Parts: Flowers Leaves Stem Edible Uses: Condiment Tea Leaves - raw or cooked as a potherb[5, 52, 183]. Oregano is an important flavouring herb in Mediterranean cookery, and is often used dried rather than fresh[238]. The leaves are used as a flavouring for salad dressings, vegetables and legumes, and are frequently included in strongly flavoured dishes with chillies, garlic, onions etc[2, 13, 21, 27, 183, 238]. A nutritional analysis is available[218]. Flowers, usually appear in late spring, are edible. Much of the commercially available dried oregano does not come from this plant but from a number of different, often unrelated plants[238]. These include Lippia graveolens, L. palmeri and Origanum syriacum[238]. A herb tea is made from the dried leaves and flowering stems[183, 207, 238]."
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [
+      {
+        "plant": "the_cucumber_family",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future",
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording."
+      }
+    ],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [
+      {
+        "insect_group": "bees",
+        "examples": [
+          "bees"
+        ],
+        "source_name": "Plants For A Future",
+        "confidence": 0.65,
+        "notes": "PFAF states flowers are pollinated by bees."
+      }
+    ],
+    "pollinator_support": true,
+    "pest_confuser": true,
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting.",
+      "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ]
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "identity.common_names": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:43:51.397208+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Origanum+vulgare",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "edible_parts",
+          "use_categories",
+          "life_cycle",
+          "botanical_life_cycle",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-17T04:42:19.703403+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Oregano",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:42:20.358944+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Origanum+vulgare",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:20.546433+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Oregano",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:24.184378+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=oregano",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-17T04:37:27.660108+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-17T04:44:11.927389+00:00"
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}
