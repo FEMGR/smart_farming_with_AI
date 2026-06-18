@@ -1,84 +1,2574 @@
 # Prolog update preview
-Total missing facts: 35
+Total missing facts: 2526
 
 No files were modified.
 Run again with --apply to append these facts.
 
 ================================================================================
 logic_companion_planting/data/plant_fact.pl
-Missing facts: 7
+Missing facts: 496
 ================================================================================
 
-plant(gotu_kola).
-scientific_name(gotu_kola, 'centella asiatica').
-edible(gotu_kola, true).
-edible_part(gotu_kola, leaf).
-use_category(gotu_kola, medicinal_plant).
-trait(gotu_kola, medicinal).
-trait(gotu_kola, pollinator_attractor).
+plant(aloe_vera).
+scientific_name(aloe_vera, 'aloe vera').
+edible(aloe_vera, true).
+edible_part(aloe_vera, leaf).
+edible_part(aloe_vera, seed).
+use_category(aloe_vera, medicinal_plant).
+trait(aloe_vera, medicinal).
+trait(aloe_vera, pollinator_attractor).
+trait(aloe_vera, pest_confuser).
+edible(apple, true).
+edible_part(apple, fruit).
+edible_part(apple, oil).
+use_category(apple, fruit_crop).
+use_category(apple, medicinal_plant).
+trait(apple, medicinal).
+use_category(apple, oil_crop).
+trait(apple, pollinator_attractor).
+trait(apple, pest_confuser).
+scientific_name(artichoke, 'cynara cardunculus').
+edible(artichoke, true).
+edible_part(artichoke, flower).
+edible_part(artichoke, leaf).
+edible_part(artichoke, root).
+edible_part(artichoke, stem).
+use_category(artichoke, medicinal_plant).
+trait(artichoke, medicinal).
+use_category(artichoke, root_tuber_crop).
+trait(artichoke, pollinator_attractor).
+trait(artichoke, pest_confuser).
+edible(arugula, true).
+edible_part(arugula, flower).
+edible_part(arugula, leaf).
+edible_part(arugula, seed).
+use_category(arugula, medicinal_plant).
+trait(arugula, medicinal).
+trait(arugula, pollinator_attractor).
+edible(basil, true).
+edible_part(basil, leaf).
+edible_part(basil, seed).
+use_category(basil, beverage_plant).
+use_category(basil, companion_plant).
+trait(basil, companion_plant).
+use_category(basil, culinary_herb).
+trait(basil, culinary_herb).
+use_category(basil, medicinal_plant).
+trait(basil, medicinal).
+use_category(basil, repellent_plant).
+trait(basil, pest_repellent).
+trait(basil, pollinator_attractor).
+trait(basil, pest_confuser).
+plant(bean_common).
+scientific_name(bean_common, 'phaseolus vulgaris').
+edible(bean_common, true).
+edible_part(bean_common, leaf).
+edible_part(bean_common, seed).
+use_category(bean_common, culinary_herb).
+trait(bean_common, culinary_herb).
+use_category(bean_common, medicinal_plant).
+trait(bean_common, medicinal).
+trait(bean_common, pollinator_attractor).
+plant(bitter_melon).
+scientific_name(bitter_melon, 'momordica charantia').
+scientific_name(blackberry, 'rubus fruticosus').
+edible(blackberry, true).
+edible_part(blackberry, fruit).
+edible_part(blackberry, leaf).
+edible_part(blackberry, root).
+edible_part(blackberry, stem).
+use_category(blackberry, beverage_plant).
+use_category(blackberry, fruit_crop).
+use_category(blackberry, medicinal_plant).
+trait(blackberry, medicinal).
+use_category(blackberry, root_tuber_crop).
+trait(blackberry, pollinator_attractor).
+trait(blackberry, pest_confuser).
+scientific_name(cabbage, 'brassica oleracea').
+edible(cabbage, true).
+edible_part(cabbage, leaf).
+use_category(cabbage, medicinal_plant).
+trait(cabbage, medicinal).
+trait(cabbage, pollinator_attractor).
+edible(carrot, true).
+edible_part(carrot, flower).
+edible_part(carrot, root).
+use_category(carrot, culinary_herb).
+trait(carrot, culinary_herb).
+use_category(carrot, medicinal_plant).
+trait(carrot, medicinal).
+use_category(carrot, root_tuber_crop).
+edible(celery, true).
+edible_part(celery, leaf).
+edible_part(celery, root).
+edible_part(celery, seed).
+use_category(celery, companion_plant).
+trait(celery, companion_plant).
+use_category(celery, culinary_herb).
+trait(celery, culinary_herb).
+use_category(celery, medicinal_plant).
+trait(celery, medicinal).
+use_category(celery, repellent_plant).
+trait(celery, pest_repellent).
+use_category(celery, root_tuber_crop).
+plant(chickpea).
+scientific_name(chickpea, 'cicer arietinum').
+plant(chicory).
+scientific_name(chicory, 'cichorium intybus').
+plant(coriander).
+scientific_name(coriander, 'coriandrum sativum').
+edible(cucumber, true).
+edible_part(cucumber, fruit).
+edible_part(cucumber, leaf).
+edible_part(cucumber, oil).
+edible_part(cucumber, seed).
+use_category(cucumber, fruit_crop).
+use_category(cucumber, medicinal_plant).
+trait(cucumber, medicinal).
+use_category(cucumber, oil_crop).
+use_category(cucumber, repellent_plant).
+trait(cucumber, pest_repellent).
+trait(cucumber, pollinator_attractor).
+edible(dandelion, true).
+edible_part(dandelion, flower).
+edible_part(dandelion, leaf).
+edible_part(dandelion, root).
+use_category(dandelion, beverage_plant).
+use_category(dandelion, medicinal_plant).
+trait(dandelion, medicinal).
+use_category(dandelion, root_tuber_crop).
+trait(dandelion, pollinator_attractor).
+trait(dandelion, pest_confuser).
+edible(eggplant, true).
+edible_part(eggplant, fruit).
+edible_part(eggplant, leaf).
+use_category(eggplant, fruit_crop).
+use_category(eggplant, medicinal_plant).
+trait(eggplant, medicinal).
+trait(eggplant, pollinator_attractor).
+edible(fennel, true).
+edible_part(fennel, flower).
+edible_part(fennel, leaf).
+edible_part(fennel, oil).
+edible_part(fennel, root).
+edible_part(fennel, seed).
+edible_part(fennel, stem).
+use_category(fennel, beverage_plant).
+use_category(fennel, companion_plant).
+trait(fennel, companion_plant).
+use_category(fennel, culinary_herb).
+trait(fennel, culinary_herb).
+use_category(fennel, medicinal_plant).
+trait(fennel, medicinal).
+use_category(fennel, oil_crop).
+use_category(fennel, repellent_plant).
+trait(fennel, pest_repellent).
+use_category(fennel, root_tuber_crop).
+trait(fennel, pollinator_attractor).
+plant(fig).
+scientific_name(fig, 'ficus carica').
+edible(fig, true).
+edible_part(fig, fruit).
+use_category(fig, fruit_crop).
+use_category(fig, medicinal_plant).
+trait(fig, medicinal).
+trait(fig, pest_confuser).
+edible(ginger, true).
+edible_part(ginger, flower).
+edible_part(ginger, leaf).
+edible_part(ginger, oil).
+edible_part(ginger, root).
+edible_part(ginger, stem).
+use_category(ginger, beverage_plant).
+use_category(ginger, culinary_herb).
+trait(ginger, culinary_herb).
+use_category(ginger, medicinal_plant).
+trait(ginger, medicinal).
+use_category(ginger, oil_crop).
+use_category(ginger, root_tuber_crop).
+scientific_name(grape, 'vitis vinifera').
+edible(grape, true).
+edible_part(grape, flower).
+edible_part(grape, fruit).
+edible_part(grape, leaf).
+edible_part(grape, oil).
+edible_part(grape, stem).
+use_category(grape, fruit_crop).
+use_category(grape, medicinal_plant).
+trait(grape, medicinal).
+use_category(grape, oil_crop).
+trait(grape, pollinator_attractor).
+trait(grape, pest_confuser).
+scientific_name(kale, 'brassica oleracea var. acephala').
+scientific_name(lavender, 'lavandula angustifolia').
+edible(lavender, true).
+edible_part(lavender, flower).
+edible_part(lavender, leaf).
+use_category(lavender, beverage_plant).
+use_category(lavender, companion_plant).
+trait(lavender, companion_plant).
+use_category(lavender, culinary_herb).
+trait(lavender, culinary_herb).
+use_category(lavender, medicinal_plant).
+trait(lavender, medicinal).
+use_category(lavender, repellent_plant).
+trait(lavender, pest_repellent).
+trait(lavender, pollinator_attractor).
+trait(lavender, pest_confuser).
+edible(lemon_balm, true).
+edible_part(lemon_balm, leaf).
+use_category(lemon_balm, beverage_plant).
+use_category(lemon_balm, companion_plant).
+trait(lemon_balm, companion_plant).
+use_category(lemon_balm, culinary_herb).
+trait(lemon_balm, culinary_herb).
+use_category(lemon_balm, medicinal_plant).
+trait(lemon_balm, medicinal).
+use_category(lemon_balm, repellent_plant).
+trait(lemon_balm, pest_repellent).
+trait(lemon_balm, pollinator_attractor).
+trait(lemon_balm, pest_confuser).
+plant(lentil).
+scientific_name(lentil, 'lens culinaris').
+edible(lentil, true).
+edible_part(lentil, seed).
+use_category(lentil, medicinal_plant).
+trait(lentil, medicinal).
+edible(lettuce, true).
+edible_part(lettuce, leaf).
+edible_part(lettuce, oil).
+edible_part(lettuce, seed).
+use_category(lettuce, medicinal_plant).
+trait(lettuce, medicinal).
+use_category(lettuce, oil_crop).
+scientific_name(melon, 'cucumis melo').
+edible(melon, true).
+edible_part(melon, fruit).
+edible_part(melon, oil).
+edible_part(melon, seed).
+use_category(melon, fruit_crop).
+use_category(melon, medicinal_plant).
+trait(melon, medicinal).
+use_category(melon, oil_crop).
+trait(melon, pollinator_attractor).
+plant(moringa).
+scientific_name(moringa, 'moringa oleifera').
+edible(moringa, true).
+edible_part(moringa, flower).
+edible_part(moringa, leaf).
+edible_part(moringa, oil).
+edible_part(moringa, root).
+edible_part(moringa, seed).
+edible_part(moringa, stem).
+use_category(moringa, beverage_plant).
+use_category(moringa, culinary_herb).
+trait(moringa, culinary_herb).
+use_category(moringa, medicinal_plant).
+trait(moringa, medicinal).
+use_category(moringa, oil_crop).
+use_category(moringa, root_tuber_crop).
+trait(moringa, pollinator_attractor).
+trait(moringa, pest_confuser).
+edible(onion, true).
+edible_part(onion, flower).
+edible_part(onion, leaf).
+edible_part(onion, root).
+edible_part(onion, seed).
+use_category(onion, medicinal_plant).
+trait(onion, medicinal).
+use_category(onion, repellent_plant).
+trait(onion, pest_repellent).
+use_category(onion, root_tuber_crop).
+trait(onion, pollinator_attractor).
+trait(onion, pest_confuser).
+edible(oregano, true).
+edible_part(oregano, flower).
+edible_part(oregano, leaf).
+edible_part(oregano, stem).
+use_category(oregano, beverage_plant).
+use_category(oregano, companion_plant).
+trait(oregano, companion_plant).
+use_category(oregano, culinary_herb).
+trait(oregano, culinary_herb).
+use_category(oregano, medicinal_plant).
+trait(oregano, medicinal).
+use_category(oregano, repellent_plant).
+trait(oregano, pest_repellent).
+trait(oregano, pollinator_attractor).
+trait(oregano, pest_confuser).
+edible(parsley, true).
+edible_part(parsley, leaf).
+use_category(parsley, beverage_plant).
+use_category(parsley, companion_plant).
+trait(parsley, companion_plant).
+use_category(parsley, culinary_herb).
+trait(parsley, culinary_herb).
+use_category(parsley, medicinal_plant).
+trait(parsley, medicinal).
+use_category(parsley, repellent_plant).
+trait(parsley, pest_repellent).
+trait(parsley, pollinator_attractor).
+edible(pea, true).
+edible_part(pea, leaf).
+edible_part(pea, seed).
+edible_part(pea, stem).
+use_category(pea, companion_plant).
+trait(pea, companion_plant).
+use_category(pea, medicinal_plant).
+trait(pea, medicinal).
+trait(pea, pollinator_attractor).
+edible(peanut, true).
+edible_part(peanut, leaf).
+edible_part(peanut, oil).
+edible_part(peanut, seed).
+use_category(peanut, medicinal_plant).
+trait(peanut, medicinal).
+use_category(peanut, oil_crop).
+trait(peanut, pollinator_attractor).
+edible(pear, true).
+edible_part(pear, fruit).
+use_category(pear, fruit_crop).
+use_category(pear, medicinal_plant).
+trait(pear, medicinal).
+use_category(pear, repellent_plant).
+trait(pear, pest_repellent).
+trait(pear, pollinator_attractor).
+trait(pear, pest_confuser).
+plant(peppermint).
+scientific_name(peppermint, 'mentha x piperita').
+edible(peppermint, true).
+edible_part(peppermint, leaf).
+use_category(peppermint, culinary_herb).
+trait(peppermint, culinary_herb).
+use_category(peppermint, medicinal_plant).
+trait(peppermint, medicinal).
+trait(peppermint, pollinator_attractor).
+edible(potato, true).
+edible_part(potato, root).
+use_category(potato, medicinal_plant).
+trait(potato, medicinal).
+use_category(potato, root_tuber_crop).
+trait(potato, pollinator_attractor).
+edible(pumpkin, true).
+edible_part(pumpkin, flower).
+edible_part(pumpkin, fruit).
+edible_part(pumpkin, leaf).
+edible_part(pumpkin, oil).
+edible_part(pumpkin, root).
+edible_part(pumpkin, seed).
+use_category(pumpkin, fruit_crop).
+use_category(pumpkin, medicinal_plant).
+trait(pumpkin, medicinal).
+use_category(pumpkin, oil_crop).
+use_category(pumpkin, root_tuber_crop).
+trait(pumpkin, pollinator_attractor).
+edible(radish, true).
+edible_part(radish, flower).
+edible_part(radish, leaf).
+edible_part(radish, oil).
+edible_part(radish, root).
+edible_part(radish, seed).
+use_category(radish, medicinal_plant).
+trait(radish, medicinal).
+use_category(radish, oil_crop).
+use_category(radish, repellent_plant).
+trait(radish, pest_repellent).
+use_category(radish, root_tuber_crop).
+trait(radish, pollinator_attractor).
+edible(raspberry, true).
+edible_part(raspberry, fruit).
+edible_part(raspberry, root).
+edible_part(raspberry, stem).
+use_category(raspberry, beverage_plant).
+use_category(raspberry, fruit_crop).
+use_category(raspberry, medicinal_plant).
+trait(raspberry, medicinal).
+use_category(raspberry, root_tuber_crop).
+trait(raspberry, pollinator_attractor).
+edible(sage, true).
+edible_part(sage, flower).
+edible_part(sage, leaf).
+use_category(sage, beverage_plant).
+use_category(sage, companion_plant).
+trait(sage, companion_plant).
+use_category(sage, culinary_herb).
+trait(sage, culinary_herb).
+use_category(sage, medicinal_plant).
+trait(sage, medicinal).
+use_category(sage, repellent_plant).
+trait(sage, pest_repellent).
+trait(sage, pollinator_attractor).
+trait(sage, pest_confuser).
+plant(soybean).
+scientific_name(soybean, 'glycine max').
+edible(soybean, true).
+edible_part(soybean, leaf).
+edible_part(soybean, oil).
+edible_part(soybean, seed).
+use_category(soybean, medicinal_plant).
+trait(soybean, medicinal).
+use_category(soybean, oil_crop).
+use_category(soybean, repellent_plant).
+trait(soybean, pest_repellent).
+trait(soybean, pollinator_attractor).
+plant(spearmint).
+scientific_name(spearmint, 'mentha spicata').
+edible(spearmint, true).
+edible_part(spearmint, leaf).
+use_category(spearmint, beverage_plant).
+use_category(spearmint, companion_plant).
+trait(spearmint, companion_plant).
+use_category(spearmint, culinary_herb).
+trait(spearmint, culinary_herb).
+use_category(spearmint, medicinal_plant).
+trait(spearmint, medicinal).
+use_category(spearmint, repellent_plant).
+trait(spearmint, pest_repellent).
+trait(spearmint, pollinator_attractor).
+trait(spearmint, pest_confuser).
+scientific_name(strawberry, 'fragaria x ananassa').
+edible(strawberry, true).
+edible_part(strawberry, fruit).
+edible_part(strawberry, leaf).
+use_category(strawberry, fruit_crop).
+use_category(strawberry, medicinal_plant).
+trait(strawberry, medicinal).
+trait(strawberry, pollinator_attractor).
+trait(strawberry, pest_confuser).
+edible(sunflower, true).
+edible_part(sunflower, flower).
+edible_part(sunflower, oil).
+edible_part(sunflower, seed).
+edible_part(sunflower, stem).
+use_category(sunflower, medicinal_plant).
+trait(sunflower, medicinal).
+use_category(sunflower, oil_crop).
+trait(sunflower, pollinator_attractor).
+edible(sweet_potato, true).
+edible_part(sweet_potato, leaf).
+edible_part(sweet_potato, root).
+edible_part(sweet_potato, stem).
+use_category(sweet_potato, medicinal_plant).
+trait(sweet_potato, medicinal).
+use_category(sweet_potato, root_tuber_crop).
+trait(sweet_potato, pollinator_attractor).
+trait(sweet_potato, pest_confuser).
+edible(thyme, true).
+edible_part(thyme, flower).
+edible_part(thyme, leaf).
+edible_part(thyme, stem).
+use_category(thyme, beverage_plant).
+use_category(thyme, companion_plant).
+trait(thyme, companion_plant).
+use_category(thyme, culinary_herb).
+trait(thyme, culinary_herb).
+use_category(thyme, medicinal_plant).
+trait(thyme, medicinal).
+use_category(thyme, repellent_plant).
+trait(thyme, pest_repellent).
+trait(thyme, pollinator_attractor).
+trait(thyme, pest_confuser).
+edible(tomato, true).
+edible_part(tomato, fruit).
+edible_part(tomato, oil).
+edible_part(tomato, seed).
+use_category(tomato, beverage_plant).
+use_category(tomato, companion_plant).
+trait(tomato, companion_plant).
+use_category(tomato, fruit_crop).
+use_category(tomato, medicinal_plant).
+trait(tomato, medicinal).
+use_category(tomato, oil_crop).
+use_category(tomato, repellent_plant).
+trait(tomato, pest_repellent).
+trait(tomato, pollinator_attractor).
+edible(watermelon, true).
+edible_part(watermelon, fruit).
+edible_part(watermelon, leaf).
+edible_part(watermelon, oil).
+edible_part(watermelon, seed).
+use_category(watermelon, fruit_crop).
+use_category(watermelon, medicinal_plant).
+trait(watermelon, medicinal).
+use_category(watermelon, oil_crop).
+trait(watermelon, pollinator_attractor).
+edible(zucchini, true).
+edible_part(zucchini, flower).
+edible_part(zucchini, fruit).
+edible_part(zucchini, leaf).
+edible_part(zucchini, oil).
+edible_part(zucchini, root).
+edible_part(zucchini, seed).
+use_category(zucchini, fruit_crop).
+use_category(zucchini, medicinal_plant).
+trait(zucchini, medicinal).
+use_category(zucchini, oil_crop).
+use_category(zucchini, root_tuber_crop).
+trait(zucchini, pollinator_attractor).
 
 ================================================================================
 logic_companion_planting/data/alias_fact.pl
-Missing facts: 3
+Missing facts: 993
 ================================================================================
 
-alias('gotu kola', gotu_kola).
-alias('spadeleaf', gotu_kola).
-alias('hydrocotyle asiatica', gotu_kola).
+alias('aloe vera', aloe_vera).
+alias('barbados aloe', aloe_vera).
+alias('first aid plant', aloe_vera).
+alias('medicinal aloe', aloe_vera).
+alias('aloe barbadensis, aloe vulgaris', aloe_vera).
+alias('apple', apple).
+alias('artichoke; desert artichoke; european cardoon; globe artichoke; scotch thistle; scottish thistle; spanish artichoke; wild artichoke; wild cardoon. spanish: alcachofa; alcaucil; cardo; cardo de comer. french: artichaut commun; carde; cardon d’espagne. russian: artišok ispanskij. arabic: al harshuff. england and wales: march-ysgall. finland: isoartisokka. germany: artishocke; gemüseartishocke; gemüse-artishocke; kardone. italy: carciofo. netherlands: kardoen. portugal: alcachofra; cardo. spain: card; card comestible; card comú; herbacol. sweden: kardon.', artichoke).
+alias('cardoon', artichoke).
+alias('globe artichoke', artichoke).
+alias('arugula', arugula).
+alias('wild rocket', arugula).
+alias('euzomum vesicarium () link', arugula).
+alias('heterotypic synonyms: e', arugula).
+alias('homotypic synonyms: brassica vesicaria e', arugula).
+alias('raphanus vesicarius () crantz', arugula).
+alias('velleruca vesicaria () pomel', arugula).
+alias('common basil', basil).
+alias('thai basil', basil).
+alias('tropical basil', basil).
+alias('basil', basil).
+alias('ocimum album, ocimum anisatum, ocimum barrelieri, ocimum medium, plectranthus barrelieri', basil).
+alias('bush bean', bean_common).
+alias('french bean', bean_common).
+alias('kidney bean', bean_common).
+alias('common bean', bean_common).
+alias('bitter melon', bitter_melon).
+alias('alish', blackberry).
+alias('baganrra', blackberry).
+alias('blackberry', blackberry).
+alias('bramble', blackberry).
+alias('chanch', blackberry).
+alias('pakana', blackberry).
+alias('rovo', blackberry).
+alias('scepe', blackberry).
+alias('shrubby blackberry', blackberry).
+alias('spino', blackberry).
+alias('szeder', blackberry).
+alias('bok choy', bok_choy).
+alias('broccoli', broccoli).
+alias('broccoli', cabbage).
+alias('brussels sprouts', cabbage).
+alias('kohlrabi', cabbage).
+alias('sprouting broccoli', cabbage).
+alias('tronchuda cabbage', cabbage).
+alias('wild cabbage', cabbage).
+alias('cabbage', cabbage).
+alias('bird\'s nest; bishop\'s lace; queen anne\'s lace; wild carrot. spanish: zanahoria. french: carotte. arabic: gazar. portuguese: cenoura-brava. germany: karotten; mohren. italy: carota selvatica. japan: noraninjin. netherlands: wilde peen. sweden: vild morot. also divlja mrkva', carrot).
+alias('carrot', carrot).
+alias('frustinaca agreste', carrot).
+alias('mrkvica.', carrot).
+alias('queen anne\'s lace', carrot).
+alias('wild carrot', carrot).
+alias('cauliflower', cauliflower).
+alias('ajwain-ka-patta (indian)', celery).
+alias('wild celery. ajmod', celery).
+alias('celery', celery).
+alias('apium celleri', celery).
+alias('apium decumbens', celery).
+alias('carum graveolens', celery).
+alias('celeria graveolens', celery).
+alias('chickpea', chickpea).
+alias('chicory', chicory).
+alias('chive', chive).
+alias('coriander', coriander).
+alias('cucumber', cucumber).
+alias('garden cucumber', cucumber).
+alias('common dandelion', dandelion).
+alias('dandelion', dandelion).
+alias('kanphool', dandelion).
+alias('kukraundha', dandelion).
+alias('dill', dill).
+alias('eggplant', eggplant).
+alias('fennel', fennel).
+alias('sweet fennel', fennel).
+alias('anethum dulce', fennel).
+alias('anethum foeniculum', fennel).
+alias('foeniculum divaricatum', fennel).
+alias('foeniculum officinale', fennel).
+alias('seseli foeniculum', fennel).
+alias('adriatic fig', fig).
+alias('anjeer', fig).
+alias('anjir', fig).
+alias('anjira', fig).
+alias('anjoora', fig).
+alias('anjura', fig).
+alias('anjuru', fig).
+alias('black mission fig', fig).
+alias('brevo', fig).
+alias('brown turkey fig', fig).
+alias('calimyrna fig', fig).
+alias('caricae fructus', fig).
+alias('carique', fig).
+alias('common fig', fig).
+alias('echte feige', fig).
+alias('edible fig', fig).
+alias('essfeige', fig).
+alias('fagari', fig).
+alias('feige', fig).
+alias('feigenbaum', fig).
+alias('fico', fig).
+alias('fig', fig).
+alias('fig common', fig).
+alias('fig tree', fig).
+alias('figo', fig).
+alias('figo-roxo', fig).
+alias('figueira', fig).
+alias('figueira-comum', fig).
+alias('figueira-da-europa', fig).
+alias('figueira-do-reino', fig).
+alias('figuier', fig).
+alias('figuier commun', fig).
+alias('fikon', fig).
+alias('fique', fig).
+alias('flowerless fruit', fig).
+alias('getfikon', fig).
+alias('higo', fig).
+alias('higuera', fig).
+alias('higuera comun', fig).
+alias('higuera común', fig).
+alias('ichijiku', fig).
+alias('inzer', fig).
+alias('manjimedi', fig).
+alias('medi', fig).
+alias('muhwagwanamu', fig).
+alias('simaayatti', fig).
+alias('simaiyatti', fig).
+alias('simayatti', fig).
+alias('simeyetti', fig).
+alias('smokinya', fig).
+alias('smyrna fig', fig).
+alias('te biku', fig).
+alias('teen', fig).
+alias('tenatti', fig).
+alias('teneyatti', fig).
+alias('wu hua guo', fig).
+alias('galangal', galangal).
+alias('garlic', garlic).
+alias('aadar shuth', ginger).
+alias('ada', ginger).
+alias('adab', ginger).
+alias('adarakha', ginger).
+alias('adasuth', ginger).
+alias('adi', ginger).
+alias('adrak', ginger).
+alias('adu', ginger).
+alias('aduwa', ginger).
+alias('african ginger', ginger).
+alias('afu', ginger).
+alias('agumetakui', ginger).
+alias('ai thing', ginger).
+alias('ajej', ginger).
+alias('ajenjibre', ginger).
+alias('akakadur', ginger).
+alias('akakaduru', ginger).
+alias('ale', ginger).
+alias('alea', ginger).
+alias('aliah', ginger).
+alias('alla', ginger).
+alias('allam', ginger).
+alias('allamu', ginger).
+alias('amada', ginger).
+alias('andrakam', ginger).
+alias('ardak', ginger).
+alias('ardrak', ginger).
+alias('ardraka', ginger).
+alias('ardraka (rhizome)', ginger).
+alias('ardrakam', ginger).
+alias('ardrakamu', ginger).
+alias('arttarakam', ginger).
+alias('asunglasemtong', ginger).
+alias('ata-le', ginger).
+alias('ata-le jinja', ginger).
+alias('atale', ginger).
+alias('au?adha', ginger).
+alias('ausadha', ginger).
+alias('baojiang', ginger).
+alias('beuing', ginger).
+alias('binzali', ginger).
+alias('cagolaya ni vavalagi', ginger).
+alias('canton', ginger).
+alias('chhebok', ginger).
+alias('chiang', ginger).
+alias('chichámbara', ginger).
+alias('chitta', ginger).
+alias('chukku', ginger).
+alias('citaraho', ginger).
+alias('cochin ginger', ginger).
+alias('common ginger', ginger).
+alias('cooking stem', ginger).
+alias('cu??i', ginger).
+alias('cukku (dried rhizome)', ginger).
+alias('djae', ginger).
+alias('dried ginger rhizome', ginger).
+alias('dumbierový podzemok', ginger).
+alias('entangawuzi', ginger).
+alias('extractum zingiberis liquidum', ginger).
+alias('fiu', ginger).
+alias('fresh ginger', ginger).
+alias('gan jiang', ginger).
+alias('ganjiang', ginger).
+alias('garden ginger', ginger).
+alias('gember', ginger).
+alias('gemberwortel', ginger).
+alias('gengibre', ginger).
+alias('gernber', ginger).
+alias('gin', ginger).
+alias('gingembre', ginger).
+alias('gingembre (rhizome de)', ginger).
+alias('ginger', ginger).
+alias('ginger liquid extract', ginger).
+alias('ginger oil', ginger).
+alias('ginger root', ginger).
+alias('ginger tincture', ginger).
+alias('ginger: common', ginger).
+alias('ginger|inguru', ginger).
+alias('giung', ginger).
+alias('gnji', ginger).
+alias('gringer', ginger).
+alias('gung', ginger).
+alias('gyömbér gyökértörzs', ginger).
+alias('gznger', ginger).
+alias('hajing', ginger).
+alias('halia', ginger).
+alias('halia bara', ginger).
+alias('halia hudangsia', ginger).
+alias('halia merah', ginger).
+alias('halia padi', ginger).
+alias('halija', ginger).
+alias('haliya', ginger).
+alias('haliya bara', ginger).
+alias('hasishunti', ginger).
+alias('hasishunti kash', ginger).
+alias('hasisunti', ginger).
+alias('hli', ginger).
+alias('imbieru šakniastiebiai', ginger).
+alias('imbir', ginger).
+alias('inchi', ginger).
+alias('ingberwurgel', ginger).
+alias('ingefära', ginger).
+alias('ingefær', ginger).
+alias('ingefærc', ginger).
+alias('inguere', ginger).
+alias('inguru', ginger).
+alias('ingvera saknenis', ginger).
+alias('ingverijuurikas', ginger).
+alias('ingwer', ginger).
+alias('ingwerwurzelstock', ginger).
+alias('injee', ginger).
+alias('inji', ginger).
+alias('inkivääri', ginger).
+alias('iñci (fresh rhizome)', ginger).
+alias('jahe', ginger).
+alias('jamaica ginger', ginger).
+alias('janzabeil', ginger).
+alias('jengibre', ginger).
+alias('jenjibre', ginger).
+alias('jeung', ginger).
+alias('jiang', ginger).
+alias('jiang ding', ginger).
+alias('jiang liujingao', ginger).
+alias('jiang pi', ginger).
+alias('jinja', ginger).
+alias('jinjaa', ginger).
+alias('jion', ginger).
+alias('ka?ubhadra', ginger).
+alias('kakaduru', ginger).
+alias('kakaotshofa', ginger).
+alias('kallamu', ginger).
+alias('kan chiang', ginger).
+alias('kanga', ginger).
+alias('kaphu', ginger).
+alias('kari', ginger).
+alias('katubhadra', ginger).
+alias('kaubhadra', ginger).
+alias('kebab', ginger).
+alias('kerati', ginger).
+alias('keung', ginger).
+alias('khenseing', ginger).
+alias('khiang', ginger).
+alias('khing', ginger).
+alias('khing klaeng', ginger).
+alias('khing phueak', ginger).
+alias('khing-daeng', ginger).
+alias('khuong', ginger).
+alias('kingra', ginger).
+alias('kintoki', ginger).
+alias('klacze imbiru', ginger).
+alias('knei', ginger).
+alias('konga', ginger).
+alias('korenika pravega ingverja', ginger).
+alias('kulekhara', ginger).
+alias('lahja', ginger).
+alias('lakottai', ginger).
+alias('lei', ginger).
+alias('luya', ginger).
+alias('mahausadha', ginger).
+alias('mangawizi', ginger).
+alias('muhau?adha', ginger).
+alias('naara', ginger).
+alias('nagara', ginger).
+alias('narumaruppu matil', ginger).
+alias('ngesnges', ginger).
+alias('niamaku', ginger).
+alias('nkrabro', ginger).
+alias('nkrallia', ginger).
+alias('nkrawusa', ginger).
+alias('oda', ginger).
+alias('odzahui', ginger).
+alias('oleoresin ginger', ginger).
+alias('oshoga', ginger).
+alias('palana', ginger).
+alias('palu', ginger).
+alias('pao jiang', ginger).
+alias('paojiang', ginger).
+alias('powdered ginger', ginger).
+alias('prepared dried ginger', ginger).
+alias('processed ginger', ginger).
+alias('raw ginger', ginger).
+alias('raíz', ginger).
+alias('rhizoma zingiberis', ginger).
+alias('rhizoma zingiberis officinale', ginger).
+alias('rhizoma zingiberis praeparatum', ginger).
+alias('rhizoma zingiberis recens', ginger).
+alias('rimpang jahe', ginger).
+alias('rizom de ghimbir', ginger).
+alias('rizoma de', ginger).
+alias('s??gavera.', ginger).
+alias('sa-e', ginger).
+alias('saenggang', ginger).
+alias('sahangrez', ginger).
+alias('sakanjabir', ginger).
+alias('sankanjabir', ginger).
+alias('saunth', ginger).
+alias('sawh-thing', ginger).
+alias('semmar', ginger).
+alias('sga', ginger).
+alias('sge ugser', ginger).
+alias('sheng jiang', ginger).
+alias('shengiang', ginger).
+alias('shengjiang', ginger).
+alias('shenjing', ginger).
+alias('sho-ont', ginger).
+alias('shoga', ginger).
+alias('shokyo', ginger).
+alias('shonkyoh', ginger).
+alias('shonth', ginger).
+alias('shouhkyoh', ginger).
+alias('shunthi', ginger).
+alias('sinziminli', ginger).
+alias('sman-sga', ginger).
+alias('sonth', ginger).
+alias('sonthi', ginger).
+alias('soonth', ginger).
+alias('srngavera', ginger).
+alias('su??hi (rhizome)', ginger).
+alias('sukkh', ginger).
+alias('sukku', ginger).
+alias('sund', ginger).
+alias('sundh', ginger).
+alias('sunth', ginger).
+alias('suntha', ginger).
+alias('sunthi', ginger).
+alias('sunti', ginger).
+alias('tangawizi', ginger).
+alias('theing', ginger).
+alias('tinctura zingiberis', ginger).
+alias('tsintsimin', ginger).
+alias('tsintsimir', ginger).
+alias('tunga', ginger).
+alias('ularnta iñci', ginger).
+alias('unbleached ginger', ginger).
+alias('verkkompu', ginger).
+alias('vi?amu?iya amirtam', ginger).
+alias('visva', ginger).
+alias('visvabhe?aja', ginger).
+alias('visvabhesaja', ginger).
+alias('visvaua?adha', ginger).
+alias('visvausadha', ginger).
+alias('wai', ginger).
+alias('zangabil', ginger).
+alias('zangabil ee-e-tar', ginger).
+alias('zanjabeel', ginger).
+alias('zanjabeel ratab', ginger).
+alias('zanjabeel taza', ginger).
+alias('zanjabil', ginger).
+alias('zencebîl', ginger).
+alias('zencefîl', ginger).
+alias('zenzero', ginger).
+alias('zenzero rizoma', ginger).
+alias('zimioga', ginger).
+alias('zinam', ginger).
+alias('zingabil urratab', ginger).
+alias('zingiber', ginger).
+alias('zingiber (dried ginger)', ginger).
+alias('zingiber officinale', ginger).
+alias('zingiberis processum rhizoma', ginger).
+alias('zingiberis rhizoma', ginger).
+alias('zingiberis rhizoma crudus', ginger).
+alias('zingiberis rhizoma praeparatum', ginger).
+alias('zingiberis rhizoma pulveratum', ginger).
+alias('zingiberis rhizoma recens', ginger).
+alias('zingibil', ginger).
+alias('zinjabil', ginger).
+alias('zinjabîl', ginger).
+alias('zázvorový oddenek', ginger).
+alias('amomum angustifolium salisb', ginger).
+alias('amomum zingiber amomum zinziba hill zingiber aromaticum noronha zing', ginger).
+alias('aanab', grape).
+alias('ainab', grape).
+alias('aitoviiniköynnös', grape).
+alias('angoor', grape).
+alias('angur', grape).
+alias('blad', grape).
+alias('blad från vinranka', grape).
+alias('bortermo szolo levél', grape).
+alias('cervený list vinné révy', grape).
+alias('cognac oil', grape).
+alias('common grape', grape).
+alias('common grape vine', grape).
+alias('dakh', grape).
+alias('darakh', grape).
+alias('diva loza', grape).
+alias('drak?a (fruit)', grape).
+alias('drakh', grape).
+alias('draksa', grape).
+alias('draksh', grape).
+alias('draksha', grape).
+alias('draksha kottai', grape).
+alias('draksha pondu', grape).
+alias('drakshai', grape).
+alias('drakya', grape).
+alias('dry grapes', grape).
+alias('european grape', grape).
+alias('feuille de vigne rouge', grape).
+alias('flos', grape).
+alias('foglia', grape).
+alias('folha de videira', grape).
+alias('frunze de vita-de-vie', grape).
+alias('gostani', grape).
+alias('gostoni', grape).
+alias('grape', grape).
+alias('grape seeds oligomeric proanthocyanidins', grape).
+alias('grape vine', grape).
+alias('grapevine', grape).
+alias('grapevine leaf', grape).
+alias('grozde yagorida', grape).
+alias('hoja de', grape).
+alias('ista vinkoka lapas.', grape).
+alias('kashmish', grape).
+alias('kishmish', grape).
+alias('kottai drakshai', grape).
+alias('lambrusca', grape).
+alias('lambrusque', grape).
+alias('lehti', grape).
+alias('lie de vin', grape).
+alias('lisc winorosli wlasciwej', grape).
+alias('list vinica', grape).
+alias('list vinske trte', grape).
+alias('m?dvika', grape).
+alias('maneka', grape).
+alias('maweez munaqqa', grape).
+alias('maweezak kohi', grape).
+alias('munaca', grape).
+alias('munaqqa', grape).
+alias('munkka', grape).
+alias('munthringya', grape).
+alias('parra', grape).
+alias('purpleleaf grape', grape).
+alias('raisins', grape).
+alias('rote weinrebenblätter', grape).
+alias('rød vinranke', grape).
+alias('tikruju vynmedžiu lapai', grape).
+alias('tumpeang ba\'y chu', grape).
+alias('uva', grape).
+alias('vid', grape).
+alias('vigne', grape).
+alias('vigne rouge', grape).
+alias('vigne vinifère', grape).
+alias('viinapuu lehed', grape).
+alias('vinblad', grape).
+alias('vine', grape).
+alias('vinho', grape).
+alias('vino', grape).
+alias('vite', grape).
+alias('vitis vinifera', grape).
+alias('vitis viniferae folium', grape).
+alias('vínviðarlauf', grape).
+alias('weinrebe', grape).
+alias('werqa tad-dielja', grape).
+alias('wijnstokblad', grape).
+alias('wine', grape).
+alias('wine grape', grape).
+alias('zabeeb-ul-jabal', grape).
+alias('kale', kale).
+alias('true lavender', lavender).
+alias('lavender', lavender).
+alias('leek', leek).
+alias('bee balm', lemon_balm).
+alias('common balm', lemon_balm).
+alias('faucibarba officinalis. mutelia officinalis. thymus melissa.', lemon_balm).
+alias('lemon balm', lemon_balm).
+alias('sweet balm', lemon_balm).
+alias('faucibarba officinalis', lemon_balm).
+alias('mutelia officinalis', lemon_balm).
+alias('thymus melissa', lemon_balm).
+alias('adas', lentil).
+alias('adas msallam', lentil).
+alias('aoi mame', lentil).
+alias('bagali', lentil).
+alias('bing dou', lentil).
+alias('chanam payar', lentil).
+alias('chanangi', lentil).
+alias('chirisanagalu', lentil).
+alias('dhal|parippu', lentil).
+alias('gram', lentil).
+alias('kacang koro', lentil).
+alias('kacang serinding', lentil).
+alias('kursam bulle pullie', lentil).
+alias('lente', lentil).
+alias('lenteja', lentil).
+alias('lenticchia', lentil).
+alias('lentil', lentil).
+alias('lentilha', lentil).
+alias('lentille', lentil).
+alias('lentille comestible', lentil).
+alias('lentillon', lentil).
+alias('lentja', lentil).
+alias('lins', lentil).
+alias('linse', lentil).
+alias('malka masur', lentil).
+alias('masar', lentil).
+alias('masara', lentil).
+alias('masoor', lentil).
+alias('masoor paruppu', lentil).
+alias('masooralu', lentil).
+alias('masser', lentil).
+alias('massora', lentil).
+alias('masur', lentil).
+alias('masura', lentil).
+alias('masura (seed)', lentil).
+alias('masura bele', lentil).
+alias('masura pappu', lentil).
+alias('masuri', lentil).
+alias('masurmoha', lentil).
+alias('masuro', lentil).
+alias('misurpappu', lentil).
+alias('musri', lentil).
+alias('patani', lentil).
+alias('pe ni', lentil).
+alias('pittabhe?aja', lentil).
+alias('pothundhambala', lentil).
+alias('red dahl', lentil).
+alias('sai min dou', lentil).
+alias('supya', lentil).
+alias('thua daeng', lentil).
+alias('thua raatcha maat', lentil).
+alias('vattupparupu.', lentil).
+alias('garden lettuce', lettuce).
+alias('lettuce', lettuce).
+alias('akobokobo', melon).
+alias('akolil', melon).
+alias('armenian cucumber', melon).
+alias('atimon', melon).
+alias('blewah', melon).
+alias('bluwak', melon).
+alias('budamakaya', melon).
+alias('cantalope', melon).
+alias('cantaloupe', melon).
+alias('chiratu', melon).
+alias('chukkangai', melon).
+alias('dudaim melon', melon).
+alias('itimon', melon).
+alias('kaachri', melon).
+alias('kachri', melon).
+alias('karitu', melon).
+alias('kayimbe', melon).
+alias('kharbuja', melon).
+alias('kharbujadosa', melon).
+alias('kharmuj', melon).
+alias('kothimdu', melon).
+alias('luwinbe', melon).
+alias('madhupaka', melon).
+alias('melon', melon).
+alias('milon', melon).
+alias('mpombe', melon).
+alias('mulampazham', melon).
+alias('musk-melon', melon).
+alias('muskmelon', melon).
+alias('putzakova', melon).
+alias('queen anne\'s melon', melon).
+alias('sane', melon).
+alias('semangka londo', melon).
+alias('snake cucumber', melon).
+alias('syrian cucumber', melon).
+alias('taena-thai', melon).
+alias('teeng laay', melon).
+alias('thumattikai', melon).
+alias('trasak srow.', melon).
+alias('achajhada', moringa).
+alias('agamago', moringa).
+alias('agati', moringa).
+alias('ak?iva', moringa).
+alias('alim', moringa).
+alias('alinga', moringa).
+alias('amaris', moringa).
+alias('argentiga', moringa).
+alias('babatsi', moringa).
+alias('bagaelean', moringa).
+alias('baganlua', moringa).
+alias('bagaruwar masar', moringa).
+alias('bahala', moringa).
+alias('bahola', moringa).
+alias('barambo', moringa).
+alias('bararuwar maka', moringa).
+alias('behen tree', moringa).
+alias('behenbaum', moringa).
+alias('ben aile\'', moringa).
+alias('ben ailee', moringa).
+alias('ben ailée', moringa).
+alias('ben and benoil- tree', moringa).
+alias('ben oil tree', moringa).
+alias('ben-oil-tree', moringa).
+alias('benoil tree', moringa).
+alias('benzoil tree', moringa).
+alias('benzolive-tree', moringa).
+alias('boro ni idia', moringa).
+alias('bred mouroung', moringa).
+alias('brede morongy', moringa).
+alias('brede mouroungue', moringa).
+alias('brède mouroungue', moringa).
+alias('buah kelentang', moringa).
+alias('chamwamba', moringa).
+alias('chigban wawa', moringa).
+alias('danga', moringa).
+alias('drum stick tree', moringa).
+alias('drum-stick tree', moringa).
+alias('drumstick tree', moringa).
+alias('drumstick tree|murunga', moringa).
+alias('drumsticktree', moringa).
+alias('elmakka', moringa).
+alias('ewe igbale', moringa).
+alias('ewe ile', moringa).
+alias('gawara', moringa).
+alias('gigandjah', moringa).
+alias('habbah ghaliah', moringa).
+alias('habiwal hausa', moringa).
+alias('halim', moringa).
+alias('horse radish tree', moringa).
+alias('horse-radish tree', moringa).
+alias('horseradish tree', moringa).
+alias('horseradish-tree', moringa).
+alias('horseradishtree', moringa).
+alias('idaga manoye', moringa).
+alias('kachang kelok', moringa).
+alias('kachang kelu', moringa).
+alias('kachang kelur', moringa).
+alias('kangaluni', moringa).
+alias('kelor', moringa).
+alias('kilor', moringa).
+alias('konamarade', moringa).
+alias('la mu', moringa).
+alias('lembugai', moringa).
+alias('lopa', moringa).
+alias('ma-rum', moringa).
+alias('malunggay talbos', moringa).
+alias('maranga', moringa).
+alias('marongghi', moringa).
+alias('marum', moringa).
+alias('marunga', moringa).
+alias('marungi', moringa).
+alias('meerrettichbaum', moringa).
+alias('meringgai', moringa).
+alias('merunggai', moringa).
+alias('midhosaragavo', moringa).
+alias('mirongo', moringa).
+alias('mlonge', moringa).
+alias('mlongo', moringa).
+alias('mlonje', moringa).
+alias('mocaka', moringa).
+alias('moringa', moringa).
+alias('moringa a graines tripteres', moringa).
+alias('moringa ailée', moringa).
+alias('moringueiro', moringa).
+alias('mouroungue', moringa).
+alias('mronge', moringa).
+alias('mrongo', moringa).
+alias('mrum', moringa).
+alias('mulaga', moringa).
+alias('mulaya chetta', moringa).
+alias('munaga', moringa).
+alias('munaga aku', moringa).
+alias('munaga chettu', moringa).
+alias('munga', moringa).
+alias('munga arak', moringa).
+alias('mungna', moringa).
+alias('munika', moringa).
+alias('muringa', moringa).
+alias('muringa elai', moringa).
+alias('muringai', moringa).
+alias('muringai virai', moringa).
+alias('muringnga', moringa).
+alias('muringueiro', moringa).
+alias('muringya', moringa).
+alias('murinna', moringa).
+alias('murruggai', moringa).
+alias('murunga', moringa).
+alias('murungai', moringa).
+alias('murungai iali', moringa).
+alias('murungai ilai', moringa).
+alias('murunkai', moringa).
+alias('mzunze', moringa).
+alias('na-sha', moringa).
+alias('nanquera', moringa).
+alias('neegge', moringa).
+alias('never die', moringa).
+alias('nugge', moringa).
+alias('nugge beeta', moringa).
+alias('nugge ele', moringa).
+alias('nugge kand chakke', moringa).
+alias('nuggekoyimara', moringa).
+alias('nuggemara', moringa).
+alias('néverdié', moringa).
+alias('oil of ben tree', moringa).
+alias('okwe', moringa).
+alias('okwe-beke', moringa).
+alias('oyibo', moringa).
+alias('paraíso', moringa).
+alias('paraíso blanc', moringa).
+alias('pemanggai', moringa).
+alias('pferderettichbaum', moringa).
+alias('ramunggai', moringa).
+alias('rawag', moringa).
+alias('rembugai', moringa).
+alias('rini maka', moringa).
+alias('ruwag', moringa).
+alias('sahajan', moringa).
+alias('sahajana', moringa).
+alias('sahenjana chaal', moringa).
+alias('sahijan', moringa).
+alias('sahijana', moringa).
+alias('sahjna', moringa).
+alias('saijan', moringa).
+alias('saijana', moringa).
+alias('saijna', moringa).
+alias('sainjan', moringa).
+alias('sainjna', moringa).
+alias('sajana', moringa).
+alias('sajina', moringa).
+alias('sajna', moringa).
+alias('sajne', moringa).
+alias('sajyon', moringa).
+alias('sakhapatra', moringa).
+alias('sangoa', moringa).
+alias('sanjano', moringa).
+alias('sanjna', moringa).
+alias('saragave', moringa).
+alias('saragavo', moringa).
+alias('saragavo parna', moringa).
+alias('saragvo', moringa).
+alias('sargavo', moringa).
+alias('segat sala', moringa).
+alias('segata', moringa).
+alias('segata pana', moringa).
+alias('segta', moringa).
+alias('sehjan', moringa).
+alias('sehjana', moringa).
+alias('seijan', moringa).
+alias('sekato', moringa).
+alias('seringuane-singa', moringa).
+alias('sevaga', moringa).
+alias('shajna', moringa).
+alias('shajoma', moringa).
+alias('shanjna', moringa).
+alias('shegatabeeja', moringa).
+alias('shekta', moringa).
+alias('shevaga', moringa).
+alias('shevgi', moringa).
+alias('shewga', moringa).
+alias('shewgachi pane', moringa).
+alias('shigru', moringa).
+alias('shipka hali', moringa).
+alias('shobhanjana', moringa).
+alias('shorjona', moringa).
+alias('shuka halinka', moringa).
+alias('sigru', moringa).
+alias('sigru (leaf)', moringa).
+alias('sigru (root bark)', moringa).
+alias('sigru (seed)', moringa).
+alias('sigru (stem bark)', moringa).
+alias('sijan', moringa).
+alias('sital chini', moringa).
+alias('sloek morom', moringa).
+alias('soanjna', moringa).
+alias('sobhañjana', moringa).
+alias('sobhañjana.', moringa).
+alias('sohajana', moringa).
+alias('sohaniana', moringa).
+alias('sohanjana', moringa).
+alias('sohijan', moringa).
+alias('sohjna', moringa).
+alias('sonjna', moringa).
+alias('tellamunaga', moringa).
+alias('thingbe', moringa).
+alias('tik??agandha', moringa).
+alias('tiksnggandha', moringa).
+alias('tishnagandha', moringa).
+alias('tree of life', moringa).
+alias('wasabi no-ki-no-ha', moringa).
+alias('west indian ben', moringa).
+alias('wimdi boundu', moringa).
+alias('yevu-ti', moringa).
+alias('yevuti', moringa).
+alias('zakalanda', moringa).
+alias('zogale', moringa).
+alias('zogall', moringa).
+alias('zogall-gandi', moringa).
+alias('zogallagandi', moringa).
+alias('guilandina moringa hyperanthera moringa () vahl moringa moringa () millsp', moringa).
+alias('moringa pterygospe', moringa).
+alias('garden onion', onion).
+alias('onion', onion).
+alias('allium angolense, allium aobanum, allium ascalonicum, cepa esculenta', onion).
+alias('oregano', oregano).
+alias('pot marjoram', oregano).
+alias('parsley', parsley).
+alias('petroselinum petroselinum', parsley).
+alias('petroselinum vulgare', parsley).
+alias('selinum petroselinum', parsley).
+alias('garden pea', pea).
+alias('pea', pea).
+alias('peanut', peanut).
+alias('arachis nambyquarae', peanut).
+alias('lathyrus esquirolii', peanut).
+alias('common pear', pear).
+alias('wild pear', pear).
+alias('pear', pear).
+alias('bergamot mint', peppermint).
+alias('eau de cologne mint', peppermint).
+alias('peppermint', peppermint).
+alias('andigena', potato).
+alias('potato', potato).
+alias('solanum tuberosum andigena', potato).
+alias('field pumpkin', pumpkin).
+alias('ozark melon', pumpkin).
+alias('pumpkin', pumpkin).
+alias('texas gourd', pumpkin).
+alias('cultivated radish', radish).
+alias('radish', radish).
+alias('american red raspberry', raspberry).
+alias('grayleaf red raspberry', raspberry).
+alias('raspberry', raspberry).
+alias('rosemary', rosemary).
+alias('adacayi', sage).
+alias('broadleaf sage', sage).
+alias('ching-chieh', sage).
+alias('common sage', sage).
+alias('echter salbei', sage).
+alias('garden sage', sage).
+alias('kitchen sage', sage).
+alias('mariyamiya', sage).
+alias('sa er wei ya', sage).
+alias('sage', sage).
+alias('salbei', sage).
+alias('salie', sage).
+alias('salva', sage).
+alias('salvia', sage).
+alias('sauge', sage).
+alias('sauge commune', sage).
+alias('sauge officinale', sage).
+alias('shalfey', sage).
+alias('small leaf sage', sage).
+alias('true sage', sage).
+alias('soya bean', soybean).
+alias('soybean', soybean).
+alias('spearmint', spearmint).
+alias('strawberry', strawberry).
+alias('common sunflower', sunflower).
+alias('sunflower', sunflower).
+alias('agietu', sweet_potato).
+alias('anago-te', sweet_potato).
+alias('anamo', sweet_potato).
+alias('apichu', sweet_potato).
+alias('atomo anago', sweet_potato).
+alias('bambaira', sweet_potato).
+alias('batat', sweet_potato).
+alias('batata', sweet_potato).
+alias('batata-da-terra', sweet_potato).
+alias('batata-doce', sweet_potato).
+alias('batate', sweet_potato).
+alias('bath-ala', sweet_potato).
+alias('black sweet potato', sweet_potato).
+alias('blofo atomo', sweet_potato).
+alias('boniato', sweet_potato).
+alias('buteta', sweet_potato).
+alias('bíme mábi', sweet_potato).
+alias('camote', sweet_potato).
+alias('chakarakilangu', sweet_potato).
+alias('chelagada', sweet_potato).
+alias('chokeh', sweet_potato).
+alias('damloong chhvie', sweet_potato).
+alias('dankali', sweet_potato).
+alias('dinkale', sweet_potato).
+alias('dukuma', sweet_potato).
+alias('e-muna', sweet_potato).
+alias('ekomeko', sweet_potato).
+alias('faan shu', sweet_potato).
+alias('fanshu', sweet_potato).
+alias('genasu', sweet_potato).
+alias('goguma', sweet_potato).
+alias('hila', sweet_potato).
+alias('hongshu', sweet_potato).
+alias('huwi boled', sweet_potato).
+alias('huwi matang', sweet_potato).
+alias('imbambaila', sweet_potato).
+alias('ji-oyibo', sweet_potato).
+alias('kalembula wa lungu', sweet_potato).
+alias('kamote', sweet_potato).
+alias('kanangi', sweet_potato).
+alias('kanda', sweet_potato).
+alias('kaukau', sweet_potato).
+alias('kawai-ni-vulagi', sweet_potato).
+alias('keladi', sweet_potato).
+alias('keledek', sweet_potato).
+alias('ketela', sweet_potato).
+alias('khoai lang', sweet_potato).
+alias('kkumara', sweet_potato).
+alias('klawang', sweet_potato).
+alias('kudaku', sweet_potato).
+alias('kukunduku', sweet_potato).
+alias('kumala', sweet_potato).
+alias('kumara', sweet_potato).
+alias('kuumara', sweet_potato).
+alias('lal alu', sweet_potato).
+alias('luzu vaka', sweet_potato).
+alias('man-thet', sweet_potato).
+alias('mitha alu', sweet_potato).
+alias('n jowo', sweet_potato).
+alias('ntommo', sweet_potato).
+alias('odunkum', sweet_potato).
+alias('papa dulce', sweet_potato).
+alias('patate douce', sweet_potato).
+alias('petete', sweet_potato).
+alias('phan-karo', sweet_potato).
+alias('pilau katelo', sweet_potato).
+alias('pot-ecok', sweet_potato).
+alias('ranga alu', sweet_potato).
+alias('ratalu', sweet_potato).
+alias('sakaria', sweet_potato).
+alias('sakarkenda', sweet_potato).
+alias('sakarkhand', sweet_potato).
+alias('sakkareivelleikilangu', sweet_potato).
+alias('satsuma inno', sweet_potato).
+alias('setilo', sweet_potato).
+alias('shakar-kandi', sweet_potato).
+alias('shakarkand', sweet_potato).
+alias('sweet potato', sweet_potato).
+alias('sweet potato vine', sweet_potato).
+alias('sweet-potato', sweet_potato).
+alias('süßkartoffel', sweet_potato).
+alias('tuktuka', sweet_potato).
+alias('wild potato vine', sweet_potato).
+alias('wild potato wit', sweet_potato).
+alias('zoete aardappel.', sweet_potato).
+alias('common thyme', thyme).
+alias('garden thyme', thyme).
+alias('german thyme', thyme).
+alias('samon-phyu', thyme).
+alias('thym', thyme).
+alias('thyme', thyme).
+alias('timo', thyme).
+alias('tomillo', thyme).
+alias('wild thyme', thyme).
+alias('origanum thymus kuntze', thyme).
+alias('thymus collinus salisb', thyme).
+alias('dumádu', tomato).
+alias('garden tomato', tomato).
+alias('lycopersicum esculentum', tomato).
+alias('tomate', tomato).
+alias('tomato', tomato).
+alias('tomato extract containing lycopene', tomato).
+alias('tomato|thakkali', tomato).
+alias('tumatis.', tomato).
+alias('lycopersicon cerasiforme dunal lycopersicon esculentum mill', tomato).
+alias('lycopersicon humboldtii (willd', tomato).
+alias('turmeric', turmeric).
+alias('turnip', turnip).
+alias('water melon', watermelon).
+alias('watermelon', watermelon).
+alias('field pumpkin', zucchini).
+alias('ozark melon', zucchini).
+alias('pumpkin', zucchini).
+alias('texas gourd', zucchini).
+alias('zucchini', zucchini).
 
 ================================================================================
 logic_companion_planting/base/plant_taxonomy.pl
-Missing facts: 6
+Missing facts: 141
 ================================================================================
 
-accepted_scientific_name(gotu_kola, 'Centella asiatica').
-alternate_scientific_name(gotu_kola, 'Hydrocotyle asiatica').
-genus(gotu_kola, centella).
-family(gotu_kola, apiaceae).
-taxonomy_confidence(gotu_kola, high).
-taxonomy_source(gotu_kola, 'GBIF / Plants For A Future').
+accepted_scientific_name(aloe_vera, 'Aloe vera').
+alternate_scientific_name(aloe_vera, 'Aloe barbadensis, Aloe vulgaris').
+genus(aloe_vera, aloe).
+family(aloe_vera, asphodelaceae).
+taxonomy_confidence(aloe_vera, high).
+taxonomy_source(aloe_vera, 'GBIF / Plants For A Future').
+taxonomy_source(apple, 'GBIF / Plants For A Future').
+accepted_scientific_name(artichoke, 'Cynara cardunculus').
+taxonomy_source(artichoke, 'GBIF / Plants For A Future').
+alternate_scientific_name(arugula, 'Euzomum vesicarium () Link').
+alternate_scientific_name(arugula, 'Heterotypic Synonyms: E').
+alternate_scientific_name(arugula, 'Homotypic Synonyms: Brassica vesicaria E').
+alternate_scientific_name(arugula, 'Raphanus vesicarius () Crantz').
+alternate_scientific_name(arugula, 'Velleruca vesicaria () Pomel').
+taxonomy_source(arugula, 'GBIF / Plants For A Future').
+alternate_scientific_name(basil, 'Ocimum album, Ocimum anisatum, Ocimum barrelieri, Ocimum medium, Plectranthus barrelieri').
+taxonomy_source(basil, 'GBIF / Plants For A Future').
+accepted_scientific_name(bean_common, 'Phaseolus vulgaris').
+genus(bean_common, phaseolus).
+family(bean_common, fabaceae).
+taxonomy_confidence(bean_common, high).
+taxonomy_source(bean_common, 'GBIF / Plants For A Future').
+taxonomy_source(bitter_melon, 'GBIF / Plants For A Future').
+accepted_scientific_name(blackberry, 'Rubus fruticosus').
+taxonomy_confidence(blackberry, high).
+taxonomy_source(blackberry, 'GBIF / Plants For A Future').
+taxonomy_source(bok_choy, 'GBIF / Plants For A Future').
+taxonomy_source(broccoli, 'GBIF / Plants For A Future').
+accepted_scientific_name(cabbage, 'Brassica oleracea').
+taxonomy_source(cabbage, 'GBIF / Plants For A Future').
+accepted_scientific_name(carrot, 'Daucus carota').
+taxonomy_source(carrot, 'GBIF / Plants For A Future').
+taxonomy_source(cauliflower, 'GBIF / Plants For A Future').
+accepted_scientific_name(celery, 'Apium graveolens').
+alternate_scientific_name(celery, 'Apium celleri').
+alternate_scientific_name(celery, 'Apium decumbens').
+alternate_scientific_name(celery, 'Carum graveolens').
+alternate_scientific_name(celery, 'Celeria graveolens').
+genus(celery, apium).
+family(celery, apiaceae).
+taxonomy_confidence(celery, high).
+taxonomy_source(celery, 'GBIF / Plants For A Future').
+taxonomy_source(chickpea, 'GBIF / Plants For A Future').
+accepted_scientific_name(chicory, 'Cichorium intybus').
+genus(chicory, cichorium).
+family(chicory, asteraceae).
+taxonomy_confidence(chicory, high).
+taxonomy_source(chicory, 'GBIF / Plants For A Future').
+taxonomy_source(chive, 'GBIF / Plants For A Future').
+accepted_scientific_name(coriander, 'Coriandrum sativum').
+genus(coriander, coriandrum).
+family(coriander, apiaceae).
+taxonomy_confidence(coriander, high).
+taxonomy_source(coriander, 'GBIF / Plants For A Future').
+taxonomy_source(cucumber, 'GBIF / Plants For A Future').
+accepted_scientific_name(dandelion, 'Taraxacum officinale').
+taxonomy_confidence(dandelion, high).
+taxonomy_source(dandelion, 'GBIF / Plants For A Future').
+taxonomy_source(dill, 'GBIF / Plants For A Future').
+taxonomy_source(eggplant, 'GBIF / Plants For A Future').
+alternate_scientific_name(fennel, 'Anethum dulce').
+alternate_scientific_name(fennel, 'Anethum foeniculum').
+alternate_scientific_name(fennel, 'Foeniculum divaricatum').
+alternate_scientific_name(fennel, 'Foeniculum officinale').
+alternate_scientific_name(fennel, 'Seseli foeniculum').
+taxonomy_source(fennel, 'GBIF / Plants For A Future').
+taxonomy_source(fig, 'GBIF / Plants For A Future').
+taxonomy_source(galangal, 'GBIF / Plants For A Future').
+taxonomy_source(garlic, 'GBIF / Plants For A Future').
+alternate_scientific_name(ginger, 'Amomum angustifolium Salisb').
+alternate_scientific_name(ginger, 'Amomum zingiber Amomum zinziba Hill Zingiber aromaticum Noronha Zing').
+taxonomy_source(ginger, 'GBIF / Plants For A Future').
+taxonomy_source(grape, 'GBIF / Plants For A Future').
+accepted_scientific_name(kale, 'Brassica oleracea var. acephala').
+taxonomy_confidence(kale, high).
+taxonomy_source(kale, 'GBIF / Plants For A Future').
+taxonomy_source(lavender, 'GBIF / Plants For A Future').
+accepted_scientific_name(leek, 'Allium ampeloprasum').
+taxonomy_source(leek, 'GBIF / Plants For A Future').
+alternate_scientific_name(lemon_balm, 'Faucibarba officinalis').
+alternate_scientific_name(lemon_balm, 'Mutelia officinalis').
+alternate_scientific_name(lemon_balm, 'Thymus melissa').
+taxonomy_source(lemon_balm, 'GBIF / Plants For A Future').
+genus(lentil, vicia).
+taxonomy_source(lentil, 'GBIF / Plants For A Future').
+taxonomy_source(lettuce, 'GBIF / Plants For A Future').
+taxonomy_source(melon, 'GBIF / Plants For A Future').
+alternate_scientific_name(moringa, 'Guilandina moringa Hyperanthera moringa () Vahl Moringa moringa () Millsp').
+alternate_scientific_name(moringa, 'Moringa pterygospe').
+taxonomy_source(moringa, 'GBIF / Plants For A Future').
+alternate_scientific_name(onion, 'Allium angolense, Allium aobanum, Allium ascalonicum, Cepa esculenta').
+taxonomy_source(onion, 'GBIF / Plants For A Future').
+taxonomy_source(oregano, 'GBIF / Plants For A Future').
+alternate_scientific_name(parsley, 'Petroselinum petroselinum').
+alternate_scientific_name(parsley, 'Petroselinum vulgare').
+alternate_scientific_name(parsley, 'Selinum petroselinum').
+taxonomy_source(parsley, 'GBIF / Plants For A Future').
+genus(pea, lathyrus).
+taxonomy_source(pea, 'GBIF / Plants For A Future').
+alternate_scientific_name(peanut, 'Arachis nambyquarae').
+alternate_scientific_name(peanut, 'Lathyrus esquirolii').
+taxonomy_source(peanut, 'GBIF / Plants For A Future').
+taxonomy_source(pear, 'GBIF / Plants For A Future').
+accepted_scientific_name(peppermint, 'Mentha x piperita').
+genus(peppermint, mentha).
+family(peppermint, lamiaceae).
+taxonomy_confidence(peppermint, high).
+taxonomy_source(peppermint, 'GBIF / Plants For A Future').
+alternate_scientific_name(potato, 'Solanum tuberosum andigena').
+taxonomy_source(potato, 'GBIF / Plants For A Future').
+taxonomy_confidence(pumpkin, high).
+taxonomy_source(pumpkin, 'GBIF / Plants For A Future').
+taxonomy_source(radish, 'GBIF / Plants For A Future').
+taxonomy_confidence(raspberry, high).
+taxonomy_source(raspberry, 'GBIF / Plants For A Future').
+taxonomy_source(rosemary, 'GBIF / Plants For A Future').
+taxonomy_source(sage, 'GBIF / Plants For A Future').
+taxonomy_source(soybean, 'GBIF / Plants For A Future').
+accepted_scientific_name(spearmint, 'Mentha spicata').
+genus(spearmint, mentha).
+family(spearmint, lamiaceae).
+taxonomy_confidence(spearmint, high).
+taxonomy_source(spearmint, 'GBIF / Plants For A Future').
+accepted_scientific_name(strawberry, 'Fragaria x ananassa').
+taxonomy_source(strawberry, 'GBIF / Plants For A Future').
+taxonomy_source(sunflower, 'GBIF / Plants For A Future').
+taxonomy_source(sweet_potato, 'GBIF / Plants For A Future').
+alternate_scientific_name(thyme, 'Origanum thymus Kuntze').
+alternate_scientific_name(thyme, 'Thymus collinus Salisb').
+taxonomy_source(thyme, 'GBIF / Plants For A Future').
+alternate_scientific_name(tomato, 'Lycopersicon cerasiforme Dunal Lycopersicon esculentum Mill').
+alternate_scientific_name(tomato, 'Lycopersicon humboldtii (Willd').
+taxonomy_source(tomato, 'GBIF / Plants For A Future').
+taxonomy_source(turmeric, 'GBIF / Plants For A Future').
+taxonomy_source(turnip, 'GBIF / Plants For A Future').
+taxonomy_source(watermelon, 'GBIF / Plants For A Future').
+accepted_scientific_name(zucchini, 'Cucurbita pepo').
+genus(zucchini, cucurbita).
+family(zucchini, cucurbitaceae).
+taxonomy_confidence(zucchini, high).
+taxonomy_source(zucchini, 'GBIF / Plants For A Future').
 
 ================================================================================
 logic_companion_planting/data/growth_facts.pl
-Missing facts: 15
+Missing facts: 821
 ================================================================================
 
-life_cycle(gotu_kola, perennial).
-botanical_life_cycle(gotu_kola, perennial).
-fact_scope(gotu_kola, extracted_profile).
-accepted_scientific_name(gotu_kola, 'Centella asiatica').
-genus(gotu_kola, centella).
-family(gotu_kola, apiaceae).
-propagation_method(gotu_kola, division).
-propagation_method(gotu_kola, seed).
-sunlight(gotu_kola, partial_shade).
-soil_type(gotu_kola, heavy_clay).
-soil_type(gotu_kola, light_sandy).
-soil_type(gotu_kola, medium_loamy).
-source_name(gotu_kola, 'Plants For A Future').
-source_url(gotu_kola, 'https://pfaf.org/user/Plant.aspx?LatinName=Centella+asiatica').
-confidence(gotu_kola, high).
+life_cycle(aloe_vera, perennial).
+botanical_life_cycle(aloe_vera, perennial).
+fact_scope(aloe_vera, extracted_profile).
+accepted_scientific_name(aloe_vera, 'Aloe vera').
+genus(aloe_vera, aloe).
+family(aloe_vera, asphodelaceae).
+propagation_method(aloe_vera, division).
+propagation_method(aloe_vera, seed).
+sunlight(aloe_vera, full_sun).
+soil_type(aloe_vera, light_sandy).
+soil_type(aloe_vera, medium_loamy).
+soil_type(aloe_vera, well_drained).
+water_need(aloe_vera, moderate).
+source_name(aloe_vera, 'Plants For A Future').
+source_url(aloe_vera, 'https://pfaf.org/user/Plant.aspx?LatinName=Aloe+vera').
+confidence(aloe_vera, high).
+fact_scope(apple, extracted_profile).
+accepted_scientific_name(apple, 'Malus domestica').
+genus(apple, malus).
+family(apple, rosaceae).
+propagation_method(apple, cutting).
+propagation_method(apple, seed).
+sunlight(apple, full_sun).
+sunlight(apple, partial_shade).
+soil_type(apple, heavy_clay).
+soil_type(apple, light_sandy).
+soil_type(apple, medium_loamy).
+soil_type(apple, well_drained).
+water_need(apple, moderate).
+source_name(apple, 'Plants For A Future').
+source_url(apple, 'https://pfaf.org/user/Plant.aspx?LatinName=Malus+domestica').
+confidence(apple, high).
+life_cycle(artichoke, perennial).
+botanical_life_cycle(artichoke, perennial).
+fact_scope(artichoke, extracted_profile).
+accepted_scientific_name(artichoke, 'Cynara cardunculus').
+genus(artichoke, cynara).
+family(artichoke, asteraceae).
+propagation_method(artichoke, division).
+propagation_method(artichoke, seed).
+sunlight(artichoke, full_sun).
+soil_type(artichoke, heavy_clay).
+soil_type(artichoke, light_sandy).
+soil_type(artichoke, medium_loamy).
+water_need(artichoke, moderate).
+source_name(artichoke, 'Plants For A Future').
+source_url(artichoke, 'https://pfaf.org/user/Plant.aspx?LatinName=Cynara+cardunculus').
+confidence(artichoke, high).
+life_cycle(arugula, annual).
+crop_life_cycle(arugula, annual).
+fact_scope(arugula, extracted_profile).
+accepted_scientific_name(arugula, 'Eruca vesicaria').
+genus(arugula, eruca).
+family(arugula, brassicaceae).
+propagation_method(arugula, seed).
+sunlight(arugula, full_sun).
+sunlight(arugula, partial_shade).
+soil_type(arugula, heavy_clay).
+soil_type(arugula, light_sandy).
+soil_type(arugula, medium_loamy).
+soil_type(arugula, well_drained).
+water_need(arugula, moderate).
+growth_speed(arugula, fast).
+source_name(arugula, 'Plants For A Future').
+source_url(arugula, 'https://pfaf.org/user/Plant.aspx?LatinName=Eruca+vesicaria').
+confidence(arugula, high).
+life_cycle(basil, annual).
+botanical_life_cycle(basil, tender_perennial).
+crop_life_cycle(basil, annual).
+fact_scope(basil, extracted_profile).
+propagation_method(basil, seed).
+sunlight(basil, full_sun).
+soil_type(basil, light_sandy).
+soil_type(basil, medium_loamy).
+soil_type(basil, well_drained).
+water_need(basil, moderate).
+growth_speed(basil, fast).
+soil_ph_min(basil, 5.0).
+soil_ph_max(basil, 8.0).
+source_name(basil, 'Plants For A Future').
+source_url(basil, 'https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+basilicum').
+life_cycle(bean_common, annual).
+crop_life_cycle(bean_common, annual).
+fact_scope(bean_common, extracted_profile).
+accepted_scientific_name(bean_common, 'Phaseolus vulgaris').
+genus(bean_common, phaseolus).
+family(bean_common, fabaceae).
+propagation_method(bean_common, seed).
+sunlight(bean_common, full_sun).
+soil_type(bean_common, heavy_clay).
+soil_type(bean_common, light_sandy).
+soil_type(bean_common, medium_loamy).
+soil_type(bean_common, well_drained).
+water_need(bean_common, moderate).
+soil_ph_min(bean_common, 5.5).
+soil_ph_max(bean_common, 6.5).
+source_name(bean_common, 'Plants For A Future').
+source_url(bean_common, 'https://pfaf.org/user/Plant.aspx?LatinName=Phaseolus+vulgaris').
+confidence(bean_common, high).
+fact_scope(bitter_melon, extracted_profile).
+accepted_scientific_name(bitter_melon, 'Momordica charantia').
+genus(bitter_melon, momordica).
+family(bitter_melon, cucurbitaceae).
+source_name(bitter_melon, 'Plants For A Future').
+source_url(bitter_melon, 'https://pfaf.org/user/Plant.aspx?LatinName=Momordica+charantia').
+confidence(bitter_melon, high).
+life_cycle(blackberry, perennial).
+botanical_life_cycle(blackberry, perennial).
+fact_scope(blackberry, extracted_profile).
+accepted_scientific_name(blackberry, 'Rubus fruticosus').
+genus(blackberry, rubus).
+family(blackberry, rosaceae).
+propagation_method(blackberry, cutting).
+propagation_method(blackberry, division).
+propagation_method(blackberry, layering).
+propagation_method(blackberry, seed).
+sunlight(blackberry, partial_shade).
+soil_type(blackberry, heavy_clay).
+soil_type(blackberry, light_sandy).
+soil_type(blackberry, medium_loamy).
+soil_type(blackberry, well_drained).
+water_need(blackberry, moderate).
+growth_speed(blackberry, fast).
+source_name(blackberry, 'Plants For A Future').
+source_url(blackberry, 'https://pfaf.org/user/Plant.aspx?LatinName=Rubus+fruticosus').
+confidence(blackberry, high).
+fact_scope(bok_choy, extracted_profile).
+accepted_scientific_name(bok_choy, 'Brassica rapa subsp. chinensis').
+genus(bok_choy, brassica).
+family(bok_choy, brassicaceae).
+source_name(bok_choy, 'Plants For A Future').
+source_url(bok_choy, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+rapa+subsp.+chinensis').
+confidence(bok_choy, high).
+fact_scope(broccoli, extracted_profile).
+source_name(broccoli, 'Plants For A Future').
+source_url(broccoli, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+var.+italica').
+life_cycle(cabbage, perennial).
+botanical_life_cycle(cabbage, perennial).
+fact_scope(cabbage, extracted_profile).
+accepted_scientific_name(cabbage, 'Brassica oleracea').
+propagation_method(cabbage, cutting).
+propagation_method(cabbage, seed).
+sunlight(cabbage, full_sun).
+sunlight(cabbage, partial_shade).
+soil_type(cabbage, heavy_clay).
+soil_type(cabbage, light_sandy).
+soil_type(cabbage, medium_loamy).
+soil_type(cabbage, well_drained).
+water_need(cabbage, moderate).
+growth_speed(cabbage, fast).
+source_name(cabbage, 'Plants For A Future').
+source_url(cabbage, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea').
+fact_scope(carrot, extracted_profile).
+accepted_scientific_name(carrot, 'Daucus carota').
+genus(carrot, daucus).
+family(carrot, apiaceae).
+propagation_method(carrot, seed).
+sunlight(carrot, full_sun).
+soil_type(carrot, heavy_clay).
+soil_type(carrot, light_sandy).
+soil_type(carrot, medium_loamy).
+soil_type(carrot, well_drained).
+water_need(carrot, moderate).
+source_name(carrot, 'Plants For A Future').
+source_url(carrot, 'https://pfaf.org/user/Plant.aspx?LatinName=Daucus+carota').
+confidence(carrot, high).
+fact_scope(cauliflower, extracted_profile).
+source_name(cauliflower, 'Plants For A Future').
+source_url(cauliflower, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+var.+botrytis').
+fact_scope(celery, extracted_profile).
+accepted_scientific_name(celery, 'Apium graveolens').
+genus(celery, apium).
+family(celery, apiaceae).
+propagation_method(celery, seed).
+sunlight(celery, partial_shade).
+soil_type(celery, heavy_clay).
+soil_type(celery, light_sandy).
+soil_type(celery, medium_loamy).
+water_need(celery, moderate).
+source_name(celery, 'Plants For A Future').
+source_url(celery, 'https://pfaf.org/user/Plant.aspx?LatinName=Apium+graveolens').
+fact_scope(chickpea, extracted_profile).
+accepted_scientific_name(chickpea, 'Cicer arietinum').
+genus(chickpea, cicer).
+family(chickpea, fabaceae).
+source_name(chickpea, 'Plants For A Future').
+source_url(chickpea, 'https://pfaf.org/user/Plant.aspx?LatinName=Cicer+arietinum').
+confidence(chickpea, high).
+fact_scope(chicory, extracted_profile).
+accepted_scientific_name(chicory, 'Cichorium intybus').
+genus(chicory, cichorium).
+family(chicory, asteraceae).
+source_name(chicory, 'Plants For A Future').
+source_url(chicory, 'https://pfaf.org/user/Plant.aspx?LatinName=Cichorium+intybus').
+confidence(chicory, high).
+fact_scope(chive, extracted_profile).
+accepted_scientific_name(chive, 'Allium schoenoprasum').
+genus(chive, allium).
+family(chive, amaryllidaceae).
+source_name(chive, 'Plants For A Future').
+source_url(chive, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+schoenoprasum').
+confidence(chive, high).
+fact_scope(coriander, extracted_profile).
+accepted_scientific_name(coriander, 'Coriandrum sativum').
+genus(coriander, coriandrum).
+family(coriander, apiaceae).
+source_name(coriander, 'Plants For A Future').
+source_url(coriander, 'https://pfaf.org/user/Plant.aspx?LatinName=Coriandrum+sativum').
+confidence(coriander, high).
+life_cycle(cucumber, annual).
+crop_life_cycle(cucumber, annual).
+fact_scope(cucumber, extracted_profile).
+propagation_method(cucumber, seed).
+sunlight(cucumber, full_sun).
+soil_type(cucumber, heavy_clay).
+soil_type(cucumber, light_sandy).
+soil_type(cucumber, medium_loamy).
+soil_type(cucumber, well_drained).
+water_need(cucumber, moderate).
+source_name(cucumber, 'Plants For A Future').
+source_url(cucumber, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucumis+sativus').
+life_cycle(dandelion, perennial).
+botanical_life_cycle(dandelion, perennial).
+fact_scope(dandelion, extracted_profile).
+accepted_scientific_name(dandelion, 'Taraxacum officinale').
+genus(dandelion, taraxacum).
+family(dandelion, asteraceae).
+propagation_method(dandelion, division).
+propagation_method(dandelion, seed).
+sunlight(dandelion, full_sun).
+sunlight(dandelion, partial_shade).
+soil_type(dandelion, heavy_clay).
+soil_type(dandelion, light_sandy).
+soil_type(dandelion, medium_loamy).
+soil_type(dandelion, well_drained).
+water_need(dandelion, moderate).
+growth_speed(dandelion, fast).
+source_name(dandelion, 'Plants For A Future').
+source_url(dandelion, 'https://pfaf.org/user/Plant.aspx?LatinName=Taraxacum+officinale').
+confidence(dandelion, high).
+fact_scope(dill, extracted_profile).
+source_name(dill, 'Plants For A Future').
+source_url(dill, 'https://pfaf.org/user/Plant.aspx?LatinName=Anethum+graveolens').
+life_cycle(eggplant, perennial).
+botanical_life_cycle(eggplant, perennial).
+fact_scope(eggplant, extracted_profile).
+propagation_method(eggplant, seed).
+sunlight(eggplant, full_sun).
+soil_type(eggplant, heavy_clay).
+soil_type(eggplant, light_sandy).
+soil_type(eggplant, medium_loamy).
+soil_type(eggplant, well_drained).
+water_need(eggplant, moderate).
+soil_ph_min(eggplant, 5.5).
+soil_ph_max(eggplant, 6.8).
+source_name(eggplant, 'Plants For A Future').
+source_url(eggplant, 'https://pfaf.org/user/Plant.aspx?LatinName=Solanum+melongena').
+life_cycle(fennel, perennial).
+botanical_life_cycle(fennel, perennial).
+fact_scope(fennel, extracted_profile).
+accepted_scientific_name(fennel, 'Foeniculum vulgare').
+genus(fennel, foeniculum).
+family(fennel, apiaceae).
+propagation_method(fennel, division).
+propagation_method(fennel, seed).
+sunlight(fennel, full_sun).
+soil_type(fennel, heavy_clay).
+soil_type(fennel, light_sandy).
+soil_type(fennel, medium_loamy).
+soil_type(fennel, well_drained).
+water_need(fennel, moderate).
+source_name(fennel, 'Plants For A Future').
+source_url(fennel, 'https://pfaf.org/user/Plant.aspx?LatinName=Foeniculum+vulgare').
+confidence(fennel, high).
+fact_scope(fig, extracted_profile).
+accepted_scientific_name(fig, 'Ficus carica').
+genus(fig, ficus).
+family(fig, moraceae).
+propagation_method(fig, cutting).
+propagation_method(fig, layering).
+propagation_method(fig, seed).
+sunlight(fig, full_sun).
+soil_type(fig, heavy_clay).
+soil_type(fig, light_sandy).
+soil_type(fig, medium_loamy).
+soil_type(fig, well_drained).
+water_need(fig, moderate).
+soil_ph_min(fig, 6.0).
+soil_ph_max(fig, 7.0).
+source_name(fig, 'Plants For A Future').
+source_url(fig, 'https://pfaf.org/user/Plant.aspx?LatinName=Ficus+carica').
+confidence(fig, high).
+fact_scope(galangal, extracted_profile).
+accepted_scientific_name(galangal, 'Alpinia galanga').
+genus(galangal, alpinia).
+family(galangal, zingiberaceae).
+source_name(galangal, 'Plants For A Future').
+source_url(galangal, 'https://pfaf.org/user/Plant.aspx?LatinName=Alpinia+galanga').
+confidence(galangal, high).
+fact_scope(garlic, extracted_profile).
+accepted_scientific_name(garlic, 'Allium sativum').
+genus(garlic, allium).
+family(garlic, amaryllidaceae).
+source_name(garlic, 'Plants For A Future').
+source_url(garlic, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+sativum').
+confidence(garlic, high).
+life_cycle(ginger, perennial).
+botanical_life_cycle(ginger, perennial).
+fact_scope(ginger, extracted_profile).
+accepted_scientific_name(ginger, 'Zingiber officinale').
+genus(ginger, zingiber).
+family(ginger, zingiberaceae).
+propagation_method(ginger, division).
+propagation_method(ginger, seed).
+sunlight(ginger, full_sun).
+sunlight(ginger, partial_shade).
+soil_type(ginger, heavy_clay).
+soil_type(ginger, light_sandy).
+soil_type(ginger, medium_loamy).
+soil_type(ginger, well_drained).
+water_need(ginger, moderate).
+growth_speed(ginger, fast).
+soil_ph_min(ginger, 6.0).
+soil_ph_max(ginger, 7.0).
+source_name(ginger, 'Plants For A Future').
+source_url(ginger, 'https://pfaf.org/user/Plant.aspx?LatinName=Zingiber+officinale').
+confidence(ginger, high).
+fact_scope(grape, extracted_profile).
+accepted_scientific_name(grape, 'Vitis vinifera').
+genus(grape, vitis).
+family(grape, vitaceae).
+propagation_method(grape, cutting).
+propagation_method(grape, layering).
+propagation_method(grape, seed).
+sunlight(grape, full_sun).
+sunlight(grape, partial_shade).
+soil_type(grape, heavy_clay).
+soil_type(grape, light_sandy).
+soil_type(grape, medium_loamy).
+soil_type(grape, well_drained).
+water_need(grape, moderate).
+growth_speed(grape, fast).
+soil_ph_min(grape, 6.5).
+soil_ph_max(grape, 7.0).
+source_name(grape, 'Plants For A Future').
+source_url(grape, 'https://pfaf.org/user/Plant.aspx?LatinName=Vitis+vinifera').
+confidence(grape, high).
+fact_scope(kale, extracted_profile).
+accepted_scientific_name(kale, 'Brassica oleracea var. acephala').
+source_name(kale, 'Plants For A Future').
+source_url(kale, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+var.+acephala').
+fact_scope(lavender, extracted_profile).
+accepted_scientific_name(lavender, 'Lavandula angustifolia').
+genus(lavender, lavandula).
+family(lavender, lamiaceae).
+propagation_method(lavender, cutting).
+propagation_method(lavender, layering).
+propagation_method(lavender, seed).
+sunlight(lavender, full_sun).
+soil_type(lavender, heavy_clay).
+soil_type(lavender, light_sandy).
+soil_type(lavender, medium_loamy).
+soil_type(lavender, well_drained).
+water_need(lavender, moderate).
+source_name(lavender, 'Plants For A Future').
+source_url(lavender, 'https://pfaf.org/user/Plant.aspx?LatinName=Lavandula+angustifolia').
+confidence(lavender, high).
+fact_scope(leek, extracted_profile).
+accepted_scientific_name(leek, 'Allium ampeloprasum').
+genus(leek, allium).
+family(leek, amaryllidaceae).
+source_name(leek, 'Plants For A Future').
+source_url(leek, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+ampeloprasum').
+confidence(leek, high).
+life_cycle(lemon_balm, perennial).
+botanical_life_cycle(lemon_balm, perennial).
+fact_scope(lemon_balm, extracted_profile).
+accepted_scientific_name(lemon_balm, 'Melissa officinalis').
+genus(lemon_balm, melissa).
+family(lemon_balm, lamiaceae).
+propagation_method(lemon_balm, cutting).
+propagation_method(lemon_balm, division).
+propagation_method(lemon_balm, seed).
+sunlight(lemon_balm, full_sun).
+sunlight(lemon_balm, partial_shade).
+soil_type(lemon_balm, light_sandy).
+soil_type(lemon_balm, medium_loamy).
+soil_type(lemon_balm, well_drained).
+water_need(lemon_balm, moderate).
+growth_speed(lemon_balm, fast).
+source_name(lemon_balm, 'Plants For A Future').
+source_url(lemon_balm, 'https://pfaf.org/user/Plant.aspx?LatinName=Melissa+officinalis').
+confidence(lemon_balm, high).
+life_cycle(lentil, annual).
+crop_life_cycle(lentil, annual).
+fact_scope(lentil, extracted_profile).
+accepted_scientific_name(lentil, 'Lens culinaris').
+genus(lentil, vicia).
+family(lentil, fabaceae).
+propagation_method(lentil, seed).
+sunlight(lentil, full_sun).
+soil_type(lentil, heavy_clay).
+soil_type(lentil, light_sandy).
+soil_type(lentil, medium_loamy).
+soil_type(lentil, well_drained).
+water_need(lentil, moderate).
+source_name(lentil, 'Plants For A Future').
+source_url(lentil, 'https://pfaf.org/user/Plant.aspx?LatinName=Lens+culinaris').
+confidence(lentil, high).
+life_cycle(lettuce, annual).
+crop_life_cycle(lettuce, annual).
+fact_scope(lettuce, extracted_profile).
+propagation_method(lettuce, seed).
+sunlight(lettuce, full_sun).
+sunlight(lettuce, partial_shade).
+soil_type(lettuce, light_sandy).
+soil_type(lettuce, medium_loamy).
+soil_type(lettuce, well_drained).
+water_need(lettuce, moderate).
+source_name(lettuce, 'Plants For A Future').
+source_url(lettuce, 'https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa').
+life_cycle(melon, annual).
+crop_life_cycle(melon, annual).
+fact_scope(melon, extracted_profile).
+accepted_scientific_name(melon, 'Cucumis melo').
+genus(melon, cucumis).
+family(melon, cucurbitaceae).
+propagation_method(melon, seed).
+sunlight(melon, full_sun).
+soil_type(melon, heavy_clay).
+soil_type(melon, light_sandy).
+soil_type(melon, medium_loamy).
+soil_type(melon, well_drained).
+water_need(melon, moderate).
+source_name(melon, 'Plants For A Future').
+source_url(melon, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucumis+melo').
+confidence(melon, high).
+fact_scope(moringa, extracted_profile).
+accepted_scientific_name(moringa, 'Moringa oleifera').
+genus(moringa, moringa).
+family(moringa, moringaceae).
+propagation_method(moringa, cutting).
+propagation_method(moringa, seed).
+sunlight(moringa, full_sun).
+soil_type(moringa, heavy_clay).
+soil_type(moringa, light_sandy).
+soil_type(moringa, medium_loamy).
+soil_type(moringa, well_drained).
+growth_speed(moringa, fast).
+soil_ph_min(moringa, 5.5).
+soil_ph_max(moringa, 7.0).
+source_name(moringa, 'Plants For A Future').
+source_url(moringa, 'https://pfaf.org/user/Plant.aspx?LatinName=Moringa+oleifera').
+confidence(moringa, high).
+life_cycle(onion, perennial).
+botanical_life_cycle(onion, perennial).
+fact_scope(onion, extracted_profile).
+propagation_method(onion, bulb).
+propagation_method(onion, seed).
+sunlight(onion, full_sun).
+soil_type(onion, light_sandy).
+soil_type(onion, medium_loamy).
+soil_type(onion, well_drained).
+water_need(onion, moderate).
+source_name(onion, 'Plants For A Future').
+source_url(onion, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+cepa').
+confidence(onion, high).
+life_cycle(oregano, perennial).
+botanical_life_cycle(oregano, perennial).
+fact_scope(oregano, extracted_profile).
+accepted_scientific_name(oregano, 'Origanum vulgare').
+genus(oregano, origanum).
+family(oregano, lamiaceae).
+propagation_method(oregano, cutting).
+propagation_method(oregano, division).
+propagation_method(oregano, seed).
+sunlight(oregano, full_sun).
+sunlight(oregano, partial_shade).
+soil_type(oregano, heavy_clay).
+soil_type(oregano, light_sandy).
+soil_type(oregano, medium_loamy).
+soil_type(oregano, well_drained).
+water_need(oregano, moderate).
+source_name(oregano, 'Plants For A Future').
+source_url(oregano, 'https://pfaf.org/user/Plant.aspx?LatinName=Origanum+vulgare').
+confidence(oregano, high).
+fact_scope(parsley, extracted_profile).
+propagation_method(parsley, seed).
+sunlight(parsley, full_sun).
+sunlight(parsley, partial_shade).
+soil_type(parsley, heavy_clay).
+soil_type(parsley, light_sandy).
+soil_type(parsley, medium_loamy).
+soil_type(parsley, well_drained).
+water_need(parsley, moderate).
+source_name(parsley, 'Plants For A Future').
+source_url(parsley, 'https://pfaf.org/user/Plant.aspx?LatinName=Petroselinum+crispum').
+life_cycle(pea, annual).
+crop_life_cycle(pea, annual).
+fact_scope(pea, extracted_profile).
+genus(pea, lathyrus).
+germination_days_min(pea, 7).
+germination_days_max(pea, 10).
+propagation_method(pea, seed).
+sunlight(pea, full_sun).
+soil_type(pea, light_sandy).
+soil_type(pea, medium_loamy).
+soil_type(pea, well_drained).
+water_need(pea, moderate).
+soil_ph_min(pea, 6.0).
+soil_ph_max(pea, 7.5).
+source_name(pea, 'Plants For A Future').
+source_url(pea, 'https://pfaf.org/user/Plant.aspx?LatinName=Pisum+sativum').
+life_cycle(peanut, annual).
+crop_life_cycle(peanut, annual).
+fact_scope(peanut, extracted_profile).
+accepted_scientific_name(peanut, 'Arachis hypogaea').
+genus(peanut, arachis).
+family(peanut, fabaceae).
+propagation_method(peanut, seed).
+sunlight(peanut, full_sun).
+soil_type(peanut, heavy_clay).
+soil_type(peanut, light_sandy).
+soil_type(peanut, medium_loamy).
+soil_type(peanut, well_drained).
+water_need(peanut, moderate).
+soil_ph_min(peanut, 4.3).
+soil_ph_max(peanut, 8.7).
+source_name(peanut, 'Plants For A Future').
+source_url(peanut, 'https://pfaf.org/user/Plant.aspx?LatinName=Arachis+hypogaea').
+confidence(peanut, high).
+fact_scope(pear, extracted_profile).
+accepted_scientific_name(pear, 'Pyrus communis').
+genus(pear, pyrus).
+family(pear, rosaceae).
+propagation_method(pear, seed).
+sunlight(pear, full_sun).
+sunlight(pear, partial_shade).
+soil_type(pear, heavy_clay).
+soil_type(pear, light_sandy).
+soil_type(pear, medium_loamy).
+soil_type(pear, well_drained).
+water_need(pear, moderate).
+growth_speed(pear, fast).
+source_name(pear, 'Plants For A Future').
+source_url(pear, 'https://pfaf.org/user/Plant.aspx?LatinName=Pyrus+communis').
+confidence(pear, high).
+life_cycle(peppermint, perennial).
+botanical_life_cycle(peppermint, perennial).
+fact_scope(peppermint, extracted_profile).
+accepted_scientific_name(peppermint, 'Mentha x piperita').
+genus(peppermint, mentha).
+family(peppermint, lamiaceae).
+propagation_method(peppermint, division).
+propagation_method(peppermint, seed).
+preferred_propagation_method(peppermint, division).
+propagation_warning(peppermint, 'Seed may not breed true; division is preferred for consistent aroma, cultivar traits, and medicinal oil profile.').
+sunlight(peppermint, full_sun).
+sunlight(peppermint, partial_shade).
+soil_type(peppermint, heavy_clay).
+soil_type(peppermint, light_sandy).
+soil_type(peppermint, medium_loamy).
+water_need(peppermint, moderate).
+growth_speed(peppermint, fast).
+source_name(peppermint, 'Plants For A Future').
+source_url(peppermint, 'https://pfaf.org/user/Plant.aspx?LatinName=Mentha+x+piperita').
+confidence(peppermint, high).
+life_cycle(potato, perennial).
+botanical_life_cycle(potato, perennial).
+fact_scope(potato, extracted_profile).
+accepted_scientific_name(potato, 'Solanum tuberosum').
+genus(potato, solanum).
+family(potato, solanaceae).
+propagation_method(potato, division).
+propagation_method(potato, seed).
+propagation_method(potato, tuber).
+sunlight(potato, full_sun).
+soil_type(potato, heavy_clay).
+soil_type(potato, light_sandy).
+soil_type(potato, medium_loamy).
+soil_type(potato, well_drained).
+water_need(potato, moderate).
+source_name(potato, 'Plants For A Future').
+source_url(potato, 'https://pfaf.org/user/Plant.aspx?LatinName=Solanum+tuberosum').
+confidence(potato, high).
+life_cycle(pumpkin, annual).
+crop_life_cycle(pumpkin, annual).
+fact_scope(pumpkin, extracted_profile).
+propagation_method(pumpkin, seed).
+sunlight(pumpkin, full_sun).
+sunlight(pumpkin, partial_shade).
+soil_type(pumpkin, heavy_clay).
+soil_type(pumpkin, light_sandy).
+soil_type(pumpkin, medium_loamy).
+soil_type(pumpkin, well_drained).
+water_need(pumpkin, moderate).
+growth_speed(pumpkin, fast).
+source_name(pumpkin, 'Plants For A Future').
+source_url(pumpkin, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucurbita+pepo').
+life_cycle(radish, annual).
+crop_life_cycle(radish, annual).
+fact_scope(radish, extracted_profile).
+propagation_method(radish, seed).
+sunlight(radish, partial_shade).
+soil_type(radish, heavy_clay).
+soil_type(radish, light_sandy).
+soil_type(radish, medium_loamy).
+water_need(radish, moderate).
+growth_speed(radish, fast).
+source_name(radish, 'Plants For A Future').
+source_url(radish, 'https://pfaf.org/user/Plant.aspx?LatinName=Raphanus+sativus').
+life_cycle(raspberry, perennial).
+botanical_life_cycle(raspberry, perennial).
+fact_scope(raspberry, extracted_profile).
+accepted_scientific_name(raspberry, 'Rubus idaeus').
+genus(raspberry, rubus).
+family(raspberry, rosaceae).
+propagation_method(raspberry, cutting).
+propagation_method(raspberry, division).
+propagation_method(raspberry, layering).
+propagation_method(raspberry, seed).
+sunlight(raspberry, partial_shade).
+soil_type(raspberry, heavy_clay).
+soil_type(raspberry, light_sandy).
+soil_type(raspberry, medium_loamy).
+soil_type(raspberry, well_drained).
+water_need(raspberry, moderate).
+source_name(raspberry, 'Plants For A Future').
+source_url(raspberry, 'https://pfaf.org/user/Plant.aspx?LatinName=Rubus+idaeus').
+confidence(raspberry, high).
+fact_scope(rosemary, extracted_profile).
+accepted_scientific_name(rosemary, 'Salvia rosmarinus').
+genus(rosemary, salvia).
+family(rosemary, lamiaceae).
+source_name(rosemary, 'Plants For A Future').
+source_url(rosemary, 'https://pfaf.org/user/Plant.aspx?LatinName=Salvia+rosmarinus').
+confidence(rosemary, high).
+fact_scope(sage, extracted_profile).
+accepted_scientific_name(sage, 'Salvia officinalis').
+genus(sage, salvia).
+family(sage, lamiaceae).
+propagation_method(sage, cutting).
+propagation_method(sage, layering).
+propagation_method(sage, seed).
+sunlight(sage, full_sun).
+soil_type(sage, heavy_clay).
+soil_type(sage, light_sandy).
+soil_type(sage, medium_loamy).
+soil_type(sage, well_drained).
+water_need(sage, moderate).
+growth_speed(sage, fast).
+source_name(sage, 'Plants For A Future').
+source_url(sage, 'https://pfaf.org/user/Plant.aspx?LatinName=Salvia+officinalis').
+confidence(sage, high).
+life_cycle(soybean, annual).
+crop_life_cycle(soybean, annual).
+fact_scope(soybean, extracted_profile).
+accepted_scientific_name(soybean, 'Glycine max').
+genus(soybean, glycine).
+family(soybean, fabaceae).
+propagation_method(soybean, seed).
+sunlight(soybean, full_sun).
+soil_type(soybean, light_sandy).
+soil_type(soybean, medium_loamy).
+soil_type(soybean, well_drained).
+water_need(soybean, moderate).
+source_name(soybean, 'Plants For A Future').
+source_url(soybean, 'https://pfaf.org/user/Plant.aspx?LatinName=Glycine+max').
+confidence(soybean, high).
+life_cycle(spearmint, perennial).
+botanical_life_cycle(spearmint, perennial).
+fact_scope(spearmint, extracted_profile).
+accepted_scientific_name(spearmint, 'Mentha spicata').
+genus(spearmint, mentha).
+family(spearmint, lamiaceae).
+propagation_method(spearmint, division).
+propagation_method(spearmint, seed).
+preferred_propagation_method(spearmint, division).
+propagation_warning(spearmint, 'Seed may not breed true; division is preferred for consistent aroma, cultivar traits, and medicinal oil profile.').
+sunlight(spearmint, full_sun).
+sunlight(spearmint, partial_shade).
+soil_type(spearmint, heavy_clay).
+soil_type(spearmint, light_sandy).
+soil_type(spearmint, medium_loamy).
+water_need(spearmint, moderate).
+growth_speed(spearmint, fast).
+source_name(spearmint, 'Plants For A Future').
+source_url(spearmint, 'https://pfaf.org/user/Plant.aspx?LatinName=Mentha+spicata').
+confidence(spearmint, high).
+life_cycle(strawberry, perennial).
+botanical_life_cycle(strawberry, perennial).
+fact_scope(strawberry, extracted_profile).
+accepted_scientific_name(strawberry, 'Fragaria x ananassa').
+genus(strawberry, fragaria).
+family(strawberry, rosaceae).
+propagation_method(strawberry, division).
+propagation_method(strawberry, runner).
+propagation_method(strawberry, seed).
+sunlight(strawberry, full_sun).
+sunlight(strawberry, partial_shade).
+soil_type(strawberry, heavy_clay).
+soil_type(strawberry, light_sandy).
+soil_type(strawberry, medium_loamy).
+soil_type(strawberry, well_drained).
+water_need(strawberry, moderate).
+growth_speed(strawberry, fast).
+source_name(strawberry, 'Plants For A Future').
+source_url(strawberry, 'https://pfaf.org/user/Plant.aspx?LatinName=Fragaria+x+ananassa').
+confidence(strawberry, high).
+life_cycle(sunflower, annual).
+crop_life_cycle(sunflower, annual).
+fact_scope(sunflower, extracted_profile).
+accepted_scientific_name(sunflower, 'Helianthus annuus').
+genus(sunflower, helianthus).
+family(sunflower, asteraceae).
+propagation_method(sunflower, seed).
+sunlight(sunflower, full_sun).
+sunlight(sunflower, partial_shade).
+soil_type(sunflower, heavy_clay).
+soil_type(sunflower, light_sandy).
+soil_type(sunflower, medium_loamy).
+soil_type(sunflower, well_drained).
+water_need(sunflower, moderate).
+growth_speed(sunflower, fast).
+source_name(sunflower, 'Plants For A Future').
+source_url(sunflower, 'https://pfaf.org/user/Plant.aspx?LatinName=Helianthus+annuus').
+confidence(sunflower, high).
+life_cycle(sweet_potato, perennial).
+botanical_life_cycle(sweet_potato, perennial).
+fact_scope(sweet_potato, extracted_profile).
+accepted_scientific_name(sweet_potato, 'Ipomoea batatas').
+genus(sweet_potato, ipomoea).
+family(sweet_potato, convolvulaceae).
+propagation_method(sweet_potato, cutting).
+propagation_method(sweet_potato, seed).
+sunlight(sweet_potato, full_sun).
+soil_type(sweet_potato, light_sandy).
+soil_type(sweet_potato, medium_loamy).
+soil_type(sweet_potato, well_drained).
+water_need(sweet_potato, moderate).
+growth_speed(sweet_potato, fast).
+soil_ph_min(sweet_potato, 5.0).
+soil_ph_max(sweet_potato, 7.0).
+source_name(sweet_potato, 'Plants For A Future').
+source_url(sweet_potato, 'https://pfaf.org/user/Plant.aspx?LatinName=Ipomoea+batatas').
+confidence(sweet_potato, high).
+fact_scope(thyme, extracted_profile).
+accepted_scientific_name(thyme, 'Thymus vulgaris').
+genus(thyme, thymus).
+family(thyme, lamiaceae).
+propagation_method(thyme, cutting).
+propagation_method(thyme, division).
+propagation_method(thyme, layering).
+propagation_method(thyme, seed).
+sunlight(thyme, full_sun).
+soil_type(thyme, light_sandy).
+soil_type(thyme, medium_loamy).
+soil_type(thyme, well_drained).
+water_need(thyme, moderate).
+source_name(thyme, 'Plants For A Future').
+source_url(thyme, 'https://pfaf.org/user/Plant.aspx?LatinName=Thymus+vulgaris').
+confidence(thyme, high).
+life_cycle(tomato, annual).
+botanical_life_cycle(tomato, perennial).
+crop_life_cycle(tomato, annual).
+fact_scope(tomato, extracted_profile).
+sowing_depth_cm(tomato, 1.5).
+propagation_method(tomato, seed).
+sunlight(tomato, full_sun).
+soil_type(tomato, heavy_clay).
+soil_type(tomato, light_sandy).
+soil_type(tomato, medium_loamy).
+soil_type(tomato, well_drained).
+water_need(tomato, moderate).
+growth_speed(tomato, fast).
+soil_ph_min(tomato, 5.8).
+soil_ph_max(tomato, 6.8).
+source_name(tomato, 'Plants For A Future').
+source_url(tomato, 'https://pfaf.org/user/Plant.aspx?LatinName=Solanum+lycopersicum').
+fact_scope(turmeric, extracted_profile).
+accepted_scientific_name(turmeric, 'Curcuma longa').
+genus(turmeric, curcuma).
+family(turmeric, zingiberaceae).
+source_name(turmeric, 'Plants For A Future').
+source_url(turmeric, 'https://pfaf.org/user/Plant.aspx?LatinName=Curcuma+longa').
+confidence(turmeric, high).
+fact_scope(turnip, extracted_profile).
+source_name(turnip, 'Plants For A Future').
+source_url(turnip, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+rapa+subsp.+rapa').
+confidence(turnip, high).
+life_cycle(watermelon, annual).
+crop_life_cycle(watermelon, annual).
+fact_scope(watermelon, extracted_profile).
+propagation_method(watermelon, seed).
+sunlight(watermelon, full_sun).
+soil_type(watermelon, light_sandy).
+soil_type(watermelon, medium_loamy).
+soil_type(watermelon, well_drained).
+water_need(watermelon, moderate).
+soil_ph_min(watermelon, 5.3).
+soil_ph_max(watermelon, 8.0).
+source_name(watermelon, 'Plants For A Future').
+source_url(watermelon, 'https://pfaf.org/user/Plant.aspx?LatinName=Citrullus+lanatus').
+life_cycle(zucchini, annual).
+crop_life_cycle(zucchini, annual).
+fact_scope(zucchini, extracted_profile).
+accepted_scientific_name(zucchini, 'Cucurbita pepo').
+genus(zucchini, cucurbita).
+family(zucchini, cucurbitaceae).
+propagation_method(zucchini, seed).
+sunlight(zucchini, full_sun).
+sunlight(zucchini, partial_shade).
+soil_type(zucchini, heavy_clay).
+soil_type(zucchini, light_sandy).
+soil_type(zucchini, medium_loamy).
+soil_type(zucchini, well_drained).
+water_need(zucchini, moderate).
+growth_speed(zucchini, fast).
+source_name(zucchini, 'Plants For A Future').
+source_url(zucchini, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucurbita+pepo').
+confidence(zucchini, high).
 
 ================================================================================
 logic_companion_planting/data/interaction_support.pl
-Missing facts: 0
+Missing facts: 66
 ================================================================================
 
-(none)
+beneficial_relation(basil, tomato, pfaf, 3).
+harmful_relation(basil, rue, pfaf, 3).
+harmful_relation(basil, sage, pfaf, 3).
+harmful_relation(basil, raspberry, pfaf, 2).
+beneficial_relation(bean_common, strawberries, pfaf, 3).
+beneficial_relation(bean_common, carrots, pfaf, 3).
+beneficial_relation(bean_common, cauliflowers, pfaf, 3).
+beneficial_relation(bean_common, cucumbers, pfaf, 3).
+beneficial_relation(bean_common, cabbage, pfaf, 3).
+beneficial_relation(bean_common, beet, pfaf, 3).
+beneficial_relation(bean_common, leek, pfaf, 3).
+beneficial_relation(bean_common, celeriac, pfaf, 3).
+beneficial_relation(celery, brassica, pfaf, 3).
+beneficial_relation(celery, leeks, pfaf, 3).
+beneficial_relation(dandelion, alfalfa, pfaf, 3).
+beneficial_relation(eggplant, beans, pfaf, 3).
+beneficial_relation(eggplant, tarragon, pfaf, 3).
+beneficial_relation(eggplant, thyme, pfaf, 3).
+harmful_relation(eggplant, potato, pfaf, 3).
+beneficial_relation(lavender, most_plants, pfaf, 3).
+beneficial_relation(lavender, many_species_due_to_its_pest_repellent_properties, pfaf, 3).
+beneficial_relation(lettuce, cucumbers, pfaf, 3).
+beneficial_relation(lettuce, cabbage, pfaf, 3).
+beneficial_relation(lettuce, beetroot, pfaf, 3).
+beneficial_relation(lettuce, strawberries, pfaf, 3).
+beneficial_relation(melon, corn, pfaf, 3).
+beneficial_relation(melon, sunflowers_but_dislikes_potatoes, pfaf, 3).
+beneficial_relation(onion, weed_competition, pfaf, 3).
+beneficial_relation(onion, though_there_are_exceptions, pfaf, 3).
+beneficial_relation(onion, most_plants, pfaf, 3).
+beneficial_relation(onion, especially_roses, pfaf, 3).
+beneficial_relation(onion, carrots, pfaf, 3).
+beneficial_relation(onion, beet, pfaf, 3).
+beneficial_relation(onion, chamomile, pfaf, 3).
+beneficial_relation(onion, but_they_inhibit_the_growth_of_legumes, pfaf, 3).
+beneficial_relation(oregano, the_cucumber_family, pfaf, 3).
+beneficial_relation(peppermint, cabbage, pfaf, 3).
+beneficial_relation(peppermint, tomato, pfaf, 3).
+beneficial_relation(pumpkin, sweetcorn, pfaf, 3).
+beneficial_relation(pumpkin, thornapple_but_they_dislike_growing_near_potatoes, pfaf, 3).
+beneficial_relation(pumpkin, nasturtiums, pfaf, 3).
+beneficial_relation(pumpkin, mint, pfaf, 3).
+beneficial_relation(pumpkin, beans, pfaf, 3).
+beneficial_relation(pumpkin, radishes, pfaf, 3).
+harmful_relation(pumpkin, potato, pfaf, 3).
+beneficial_relation(radish, lettuces, pfaf, 3).
+beneficial_relation(sage, many_plants, pfaf, 3).
+beneficial_relation(spearmint, cabbage, pfaf, 3).
+beneficial_relation(spearmint, tomato, pfaf, 3).
+beneficial_relation(thyme, most_plants, pfaf, 3).
+beneficial_relation(tomato, asparagus, pfaf, 3).
+beneficial_relation(tomato, parsley, pfaf, 3).
+beneficial_relation(tomato, brassica, pfaf, 3).
+beneficial_relation(tomato, stinging_nettle, pfaf, 3).
+beneficial_relation(tomato, gooseberry, pfaf, 3).
+harmful_relation(tomato, fennel, pfaf, 3).
+harmful_relation(tomato, kohlrabi, pfaf, 3).
+harmful_relation(tomato, potato, pfaf, 3).
+beneficial_relation(watermelon, potato, pfaf, 3).
+beneficial_relation(zucchini, sweetcorn, pfaf, 3).
+beneficial_relation(zucchini, thornapple_but_they_dislike_growing_near_potatoes, pfaf, 3).
+beneficial_relation(zucchini, nasturtiums, pfaf, 3).
+beneficial_relation(zucchini, mint, pfaf, 3).
+beneficial_relation(zucchini, beans, pfaf, 3).
+beneficial_relation(zucchini, radishes, pfaf, 3).
+harmful_relation(zucchini, potato, pfaf, 3).
 
 ================================================================================
 logic_companion_planting/data/pest_interactions.pl
+Missing facts: 9
+================================================================================
+
+deters(basil, mosquito, pfaf, medium).
+deters(basil, flies, pfaf, medium).
+deters(parsley, mosquito, pfaf, medium).
+deters(peppermint, insect_pests, pfaf, medium).
+deters(soybean, insects, pfaf, medium).
+deters(spearmint, insect_pests, pfaf, medium).
+deters(tomato, insect_pests, pfaf, medium).
+deters(tomato, insects, pfaf, medium).
+deters(tomato, ants, pfaf, medium).
+
+================================================================================
+logic_companion_planting/data/sources_fact.pl
 Missing facts: 0
 ================================================================================
 
 (none)
-
-================================================================================
-logic_companion_planting/data/sources_fact.pl
-Missing facts: 4
-================================================================================
-
-source(pfaf).
-source(perenual).
-source(gbif).
-source(fpi).

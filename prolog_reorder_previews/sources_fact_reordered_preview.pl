@@ -39,6 +39,11 @@
 % Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
 % =========================================================
 
+% =========================================================
+% SOURCES
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
 source(attra).
 source(cornell).
 source(fpi).
