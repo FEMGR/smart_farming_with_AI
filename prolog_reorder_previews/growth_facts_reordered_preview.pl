@@ -24,6 +24,15 @@
 % ---------------------------------------------------------
 % ANNUAL ASTER
 % ---------------------------------------------------------
+
+% =========================================================
+% GROWTH FACTS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ANNUAL ASTER
+% ---------------------------------------------------------
 fact_scope(annual_aster, common_crop).
 germination_days_min(annual_aster, 7).
 germination_days_max(annual_aster, 10).

@@ -43,6 +43,15 @@
 % ---------------------------------------------------------
 % BASIL
 % ---------------------------------------------------------
+
+% =========================================================
+% PEST AND BENEFICIAL INTERACTIONS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% BASIL
+% ---------------------------------------------------------
 deters(basil, hornworm, cornell, high).
 deters(basil, hornworm, ua, high).
 deters(basil, mosquito, ua, medium).

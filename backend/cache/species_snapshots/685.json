@@ -1,0 +1,135 @@
+{
+  "id": 685,
+  "common_name": "chives",
+  "scientific_name": [
+    "Allium schoenoprasum"
+  ],
+  "other_name": [],
+  "family": "Amaryllidaceae",
+  "hybrid": null,
+  "authority": null,
+  "subspecies": null,
+  "cultivar": null,
+  "variety": null,
+  "species_epithet": "schoenoprasum",
+  "genus": "Allium",
+  "origin": [
+    "Temperate Northern Hemisphere"
+  ],
+  "type": "Bulb",
+  "dimensions": [
+    {
+      "type": null,
+      "min_value": 1,
+      "max_value": 1.5,
+      "unit": "feet"
+    }
+  ],
+  "cycle": "Perennial",
+  "attracts": [],
+  "propagation": [
+    "Seed Propagation"
+  ],
+  "hardiness": {
+    "min": "4",
+    "max": "8"
+  },
+  "hardiness_location": {
+    "full_url": "https://perenual.com/api/hardiness-map?species_id=685&size=og&key=sk-BO3069e45e3377a9916548",
+    "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=685&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+  },
+  "watering": "Frequent",
+  "watering_general_benchmark": {
+    "value": "\"3-4\"",
+    "unit": "days"
+  },
+  "plant_anatomy": [
+    {
+      "part": "leaves",
+      "color": [
+        "green"
+      ]
+    },
+    {
+      "part": "flowers",
+      "color": [
+        "purple"
+      ]
+    },
+    {
+      "part": "stems",
+      "color": [
+        "green"
+      ]
+    }
+  ],
+  "sunlight": [
+    "full sun",
+    "part shade"
+  ],
+  "pruning_month": [
+    "March",
+    "April"
+  ],
+  "pruning_count": {
+    "amount": 1,
+    "interval": "yearly"
+  },
+  "seeds": false,
+  "maintenance": "Low",
+  "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=685&key=sk-BO3069e45e3377a9916548",
+  "soil": [
+    "Rocky ",
+    " gravelly ",
+    " dry",
+    " Well-drained"
+  ],
+  "growth_rate": "High",
+  "drought_tolerant": true,
+  "salt_tolerant": false,
+  "thorny": false,
+  "invasive": false,
+  "tropical": false,
+  "indoor": false,
+  "care_level": "Medium",
+  "pest_susceptibility": [
+    "Rust",
+    " Thrips",
+    "  Deer resistant",
+    " Rabbit resistant",
+    " Drought resistant "
+  ],
+  "flowers": true,
+  "flowering_season": null,
+  "cones": false,
+  "fruits": true,
+  "edible_fruit": false,
+  "harvest_season": null,
+  "leaf": true,
+  "edible_leaf": true,
+  "cuisine": true,
+  "medicinal": true,
+  "poisonous_to_humans": false,
+  "poisonous_to_pets": false,
+  "description": "Chives (Allium schoenoprasum) are an amazing addition to any garden. Their flat leaf blades make an attractive display of green throughout the growing season, and the bright purple flowers from mid-summer through fall attract butterflies and honeybees. Besides adding a splash of color to the garden, chives also serve a culinary purpose. The leaves are an essential ingredient for many dishes, offering a mild onion flavor and a hint of garlic. Chives can also be used to make delicious sauces, salads, spreads, and even a delightful chive cream cheese spread. Not only do they jazz up your cooking, they are packed with vitamins and minerals like potassium, iron, and vitamins A, C, and K! So get those chives planted and reap the benefits of this garden wonder.",
+  "default_image": {
+    "license": 5,
+    "license_name": "Attribution-ShareAlike License",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/685_allium_schoenoprasum/og/52051352635_47e6334d92_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044646Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=a9db0283d32a6fdcee8b20aa67af315a7359c3d3fe60089c2025ef7d8694aea8",
+    "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/685_allium_schoenoprasum/regular/52051352635_47e6334d92_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044646Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=4242882ff6e417a9c727f1e291fa6e4534bdc1c3e0fc29a950f530d5412e37eb",
+    "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/685_allium_schoenoprasum/medium/52051352635_47e6334d92_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044646Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=258c63503e187db6dec2297116f40c93acaf4ea6d19ec55417612c71a636cdf4",
+    "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/685_allium_schoenoprasum/small/52051352635_47e6334d92_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044646Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=0bd7e5d6d07a2e0888418f9f5fcacfeeda9a1830280b78f140566cb39653e5e2",
+    "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/685_allium_schoenoprasum/thumbnail/52051352635_47e6334d92_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044646Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=6c38a5767c97432868acf6154b6eed8ed306ed0c9c35c2762014668b92d4181b"
+  },
+  "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}

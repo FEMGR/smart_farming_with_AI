@@ -42,8 +42,8 @@ htmlcov/
 logic_companion_planting/bin/
 *.qlf
 
-scripts/
-backend/temp
-backend/cache
-.agents
-.codex
+#scripts/
+#backend/temp
+#backend/cache
+#.agents
+#.codex

@@ -1,0 +1,26 @@
+[
+  {
+    "common_name": "European Silver Fir",
+    "confidence": 0.7,
+    "created_at": "2026-06-18T06:20:42.571350+00:00",
+    "genus": "Abies",
+    "plant_atom": "european_silver_fir",
+    "reason": "scientific_name_not_found_in_prolog",
+    "scientific_name": "Abies alba",
+    "source_file": "/home/graubo/PyCharmMiscProject/smart-farming-system/backend/cache/species_snapshots/1.json",
+    "source_name": "perenual_snapshot",
+    "status": "pending_extraction"
+  },
+  {
+    "common_name": "tree tomato",
+    "confidence": 0.7,
+    "created_at": "2026-06-18T06:20:42.571379+00:00",
+    "genus": "Cyphomandra",
+    "plant_atom": "tree_tomato",
+    "reason": "scientific_name_not_found_in_prolog",
+    "scientific_name": "Cyphomandra betacea",
+    "source_file": "/home/graubo/PyCharmMiscProject/smart-farming-system/backend/cache/species_snapshots/2292.json",
+    "source_name": "perenual_snapshot",
+    "status": "pending_extraction"
+  }
+]

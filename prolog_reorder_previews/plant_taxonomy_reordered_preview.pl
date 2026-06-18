@@ -36,6 +36,15 @@
 % ---------------------------------------------------------
 % ADZUKI BEAN
 % ---------------------------------------------------------
+
+% =========================================================
+% TAXONOMY FACTS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ADZUKI BEAN
+% ---------------------------------------------------------
 accepted_scientific_name(adzuki_bean, 'Vigna angularis').
 genus(adzuki_bean, vigna).
 family(adzuki_bean, fabaceae).

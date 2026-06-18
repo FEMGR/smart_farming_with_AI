@@ -33,20 +33,24 @@
 % =========================
 % SOURCES
 % =========================
+
+% =========================================================
+% SOURCES
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% =========================================================
+% SOURCES
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
 source(attra).
-source(uc_anr).
-source(rhs).
 source(cornell).
-source(usda).
-source(traditional).
-
-
-% =========================================================
-% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: sources_fact
-% Review before editing manually.
-% =========================================================
-
-source(pfaf).
-source(perenual).
-source(gbif).
 source(fpi).
+source(gbif).
+source(perenual).
+source(pfaf).
+source(rhs).
+source(traditional).
+source(uc_anr).
+source(usda).
