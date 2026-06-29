@@ -34,59 +34,133 @@
 % =========================================================
 
 % --- Cabbage Pests ---
-deters(sage, cabbage_worm, traditional, high).
-deters(mint, cabbage_moth, attra, high).
 
-% --- Tomato Pests ---
+% =========================================================
+% PEST AND BENEFICIAL INTERACTIONS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% BASIL
+% ---------------------------------------------------------
+
+% =========================================================
+% PEST AND BENEFICIAL INTERACTIONS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% BASIL
+% ---------------------------------------------------------
 deters(basil, hornworm, cornell, high).
-deters(marigold, whitefly, attra, high).
-deters(borage, hornworm, attra, high).
-
-% --- Cucumber & Squash Pests ---
-deters(nasturtium, cucumber_beetle, attra, medium).
-deters(nasturtium, squash_bug, attra, high).
-deters(radish, cucumber_beetle, traditional, medium).
-
-% --- Carrot & Bean Pests ---
-deters(onion, carrot_rust_fly, attra, high).
-deters(rosemary, bean_beetle, attra, high).
-
-% --- General Pest Interactions ---
-deters(garlic, aphid, cornell, high).
-deters(marigold, nematode, attra, high).
-
-deters(mint, cabbage_moth, cornell, high).
-deters(rosemary, cabbage_moth, attra, high).
-deters(borage, hornworm, attra, high).
-deters(radish, cucumber_beetle, attra, medium).
-deters(catnip, flea_beetle, cornell, medium).
-deters(leek, carrot_rust_fly, attra, high).
-deters(horseradish, colorado_potato_beetle, attra, medium).
-deters(chive, aphid, cornell, high).
-deters(tomato, asparagus_beetle, cornell, high).
-deters(thyme, armyworm, attra, medium).
-
-
-% =========================================================
-% UNIVERSITY OF ARIZONA (UA) COMPANION DATA
-% =========================================================
-
-% --- Scent Masking & Deterrents ---
-deters(onion, carrot_fly, ua, high).
-deters(chive, aphid, ua, high).
-deters(chive, slug, ua, medium).
-deters(chive, snail, ua, medium).
-
-% --- General Pest Protection ---
-deters(marigold, nematode, ua, high).
-deters(marigold, beetle, ua, medium).
 deters(basil, hornworm, ua, high).
 deters(basil, mosquito, ua, medium).
 
-% --- Beneficial Attraction (Arizona Guide) ---
+% ---------------------------------------------------------
+% BORAGE
+% ---------------------------------------------------------
+deters(borage, hornworm, attra, high).
+
+% ---------------------------------------------------------
+% CATNIP
+% ---------------------------------------------------------
+deters(catnip, flea_beetle, cornell, medium).
+
+% ---------------------------------------------------------
+% CHAMOMILE
+% ---------------------------------------------------------
 attracts_beneficial(chamomile, hoverfly, ua, medium).
 attracts_beneficial(chamomile, wasp, ua, medium).
-attracts_beneficial(carrot, ladybug, ua, high). % Carrots in flower
 
-% --- Disease Suppression ---
+% ---------------------------------------------------------
+% CHIVE
+% ---------------------------------------------------------
+deters(chive, aphid, cornell, high).
+deters(chive, aphid, ua, high).
+deters(chive, slug, ua, medium).
+deters(chive, snail, ua, medium).
 prevents(chive, apple_scab, ua, high).
+
+% ---------------------------------------------------------
+% GARLIC
+% ---------------------------------------------------------
+deters(garlic, aphid, cornell, high).
+
+% ---------------------------------------------------------
+% HORSERADISH
+% ---------------------------------------------------------
+deters(horseradish, colorado_potato_beetle, attra, medium).
+
+% ---------------------------------------------------------
+% LEEK
+% ---------------------------------------------------------
+deters(leek, carrot_rust_fly, attra, high).
+
+% ---------------------------------------------------------
+% MARIGOLD
+% ---------------------------------------------------------
+deters(marigold, beetle, ua, medium).
+deters(marigold, nematode, attra, high).
+deters(marigold, nematode, ua, high).
+deters(marigold, whitefly, attra, high).
+
+% ---------------------------------------------------------
+% MINT
+% ---------------------------------------------------------
+deters(mint, cabbage_moth, attra, high).
+deters(mint, cabbage_moth, cornell, high).
+
+% ---------------------------------------------------------
+% NASTURTIUM
+% ---------------------------------------------------------
+deters(nasturtium, cucumber_beetle, attra, medium).
+deters(nasturtium, squash_bug, attra, high).
+
+% ---------------------------------------------------------
+% ONION
+% ---------------------------------------------------------
+deters(onion, carrot_fly, ua, high).
+deters(onion, carrot_rust_fly, attra, high).
+
+% ---------------------------------------------------------
+% RADISH
+% ---------------------------------------------------------
+deters(radish, cucumber_beetle, attra, medium).
+deters(radish, cucumber_beetle, traditional, medium).
+
+% ---------------------------------------------------------
+% ROSEMARY
+% ---------------------------------------------------------
+deters(rosemary, bean_beetle, attra, high).
+deters(rosemary, cabbage_moth, attra, high).
+
+% ---------------------------------------------------------
+% SAGE
+% ---------------------------------------------------------
+deters(sage, cabbage_worm, traditional, high).
+
+% ---------------------------------------------------------
+% THYME
+% ---------------------------------------------------------
+deters(thyme, armyworm, attra, medium).
+
+% ---------------------------------------------------------
+% TOMATO
+% ---------------------------------------------------------
+deters(tomato, asparagus_beetle, cornell, high).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: pest_interactions
+% Review before editing manually.
+% =========================================================
+
+deters(basil, mosquito, pfaf, medium).
+deters(basil, flies, pfaf, medium).
+deters(parsley, mosquito, pfaf, medium).
+deters(peppermint, insect_pests, pfaf, medium).
+deters(soybean, insects, pfaf, medium).
+deters(spearmint, insect_pests, pfaf, medium).
+deters(tomato, insect_pests, pfaf, medium).
+deters(tomato, insects, pfaf, medium).
+deters(tomato, ants, pfaf, medium).

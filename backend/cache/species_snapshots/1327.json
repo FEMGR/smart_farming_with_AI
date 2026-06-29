@@ -1,0 +1,114 @@
+{
+  "id": 1327,
+  "common_name": "broccoli",
+  "scientific_name": [
+    "Brassica oleracea (Italica Group)"
+  ],
+  "other_name": [],
+  "family": "Brassicaceae",
+  "hybrid": null,
+  "authority": null,
+  "subspecies": null,
+  "cultivar": null,
+  "variety": null,
+  "species_epithet": "oleracea",
+  "genus": "Brassica",
+  "origin": [
+    "Italy",
+    "Mediterranean region",
+    "Asia Minor",
+    "Middle East"
+  ],
+  "type": "Vegetable",
+  "dimensions": [
+    {
+      "type": null,
+      "min_value": 1,
+      "max_value": 1.5,
+      "unit": "feet"
+    }
+  ],
+  "cycle": "Annual",
+  "attracts": [],
+  "propagation": [
+    "Seed Propagation",
+    "Cutting",
+    "Division",
+    "Layering Propagation",
+    "Grafting Propagation"
+  ],
+  "hardiness": {
+    "min": "2",
+    "max": "11"
+  },
+  "hardiness_location": {
+    "full_url": "https://perenual.com/api/hardiness-map?species_id=1327&size=og&key=sk-BO3069e45e3377a9916548",
+    "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=1327&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+  },
+  "watering": "Average",
+  "watering_general_benchmark": {
+    "value": "\"2-3\"",
+    "unit": "days"
+  },
+  "plant_anatomy": [
+    {
+      "part": "buds",
+      "color": [
+        "green-purple"
+      ]
+    },
+    {
+      "part": "leaves",
+      "color": [
+        "green"
+      ]
+    }
+  ],
+  "sunlight": [
+    "full sun"
+  ],
+  "pruning_month": [],
+  "pruning_count": [],
+  "seeds": true,
+  "maintenance": "Low",
+  "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=1327&key=sk-BO3069e45e3377a9916548",
+  "soil": [],
+  "growth_rate": "Low",
+  "drought_tolerant": true,
+  "salt_tolerant": false,
+  "thorny": false,
+  "invasive": false,
+  "tropical": false,
+  "indoor": false,
+  "care_level": "Medium",
+  "pest_susceptibility": [],
+  "flowers": true,
+  "flowering_season": null,
+  "cones": false,
+  "fruits": true,
+  "edible_fruit": true,
+  "harvest_season": null,
+  "leaf": true,
+  "edible_leaf": true,
+  "cuisine": true,
+  "medicinal": true,
+  "poisonous_to_humans": false,
+  "poisonous_to_pets": false,
+  "description": "Broccoli is a nutritionally dense superfood, packed with essential vitamins and minerals. It is a member of the Brassica oleracea family (Italica Group), which also includes cabbage, cauliflower, and kale. It is full of essential nutrients, providing a variety of health benefits, such as promoting healthy digestion and building immunity. Broccoli is also an excellent source of antioxidants, which help to neutralize free radicals in the body and protect cells from damage. Broccoli also contains essential fiber and phytochemicals, which help to reduce inflammation and promote healthy cells. With all these incredible benefits, broccoli is truly an amazing vegetable that everyone should include in their diet.",
+  "default_image": {
+    "license": 6,
+    "license_name": "Attribution-NoDerivs License",
+    "license_url": "https://creativecommons.org/licenses/by-nd/2.0/",
+    "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1327_brassica_oleracea_italica_group/og/1558498515_51e566c692_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260609%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T054022Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=aa2b059c9d12586feae169694c8ad5f62999f70d6ea42b3a62f40631b4cf0f88"
+  },
+  "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}

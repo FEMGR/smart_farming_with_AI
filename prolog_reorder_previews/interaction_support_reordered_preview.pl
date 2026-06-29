@@ -52,6 +52,15 @@
 % ---------------------------------------------------------
 % ALLIUM FAMILY
 % ---------------------------------------------------------
+
+% =========================================================
+% INTERACTION SUPPORT BY SOURCE PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ALLIUM FAMILY
+% ---------------------------------------------------------
 beneficial_relation(allium_family, carrot, ua, 3).
 beneficial_relation(allium_family, lettuce, ua, 2).
 beneficial_relation(allium_family, rose, cornell, 3).
