@@ -1,0 +1,141 @@
+{
+  "id": 1273,
+  "common_name": "beet",
+  "scientific_name": [
+    "Beta vulgaris"
+  ],
+  "other_name": [],
+  "family": "Amaranthaceae",
+  "hybrid": null,
+  "authority": null,
+  "subspecies": null,
+  "cultivar": null,
+  "variety": null,
+  "species_epithet": "vulgaris",
+  "genus": "Beta",
+  "origin": [
+    "Europe"
+  ],
+  "type": "Vegetable",
+  "dimensions": [
+    {
+      "type": null,
+      "min_value": 1,
+      "max_value": 1.5,
+      "unit": "feet"
+    }
+  ],
+  "cycle": "Annual",
+  "attracts": [],
+  "propagation": [
+    "Seed Propagation",
+    "Cutting",
+    "Division",
+    "Layering Propagation"
+  ],
+  "hardiness": {
+    "min": "2",
+    "max": "11"
+  },
+  "hardiness_location": {
+    "full_url": "https://perenual.com/api/hardiness-map?species_id=1273&size=og&key=sk-BO3069e45e3377a9916548",
+    "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=1273&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+  },
+  "watering": "Average",
+  "watering_general_benchmark": {
+    "value": "\"1-2\"",
+    "unit": "days"
+  },
+  "plant_anatomy": [
+    {
+      "part": "roots",
+      "color": [
+        "red"
+      ]
+    },
+    {
+      "part": "leaves",
+      "color": [
+        "green"
+      ]
+    },
+    {
+      "part": "midribs",
+      "color": [
+        "red"
+      ]
+    },
+    {
+      "part": "veins",
+      "color": [
+        "red"
+      ]
+    },
+    {
+      "part": "stems",
+      "color": [
+        "red"
+      ]
+    }
+  ],
+  "sunlight": [
+    "Full sun",
+    "part shade"
+  ],
+  "pruning_month": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September"
+  ],
+  "pruning_count": [],
+  "seeds": false,
+  "maintenance": "Low",
+  "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=1273&key=sk-BO3069e45e3377a9916548",
+  "soil": [],
+  "growth_rate": "Low",
+  "drought_tolerant": true,
+  "salt_tolerant": true,
+  "thorny": false,
+  "invasive": false,
+  "tropical": false,
+  "indoor": false,
+  "care_level": "Medium",
+  "pest_susceptibility": [],
+  "flowers": true,
+  "flowering_season": null,
+  "cones": false,
+  "fruits": false,
+  "edible_fruit": false,
+  "harvest_season": null,
+  "leaf": true,
+  "edible_leaf": true,
+  "cuisine": true,
+  "medicinal": true,
+  "poisonous_to_humans": false,
+  "poisonous_to_pets": false,
+  "description": "Beet (Beta vulgaris) is an amazing plant species for numerous reasons. It is both highly nutritious and incredibly versatile. It contains a variety of vitamins and minerals, making it a good dietary addition. It can be cooked, pickled, and juiced, making it a delicious go-to ingredient. Additionally, its deep purple and reddish hues make beet an eye-catching and appealing food option. Beet is also praised for its role in supporting eye, brain, and cardiovascular health. Finally, it is a key ingredient in a variety of cuisines around the world, demonstrating its widespread appeal. All of these factors come together to make beet an amazing and unique plant species.",
+  "default_image": {
+    "license": 4,
+    "license_name": "Attribution License",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1273_beta_vulgaris/og/24673569230_b226299b70_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260609%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T052729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=171ca7f17d6f0686e77c5b2ac746c4df54cdfab570bc8ab40364ff3757786457",
+    "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1273_beta_vulgaris/regular/24673569230_b226299b70_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260609%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T052729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=c16c77dc3d645376c979aeded12b4ad446ec8ca111c5832c10dddf10da8942c9",
+    "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1273_beta_vulgaris/medium/24673569230_b226299b70_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260609%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T052729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=6f1e52bf46d43ebef0ff25619a0de700c4ff90233f94a9beda9ab202f898fb8c",
+    "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1273_beta_vulgaris/small/24673569230_b226299b70_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260609%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T052729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=292abf0e6d35b43da609088434f9eb18951f0edf72bf96eaaae17d81010af82e",
+    "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1273_beta_vulgaris/thumbnail/24673569230_b226299b70_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260609%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T052729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=c781b8289e7a11111a1d457ff22c9396235749f1ade770d9f22a869fda06e231"
+  },
+  "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}

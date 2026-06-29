@@ -1,0 +1,119 @@
+{
+  "id": 2251,
+  "common_name": "cucumber",
+  "scientific_name": [
+    "Cucumis sativus"
+  ],
+  "other_name": [
+    "European cucumber"
+  ],
+  "family": "Cucurbitaceae",
+  "hybrid": null,
+  "authority": null,
+  "subspecies": null,
+  "cultivar": null,
+  "variety": null,
+  "species_epithet": "sativus",
+  "genus": "Cucumis",
+  "origin": [
+    "East Indies"
+  ],
+  "type": "Vegetable",
+  "dimensions": [
+    {
+      "type": null,
+      "min_value": 0.75,
+      "max_value": 1.5,
+      "unit": "feet"
+    }
+  ],
+  "cycle": "Annual",
+  "attracts": [],
+  "propagation": [
+    "Seed Propagation"
+  ],
+  "hardiness": {
+    "min": "2",
+    "max": "11"
+  },
+  "hardiness_location": {
+    "full_url": "https://perenual.com/api/hardiness-map?species_id=2251&size=og&key=sk-BO3069e45e3377a9916548",
+    "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=2251&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+  },
+  "watering": "Average",
+  "watering_general_benchmark": {
+    "value": "\"3-4\"",
+    "unit": "days"
+  },
+  "plant_anatomy": [],
+  "sunlight": [
+    "full sun"
+  ],
+  "pruning_month": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September"
+  ],
+  "pruning_count": {
+    "amount": 1,
+    "interval": "yearly"
+  },
+  "seeds": true,
+  "maintenance": "Moderate",
+  "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=2251&key=sk-BO3069e45e3377a9916548",
+  "soil": [
+    "Well-drained"
+  ],
+  "growth_rate": "Low",
+  "drought_tolerant": false,
+  "salt_tolerant": true,
+  "thorny": false,
+  "invasive": false,
+  "tropical": false,
+  "indoor": false,
+  "care_level": "Medium",
+  "pest_susceptibility": [
+    "Fungal leaf spot",
+    " Mites",
+    " Root rot",
+    " Thrips",
+    " Virus"
+  ],
+  "flowers": true,
+  "flowering_season": null,
+  "cones": false,
+  "fruits": true,
+  "edible_fruit": true,
+  "harvest_season": "Summer",
+  "leaf": true,
+  "edible_leaf": false,
+  "cuisine": true,
+  "medicinal": true,
+  "poisonous_to_humans": false,
+  "poisonous_to_pets": false,
+  "description": "Cucumbers (Cucumis sativus) are an amazing plant that provides many health benefits to humans. They are low in calories, high in water content, and contain essential vitamins and minerals such as vitamins K, C, and B6. Cucumbers have also been used as a natural medicine for centuries, offering a variety of healing and energizing benefits. They are full of antioxidants to help reduce inflammation, neutralize free radicals, and protect from certain chronic diseases. Cucumbers are a great addition to salads, smoothies, dips, and juices, and can even be eaten raw or pickled. For a nutritious and refreshing snack, cucumbers are a great choice!",
+  "default_image": {
+    "license": 45,
+    "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+    "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2251_cucumis_sativus/og/Cucumis_sativus20090812_496.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044424Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=8b2cc5ac68579796de059ec6e1b6596d6f0dc19ef02cd5f8711345b07824dc89",
+    "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2251_cucumis_sativus/regular/Cucumis_sativus20090812_496.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044424Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=0aad95c41a27a3f142264a58a338b32e393992ae2202fd28e4bdbbed359d9b16",
+    "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2251_cucumis_sativus/medium/Cucumis_sativus20090812_496.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044424Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=7e10b770b5929190efd466776d4c03e7a6b94deff9c7de500f0d6b985a82d0c0",
+    "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2251_cucumis_sativus/small/Cucumis_sativus20090812_496.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044424Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=9a2b288d744ad7be015decc9d8c0d00f25a488e30b4bb780ead000e0da9d8f3a",
+    "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2251_cucumis_sativus/thumbnail/Cucumis_sativus20090812_496.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260604%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260604T044424Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=9a7ed9abe6307fdd8636d111eb0417beeca0a90e724691a20a5b5b84a97f91ef"
+  },
+  "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}

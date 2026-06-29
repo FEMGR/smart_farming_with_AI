@@ -1,0 +1,10 @@
+{
+  "date": "2026-06-09",
+  "request_count": 36,
+  "search_backoff_until": 0,
+  "details_backoff_until": 0,
+  "details_plan_gated_ids": [
+    "5547"
+  ],
+  "last_plan_gated_429_at": 1780976128.4066694
+}
