@@ -1,0 +1,130 @@
+{
+  "pest_atom": "leafhopper",
+  "name": "Leafhopper",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Leafhopper",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-leafhopper",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "lima_bean",
+    "parsnip"
+  ],
+  "includes_text": "",
+  "biology_life_history": "The six-spotted leafhopper overwinters as an egg in northern locations and in the adult stage in warmer climates. It undergoes five nymphal stages before reaching adulthood. Each generation requires 27 to 34 days. There are three to four generations each year.",
+  "description_damage": "The six-spotted leafhopper is also known as the aster leafhopper. It is about 0.19 inch in length, narrow, wedge-shaped, with a beak, tiny antennae, and long hind legs fringed with hairs. It is yellow or yellow-green with six black spots arranged in three rows on its head. Eggs are translucent at first but soon turn white. Adult leafhoppers have wings. They are relatively poor fliers and tend to glide along with wind currents. Nymphs have only wing pads and cannot fly. Wingless nymphs resemble adults but are much smaller, ranging in size from 0.03 to 0.25 inch in length. They often can be distinguished by their unique sideways scuttle when disturbed. Young larvae are white but soon become yellow with brown markings. Feeding damage causes a yellow, speckled appearance. This is usually minor. The six-spotted leafhopper is the primary vector of aster yellows phytoplasma, a serious virus-like plant disease.",
+  "monitoring": "Leafhoppers are collected easily with sweep nets. Yellow sticky traps also are useful in monitoring. Leafhoppers are collected easily with sweep nets. Yellow sticky traps also can be used to monitor.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "acephate (numerous products) at 0.5 to 1 lb ai/A. PHI 14 days, 1 day for lima beans harvested in succulent form. REI 24 hr. Do not feed treated vines. Do not exceed 2 lb ai/A per year.",
+      "acetamiprid (Assail 30SG) at 0.044 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Limit 3 applications per season. Do not exceed 0.3 lb ai/A per season.",
+      "alpha-cypermethrin (Fastac EC) at 0.012 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only. Chenopodium",
+      "ambrosioides (Requiem Prime) at 2 to 4 pints/A. PHI 0 days. REI 4 hr.",
+      "bifenthrin (Capture, Sniper) at 0.025 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "cyfluthrin (Tombstone) at 0.01 to 0.015 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.06 lb ai/A per season. Do not graze livestock or harvest for vines for forage or hay.",
+      "deltamethrin (Delta Gold) at 0.018 to 0.028 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 3 days. Do not exceed 0.14 lb ai/A per season.",
+      "dimethoate (numerous products) at 0.25 to 0.5 lb ai/A. PHI 0 days when harvested mechanically. REI 48 hr. Do not feed treated vines.",
+      "esfenvalerate (Asana XL) at 0.015 to 0.05 lb ai/A. PHI 21 days. REI 12 hr. Do not exceed 0.2 lb ai/A per season. Dry beans only.",
+      "flupyradifurone (Sivanto 200SL) at 0.09 to 0.14 lb ai/A. PHI 7 days. REI 4 hr. Retreatment interval 10 days. Do not exceed o.365 lb ai/A per season.",
+      "flupyradifurone (Sivanto 200SL) at 7 to 10.5 fl oz/A. PHI 21 days. REI 4 hr. Do not exceed 0.365 lb ai/A per year. Minimum of 10 days between successive applications.",
+      "imidacloprid (Admire Pro) at 0.16 to 0.38 lb ai/A soil; 0.043 lb ai/A foliar. PHI 21 days soil; 7 days foliar. REI 12 hr. Do not exceed 0.38 lb ai/A soil or 0.13 lb ai/A foliar per season. Retreatment interval 5 days foliar.",
+      "imidacloprid (Admire Pro) at 0.25 to 0.375 lb ai/A. Soil application only. PHI 21 days. REI 12 hr. Do not exceed 0.375 lb ai/A per season. Do not apply within 25 ft of aquatic habitat.",
+      "in-furrow spray, band application, drench, shanked or with irrigation. Do not exceed 0.188 lb ai/A per season.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 7 days for green beans, 21 days for dry beans. REI 24 hr. Washington only.",
+      "malathion (Malathion 8 Flowable) at 1.25 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 7 days. Limit 3 treatments per year",
+      "sulfoxaflor (Transform WG) at 0.047 to 0.086 lb ai/A. PHI 7 days. REI 24 hr. Limit 4 treatments. Do not exceed 0.266 lb ai/A per year.",
+      "thiamethoxam (Actara) at 0.023 to 0.047 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.125 lb ai/A per season.",
+      "thiamethoxam (Platinum) at 0.078 to 0.188 lb ai/A. REI 12 hr. Apply to the soil as",
+      "zeta-cypermethrin (Mustang) at 0.022 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.3 lb ai/A per year. These products contain commonly used active ingredients for control of leafhopper in parsnip. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "OMRI-listed for organic use. bifenthrin (usually combined with",
+      "OMRI-listed for organic use. carbaryl cyfluthrin imidacloprid",
+      "azadirachtin (combined with pyrethrins)-Some formulations are",
+      "azadirachtin (neem oil)-Some formulations are",
+      "oils (rosemary, etc.)-Some formulations are",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "plant-derived essential",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "pyrethrins-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin) carbaryl imidacloprid malathion plant essential",
+      "zeta-cypermethrin). capsaicin.-Some formulations are"
+    ],
+    "cultural": "Mulches of aluminum foil and straw help reduce disease incidence. Row covers also can be used on higher value crops. Destruction of weed species known to harbor aster yellows is also important. Destruction of weed species known to harbor aster yellows is important."
+  },
+  "damage_tags": [
+    "disease_vector",
+    "feeding_damage",
+    "leaf_damage",
+    "virus_vector",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-leafhopper/418-33.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-leafhopper/418-33.jpg?itok=blumbXTv",
+      "caption": "Aster leafhopper Macrosteles fascifrons Stal Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-leafhopper/418-23.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-leafhopper/418-23.jpg?itok=BK9GcDHW",
+      "caption": "Aster leafhopper Macrosteles fascifrons Stal Showing damage on leaves"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.685124+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Bean, lima",
+      "pest_name_on_page": "Leafhopper",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-leafhopper"
+    },
+    {
+      "crop_heading": "Parsnip",
+      "pest_name_on_page": "Leafhopper",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-leafhopper"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-leafhopper",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-leafhopper"
+  ],
+  "page_titles": [
+    "Bean, lima-Leafhopper",
+    "Parsnip-Leafhopper"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.558268+00:00"
+}

@@ -86,12 +86,6 @@
     "other_uses_notes": "Compost Cosmetic Dye Fruit ripening Latex Miscellany Agroforestry uses: Dandelions are valuable for soil improvement and can serve as a ground cover. They attract pollinators and beneficial insects. Their deep taproots help aerate the soil. The flowers are an ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. A liquid plant feed can be made from the root and leaves[54]. A low quality latex, which can be used for making rubber, can be obtained from the roots of this plant. A magenta-brown dye is obtained from the root[141]. The plant releases ethylene gas, this stunts the growth of nearby plants and causes premature ripening of fruits[14, 18]. A distilled water made from the ligules (thin appendages at the base of the leaf blades) is used cosmetically to clear the skin and is particularly effective in fading freckles[7]. A dynamic accumulator gathering minerals or nutrients from the soil and storing them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Dandelion flowers are rich in nectar and pollen, making them an excellent food source for bees and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Dandelions provide food through their leaves and flowers, which are edible for humans and wildlife. The seeds can also serve as food for birds. The leaf litter can offer some shelter for small insects. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Dandelions can provide overwintering sites in their leaf litter, and their presence in the garden can support a range of beneficial insects. 4. Pest Confuser (Smell): No – Dandelions do not have a strong smell that would effectively confuse pests.",
     "edible_uses_notes": "Edible Parts: Flowers Leaves Root Edible Uses: Coffee Tea Leaves - raw or cooked[1, 2, 4, 5, 7, 9, 12, 14, 33, 154]. When used in salads, they are rather bitter, though less so in the winter. Tender young leaves are considerably less bitter than older leaves[K]. The leaves are often blanched (by excluding light from the growing plant) before use[183]. This will make them less bitter, but they will also contain less vitamins and minerals[K]. A very nutritious food, 100g of the raw leaves contain about 2.7g. protein, 9.2g. carbohydrate, 187mg Calcium, 66mg phosphorus, 3.1mg iron, 76mg sodium, 397mg potassium, 36mg magnesium, 14000iu vitamin A, 0.19mg vitamin B1, 0.26mg vitamin B2, 35mg vitamin C[173]. Root - raw or cooked[5, 9, 12, 183]. Bitter. A turnip-like flavour[159]. Flowers - raw or cooked[102, 159]. A rather bitter flavour[K], the unopened flower buds can be used in fritters[183] and they can also be preserved in vinegar and used like capers[7]. Both the leaves and the roots are used to flavour herbal beers and soft drinks such as 'Dandelion and Burdock'[238]. The roots of 2 year old plants are harvested in the autumn, dried and roasted to make a very good coffee substitute[2, 4, 5, 12, 54, 159]. It is caffeine-free[213]. A pleasant tea is made from the flowers[12, 102]. They are also used to make wine - all green parts should be removed when making wine to prevent a bitter flavour[238]. The leaves and the roots can also be used to make tea."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -120,6 +114,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -258,7 +258,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

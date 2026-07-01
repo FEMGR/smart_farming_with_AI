@@ -1,0 +1,74 @@
+{
+  "pest_atom": "blister_beetle",
+  "name": "Blister beetle",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "beet",
+    "swiss_chard"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Beet, table",
+      "pest_name_on_page": "Blister beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-blister-beetle"
+    },
+    {
+      "crop_heading": "Chard, Swiss",
+      "pest_name_on_page": "Blister beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-blister-beetle"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-blister-beetle",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-blister-beetle"
+  ],
+  "page_titles": [
+    "Beet, table-Blister beetle",
+    "Chard, Swiss-Blister beetle"
+  ],
+  "description_damage": "Adults are slender, oblong beetles with a relatively large head and an extenuated neck, often with yellow stripes in some form. Eggs are oblong and yellow. Larvae usually are found in several stages, and all stages have three upper body legs. The pupa is a stage of darkening, starting with the eyes. Blister beetles are mostly foliage feeders, but they are not considered a major pest of vegetable crops. While feeding, they leave behind a distinctive black stringy substance. Blister beetles tend to stay in weedy areas, especially where there is an abundance of grasshopper eggs, which the larvae consume. Only the adult stage causes crop damage. They tend to move in swarms and can cause a great deal of localized defoliation. They do not generally stay in one area for very long. The beetles get their name from a toxin they contain called cantharidin. Even dead insects can cause blisters if handled. The most serious damage comes from hay that has been treated for blister beetle populations. The beetles are bailed in the hay and eaten by horses and other animals. Adults are slender, oblong beetles with a relatively large head and an extenuated neck, often with yellow stripes in some form. Eggs are oblong and yellow. Larvae usually are found in several stages. All stages have three upper body legs. The pupa is a stage of darkening, starting with the eyes. The beetles get their name from a toxin they contain called cantharidin. Even dead insects can cause blisters if handled. Blister beetles are mostly foliage feeders but are not considered a major pest of vegetable crops. While feeding, they leave behind a distinctive black stringy substance. The beetles tend to move in swarms and can cause a great deal of localized defoliation. They generally do not stay in one area for very long.",
+  "biology_life_history": "Blister beetles pass the winter in a pseudopupa stage and then go through a final molt in the spring. After a short period of activity, the larva enters the true pupal stage, and adults emerge in midsummer. Adults feed on the vegetation of a variety of plants. Eggs are deposited in clusters of 100 to 200 in cavities in the soil and normally hatch in 2 weeks. Larvae frequently feed on grasshopper eggs. They spend about 43 days in this stage. There is one generation each year. Blister beetles pass the winter in a pseudopupa stage and then go through a final molt in the spring. After a short period of activity, the larva enters the true pupal stage. Adults emerge in midsummer. There is a single generation each year. Blister beetles tend to stay in weedy areas, especially where there is an abundance of grasshopper eggs. Larvae are considered beneficial, as they can consume large amounts of grasshopper eggs. Only the adult stage damages the crop.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": [
+      "azadirachtin (as a mix with",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use. carbaryl malathion",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "bifenthrin-Not registered for home use in WA on Swiss chard. carbaryl malathion",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "malathion (Malathion 8 Flowable) at 1.25 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Limit 3 treatments per year. Note: Blister beetles are killed easily with insecticides.",
+      "malathion (Malathion 8) at 1 lb ai/A. PHI 14 days. REI 12 hr. Retreatment interval 7 days, 2 lb/A per year. Blister beetles are not specifically cited in Swiss chard on the label, however Malathion has been effective in treating blister beetle in other crops. Note : Blister beetles are controlled easily with insecticides."
+    ]
+  },
+  "damage_tags": [
+    "feeding_damage",
+    "yellowing",
+    "defoliation"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:30:51.487282+00:00"
+}

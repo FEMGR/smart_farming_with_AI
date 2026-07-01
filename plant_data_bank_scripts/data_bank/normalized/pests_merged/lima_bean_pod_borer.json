@@ -1,0 +1,59 @@
+{
+  "pest_atom": "lima_bean_pod_borer",
+  "name": "Lima bean pod borer",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "lima_bean"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Bean, lima",
+      "pest_name_on_page": "Lima bean pod borer",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-lima-bean-pod-borer"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-lima-bean-pod-borer"
+  ],
+  "page_titles": [
+    "Bean, lima-Lima bean pod borer"
+  ],
+  "description_damage": "The adult is a small brownish-gray moth with distinctive forward-protruding mouthparts and a broad white band on the leading edge of the wings. Eggs are tiny, white at first, turning pink, then gray. They are laid singly or in small clumps. Larvae are tiny and white at first, growing to up to 0.62 inch when mature and turning pink or tan. Larvae wriggle violently when disturbed. The pupa is up to 0.75 inch in a cocoon with soil particles adhering to it. Larvae bore through lima bean pods and eat the seed. It is seldom a pest of snap beans. Silk and droppings can contaminate pods, causing rejection from processors. Bush lima beans in the Columbia Basin have been injured seriously in recent years. Wild lupine seems to be a reservoir of infestation.",
+  "biology_life_history": "In California, overwintering larvae enter diapause in the fall, and pupate during winter. Adults emerge starting in March. The first generation feeds on wild lupines. The complete life cycle takes at least 60 days, sometimes much longer. In southern California, three to four generations occur.",
+  "monitoring": "There is a sex pheromone that can be used for trapping adult male.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [],
+    "chemical_home": [
+      "carbaryl"
+    ],
+    "cultural": "Fall plowing to at least 8 inches deep can help destroy overwintering populations. Early year planting can help the crop achieve maturity before pod borers attain high densities. Crop rotation also is recommended where lima bean pod borers are a problem."
+  },
+  "damage_tags": [
+    "pod_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:04.829924+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.559531+00:00"
+}

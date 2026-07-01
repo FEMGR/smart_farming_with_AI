@@ -1,0 +1,246 @@
+{
+  "plant": {
+    "common_name": "tree tomato",
+    "confidence": 0.7,
+    "created_at": "2026-06-18T06:20:42.571379+00:00",
+    "genus": "Cyphomandra",
+    "plant_atom": "tree_tomato",
+    "reason": "scientific_name_not_found_in_prolog",
+    "scientific_name": "Cyphomandra betacea",
+    "source_file": "/home/graubo/PyCharmMiscProject/smart-farming-system/backend/cache/species_snapshots/2292.json",
+    "source_name": "perenual_snapshot",
+    "status": "extraction_attempted"
+  },
+  "source": "Perenual",
+  "snapshots": [
+    {
+      "source_name": "Perenual",
+      "source_url": "https://perenual.com/api/v2/species-list",
+      "query": "Cyphomandra betacea",
+      "status": "ok",
+      "fetched_at": "2026-06-19T03:27:37.341149+00:00",
+      "response_hash": "1d8f41b05a4a1b30b8cfb88d244106aacdd232d9c35ec34391702473ba34aed7",
+      "parsed": {
+        "endpoint": "species-list",
+        "payload": {
+          "data": [
+            {
+              "id": 2292,
+              "common_name": "tree tomato",
+              "scientific_name": [
+                "Cyphomandra betacea"
+              ],
+              "other_name": [],
+              "family": "Solanaceae",
+              "hybrid": null,
+              "authority": null,
+              "subspecies": null,
+              "cultivar": null,
+              "variety": null,
+              "species_epithet": "betacea",
+              "genus": "Cyphomandra",
+              "default_image": {
+                "license": 5,
+                "license_name": "Attribution-ShareAlike License",
+                "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+                "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/og/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032736Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=81266a42d77f78696c98ee6abda280d5aac3fd490da0cb2aa1c4ae2785f9dc82",
+                "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/regular/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032736Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=d1e529c62745354aaa820c7b5e3ba0b052876ed177deb72f152d1a8beffafa32",
+                "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/medium/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032736Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=13406963a275a56db141e426e782a695c253b3b0363c7e6b91ed3ca47a816296",
+                "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/small/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032736Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=fc6c5dab3a42375263fabb02add3a436112297c74f4b5cd5e3332aaddb914365",
+                "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/thumbnail/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032736Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=490d743ae07cb8b848984d120922476518d62e0a07344a7f457a80596b817ae0"
+              }
+            }
+          ],
+          "to": 1,
+          "per_page": 30,
+          "current_page": 1,
+          "from": 1,
+          "last_page": 1,
+          "total": 1
+        }
+      },
+      "raw_text_excerpt": ""
+    },
+    {
+      "source_name": "Perenual",
+      "source_url": "https://perenual.com/api/v2/species/details/{id}",
+      "query": "Cyphomandra betacea",
+      "status": "ok",
+      "fetched_at": "2026-06-19T03:27:44.677873+00:00",
+      "response_hash": "74bbd27c739475dc45aa42628da27d77e151490e90e442e07dd8f4482a35238f",
+      "parsed": {
+        "endpoint": "species-details",
+        "payload": [
+          {
+            "id": 2292,
+            "common_name": "tree tomato",
+            "scientific_name": [
+              "Cyphomandra betacea"
+            ],
+            "other_name": [],
+            "family": "Solanaceae",
+            "hybrid": null,
+            "authority": null,
+            "subspecies": null,
+            "cultivar": null,
+            "variety": null,
+            "species_epithet": "betacea",
+            "genus": "Cyphomandra",
+            "origin": [
+              "Peru",
+              "Brazil"
+            ],
+            "type": "Broadleaf evergreen",
+            "dimensions": [
+              {
+                "type": null,
+                "min_value": 10,
+                "max_value": 15,
+                "unit": "feet"
+              }
+            ],
+            "cycle": "Perennial",
+            "attracts": [],
+            "propagation": [
+              "Grafting Propagation",
+              "Air Layering Propagation",
+              "Cutting",
+              "Seed Propagation"
+            ],
+            "hardiness": {
+              "min": "10",
+              "max": "11"
+            },
+            "hardiness_location": {
+              "full_url": "https://perenual.com/api/hardiness-map?species_id=2292&size=og&key=sk-BO3069e45e3377a9916548",
+              "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=2292&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+            },
+            "watering": "Average",
+            "watering_general_benchmark": {
+              "value": "\"3-4\"",
+              "unit": "days"
+            },
+            "plant_anatomy": [
+              {
+                "part": "fruits",
+                "color": [
+                  "pale-orange",
+                  "dark-brown",
+                  "bright-red"
+                ]
+              },
+              {
+                "part": "leaves",
+                "color": [
+                  "green-yellow",
+                  "yellow-green",
+                  "light-green"
+                ]
+              },
+              {
+                "part": "veins",
+                "color": [
+                  "light-green",
+                  "lime-green",
+                  "yellow-green"
+                ]
+              },
+              {
+                "part": "petioles",
+                "color": [
+                  "light-green",
+                  "light-brown"
+                ]
+              },
+              {
+                "part": "branches",
+                "color": [
+                  "dark-brown",
+                  "dark-green",
+                  "red-brown"
+                ]
+              },
+              {
+                "part": "fruit",
+                "color": [
+                  "dark-green"
+                ]
+              },
+              {
+                "part": "midribs",
+                "color": [
+                  "lime-green"
+                ]
+              },
+              {
+                "part": "stems",
+                "color": [
+                  "light-brown"
+                ]
+              }
+            ],
+            "sunlight": [
+              "Full sun",
+              "part shade"
+            ],
+            "pruning_month": [
+              "March",
+              "April",
+              "May",
+              "June",
+              "July"
+            ],
+            "pruning_count": [],
+            "seeds": true,
+            "maintenance": "Moderate",
+            "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=2292&key=sk-BO3069e45e3377a9916548",
+            "soil": [],
+            "growth_rate": "Low",
+            "drought_tolerant": false,
+            "salt_tolerant": true,
+            "thorny": true,
+            "invasive": false,
+            "tropical": false,
+            "indoor": false,
+            "care_level": "Medium",
+            "pest_susceptibility": [],
+            "flowers": true,
+            "flowering_season": null,
+            "cones": false,
+            "fruits": true,
+            "edible_fruit": true,
+            "harvest_season": null,
+            "leaf": true,
+            "edible_leaf": true,
+            "cuisine": true,
+            "medicinal": true,
+            "poisonous_to_humans": false,
+            "poisonous_to_pets": false,
+            "description": "Tree tomatoes (Cyphomandra betacea) are a delicious and versatile subtropical fruit that can be eaten raw, cooked, juiced, or dried. With its sweet and tart flavor, it is an ideal snack for adults and kids alike. The health benefits of tree tomatoes are extensive, as they are packed with minerals and vitamins, including vitamins A, E, and C, and potassium and calcium. Tree tomatoes are also known to help reduce inflammation, boost the immune system, and improve digestion. Not only are they a great source of nutrition, they are a visually stunning addition to any garden with their attractive foliage, beautiful purple flowers, and bright yellow and red-orange fruits. Tree tomatoes are extremely easy to grow and are sure to amaze you with their amazing flavor and nutritional value.",
+            "default_image": {
+              "license": 5,
+              "license_name": "Attribution-ShareAlike License",
+              "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+              "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/og/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032743Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=5158d75bcad9e73034e7149af72c0cd276d1eeb1ad6989df1db44bed5070b686",
+              "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/regular/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032743Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=f15c8b90130f8721fc1a5acd43627058989ec5c7e2f6d3562de91b097e24bf2a",
+              "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/medium/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032743Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=8ae7746d62f1a21a08662b1aebbde9f569754d07e9e236e9279225f1eb03f61f",
+              "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/small/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032743Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=364204745649346d6d9f781f8cff398989a859ab0f0b07e07ced9b1d4ade6305",
+              "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2292_cyphomandra_betacea/thumbnail/49288036626_f4bfa5c8c5_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032743Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=29875acb32814479960a0960ce95695b7133b531cb809115d91d61e8c124c314"
+            },
+            "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+          }
+        ]
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

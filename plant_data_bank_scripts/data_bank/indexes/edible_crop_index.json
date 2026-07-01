@@ -518,6 +518,15 @@
       "repellent_plant"
     ]
   },
+  "tree_tomato": {
+    "edible_parts": [
+      "fruit"
+    ],
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ]
+  },
   "watermelon": {
     "edible_parts": [
       "fruit",

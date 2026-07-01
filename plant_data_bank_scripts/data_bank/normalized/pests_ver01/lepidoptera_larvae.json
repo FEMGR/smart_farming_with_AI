@@ -1,0 +1,108 @@
+{
+  "pest_atom": "lepidoptera_larvae",
+  "name": "Lepidoptera larvae",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "celery",
+    "watercress"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Celery",
+      "pest_name_on_page": "Lepidoptera larvae",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-lepidoptera-larvae"
+    },
+    {
+      "crop_heading": "Watercress",
+      "pest_name_on_page": "Lepidoptera larvae",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/watercress-lepidoptera-larvae"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-lepidoptera-larvae",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/watercress-lepidoptera-larvae"
+  ],
+  "page_titles": [
+    "Celery-Lepidoptera larvae",
+    "Watercress-Lepidoptera larvae"
+  ],
+  "description_damage": "See \"Armyworm\" and \"Cutworm\" in: Common Pests of Vegetable Crops See: Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": [
+      "Bacillus thuringiensis var.",
+      "kurstaki ( Btk )-Some formulations are",
+      "OMRI-listed for organic use.",
+      "bifenthrin-Not registered for home use on celery in WA. carbaryl cyfluthrin permethrin plant derived essential",
+      "oils (rosemary, peppermint, etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "azadirachtin (neem extract)-Some formulations are",
+      "OMRI-listed for organic use. insecticidal",
+      "soap (as a mix with spinosad)-May require several applications. Some formulations are",
+      "OMRI-listed for organic use.",
+      "kaolin-Applied as a spray to foliage, It acts as a repellent to some insect pests. Some formulations are",
+      "OMRI-listed for organic use. malathion",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use."
+    ],
+    "chemical_commercial": [
+      "alpha-cypermethrin (Fastac EC) at 0.014 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only. Bacillus thuringiensis (Javelin WG) 0.12 to 1.5 lb/A. PHI 0 days. REI 4 hr (see label). Slow acting. May need multiple applications. Add an appropriate",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "OMRI-listed for organic use. Beauveria",
+      "bassiana (Mycotrol ESO) at 0.5 to 2 lb/100 gal. PHI 0 days. REI 4 hr.",
+      "OMRI-listed for organic use.",
+      "beta-cyfluthrin (Baythroid XL) at 0.007 to 0.025 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.1 lb ai/A per season.",
+      "bifenthrin (Brigade WSB, Sniper) at 0.033 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.5 lb ai/A per season. Retreatment interval 7 days. Burkholderia spp. (Venerate XC) at 1 to 4 quarts/A product. PHI 0 days. REI 4 hr.",
+      "OMRI-listed for organic use. Chromobacterium",
+      "subtsugae (Grandevo) at 0.3 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "OMRI-listed for organic use.",
+      "cyfluthrin (Tombstone) at 0.013 to 0.05 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.2 lb ai/A or four applications per season.",
+      "GS-omega/kappa-Hxtx-Hv1a (Spear Lep) at 0.02 to 0.04 lb ai/A (1 to 2 pints/A). PHI 0 days. REI 4 hr. Retreatment interval 3 to 10 days. Do not exceed 1.7 lb ai/A per year.",
+      "methomyl (Lannate SP) at 0.23 to 0.9 lb ai/A. PHI 7 days. REI 48 hr. Limit 8 treatments per year. Do not exceed 6.3 lb ai/A per year.",
+      "methoxyfenozide (Intrepid 2F) at 0.06 to 0.12 lb ai/A for",
+      "early-season application and 0.12 to 0.16 lb ai/A for",
+      "mid- to",
+      "late-season application or heavy infestation. REI 4 hr. PHI 1 day. Adding a",
+      "spreader-sticker improves performance. Do not exceed 1 lb ai/A per season.",
+      "permethrin (Permethrin) at 0.1 to 0.2 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not graze or feed treated plants. Do not exceed 1 lb ai/A per year.",
+      "permethrin (Loveland Permethrin Cutworm Bait) at 0.1 to 0.2 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 1 lb ai/A per season.",
+      "spinetoram (Radiant SC) at 0.039 to 0.078 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 4 days. Do not exceed six applications or 0.266 lb ai/A per season. Do not apply to seedling leafy vegetables grown for transplant within a greenhouse, shade house, or field plot.",
+      "spinosad (Success) at 0.062 to 0.094 lb ai/A celery (seed). PHI 14 days. REI 4 hr. Do not exceed three times in any 30-day period. Do not exceed 0.45 lb ai/A or six applications per crop. Oregon only.",
+      "zeta-cypermethrin (Mustang) at 0.028 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.3 lb ai/A per season. Retreatment interval 7 days.",
+      "Bacillus",
+      "thuringiensis (Javelin) at 0.12 to 1.5 lb/A. PHI 0 days. REI 4 hr. Slow acting; may need multiple applications. Add an appropriate",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "OMRI-listed for organic use. Burkholderia spp. (Venerate XC) at 1 to 4 quarts/A. PHI 0 day. REI 4 hr.",
+      "GS-omega/kappa-Hxtx-Hv1a (Spear Lep) at 0.02 to 0.04 lb ai/A. PHI 0 days. REI 4 hr. Retreatment interval 3 to 10 days.",
+      "spinetoram (Radiant SC) at 0.039 to 0.078 lb ai/A. PHI 1 day. Retreatment interval 4 days. Do not exceed 0.266 lb ai/A per year. Limit 6 treatments per season. Do not apply to seedling leafy vegetables grown for transplant within a greenhouse, shade house, or field plot.",
+      "spinosad (Success, Entrust SC) at 0.023 to 0.125 lb ai/A. PHI 1 day. REI 4 hr. Do not exceed 0.45 lb ai/A per season. Entrust SC is",
+      "OMRI-listed for organic use."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:00.564839+00:00"
+}

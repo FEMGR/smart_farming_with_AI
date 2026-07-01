@@ -24,6 +24,44 @@
 % ---------------------------------------------------------
 % ANNUAL ASTER
 % ---------------------------------------------------------
+
+% =========================================================
+% GROWTH FACTS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ANNUAL ASTER
+% ---------------------------------------------------------
+
+% =========================================================
+% GROWTH FACTS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ALOE VERA
+% ---------------------------------------------------------
+fact_scope(aloe_vera, extracted_profile).
+accepted_scientific_name(aloe_vera, 'Aloe vera').
+genus(aloe_vera, aloe).
+family(aloe_vera, asphodelaceae).
+life_cycle(aloe_vera, perennial).
+botanical_life_cycle(aloe_vera, perennial).
+propagation_method(aloe_vera, division).
+propagation_method(aloe_vera, seed).
+sunlight(aloe_vera, full_sun).
+soil_type(aloe_vera, light_sandy).
+soil_type(aloe_vera, medium_loamy).
+soil_type(aloe_vera, well_drained).
+water_need(aloe_vera, moderate).
+source_name(aloe_vera, 'Plants For A Future').
+source_url(aloe_vera, 'https://pfaf.org/user/Plant.aspx?LatinName=Aloe+vera').
+confidence(aloe_vera, high).
+
+% ---------------------------------------------------------
+% ANNUAL ASTER
+% ---------------------------------------------------------
 fact_scope(annual_aster, common_crop).
 germination_days_min(annual_aster, 7).
 germination_days_max(annual_aster, 10).
@@ -54,6 +92,68 @@ special_treatment(annual_statice, lightly_cover_seed).
 source_name(annual_statice, 'Iowa State University Extension').
 source_url(annual_statice, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(annual_statice, high).
+
+% ---------------------------------------------------------
+% APPLE
+% ---------------------------------------------------------
+fact_scope(apple, extracted_profile).
+accepted_scientific_name(apple, 'Malus domestica').
+genus(apple, malus).
+family(apple, rosaceae).
+propagation_method(apple, cutting).
+propagation_method(apple, seed).
+sunlight(apple, full_sun).
+sunlight(apple, partial_shade).
+soil_type(apple, heavy_clay).
+soil_type(apple, light_sandy).
+soil_type(apple, medium_loamy).
+soil_type(apple, well_drained).
+water_need(apple, moderate).
+source_name(apple, 'Plants For A Future').
+source_url(apple, 'https://pfaf.org/user/Plant.aspx?LatinName=Malus+domestica').
+confidence(apple, high).
+
+% ---------------------------------------------------------
+% ARTICHOKE
+% ---------------------------------------------------------
+fact_scope(artichoke, extracted_profile).
+accepted_scientific_name(artichoke, 'Cynara cardunculus').
+genus(artichoke, cynara).
+family(artichoke, asteraceae).
+life_cycle(artichoke, perennial).
+botanical_life_cycle(artichoke, perennial).
+propagation_method(artichoke, division).
+propagation_method(artichoke, seed).
+sunlight(artichoke, full_sun).
+soil_type(artichoke, heavy_clay).
+soil_type(artichoke, light_sandy).
+soil_type(artichoke, medium_loamy).
+water_need(artichoke, moderate).
+source_name(artichoke, 'Plants For A Future').
+source_url(artichoke, 'https://pfaf.org/user/Plant.aspx?LatinName=Cynara+cardunculus').
+confidence(artichoke, high).
+
+% ---------------------------------------------------------
+% ARUGULA
+% ---------------------------------------------------------
+fact_scope(arugula, extracted_profile).
+accepted_scientific_name(arugula, 'Eruca vesicaria').
+genus(arugula, eruca).
+family(arugula, brassicaceae).
+life_cycle(arugula, annual).
+crop_life_cycle(arugula, annual).
+propagation_method(arugula, seed).
+sunlight(arugula, full_sun).
+sunlight(arugula, partial_shade).
+soil_type(arugula, heavy_clay).
+soil_type(arugula, light_sandy).
+soil_type(arugula, medium_loamy).
+soil_type(arugula, well_drained).
+water_need(arugula, moderate).
+growth_speed(arugula, fast).
+source_name(arugula, 'Plants For A Future').
+source_url(arugula, 'https://pfaf.org/user/Plant.aspx?LatinName=Eruca+vesicaria').
+confidence(arugula, high).
 
 % ---------------------------------------------------------
 % ASPARAGUS
@@ -91,9 +191,13 @@ confidence(bachelor, high).
 % BASIL
 % ---------------------------------------------------------
 fact_scope(basil, common_crop).
+fact_scope(basil, extracted_profile).
 accepted_scientific_name(basil, 'Ocimum basilicum').
 genus(basil, ocimum).
 family(basil, lamiaceae).
+life_cycle(basil, annual).
+botanical_life_cycle(basil, tender_perennial).
+crop_life_cycle(basil, annual).
 germination_days_min(basil, 10).
 germination_days_max(basil, 14).
 germination_light(basil, darkness_required).
@@ -101,9 +205,20 @@ stratification_required(basil, false).
 stratification_days_min(basil, 0).
 stratification_days_max(basil, 0).
 sowing_depth_cm(basil, 0.95).
+propagation_method(basil, seed).
+sunlight(basil, full_sun).
+soil_type(basil, light_sandy).
+soil_type(basil, medium_loamy).
+soil_type(basil, well_drained).
+soil_ph_min(basil, 5.0).
+soil_ph_max(basil, 8.0).
+water_need(basil, moderate).
+growth_speed(basil, fast).
 special_treatment(basil, cover_seed).
 special_treatment(basil, inferred_depth_from_1_4_to_1_2_inch).
 source_name(basil, 'Iowa State University Extension').
+source_name(basil, 'Plants For A Future').
+source_url(basil, 'https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+basilicum').
 source_url(basil, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(basil, high).
 
@@ -139,6 +254,28 @@ viable_temp_max_c(bean_bush, 35.0).
 source_name(bean_bush, 'Wisconsin Horticulture Extension').
 source_url(bean_bush, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
 confidence(bean_bush, medium).
+
+% ---------------------------------------------------------
+% BEAN COMMON
+% ---------------------------------------------------------
+fact_scope(bean_common, extracted_profile).
+accepted_scientific_name(bean_common, 'Phaseolus vulgaris').
+genus(bean_common, phaseolus).
+family(bean_common, fabaceae).
+life_cycle(bean_common, annual).
+crop_life_cycle(bean_common, annual).
+propagation_method(bean_common, seed).
+sunlight(bean_common, full_sun).
+soil_type(bean_common, heavy_clay).
+soil_type(bean_common, light_sandy).
+soil_type(bean_common, medium_loamy).
+soil_type(bean_common, well_drained).
+soil_ph_min(bean_common, 5.5).
+soil_ph_max(bean_common, 6.5).
+water_need(bean_common, moderate).
+source_name(bean_common, 'Plants For A Future').
+source_url(bean_common, 'https://pfaf.org/user/Plant.aspx?LatinName=Phaseolus+vulgaris').
+confidence(bean_common, high).
 
 % ---------------------------------------------------------
 % BEAN POLE
@@ -250,6 +387,17 @@ source_url(bell_pepper, 'https://yardandgarden.extension.iastate.edu/how-to/germ
 confidence(bell_pepper, high).
 
 % ---------------------------------------------------------
+% BITTER MELON
+% ---------------------------------------------------------
+fact_scope(bitter_melon, extracted_profile).
+accepted_scientific_name(bitter_melon, 'Momordica charantia').
+genus(bitter_melon, momordica).
+family(bitter_melon, cucurbitaceae).
+source_name(bitter_melon, 'Plants For A Future').
+source_url(bitter_melon, 'https://pfaf.org/user/Plant.aspx?LatinName=Momordica+charantia').
+confidence(bitter_melon, high).
+
+% ---------------------------------------------------------
 % BLACK EYED SUSAN
 % ---------------------------------------------------------
 fact_scope(black_eyed_susan, common_crop).
@@ -267,9 +415,45 @@ source_url(black_eyed_susan, 'https://yardandgarden.extension.iastate.edu/how-to
 confidence(black_eyed_susan, high).
 
 % ---------------------------------------------------------
+% BLACKBERRY
+% ---------------------------------------------------------
+fact_scope(blackberry, extracted_profile).
+accepted_scientific_name(blackberry, 'Rubus fruticosus').
+genus(blackberry, rubus).
+family(blackberry, rosaceae).
+life_cycle(blackberry, perennial).
+botanical_life_cycle(blackberry, perennial).
+propagation_method(blackberry, cutting).
+propagation_method(blackberry, division).
+propagation_method(blackberry, layering).
+propagation_method(blackberry, seed).
+sunlight(blackberry, partial_shade).
+soil_type(blackberry, heavy_clay).
+soil_type(blackberry, light_sandy).
+soil_type(blackberry, medium_loamy).
+soil_type(blackberry, well_drained).
+water_need(blackberry, moderate).
+growth_speed(blackberry, fast).
+source_name(blackberry, 'Plants For A Future').
+source_url(blackberry, 'https://pfaf.org/user/Plant.aspx?LatinName=Rubus+fruticosus').
+confidence(blackberry, high).
+
+% ---------------------------------------------------------
+% BOK CHOY
+% ---------------------------------------------------------
+fact_scope(bok_choy, extracted_profile).
+accepted_scientific_name(bok_choy, 'Brassica rapa subsp. chinensis').
+genus(bok_choy, brassica).
+family(bok_choy, brassicaceae).
+source_name(bok_choy, 'Plants For A Future').
+source_url(bok_choy, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+rapa+subsp.+chinensis').
+confidence(bok_choy, high).
+
+% ---------------------------------------------------------
 % BROCCOLI
 % ---------------------------------------------------------
 fact_scope(broccoli, common_crop).
+fact_scope(broccoli, extracted_profile).
 accepted_scientific_name(broccoli, 'Brassica oleracea var. italica').
 genus(broccoli, brassica).
 family(broccoli, brassicaceae).
@@ -283,6 +467,8 @@ sowing_depth_cm(broccoli, 0.95).
 special_treatment(broccoli, cover_seed).
 special_treatment(broccoli, inferred_depth_from_1_4_to_1_2_inch).
 source_name(broccoli, 'Iowa State University Extension').
+source_name(broccoli, 'Plants For A Future').
+source_url(broccoli, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+var.+italica').
 source_url(broccoli, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(broccoli, high).
 
@@ -307,9 +493,13 @@ confidence(brussels_sprouts, high).
 % CABBAGE
 % ---------------------------------------------------------
 fact_scope(cabbage, common_crop).
+fact_scope(cabbage, extracted_profile).
 accepted_scientific_name(cabbage, 'Brassica oleracea var. capitata').
+accepted_scientific_name(cabbage, 'Brassica oleracea').
 genus(cabbage, brassica).
 family(cabbage, brassicaceae).
+life_cycle(cabbage, perennial).
+botanical_life_cycle(cabbage, perennial).
 germination_days_min(cabbage, 4).
 germination_days_max(cabbage, 7).
 germination_light(cabbage, darkness_required).
@@ -321,11 +511,23 @@ minimum_soil_temp_c(cabbage, 12.8).
 optimum_soil_temp_c(cabbage, 29.4).
 viable_temp_min_c(cabbage, 4.4).
 viable_temp_max_c(cabbage, 40.6).
+propagation_method(cabbage, cutting).
+propagation_method(cabbage, seed).
+sunlight(cabbage, full_sun).
+sunlight(cabbage, partial_shade).
+soil_type(cabbage, heavy_clay).
+soil_type(cabbage, light_sandy).
+soil_type(cabbage, medium_loamy).
+soil_type(cabbage, well_drained).
+water_need(cabbage, moderate).
+growth_speed(cabbage, fast).
 special_treatment(cabbage, cover_seed).
 special_treatment(cabbage, inferred_depth_from_1_4_to_1_2_inch).
 source_name(cabbage, 'Iowa State University Extension').
+source_name(cabbage, 'Plants For A Future').
 source_name(cabbage, 'Wisconsin Horticulture Extension').
 source_url(cabbage, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(cabbage, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea').
 source_url(cabbage, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(cabbage, high).
 
@@ -343,6 +545,24 @@ viable_temp_max_c(cantaloupe, 37.8).
 source_name(cantaloupe, 'Wisconsin Horticulture Extension').
 source_url(cantaloupe, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
 confidence(cantaloupe, medium).
+
+% ---------------------------------------------------------
+% CARROT
+% ---------------------------------------------------------
+fact_scope(carrot, extracted_profile).
+accepted_scientific_name(carrot, 'Daucus carota').
+genus(carrot, daucus).
+family(carrot, apiaceae).
+propagation_method(carrot, seed).
+sunlight(carrot, full_sun).
+soil_type(carrot, heavy_clay).
+soil_type(carrot, light_sandy).
+soil_type(carrot, medium_loamy).
+soil_type(carrot, well_drained).
+water_need(carrot, moderate).
+source_name(carrot, 'Plants For A Future').
+source_url(carrot, 'https://pfaf.org/user/Plant.aspx?LatinName=Daucus+carota').
+confidence(carrot, high).
 
 % ---------------------------------------------------------
 % CARROTS
@@ -371,6 +591,7 @@ confidence(carrots, high).
 % CAULIFLOWER
 % ---------------------------------------------------------
 fact_scope(cauliflower, common_crop).
+fact_scope(cauliflower, extracted_profile).
 accepted_scientific_name(cauliflower, 'Brassica oleracea var. botrytis').
 genus(cauliflower, brassica).
 family(cauliflower, brassicaceae).
@@ -388,8 +609,10 @@ viable_temp_max_c(cauliflower, 37.8).
 special_treatment(cauliflower, cover_seed).
 special_treatment(cauliflower, inferred_depth_from_1_4_to_1_2_inch).
 source_name(cauliflower, 'Iowa State University Extension').
+source_name(cauliflower, 'Plants For A Future').
 source_name(cauliflower, 'Wisconsin Horticulture Extension').
 source_url(cauliflower, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(cauliflower, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+var.+botrytis').
 source_url(cauliflower, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(cauliflower, high).
 
@@ -397,6 +620,10 @@ confidence(cauliflower, high).
 % CELERY
 % ---------------------------------------------------------
 fact_scope(celery, common_crop).
+fact_scope(celery, extracted_profile).
+accepted_scientific_name(celery, 'Apium graveolens').
+genus(celery, apium).
+family(celery, apiaceae).
 germination_days_min(celery, 14).
 germination_days_max(celery, 21).
 germination_light(celery, lightly_cover).
@@ -408,13 +635,43 @@ minimum_soil_temp_c(celery, 18.3).
 optimum_soil_temp_c(celery, 21.1).
 viable_temp_min_c(celery, 4.4).
 viable_temp_max_c(celery, 29.4).
+propagation_method(celery, seed).
+sunlight(celery, partial_shade).
+soil_type(celery, heavy_clay).
+soil_type(celery, light_sandy).
+soil_type(celery, medium_loamy).
+water_need(celery, moderate).
 special_treatment(celery, keep_close_to_surface).
 special_treatment(celery, lightly_cover_seed).
 source_name(celery, 'Iowa State University Extension').
+source_name(celery, 'Plants For A Future').
 source_name(celery, 'Wisconsin Horticulture Extension').
 source_url(celery, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(celery, 'https://pfaf.org/user/Plant.aspx?LatinName=Apium+graveolens').
 source_url(celery, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(celery, high).
+
+% ---------------------------------------------------------
+% CHICKPEA
+% ---------------------------------------------------------
+fact_scope(chickpea, extracted_profile).
+accepted_scientific_name(chickpea, 'Cicer arietinum').
+genus(chickpea, cicer).
+family(chickpea, fabaceae).
+source_name(chickpea, 'Plants For A Future').
+source_url(chickpea, 'https://pfaf.org/user/Plant.aspx?LatinName=Cicer+arietinum').
+confidence(chickpea, high).
+
+% ---------------------------------------------------------
+% CHICORY
+% ---------------------------------------------------------
+fact_scope(chicory, extracted_profile).
+accepted_scientific_name(chicory, 'Cichorium intybus').
+genus(chicory, cichorium).
+family(chicory, asteraceae).
+source_name(chicory, 'Plants For A Future').
+source_url(chicory, 'https://pfaf.org/user/Plant.aspx?LatinName=Cichorium+intybus').
+confidence(chicory, high).
 
 % ---------------------------------------------------------
 % CHILI PEPPER
@@ -441,6 +698,17 @@ source_name(chili_pepper, 'Wisconsin Horticulture Extension').
 source_url(chili_pepper, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
 source_url(chili_pepper, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(chili_pepper, high).
+
+% ---------------------------------------------------------
+% CHIVE
+% ---------------------------------------------------------
+fact_scope(chive, extracted_profile).
+accepted_scientific_name(chive, 'Allium schoenoprasum').
+genus(chive, allium).
+family(chive, amaryllidaceae).
+source_name(chive, 'Plants For A Future').
+source_url(chive, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+schoenoprasum').
+confidence(chive, high).
 
 % ---------------------------------------------------------
 % COCKSCOMB
@@ -479,6 +747,17 @@ special_treatment(coleus, surface_sow).
 source_name(coleus, 'Iowa State University Extension').
 source_url(coleus, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(coleus, high).
+
+% ---------------------------------------------------------
+% CORIANDER
+% ---------------------------------------------------------
+fact_scope(coriander, extracted_profile).
+accepted_scientific_name(coriander, 'Coriandrum sativum').
+genus(coriander, coriandrum).
+family(coriander, apiaceae).
+source_name(coriander, 'Plants For A Future').
+source_url(coriander, 'https://pfaf.org/user/Plant.aspx?LatinName=Coriandrum+sativum').
+confidence(coriander, high).
 
 % ---------------------------------------------------------
 % CORN
@@ -551,9 +830,12 @@ confidence(creeping_zinnia, high).
 % CUCUMBER
 % ---------------------------------------------------------
 fact_scope(cucumber, common_crop).
+fact_scope(cucumber, extracted_profile).
 accepted_scientific_name(cucumber, 'Cucumis sativus').
 genus(cucumber, cucumis).
 family(cucumber, cucurbitaceae).
+life_cycle(cucumber, annual).
+crop_life_cycle(cucumber, annual).
 germination_days_min(cucumber, 3).
 germination_days_max(cucumber, 10).
 germination_light(cucumber, darkness_required).
@@ -565,11 +847,20 @@ minimum_soil_temp_c(cucumber, 18.3).
 optimum_soil_temp_c(cucumber, 35.0).
 viable_temp_min_c(cucumber, 10.0).
 viable_temp_max_c(cucumber, 40.6).
+propagation_method(cucumber, seed).
+sunlight(cucumber, full_sun).
+soil_type(cucumber, heavy_clay).
+soil_type(cucumber, light_sandy).
+soil_type(cucumber, medium_loamy).
+soil_type(cucumber, well_drained).
+water_need(cucumber, moderate).
 special_treatment(cucumber, cover_seed).
 special_treatment(cucumber, inferred_depth_from_1_4_to_1_2_inch).
 source_name(cucumber, 'Iowa State University Extension').
+source_name(cucumber, 'Plants For A Future').
 source_name(cucumber, 'Wisconsin Horticulture Extension').
 source_url(cucumber, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(cucumber, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucumis+sativus').
 source_url(cucumber, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(cucumber, high).
 
@@ -592,9 +883,33 @@ source_url(dahlberg_daisy, 'https://yardandgarden.extension.iastate.edu/how-to/g
 confidence(dahlberg_daisy, high).
 
 % ---------------------------------------------------------
+% DANDELION
+% ---------------------------------------------------------
+fact_scope(dandelion, extracted_profile).
+accepted_scientific_name(dandelion, 'Taraxacum officinale').
+genus(dandelion, taraxacum).
+family(dandelion, asteraceae).
+life_cycle(dandelion, perennial).
+botanical_life_cycle(dandelion, perennial).
+propagation_method(dandelion, division).
+propagation_method(dandelion, seed).
+sunlight(dandelion, full_sun).
+sunlight(dandelion, partial_shade).
+soil_type(dandelion, heavy_clay).
+soil_type(dandelion, light_sandy).
+soil_type(dandelion, medium_loamy).
+soil_type(dandelion, well_drained).
+water_need(dandelion, moderate).
+growth_speed(dandelion, fast).
+source_name(dandelion, 'Plants For A Future').
+source_url(dandelion, 'https://pfaf.org/user/Plant.aspx?LatinName=Taraxacum+officinale').
+confidence(dandelion, high).
+
+% ---------------------------------------------------------
 % DILL
 % ---------------------------------------------------------
 fact_scope(dill, common_crop).
+fact_scope(dill, extracted_profile).
 accepted_scientific_name(dill, 'Anethum graveolens').
 genus(dill, anethum).
 family(dill, apiaceae).
@@ -609,6 +924,8 @@ special_treatment(dill, do_not_cover).
 special_treatment(dill, press_seed_into_medium).
 special_treatment(dill, surface_sow).
 source_name(dill, 'Iowa State University Extension').
+source_name(dill, 'Plants For A Future').
+source_url(dill, 'https://pfaf.org/user/Plant.aspx?LatinName=Anethum+graveolens').
 source_url(dill, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(dill, high).
 
@@ -616,9 +933,12 @@ confidence(dill, high).
 % EGGPLANT
 % ---------------------------------------------------------
 fact_scope(eggplant, common_crop).
+fact_scope(eggplant, extracted_profile).
 accepted_scientific_name(eggplant, 'Solanum melongena').
 genus(eggplant, solanum).
 family(eggplant, solanaceae).
+life_cycle(eggplant, perennial).
+botanical_life_cycle(eggplant, perennial).
 germination_days_min(eggplant, 7).
 germination_days_max(eggplant, 10).
 germination_light(eggplant, darkness_required).
@@ -626,11 +946,65 @@ stratification_required(eggplant, false).
 stratification_days_min(eggplant, 0).
 stratification_days_max(eggplant, 0).
 sowing_depth_cm(eggplant, 0.95).
+propagation_method(eggplant, seed).
+sunlight(eggplant, full_sun).
+soil_type(eggplant, heavy_clay).
+soil_type(eggplant, light_sandy).
+soil_type(eggplant, medium_loamy).
+soil_type(eggplant, well_drained).
+soil_ph_min(eggplant, 5.5).
+soil_ph_max(eggplant, 6.8).
+water_need(eggplant, moderate).
 special_treatment(eggplant, cover_seed).
 special_treatment(eggplant, inferred_depth_from_1_4_to_1_2_inch).
 source_name(eggplant, 'Iowa State University Extension').
+source_name(eggplant, 'Plants For A Future').
+source_url(eggplant, 'https://pfaf.org/user/Plant.aspx?LatinName=Solanum+melongena').
 source_url(eggplant, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(eggplant, high).
+
+% ---------------------------------------------------------
+% FENNEL
+% ---------------------------------------------------------
+fact_scope(fennel, extracted_profile).
+accepted_scientific_name(fennel, 'Foeniculum vulgare').
+genus(fennel, foeniculum).
+family(fennel, apiaceae).
+life_cycle(fennel, perennial).
+botanical_life_cycle(fennel, perennial).
+propagation_method(fennel, division).
+propagation_method(fennel, seed).
+sunlight(fennel, full_sun).
+soil_type(fennel, heavy_clay).
+soil_type(fennel, light_sandy).
+soil_type(fennel, medium_loamy).
+soil_type(fennel, well_drained).
+water_need(fennel, moderate).
+source_name(fennel, 'Plants For A Future').
+source_url(fennel, 'https://pfaf.org/user/Plant.aspx?LatinName=Foeniculum+vulgare').
+confidence(fennel, high).
+
+% ---------------------------------------------------------
+% FIG
+% ---------------------------------------------------------
+fact_scope(fig, extracted_profile).
+accepted_scientific_name(fig, 'Ficus carica').
+genus(fig, ficus).
+family(fig, moraceae).
+propagation_method(fig, cutting).
+propagation_method(fig, layering).
+propagation_method(fig, seed).
+sunlight(fig, full_sun).
+soil_type(fig, heavy_clay).
+soil_type(fig, light_sandy).
+soil_type(fig, medium_loamy).
+soil_type(fig, well_drained).
+soil_ph_min(fig, 6.0).
+soil_ph_max(fig, 7.0).
+water_need(fig, moderate).
+source_name(fig, 'Plants For A Future').
+source_url(fig, 'https://pfaf.org/user/Plant.aspx?LatinName=Ficus+carica').
+confidence(fig, high).
 
 % ---------------------------------------------------------
 % FLOWERING TOBACCO
@@ -674,6 +1048,28 @@ source_url(four_oclock, 'https://yardandgarden.extension.iastate.edu/how-to/germ
 confidence(four_oclock, high).
 
 % ---------------------------------------------------------
+% GALANGAL
+% ---------------------------------------------------------
+fact_scope(galangal, extracted_profile).
+accepted_scientific_name(galangal, 'Alpinia galanga').
+genus(galangal, alpinia).
+family(galangal, zingiberaceae).
+source_name(galangal, 'Plants For A Future').
+source_url(galangal, 'https://pfaf.org/user/Plant.aspx?LatinName=Alpinia+galanga').
+confidence(galangal, high).
+
+% ---------------------------------------------------------
+% GARLIC
+% ---------------------------------------------------------
+fact_scope(garlic, extracted_profile).
+accepted_scientific_name(garlic, 'Allium sativum').
+genus(garlic, allium).
+family(garlic, amaryllidaceae).
+source_name(garlic, 'Plants For A Future').
+source_url(garlic, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+sativum').
+confidence(garlic, high).
+
+% ---------------------------------------------------------
 % GERANIUM
 % ---------------------------------------------------------
 fact_scope(geranium, flower).
@@ -689,6 +1085,31 @@ special_treatment(geranium, inferred_depth_from_1_4_to_1_2_inch).
 source_name(geranium, 'Iowa State University Extension').
 source_url(geranium, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(geranium, high).
+
+% ---------------------------------------------------------
+% GINGER
+% ---------------------------------------------------------
+fact_scope(ginger, extracted_profile).
+accepted_scientific_name(ginger, 'Zingiber officinale').
+genus(ginger, zingiber).
+family(ginger, zingiberaceae).
+life_cycle(ginger, perennial).
+botanical_life_cycle(ginger, perennial).
+propagation_method(ginger, division).
+propagation_method(ginger, seed).
+sunlight(ginger, full_sun).
+sunlight(ginger, partial_shade).
+soil_type(ginger, heavy_clay).
+soil_type(ginger, light_sandy).
+soil_type(ginger, medium_loamy).
+soil_type(ginger, well_drained).
+soil_ph_min(ginger, 6.0).
+soil_ph_max(ginger, 7.0).
+water_need(ginger, moderate).
+growth_speed(ginger, fast).
+source_name(ginger, 'Plants For A Future').
+source_url(ginger, 'https://pfaf.org/user/Plant.aspx?LatinName=Zingiber+officinale').
+confidence(ginger, high).
 
 % ---------------------------------------------------------
 % GLOBE AMARANTH
@@ -730,6 +1151,30 @@ source_url(gotu_kola, 'https://pfaf.org/user/Plant.aspx?LatinName=Centella+asiat
 confidence(gotu_kola, high).
 
 % ---------------------------------------------------------
+% GRAPE
+% ---------------------------------------------------------
+fact_scope(grape, extracted_profile).
+accepted_scientific_name(grape, 'Vitis vinifera').
+genus(grape, vitis).
+family(grape, vitaceae).
+propagation_method(grape, cutting).
+propagation_method(grape, layering).
+propagation_method(grape, seed).
+sunlight(grape, full_sun).
+sunlight(grape, partial_shade).
+soil_type(grape, heavy_clay).
+soil_type(grape, light_sandy).
+soil_type(grape, medium_loamy).
+soil_type(grape, well_drained).
+soil_ph_min(grape, 6.5).
+soil_ph_max(grape, 7.0).
+water_need(grape, moderate).
+growth_speed(grape, fast).
+source_name(grape, 'Plants For A Future').
+source_url(grape, 'https://pfaf.org/user/Plant.aspx?LatinName=Vitis+vinifera').
+confidence(grape, high).
+
+% ---------------------------------------------------------
 % IMPATIENS
 % ---------------------------------------------------------
 fact_scope(impatiens, common_crop).
@@ -754,6 +1199,8 @@ confidence(impatiens, high).
 % KALE
 % ---------------------------------------------------------
 fact_scope(kale, common_crop).
+fact_scope(kale, extracted_profile).
+accepted_scientific_name(kale, 'Brassica oleracea var. acephala').
 accepted_scientific_name(kale, 'Brassica oleracea var. sabellica').
 genus(kale, brassica).
 family(kale, brassicaceae).
@@ -767,6 +1214,8 @@ sowing_depth_cm(kale, 0.95).
 special_treatment(kale, cover_seed).
 special_treatment(kale, inferred_depth_from_1_4_to_1_2_inch).
 source_name(kale, 'Iowa State University Extension').
+source_name(kale, 'Plants For A Future').
+source_url(kale, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+var.+acephala').
 source_url(kale, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(kale, high).
 
@@ -788,12 +1237,89 @@ source_url(kohlrabi, 'https://yardandgarden.extension.iastate.edu/how-to/germina
 confidence(kohlrabi, high).
 
 % ---------------------------------------------------------
+% LAVENDER
+% ---------------------------------------------------------
+fact_scope(lavender, extracted_profile).
+accepted_scientific_name(lavender, 'Lavandula angustifolia').
+genus(lavender, lavandula).
+family(lavender, lamiaceae).
+propagation_method(lavender, cutting).
+propagation_method(lavender, layering).
+propagation_method(lavender, seed).
+sunlight(lavender, full_sun).
+soil_type(lavender, heavy_clay).
+soil_type(lavender, light_sandy).
+soil_type(lavender, medium_loamy).
+soil_type(lavender, well_drained).
+water_need(lavender, moderate).
+source_name(lavender, 'Plants For A Future').
+source_url(lavender, 'https://pfaf.org/user/Plant.aspx?LatinName=Lavandula+angustifolia').
+confidence(lavender, high).
+
+% ---------------------------------------------------------
+% LEEK
+% ---------------------------------------------------------
+fact_scope(leek, extracted_profile).
+accepted_scientific_name(leek, 'Allium ampeloprasum').
+genus(leek, allium).
+family(leek, amaryllidaceae).
+source_name(leek, 'Plants For A Future').
+source_url(leek, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+ampeloprasum').
+confidence(leek, high).
+
+% ---------------------------------------------------------
+% LEMON BALM
+% ---------------------------------------------------------
+fact_scope(lemon_balm, extracted_profile).
+accepted_scientific_name(lemon_balm, 'Melissa officinalis').
+genus(lemon_balm, melissa).
+family(lemon_balm, lamiaceae).
+life_cycle(lemon_balm, perennial).
+botanical_life_cycle(lemon_balm, perennial).
+propagation_method(lemon_balm, cutting).
+propagation_method(lemon_balm, division).
+propagation_method(lemon_balm, seed).
+sunlight(lemon_balm, full_sun).
+sunlight(lemon_balm, partial_shade).
+soil_type(lemon_balm, light_sandy).
+soil_type(lemon_balm, medium_loamy).
+soil_type(lemon_balm, well_drained).
+water_need(lemon_balm, moderate).
+growth_speed(lemon_balm, fast).
+source_name(lemon_balm, 'Plants For A Future').
+source_url(lemon_balm, 'https://pfaf.org/user/Plant.aspx?LatinName=Melissa+officinalis').
+confidence(lemon_balm, high).
+
+% ---------------------------------------------------------
+% LENTIL
+% ---------------------------------------------------------
+fact_scope(lentil, extracted_profile).
+accepted_scientific_name(lentil, 'Lens culinaris').
+genus(lentil, vicia).
+family(lentil, fabaceae).
+life_cycle(lentil, annual).
+crop_life_cycle(lentil, annual).
+propagation_method(lentil, seed).
+sunlight(lentil, full_sun).
+soil_type(lentil, heavy_clay).
+soil_type(lentil, light_sandy).
+soil_type(lentil, medium_loamy).
+soil_type(lentil, well_drained).
+water_need(lentil, moderate).
+source_name(lentil, 'Plants For A Future').
+source_url(lentil, 'https://pfaf.org/user/Plant.aspx?LatinName=Lens+culinaris').
+confidence(lentil, high).
+
+% ---------------------------------------------------------
 % LETTUCE
 % ---------------------------------------------------------
 fact_scope(lettuce, common_crop).
+fact_scope(lettuce, extracted_profile).
 accepted_scientific_name(lettuce, 'Lactuca sativa').
 genus(lettuce, lactuca).
 family(lettuce, asteraceae).
+life_cycle(lettuce, annual).
+crop_life_cycle(lettuce, annual).
 germination_days_min(lettuce, 7).
 germination_days_max(lettuce, 14).
 germination_light(lettuce, light_required).
@@ -805,12 +1331,21 @@ minimum_soil_temp_c(lettuce, 7.2).
 optimum_soil_temp_c(lettuce, 23.9).
 viable_temp_min_c(lettuce, 1.7).
 viable_temp_max_c(lettuce, 29.4).
+propagation_method(lettuce, seed).
+sunlight(lettuce, full_sun).
+sunlight(lettuce, partial_shade).
+soil_type(lettuce, light_sandy).
+soil_type(lettuce, medium_loamy).
+soil_type(lettuce, well_drained).
+water_need(lettuce, moderate).
 special_treatment(lettuce, do_not_cover).
 special_treatment(lettuce, press_seed_into_medium).
 special_treatment(lettuce, surface_sow).
 source_name(lettuce, 'Iowa State University Extension').
+source_name(lettuce, 'Plants For A Future').
 source_name(lettuce, 'Wisconsin Horticulture Extension').
 source_url(lettuce, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(lettuce, 'https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa').
 source_url(lettuce, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(lettuce, high).
 
@@ -868,6 +1403,47 @@ source_url(melampodium, 'https://yardandgarden.extension.iastate.edu/how-to/germ
 confidence(melampodium, high).
 
 % ---------------------------------------------------------
+% MELON
+% ---------------------------------------------------------
+fact_scope(melon, extracted_profile).
+accepted_scientific_name(melon, 'Cucumis melo').
+genus(melon, cucumis).
+family(melon, cucurbitaceae).
+life_cycle(melon, annual).
+crop_life_cycle(melon, annual).
+propagation_method(melon, seed).
+sunlight(melon, full_sun).
+soil_type(melon, heavy_clay).
+soil_type(melon, light_sandy).
+soil_type(melon, medium_loamy).
+soil_type(melon, well_drained).
+water_need(melon, moderate).
+source_name(melon, 'Plants For A Future').
+source_url(melon, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucumis+melo').
+confidence(melon, high).
+
+% ---------------------------------------------------------
+% MORINGA
+% ---------------------------------------------------------
+fact_scope(moringa, extracted_profile).
+accepted_scientific_name(moringa, 'Moringa oleifera').
+genus(moringa, moringa).
+family(moringa, moringaceae).
+propagation_method(moringa, cutting).
+propagation_method(moringa, seed).
+sunlight(moringa, full_sun).
+soil_type(moringa, heavy_clay).
+soil_type(moringa, light_sandy).
+soil_type(moringa, medium_loamy).
+soil_type(moringa, well_drained).
+soil_ph_min(moringa, 5.5).
+soil_ph_max(moringa, 7.0).
+growth_speed(moringa, fast).
+source_name(moringa, 'Plants For A Future').
+source_url(moringa, 'https://pfaf.org/user/Plant.aspx?LatinName=Moringa+oleifera').
+confidence(moringa, high).
+
+% ---------------------------------------------------------
 % MOSS ROSE
 % ---------------------------------------------------------
 fact_scope(moss_rose, common_crop).
@@ -908,10 +1484,13 @@ confidence(muskmelon, high).
 % ---------------------------------------------------------
 % ONION
 % ---------------------------------------------------------
+fact_scope(onion, extracted_profile).
 fact_scope(onion, species_plus_genus_enrichment).
 accepted_scientific_name(onion, 'Allium cepa').
 genus(onion, allium).
 family(onion, amaryllidaceae).
+life_cycle(onion, perennial).
+botanical_life_cycle(onion, perennial).
 germination_days_min(onion, 30).
 germination_days_max(onion, 365).
 germination_light(onion, light_required).
@@ -922,19 +1501,53 @@ minimum_soil_temp_c(onion, 15.6).
 optimum_soil_temp_c(onion, 23.9).
 viable_temp_min_c(onion, 1.7).
 viable_temp_max_c(onion, 35.0).
+propagation_method(onion, bulb).
+propagation_method(onion, seed).
+sunlight(onion, full_sun).
+soil_type(onion, light_sandy).
+soil_type(onion, medium_loamy).
+soil_type(onion, well_drained).
+water_need(onion, moderate).
 special_treatment(onion, leave_seed_uncovered).
 special_treatment(onion, rhs_genus_match_allium).
 special_treatment(onion, very_slow_germination_up_to_one_year).
+source_name(onion, 'Plants For A Future').
 source_name(onion, 'RHS Germination Guide genus Allium').
 source_name(onion, 'Wisconsin Horticulture Extension').
 source_url(onion, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(onion, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+cepa').
 source_url(onion, 'https://www.rhs.org.uk/membership/pdfs/seed-scheme/harvested-seed-germination-requirements.pdf').
+confidence(onion, high).
 confidence(onion, medium).
+
+% ---------------------------------------------------------
+% OREGANO
+% ---------------------------------------------------------
+fact_scope(oregano, extracted_profile).
+accepted_scientific_name(oregano, 'Origanum vulgare').
+genus(oregano, origanum).
+family(oregano, lamiaceae).
+life_cycle(oregano, perennial).
+botanical_life_cycle(oregano, perennial).
+propagation_method(oregano, cutting).
+propagation_method(oregano, division).
+propagation_method(oregano, seed).
+sunlight(oregano, full_sun).
+sunlight(oregano, partial_shade).
+soil_type(oregano, heavy_clay).
+soil_type(oregano, light_sandy).
+soil_type(oregano, medium_loamy).
+soil_type(oregano, well_drained).
+water_need(oregano, moderate).
+source_name(oregano, 'Plants For A Future').
+source_url(oregano, 'https://pfaf.org/user/Plant.aspx?LatinName=Origanum+vulgare').
+confidence(oregano, high).
 
 % ---------------------------------------------------------
 % PARSLEY
 % ---------------------------------------------------------
 fact_scope(parsley, common_crop).
+fact_scope(parsley, extracted_profile).
 accepted_scientific_name(parsley, 'Petroselinum crispum').
 genus(parsley, petroselinum).
 family(parsley, apiaceae).
@@ -949,11 +1562,21 @@ minimum_soil_temp_c(parsley, 7.2).
 optimum_soil_temp_c(parsley, 23.9).
 viable_temp_min_c(parsley, 4.4).
 viable_temp_max_c(parsley, 32.2).
+propagation_method(parsley, seed).
+sunlight(parsley, full_sun).
+sunlight(parsley, partial_shade).
+soil_type(parsley, heavy_clay).
+soil_type(parsley, light_sandy).
+soil_type(parsley, medium_loamy).
+soil_type(parsley, well_drained).
+water_need(parsley, moderate).
 special_treatment(parsley, cover_seed).
 special_treatment(parsley, inferred_depth_from_1_4_to_1_2_inch).
 source_name(parsley, 'Iowa State University Extension').
+source_name(parsley, 'Plants For A Future').
 source_name(parsley, 'Wisconsin Horticulture Extension').
 source_url(parsley, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(parsley, 'https://pfaf.org/user/Plant.aspx?LatinName=Petroselinum+crispum').
 source_url(parsley, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(parsley, high).
 
@@ -961,10 +1584,16 @@ confidence(parsley, high).
 % PEA
 % ---------------------------------------------------------
 fact_scope(pea, common_crop).
+fact_scope(pea, extracted_profile).
 accepted_scientific_name(pea, 'Pisum sativum').
+genus(pea, lathyrus).
 genus(pea, pisum).
 family(pea, fabaceae).
+life_cycle(pea, annual).
+crop_life_cycle(pea, annual).
+germination_days_min(pea, 7).
 germination_days_min(pea, 9).
+germination_days_max(pea, 10).
 germination_days_max(pea, 14).
 germination_light(pea, darkness_required).
 stratification_required(pea, false).
@@ -975,11 +1604,21 @@ minimum_soil_temp_c(pea, 10.0).
 optimum_soil_temp_c(pea, 23.9).
 viable_temp_min_c(pea, 4.4).
 viable_temp_max_c(pea, 29.4).
+propagation_method(pea, seed).
+sunlight(pea, full_sun).
+soil_type(pea, light_sandy).
+soil_type(pea, medium_loamy).
+soil_type(pea, well_drained).
+soil_ph_min(pea, 6.0).
+soil_ph_max(pea, 7.5).
+water_need(pea, moderate).
 special_treatment(pea, cover_seed).
 special_treatment(pea, inferred_depth_from_1_4_to_1_2_inch).
 source_name(pea, 'Iowa State University Extension').
+source_name(pea, 'Plants For A Future').
 source_name(pea, 'Wisconsin Horticulture Extension').
 source_url(pea, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(pea, 'https://pfaf.org/user/Plant.aspx?LatinName=Pisum+sativum').
 source_url(pea, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(pea, high).
 
@@ -1008,6 +1647,48 @@ source_name(pea_english, 'Wisconsin Horticulture Extension').
 source_url(pea_english, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
 source_url(pea_english, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(pea_english, high).
+
+% ---------------------------------------------------------
+% PEANUT
+% ---------------------------------------------------------
+fact_scope(peanut, extracted_profile).
+accepted_scientific_name(peanut, 'Arachis hypogaea').
+genus(peanut, arachis).
+family(peanut, fabaceae).
+life_cycle(peanut, annual).
+crop_life_cycle(peanut, annual).
+propagation_method(peanut, seed).
+sunlight(peanut, full_sun).
+soil_type(peanut, heavy_clay).
+soil_type(peanut, light_sandy).
+soil_type(peanut, medium_loamy).
+soil_type(peanut, well_drained).
+soil_ph_min(peanut, 4.3).
+soil_ph_max(peanut, 8.7).
+water_need(peanut, moderate).
+source_name(peanut, 'Plants For A Future').
+source_url(peanut, 'https://pfaf.org/user/Plant.aspx?LatinName=Arachis+hypogaea').
+confidence(peanut, high).
+
+% ---------------------------------------------------------
+% PEAR
+% ---------------------------------------------------------
+fact_scope(pear, extracted_profile).
+accepted_scientific_name(pear, 'Pyrus communis').
+genus(pear, pyrus).
+family(pear, rosaceae).
+propagation_method(pear, seed).
+sunlight(pear, full_sun).
+sunlight(pear, partial_shade).
+soil_type(pear, heavy_clay).
+soil_type(pear, light_sandy).
+soil_type(pear, medium_loamy).
+soil_type(pear, well_drained).
+water_need(pear, moderate).
+growth_speed(pear, fast).
+source_name(pear, 'Plants For A Future').
+source_url(pear, 'https://pfaf.org/user/Plant.aspx?LatinName=Pyrus+communis').
+confidence(pear, high).
 
 % ---------------------------------------------------------
 % PEAS
@@ -1059,6 +1740,30 @@ source_url(pepper, 'https://yardandgarden.extension.iastate.edu/how-to/germinati
 confidence(pepper, high).
 
 % ---------------------------------------------------------
+% PEPPERMINT
+% ---------------------------------------------------------
+fact_scope(peppermint, extracted_profile).
+accepted_scientific_name(peppermint, 'Mentha x piperita').
+genus(peppermint, mentha).
+family(peppermint, lamiaceae).
+life_cycle(peppermint, perennial).
+botanical_life_cycle(peppermint, perennial).
+propagation_method(peppermint, division).
+propagation_method(peppermint, seed).
+preferred_propagation_method(peppermint, division).
+propagation_warning(peppermint, 'Seed may not breed true; division is preferred for consistent aroma, cultivar traits, and medicinal oil profile.').
+sunlight(peppermint, full_sun).
+sunlight(peppermint, partial_shade).
+soil_type(peppermint, heavy_clay).
+soil_type(peppermint, light_sandy).
+soil_type(peppermint, medium_loamy).
+water_need(peppermint, moderate).
+growth_speed(peppermint, fast).
+source_name(peppermint, 'Plants For A Future').
+source_url(peppermint, 'https://pfaf.org/user/Plant.aspx?LatinName=Mentha+x+piperita').
+confidence(peppermint, high).
+
+% ---------------------------------------------------------
 % PETUNIA
 % ---------------------------------------------------------
 fact_scope(petunia, common_crop).
@@ -1080,12 +1785,37 @@ source_url(petunia, 'https://yardandgarden.extension.iastate.edu/how-to/germinat
 confidence(petunia, high).
 
 % ---------------------------------------------------------
+% POTATO
+% ---------------------------------------------------------
+fact_scope(potato, extracted_profile).
+accepted_scientific_name(potato, 'Solanum tuberosum').
+genus(potato, solanum).
+family(potato, solanaceae).
+life_cycle(potato, perennial).
+botanical_life_cycle(potato, perennial).
+propagation_method(potato, division).
+propagation_method(potato, seed).
+propagation_method(potato, tuber).
+sunlight(potato, full_sun).
+soil_type(potato, heavy_clay).
+soil_type(potato, light_sandy).
+soil_type(potato, medium_loamy).
+soil_type(potato, well_drained).
+water_need(potato, moderate).
+source_name(potato, 'Plants For A Future').
+source_url(potato, 'https://pfaf.org/user/Plant.aspx?LatinName=Solanum+tuberosum').
+confidence(potato, high).
+
+% ---------------------------------------------------------
 % PUMPKIN
 % ---------------------------------------------------------
 fact_scope(pumpkin, common_crop).
+fact_scope(pumpkin, extracted_profile).
 accepted_scientific_name(pumpkin, 'Cucurbita pepo').
 genus(pumpkin, cucurbita).
 family(pumpkin, cucurbitaceae).
+life_cycle(pumpkin, annual).
+crop_life_cycle(pumpkin, annual).
 germination_days_min(pumpkin, 5).
 germination_days_max(pumpkin, 10).
 germination_light(pumpkin, darkness_required).
@@ -1093,9 +1823,20 @@ stratification_required(pumpkin, false).
 stratification_days_min(pumpkin, 0).
 stratification_days_max(pumpkin, 0).
 sowing_depth_cm(pumpkin, 0.95).
+propagation_method(pumpkin, seed).
+sunlight(pumpkin, full_sun).
+sunlight(pumpkin, partial_shade).
+soil_type(pumpkin, heavy_clay).
+soil_type(pumpkin, light_sandy).
+soil_type(pumpkin, medium_loamy).
+soil_type(pumpkin, well_drained).
+water_need(pumpkin, moderate).
+growth_speed(pumpkin, fast).
 special_treatment(pumpkin, cover_seed).
 special_treatment(pumpkin, inferred_depth_from_1_4_to_1_2_inch).
 source_name(pumpkin, 'Iowa State University Extension').
+source_name(pumpkin, 'Plants For A Future').
+source_url(pumpkin, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucurbita+pepo').
 source_url(pumpkin, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(pumpkin, high).
 
@@ -1103,9 +1844,12 @@ confidence(pumpkin, high).
 % RADISH
 % ---------------------------------------------------------
 fact_scope(radish, common_crop).
+fact_scope(radish, extracted_profile).
 accepted_scientific_name(radish, 'Raphanus sativus').
 genus(radish, raphanus).
 family(radish, brassicaceae).
+life_cycle(radish, annual).
+crop_life_cycle(radish, annual).
 germination_days_min(radish, 3).
 germination_days_max(radish, 4).
 germination_light(radish, darkness_required).
@@ -1117,13 +1861,45 @@ minimum_soil_temp_c(radish, 7.2).
 optimum_soil_temp_c(radish, 29.4).
 viable_temp_min_c(radish, 4.4).
 viable_temp_max_c(radish, 35.0).
+propagation_method(radish, seed).
+sunlight(radish, partial_shade).
+soil_type(radish, heavy_clay).
+soil_type(radish, light_sandy).
+soil_type(radish, medium_loamy).
+water_need(radish, moderate).
+growth_speed(radish, fast).
 special_treatment(radish, cover_seed).
 special_treatment(radish, inferred_depth_from_1_4_to_1_2_inch).
 source_name(radish, 'Iowa State University Extension').
+source_name(radish, 'Plants For A Future').
 source_name(radish, 'Wisconsin Horticulture Extension').
 source_url(radish, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(radish, 'https://pfaf.org/user/Plant.aspx?LatinName=Raphanus+sativus').
 source_url(radish, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(radish, high).
+
+% ---------------------------------------------------------
+% RASPBERRY
+% ---------------------------------------------------------
+fact_scope(raspberry, extracted_profile).
+accepted_scientific_name(raspberry, 'Rubus idaeus').
+genus(raspberry, rubus).
+family(raspberry, rosaceae).
+life_cycle(raspberry, perennial).
+botanical_life_cycle(raspberry, perennial).
+propagation_method(raspberry, cutting).
+propagation_method(raspberry, division).
+propagation_method(raspberry, layering).
+propagation_method(raspberry, seed).
+sunlight(raspberry, partial_shade).
+soil_type(raspberry, heavy_clay).
+soil_type(raspberry, light_sandy).
+soil_type(raspberry, medium_loamy).
+soil_type(raspberry, well_drained).
+water_need(raspberry, moderate).
+source_name(raspberry, 'Plants For A Future').
+source_url(raspberry, 'https://pfaf.org/user/Plant.aspx?LatinName=Rubus+idaeus').
+confidence(raspberry, high).
 
 % ---------------------------------------------------------
 % RED SALVIA
@@ -1142,6 +1918,38 @@ special_treatment(red_salvia, surface_sow).
 source_name(red_salvia, 'Iowa State University Extension').
 source_url(red_salvia, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(red_salvia, high).
+
+% ---------------------------------------------------------
+% ROSEMARY
+% ---------------------------------------------------------
+fact_scope(rosemary, extracted_profile).
+accepted_scientific_name(rosemary, 'Salvia rosmarinus').
+genus(rosemary, salvia).
+family(rosemary, lamiaceae).
+source_name(rosemary, 'Plants For A Future').
+source_url(rosemary, 'https://pfaf.org/user/Plant.aspx?LatinName=Salvia+rosmarinus').
+confidence(rosemary, high).
+
+% ---------------------------------------------------------
+% SAGE
+% ---------------------------------------------------------
+fact_scope(sage, extracted_profile).
+accepted_scientific_name(sage, 'Salvia officinalis').
+genus(sage, salvia).
+family(sage, lamiaceae).
+propagation_method(sage, cutting).
+propagation_method(sage, layering).
+propagation_method(sage, seed).
+sunlight(sage, full_sun).
+soil_type(sage, heavy_clay).
+soil_type(sage, light_sandy).
+soil_type(sage, medium_loamy).
+soil_type(sage, well_drained).
+water_need(sage, moderate).
+growth_speed(sage, fast).
+source_name(sage, 'Plants For A Future').
+source_url(sage, 'https://pfaf.org/user/Plant.aspx?LatinName=Salvia+officinalis').
+confidence(sage, high).
 
 % ---------------------------------------------------------
 % SNAPDRAGON
@@ -1168,6 +1976,49 @@ source_name(snapdragon, 'RHS Germination Guide genus Antirrhinum').
 source_url(snapdragon, 'https://www.rhs.org.uk/membership/pdfs/seed-scheme/harvested-seed-germination-requirements.pdf').
 source_url(snapdragon, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(snapdragon, high).
+
+% ---------------------------------------------------------
+% SOYBEAN
+% ---------------------------------------------------------
+fact_scope(soybean, extracted_profile).
+accepted_scientific_name(soybean, 'Glycine max').
+genus(soybean, glycine).
+family(soybean, fabaceae).
+life_cycle(soybean, annual).
+crop_life_cycle(soybean, annual).
+propagation_method(soybean, seed).
+sunlight(soybean, full_sun).
+soil_type(soybean, light_sandy).
+soil_type(soybean, medium_loamy).
+soil_type(soybean, well_drained).
+water_need(soybean, moderate).
+source_name(soybean, 'Plants For A Future').
+source_url(soybean, 'https://pfaf.org/user/Plant.aspx?LatinName=Glycine+max').
+confidence(soybean, high).
+
+% ---------------------------------------------------------
+% SPEARMINT
+% ---------------------------------------------------------
+fact_scope(spearmint, extracted_profile).
+accepted_scientific_name(spearmint, 'Mentha spicata').
+genus(spearmint, mentha).
+family(spearmint, lamiaceae).
+life_cycle(spearmint, perennial).
+botanical_life_cycle(spearmint, perennial).
+propagation_method(spearmint, division).
+propagation_method(spearmint, seed).
+preferred_propagation_method(spearmint, division).
+propagation_warning(spearmint, 'Seed may not breed true; division is preferred for consistent aroma, cultivar traits, and medicinal oil profile.').
+sunlight(spearmint, full_sun).
+sunlight(spearmint, partial_shade).
+soil_type(spearmint, heavy_clay).
+soil_type(spearmint, light_sandy).
+soil_type(spearmint, medium_loamy).
+water_need(spearmint, moderate).
+growth_speed(spearmint, fast).
+source_name(spearmint, 'Plants For A Future').
+source_url(spearmint, 'https://pfaf.org/user/Plant.aspx?LatinName=Mentha+spicata').
+confidence(spearmint, high).
 
 % ---------------------------------------------------------
 % SPINACH
@@ -1214,6 +2065,30 @@ source_url(squash, 'https://yardandgarden.extension.iastate.edu/how-to/germinati
 confidence(squash, high).
 
 % ---------------------------------------------------------
+% STRAWBERRY
+% ---------------------------------------------------------
+fact_scope(strawberry, extracted_profile).
+accepted_scientific_name(strawberry, 'Fragaria x ananassa').
+genus(strawberry, fragaria).
+family(strawberry, rosaceae).
+life_cycle(strawberry, perennial).
+botanical_life_cycle(strawberry, perennial).
+propagation_method(strawberry, division).
+propagation_method(strawberry, runner).
+propagation_method(strawberry, seed).
+sunlight(strawberry, full_sun).
+sunlight(strawberry, partial_shade).
+soil_type(strawberry, heavy_clay).
+soil_type(strawberry, light_sandy).
+soil_type(strawberry, medium_loamy).
+soil_type(strawberry, well_drained).
+water_need(strawberry, moderate).
+growth_speed(strawberry, fast).
+source_name(strawberry, 'Plants For A Future').
+source_url(strawberry, 'https://pfaf.org/user/Plant.aspx?LatinName=Fragaria+x+ananassa').
+confidence(strawberry, high).
+
+% ---------------------------------------------------------
 % STRAWFLOWER
 % ---------------------------------------------------------
 fact_scope(strawflower, common_crop).
@@ -1229,6 +2104,28 @@ special_treatment(strawflower, lightly_cover_seed).
 source_name(strawflower, 'Iowa State University Extension').
 source_url(strawflower, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(strawflower, high).
+
+% ---------------------------------------------------------
+% SUNFLOWER
+% ---------------------------------------------------------
+fact_scope(sunflower, extracted_profile).
+accepted_scientific_name(sunflower, 'Helianthus annuus').
+genus(sunflower, helianthus).
+family(sunflower, asteraceae).
+life_cycle(sunflower, annual).
+crop_life_cycle(sunflower, annual).
+propagation_method(sunflower, seed).
+sunlight(sunflower, full_sun).
+sunlight(sunflower, partial_shade).
+soil_type(sunflower, heavy_clay).
+soil_type(sunflower, light_sandy).
+soil_type(sunflower, medium_loamy).
+soil_type(sunflower, well_drained).
+water_need(sunflower, moderate).
+growth_speed(sunflower, fast).
+source_name(sunflower, 'Plants For A Future').
+source_url(sunflower, 'https://pfaf.org/user/Plant.aspx?LatinName=Helianthus+annuus').
+confidence(sunflower, high).
 
 % ---------------------------------------------------------
 % SWEET CORN
@@ -1254,6 +2151,29 @@ source_url(sweet_corn, 'https://yardandgarden.extension.iastate.edu/how-to/germi
 confidence(sweet_corn, high).
 
 % ---------------------------------------------------------
+% SWEET POTATO
+% ---------------------------------------------------------
+fact_scope(sweet_potato, extracted_profile).
+accepted_scientific_name(sweet_potato, 'Ipomoea batatas').
+genus(sweet_potato, ipomoea).
+family(sweet_potato, convolvulaceae).
+life_cycle(sweet_potato, perennial).
+botanical_life_cycle(sweet_potato, perennial).
+propagation_method(sweet_potato, cutting).
+propagation_method(sweet_potato, seed).
+sunlight(sweet_potato, full_sun).
+soil_type(sweet_potato, light_sandy).
+soil_type(sweet_potato, medium_loamy).
+soil_type(sweet_potato, well_drained).
+soil_ph_min(sweet_potato, 5.0).
+soil_ph_max(sweet_potato, 7.0).
+water_need(sweet_potato, moderate).
+growth_speed(sweet_potato, fast).
+source_name(sweet_potato, 'Plants For A Future').
+source_url(sweet_potato, 'https://pfaf.org/user/Plant.aspx?LatinName=Ipomoea+batatas').
+confidence(sweet_potato, high).
+
+% ---------------------------------------------------------
 % SWISS CHARD
 % ---------------------------------------------------------
 fact_scope(swiss_chard, common_crop).
@@ -1272,12 +2192,36 @@ source_url(swiss_chard, 'https://hort.extension.wisc.edu/articles/when-is-the-ri
 confidence(swiss_chard, medium).
 
 % ---------------------------------------------------------
+% THYME
+% ---------------------------------------------------------
+fact_scope(thyme, extracted_profile).
+accepted_scientific_name(thyme, 'Thymus vulgaris').
+genus(thyme, thymus).
+family(thyme, lamiaceae).
+propagation_method(thyme, cutting).
+propagation_method(thyme, division).
+propagation_method(thyme, layering).
+propagation_method(thyme, seed).
+sunlight(thyme, full_sun).
+soil_type(thyme, light_sandy).
+soil_type(thyme, medium_loamy).
+soil_type(thyme, well_drained).
+water_need(thyme, moderate).
+source_name(thyme, 'Plants For A Future').
+source_url(thyme, 'https://pfaf.org/user/Plant.aspx?LatinName=Thymus+vulgaris').
+confidence(thyme, high).
+
+% ---------------------------------------------------------
 % TOMATO
 % ---------------------------------------------------------
 fact_scope(tomato, common_crop).
+fact_scope(tomato, extracted_profile).
 accepted_scientific_name(tomato, 'Solanum lycopersicum').
 genus(tomato, solanum).
 family(tomato, solanaceae).
+life_cycle(tomato, annual).
+botanical_life_cycle(tomato, perennial).
+crop_life_cycle(tomato, annual).
 germination_days_min(tomato, 6).
 germination_days_max(tomato, 12).
 germination_light(tomato, darkness_required).
@@ -1285,22 +2229,47 @@ stratification_required(tomato, false).
 stratification_days_min(tomato, 0).
 stratification_days_max(tomato, 0).
 sowing_depth_cm(tomato, 0.95).
+sowing_depth_cm(tomato, 1.5).
 minimum_soil_temp_c(tomato, 21.1).
 optimum_soil_temp_c(tomato, 29.4).
 viable_temp_min_c(tomato, 10.0).
 viable_temp_max_c(tomato, 35.0).
+propagation_method(tomato, seed).
+sunlight(tomato, full_sun).
+soil_type(tomato, heavy_clay).
+soil_type(tomato, light_sandy).
+soil_type(tomato, medium_loamy).
+soil_type(tomato, well_drained).
+soil_ph_min(tomato, 5.8).
+soil_ph_max(tomato, 6.8).
+water_need(tomato, moderate).
+growth_speed(tomato, fast).
 special_treatment(tomato, cover_seed).
 special_treatment(tomato, inferred_depth_from_1_4_to_1_2_inch).
 source_name(tomato, 'Iowa State University Extension').
+source_name(tomato, 'Plants For A Future').
 source_name(tomato, 'Wisconsin Horticulture Extension').
 source_url(tomato, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(tomato, 'https://pfaf.org/user/Plant.aspx?LatinName=Solanum+lycopersicum').
 source_url(tomato, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(tomato, high).
+
+% ---------------------------------------------------------
+% TURMERIC
+% ---------------------------------------------------------
+fact_scope(turmeric, extracted_profile).
+accepted_scientific_name(turmeric, 'Curcuma longa').
+genus(turmeric, curcuma).
+family(turmeric, zingiberaceae).
+source_name(turmeric, 'Plants For A Future').
+source_url(turmeric, 'https://pfaf.org/user/Plant.aspx?LatinName=Curcuma+longa').
+confidence(turmeric, high).
 
 % ---------------------------------------------------------
 % TURNIP
 % ---------------------------------------------------------
 fact_scope(turnip, common_crop).
+fact_scope(turnip, extracted_profile).
 accepted_scientific_name(turnip, 'Brassica rapa subsp. rapa').
 genus(turnip, brassica).
 family(turnip, brassicaceae).
@@ -1311,8 +2280,11 @@ minimum_soil_temp_c(turnip, 10.0).
 optimum_soil_temp_c(turnip, 29.4).
 viable_temp_min_c(turnip, 4.4).
 viable_temp_max_c(turnip, 40.6).
+source_name(turnip, 'Plants For A Future').
 source_name(turnip, 'Wisconsin Horticulture Extension').
 source_url(turnip, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').
+source_url(turnip, 'https://pfaf.org/user/Plant.aspx?LatinName=Brassica+rapa+subsp.+rapa').
+confidence(turnip, high).
 confidence(turnip, medium).
 
 % ---------------------------------------------------------
@@ -1336,9 +2308,12 @@ confidence(vinca, high).
 % WATERMELON
 % ---------------------------------------------------------
 fact_scope(watermelon, common_crop).
+fact_scope(watermelon, extracted_profile).
 accepted_scientific_name(watermelon, 'Citrullus lanatus').
 genus(watermelon, citrullus).
 family(watermelon, cucurbitaceae).
+life_cycle(watermelon, annual).
+crop_life_cycle(watermelon, annual).
 germination_days_min(watermelon, 3).
 germination_days_max(watermelon, 10).
 germination_light(watermelon, darkness_required).
@@ -1346,9 +2321,19 @@ stratification_required(watermelon, false).
 stratification_days_min(watermelon, 0).
 stratification_days_max(watermelon, 0).
 sowing_depth_cm(watermelon, 0.95).
+propagation_method(watermelon, seed).
+sunlight(watermelon, full_sun).
+soil_type(watermelon, light_sandy).
+soil_type(watermelon, medium_loamy).
+soil_type(watermelon, well_drained).
+soil_ph_min(watermelon, 5.3).
+soil_ph_max(watermelon, 8.0).
+water_need(watermelon, moderate).
 special_treatment(watermelon, cover_seed).
 special_treatment(watermelon, inferred_depth_from_1_4_to_1_2_inch).
 source_name(watermelon, 'Iowa State University Extension').
+source_name(watermelon, 'Plants For A Future').
+source_url(watermelon, 'https://pfaf.org/user/Plant.aspx?LatinName=Citrullus+lanatus').
 source_url(watermelon, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(watermelon, high).
 
@@ -1386,6 +2371,28 @@ special_treatment(zinnia, inferred_depth_from_1_4_to_1_2_inch).
 source_name(zinnia, 'Iowa State University Extension').
 source_url(zinnia, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(zinnia, high).
+
+% ---------------------------------------------------------
+% ZUCCHINI
+% ---------------------------------------------------------
+fact_scope(zucchini, extracted_profile).
+accepted_scientific_name(zucchini, 'Cucurbita pepo').
+genus(zucchini, cucurbita).
+family(zucchini, cucurbitaceae).
+life_cycle(zucchini, annual).
+crop_life_cycle(zucchini, annual).
+propagation_method(zucchini, seed).
+sunlight(zucchini, full_sun).
+sunlight(zucchini, partial_shade).
+soil_type(zucchini, heavy_clay).
+soil_type(zucchini, light_sandy).
+soil_type(zucchini, medium_loamy).
+soil_type(zucchini, well_drained).
+water_need(zucchini, moderate).
+growth_speed(zucchini, fast).
+source_name(zucchini, 'Plants For A Future').
+source_url(zucchini, 'https://pfaf.org/user/Plant.aspx?LatinName=Cucurbita+pepo').
+confidence(zucchini, high).
 
 
 % =========================================================

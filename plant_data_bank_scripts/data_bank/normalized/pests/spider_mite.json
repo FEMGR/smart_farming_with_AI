@@ -1,0 +1,74 @@
+{
+  "pest_atom": "spider_mite",
+  "name": "Spider mite",
+  "pest_type": "mite",
+  "page_title": "Vegetable crop pests-Spider mite",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-spider-mite",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": null,
+      "scientific_name": "Tetranychus pacificus",
+      "scientific_atom": "tetranychus_pacificus"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Tetranychus turkestani",
+      "scientific_atom": "tetranychus_turkestani"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Tetranychus urticae",
+      "scientific_atom": "tetranychus_urticae"
+    }
+  ],
+  "scientific_names": [
+    "Tetranychus pacificus",
+    "Tetranychus turkestani",
+    "Tetranychus urticae"
+  ],
+  "primary_scientific_name": "Tetranychus pacificus",
+  "host_plants": [],
+  "includes_text": "Pacific spider mite ( Tetranychus pacificus ) Strawberry spider mite ( Tetranychus turkestani ) Twospotted spider mite ( Tetranychus urticae )",
+  "biology_life_history": "Spider mites have four stages of development: the oval, somewhat translucent egg; a six-legged translucent larval stage; an eight-legged nymphal stage; and the eight-legged adult stage. A resting or quiescent stage occurs at the end of the larval and nymphal stages. A generation may pass in as few as 5 to 7 days in midsummer, or in a month during cool periods. There are numerous overlapping generations each year.",
+  "description_damage": "Several species of spider mites are common in the Pacific Northwest. Frequently, infestations include a mixture of spider mite species. Adult mites are about 0.06 inch in length, have four pairs of legs, are greenish to pink or cream-colored, and have black spots of various sizes on the body. Under warm conditions, spider mites move rapidly within the colony area. Damaged leaves become somewhat stippled on the upper surface and may turn brown or bronze with heavy damage. The undersurface of leaves may have a grayish cast due to webbing. Wilting, leaf deformity, tissue death, and abscission all may take place. (Trivia fact: Twospotted spider mites can feed on 18 to 22 plant cells per minute.)",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "wilting",
+    "leaf_damage",
+    "webbing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-spider-mite/g138-1934.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-spider-mite/g138-1934.jpg?itok=DB2VM3td",
+      "caption": "Tetranychus unknown"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.029903+00:00"
+}

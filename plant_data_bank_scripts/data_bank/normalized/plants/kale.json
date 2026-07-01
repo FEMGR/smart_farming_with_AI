@@ -2,115 +2,128 @@
   "plant_atom": "kale",
   "identity": {
     "common_name": "Kale",
-    "scientific_name": "Brassica oleracea var. acephala",
-    "genus": "Brassica",
+    "common_names": [],
     "family": "Brassicaceae",
-    "synonyms": [],
-    "common_names": []
+    "genus": "Brassica",
+    "scientific_name": "Brassica oleracea var. acephala",
+    "synonyms": []
   },
   "classification": {
-    "edible": null,
-    "use_categories": [],
-    "edible_parts": [],
-    "life_cycle": null,
-    "growth_habit": null,
     "botanical_life_cycle": null,
     "crop_life_cycle": null,
-    "life_cycle_context": null
+    "edible": null,
+    "edible_parts": [],
+    "growth_habit": null,
+    "life_cycle": null,
+    "life_cycle_context": null,
+    "use_categories": []
   },
   "growth": {
-    "sunlight": [],
-    "water_need": null,
-    "soil_type": [],
-    "soil_ph_min": null,
-    "soil_ph_max": null,
-    "growth_speed": null,
     "climate_notes": null,
-    "soil_notes": null,
-    "water_notes": null,
+    "growth_speed": null,
     "light_notes": null,
+    "rainfall_notes": null,
+    "soil_notes": null,
+    "soil_ph_max": null,
+    "soil_ph_min": null,
+    "soil_type": [],
+    "sunlight": [],
     "temperature_notes": null,
-    "rainfall_notes": null
+    "water_need": null,
+    "water_notes": null
   },
   "germination": {
-    "propagation_methods": [],
-    "propagation_notes": null,
-    "germination_days_min": null,
     "germination_days_max": null,
+    "germination_days_min": null,
     "germination_light": null,
-    "sowing_depth_cm": null,
     "minimum_soil_temp_c": null,
     "optimum_soil_temp_c": null,
     "preferred_propagation_methods": [],
-    "propagation_warning": null
+    "propagation_methods": [],
+    "propagation_notes": null,
+    "propagation_warning": null,
+    "sowing_depth_cm": null
   },
   "spacing": {
-    "spacing_cm": null,
-    "root_depth_cm": null,
     "plant_height_cm": null,
+    "root_depth_cm": null,
+    "spacing_cm": null,
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
-    "watering_notes": null,
-    "pruning_notes": null,
-    "fertilizer_notes": null,
-    "cultivation_notes": null,
-    "production_notes": null,
-    "nutrition_notes": null,
     "cautions": null,
+    "cultivation_notes": null,
+    "edible_uses_notes": null,
+    "fertilizer_notes": null,
+    "nutrition_notes": null,
     "other_uses_notes": null,
-    "edible_uses_notes": null
-  },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
+    "production_notes": null,
+    "pruning_notes": null,
+    "watering_interval_days": null,
+    "watering_notes": null
   },
   "biodiversity": {
+    "attracts_beneficial_insects": [],
+    "biodiversity_notes": [],
     "companions": [],
     "conflicts": [],
-    "repels_pests": [],
-    "attracts_beneficial_insects": [],
-    "pollinator_support": null,
     "pest_confuser": null,
-    "biodiversity_notes": []
+    "pollinator_support": null,
+    "repels_pests": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "clubroot",
+      "downy_mildew",
+      "lettuce_drop",
+      "powdery_mildew",
+      "verticillium_wilt",
+      "white_mold"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "armyworm_cutworm_and_looper",
+      "cabbage_maggot",
+      "diamondback_moth",
+      "flea_beetle",
+      "imported_cabbageworm",
+      "leafminer",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
-    "identity.scientific_name": "local_seed",
     "identity.common_name": "local_seed",
+    "identity.family": "GBIF",
     "identity.genus": "GBIF",
-    "identity.family": "GBIF"
+    "identity.scientific_name": "local_seed"
   },
   "source_metadata": {
+    "last_merged_at": "2026-06-17T04:44:11.838133+00:00",
     "sources": [
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:43:18.425907+00:00",
+        "relevance_score": null,
         "source_name": "GBIF",
         "source_url": "https://api.gbif.org/v1/species/match",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:43:18.425907+00:00"
+        "trusted_detail": null
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:41:24.432831+00:00",
+        "relevance_score": null,
         "source_name": "Plants For A Future",
         "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+var.+acephala",
         "status": "error: could not convert string to float: '8.3.'",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:41:24.432831+00:00"
+        "trusted_detail": null
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Kale",
-        "status": "snapshot_only",
-        "trusted_detail": false,
-        "relevance_score": 0.05,
+        "confidence": 0.3,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -118,49 +131,52 @@
           "growth",
           "biodiversity"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:41:25.269692+00:00"
+        "last_verified_at": "2026-06-17T04:41:25.269692+00:00",
+        "relevance_score": 0.05,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Kale",
+        "status": "snapshot_only",
+        "trusted_detail": false
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "last_verified_at": "2026-06-17T04:31:43.690911+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Brassica+oleracea+var.+acephala",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:31:43.690911+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:31:47.098791+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Kale",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [
-          "edible_parts",
-          "use_categories",
-          "cultivation_notes"
-        ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:31:47.098791+00:00"
+        "trusted_detail": null
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:32:29.045539+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=kale",
         "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Read timed out.",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:32:29.045539+00:00"
+        "trusted_detail": null
       }
-    ],
-    "last_merged_at": "2026-06-17T04:44:11.838133+00:00"
+    ]
   },
   "missing_fields": [
     "classification.edible_parts",
@@ -170,7 +186,6 @@
     "growth.soil_notes",
     "germination.propagation_methods",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

@@ -29,17 +29,16 @@ def main() -> None:
 
     py = sys.executable
 
-    run([py, "scripts/extract_fpi.py", "--plants", args.plants])
-    run([py, "scripts/extract_pfaf.py", "--plants", args.plants])
-    run([py, "scripts/enrich_gbif.py", "--plants", args.plants])
+    run([py, "scripts/plant/extract_fpi.py", "--plants", args.plants])
+    run([py, "scripts/plant/extract_pfaf.py", "--plants", args.plants])
+    run([py, "scripts/plant/enrich_gbif.py", "--plants", args.plants])
 
     if args.include_perenual:
-        run([py, "scripts/enrich_perenual.py", "--plants", args.plants])
+        run([py, "scripts/plant/enrich_perenual.py", "--plants", args.plants])
 
-    run([py, "scripts/merge_profiles.py", "--plants", args.plants])
+    run([py, "scripts/plant/merge_profiles.py", "--plants", args.plants])
     run([py, "scripts/build_indexes.py"])
     run([py, "scripts/validate_data_bank.py"])
-    run([py, "scripts/export_to_prolog.py"])
 
 
 if __name__ == "__main__":

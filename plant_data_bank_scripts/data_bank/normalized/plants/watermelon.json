@@ -81,12 +81,6 @@
     "other_uses_notes": "Oil Oil Pectin The seed contains 20 - 40% oil. As well as being edible, it is also used for making soap and for lighting[117]. Face masks made from the fruit are used as a cosmetic on delicate skins[7].",
     "edible_uses_notes": "Edible Parts: Fruit Leaves Oil Oil Seed Edible Uses: Oil Oil Pectin Fruit - raw. A very refreshing fruit[1, 2, 22, 46, 183], it has a delicate sweetness with an extremely high water content, the fruit is often used as a refreshing drink[183]. The unripe fruits are added to soups[183]. A syrup can also be made from the juice[183]. The fruit is a rich source of pectin[218, 240], and can be added to pectin-low fruits when making jam[K]. Pectin is said to protect the body against radiation[201]. The fruit varies considerably in size from cultivar to cultivar, but can be up to 1 metre long and 40cm wide[200]. A nutritional analysis is available[218]. Leaves - cooked. Seed - raw or cooked[63, 86, 117, 183]. They can be roasted or ground into a powder and used with cereal flours when making bread, cakes etc, or added to soups and stews[163, 105, 83]. The seed contains about 30% protein, 20 - 40% oil[61]. An edible oil is obtained from the seed[63, 105, 183, 266]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -115,6 +109,29 @@
     "biodiversity_notes": [
       "PFAF describes this plant as relevant to companion planting."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "downy_mildew",
+      "fusarium_wilt",
+      "powdery_mildew",
+      "root_rot",
+      "verticillium_wilt",
+      "viruses",
+      "white_mold"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "armyworm_and_cutworm",
+      "cucumber_beetle",
+      "grasshopper",
+      "looper",
+      "spider_mite",
+      "squash_bug",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -254,7 +271,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

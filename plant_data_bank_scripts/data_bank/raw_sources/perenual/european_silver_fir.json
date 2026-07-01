@@ -1,0 +1,363 @@
+{
+  "plant": {
+    "common_name": "European Silver Fir",
+    "confidence": 0.7,
+    "created_at": "2026-06-18T06:20:42.571350+00:00",
+    "genus": "Abies",
+    "plant_atom": "european_silver_fir",
+    "reason": "scientific_name_not_found_in_prolog",
+    "scientific_name": "Abies alba",
+    "source_file": "/home/graubo/PyCharmMiscProject/smart-farming-system/backend/cache/species_snapshots/1.json",
+    "source_name": "perenual_snapshot",
+    "status": "extraction_attempted"
+  },
+  "source": "Perenual",
+  "snapshots": [
+    {
+      "source_name": "Perenual",
+      "source_url": "https://perenual.com/api/v2/species-list",
+      "query": "Abies alba",
+      "status": "ok",
+      "fetched_at": "2026-06-19T03:27:15.248253+00:00",
+      "response_hash": "ed315f304f05664608923c5c1e6d7375672075887d07b6ec04575fd1d1f9ba06",
+      "parsed": {
+        "endpoint": "species-list",
+        "payload": {
+          "data": [
+            {
+              "id": 1,
+              "common_name": "European Silver Fir",
+              "scientific_name": [
+                "Abies alba"
+              ],
+              "other_name": [
+                "Common Silver Fir"
+              ],
+              "family": "Pinaceae",
+              "hybrid": null,
+              "authority": null,
+              "subspecies": null,
+              "cultivar": null,
+              "variety": null,
+              "species_epithet": "alba",
+              "genus": "Abies",
+              "default_image": {
+                "license": 45,
+                "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+                "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/og/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=99719e325795a8d74ea599111866d789957e085a02847e4a9da7e160ad26ca3e",
+                "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/regular/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=469f1d12f527f8ddcc0de8ad7c9ef5bd498c868c9bb7e893f9740508e3807daf",
+                "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/medium/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=f518ca63dccec3519a2cd5b24fe59c1e23310bbdf9ba308ea5cb29912ca47e93",
+                "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/small/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=752dc311b069fcb9e6e67e424b8f13d2fa6dd1f866d2dc46941dd38ca56da1e9",
+                "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/thumbnail/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=c1aa4d99d5b86737bcfe4fa95eed8e93a8baf487aae8af31018b7a9ac4679174"
+              }
+            },
+            {
+              "id": 2,
+              "common_name": "Pyramidalis Silver Fir",
+              "scientific_name": [
+                "Abies alba 'Pyramidalis'"
+              ],
+              "other_name": [],
+              "family": "Pinaceae",
+              "hybrid": null,
+              "authority": null,
+              "subspecies": null,
+              "cultivar": "Pyramidalis",
+              "variety": null,
+              "species_epithet": "alba",
+              "genus": "Abies",
+              "default_image": {
+                "license": 5,
+                "license_name": "Attribution-ShareAlike License",
+                "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+                "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=532c76aec49073d92f3b850053bb495dbdb5b1a4a0a5edfb8d9e6477fa7a64a0",
+                "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=f2044ea711014888b89de704840a8c80d97ae18190693fd07715e36c3cae63a0",
+                "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=397e2ac1ae24c67727e7842870b55c8e3a60b3a2315d89b299165713e805390b",
+                "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=a7fa670d02a006faf4a964fb2038b070dab3187fb63c39e2e23f0ea6b77e3a9e",
+                "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032714Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=6334b6851329dede97dc623c62bfe092e12da9abb85c0628fda85fdf56d062fc"
+              }
+            }
+          ],
+          "to": 2,
+          "per_page": 30,
+          "current_page": 1,
+          "from": 1,
+          "last_page": 1,
+          "total": 2
+        }
+      },
+      "raw_text_excerpt": ""
+    },
+    {
+      "source_name": "Perenual",
+      "source_url": "https://perenual.com/api/v2/species/details/{id}",
+      "query": "Abies alba",
+      "status": "ok",
+      "fetched_at": "2026-06-19T03:27:30.003786+00:00",
+      "response_hash": "7f02b8d913359b4c5a1a9461db7d37de1ebc401274207a7f94260a9b383061dd",
+      "parsed": {
+        "endpoint": "species-details",
+        "payload": [
+          {
+            "id": 1,
+            "common_name": "European Silver Fir",
+            "scientific_name": [
+              "Abies alba"
+            ],
+            "other_name": [
+              "Common Silver Fir"
+            ],
+            "family": "Pinaceae",
+            "hybrid": null,
+            "authority": null,
+            "subspecies": null,
+            "cultivar": null,
+            "variety": null,
+            "species_epithet": "alba",
+            "genus": "Abies",
+            "origin": [
+              "Austria",
+              "Germany",
+              "Switzerland",
+              "France",
+              "Italy",
+              "Slovenia",
+              "Croatia",
+              "Bosnia and Herzegovina",
+              "Serbia",
+              "Montenegro",
+              "Albania",
+              "Bulgaria",
+              "Romania",
+              "Ukraine",
+              "Poland",
+              "Czech Republic",
+              "Slovakia",
+              "Hungary"
+            ],
+            "type": "tree",
+            "dimensions": [
+              {
+                "type": "Height",
+                "min_value": 60,
+                "max_value": 60,
+                "unit": "feet"
+              }
+            ],
+            "cycle": "Perennial",
+            "attracts": [],
+            "propagation": [
+              "Cutting",
+              "Grafting Propagation",
+              "Layering Propagation",
+              "Seed Propagation",
+              "Air Layering Propagation",
+              "Tissue Culture"
+            ],
+            "hardiness": {
+              "min": "7",
+              "max": "7"
+            },
+            "hardiness_location": {
+              "full_url": "https://perenual.com/api/hardiness-map?species_id=1&size=og&key=sk-BO3069e45e3377a9916548",
+              "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=1&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+            },
+            "watering": "Frequent",
+            "watering_general_benchmark": {
+              "value": "\"7-10\"",
+              "unit": "days"
+            },
+            "plant_anatomy": [],
+            "sunlight": [
+              "full sun"
+            ],
+            "pruning_month": [
+              "February",
+              "March",
+              "April"
+            ],
+            "pruning_count": [],
+            "seeds": false,
+            "maintenance": null,
+            "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=1&key=sk-BO3069e45e3377a9916548",
+            "soil": [],
+            "growth_rate": "High",
+            "drought_tolerant": false,
+            "salt_tolerant": false,
+            "thorny": false,
+            "invasive": false,
+            "tropical": false,
+            "indoor": false,
+            "care_level": "Medium",
+            "pest_susceptibility": [],
+            "flowers": false,
+            "flowering_season": null,
+            "cones": true,
+            "fruits": false,
+            "edible_fruit": false,
+            "harvest_season": null,
+            "leaf": true,
+            "edible_leaf": false,
+            "cuisine": false,
+            "medicinal": true,
+            "poisonous_to_humans": false,
+            "poisonous_to_pets": false,
+            "description": "European Silver Fir (Abies alba) is an amazing coniferous species native to mountainous regions of central Europe and the Balkans. It is an evergreen tree with a narrow, pyramidal shape and long, soft needles. Its bark is scaly grey-brown and its branches are highly ornamental due to its conical-shaped silver-tinged needles. It is pruned for use as an ornamental evergreen hedging and screening plant, and is also popular for use as a Christmas tree. Young trees grow quickly and have strong, flexible branches which makes them perfect for use as windbreaks. The European Silver Fir is an impressive species, making it ideal for gardens and public spaces.",
+            "default_image": {
+              "license": 45,
+              "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+              "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/og/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032721Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=3bcc9db70755fa83992868273cf1b9468f92c678f2238636cef1fafe61384351",
+              "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/regular/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032721Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=d27c14e8f556bddb5f286e45e02295dd78db5508f50d9e067f05a7e8b5360165",
+              "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/medium/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032721Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=9456ac522b600c3546dbf64c3d89b825d2804ed6f8f8b136051c736de5c28fdf",
+              "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/small/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032721Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=e144552cf89b01821eee3e3e1f915a7e3669477f5d4e14600b2324dbf7ead0ee",
+              "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/1_abies_alba/thumbnail/1536px-Abies_alba_SkalitC3A9.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032721Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=3f0ba8ca363f0a720a5f34dc99ab253956732b87324e9cac9a82fbcd75739b2d"
+            },
+            "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+          },
+          {
+            "id": 2,
+            "common_name": "Pyramidalis Silver Fir",
+            "scientific_name": [
+              "Abies alba 'Pyramidalis'"
+            ],
+            "other_name": [],
+            "family": "Pinaceae",
+            "hybrid": null,
+            "authority": null,
+            "subspecies": null,
+            "cultivar": "Pyramidalis",
+            "variety": null,
+            "species_epithet": "alba",
+            "genus": "Abies",
+            "origin": [
+              "Austria",
+              "Germany",
+              "Switzerland",
+              "Italy",
+              "France",
+              "Slovenia",
+              "Croatia"
+            ],
+            "type": "tree",
+            "dimensions": [
+              {
+                "type": "Height",
+                "min_value": 30,
+                "max_value": 30,
+                "unit": "feet"
+              }
+            ],
+            "cycle": "Perennial",
+            "attracts": [],
+            "propagation": [
+              "Cutting",
+              "Grafting Propagation",
+              "Layering Propagation",
+              "Seed Propagation"
+            ],
+            "hardiness": {
+              "min": "4",
+              "max": "4"
+            },
+            "hardiness_location": {
+              "full_url": "https://perenual.com/api/hardiness-map?species_id=2&size=og&key=sk-BO3069e45e3377a9916548",
+              "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=2&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+            },
+            "watering": "Average",
+            "watering_general_benchmark": {
+              "value": "\"7-10\"",
+              "unit": "days"
+            },
+            "plant_anatomy": [
+              {
+                "part": "leaves",
+                "color": [
+                  "dark-green"
+                ]
+              },
+              {
+                "part": "branches",
+                "color": [
+                  "dark-brown"
+                ]
+              },
+              {
+                "part": "twigs",
+                "color": [
+                  "brown"
+                ]
+              }
+            ],
+            "sunlight": [
+              "full sun"
+            ],
+            "pruning_month": [
+              "February",
+              "March",
+              "April"
+            ],
+            "pruning_count": [],
+            "seeds": false,
+            "maintenance": null,
+            "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=2&key=sk-BO3069e45e3377a9916548",
+            "soil": [],
+            "growth_rate": "Low",
+            "drought_tolerant": false,
+            "salt_tolerant": false,
+            "thorny": false,
+            "invasive": false,
+            "tropical": false,
+            "indoor": false,
+            "care_level": "Medium",
+            "pest_susceptibility": [],
+            "flowers": false,
+            "flowering_season": null,
+            "cones": true,
+            "fruits": false,
+            "edible_fruit": false,
+            "harvest_season": null,
+            "leaf": true,
+            "edible_leaf": false,
+            "cuisine": false,
+            "medicinal": false,
+            "poisonous_to_humans": false,
+            "poisonous_to_pets": false,
+            "description": "Pyramidalis Silver Fir (Abies alba 'Pyramidalis') is an amazing coniferous tree species. Its narrow, elegant pyramidal shape makes it ideal for landscapes with limited space. This species features bright silver-green foliage year-round and distinctive yellowish brown cones that hold its unique shape for years. It also displays purple-tinged shoots in the spring and a showy red bark in the winter. Its slow growth and hardiness make it an ideal addition to any landscape. The Pyramidalis Silver Fir also requires minimal maintenance and can be an excellent companion for many other plants in the garden. From small yards to large gardens, this species will create a majestic and interesting landscape.",
+            "default_image": {
+              "license": 5,
+              "license_name": "Attribution-ShareAlike License",
+              "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+              "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=f7d7515aa5c80b66800ff0bfc0e0c4eb3462ff7eff7b9bb69cde8f34c49c939f",
+              "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=67319d6201a56ce6308f50c09e0d99abcd6c16ab160ae84ae337220ac5130acc",
+              "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=f948bfe93551296cb503a1b42f7e15a5fe03c10ea87ea64d1d6c4b603f8f49a9",
+              "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=dfd74f735c01ec74c98ca398ed74eb1438b8da5a52c204e7d9969dd6dde5e97a",
+              "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260619%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260619T032729Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=aa0112655e94c6c1d518803de7b9f1615bd4f99ef405c0abba9c18dbdbd37269"
+            },
+            "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+            "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+          }
+        ]
+      },
+      "raw_text_excerpt": ""
+    }
+  ]
+}

@@ -52,7 +52,7 @@ if str(backend_dir) not in sys.path:
 # Ensures SQLAlchemy detects all tables
 
 import app.models as _models  # noqa: F401,E402
-from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species, planning, lifecycle, production  # noqa: E402
+from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species, planning, lifecycle, production, knowledge  # noqa: E402
 from app.core.error_handler import add_exception_handlers  # noqa: E402
 from app.core.logger import setup_logger  # noqa: E402
 from app.database.db import Base, SessionLocal, engine, sync_all_postgres_id_sequences  # noqa: E402
@@ -109,6 +109,7 @@ app.include_router(planning.router)
 app.include_router(lifecycle.router)
 app.include_router(production.router)
 app.include_router(irrigation.router)
+app.include_router(knowledge.router)
 app.include_router(notifications.router, prefix="/notifications", tags=["Notifications"])
 
 # ===============================

@@ -46,16 +46,7 @@
 
 % =========================================================
 % INTERACTION SUPPORT BY SOURCE PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
-% =========================================================
-
-% ---------------------------------------------------------
-% ALLIUM FAMILY
-% ---------------------------------------------------------
-
-% =========================================================
-% INTERACTION SUPPORT BY SOURCE PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
 % =========================================================
 
 % ---------------------------------------------------------
@@ -92,9 +83,13 @@ harmful_relation(asparagus, allium_family, attra, 3).
 % ---------------------------------------------------------
 % BASIL
 % ---------------------------------------------------------
+beneficial_relation(basil, tomato, pfaf, 3).
 beneficial_relation(basil, tomato, ua, 2).
 beneficial_relation(basil, vegetable, attra, 3).
+harmful_relation(basil, raspberry, pfaf, 2).
 harmful_relation(basil, rue, attra, 3).
+harmful_relation(basil, rue, pfaf, 3).
+harmful_relation(basil, sage, pfaf, 3).
 
 % ---------------------------------------------------------
 % BEAN
@@ -115,6 +110,18 @@ beneficial_relation(bean_bush, potato, attra, 3).
 beneficial_relation(bean_bush, strawberry, attra, 3).
 beneficial_relation(bean_bush, summer_savory, attra, 3).
 harmful_relation(bean_bush, allium_family, attra, 3).
+
+% ---------------------------------------------------------
+% BEAN COMMON
+% ---------------------------------------------------------
+beneficial_relation(bean_common, beet, pfaf, 3).
+beneficial_relation(bean_common, cabbage, pfaf, 3).
+beneficial_relation(bean_common, carrots, pfaf, 3).
+beneficial_relation(bean_common, cauliflowers, pfaf, 3).
+beneficial_relation(bean_common, celeriac, pfaf, 3).
+beneficial_relation(bean_common, cucumbers, pfaf, 3).
+beneficial_relation(bean_common, leek, pfaf, 3).
+beneficial_relation(bean_common, strawberries, pfaf, 3).
 
 % ---------------------------------------------------------
 % BEAN POLE
@@ -171,6 +178,12 @@ harmful_relation(carrot, dill, attra, 3).
 harmful_relation(carrot, fennel, attra, 3).
 
 % ---------------------------------------------------------
+% CELERY
+% ---------------------------------------------------------
+beneficial_relation(celery, brassica, pfaf, 3).
+beneficial_relation(celery, leeks, pfaf, 3).
+
+% ---------------------------------------------------------
 % CORN
 % ---------------------------------------------------------
 beneficial_relation(corn, bean, attra, 3).
@@ -196,16 +209,39 @@ harmful_relation(cucumber, potato, attra, 3).
 harmful_relation(cucumber, sage, ua, 2).
 
 % ---------------------------------------------------------
+% DANDELION
+% ---------------------------------------------------------
+beneficial_relation(dandelion, alfalfa, pfaf, 3).
+
+% ---------------------------------------------------------
+% EGGPLANT
+% ---------------------------------------------------------
+beneficial_relation(eggplant, beans, pfaf, 3).
+beneficial_relation(eggplant, tarragon, pfaf, 3).
+beneficial_relation(eggplant, thyme, pfaf, 3).
+harmful_relation(eggplant, potato, pfaf, 3).
+
+% ---------------------------------------------------------
 % FENNEL
 % ---------------------------------------------------------
 harmful_relation(fennel, vegetable, attra, 3).
 
 % ---------------------------------------------------------
+% LAVENDER
+% ---------------------------------------------------------
+beneficial_relation(lavender, many_species_due_to_its_pest_repellent_properties, pfaf, 3).
+beneficial_relation(lavender, most_plants, pfaf, 3).
+
+% ---------------------------------------------------------
 % LETTUCE
 % ---------------------------------------------------------
+beneficial_relation(lettuce, beetroot, pfaf, 3).
+beneficial_relation(lettuce, cabbage, pfaf, 3).
 beneficial_relation(lettuce, carrot, attra, 3).
 beneficial_relation(lettuce, cucumber, attra, 3).
+beneficial_relation(lettuce, cucumbers, pfaf, 3).
 beneficial_relation(lettuce, radish, attra, 3).
+beneficial_relation(lettuce, strawberries, pfaf, 3).
 beneficial_relation(lettuce, strawberry, attra, 3).
 
 % ---------------------------------------------------------
@@ -215,6 +251,8 @@ beneficial_relation(melon, amaranth, attra, 3).
 beneficial_relation(melon, bean, attra, 3).
 beneficial_relation(melon, chamomile, attra, 3).
 beneficial_relation(melon, corn, attra, 3).
+beneficial_relation(melon, corn, pfaf, 3).
+beneficial_relation(melon, sunflowers_but_dislikes_potatoes, pfaf, 3).
 harmful_relation(melon, brassica_family, attra, 3).
 
 % ---------------------------------------------------------
@@ -230,10 +268,23 @@ harmful_relation(okra, pea_english, attra, 3).
 % ONION
 % ---------------------------------------------------------
 beneficial_relation(onion, beet, attra, 3).
+beneficial_relation(onion, beet, pfaf, 3).
 beneficial_relation(onion, brassica_family, attra, 3).
+beneficial_relation(onion, but_they_inhibit_the_growth_of_legumes, pfaf, 3).
 beneficial_relation(onion, carrot, attra, 3).
+beneficial_relation(onion, carrots, pfaf, 3).
+beneficial_relation(onion, chamomile, pfaf, 3).
+beneficial_relation(onion, especially_roses, pfaf, 3).
 beneficial_relation(onion, lettuce, attra, 3).
+beneficial_relation(onion, most_plants, pfaf, 3).
 beneficial_relation(onion, summer_savory, attra, 3).
+beneficial_relation(onion, though_there_are_exceptions, pfaf, 3).
+beneficial_relation(onion, weed_competition, pfaf, 3).
+
+% ---------------------------------------------------------
+% OREGANO
+% ---------------------------------------------------------
+beneficial_relation(oregano, the_cucumber_family, pfaf, 3).
 
 % ---------------------------------------------------------
 % PEPPER
@@ -242,6 +293,12 @@ beneficial_relation(pepper, basil, attra, 3).
 beneficial_relation(pepper, clover, attra, 3).
 beneficial_relation(pepper, tomato, attra, 3).
 harmful_relation(pepper, brassica_family, attra, 3).
+
+% ---------------------------------------------------------
+% PEPPERMINT
+% ---------------------------------------------------------
+beneficial_relation(peppermint, cabbage, pfaf, 3).
+beneficial_relation(peppermint, tomato, pfaf, 3).
 
 % ---------------------------------------------------------
 % POTATO
@@ -260,8 +317,15 @@ harmful_relation(potato, tomato, traditional, 3).
 % ---------------------------------------------------------
 % PUMPKIN
 % ---------------------------------------------------------
+beneficial_relation(pumpkin, beans, pfaf, 3).
 beneficial_relation(pumpkin, corn, attra, 3).
 beneficial_relation(pumpkin, marigold, attra, 3).
+beneficial_relation(pumpkin, mint, pfaf, 3).
+beneficial_relation(pumpkin, nasturtiums, pfaf, 3).
+beneficial_relation(pumpkin, radishes, pfaf, 3).
+beneficial_relation(pumpkin, sweetcorn, pfaf, 3).
+beneficial_relation(pumpkin, thornapple_but_they_dislike_growing_near_potatoes, pfaf, 3).
+harmful_relation(pumpkin, potato, pfaf, 3).
 harmful_relation(pumpkin, squash, attra, 3).
 harmful_relation(pumpkin, sunflower, attra, 3).
 harmful_relation(pumpkin, tomato, attra, 3).
@@ -271,9 +335,21 @@ harmful_relation(pumpkin, tomato, attra, 3).
 % ---------------------------------------------------------
 beneficial_relation(radish, cucumber, attra, 3).
 beneficial_relation(radish, lettuce, attra, 3).
+beneficial_relation(radish, lettuces, pfaf, 3).
 beneficial_relation(radish, nasturtium, attra, 3).
 beneficial_relation(radish, pea_english, attra, 3).
 harmful_relation(radish, potato, attra, 3).
+
+% ---------------------------------------------------------
+% SAGE
+% ---------------------------------------------------------
+beneficial_relation(sage, many_plants, pfaf, 3).
+
+% ---------------------------------------------------------
+% SPEARMINT
+% ---------------------------------------------------------
+beneficial_relation(spearmint, cabbage, pfaf, 3).
+beneficial_relation(spearmint, tomato, pfaf, 3).
 
 % ---------------------------------------------------------
 % SPINACH
@@ -311,26 +387,51 @@ beneficial_relation(sunflower, peanut, attra, 3).
 harmful_relation(sunflower, potato, attra, 3).
 
 % ---------------------------------------------------------
+% THYME
+% ---------------------------------------------------------
+beneficial_relation(thyme, most_plants, pfaf, 3).
+
+% ---------------------------------------------------------
 % TOMATO
 % ---------------------------------------------------------
 beneficial_relation(tomato, allium_family, attra, 3).
 beneficial_relation(tomato, asparagus, attra, 3).
+beneficial_relation(tomato, asparagus, pfaf, 3).
 beneficial_relation(tomato, basil, attra, 3).
+beneficial_relation(tomato, brassica, pfaf, 3).
 beneficial_relation(tomato, carrot, attra, 3).
 beneficial_relation(tomato, cucumber, attra, 3).
+beneficial_relation(tomato, gooseberry, pfaf, 3).
 beneficial_relation(tomato, marigold, attra, 3).
 beneficial_relation(tomato, nasturtium, attra, 3).
 beneficial_relation(tomato, parsley, attra, 3).
+beneficial_relation(tomato, parsley, pfaf, 3).
 beneficial_relation(tomato, rosemary, attra, 3).
+beneficial_relation(tomato, stinging_nettle, pfaf, 3).
 harmful_relation(tomato, bean_pole, attra, 3).
+harmful_relation(tomato, fennel, pfaf, 3).
+harmful_relation(tomato, kohlrabi, pfaf, 3).
+harmful_relation(tomato, potato, pfaf, 3).
 
 % ---------------------------------------------------------
 % WATERMELON
 % ---------------------------------------------------------
 beneficial_relation(watermelon, marigold, attra, 3).
 beneficial_relation(watermelon, nasturtium, attra, 3).
+beneficial_relation(watermelon, potato, pfaf, 3).
 harmful_relation(watermelon, mustard, attra, 3).
 harmful_relation(watermelon, potato, attra, 3).
+
+% ---------------------------------------------------------
+% ZUCCHINI
+% ---------------------------------------------------------
+beneficial_relation(zucchini, beans, pfaf, 3).
+beneficial_relation(zucchini, mint, pfaf, 3).
+beneficial_relation(zucchini, nasturtiums, pfaf, 3).
+beneficial_relation(zucchini, radishes, pfaf, 3).
+beneficial_relation(zucchini, sweetcorn, pfaf, 3).
+beneficial_relation(zucchini, thornapple_but_they_dislike_growing_near_potatoes, pfaf, 3).
+harmful_relation(zucchini, potato, pfaf, 3).
 
 
 % =========================================================
@@ -339,76 +440,3 @@ harmful_relation(watermelon, potato, attra, 3).
 
 :- discontiguous beneficial_relation/4.
 :- discontiguous harmful_relation/4.
-
-
-% =========================================================
-% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: interaction_support
-% Review before editing manually.
-% =========================================================
-
-beneficial_relation(basil, tomato, pfaf, 3).
-harmful_relation(basil, rue, pfaf, 3).
-harmful_relation(basil, sage, pfaf, 3).
-harmful_relation(basil, raspberry, pfaf, 2).
-beneficial_relation(bean_common, strawberries, pfaf, 3).
-beneficial_relation(bean_common, carrots, pfaf, 3).
-beneficial_relation(bean_common, cauliflowers, pfaf, 3).
-beneficial_relation(bean_common, cucumbers, pfaf, 3).
-beneficial_relation(bean_common, cabbage, pfaf, 3).
-beneficial_relation(bean_common, beet, pfaf, 3).
-beneficial_relation(bean_common, leek, pfaf, 3).
-beneficial_relation(bean_common, celeriac, pfaf, 3).
-beneficial_relation(celery, brassica, pfaf, 3).
-beneficial_relation(celery, leeks, pfaf, 3).
-beneficial_relation(dandelion, alfalfa, pfaf, 3).
-beneficial_relation(eggplant, beans, pfaf, 3).
-beneficial_relation(eggplant, tarragon, pfaf, 3).
-beneficial_relation(eggplant, thyme, pfaf, 3).
-harmful_relation(eggplant, potato, pfaf, 3).
-beneficial_relation(lavender, most_plants, pfaf, 3).
-beneficial_relation(lavender, many_species_due_to_its_pest_repellent_properties, pfaf, 3).
-beneficial_relation(lettuce, cucumbers, pfaf, 3).
-beneficial_relation(lettuce, cabbage, pfaf, 3).
-beneficial_relation(lettuce, beetroot, pfaf, 3).
-beneficial_relation(lettuce, strawberries, pfaf, 3).
-beneficial_relation(melon, corn, pfaf, 3).
-beneficial_relation(melon, sunflowers_but_dislikes_potatoes, pfaf, 3).
-beneficial_relation(onion, weed_competition, pfaf, 3).
-beneficial_relation(onion, though_there_are_exceptions, pfaf, 3).
-beneficial_relation(onion, most_plants, pfaf, 3).
-beneficial_relation(onion, especially_roses, pfaf, 3).
-beneficial_relation(onion, carrots, pfaf, 3).
-beneficial_relation(onion, beet, pfaf, 3).
-beneficial_relation(onion, chamomile, pfaf, 3).
-beneficial_relation(onion, but_they_inhibit_the_growth_of_legumes, pfaf, 3).
-beneficial_relation(oregano, the_cucumber_family, pfaf, 3).
-beneficial_relation(peppermint, cabbage, pfaf, 3).
-beneficial_relation(peppermint, tomato, pfaf, 3).
-beneficial_relation(pumpkin, sweetcorn, pfaf, 3).
-beneficial_relation(pumpkin, thornapple_but_they_dislike_growing_near_potatoes, pfaf, 3).
-beneficial_relation(pumpkin, nasturtiums, pfaf, 3).
-beneficial_relation(pumpkin, mint, pfaf, 3).
-beneficial_relation(pumpkin, beans, pfaf, 3).
-beneficial_relation(pumpkin, radishes, pfaf, 3).
-harmful_relation(pumpkin, potato, pfaf, 3).
-beneficial_relation(radish, lettuces, pfaf, 3).
-beneficial_relation(sage, many_plants, pfaf, 3).
-beneficial_relation(spearmint, cabbage, pfaf, 3).
-beneficial_relation(spearmint, tomato, pfaf, 3).
-beneficial_relation(thyme, most_plants, pfaf, 3).
-beneficial_relation(tomato, asparagus, pfaf, 3).
-beneficial_relation(tomato, parsley, pfaf, 3).
-beneficial_relation(tomato, brassica, pfaf, 3).
-beneficial_relation(tomato, stinging_nettle, pfaf, 3).
-beneficial_relation(tomato, gooseberry, pfaf, 3).
-harmful_relation(tomato, fennel, pfaf, 3).
-harmful_relation(tomato, kohlrabi, pfaf, 3).
-harmful_relation(tomato, potato, pfaf, 3).
-beneficial_relation(watermelon, potato, pfaf, 3).
-beneficial_relation(zucchini, sweetcorn, pfaf, 3).
-beneficial_relation(zucchini, thornapple_but_they_dislike_growing_near_potatoes, pfaf, 3).
-beneficial_relation(zucchini, nasturtiums, pfaf, 3).
-beneficial_relation(zucchini, mint, pfaf, 3).
-beneficial_relation(zucchini, beans, pfaf, 3).
-beneficial_relation(zucchini, radishes, pfaf, 3).
-harmful_relation(zucchini, potato, pfaf, 3).

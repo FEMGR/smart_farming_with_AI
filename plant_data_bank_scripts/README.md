@@ -11,7 +11,6 @@ Sources included:
 - profile merger
 - validator
 - index builder
-- Prolog exporter
 
 The goal is:
 
@@ -24,7 +23,7 @@ normalized plant profile
     ↓
 merged centralized data bank
     ↓
-optional Prolog export
+optional live Prolog KB update
 ```
 
 ## Install
@@ -69,7 +68,8 @@ python3 scripts/enrich_perenual.py --plants config/plants_seed.json --delay 6
 python3 scripts/merge_profiles.py --plants config/plants_seed.json
 python3 scripts/build_indexes.py
 python3 scripts/validate_data_bank.py
-python3 scripts/export_to_prolog.py
+python3 scripts/update_prolog_from_profiles.py
+python3 scripts/update_prolog_from_profiles.py --apply
 ```
 
 ## Or run all except Perenual
@@ -84,6 +84,20 @@ With Perenual:
 python3 scripts/run_pipeline.py --plants config/plants_seed.json --include-perenual
 ```
 
+## Missing plant extraction
+
+Preview extraction and the Prolog update commands:
+
+```bash
+python3 scripts/run_missing_plant_extraction.py --update-prolog --dry-run
+```
+
+Run extraction, update the live Prolog KB, and reorder Prolog facts:
+
+```bash
+python3 scripts/run_missing_plant_extraction.py --update-prolog --apply-prolog --reorder-prolog --apply-reorder
+```
+
 ## Output
 
 ```text
@@ -96,7 +110,6 @@ data_bank/
     manual/
   normalized/plants/
   indexes/
-  exports/prolog/
 ```
 
 Important: FPI and PFAF are not clean APIs. These scripts are conservative extractors. Always review raw and normalized JSON before using the facts for decision support.

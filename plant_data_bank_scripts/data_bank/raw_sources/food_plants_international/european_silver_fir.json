@@ -1,0 +1,47 @@
+{
+  "plant": {
+    "common_name": "European Silver Fir",
+    "confidence": 0.7,
+    "created_at": "2026-06-18T06:20:42.571350+00:00",
+    "genus": "Abies",
+    "plant_atom": "european_silver_fir",
+    "reason": "scientific_name_not_found_in_prolog",
+    "scientific_name": "Abies alba",
+    "source_file": "/home/graubo/PyCharmMiscProject/smart-farming-system/backend/cache/species_snapshots/1.json",
+    "source_name": "perenual_snapshot",
+    "status": "extraction_attempted"
+  },
+  "source": "Food Plants International",
+  "snapshots": [
+    {
+      "source_name": "Food Plants International",
+      "source_url": "https://foodplantsinternational.com/?s=Abies+alba",
+      "query": "Abies alba",
+      "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=Abies+alba (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "fetched_at": "2026-06-19T03:24:45.043205+00:00",
+      "response_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "parsed": {},
+      "raw_text_excerpt": ""
+    },
+    {
+      "source_name": "Food Plants International",
+      "source_url": "https://foodplantsinternational.com/?s=European+Silver+Fir",
+      "query": "Abies alba",
+      "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=European+Silver+Fir (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "fetched_at": "2026-06-19T03:25:12.053457+00:00",
+      "response_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "parsed": {},
+      "raw_text_excerpt": ""
+    },
+    {
+      "source_name": "Food Plants International",
+      "source_url": "https://foodplantsinternational.com/?s=european_silver_fir",
+      "query": "Abies alba",
+      "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=european_silver_fir (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "fetched_at": "2026-06-19T03:25:39.068744+00:00",
+      "response_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "parsed": {},
+      "raw_text_excerpt": ""
+    }
+  ]
+}

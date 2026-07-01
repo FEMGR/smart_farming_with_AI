@@ -62,12 +62,6 @@
     "other_uses_notes": null,
     "edible_uses_notes": null
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -76,6 +70,32 @@
     "pollinator_support": null,
     "pest_confuser": null,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "bacterial_soft_rots",
+      "basal_rot",
+      "black_mold",
+      "blue_mold_rot",
+      "botrytis_bulb_rot",
+      "botrytis_leafspot",
+      "downy_mildew",
+      "leaf_blight",
+      "neck_rot",
+      "pink_root",
+      "purple_blotch",
+      "stemphylium_leaf_blight",
+      "white_rot"
+    ],
+    "known_pest_ids": [
+      "armyworm_and_cutworm",
+      "bulb_mite",
+      "garden_symphylan",
+      "thrips",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -174,7 +194,6 @@
     "growth.soil_notes",
     "germination.propagation_methods",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

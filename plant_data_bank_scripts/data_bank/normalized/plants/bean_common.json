@@ -81,12 +81,6 @@
     "other_uses_notes": "Biomass Dye Fungicide Miscellany A brown dye is obtained from red kidney beans[168]. The plant contains phaseolin, which has fungicidal activity[218]. Water from the cooked beans is very effective in reviving woollen fabrics[7]. The plant residue remaining after harvesting the dried beans is a source of biomass[269].",
     "edible_uses_notes": "Edible Parts: Leaves Seed Seedpod Edible Uses: Coffee Coffee Condiment Immature seedpods - raw or cooked[46, 105]. The green pods are commonly used as a vegetable, they have a mild flavour and should only be cooked for a short time. When growing the plant for its seedpods, be sure to pick them whilst they are still small and tender. This will ensure the continued production of more pods by the plant. Flowering is reduced once the seeds begin to form inside the pods. The immature seeds are boiled or steamed and used as a vegetable[183]. The mature seeds are dried and stored for future use. They must be thoroughly cooked before being eaten and are best soaked in water for about 12 hours prior to this. They can be boiled, baked, pureed, ground into a powder or fermented into 'tempeh' etc[183]. The powdered seed makes a protein-enriching additive to flour, it can also be used in soups etc[K]. The seed can also be sprouted and used in salads or cooked[183]. The roasted seeds have been used as a coffee substitute[7]. Young leaves - raw or cooked as a potherb[177, 183]. The very young laves are sometimes eaten as a salad, the older leaves are cooked[269]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -162,6 +156,12 @@
     "pollinator_support": true,
     "pest_confuser": false,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -301,7 +301,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

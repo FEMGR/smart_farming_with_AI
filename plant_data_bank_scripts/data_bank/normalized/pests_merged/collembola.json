@@ -1,0 +1,63 @@
+{
+  "pest_atom": "collembola",
+  "name": "Collembola (springtail)",
+  "pest_type": "springtail",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "spinach"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Spinach",
+      "pest_name_on_page": "Collembola (springtail)",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-collembola-springtail"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-collembola-springtail"
+  ],
+  "page_titles": [
+    "Spinach-Collembola (springtail)"
+  ],
+  "description_damage": "Small, white, slow-moving, soil-dwelling insects that feed on germinating seeds or roots of small plants, causing reduced stands and loss of vigor in surviving plants. They usually are in localized or irregular spots in the field.",
+  "biology_life_history": "",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin (as a mix with",
+      "OMRI-listed for organic use. malathion permethrin",
+      "azadirachtin (as a mix with pyrethrins) - Some formulations are",
+      "pyrethrins-Some formulations are",
+      "soap-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin). carbaryl cyfluthrin insecticidal"
+    ],
+    "cultural": ""
+  },
+  "damage_tags": [
+    "root_damage"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:31:31.478669+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.541579+00:00"
+}

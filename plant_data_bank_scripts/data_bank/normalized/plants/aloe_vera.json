@@ -83,12 +83,6 @@
     "other_uses_notes": "Cosmetic Miscellany Pollution Aloe species can be used as a drought-resistant ground cover, helping to prevent soil erosion and improve soil health. They may also provide a habitat for beneficial insects. The leaf extracts are used in skin-care cosmetic products[238, 254]. Plants have been grown indoors in pots to help remove toxins from the atmosphere. It is also unusual in that it continues to release oxygen and absorb carbon dioxide in the dark, making it very suitable for growing in bedrooms[259]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Aloe species produce tubular flowers rich in nectar, attracting pollinators such as bees and hummingbirds. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Aloe plants are primarily known for their medicinal properties and edible gel, but they can provide food for some wildlife. The flowers are edible and may attract pollinators. Aloe’s dense foliage can offer some shelter for small animals. 3. Invertebrate Shelter (Overwintering Sites, Leaf Litter, Groundcover): No – Aloe species do not typically provide significant overwintering sites for invertebrates, nor do they produce leaf litter in a way that contributes to ground cover or shelter. 4. Pest Confuser (Smell): No – Aloe species do not have a strong scent known to confuse pests, although their presence may help deter some pests due to their sap.",
     "edible_uses_notes": "Edible Parts: Leaves Seed Edible Uses: Leaves - cooked[105]. Very bitter, they are an emergency food that is only used when all else fails[177]. A gel in the leaves is sometimes used as an ingredient of commercial jellies[183]. Seed[105, 183]. An emergency food used when all else fails[177]. It is very unlikely that the seed will be produced in Britain[238]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -110,6 +104,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -248,7 +248,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

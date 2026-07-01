@@ -1,0 +1,76 @@
+{
+  "pest_atom": "whitefly",
+  "name": "Whitefly",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Whitefly",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-whitefly",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "",
+  "description_damage": "Adult is white and very small; it looks like a miniature moth. They typically feed on the undersides of leaves, flying up in clouds when disturbed. Immature stages are flat, oval, white to greenish, and semitransparent. Eggs are white and laid singly on the lower leaf surface. Whiteflies feed by sucking sap from the plants. Damaged leaves wilt, turn yellow or brown, and may drop, all of which reduces photosynthetic area and weakens the plant. Plants may be stunted by severe infestations. Whiteflies also produce honeydew, which may attract ants or become covered with a growth of sooty mold.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "wilting",
+    "stunting",
+    "honeydew",
+    "sooty_mold",
+    "leaf_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-whitefly/g135-30.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-whitefly/g135-30.jpg?itok=wtiH3UDy",
+      "caption": "Greenhouse whitefly Trialeurodes vaporariorum Westwood Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-whitefly/g130-22.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-whitefly/g130-22.jpg?itok=iUiThJf0",
+      "caption": "Greenhouse whitefly Trialeurodes vaporariorum Westwood Adult egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-whitefly/297-27.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-whitefly/297-27.jpg?itok=1LADws2y",
+      "caption": "Greenhouse whitefly Trialeurodes vaporariorum Westwood Immature pupa on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.270642+00:00"
+}

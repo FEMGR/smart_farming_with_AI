@@ -178,12 +178,6 @@
     "other_uses_notes": "Dye Miscellany Oil Agroforestry uses: Grapes can be used as ground cover to prevent soil erosion and enhance biodiversity. They also provide habitat for various beneficial insects and wildlife. Landscape Uses: Arbor. A yellow dye is obtained from the fresh or dried leaves[168]. An oil from the seed is used for lighting and as an ingredient in soaps, paints etc[46, 61]. Cream of tartar, extracted from the residue of pressed grapes, is used in making fluxes for soldering[238]. Especially when growing in hotter countries than Britain, the stems of very old vines attain a good size and have been used to supply a very durable timber[4]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Grape flowers are attractive to a variety of pollinators, including bees and other beneficial insects, as they produce nectar. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The fruit (grapes) is highly nutritious and consumed by birds, mammals, and insects. The leaves can also provide some shelter, though they are not typically used for nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The foliage and associated leaf litter can provide shelter for various invertebrates, although they are not specifically known for providing overwintering sites. 4. Pest Confuser (Smell): Yes – The leaves and fruits of grapevines can have aromatic properties that may help confuse certain pests, although they are also susceptible to various pests.",
     "edible_uses_notes": "Edible Parts: Flowers Fruit Leaves Oil Shoots Edible Uses: Oil Fruit - raw or dried for winter use[1, 2, 11, 46]. The dried fruits are the raisins, sultanas and currants of commerce, different varieties producing the different types of dried fruit. A fully ripened fresh fruit is sweet, juicy and delicious[K]. The fruit juice can be concentrated and used as a sweetener[183]. This fruit is widely used in making wine[183]. Leaves - cooked[55]. Young leaves are wrapped around other foods and then baked, they impart a pleasant flavour[183]. Young tendrils - raw or cooked[85]. The flower clusters are used as a vegetable[183]. An edible oil similar to sunflower oil is obtained from the seed[7, 183]. It needs to be refined before it can be eaten[46]. A polyunsaturated oil, it is suitable for mayonnaise and cooking, especially frying[238]. Sap - raw. Used as a drink, it has a sweet taste. The sap can be harvested in spring and early summer, though it should not be taken in quantity or it will weaken the plant. The roasted seed is a coffee substitute[7]. Cream of tartar, also known as potassium bitartrate, a crystalline salt, is extracted from the residue of pressed grapes, and from the sediment of wine barrels. It is used in making baking powder[238]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -204,6 +198,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -341,7 +341,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

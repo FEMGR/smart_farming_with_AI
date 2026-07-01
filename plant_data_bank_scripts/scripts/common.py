@@ -17,8 +17,6 @@ DATA_BANK_DIR = PATHS.data_bank
 RAW_DIR = PATHS.data_bank_raw_sources
 NORMALIZED_DIR = PATHS.normalized_plants
 INDEX_DIR = PATHS.data_bank_indexes
-EXPORT_DIR = PATHS.data_bank_exports
-PROLOG_EXPORT_DIR = PATHS.generated_prolog_export.parent
 USER_AGENT = "SmartUrbanFarmingResearchBot/0.1 educational local research project"
 
 
@@ -32,8 +30,6 @@ def ensure_dirs() -> None:
         RAW_DIR,
         NORMALIZED_DIR,
         INDEX_DIR,
-        EXPORT_DIR,
-        PROLOG_EXPORT_DIR,
         RAW_DIR / "food_plants_international",
         RAW_DIR / "pfaf",
         RAW_DIR / "perenual",

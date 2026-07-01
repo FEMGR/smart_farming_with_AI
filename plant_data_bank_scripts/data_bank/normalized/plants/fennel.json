@@ -96,12 +96,6 @@
     "other_uses_notes": "Dye Essential Oil Repellent Strewing Agroforestry uses: Fennel can attract beneficial insects, including pollinators, and can also be used as a companion plant to deter pests. Its deep roots can help improve soil structure. The seed yields up to 5% of an essential oil[1, 4, 46]. This is used medicinally, as a food flavouring, in toothpastes, soaps, perfumery, air fresheners etc[1, 46, 238]. The flavour of fennel oil depends upon its two main constituents. 'Fenchone' is a bitter tasting element whilst 'anethole' has a sweet anise-like flavour[238]. The proportions of these two ingredients varies according to strain and region. Plants growing in the Mediterranean and southern Europe usually have a sweet oil whilst plants growing in central and northern Europe usually produce a more bitter oil[238]. The quality of the oil also depends upon how well the seed has been dried - the oil from fully ripened and dried seeds being much sweeter and more fragrant[245]. The dried plant is an insect repellent[14, 53], the crushed leaves are effective for keeping dogs free of fleas[201]. The plant was formerly used as a strewing herb[201]. Yellow and brown dyes are obtained from the flowers and leaves combined[168].",
     "edible_uses_notes": "Edible Parts: Flowers Leaves Oil Root Seed Stem Edible Uses: Condiment Drink Oil Tea Leaves - raw or cooked[2, 4, 5, 9, 27]. A delicious aniseed flavour[183], the young leaves are best since older ones soon become tough[K]. They are often used as a garnish on raw or cooked dishes and make a very pleasant addition to salads[183]. They help to improve digestion and so are particularly useful with oily foods[244]. The leaves are difficult to store dried[200], though this does not really matter since they can often be harvested all year round, especially if the plants are in a warm, sheltered position[K]. Leaf stalks and flower heads - raw or cooked[14, 37, 52, 183]. A similar aniseed flavour to the leaves[K]. The aromatic seeds are used as a flavouring in cakes, bread, stuffings etc[2, 4, 5, 21, 27, 183]. They have a similar flavour to the leaves[K] and also improve the digestion[244]. The sprouted seeds can be added to salads[183]. An essential oil from the fully ripened and dried seed is used as a food flavouring in similar ways to the whole seed[1, 46, 183, 245]. Root - cooked[53]. Somewhat parsnip-like. The leaves or the seeds can be used to make a pleasant-tasting herbal tea[16, 183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -122,6 +116,12 @@
     "biodiversity_notes": [
       "PFAF describes this plant as relevant to companion planting."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -260,7 +260,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

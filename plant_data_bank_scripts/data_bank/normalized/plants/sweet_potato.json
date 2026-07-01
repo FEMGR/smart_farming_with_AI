@@ -166,12 +166,6 @@
     "other_uses_notes": "Biomass Fuel Agroforestry uses: It can be used as ground cover to prevent soil erosion, improve soil structure, and suppress weeds. The vines also provide habitat for beneficial organisms. Landscape Uses: Alpine garden, Arbor, Container, Groundcover, Specimen. The root is a source of starch[200]. Sweet potato tubers are being examined as a valuable raw material for producing alcohol bio-fuel[418]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Sweet potato vines produce attractive flowers that can provide nectar and pollen for pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The tubers (sweet potatoes) are a valuable food source for both humans and wildlife. The leaves can also be consumed by herbivores. While the plant itself may not serve as a primary nesting site, it can provide some cover and shelter due to its dense foliage. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The sprawling nature of the sweet potato vine can create ground cover, providing habitat for invertebrates and helping to retain moisture in the soil. Additionally, the leaf litter can serve as shelter. 4. Pest Confuser (Smell): Yes – The aromatic leaves may have pest-repelling properties and can help confuse some pests, benefiting neighboring plants.",
     "edible_uses_notes": "Edible Parts: Leaves Root Shoots Edible Uses: Root - cooked[200]. Sweet and fleshy, it is a delicious staple food and is also very nutritious providing a rich source of vitamins and minerals[200, K]. There are cultivars with soft, moist flesh and also forms with a more dry flesh[200]. There are also less sweet cultivars, bred for industrial production of starch[200]. In order for the roots to store through the winter, they need to be cured in the sunshine at temperatures around 25°c fr about a week before being stored at around 14°c[264]. Young shoot tips[264]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -192,6 +186,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -334,7 +334,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

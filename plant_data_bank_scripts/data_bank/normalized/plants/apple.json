@@ -82,12 +82,6 @@
     "other_uses_notes": "Lighting Oil Oil Pectin Teeth Wood Apples can be used as part of an agroforestry system. They provide fruit and shade, can serve as windbreaks, and attract beneficial insects. They can also be used as hedgerows. The fruit is a source of pectin[61, 142]. Pectin is used as a thickener in jams etc and as a culture medium in laboratories. The apple is also an excellent dentifrice, the mechanical action of eating a fruit serving to clean both the teeth and the gums[4, 269]. The oil from the seed has been used as an illuminant[269]. Wood - hard, compact, fine-grained. Used for turnery, tool handles, canes etc[46, 171, 226]. It makes an excellent fuel[226]. Espalier: tree or other plants that is trained to grow flat against a support (such as a trellis or wall). 1. Nectary - flowers rich in nectar and pollen: Yes. 2. Wildlife - Food. Fruit and seeds. Leaf litter and detritus (for beneficial insects). Shelter - Dense foliage. Nesting and roosting - dense trees and shrubs: Yes. 3. Invertebrate Shelter. Overwintering sites (rough bark, hollow stems). Leaf litter. Groundcover: Yes. 4. Pest Confuser (smell): No.",
     "edible_uses_notes": "Edible Parts: Fruit Oil Oil Edible Uses: Oil Oil Pectin Fruit - raw, cooked or dried for later use. Apples are one of the most common and widely grown fruits of the temperate zone. There are a great many named varieties with differing flavours ranging from sour to sweet and textures from dry and mealy to crisp and juicy. There is also a wide range in the seasons of ripening with the first fruits being ready in late July whilst other cultivars are not picked until late autumn and will store for 12 months or sometimes more. See individual records for more details. The fruit of some cultivars is rich in pectin and can be used in helping other fruits to set when making jam etc[61, 142]. Pectin is also said to protect the body against radiation[201]. An edible oil can be obtained from the seed[4]. It would only really be viable to use these seeds as an oil source if the fruit was being used for some purpose such as making cider and then the seeds could be extracted from the remaining pulp[K]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -108,6 +102,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -243,7 +243,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

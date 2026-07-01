@@ -1,0 +1,81 @@
+{
+  "pest_atom": "sixspotted_leafhopper",
+  "name": "Sixspotted leafhopper",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "carrot"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Carrot",
+      "pest_name_on_page": "Sixspotted leafhopper",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-sixspotted-leafhopper"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-sixspotted-leafhopper"
+  ],
+  "page_titles": [
+    "Carrot-Sixspotted leafhopper"
+  ],
+  "description_damage": "The sixspotted leafhopper also is known as the aster leafhopper. It is about 0.19 inch in length, narrow, wedge-shaped, with a beak, tiny antennae, and long hind legs fringed with hairs. It is yellow or yellow-green with six black spots arranged in three rows on its head. Eggs are translucent at first but soon turn white. Adults are relatively poor fliers and tend to glide along with wind currents. Nymphs resemble a wingless adult but are much smaller, ranging in length from 0.03 to 0.12 inch. They often can be distinguished by their unique sideways scuttle when disturbed. Young larvae are white but soon become yellow with brown markings. Feeding damage causes a yellow, speckled appearance. This is usually minor. The sixspotted leafhopper is the primary vector of aster yellows phytoplasma (AYP), a serious virus-like plant disease in the Pacific Northwest. Aster yellows infection prior to bulking of the carrot root causes root proliferation which is a problem for carrots destined for processing plants.",
+  "biology_life_history": "The sixspotted leafhopper overwinters as an egg in northern locations and in the adult stage in warmer climates. It undergoes a series of five nymph stages before reaching adulthood. Each generation requires 27 to 34 days to complete. There are three to four generations each year.",
+  "monitoring": "Leafhoppers easily are collected with sweep nets. Yellow sticky traps also are useful.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "beta-cyfluthrin (Baythroid XL, Tombstone Helios) at 0.013 to 0.022 lb ai/A. PHI 0 days. REI 12 hr. Do not exceed 0.11 lb ai/A or five applications per season.",
+      "carbaryl (Sevin XLR Plus) at 0.5 to 1 lb ai/A. PHI 7 day. REI 12 hr. Do not exceed 5 lb ai/A per crop or five applications per year. Retreatment interval 7 days.",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 7 days. REI 12 hr. See label for ground versus aerial application restrictions. Do not exceed 0.5 lb ai/A per year.",
+      "flupyradifurone (Sivanto 200 SL) at 7 to 10.5 fl oz/A. PHI 21 days. REI 4 hr. Do not exceed 0.365 lb ai/A per year. Minimum of 10 days between successive applications.",
+      "malathion (Numerous Products) at 1.25 lb ai/A (see label). PHI 7 days. REI 12 - 24 hr.",
+      "methomyl (Lannate LV) at 0.45 to 0.9 lb ai/A. PHI 1 day. REI 48 hr. Not more than 10 applications or 6.3 lb ai/A per year."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Not listed for home use in OR. malathion",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "OMRI-listed for organic use. spinosad",
+      "azadirachtin (neem oil)-Some formulations are",
+      "kaolin-When applied to foliage, it acts as a repellent to some insect pests. Some formulations",
+      "oils (clove, rosemary, etc.)-Some formulations are",
+      "plant-derived essential",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "soap-Some formulations",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin). carbaryl cyfluthrin deltamethrin esfenvalerate imidacloprid insecticidal"
+    ],
+    "cultural": "Mulches of aluminum foil and straw can help reduce disease incidence. Row covers also can be used on higher value crops. Destruction of weed species known to harbor aster yellows is also important."
+  },
+  "damage_tags": [
+    "feeding_damage",
+    "leaf_damage",
+    "root_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:36:24.879877+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.566054+00:00"
+}

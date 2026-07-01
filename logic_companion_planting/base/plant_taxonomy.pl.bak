@@ -36,6 +36,24 @@
 % ---------------------------------------------------------
 % ADZUKI BEAN
 % ---------------------------------------------------------
+
+% =========================================================
+% TAXONOMY FACTS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ADZUKI BEAN
+% ---------------------------------------------------------
+
+% =========================================================
+% TAXONOMY FACTS BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ADZUKI BEAN
+% ---------------------------------------------------------
 accepted_scientific_name(adzuki_bean, 'Vigna angularis').
 genus(adzuki_bean, vigna).
 family(adzuki_bean, fabaceae).
@@ -59,6 +77,16 @@ genus(allspice, pimenta).
 family(allspice, myrtaceae).
 taxonomy_confidence(allspice, high).
 taxonomy_source(allspice, 'Kew POWO / USDA PLANTS / WFO cross-check').
+
+% ---------------------------------------------------------
+% ALOE VERA
+% ---------------------------------------------------------
+accepted_scientific_name(aloe_vera, 'Aloe vera').
+alternate_scientific_name(aloe_vera, 'Aloe barbadensis, Aloe vulgaris').
+genus(aloe_vera, aloe).
+family(aloe_vera, asphodelaceae).
+taxonomy_confidence(aloe_vera, high).
+taxonomy_source(aloe_vera, 'GBIF / Plants For A Future').
 
 % ---------------------------------------------------------
 % AMARANTH
@@ -86,6 +114,7 @@ accepted_scientific_name(apple, 'Malus domestica').
 genus(apple, malus).
 family(apple, rosaceae).
 taxonomy_confidence(apple, high).
+taxonomy_source(apple, 'GBIF / Plants For A Future').
 taxonomy_source(apple, 'Kew POWO / USDA PLANTS / WFO cross-check').
 
 % ---------------------------------------------------------
@@ -101,18 +130,26 @@ taxonomy_source(apricot, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % ARTICHOKE
 % ---------------------------------------------------------
 accepted_scientific_name(artichoke, 'Cynara cardunculus var. scolymus').
+accepted_scientific_name(artichoke, 'Cynara cardunculus').
 genus(artichoke, cynara).
 family(artichoke, asteraceae).
 taxonomy_confidence(artichoke, high).
+taxonomy_source(artichoke, 'GBIF / Plants For A Future').
 taxonomy_source(artichoke, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
 % ARUGULA
 % ---------------------------------------------------------
 accepted_scientific_name(arugula, 'Eruca vesicaria').
+alternate_scientific_name(arugula, 'Euzomum vesicarium () Link').
+alternate_scientific_name(arugula, 'Heterotypic Synonyms: E').
+alternate_scientific_name(arugula, 'Homotypic Synonyms: Brassica vesicaria E').
+alternate_scientific_name(arugula, 'Raphanus vesicarius () Crantz').
+alternate_scientific_name(arugula, 'Velleruca vesicaria () Pomel').
 genus(arugula, eruca).
 family(arugula, brassicaceae).
 taxonomy_confidence(arugula, high).
+taxonomy_source(arugula, 'GBIF / Plants For A Future').
 taxonomy_source(arugula, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -165,9 +202,11 @@ taxonomy_source(barley, 'Kew POWO / USDA PLANTS cross-check').
 % BASIL
 % ---------------------------------------------------------
 accepted_scientific_name(basil, 'Ocimum basilicum').
+alternate_scientific_name(basil, 'Ocimum album, Ocimum anisatum, Ocimum barrelieri, Ocimum medium, Plectranthus barrelieri').
 genus(basil, ocimum).
 family(basil, lamiaceae).
 taxonomy_confidence(basil, high).
+taxonomy_source(basil, 'GBIF / Plants For A Future').
 taxonomy_source(basil, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -187,6 +226,15 @@ genus(bean_bush, phaseolus).
 family(bean_bush, fabaceae).
 taxonomy_confidence(bean_bush, high).
 taxonomy_source(bean_bush, 'Kew POWO / USDA PLANTS cross-check').
+
+% ---------------------------------------------------------
+% BEAN COMMON
+% ---------------------------------------------------------
+accepted_scientific_name(bean_common, 'Phaseolus vulgaris').
+genus(bean_common, phaseolus).
+family(bean_common, fabaceae).
+taxonomy_confidence(bean_common, high).
+taxonomy_source(bean_common, 'GBIF / Plants For A Future').
 
 % ---------------------------------------------------------
 % BEAN POLE
@@ -242,6 +290,7 @@ accepted_scientific_name(bitter_melon, 'Momordica charantia').
 genus(bitter_melon, momordica).
 family(bitter_melon, cucurbitaceae).
 taxonomy_confidence(bitter_melon, high).
+taxonomy_source(bitter_melon, 'GBIF / Plants For A Future').
 taxonomy_source(bitter_melon, 'Kew POWO / USDA PLANTS / WFO cross-check').
 
 % ---------------------------------------------------------
@@ -256,10 +305,13 @@ taxonomy_source(black_pepper, 'Kew POWO / USDA PLANTS cross-check').
 % ---------------------------------------------------------
 % BLACKBERRY
 % ---------------------------------------------------------
+accepted_scientific_name(blackberry, 'Rubus fruticosus').
 accepted_scientific_name(blackberry, 'Rubus spp.').
 genus(blackberry, rubus).
 family(blackberry, rosaceae).
+taxonomy_confidence(blackberry, high).
 taxonomy_confidence(blackberry, medium).
+taxonomy_source(blackberry, 'GBIF / Plants For A Future').
 taxonomy_source(blackberry, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(blackberry, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
 
@@ -280,6 +332,7 @@ accepted_scientific_name(bok_choy, 'Brassica rapa subsp. chinensis').
 genus(bok_choy, brassica).
 family(bok_choy, brassicaceae).
 taxonomy_confidence(bok_choy, high).
+taxonomy_source(bok_choy, 'GBIF / Plants For A Future').
 taxonomy_source(bok_choy, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -298,6 +351,7 @@ accepted_scientific_name(broccoli, 'Brassica oleracea var. italica').
 genus(broccoli, brassica).
 family(broccoli, brassicaceae).
 taxonomy_confidence(broccoli, high).
+taxonomy_source(broccoli, 'GBIF / Plants For A Future').
 taxonomy_source(broccoli, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -331,9 +385,11 @@ taxonomy_source(burdock, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % CABBAGE
 % ---------------------------------------------------------
 accepted_scientific_name(cabbage, 'Brassica oleracea var. capitata').
+accepted_scientific_name(cabbage, 'Brassica oleracea').
 genus(cabbage, brassica).
 family(cabbage, brassicaceae).
 taxonomy_confidence(cabbage, high).
+taxonomy_source(cabbage, 'GBIF / Plants For A Future').
 taxonomy_source(cabbage, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -376,9 +432,11 @@ taxonomy_source(cardamom, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % CARROT
 % ---------------------------------------------------------
 accepted_scientific_name(carrot, 'Daucus carota subsp. sativus').
+accepted_scientific_name(carrot, 'Daucus carota').
 genus(carrot, daucus).
 family(carrot, apiaceae).
 taxonomy_confidence(carrot, high).
+taxonomy_source(carrot, 'GBIF / Plants For A Future').
 taxonomy_source(carrot, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -406,6 +464,7 @@ accepted_scientific_name(cauliflower, 'Brassica oleracea var. botrytis').
 genus(cauliflower, brassica).
 family(cauliflower, brassicaceae).
 taxonomy_confidence(cauliflower, high).
+taxonomy_source(cauliflower, 'GBIF / Plants For A Future').
 taxonomy_source(cauliflower, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -416,6 +475,19 @@ genus(celeriac, apium).
 family(celeriac, apiaceae).
 taxonomy_confidence(celeriac, high).
 taxonomy_source(celeriac, 'Kew POWO / USDA PLANTS / WFO cross-check').
+
+% ---------------------------------------------------------
+% CELERY
+% ---------------------------------------------------------
+accepted_scientific_name(celery, 'Apium graveolens').
+alternate_scientific_name(celery, 'Apium celleri').
+alternate_scientific_name(celery, 'Apium decumbens').
+alternate_scientific_name(celery, 'Carum graveolens').
+alternate_scientific_name(celery, 'Celeria graveolens').
+genus(celery, apium).
+family(celery, apiaceae).
+taxonomy_confidence(celery, high).
+taxonomy_source(celery, 'GBIF / Plants For A Future').
 
 % ---------------------------------------------------------
 % CHAMOMILE
@@ -472,7 +544,17 @@ accepted_scientific_name(chickpea, 'Cicer arietinum').
 genus(chickpea, cicer).
 family(chickpea, fabaceae).
 taxonomy_confidence(chickpea, high).
+taxonomy_source(chickpea, 'GBIF / Plants For A Future').
 taxonomy_source(chickpea, 'Kew POWO / USDA PLANTS / WFO cross-check').
+
+% ---------------------------------------------------------
+% CHICORY
+% ---------------------------------------------------------
+accepted_scientific_name(chicory, 'Cichorium intybus').
+genus(chicory, cichorium).
+family(chicory, asteraceae).
+taxonomy_confidence(chicory, high).
+taxonomy_source(chicory, 'GBIF / Plants For A Future').
 
 % ---------------------------------------------------------
 % CHILI PEPPER
@@ -490,6 +572,7 @@ accepted_scientific_name(chive, 'Allium schoenoprasum').
 genus(chive, allium).
 family(chive, amaryllidaceae).
 taxonomy_confidence(chive, high).
+taxonomy_source(chive, 'GBIF / Plants For A Future').
 taxonomy_source(chive, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -576,6 +659,15 @@ taxonomy_confidence(comfrey, high).
 taxonomy_source(comfrey, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
+% CORIANDER
+% ---------------------------------------------------------
+accepted_scientific_name(coriander, 'Coriandrum sativum').
+genus(coriander, coriandrum).
+family(coriander, apiaceae).
+taxonomy_confidence(coriander, high).
+taxonomy_source(coriander, 'GBIF / Plants For A Future').
+
+% ---------------------------------------------------------
 % CORIANDER SEED
 % ---------------------------------------------------------
 accepted_scientific_name(coriander_seed, 'Coriandrum sativum').
@@ -637,6 +729,7 @@ accepted_scientific_name(cucumber, 'Cucumis sativus').
 genus(cucumber, cucumis).
 family(cucumber, cucurbitaceae).
 taxonomy_confidence(cucumber, high).
+taxonomy_source(cucumber, 'GBIF / Plants For A Future').
 taxonomy_source(cucumber, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -701,9 +794,12 @@ taxonomy_note(daisy, 'Common name daisy is broad; lawn/English daisy used here.'
 % DANDELION
 % ---------------------------------------------------------
 accepted_scientific_name(dandelion, 'Taraxacum officinale agg.').
+accepted_scientific_name(dandelion, 'Taraxacum officinale').
 genus(dandelion, taraxacum).
 family(dandelion, asteraceae).
+taxonomy_confidence(dandelion, high).
 taxonomy_confidence(dandelion, medium).
+taxonomy_source(dandelion, 'GBIF / Plants For A Future').
 taxonomy_source(dandelion, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(dandelion, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
 
@@ -714,6 +810,7 @@ accepted_scientific_name(dill, 'Anethum graveolens').
 genus(dill, anethum).
 family(dill, apiaceae).
 taxonomy_confidence(dill, high).
+taxonomy_source(dill, 'GBIF / Plants For A Future').
 taxonomy_source(dill, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -752,6 +849,7 @@ accepted_scientific_name(eggplant, 'Solanum melongena').
 genus(eggplant, solanum).
 family(eggplant, solanaceae).
 taxonomy_confidence(eggplant, high).
+taxonomy_source(eggplant, 'GBIF / Plants For A Future').
 taxonomy_source(eggplant, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -804,9 +902,15 @@ taxonomy_source(fava_bean, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % FENNEL
 % ---------------------------------------------------------
 accepted_scientific_name(fennel, 'Foeniculum vulgare').
+alternate_scientific_name(fennel, 'Anethum dulce').
+alternate_scientific_name(fennel, 'Anethum foeniculum').
+alternate_scientific_name(fennel, 'Foeniculum divaricatum').
+alternate_scientific_name(fennel, 'Foeniculum officinale').
+alternate_scientific_name(fennel, 'Seseli foeniculum').
 genus(fennel, foeniculum).
 family(fennel, apiaceae).
 taxonomy_confidence(fennel, high).
+taxonomy_source(fennel, 'GBIF / Plants For A Future').
 taxonomy_source(fennel, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -825,6 +929,7 @@ accepted_scientific_name(fig, 'Ficus carica').
 genus(fig, ficus).
 family(fig, moraceae).
 taxonomy_confidence(fig, high).
+taxonomy_source(fig, 'GBIF / Plants For A Future').
 taxonomy_source(fig, 'Kew POWO / USDA PLANTS / WFO cross-check').
 
 % ---------------------------------------------------------
@@ -872,6 +977,7 @@ accepted_scientific_name(galangal, 'Alpinia galanga').
 genus(galangal, alpinia).
 family(galangal, zingiberaceae).
 taxonomy_confidence(galangal, high).
+taxonomy_source(galangal, 'GBIF / Plants For A Future').
 taxonomy_source(galangal, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -881,6 +987,7 @@ accepted_scientific_name(garlic, 'Allium sativum').
 genus(garlic, allium).
 family(garlic, amaryllidaceae).
 taxonomy_confidence(garlic, high).
+taxonomy_source(garlic, 'GBIF / Plants For A Future').
 taxonomy_source(garlic, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -897,9 +1004,12 @@ taxonomy_note(geranium_bedding, 'Bedding geranium is usually Pelargonium, not tr
 % GINGER
 % ---------------------------------------------------------
 accepted_scientific_name(ginger, 'Zingiber officinale').
+alternate_scientific_name(ginger, 'Amomum angustifolium Salisb').
+alternate_scientific_name(ginger, 'Amomum zingiber Amomum zinziba Hill Zingiber aromaticum Noronha Zing').
 genus(ginger, zingiber).
 family(ginger, zingiberaceae).
 taxonomy_confidence(ginger, high).
+taxonomy_source(ginger, 'GBIF / Plants For A Future').
 taxonomy_source(ginger, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -957,6 +1067,7 @@ accepted_scientific_name(grape, 'Vitis vinifera').
 genus(grape, vitis).
 family(grape, vitaceae).
 taxonomy_confidence(grape, high).
+taxonomy_source(grape, 'GBIF / Plants For A Future').
 taxonomy_source(grape, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1094,10 +1205,13 @@ taxonomy_source(johnson_grass, 'Kew POWO / USDA PLANTS cross-check').
 % ---------------------------------------------------------
 % KALE
 % ---------------------------------------------------------
+accepted_scientific_name(kale, 'Brassica oleracea var. acephala').
 accepted_scientific_name(kale, 'Brassica oleracea var. sabellica').
 genus(kale, brassica).
 family(kale, brassicaceae).
+taxonomy_confidence(kale, high).
 taxonomy_confidence(kale, medium).
+taxonomy_source(kale, 'GBIF / Plants For A Future').
 taxonomy_source(kale, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(kale, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
 
@@ -1136,6 +1250,7 @@ accepted_scientific_name(lavender, 'Lavandula angustifolia').
 genus(lavender, lavandula).
 family(lavender, lamiaceae).
 taxonomy_confidence(lavender, high).
+taxonomy_source(lavender, 'GBIF / Plants For A Future').
 taxonomy_source(lavender, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1151,9 +1266,11 @@ taxonomy_source(lavender_cotton, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % LEEK
 % ---------------------------------------------------------
 accepted_scientific_name(leek, 'Allium ampeloprasum var. porrum').
+accepted_scientific_name(leek, 'Allium ampeloprasum').
 genus(leek, allium).
 family(leek, amaryllidaceae).
 taxonomy_confidence(leek, high).
+taxonomy_source(leek, 'GBIF / Plants For A Future').
 taxonomy_source(leek, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1169,9 +1286,13 @@ taxonomy_source(lemon, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % LEMON BALM
 % ---------------------------------------------------------
 accepted_scientific_name(lemon_balm, 'Melissa officinalis').
+alternate_scientific_name(lemon_balm, 'Faucibarba officinalis').
+alternate_scientific_name(lemon_balm, 'Mutelia officinalis').
+alternate_scientific_name(lemon_balm, 'Thymus melissa').
 genus(lemon_balm, melissa).
 family(lemon_balm, lamiaceae).
 taxonomy_confidence(lemon_balm, high).
+taxonomy_source(lemon_balm, 'GBIF / Plants For A Future').
 taxonomy_source(lemon_balm, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1188,8 +1309,10 @@ taxonomy_source(lemongrass, 'Kew POWO / USDA PLANTS cross-check').
 % ---------------------------------------------------------
 accepted_scientific_name(lentil, 'Lens culinaris').
 genus(lentil, lens).
+genus(lentil, vicia).
 family(lentil, fabaceae).
 taxonomy_confidence(lentil, high).
+taxonomy_source(lentil, 'GBIF / Plants For A Future').
 taxonomy_source(lentil, 'Kew POWO / USDA PLANTS / WFO cross-check').
 
 % ---------------------------------------------------------
@@ -1199,6 +1322,7 @@ accepted_scientific_name(lettuce, 'Lactuca sativa').
 genus(lettuce, lactuca).
 family(lettuce, asteraceae).
 taxonomy_confidence(lettuce, high).
+taxonomy_source(lettuce, 'GBIF / Plants For A Future').
 taxonomy_source(lettuce, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1320,6 +1444,7 @@ accepted_scientific_name(melon, 'Cucumis melo').
 genus(melon, cucumis).
 family(melon, cucurbitaceae).
 taxonomy_confidence(melon, high).
+taxonomy_source(melon, 'GBIF / Plants For A Future').
 taxonomy_source(melon, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1355,9 +1480,12 @@ taxonomy_source(mizuna, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % MORINGA
 % ---------------------------------------------------------
 accepted_scientific_name(moringa, 'Moringa oleifera').
+alternate_scientific_name(moringa, 'Guilandina moringa Hyperanthera moringa () Vahl Moringa moringa () Millsp').
+alternate_scientific_name(moringa, 'Moringa pterygospe').
 genus(moringa, moringa).
 family(moringa, moringaceae).
 taxonomy_confidence(moringa, high).
+taxonomy_source(moringa, 'GBIF / Plants For A Future').
 taxonomy_source(moringa, 'Kew POWO / USDA PLANTS / WFO cross-check').
 
 % ---------------------------------------------------------
@@ -1456,9 +1584,11 @@ taxonomy_source(okra, 'Kew POWO / USDA PLANTS cross-check').
 % ONION
 % ---------------------------------------------------------
 accepted_scientific_name(onion, 'Allium cepa').
+alternate_scientific_name(onion, 'Allium angolense, Allium aobanum, Allium ascalonicum, Cepa esculenta').
 genus(onion, allium).
 family(onion, amaryllidaceae).
 taxonomy_confidence(onion, high).
+taxonomy_source(onion, 'GBIF / Plants For A Future').
 taxonomy_source(onion, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1477,6 +1607,7 @@ accepted_scientific_name(oregano, 'Origanum vulgare').
 genus(oregano, origanum).
 family(oregano, lamiaceae).
 taxonomy_confidence(oregano, high).
+taxonomy_source(oregano, 'GBIF / Plants For A Future').
 taxonomy_source(oregano, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1511,9 +1642,13 @@ taxonomy_source(papaya, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % PARSLEY
 % ---------------------------------------------------------
 accepted_scientific_name(parsley, 'Petroselinum crispum').
+alternate_scientific_name(parsley, 'Petroselinum petroselinum').
+alternate_scientific_name(parsley, 'Petroselinum vulgare').
+alternate_scientific_name(parsley, 'Selinum petroselinum').
 genus(parsley, petroselinum).
 family(parsley, apiaceae).
 taxonomy_confidence(parsley, high).
+taxonomy_source(parsley, 'GBIF / Plants For A Future').
 taxonomy_source(parsley, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1538,9 +1673,11 @@ taxonomy_source(passion_fruit, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % PEA
 % ---------------------------------------------------------
 accepted_scientific_name(pea, 'Pisum sativum').
+genus(pea, lathyrus).
 genus(pea, pisum).
 family(pea, fabaceae).
 taxonomy_confidence(pea, high).
+taxonomy_source(pea, 'GBIF / Plants For A Future').
 taxonomy_source(pea, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1565,9 +1702,12 @@ taxonomy_source(peach, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % PEANUT
 % ---------------------------------------------------------
 accepted_scientific_name(peanut, 'Arachis hypogaea').
+alternate_scientific_name(peanut, 'Arachis nambyquarae').
+alternate_scientific_name(peanut, 'Lathyrus esquirolii').
 genus(peanut, arachis).
 family(peanut, fabaceae).
 taxonomy_confidence(peanut, high).
+taxonomy_source(peanut, 'GBIF / Plants For A Future').
 taxonomy_source(peanut, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1577,6 +1717,7 @@ accepted_scientific_name(pear, 'Pyrus communis').
 genus(pear, pyrus).
 family(pear, rosaceae).
 taxonomy_confidence(pear, high).
+taxonomy_source(pear, 'GBIF / Plants For A Future').
 taxonomy_source(pear, 'Kew POWO / USDA PLANTS / WFO cross-check').
 
 % ---------------------------------------------------------
@@ -1597,6 +1738,15 @@ family(pepper, solanaceae).
 taxonomy_confidence(pepper, medium).
 taxonomy_source(pepper, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(pepper, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
+
+% ---------------------------------------------------------
+% PEPPERMINT
+% ---------------------------------------------------------
+accepted_scientific_name(peppermint, 'Mentha x piperita').
+genus(peppermint, mentha).
+family(peppermint, lamiaceae).
+taxonomy_confidence(peppermint, high).
+taxonomy_source(peppermint, 'GBIF / Plants For A Future').
 
 % ---------------------------------------------------------
 % PETUNIA
@@ -1649,9 +1799,11 @@ taxonomy_source(pomegranate, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % POTATO
 % ---------------------------------------------------------
 accepted_scientific_name(potato, 'Solanum tuberosum').
+alternate_scientific_name(potato, 'Solanum tuberosum andigena').
 genus(potato, solanum).
 family(potato, solanaceae).
 taxonomy_confidence(potato, high).
+taxonomy_source(potato, 'GBIF / Plants For A Future').
 taxonomy_source(potato, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1660,7 +1812,9 @@ taxonomy_source(potato, 'Kew POWO / USDA PLANTS cross-check').
 accepted_scientific_name(pumpkin, 'Cucurbita pepo').
 genus(pumpkin, cucurbita).
 family(pumpkin, cucurbitaceae).
+taxonomy_confidence(pumpkin, high).
 taxonomy_confidence(pumpkin, medium).
+taxonomy_source(pumpkin, 'GBIF / Plants For A Future').
 taxonomy_source(pumpkin, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(pumpkin, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
 
@@ -1699,6 +1853,7 @@ accepted_scientific_name(radish, 'Raphanus sativus').
 genus(radish, raphanus).
 family(radish, brassicaceae).
 taxonomy_confidence(radish, high).
+taxonomy_source(radish, 'GBIF / Plants For A Future').
 taxonomy_source(radish, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1707,7 +1862,9 @@ taxonomy_source(radish, 'Kew POWO / USDA PLANTS cross-check').
 accepted_scientific_name(raspberry, 'Rubus idaeus').
 genus(raspberry, rubus).
 family(raspberry, rosaceae).
+taxonomy_confidence(raspberry, high).
 taxonomy_confidence(raspberry, medium).
+taxonomy_source(raspberry, 'GBIF / Plants For A Future').
 taxonomy_source(raspberry, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(raspberry, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
 
@@ -1737,6 +1894,7 @@ accepted_scientific_name(rosemary, 'Salvia rosmarinus').
 genus(rosemary, salvia).
 family(rosemary, lamiaceae).
 taxonomy_confidence(rosemary, high).
+taxonomy_source(rosemary, 'GBIF / Plants For A Future').
 taxonomy_source(rosemary, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1782,6 +1940,7 @@ accepted_scientific_name(sage, 'Salvia officinalis').
 genus(sage, salvia).
 family(sage, lamiaceae).
 taxonomy_confidence(sage, high).
+taxonomy_source(sage, 'GBIF / Plants For A Future').
 taxonomy_source(sage, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1865,7 +2024,17 @@ accepted_scientific_name(soybean, 'Glycine max').
 genus(soybean, glycine).
 family(soybean, fabaceae).
 taxonomy_confidence(soybean, high).
+taxonomy_source(soybean, 'GBIF / Plants For A Future').
 taxonomy_source(soybean, 'Kew POWO / USDA PLANTS / WFO cross-check').
+
+% ---------------------------------------------------------
+% SPEARMINT
+% ---------------------------------------------------------
+accepted_scientific_name(spearmint, 'Mentha spicata').
+genus(spearmint, mentha).
+family(spearmint, lamiaceae).
+taxonomy_confidence(spearmint, high).
+taxonomy_source(spearmint, 'GBIF / Plants For A Future').
 
 % ---------------------------------------------------------
 % SPELT
@@ -1927,9 +2096,11 @@ taxonomy_source(stevia, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % STRAWBERRY
 % ---------------------------------------------------------
 accepted_scientific_name(strawberry, 'Fragaria ananassa').
+accepted_scientific_name(strawberry, 'Fragaria x ananassa').
 genus(strawberry, fragaria).
 family(strawberry, rosaceae).
 taxonomy_confidence(strawberry, high).
+taxonomy_source(strawberry, 'GBIF / Plants For A Future').
 taxonomy_source(strawberry, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1957,6 +2128,7 @@ accepted_scientific_name(sunflower, 'Helianthus annuus').
 genus(sunflower, helianthus).
 family(sunflower, asteraceae).
 taxonomy_confidence(sunflower, high).
+taxonomy_source(sunflower, 'GBIF / Plants For A Future').
 taxonomy_source(sunflower, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -1975,6 +2147,7 @@ accepted_scientific_name(sweet_potato, 'Ipomoea batatas').
 genus(sweet_potato, ipomoea).
 family(sweet_potato, convolvulaceae).
 taxonomy_confidence(sweet_potato, high).
+taxonomy_source(sweet_potato, 'GBIF / Plants For A Future').
 taxonomy_source(sweet_potato, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -2036,9 +2209,12 @@ taxonomy_note(thai_basil, 'Thai basil is commonly treated as a cultivar/type of 
 % THYME
 % ---------------------------------------------------------
 accepted_scientific_name(thyme, 'Thymus vulgaris').
+alternate_scientific_name(thyme, 'Origanum thymus Kuntze').
+alternate_scientific_name(thyme, 'Thymus collinus Salisb').
 genus(thyme, thymus).
 family(thyme, lamiaceae).
 taxonomy_confidence(thyme, high).
+taxonomy_source(thyme, 'GBIF / Plants For A Future').
 taxonomy_source(thyme, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -2054,10 +2230,13 @@ taxonomy_source(tomatillo, 'Kew POWO / USDA PLANTS / WFO cross-check').
 % TOMATO
 % ---------------------------------------------------------
 accepted_scientific_name(tomato, 'Solanum lycopersicum').
+alternate_scientific_name(tomato, 'Lycopersicon cerasiforme Dunal Lycopersicon esculentum Mill').
 alternate_scientific_name(tomato, 'Lycopersicon esculentum').
+alternate_scientific_name(tomato, 'Lycopersicon humboldtii (Willd').
 genus(tomato, solanum).
 family(tomato, solanaceae).
 taxonomy_confidence(tomato, high).
+taxonomy_source(tomato, 'GBIF / Plants For A Future').
 taxonomy_source(tomato, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -2077,6 +2256,7 @@ accepted_scientific_name(turmeric, 'Curcuma longa').
 genus(turmeric, curcuma).
 family(turmeric, zingiberaceae).
 taxonomy_confidence(turmeric, high).
+taxonomy_source(turmeric, 'GBIF / Plants For A Future').
 taxonomy_source(turmeric, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -2086,6 +2266,7 @@ accepted_scientific_name(turnip, 'Brassica rapa subsp. rapa').
 genus(turnip, brassica).
 family(turnip, brassicaceae).
 taxonomy_confidence(turnip, high).
+taxonomy_source(turnip, 'GBIF / Plants For A Future').
 taxonomy_source(turnip, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -2150,6 +2331,7 @@ accepted_scientific_name(watermelon, 'Citrullus lanatus').
 genus(watermelon, citrullus).
 family(watermelon, cucurbitaceae).
 taxonomy_confidence(watermelon, high).
+taxonomy_source(watermelon, 'GBIF / Plants For A Future').
 taxonomy_source(watermelon, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
@@ -2215,6 +2397,15 @@ genus(zinnia, zinnia).
 family(zinnia, asteraceae).
 taxonomy_confidence(zinnia, high).
 taxonomy_source(zinnia, 'Kew POWO / USDA PLANTS / WFO cross-check').
+
+% ---------------------------------------------------------
+% ZUCCHINI
+% ---------------------------------------------------------
+accepted_scientific_name(zucchini, 'Cucurbita pepo').
+genus(zucchini, cucurbita).
+family(zucchini, cucurbitaceae).
+taxonomy_confidence(zucchini, high).
+taxonomy_source(zucchini, 'GBIF / Plants For A Future').
 
 
 % =========================================================

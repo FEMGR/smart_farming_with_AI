@@ -1,0 +1,73 @@
+{
+  "pest_atom": "lygus_bug",
+  "name": "Lygus bug",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Lygus bug",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-lygus-bug",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Lygus bugs overwinter in debris along field margins and roadsides. Adults become active in late May and early June and disperse into crops. Adults mate and females start laying eggs on plant stems. Eggs hatch in 1 to 3 weeks into nymphs. Nymphs feed on plant juices for 2 to 3 weeks before molting into the adult stage. There are usually three or four generations each year.",
+  "description_damage": "The lygus bug adult is about 0.25 inch in length and about half as wide. It is generally brownish with a prominent, V-shaped yellowish area near the center of the body, at the base of the wings. Eggs are bean-shaped, with the outer end blunt or squarely cut off. They are very difficult to spot. Nymphs are yellow-green at first but darken rapidly. They have four dots, often black, on the thorax, and one on the abdominal base. Antennae of the young are generally reddish. Lygus bugs cause different types of damage to different stages and different crops. They cause blackheart on celery, blasting on flower tissues, collapse of asparagus spears, decreased yields in seed production in carrot and cabbage, and damage to blossoms and pods on beans.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "yellowing",
+    "leaf_mining"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-lygus-bug/g249-3110.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-lygus-bug/g249-3110.jpg?itok=hNyIrkOJ",
+      "caption": "\"Lygus\" bug Lygus unknown Immature molting on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-lygus-bug/g281-1910.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-lygus-bug/g281-1910.jpg?itok=M1bhjifp",
+      "caption": "\"lygus\" bug Lygus unknown Egg(s)"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-lygus-bug/348-30.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-lygus-bug/348-30.jpg?itok=EI3gYoGf",
+      "caption": "\"lygus\" bug Lygus unknown Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.844272+00:00"
+}

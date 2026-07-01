@@ -874,14 +874,14 @@ def extract_biodiversity_from_pfaf(
             }
         )
 
-    if "free of insect pests" in low:
+    if "free of insect pests_ver01" in low:
         biodiversity["repels_pests"].append(
             {
                 "target": "insect_pests",
                 "mechanism": "companion_effect",
                 "source_name": "Plants For A Future",
                 "confidence": 0.70,
-                "notes": "PFAF says companion planting helps keep nearby plants free of insect pests.",
+                "notes": "PFAF says companion planting helps keep nearby plants free of insect pests_ver01.",
             }
         )
 
@@ -940,9 +940,9 @@ def extract_biodiversity_from_pfaf(
             }
         )
 
-    if "pest confuser" in low or "mask the scent" in low or "confusing pests" in low:
+    if "pest confuser" in low or "mask the scent" in low or "confusing pests_ver01" in low:
         biodiversity["pest_confuser"] = True
-        biodiversity["biodiversity_notes"].append("PFAF suggests aromatic leaves may mask plant scent and confuse pests.")
+        biodiversity["biodiversity_notes"].append("PFAF suggests aromatic leaves may mask plant scent and confuse pests_ver01.")
 
     biodiversity["repels_pests"] = dedupe_dict_list(
         biodiversity["repels_pests"],

@@ -62,12 +62,6 @@
     "other_uses_notes": null,
     "edible_uses_notes": null
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -76,6 +70,12 @@
     "pollinator_support": null,
     "pest_confuser": null,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -174,7 +174,6 @@
     "growth.soil_notes",
     "germination.propagation_methods",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

@@ -168,6 +168,10 @@ class ProjectPaths:
         return self.plant_data_bank_config / "plants_seed.json"
 
     @property
+    def plants_seed_incremental_runtime(self) -> Path:
+        return self.plant_data_bank_config / "plants_seed_incremental_runtime.json"
+
+    @property
     def missing_plant_seed(self) -> Path:
         return self.plant_data_bank_config / "missing_plant_seed.json"
 
@@ -200,16 +204,32 @@ class ProjectPaths:
         return self.data_bank / "indexes"
 
     @property
-    def data_bank_exports(self) -> Path:
-        return self.data_bank / "exports"
-
-    @property
-    def generated_prolog_export(self) -> Path:
-        return self.data_bank_exports / "prolog" / "generated_plant_data_bank_facts.pl"
-
-    @property
     def data_bank_scripts_dir(self) -> Path:
         return self.plant_data_bank_scripts / "scripts"
+
+    @property
+    def data_bank_manual_sources(self) -> Path:
+        return self.data_bank / "manual_sources"
+
+    @property
+    def disease_sources(self) -> Path:
+        return self.data_bank_manual_sources / "disease_sources.json"
+
+    @property
+    def disease_detail_sources(self) -> Path:
+        return self.data_bank_manual_sources / "disease_detail_sources.json"
+
+    @property
+    def disease_bank(self) -> Path:
+        return self.data_bank_normalized / "disease_bank.json"
+
+    @property
+    def pest_sources(self) -> Path:
+        return self.data_bank_manual_sources / "pest_sources.json"
+
+    @property
+    def pest_bank(self) -> Path:
+        return self.data_bank_normalized / "pest_bank.json.bak"
 
     @property
     def root_scripts(self) -> Path:
@@ -228,11 +248,10 @@ class ProjectPaths:
             self.data_bank_normalized,
             self.normalized_plants,
             self.data_bank_indexes,
-            self.data_bank_exports,
-            self.generated_prolog_export.parent,
             self.backend_cache,
             self.species_snapshots,
             self.backend_temp,
+            self.data_bank_manual_sources,
         ]
 
         for directory in dirs:
@@ -254,10 +273,10 @@ class ProjectPaths:
         print(f"Logic companion Prolog    : {self.logic_companion}")
         print(f"Plant data bank scripts   : {self.plant_data_bank_scripts}")
         print(f"Plants seed               : {self.plants_seed}")
+        print(f"Incremental runtime seed  : {self.plants_seed_incremental_runtime}")
         print(f"Missing plant seed        : {self.missing_plant_seed}")
         print(f"Perenual enriched species : {self.perenual_enriched_species}")
         print(f"Normalized plants         : {self.normalized_plants}")
-        print(f"Generated Prolog export   : {self.generated_prolog_export}")
         print("===================================")
         print("")
 

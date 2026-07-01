@@ -1,0 +1,88 @@
+{
+  "pest_atom": "european_earwig",
+  "name": "European earwig",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-European earwig",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-european-earwig",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Earwigs overwinter just below the soil surface as both eggs and adults. In spring, females lay 20 to 50 smooth white to cream-color eggs in the soil. The young progress through partial metamorphosis to adults in 4 to 5 nymphal stages by late summer. In fall, females may lay more eggs. Earwigs are active at night. During the day, they hide in moist, shady places such as compost piles or beneath stones, boards, and debris. They sometimes can be found in homes, particularly in summer, but they do no damage to house or contents. They rarely fly but can move rapidly, or can be moved by lumber, cars, luggage, or other means. They are attracted to lights.",
+  "description_damage": "Earwigs are elongate, flattened, reddish brown insects about 0.75 inch in length. They are identified easily by the forcepslike pincers on the end of the abdomen. They have chewing mouthparts and may be winged or wingless. Young earwigs (nymphs) are similar in appearance but are white to olive green and lack wings. They are harmless to humans or animals, though they may give a slight pinch with their forceps. They can emit a foul-smelling liquid if alarmed. Earwigs feed primarily on decaying organic matter and are quite beneficial in that they also consume other small insects. However, they also like to chew small holes in the leaves and tender shoots of many garden flowers such as marigolds, hollyhocks, dahlias, zinnias, asters, and gladiolus. In vegetable gardens, they can be a problem on seedlings of lettuce, celery, cole crops, beets, corn, beans, carrots, and others.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "feeding_holes"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/435-45.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/435-45.jpg?itok=C0CJlK5L",
+      "caption": "European earwig Forficula auricularia Linnaeus Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/435-376.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/435-376.jpg?itok=Z0LnwAsk",
+      "caption": "European earwig Forficula auricularia Linnaeus Egg(s) immature female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/g111-206.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/g111-206.jpg?itok=j5FLVoM_",
+      "caption": "European earwig Forficula auricularia Linnaeus Female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/g313-04.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/g313-04.jpg?itok=P3MO5dft",
+      "caption": "European earwig Forficula auricularia Linnaeus Showing damage on leaves"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/earwigsanddamageonlettucethudson5151.jpeg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/earwigsanddamageonlettucethudson5151.jpeg?itok=0zZWbMuW",
+      "caption": "Earwigs feeding on lettuce at night"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.376551+00:00"
+}

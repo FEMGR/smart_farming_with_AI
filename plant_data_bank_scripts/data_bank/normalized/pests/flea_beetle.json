@@ -1,0 +1,70 @@
+{
+  "pest_atom": "flea_beetle",
+  "name": "Flea beetle",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Flea beetle",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-flea-beetle",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": null,
+      "scientific_name": "Epitrix",
+      "scientific_atom": "epitrix"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Phyllotreta cruciferae",
+      "scientific_atom": "phyllotreta_cruciferae"
+    }
+  ],
+  "scientific_names": [
+    "Epitrix",
+    "Phyllotreta cruciferae"
+  ],
+  "primary_scientific_name": "Epitrix",
+  "host_plants": [],
+  "includes_text": "Epitrix spp. Phyllotreta cruciferae",
+  "biology_life_history": "Most flea beetle species have similar life cycles. Adults overwinter in trash around field margins. They become active in late March through May. Flea beetles lay their very small eggs in May in the soil around the plant, on the leaves, or in cavities hollowed out in stems. The larvae feed on the foliage, mine the leaves, or attack the roots, depending on the species, usually from June to mid-July, when pupation in the soil occurs. Adults emerge from July through early September and feed a short time before overwintering in trash around field margins. Depending on the species, there are one or two generations each year.",
+  "description_damage": "Flea beetle adults are metallic greenish brown to black in color and from 0.06 to 0.12 inch in length. They derive their name from their well-developed hind legs; when disturbed, they jump like fleas. Larvae live are slender, whitish, and about 0.25 inch in length when mature and live in the soil. Adult beetles chew small holes in leaves, giving them a sieve-like appearance. The cotyledons of emerging seedlings are especially susceptible to damage. Larvae feed on underground parts of the plant. High populations of flea beetles feeding on seedling plants can result in stand loss. Foliar damage to mature plants is not considered to be damaging economically. Flea beetles contribute to the spread of various plant diseases.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "feeding_damage",
+    "feeding_holes",
+    "disease_vector"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "includes"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-flea-beetle/329-300.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-flea-beetle/329-300.jpg?itok=t_IOaWWa",
+      "caption": "Cabbage flea beetle Phyllotreta cruciferae Goetze Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.438795+00:00"
+}

@@ -1,0 +1,26 @@
+# PNW pest Prolog update preview
+Total missing facts: 0
+
+No files were modified.
+Run again with --apply to append these facts.
+
+================================================================================
+logic_companion_planting/data/insect_fact.pl
+Missing facts: 0
+================================================================================
+
+(none)
+
+================================================================================
+logic_companion_planting/base/insect_group.pl
+Missing facts: 0
+================================================================================
+
+(none)
+
+================================================================================
+logic_companion_planting/data/sources_fact.pl
+Missing facts: 0
+================================================================================
+
+(none)

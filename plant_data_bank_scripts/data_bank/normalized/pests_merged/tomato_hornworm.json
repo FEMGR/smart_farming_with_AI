@@ -1,0 +1,109 @@
+{
+  "pest_atom": "tomato_hornworm",
+  "name": "Tomato hornworm",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "tomato"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Tomato",
+      "pest_name_on_page": "Tomato hornworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-tomato-hornworm"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-tomato-hornworm"
+  ],
+  "page_titles": [
+    "Tomato-Tomato hornworm"
+  ],
+  "description_damage": "The tomato hornworm larvae is over 3 inches long when full grown, green, with eight chevron-shaped white stripes and a distinctive large \"horn\" on the posterior end of its body. Pupae are brown or reddish brown and up to 2.25 inches long. The adult is a large mouse-brown moth with narrow wings and a wingspan of up to 5 inches. Eggs are light green or yellow turning white at maturity. Hornworms feed on blossoms, leaves, and fruit. At high populations, they can defoliate plants extensively and scar the fruit. They are rarely a problem in the warmer interior climates unless natural enemies are disrupted.",
+  "biology_life_history": "In late spring, the adult moth lays eggs on the underside of tomato leaves. The eggs hatch in 6 to 8 days. The larvae pass through five or six stages before reaching full growth in 3 to 4 weeks. The full grown larvae burrow into the soil, where they transform into the pupal stage. The hornworm remains in the pupal stage in the soil all winter until the soil begins to warm in the spring. The moths emerge from the soil in the spring and mate. The females begin to deposit eggs on the tomato plants for the next brood of hornworms.",
+  "monitoring": "Treat hornworms only if they are causing extensive foliage damage, or if they are feeding on fruits. Look for the presence of hornworms on the plant as you sample to determine if damage is the result of hornworm or armyworm activity. Hornworm feeding produces larger, deeper cavities than those caused by beet armyworm.",
+  "management": {
+    "biological": "There are several important, naturally occurring parasitoids that help control hornworms in tomatoes. Conserving these parasitoids by not treating with disruptive pesticides, particularly early in the year before fruit begin to mature, is the preferred management approach.",
+    "chemical_commercial": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin/Avermectin (Athena) at 0.05 to 0.12 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per season. bifenthrin/zeta-cypermethrin (Hero EW) at 0.04 to 0.1 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.42 lb ai/A per season. Limit 4 treatments.",
+      "alpha-cypermethrin (Fastac EC) at 0.014 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only. Bacillus",
+      "benzoate (Proclaim) at 0.008 to 0.015 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.045 lb ai/A per season.",
+      "beta-cyfluthrin (Baythroid XL) at 0.013 to 0.022 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.132 lb ai/A per season.",
+      "beta-cyfluthrin or 0.24 lb ai/A imidacloprid per season.",
+      "beta-cyfluthrin/imidacloprid (Leverage 360) at 0.089 to 0.096 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A",
+      "chlorantraniliprole (Coragen) at 0.026 to 0.098 lb ai/A foliar; 0.045 to 0.098 lb ai/A drip chemigation. PHI 1 day. REI 4 hr. Do not exceed 0.2 lb ai/A per season. Retreatment interval 5 days for foliar and 10 days for chemigation. chlorantraniliprole/lambda-cyhalothrin (Voliam Xpress) at 0.049 to 0.088 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.36 lb. ai of",
+      "chlorfenapyr (Pylon) at 0.1 to 0.2 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.6 lb ai/A per season. Greenhouse only.",
+      "cyclaniliprole (Harvanta 50SL) at 0.036 to 0.054 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.16 lb ai/A per year.",
+      "cyfluthrin (Tombstone) at 0.025 to 0.044 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.263 lb ai/A per season. cyfluthrin/imidacloprid (Leverage 360) at 0.059 to 0.064 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A cyfluthrin or 0.24 lb ai/A imidacloprid per year.",
+      "deltamethrin (Delta Gold) at 0.012 to 0.028 lb ai/A. PHI 1 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.168 lb ai/A per season. emamectin",
+      "early-year, or 0.12 to 0.25 lb ai/A",
+      "esfenvalerate (Asana XL) at 0.015 to 0.03 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.5 lb ai/A per season. Do not graze.",
+      "fenpropathrin (Danitol 2.4EC) at 0.2 lb ai/A. PHI 3 days. REI 24 hr. Retreatment interval 7 days. Do not exceed 0.8 lb ai/A per season.",
+      "gamma-cyhalothrin (Declare) at 0.008 to 0.015 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.18 lb ai/A per season.",
+      "indoxacarb (Avaunt) at 0.045 to 0.065 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 5 days. An adjuvant improves control. Do not exceed 0.26 lb ai/A per season. Insect feeding stops soon after application, but 3 to 4 days are required for maximum effect.",
+      "lambda-cyhalothrin (Warrior II) at 0.015 to 0.025 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.36 lb ai/A per season.",
+      "lambda-cyhalothrin or 0.172 lb ai/A of thiamethoxam per season.",
+      "lambda-cyhalothrin or 0.2 lb. ai of chlorantraniliprole per acre per growing season. Not registered in Oregon. chlorantraniliprole/thiamethoxam (Voliam Flexi) at 0.1 to 0.175 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season.",
+      "lambda-cyhalothrin/thiamethoxam (Endigo ZC) at 0.064 to 0.072 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.36 lb ai/A of",
+      "late-season). PHI 1 day. REI 4 hr. Do not exceed 1 lb ai/A per season.",
+      "late-year. PHI 7 days. REI 4 hr. Do not exceed 1.88 lb ai/A per calendar year. Oregon and Washington only.",
+      "methomyl (Lannate SP) at 0.45 to 0.9 lb ai/A. PHI 1 day. REI 48 hr. Do not exceed 6.3 lb ai/A per season.",
+      "methoxyfenozide (Intrepid 2F) at 0.06 to 0.12 lb ai/A (early-season) or 0.12 to 0.25 lb ai/A (mid- to",
+      "mid- to",
+      "novaluron (Rimon 0.83EC) at 0.058 to 0.078 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.23 lb ai/A per season.",
+      "permethrin (Loveland Permethrin) at 0.05 to 0.2 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.6 lb ai/A per season.",
+      "spinetoram (Radiant SC) at 0.039 to 0.078 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 4 days. Do not exceed 0.266 lb ai/A per season. Limit 6 treatment per season. Do not apply to seedling fruiting vegetables grown for transplant within a greenhouse, shade house, or field plot.",
+      "spinosad (Success, Entrust SC) at 0.047 to 0.094 lb ai/A. PHI 1 day. REI 4 hr. Do not exceed 0.45 lb ai/A per crop. Entrust SC is",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "tebufenozide (Confirm 2F) at 0.09 to 0.12 lb ai/A",
+      "thuringiensis (Javelin) at 0.12 to 1.5 lb/A. PHI 0 days. REI 4 hr. Acts slowly; may need multiple applications. Add an appropriate",
+      "zeta-cypermethrin (Mustang) at 0.028 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A per season. These products contain commonly used active ingredients for control of tomato hornworm in tomato. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Bacillus thuringiensis var.",
+      "OMRI-listed for organic use. bifenthrin (usually as a mix with",
+      "OMRI-listed for organic use. permethrin plant essential",
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "kaolin-Applied as a spray to foliage, it acts as a repellent to some insect pests. Some formulations are",
+      "kurstaki ( Btk ) - Some formulations are",
+      "oils (rosemary, etc.)-Some formulations are",
+      "pyrethrins-Some formulations are",
+      "soap-Some formulations",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin). carbaryl cyfluthrin esfenvalerate insecticidal"
+    ],
+    "cultural": "Home gardeners: Hand-pick hornworm larvae."
+  },
+  "damage_tags": [
+    "fruit_damage",
+    "leaf_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:37:57.764700+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.571343+00:00"
+}

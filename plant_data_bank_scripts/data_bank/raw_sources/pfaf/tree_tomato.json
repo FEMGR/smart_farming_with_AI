@@ -1,0 +1,242 @@
+{
+  "plant": {
+    "common_name": "tree tomato",
+    "confidence": 0.7,
+    "created_at": "2026-06-18T06:20:42.571379+00:00",
+    "genus": "Cyphomandra",
+    "plant_atom": "tree_tomato",
+    "reason": "scientific_name_not_found_in_prolog",
+    "scientific_name": "Cyphomandra betacea",
+    "source_file": "/home/graubo/PyCharmMiscProject/smart-farming-system/backend/cache/species_snapshots/2292.json",
+    "source_name": "perenual_snapshot",
+    "status": "extraction_attempted"
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Cyphomandra+betacea",
+      "query": "Cyphomandra betacea",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-19T03:27:04.064716+00:00",
+      "response_hash": "7bb2abcd0635ab9ab15117d1ae21e7ee13edc1649db335898451fa6c484a23c4",
+      "parsed": {
+        "title": "Cyphomandra betacea Tree Tomato PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Cyphomandra betacea - (Cav.)Sendtn.",
+          "common_name": "Tree Tomato",
+          "family": "Solanaceae",
+          "usda_hardiness": "8-11",
+          "known_hazards": "The unripe fruit is slightly toxic[200].",
+          "habitats": "Dry soils at forest margins[200]. Open forests at medium to high altitudes[260].",
+          "range": "S. America - Peru.",
+          "summary": null,
+          "physical_characteristics": "Cyphomandra betacea is an evergreen Tree growing to 5 m (16ft) by 4 m (13ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 9 and is frost tender. It is in leaf all year. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers moist soil.",
+          "synonyms": "C. crassicaulis. (Ortega.)Kuntze.",
+          "plant_habitats": "Woodland Garden Sunny Edge; South Wall. By. West Wall. By.",
+          "edible_uses": "Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[3, 46, 61]. The flavour can vary considerably from tree to tree, the best forms are juicy and sub-acid, they are eaten out of hand, added to salads, used in preserves, jams, jellies etc[183, 196]. The fruit contains about 150 IU vitamin A per 100g, 25mg vitamin C, it is rich in vitamin E and iron but low in carbohydrate[196]. Fruits are 4 - 10cm long and 3 - 5cm wide[196].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Vitamin C None known",
+          "other_uses": "None known",
+          "special_uses": "Scented Plants",
+          "cultivation": "Succeeds in a sunny position in any well-drained soil[196, 200]. Prefers a light fertile soil[196]. Dislikes drought[196]. Plants are very prone to wind damage[196]. They fruit best with a temperature range of 16 - 22°c in the growing season[196]. The tree tomato is cultivated for its edible fruit in sub-tropical and tropical zones[46, 61], there are some named varieties[183]. It is not winter hardy in Britain, though it can be pot grown outdoors in the summer and brought into a warmer place for the winter[3]. It requires a minimum winter temperature of 10°c for best fruit production but it is hardy to about -2°c[3, 196]. Trees produce about 20 kg of fruit a year, yields of 15 - 17 tonnes per hectare are achieved in New Zealand[196]. Plants are probably insensitive to day-length[196]. Very fast growing, it starts to fruit within two years from seed[200] and reaches peak production in 3 - 4 years[196]. Trees are, however, short-lived - the life of a commercial plantation is about 8 years[196]. This species does not hybridize easily with other members of the genus[196]. Plants have a shallow spreading root system and resent surface hoeing, they are best given a good mulch[196]. Plants usually ripe their fruit over a period of time, though pruning methods can be used to produce a peak time of fruiting[196]. The leaves have a pungent smell[196]. Plants are subject to attacks by red spider mites.",
+          "propagation": "Seed - sow spring in a greenhouse. The seed usually germinates within 4 weeks at 15°c[K], within 2 weeks at 25°c[164]. When they are large enough to handle, prick the seedlings out into individual pots and grow them on in the greenhouse for at least their first winter. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Cuttings of greenwood in a frame[200].",
+          "other_names": null,
+          "native_range": "SOUTHERN AMERICA: Bolivia (Tarija), Argentina (Jujuy, Salta, Santiago del Estero, Tucumán)",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Tree Tomato",
+            "scientific_name": "Cyphomandra betacea",
+            "genus": "Cyphomandra",
+            "family": "Solanaceae",
+            "synonyms": [],
+            "common_names": [
+              "Tree Tomato"
+            ]
+          },
+          "pfaf_display_latin_name": "Cyphomandra betacea - (Cav.)Sendtn.",
+          "pfaf_common_name": "Tree Tomato",
+          "pfaf_family": "Solanaceae",
+          "pfaf_synonyms": "C. crassicaulis. (Ortega.)Kuntze.",
+          "pfaf_other_names": null,
+          "edible_parts": [
+            "fruit"
+          ],
+          "use_categories": [
+            "fruit_crop",
+            "medicinal_plant"
+          ],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "full_sun"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy",
+              "well_drained"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "Succeeds in a sunny position in any well-drained soil[196, 200]. Prefers a light fertile soil[196]. Dislikes drought[196]. Plants are very prone to wind damage[196]. They fruit best with a temperature range of 16 - 22°c in the growing season[196]. The tree tomato is cultivated for its edible fruit in sub-tropical and tropical zones[46, 61], there are some named varieties[183]. It is not winter hardy in Britain, though it can be pot grown outdoors in the summer and brought into a warmer place for the winter[3]. It requires a minimum winter temperature of 10°c for best fruit production but it is hardy to about -2°c[3, 196]. Trees produce about 20 kg of fruit a year, yields of 15 - 17 tonnes per hectare are achieved in New Zealand[196]. Plants are probably insensitive to day-length[196]. Very fast growing, it starts to fruit within two years from seed[200] and reaches peak production in 3 - 4 years[196]. Trees are, however, short-lived - the life of a commercial plantation is about 8 years[196]. This species does not hybridize easily with other members of the genus[196]. Plants have a shallow spreading root system and resent surface hoeing, they are best given a good mulch[196]. Plants usually ripe their fruit over a period of time, though pruning methods can be used to produce a peak time of fruiting[196]. The leaves have a pungent smell[196]. Plants are subject to attacks by red spider mites.",
+            "light_notes": "Prefers a sunny position and does not grow well in shade.",
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "cutting",
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow spring in a greenhouse. The seed usually germinates within 4 weeks at 15°c[K], within 2 weeks at 25°c[164]. When they are large enough to handle, prick the seedlings out into individual pots and grow them on in the greenhouse for at least their first winter. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Cuttings of greenwood in a frame[200].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": "Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[3, 46, 61]. The flavour can vary considerably from tree to tree, the best forms are juicy and sub-acid, they are eaten out of hand, added to salads, used in preserves, jams, jellies etc[183, 196]. The fruit contains about 150 IU vitamin A per 100g, 25mg vitamin C, it is rich in vitamin E and iron but low in carbohydrate[196]. Fruits are 4 - 10cm long and 3 - 5cm wide[196].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Vitamin C None known",
+          "other_uses_notes": "None known",
+          "cultivation_notes": "Succeeds in a sunny position in any well-drained soil[196, 200]. Prefers a light fertile soil[196]. Dislikes drought[196]. Plants are very prone to wind damage[196]. They fruit best with a temperature range of 16 - 22°c in the growing season[196]. The tree tomato is cultivated for its edible fruit in sub-tropical and tropical zones[46, 61], there are some named varieties[183]. It is not winter hardy in Britain, though it can be pot grown outdoors in the summer and brought into a warmer place for the winter[3]. It requires a minimum winter temperature of 10°c for best fruit production but it is hardy to about -2°c[3, 196]. Trees produce about 20 kg of fruit a year, yields of 15 - 17 tonnes per hectare are achieved in New Zealand[196]. Plants are probably insensitive to day-length[196]. Very fast growing, it starts to fruit within two years from seed[200] and reaches peak production in 3 - 4 years[196]. Trees are, however, short-lived - the life of a commercial plantation is about 8 years[196]. This species does not hybridize easily with other members of the genus[196]. Plants have a shallow spreading root system and resent surface hoeing, they are best given a good mulch[196]. Plants usually ripe their fruit over a period of time, though pruning methods can be used to produce a peak time of fruiting[196]. The leaves have a pungent smell[196]. Plants are subject to attacks by red spider mites.",
+          "known_hazards": "The unripe fruit is slightly toxic[200].",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [
+              {
+                "insect_group": "pollinators",
+                "examples": [
+                  "insects"
+                ],
+                "source_name": "Plants For A Future",
+                "confidence": 0.6,
+                "notes": "PFAF states flowers are pollinated by insects."
+              }
+            ],
+            "pest_confuser": false,
+            "pollinator_support": true,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Cyphomandra betacea Tree Tomato PFAF Plant Database Follow Us: Cyphomandra betacea - (Cav.)Sendtn. Common Name Tree Tomato Family Solanaceae USDA hardiness 8-11 Known Hazards The unripe fruit is slightly toxic[200]. Habitats Dry soils at forest margins[200]. Open forests at medium to high altitudes[260]. Range S. America - Peru. Edibility Rating (3 of 5) Other Uses (0 of 5) Weed Potential No Medicinal Rating (0 of 5) Care (info) http://commons.wikimedia.org/wiki/File:Owoce_Tamarillo.jpg http://commons.wikimedia.org/wiki/User:Cillas Translate this page: Summary Physical Characteristics Cyphomandra betacea is an evergreen Tree growing to 5 m (16ft) by 4 m (13ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 9 and is frost tender. It is in leaf all year. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers moist soil. UK Hardiness Map US Hardiness Map Synonyms C. crassicaulis. (Ortega.)Kuntze. Plant Habitats Woodland Garden Sunny Edge; South Wall. By. West Wall. By. Edible Uses Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[3, 46, 61]. The flavour can vary considerably from tree to tree, the best forms are juicy and sub-acid, they are eaten out of hand, added to salads, used in preserves, jams, jellies etc[183, 196]. The fruit contains about 150 IU vitamin A per 100g, 25mg vitamin C, it is rich in vitamin E and iron but low in carbohydrate[196]. Fruits are 4 - 10cm long and 3 - 5cm wide[196]. References More on Edible Uses Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Vitamin C None known References More on Medicinal Uses The Bookshop: Edible Plant Books Our Latest books on Perennial Plants For Food Forests and Permaculture Gardens in paperback or digital formats. Edible Tropical Plants Food Forest Plants for Hotter Conditions: 250+ Plants For Tropical Food Forests & Permaculture Gardens. More Edible Temperate Plants Plants for Your Food Forest: 500 Plants for Temperate Food Forests & Permaculture Gardens. More More Books PFAF have eight books available in paperback and digital formats. Browse the shop for more information. Shop Now Other Uses None known Special Uses Scented Plants References More on Other Uses Cultivation details Succeeds in a sunny position in any well-drained soil[196, 200]. Prefers a light fertile soil[196]. Dislikes drought[196]. Plants are very prone to wind damage[196]. They fruit best with a temperature range of 16 - 22°c in the growing season[196]. The tree tomato is cultivated for its edible fruit in sub-tropical and tropical zones[46, 61], there are some named varieties[183]. It is n"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tCyphomandra betacea Tree Tomato PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Cyphomandra betacea is an evergreen Tree growing to 5 m (16ft) by 4 m (13ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 9 and is frost tender. It is in leaf all year. The species is hermaphrodite (has both male and female organs) and is pollinated by Insects. The plant is self-fertile.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and prefers  well-drained soil. Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils. It cannot grow in the shade. It prefers  moist soil.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Cyphomandra+betacea\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BZYEQ3lwaG9tYW5kcmEgYmV0YWNlYSBpcyBhbiBldmVyZ3JlZW4gVHJlZSBncm93aW5nIHRvIDUgbSAoMTZmdCkgYnkgNCBtICgxM2Z0KSBhdCBhIGZhc3QgcmF0ZS4gU2VlIGFib3ZlIGZvciBVU0RBIGhhcmRpbmVzcy4gSXQgaXMgaGFyZHkgdG8gVUsgem9uZSA5IGFuZCBpcyBmcm9zdCB0ZW5kZXIuIEl0IGlzIGluIGxlYWYgYWxsIHllYXIuIFRoZSBzcGVjaWVzIGlzIGhlcm1hcGhyb2RpdGUgKGhhcyBib3RoIG1hbGUgYW5kIGZlbWFsZSBvcmdhbnMpIGFuZCBpcyBwb2xsaW5hdGVkIGJ5IEluc2VjdHMuIFRoZSBwbGFudCBpcyBzZWxmLWZlcnRpbGUuICBTdWl0YWJsZSBmb3I6IGxpZ2h0IChzYW5keSksIG1lZGl1bSAobG9hbXkpIGFuZCBoZWF2eSAoY2xheSkgc29pbHMgYW5kIHByZWZlcnMgIHdlbGwtZHJhaW5lZCBzb2lsLiBTdWl0YWJsZSBwSDogbWlsZGx5IGFjaWQsIG5ldXRyYWwgYW5kIGJhc2ljIChtaWxkbHkgYWxrYWxpbmUpIHNvaWxzLiBJdCBjYW5ub3QgZ3JvdyBpbiB0aGUgc2hhZGUuIEl0IHByZWZlcnMgIG1vaXN0IHNvaWwuZAIDD2QWAgIDD2QWZAIBDw8WAh4EVGV4dAUjQ3lwaG9tYW5kcmEgYmV0YWNlYSAtIChDYXYuKVNlbmR0bi5kZAIDDw8WAh8DBQtUcmVlIFRvbWF0b2RkAgUPDxYCHwMFClNvbGFuYWNlYWVkZAIHDw8WAh8DBQQ4LTExZGQCCQ8PFgIeB1Zpc2libGVnZGQCCw8PFgIfAwUoVGhlIHVucmlwZSBmcnVpdCBpcyBzbGlnaHRseSB0b3hpY1syMDBdLmRkAg0PDxYCHwMFUERyeSBzb2lscyBhdCBmb3Jlc3QgbWFyZ2luc1syMDBdLiBPcGVuIGZvcmVzdHMgYXQgbWVkaXVtIHRvIGhpZ2ggYWx0aXR1ZGVzWzI2MF0uZGQCDw8PFgIfAwUSUy4gQW1lcmljYSAtIFBlcnUuZGQCEQ8PFgIeCEltYWdlVXJsBStpbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZWFyY2hWMWJfMTAuZ2lmZGQCEw8PFgIfBQUraW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwLmdpZmRkAhUPDxYCHwUFK2ltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFYxYl8xMC5naWZkZAIXDw8WAh8FBS9pbWFnZXMvUEZBRl9zZWFyY2hWMWIvUEZBRl9zZWFyY2hWMWJfMTBHcmV5LmdpZmRkAhkPDxYCHwUFL2ltYWdlcy9QRkFGX3NlYXJjaFYxYi9QRkFGX3NlYXJjaFYxYl8xMEdyZXkuZ2lmZGQCGw8PFgIfAwUaJm5ic3A7Jm5ic3A7Jm5ic3A7KDMgb2YgNSkWAh4Fc3R5bGUFD"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=tree+tomato",
+      "query": "Cyphomandra betacea",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-19T03:27:04.562630+00:00",
+      "response_hash": "2749138473c8bf20f627ab78e6f6c7d34551171830bbb0b943c9dc3ce3f5599a",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "tree tomato",
+            "scientific_name": "Cyphomandra betacea",
+            "genus": "Cyphomandra",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=tree+tomato\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants f"
+    }
+  ]
+}

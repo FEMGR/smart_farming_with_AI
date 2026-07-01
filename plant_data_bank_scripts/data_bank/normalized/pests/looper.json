@@ -1,0 +1,138 @@
+{
+  "pest_atom": "looper",
+  "name": "Looper",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Looper",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-looper",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": null,
+      "scientific_name": "Autographa californica",
+      "scientific_atom": "autographa_californica"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Trichoplusia ni",
+      "scientific_atom": "trichoplusia_ni"
+    }
+  ],
+  "scientific_names": [
+    "Autographa californica",
+    "Trichoplusia ni"
+  ],
+  "primary_scientific_name": "Autographa californica",
+  "host_plants": [],
+  "includes_text": "Alfalfa looper ( Autographa californica ) Cabbage looper ( Trichoplusia ni )",
+  "biology_life_history": "",
+  "description_damage": "Alfalfa looper adults are brownish moths with distinctive silvery figures on the front wings. Eggs are ridged and dome-shaped and usually laid singly on the undersurface of leaves. Loopers are smooth-skinned with only a few long bristles down the back. They are green, usually with a narrow white stripe along each side and several narrow lines down the back. They may grow up to 1.5 inches in length. Alfalfa loopers tend to have more dark markings than cabbage loopers. Mature larvae spin silken cocoons and pupate, usually attached to leaves. Looper caterpillars can be distinguished from most other common caterpillars by their distinctive looping movement, in which they arch the middle portion of their body to bring the hind legs forward to meet the front legs. Cabbage looper larvae are pale green and have a narrow white stripe along each side and several down the back. They can be up to 1.5 inches in length. Mature larvae spin silken cocoons and pupate, usually attached to leaves. Adults are brown moths with distinctive silvery figures on the front wings. Loopers can be distinguished from other caterpillars by their distinctive looping movement, in which they arch the middle of their bodies so their front legs meet their back legs. Looper larvae feed on leaves, causing ragged-edge holes in the leaf and on the leaf margins. The major damage caused by larvae and pupae is contamination of the heads and severe defoliation. Alfalfa loopers tend to do less physical damage to plants, but are a serious source of contamination. The major damage caused by larvae and pupae is contamination of the heads of cole crops and severe defoliation of alfalfa, peas, sugar beets, beans, mint, and spinach.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "feeding_holes",
+    "defoliation"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "includes"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/g251-119.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/g251-119.jpg?itok=BM6Wij8U",
+      "caption": "Alfalfa looper Autographa californica Speyer Showing damage on leaves"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/78-86.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/78-86.jpg?itok=nt3Lr_BD",
+      "caption": "Cabbage looper Trichoplusia ni Hubner Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/196-188.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/196-188.jpg?itok=bHh4vVXb",
+      "caption": "Alfalfa looper Autographa californica Speyer Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/g304-178.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/g304-178.jpg?itok=FkHOEXIH",
+      "caption": "Alfalfa looper Autographa californica Speyer Parasitized immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/g239-364.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/g239-364.jpg?itok=INFioyBu",
+      "caption": "Cabbage looper Trichoplusia ni Hubner Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/g239-214.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/g239-214.jpg?itok=o9O7naBZ",
+      "caption": "Cabbage looper Trichoplusia ni Hubner Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/g44-340.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/g44-340.jpg?itok=f6KsQBA8",
+      "caption": "Alfalfa looper Autographa californica Speyer Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-looper/g245-84.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-looper/g245-84.jpg?itok=iY5meTZR",
+      "caption": "Cabbage looper Trichoplusia ni Hubner Showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.784286+00:00"
+}
