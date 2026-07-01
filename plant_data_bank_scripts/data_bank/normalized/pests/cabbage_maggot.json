@@ -1,0 +1,84 @@
+{
+  "pest_atom": "cabbage_maggot",
+  "name": "Cabbage maggot",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Cabbage maggot",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-cabbage-maggot",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Cabbage maggots overwinter as pupae in the soil or in the trash. Adults emerge in the spring, mate, and females lay eggs at the base of host plants or in cracks in the soil near the plant. The eggs hatch in 4 to 10 days into tiny maggots which immediately work down along the stem. They mature in about 3 weeks, leave the stems, and pupate in the soil near the soil surface. Flies emerge in about 2 weeks and lay eggs for another generation. These larvae feed in stems or roots, mature, and pupate to form the overwintering stage.",
+  "description_damage": "Larvae are small, legless white maggots usually less than about 0.31 inch when fully grown. Their head end is pointed, and the rear is blunt with a dozen short, pointed, fleshy processes arranged in a circle around two brown, buttonlike spiracles (or openings for breathing). They are found feeding on feeder roots or boring into the taproot. Adults are dark gray flies about half the size of the common housefly. They lay their eggs in cracks in the soil near plant stems, and hatching larvae burrow beneath the soil surface to invade the roots. After feeding 3 to 5 weeks, larvae pupate in roots or surrounding soil. Adults may emerge from pupae within 2 to 3 weeks, or the pest may overwinter as pupae when conditions are unfavorable for development. There are at least two generations in cool, moist climates along the coast. Cabbage maggots damage and destroy root systems of all cole crops, riddling roots with tunnels when infestations are heavy. Tunnels provide entry for pathogens that cause blackleg and bacterial soft rot. Youngest plants are most susceptible. Healthy plants attacked after they are well established usually can tolerate moderate infestations. Cauliflower and Brussels sprouts may be more susceptible than hybrid cultivars of broccoli, and crops planted in winter and spring suffer more damage than summer planted crops.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "stem_damage",
+    "root_damage",
+    "feeding_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cabbage-maggot/324-10.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cabbage-maggot/324-10.jpg?itok=kiJ5-0wQ",
+      "caption": "Cabbage maggot Delia radicum Linnaeus Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cabbage-maggot/g250-350.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cabbage-maggot/g250-350.jpg?itok=6baUewQn",
+      "caption": "Cabbage maggot Delia radicum Linnaeus Showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cabbage-maggot/g229-180.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cabbage-maggot/g229-180.jpg?itok=bq7_NZ1M",
+      "caption": "Cabbage maggot Delia radicum Linnaeus Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cabbage-maggot/231-190.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cabbage-maggot/231-190.jpg?itok=2t4sZnX4",
+      "caption": "Cabbage maggot Delia radicum Linnaeus Molting"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:52.912093+00:00"
+}

@@ -83,12 +83,6 @@
     "other_uses_notes": "Blotting paper Dye Fibre Fuel Green manure Herbicide Kindling Microscope Oil Paper Landscape Uses: Border, Container, Foundation, Massing, Seashore, Specimen. An edible semi-drying oil is obtained from the seed. Some varieties contain up to 45% oil[61]. The oil is also used, often mixed with a drying oil such as linseed (Linum usitatissimum) to make soap, candles, varnishes, paint etc, as well as for lighting. The oil is said to be unrivalled as a lubricant[4, 21, 34, 46, 100, 269]. A blotting paper is made from the seed receptacles[2, 4, 101, 117]. A high quality writing paper is made from the inner stalk[4, 14, 100, 101]. The pith of the stems is one of the lightest substances known, having a specific gravity of 0.028[4]. It has a wide range of applications, being used for purposes such as making life-saving appliances and slides for microscopes[4, 46, 61]. The dried stems make an excellent fuel, the ash is rich in potassium[4]. Both the dried stems and the empty seed receptacles are an excellent kindling[4]. A fibre from the stem is used to make paper[4] and a fine quality cloth[1, 94, 101]. A yellow dye is obtained from the flowers[4, 14, 94, 95]. A purple-black dye is obtained from the seed of certain varieties that were grown by the Hopi Indians of S.W. North America[117, 169]. Sunflowers can be grown as a spring-sown green manure, they produce a good bulk of material[87]. Root secretions from the plant can inhibit the growth of nearby plants[201]. A good bee plant, providing large quantities of nectar[18, 34, 244]. The flowers attract beneficial insects such as lacewings and parasitic wasps[238]. These prey on various insect pests, especially aphis[238]. Special Features: Attracts birds, Attractive foliage, North American native, Edible, Naturalizing, Wetlands plant, Attracts butterflies, Suitable for cut flowers, Suitable for dried flowers. Dynamic accumulator.",
     "edible_uses_notes": "Edible Parts: Flowers Oil Seed Stem Edible Uses: Coffee Oil Seed - raw or cooked[4, 14, 94, 101, 183]. A delicious nut-like flavour, but very fiddly to extract due to the small size of the seed. Commercially there are machines designed to do this. Rich in fats, the seed can be ground into a powder[95], made into sunflower butter or used to make seed yoghurt. When mixed with cereal flours, it makes a nutritious bread[244]. Cultivars with up to 50% oil have been developed in Russia[218]. The oil contains between 44 - 72% linoleic acid[218]. The germinated seed is said to be best for seed yoghurt, it is blended with water and left to ferment[183]. The sprouted seed can be eaten raw[183]. A nutritional analysis of the seed is available[218]. Young flower buds - steamed and served like globe artichokes[2, 85, 101, 117, 183]. A mild and pleasant enough flavour, but rather fiddly[K]. Average yields range from 900 - 1,575 kg/ha of seed, however yields of over 3,375 kg/ha have been reported[269]. A high quality edible semi-drying oil is obtained from the seed[4]. It is low in cholesterol[244], and is said to be equal in quality to olive oil[4]. Used in salads, margarines, or in cooking[2, 34, 46, 57, 94, 95, 183, 269]. The roasted seed is a coffee and drinking chocolate substitute[4, 7, 100, 102]. Another report says the roasted hulls are used[183]. The leaf petioles are boiled and mixed in with other foodstuffs[7]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -107,6 +101,12 @@
     "pollinator_support": true,
     "pest_confuser": false,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -243,7 +243,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

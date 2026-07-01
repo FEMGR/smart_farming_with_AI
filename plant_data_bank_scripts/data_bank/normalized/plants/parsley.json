@@ -86,12 +86,6 @@
     "other_uses_notes": "Essential Hair Repellent Landscape Uses: Border, Container, Massing. A good companion plant, repelling insects from nearby plants[20, 54]. The juice is an effective mosquito repellent when it is rubbed into the skin and is also used to relieve the pain of stings and bites[7, 244]. An essential oil obtained from the plant is used in perfumeries for men[238]. An infusion of the leaves is an excellent rinse for dark hair and also helps in the treatment of dandruff[201]. Dynamic accumulator.",
     "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Colouring Tea Leaves - raw or cooked[2, 4, 5, 9, 16, 21, 27]. Parsley is frequently used as a garnish or as a flavouring in salads and many cooked dishes, but has too strong a flavour to be eaten in quantity for most palates. It is an ingredient of the herb mix 'bouquet garni'[244]. The leaves should be harvested regularly in order to encourage fresh growth and get maximum yields[244]. The leaves are difficult to dry but are easily frozen[200]. For drying they require a well-ventilated room that receives long hours of sunlight - the leaves need to be quite crisp if they are to store[245]. Very rich in iron, iodine and magnesium, parsley is also a good source of other minerals and the vitamins A, B and C[201, 244]. The stems can be dried and ground and used as a food colouring[183]. A tea is made from the fresh or dried leaves, it is rich in vitamin C[21, 183]. An essential oil is obtained mainly from the leaves - it is used as a commercial food flavouring[46]. The leaves yields about 1% essential oil, whilst about 6% is obtained from the seed[7]. Some caution is advised on the use of this plant, especially the essential oil. See the notes above on toxicity."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -120,6 +114,17 @@
     "biodiversity_notes": [
       "PFAF describes this plant as relevant to companion planting."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "powdery_mildew"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "armyworm_cutworm_and_looper"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -255,7 +260,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

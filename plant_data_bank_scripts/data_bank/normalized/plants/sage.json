@@ -103,12 +103,6 @@
     "other_uses_notes": "Compost Essential Repellent Strewing Teeth Agroforestry uses: Sage can be used as a companion plant to attract pollinators and beneficial insects. Its aromatic leaves may also deter some pests, making it useful in pest management strategies. The leaves make excellent tooth cleaners[14, 21], simply rub the top side of the leaf over the teeth and gums[K]. The purple-leafed form of sage has tougher leaves and is better for cleaning the teeth[K]. The leaves have antiseptic properties and can heal diseased gums[201]. An essential oil from the leaves is used in perfumery, hair shampoos (it is good for dark hair) and as a food flavouring[14, 57, 61]. It is a very effective 'fixer' in perfumes[7], and is also used to flavour toothpastes and is added to bio-activating cosmetics[238]. The plant (the flowers?) is an alternative ingredient of 'QR' herbal compost activator[32]. This is a dried and powdered mixture of several herbs that can be added to a compost heap in order to speed up bacterial activity and thus shorten the time needed to make the compost[K]. The growing or dried plant is said to repel insects, it is especially useful when grown amongst cabbages and carrots[14, 18, 20, 201]. It was formerly used as a strewing herb[201] and has been burnt in rooms to fumigate them[244]. A good dense ground cover plant for sunny positions, though it needs weeding for the first year or two[197]. They are best spaced about 60cm apart each way[208]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Salvia species are excellent for pollinators. The flowers are rich in nectar, attracting bees, butterflies, and even hummingbirds. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Although the seeds and fruits are not significant food sources, the dense foliage can provide some shelter for wildlife, and it can serve as ground cover for small animals or invertebrates. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Sage plants provide ground cover and their woody stems and dense leaf litter can offer overwintering sites and protection for beneficial insects. 4. Pest Confuser (Smell): Yes – Sage has a strong, aromatic smell that can repel pests like insects and herbivores. It is often planted as a companion plant to deter harmful pests.",
     "edible_uses_notes": "Edible Parts: Flowers Leaves Edible Uses: Condiment Tea Leaves and flowers - raw or cooked[2, 14, 27, 46, 52]. A very common herb, the strongly aromatic leaves are used as a flavouring in cooked foods[183]. They are an aid to digestion and so are often used with heavy, oily foods[244]. They impart a sausage-like flavour to savoury dishes. The young leaves and flowers can be eaten raw, boiled, pickled or used in sandwiches[183]. The flowers can also be sprinkled on salads to add colour and fragrance[183]. A herb tea is made from the fresh or dried leaves[183], it is said to improve the digestion[13, 21]. An essential oil obtained from the plant is used commercially to flavour ice cream, sweets, baked goods etc[61, 183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -148,6 +142,12 @@
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -284,7 +284,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

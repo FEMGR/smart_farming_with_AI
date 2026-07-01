@@ -1,0 +1,350 @@
+{
+  "alternaria_leaf_blight": [
+    {
+      "source_name": "Cornell Vegetables",
+      "source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+      "confidence": 0.88
+    }
+  ],
+  "angular_leaf_spot": [],
+  "ascochyta_blight": [],
+  "avocado_root_rot": [],
+  "bacterial_canker": [],
+  "bacterial_leaf_spot": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/bacterial-spot-tomato-and-pepper",
+      "confidence": 0.8
+    }
+  ],
+  "bacterial_ring_rot": [],
+  "bacterial_soft_rot": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/bacterial-soft-rot",
+      "confidence": 0.82
+    }
+  ],
+  "bacterial_soft_rot_and_blackleg": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/blackleg-and-bacterial-soft-rot-potato",
+      "confidence": 0.82
+    }
+  ],
+  "bacterial_soft_rots": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/bacterial-soft-rot",
+      "confidence": 0.82
+    }
+  ],
+  "basal_rot": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/fusarium-basal-rot/",
+      "confidence": 0.82
+    }
+  ],
+  "basal_stem_rots": [],
+  "bean_rust": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/bean-rust",
+      "confidence": 0.84
+    }
+  ],
+  "beet_leafhopper_transmitted_virescence_agent": [],
+  "big_vein": [],
+  "black_blight": [],
+  "black_mold": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/black-mold/",
+      "confidence": 0.82
+    }
+  ],
+  "bltva": [],
+  "blue_mold_rot": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/blue-mold-rot/",
+      "confidence": 0.82
+    }
+  ],
+  "botrytis_bulb_rot": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/botrytis-neck-rot/",
+      "confidence": 0.82
+    }
+  ],
+  "botrytis_leafspot": [],
+  "botrytis_rot": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/gray-mold",
+      "confidence": 0.82
+    }
+  ],
+  "buckeye": [],
+  "cavity_spot": [],
+  "cercospora_leaf_spot": [
+    {
+      "source_name": "Cornell Vegetables",
+      "source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+      "confidence": 0.88
+    }
+  ],
+  "clubroot": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/clubroot-vegetable-crops",
+      "confidence": 0.86
+    }
+  ],
+  "common_rust": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/common-rust-sweet-corn",
+      "confidence": 0.84
+    }
+  ],
+  "common_scab": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/common-scab-potato",
+      "confidence": 0.84
+    }
+  ],
+  "common_smut": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/common-smut-sweet-corn",
+      "confidence": 0.84
+    }
+  ],
+  "cottony_soft_rot": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/white-mold",
+      "confidence": 0.8
+    }
+  ],
+  "curly_top": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/tomato/curly-top/",
+      "confidence": 0.84
+    }
+  ],
+  "damping_off": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/damping",
+      "confidence": 0.82
+    }
+  ],
+  "damping_off_and_root_dieback": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/damping",
+      "confidence": 0.8
+    }
+  ],
+  "damping_off_and_root_rot": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/damping",
+      "confidence": 0.8
+    }
+  ],
+  "damping_off_and_seed_rots": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/damping",
+      "confidence": 0.8
+    }
+  ],
+  "dothiorella_canker": [],
+  "downy_mildew": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/downy-mildew-cucurbits",
+      "confidence": 0.88
+    }
+  ],
+  "early_blight": [
+    {
+      "source_name": "UW Vegetable Pathology",
+      "source_url": "https://vegpath.plantpath.wisc.edu/diseases/tomato-early-blight/",
+      "confidence": 0.88
+    },
+    {
+      "source_name": "NC State Extension",
+      "source_url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+      "confidence": 0.86
+    }
+  ],
+  "fusarium_crown_and_foot_rot": [],
+  "fusarium_ear_and_stalk_rot": [],
+  "fusarium_root_rot": [],
+  "fusarium_wilt": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/fusarium-wilt-tomato",
+      "confidence": 0.84
+    }
+  ],
+  "gray_mold": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/gray-mold",
+      "confidence": 0.84
+    }
+  ],
+  "head_smut": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/corn/head-smut/",
+      "confidence": 0.82
+    }
+  ],
+  "late_blight": [
+    {
+      "source_name": "NC State Extension",
+      "source_url": "https://content.ces.ncsu.edu/tomato-late-blight",
+      "confidence": 0.88
+    },
+    {
+      "source_name": "APS Plant Disease Lessons",
+      "source_url": "https://www.apsnet.org/edcenter/pdlessons/Pages/LateBlight.aspx",
+      "confidence": 0.86
+    }
+  ],
+  "leaf_blight": [],
+  "leaf_spot_angular": [],
+  "leaf_spot_cercospora": [
+    {
+      "source_name": "Cornell Vegetables",
+      "source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+      "confidence": 0.86
+    }
+  ],
+  "lettuce_drop": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-drop/",
+      "confidence": 0.84
+    }
+  ],
+  "maize_dwarf_mosaic_virus": [],
+  "mosaic_viruses": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/viruses-vegetables",
+      "confidence": 0.8
+    }
+  ],
+  "neck_rot": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/botrytis-neck-rot/",
+      "confidence": 0.82
+    }
+  ],
+  "phytophthora_crown_and_spear_rot": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/asparagus/phytophthora-crown-and-spear-rot/",
+      "confidence": 0.82
+    }
+  ],
+  "phytophthora_root_and_crown_rot": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/pepper/phytophthora-root-and-crown-rot/",
+      "confidence": 0.82
+    }
+  ],
+  "phytophthora_root_rot": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/tomato/phytophthora-root-rot/",
+      "confidence": 0.82
+    }
+  ],
+  "pink_root": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/pink-root/",
+      "confidence": 0.82
+    }
+  ],
+  "potato_leafroll": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/potato-virus-diseases",
+      "confidence": 0.82
+    }
+  ],
+  "powdery_mildew": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/powdery-mildew-cucurbits",
+      "confidence": 0.88
+    },
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/tomato/powdery-mildew-on-field-grown-tomatoes/",
+      "confidence": 0.86
+    }
+  ],
+  "powdery_scab": [],
+  "purple_blotch": [],
+  "ringspot": [],
+  "root_rot": [],
+  "rust": [],
+  "seed_piece_decay": [],
+  "spotted_wilt_virus": [],
+  "stemphylium_leaf_blight": [
+    {
+      "source_name": "UC IPM",
+      "source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/stemphylium-leaf-blight/",
+      "confidence": 0.82
+    }
+  ],
+  "sunblotch": [],
+  "tobacco_mosaic_virus": [],
+  "tomato_spotted_wilt_virus": [],
+  "verticillium_wilt": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/verticillium-wilt",
+      "confidence": 0.84
+    }
+  ],
+  "virus_diseases": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/viruses-vegetables",
+      "confidence": 0.8
+    }
+  ],
+  "viruses": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/viruses-vegetables",
+      "confidence": 0.78
+    }
+  ],
+  "white_mold": [
+    {
+      "source_name": "University of Minnesota Extension",
+      "source_url": "https://extension.umn.edu/disease-management/white-mold",
+      "confidence": 0.86
+    }
+  ],
+  "white_rot": [],
+  "yellows": []
+}

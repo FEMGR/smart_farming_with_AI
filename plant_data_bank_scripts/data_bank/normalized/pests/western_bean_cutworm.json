@@ -1,0 +1,70 @@
+{
+  "pest_atom": "western_bean_cutworm",
+  "name": "Western bean cutworm",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Western bean cutworm",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-western-bean-cutworm",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "The western bean cutworm overwinters as mature larva in an earthen cell in the ground. Pupation occurs the following spring. Adults emerge in early July through August. Eggs are laid in masses about 3 days after the adults emerge, and begin hatching in about 6 days. Larvae are present from late July to late September. After hatching, young larvae may feed on leaf surfaces for a while. Older larvae drop to the ground, tunnel in, and emerge at night to feed. They then enter the soil to overwinter. There is one generation each year.",
+  "description_damage": "Adult is a brownish moth with a wingspan of about 1.5 inches. It has a broad white or tan stripe along the leading edge of its wing. Eggs are white at first, turning pink and finally purplish gray, with well-marked ridges. Larvae are brownish and 1.25 inches in length at maturity. Pupa is dark brown, about 0.75 inch in length, and is found in a cell made of saliva and soil particles. Larvae tend to damage bean pods and not the beans themselves. But, they do feed on drying beans in hedgerows. They are a pest only in south-central Idaho.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-western-bean-cutworm/g241-140.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-western-bean-cutworm/g241-140.jpg?itok=EPC827OI",
+      "caption": "Western bean cutworm Loxagrotis albicosta Smith Female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-western-bean-cutworm/g252-180.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-western-bean-cutworm/g252-180.jpg?itok=zRhXXQDn",
+      "caption": "Western bean cutworm Loxagrotis albicosta Smith Showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-western-bean-cutworm/g245-260.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-western-bean-cutworm/g245-260.jpg?itok=R5CA5kqy",
+      "caption": "Western bean cutworm Loxagrotis albicosta Smith Newly hatched"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.212196+00:00"
+}

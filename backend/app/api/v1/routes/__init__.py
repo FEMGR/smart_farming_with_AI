@@ -4,3 +4,4 @@ from . import locations
 from . import irrigation
 from . import notifications
 from . import species
+from . import knowledge

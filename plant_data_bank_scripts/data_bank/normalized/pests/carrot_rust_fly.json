@@ -1,0 +1,76 @@
+{
+  "pest_atom": "carrot_rust_fly",
+  "name": "Carrot rust fly",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Carrot rust fly",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-carrot-rust-fly",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "The carrot rust fly overwinters as a larva in roots left in the field. These larvae pupate in February and March, and adults begin emerging in mid-April and continue until mid-June. Adults prefer to shelter in hedges. Eggs are laid on the soil surface or slightly below the surface at the base of plants. Larvae are present from June to mid-July and mature in about 30 days. Larvae feed on the taproot or side roots of the host plant. When mature, they leave the root and pupate nearby in the soil. The summer brood of flies emerges about mid-July, and larvae are present during August. Pupae from this brood can be found in mid-August to late September. The fall brood of flies emerges from late September to mid-October. Larvae enter roots from early October to early November. Larvae from this last brood overwinter in roots in the field.",
+  "description_damage": "Mature larvae are dusty, straw-color, maggot-like, and from 0.12 to 0.25 inch in length. Worms burrow into and through roots. Burrows often are filled with rust-red frass. Carrot rust fly adults are shiny black or dark brown with yellowish legs, a brownish head, and iridescent wings. They are about 0.25 inch in length with a 0.5-inch wingspan. Eggs are tiny and white. The legless larvae initially are colorless but become creamy white as they develop through three instars (growth stages). Pupae develop inside a yellowish-brown skin about 0.2 inch in length. The carrot rust fly is a major pest of carrots, but it also may infest parsnips, turnips, parsley, and celery. Hemlock, a related weed species, is known to be a host plant also. Damage is caused by larvae burrowing into the taproot. Young plants wilt and may die, but more often the plants are stunted temporarily and the carrots become bulbous, forked, and unmarketable. In addition, fungi and bacteria may invade the damaged tissue and cause severe rot at the crowns of the plants. On parsnips and celery, larvae more commonly are found nearer the crown and may burrow into the base of leaf stalks.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "wilting",
+    "stunting",
+    "leaf_damage",
+    "root_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-carrot-rust-fly/526-30.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-carrot-rust-fly/526-30.jpg?itok=Ed3Z-BoM",
+      "caption": "Carrot rust fly Psila rosae Fabricius Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-carrot-rust-fly/519-28.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-carrot-rust-fly/519-28.jpg?itok=3h2iP7EA",
+      "caption": "Carrot rust fly Psila rosae Fabricius Showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-carrot-rust-fly/g169-1.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-carrot-rust-fly/g169-1.jpg?itok=4yBNVmMT",
+      "caption": "Carrot rust fly Psila rosae Fabricius Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:52.983639+00:00"
+}

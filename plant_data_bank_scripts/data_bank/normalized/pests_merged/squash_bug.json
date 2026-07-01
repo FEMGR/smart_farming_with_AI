@@ -1,0 +1,165 @@
+{
+  "pest_atom": "squash_bug",
+  "name": "Squash bug",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Squash bug",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-squash-bug",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "cantaloupe",
+    "cucumber",
+    "melon",
+    "muskmelon",
+    "pumpkin",
+    "squash",
+    "watermelon"
+  ],
+  "includes_text": "",
+  "biology_life_history": "Adult squash bugs overwinter in debris and sheltered places in the garden. Brown to reddish eggs are laid along the veins of new leaves. The newly hatched nymphs (immature bugs) are greenish to gray. Squash bugs overwinter in protected places as unmated adults. They appear rather slowly in the spring. Adults mate and begin laying clusters of eggs about the time the squash vines begin to spread. Eggs are laid in clusters of a dozen or more on the leaves. They hatch in about 10 days into nymphs. Nymphs go through five molts before becoming adults in 4 to 6 weeks. There is only one generation per year.",
+  "description_damage": "The squash bug attacks squash, pumpkin, melons, and related crops. Adults are typically dark brown, but may have gray or light brown markings. They are about 0.75 inch long at maturity. Squash bug nymphs and adults feed on the leaves, causing small yellow specks which later turn brown. Squash bugs also inject a toxin into vines, which causes a wilt from the point of attack to the end of the vine. Affected runners wilt and turn black and crisp. Small plants may be killed, while larger plants may lose several runners. Squash bugs also may attack young fruit. See: Common Pests of Vegetable Crops The adult squash bug is flat-backed, brownish black, and measures about 0.62 inch in length. Older nymphs are grayish white with black legs and antennae. Nymphs range from 0.19 to 0.5 inch long. Squash bugs feed primarily on squash and pumpkin. Adults and nymphs suck plant sap from the leaves and stems, causing wilting and death. Damage tends to be localized.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Allow at least 7 days between applications. bifenthrin/Avermectin (Athena) at 0.05 to 0.12 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.056 lb ai/A avermectin or 0.3 lb ai/A bifenthrin per season. chlorantraniliprole/lambda-cyhalothrin (Voliam Xpress) at 0.059 to 0.088 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 5 days. Do not exceed or 0.18 lb ai of",
+      "For products",
+      "acetamiprid (Assail 30SG) at 0.1 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 5 applications or 0.5 lb ai/A per season.",
+      "alpha-cypermethrin (Fastac EC) at 0.0175 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only .",
+      "alpha-cypermethrin (Fastac EC) at 0.0175 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only.",
+      "bifenthrin (Brigade 2EC, Sniper) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.3 lb ai/A per season. Do not make more than two applications after bloom. Do not make applications less than 7 days apart. Brigade 2EC only for Oregon and Washington.",
+      "bifenthrin (Brigade WSB) at 0.05 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.3 lb ai/A per season. Do not apply more than twice after bloom.",
+      "bifenthrin (Brigade WSB, Sniper) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.3 lb ai/A per season. Retreatment interval 7 days. Do not exceed 2 treatments after bloom. bifenthrin/Avermectin (Athena) at 0.05 to 0.12 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.35 lb ai/A Athena, 0.056 lb ai/A avermectin, or 0.3 lb ai/A bifenthrin per season. bifenthrin/zeta-cypermethrin (Hero EW) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.4 lb ai/A per season. Limit 2 treatments after bloom.",
+      "clothianidin (Belay) at 0.05 to 0.067 lb ai/A foliar only. PHI 10 days foliar. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.2 lb ai/A per season.",
+      "clothianidin (Belay) at 0.05 to 0.067 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.2 lb ai/A per season.",
+      "clothianidin (Belay) at 0.05 to 0.067 lb ai/A. PHI 7 days.REI 12 hr. Retreatment interval 10 days. Do not exceed 0.2 lb ai/A per season.",
+      "cyclaniliprole (Harvanta 50SL) at 0.036 to 0.054 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.16 lb ai/A per year. Suppression.",
+      "cyhalothrin (Crossover) at 0.14 to 0.16 lb ai/A. PHI 7 days, REI 24 hr. Do not exceed 0.48 lb ai/A tebuconazole or 0.18 lb lambda cyhalothrin per season. Oregon only.",
+      "cyhalothrin (Crossover) at 0.14 to 0.16 lb ai/A. PHI 7 days. REI 24 hr. Do not exceed 0.18 lb ai/A lambda cyhalothrin or 0.48 lb ai/A tebuconazole per season. Retreatment interval 10 to 14 days. Oregon only.",
+      "cyhalothrin (Crossover) at 0.14 to 0.16 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 10 days. Do not exceed 0.48 lb ai/A tebuconazole and 0.18 lb ai/A lambda cyhalothrin. Oregon only.",
+      "cyhalothrin (Declare) at 0.01 to 0.015 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.09 lb ai/A per season.",
+      "dinotefuran (Scorpion 35SL) at 0.05 to 0.18 lb ai/A foliar or 0.23 to 0.27 lb ai/A for soil Washington, 0.23 to 0.33 lb ai/A soil Oregon. PHI 1 day foliar, 21 days for soil. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A foliar or 0.532 lb ai/A for soil per season.",
+      "dinotefuran (Scorpion 35SL) at 0.05 to 0.18 lb ai/A foliar or 0.23 to 0.27 lb ai/A for soil in Washington, at 0.23 to 0.33 lb ai/A soil in Oregon. PHI 1 days foliar, or 21 days for soil. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A foliar or 0.532 lb ai/A for soil per season.",
+      "dinotefuran (Scorpion 35SL) at 0.05 to 0.18 lb ai/A foliar or 0.23 to 0.27 lb ai/A soil. PHI 1 day foliar; 21 day soil. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A foliar or 0.532 lb ai/A soil per season.",
+      "dry at the time of application.",
+      "dry at time of application. These products contain commonly used active ingredients for control of squash bug in pumpkin and squash. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.25 lb ai/A per season.",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.25 lb ai/A per year.",
+      "flupyradifurone (Sivanto 200SL) at 0.14 to 0.18 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.365 lb ai/A per season.",
+      "flupyradifurone (Sivanto 200SL) at 0.14 to 0.18 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.365 lb ai/A per season. gamma",
+      "gamma-cyhalothrin (Declare) at 0.01 to 0.015 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.09 lb ai/A per season.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.18 lb ai/A per year.",
+      "lambda-cyhalothrin or 0.172 lb ai/A of thiamethoxam per season.",
+      "lambda-cyhalothrin or 0.2 lb ai of chlorantraniliprole per acre per growing season. Not registered in Oregon.",
+      "lambda-cyhalothrin/thiamethoxam (Endigo ZC) at 0.064 to 0.072 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.18 lb ai/A",
+      "lambda-cyhalothrin/thiamethoxam (Endigo ZC) at 0.064 to 0.072 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.18 lb ai/A of",
+      "novaluron (Rimon 0.83EC) at 0.078 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.23 lb ai/A per season.",
+      "novaluron (Rimon 0.83EC) at 0.078 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.23 lb ai/A per season. tebuconazole/lambda",
+      "novaluron (Rimon 0.83EC) at 0.078 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.23 lb ai/A per year. tebuconazole/lambda",
+      "permethrin (Permethrin) at 0.2 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 1.2 lb ai/A per season. tebuconazole/lambda",
+      "that are applied as a dust, apply dust around base of the plant. Avoid dusting foliage if possible. acetamiprid (Assail 30SG) 0.1 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 5 applications or 0.5 lb ai/A per season.",
+      "zeta-cypermethrin (Mustang) at 0.035 to 0.05 lb ai/A . PHI 1 day. REI 12 hr. Do not exceed 0.3 lb ai/A per year. Retreatment interval 7 days.",
+      "zeta-cypermethrin (Mustang) at 0.035 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Retreatment period 7 days. Do not exceed 0.3 lb ai/A per year. Note: Pesticides may injure cucurbits. The possibility of injury is less when foliage is",
+      "zeta-cypermethrin (Mustang) at 0.04 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.3 lb ai/A per year. Retreatment interval 7 days. Note: Pesticides can injure cucurbits. Be sure foliage is"
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin (as a mix with",
+      "OMRI-listed for organic use. bifenthrin (sually as a mix with",
+      "OMRI-listed for organic use. bifenthrin (usally as a mix with",
+      "OMRI-listed for organic use. permethrin",
+      "acetamiprid",
+      "azadirachtin (neem oil)-Some formulations are",
+      "dry at the time of application.",
+      "kaolin-Applied as a spray to foliage, it acts as a repellent to some insect pests. Some formulations are",
+      "pyrethrins-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin Note: Pesticides can injure cucurbits. Be sure foliage is",
+      "zeta-cypermethrin). carbaryl cyfluthrin esfenvalerate",
+      "zeta-cypermethrin). carbaryl cyfluthrin esfenvalerate permethrin",
+      "zeta-cypermethrin). carbaryl esfenvalerate"
+    ],
+    "cultural": "Clean up debris in the fall to remove overwintering squash bugs. Hand-pick eggs, nymphs, and adults. Early plantings are more susceptible to damage. Squash bugs tend to aggregate in sheltered locations, such as under mulches and in weeds. Clean cultivation is advised. Removal of crop debris in a timely manner is important."
+  },
+  "damage_tags": [
+    "fruit_damage",
+    "leaf_damage",
+    "stem_damage",
+    "wilting",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-squash-bug/225-19.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-squash-bug/225-19.jpg?itok=K1iAUtH4",
+      "caption": "Squash bug Anasa tristis DeGeer Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-squash-bug/379-14.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-squash-bug/379-14.jpg?itok=uGfqgWOd",
+      "caption": "Squash bug Anasa tristis De Geer Immature"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-squash-bug/225-15.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-squash-bug/225-15.jpg?itok=rylEPxX5",
+      "caption": "Squash bug Anasa tristis DeGeer Adult"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.090577+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Cucumber",
+      "pest_name_on_page": "Squash bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-squash-bug"
+    },
+    {
+      "crop_heading": "Melon (Cantaloupe, muskmelon, and watermelon)",
+      "pest_name_on_page": "Squash bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-squash-bug"
+    },
+    {
+      "crop_heading": "Pumpkin and squash",
+      "pest_name_on_page": "Squash bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-squash-bug"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-squash-bug",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-squash-bug",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-squash-bug"
+  ],
+  "page_titles": [
+    "Cucumber-Squash bug",
+    "Melon (Cantaloupe, muskmelon, and watermelon)-Squash bug",
+    "Pumpkin and squash-Squash bug"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.569091+00:00"
+}

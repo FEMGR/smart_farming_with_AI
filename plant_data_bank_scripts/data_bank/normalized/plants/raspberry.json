@@ -87,12 +87,6 @@
     "other_uses_notes": "Cosmetic Dye Paper Landscape Uses:Erosion control, Foundation, Ground cover, Massing, Rock garden, Seashore. ts in this genus are notably susceptible to honey fungus[200]. Special Features: Not North American native, Attracts butterflies, Inconspicuous flowers or blooms. A purple to dull blue dye is obtained from the fruit[168]. A fibre obtained from the stems is used in making paper[189]. The stems are harvested in the summer after the fruit has been eaten, the leaves are removed and the stems are steamed until the fibres can be stripped. The fibres are cooked for 2 hours with lye and then hand beaten with mallets or ball milled for 3 hours. The paper is light brown in colour[189]. A decongestant face-mask made from the fruit is used cosmetically to soothe reddened skin[7].",
     "edible_uses_notes": "Edible Parts: Fruit Root Shoots Stem Edible Uses: Coffee Tea Fruit - raw or cooked[2, 5, 7, 61]. Delicious when eaten out of hand, the fruit is also used in pies, preserves etc[183]. Root - cooked. The root, which should be neither too young nor too old, requires a lot of boiling[7]. Young shoots - peeled and eaten raw or cooked like asparagus[172]. They are harvested as they emerge through the ground in the spring and whilst they are still tender. A herb tea is made from the dried leaves[21, 46, 183]. Another report says that a type of tea made from raspberry and blackberry leaves is an excellent coffee substitute[7]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -111,6 +105,12 @@
     "pollinator_support": true,
     "pest_confuser": false,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -245,7 +245,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

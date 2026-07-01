@@ -1,0 +1,77 @@
+{
+  "pest_atom": "onion_maggot",
+  "name": "Onion maggot and seedcorn maggot",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "onion"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Onion",
+      "pest_name_on_page": "Onion maggot and seedcorn maggot",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-onion-maggot-seedcorn-maggot"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-onion-maggot-seedcorn-maggot"
+  ],
+  "page_titles": [
+    "Onion-Onion maggot and seedcorn maggot"
+  ],
+  "description_damage": "Onion maggot eggs are white, elongated, and about 0.04 inch long and are laid on the soil near the stem and occasionally on the young leaves and neck of the onion plant. The legless maggots are tapered, creamy white, and reach about 0.031 inch in length. The pupa is chestnut brown and about 0.031 inch long. Adult onion flies are slightly smaller than houseflies. They have longer legs, are more slender, and overlap their wings when at rest. Onion maggot larvae attack germinating seedlings, feeding on the developing roots and epicotyl, and can continue to feed on the expanding bulbs during later stages of growth. This results in increased rot in bulbs held in storage. The seedcorn maggot adult is a slender, light gray fly, about 0.19 inch in length. It looks much like a small housefly. The whitish eggs have slightly raised ridges running the length and width of the eggs forming tiny rectangles. Larvae are about 0.25 inch long, white to whitish yellow, cylindrical, and tapered, with the smaller end in front. Pupae are small brown capsules. The seedcorn maggot is abundant during or following a wet cycle, primarily in spring, and is most common in fields containing a high amount of residue from a previous crop or where manure has been spread. Seedcorn maggot damage usually is restricted to the very early seedling stage. Maggots are primarily a pest of onion and do not generally cause economic damage to garlic. They may spread bacterial soft rot.",
+  "biology_life_history": "Three overlapping generations of onion maggot occur each year. Onion maggot overwinters as a pupa in the soil, although some adults may survive in protected areas. Emergence occurs in the spring and typically extends from April to June. Second or summer generation flies are active from late June to early August. A third flight can take place from early August to October. The adults spend little time within the fields during the day, preferring to rest at field margins in taller and denser vegetation. The flies are most active in onion fields during dusk and dawn or on overcast days. Onion maggot damage is greatest after consecutive years of wet springs. The seedcorn maggot overwinters as a pupa in the soil. Adults emerge in early May and lay eggs singly or in clusters in the soil near plant stems. They prefer soils with high levels of organic matter. Eggs hatch in 7 to 10 days. Larvae feed for 1 to 3 weeks on seeds and germinating seedlings and then burrow into the soil to pupate. They emerge as adults in late June and early July. Adults lay eggs as before, and larvae feed to maturity and pupate in August to form the overwintering stage. There may be as many as five generations each year. It can be a significant pest of onion in some years in the Columbia Basin.",
+  "monitoring": "Slow emergence and poor stand establishment are signs of maggot activity. Where slow, spotty emergence is observed, dig up seed and inspect it for maggot feeding. Cool soil temperature and periods of excessive moisture favoring slow seed germination and seedling emergence increase susceptibility to maggot infestation. To assess potential infestation levels prior to planting, place a cut potato or other vegetable or fruit in the field and apply baker's yeast with some water to the cut surface. Leave the bait for several hours and return to look for the presence of adult seedcorn maggot flies as they are attracted to carbon dioxide. In the Pacific Northwest, no specific monitoring methods have been developed. In other parts of the country, estimates of adult fly activity are obtained from the use of yellow or white sticky traps, water pan traps, and pyramid traps to assist in determining the necessity and timing of treatments. Treatments for onion and seedcorn maggot are preventive and should be considered for fields that are high in organic matter or undecomposed organic material or that have had previous maggot problems.",
+  "management": {
+    "biological": "",
+    "cultural": "Avoid planting in soils that are high in undecomposed organic matter, such as fields just coming out of pasture or very weedy situations. Use herbicides to kill cover crop strips 3 to 4 weeks before seeding. In soils amended with animal manures, allow adequate time for the manure to break down before planting. Avoid planting successive rotations of onion crops. Early spring-planted crops are more likely to be damaged when the soil is too cool for rapid germination and emergence. If serious infestations are expected, wait until the soil warms up in spring, or, if feasible, plant in fall while the soil is still warm. When planting, use a chain drag or similar implement behind the drill to cover the seed row. Consider planting into a \"stale\" seedbed. Use an appropriate insecticide in the seed box at planting if problems are expected.",
+    "chemical_home": [
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "lambda-cyhalothrin malathion permethrin",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "clothianidin/imidacloprid (Sepresto)-Seed treatment. See label for more information.",
+      "cypermethrin (Holster) at 0.04 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. An oil or surfactant adjuvant improves control. Retreatment interval 7 days. Do not exceed 0.5 lb ai/A per season. Do not graze or feed crop residues to livestock.",
+      "Spray at dusk along the edges of onion fields as flies migrate back into the fields to lay eggs. Wait 30 days after harvest before planting a subsequent crop.",
+      "gamma-cyhalothrin (Declare) at 0.0075 to 0.0125 lb ai/A. PHI 14 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.12 lb ai/A per season. An oil or nonionic surfactant improves control.",
+      "lambda-cyhalothrin (Warrior II) at 0.015 to 0.025 lb ai/A. PHI 14 days. REI 24 hr. Retreatment interval 5 days. Adults of onion and seedcorn maggot. Bulb onion only. Do not exceed 0.24 lb ai/A per season.",
+      "malathion (Fyfanon 8E) at 1.56 lb ai/A. PHI 3 days. REI 12 hr. Use for adult control. Use on",
+      "direct-seeded dry bulb onions only. Apply as an",
+      "in-furrow",
+      "drench at seeding.",
+      "Use at least 40 gal/A of spray. Limit 2 treatments. Retreatment interval 7 days.",
+      "permethrin (Pounce 25WP) at 0.1 to 0.3 lb ai/A. PHI 1 day. REI 12 hr. For adult fly control. Do not exceed 1 lb ai/A per season.",
+      "thiamethoxam (Cruiser 70S)-Seed treatment. See label for more information.",
+      "zeta-cypermethrin (Mustang) at 0.028 to 0.05 lb ai/. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Adult fly control. Spray near dusk when flies reenter field. Do not exceed 0.25 lb ai/A per season. Do not graze livestock or cut for feed."
+    ]
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "root_damage",
+    "seedling_damage",
+    "stem_damage",
+    "feeding_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:48.346207+00:00"
+}

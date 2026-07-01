@@ -136,12 +136,6 @@
     "other_uses_notes": "Fuel Green manure Agroforestry Uses: The plant can be used as a green manure[418 ]. Lentil is mainly grown as a sole crop, but sometimes mixed with other crops, e.g. in India with barley, mustard or castor[299 ]. Other Uses: The seeds are a source of starch for the textile and printing industries[310 , 418 ]. The plant remains, after the seed has been harvested, can be used as a fuel[299 ].",
     "edible_uses_notes": "Edible Parts: Seed Seedpod Edible Uses: Seed - cooked or sprouted and eaten raw[1]. A very nutritious food[171, 177], the seeds can be cooked on their own or added to soups, stews etc[183]. The seed can be soaked for 12 hours in warm water and then allowed to sprout for about 5 days[244]. They have a crunchy, fresh flavour[244]. Lentils are more digestible than many legumes[K]. The dried seed can also be ground into a powder and used with cereal flours in making bread etc[183], this greatly enhances the value of the protein in the bread. The seed stores better if it is left in its husk[200]. Young seedpods - used fresh or cooked like green beans[61, 177, 183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -150,6 +144,17 @@
     "pollinator_support": false,
     "pest_confuser": false,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [
+      "aphid",
+      "lygus_bug",
+      "seedcorn_maggot",
+      "western_yellowstriped_armyworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -285,7 +290,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

@@ -1,0 +1,95 @@
+{
+  "pest_atom": "beet_armyworm",
+  "name": "Beet armyworm",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "endive",
+    "escarole"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Endive (Escarole)",
+      "pest_name_on_page": "Beet armyworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-beet-armyworm"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-beet-armyworm"
+  ],
+  "page_titles": [
+    "Endive (Escarole)-Beet armyworm"
+  ],
+  "description_damage": "Beet armyworm moths have a wingspan no larger than 1.25 inches and are mottled gray and brown, with irregular banding and a light-color, bean-shaped spot. Eggs are pale green to pink, ridged, and deposited in a mass which is covered with a white cottony material. The tiny, newly hatched larvae feed in colonies. The larvae are about 1.25 inches long when full grown and are mottled olive green to almost black. Armyworm larvae feed in colonies shortly after hatching and skeletonize leaves. As they grow larger, they tend to disperse and consume irregular patches of foliage or entire leaves.",
+  "biology_life_history": "",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Bacillus",
+      "alpha-cypermethrin (Fastac EC) at 0.02 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only.",
+      "azadirachtin (Neemix 4.5) at 0.012 to 0.031 lb ai/A. PHI 0 days. REI 4 hr.",
+      "benzoate (Proclaim) at 0.008 to 0.015 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.045 lb ai/A per season. Do not graze.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.1 lb ai/A per season. First and second armyworm instars.",
+      "beta-cyfluthrin or 0.2 lb ai/A imidacloprid per season.",
+      "beta-cyfluthrin/imidacloprid (Leverage 360) at 0.07 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.1 lb ai/A",
+      "chlorantraniliprole (Coragen) at 0.045 to 0.098 lb ai/A a) at planting; b) via drip irrigation; c) as foliar. PHI 1 day. REI 4 hr. Retreatment interval 3 days for foliar and 10 days for chemigation. Do not exceed 0.2 lb ai/A per season. chlorantraniliprole/thiamethoxam (Voliam Flexi) at 0.1 to 0.175 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season. Chromobacterium",
+      "cyantraniliprole (Exirel) at 0.045 to 0.088 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.4 lb ai/A per year.",
+      "cyclaniliprole (Harvanta 50SL) at 0.036 to 0.054 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.16 lb ai/A per year.",
+      "cyfluthrin (Tombstone) at 0.038 to 0.05 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.2 lb ai/A per season. emamectin",
+      "indoxacarb (Avaunt) at 0.065 to 0.11 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.26 lb ai/A per crop. Retreatment interval 3 days.",
+      "methomyl (Lannate SP) at 0.45 to 0.9 lb ai. PHI 10 days. REI 48 hr. Do not exceed 4.5 lb ai/A per season. Limit 8 treatments per year.",
+      "methoxyfenozide (Intrepid 2F) at 0.06 to 0.12 lb ai/A for early season",
+      "or at 0.12 to 0.16 ai/A for mid to late season. REI 4 hr. PHI 1 day. Do not exceed 1 lb ai/A per season.",
+      "permethrin (Loveland Permethrin) at 0.1 to 0.2 lb ai/A. PHI 1 day. REI 12 hr. Do not graze or feed. Retreatment interval 3 days. Do not exceed 0.2 lb ai/A per season.",
+      "spinosad (Success, Entrust SC) at 0.06 to 0.125 lb ai/A. PHI 1 day. REI 4 hr. Do not exceed six applications or 0.45 lb ai/A per crop. Entrust SC is",
+      "spreader-binder is recommended. Oregon and Washington only. thiamethoxam/chlorantraniliprole (Durivo) at 0.195 to 0.254 lb ai/A, soil application. PHI 30 days. REI 12 hr. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season.",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "subtsugae (Grandevo) at 0.3 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "tebufenozide (Confirm 2F) at 0.09 to 0.12 lb ai/A early year; 0.12 lb ai/A mid to late year. PHI 7 days. REI 4 hr. Do not exceed 0.12 lb ai/A per application or 1.88 lb ai/A per calendar year. Retreatment interval 7 days. Use of a",
+      "thuringiensis (Javelin) at 0.12 to 1.5 lb/A. PHI 0 days. REI 4 hr. Armyworms only. Add an appropriate",
+      "zeta-cypermethrin (Mustang) at 0.04 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A per season."
+    ],
+    "chemical_home": [
+      "Apply any one of these materials to the soil",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Bacillus thuringiensis var .",
+      "OMRI-listed for organic use. carbaryl cyfluthrin permethrin",
+      "azadirachtin (neem oil)-Some formulations are",
+      "capsaicin-Some formulations are",
+      "kurstaki ( Btk ) - Some formulations are",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "plant-derived essential",
+      "pyrethrins-Some formulations are",
+      "spinosad-Some formulations are",
+      "surface at first sign of cutworm activity. Consult label. Minimum preharvest interval (PHI) varies with crop.",
+      "zeta-cypermethrin"
+    ],
+    "cultural": ""
+  },
+  "damage_tags": [
+    "leaf_damage"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:30:47.001740+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.540504+00:00"
+}

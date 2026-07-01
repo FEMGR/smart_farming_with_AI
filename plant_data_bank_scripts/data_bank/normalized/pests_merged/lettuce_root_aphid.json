@@ -1,0 +1,66 @@
+{
+  "pest_atom": "lettuce_root_aphid",
+  "name": "Lettuce root aphid",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "lettuce"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Lettuce",
+      "pest_name_on_page": "Lettuce root aphid",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-lettuce-root-aphid"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-lettuce-root-aphid"
+  ],
+  "page_titles": [
+    "Lettuce-Lettuce root aphid"
+  ],
+  "description_damage": "Lettuce root aphids can be distinguished from other aphids found on lettuce by their short antennae (less than one-third body length) and undeveloped \"tailpipes\" (cornicles). They are found on lettuce roots in clustered colonies covered with a white powdery wax. Plants heavily attacked may wilt during the day. The developing heads remain soft, fail to develop properly, and yields are reduced. Extremely heavy aphid populations over a prolonged period can cause collapse and death of the plant. Individual rootlets turn brown and die. Masses of white, woolly material and aphids are present on roots.",
+  "biology_life_history": "Where lettuce or related weeds are not available, these aphids overwinter in the egg stage on the bark of Lombardy poplar. They develop to adults and reproduce once on poplar before migrating to lettuce. On lettuce, they begin to feed and reproduce; winged adults develop that can spread from field to field. Lettuce root aphid is a serious pest mostly where lettuce is planted near Lombardy poplars.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "OMRI-listed for organic use.",
+      "at-plant and 0.5 lb ai/A per season. Retreatment interval 7 days. Some formulations are",
+      "bifenthrin (Capture LFR) at 0.04 to 0.08 lb ai/A soil treatment. PHI 7 days. REI 12 hr. Head lettuce only. Do not exceed 0.1 lb ai/A"
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use. bifenthrin (as a mix with",
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin)"
+    ],
+    "cultural": "Remove Lombardy poplars in the vicinity of lettuce fields to reduce the severity of root aphid infestations on lettuce. Avoid stressing plants and maintain optimum water levels. To help reduce an infestation, eliminate cracks where aphids enter the soil and attack plant roots. If an infestation occurred on the previous crop, work the soil deeply and allow it to dry thoroughly before replanting to lettuce. Rototilling an infested crop does not eliminate the population before replanting. Some varieties of lettuce are resistant to this aphid. If infested lettuce grows rapidly, a satisfactory crop often may result."
+  },
+  "damage_tags": [
+    "root_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:02.686081+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.559484+00:00"
+}

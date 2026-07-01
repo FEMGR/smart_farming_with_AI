@@ -1,0 +1,70 @@
+{
+  "pest_atom": "spotted_asparagus_beetle",
+  "name": "Spotted asparagus beetle",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "asparagus"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Asparagus",
+      "pest_name_on_page": "Spotted asparagus beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-spotted-asparagus-beetle"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-spotted-asparagus-beetle"
+  ],
+  "page_titles": [
+    "Asparagus-Spotted asparagus beetle"
+  ],
+  "description_damage": "Adults are brick-red with six black spots on each wing cover. Eggs are green and deposited singly. Larvae are cream color with a light brown head. They most frequently are found inside the berry on female plants. Pupae are light yellow in a silken cocoon. Because larvae feed on the berries, infestations of the spotted asparagus beetle are less damaging than the asparagus beetle for fresh market and processing asparagus. However, the spotted asparagus beetle can be a major pest in seed production fields.",
+  "biology_life_history": "The spotted asparagus beetle overwinters as an adult and begins feeding immediately following emergence. Egg laying starts approximately 1 week after emergence. Eggs are oval and attached to the fern plant by the side. Larval feeding takes place primarily in the berry and lasts for 10 to 14 days and four instars. Mature larvae crawl to the ground and burrow within the soil, where they spin a silken cocoon in which to pupate. There are usually two generations each year.",
+  "monitoring": "Spotted asparagus beetle adults rarely do damage to the spears and do not need to be treated. Larvae damage to seeds is of concern only when asparagus is grown for seed production.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "OMRI-listed for organic use.",
+      "acetamiprid (Assail 30SG) at 0.047 to 0.1 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.2 lb ai/A per season. Limit 2 treatments. Chromobacterium",
+      "methomyl (Lannate SP) at 0.45 to 0.9 lb ai/A. PHI 1 day. REI 48 hr. Do not exceed 4.5 lb ai/A per year. Do not exceed 8 applications per year.",
+      "subtsugae (Grandevo) at 0.6 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. carbaryl insecticidal",
+      "OMRI-listed for organic use. malathion permethrin",
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "soap-Some formulations are",
+      "spinosad-Some formulations are"
+    ],
+    "cultural": ""
+  },
+  "damage_tags": [
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:37:29.300005+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.568502+00:00"
+}

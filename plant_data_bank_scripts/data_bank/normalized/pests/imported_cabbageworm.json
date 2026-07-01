@@ -1,0 +1,65 @@
+{
+  "pest_atom": "imported_cabbageworm",
+  "name": "Imported cabbageworm",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Imported cabbageworm",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-imported-cabbageworm",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "The imported cabbageworm overwinters in the pupal stage on host plants. Adults emerge in late April and May and lay eggs singly on the undersides of outer leaves. The border rows of crops may receive more eggs than the center rows. Eggs hatch in 4 to 8 days, and larvae mature in 2 to 3 weeks, then pupate on the host plant. The time required for development from egg to adult is 3 to 6 weeks. Adults emerge in 1 to 2 weeks, mate, and lay eggs for another generation. There are three to five generations each year.",
+  "description_damage": "Larvae are green and very hairy, with a velvety appearance. They often have one faint yellow-orange stripe down their backs and broken stripes along the sides. Older larvae may be up to 1 inch in length. Compared to other caterpillars, cabbageworms are sluggish, but feed voraciously. Larvae pupate by attaching a few strands of silk to stems or other nearby objects. Pupae are green with faint yellow lines down the back and sides; there is no spun cocoon. The adult cabbage butterfly is white with one to four black spots on the wings. They often are seen fluttering around the fields. The whitish, rocket-shaped eggs are laid singly on the undersides of leaves. In the Pacific Northwest, the imported cabbageworm causes most of its damage by contaminating plants with pupae in harvested parts of the crop. Larvae do chew large, irregular holes in leaves, bore into heads, drop greenish brown fecal pellets that may contaminate the marketed product, and seedlings may be damaged, but most losses are due to contamination or damage to marketed parts of the plant.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "stem_damage",
+    "feeding_holes",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-imported-cabbageworm/g164-32.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-imported-cabbageworm/g164-32.jpg?itok=lhn8dYrj",
+      "caption": "Imported cabbage worm Pieris rapae Linnaeus Immature showing damage on leaves"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-imported-cabbageworm/g255-26.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-imported-cabbageworm/g255-26.jpg?itok=KoxUn8kd",
+      "caption": "Imported cabbage worm Pieris rapae Linnaeus Adult emerging"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.620856+00:00"
+}

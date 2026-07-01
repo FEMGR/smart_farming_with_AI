@@ -85,12 +85,6 @@
     "other_uses_notes": "Companion Essential Hedge Incense Pot-pourri Repellent Agroforestry uses: Lavender is excellent for attracting pollinators and beneficial insects. It can also be used as a ground cover, hedge, or ornamental plant. Its essential oils have pest-repellent properties, making it beneficial in organic farming. The essential oil that is obtained from the flowers is exquisitely scented and has a very wide range of applications, both in the home and commercially. It is commonly used in soap making, in making high quality perfumes (it is also used in 'Eau de Cologne'), it is also used as a detergent and cleaning agent, a food flavouring etc[21, 46, 57, 171, 238] and as an insect repellent[201]. When growing the plant for its essential oil content, it is best to harvest the flowering stems as soon as the flowers have faded[245]. Yields of 0.8 - 1% of the oil are obtained[7]. The aromatic leaves and flowers are used in pot-pourri[238] and as an insect repellent in the linen cupboard etc[14, 18, 20]. They have been used in the past as a strewing herb in order to impart a sweet smell to rooms and to deter insects[244]. The leaves are also added to bath water for their fragrance and therapeutic properties[244]. They are also said to repel mice[20]. The flowering stems, once the flowers have been removed for use in pot-pourri etc, can be tied in small bundles and burnt as incense sticks[245]. Lavender can be grown as a low hedge, responding well to trimming[29]. There are several varieties, such as 'Hidcote Variety', 'Loddon Pink' and 'Folgate Blue' that are suitable for using as dwarf hedges 30 - 50cm tall[245]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Lavender flowers are well-known for being rich in nectar and pollen, attracting a wide range of pollinators, including bees, butterflies, and other beneficial insects. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): No – While lavender attracts many insects for its nectar, it does not produce fruit or seeds that are widely consumed by birds or mammals. Its foliage is not typically dense enough to provide shelter, nesting, or roosting sites for wildlife. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Lavender’s dense, woody stems and leaf litter can offer shelter and overwintering sites for invertebrates, especially beneficial insects. 4. Pest Confuser (Smell): Yes – Lavender’s strong scent is often used as a natural pest deterrent, confusing and repelling pests such as moths, mosquitoes, and flies.",
     "edible_uses_notes": "Edible Parts: Edible Uses: Condiment Tea Leaves, petals and flowering tips - raw. Used as a condiment in salads, soups, stews etc[2, 15, 183]. They provide a very aromatic flavour[7] and are too strong to be used in any quantity[K]. The fresh or dried flowers are used as a tea[183]. The fresh flowers are also crystallized or added to jams, ice-creams, vinegars etc as a flavouring[238]. An essential oil from the flowers is used as a food flavouring[183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -127,6 +121,12 @@
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -262,7 +262,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

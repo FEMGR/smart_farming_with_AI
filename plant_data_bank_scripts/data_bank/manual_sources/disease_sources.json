@@ -1,0 +1,9 @@
+[
+  {
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "source_type": "uc_ipm_disease_index",
+    "confidence": 0.88
+  }
+]

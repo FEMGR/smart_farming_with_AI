@@ -96,12 +96,6 @@
     "other_uses_notes": "Dye Fibre Pioneer Agroforestry uses: Rubus species can serve as ground cover, helping to prevent soil erosion. They provide habitat and food for various wildlife species, including birds and beneficial insects. Their thorns can also act as a natural barrier. A purple to dull blue dye is obtained from the fruit[168]. A fibre is obtained from the stem and used to make twine[66]. Plants are spread by seed deposited in the droppings of birds and mammals. They often spring up in burnt-over, logged or abandoned land and make an excellent pioneer species, creating the right conditions for woodland trees to move in. The trees will often grow in the middle of a clump of blackberries, the prickly stems protecting them from rabbits[K]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Rubus species (including blackberries, raspberries, etc.) produce flowers that are rich in nectar and pollen, attracting bees, butterflies, and other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Rubus species produce abundant berries that are a significant food source for birds, mammals, and insects. Their dense thickets also provide shelter and nesting sites for small animals and birds. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The dense, sprawling growth habit of Rubus species provides excellent cover and shelter for invertebrates, with leaf litter creating ground habitat. They also offer overwintering sites in their stems and leaf litter. 4. Pest Confuser (Smell): No – Rubus species are not typically known for emitting scents that confuse pests.",
     "edible_uses_notes": "Edible Parts: Fruit Leaves Root Shoots Edible Uses: Tea Fruit - raw or cooked[5, 7, 9, 12, 183]. The best forms have delicious fruits and, with a range of types, it is possible to obtain ripe fruits from late July to November[K]. The fruit is also made into syrups, jams and other preserves[238]. Some people find that if they eat the fruit before it is very ripe and quite soft then it can give them stomach upsets[K]. Root - cooked. The root should be neither to young nor too old and requires a lot of boiling[7]. A tea is made from the dried leaves[21] - the young leaves are best[61]. The leaves are often used in herbal tea blends[238]. Young shoots - raw. They are harvested as they emerge through the ground in the spring, peeled and then eaten in salads[244]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -122,6 +116,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -259,7 +259,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

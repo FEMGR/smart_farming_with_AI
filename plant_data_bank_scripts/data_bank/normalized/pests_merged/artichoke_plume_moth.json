@@ -1,0 +1,83 @@
+{
+  "pest_atom": "artichoke_plume_moth",
+  "name": "Artichoke plume moth",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "artichoke"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Artichoke (globe artichoke)",
+      "pest_name_on_page": "Artichoke plume moth",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-artichoke-plume-moth"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-artichoke-plume-moth"
+  ],
+  "page_titles": [
+    "Artichoke (globe artichoke)-Artichoke plume moth"
+  ],
+  "description_damage": "Adults of the artichoke plume moth vary in color from buff to brownish buff, with a wingspan of 0.75 to 1.25 inches. The wings are divided into lobes, giving the appearance of several pairs of wings; the hind wings are fringed. Eggs are light greenish-yellow at first, turning darker (orange-yellow) with age, shiny, and very small. Artichoke plume moth is primarily a problem where artichokes are grown as perennials. Larvae feed on all parts of the plant, but economic damage occurs when they feed on the floral buds and render them unmarketable.",
+  "biology_life_history": "Eggs usually are laid singly on the underside of leaves and occasionally on the bud stalk. Upon hatching, tiny first instar larvae tend to feed externally. After the first molt, larvae start tunneling into the leaf stalk. With each subsequent molt, the larvae work their way toward the center of the bud. Larvae undergo four to five instars. Larvae in the last instar are yellowish to pink at maturity and about 0.63 inch long. When close to pupation, larvae cease feeding, emerge from the feeding site, and generally drop to the ground. Prepupae are very active in the early part of the stage and wander around in search of a suitable pupation site. Pupation generally occurs in plant debris, very often among folds of dried up leaves. The elongate pupae are pale yellowish brown, turning darker with age. There are three to four overlapping generations of the plume moth each year.",
+  "monitoring": "When planting or replanting an artichoke field, consider soaking replant stumps in a solution of the insect-killing (entomopathogenic) nematode, Steinernema carpocapsae . If done correctly, this can reduce plume moth infestations to less than 1% and reduce the number of treatments required during the first year. Pheromone traps can be used to detect adult activity. Trap catches of seven or more moths per week may indicate an impending problem. Examine leaves weekly during summer, fall, and spring for eggs. Eggs are difficult to see, and some experience is required to make an accurate egg count. A count of 1 egg per 50 leaves indicates that there might be enough eggs present to produce an economic infestation. Examine individual shoots weekly for plume moth larvae. Determine the percent shoot infestation by sampling at least 50 shoots. An infestation of 3% or more requires treatment. Timing is critical: target the treatment against the first instar larvae. The most effective insecticides for artichoke plume moth control are those that kill the adult moths and the larval stage.",
+  "management": {
+    "biological": "Natural enemies, especially parasitic wasps, attack the artichoke plume moth. But, they are seldom important in control, because the larva spends most of its time feeding within the plant, protected from natural enemies. Recently, in California, the egg parasitoid Trichogramma thalense was reported attacking plume moth that occurred on wild thistle. It may have applications in commercial releases.",
+    "chemical_commercial": [
+      "GS-omega/kappa-Hxtx-Hvla (Spear-Lep) at 1 to 2 pints product/A. PHI 0 day. REI 4 hr. Must be tank mixed with Bacillus thuringiensis (Bt) or other contact activity products to be effective.",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Registered in WA only. Bacillus",
+      "azadirachtin (Neemix) at 0.012 to 0.049 lb ai/A. PHI 0 days. REI 4 hr. Greenhouse only for transplanting to production fields.",
+      "bifenthrin (Brigade 2EC, Sniper) at 0.1 lb ai/A. PHI 5 days. REI 12 hr. Do not exceed 0.5 lb ai/A per season. Retreatment interval 15 days. Oregon only. bifenthrin/imidacloprid (Brigadier) at 0.1 to 0.2 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.5 lb ai/A imidacloprid and 0.5 lb ai/A bifenthrin. Retreatment interval 15 days.",
+      "chlorantraniliprole (Coragen) at 0.045 to 0.098 lb ai/A. PHI 3 days. REI 4 hr. Retreatment interval 14 days. Do not exceed 4 applications per crop or 0.2 lb ai/A per crop. Chromobacterium",
+      "deltamethrin (Delta Gold) at 0.018 to 0.028 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 3 days. Do not exceed 0.14 lb ai/A per season.",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.15 lb ai/A between bud formation and harvest.",
+      "methoxyfenozide (Intrepid 2F) at 0.06 to 0.25 lb ai/A. PHI 4 days. REI 4 hr. Retreatment interval 7 days. Do not exceed 1.0 lb ai/A or four applications per season. Addition of adjuvant improves performance.",
+      "permethrin (Pounce 25WP) at 0.1 to 0.3 lb ai/A. PHI 0 days. REI 12 hr. Do not exceed 0.9 lb ai/A per year. Retreatment interval 10 days.",
+      "pyriproxyfen (Knack) at 0.05 to 0.067 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.134 lb ai/A per year or two applications per season. Retreatment interval 14 days.",
+      "spinetoram (Radiant SC) at 0.0469 to 0.0625 lb ai/A. PHI 2 days. REI 4 hr. Retreatment interval 7 days. Do not exceed 4 applications or 0.25 lb ai/A per season. Follow resistance management procedures on the label.",
+      "spinosad (Success, Entrust SC) at 0.07 to 0.156 lb ai/A. PHI 2 day. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.33 lb ai/A per season. Limit 4 applications per crop. Entrust SC is",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "subtsugae (Grandevo) at 0.3 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "thuringiensis (Javelin WG, Xentari) at 0.5 to 1.25 lb/A formulated product. PHI 0 days. REI 4 hr. Slow acting. May need multiple applications. Add an appropriate",
+      "zeta-cypermethrin (Mustang Maxx) at 0.025 lb ai/A. PHI 5 day. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.1 lb ai/A per season. These products contain commonly used active ingredients for control of leafhopper in parsnip. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin (as a mix with",
+      "azadirachtin (neem extract)-Some formulations are",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "zeta-cypermethrin) esfenvalerate"
+    ],
+    "cultural": "Sanitation can be an important factor in plume moth population dynamics. By cutting off the plants at ground level, shredding the tops, and incorporating the plant materials into the soil, artichoke plume moth infestations can be reduced by about 95%. However, the movement of the adults between fields makes the impact on any given field temporary. During harvest, pick infested artichoke buds, regardless of stage of maturity, remove them from the field, and dispose of them."
+  },
+  "damage_tags": [
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:30:40.250795+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.540105+00:00"
+}

@@ -700,7 +700,7 @@ def extract_biodiversity_from_pfaf(
             }
         )
 
-    if "insect repellent" in low or "deter pests" in low:
+    if "insect repellent" in low or "deter pests_ver01" in low:
         biodiversity["repels_pests"].append(
             {
                 "target": "insect_pests",
@@ -711,20 +711,20 @@ def extract_biodiversity_from_pfaf(
             }
         )
 
-    if "keep all manner of insect pests away" in low:
+    if "keep all manner of insect pests_ver01 away" in low:
         biodiversity["repels_pests"].append(
             {
                 "target": "insect_pests",
                 "mechanism": "aromatic_foliage",
                 "source_name": "Plants For A Future",
                 "confidence": 0.75,
-                "notes": "PFAF says the plant can keep insect pests away from nearby plants.",
+                "notes": "PFAF says the plant can keep insect pests_ver01 away from nearby plants.",
             }
         )
 
-    if "pest confuser" in low or "mask the scent" in low or "confusing pests" in low:
+    if "pest confuser" in low or "mask the scent" in low or "confusing pests_ver01" in low:
         biodiversity["pest_confuser"] = True
-        biodiversity["biodiversity_notes"].append("PFAF suggests aromatic leaves may mask plant scent and confuse pests.")
+        biodiversity["biodiversity_notes"].append("PFAF suggests aromatic leaves may mask plant scent and confuse pests_ver01.")
 
     # Deduplicate list of dicts.
     biodiversity["companions"] = dedupe_dict_list(

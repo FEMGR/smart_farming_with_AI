@@ -23,24 +23,83 @@
 % ---------------------------------------------------------
 % ARTICHOKES
 % ---------------------------------------------------------
+
+% =========================================================
+% ALIASES BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ALOE VERA
+% ---------------------------------------------------------
+
+% =========================================================
+% ALIASES BY PLANT
+% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% ALOE VERA
+% ---------------------------------------------------------
+alias('aloe barbadensis, aloe vulgaris', aloe_vera).
+alias('aloe vera', aloe_vera).
+alias('barbados aloe', aloe_vera).
+alias('first aid plant', aloe_vera).
+alias('medicinal aloe', aloe_vera).
+
+% ---------------------------------------------------------
+% APPLE
+% ---------------------------------------------------------
+alias('apple', apple).
+
+% ---------------------------------------------------------
+% ARTICHOKE
+% ---------------------------------------------------------
+alias('artichoke; desert artichoke; european cardoon; globe artichoke; scotch thistle; scottish thistle; spanish artichoke; wild artichoke; wild cardoon. spanish: alcachofa; alcaucil; cardo; cardo de comer. french: artichaut commun; carde; cardon d’espagne. russian: artišok ispanskij. arabic: al harshuff. england and wales: march-ysgall. finland: isoartisokka. germany: artishocke; gemüseartishocke; gemüse-artishocke; kardone. italy: carciofo. netherlands: kardoen. portugal: alcachofra; cardo. spain: card; card comestible; card comú; herbacol. sweden: kardon.', artichoke).
+alias('cardoon', artichoke).
+alias('globe artichoke', artichoke).
+
+% ---------------------------------------------------------
+% ARTICHOKES
+% ---------------------------------------------------------
 alias('globe artichoke', artichokes).
 
 % ---------------------------------------------------------
 % ARUGULA
 % ---------------------------------------------------------
+alias('arugula', arugula).
+alias('euzomum vesicarium () link', arugula).
+alias('heterotypic synonyms: e', arugula).
+alias('homotypic synonyms: brassica vesicaria e', arugula).
+alias('raphanus vesicarius () crantz', arugula).
 alias('rocket', arugula).
 alias('roquette', arugula).
+alias('velleruca vesicaria () pomel', arugula).
+alias('wild rocket', arugula).
 
 % ---------------------------------------------------------
 % BASIL
 % ---------------------------------------------------------
+alias('basil', basil).
+alias('common basil', basil).
+alias('ocimum album, ocimum anisatum, ocimum barrelieri, ocimum medium, plectranthus barrelieri', basil).
 alias('sweet basil', basil).
+alias('thai basil', basil).
+alias('tropical basil', basil).
 
 % ---------------------------------------------------------
 % BEAN BUSH
 % ---------------------------------------------------------
 alias('common bean', bean_bush).
 alias('snap bean', bean_bush).
+
+% ---------------------------------------------------------
+% BEAN COMMON
+% ---------------------------------------------------------
+alias('bush bean', bean_common).
+alias('common bean', bean_common).
+alias('french bean', bean_common).
+alias('kidney bean', bean_common).
 
 % ---------------------------------------------------------
 % BEAN POLE
@@ -65,6 +124,11 @@ alias('capsicum', bell_pepper).
 alias('sweet pepper', bell_pepper).
 
 % ---------------------------------------------------------
+% BITTER MELON
+% ---------------------------------------------------------
+alias('bitter melon', bitter_melon).
+
+% ---------------------------------------------------------
 % BLACK PEPPER
 % ---------------------------------------------------------
 alias('peppercorn', black_pepper).
@@ -75,14 +139,42 @@ alias('peppercorn', black_pepper).
 alias('bramble', blackberries).
 
 % ---------------------------------------------------------
+% BLACKBERRY
+% ---------------------------------------------------------
+alias('alish', blackberry).
+alias('baganrra', blackberry).
+alias('blackberry', blackberry).
+alias('bramble', blackberry).
+alias('chanch', blackberry).
+alias('pakana', blackberry).
+alias('rovo', blackberry).
+alias('scepe', blackberry).
+alias('shrubby blackberry', blackberry).
+alias('spino', blackberry).
+alias('szeder', blackberry).
+
+% ---------------------------------------------------------
 % BOK CHOY
 % ---------------------------------------------------------
+alias('bok choy', bok_choy).
 alias('pak choi', bok_choy).
+
+% ---------------------------------------------------------
+% BROCCOLI
+% ---------------------------------------------------------
+alias('broccoli', broccoli).
 
 % ---------------------------------------------------------
 % CABBAGE
 % ---------------------------------------------------------
+alias('broccoli', cabbage).
+alias('brussels sprouts', cabbage).
+alias('cabbage', cabbage).
 alias('head cabbage', cabbage).
+alias('kohlrabi', cabbage).
+alias('sprouting broccoli', cabbage).
+alias('tronchuda cabbage', cabbage).
+alias('wild cabbage', cabbage).
 
 % ---------------------------------------------------------
 % CALENDULA
@@ -90,9 +182,35 @@ alias('head cabbage', cabbage).
 alias('pot marigold', calendula).
 
 % ---------------------------------------------------------
+% CARROT
+% ---------------------------------------------------------
+alias('bird\'s nest; bishop\'s lace; queen anne\'s lace; wild carrot. spanish: zanahoria. french: carotte. arabic: gazar. portuguese: cenoura-brava. germany: karotten; mohren. italy: carota selvatica. japan: noraninjin. netherlands: wilde peen. sweden: vild morot. also divlja mrkva', carrot).
+alias('carrot', carrot).
+alias('frustinaca agreste', carrot).
+alias('mrkvica.', carrot).
+alias('queen anne\'s lace', carrot).
+alias('wild carrot', carrot).
+
+% ---------------------------------------------------------
 % CATNIP
 % ---------------------------------------------------------
 alias('catmint', catnip).
+
+% ---------------------------------------------------------
+% CAULIFLOWER
+% ---------------------------------------------------------
+alias('cauliflower', cauliflower).
+
+% ---------------------------------------------------------
+% CELERY
+% ---------------------------------------------------------
+alias('ajwain-ka-patta (indian)', celery).
+alias('apium celleri', celery).
+alias('apium decumbens', celery).
+alias('carum graveolens', celery).
+alias('celeria graveolens', celery).
+alias('celery', celery).
+alias('wild celery. ajmod', celery).
 
 % ---------------------------------------------------------
 % CHAMOMILE
@@ -100,9 +218,24 @@ alias('catmint', catnip).
 alias('babuna', chamomile).
 
 % ---------------------------------------------------------
+% CHICKPEA
+% ---------------------------------------------------------
+alias('chickpea', chickpea).
+
+% ---------------------------------------------------------
+% CHICORY
+% ---------------------------------------------------------
+alias('chicory', chicory).
+
+% ---------------------------------------------------------
 % CHILI PEPPER
 % ---------------------------------------------------------
 alias('hot pepper', chili_pepper).
+
+% ---------------------------------------------------------
+% CHIVE
+% ---------------------------------------------------------
+alias('chive', chive).
 
 % ---------------------------------------------------------
 % CHOY SUM
@@ -121,6 +254,11 @@ alias('coriander', cilantro).
 alias('ceylon cinnamon', cinnamon).
 
 % ---------------------------------------------------------
+% CORIANDER
+% ---------------------------------------------------------
+alias('coriander', coriander).
+
+% ---------------------------------------------------------
 % CORN
 % ---------------------------------------------------------
 alias('maize', corn).
@@ -133,18 +271,30 @@ alias('bachelor\'s button', cornflower).
 % ---------------------------------------------------------
 % CUCUMBER
 % ---------------------------------------------------------
+alias('cucumber', cucumber).
 alias('cuke', cucumber).
+alias('garden cucumber', cucumber).
 
 % ---------------------------------------------------------
 % DANDELION
 % ---------------------------------------------------------
+alias('common dandelion', dandelion).
+alias('dandelion', dandelion).
+alias('kanphool', dandelion).
+alias('kukraundha', dandelion).
 alias('lion\'s tooth', dandelion).
+
+% ---------------------------------------------------------
+% DILL
+% ---------------------------------------------------------
+alias('dill', dill).
 
 % ---------------------------------------------------------
 % EGGPLANT
 % ---------------------------------------------------------
 alias('aubergine', eggplant).
 alias('brinjal', eggplant).
+alias('eggplant', eggplant).
 
 % ---------------------------------------------------------
 % ELDERFLOWER
@@ -152,277 +302,19 @@ alias('brinjal', eggplant).
 alias('elderberry flower', elderflower).
 
 % ---------------------------------------------------------
-% FINGERROOT
+% FENNEL
 % ---------------------------------------------------------
-alias('chinese ginger', fingerroot).
-
-% ---------------------------------------------------------
-% GALANGAL
-% ---------------------------------------------------------
-alias('greater galangal', galangal).
-alias(lengkuas, galangal).
-
-% ---------------------------------------------------------
-% GOTU KOLA
-% ---------------------------------------------------------
-alias('gotu kola', gotu_kola).
-alias('hydrocotyle asiatica', gotu_kola).
-alias('spadeleaf', gotu_kola).
-
-% ---------------------------------------------------------
-% GOURD
-% ---------------------------------------------------------
-alias('bottle gourd', gourd).
-alias('calabash', gourd).
-
-% ---------------------------------------------------------
-% GREEN ONION
-% ---------------------------------------------------------
-alias('scallion', green_onion).
-alias('spring onion', green_onion).
-
-% ---------------------------------------------------------
-% HORSERADISH
-% ---------------------------------------------------------
-alias('red cole', horseradish).
-
-% ---------------------------------------------------------
-% LAVENDER
-% ---------------------------------------------------------
-alias('english lavender', lavender).
-
-% ---------------------------------------------------------
-% LEEK
-% ---------------------------------------------------------
-alias('garden leek', leek).
-
-% ---------------------------------------------------------
-% LEMON BALM
-% ---------------------------------------------------------
-alias('balm mint', lemon_balm).
-
-% ---------------------------------------------------------
-% LEMONGRASS
-% ---------------------------------------------------------
-alias('citronella grass', lemongrass).
-
-% ---------------------------------------------------------
-% LESSER GALANGAL
-% ---------------------------------------------------------
-alias('kencur', lesser_galangal).
-
-% ---------------------------------------------------------
-% MUSTARD GREENS
-% ---------------------------------------------------------
-alias('leaf mustard', mustard_greens).
-
-% ---------------------------------------------------------
-% NASTURTIUM
-% ---------------------------------------------------------
-alias('indian cress', nasturtium).
-
-% ---------------------------------------------------------
-% PARSLEY
-% ---------------------------------------------------------
-alias('garden parsley', parsley).
-
-% ---------------------------------------------------------
-% PEA ENGLISH
-% ---------------------------------------------------------
-alias('garden pea', pea_english).
-alias('shelling pea', pea_english).
-
-% ---------------------------------------------------------
-% POTATO
-% ---------------------------------------------------------
-alias('spud', potato).
-alias('tater', potato).
-
-% ---------------------------------------------------------
-% PURSLANE
-% ---------------------------------------------------------
-alias('little hogweed', purslane).
-
-% ---------------------------------------------------------
-% RICE
-% ---------------------------------------------------------
-alias('paddy', rice).
-
-% ---------------------------------------------------------
-% ROSEMARY
-% ---------------------------------------------------------
-alias('anthos', rosemary).
-
-% ---------------------------------------------------------
-% SHALLOT
-% ---------------------------------------------------------
-alias('multiplier onion', shallot).
-
-% ---------------------------------------------------------
-% SORGHUM
-% ---------------------------------------------------------
-alias('milo', sorghum).
-
-% ---------------------------------------------------------
-% STRAWBERRIES
-% ---------------------------------------------------------
-alias('garden strawberry', strawberries).
-
-% ---------------------------------------------------------
-% SUGARCANE
-% ---------------------------------------------------------
-alias('sugar cane', sugarcane).
-
-% ---------------------------------------------------------
-% SWEET CORN
-% ---------------------------------------------------------
-alias('sugar corn', sweet_corn).
-
-% ---------------------------------------------------------
-% SWEET POTATO
-% ---------------------------------------------------------
-alias('yam', sweet_potato).
-
-% ---------------------------------------------------------
-% SWISS CHARD
-% ---------------------------------------------------------
-alias('silverbeet', swiss_chard).
-
-% ---------------------------------------------------------
-% TARO
-% ---------------------------------------------------------
-alias('dasheen', taro).
-
-% ---------------------------------------------------------
-% TEMU IRENG
-% ---------------------------------------------------------
-alias('black turmeric', temu_ireng).
-
-% ---------------------------------------------------------
-% TEMULAWAK
-% ---------------------------------------------------------
-alias('javanese turmeric', temulawak).
-
-% ---------------------------------------------------------
-% TOMATO
-% ---------------------------------------------------------
-alias('love apple', tomato).
-
-% ---------------------------------------------------------
-% TURMERIC
-% ---------------------------------------------------------
-alias('kunyit', turmeric).
-
-% ---------------------------------------------------------
-% TURNIP
-% ---------------------------------------------------------
-alias('white turnip', turnip).
-
-% ---------------------------------------------------------
-% WATER SPINACH
-% ---------------------------------------------------------
-alias('kang kong', water_spinach).
-
-% ---------------------------------------------------------
-% WATERMELON
-% ---------------------------------------------------------
-alias('melon water', watermelon).
-
-% ---------------------------------------------------------
-% YEW
-% ---------------------------------------------------------
-alias('english yew', yew).
-
-% ---------------------------------------------------------
-% ZUCCHINI
-% ---------------------------------------------------------
-alias('courgette', zucchini).
-
-
-% =========================================================
-% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: alias_fact
-% Review before editing manually.
-% =========================================================
-
-alias('aloe vera', aloe_vera).
-alias('barbados aloe', aloe_vera).
-alias('first aid plant', aloe_vera).
-alias('medicinal aloe', aloe_vera).
-alias('aloe barbadensis, aloe vulgaris', aloe_vera).
-alias('apple', apple).
-alias('artichoke; desert artichoke; european cardoon; globe artichoke; scotch thistle; scottish thistle; spanish artichoke; wild artichoke; wild cardoon. spanish: alcachofa; alcaucil; cardo; cardo de comer. french: artichaut commun; carde; cardon d’espagne. russian: artišok ispanskij. arabic: al harshuff. england and wales: march-ysgall. finland: isoartisokka. germany: artishocke; gemüseartishocke; gemüse-artishocke; kardone. italy: carciofo. netherlands: kardoen. portugal: alcachofra; cardo. spain: card; card comestible; card comú; herbacol. sweden: kardon.', artichoke).
-alias('cardoon', artichoke).
-alias('globe artichoke', artichoke).
-alias('arugula', arugula).
-alias('wild rocket', arugula).
-alias('euzomum vesicarium () link', arugula).
-alias('heterotypic synonyms: e', arugula).
-alias('homotypic synonyms: brassica vesicaria e', arugula).
-alias('raphanus vesicarius () crantz', arugula).
-alias('velleruca vesicaria () pomel', arugula).
-alias('common basil', basil).
-alias('thai basil', basil).
-alias('tropical basil', basil).
-alias('basil', basil).
-alias('ocimum album, ocimum anisatum, ocimum barrelieri, ocimum medium, plectranthus barrelieri', basil).
-alias('bush bean', bean_common).
-alias('french bean', bean_common).
-alias('kidney bean', bean_common).
-alias('common bean', bean_common).
-alias('bitter melon', bitter_melon).
-alias('alish', blackberry).
-alias('baganrra', blackberry).
-alias('blackberry', blackberry).
-alias('bramble', blackberry).
-alias('chanch', blackberry).
-alias('pakana', blackberry).
-alias('rovo', blackberry).
-alias('scepe', blackberry).
-alias('shrubby blackberry', blackberry).
-alias('spino', blackberry).
-alias('szeder', blackberry).
-alias('bok choy', bok_choy).
-alias('broccoli', broccoli).
-alias('broccoli', cabbage).
-alias('brussels sprouts', cabbage).
-alias('kohlrabi', cabbage).
-alias('sprouting broccoli', cabbage).
-alias('tronchuda cabbage', cabbage).
-alias('wild cabbage', cabbage).
-alias('cabbage', cabbage).
-alias('bird\'s nest; bishop\'s lace; queen anne\'s lace; wild carrot. spanish: zanahoria. french: carotte. arabic: gazar. portuguese: cenoura-brava. germany: karotten; mohren. italy: carota selvatica. japan: noraninjin. netherlands: wilde peen. sweden: vild morot. also divlja mrkva', carrot).
-alias('carrot', carrot).
-alias('frustinaca agreste', carrot).
-alias('mrkvica.', carrot).
-alias('queen anne\'s lace', carrot).
-alias('wild carrot', carrot).
-alias('cauliflower', cauliflower).
-alias('ajwain-ka-patta (indian)', celery).
-alias('wild celery. ajmod', celery).
-alias('celery', celery).
-alias('apium celleri', celery).
-alias('apium decumbens', celery).
-alias('carum graveolens', celery).
-alias('celeria graveolens', celery).
-alias('chickpea', chickpea).
-alias('chicory', chicory).
-alias('chive', chive).
-alias('coriander', coriander).
-alias('cucumber', cucumber).
-alias('garden cucumber', cucumber).
-alias('common dandelion', dandelion).
-alias('dandelion', dandelion).
-alias('kanphool', dandelion).
-alias('kukraundha', dandelion).
-alias('dill', dill).
-alias('eggplant', eggplant).
-alias('fennel', fennel).
-alias('sweet fennel', fennel).
 alias('anethum dulce', fennel).
 alias('anethum foeniculum', fennel).
+alias('fennel', fennel).
 alias('foeniculum divaricatum', fennel).
 alias('foeniculum officinale', fennel).
 alias('seseli foeniculum', fennel).
+alias('sweet fennel', fennel).
+
+% ---------------------------------------------------------
+% FIG
+% ---------------------------------------------------------
 alias('adriatic fig', fig).
 alias('anjeer', fig).
 alias('anjir', fig).
@@ -444,25 +336,25 @@ alias('fagari', fig).
 alias('feige', fig).
 alias('feigenbaum', fig).
 alias('fico', fig).
-alias('fig', fig).
 alias('fig common', fig).
 alias('fig tree', fig).
+alias('fig', fig).
 alias('figo', fig).
 alias('figo-roxo', fig).
 alias('figueira', fig).
 alias('figueira-comum', fig).
 alias('figueira-da-europa', fig).
 alias('figueira-do-reino', fig).
-alias('figuier', fig).
 alias('figuier commun', fig).
+alias('figuier', fig).
 alias('fikon', fig).
 alias('fique', fig).
 alias('flowerless fruit', fig).
 alias('getfikon', fig).
 alias('higo', fig).
-alias('higuera', fig).
 alias('higuera comun', fig).
 alias('higuera común', fig).
+alias('higuera', fig).
 alias('ichijiku', fig).
 alias('inzer', fig).
 alias('manjimedi', fig).
@@ -479,8 +371,27 @@ alias('teen', fig).
 alias('tenatti', fig).
 alias('teneyatti', fig).
 alias('wu hua guo', fig).
+
+% ---------------------------------------------------------
+% FINGERROOT
+% ---------------------------------------------------------
+alias('chinese ginger', fingerroot).
+
+% ---------------------------------------------------------
+% GALANGAL
+% ---------------------------------------------------------
 alias('galangal', galangal).
+alias('greater galangal', galangal).
+alias(lengkuas, galangal).
+
+% ---------------------------------------------------------
+% GARLIC
+% ---------------------------------------------------------
 alias('garlic', garlic).
+
+% ---------------------------------------------------------
+% GINGER
+% ---------------------------------------------------------
 alias('aadar shuth', ginger).
 alias('ada', ginger).
 alias('adab', ginger).
@@ -505,17 +416,19 @@ alias('alla', ginger).
 alias('allam', ginger).
 alias('allamu', ginger).
 alias('amada', ginger).
+alias('amomum angustifolium salisb', ginger).
+alias('amomum zingiber amomum zinziba hill zingiber aromaticum noronha zing', ginger).
 alias('andrakam', ginger).
 alias('ardak', ginger).
 alias('ardrak', ginger).
-alias('ardraka', ginger).
 alias('ardraka (rhizome)', ginger).
+alias('ardraka', ginger).
 alias('ardrakam', ginger).
 alias('ardrakamu', ginger).
 alias('arttarakam', ginger).
 alias('asunglasemtong', ginger).
-alias('ata-le', ginger).
 alias('ata-le jinja', ginger).
+alias('ata-le', ginger).
 alias('atale', ginger).
 alias('au?adha', ginger).
 alias('ausadha', ginger).
@@ -550,13 +463,13 @@ alias('gemberwortel', ginger).
 alias('gengibre', ginger).
 alias('gernber', ginger).
 alias('gin', ginger).
-alias('gingembre', ginger).
 alias('gingembre (rhizome de)', ginger).
-alias('ginger', ginger).
+alias('gingembre', ginger).
 alias('ginger liquid extract', ginger).
 alias('ginger oil', ginger).
 alias('ginger root', ginger).
 alias('ginger tincture', ginger).
+alias('ginger', ginger).
 alias('ginger: common', ginger).
 alias('ginger|inguru', ginger).
 alias('giung', ginger).
@@ -566,16 +479,16 @@ alias('gung', ginger).
 alias('gyömbér gyökértörzs', ginger).
 alias('gznger', ginger).
 alias('hajing', ginger).
-alias('halia', ginger).
 alias('halia bara', ginger).
 alias('halia hudangsia', ginger).
 alias('halia merah', ginger).
 alias('halia padi', ginger).
+alias('halia', ginger).
 alias('halija', ginger).
-alias('haliya', ginger).
 alias('haliya bara', ginger).
-alias('hasishunti', ginger).
+alias('haliya', ginger).
 alias('hasishunti kash', ginger).
+alias('hasishunti', ginger).
 alias('hasisunti', ginger).
 alias('hli', ginger).
 alias('imbieru šakniastiebiai', ginger).
@@ -601,10 +514,10 @@ alias('janzabeil', ginger).
 alias('jengibre', ginger).
 alias('jenjibre', ginger).
 alias('jeung', ginger).
-alias('jiang', ginger).
 alias('jiang ding', ginger).
 alias('jiang liujingao', ginger).
 alias('jiang pi', ginger).
+alias('jiang', ginger).
 alias('jinja', ginger).
 alias('jinjaa', ginger).
 alias('jion', ginger).
@@ -623,9 +536,9 @@ alias('kerati', ginger).
 alias('keung', ginger).
 alias('khenseing', ginger).
 alias('khiang', ginger).
-alias('khing', ginger).
 alias('khing klaeng', ginger).
 alias('khing phueak', ginger).
+alias('khing', ginger).
 alias('khing-daeng', ginger).
 alias('khuong', ginger).
 alias('kingra', ginger).
@@ -663,10 +576,10 @@ alias('prepared dried ginger', ginger).
 alias('processed ginger', ginger).
 alias('raw ginger', ginger).
 alias('raíz', ginger).
-alias('rhizoma zingiberis', ginger).
 alias('rhizoma zingiberis officinale', ginger).
 alias('rhizoma zingiberis praeparatum', ginger).
 alias('rhizoma zingiberis recens', ginger).
+alias('rhizoma zingiberis', ginger).
 alias('rimpang jahe', ginger).
 alias('rizom de ghimbir', ginger).
 alias('rizoma de', ginger).
@@ -723,46 +636,61 @@ alias('visvabhesaja', ginger).
 alias('visvaua?adha', ginger).
 alias('visvausadha', ginger).
 alias('wai', ginger).
-alias('zangabil', ginger).
 alias('zangabil ee-e-tar', ginger).
-alias('zanjabeel', ginger).
+alias('zangabil', ginger).
 alias('zanjabeel ratab', ginger).
 alias('zanjabeel taza', ginger).
+alias('zanjabeel', ginger).
 alias('zanjabil', ginger).
 alias('zencebîl', ginger).
 alias('zencefîl', ginger).
-alias('zenzero', ginger).
 alias('zenzero rizoma', ginger).
+alias('zenzero', ginger).
 alias('zimioga', ginger).
 alias('zinam', ginger).
 alias('zingabil urratab', ginger).
-alias('zingiber', ginger).
 alias('zingiber (dried ginger)', ginger).
 alias('zingiber officinale', ginger).
+alias('zingiber', ginger).
 alias('zingiberis processum rhizoma', ginger).
-alias('zingiberis rhizoma', ginger).
 alias('zingiberis rhizoma crudus', ginger).
 alias('zingiberis rhizoma praeparatum', ginger).
 alias('zingiberis rhizoma pulveratum', ginger).
 alias('zingiberis rhizoma recens', ginger).
+alias('zingiberis rhizoma', ginger).
 alias('zingibil', ginger).
 alias('zinjabil', ginger).
 alias('zinjabîl', ginger).
 alias('zázvorový oddenek', ginger).
-alias('amomum angustifolium salisb', ginger).
-alias('amomum zingiber amomum zinziba hill zingiber aromaticum noronha zing', ginger).
+
+% ---------------------------------------------------------
+% GOTU KOLA
+% ---------------------------------------------------------
+alias('gotu kola', gotu_kola).
+alias('hydrocotyle asiatica', gotu_kola).
+alias('spadeleaf', gotu_kola).
+
+% ---------------------------------------------------------
+% GOURD
+% ---------------------------------------------------------
+alias('bottle gourd', gourd).
+alias('calabash', gourd).
+
+% ---------------------------------------------------------
+% GRAPE
+% ---------------------------------------------------------
 alias('aanab', grape).
 alias('ainab', grape).
 alias('aitoviiniköynnös', grape).
 alias('angoor', grape).
 alias('angur', grape).
-alias('blad', grape).
 alias('blad från vinranka', grape).
+alias('blad', grape).
 alias('bortermo szolo levél', grape).
 alias('cervený list vinné révy', grape).
 alias('cognac oil', grape).
-alias('common grape', grape).
 alias('common grape vine', grape).
+alias('common grape', grape).
 alias('dakh', grape).
 alias('darakh', grape).
 alias('diva loza', grape).
@@ -770,9 +698,9 @@ alias('drak?a (fruit)', grape).
 alias('drakh', grape).
 alias('draksa', grape).
 alias('draksh', grape).
-alias('draksha', grape).
 alias('draksha kottai', grape).
 alias('draksha pondu', grape).
+alias('draksha', grape).
 alias('drakshai', grape).
 alias('drakya', grape).
 alias('dry grapes', grape).
@@ -784,11 +712,11 @@ alias('folha de videira', grape).
 alias('frunze de vita-de-vie', grape).
 alias('gostani', grape).
 alias('gostoni', grape).
-alias('grape', grape).
 alias('grape seeds oligomeric proanthocyanidins', grape).
 alias('grape vine', grape).
-alias('grapevine', grape).
+alias('grape', grape).
 alias('grapevine leaf', grape).
+alias('grapevine', grape).
 alias('grozde yagorida', grape).
 alias('hoja de', grape).
 alias('ista vinkoka lapas.', grape).
@@ -819,9 +747,9 @@ alias('tikruju vynmedžiu lapai', grape).
 alias('tumpeang ba\'y chu', grape).
 alias('uva', grape).
 alias('vid', grape).
-alias('vigne', grape).
 alias('vigne rouge', grape).
 alias('vigne vinifère', grape).
+alias('vigne', grape).
 alias('viinapuu lehed', grape).
 alias('vinblad', grape).
 alias('vine', grape).
@@ -834,23 +762,62 @@ alias('vínviðarlauf', grape).
 alias('weinrebe', grape).
 alias('werqa tad-dielja', grape).
 alias('wijnstokblad', grape).
-alias('wine', grape).
 alias('wine grape', grape).
+alias('wine', grape).
 alias('zabeeb-ul-jabal', grape).
+
+% ---------------------------------------------------------
+% GREEN ONION
+% ---------------------------------------------------------
+alias('scallion', green_onion).
+alias('spring onion', green_onion).
+
+% ---------------------------------------------------------
+% HORSERADISH
+% ---------------------------------------------------------
+alias('red cole', horseradish).
+
+% ---------------------------------------------------------
+% KALE
+% ---------------------------------------------------------
 alias('kale', kale).
-alias('true lavender', lavender).
+
+% ---------------------------------------------------------
+% LAVENDER
+% ---------------------------------------------------------
+alias('english lavender', lavender).
 alias('lavender', lavender).
+alias('true lavender', lavender).
+
+% ---------------------------------------------------------
+% LEEK
+% ---------------------------------------------------------
+alias('garden leek', leek).
 alias('leek', leek).
+
+% ---------------------------------------------------------
+% LEMON BALM
+% ---------------------------------------------------------
+alias('balm mint', lemon_balm).
 alias('bee balm', lemon_balm).
 alias('common balm', lemon_balm).
+alias('faucibarba officinalis', lemon_balm).
 alias('faucibarba officinalis. mutelia officinalis. thymus melissa.', lemon_balm).
 alias('lemon balm', lemon_balm).
-alias('sweet balm', lemon_balm).
-alias('faucibarba officinalis', lemon_balm).
 alias('mutelia officinalis', lemon_balm).
+alias('sweet balm', lemon_balm).
 alias('thymus melissa', lemon_balm).
-alias('adas', lentil).
+
+% ---------------------------------------------------------
+% LEMONGRASS
+% ---------------------------------------------------------
+alias('citronella grass', lemongrass).
+
+% ---------------------------------------------------------
+% LENTIL
+% ---------------------------------------------------------
 alias('adas msallam', lentil).
+alias('adas', lentil).
 alias('aoi mame', lentil).
 alias('bagali', lentil).
 alias('bing dou', lentil).
@@ -867,8 +834,8 @@ alias('lenteja', lentil).
 alias('lenticchia', lentil).
 alias('lentil', lentil).
 alias('lentilha', lentil).
-alias('lentille', lentil).
 alias('lentille comestible', lentil).
+alias('lentille', lentil).
 alias('lentillon', lentil).
 alias('lentja', lentil).
 alias('lins', lentil).
@@ -876,16 +843,16 @@ alias('linse', lentil).
 alias('malka masur', lentil).
 alias('masar', lentil).
 alias('masara', lentil).
-alias('masoor', lentil).
 alias('masoor paruppu', lentil).
+alias('masoor', lentil).
 alias('masooralu', lentil).
 alias('masser', lentil).
 alias('massora', lentil).
 alias('masur', lentil).
-alias('masura', lentil).
 alias('masura (seed)', lentil).
 alias('masura bele', lentil).
 alias('masura pappu', lentil).
+alias('masura', lentil).
 alias('masuri', lentil).
 alias('masurmoha', lentil).
 alias('masuro', lentil).
@@ -901,8 +868,21 @@ alias('supya', lentil).
 alias('thua daeng', lentil).
 alias('thua raatcha maat', lentil).
 alias('vattupparupu.', lentil).
+
+% ---------------------------------------------------------
+% LESSER GALANGAL
+% ---------------------------------------------------------
+alias('kencur', lesser_galangal).
+
+% ---------------------------------------------------------
+% LETTUCE
+% ---------------------------------------------------------
 alias('garden lettuce', lettuce).
 alias('lettuce', lettuce).
+
+% ---------------------------------------------------------
+% MELON
+% ---------------------------------------------------------
 alias('akobokobo', melon).
 alias('akolil', melon).
 alias('armenian cucumber', melon).
@@ -942,6 +922,10 @@ alias('taena-thai', melon).
 alias('teeng laay', melon).
 alias('thumattikai', melon).
 alias('trasak srow.', melon).
+
+% ---------------------------------------------------------
+% MORINGA
+% ---------------------------------------------------------
 alias('achajhada', moringa).
 alias('agamago', moringa).
 alias('agati', moringa).
@@ -988,6 +972,7 @@ alias('ewe igbale', moringa).
 alias('ewe ile', moringa).
 alias('gawara', moringa).
 alias('gigandjah', moringa).
+alias('guilandina moringa hyperanthera moringa () vahl moringa moringa () millsp', moringa).
 alias('habbah ghaliah', moringa).
 alias('habiwal hausa', moringa).
 alias('halim', moringa).
@@ -1023,9 +1008,10 @@ alias('mlonge', moringa).
 alias('mlongo', moringa).
 alias('mlonje', moringa).
 alias('mocaka', moringa).
-alias('moringa', moringa).
 alias('moringa a graines tripteres', moringa).
 alias('moringa ailée', moringa).
+alias('moringa pterygospe', moringa).
+alias('moringa', moringa).
 alias('moringueiro', moringa).
 alias('mouroungue', moringa).
 alias('mronge', moringa).
@@ -1033,36 +1019,36 @@ alias('mrongo', moringa).
 alias('mrum', moringa).
 alias('mulaga', moringa).
 alias('mulaya chetta', moringa).
-alias('munaga', moringa).
 alias('munaga aku', moringa).
 alias('munaga chettu', moringa).
-alias('munga', moringa).
+alias('munaga', moringa).
 alias('munga arak', moringa).
+alias('munga', moringa).
 alias('mungna', moringa).
 alias('munika', moringa).
-alias('muringa', moringa).
 alias('muringa elai', moringa).
-alias('muringai', moringa).
+alias('muringa', moringa).
 alias('muringai virai', moringa).
+alias('muringai', moringa).
 alias('muringnga', moringa).
 alias('muringueiro', moringa).
 alias('muringya', moringa).
 alias('murinna', moringa).
 alias('murruggai', moringa).
 alias('murunga', moringa).
-alias('murungai', moringa).
 alias('murungai iali', moringa).
 alias('murungai ilai', moringa).
+alias('murungai', moringa).
 alias('murunkai', moringa).
 alias('mzunze', moringa).
 alias('na-sha', moringa).
 alias('nanquera', moringa).
 alias('neegge', moringa).
 alias('never die', moringa).
-alias('nugge', moringa).
 alias('nugge beeta', moringa).
 alias('nugge ele', moringa).
 alias('nugge kand chakke', moringa).
+alias('nugge', moringa).
 alias('nuggekoyimara', moringa).
 alias('nuggemara', moringa).
 alias('néverdié', moringa).
@@ -1070,8 +1056,8 @@ alias('oil of ben tree', moringa).
 alias('okwe', moringa).
 alias('okwe-beke', moringa).
 alias('oyibo', moringa).
-alias('paraíso', moringa).
 alias('paraíso blanc', moringa).
+alias('paraíso', moringa).
 alias('pemanggai', moringa).
 alias('pferderettichbaum', moringa).
 alias('ramunggai', moringa).
@@ -1100,13 +1086,13 @@ alias('sangoa', moringa).
 alias('sanjano', moringa).
 alias('sanjna', moringa).
 alias('saragave', moringa).
-alias('saragavo', moringa).
 alias('saragavo parna', moringa).
+alias('saragavo', moringa).
 alias('saragvo', moringa).
 alias('sargavo', moringa).
 alias('segat sala', moringa).
-alias('segata', moringa).
 alias('segata pana', moringa).
+alias('segata', moringa).
 alias('segta', moringa).
 alias('sehjan', moringa).
 alias('sehjana', moringa).
@@ -1128,11 +1114,11 @@ alias('shipka hali', moringa).
 alias('shobhanjana', moringa).
 alias('shorjona', moringa).
 alias('shuka halinka', moringa).
-alias('sigru', moringa).
 alias('sigru (leaf)', moringa).
 alias('sigru (root bark)', moringa).
 alias('sigru (seed)', moringa).
 alias('sigru (stem bark)', moringa).
+alias('sigru', moringa).
 alias('sijan', moringa).
 alias('sital chini', moringa).
 alias('sloek morom', moringa).
@@ -1161,41 +1147,121 @@ alias('zogale', moringa).
 alias('zogall', moringa).
 alias('zogall-gandi', moringa).
 alias('zogallagandi', moringa).
-alias('guilandina moringa hyperanthera moringa () vahl moringa moringa () millsp', moringa).
-alias('moringa pterygospe', moringa).
+
+% ---------------------------------------------------------
+% MUSTARD GREENS
+% ---------------------------------------------------------
+alias('leaf mustard', mustard_greens).
+
+% ---------------------------------------------------------
+% NASTURTIUM
+% ---------------------------------------------------------
+alias('indian cress', nasturtium).
+
+% ---------------------------------------------------------
+% ONION
+% ---------------------------------------------------------
+alias('allium angolense, allium aobanum, allium ascalonicum, cepa esculenta', onion).
 alias('garden onion', onion).
 alias('onion', onion).
-alias('allium angolense, allium aobanum, allium ascalonicum, cepa esculenta', onion).
+
+% ---------------------------------------------------------
+% OREGANO
+% ---------------------------------------------------------
 alias('oregano', oregano).
 alias('pot marjoram', oregano).
+
+% ---------------------------------------------------------
+% PARSLEY
+% ---------------------------------------------------------
+alias('garden parsley', parsley).
 alias('parsley', parsley).
 alias('petroselinum petroselinum', parsley).
 alias('petroselinum vulgare', parsley).
 alias('selinum petroselinum', parsley).
+
+% ---------------------------------------------------------
+% PEA
+% ---------------------------------------------------------
 alias('garden pea', pea).
 alias('pea', pea).
-alias('peanut', peanut).
+
+% ---------------------------------------------------------
+% PEA ENGLISH
+% ---------------------------------------------------------
+alias('garden pea', pea_english).
+alias('shelling pea', pea_english).
+
+% ---------------------------------------------------------
+% PEANUT
+% ---------------------------------------------------------
 alias('arachis nambyquarae', peanut).
 alias('lathyrus esquirolii', peanut).
+alias('peanut', peanut).
+
+% ---------------------------------------------------------
+% PEAR
+% ---------------------------------------------------------
 alias('common pear', pear).
-alias('wild pear', pear).
 alias('pear', pear).
+alias('wild pear', pear).
+
+% ---------------------------------------------------------
+% PEPPERMINT
+% ---------------------------------------------------------
 alias('bergamot mint', peppermint).
 alias('eau de cologne mint', peppermint).
 alias('peppermint', peppermint).
+
+% ---------------------------------------------------------
+% POTATO
+% ---------------------------------------------------------
 alias('andigena', potato).
 alias('potato', potato).
 alias('solanum tuberosum andigena', potato).
+alias('spud', potato).
+alias('tater', potato).
+
+% ---------------------------------------------------------
+% PUMPKIN
+% ---------------------------------------------------------
 alias('field pumpkin', pumpkin).
 alias('ozark melon', pumpkin).
 alias('pumpkin', pumpkin).
 alias('texas gourd', pumpkin).
+
+% ---------------------------------------------------------
+% PURSLANE
+% ---------------------------------------------------------
+alias('little hogweed', purslane).
+
+% ---------------------------------------------------------
+% RADISH
+% ---------------------------------------------------------
 alias('cultivated radish', radish).
 alias('radish', radish).
+
+% ---------------------------------------------------------
+% RASPBERRY
+% ---------------------------------------------------------
 alias('american red raspberry', raspberry).
 alias('grayleaf red raspberry', raspberry).
 alias('raspberry', raspberry).
+
+% ---------------------------------------------------------
+% RICE
+% ---------------------------------------------------------
+alias('paddy', rice).
+
+% ---------------------------------------------------------
+% ROSEMARY
+% ---------------------------------------------------------
+alias('anthos', rosemary).
 alias('rosemary', rosemary).
+
+% ---------------------------------------------------------
+% SAGE
+% ---------------------------------------------------------
 alias('adacayi', sage).
 alias('broadleaf sage', sage).
 alias('ching-chieh', sage).
@@ -1210,18 +1276,63 @@ alias('salbei', sage).
 alias('salie', sage).
 alias('salva', sage).
 alias('salvia', sage).
-alias('sauge', sage).
 alias('sauge commune', sage).
 alias('sauge officinale', sage).
+alias('sauge', sage).
 alias('shalfey', sage).
 alias('small leaf sage', sage).
 alias('true sage', sage).
+
+% ---------------------------------------------------------
+% SHALLOT
+% ---------------------------------------------------------
+alias('multiplier onion', shallot).
+
+% ---------------------------------------------------------
+% SORGHUM
+% ---------------------------------------------------------
+alias('milo', sorghum).
+
+% ---------------------------------------------------------
+% SOYBEAN
+% ---------------------------------------------------------
 alias('soya bean', soybean).
 alias('soybean', soybean).
+
+% ---------------------------------------------------------
+% SPEARMINT
+% ---------------------------------------------------------
 alias('spearmint', spearmint).
+
+% ---------------------------------------------------------
+% STRAWBERRIES
+% ---------------------------------------------------------
+alias('garden strawberry', strawberries).
+
+% ---------------------------------------------------------
+% STRAWBERRY
+% ---------------------------------------------------------
 alias('strawberry', strawberry).
+
+% ---------------------------------------------------------
+% SUGARCANE
+% ---------------------------------------------------------
+alias('sugar cane', sugarcane).
+
+% ---------------------------------------------------------
+% SUNFLOWER
+% ---------------------------------------------------------
 alias('common sunflower', sunflower).
 alias('sunflower', sunflower).
+
+% ---------------------------------------------------------
+% SWEET CORN
+% ---------------------------------------------------------
+alias('sugar corn', sweet_corn).
+
+% ---------------------------------------------------------
+% SWEET POTATO
+% ---------------------------------------------------------
 alias('agietu', sweet_potato).
 alias('anago-te', sweet_potato).
 alias('anamo', sweet_potato).
@@ -1299,39 +1410,99 @@ alias('satsuma inno', sweet_potato).
 alias('setilo', sweet_potato).
 alias('shakar-kandi', sweet_potato).
 alias('shakarkand', sweet_potato).
-alias('sweet potato', sweet_potato).
 alias('sweet potato vine', sweet_potato).
+alias('sweet potato', sweet_potato).
 alias('sweet-potato', sweet_potato).
 alias('süßkartoffel', sweet_potato).
 alias('tuktuka', sweet_potato).
 alias('wild potato vine', sweet_potato).
 alias('wild potato wit', sweet_potato).
+alias('yam', sweet_potato).
 alias('zoete aardappel.', sweet_potato).
+
+% ---------------------------------------------------------
+% SWISS CHARD
+% ---------------------------------------------------------
+alias('silverbeet', swiss_chard).
+
+% ---------------------------------------------------------
+% TARO
+% ---------------------------------------------------------
+alias('dasheen', taro).
+
+% ---------------------------------------------------------
+% TEMU IRENG
+% ---------------------------------------------------------
+alias('black turmeric', temu_ireng).
+
+% ---------------------------------------------------------
+% TEMULAWAK
+% ---------------------------------------------------------
+alias('javanese turmeric', temulawak).
+
+% ---------------------------------------------------------
+% THYME
+% ---------------------------------------------------------
 alias('common thyme', thyme).
 alias('garden thyme', thyme).
 alias('german thyme', thyme).
+alias('origanum thymus kuntze', thyme).
 alias('samon-phyu', thyme).
 alias('thym', thyme).
 alias('thyme', thyme).
+alias('thymus collinus salisb', thyme).
 alias('timo', thyme).
 alias('tomillo', thyme).
 alias('wild thyme', thyme).
-alias('origanum thymus kuntze', thyme).
-alias('thymus collinus salisb', thyme).
+
+% ---------------------------------------------------------
+% TOMATO
+% ---------------------------------------------------------
 alias('dumádu', tomato).
 alias('garden tomato', tomato).
-alias('lycopersicum esculentum', tomato).
-alias('tomate', tomato).
-alias('tomato', tomato).
-alias('tomato extract containing lycopene', tomato).
-alias('tomato|thakkali', tomato).
-alias('tumatis.', tomato).
+alias('love apple', tomato).
 alias('lycopersicon cerasiforme dunal lycopersicon esculentum mill', tomato).
 alias('lycopersicon humboldtii (willd', tomato).
+alias('lycopersicum esculentum', tomato).
+alias('tomate', tomato).
+alias('tomato extract containing lycopene', tomato).
+alias('tomato', tomato).
+alias('tomato|thakkali', tomato).
+alias('tumatis.', tomato).
+
+% ---------------------------------------------------------
+% TURMERIC
+% ---------------------------------------------------------
+alias('kunyit', turmeric).
 alias('turmeric', turmeric).
+
+% ---------------------------------------------------------
+% TURNIP
+% ---------------------------------------------------------
 alias('turnip', turnip).
+alias('white turnip', turnip).
+
+% ---------------------------------------------------------
+% WATER SPINACH
+% ---------------------------------------------------------
+alias('kang kong', water_spinach).
+
+% ---------------------------------------------------------
+% WATERMELON
+% ---------------------------------------------------------
+alias('melon water', watermelon).
 alias('water melon', watermelon).
 alias('watermelon', watermelon).
+
+% ---------------------------------------------------------
+% YEW
+% ---------------------------------------------------------
+alias('english yew', yew).
+
+% ---------------------------------------------------------
+% ZUCCHINI
+% ---------------------------------------------------------
+alias('courgette', zucchini).
 alias('field pumpkin', zucchini).
 alias('ozark melon', zucchini).
 alias('pumpkin', zucchini).

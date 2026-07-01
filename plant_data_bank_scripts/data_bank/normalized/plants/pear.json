@@ -81,12 +81,6 @@
     "other_uses_notes": "Dye Shelterbelt Wood Agroforestry uses: Pear trees can be used as part of agroforestry systems for shade and windbreaks. They can also contribute to biodiversity and provide food for wildlife. A yellow-tan dye is obtained from the leaves[106, 115]. Trees are sometimes used as part of a shelterbelt planting[227]. Wood - heavy, tough, durable, fine grained, hard. It weighs 51lb per cubic foot[227]. Used by cabinet and instrument makers[11, 61, 100, 149]. When covered with black varnish it is an excellent ebony substitute[74]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Pear flowers are rich in nectar and pollen, attracting pollinators like bees, which are beneficial to gardens and ecosystems. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Pear fruit provides food for wildlife, including birds and small mammals. The dense foliage offers some shelter, and the structure of the tree can be used by birds for perching or nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The rough bark and leaf litter can provide overwintering sites for invertebrates. Fallen leaves can create habitat for ground-dwelling organisms. 4. Pest Confuser (Smell): No – Pear trees do not have a strong pest-repellent smell and are not typically used for pest confusion.",
     "edible_uses_notes": "Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[2, 5]. The fruit of wild pears often remains very hard unless bletted[186]. It is more suitable for use in pies etc. The fruit is up to 5cm long[200]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -107,6 +101,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -240,7 +240,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

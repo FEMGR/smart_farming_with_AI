@@ -2,178 +2,193 @@
   "plant_atom": "lettuce",
   "identity": {
     "common_name": "Lettuce",
-    "scientific_name": "Lactuca sativa",
-    "genus": "Lactuca",
-    "family": "Asteraceae",
-    "synonyms": [],
     "common_names": [
       "Garden lettuce",
       "Lettuce"
-    ]
+    ],
+    "family": "Asteraceae",
+    "genus": "Lactuca",
+    "scientific_name": "Lactuca sativa",
+    "synonyms": []
   },
   "classification": {
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
     "edible": true,
-    "use_categories": [
-      "medicinal_plant",
-      "oil_crop"
-    ],
     "edible_parts": [
       "leaf",
       "oil",
       "seed"
     ],
-    "life_cycle": "annual",
     "growth_habit": null,
-    "botanical_life_cycle": null,
-    "crop_life_cycle": "annual",
-    "life_cycle_context": null
+    "life_cycle": "annual",
+    "life_cycle_context": null,
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop"
+    ]
   },
   "growth": {
-    "sunlight": [
-      "full_sun",
-      "partial_shade"
-    ],
-    "water_need": "moderate",
+    "climate_notes": null,
+    "growth_speed": null,
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "rainfall_notes": null,
+    "soil_notes": "Prefers a light sandy loam[1]. Succeeds in most well-drained, humus-rich soils but dislikes acid conditions[1, 16]. Plants strongly dislike dry conditions, quickly running to seed in such a situation. Early and late sowings are best in a sunny position, but summer crops are best given a position with some shade in order to slow down the plants tendency to go to seed and to prevent the leaves becoming bitter[18, 20]. The garden lettuce is widely cultivated in many parts of the world for its edible leaves and is probably the most commonly grown salad plant. There are many named varieties[183] capable of providing fresh leaves throughout the year if winter protection is given in temperate areas. Over the centuries a number of more or less distinct forms have arisen in cultivation. These forms have been classified as follows. They are treated separately in more detail:- L. sativa angustana. L.H.Bailey. is the Celtuce. The leaves of this form are not of such good quality as the other lettuces and the plant is grown more for its thick central stem which is used in the same ways as celery[1]. L. sativa capitata. L. is the heading lettuce, it forms a heart in a similar way to cabbages. Examples of this include the Iceberg and Butterhead lettuces. L. sativa crispa. L. is the curled or leaf lettuce. This does not form a central heart but produces a loose rosette of basal leaves. It can be harvested on a cut and come again basis. L. sativa longifolia Lam. is the cos lettuce. This has longer, thinner leaves and a more erect habit, it does not form a compact heart. Lettuces are quite a problematic crop to grow. They require quite a lot of attention to protect them from pests such as slugs, aphids and birds. If the weather is hot and dry the plants tend to run very quickly to seed, developing a bitter flavour as they do so. In wet weather they are likely to develop fungal diseases. In addition, the seed needs to be sown at regular intervals of 2- 3 weeks during the growing season in order to provide a regular supply of leaves. Lettuces make a good companion plant for strawberries, carrots, radishes and onions[18, 20, 201]. They also grow well with cucumbers, cabbages and beetroot[201].",
+    "soil_ph_max": null,
+    "soil_ph_min": null,
     "soil_type": [
       "light_sandy",
       "medium_loamy",
       "well_drained"
     ],
-    "soil_ph_min": null,
-    "soil_ph_max": null,
-    "growth_speed": null,
-    "climate_notes": null,
-    "soil_notes": "Prefers a light sandy loam[1]. Succeeds in most well-drained, humus-rich soils but dislikes acid conditions[1, 16]. Plants strongly dislike dry conditions, quickly running to seed in such a situation. Early and late sowings are best in a sunny position, but summer crops are best given a position with some shade in order to slow down the plants tendency to go to seed and to prevent the leaves becoming bitter[18, 20]. The garden lettuce is widely cultivated in many parts of the world for its edible leaves and is probably the most commonly grown salad plant. There are many named varieties[183] capable of providing fresh leaves throughout the year if winter protection is given in temperate areas. Over the centuries a number of more or less distinct forms have arisen in cultivation. These forms have been classified as follows. They are treated separately in more detail:- L. sativa angustana. L.H.Bailey. is the Celtuce. The leaves of this form are not of such good quality as the other lettuces and the plant is grown more for its thick central stem which is used in the same ways as celery[1]. L. sativa capitata. L. is the heading lettuce, it forms a heart in a similar way to cabbages. Examples of this include the Iceberg and Butterhead lettuces. L. sativa crispa. L. is the curled or leaf lettuce. This does not form a central heart but produces a loose rosette of basal leaves. It can be harvested on a cut and come again basis. L. sativa longifolia Lam. is the cos lettuce. This has longer, thinner leaves and a more erect habit, it does not form a compact heart. Lettuces are quite a problematic crop to grow. They require quite a lot of attention to protect them from pests such as slugs, aphids and birds. If the weather is hot and dry the plants tend to run very quickly to seed, developing a bitter flavour as they do so. In wet weather they are likely to develop fungal diseases. In addition, the seed needs to be sown at regular intervals of 2- 3 weeks during the growing season in order to provide a regular supply of leaves. Lettuces make a good companion plant for strawberries, carrots, radishes and onions[18, 20, 201]. They also grow well with cucumbers, cabbages and beetroot[201].",
-    "water_notes": "Prefers moist soil.",
-    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
     "temperature_notes": null,
-    "rainfall_notes": null
+    "water_need": "moderate",
+    "water_notes": "Prefers moist soil."
   },
   "germination": {
+    "germination_days_max": null,
+    "germination_days_min": null,
+    "germination_light": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
     "propagation_methods": [
       "seed"
     ],
     "propagation_notes": "Seed - sow a small quantity of seed in situ every 2 or 3 weeks from March (with protection in cooler areas) to June and make another sowing in August/September for a winter/spring crop. Only just cover the seed. Germination is usually rapid and good, thin the plants if necessary, these thinnings can be transplanted to produce a slightly later crop (but they will need to be well watered in dry weather). More certain winter crops can be obtained by sowing in a frame in September/October and again in January/February.",
-    "germination_days_min": null,
-    "germination_days_max": null,
-    "germination_light": null,
-    "sowing_depth_cm": null,
-    "minimum_soil_temp_c": null,
-    "optimum_soil_temp_c": null,
-    "preferred_propagation_methods": [],
-    "propagation_warning": null
+    "propagation_warning": null,
+    "sowing_depth_cm": null
   },
   "spacing": {
-    "spacing_cm": null,
-    "root_depth_cm": null,
     "plant_height_cm": null,
+    "root_depth_cm": null,
+    "spacing_cm": null,
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
-    "watering_notes": null,
-    "pruning_notes": null,
-    "fertilizer_notes": null,
-    "cultivation_notes": "Prefers a light sandy loam[1]. Succeeds in most well-drained, humus-rich soils but dislikes acid conditions[1, 16]. Plants strongly dislike dry conditions, quickly running to seed in such a situation. Early and late sowings are best in a sunny position, but summer crops are best given a position with some shade in order to slow down the plants tendency to go to seed and to prevent the leaves becoming bitter[18, 20]. The garden lettuce is widely cultivated in many parts of the world for its edible leaves and is probably the most commonly grown salad plant. There are many named varieties[183] capable of providing fresh leaves throughout the year if winter protection is given in temperate areas. Over the centuries a number of more or less distinct forms have arisen in cultivation. These forms have been classified as follows. They are treated separately in more detail:- L. sativa angustana. L.H.Bailey. is the Celtuce. The leaves of this form are not of such good quality as the other lettuces and the plant is grown more for its thick central stem which is used in the same ways as celery[1]. L. sativa capitata. L. is the heading lettuce, it forms a heart in a similar way to cabbages. Examples of this include the Iceberg and Butterhead lettuces. L. sativa crispa. L. is the curled or leaf lettuce. This does not form a central heart but produces a loose rosette of basal leaves. It can be harvested on a cut and come again basis. L. sativa longifolia Lam. is the cos lettuce. This has longer, thinner leaves and a more erect habit, it does not form a compact heart. Lettuces are quite a problematic crop to grow. They require quite a lot of attention to protect them from pests such as slugs, aphids and birds. If the weather is hot and dry the plants tend to run very quickly to seed, developing a bitter flavour as they do so. In wet weather they are likely to develop fungal diseases. In addition, the seed needs to be sown at regular intervals of 2- 3 weeks during the growing season in order to provide a regular supply of leaves. Lettuces make a good companion plant for strawberries, carrots, radishes and onions[18, 20, 201]. They also grow well with cucumbers, cabbages and beetroot[201].",
-    "production_notes": null,
-    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anaphrodisiac Anodyne Antispasmodic Carminative Diuretic Emollient Expectorant Febrifuge Galactogogue Hypnotic Hypoglycaemic Narcotic Parasiticide Parasiticide Sedative The whole plant is rich in a milky sap that flows freely from any wounds. This hardens and dries when in contact with the air[4]. The sap contains 'lactucarium', which is used in medicine for its anodyne, antispasmodic, digestive, diuretic, hypnotic, narcotic and sedative properties[9, 21, 46, 165, 192, 213, 238]. Lactucarium has the effects of a feeble opium, but without its tendency to cause digestive upsets[4], nor is it addictive[7]. It is taken internally in the treatment of insomnia, anxiety, neuroses, hyperactivity in children, dry coughs, whooping cough, rheumatic pain etc[238]. Concentrations of lactucarium are low in young plants and most concentrated when the plant comes into flower[238]. It is collected commercially by cutting the heads of the plants and scraping the juice into china vessels several times a day until the plant is exhausted[4]. The cultivated lettuce does not contain as much lactucarium as the wild species, most being produced when the plant is in flower[4]. An infusion of the fresh or dried flowering plant can also be used[9]. The plant should be used with caution, and never without the supervision of a skilled practitioner. Even normal doses can cause drowsiness whilst excess causes restlessness[238] and overdoses can cause death through cardiac paralysis[7, 9]. Some physicians believe that any effects of this medicine are caused by the mind of the patient rather than by the medicine[213]. The sap has also been applied externally in the treatment of warts[222]. The seed is anodyne and galactogogue[218]. Lettuce has acquired a folk reputation as an anaphrodisiac, anodyne, carminative, diuretic, emollient, febrifuge, hypoglycaemic, hypnotic, narcotic, parasiticide and sedative[218].",
     "cautions": "The mature plant is mildly toxic[13].",
+    "cultivation_notes": "Prefers a light sandy loam[1]. Succeeds in most well-drained, humus-rich soils but dislikes acid conditions[1, 16]. Plants strongly dislike dry conditions, quickly running to seed in such a situation. Early and late sowings are best in a sunny position, but summer crops are best given a position with some shade in order to slow down the plants tendency to go to seed and to prevent the leaves becoming bitter[18, 20]. The garden lettuce is widely cultivated in many parts of the world for its edible leaves and is probably the most commonly grown salad plant. There are many named varieties[183] capable of providing fresh leaves throughout the year if winter protection is given in temperate areas. Over the centuries a number of more or less distinct forms have arisen in cultivation. These forms have been classified as follows. They are treated separately in more detail:- L. sativa angustana. L.H.Bailey. is the Celtuce. The leaves of this form are not of such good quality as the other lettuces and the plant is grown more for its thick central stem which is used in the same ways as celery[1]. L. sativa capitata. L. is the heading lettuce, it forms a heart in a similar way to cabbages. Examples of this include the Iceberg and Butterhead lettuces. L. sativa crispa. L. is the curled or leaf lettuce. This does not form a central heart but produces a loose rosette of basal leaves. It can be harvested on a cut and come again basis. L. sativa longifolia Lam. is the cos lettuce. This has longer, thinner leaves and a more erect habit, it does not form a compact heart. Lettuces are quite a problematic crop to grow. They require quite a lot of attention to protect them from pests such as slugs, aphids and birds. If the weather is hot and dry the plants tend to run very quickly to seed, developing a bitter flavour as they do so. In wet weather they are likely to develop fungal diseases. In addition, the seed needs to be sown at regular intervals of 2- 3 weeks during the growing season in order to provide a regular supply of leaves. Lettuces make a good companion plant for strawberries, carrots, radishes and onions[18, 20, 201]. They also grow well with cucumbers, cabbages and beetroot[201].",
+    "edible_uses_notes": "Edible Parts: Leaves Oil Seed Edible Uses: Oil Leaves - raw or cooked[7, 37]. A mild slightly sweet flavour with a crisp texture, lettuce is a very commonly used salad leaf and can also be cooked as a potherb or be added to soups etc[183]. A nutritional analysis is available[218]. Seed - sprouted and used in salads or sandwiches[183]. An edible oil is obtained from the seed[7]. The seed is very small, extraction of the oil on any scale would not be very feasible[K].",
+    "fertilizer_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anaphrodisiac Anodyne Antispasmodic Carminative Diuretic Emollient Expectorant Febrifuge Galactogogue Hypnotic Hypoglycaemic Narcotic Parasiticide Parasiticide Sedative The whole plant is rich in a milky sap that flows freely from any wounds. This hardens and dries when in contact with the air[4]. The sap contains 'lactucarium', which is used in medicine for its anodyne, antispasmodic, digestive, diuretic, hypnotic, narcotic and sedative properties[9, 21, 46, 165, 192, 213, 238]. Lactucarium has the effects of a feeble opium, but without its tendency to cause digestive upsets[4], nor is it addictive[7]. It is taken internally in the treatment of insomnia, anxiety, neuroses, hyperactivity in children, dry coughs, whooping cough, rheumatic pain etc[238]. Concentrations of lactucarium are low in young plants and most concentrated when the plant comes into flower[238]. It is collected commercially by cutting the heads of the plants and scraping the juice into china vessels several times a day until the plant is exhausted[4]. The cultivated lettuce does not contain as much lactucarium as the wild species, most being produced when the plant is in flower[4]. An infusion of the fresh or dried flowering plant can also be used[9]. The plant should be used with caution, and never without the supervision of a skilled practitioner. Even normal doses can cause drowsiness whilst excess causes restlessness[238] and overdoses can cause death through cardiac paralysis[7, 9]. Some physicians believe that any effects of this medicine are caused by the mind of the patient rather than by the medicine[213]. The sap has also been applied externally in the treatment of warts[222]. The seed is anodyne and galactogogue[218]. Lettuce has acquired a folk reputation as an anaphrodisiac, anodyne, carminative, diuretic, emollient, febrifuge, hypoglycaemic, hypnotic, narcotic, parasiticide and sedative[218].",
     "other_uses_notes": "Hair Oil Parasiticide Parasiticide Parasiticide[178]. No further details are given, but it is probably the sap of flowering plants that is used. The seed is said to be used to make hair grow on scar tissue[218].",
-    "edible_uses_notes": "Edible Parts: Leaves Oil Seed Edible Uses: Oil Leaves - raw or cooked[7, 37]. A mild slightly sweet flavour with a crisp texture, lettuce is a very commonly used salad leaf and can also be cooked as a potherb or be added to soups etc[183]. A nutritional analysis is available[218]. Seed - sprouted and used in salads or sandwiches[183]. An edible oil is obtained from the seed[7]. The seed is very small, extraction of the oil on any scale would not be very feasible[K]."
-  },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
+    "production_notes": null,
+    "pruning_notes": null,
+    "watering_interval_days": null,
+    "watering_notes": null
   },
   "biodiversity": {
+    "attracts_beneficial_insects": [],
+    "biodiversity_notes": [
+      "PFAF describes this plant as relevant to companion planting."
+    ],
     "companions": [
       {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording.",
         "plant": "cucumbers",
         "relationship": "grows_well_with",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'grows_well_with' wording."
+        "source_name": "Plants For A Future"
       },
       {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording.",
         "plant": "cabbage",
         "relationship": "grows_well_with",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'grows_well_with' wording."
+        "source_name": "Plants For A Future"
       },
       {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_well_with' wording.",
         "plant": "beetroot",
         "relationship": "grows_well_with",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'grows_well_with' wording."
+        "source_name": "Plants For A Future"
       },
       {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording.",
         "plant": "strawberries",
         "relationship": "good_companion",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'good_companion' wording."
+        "source_name": "Plants For A Future"
       }
     ],
     "conflicts": [],
-    "repels_pests": [],
-    "attracts_beneficial_insects": [],
-    "pollinator_support": false,
     "pest_confuser": false,
-    "biodiversity_notes": [
-      "PFAF describes this plant as relevant to companion planting."
-    ]
+    "pollinator_support": false,
+    "repels_pests": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "downy_mildew",
+      "big_vein",
+      "botrytis_rot",
+      "gray_mold",
+      "lettuce_drop",
+      "powdery_mildew",
+      "viruses",
+      "white_mold"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "armyworm_and_cutworm",
+      "cucumber_beetle",
+      "european_earwig",
+      "lettuce_root_aphid",
+      "looper",
+      "slug",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
-    "identity.scientific_name": "local_seed",
-    "identity.common_name": "local_seed",
-    "identity.genus": "GBIF",
-    "identity.family": "GBIF",
-    "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Plants For A Future",
-    "classification.use_categories": "Plants For A Future",
-    "classification.life_cycle": "Plants For A Future",
-    "classification.crop_life_cycle": "Plants For A Future",
-    "classification.edible": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
-    "germination.propagation_notes": "Plants For A Future",
-    "growth.sunlight": "Plants For A Future",
-    "growth.soil_type": "Plants For A Future",
-    "growth.water_need": "Plants For A Future",
-    "growth.soil_notes": "Plants For A Future",
-    "growth.water_notes": "Plants For A Future",
-    "growth.light_notes": "Plants For A Future",
-    "care.cultivation_notes": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
     "care.cautions": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
     "care.nutrition_notes": "Plants For A Future",
     "care.other_uses_notes": "Plants For A Future",
-    "care.edible_uses_notes": "Plants For A Future",
-    "biodiversity.companions": "Plants For A Future",
-    "biodiversity.pollinator_support": "Plants For A Future",
-    "biodiversity.pest_confuser": "Plants For A Future",
-    "biodiversity.biodiversity_notes": "Plants For A Future"
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "identity.common_name": "local_seed",
+    "identity.common_names": "Plants For A Future",
+    "identity.family": "GBIF",
+    "identity.genus": "GBIF",
+    "identity.scientific_name": "local_seed"
   },
   "source_metadata": {
+    "last_merged_at": "2026-06-17T04:44:11.811884+00:00",
     "sources": [
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:43:08.800237+00:00",
+        "relevance_score": null,
         "source_name": "GBIF",
         "source_url": "https://api.gbif.org/v1/species/match",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:43:08.800237+00:00"
+        "trusted_detail": null
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa",
-        "status": "trusted_detail",
-        "trusted_detail": true,
-        "relevance_score": 1.0,
+        "confidence": 0.8,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -195,15 +210,15 @@
           "known_hazards",
           "biodiversity"
         ],
-        "confidence": 0.8,
-        "last_verified_at": "2026-06-17T04:41:08.599677+00:00"
+        "last_verified_at": "2026-06-17T04:41:08.599677+00:00",
+        "relevance_score": 1.0,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa",
+        "status": "trusted_detail",
+        "trusted_detail": true
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Lettuce",
-        "status": "snapshot_only",
-        "trusted_detail": false,
-        "relevance_score": 0.05,
+        "confidence": 0.3,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -211,57 +226,59 @@
           "growth",
           "biodiversity"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:41:09.238335+00:00"
+        "last_verified_at": "2026-06-17T04:41:09.238335+00:00",
+        "relevance_score": 0.05,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Lettuce",
+        "status": "snapshot_only",
+        "trusted_detail": false
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "last_verified_at": "2026-06-17T04:30:16.683608+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Lactuca+sativa",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:30:16.683608+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:30:20.321449+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Lettuce",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:30:20.321449+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:30:24.011746+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=lettuce",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [
-          "edible_parts",
-          "use_categories",
-          "cultivation_notes"
-        ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:30:24.011746+00:00"
+        "trusted_detail": null
       }
-    ],
-    "last_merged_at": "2026-06-17T04:44:11.811884+00:00"
+    ]
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

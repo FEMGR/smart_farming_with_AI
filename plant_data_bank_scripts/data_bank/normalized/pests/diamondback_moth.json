@@ -1,0 +1,75 @@
+{
+  "pest_atom": "diamondback_moth",
+  "name": "Diamondback moth",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Diamondback moth",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-diamondback-moth",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Cabbage is the preferred host, but it also attacks all cole family crops. The adult overwinters in trash in and around fields. Adults emerge in May and early June and lay eggs singly or in twos or threes mainly on the upper sides of leaves. The eggs are minute. They hatch in 4 to 8 days. Larvae feed mostly on the undersides of outer or older leaves of older plants, chewing out small holes, and mature in 10 to 30 days. They then spin loose white cocoons, which they attach to leaves or stems, and pupate within them. Adults emerge in 10 to 14 days. There may be two to four overlapping generations each year.",
+  "description_damage": "Diamondback moth larvae are smaller than most other caterpillars in cole crops, about 0.31 inch when fully grown. The larval body is wider in the middle and tapers at both ends, with two legs (prolegs) on the last segment forming a distinctive V-shape at the rear end. When disturbed, the larvae wiggle frantically or rapidly attach a silken line to a leaf and drop over the edge. They feed mostly on outer or older leaves of older plants, chewing out small holes, or at the growing points of young plants. They also feed on floral stalks and flower buds. Adult moths are small, slender, and grayish brown. Male moths display three diamond-shaped markings on their back. In the Pacific Northwest, the damage from diamondback moth is not so much from feeding as from contamination by pupae. Late stage instars crawl into stems infesting harvested crops.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "stem_damage",
+    "feeding_damage",
+    "feeding_holes"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-diamondback-moth/g161-14.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-diamondback-moth/g161-14.jpg?itok=3J0Hhx1D",
+      "caption": "Diamond back moth Plutella xylstella Linnaeus Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-diamondback-moth/g161-28.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-diamondback-moth/g161-28.jpg?itok=D6F0slkA",
+      "caption": "Diamond back moth Plutella xylstella Linnaeus Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-diamondback-moth/g161-33.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-diamondback-moth/g161-33.jpg?itok=hsCIIvut",
+      "caption": "Diamond back moth Plutella xylstella Linnaeus Showing damage on leaves"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.313931+00:00"
+}
