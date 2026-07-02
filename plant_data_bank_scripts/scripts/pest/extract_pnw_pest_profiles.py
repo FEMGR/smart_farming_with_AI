@@ -38,7 +38,6 @@ from typing import Any, Dict, List, Optional, Tuple
 import requests
 from bs4 import BeautifulSoup, Tag
 
-
 DEFAULT_SEED_PATH = "data_bank/raw_sources/pnw/pnw_seed_pest.json"
 SOURCE_NAME = "PNW Insect Management Handbook"
 

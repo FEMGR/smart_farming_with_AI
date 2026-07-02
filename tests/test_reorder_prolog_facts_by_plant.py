@@ -4,7 +4,6 @@ import importlib.util
 import sys
 from pathlib import Path
 
-
 MODULE_PATH = Path(__file__).resolve().parents[1] / "plant_data_bank_scripts" / "scripts" / "prolog" / "reorder_prolog_facts_by_plant.py"
 
 spec = importlib.util.spec_from_file_location("reorder_prolog_facts_by_plant", MODULE_PATH)

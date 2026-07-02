@@ -7,7 +7,6 @@ from sqlalchemy.orm import Session
 from app.models.plant_species_cache import PlantSpeciesCache
 from app.utils.prolog_normalizer import clean_text, normalize_tokens
 
-
 CONFIDENCE_SCORES = {
     "high": 0.9,
     "medium": 0.6,

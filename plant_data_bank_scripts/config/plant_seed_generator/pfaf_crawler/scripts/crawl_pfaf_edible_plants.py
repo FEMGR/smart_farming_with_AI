@@ -15,7 +15,6 @@ from urllib.parse import parse_qs, quote_plus, unquote_plus, urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-
 BASE_URL = "https://pfaf.org"
 START_URL = "https://pfaf.org/user/edibleuses.aspx"
 

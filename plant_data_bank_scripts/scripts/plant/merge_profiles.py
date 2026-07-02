@@ -34,7 +34,6 @@ from common import (
 )
 from project_paths import PATHS
 
-
 SCRIPT_DIR = Path(__file__).resolve().parents[1]
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))

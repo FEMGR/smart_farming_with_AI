@@ -9,7 +9,6 @@ from typing import Any
 from common import load_plants, plant_filename
 from project_paths import PATHS
 
-
 IMPORTANT_FIELDS = {
     "identity.scientific_name",
     "identity.genus",

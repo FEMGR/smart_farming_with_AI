@@ -50,7 +50,6 @@ from source_parse_patch_v3 import (
     title_text,
 )
 
-
 PFAF_BASE = "https://pfaf.org"
 SOURCE_NAME = "Plants For A Future"
 

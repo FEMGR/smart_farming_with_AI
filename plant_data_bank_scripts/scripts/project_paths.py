@@ -30,7 +30,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Optional
 
-
 PROJECT_MARKERS = (
     "backend",
     "logic_companion_planting",
