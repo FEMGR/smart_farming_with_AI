@@ -23,7 +23,6 @@ from common import (
 )  # noqa: E402
 from project_paths import PATHS  # noqa: E402
 
-
 SCRIPT_DIR = Path(__file__).resolve().parents[1]
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))

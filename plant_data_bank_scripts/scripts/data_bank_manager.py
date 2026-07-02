@@ -42,7 +42,6 @@ from typing import Callable, Optional
 
 from project_paths import PATHS
 
-
 ROOT = PATHS.plant_data_bank_scripts
 PYTHON = sys.executable
 SEED_GENERATOR_ROOT = PATHS.plant_data_bank_config / "plant_seed_generator"

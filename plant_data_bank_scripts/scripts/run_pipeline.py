@@ -6,7 +6,6 @@ import sys
 
 from project_paths import PATHS
 
-
 ROOT = PATHS.plant_data_bank_scripts
 
 

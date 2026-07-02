@@ -8,7 +8,6 @@ from app.services.prolog import prolog_service
 from app.services.knowledge.base import display_name, enrich_plant_records, normalize_entity, rank_records
 from app.utils.prolog_normalizer import clean_text, normalize_tokens
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[4]
 INSECT_FACT_PATH = PROJECT_ROOT / "logic_companion_planting" / "data" / "insect_fact.pl"
 PEST_ALIASES = {
