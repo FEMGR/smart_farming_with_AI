@@ -97,12 +97,6 @@
     "other_uses_notes": "Deodorant Disinfectant Essential Fungicide Pot-pourri Repellent Agroforestry uses: Thyme can be used as a ground cover and is beneficial for attracting pollinators. Its aromatic properties may also repel certain pests, making it a useful companion plant in gardens. An essential oil from the leaves is frequently used in perfumery, soaps, toothpastes, mouthwashes, medicinally etc[11, 21, 57, 89, 238]. It has fungicidal properties[171] and is also used to prevent mildew[218]. The leaves are dried and used in pot-pourri[238]. The plant makes an attractive ground cover for a sunny position[201]. Plants are best spaced about 30cm apart each way[208]. The dried flowers are used to repel moths from clothing[4] whilst the growing plant is said to repel cabbage root fly[18, 20]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Thyme flowers are rich in nectar and pollen, making them attractive to pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – While thyme does not produce significant fruit, its leaves are edible for many herbivores and insects. The dense foliage can also provide shelter for small wildlife. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Thyme can offer shelter for beneficial insects, and its groundcover can protect invertebrates during the winter months. 4. Pest Confuser (Smell): Yes – The strong aroma of thyme can confuse or repel pests, making it a beneficial companion plant in gardens.",
     "edible_uses_notes": "Edible Parts: Flowers Leaves Shoots Edible Uses: Condiment Tea Leaves and flowering tops - raw in salads, used as a garnish or added as a flavouring to cooked foods, going especially well with mushrooms and courgettes[2, 4, 21, 46, 183, 238]. It is an essential ingredient of the herb mix 'bouquet garni'[238]. It retains its flavour well in long slow cooking[200]. The leaves can be used either fresh or dried[183]. If the leaves are to be dried, the plants should be harvested in early and late summer just before the flowers open and the leaves should be dried quickly[200]. A nutritional analysis is available[218]. An aromatic tea is made from the fresh or dried leaves[21, 183]. Pungent and spicy[183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -142,6 +136,12 @@
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -279,7 +279,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

@@ -1,0 +1,105 @@
+{
+  "pest_atom": "lepidoptera_larvae",
+  "name": "Lepidoptera larvae",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "celery",
+    "watercress"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Celery",
+      "pest_name_on_page": "Lepidoptera larvae",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-lepidoptera-larvae"
+    },
+    {
+      "crop_heading": "Watercress",
+      "pest_name_on_page": "Lepidoptera larvae",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/watercress-lepidoptera-larvae"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-lepidoptera-larvae",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/watercress-lepidoptera-larvae"
+  ],
+  "page_titles": [
+    "Celery-Lepidoptera larvae",
+    "Watercress-Lepidoptera larvae"
+  ],
+  "description_damage": "See \"Armyworm\" and \"Cutworm\" in: Common Pests of Vegetable Crops See: Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Bacillus",
+      "GS-omega/kappa-Hxtx-Hv1a (Spear Lep) at 0.02 to 0.04 lb ai/A (1 to 2 pints/A). PHI 0 days. REI 4 hr. Retreatment interval 3 to 10 days. Do not exceed 1.7 lb ai/A per year.",
+      "GS-omega/kappa-Hxtx-Hv1a (Spear Lep) at 0.02 to 0.04 lb ai/A. PHI 0 days. REI 4 hr. Retreatment interval 3 to 10 days.",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Beauveria",
+      "OMRI-listed for organic use. Burkholderia spp. (Venerate XC) at 1 to 4 quarts/A. PHI 0 day. REI 4 hr.",
+      "OMRI-listed for organic use. Chromobacterium",
+      "alpha-cypermethrin (Fastac EC) at 0.014 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only. Bacillus thuringiensis (Javelin WG) 0.12 to 1.5 lb/A. PHI 0 days. REI 4 hr (see label). Slow acting. May need multiple applications. Add an appropriate",
+      "bassiana (Mycotrol ESO) at 0.5 to 2 lb/100 gal. PHI 0 days. REI 4 hr.",
+      "beta-cyfluthrin (Baythroid XL) at 0.007 to 0.025 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.1 lb ai/A per season.",
+      "bifenthrin (Brigade WSB, Sniper) at 0.033 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.5 lb ai/A per season. Retreatment interval 7 days. Burkholderia spp. (Venerate XC) at 1 to 4 quarts/A product. PHI 0 days. REI 4 hr.",
+      "cyfluthrin (Tombstone) at 0.013 to 0.05 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.2 lb ai/A or four applications per season.",
+      "early-season application and 0.12 to 0.16 lb ai/A for",
+      "late-season application or heavy infestation. REI 4 hr. PHI 1 day. Adding a",
+      "methomyl (Lannate SP) at 0.23 to 0.9 lb ai/A. PHI 7 days. REI 48 hr. Limit 8 treatments per year. Do not exceed 6.3 lb ai/A per year.",
+      "methoxyfenozide (Intrepid 2F) at 0.06 to 0.12 lb ai/A for",
+      "mid- to",
+      "permethrin (Loveland Permethrin Cutworm Bait) at 0.1 to 0.2 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 1 lb ai/A per season.",
+      "permethrin (Permethrin) at 0.1 to 0.2 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not graze or feed treated plants. Do not exceed 1 lb ai/A per year.",
+      "spinetoram (Radiant SC) at 0.039 to 0.078 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 4 days. Do not exceed six applications or 0.266 lb ai/A per season. Do not apply to seedling leafy vegetables grown for transplant within a greenhouse, shade house, or field plot.",
+      "spinetoram (Radiant SC) at 0.039 to 0.078 lb ai/A. PHI 1 day. Retreatment interval 4 days. Do not exceed 0.266 lb ai/A per year. Limit 6 treatments per season. Do not apply to seedling leafy vegetables grown for transplant within a greenhouse, shade house, or field plot.",
+      "spinosad (Success) at 0.062 to 0.094 lb ai/A celery (seed). PHI 14 days. REI 4 hr. Do not exceed three times in any 30-day period. Do not exceed 0.45 lb ai/A or six applications per crop. Oregon only.",
+      "spinosad (Success, Entrust SC) at 0.023 to 0.125 lb ai/A. PHI 1 day. REI 4 hr. Do not exceed 0.45 lb ai/A per season. Entrust SC is",
+      "spreader-sticker improves performance. Do not exceed 1 lb ai/A per season.",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "subtsugae (Grandevo) at 0.3 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "thuringiensis (Javelin) at 0.12 to 1.5 lb/A. PHI 0 days. REI 4 hr. Slow acting; may need multiple applications. Add an appropriate",
+      "zeta-cypermethrin (Mustang) at 0.028 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.3 lb ai/A per season. Retreatment interval 7 days."
+    ],
+    "chemical_home": [
+      "Bacillus thuringiensis var.",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. insecticidal",
+      "OMRI-listed for organic use. malathion",
+      "azadirachtin (neem extract)-Some formulations are",
+      "bifenthrin-Not registered for home use on celery in WA. carbaryl cyfluthrin permethrin plant derived essential",
+      "kaolin-Applied as a spray to foliage, It acts as a repellent to some insect pests. Some formulations are",
+      "kurstaki ( Btk )-Some formulations are",
+      "oils (rosemary, peppermint, etc.)-Some formulations are",
+      "pyrethrins-Some formulations are",
+      "soap (as a mix with spinosad)-May require several applications. Some formulations are",
+      "spinosad-Some formulations are",
+      "zeta-cypermethrin"
+    ],
+    "cultural": ""
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:00.564839+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.559418+00:00"
+}

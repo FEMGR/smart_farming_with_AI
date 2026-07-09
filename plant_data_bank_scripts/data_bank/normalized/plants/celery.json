@@ -88,12 +88,6 @@
     "other_uses_notes": "Essential The growing plant is an insect repellent, it repels the cabbage white butterfly so is a good companion for brassicas[20].",
     "edible_uses_notes": "Edible Parts: Leaves Root Seed Edible Uses: Condiment Leaves - raw or cooked[52, 105]. Mainly used as a flavouring in soups etc[5, 7, 9, 46]. They can be eaten raw but have a very strong flavour[52]. They are toxic if consumed in large amounts[238]. Seed - a flavouring. Used in small quantities to flavour soups and stews[238]. An essential oil from the seed is also used as a flavouring[46, 105]. Root - cooked[74]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -119,6 +113,18 @@
     "biodiversity_notes": [
       "PFAF describes this plant as relevant to companion planting."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [
+      "aphid",
+      "carrot_rust_fly",
+      "european_earwig",
+      "lepidoptera_larvae",
+      "slug"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -252,7 +258,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

@@ -1,0 +1,81 @@
+{
+  "pest_atom": "mexican_bean_beetle",
+  "name": "Mexican bean beetle",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "bean"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Bean, dry",
+      "pest_name_on_page": "Mexican bean beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-mexican-bean-beetle"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-mexican-bean-beetle"
+  ],
+  "page_titles": [
+    "Bean, dry-Mexican bean beetle"
+  ],
+  "description_damage": "Adult beetles are about 0.25 inch long. They are dome-shaped and yellow to copper brown with eight small black spots in three rows across each wing cover. Eggs are small and yellow. The mature yellow larva is about 0.6 inch long and covered with dark, branched spines. Pupae are yellow to copper color and about 0.25 inch. Both larvae and adults feed on the underside of leaves, leaving the upper surface intact. Damaged plants have a characteristic lace-like appearance. These remaining tissues die in about two days and turn brown, often giving the entire field a \"burnt\" cast. Pods and stems often are attacked, and shredded plants may die before any crop is matured. If overwintering populations are high, seedling damage may occur, though economic damage usually does not occur before August.",
+  "biology_life_history": "Adult beetles overwinter in hedgerows, ditch banks, and woodlands and may attack plants soon after seedlings emerge in spring. Most beetles leave their winter habitat over a two-month period. Following feeding, adult females deposit eggs in clusters of 40 or more on the undersurface of leaves. Eggs hatch in 5 to 14 days, and larvae continue to feed for 2 to 5 weeks. Larvae pupate on leaves, and adults emerge after about 10 days. Adults feed, mate, and lay eggs over a period of two weeks. Generation time from egg to adult is about 30 days. There may be up to four generations each year.",
+  "monitoring": "Eggs and larvae tend to be highly clustered. Sampling usually is done visually, though fields also can be swept.",
+  "management": {
+    "biological": "Parasitic wasps ( Pediobius spp.) are available for commercial release and have been used with success on the East Coast.",
+    "chemical_commercial": [
+      "Sidedress at planting. Do not place in contact with seed. Do not graze or feed to livestock. Toxic to fish and wildlife.",
+      "acephate (numerous products) at 0.5 to 1 lb ai/A. PHI 14 days. REI 24 hr. Do not feed treated vines. Do not exceed 2 lb ai/A per year.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.05 lb ai/A per season. Do not feed treated vines or hay to livestock. Toxic to bees, fish and aquatic invertebrates. Only registered for use in WA.",
+      "esfenvalerate (Asana XL) at 0.015 to 0.03 lb ai/A. PHI 21 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. Do not feed or graze treated vines.",
+      "habitat by ground application, or 150 ft if applied by air.",
+      "lambda-cyhalothrin (Warrior II) at 0.015 to 0.025 lb ai/A. PHI 21 days. REI 24 hr. Do not graze or feed to livestock. Do not exceed 0.12 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "malathion (numerous products) at 1 to 1.5 lb ai/A. PHI 1 day. REI 12 hr. Do not graze or feed treated crop foliage to livestock.",
+      "methomyl (Lannate LV) at 0.23 to 0.9 lb ai/A. PHI 14 days for harvest, feeding vines, and hay. REI 48 hr. Do not exceed 4.5 lb ai/A per year.",
+      "phorate (Thimet 20-G) at no more than 2 lb ai/A. PHI 60 days. REI 48 hr, or 72 hr if annual rainfall is less than 25 inches.",
+      "zeta-cypermethrin (Mustang Maxx; Mustang) at 0.017 to 0.025 lb/A or 0.035 to 0.05 lb ai/A (Mustang). PHI 21 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.15 lb ai/A (Mustang Maxx) or 0.3 lb ai/A (Mustang) per year. Do not apply within 25 ft of an aquatic"
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. carbaryl esfenvalerate malathion plant essential",
+      "azadirachtin (neem oil)-Some formulations are",
+      "oils (rosemary, etc.)-Some formulations are",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "zeta-cypermethrin"
+    ],
+    "cultural": "Prompt removal of pods and destruction of old plants may help keep populations from building up. Because beetles are such strong fliers, crop rotation is probably not of much use."
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "pod_damage",
+    "seedling_damage",
+    "stem_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:41.180450+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.564576+00:00"
+}

@@ -84,12 +84,6 @@
     "other_uses_notes": "Landscape Uses: Container, Ground cover, Woodland garden. An essential oil obtained from the whole plant is a source of lavender oil which is used in perfumery[46, 105, 238]. It is also used in oral hygiene preparations, toiletries etc[238]. Formerly used as a strewing herb[14], the plant repels insects, rats etc[14, 18, 20]. Rats and mice intensely dislike the smell of mint. The plant was therefore used in homes as a strewing herb and has also been spread in granaries to keep the rodents off the grain[244]. Dynamic accumulator.",
     "edible_uses_notes": "Leaves - raw or cooked. Used as a flavouring in salads or cooked foods[5]. A very pungent flavour, the leaves of the true eau-de-cologne mint are too aromatic for most tastes, though the cultivar 'Basil' has an excellent flavour and makes a very good substitute for basil in pesto[K]. A herb tea is made from the fresh or dried leaves[21, 183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -133,6 +127,12 @@
     "biodiversity_notes": [
       "PFAF describes this plant as relevant to companion planting."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -276,7 +276,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

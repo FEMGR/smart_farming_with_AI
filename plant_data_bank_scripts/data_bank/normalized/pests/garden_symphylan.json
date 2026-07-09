@@ -1,0 +1,65 @@
+{
+  "pest_atom": "garden_symphylan",
+  "name": "Garden symphylan",
+  "pest_type": "symphylan",
+  "page_title": "Vegetable crop pests-Garden symphylan",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-garden-symphylan",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Eggs, nymphs, and adults can be found in any month of the year, but the majority of eggs are found during the early spring and fall. Nymphs and adults become active in the spring in the top 8 inches of soil. Eggs are laid in clusters of 4 to 25. Eggs hatch in about 40 days, and nymphs begin feeding on small roots. The total development time from egg to adult is about 5 months at 50°F. There are one or two generations each year. See: Biology and control of the garden symphylan",
+  "description_damage": "Garden symphylans are also called garden centipedes. When fully grown, they are not more than 0.32 inch in length, have 15 body segments, and 11 or 12 pairs of legs. They are slender, elongated, and white with prominent antennae. Symphylans may damage sprouting seeds, seedlings before or after emergence, or older plants. They feed primarily on root hairs and rootlets. Their ability to injure the crop decreases as plants get larger; however, their pitting of older roots may provide entry for pathogens. Transplants may be stunted by their feeding as new roots attempt to grow out of the transplant plug.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "stunting",
+    "root_damage",
+    "feeding_damage",
+    "leaf_mining"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-garden-symphylan/g272-96.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-garden-symphylan/g272-96.jpg?itok=bQykQeLG",
+      "caption": "Garden symphylan Scutigerella immaculata Newport Showing damage on roots"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-garden-symphylan/90-116.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-garden-symphylan/90-116.jpg?itok=g7K__LCB",
+      "caption": "Garden symphylan Scutigerella immaculata Newport Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.501049+00:00"
+}

@@ -2,23 +2,19 @@
   "plant_atom": "radish",
   "identity": {
     "common_name": "Radish",
-    "scientific_name": "Raphanus sativus",
-    "genus": "Raphanus",
-    "family": "Brassicaceae",
-    "synonyms": [],
     "common_names": [
       "Cultivated radish",
       "Radish"
-    ]
+    ],
+    "family": "Brassicaceae",
+    "genus": "Raphanus",
+    "scientific_name": "Raphanus sativus",
+    "synonyms": []
   },
   "classification": {
+    "botanical_life_cycle": null,
+    "crop_life_cycle": "annual",
     "edible": true,
-    "use_categories": [
-      "medicinal_plant",
-      "oil_crop",
-      "repellent_plant",
-      "root_tuber_crop"
-    ],
     "edible_parts": [
       "flower",
       "leaf",
@@ -26,147 +22,163 @@
       "root",
       "seed"
     ],
-    "life_cycle": "annual",
     "growth_habit": null,
-    "botanical_life_cycle": null,
-    "crop_life_cycle": "annual",
-    "life_cycle_context": null
+    "life_cycle": "annual",
+    "life_cycle_context": null,
+    "use_categories": [
+      "medicinal_plant",
+      "oil_crop",
+      "repellent_plant",
+      "root_tuber_crop"
+    ]
   },
   "growth": {
-    "sunlight": [
-      "partial_shade"
-    ],
-    "water_need": "moderate",
+    "climate_notes": null,
+    "growth_speed": "fast",
+    "light_notes": null,
+    "rainfall_notes": null,
+    "soil_notes": "Very easily cultivated fast-growing plants which prefer a rich light soil with ample moisture[16, 52, 264]. They dislike very heavy or acid soils[16, 37]. Plants are susceptible to drought and require irrigation during dry spells in the summer or the root quality will rapidly deteriorate and the plant will go to seed. Radishes are widely cultivated for their edible roots. There are many named varieties[183] that are able to supply edible roots all year round. Over the centuries a number of distinct groups have evolved through cultivation, these have been classified by the botanists as follows. A separate entry has been made for each group:- R. sativus. The common radish. Fast maturing plants with small roots that can be round or cylindrical and usually have red skins. They are grown primarily for their roots which in some varieties can be ready within three weeks from sowing the seed and are used mainly in salads. These are mainly grown for spring, summer and autumn use and can produce a crop within a few weeks of sowing. R. sativus caudatus. The rat-tailed radishes. This group does not produce roots of good quality, it is cultivated mainly for the edible young seedpods which are harvested in the summer. R. sativus niger. The Oriental and Spanish radishes. These are grown for their larger edible root which can be round or cylindrical and can be available throughout the winter. R. sativus oleiformis. The fodder radishes. These are grown mainly for their leaves and oil-rich seeds, they are used as a green manure or stock feed though they can also be eaten by people. The roots of these plants soon become fibrous, though they make acceptable eating when young. Radishes are a good companion plant for lettuces, nasturtiums, peas and chervil, tomatoes and cucumbers[18, 20]. They are said to repel cucumber beetles if planted near cucumber plants and they also repel the vine borers which attack squashes, marrows and courgettes[238]. They grow badly with hyssop[18, 20] and with grape vines[201].",
+    "soil_ph_max": null,
+    "soil_ph_min": null,
     "soil_type": [
       "heavy_clay",
       "light_sandy",
       "medium_loamy"
     ],
-    "soil_ph_min": null,
-    "soil_ph_max": null,
-    "growth_speed": "fast",
-    "climate_notes": null,
-    "soil_notes": "Very easily cultivated fast-growing plants which prefer a rich light soil with ample moisture[16, 52, 264]. They dislike very heavy or acid soils[16, 37]. Plants are susceptible to drought and require irrigation during dry spells in the summer or the root quality will rapidly deteriorate and the plant will go to seed. Radishes are widely cultivated for their edible roots. There are many named varieties[183] that are able to supply edible roots all year round. Over the centuries a number of distinct groups have evolved through cultivation, these have been classified by the botanists as follows. A separate entry has been made for each group:- R. sativus. The common radish. Fast maturing plants with small roots that can be round or cylindrical and usually have red skins. They are grown primarily for their roots which in some varieties can be ready within three weeks from sowing the seed and are used mainly in salads. These are mainly grown for spring, summer and autumn use and can produce a crop within a few weeks of sowing. R. sativus caudatus. The rat-tailed radishes. This group does not produce roots of good quality, it is cultivated mainly for the edible young seedpods which are harvested in the summer. R. sativus niger. The Oriental and Spanish radishes. These are grown for their larger edible root which can be round or cylindrical and can be available throughout the winter. R. sativus oleiformis. The fodder radishes. These are grown mainly for their leaves and oil-rich seeds, they are used as a green manure or stock feed though they can also be eaten by people. The roots of these plants soon become fibrous, though they make acceptable eating when young. Radishes are a good companion plant for lettuces, nasturtiums, peas and chervil, tomatoes and cucumbers[18, 20]. They are said to repel cucumber beetles if planted near cucumber plants and they also repel the vine borers which attack squashes, marrows and courgettes[238]. They grow badly with hyssop[18, 20] and with grape vines[201].",
-    "water_notes": "Prefers moist soil.",
-    "light_notes": null,
+    "sunlight": [
+      "partial_shade"
+    ],
     "temperature_notes": null,
-    "rainfall_notes": null
+    "water_need": "moderate",
+    "water_notes": "Prefers moist soil."
   },
   "germination": {
+    "germination_days_max": null,
+    "germination_days_min": null,
+    "germination_light": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
     "propagation_methods": [
       "seed"
     ],
     "propagation_notes": "Seed - sow outdoors in situ in succession from late winter to the middle of summer. Germination takes place within a few days of sowing the seed. If you want a constant supply of the roots then you need to sow seed every 2 - 3 weeks.",
-    "germination_days_min": null,
-    "germination_days_max": null,
-    "germination_light": null,
-    "sowing_depth_cm": null,
-    "minimum_soil_temp_c": null,
-    "optimum_soil_temp_c": null,
-    "preferred_propagation_methods": [],
-    "propagation_warning": null
+    "propagation_warning": null,
+    "sowing_depth_cm": null
   },
   "spacing": {
-    "spacing_cm": null,
-    "root_depth_cm": null,
     "plant_height_cm": null,
+    "root_depth_cm": null,
+    "spacing_cm": null,
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
-    "watering_notes": null,
-    "pruning_notes": null,
-    "fertilizer_notes": null,
-    "cultivation_notes": "Very easily cultivated fast-growing plants which prefer a rich light soil with ample moisture[16, 52, 264]. They dislike very heavy or acid soils[16, 37]. Plants are susceptible to drought and require irrigation during dry spells in the summer or the root quality will rapidly deteriorate and the plant will go to seed. Radishes are widely cultivated for their edible roots. There are many named varieties[183] that are able to supply edible roots all year round. Over the centuries a number of distinct groups have evolved through cultivation, these have been classified by the botanists as follows. A separate entry has been made for each group:- R. sativus. The common radish. Fast maturing plants with small roots that can be round or cylindrical and usually have red skins. They are grown primarily for their roots which in some varieties can be ready within three weeks from sowing the seed and are used mainly in salads. These are mainly grown for spring, summer and autumn use and can produce a crop within a few weeks of sowing. R. sativus caudatus. The rat-tailed radishes. This group does not produce roots of good quality, it is cultivated mainly for the edible young seedpods which are harvested in the summer. R. sativus niger. The Oriental and Spanish radishes. These are grown for their larger edible root which can be round or cylindrical and can be available throughout the winter. R. sativus oleiformis. The fodder radishes. These are grown mainly for their leaves and oil-rich seeds, they are used as a green manure or stock feed though they can also be eaten by people. The roots of these plants soon become fibrous, though they make acceptable eating when young. Radishes are a good companion plant for lettuces, nasturtiums, peas and chervil, tomatoes and cucumbers[18, 20]. They are said to repel cucumber beetles if planted near cucumber plants and they also repel the vine borers which attack squashes, marrows and courgettes[238]. They grow badly with hyssop[18, 20] and with grape vines[201].",
-    "production_notes": null,
-    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anthelmintic Antibacterial Antifungal Antiscorbutic Antispasmodic Appetizer Astringent Cancer Carminative Cholagogue Digestive Diuretic Expectorant Laxative Poultice Stomachic Radishes have long been grown as a food crop, but they also have various medicinal actions. The roots stimulate the appetite and digestion, having a tonic and laxative effect upon the intestines and indirectly stimulating the flow of bile[254]. Consuming radish generally results in improved digestion, but some people are sensitive to its acridity and robust action[254]. The plant is used in the treatment of intestinal parasites, though the part of the plant used is not specified[147]. The leaves, seeds and old roots are used in the treatment of asthma and other chest complaints[218]. The juice of the fresh leaves is diuretic and laxative[240]. The seed is carminative, diuretic, expectorant, laxative and stomachic[176, 218, 240]. It is taken internally in the treatment of indigestion, abdominal bloating, wind, acid regurgitation, diarrhoea and bronchitis[238]. The root is antiscorbutic, antispasmodic, astringent, cholagogue, digestive and diuretic[21, 218]. It is crushed and used as a poultice for burns, bruises and smelly feet[218]. Radishes are also an excellent food remedy for stone, gravel and scorbutic conditions[4]. The root is best harvested before the plant flowers[21]. Its use is not recommended if the stomach or intestines are inflamed[21]. The plant contains raphanin, which is antibacterial and antifungal[218, 238]. It inhibits the growth of Staphylococcus aureus, E. coli, streptococci, Pneumococci etc[176]. The plant also shows anti-tumour activity[218].",
     "cautions": "The Japanese radishes have higher concentrations of glucosinolate, a substance that acts against the thyroid gland. It is probably best to remove the skin[160].",
+    "cultivation_notes": "Very easily cultivated fast-growing plants which prefer a rich light soil with ample moisture[16, 52, 264]. They dislike very heavy or acid soils[16, 37]. Plants are susceptible to drought and require irrigation during dry spells in the summer or the root quality will rapidly deteriorate and the plant will go to seed. Radishes are widely cultivated for their edible roots. There are many named varieties[183] that are able to supply edible roots all year round. Over the centuries a number of distinct groups have evolved through cultivation, these have been classified by the botanists as follows. A separate entry has been made for each group:- R. sativus. The common radish. Fast maturing plants with small roots that can be round or cylindrical and usually have red skins. They are grown primarily for their roots which in some varieties can be ready within three weeks from sowing the seed and are used mainly in salads. These are mainly grown for spring, summer and autumn use and can produce a crop within a few weeks of sowing. R. sativus caudatus. The rat-tailed radishes. This group does not produce roots of good quality, it is cultivated mainly for the edible young seedpods which are harvested in the summer. R. sativus niger. The Oriental and Spanish radishes. These are grown for their larger edible root which can be round or cylindrical and can be available throughout the winter. R. sativus oleiformis. The fodder radishes. These are grown mainly for their leaves and oil-rich seeds, they are used as a green manure or stock feed though they can also be eaten by people. The roots of these plants soon become fibrous, though they make acceptable eating when young. Radishes are a good companion plant for lettuces, nasturtiums, peas and chervil, tomatoes and cucumbers[18, 20]. They are said to repel cucumber beetles if planted near cucumber plants and they also repel the vine borers which attack squashes, marrows and courgettes[238]. They grow badly with hyssop[18, 20] and with grape vines[201].",
+    "edible_uses_notes": "Edible Parts: Flowers Leaves Oil Oil Root Seed Seedpod Edible Uses: Oil Oil Young leaves - raw or cooked[37, 52, 104, 183]. A somewhat hot taste, and the texture is somewhat coarse[K]. As long as they are young, they make an acceptable addition in small quantities to chopped salads and are a reasonable cooked green[K]. A nutritional analysis is available[218]. Young flower clusters - raw or cooked[183]. A spicy flavour with a crisp pleasant texture, they make a nice addition to salads or can be used as a broccoli substitute[9, K]. Seeds - raw. The seed can be soaked for 12 hours in warm water and then allowed to sprout for about 6 days[244]. They have a hot spicy flavour and go well in salads[183, 244]. Young seedpods - raw[2, 37, 52, 104]. Crisp and juicy with a mildly hot flavour[K]. They must be eaten when young because they quickly become tough and fibrous[183]. Root - raw or cooked[2, 37, 52]. Crisp and juicy, they have a hot and spicy flavour and are a very popular addition to salads[183, K]. The summer crops do not store well and should be used as soon as possible after harvesting[K]. The winter varieties (including the Japanese forms) have much larger roots and often a milder flavour. These store well and can be either harvested in early winter for storage or be harvested as required through the winter[K]. An edible oil is obtained from the seed[2, 183].",
+    "fertilizer_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anthelmintic Antibacterial Antifungal Antiscorbutic Antispasmodic Appetizer Astringent Cancer Carminative Cholagogue Digestive Diuretic Expectorant Laxative Poultice Stomachic Radishes have long been grown as a food crop, but they also have various medicinal actions. The roots stimulate the appetite and digestion, having a tonic and laxative effect upon the intestines and indirectly stimulating the flow of bile[254]. Consuming radish generally results in improved digestion, but some people are sensitive to its acridity and robust action[254]. The plant is used in the treatment of intestinal parasites, though the part of the plant used is not specified[147]. The leaves, seeds and old roots are used in the treatment of asthma and other chest complaints[218]. The juice of the fresh leaves is diuretic and laxative[240]. The seed is carminative, diuretic, expectorant, laxative and stomachic[176, 218, 240]. It is taken internally in the treatment of indigestion, abdominal bloating, wind, acid regurgitation, diarrhoea and bronchitis[238]. The root is antiscorbutic, antispasmodic, astringent, cholagogue, digestive and diuretic[21, 218]. It is crushed and used as a poultice for burns, bruises and smelly feet[218]. Radishes are also an excellent food remedy for stone, gravel and scorbutic conditions[4]. The root is best harvested before the plant flowers[21]. Its use is not recommended if the stomach or intestines are inflamed[21]. The plant contains raphanin, which is antibacterial and antifungal[218, 238]. It inhibits the growth of Staphylococcus aureus, E. coli, streptococci, Pneumococci etc[176]. The plant also shows anti-tumour activity[218].",
     "other_uses_notes": "Fodder Green manure Oil Oil Repellent The growing plant repels beetles from tomatoes and cucumbers[20, 201]. It is also useful for repelling various other insect pests such as carrot root fly[201]. There is a fodder variety that grows more vigorously and is used as a green manure[87].",
-    "edible_uses_notes": "Edible Parts: Flowers Leaves Oil Oil Root Seed Seedpod Edible Uses: Oil Oil Young leaves - raw or cooked[37, 52, 104, 183]. A somewhat hot taste, and the texture is somewhat coarse[K]. As long as they are young, they make an acceptable addition in small quantities to chopped salads and are a reasonable cooked green[K]. A nutritional analysis is available[218]. Young flower clusters - raw or cooked[183]. A spicy flavour with a crisp pleasant texture, they make a nice addition to salads or can be used as a broccoli substitute[9, K]. Seeds - raw. The seed can be soaked for 12 hours in warm water and then allowed to sprout for about 6 days[244]. They have a hot spicy flavour and go well in salads[183, 244]. Young seedpods - raw[2, 37, 52, 104]. Crisp and juicy with a mildly hot flavour[K]. They must be eaten when young because they quickly become tough and fibrous[183]. Root - raw or cooked[2, 37, 52]. Crisp and juicy, they have a hot and spicy flavour and are a very popular addition to salads[183, K]. The summer crops do not store well and should be used as soon as possible after harvesting[K]. The winter varieties (including the Japanese forms) have much larger roots and often a milder flavour. These store well and can be either harvested in early winter for storage or be harvested as required through the winter[K]. An edible oil is obtained from the seed[2, 183]."
-  },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
+    "production_notes": null,
+    "pruning_notes": null,
+    "watering_interval_days": null,
+    "watering_notes": null
   },
   "biodiversity": {
-    "companions": [
-      {
-        "plant": "lettuces",
-        "relationship": "good_companion",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'good_companion' wording."
-      }
-    ],
-    "conflicts": [],
-    "repels_pests": [],
     "attracts_beneficial_insects": [
       {
-        "insect_group": "bees",
+        "confidence": 0.65,
         "examples": [
           "bees"
         ],
-        "source_name": "Plants For A Future",
-        "confidence": 0.65,
-        "notes": "PFAF states flowers are pollinated by bees."
+        "insect_group": "bees",
+        "notes": "PFAF states flowers are pollinated by bees.",
+        "source_name": "Plants For A Future"
       }
     ],
-    "pollinator_support": true,
-    "pest_confuser": false,
     "biodiversity_notes": [
       "PFAF describes this plant as relevant to companion planting."
-    ]
+    ],
+    "companions": [
+      {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording.",
+        "plant": "lettuces",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future"
+      }
+    ],
+    "conflicts": [],
+    "pest_confuser": false,
+    "pollinator_support": true,
+    "repels_pests": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "clubroot",
+      "downy_mildew",
+      "lettuce_drop",
+      "powdery_mildew",
+      "verticillium_wilt",
+      "white_mold"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "armyworm_and_cutworm",
+      "cabbage_maggot",
+      "diamondback_moth",
+      "flea_beetle",
+      "looper",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
-    "identity.scientific_name": "local_seed",
-    "identity.common_name": "local_seed",
-    "identity.genus": "GBIF",
-    "identity.family": "GBIF",
-    "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Plants For A Future",
-    "classification.use_categories": "Plants For A Future",
-    "classification.life_cycle": "Plants For A Future",
-    "classification.crop_life_cycle": "Plants For A Future",
-    "classification.edible": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
-    "germination.propagation_notes": "Plants For A Future",
-    "growth.sunlight": "Plants For A Future",
-    "growth.soil_type": "Plants For A Future",
-    "growth.water_need": "Plants For A Future",
-    "growth.growth_speed": "Plants For A Future",
-    "growth.soil_notes": "Plants For A Future",
-    "growth.water_notes": "Plants For A Future",
-    "care.cultivation_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future",
+    "biodiversity.companions": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
     "care.cautions": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
     "care.nutrition_notes": "Plants For A Future",
     "care.other_uses_notes": "Plants For A Future",
-    "care.edible_uses_notes": "Plants For A Future",
-    "biodiversity.companions": "Plants For A Future",
-    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
-    "biodiversity.pollinator_support": "Plants For A Future",
-    "biodiversity.pest_confuser": "Plants For A Future",
-    "biodiversity.biodiversity_notes": "Plants For A Future"
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "identity.common_name": "local_seed",
+    "identity.common_names": "Plants For A Future",
+    "identity.family": "GBIF",
+    "identity.genus": "GBIF",
+    "identity.scientific_name": "local_seed"
   },
   "source_metadata": {
+    "last_merged_at": "2026-06-17T04:44:11.845819+00:00",
     "sources": [
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:43:22.112414+00:00",
+        "relevance_score": null,
         "source_name": "GBIF",
         "source_url": "https://api.gbif.org/v1/species/match",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:43:22.112414+00:00"
+        "trusted_detail": null
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Raphanus+sativus",
-        "status": "trusted_detail",
-        "trusted_detail": true,
-        "relevance_score": 1.0,
+        "confidence": 0.8,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -190,15 +202,15 @@
           "known_hazards",
           "biodiversity"
         ],
-        "confidence": 0.8,
-        "last_verified_at": "2026-06-17T04:41:31.419615+00:00"
+        "last_verified_at": "2026-06-17T04:41:31.419615+00:00",
+        "relevance_score": 1.0,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Raphanus+sativus",
+        "status": "trusted_detail",
+        "trusted_detail": true
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Radish",
-        "status": "snapshot_only",
-        "trusted_detail": false,
-        "relevance_score": 0.05,
+        "confidence": 0.3,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -206,57 +218,59 @@
           "growth",
           "biodiversity"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:41:32.233764+00:00"
+        "last_verified_at": "2026-06-17T04:41:32.233764+00:00",
+        "relevance_score": 0.05,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Radish",
+        "status": "snapshot_only",
+        "trusted_detail": false
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "last_verified_at": "2026-06-17T04:33:07.428739+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Raphanus+sativus",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:33:07.428739+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:33:11.322053+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Radish",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:33:11.322053+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:33:14.998429+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=radish",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [
-          "edible_parts",
-          "use_categories",
-          "cultivation_notes"
-        ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:33:14.998429+00:00"
+        "trusted_detail": null
       }
-    ],
-    "last_merged_at": "2026-06-17T04:44:11.845819+00:00"
+    ]
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

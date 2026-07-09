@@ -1,0 +1,145 @@
+{
+  "pest_atom": "armyworm",
+  "name": "Armyworm",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Armyworm",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-armyworm",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": "Beet armyworm",
+      "scientific_name": "Spodoptera exigua",
+      "scientific_atom": "spodoptera_exigua"
+    },
+    {
+      "common_name": "Bertha armyworm",
+      "scientific_name": "Mamestra configurata",
+      "scientific_atom": "mamestra_configurata"
+    },
+    {
+      "common_name": "Western yellowstriped armyworm",
+      "scientific_name": "Spodoptera praefica",
+      "scientific_atom": "spodoptera_praefica"
+    }
+  ],
+  "scientific_names": [
+    "Spodoptera exigua",
+    "Mamestra configurata",
+    "Spodoptera praefica"
+  ],
+  "primary_scientific_name": "Spodoptera exigua",
+  "host_plants": [],
+  "includes_text": "Beet armyworm ( Spodoptera exigua ) Bertha armyworm ( Mamestra configurata ) Western yellowstriped armyworm ( Spodoptera praefica )",
+  "biology_life_history": "Beet armyworm eggs are laid on leaves of crops or weeds in clumps or masses that the female covers with white hairlike scales, giving the egg masses a cottony appearance. The tiny first instar larvae feed in groups near the egg mass. They skeletonize the leaves and may completely consume small leaves on seedlings. As they grow, they disperse and move towards the center of the plant. The larvae are quite mobile and may attack several plants. Bertha armyworm overwinters as a pupa. Moths emerge in June and July to mate and lay eggs. Eggs hatch in 3 to 5 days, and larvae feed for 5 to 6 weeks before pupating in the soil in early September. There are two generations each year. Larvae may be found in the soil resting in the shade. There is high mortality of larvae. Larvae reach maturity in 2 to 3 weeks in warm weather. The western yellowstriped armyworm overwinters in the soil as a pupa. Moths emerge in March and April and lay eggs in masses on foliage. Larvae feed on the foliage for 6 to 8 weeks during May through early July, then pupate in the soil. Larvae frequently feed on the terminal leaves and buds. Adults from the second generation emerge in mid-August and early September and lay eggs. The larvae that hatch from these eggs feed on plant foliage during late September and early October before entering the pupal stage to overwinter. There are two overlapping generations each year.",
+  "description_damage": "Beet armyworm moths have a wingspan less than 1.25 inches, and are mottled gray and brown, with irregular banding and a light colored, bean-shaped spot. Eggs are pale green to pink, ridged, and deposited in a mass which is covered with a white cottony material. The tiny, newly hatched larvae feed in colonies. The larvae are about 1.25 inches in length when full grown and are mottled olive green to almost black. Bertha armyworm adult moths have a wingspan up to 1.5 inches in length and are predominantly gray with patches of brown, black, olive, and white. Eggs are white when laid, turning black just before hatching. They are laid in clusters of 50 to 100. Mature larvae are about 1.25 inches in length and are variable in color. Young larvae, when disturbed, quickly spin down from the plant on a strand of silk. The pupa is 0.75 inch in length, reddish brown, with a pair of unusually long spines with curved tips on the rear (posterior) end. Moths of the western yellowstriped armyworm have gray or brown wings with slate or buff colored markings, and have a wingspan of about 1.5 inches. Eggs are similar to those of the beet armyworm, though the egg masses are larger and covered by a gray cottony material. The larvae grow to about 1.5 inches and are variable in color, with pronounced black triangular markings along each side and a prominent yellowish stripe and several narrow bright ones below. The reddish brown pupa, about 0.75 inch in length, is in a cell with a thin lining of silk. Armyworm larvae feed in colonies shortly after hatching and skeletonize leaves. As they grow larger, they tend to disperse and consume irregular patches of foliage or entire leaves.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "yellowing",
+    "leaf_mining"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "includes"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/356-120.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/356-120.jpg?itok=Ye4iyneF",
+      "caption": "Beet armyworm Spodoptera exigua Hubner Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/g146-214.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/g146-214.jpg?itok=Crv65sBD",
+      "caption": "Western yellowstriped armyworm Spodoptera praefica Grote Young immature showing damage on leaves"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/g141-334.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/g141-334.jpg?itok=PQL_SdTj",
+      "caption": "Western yellowstriped armyworm Spodoptera praefica Grote Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/246-154.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/246-154.jpg?itok=L2qBJ1Ox",
+      "caption": "Western yellowstriped armyworm Spodoptera praefica Grote Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/589-2015.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/589-2015.jpg?itok=NKAsVpch",
+      "caption": "Bertha armyworm Mamestra configurata Walker Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/346-921.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/346-921.jpg?itok=P31PXYcu",
+      "caption": "Beet armyworm Spodoptera exigua Hubner Immature female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/363-323.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/363-323.jpg?itok=x_ZooYiW",
+      "caption": "Beet armyworm Spodoptera exigua Hubner Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-armyworm/595-379.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-armyworm/595-379.jpg?itok=7LpyJeUD",
+      "caption": "Bertha armyworm Mamestra configurata Walker Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:52.830461+00:00"
+}

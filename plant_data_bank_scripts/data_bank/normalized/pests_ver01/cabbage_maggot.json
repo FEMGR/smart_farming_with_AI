@@ -1,0 +1,155 @@
+{
+  "pest_atom": "cabbage_maggot",
+  "name": "Cabbage maggot",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "broccoli",
+    "brussels_sprout",
+    "cabbage",
+    "cauliflower",
+    "collard",
+    "kale",
+    "kohlrabi",
+    "mustard_green",
+    "radish",
+    "rutabaga",
+    "turnip"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Broccoli, Brussels sprout, cabbage, cauliflower",
+      "pest_name_on_page": "Cabbage maggot",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-cabbage-maggot"
+    },
+    {
+      "crop_heading": "Collard and kale",
+      "pest_name_on_page": "Cabbage maggot",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-cabbage-maggot"
+    },
+    {
+      "crop_heading": "Kohlrabi",
+      "pest_name_on_page": "Cabbage maggot",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-cabbage-maggot"
+    },
+    {
+      "crop_heading": "Mustard greens",
+      "pest_name_on_page": "Cabbage maggot",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-cabbage-maggot"
+    },
+    {
+      "crop_heading": "Radish",
+      "pest_name_on_page": "Cabbage maggot",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-cabbage-maggot"
+    },
+    {
+      "crop_heading": "Turnip (roots and tops) and rutabaga",
+      "pest_name_on_page": "Cabbage maggot",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-cabbage-maggot"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-cabbage-maggot",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-cabbage-maggot",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-cabbage-maggot",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-cabbage-maggot",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-cabbage-maggot",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-cabbage-maggot"
+  ],
+  "page_titles": [
+    "Broccoli, Brussels sprout, cabbage, cauliflower-Cabbage maggot",
+    "Collard and kale-Cabbage maggot",
+    "Kohlrabi-Cabbage maggot",
+    "Mustard greens-Cabbage maggot",
+    "Radish-Cabbage maggot",
+    "Turnip (roots and tops) and rutabaga-Cabbage maggot"
+  ],
+  "description_damage": "See: Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "Once the crop emerges, watch for wilting, lighter green plants, or reduced growth that may indicate a maggot infestation. Pull up affected plants, and check roots and soil to confirm the presence of maggots. If several rows of seedling plants are infested, plants may be removed and rows replanted. Drenching with insecticide is also an option, but such treatments are difficult, costly, and may not be adequate. If roots are tunneled but no maggots are present, maggots have left the roots to pupate, and insecticide treatments would be of little value. Sticky traps and sweep nets also can be used to monitor the adult fly. Once the crop emerges, watch for wilting, lighter green plants, or reduced growth that may indicate a maggot infestation. Pull up affected plants, and check roots and soil to confirm the presence of maggots. If several rows of seedling plants are infested, plants may be removed and rows replanted. Drenching with insecticide is also an option, but such treatments are difficult, costly, and may not be adequate. If roots are tunneled but no maggots are present, maggots have left the roots to pupate, and insecticide treatments have little value. Sticky traps and sweep nets also can be used to monitor the adult fly. Once the crop emerges, watch for wilting, lighter green or purpled plants, or reduced growth that may indicate a maggot infestation. Pull up affected plants, and check roots and soil to confirm the presence of maggots. If several rows of seedling plants are infested, plants may be removed and rows replanted. Drenching with insecticide is also an option, but such treatments are difficult, costly, and may not be adequate. If roots are tunneled but no maggots are present, maggots have left the roots to pupate, and insecticide treatments would be of little value. Sticky traps, bucket traps, and sweep nets also can be used to monitor the adult fly.",
+  "management": {
+    "biological": "Rove beetles prey on maggot eggs and young larvae. Rove larvae parasitize the pupa stage of the maggot. The parasitic wasp, Trybliographa rapae , lays its eggs in the maggot larvae if the larvae are close enough to the soil surface. Biological controls cannot be counted on to provide adequate control. Rove beetles prey on maggot eggs and young larvae. Rove larvae parasitize the pupa stage of the maggot. The parasitic wasp Trybliographa rapae lays its eggs in the maggot larvae if the larvae are close enough to the soil surface. Biological controls cannot be counted on to provide adequate control. Rove beetles prey on eggs and young maggots. Rove larvae parasitize the pupa stage of the maggot. The parasitic wasp Trybliographa rapae lays its eggs in the maggot larvae if the larvae are close enough to the soil surface. Biological controls cannot be counted on to provide adequate control.",
+    "cultural": "Where maggots are a perennial problem, grow seedlings for transplants in fumigated soil in the greenhouse or under frames of clear plastic. Avoid hardening transplants near infested fields. Direct-seeded crops may avoid some injury when a set of drag chains is attached behind the planter to eliminate the moisture gradient in the seedrow. It is believed that adult flies can locate the seed row for egglaying by honing in on the higher moisture levels created when the soil is overturned for planting. Older plants may outgrow moderate cabbage maggot populations if maintained with a careful irrigation schedule. Always disc under crop residues immediately after harvest. Maggots can survive for some time in crop residue. Do not follow susceptible crops with susceptible crops unless sufficient time has passed for the residue to dry or decompose completely. Row covers using various fabrics, such as Remay, have proven very effective in preventing egg laying around the base of the plants. Row covers are ineffective if the crop is grown on land that has been previously infested heavily by the maggot, since overwintering flies will have emerged under the row covers. Where maggots are a perennial problem, grow seedlings for transplants in fumigated soil in the greenhouse or under frames of clear plastic. Avoid hardening transplants near infested fields. Direct-seeded crops may avoid some injury when a set of drag chains is attached behind the planter to eliminate the moisture gradient in the seed row. It is believed that adult flies can locate the seed row for egglaying by honing in on the higher moisture levels created when the soil is overturned for planting. Older plants may outgrow moderate cabbage maggot populations if maintained with a careful irrigation schedule. Always disc under crop residues immediately after harvest. Maggots can survive for some time in crop residue. Do not follow susceptible crops with susceptible crops, unless sufficient time has passed for the residue to dry or decompose completely. Where maggots are a perennial problem, grow seedlings for transplants in fumigated soil in the greenhouse or under frames of clear plastic. Avoid hardening transplants near infested fields. Direct-seeded crops may avoid some injury when a set of drag chains is attached behind the planter to eliminate the moisture gradient in the seedrow. It is believed that adult flies can locate the seed row for egglaying by homing in on the higher moisture levels created when the soil is overturned for planting. Older plants may outgrow moderate cabbage maggot populations if maintained with a careful irrigation schedule. Always disc under crop residues immediately after harvest. Maggots can survive for some time in crop residue. Do not follow susceptible crops with susceptible crops unless sufficient time has passed for the residue to dry or to decompose completely. Where maggots are a perennial problem, grow seedlings for transplants in fumigated soil in the greenhouse or under frames of clear plastic. Avoid hardening transplants near infested fields. Direct-seeded crops may avoid some injury when a set of drag chains is attached behind the planter to eliminate the moisture gradient in the seedrow. It is believed that adult flies can locate the seed row for egglaying by honing in on the higher moisture levels created when the soil is overturned for planting. Older plants may outgrow moderate cabbage maggot populations if maintained with a careful irrigation schedule. Always disc under crop residues immediately after harvest. Maggots can survive for some time in crop residue. Do not follow susceptible crops with susceptible crops, unless sufficient time has passed for the residue to dry or decompose completely. Where maggots are a perennial problem, grow seedlings for transplants in fumigated soil in the greenhouse or under frames of clear plastic. Avoid hardening transplants near infested fields. Direct-seeded crops may avoid some injury if a set of drag chains, attached behind the planter, eliminates the moisture gradient in the seed row. It is believed that adult flies can locate the seed row for egglaying by homing in on the higher moisture levels created when the soil is overturned for planting. Cover crops with floating row covers or screen cages prior to emergence of adult flies to prevent egg-laying. Do not put row covers in areas previously infested. Older plants may outgrow moderate cabbage maggot populations if maintained with a careful irrigation schedule. Always disc under crop residues immediately after harvest. Maggots can survive for some time in crop residue. Do not follow susceptible crops with susceptible crops, unless sufficient time has passed for the residue to dry or decompose completely.",
+    "chemical_home": [
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "pyrethrins (often as a mix with azadirachtin)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "pyrethrins (often as a mix with other ingredients)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "Every year, in areas where cabbage maggot causes economic injury,",
+      "treat spring planted or transplanted crops with a band of",
+      "insecticide at the base of the",
+      "plant at the time of planting or transplanting. Control of adult flies is generally not recommended. Later sprays cannot be relied upon to control the pest effectively.",
+      "Treat seedbeds for transplanted crops with an insecticide. Transplant application",
+      "chlorantraniliprole (Coragen 2) at 0.045 to 0.098 lb ai/A as a transplant water treatment only. PHI 3 days. REI 4 hr. Do not exceed 0.2 lb ai/A chlorantraniliprole per year. Do not exceed 0.132 lb ai/A of Coragen per crop by any treatment combination.",
+      "diazinon (Diazinon 50W) at 0.5 to 1 lb ai per 200 gallons of transplant water. Apply in transplant water as a drench application when 200-300 gals of water are used per acre. Apply labeled rate by",
+      "tractor-mounted sprayer equipped with drop nozzles to direct spray to the base of the plant. Note: Transplant water treatments may result in stand reduction due to plant",
+      "stress at time of transplanting. Refer to label. REI 4 days. No more than one soil application per year regardless of target pest. bifenthrin/IBA (Empower 2) at 0.04 to 0.1 lb ai/A. PHI 7 days. REI 5 days. Retreatment interval 7 days. Do not exceed 0.5 lb ai/A per season. Refer to label. Empower 2 no longer registered for use in OR.",
+      "spinetoram (Radiant SC)-Under high root maggot pressure direct the spray in a narrow",
+      "band at the base of the plants. Consult label for rates. Preplant incorporation application for direct seeded or transplanted crop",
+      "bifenthrin (Capture LFR) at 0.04 to 0.08 lb ai/A at planting in furrow or broadcast to soil surface. REI 12 hr. Do not exceed 0.1 lb ai/A per",
+      "season at plant application. Refer label instructions.",
+      "bifenthrin (Brigade WSB) at 0.05 to 0.1 lb ai/A",
+      "in-furrow with seed or transplant. REI 12 hr.",
+      "diazinon (Diazinon 50W) at 2 to 3 lb ai/A (minimum 10 gal/A). Broadcast just before planting and immediately incorporate into the top 3-4 inches of soil. REI 4 days. Do not apply more than 4 lb ai/A per year. No more than one soil application per year regardless of target pest.",
+      "spinetoram (Radiant SC)-Consult label for rates according to row spacing. Suppression only.",
+      "Every year, in areas where cabbage maggot causes economic injury,",
+      "treat spring planted or transplanted crops with a band of",
+      "insecticide at the base of the",
+      "plant at the time of planting or transplanting. Later sprays cannot be relied upon to control the pest effectively.",
+      "Treat seedbeds for transplanted crops with an insecticide. See: Broccoli, Brussels sprout, cabbage,",
+      "cauliflower-Cabbage maggot",
+      "Every year, in areas where cabbage maggot causes economic injury,",
+      "treat spring planted or transplanted crops with a band of",
+      "insecticide at the base of the",
+      "plant at the time of planting or transplanting. Later sprays cannot be relied upon to control the pest effectively.",
+      "Treat seedbeds for transplanted crops with an insecticide.",
+      "bifenthrin (Brigade WSB, Capture LFR) at 0.04 to 0.1 lb ai/A as",
+      "in-furrow treatment. REI 12 hr. Do not exceed 0.1 lb as",
+      "at-plant treatment. Some formulations are labeled for OMRI use.",
+      "bifenthrin (Capture LFR) at 0.04 to 0.08 lb ai/A at planting. REI 12 hr. Do not exceed 0.1 lb ai/A per year",
+      "at-plant. Some formulations are prohibited in coastal couties.",
+      "cyantraniliprole (Verimark) at 0.13 to 0.176 lb ai/A at planting. REI 4 hr. Do not exceed 0.4 lb ai/A per year. These products contain commonly used active ingredients for control of cabbage maggot in radish. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "chlorpyrifos (Lorsban Advanced) at 0.05 to 0.1 lb ai/1,000 row ft or 2.11 lb ai/A soil surface spray. PHI 30 days. REI 24 hr. Band and incorporate to 1",
+      "inch at planting, or",
+      "side-dress immediately after transplanting.",
+      "Use at least 40 gal/A spray. Do not exceed 2.25 lb ai/A per year. Apply only once per season. Washington only.",
+      "cyantraniliprole (Verimark) at 0.088 to 0.176 lb ai/A at planting only, as in",
+      "in-furrow spray or transplant drench. PHI day N/A. REI 4 hr. Do not exceed 0.176 lb ai/A at planting. Do not exceed 0.4 lb ai/A per season.",
+      "diazinon (Diazinon 50W) at 2 to 4 lb ai/A. Broadcast before planting and immediately incorporate into the soil to a depth of 4 inches. REI 4 days. Rutabagas only."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:31:20.559348+00:00"
+}

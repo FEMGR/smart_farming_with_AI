@@ -1,0 +1,75 @@
+{
+  "pest_atom": "squash_bug",
+  "name": "Squash bug",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Squash bug",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-squash-bug",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Squash bugs overwinter in protected places as unmated adults. They appear rather slowly in spring. Adults mate and begin laying clusters of eggs about the time the squash vines begin to spread. Eggs are laid in clusters of a dozen or more on the leaves. They hatch in about 10 days into nymphs. Nymphs go through five molts before becoming adults in 4 to 6 weeks. There is only one generation per year.",
+  "description_damage": "The adult squash bug is flat-backed, brownish black, and measures about 0.62 inch in length. Eggs are elliptical and yellowish-brown turning dark brown with age. Nymphs have a green abdomen with crimson head, thorax, antennae, and legs which soon darken to reddish brown. Older nymphs are grayish white with black legs and antennae. Nymphs range from 0.19 to 0.5 inch in length. Squash bugs feed primarily on squash and pumpkin. Adults and nymphs suck plant sap from the leaves and stems, causing wilting and death. Damage tends to be localized.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "wilting",
+    "leaf_damage",
+    "stem_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-squash-bug/225-19.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-squash-bug/225-19.jpg?itok=K1iAUtH4",
+      "caption": "Squash bug Anasa tristis DeGeer Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-squash-bug/379-14.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-squash-bug/379-14.jpg?itok=uGfqgWOd",
+      "caption": "Squash bug Anasa tristis De Geer Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-squash-bug/225-15.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-squash-bug/225-15.jpg?itok=rylEPxX5",
+      "caption": "Squash bug Anasa tristis DeGeer Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.090577+00:00"
+}

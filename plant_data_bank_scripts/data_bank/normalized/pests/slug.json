@@ -1,0 +1,102 @@
+{
+  "pest_atom": "slug",
+  "name": "Slug",
+  "pest_type": "mollusk",
+  "page_title": "Vegetable crop pests-Slug",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-slug",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": null,
+      "scientific_name": "Arion",
+      "scientific_atom": "arion"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Milax gagates",
+      "scientific_atom": "milax_gagates"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Derocerus reticulatum",
+      "scientific_atom": "derocerus_reticulatum"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Limax maximus",
+      "scientific_atom": "limax_maximus"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Derocerus laeve",
+      "scientific_atom": "derocerus_laeve"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Prophysaon andersoni",
+      "scientific_atom": "prophysaon_andersoni"
+    }
+  ],
+  "scientific_names": [
+    "Arion",
+    "Milax gagates",
+    "Derocerus reticulatum",
+    "Limax maximus",
+    "Derocerus laeve",
+    "Prophysaon andersoni"
+  ],
+  "primary_scientific_name": "Arion",
+  "host_plants": [],
+  "includes_text": "Arion spp. Black greenhouse slug ( Milax gagates ) Gray field slug ( Derocerus reticulatum ) Large spotted garden slug ( Limax maximus ) Marsh slug ( Derocerus laeve ) Reticulated slug ( Prophysaon andersoni )",
+  "biology_life_history": "Slugs are hermaphrodites and lay small, round, pearl-like white or translucent eggs in clusters of a dozen or more in sheltered cavities near the soil surface or under thick mulch on the soil surface if the soil is moist. Eggs hatch in 2 to 4 weeks. Egg laying activity is greatest after the first late summer and fall rains. Eggs overwinter if they are laid in October or November. The gray garden slug lays additional clutches of eggs in early spring. Slugs can live up to 12 months. See also: Slug Control",
+  "description_damage": "Slugs are related closely to snails but have no shell. They are active above ground primarily at night, and also during mild, wet periods, at any time of year. Very little activity takes place in cold, freezing, or extremely hot weather. During the day, slugs usually are found in the soil or in crevices or cracks, to protect themselves from dehydration and predators. Slug damage can be distinguished easily from damage caused by other pests by the presence of slime trails. Damage to roots and tubers is characterized by smooth sided pits 0.12 to 0.5 inch in diameter. Damage to foliage is removal of plant tissue between veins and on the edge of leaves. Slug damage tends to be heaviest along field margins. Weedy or grassy borders serve as excellent habitat for slugs. High populations build up in perennial legumes used for cover crops.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "root_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "includes"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-slug/94-82.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-slug/94-82.jpg?itok=-My4i_ff",
+      "caption": "Spotted garden slug Limax maximus Linnaeus Adult female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-slug/128-200.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-slug/128-200.jpg?itok=G46HPSnY",
+      "caption": "Prophysaon andersoni Cooper Adult on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.970203+00:00"
+}

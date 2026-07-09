@@ -1,0 +1,117 @@
+{
+  "pest_atom": "western_bean_cutworm",
+  "name": "Western bean cutworm",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "bean",
+    "corn",
+    "sweet_corn"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Bean, dry",
+      "pest_name_on_page": "Western bean cutworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-western-bean-cutworm"
+    },
+    {
+      "crop_heading": "Corn, sweet",
+      "pest_name_on_page": "Western bean cutworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-western-bean-cutworm"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-western-bean-cutworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-western-bean-cutworm"
+  ],
+  "page_titles": [
+    "Bean, dry-Western bean cutworm",
+    "Corn, sweet-Western bean cutworm"
+  ],
+  "description_damage": "See: Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "Apply any of the recommended pesticides as allowed per label 10 to 20 days after the peak moth flight.",
+  "management": {
+    "biological": "",
+    "cultural": "Weed control is important. Lambsquarters and wild mustard attract egg-laying females and provide a source of food for larvae. Fall tillage can help destroy overwintering pupae. Home gardeners: Control weeds, grasses, and debris in the vegetable garden that provide cover; hand-pick cutworm larvae, using a flashlight to find them as they are nocturnal, if practical. Scratch the soil at the base of plants to find larvae in the daytime.",
+    "chemical_home": [
+      "Apply any one of these materials to the soil",
+      "surface at first sign of cutworm activity. Consult label. Minimum preharvest interval (PHI) varies with crop.",
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. Bacillus thuringiensis var.",
+      "kurstaki ( Bt )-Some formulations are",
+      "OMRI-listed for organic use. bifenthrin",
+      "carbaryl-To avoid harming bees, do not apply products containing carbaryl to plants in bloom. esfenvalerate plant essential",
+      "oils (rosemary, etc.)-Some have demonstrated efficacy against lepidopteran larvae. Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad (as a mix with other ingredient)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "Apply any one of these materials to the soil",
+      "surface at first sign of cutworm activity. Consult label. Minimum",
+      "pre-harvest interval (PHI) varies with crop. Difficult to control. Where cutworms are on the soil surface, a carbaryl drench, when bees are not present, may help. Beans, tomatoes, and late corn are most often \"hoed\" by cutworms. Attack varies in severity with locality and year.",
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "zeta-cypermethrin) carbaryl cyfluthrin deltamethrin esfenvalerate",
+      "gamma-cyhalothrin insecticidal",
+      "soap (as a mix with spinosad)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "lambda-cyhalothrin",
+      "kaolin-When applied as a spray to leaves, stems, and fruit, it acts as a repellant to some insect pests. Some formulations are",
+      "OMRI-listed for organic use. Not registered for use in OR. permethrin plant derived essential",
+      "oils (rosemary, peppermint, etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 21 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. Do not feed or graze livestock on treated vines.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 21 days. REI 24 hr. Do not feed to or graze livestock. Do not exceed 0.12 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air. Washington only.",
+      "Bacillus",
+      "thuringiensis (Javelin WG, XenTari) at 0.12 to 1.5 lb/A Javel in WG, and 0.5 to 1.5 lb/A of XenTari. PHI 0 days. REI 4 hr. Slow acting. May need multiple applications. Add an appropriate",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "OMRI-listed for organic production.",
+      "beta-cyfluthrin (Baythroid XL) at 0.016 to 0.022 lb ai/A soil application. PHI 0 days. REI 12 hr. Retreatment interval 2 days. Do not exceed 0.22 lb ai/A per year. bifenthrin/zeta-cypermethrin (Hero) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 3 to 5 days. Do not exceed 0.266 lb ai/A per season. Burkholderia spp. (Venerate XC) at 1 to 4 quarts/A product. PHI 0 days. REI 4 hr.",
+      "OMRI-listed for organic use.",
+      "carbaryl (Sevin 5 Bait) at 1 to 2 lb ai/A. PHI 2 days for harvest of ears, 14 days for forage, 48 days for fodder. REI 24 hr. Retreatment interval 3 days. Limit 8 treatments per year. Do not exceed 16 lb ai/A per year.",
+      "chlorantraniliprole (Coragen) at 0.045 to 0.098 lb ai/A. PHI 1 day. REI 4 hr. Limit 4 treatments per crop. Retreatment interval 1 day. Do not exceed 0.2 lb ai/A per season. chlorantraniliprole/lambda-cyhalothrin (Besiege) at 0.06 to 0.1 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 1 day. Do not exceed 0.48 lb ai of",
+      "lambda-cyhalothrin or 0.2 lb ai of chlorantraniliprole per acre per growing season. Chromobacterium",
+      "subtsugae (Grandevo) at 0.3 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "OMRI-listed for organic production.",
+      "cyfluthrin (Tombstone) at 0.025 to 0.044 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.44 lb/A per season.",
+      "esfenvalerate (Asana XL) at 0.015 to 0.03 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.5 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "gamma-cyhalothrin (Declare) at 0.0025 lb ai/1,000 row",
+      "ft at planting or 0.01 to 0.015 lb ai/A foliar application. PHI 1 day. Do not exceed 0.24 lb ai/A total application per season.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 1 day. REI 24 hr. Do not exceed 0.48 lb ai/A per year. Do not harvest for feed or graze livestock for 21 days. Retreatment interval 4 days.",
+      "lambda-cyhalothrin/tebuconazole (Crossover) at 0.14 to 0.16 lb ai/A. REI 19 days. PHI 21 days for ears & forage; 49 days for fodder. Do not exceed 0.48 lb ai/A tebuconazole or 0.12 lb ai/A",
+      "lambda-cyhalothrin. Product not registered for use in WA.",
+      "methoxyfenozide (Troubadour 2F) at 0.06 to 0.25 lb ai/A. PHI 3 days for ears or forage; 21 days for dry fodder. REI 4 hr. Do not exceed 1 lb ai/A per season. An adjuvant improves performance. Retreatment interval 5 days.",
+      "spinetoram (Radiant SC) at 0.023 to 0.0469 lb ai/A. PHI 1 day for ears, 3 days for forage. REI 4 hr. Retreatment interval 4 days. Do not exceed six applications or 0.281 lb ai/A per season. Follow resistance management procedures on the label.",
+      "spinosad (Success, Entrust SC) at 0.047 to 0.094 lb ai/A. PHI 1 day for ears, 7 days for forage. REI 4 hr.",
+      "Treat",
+      "eggs at hatch and small larvae. Do not exceed 0.45 lb ai/A per crop. Spinosad takes several days to achieve full effect. Monitor fields and pest populations carefully. Multiple applications may be necessary. Entrust SC is",
+      "OMRI-listed for organic use."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:38:03.125833+00:00"
+}

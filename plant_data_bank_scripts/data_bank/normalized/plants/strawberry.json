@@ -82,12 +82,6 @@
     "other_uses_notes": "Agroforestry uses: Strawberries can serve as ground cover, helping to prevent soil erosion. They can also be integrated into mixed cropping systems to enhance biodiversity. A dynamic accumulator gathering minerals or nutrients from the soil and storing them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Strawberry flowers are rich in nectar and pollen, attracting various pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Strawberries provide food in the form of fruit for birds and other wildlife. The plants can also create some ground cover and habitat. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Strawberries can provide shelter for invertebrates and the leaf litter can contribute to habitat diversity. 4. Pest Confuser (Smell): No – Strawberries do not have a strong smell that would effectively confuse or deter pests.",
     "edible_uses_notes": "Edible Parts: Fruit Leaves Edible Uses: Fruit - raw. Fruits of the best cultivars are sweet and succulent with an exquisite flavour[K]. Strawberries are a very popular fruit and are widely available in the summer. The fruit of some cultivars is up to 3cm in diameter[200]. Young leaves - raw."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -109,6 +103,12 @@
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -247,7 +247,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

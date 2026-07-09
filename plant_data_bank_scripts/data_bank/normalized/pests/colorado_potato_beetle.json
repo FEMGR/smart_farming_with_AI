@@ -1,0 +1,72 @@
+{
+  "pest_atom": "colorado_potato_beetle",
+  "name": "Colorado potato beetle",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Colorado potato beetle",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-colorado-potato-beetle",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Colorado potato beetle overwinters as an adult in the soil and emerges in late April and May to lay eggs. Adults lay eggs in masses of 10 to 30 on the undersides of leaves. Eggs hatch in 7 to 10 days, and the larvae begin feeding on the undersides of leaves. Larvae mature in 2 to 3 weeks, drop to the soil, and enter cracks to pupate. Adults emerge in 5 to 10 days, mate, and deposit eggs as before. Larvae of the second generation mature and pupate in the soil. Adults from this generation form the overwintering stage in the soil. A generation can be completed in 30 days.",
+  "description_damage": "Adults are oval, strongly convex beetles with hard wing covers marked with black and yellow stripes running lengthwise along their back. They are about 0.5 inch in length and 0.25 inch wide. Larvae are very plump, dark red when young, but become orange as they near maturity. They have two conspicuous rows of black spots along the sides of the body and are about the same size as the adults. Colorado potato beetles feed almost exclusively on plants of the Solanaceae family such as potato, tomato, eggplant, and pepper. Adults and larvae can cause significant damage to potato foliage.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-colorado-potato-beetle/g52-2.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-colorado-potato-beetle/g52-2.jpg?itok=tCV9BvgJ",
+      "caption": "Colorado potato beetle Leptinotarsa decemlineata Say Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-colorado-potato-beetle/202-1.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-colorado-potato-beetle/202-1.jpg?itok=duqf6QRl",
+      "caption": "Colorado potato beetle Leptinotarsa decemlineata Say Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-colorado-potato-beetle/202-14.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-colorado-potato-beetle/202-14.jpg?itok=aCjEnmDn",
+      "caption": "Colorado potato beetle Leptinotarsa decemlineata Say Young immature showing damage on leaves"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.042629+00:00"
+}

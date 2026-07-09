@@ -1,0 +1,84 @@
+{
+  "pest_atom": "western_yellowstriped_armyworm",
+  "name": "Western yellowstriped armyworm",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "lentil"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Lentil",
+      "pest_name_on_page": "Western yellowstriped armyworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-western-yellowstriped-armyworm"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-western-yellowstriped-armyworm"
+  ],
+  "page_titles": [
+    "Lentil-Western yellowstriped armyworm"
+  ],
+  "description_damage": "See: Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "Monitoring to catch infestations early is important, because Bacillus thuringiensis ( Bt ) insecticides work much more effectively on small larvae.",
+  "management": {
+    "biological": "Common natural enemies of armyworms include several braconid and ichneumonid wasps and many general predators, including assassin bugs, damsel bugs, spiders, and a nucleopolyhedrovirus, reported to have brought about excellent late year control in Canada. None of these natural enemies can be counted upon to achieve adequate control in any given year.",
+    "chemical_commercial": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Bacillus",
+      "alpha-cypermethrin (Fastac EC) at 0.017 to 0.025 lb ai/A. PHI 1 day for succulent, 21 day for dried shelled lentils. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.075 lb ai/A per season. Washington only .",
+      "azadirachtin (Neemix 4.5) at 0.012 to 0.031lb ai/A. PHI 0 days. REI 4 hr.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.05 lb ai/A per season. Do not feed treated vines or hay to livestock. Retreatment interval 14 days.",
+      "beta-cyfluthrin or 0.1 lb ai/A imidacloprid per season. Effective on first and second instars.",
+      "beta-cyfluthrin/imidacloprid (Leverage 360) at 0.056 to 0.066 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.05 lb ai/A",
+      "bifenthrin (Brigade 2EC, Sniper) at 0.033 to 0.1 lb ai/A. PHI 14 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A per season. Brigade 2EC only for Oregon and Washington.",
+      "bifenthrin (Capture LFR) at 0.033 to 0.1 lb ai/A foliar. PHI 14 days foliar. Retreatment interval 7 days foliar. REI 12 hr. Do not exceed 0.3 lb ai/A per season. bifenthrin/imidacloprid (Brigadier) at 0.0875 lb ai/A. PHI 14 days. REI 12 hr. Do not exceed 0.13 lb ai/A imidacloprid and 0.13 lb ai/A bifenthrin. Retreatment interval 7 days. bifenthrin/zeta-cypermethrin (Hero EW) at 0.04 to 0.1 lb ai/A. PHI 21 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A per season. Chromobacterium",
+      "cyfluthrin (Tombstone) at 0.038 to 0.05 lb ai/A. PHI 7 days. Retreatment interval 14 days. REI 12 hr. Do not exceed 0.1 lb ai/A per season. Do not feed vines or hay.",
+      "gamma-cyhalothrin (Declare) at 0.01 to 0.015 lb ai/A. PHI 21 days. REI 24 hr. Do not exceed 0.06 lb ai/A per season. Retreatment interval 5 days. Do not graze or harvest for feed. An oil or nonionic surfactant improves performance.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 21 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.12 lb ai/A per season. Do not graze or harvest for feed.",
+      "methomyl (Lannate SP) at 0.45 to 0.9 lb ai/A. PHI 21. REI 48 hr. Do not exceed 0.9 lb ai/A per season. Limit 2 applications per year.",
+      "methoxyfenozide (Intrepid 2F) at 0.06 to 0.12 lb ai/A early season and 0.12 to 0.25 lb ai/A",
+      "mid- to late season. PHI 7 days. REI 4 hr. Retreatment interval 7 days. Limit 4 treatments per year. Do not exceed 1 lb ai/A per season.",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations",
+      "subtsugae (Grandevo) at 0.3 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "thuringiensis (Javelin) at 0.12 to 1.5 lb/A. PHI 0 days. REI 4 hr. Acts slowly; may need multiple applications. Add an appropriate"
+    ],
+    "chemical_home": [
+      "Apply any one of these materials to the soil",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. carbaryl",
+      "azadirachtin (neem oil)-Some formulations are",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "plant-derived essential",
+      "pyrethrins-Some formulations are",
+      "surface at first sign of cutworm activity. Consult label. Minimum preharvest interval (PHI) varies with crop."
+    ],
+    "cultural": "Weed control is important. Lambsquarters and wild mustard attract egg-laying females and provide a source of food for larvae. As weeds dry, large populations of armyworms can move onto crops. When infested alfalfa fields are mowed, large dispersions of armyworms also can take place. Fall tillage can help destroy overwintering pupae."
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:38:05.541853+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.571895+00:00"
+}

@@ -2,158 +2,174 @@
   "plant_atom": "potato",
   "identity": {
     "common_name": "Potato",
-    "scientific_name": "Solanum tuberosum",
-    "genus": "Solanum",
-    "family": "Solanaceae",
-    "synonyms": [
-      "Solanum tuberosum andigena"
-    ],
     "common_names": [
       "Andigena"
+    ],
+    "family": "Solanaceae",
+    "genus": "Solanum",
+    "scientific_name": "Solanum tuberosum",
+    "synonyms": [
+      "Solanum tuberosum andigena"
     ]
   },
   "classification": {
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
     "edible": true,
-    "use_categories": [
-      "medicinal_plant",
-      "root_tuber_crop"
-    ],
     "edible_parts": [
       "root"
     ],
-    "life_cycle": "perennial",
     "growth_habit": null,
-    "botanical_life_cycle": "perennial",
-    "crop_life_cycle": null,
-    "life_cycle_context": null
+    "life_cycle": "perennial",
+    "life_cycle_context": null,
+    "use_categories": [
+      "medicinal_plant",
+      "root_tuber_crop"
+    ]
   },
   "growth": {
-    "sunlight": [
-      "full_sun"
-    ],
-    "water_need": "moderate",
+    "climate_notes": null,
+    "growth_speed": null,
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "rainfall_notes": null,
+    "soil_notes": "Succeeds in most soils[1]. Dislikes wet or heavy clay soils[16, 37]. Prefers a slightly acid soil, the tubers are subject to scab on limy soils or those deficient in humus. Yields best on a fertile soil rich in organic matter. This plant is one of the S. American species of potatoes. It is not frost hardy but can probably be grown in much the same way as potatoes are grown by planting out the tubers in spring and harvesting in the autumn[K]. Plants might have strict daylength requirements and may yield poorly in temperate zones because they need short-days in order to induce tuber-formation[196]. This species is commonly cultivated for its edible tubers in S. America[196]. Yields are often low but 30 tonnes per hectare have been recorded[196]. Plants are susceptible to late blight[196]. This species is the immediate ancestor of the potato of commerce, S. tuberosum, though the tubers look rather different[196]. A tetraploid species, probably derived from S. stenotomum by chromosome doubling or by hybridization with S. sparsipilum, it produces fertile seed[196].",
+    "soil_ph_max": null,
+    "soil_ph_min": null,
     "soil_type": [
       "heavy_clay",
       "light_sandy",
       "medium_loamy",
       "well_drained"
     ],
-    "soil_ph_min": null,
-    "soil_ph_max": null,
-    "growth_speed": null,
-    "climate_notes": null,
-    "soil_notes": "Succeeds in most soils[1]. Dislikes wet or heavy clay soils[16, 37]. Prefers a slightly acid soil, the tubers are subject to scab on limy soils or those deficient in humus. Yields best on a fertile soil rich in organic matter. This plant is one of the S. American species of potatoes. It is not frost hardy but can probably be grown in much the same way as potatoes are grown by planting out the tubers in spring and harvesting in the autumn[K]. Plants might have strict daylength requirements and may yield poorly in temperate zones because they need short-days in order to induce tuber-formation[196]. This species is commonly cultivated for its edible tubers in S. America[196]. Yields are often low but 30 tonnes per hectare have been recorded[196]. Plants are susceptible to late blight[196]. This species is the immediate ancestor of the potato of commerce, S. tuberosum, though the tubers look rather different[196]. A tetraploid species, probably derived from S. stenotomum by chromosome doubling or by hybridization with S. sparsipilum, it produces fertile seed[196].",
-    "water_notes": "Prefers moist soil.",
-    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "sunlight": [
+      "full_sun"
+    ],
     "temperature_notes": null,
-    "rainfall_notes": null
+    "water_need": "moderate",
+    "water_notes": "Prefers moist soil."
   },
   "germination": {
+    "germination_days_max": null,
+    "germination_days_min": null,
+    "germination_light": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
     "propagation_methods": [
       "division",
       "seed",
       "tuber"
     ],
     "propagation_notes": "Seed - sow early spring in a warm greenhouse. Prick out the seedlings into a fairly rich compost as soon as they are large enough to handle and grow them on fast. Plant them out after the last expected frosts. Division. Harvest the tubers in autumn after the top-growth has been cut back by frost. Store the tubers in a cool frost-free place overwinter and replant in April.",
-    "germination_days_min": null,
-    "germination_days_max": null,
-    "germination_light": null,
-    "sowing_depth_cm": null,
-    "minimum_soil_temp_c": null,
-    "optimum_soil_temp_c": null,
-    "preferred_propagation_methods": [],
-    "propagation_warning": null
+    "propagation_warning": null,
+    "sowing_depth_cm": null
   },
   "spacing": {
-    "spacing_cm": null,
-    "root_depth_cm": null,
     "plant_height_cm": null,
+    "root_depth_cm": null,
+    "spacing_cm": null,
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
-    "watering_notes": null,
-    "pruning_notes": null,
-    "fertilizer_notes": null,
-    "cultivation_notes": "Succeeds in most soils[1]. Dislikes wet or heavy clay soils[16, 37]. Prefers a slightly acid soil, the tubers are subject to scab on limy soils or those deficient in humus. Yields best on a fertile soil rich in organic matter. This plant is one of the S. American species of potatoes. It is not frost hardy but can probably be grown in much the same way as potatoes are grown by planting out the tubers in spring and harvesting in the autumn[K]. Plants might have strict daylength requirements and may yield poorly in temperate zones because they need short-days in order to induce tuber-formation[196]. This species is commonly cultivated for its edible tubers in S. America[196]. Yields are often low but 30 tonnes per hectare have been recorded[196]. Plants are susceptible to late blight[196]. This species is the immediate ancestor of the potato of commerce, S. tuberosum, though the tubers look rather different[196]. A tetraploid species, probably derived from S. stenotomum by chromosome doubling or by hybridization with S. sparsipilum, it produces fertile seed[196].",
-    "production_notes": null,
-    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibacterial Antifungal Antiphlogistic Antispasmodic Cardiotonic Hypotensive Poultice None known",
     "cautions": "Although no specific mention of toxicity has been seen for this species, it belongs to a genus where many if not all the members have poisonous leaves and sometimes also the unripe fruits.",
+    "cultivation_notes": "Succeeds in most soils[1]. Dislikes wet or heavy clay soils[16, 37]. Prefers a slightly acid soil, the tubers are subject to scab on limy soils or those deficient in humus. Yields best on a fertile soil rich in organic matter. This plant is one of the S. American species of potatoes. It is not frost hardy but can probably be grown in much the same way as potatoes are grown by planting out the tubers in spring and harvesting in the autumn[K]. Plants might have strict daylength requirements and may yield poorly in temperate zones because they need short-days in order to induce tuber-formation[196]. This species is commonly cultivated for its edible tubers in S. America[196]. Yields are often low but 30 tonnes per hectare have been recorded[196]. Plants are susceptible to late blight[196]. This species is the immediate ancestor of the potato of commerce, S. tuberosum, though the tubers look rather different[196]. A tetraploid species, probably derived from S. stenotomum by chromosome doubling or by hybridization with S. sparsipilum, it produces fertile seed[196].",
+    "edible_uses_notes": "Edible Parts: Root Edible Uses: Rutin Root - cooked[46, 105, 177]. This species has the largest tubers of all the species cultivated in the Andes, it has a good content of protein (12% dry weight compared to 8 - 10% for the cultivated potato) and is rich in starch and vitamin C[196].",
+    "fertilizer_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibacterial Antifungal Antiphlogistic Antispasmodic Cardiotonic Hypotensive Poultice None known",
     "other_uses_notes": "Alcohol Biomass Cleanser Cosmetic Polish Size Starch None known",
-    "edible_uses_notes": "Edible Parts: Root Edible Uses: Rutin Root - cooked[46, 105, 177]. This species has the largest tubers of all the species cultivated in the Andes, it has a good content of protein (12% dry weight compared to 8 - 10% for the cultivated potato) and is rich in starch and vitamin C[196]."
-  },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
+    "production_notes": null,
+    "pruning_notes": null,
+    "watering_interval_days": null,
+    "watering_notes": null
   },
   "biodiversity": {
-    "companions": [],
-    "conflicts": [],
-    "repels_pests": [],
     "attracts_beneficial_insects": [
       {
-        "insect_group": "pollinators",
+        "confidence": 0.6,
         "examples": [
           "insects"
         ],
-        "source_name": "Plants For A Future",
-        "confidence": 0.6,
-        "notes": "PFAF states flowers are pollinated by insects."
+        "insect_group": "pollinators",
+        "notes": "PFAF states flowers are pollinated by insects.",
+        "source_name": "Plants For A Future"
       }
     ],
-    "pollinator_support": true,
+    "biodiversity_notes": [],
+    "companions": [],
+    "conflicts": [],
     "pest_confuser": false,
-    "biodiversity_notes": []
+    "pollinator_support": true,
+    "repels_pests": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "bacterial_wilt",
+      "early_blight",
+      "fusarium_wilt",
+      "late_blight",
+      "powdery_mildew",
+      "bacterial_ring_rot",
+      "bacterial_soft_rot_and_blackleg",
+      "common_scab",
+      "curly_top",
+      "mosaic_viruses",
+      "potato_leafroll",
+      "powdery_scab",
+      "seed_piece_decay",
+      "verticillium_wilt"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "spider_mite",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
-    "identity.scientific_name": "local_seed",
-    "identity.common_name": "local_seed",
-    "identity.genus": "GBIF",
-    "identity.family": "GBIF",
-    "identity.synonyms": "Plants For A Future",
-    "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Plants For A Future",
-    "classification.use_categories": "Plants For A Future",
-    "classification.life_cycle": "Plants For A Future",
-    "classification.botanical_life_cycle": "Plants For A Future",
-    "classification.edible": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
-    "germination.propagation_notes": "Plants For A Future",
-    "growth.sunlight": "Plants For A Future",
-    "growth.soil_type": "Plants For A Future",
-    "growth.water_need": "Plants For A Future",
-    "growth.soil_notes": "Plants For A Future",
-    "growth.water_notes": "Plants For A Future",
-    "growth.light_notes": "Plants For A Future",
-    "care.cultivation_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
     "care.cautions": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
     "care.nutrition_notes": "Plants For A Future",
     "care.other_uses_notes": "Plants For A Future",
-    "care.edible_uses_notes": "Plants For A Future",
-    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
-    "biodiversity.pollinator_support": "Plants For A Future",
-    "biodiversity.pest_confuser": "Plants For A Future"
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "identity.common_name": "local_seed",
+    "identity.common_names": "Plants For A Future",
+    "identity.family": "GBIF",
+    "identity.genus": "GBIF",
+    "identity.scientific_name": "local_seed",
+    "identity.synonyms": "Plants For A Future"
   },
   "source_metadata": {
+    "last_merged_at": "2026-06-17T04:44:11.785788+00:00",
     "sources": [
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:42:58.971524+00:00",
+        "relevance_score": null,
         "source_name": "GBIF",
         "source_url": "https://api.gbif.org/v1/species/match",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:42:58.971524+00:00"
+        "trusted_detail": null
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Solanum+tuberosum",
-        "status": "trusted_detail",
-        "trusted_detail": true,
-        "relevance_score": 1.0,
+        "confidence": 0.8,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -176,15 +192,15 @@
           "known_hazards",
           "biodiversity"
         ],
-        "confidence": 0.8,
-        "last_verified_at": "2026-06-17T04:40:51.290636+00:00"
+        "last_verified_at": "2026-06-17T04:40:51.290636+00:00",
+        "relevance_score": 1.0,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Solanum+tuberosum",
+        "status": "trusted_detail",
+        "trusted_detail": true
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Potato",
-        "status": "snapshot_only",
-        "trusted_detail": false,
-        "relevance_score": 0.05,
+        "confidence": 0.3,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -192,58 +208,60 @@
           "growth",
           "biodiversity"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:40:52.571968+00:00"
+        "last_verified_at": "2026-06-17T04:40:52.571968+00:00",
+        "relevance_score": 0.05,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Potato",
+        "status": "snapshot_only",
+        "trusted_detail": false
       },
       {
-        "source_name": "Food Plants International",
-        "source_url": "https://foodplantsinternational.com/?s=Solanum+tuberosum",
-        "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "propagation_methods",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:28:50.080811+00:00"
+        "last_verified_at": "2026-06-17T04:28:50.080811+00:00",
+        "relevance_score": null,
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Solanum+tuberosum",
+        "status": "ok",
+        "trusted_detail": null
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "last_verified_at": "2026-06-17T04:28:53.438633+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Potato",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:28:53.438633+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:28:56.712265+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=potato",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [
-          "edible_parts",
-          "use_categories",
-          "cultivation_notes"
-        ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:28:56.712265+00:00"
+        "trusted_detail": null
       }
-    ],
-    "last_merged_at": "2026-06-17T04:44:11.785788+00:00"
+    ]
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

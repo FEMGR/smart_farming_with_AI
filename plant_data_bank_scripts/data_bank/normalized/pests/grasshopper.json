@@ -1,0 +1,42 @@
+{
+  "pest_atom": "grasshopper",
+  "name": "Grasshopper",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Grasshopper",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-grasshopper",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Most grasshoppers overwinter in the egg stage in the soil. Eggs are laid in pods in the soil during late summer and fall, and nymphs emerge in April, May, and June. Nymphs feed on vegetation for 40 to 60 days before molting into the adult stage. Adults disperse to suitable hosts during the summer and can do serious damage to crops and rangeland. Adults mate in late summer and lay the overwintering eggs in waste areas and around field margins",
+  "description_damage": "Grasshoppers eat irregular holes in leaf tissue and can defoliate plants in high numbers, especially when swarming. Damage tends to be greatest on the edges of fields near pasture areas or roadsides. When wild grasses and other plants become dry, grasshoppers migrate to irrigated croplands.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "feeding_holes"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.558676+00:00"
+}

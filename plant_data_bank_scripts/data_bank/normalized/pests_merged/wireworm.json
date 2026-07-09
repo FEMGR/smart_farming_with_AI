@@ -1,0 +1,454 @@
+{
+  "pest_atom": "wireworm",
+  "name": "Wireworm",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Wireworm",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-wireworm",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "asparagus",
+    "bean",
+    "beet",
+    "bell_pepper",
+    "broccoli",
+    "brussels_sprout",
+    "cabbage",
+    "cantaloupe",
+    "carrot",
+    "cauliflower",
+    "chili_pepper",
+    "collard",
+    "corn",
+    "cucumber",
+    "eggplant",
+    "endive",
+    "escarole",
+    "garlic",
+    "horseradish",
+    "kale",
+    "kohlrabi",
+    "lettuce",
+    "lima_bean",
+    "melon",
+    "muskmelon",
+    "mustard_green",
+    "onion",
+    "pea",
+    "pepper",
+    "pumpkin",
+    "radish",
+    "rutabaga",
+    "salsify",
+    "spinach",
+    "squash",
+    "sweet_corn",
+    "sweet_potato",
+    "swiss_chard",
+    "tomato",
+    "turnip",
+    "watermelon"
+  ],
+  "includes_text": "",
+  "biology_life_history": "Wireworms require two to six years to mature. They overwinter 12 to 24 inches deep in the soil and return near the surface in spring to resume feeding. Mature larvae pupate in the soil, then develop into adults that will remain in the soil until the following spring, when they emerge, mate, and lay eggs. Because the female beetles fly very little, infestations do not spread rapidly from field to field. Soil temperature is important to wireworm development and control. Larvae start to move upward in the spring, when soil temperature at the 6 inch depth reaches 50°F. Later in the season, when temperatures reach 80°F and above, the larvae tend to move deeper than 6 inches, where most remain until the following spring.",
+  "description_damage": "Wireworms are the most important soil-dwelling pests infesting crops in the Pacific Northwest. The adults, known as click beetles or snapping beetles ( Elateridae family), do little or no damage. The larval or immature stages cause major damage to seedlings and the underground portions of many annual crops. The larvae are shiny white at first, but later become straw color or light brown. They look wiry and are about 1 inch in length when mature. Several kinds of wireworms are in the Pacific Northwest. Those causing the most damage in irrigated land are the Pacific Coast wireworm (Limonius canus) , the sugar beet wireworm (L. californicus) , the western field wireworm (L. infuscatus) , and the Columbia Basin wireworm (L. subauratus) . Of these Pacific Coast and sugar beet wireworms are the most common species. Land with annual rainfall less than 15 inches may be infested with the Great Basin wireworm (Ctenicera pruinina) . As a result, there may be serious damage when irrigated crops are grown on sagebrush or dry wheat land. This species tends to disappear after a few years of intensive irrigation, but may be replaced by the more serious Limonius species, which favor moist conditions. West of the Cascades, other species of wireworms, including Agriotes spp., are pests. No crop is immune to attack by wireworms, but these pests are most destructive on beans, corn, grain, potatoes, and other annual crops. Damage caused by wireworms in other crops includes failure of seeds to germinate (due to feeding on planted seeds) and death of young plants (due to root feeding). In potatoes, serious damage results from wireworms tunneling in tubers during feeding. In row crops, such as beans, corn, and sugar beets, infestation results in bare spots of fields, which is accompanied by dead or wilted young plants. Wireworms damage potatoes both near planting time (from damage to seed pieces) and during the growing season (from damage to developing tubers).",
+  "monitoring": "Test for wireworms before planting susceptible crops, especially where fallow land, pasture, or hay crops are being returned to vegetable production. In the Midwest, bait stations are used widely to monitor for wireworms. An average of one wireworm per bait station might indicate the need for a preventive wireworm treatment. Ask your Extension agent for more information on bait stations. A pheromone is available for the Pacific Coast wireworm.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Apply at planting time or cultivation. Do not exceed 1.3 lb ai/A per year. Limit 1 treatment.",
+      "Bacillus",
+      "Effective chemicals previously used for control are no longer registered for use.",
+      "Irish-Wireworm",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. thiamethoxam (Cruiser 5FS) consult label.",
+      "See: Potato,",
+      "Use at least 40 gal/A spray. Do not exceed 2.25 lb ai/A per year. Apply only once per season. Washington only.",
+      "alpha-cypermethrin (Fastac EC) at 0.02 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Adults only. Washington only. bifenthrin (Capture LFR) 0.04 to 0.08 lb ai/A at planting in furrow or broadcast to soil surface, at 0.033 to 0.1 lb ai/A foliar. PHI 7 days foliar. Retreatment interval 7 days foliar. REI 12 hr. Do not exceed 0.1 lb ai/A per season as",
+      "amyloliquefaciens (Ethos XB) at 0.08 to 0.2 lb ai/A applied with liquid",
+      "an at plant application. Do not exceed 0.5 lb ai/A per season for foliar",
+      "an at plant application. These products contain commonly used active ingredients for control of wireworm in pepper. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "and at plant.",
+      "at-plant plus foliar treatments.",
+      "at-plant plus foliar.",
+      "at-plant treatment. bifenthrin/Avermectin (Athena) at 0.06 to 0.12 lb ai/A at plant. PHI 40 days. REI 12 hr. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per year. Limit 2 treatments.",
+      "beta-cyfluthrin (Baythroid XL) at 0.016 to 0.022 lb ai/A soil application. PHI 0 days. REI 12 hr. Do not exceed 0.22 lb ai/A per season.",
+      "bifenthrin (Brigade 2EC, Sniper) at 0.15 to 0.3 lb ai/A at planting or 0.05 to 0.15 lb ai/A at",
+      "bifenthrin (Brigade WSB) at 0.05 to 0.1 lb ai/A",
+      "bifenthrin (Brigade WSB) at 0.05 to 0.1 lb ai/A in furrow with seed or transplant. REI 12 hr. bifenthrin/Avermectin (Athena) at 0.06 to 0.12 lb ai/A at plant broadcast,",
+      "bifenthrin (Brigade WSB) at 0.05 to 0.1 lb ai/A in furrow with seed or transplant. Refer to label. REI 12 hr. bifenthrin/IBA (Empower 2) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 7 days. Do not exceed 0.3 lb ai/A per season. Retreatment interval 7 days. No longer registered for use in Oregon. bifenthrin/Avermectin (Athena) at 0.06 to 0.12 lb ai/A at plant. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.056 lb ai/A avermectin or 0.3 lb ai/A bifenthrin per season.",
+      "bifenthrin (Brigade WSB, Capture LFR) at 0.04 to 0.08 lb ai/A in furrow with seed or transplant. REI 12 hr. bifenthrin/Avermectin (Athena) at 0.12 lb ai/A at plant. PHI 7 days. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per season.",
+      "bifenthrin (Brigade WSB, Capture LFR) at 0.04 to 0.08 lb ai/A soil applied in furrow with seed or transplant, at 0.033 to 0.1 lb ai/A foliar (adults). PHI 7 days foliar. Retreatment interval 7 days foliar. REI 12 hr. Do not exceed 0.5 lb ai/A per season including",
+      "bifenthrin (Brigade WSB, Sniper) at 0.033 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. Wireworm adults only. Do not exceed 0.5 lb ai/A per year. Do not make more than five applications after bloom. Do not make applications less than 7 days apart. bifenthrin/IBA (Empower 2) at 0.04 to 0.1 lb ai/A. PHI 7 days. REI 5 days. Retreatment interval 7 days. Do not exceed 0.5 lb ai/A per season. Limit 5 treatments. Product not registered for use in OR.",
+      "bifenthrin (Capture LFR) at 0.04 to 0.08 lb ai/A at plant or PPI. Do not exceed 0.1 lb ai/A per season as an",
+      "bifenthrin (Capture LFR) at 0.04 to 0.08 lb ai/A at planting, at 0.033 to 0.1 lb ai/A foliar (adults). PHI 7 days foliar. Retreatment interval 7 days foliar. REI 12 hr. Do not exceed 0.4 lb ai/A per year",
+      "bifenthrin (Capture LFR) at 0.04 to 0.08 lb ai/A in furrow with seed. REI 12 hr. Do not exceed 0.1 lb ai/A at plant per season. bifenthrin/Avermectin (Athena) at 0.12 lb ai/A at plant. REI 12 hr. Do not exceed 0.056 lb ai/A avermectin or 0.2 lb ai/A bifenthrin per season.",
+      "bifenthrin (Capture LFR) at 0.04 to 0.08 lb ai/A soil application. Do not exceed 0.1 lb ai/A per season as",
+      "bifenthrin (Capture LFR) at 0.04 to 0.16 lb ai/A at planting; 0.047 to 0.062 lb ai/A",
+      "bifenthrin/Avermectin (Athena) at 0.06 to 0.12 lb ai/A at planting. PHI 7 days. REI 12 hr. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per season. bifenthrin/IBA (Empower 2) at 0.04 to 0.1 lb ai/A. PHI 9 days. REI 7 days. Do not exceed 0.2 lb ai/A per season. No longer registered for use in OR.",
+      "bifenthrin/IBA (Empower 2) at 0.04 to 0.1 lb ai/A. PHI 3-9 days depending on harvesting method. REI 5 days. Do not exceed 0.2 lb ai/A per season. Only registered for use in WA.",
+      "carboxin (Kernel Guard Supreme) at 1.5 oz of formulated product per 42 lb seed (2 oz/56 lb seed). REI 12 hr. Planter box treatment. Product not registered for use in WA.",
+      "chloropicrin (Telone II)-Preplant incorporation.",
+      "chloropicrin (Telone II)-Preplant incorporation. REI from the start of application until 5 days after application. Consult label.",
+      "chloropicrin (Telone II)-Preplant.",
+      "chloropicrin (Telone II)-Preplant. REI from the start of application until 5 days after application. Consult label.",
+      "chloropicrin (Telone)-Preplant soil fumigants.",
+      "chloropicrin (Telone)-Preplant.",
+      "chloropicrin (Telone)-Preplant. Isaria",
+      "chloropicrin (Telone)-Preplant. These products contain commonly used active ingredients for control of wireworm in pumpkin and squash. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "chloropicrin (TeloneII)-Preplant.",
+      "chlorpyrfos (Lorsban Advanced) at 2.11 lb ai/A soil applied. REI 24 hr.",
+      "chlorpyrifos (Lorsban 4E) at 2.75 lb ai/A as",
+      "chlorpyrifos (Lorsban 75WG) at 2 lb ai/A. PHI 125 days. REI 24 hr. Preplant broadcast, incorporated 4 to 6 inches. One application only. RESTRICTED USE IN OREGON.",
+      "chlorpyrifos (Lorsban Advanced) at 2.11 lb ai/A soil surface spray. PHI 30 days. REI 24 hr.",
+      "clothianidin (Poncho 600) at 0.25 to 0.5 mg ai/kernel seed treatment. Not for use in",
+      "cyfluthrin (Tombstone) at 0.031 to 0.44 lb ai/A soil treatment. PHI 0 days. REI 12 hr.",
+      "diazinon (Diazinon 50W) at 1 lb ai/A. Broadcast before planting and incorporate into top 4 to 8 inches. REI 4 days. Do not apply more than 1 lb ai/A per year. No more than one soil application per year regardless of target pest. Isaria fumosorosea (PFR-97 20% WDG) applied as soil drench, chemigation or soil injection. Refer to label.",
+      "diazinon (Diazinon 50W) at 2 lb ai/A. Broadcast just before planting and incorporate into the top 4 to 8 inches. REI 3 days. PHI 14 days.",
+      "diazinon (Diazinon 50W) at 3 to 4 lb ai/A broadcast and incorporate into top 4 to 8 inches prior to planting. REI 3 days. thiamethoxam as seed treatment.",
+      "diazinon (Diazinon 50W) at 3 to 4 lb ai/A broadcast just before planting and immediately incorporate into the top 4 to 8 inches of soil. REI 4 days. Do not apply more than 4 lb ai/A per year. No more than one soil application per year regardless of target pest.",
+      "diazinon (Diazinon 50W) at 3 to 4 lb ai/A. Broadcast before planting and incorporate into the top 4 to 8 inches of soil. REI 3 days. Do not apply more than 4 lb ai/A per year. No more than one soil application per year regardless of target pest.",
+      "diazinon (Diazinon 50W) at 3 to 4 lb ai/A. Broadcast before planting and incorporate into the top 4 to 8 inches. REI 2 days. These products contain commonly used active ingredients for control of wireworm in tomato. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "diazinon (Diazinon 50W) at 3 to 4 lb ai/A. Broadcast before planting and incorporate into top 4 to 8 inches. REI 3 days.",
+      "diazinon (Diazinon 50W) at 3 to 4 lb ai/A. Broadcast just before planting and incorporate in to top 4 to 8 inches. REI 3 days. These products contain commonly used active ingredients for control of wireworm in radish. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "diazinon (Diazinon 50W)-Broadcast just before",
+      "diazinon (Diazinon AG500) at 3 to 4 lb ai/a preplant broadcast and immediately incorporate into the top 4 to 8 inches soil. REI 3 days. Limit to one application per year regardless of target pest. Do not apply more than 4 lb ai/A per calendar year. See label for chemigation instructions. Toxic to birds, fish and other wildlife.",
+      "diazinon (Diazinon AG500)-Broadcast just before",
+      "diazinon at 3 to 4 lb ai/A broadcast before planting and incorporate into top 4 to 8 inches of soil. REI 3 days. Succulent peas only.",
+      "dichloropropene (Telone II)-Preplant.",
+      "dichloropropene (Telone II)-Registered for preplant soil treatment for nematodes and reduces wireworm populations in soil.",
+      "either at planting or",
+      "ethoprop (Mocap 15G) at 0.063 to 0.125 lb ai/A at plant. REI 48 hr, or 72 hr if annual rainfall is less than 25 inches. Apply as a band on row or closed seed furrow. Do not apply within 140 ft of aquatic habitat.",
+      "ethoprop (Mocap 15G) at 0.24 to 0.315 lb ai/1,000 row ft (incorporate 2 to 4 inches after treatment). REI 48 hr or 72 hr if rainfall is less than 25 inches.",
+      "fertilizer at plant. REI 12 hr.",
+      "fumosorosea (PFR-97 20% WDG) at 1 to 2 lb/Acre of produce as soil treatment. REI 4 hr. Retreatment interval 3 to 10 days.",
+      "fumosorosea (PFR-97 20% WDG) at 1 to 2 lb/Acre of product as soil treatment. REI 4 hr. Retreatment interval 3 to 10 days. Most effective when application is initiated just before",
+      "gamma-cyhalothrin (Declare) at 0.0004 lb ai/1,000 row ft. REI 24 hr. Do not exceed 0.024 lb ai/A.",
+      "hopper-box,",
+      "imidacloprid (Gaucho 480F) at 0.125 to 0.25 oz ai/100 lb of seed as a slurry treatment. Isaria",
+      "imidacloprid (Gaucho 480F) at 0.25 lb ai/100 lb of seed. Apply as commercial seed treatment.",
+      "imidacloprid (Gaucho 480F)-Seed treatment. See label for instructions.",
+      "imidacloprid (Gaucho 600F)-Seed treatment. See label for instructions.",
+      "in-furrow or drench. REI 12 hr. Do not exceed 0.35 lb ai/A Athena, 0.056 lb ai/A avermectin, or 0.3 lb ai/A bifenthrin per season.",
+      "in-furrow with the seed or transplant. REI 12 hr.",
+      "lambda-cyhalothrin (Warrior II) at 0.005 lb ai/1,000 ft of row soil treatment. REI 24 hr. Do not harvest for feed or graze livestock for 21 days. Do not exceed 0.48 lb ai/A per season. permethrin +",
+      "lay-by or 0.033 to 0.1 lb ai/A foliar. PHI 21 days. REI 12 hr. See label instructions. Do not exceed 0.5 lb ai/A per year. Brigade 2EC only for Oregon and Washington.",
+      "lay-by. One application only per year.",
+      "or at 0.125 to 0.245 lb ai/A. REI 48 hr, or 72 hr if annual rainfall is less than 25 inches.",
+      "or at the first signs",
+      "phorate (Thimet 20G) at 0.9 to 1.2 oz ai/1,000 row ft. REI 48 hr.",
+      "phosmet (Imidan 70-W AG) at 1 lb ai/A foliar or plantbed treatment. PHI 7 days. REI 4 days seedbed and 5 days foliar. Do not exceed 4.67 lb ai/A per season.",
+      "planting at 3 to 4 lb ai/A and immediately incorporate into the top 4 to 8 inches of soil. REI 4 days.",
+      "planting at 3 to 4 lb ai/A, and immediately incorporate into the top 4 to 8 inches of soil. REI 4 days. Do not apply more than 4 lb ai/A per calendar year.",
+      "pre-plant incorporated. REI 12 hr. Do not exceed 0.2 lb ai/A per season. Toxic to bees and fish. Do not apply if rainfall is imminent. See label for other restrictions. bifenthrin/IBA (Empower 2) at 0.002 to 0.006 lb ai/1,000 row ft. PHI 30 days. REI 24 hr. Do not exceed 0.1 lb ai/A at plant application. Product not registered for use in OR. chlorethoxyfos/bifenthrin (Smart Choice 5G) at 3 to 3.5 oz /1,000 row ft",
+      "pre-plant incorporation for direct seeded or transplanted. PHI 21 days. REI 24 hr. Washington only.",
+      "slurry-box or similar types. Use in liquid or slurry treaters.",
+      "tefluthrin (Force 3G) at 0.12 to 0.15 oz ai/1,000 row ft (0.12 to 0.15 oz ai/1,000 row ft). REI 48 hr. In furrow is most effective when treating wireworm. With higher pressure use full 0.15 oz ai/1,000 ft rate. Use",
+      "that target pests are present.",
+      "thiamethoxam (Cruiser 5FS) at 0.05 lb ai/cwt seed. REI 12 hr. These products contain commonly used active ingredients for control of wireworm in dry and green pea. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "thiamethoxam (Cruiser 5FS) at 0.125 to 0.80 mg per kernel (formulated product) planter box treatment, seed treatment.",
+      "thiamethoxam (Platinum) at 0.078 to 0.125 lb ai/A. REI 12 hr. Spray directly on the seed pieces in the furrow. Do not exceed 0.125 lb ai/A per season. See label for recommended application instructions. These products contain commonly used active ingredients for control of wireworm in sweet potato. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin",
+      "OMRI-listed for organic use. bifenthrin (as a mix with",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "OMRI-listed for organic use. bifenthrin (usually combined with",
+      "azadirachtin (as a mix with",
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "azadirachtin (combined with pyrethrins)-Some formulations are",
+      "azadirachtin (neem oil as a mix with pyrethrins)-Some formulations are",
+      "bifenthrin (as a mix with",
+      "bifenthrin (often as a mix with",
+      "bifenthrin cyfluthrin",
+      "bifenthrin-Not registered for home use on celery in WA. cyfluthrin",
+      "cyfluthrin",
+      "pyrethins (often combined with other ingredients)-Some formulations are",
+      "pyrethrins (as a mix with azadirachtin) -Some formulations are",
+      "pyrethrins (as a mix with azadirachtin)-Some formulations are",
+      "pyrethrins-Some formulations are",
+      "zeta-cyermethrin). cyfluthrin",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin (as a mix with bifenthrin)",
+      "zeta-cypermethrin)",
+      "zeta-cypermethrin) cyfluthrin",
+      "zeta-cypermethrin), cyfluthrin",
+      "zeta-cypermethrin). cyfluthrin",
+      "zeta-cypermetrhrin) cyfluthrin"
+    ],
+    "cultural": "In fields known to contain wireworm larvae, fallowing during the summer with frequent tillage (springtooth or disk) can help. Seriously damaged stands of seedlings may need to be replanted. Use crop rotations to nonhost plants. Do not plant a susceptible host crop following a crop that has had a heavy infestation of wireworm without fallowing/tilling or applying a pesticide. Flooding a field for several weeks may reduce wireworm populations. Crop rotation is an important practice for controlling wireworms in garlic. Soil fumigation rarely is used in garlic due to the high cost. See: Potato, Irish-Wireworm"
+  },
+  "damage_tags": [
+    "feeding_damage",
+    "root_damage",
+    "seedling_damage",
+    "stem_damage",
+    "wilting",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/303-142.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/303-142.jpg?itok=54tiWyu5",
+      "caption": "Sugarbeet wireworm Limonius californicus Mannerheim Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/34-162.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/34-162.jpg?itok=8nDHLzyz",
+      "caption": "Sugarbeet wireworm Limonius californicus Mannerheim Immature showing damage"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/312-153.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/312-153.jpg?itok=5tyivElb",
+      "caption": "Pacific coast wireworm Limonius canus LeConte Immature"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/302-173.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/302-173.jpg?itok=xHn7RDdV",
+      "caption": "Pacific coast wireworm Limonius canus LeConte Adult"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.335194+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Asparagus",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-wireworm"
+    },
+    {
+      "crop_heading": "Bean, dry",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-wireworm"
+    },
+    {
+      "crop_heading": "Bean, lima",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-wireworm"
+    },
+    {
+      "crop_heading": "Bean, snap",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-wireworm"
+    },
+    {
+      "crop_heading": "Beet, table",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-wireworm"
+    },
+    {
+      "crop_heading": "Broccoli, Brussels sprout, cabbage, cauliflower",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-wireworm"
+    },
+    {
+      "crop_heading": "Carrot",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-wireworm"
+    },
+    {
+      "crop_heading": "Chard, Swiss",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-wireworm"
+    },
+    {
+      "crop_heading": "Collard and kale",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-wireworm"
+    },
+    {
+      "crop_heading": "Corn, sweet",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-wireworm"
+    },
+    {
+      "crop_heading": "Cucumber",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-wireworm"
+    },
+    {
+      "crop_heading": "Eggplant",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-wireworm"
+    },
+    {
+      "crop_heading": "Endive (Escarole)",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-wireworm"
+    },
+    {
+      "crop_heading": "Garlic",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-wireworm"
+    },
+    {
+      "crop_heading": "Horseradish",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-wireworm"
+    },
+    {
+      "crop_heading": "Kohlrabi",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-wireworm"
+    },
+    {
+      "crop_heading": "Lettuce",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-wireworm"
+    },
+    {
+      "crop_heading": "Melon (Cantaloupe, muskmelon, and watermelon)",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-wireworm"
+    },
+    {
+      "crop_heading": "Mustard greens",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-wireworm"
+    },
+    {
+      "crop_heading": "Onion",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-wireworm"
+    },
+    {
+      "crop_heading": "Pea, green and dry",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-wireworm"
+    },
+    {
+      "crop_heading": "Pepper",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-wireworm"
+    },
+    {
+      "crop_heading": "Potato, sweet",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/potato-sweet-wireworm"
+    },
+    {
+      "crop_heading": "Pumpkin and squash",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-wireworm"
+    },
+    {
+      "crop_heading": "Radish",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-wireworm"
+    },
+    {
+      "crop_heading": "Salsify",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/salsify-wireworm"
+    },
+    {
+      "crop_heading": "Spinach",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-wireworm"
+    },
+    {
+      "crop_heading": "Tomato",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-wireworm"
+    },
+    {
+      "crop_heading": "Turnip (roots and tops) and rutabaga",
+      "pest_name_on_page": "Wireworm",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-wireworm"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/potato-sweet-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/salsify-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-wireworm",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-wireworm"
+  ],
+  "page_titles": [
+    "Asparagus-Wireworm",
+    "Bean, dry-Wireworm",
+    "Bean, lima-Wireworm",
+    "Bean, snap-Wireworm",
+    "Beet, table-Wireworm",
+    "Broccoli, Brussels sprout, cabbage, cauliflower-Wireworm",
+    "Carrot-Wireworm",
+    "Chard, Swiss-Wireworm",
+    "Collard and kale-Wireworm",
+    "Corn, sweet-Wireworm",
+    "Cucumber-Wireworm",
+    "Eggplant-Wireworm",
+    "Endive (Escarole)-Wireworm",
+    "Garlic-Wireworm",
+    "Horseradish-Wireworm",
+    "Kohlrabi-Wireworm",
+    "Lettuce-Wireworm",
+    "Melon (Cantaloupe, muskmelon, and watermelon)-Wireworm",
+    "Mustard greens-Wireworm",
+    "Onion-Wireworm",
+    "Pea, green and dry-Wireworm",
+    "Pepper-Wireworm",
+    "Potato, sweet-Wireworm",
+    "Pumpkin and squash-Wireworm",
+    "Radish-Wireworm",
+    "Salsify-Wireworm",
+    "Spinach-Wireworm",
+    "Tomato-Wireworm",
+    "Turnip (roots and tops) and rutabaga-Wireworm"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.573821+00:00"
+}

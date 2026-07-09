@@ -1,0 +1,115 @@
+{
+  "pest_atom": "corn_rootworm",
+  "name": "Corn rootworm (adult)",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "corn",
+    "sweet_corn"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Corn, sweet",
+      "pest_name_on_page": "Corn rootworm (adult)",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-corn-rootworm-adult"
+    },
+    {
+      "crop_heading": "Corn, sweet",
+      "pest_name_on_page": "Corn rootworm (larvae)",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-corn-rootworm-larvae"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-corn-rootworm-adult",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-corn-rootworm-larvae"
+  ],
+  "page_titles": [
+    "Corn, sweet-Corn rootworm (adult)",
+    "Corn, sweet-Corn rootworm (larvae)"
+  ],
+  "description_damage": "The adult of the corn rootworm, also known as the western spotted cucumber beetle, is yellowish green, 0.25 inch in length, and has 11 black spots on its wing covers. Mature larvae are white, except for the head and last abdominal segment, which are brown. They are about 0.62 inch long. The larvae appear to have two heads. Corn rootworm adults eat small holes in the leaves of emerging corn plants. They lay their eggs at the base of emerging corn plants. Larvae attack the roots of the corn seedlings. Occasionally, larvae cause significant stand losses in early corn plantings. Adults feed on corn silk and may have an impact on pollination, though this has not been evaluated fully in the PNW. The western spotted cucumber beetle is the primary species of corn rootworm in the Pacific Northwest. It is yellowish green, 0.25 inch in length, and has 11 black spots on its wing covers. Mature larvae are white except for the head and last abdominal segment, which are brown. They are about 0.62 inch long. The larvae appear to have two heads. Corn rootworm larvae feed on roots and bore into the base of stems, killing corn seedlings and reducing root mass in mature corn plants. Significant corn rootworm pressure can reduce plant establishment, reduce plant growth (due to root damage), and contribute to lodging of corn plants prior to harvest.",
+  "biology_life_history": "",
+  "monitoring": "It is rare to treat emerging sweet corn to prevent foliar damage by adults. However, if adult feeding damage is observed in emerging sweet corn, this may indicate significant egg laying pressure. If this occurs at corn emergence in an unprotected corn planting, post-emergence insecticide treatment may be justified. No action threshold has been established. Observations indicate that noticeable damage may occur to developing corn ears prior to harvest when populations reach two adult beetles per ear. No action threshold has been established in the PNW. If significant numbers of adult beetles are observed feeding and laying eggs in unprotected sweet corn plantings at emergence, this may justify a postemergence insecticide treatment.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Apply at planting time or cultivation. Do not exceed 1.3 lb ai/A per year. Limit 1 treatment per year.",
+      "Bacillus",
+      "GS-omega/kappa-Hxtx-Hv1a (Spear Lep) at 0.02 to 0.04 lb ai/A (1 to 2 pints/A). PHI 0 days. REI 4 hr. Do not exceed 1.7 lb ai/A per year.",
+      "OMRI-listed for organic use.",
+      "acetamprid (Assail 30SG) at 0.075 to 0.1 lb ai/A. PHI 7 day. REI 12 hr. Limit 2 treatments per year. Retreatment interval 14 days. Do not exceed a total of 0.21 lb ai/A per growing season.",
+      "alpha-cypermethrin (Fastac EC) at 0.014 to 0.025 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 3 days. Do not exceed 0.075 lb ai/A per season.",
+      "amyloliquefaciens (Ethos XB) at 0.08 to 0.2 lb ai/A applied with liquid",
+      "beta-cyfluthrin (Baythroid XL) at 0.013 to 0.022 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 2 days. Do not exceed a total of 0.22 lb ai/A per growing season.",
+      "bifenthrin (Capture LFR) at 0.033 to 0.1 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.2 lb ai/A per season. bifenthrin/zeta-cypermethrin (Hero) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 3 to 5 days. Do not exceed 0.266 lb ai/A per season.",
+      "bifenthrin (Capture LFR) at 0.08 to 0.2 lb ai/A banded or over furrow. REI 12 hr. Do not exceed 0.2 lb ai/A per season. bifenthrin/IBA (Empower 2) at 0.002 to 0.006 lb ai/1,000 linear row",
+      "carbaryl (Sevin XLR Plus) at 1 to 2 lb ai/A. PHI 2 days for harvest of ears, 14 days for forage, 48 days for fodder. REI 24 hr. Do not exceed 16 lb ai/A per year. Retreatment interval 3 days. Limit 8 treatments per year.",
+      "clothianidin (Poncho 600) at 0.25 to 0.5 mg ai/kernel seed treatment. Not for use in",
+      "deltamethrin (Delta Gold) at 0.018 to 0.028 lb ai/A. PHI 1 day. REI 12 hr. Do not apply more than 0.45 lb ai/A in one growing season. chlorantraniliprole/lambda-cyhalothrin (Besiege) at 0.06 to 0.1 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 1 day. Do not exceed 0.48 lb ai of",
+      "either at planting or",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.5 lb ai/A per year.",
+      "ethoprop (Mocap 15G) at 0.99 lb ai/A at plant, with 40-inch row spacing. Mocap 15G rate depends on row spacing; see label. REI 48 hr or 72 hr if annual rainfall is less than 25 inches. Applied as a band on row or closed seed furrow, or as",
+      "fertilizer at plant. REI 12 hr.",
+      "ft at plant. PHI 18 days. REI processed sweet corn 24 hr, fresh market 18 days. Do not exceed 0.2 lb ai/A at plant application. Not registered for use in OR. chlorethoxyfos/bifenthrin (Smart Choice 5G) at 0.40 to 0.47 oz ai/1,000 row ft. REI 48 hr or 72 hr if annual rainfall is less than 25 inches.",
+      "gamma-cyhalothrin (Declare) at 0.0025 lb ai/1,000 row ft. PHI 21 days. REI 24 hr. Do not exceed 0.024 lb ai/A. Isaria fumosorosea Apopka Strain 97 (PFR-97) at 1 to 2 lb/A of product as soil treatment. REI 4 hr. Retreatment interval 3 to 10 days.",
+      "hopper-box,",
+      "lambda-cyhalothrin (Warrior II) at 0.005 lb ai/1,000 ft of row soil treatment. REI 24 hr. Do not harvest for feed or graze livestock for 21 days. Do not exceed 0.48 lb ai/A per season.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 1 day. REI 24 hr. Do not exceed 0.48 lb ai/A per year. Retreatment interval 4 days. Do not harvest for feed or graze livestock for 21 days.",
+      "lambda-cyhalothrin or 0.2 lb ai of chlorantraniliprole per acre per growing season.",
+      "lay-by. Do not contact seed.",
+      "lay-by. Only one application per year. thiamethoxam/Abamectin (Avicta Complete Corn 250)-Seed treatment for certified seed treatment facilities only.",
+      "malathion (Malathion 5EC) at 1.0 lb ai/A. PHI 5 days. REI 72 hr if detasseling, 12 hr for all other activity. Retreatment interval 5 days. Limit 2 treatments per year.",
+      "methomyl (Lannate SP) at 0.23 to 0.45 lb ai/A. PHI 0 days for ears, 3 days for forage, and 21 days for stover. REI 48 hr. Do not exceed 6.3 lb ai/A per season.",
+      "permethrin (Pounce 25WP) at 0.1 to 0.2 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.8 lb ai/A Pounce per season.",
+      "phorate (Thimet 20G) at 0.056 to 0.075 lb ai/1,000 row ft. PHI (see label). REI (see label).",
+      "side-dress from planting to",
+      "slurry-box, or similar applications. Use in liquid or slurry treaters.",
+      "tefluthrin (Force 3G) at 0.0075 to 0.011 lb ai/1,000 ft row (0.12 to 0.15 oz ai/1,000 ft row). REI 48 hr. Use",
+      "zeta-cypermethrin (Mustang) at 0.028 to 0.05 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.3 lb ai/A per season. Retreatment interval 3 to 5 days."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "bifenthrin (as a mix with",
+      "gamma-cyhalothrin",
+      "gamma-cyhalothrin horticultural",
+      "lambda-cyhalothrin malathion permethrin",
+      "oil- Some formulations are",
+      "pyrethrins-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin) carbaryl cyfluthrin deltamethrin esfenvalerate",
+      "zeta-cypermethrin). carbaryl cyfluthrin deltamethrin esfenvalerate"
+    ],
+    "cultural": "Home gardeners: In most years, beetle populations diminish after egg laying and prior to the emergence of the summer population. Seeding can be delayed until after the beetles have dispersed and deposited most of their eggs. Individual beetles can be picked off."
+  },
+  "damage_tags": [
+    "feeding_holes",
+    "leaf_damage",
+    "root_damage",
+    "seedling_damage",
+    "stem_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:31:50.056953+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.543634+00:00"
+}

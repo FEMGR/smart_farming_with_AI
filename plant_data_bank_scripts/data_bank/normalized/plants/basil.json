@@ -2,233 +2,233 @@
   "plant_atom": "basil",
   "identity": {
     "common_name": "Basil",
-    "scientific_name": "Ocimum basilicum",
-    "genus": "Ocimum",
-    "family": "Lamiaceae",
-    "synonyms": [
-      "Ocimum album, Ocimum anisatum, Ocimum barrelieri, Ocimum medium, Plectranthus barrelieri"
-    ],
     "common_names": [
       "Common Basil",
       "Sweet Basil",
       "Thai Basil",
       "Tropical Basil"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Ocimum",
+    "scientific_name": "Ocimum basilicum",
+    "synonyms": [
+      "Ocimum album, Ocimum anisatum, Ocimum barrelieri, Ocimum medium, Plectranthus barrelieri"
     ]
   },
   "classification": {
+    "botanical_life_cycle": "tender_perennial",
+    "crop_life_cycle": "annual",
     "edible": true,
+    "edible_parts": [
+      "leaf",
+      "seed"
+    ],
+    "growth_habit": null,
+    "life_cycle": "annual",
+    "life_cycle_context": {
+      "notes": "PFAF says perennial in the tropics but frost tender and grown as a half-hardy annual in temperate zones.",
+      "temperate": "half_hardy_annual",
+      "tropical": "short_lived_perennial"
+    },
     "use_categories": [
       "beverage_plant",
       "companion_plant",
       "culinary_herb",
       "medicinal_plant",
       "repellent_plant"
-    ],
-    "edible_parts": [
-      "leaf",
-      "seed"
-    ],
-    "life_cycle": "annual",
-    "growth_habit": null,
-    "botanical_life_cycle": "tender_perennial",
-    "crop_life_cycle": "annual",
-    "life_cycle_context": {
-      "tropical": "short_lived_perennial",
-      "temperate": "half_hardy_annual",
-      "notes": "PFAF says perennial in the tropics but frost tender and grown as a half-hardy annual in temperate zones."
-    }
+    ]
   },
   "growth": {
-    "sunlight": [
-      "full_sun"
-    ],
-    "water_need": "moderate",
+    "climate_notes": null,
+    "growth_speed": "fast",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "rainfall_notes": null,
+    "soil_notes": "Landscape Uses:Border, Container, Specimen. Prefers a rich light well-drained to dry soil[1, 27, 238]. Requires a sunny sheltered position if grown outdoors[52]. Tolerates a pH in the range 5 to 8[238]. Sweet basil is commonly grown as an aromatic culinary and medicinal herb in warm temperate and tropical climates. There are a number of different constituents that make up the essential oil in basil, and the proportions of these vary considerably between plants growing in different regions of the world[238]. From this variety many named varieties with differing flavour characteristics have been developed[46, 238]. Basil is a perennial plant in the tropics, but it is frost tender and needs to be grown as a half-hardy annual in temperate zones[142]. It is a very good companion plant to grow in the house or greenhouse, its aromatic foliage helping to reduce problems caused by insect pests[K]. It requires a good hot summer in Britain if it is to do well outdoors[K]. Sweet basil is a good companion plant for tomatoes but it grows badly with rue and sage[14, 18, 20, 201]. When grown near raspberries it can retard their fruiting[201]. Special Features: Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for dried flowers, Inconspicuous flowers or blooms. Basil is typically harvested from late spring to early autumn (around June to September in the Northern Hemisphere) when the leaves are young and tender. Basil flowers in mid to late summer. Basil is a fast-growing herb, usually reaching maturity in about 60 to 90 days from seed. It thrives in warm conditions and can produce a continuous harvest when regularly pruned.",
+    "soil_ph_max": 8.0,
+    "soil_ph_min": 5.0,
     "soil_type": [
       "light_sandy",
       "medium_loamy",
       "well_drained"
     ],
-    "soil_ph_min": 5.0,
-    "soil_ph_max": 8.0,
-    "growth_speed": "fast",
-    "climate_notes": null,
-    "soil_notes": "Landscape Uses:Border, Container, Specimen. Prefers a rich light well-drained to dry soil[1, 27, 238]. Requires a sunny sheltered position if grown outdoors[52]. Tolerates a pH in the range 5 to 8[238]. Sweet basil is commonly grown as an aromatic culinary and medicinal herb in warm temperate and tropical climates. There are a number of different constituents that make up the essential oil in basil, and the proportions of these vary considerably between plants growing in different regions of the world[238]. From this variety many named varieties with differing flavour characteristics have been developed[46, 238]. Basil is a perennial plant in the tropics, but it is frost tender and needs to be grown as a half-hardy annual in temperate zones[142]. It is a very good companion plant to grow in the house or greenhouse, its aromatic foliage helping to reduce problems caused by insect pests[K]. It requires a good hot summer in Britain if it is to do well outdoors[K]. Sweet basil is a good companion plant for tomatoes but it grows badly with rue and sage[14, 18, 20, 201]. When grown near raspberries it can retard their fruiting[201]. Special Features: Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for dried flowers, Inconspicuous flowers or blooms. Basil is typically harvested from late spring to early autumn (around June to September in the Northern Hemisphere) when the leaves are young and tender. Basil flowers in mid to late summer. Basil is a fast-growing herb, usually reaching maturity in about 60 to 90 days from seed. It thrives in warm conditions and can produce a continuous harvest when regularly pruned.",
-    "water_notes": "Prefers moist soil.",
-    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "sunlight": [
+      "full_sun"
+    ],
     "temperature_notes": null,
-    "rainfall_notes": null
+    "water_need": "moderate",
+    "water_notes": "Prefers moist soil."
   },
   "germination": {
+    "germination_days_max": null,
+    "germination_days_min": null,
+    "germination_light": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
     "propagation_methods": [
       "seed"
     ],
     "propagation_notes": "Seed - sow mid to late spring in a greenhouse and only just cover the seed. Germination is usually free and quick, prick out the seedlings into individual pots when they are large enough to handle. If growing basil outdoors, plant out after the last expected frosts.",
-    "germination_days_min": null,
-    "germination_days_max": null,
-    "germination_light": null,
-    "sowing_depth_cm": null,
-    "minimum_soil_temp_c": null,
-    "optimum_soil_temp_c": null,
-    "preferred_propagation_methods": [],
-    "propagation_warning": null
+    "propagation_warning": null,
+    "sowing_depth_cm": null
   },
   "spacing": {
-    "spacing_cm": null,
-    "root_depth_cm": null,
     "plant_height_cm": null,
+    "root_depth_cm": null,
+    "spacing_cm": null,
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
-    "watering_notes": null,
-    "pruning_notes": null,
-    "fertilizer_notes": null,
-    "cultivation_notes": "Landscape Uses:Border, Container, Specimen. Prefers a rich light well-drained to dry soil[1, 27, 238]. Requires a sunny sheltered position if grown outdoors[52]. Tolerates a pH in the range 5 to 8[238]. Sweet basil is commonly grown as an aromatic culinary and medicinal herb in warm temperate and tropical climates. There are a number of different constituents that make up the essential oil in basil, and the proportions of these vary considerably between plants growing in different regions of the world[238]. From this variety many named varieties with differing flavour characteristics have been developed[46, 238]. Basil is a perennial plant in the tropics, but it is frost tender and needs to be grown as a half-hardy annual in temperate zones[142]. It is a very good companion plant to grow in the house or greenhouse, its aromatic foliage helping to reduce problems caused by insect pests[K]. It requires a good hot summer in Britain if it is to do well outdoors[K]. Sweet basil is a good companion plant for tomatoes but it grows badly with rue and sage[14, 18, 20, 201]. When grown near raspberries it can retard their fruiting[201]. Special Features: Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for dried flowers, Inconspicuous flowers or blooms. Basil is typically harvested from late spring to early autumn (around June to September in the Northern Hemisphere) when the leaves are young and tender. Basil flowers in mid to late summer. Basil is a fast-growing herb, usually reaching maturity in about 60 to 90 days from seed. It thrives in warm conditions and can produce a continuous harvest when regularly pruned.",
-    "production_notes": null,
-    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibacterial Antidepressant Antirheumatic Antispasmodic Appetizer Aromatherapy Aromatic Carminative Digestive Dysentery Galactogogue Malaria Ophthalmic Stomachic Tonic Sweet basil has been used for thousands of years as a culinary and medicinal herb. It acts principally on the digestive and nervous systems, easing flatulence, stomach cramps, colic and indigestion[254]. The leaves and flowering tops are antispasmodic, aromatic, carminative, digestive, galactogogue, stomachic and tonic[7, 14, 21, 178, 218]. They are taken internally in the treatment of feverish illnesses (especially colds and influenza), poor digestion, nausea, abdominal cramps, gastro-enteritis, migraine, insomnia, depression and exhaustion[238]. Externally, they are used to treat acne, loss of smell, insect stings, snake bites and skin infections[238]. The leaves can be harvested throughout the growing season and are used fresh or dried[238]. The mucilaginous seed is given in infusion in the treatment of gonorrhoea, dysentery and chronic diarrhoea[240]. It is said to remove film and opacity from the eyes[218]. The root is used in the treatment of bowel complaints in children[240]. Extracts from the plant are bactericidal and are also effective against internal parasites[218, 238]. The essential oil is used in aromatherapy. Its keyword is 'Clearing'[210]. In Chinese medicine for kidney disease and gum ulcers [301]. In Indian medicine foe earache, rheumatoid arthritis, anorexia, itching, menstrual disorders, and malaria [301].",
     "cautions": "Basil contains estragole a potentially carcinogenic and mutagenic essential oil. Do not take during pregnancy or give basil oil to small infants/children.",
+    "cultivation_notes": "Landscape Uses:Border, Container, Specimen. Prefers a rich light well-drained to dry soil[1, 27, 238]. Requires a sunny sheltered position if grown outdoors[52]. Tolerates a pH in the range 5 to 8[238]. Sweet basil is commonly grown as an aromatic culinary and medicinal herb in warm temperate and tropical climates. There are a number of different constituents that make up the essential oil in basil, and the proportions of these vary considerably between plants growing in different regions of the world[238]. From this variety many named varieties with differing flavour characteristics have been developed[46, 238]. Basil is a perennial plant in the tropics, but it is frost tender and needs to be grown as a half-hardy annual in temperate zones[142]. It is a very good companion plant to grow in the house or greenhouse, its aromatic foliage helping to reduce problems caused by insect pests[K]. It requires a good hot summer in Britain if it is to do well outdoors[K]. Sweet basil is a good companion plant for tomatoes but it grows badly with rue and sage[14, 18, 20, 201]. When grown near raspberries it can retard their fruiting[201]. Special Features: Attractive foliage, Edible, Fragrant foliage, Not North American native, Suitable for dried flowers, Inconspicuous flowers or blooms. Basil is typically harvested from late spring to early autumn (around June to September in the Northern Hemisphere) when the leaves are young and tender. Basil flowers in mid to late summer. Basil is a fast-growing herb, usually reaching maturity in about 60 to 90 days from seed. It thrives in warm conditions and can produce a continuous harvest when regularly pruned.",
+    "edible_uses_notes": "Edible Parts: Leaves Seed Edible Uses: Condiment Drink Tea Leaves and flowers - raw or cooked[4, 21, 27]. Used as a flavouring or as a spinach[14, 61], they are used especially with tomato dishes, pasta sauces, beans, peppers and aubergines[238]. The leaves are normally used fresh but can also be dried for winter use[21]. A very pleasant addition to salads[K], the leaves have a delightful scent of cloves[4]. Use the leaves sparingly in cooking because the heat concentrates the flavour[244]. A refreshing tea is made from the leaves[21]. The seed can be eaten on its own or added to bread dough as a flavouring[183]. When soaked in water it becomes mucilaginous and can be made into a refreshing beverage called 'sherbet tokhum' in the Mediterranean[183]. An essential oil obtained from the plant is used as a food flavouring in mustards, sauces, vinegars etc[57, 105, 183]",
+    "fertilizer_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibacterial Antidepressant Antirheumatic Antispasmodic Appetizer Aromatherapy Aromatic Carminative Digestive Dysentery Galactogogue Malaria Ophthalmic Stomachic Tonic Sweet basil has been used for thousands of years as a culinary and medicinal herb. It acts principally on the digestive and nervous systems, easing flatulence, stomach cramps, colic and indigestion[254]. The leaves and flowering tops are antispasmodic, aromatic, carminative, digestive, galactogogue, stomachic and tonic[7, 14, 21, 178, 218]. They are taken internally in the treatment of feverish illnesses (especially colds and influenza), poor digestion, nausea, abdominal cramps, gastro-enteritis, migraine, insomnia, depression and exhaustion[238]. Externally, they are used to treat acne, loss of smell, insect stings, snake bites and skin infections[238]. The leaves can be harvested throughout the growing season and are used fresh or dried[238]. The mucilaginous seed is given in infusion in the treatment of gonorrhoea, dysentery and chronic diarrhoea[240]. It is said to remove film and opacity from the eyes[218]. The root is used in the treatment of bowel complaints in children[240]. Extracts from the plant are bactericidal and are also effective against internal parasites[218, 238]. The essential oil is used in aromatherapy. Its keyword is 'Clearing'[210]. In Chinese medicine for kidney disease and gum ulcers [301]. In Indian medicine foe earache, rheumatoid arthritis, anorexia, itching, menstrual disorders, and malaria [301].",
     "other_uses_notes": "Essential Repellent Strewing Agroforestry uses: Basil can be used as a companion plant to deter pests and attract pollinators. Its aromatic leaves can also enhance the growth and flavor of neighboring plants. An essential oil obtained from the whole plant is used as a food flavouring and in perfumery, dental applications etc[46, 57, 61, 105, 171, 238]. An average yield of 1.5% essential oil is obtained from the flowering tops[7]. When applied to the skin it makes a good mosquito repellent[7]. The growing or dried plant is an effective insect repellent. It is a good plant to grow in the home, where it repels flies, or in the greenhouse where it can keep all manner of insect pests away from nearby plants[14, 20, K]. It has been used in the past as a strewing herb[201]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Basil flowers are known to be attractive to pollinators and can provide nectar and pollen. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The leaves are edible for humans and can attract beneficial insects. While it doesn’t provide much in terms of shelter or nesting, the foliage can offer some cover. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): No – Basil is not typically used as a shelter for invertebrates, as it doesn’t create significant leaf litter or groundcover. 4. Pest Confuser (Smell): Yes – The aromatic leaves of basil can help mask the scent of other plants, potentially confusing pests.",
-    "edible_uses_notes": "Edible Parts: Leaves Seed Edible Uses: Condiment Drink Tea Leaves and flowers - raw or cooked[4, 21, 27]. Used as a flavouring or as a spinach[14, 61], they are used especially with tomato dishes, pasta sauces, beans, peppers and aubergines[238]. The leaves are normally used fresh but can also be dried for winter use[21]. A very pleasant addition to salads[K], the leaves have a delightful scent of cloves[4]. Use the leaves sparingly in cooking because the heat concentrates the flavour[244]. A refreshing tea is made from the leaves[21]. The seed can be eaten on its own or added to bread dough as a flavouring[183]. When soaked in water it becomes mucilaginous and can be made into a refreshing beverage called 'sherbet tokhum' in the Mediterranean[183]. An essential oil obtained from the plant is used as a food flavouring in mustards, sauces, vinegars etc[57, 105, 183]"
-  },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
+    "production_notes": null,
+    "pruning_notes": null,
+    "watering_interval_days": null,
+    "watering_notes": null
   },
   "biodiversity": {
-    "companions": [
-      {
-        "plant": "tomato",
-        "relationship": "good_companion",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'good_companion' wording."
-      }
-    ],
-    "conflicts": [
-      {
-        "plant": "rue",
-        "relationship": "grows_badly_with",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'grows_badly_with' wording."
-      },
-      {
-        "plant": "sage",
-        "relationship": "grows_badly_with",
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "Extracted from PFAF 'grows_badly_with' wording."
-      },
-      {
-        "plant": "raspberry",
-        "relationship": "may_retard_fruiting",
-        "source_name": "Plants For A Future",
-        "confidence": 0.65,
-        "notes": "Extracted from PFAF 'may_retard_fruiting' wording."
-      }
-    ],
-    "repels_pests": [
-      {
-        "target": "mosquito",
-        "mechanism": "essential_oil",
-        "source_name": "Plants For A Future",
-        "confidence": 0.7,
-        "notes": "PFAF mentions mosquito repellent use."
-      },
-      {
-        "target": "flies",
-        "mechanism": "aromatic_foliage",
-        "source_name": "Plants For A Future",
-        "confidence": 0.7,
-        "notes": "PFAF mentions repelling flies."
-      }
-    ],
     "attracts_beneficial_insects": [
       {
-        "insect_group": "bees",
+        "confidence": 0.65,
         "examples": [
           "bees"
         ],
-        "source_name": "Plants For A Future",
-        "confidence": 0.65,
-        "notes": "PFAF states flowers are pollinated by bees."
+        "insect_group": "bees",
+        "notes": "PFAF states flowers are pollinated by bees.",
+        "source_name": "Plants For A Future"
       },
       {
-        "insect_group": "pollinators",
+        "confidence": 0.75,
         "examples": [
           "bees",
           "butterflies"
         ],
-        "source_name": "Plants For A Future",
-        "confidence": 0.75,
-        "notes": "PFAF says this plant attracts pollinators."
+        "insect_group": "pollinators",
+        "notes": "PFAF says this plant attracts pollinators.",
+        "source_name": "Plants For A Future"
       }
     ],
-    "pollinator_support": true,
-    "pest_confuser": true,
     "biodiversity_notes": [
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
+    ],
+    "companions": [
+      {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'good_companion' wording.",
+        "plant": "tomato",
+        "relationship": "good_companion",
+        "source_name": "Plants For A Future"
+      }
+    ],
+    "conflicts": [
+      {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_badly_with' wording.",
+        "plant": "rue",
+        "relationship": "grows_badly_with",
+        "source_name": "Plants For A Future"
+      },
+      {
+        "confidence": 0.75,
+        "notes": "Extracted from PFAF 'grows_badly_with' wording.",
+        "plant": "sage",
+        "relationship": "grows_badly_with",
+        "source_name": "Plants For A Future"
+      },
+      {
+        "confidence": 0.65,
+        "notes": "Extracted from PFAF 'may_retard_fruiting' wording.",
+        "plant": "raspberry",
+        "relationship": "may_retard_fruiting",
+        "source_name": "Plants For A Future"
+      }
+    ],
+    "pest_confuser": true,
+    "pollinator_support": true,
+    "repels_pests": [
+      {
+        "confidence": 0.7,
+        "mechanism": "essential_oil",
+        "notes": "PFAF mentions mosquito repellent use.",
+        "source_name": "Plants For A Future",
+        "target": "mosquito"
+      },
+      {
+        "confidence": 0.7,
+        "mechanism": "aromatic_foliage",
+        "notes": "PFAF mentions repelling flies.",
+        "source_name": "Plants For A Future",
+        "target": "flies"
+      }
     ]
   },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "downy_mildew",
+      "fusarium_wilt"
+    ],
+    "known_pest_ids": [],
+    "treatment_notes": null
+  },
   "field_sources": {
-    "identity.scientific_name": "local_seed",
-    "identity.common_name": "local_seed",
-    "identity.genus": "GBIF",
-    "identity.family": "GBIF",
-    "identity.synonyms": "Plants For A Future",
-    "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Plants For A Future",
-    "classification.use_categories": "Plants For A Future",
-    "classification.life_cycle": "Plants For A Future",
-    "classification.botanical_life_cycle": "Plants For A Future",
-    "classification.crop_life_cycle": "Plants For A Future",
-    "classification.life_cycle_context": "Plants For A Future",
-    "classification.edible": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
-    "germination.propagation_notes": "Plants For A Future",
-    "growth.sunlight": "Plants For A Future",
-    "growth.soil_type": "Plants For A Future",
-    "growth.soil_ph_min": "Plants For A Future",
-    "growth.soil_ph_max": "Plants For A Future",
-    "growth.water_need": "Plants For A Future",
-    "growth.growth_speed": "Plants For A Future",
-    "growth.soil_notes": "Plants For A Future",
-    "growth.water_notes": "Plants For A Future",
-    "growth.light_notes": "Plants For A Future",
-    "care.cultivation_notes": "Plants For A Future",
-    "care.cautions": "Plants For A Future",
-    "care.nutrition_notes": "Plants For A Future",
-    "care.other_uses_notes": "Plants For A Future",
-    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.biodiversity_notes": "Plants For A Future",
     "biodiversity.companions": "Plants For A Future",
     "biodiversity.conflicts": "Plants For A Future",
-    "biodiversity.repels_pests": "Plants For A Future",
-    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
-    "biodiversity.pollinator_support": "Plants For A Future",
     "biodiversity.pest_confuser": "Plants For A Future",
-    "biodiversity.biodiversity_notes": "Plants For A Future"
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.repels_pests": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.crop_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.life_cycle_context": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.light_notes": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.soil_ph_max": "Plants For A Future",
+    "growth.soil_ph_min": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "identity.common_name": "local_seed",
+    "identity.common_names": "Plants For A Future",
+    "identity.family": "GBIF",
+    "identity.genus": "GBIF",
+    "identity.scientific_name": "local_seed",
+    "identity.synonyms": "Plants For A Future"
   },
   "source_metadata": {
+    "last_merged_at": "2026-06-17T04:44:11.905596+00:00",
     "sources": [
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:43:45.662882+00:00",
+        "relevance_score": null,
         "source_name": "GBIF",
         "source_url": "https://api.gbif.org/v1/species/match",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:43:45.662882+00:00"
+        "trusted_detail": null
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+basilicum",
-        "status": "trusted_detail",
-        "trusted_detail": true,
-        "relevance_score": 1.0,
+        "confidence": 0.8,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -254,15 +254,15 @@
           "known_hazards",
           "biodiversity"
         ],
-        "confidence": 0.8,
-        "last_verified_at": "2026-06-17T04:42:09.045682+00:00"
+        "last_verified_at": "2026-06-17T04:42:09.045682+00:00",
+        "relevance_score": 1.0,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+basilicum",
+        "status": "trusted_detail",
+        "trusted_detail": true
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Basil",
-        "status": "snapshot_only",
-        "trusted_detail": false,
-        "relevance_score": 0.05,
+        "confidence": 0.3,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -270,57 +270,59 @@
           "growth",
           "biodiversity"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:42:09.709857+00:00"
+        "last_verified_at": "2026-06-17T04:42:09.709857+00:00",
+        "relevance_score": 0.05,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Basil",
+        "status": "snapshot_only",
+        "trusted_detail": false
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "last_verified_at": "2026-06-17T04:36:24.437873+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Ocimum+basilicum",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:36:24.437873+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:36:28.123988+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Basil",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:36:28.123988+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:36:31.810433+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=basil",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [
-          "edible_parts",
-          "use_categories",
-          "cultivation_notes"
-        ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:36:31.810433+00:00"
+        "trusted_detail": null
       }
-    ],
-    "last_merged_at": "2026-06-17T04:44:11.905596+00:00"
+    ]
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

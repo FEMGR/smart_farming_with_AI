@@ -2,10 +2,6 @@
   "plant_atom": "cabbage",
   "identity": {
     "common_name": "Cabbage",
-    "scientific_name": "Brassica oleracea",
-    "genus": "Brassica",
-    "family": "Brassicaceae",
-    "synonyms": [],
     "common_names": [
       "Broccoli",
       "Brussels sprouts",
@@ -13,148 +9,177 @@
       "Sprouting broccoli",
       "Tronchuda cabbage",
       "Wild Cabbage"
-    ]
+    ],
+    "family": "Brassicaceae",
+    "genus": "Brassica",
+    "scientific_name": "Brassica oleracea",
+    "synonyms": []
   },
   "classification": {
+    "botanical_life_cycle": "perennial",
+    "crop_life_cycle": null,
     "edible": true,
-    "use_categories": [
-      "medicinal_plant"
-    ],
     "edible_parts": [
       "leaf"
     ],
-    "life_cycle": "perennial",
     "growth_habit": null,
-    "botanical_life_cycle": "perennial",
-    "crop_life_cycle": null,
-    "life_cycle_context": null
+    "life_cycle": "perennial",
+    "life_cycle_context": null,
+    "use_categories": [
+      "medicinal_plant"
+    ]
   },
   "growth": {
-    "sunlight": [
-      "full_sun",
-      "partial_shade"
-    ],
-    "water_need": "moderate",
+    "climate_notes": null,
+    "growth_speed": "fast",
+    "light_notes": null,
+    "rainfall_notes": null,
+    "soil_notes": "Management: Standard Minor Global Crop Staple Crop: Protein An easily grown plant, it succeeds in full sun in any reasonable soil, though it prefers a well-drained fertile preferably alkaline soil[200]. It does well in heavy clay soils. It is often found wild by the coast and tolerates considerable maritime exposure. The true wild cabbage is a short-lived perennial, though we have seen specimens 5 years old or more[K]. This species has long been cultivated for its edible leaves, stems etc and a wide diversity of forms have been developed, including cabbages, cauliflowers, broccolis and Brussels sprouts[5]. Most of these forms are biennial in cultivation, though there are also some perennial forms. These different forms are detailed below and have each been given their own entry in the database. We have chosen the most up to date classification we can find, as treated in 'World Economic Plants'. B. oleracea alboglabra. Chinese kales are fast-growing plants with tender edible leaves. Although perennials[200], they are usually grown as annuals and are eaten as a summer and autumn crop whilst still young. B. oleracea botrytis. Cauliflowers are grown mainly for their edible swollen inflorescence. Different cultivars can be used to provide crops all year round. B. oleracea botrytis aparagoides. A short-lived perennial form of cauliflower producing a small cauliflower head in the spring followed by a number of broccoli-like flowering shoots. B. oleracea capitata. These are the cultivated cabbages, grown for their edible leaves that usually form a compact head. Reasonably winter hardy, different cultivars can be used to provide edible plants all year round. B. oleracea costata. Couve tronchuda is a tall-growing form of cabbage. It is less hardy than most other forms of this genus. B. oleracea gemmifera. Brussels sprouts form large edible axillary buds 5cm or more long. They are mainly used as late autumn to spring crops. B. oleracea gongylodes. Kohl rabi produces an edible swollen stem 8cm or more in diameter. It is reasonably cold hardy and provides crops from mid summer to the winter. B. oleracea italica. The calabreses and sprouting broccolis, grown mainly for their edible flowering shoots. Calabrese is the less hardy and is used mainly as an autumn and early winter crop. The sprouting broccolis are very winter hardy and are grown outdoors through the winter to provide a spring to early summer crop. B. oleracea medullosa. Marrowstem kales have edible leaves and stems. B. oleracea palmifolia. The Jersey kale produces a very tall stem which has been used as a walking stick. B. oleracea ramosa. The thousand-headed and perennial kales are very cold hardy. Their flavour is stronger than most of the other cultivated forms and they are mainly used as a winter crop. This form is very close to the wild species and has the most potential for developing perennial cultivars. B. oleracea subauda. The savoy cabbages form large heads like the cultivated cabbages (B. oleracea capitata). They have a stronger flavour, crinkly leaves and are generally more cold-hardy so can provide a winter crop in areas with quite severe winters. B. oleracea sabellica. The curly kales have attractively curled leaves. These are quite cold-tolerant plants and are mainly used to provide edible leaves in winter and spring. B. oleracea viridis. Collards are a cold-hardy non-heading form of cabbage, used mainly to provide green leaves in the spring. The plant is heat tolerant in zones 6 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is flat with shallow roots forming a plate near the soil surface [1-2].",
+    "soil_ph_max": null,
+    "soil_ph_min": null,
     "soil_type": [
       "heavy_clay",
       "light_sandy",
       "medium_loamy",
       "well_drained"
     ],
-    "soil_ph_min": null,
-    "soil_ph_max": null,
-    "growth_speed": "fast",
-    "climate_notes": null,
-    "soil_notes": "Management: Standard Minor Global Crop Staple Crop: Protein An easily grown plant, it succeeds in full sun in any reasonable soil, though it prefers a well-drained fertile preferably alkaline soil[200]. It does well in heavy clay soils. It is often found wild by the coast and tolerates considerable maritime exposure. The true wild cabbage is a short-lived perennial, though we have seen specimens 5 years old or more[K]. This species has long been cultivated for its edible leaves, stems etc and a wide diversity of forms have been developed, including cabbages, cauliflowers, broccolis and Brussels sprouts[5]. Most of these forms are biennial in cultivation, though there are also some perennial forms. These different forms are detailed below and have each been given their own entry in the database. We have chosen the most up to date classification we can find, as treated in 'World Economic Plants'. B. oleracea alboglabra. Chinese kales are fast-growing plants with tender edible leaves. Although perennials[200], they are usually grown as annuals and are eaten as a summer and autumn crop whilst still young. B. oleracea botrytis. Cauliflowers are grown mainly for their edible swollen inflorescence. Different cultivars can be used to provide crops all year round. B. oleracea botrytis aparagoides. A short-lived perennial form of cauliflower producing a small cauliflower head in the spring followed by a number of broccoli-like flowering shoots. B. oleracea capitata. These are the cultivated cabbages, grown for their edible leaves that usually form a compact head. Reasonably winter hardy, different cultivars can be used to provide edible plants all year round. B. oleracea costata. Couve tronchuda is a tall-growing form of cabbage. It is less hardy than most other forms of this genus. B. oleracea gemmifera. Brussels sprouts form large edible axillary buds 5cm or more long. They are mainly used as late autumn to spring crops. B. oleracea gongylodes. Kohl rabi produces an edible swollen stem 8cm or more in diameter. It is reasonably cold hardy and provides crops from mid summer to the winter. B. oleracea italica. The calabreses and sprouting broccolis, grown mainly for their edible flowering shoots. Calabrese is the less hardy and is used mainly as an autumn and early winter crop. The sprouting broccolis are very winter hardy and are grown outdoors through the winter to provide a spring to early summer crop. B. oleracea medullosa. Marrowstem kales have edible leaves and stems. B. oleracea palmifolia. The Jersey kale produces a very tall stem which has been used as a walking stick. B. oleracea ramosa. The thousand-headed and perennial kales are very cold hardy. Their flavour is stronger than most of the other cultivated forms and they are mainly used as a winter crop. This form is very close to the wild species and has the most potential for developing perennial cultivars. B. oleracea subauda. The savoy cabbages form large heads like the cultivated cabbages (B. oleracea capitata). They have a stronger flavour, crinkly leaves and are generally more cold-hardy so can provide a winter crop in areas with quite severe winters. B. oleracea sabellica. The curly kales have attractively curled leaves. These are quite cold-tolerant plants and are mainly used to provide edible leaves in winter and spring. B. oleracea viridis. Collards are a cold-hardy non-heading form of cabbage, used mainly to provide green leaves in the spring. The plant is heat tolerant in zones 6 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is flat with shallow roots forming a plate near the soil surface [1-2].",
-    "water_notes": "Prefers moist soil.",
-    "light_notes": null,
+    "sunlight": [
+      "full_sun",
+      "partial_shade"
+    ],
     "temperature_notes": null,
-    "rainfall_notes": null
+    "water_need": "moderate",
+    "water_notes": "Prefers moist soil."
   },
   "germination": {
+    "germination_days_max": null,
+    "germination_days_min": null,
+    "germination_light": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
     "propagation_methods": [
       "cutting",
       "seed"
     ],
     "propagation_notes": "Seed - sow April in situ. Seedlings transplant very well and so, if you sow the seed too thickly, it is a simple matter to move some of the plants to give them more space. Cuttings root very easily at almost any time in the growing season[K]. Use shoots about 8cm long of the current year's growth and place them in individual pots in the cuttings frame[K].",
-    "germination_days_min": null,
-    "germination_days_max": null,
-    "germination_light": null,
-    "sowing_depth_cm": null,
-    "minimum_soil_temp_c": null,
-    "optimum_soil_temp_c": null,
-    "preferred_propagation_methods": [],
-    "propagation_warning": null
+    "propagation_warning": null,
+    "sowing_depth_cm": null
   },
   "spacing": {
-    "spacing_cm": null,
-    "root_depth_cm": null,
     "plant_height_cm": null,
+    "root_depth_cm": null,
+    "spacing_cm": null,
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
-    "watering_notes": null,
-    "pruning_notes": null,
-    "fertilizer_notes": null,
-    "cultivation_notes": "Management: Standard Minor Global Crop Staple Crop: Protein An easily grown plant, it succeeds in full sun in any reasonable soil, though it prefers a well-drained fertile preferably alkaline soil[200]. It does well in heavy clay soils. It is often found wild by the coast and tolerates considerable maritime exposure. The true wild cabbage is a short-lived perennial, though we have seen specimens 5 years old or more[K]. This species has long been cultivated for its edible leaves, stems etc and a wide diversity of forms have been developed, including cabbages, cauliflowers, broccolis and Brussels sprouts[5]. Most of these forms are biennial in cultivation, though there are also some perennial forms. These different forms are detailed below and have each been given their own entry in the database. We have chosen the most up to date classification we can find, as treated in 'World Economic Plants'. B. oleracea alboglabra. Chinese kales are fast-growing plants with tender edible leaves. Although perennials[200], they are usually grown as annuals and are eaten as a summer and autumn crop whilst still young. B. oleracea botrytis. Cauliflowers are grown mainly for their edible swollen inflorescence. Different cultivars can be used to provide crops all year round. B. oleracea botrytis aparagoides. A short-lived perennial form of cauliflower producing a small cauliflower head in the spring followed by a number of broccoli-like flowering shoots. B. oleracea capitata. These are the cultivated cabbages, grown for their edible leaves that usually form a compact head. Reasonably winter hardy, different cultivars can be used to provide edible plants all year round. B. oleracea costata. Couve tronchuda is a tall-growing form of cabbage. It is less hardy than most other forms of this genus. B. oleracea gemmifera. Brussels sprouts form large edible axillary buds 5cm or more long. They are mainly used as late autumn to spring crops. B. oleracea gongylodes. Kohl rabi produces an edible swollen stem 8cm or more in diameter. It is reasonably cold hardy and provides crops from mid summer to the winter. B. oleracea italica. The calabreses and sprouting broccolis, grown mainly for their edible flowering shoots. Calabrese is the less hardy and is used mainly as an autumn and early winter crop. The sprouting broccolis are very winter hardy and are grown outdoors through the winter to provide a spring to early summer crop. B. oleracea medullosa. Marrowstem kales have edible leaves and stems. B. oleracea palmifolia. The Jersey kale produces a very tall stem which has been used as a walking stick. B. oleracea ramosa. The thousand-headed and perennial kales are very cold hardy. Their flavour is stronger than most of the other cultivated forms and they are mainly used as a winter crop. This form is very close to the wild species and has the most potential for developing perennial cultivars. B. oleracea subauda. The savoy cabbages form large heads like the cultivated cabbages (B. oleracea capitata). They have a stronger flavour, crinkly leaves and are generally more cold-hardy so can provide a winter crop in areas with quite severe winters. B. oleracea sabellica. The curly kales have attractively curled leaves. These are quite cold-tolerant plants and are mainly used to provide edible leaves in winter and spring. B. oleracea viridis. Collards are a cold-hardy non-heading form of cabbage, used mainly to provide green leaves in the spring. The plant is heat tolerant in zones 6 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is flat with shallow roots forming a plate near the soil surface [1-2].",
-    "production_notes": null,
-    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anthelmintic Cardiotonic Diuretic Laxative Stomachic The leaves are cardiotonic and stomachic[240]. They have been used in the treatment of gout and rheumatism[240]. The leaves can be used as a poultice to cleanse infected wounds - the mid-rib is removed and the leaf ironed then placed on the affected area whilst still hot[254]. The poultice should not be left on too long or it an cause blisters[254]. The seeds are anthelmintic, diuretic, laxative and stomachic[240].",
     "cautions": "None known",
+    "cultivation_notes": "Management: Standard Minor Global Crop Staple Crop: Protein An easily grown plant, it succeeds in full sun in any reasonable soil, though it prefers a well-drained fertile preferably alkaline soil[200]. It does well in heavy clay soils. It is often found wild by the coast and tolerates considerable maritime exposure. The true wild cabbage is a short-lived perennial, though we have seen specimens 5 years old or more[K]. This species has long been cultivated for its edible leaves, stems etc and a wide diversity of forms have been developed, including cabbages, cauliflowers, broccolis and Brussels sprouts[5]. Most of these forms are biennial in cultivation, though there are also some perennial forms. These different forms are detailed below and have each been given their own entry in the database. We have chosen the most up to date classification we can find, as treated in 'World Economic Plants'. B. oleracea alboglabra. Chinese kales are fast-growing plants with tender edible leaves. Although perennials[200], they are usually grown as annuals and are eaten as a summer and autumn crop whilst still young. B. oleracea botrytis. Cauliflowers are grown mainly for their edible swollen inflorescence. Different cultivars can be used to provide crops all year round. B. oleracea botrytis aparagoides. A short-lived perennial form of cauliflower producing a small cauliflower head in the spring followed by a number of broccoli-like flowering shoots. B. oleracea capitata. These are the cultivated cabbages, grown for their edible leaves that usually form a compact head. Reasonably winter hardy, different cultivars can be used to provide edible plants all year round. B. oleracea costata. Couve tronchuda is a tall-growing form of cabbage. It is less hardy than most other forms of this genus. B. oleracea gemmifera. Brussels sprouts form large edible axillary buds 5cm or more long. They are mainly used as late autumn to spring crops. B. oleracea gongylodes. Kohl rabi produces an edible swollen stem 8cm or more in diameter. It is reasonably cold hardy and provides crops from mid summer to the winter. B. oleracea italica. The calabreses and sprouting broccolis, grown mainly for their edible flowering shoots. Calabrese is the less hardy and is used mainly as an autumn and early winter crop. The sprouting broccolis are very winter hardy and are grown outdoors through the winter to provide a spring to early summer crop. B. oleracea medullosa. Marrowstem kales have edible leaves and stems. B. oleracea palmifolia. The Jersey kale produces a very tall stem which has been used as a walking stick. B. oleracea ramosa. The thousand-headed and perennial kales are very cold hardy. Their flavour is stronger than most of the other cultivated forms and they are mainly used as a winter crop. This form is very close to the wild species and has the most potential for developing perennial cultivars. B. oleracea subauda. The savoy cabbages form large heads like the cultivated cabbages (B. oleracea capitata). They have a stronger flavour, crinkly leaves and are generally more cold-hardy so can provide a winter crop in areas with quite severe winters. B. oleracea sabellica. The curly kales have attractively curled leaves. These are quite cold-tolerant plants and are mainly used to provide edible leaves in winter and spring. B. oleracea viridis. Collards are a cold-hardy non-heading form of cabbage, used mainly to provide green leaves in the spring. The plant is heat tolerant in zones 6 through 1. (Plant Hardiness Zones show how well plants withstand cold winter temperatures. Plant Heat Zones show when plants would start suffering from the heat. The Plant Heat Zone map is based on the number of \"heat days\" experienced in a given area where the temperature climbs to over 86 degrees F (30°C). At this temperature, many plants begin to suffer physiological damage. Heat Zones range from 1 (no heat days) to 12 (210 or more heat days). For example Heat Zone. 11-1 indicates that the plant is heat tolerant in zones 11 through 1.) For polyculture design as well as the above-ground architecture (form - tree, shrub etc. and size shown above) information on the habit and root pattern is also useful and given here if available. The plant growth habit is a clumper with limited spread [1-2]. The root pattern is flat with shallow roots forming a plate near the soil surface [1-2].",
+    "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Leaves - raw or cooked[5]. Slightly bitter raw, they can be cooked in one or more changes of water[183]. We find that the slight bitterness actually enhances the flavour, and this is one of our favourite cooked leaves. The plant can usually be harvested all year round, though there will be little to pick in very cold winters[K].",
+    "fertilizer_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Anthelmintic Cardiotonic Diuretic Laxative Stomachic The leaves are cardiotonic and stomachic[240]. They have been used in the treatment of gout and rheumatism[240]. The leaves can be used as a poultice to cleanse infected wounds - the mid-rib is removed and the leaf ironed then placed on the affected area whilst still hot[254]. The poultice should not be left on too long or it an cause blisters[254]. The seeds are anthelmintic, diuretic, laxative and stomachic[240].",
     "other_uses_notes": "A dynamic accumulator gathering minerals or nutrients from the soil and storing them in a more bioavailable form - used as fertilizer or to improve mulch.",
-    "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Leaves - raw or cooked[5]. Slightly bitter raw, they can be cooked in one or more changes of water[183]. We find that the slight bitterness actually enhances the flavour, and this is one of our favourite cooked leaves. The plant can usually be harvested all year round, though there will be little to pick in very cold winters[K]."
-  },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
+    "production_notes": null,
+    "pruning_notes": null,
+    "watering_interval_days": null,
+    "watering_notes": null
   },
   "biodiversity": {
-    "companions": [],
-    "conflicts": [],
-    "repels_pests": [],
     "attracts_beneficial_insects": [
       {
-        "insect_group": "bees",
+        "confidence": 0.65,
         "examples": [
           "bees"
         ],
-        "source_name": "Plants For A Future",
-        "confidence": 0.65,
-        "notes": "PFAF states flowers are pollinated by bees."
+        "insect_group": "bees",
+        "notes": "PFAF states flowers are pollinated by bees.",
+        "source_name": "Plants For A Future"
       }
     ],
-    "pollinator_support": true,
+    "biodiversity_notes": [],
+    "companions": [],
+    "conflicts": [],
     "pest_confuser": false,
-    "biodiversity_notes": []
+    "pollinator_support": true,
+    "repels_pests": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "clubroot",
+      "downy_mildew",
+      "bacterial_leaf_spot",
+      "bacterial_soft_rot",
+      "fusarium_wilt",
+      "lettuce_drop",
+      "phytophthora_root_rot",
+      "powdery_mildew",
+      "verticillium_wilt",
+      "white_mold",
+      "yellows"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "armyworm",
+      "armyworm_and_looper",
+      "cabbage_maggot",
+      "cucumber_beetle",
+      "cutworm",
+      "diamondback_moth",
+      "flea_beetle",
+      "garden_symphylan",
+      "grasshopper",
+      "imported_cabbageworm",
+      "looper",
+      "slug",
+      "thrips",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
-    "identity.scientific_name": "local_seed",
-    "identity.common_name": "local_seed",
-    "identity.genus": "GBIF",
-    "identity.family": "GBIF",
-    "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Plants For A Future",
-    "classification.use_categories": "Plants For A Future",
-    "classification.life_cycle": "Plants For A Future",
-    "classification.botanical_life_cycle": "Plants For A Future",
-    "classification.edible": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
-    "germination.propagation_notes": "Plants For A Future",
-    "growth.sunlight": "Plants For A Future",
-    "growth.soil_type": "Plants For A Future",
-    "growth.water_need": "Plants For A Future",
-    "growth.growth_speed": "Plants For A Future",
-    "growth.soil_notes": "Plants For A Future",
-    "growth.water_notes": "Plants For A Future",
-    "care.cultivation_notes": "Plants For A Future",
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
     "care.cautions": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
     "care.nutrition_notes": "Plants For A Future",
     "care.other_uses_notes": "Plants For A Future",
-    "care.edible_uses_notes": "Plants For A Future",
-    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
-    "biodiversity.pollinator_support": "Plants For A Future",
-    "biodiversity.pest_confuser": "Plants For A Future"
+    "classification.botanical_life_cycle": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.life_cycle": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.growth_speed": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.water_need": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "identity.common_name": "local_seed",
+    "identity.common_names": "Plants For A Future",
+    "identity.family": "GBIF",
+    "identity.genus": "GBIF",
+    "identity.scientific_name": "local_seed"
   },
   "source_metadata": {
+    "last_merged_at": "2026-06-17T04:44:11.829421+00:00",
     "sources": [
       {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-17T04:43:14.739173+00:00",
+        "relevance_score": null,
         "source_name": "GBIF",
         "source_url": "https://api.gbif.org/v1/species/match",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:43:14.739173+00:00"
+        "trusted_detail": null
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea",
-        "status": "trusted_detail",
-        "trusted_detail": true,
-        "relevance_score": 1.0,
+        "confidence": 0.8,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -177,15 +202,15 @@
           "known_hazards",
           "biodiversity"
         ],
-        "confidence": 0.8,
-        "last_verified_at": "2026-06-17T04:41:18.191433+00:00"
+        "last_verified_at": "2026-06-17T04:41:18.191433+00:00",
+        "relevance_score": 1.0,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea",
+        "status": "trusted_detail",
+        "trusted_detail": true
       },
       {
-        "source_name": "Plants For A Future",
-        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Cabbage",
-        "status": "snapshot_only",
-        "trusted_detail": false,
-        "relevance_score": 0.05,
+        "confidence": 0.3,
         "fields_provided": [
           "lookup_type",
           "real_plant_page",
@@ -193,57 +218,59 @@
           "growth",
           "biodiversity"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:41:19.553102+00:00"
+        "last_verified_at": "2026-06-17T04:41:19.553102+00:00",
+        "relevance_score": 0.05,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Cabbage",
+        "status": "snapshot_only",
+        "trusted_detail": false
       },
       {
+        "confidence": 0.3,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "last_verified_at": "2026-06-17T04:31:10.507185+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Brassica+oleracea",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:31:10.507185+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:31:14.198656+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Cabbage",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
         "fields_provided": [
           "edible_parts",
           "use_categories",
           "cultivation_notes"
         ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:31:14.198656+00:00"
-      },
-      {
+        "last_verified_at": "2026-06-17T04:31:17.887977+00:00",
+        "relevance_score": null,
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=cabbage",
         "status": "ok",
-        "trusted_detail": null,
-        "relevance_score": null,
-        "fields_provided": [
-          "edible_parts",
-          "use_categories",
-          "cultivation_notes"
-        ],
-        "confidence": 0.3,
-        "last_verified_at": "2026-06-17T04:31:17.887977+00:00"
+        "trusted_detail": null
       }
-    ],
-    "last_merged_at": "2026-06-17T04:44:11.829421+00:00"
+    ]
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

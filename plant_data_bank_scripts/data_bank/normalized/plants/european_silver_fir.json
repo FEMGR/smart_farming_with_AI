@@ -1,0 +1,241 @@
+{
+  "plant_atom": "european_silver_fir",
+  "identity": {
+    "common_name": "European Silver Fir",
+    "scientific_name": "Abies alba",
+    "genus": "Abies",
+    "family": "Pinaceae",
+    "synonyms": [],
+    "common_names": [
+      "Christmas Tree Fir",
+      "European Silver Fir",
+      "Silver",
+      "Silver Fir"
+    ]
+  },
+  "classification": {
+    "edible": null,
+    "use_categories": [
+      "medicinal_plant"
+    ],
+    "edible_parts": [],
+    "life_cycle": "Perennial",
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [
+      "full sun",
+      "partial_shade"
+    ],
+    "water_need": "Frequent",
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy"
+    ],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": "High",
+    "climate_notes": null,
+    "soil_notes": "Landscape Uses:Screen, Specimen. Prefers a good moist but not water-logged soil[1] though it tolerates most soils except infertile sands and peats[11, 81]. Grows well in heavy clay soils. Prefers a slightly acid soil, with a pH down to about 5, and a north-facing slope[200]. Plants are very shade tolerant and this species has often been used to underplant in forests[11, 81], but growth is slower in dense shade[81]. Intolerant of atmospheric pollution[1]. Requires a generous rainfall and a sheltered position[11, 81]. Intolerant of windy sites[81]. The silver fir is a very hardy plant when dormant but it comes into growth in April and is then susceptible to damage by late frosts and aphis[185, 238]. This species is particularly subject to aphis infestation in many parts of the country[11], and is also prone to dieback and rust caused by fungal infections[238]. Trees are slow growing for the first few years but from the age of around 6 years growth accelerates and height increases of 1 metre a year are not uncommon[185]. Grows best in moist valleys in Scotland[11] and in S.W. England where it often self-sows. This species also thrives in E. Anglia[17]. Another report says that this species is not happy in the hot, dry, Lower Thames Valley, and does not thrive in many low-lying and frosty parts of southern England[11]. It has been planted as a timber tree in northern and western Europe[50]. It is also commonly used as a 'Christmas tree'[61, 200]. This tree is notably resistant to honey fungus[11, 81, 200]. Trees should be planted into their permanent positions when they are quite small, preferably between 30 and 90cm in height. Larger trees will check badly and hardly put on any growth for several years. This also badly affects root development and wind resistance[200]. Unlike most species of conifers, this tree can be coppiced and will regenerate from the stump[126]. Plants are strongly outbreeding, self-fertilized seed usually grows poorly[200]. They hybridize freely with other members of this genus[200]. The cultivar 'Pendula' used to be widely planted for ornament, shelter and timber but because it is now susceptible to damage by Adelges nordmannianae it is seldom planted. Research is going on (1975) to find provenances that are resistant[185]. Special Features:Not North American native, There are no flowers or blooms.",
+    "water_notes": "Prefers moist soil.",
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [
+      "Cutting",
+      "Grafting Propagation",
+      "Layering Propagation",
+      "Seed Propagation",
+      "Air Layering Propagation",
+      "Tissue Culture",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow early February in a greenhouse or outdoors in March[78]. Germination is often poor, usually taking about 6 - 8 weeks[78]. Stratification is said to produce a more even germination so it is probably best to sow the seed in a cold frame as soon as it is ripe in the autumn[80, 113]. The seed remains viable for up to 5 years if it is well stored[113]. When large enough to handle, prick the seedlings out into individual pots and grow them on for at least their first winter in pots. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Alternatively, if you have sufficient seed, it is possible to sow in an outdoor seedbed. One report says that it is best to grow the seedlings on in the shade at a density of about 550 plants per square metre[78] whilst another report says that they are best grown on in a sunny position[80].",
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": "Landscape Uses:Screen, Specimen. Prefers a good moist but not water-logged soil[1] though it tolerates most soils except infertile sands and peats[11, 81]. Grows well in heavy clay soils. Prefers a slightly acid soil, with a pH down to about 5, and a north-facing slope[200]. Plants are very shade tolerant and this species has often been used to underplant in forests[11, 81], but growth is slower in dense shade[81]. Intolerant of atmospheric pollution[1]. Requires a generous rainfall and a sheltered position[11, 81]. Intolerant of windy sites[81]. The silver fir is a very hardy plant when dormant but it comes into growth in April and is then susceptible to damage by late frosts and aphis[185, 238]. This species is particularly subject to aphis infestation in many parts of the country[11], and is also prone to dieback and rust caused by fungal infections[238]. Trees are slow growing for the first few years but from the age of around 6 years growth accelerates and height increases of 1 metre a year are not uncommon[185]. Grows best in moist valleys in Scotland[11] and in S.W. England where it often self-sows. This species also thrives in E. Anglia[17]. Another report says that this species is not happy in the hot, dry, Lower Thames Valley, and does not thrive in many low-lying and frosty parts of southern England[11]. It has been planted as a timber tree in northern and western Europe[50]. It is also commonly used as a 'Christmas tree'[61, 200]. This tree is notably resistant to honey fungus[11, 81, 200]. Trees should be planted into their permanent positions when they are quite small, preferably between 30 and 90cm in height. Larger trees will check badly and hardly put on any growth for several years. This also badly affects root development and wind resistance[200]. Unlike most species of conifers, this tree can be coppiced and will regenerate from the stump[126]. Plants are strongly outbreeding, self-fertilized seed usually grows poorly[200]. They hybridize freely with other members of this genus[200]. The cultivar 'Pendula' used to be widely planted for ornament, shelter and timber but because it is now susceptible to damage by Adelges nordmannianae it is seldom planted. Research is going on (1975) to find provenances that are resistant[185]. Special Features:Not North American native, There are no flowers or blooms.",
+    "production_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibiotic Antirheumatic Antiseptic Astringent Balsamic Diuretic Expectorant Vasoconstrictor Vulnerary The buds are antibiotic, antiseptic and balsamic[7]. The bark is antiseptic and astringent[7]. It can be harvested as required throughout the year[238]. The leaves are expectorant and a bronchial sedative[7]. They are best harvested in the spring and can be dried for later use[238]. The resin is antiseptic, balsamic, diuretic, eupeptic, expectorant, vasoconstrictor and vulnerary[7]. Both the leaves and the resin are common ingredients in remedies for colds and coughs, either taken internally or used as an inhalant[238]. The leaves and/or the resin are used in folk medicine to treat bronchitis, cystitis, leucorrhoea, ulcers and flatulent colic[268]. The resin is also used externally in bath extracts, rubbing oils etc for treating rheumatic pains and neuralgia[238]. Oil of Turpentine, which is obtained from the trunk of the tree, is occasionally used instead of the leaves or the resin. The oil is also rubefacient and can be applied externally in the treatment of neuralgia[268].",
+    "cautions": "None known",
+    "other_uses_notes": "Essential Lacquer Paint Resin Tannin Wood An oleo-resin is obtained from blister-like swellings in the bark[64, 100]. It is harvested in the summer and used fresh, dried or distilled for oil[238]. The resin extracted from it is used in perfumery, medicine and for caulking ships[46, 61, 64, 100]. It is called 'Strasburg Turpentine'[46]. Oil of turpentine is an important solvent in the paint industry[238]. The residue, known as 'rosin oil', is used in making varnishes, lacquers and carbon black (for pigments and ink)[238]. Resin is tapped from trees about 60 - 80 years old in the spring and used for the distillation of oil[238]. An essential oil obtained from the leaves is used as a disinfectant and also in medicine and perfumery[46, 61]. It is a common ingredient in many bath products, giving them their familiar pine scent[7]. The bark is a source of tannin[7]. Wood - light, soft, durable, elastic. The timber of this tree is especially sought after for its lightness, it is used for construction, furniture, boxes, pulp etc[7, 46, 61, 89, 101].",
+    "edible_uses_notes": "Edible Parts: Inner bark Edible Uses: Inner bark - cooked. It is dried, ground into a powder and then used as a thickening in soups etc or mixed with cereals when making bread[105, 177]."
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [],
+    "pollinator_support": false,
+    "pest_confuser": false,
+    "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
+    "classification.life_cycle": "Perenual",
+    "growth.sunlight": "Plants For A Future",
+    "growth.water_need": "Perenual",
+    "germination.propagation_methods": "Plants For A Future",
+    "growth.growth_speed": "Perenual",
+    "identity.common_names": "Plants For A Future",
+    "classification.use_categories": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.water_notes": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-19T03:27:05.976687+00:00"
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/api/v2/species-list",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-19T03:27:15.248253+00:00"
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/api/v2/species/details/{id}",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-19T03:27:30.003786+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Abies+alba",
+        "status": "trusted_detail",
+        "trusted_detail": true,
+        "relevance_score": 1.0,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "summary_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "confidence": 0.8,
+        "last_verified_at": "2026-06-19T03:27:01.522337+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=European+Silver+Fir",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-19T03:27:02.516166+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Abies+alba",
+        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=Abies+alba (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-19T03:24:45.043205+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=European+Silver+Fir",
+        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=European+Silver+Fir (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-19T03:25:12.053457+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=european_silver_fir",
+        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=european_silver_fir (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-06-19T03:25:39.068744+00:00"
+      }
+    ],
+    "last_merged_at": "2026-06-19T03:27:44.902160+00:00"
+  },
+  "missing_fields": [
+    "classification.edible_parts",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm"
+  ]
+}

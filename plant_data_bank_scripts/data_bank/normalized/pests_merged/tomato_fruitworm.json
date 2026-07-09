@@ -1,0 +1,103 @@
+{
+  "pest_atom": "tomato_fruitworm",
+  "name": "Tomato fruitworm (Corn earworm)",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "tomato"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Tomato",
+      "pest_name_on_page": "Tomato fruitworm (Corn earworm)",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-tomato-fruitworm-corn-earworm"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-tomato-fruitworm-corn-earworm"
+  ],
+  "page_titles": [
+    "Tomato-Tomato fruitworm (Corn earworm)"
+  ],
+  "description_damage": "Tomato fruitworm moths are about 0.75 inch in length, robust, with a wingspan of 1 to 1.5 inches, and range from olive green to tan to dark reddish brown. Eggs are pale green at first, turning yellowish and finally gray. Young larvae are greenish with black heads and conspicuous black hairs on the body. Fully developed worms are about 1.5 inches in length and range from pale green or pinkish to brown. Pupae are about 0.75 inch long and mahogany brown. They usually are found 2 to 4 inches deep in the soil. The tomato fruitworm may be present throughout the season but is most abundant during August and September. Larvae feed on leaves, and burrow into fruit. This pest also is known as the corn earworm, as it also attacks corn.",
+  "biology_life_history": "The tomato fruitworm overwinters as a pupa in the soil except in some areas in the North, where it is unable to survive the winter. Adults emerge in late May and June and begin laying eggs on suitable hosts. Egg laying occurs throughout the tomato growing season. Fruitworm moths are most active during evening and night. Female moths lay their eggs singly. Eggs are white at first but develop a dark red or brown ring within 24 hours. Eggs hatch in 5 to 7 days. Larvae feed for 2 to 3 weeks before pupating in the soil. Adults emerge in about 2 weeks and lay eggs on leaves. Moths move northward and establish infestations in areas where they cannot overwinter. The summer generations overlap, resulting in a regular and gradual build-up of the population from the beginning to the end of the year. There are two to three generations each year.",
+  "monitoring": "Check leaves for the presence of eggs or larvae and pick these off. A magnifying glass may be required.",
+  "management": {
+    "biological": "Many predators and parasitoids attack fruitworm eggs, including several species of Trichogramma . Most parasitized eggs turn black, but there may be a lag period before they do so. Releases of Trichogramma wasps may give mixed results. Generalist predators such as lacewings, minute pirate bugs, and damsel bugs feed on corn earworm eggs and small larvae.",
+    "chemical_commercial": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. thiamethoxam/chlorantraniliprole (Durivo) at 0.195 to 0.254 lb ai/A applied to the soil. PHI 30 days. REI 12 hr. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season.",
+      "alpha-cypermethrin (Fastac EC) at 0.014 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only.",
+      "benzoate (Proclaim) at 0.008 to 0.015 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.045 lb ai/A per season.",
+      "beta-cyfluthrin (Baythroid XL) at 0.013 to 0.022 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.132 lb ai/A per season.",
+      "beta-cyfluthrin or 0.24 lb ai/A imidacloprid per season. bifenthrin/zeta-cypermethrin (Hero EW) at 0.04 to 0.1 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.42 lb ai/A per season. Limit 4 treatments. Burkholderia spp. (Venerate XC) at 1 to 4 quarts/A product. PHI 0 days. REI 4 hr.",
+      "beta-cyfluthrin/imidacloprid (Leverage 360) at 0.089 to 0.096 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A",
+      "chlorantraniliprole (Coragen) at 0.045 to 0.098 lb ai/A as soil, chemigation or foliar treatment. PHI 1 day. REI 4 hr. Do not exceed 0.2 lb ai/A per season. Retreatment interval 5 days for foliar and 10 days for chemigation. chlorantraniliprole/lambda-cyhalothrin (Voliam Xpress) at 0.059 to 0.088 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed or 0.36 lb ai of",
+      "chlorfenapyr (Pylon) at 0.1 to 0.2 lb ai/A. PHI 0 days. REI 12 hr. Do not exceed 0.6 lb ai/A per season. Greenhouse only. Do not use on tomato varieties with a diameter of less than one inch when mature.",
+      "cyclaniliprole (Harvanta SL) at 0.036 to 0.054 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 5 days. Do not exceed 0.22 lb ai/A per year.",
+      "cyfluthrin (Tombstone) at 0.025 to 0.044 lb ai/A. PHI 0 days. Retreatment interval 7 days. REI 12 hr. Do not exceed 0.263 lb ai/A per season. cyfluthrin/imidacloprid (Leverage 360) at 0.059 to 0.064 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A cyfluthrin or 0.24 lb ai/A imidacloprid per year.",
+      "deltamethrin (Delta Gold) at 0.018 to 0.028 lb ai/A. PHI 1 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.168 lb ai/A per season. emamectin",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.5 lb ai/A per season.",
+      "fenpropathrin (Danitol 2.4EC) at 0.2 lb ai/A. PHI 3 days. REI 24 hr. Retreatment interval 7 days. Do not exceed 0.8 lb ai/A per season.",
+      "gamma-cyhalothrin (Declare) at 0.01 to 0.015 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.18 lb ai/A per season. HzNPV (Gemstar LC) polyhedral",
+      "indoxacarb (Avaunt) at 0.065 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.26 lb ai/A per season.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.36 lb ai/A per season.",
+      "lambda-cyhalothrin or 0.172 lb ai/A of thiamethoxam per season.",
+      "lambda-cyhalothrin or 0.2 lb ai of chlorantraniliprole per acre per growing season. Not registered in Oregon. chlorantraniliprole/thiamethoxam (Voliam Flexi) at 0.1 to 0.175 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season.",
+      "lambda-cyhalothrin/thiamethoxam (Endigo ZC) at 0.064 to 0.072 lb ai/A. PHI 5 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.36 lb ai/A of",
+      "methomyl (Lannate SP) at 0.45 to 0.9 lb ai/A. PHI 1 day. REI 48 hr. Do not exceed 6.3 lb ai/A per season.",
+      "novaluron (Rimon 0.83EC) at 0.058 to 0.078 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.23 lb ai/A per season.",
+      "permethrin (Loveland Permethrin) at 0.05 to 0.2 lb ai/A. PHI 0 days. Retreatment interval 7 days. REI 12 hr. Do not exceed 0.6 lb ai/A per season.",
+      "spinetoram (Radiant SC) at 0.039 to 0.078 lb ai/A. PHI 1 day. Retreatment interval 4 days. Do not exceed 0.266 lb ai/A per season. Limit 6 treatments per season.",
+      "spinosad (Success, Entrust SC) at 0.047 to 0.094 lb ai/A. PHI 1 day. REI 4 hr. Do not exceed 0.45 lb ai/A per crop. Entrust SC is",
+      "virus at 4 to 10 fl oz/A. PHI 0 days. REI 4 hr.",
+      "zeta-cypermethrin (Mustang) at 0.04 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A per season. These products contain commonly used active ingredients for control of tomato fruitworm in tomato. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Bacillus thuringiensis var.",
+      "OMRI-listed for organic use. bifenthrin (as a mix with",
+      "acetamiprid",
+      "azadirachtin (neem oil)-Some formulations are",
+      "gamma-cyhalothrin horticultural",
+      "kurstaki ( Btk ) - Some formulations are",
+      "lambda-cyhalothrin permethrin plant essential",
+      "oil-Some formulations are",
+      "oils (rosemary, etc.)-Some formulations are",
+      "pyrethrins-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin). carbaryl cyfluthrin deltamethrin esfenvalerate"
+    ],
+    "cultural": "Plow or dig up plants in the fall to prevent overwintering."
+  },
+  "damage_tags": [
+    "fruit_damage",
+    "leaf_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:37:55.606350+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.571019+00:00"
+}

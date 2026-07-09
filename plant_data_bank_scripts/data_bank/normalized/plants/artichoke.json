@@ -82,12 +82,6 @@
     "other_uses_notes": "Dye Agroforestry uses: They can be used as a hedge or border plant, and the dense foliage can provide a habitat for beneficial insects. The plant is said to yield a good yellow dye[4], though the report does not say which part of the plant is used. 1. Nectary - Flowers rich in nectar and pollen: Yes – Both Cardoon and Globe Artichoke produce large, vibrant flowers that are rich in nectar and pollen, attracting various pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The edible parts of these plants (flower buds, leaves, and stems) provide food for humans and some wildlife. The dense foliage can offer some shelter, but they are not typically used for nesting or roosting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The plants can create a habitat for invertebrates, particularly in leaf litter. Their growth habit can provide ground cover, offering some protection and habitat for various species. 4. Pest Confuser (Smell): No – There is no significant evidence that Cardoon or Globe Artichoke serves as a pest confuser through smell.",
     "edible_uses_notes": "Edible Parts: Flowers Leaves Root Stem Edible Uses: Curdling agent Flower buds - raw or cooked[33, 105]. A globe artichoke substitute[183]. The flower buds are a bit smaller than the globe artichoke and so are even more fiddly to use[K]. The buds are harvested just before the flowers open, they are then usually boiled before being eaten. Only the base of each bract is eaten, plus the 'heart' or base that the petals grow from [K]. The flavour is mild and pleasant and is felt by some people to be more delicate than the globe artichoke[K]. Stems - cooked and used as a celery substitute[2, 27, 33, 46, 61]. It is best to earth up the stems as they grow in order to blanch them and reduce their bitterness[4], these blanched stems can then be eaten cooked or in salads[105, 132, 183]. In Italy raw strips of the stems are dipped into olive oil[183]. We find these stems to be too bitter when eaten raw[K]. Young leaves - raw or cooked. Eaten as a salad by the ancient Romans[183]. Rather bitter[K]. Root - cooked like parsnips[27, 105, 183]. Tender, thick and fleshy, with an agreeable flavour[183]. The dried flowers are a rennet substitute, used for curdling plant milks[105, 183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -108,6 +102,22 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "botrytis_rot",
+      "gray_mold",
+      "powdery_mildew"
+    ],
+    "known_pest_ids": [
+      "aphid",
+      "artichoke_plume_moth",
+      "cutworm",
+      "painted_lady_or_thistle_butterfly",
+      "slug"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -245,7 +255,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

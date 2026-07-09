@@ -1,0 +1,124 @@
+{
+  "pest_atom": "european_earwig",
+  "name": "European earwig",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-European earwig",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-european-earwig",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "celery",
+    "lettuce"
+  ],
+  "includes_text": "",
+  "biology_life_history": "Earwigs overwinter just below the soil surface as both eggs and adults. In spring, females lay 20 to 50 smooth white to cream-color eggs in the soil. The young progress through partial metamorphosis to adults in 4 to 5 nymphal stages by late summer. In fall, females may lay more eggs. Earwigs are active at night. During the day, they hide in moist, shady places such as compost piles or beneath stones, boards, and debris. They sometimes can be found in homes, particularly in summer, but they do no damage to house or contents. They rarely fly but can move rapidly, or can be moved by lumber, cars, luggage, or other means. They are attracted to lights.",
+  "description_damage": "Earwigs are elongate, flattened, reddish brown insects about 0.75 inch in length. They are identified easily by the forcepslike pincers on the end of the abdomen. They have chewing mouthparts and may be winged or wingless. Young earwigs (nymphs) are similar in appearance but are white to olive green and lack wings. They are harmless to humans or animals, though they may give a slight pinch with their forceps. They can emit a foul-smelling liquid if alarmed. Earwigs feed primarily on decaying organic matter and are quite beneficial in that they also consume other small insects. However, they also like to chew small holes in the leaves and tender shoots of many garden flowers such as marigolds, hollyhocks, dahlias, zinnias, asters, and gladiolus. In vegetable gardens, they can be a problem on seedlings of lettuce, celery, cole crops, beets, corn, beans, carrots, and others.",
+  "monitoring": "If you are seeing damage to young shoots of vegetables or perennials, you can confirm the presence of earwigs in the garden by placing a sheet of corrugated cardboard, hollow bamboo cane, sections of old garden hose, or similar material that will provide shelter in the garden. Check the materials each morning for presence of the insects.",
+  "management": {
+    "biological": "Tachinid flies are predators of earwigs. They are dark brown with pinchers at the rear end. They often feed in blossoms.",
+    "chemical_commercial": [
+      "clothianidin (Belay) at 0.15 to 0.2 lb ai/A soil. PHI 21 days. REI 12 hr. One application as broadcast, narrow band,",
+      "in-furrow, as sidedress, seedling or transplant drench or through chemigation."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "azadirachtin (neem oil)-Some formulations are",
+      "bifenthrin-Not registered for home use on celery in WA. carbaryl cyfluthrin malathion permethrin",
+      "gamma-cyhalothrin insecticidal",
+      "lambda-cyhalothrin malathion permethrin plant essential",
+      "oils (rosemary, etc.)-Some formulations are",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "plant-derived essential",
+      "pyrethrins-Some formulations are",
+      "soap-Some formulations",
+      "spinosad-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin). carbaryl cyfluthrin"
+    ],
+    "cultural": "Cultivation of the soil in early spring in areas where earwigs are present will disturb nests and expose eggs to predators. Do not allow debris and decaying organic matter to accumulate in the garden. Starting vegetable gardens early will give young plants a chance to grow before nymphs become active. Homeowners: Earwigs can be trapped by using the monitoring techniques described above. Empty traps each morning into a pail of water topped with detergent. Earwigs are attracted strongly to fish oil and to some extent to vegetable oil. Insects can be trapped by filling shallow containers with the oil and burying it in soil up to its rim."
+  },
+  "damage_tags": [
+    "feeding_holes",
+    "leaf_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/435-45.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/435-45.jpg?itok=C0CJlK5L",
+      "caption": "European earwig Forficula auricularia Linnaeus Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/435-376.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/435-376.jpg?itok=Z0LnwAsk",
+      "caption": "European earwig Forficula auricularia Linnaeus Egg(s) immature female adult"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/g111-206.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/g111-206.jpg?itok=j5FLVoM_",
+      "caption": "European earwig Forficula auricularia Linnaeus Female adult"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/g313-04.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/g313-04.jpg?itok=P3MO5dft",
+      "caption": "European earwig Forficula auricularia Linnaeus Showing damage on leaves"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-european-earwig/earwigsanddamageonlettucethudson5151.jpeg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-european-earwig/earwigsanddamageonlettucethudson5151.jpeg?itok=0zZWbMuW",
+      "caption": "Earwigs feeding on lettuce at night"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.376551+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Celery",
+      "pest_name_on_page": "European earwig",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-european-earwig"
+    },
+    {
+      "crop_heading": "Lettuce",
+      "pest_name_on_page": "European earwig",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-european-earwig"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-european-earwig",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-european-earwig"
+  ],
+  "page_titles": [
+    "Celery-European earwig",
+    "Lettuce-European earwig"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.552708+00:00"
+}

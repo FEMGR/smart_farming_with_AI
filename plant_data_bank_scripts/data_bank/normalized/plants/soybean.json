@@ -80,12 +80,6 @@
     "other_uses_notes": "Biomass Green manure Oil Oil Paper The seed contains up to 20% of an edible semi-drying oil[171, 269]. It is non-drying according to another report[57]. This oil has a very wide range of applications and is commonly used in the chemical industry[171, 206]. The oil is used industrially in the manufacture of paints, linoleum, oilcloth, printing inks, soap, insecticides, and disinfectants[34, 46, 100, 269]. Lecithin phospholipids, obtained as a by-product of the oil industry, are used as a wetting and stabilizing agent in food, cosmetic, pharmaceutical, leather, paint, plastic, soap, and detergent industries[269]. Both the meal and the soy bean protein are used in the manufacture of synthetic fibre, adhesives, textile sizing, waterproofing, fire-fighting foam and many other uses[269]. The plant is sometimes grown as a green manure[269]. The straw can be used to make paper, stiffer than that made from wheat straw[269]. The plant is an excellent source of biomass. The oil from the seeds can be used as a diesel fuel whilst the stems can be burnt as a fuel[269].",
     "edible_uses_notes": "Edible Parts: Leaves Oil Oil Seed Seedpod Edible Uses: Coffee Milk Oil Oil Mature seed - cooked[2, 33]. The seeds furnish one of the world's most important sources of oil and protein, they can be eaten as they are in soups, stews etc[183, 269], though they are also very commonly used in the preparation of various meat substitutes[34, 46]. The dried seed can be ground into a flour and added to cereal flours or used for making noodles etc[183]. The Japanese make a powder from the roasted and ground seed, it is called 'Kinako' and has a nutty flavour and fragrance - it is used in many popular confections[183]. The sprouted seed is eaten raw or added to cooked dishes. The toasted seeds can be eaten as a peanut-like snack[183]. The seed is also made into numerous fermented foods such as miso and tempeh[183] and is also used to make soya milk, a valuable protein supplement in infant feeding which also provides curds and cheese[269]. The seed contains 20% oil and 30 - 45% protein[100]. All seeds on a soybean plant mature at essentially the same time. Maturity of the seed is accompanied by a rapid dropping of the leaves and drying of the stems[269]. Average yield of beans is about 1700 kg/ha[269]. High-yielding cvs, adapted to the locality and grown under proper culture and favourable conditions will yield more than twice the average yield[269]. The immature seed is cooked and used like peas or eaten raw in salads[105, 183]. The strongly roasted and ground seeds are used as a coffee substitute[183]. The young seedpods are cooked and used like French beans[116, 183]. An edible semi-drying oil is obtained from the seed[269]. It is cooked or can be used as a dressing in salads etc and for manufacture of margarine and shortening[34, 183, 269]. Young leaves - raw or cooked[179, 183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -112,6 +106,12 @@
     "pollinator_support": true,
     "pest_confuser": false,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -248,7 +248,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

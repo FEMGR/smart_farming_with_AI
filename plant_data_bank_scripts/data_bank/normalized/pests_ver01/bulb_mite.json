@@ -1,0 +1,63 @@
+{
+  "pest_atom": "bulb_mite",
+  "name": "Bulb mite",
+  "pest_type": "mite",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "garlic",
+    "onion"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Garlic",
+      "pest_name_on_page": "Bulb mite",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-bulb-mite"
+    },
+    {
+      "crop_heading": "Onion",
+      "pest_name_on_page": "Bulb mite",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-bulb-mite"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-bulb-mite",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-bulb-mite"
+  ],
+  "page_titles": [
+    "Garlic-Bulb mite",
+    "Onion-Bulb mite"
+  ],
+  "description_damage": "Shiny, cream-colored mites. Damage results from mites penetrating the outer layer of bulb tissue, which allows entry of disease organisms. Bulb mites can reduce garlic stands, stunt plant growth, and promote rot in stored garlic bulbs. Bulb mites are shiny, creamy white, bulbous, and about 0.03 inch in length. They are generally in clusters, in damaged areas under the root plate of onion bulbs or garlic cloves. They have a wide host range, feed on many kinds of bulbs, roots, and tubers, and can infest bulbs in storage or in the field. Bulb mites can survive on decaying vegetation in the field until it is completely decomposed. Bulb mites damage bulbs by penetrating the outer layer of tissue and allowing rot organisms to gain entry. This pest is most damaging when plant growth is slowed by mild, wet weather. Bulb mites can reduce plant stands, stunt plant growth, and promote rot of bulbs in storage. On seeded onions, they can cut off the radicle before the plant becomes established.",
+  "biology_life_history": "",
+  "monitoring": "No specific monitoring methods are available. Use a microscope to examine fragments of undecayed vegetation in the soil or volunteer onions or garlic for the presence of the mites. Treatments generally are preventive and should be considered for fields that are high in vegetative matter or that have had previous bulb mite problems. No treatment thresholds exist.",
+  "management": {
+    "biological": "",
+    "cultural": "Plant only mite-free garlic cloves. Crop rotation and hot water treatment of seed pieces also are useful. Rapid rotation, from one crop to the next, fosters survival of mites on the leftover vegetation in the soil from the previous crop. Decaying cole crops, especially cauliflower, may harbor very high bulb mite populations. Fallow fields to allow organic matter to decompose completely; this reduces field populations of the mite. Avoid planting successive onion or garlic crops. Flood irrigation or heavy rains during the winter may reduce mite levels in the soil. Garlic growers must insist on clean seed cloves. Hot water treatment of seed garlic before planting may reduce mite infestation. If onions are being grown from transplants, closely inspect transplants prior to planting as bulb mites can be brought in on transplants.",
+    "chemical_home": [
+      "None registered."
+    ],
+    "chemical_commercial": [
+      "chloropicrin (Telone)-Preplant. Note: Soil fumigation rarely is used prior to garlic due to the expense. Some growers plant garlic following a crop such as potatoes or carrots for which the soil was fumigated.",
+      "Soil fumigation can help to control this pest."
+    ]
+  },
+  "damage_tags": [
+    "root_damage"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:31:02.002179+00:00"
+}

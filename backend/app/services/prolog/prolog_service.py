@@ -3,10 +3,12 @@
 import subprocess
 from pathlib import Path
 from collections import defaultdict
+import re
 from typing import List, Dict, Any
 
 PROJECT_ROOT = Path(__file__).resolve().parents[4]
 PROLOG_PATH = PROJECT_ROOT / "logic_companion_planting" / "main.pl"
+PROLOG_ATOM_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 
 
 # ===============================
@@ -14,7 +16,7 @@ PROLOG_PATH = PROJECT_ROOT / "logic_companion_planting" / "main.pl"
 # ===============================
 
 
-def run_query(query: str) -> str:
+def run_query(query: str, log_stderr: bool = True) -> str:
     result = subprocess.run(
         ["swipl", "-s", str(PROLOG_PATH), "-g", query, "-t", "halt"],
         capture_output=True,
@@ -22,13 +24,166 @@ def run_query(query: str) -> str:
         cwd=PROLOG_PATH.parent,
     )
 
-    if result.stderr:
+    if result.stderr and log_stderr:
         print(f"[PROLOG STDERR] {result.stderr}")
 
     if result.returncode != 0:
         raise RuntimeError(result.stderr)
 
     return result.stdout.strip()
+
+
+def _require_atom(value: str) -> str:
+    if not PROLOG_ATOM_RE.match(value):
+        raise ValueError(f"Unsafe Prolog atom: {value!r}")
+    return value
+
+
+def _query_rows(goal: str, fields: List[str], columns: List[str]) -> List[Dict[str, Any]]:
+    writes = []
+    for index, field in enumerate(fields):
+        if index:
+            writes.append("write('\\t')")
+        writes.append(f"write({field})")
+    writes.append("nl")
+
+    query = "set_prolog_flag(argv,['--quiet']), " f"style_check(-discontiguous), load_all, forall(({goal}), ({', '.join(writes)})), halt"
+    output = run_query(query, log_stderr=False)
+    rows: List[Dict[str, Any]] = []
+
+    for line in output.splitlines():
+        parts = line.strip().split("\t")
+        if len(parts) != len(columns):
+            continue
+        rows.append(dict(zip(columns, parts)))
+
+    return rows
+
+
+def find_deterring_plants(pest: str) -> List[Dict[str, Any]]:
+    pest = _require_atom(pest)
+    return _query_rows(
+        f"deters(Plant, {pest}, Source, Confidence)",
+        ["Plant", "Source", "Confidence"],
+        ["plant", "source", "confidence"],
+    )
+
+
+def find_attacked_plants(pest: str) -> List[Dict[str, Any]]:
+    pest = _require_atom(pest)
+    return _query_rows(
+        f"attacks({pest}, Plant)",
+        ["Plant"],
+        ["plant"],
+    )
+
+
+def find_predators(pest: str | None = None) -> List[Dict[str, Any]]:
+    pest_atom = _require_atom(pest) if pest else "Pest"
+    return _query_rows(
+        f"eats(Predator, {pest_atom})",
+        ["Predator", pest_atom],
+        ["predator", "pest"],
+    )
+
+
+def find_damage_symptoms(pest: str) -> List[Dict[str, Any]]:
+    pest = _require_atom(pest)
+    return _query_rows(
+        f"damage_symptom({pest}, Symptom)",
+        ["Symptom"],
+        ["symptom"],
+    )
+
+
+def find_pest_sources(pest: str) -> List[Dict[str, Any]]:
+    pest = _require_atom(pest)
+    return _query_rows(
+        f"pest_source({pest}, Source)",
+        ["Source"],
+        ["source"],
+    )
+
+
+def find_preventative_plants(disease: str) -> List[Dict[str, Any]]:
+    disease = _require_atom(disease)
+    return _query_rows(
+        f"prevents(Plant, {disease}, Source, Confidence)",
+        ["Plant", "Source", "Confidence"],
+        ["plant", "source", "confidence"],
+    )
+
+
+def find_disease_symptoms(disease: str) -> List[Dict[str, Any]]:
+    disease = _require_atom(disease)
+    return _query_rows(
+        f"symptom({disease}, Symptom)",
+        ["Symptom"],
+        ["symptom"],
+    )
+
+
+def find_disease_treatments(disease: str) -> List[Dict[str, Any]]:
+    disease = _require_atom(disease)
+    return _query_rows(
+        f"treatment({disease}, Treatment, Confidence)",
+        ["Treatment", "Confidence"],
+        ["treatment", "confidence"],
+    )
+
+
+def find_disease_host_treatments(disease: str) -> List[Dict[str, Any]]:
+    disease = _require_atom(disease)
+    return _query_rows(
+        f"disease_host_treatment({disease}, Host, Treatment)",
+        ["Host", "Treatment"],
+        ["host", "treatment"],
+    )
+
+
+def find_beneficial_relations(plant: str | None = None) -> List[Dict[str, Any]]:
+    plant_atom = _require_atom(plant) if plant else "PlantA"
+    return _query_rows(
+        f"beneficial_relation({plant_atom}, PlantB, Source, Confidence)",
+        [plant_atom, "PlantB", "Source", "Confidence"],
+        ["plant", "companion", "source", "confidence"],
+    )
+
+
+def find_harmful_relations(plant: str | None = None) -> List[Dict[str, Any]]:
+    plant_atom = _require_atom(plant) if plant else "PlantA"
+    return _query_rows(
+        f"harmful_relation({plant_atom}, PlantB, Source, Confidence)",
+        [plant_atom, "PlantB", "Source", "Confidence"],
+        ["plant", "companion", "source", "confidence"],
+    )
+
+
+def find_pollinators(plant: str | None = None) -> List[Dict[str, Any]]:
+    plant_atom = _require_atom(plant) if plant else "Plant"
+    return _query_rows(
+        f"pollinates(Pollinator, {plant_atom})",
+        ["Pollinator", plant_atom],
+        ["pollinator", "plant"],
+    )
+
+
+def find_parasites(host: str | None = None) -> List[Dict[str, Any]]:
+    host_atom = _require_atom(host) if host else "Host"
+    return _query_rows(
+        f"parasitizes(Parasite, {host_atom})",
+        ["Parasite", host_atom],
+        ["parasite", "host"],
+    )
+
+
+def find_plants_attracting(beneficial: str | None = None) -> List[Dict[str, Any]]:
+    beneficial_atom = _require_atom(beneficial) if beneficial else "Beneficial"
+    return _query_rows(
+        f"attracts_beneficial(Plant, {beneficial_atom}, Source, Confidence)",
+        ["Plant", beneficial_atom, "Source", "Confidence"],
+        ["plant", "beneficial", "source", "confidence"],
+    )
 
 
 # ===============================
@@ -108,7 +263,7 @@ def parse_relationship_item(item: str, default_kind: str) -> Dict[str, Any]:
         cucumber-nasturtium
 
     Rich:
-        cucumber-nasturtium|pest_deterrence|Nasturtium helps deter pests|0.9|rhs
+        cucumber-nasturtium|pest_deterrence|Nasturtium helps deter pests_ver01|0.9|rhs
     """
 
     parts = [part.strip() for part in item.split("|")]

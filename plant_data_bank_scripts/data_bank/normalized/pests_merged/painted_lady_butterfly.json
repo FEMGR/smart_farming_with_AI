@@ -1,0 +1,67 @@
+{
+  "pest_atom": "painted_lady_butterfly",
+  "name": "Painted lady or thistle butterfly",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "artichoke"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Artichoke (globe artichoke)",
+      "pest_name_on_page": "Painted lady or thistle butterfly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-painted-lady-thistle-butterfly"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-painted-lady-thistle-butterfly"
+  ],
+  "page_titles": [
+    "Artichoke (globe artichoke)-Painted lady or thistle butterfly"
+  ],
+  "description_damage": "Painted ladies are orange-brown butterflies with a wingspan of up to 2.87 inches. Wings have a black apex patch and white bar on the leading edge. Caterpillars are spiny, dull brown to black, with a pale yellow stripe on each side. They feed mostly on thistle. It is only an occasional pest of artichokes.",
+  "biology_life_history": "Male butterflies perch and patrol during the afternoon for receptive females. They usually perch on shrubs on hilltops. Females lay eggs singly on the tops of host plant leaves. Caterpillars live in silk nests and eat leaves. Adults hibernate only in the South and in mild winters. There are one to three flights each year.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Bacillus",
+      "OMRI-listed for organic use.",
+      "bifenthrin (Brigade2EC, Sniper) at 0.033 to 0.1 lb ai/A. PHI 5 days. REI 12 hr. Do not exceed 0.5 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.15 lb ai/A between bud formation and harvest.",
+      "spreader-sticker to enhance control. Most effective on small larvae. Some formulations are",
+      "thuringiensis (Javelin WG, Xentari) at 0.5 to 1.5 lb/A formulated product. PHI 0 days. REI 4 hr. Slow acting. May need multiple applications. Add an appropriate",
+      "zeta-cypermethrin (Mustang Maxx) at 0.025 lb ai/A. PHI 5 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.1 lb ai/A per season."
+    ],
+    "chemical_home": [
+      "bifenthrin (as a mix with",
+      "zeta-cypermethrin)"
+    ],
+    "cultural": ""
+  },
+  "damage_tags": [
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:50.881396+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.564865+00:00"
+}

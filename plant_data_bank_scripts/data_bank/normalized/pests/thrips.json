@@ -1,0 +1,54 @@
+{
+  "pest_atom": "thrips",
+  "name": "Thrips",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Thrips",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-thrips",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": null,
+      "scientific_name": "Frankliniella williamsi",
+      "scientific_atom": "frankliniella_williamsi"
+    }
+  ],
+  "scientific_names": [
+    "Frankliniella williamsi"
+  ],
+  "primary_scientific_name": "Frankliniella williamsi",
+  "host_plants": [],
+  "includes_text": "Corn thrips ( Frankliniella williamsi )",
+  "biology_life_history": "",
+  "description_damage": "Thrips are small insects about 0.03 inch in length. Adult thrips have two pairs of narrow wings which are fringed with hairs. Immature thrips are wingless, whitish to yellowish in color, and are most commonly found in whorls, tassels, ears, or on the underside of leaves. Thrips are not generally considered a serious pest of sweet corn grown for processing. Thrips damage on corn seedlings causes stunting. If thrips infestations are severe during the establishment period (the first 3 to 4 weeks after planting), treatment may be justified. Thrips are known to vector a number of important plant viruses, including tomato spotted wilt virus and iris yellow spot virus. They are a serious pest of fresh market sweet corn, because they cause cosmetic damage to the ear including white or silver blotches. Foliage-feeding thrips are predators of spider mites and can help with early year control of spider mite populations. Thrips are the key pest of dry bulb onions, causing extensive stippling and yield reductions up to 35%.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "wilting",
+    "stunting",
+    "leaf_damage",
+    "feeding_damage",
+    "yellowing",
+    "virus_vector"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "includes"
+  ],
+  "images": [],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.150846+00:00"
+}

@@ -1,0 +1,194 @@
+{
+  "pest_atom": "lygus_bug",
+  "name": "Lygus bug",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Lygus bug",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-lygus-bug",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "bean",
+    "lentil",
+    "lima_bean",
+    "spinach"
+  ],
+  "includes_text": "",
+  "biology_life_history": "Lygus bugs overwinter in debris along field margins and roadsides. Adults become active in late May and early June and disperse into crops. Adults mate and females start laying eggs on plant stems. Eggs hatch in 1 to 3 weeks into nymphs. Nymphs feed on plant juices for 2 to 3 weeks before molting into the adult stage. There are usually three or four generations each year.",
+  "description_damage": "The lygus bug adult is about 0.25 inch in length and about half as wide. It is generally brownish with a prominent, V-shaped yellowish area near the center of the body, at the base of the wings. Eggs are bean-shaped, with the outer end blunt or squarely cut off. They are very difficult to spot. Nymphs are yellow-green at first but darken rapidly. They have four dots, often black, on the thorax, and one on the abdominal base. Antennae of the young are generally reddish. Lygus bugs cause different types of damage to different stages and different crops. They cause blackheart on celery, blasting on flower tissues, collapse of asparagus spears, decreased yields in seed production in carrot and cabbage, and damage to blossoms and pods on beans.",
+  "monitoring": "Sweep nets can be used to sample for lygus bugs. In the Pacific Northwest, a suggested treatment threshold is one-half adult or one-half for fourth or fifth instar nymph, per sweep. In California, for dry beans, treatment thresholds vary depending on the variety and the stage of the crop, from one-half to two lygus bugs per sweep. Sweep nets can be used to sample for lygus bugs. In the Pacific Northwest, a suggested treatment threshold is 0.5 adult or 0.5 fourth or fifth instar per sweep. In California, for dry beans, treatment thresholds vary depending on the variety and the stage of the crop, from 0.5 to 2 lygus bugs per sweep. Use sweep nets to sample for lygus bugs. In the Pacific Northwest, a suggested treatment threshold is one-half adult or one-half for fourth or fifth instar per sweep.. Sweep nets can be used to sample for lygus bugs. In the Pacific Northwest, a suggested treatment threshold is one-half adult or one-half fourth- or fifth-instar per sweep. In California, for dry beans, treatment thresholds vary depending on the variety and the stage of the crop, from one-half to two lygus bugs per sweep. In celery, treatment thresholds range from one-half to one insect per plant.",
+  "management": {
+    "biological": "Generalist predators, such as lacewings, big eyed bugs, and damsel bugs, may prey on lygus bug nymphs. Parasitic wasps may also prey on lygus such as Peristenus spp. Conserve populations of these biological control agents by minimizing applications of broad-spectrum insecticides. Generalist predators, such as lacewings and damsel bugs, may prey on lygus bug nymphs. Parasitic wasps may also prey on lygus such as Peristenus spp. Conserve populations of these biological control agents by minimizing applications of broad-spectrum insecticides. Generalist predators, such as lacewings and damsel bugs, may prey on lygus bug nymphs. Conserve populations of these biological control agents by minimizing applications of broad-spectrum insecticides.",
+    "chemical_commercial": [
+      "Apply at planting. Do not graze or feed to livestock. Toxic to fish and wildlife.",
+      "ID-860004.",
+      "ID-860016,",
+      "ID-900001,",
+      "ID-970008,",
+      "ID-970011,",
+      "ID-980008,",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. Not registered in Oregon. Chenopodium ambrosioides",
+      "Repeat every 3 to 10 days as needed.",
+      "Sulfoxaflor (Transform WG) at 1.5 to 2.25 oz/A. Do not exceed 8.5 oz/A. PHI 7 days. REI 24 hr. If blooming vegetation is present 12 ft out from the downwind edge of the field, a 12 foot",
+      "acephate (numerous products) at 0.5 to 1 lb ai/A. PHI 14 days. REI 24 hr. Do not feed treated vines. Do not exceed 2 lb ai/A per year.",
+      "alpha-cypermethrin (Fastac EC) at 0.02 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only.",
+      "ambrosioides (Requiem Prime) at 2 to 4 quarts product per acre. PHI 0 day. REI 4 hr. chlorantraniliprole/lambda-cyhalothrin (Besiege) at 0.06 to 0.1 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 5 days. Do not exceed a total of 31.0 fl oz of Besiege or 0.12 lb ai of",
+      "apply at 0.4% solution. Spray to complete coverage. REI 12 hr.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.1 lb ai/A per season.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.05 lb ai/A per season. Do not feed treated vines or hay to livestock.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.05 lb ai/A per season. Do not feed treated vines or hay to livestock. bifenthrin/imidacloprid (Brigadier) at 0.06 to 0.0875 lb ai/A. PHI 14 days. REI 12 hr. Do not exceed 0.13 lb ai/A imidacloprid and 0.13 lb ai/A bifenthrin. Retreatment interval 7 days. bifenthrin/zeta-cypermethrin (Hero EW) at 0.1 lb ai/A. PHI 21 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A per season. borate complex (Prev-Am Ultra)",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 7 days. Retreatment interval 14 days. Do not exceed 0.5 lb ai/A per season. Do not feed treated vines or hay to livestock. Toxic to bees, fish and aquatic invertebrates. Only registered for use in WA.",
+      "bifenthrin (Brigade WSB) at 0.08 to 0.1 lb ai/A. PHI 40 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.4 lb ai/A per season. bifenthrin/Avermectin (Athena) at 0.09 to 0.12 lb ai/A. PHI 40 days. REI 12 hr. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per year. Limit 2 treatments. bifenthrin/imidacloprid (Brigadier) at 0.06 to 0.096 lb ai/A. PHI 40 days. REI 12 hr. Do not exceed 0.24 lb ai/A imidacloprid and 0.24 lb ai/A bifenthrin per season. Retreatment interval 7 days.",
+      "bifenthrin (Sniper) at 0.08 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. Chenopodium",
+      "cyfluthrin (Tombstone) at 0.038 to 0.05 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.2 lb ai/A per season.",
+      "cyfluthrin (Tombstone) at 0.038 to 0.05 lb ai/A. PHI 7 days. Retreatment interval 14 days. REI 12 hr. Do not exceed 0.1 lb ai/A per season. Do not feed vines or hay.",
+      "dimethoate (Dimethoate 4E) at 0.5 lb ai/A. PHI 0 days. REI 48 hr. Retreatment interval 14 days. Do not exceed 1.0 lb/A per year. Do not feed treated vines.",
+      "dimethoate (Dimethoate 4E) at 0.5 lb ai/A. PHI 14 days. REI 48 hr. Do not feed or graze treated plants. Do not exceed 1 lb ai/A per season. Retreatment interval 7 days. Also available as SLN",
+      "dimethoate (numerous products) at 0.25 to 0.5 lb ai/A. PHI 0 days when harvested mechanically. REI 48 hr. Do not feed treated vines.",
+      "extract (Requiem Prime) at 2 to 4 pints formulated product per acre. REI 4 hr. Use high rate when conditions are favorable for heavy pressure.",
+      "flonicamid (Beleaf 50SG) at 0.089 lb ai/A. PHI 7 days. REI 12 hr. Limit 2 treatments. Do not exceed 0.089 lb/A per year. Isaria",
+      "fumosorosea (PFR-97 20%WDG) at 1 to 2 lb product per acre. PHI 0 days. REI 4 hr.",
+      "gamma-cyhalothrin (Declare) at 0.01 to 0.015 lb ai/A. PHI 21 days. REI 24 hr. Do not exceed 0.06 lb ai/A per season. Retreatment interval 5 days. Do not graze or harvest for feed. An oil or nonionic surfactant improves performance.",
+      "in-field down wind buffer must be observed.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 21 days. REI 24 hr. Do not graze or feed to livestock. Do not exceed 0.12 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air. Washington only.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 21 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.12 lb ai/A per season. Do not graze or harvest for feed.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 7 days for green beans, 21 days for dry beans. REI 24 hr. Do not feed or graze livestock. Do not exceed 0.12 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.12 lb ai/A per year. Do not graze livestock in treated areas or harvest vines for forage or hay.",
+      "lambda-cyhalothrin or 0.2 lb ai of chlorantraniliprole per acre per growing season. Do not graze livestock or harvest vines for forage or hay.",
+      "malathion (numerous products) at 1.25 lb ai/A. PHI 1 day. REI 12 hr. Do not graze or feed foliage to livestock.",
+      "malathion (numerous products) at 1.5 lb ai/A. PHI 1 day. REI 12 hr. Do not graze or feed foliage to livestock.",
+      "methomyl (Lannate LV) at 0.45 to 0.9 lb ai/A. PHI 1 to 3 days for succulent beans, 14 days for dry beans, 3 days for feeding vines, 7 days for hay. REI 48 hr. Do not exceed 4.5 lb ai/A per year.",
+      "methomyl (Lannate LV) at 0.45 to 0.9 lb ai/A. PHI 14 days for harvest, feeding vines, and hay. REI 48 hr. Do not exceed 4.5 lb ai/A per year.",
+      "methomyl (Lannate SP) at 0.45 to 0.9 lb ai/A. PHI 1 to 3 days for beans, 3 days for feeding vines, 7 days for hay. REI 48 hr. Do not exceed 4.5 lb ai/A per year.",
+      "naled (Dibrom 8) at 0.94 lb ai/A. PHI 1 day. REI 24 hr. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "naled (Dibrom 8) at 0.94 lb ai/A. PHI 1 day. REI 48 hr. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "naled (Dibrom8) at 0.94 lb ai/A. PHI 1 day. REI 48 hr. Retreatment interval 7 days. Do not exceed 5 treatments per season.",
+      "novaluron (Rimon .83 EC) at 12 fl oz/A. Do not apply more than 36 fl oz/A per season. PHI 24 hr. REI 12 hr.",
+      "novaluron (Rimon 0.83EC) at 0.078 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Wait until lygus appear. Do not exceed 0.23 lb ai/A per season.",
+      "phorate (Thimet 20-G)-Do not exceed 1.5 lb ai/A. PHI 60 days. REI 48 hr, or 72 hr if annual rainfall is less than 25 inches.",
+      "phorate (Thimet 20G)-Do not exceed 1.5 lb ai/A. PHI 60 days. REI 48 to 72 hr. At planting time only. Do not graze or feed to livestock. Toxic to fish and wildlife.",
+      "phorate (Thimet) at 0.0563 to 0.0875 lb ai/1,000 ft",
+      "row at planting; at no more than 1.5 lb ai/A. PHI 60 days. REI 48 hr, or 72 hr if annual rainfall is less than 25 inches. At planting time only. Do not graze or feed to livestock. Toxic to fish and wildlife.",
+      "sufloxaflor (Transform WG) at 0.75 to 1.0 oz/A. Do not exceed 8.5 oz/A. PHI 7 days. REI 24 hr. If blooming vegetation is present 12 out from the downwind edge of the field, a 12 foot",
+      "sulfoxaflor (Transform WG) at 0.047 to 0.071 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 14 days. Do not exceed two consecutive applications per crop. Do not exceed 0.266 lb ai/A per year.",
+      "zeta-cypermethrin (Mustang) at 0.04 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A per season. These products contain commonly used active ingredients for control of lygus bug in spinach. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "Follow information given on the label about the timing and cutoff date for the particular vegetable you are spraying.",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "OMRI-listed for organic use. bifenthrin (usually combined with zetacyermethrin) carbaryl plant essential",
+      "OMRI-listed for organic use. carbaryl",
+      "OMRI-listed for organic use. carbaryl cyfluthrin malathion permethrin plant essential",
+      "OMRI-listed for organic use. carbaryl esfenvalerate malathion plant essential",
+      "azadirachtin (combined with pyrethrins)-Some formulations are",
+      "azadirachtin (neem oil)-Some formulations are",
+      "gamma-cyhalothrin malathion plant essential",
+      "oils (garlic, rosemary, etc.)-Some have demonstrated efficacy. Some formulations are",
+      "oils (rosemary, etc.)- Some formulations are",
+      "oils (rosemary, etc.)-Some formulations are",
+      "oils (rosemary, etc.)-Some have demonstrated efficacy. Some formulations are",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "plant-derived essential",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "pyrethrins-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin) carbaryl esfenvalerate"
+    ],
+    "cultural": "Lygus are likely to move when food sources become unsuitable. Common weeds that are good hosts of lygus bugs include pigweed, mustards, and wild radish. Mowed alfalfa fields nearby are commonly a source of large numbers of lygus bug adults moving into susceptible crops. There are a number of practices to reduce or control the movement of adults from alfalfa into nearby bean fields. These techniques leave uncut, tall alfalfa (attractive to lygus bug adults) within or near the cut area to serve as refugia for the insects. Lygus bugs are likely to move when other food sources become unsuitable. Common weeds that are good hosts of lygus bugs include pigweed and wild radish. Mowed alfalfa fields nearby are commonly a source of large numbers of lygus bug adults. There are a number of practices to reduce or control the movement of adults from alfalfa into nearby bean fields. These techniques leave uncut, tall alfalfa (attractive to lygus bug adults) within or near the cut area. Lygus are likely to move when other food sources become unsuitable. Common weeds that are good hosts of lygus bugs include pigweed and wild radish. Mowed alfalfa fields nearby are commonly a source of large numbers of lygus bug adults. There are a number of practices to reduce or control the movement of adults from alfalfa into nearby bean fields. These techniques leave uncut, tall alfalfa (which is attractive to lygus bug adults) within or near the cut area. Lygus bugs are likely to move when other food sources become unsuitable. Common weeds that are good hosts of lygus bugs include pigweed and wild radish. Mowed alfalfa fields nearby are commonly a source of large numbers of lygus bug adults. A number of practices can reduce or control the movement of adults from alfalfa into nearby bean fields. These techniques leave uncut, tall alfalfa (which is attractive to lygus bug adults) within or near the cut area."
+  },
+  "damage_tags": [
+    "leaf_mining",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-lygus-bug/g249-3110.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-lygus-bug/g249-3110.jpg?itok=hNyIrkOJ",
+      "caption": "\"Lygus\" bug Lygus unknown Immature molting on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-lygus-bug/g281-1910.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-lygus-bug/g281-1910.jpg?itok=M1bhjifp",
+      "caption": "\"lygus\" bug Lygus unknown Egg(s)"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-lygus-bug/348-30.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-lygus-bug/348-30.jpg?itok=EI3gYoGf",
+      "caption": "\"lygus\" bug Lygus unknown Adult"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.844272+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Bean, dry",
+      "pest_name_on_page": "Lygus bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-lygus-bug"
+    },
+    {
+      "crop_heading": "Bean, lima",
+      "pest_name_on_page": "Lygus bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-lygus-bug"
+    },
+    {
+      "crop_heading": "Bean, snap",
+      "pest_name_on_page": "Lygus bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-lygus-bug"
+    },
+    {
+      "crop_heading": "Lentil",
+      "pest_name_on_page": "Lygus bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-lygus-bug"
+    },
+    {
+      "crop_heading": "Spinach",
+      "pest_name_on_page": "Lygus bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-lygus-bug"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-lygus-bug",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-lygus-bug",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-lygus-bug",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-lygus-bug",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-lygus-bug"
+  ],
+  "page_titles": [
+    "Bean, dry-Lygus bug",
+    "Bean, lima-Lygus bug",
+    "Bean, snap-Lygus bug",
+    "Lentil-Lygus bug",
+    "Spinach-Lygus bug"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.564430+00:00"
+}

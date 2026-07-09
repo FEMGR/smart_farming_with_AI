@@ -1,0 +1,5402 @@
+[
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Artichoke (globe artichoke)",
+    "raw_host_terms": [
+      "Artichoke (globe artichoke)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.651018+00:00"
+  },
+  {
+    "pest_id": "artichoke_plume_moth",
+    "display_name": "Artichoke plume moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Artichoke (globe artichoke)",
+    "raw_host_terms": [
+      "Artichoke (globe artichoke)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-artichoke-plume-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.651085+00:00"
+  },
+  {
+    "pest_id": "cutworm",
+    "display_name": "Cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Artichoke (globe artichoke)",
+    "raw_host_terms": [
+      "Artichoke (globe artichoke)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.651095+00:00"
+  },
+  {
+    "pest_id": "painted_lady_or_thistle_butterfly",
+    "display_name": "Painted lady or thistle butterfly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Artichoke (globe artichoke)",
+    "raw_host_terms": [
+      "Artichoke (globe artichoke)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-painted-lady-thistle-butterfly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.651105+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Artichoke (globe artichoke)",
+    "raw_host_terms": [
+      "Artichoke (globe artichoke)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/artichoke-globe-artichoke-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.651116+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Asparagus",
+    "raw_host_terms": [
+      "Asparagus"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.652069+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Asparagus",
+    "raw_host_terms": [
+      "Asparagus"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.652100+00:00"
+  },
+  {
+    "pest_id": "asparagus_beetle",
+    "display_name": "Asparagus beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Asparagus",
+    "raw_host_terms": [
+      "Asparagus"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-asparagus-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.652108+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Asparagus",
+    "raw_host_terms": [
+      "Asparagus"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.652124+00:00"
+  },
+  {
+    "pest_id": "spotted_asparagus_beetle",
+    "display_name": "Spotted asparagus beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Asparagus",
+    "raw_host_terms": [
+      "Asparagus"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-spotted-asparagus-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.652135+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Asparagus",
+    "raw_host_terms": [
+      "Asparagus"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.652160+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653700+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653722+00:00"
+  },
+  {
+    "pest_id": "corn_earworm",
+    "display_name": "Corn earworm",
+    "pest_type": null,
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-corn-earworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653735+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653743+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653752+00:00"
+  },
+  {
+    "pest_id": "lygus_bug",
+    "display_name": "Lygus bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-lygus-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653759+00:00"
+  },
+  {
+    "pest_id": "mexican_bean_beetle",
+    "display_name": "Mexican bean beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-mexican-bean-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653767+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653776+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653785+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653794+00:00"
+  },
+  {
+    "pest_id": "western_bean_cutworm",
+    "display_name": "Western bean cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-western-bean-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653802+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, dry",
+    "raw_host_terms": [
+      "Bean",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-dry-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.653811+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655000+00:00"
+  },
+  {
+    "pest_id": "corn_earworm",
+    "display_name": "Corn earworm",
+    "pest_type": null,
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-corn-earworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655018+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655049+00:00"
+  },
+  {
+    "pest_id": "leafhopper",
+    "display_name": "Leafhopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-leafhopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655058+00:00"
+  },
+  {
+    "pest_id": "lima_bean_pod_borer",
+    "display_name": "Lima bean pod borer",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-lima-bean-pod-borer",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655066+00:00"
+  },
+  {
+    "pest_id": "lygus_bug",
+    "display_name": "Lygus bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-lygus-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655073+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655082+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655091+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655100+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "lima"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, lima",
+    "raw_host_terms": [
+      "Bean",
+      "lima"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.655110+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656537+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656550+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656557+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656568+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656579+00:00"
+  },
+  {
+    "pest_id": "lygus_bug",
+    "display_name": "Lygus bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-lygus-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656587+00:00"
+  },
+  {
+    "pest_id": "nitidulid_beetle",
+    "display_name": "Nitidulid beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-nitidulid-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656594+00:00"
+  },
+  {
+    "pest_id": "pea_leaf_weevil",
+    "display_name": "Pea leaf weevil",
+    "pest_type": null,
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-pea-leaf-weevil",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656604+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656613+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656621+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656631+00:00"
+  },
+  {
+    "pest_id": "stink_bug_and_plant_bug",
+    "display_name": "Stink bug and plant bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-stink-bug-plant-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656639+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "bean",
+      "snap"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Bean, snap",
+    "raw_host_terms": [
+      "Bean",
+      "snap"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.656648+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657791+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657803+00:00"
+  },
+  {
+    "pest_id": "blister_beetle",
+    "display_name": "Blister beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-blister-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657811+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657818+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657825+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657836+00:00"
+  },
+  {
+    "pest_id": "leafminer",
+    "display_name": "Leafminer",
+    "pest_type": "insect",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-leafminer",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657844+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657854+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657862+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "beet",
+      "table"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Beet, table",
+    "raw_host_terms": [
+      "Beet",
+      "table"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.657871+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659427+00:00"
+  },
+  {
+    "pest_id": "armyworm",
+    "display_name": "Armyworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-armyworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659442+00:00"
+  },
+  {
+    "pest_id": "cabbage_maggot",
+    "display_name": "Cabbage maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-cabbage-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659453+00:00"
+  },
+  {
+    "pest_id": "cutworm",
+    "display_name": "Cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659460+00:00"
+  },
+  {
+    "pest_id": "diamondback_moth",
+    "display_name": "Diamondback moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-diamondback-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659470+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659477+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659487+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659495+00:00"
+  },
+  {
+    "pest_id": "imported_cabbageworm",
+    "display_name": "Imported cabbageworm",
+    "pest_type": null,
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-imported-cabbageworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659506+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659515+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659524+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659534+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "broccoli",
+      "brussels_sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Broccoli, Brussels sprout, cabbage, cauliflower",
+    "raw_host_terms": [
+      "Broccoli",
+      "Brussels sprout",
+      "cabbage",
+      "cauliflower"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.659542+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Carrot",
+    "raw_host_terms": [
+      "Carrot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.660629+00:00"
+  },
+  {
+    "pest_id": "carrot_rust_fly",
+    "display_name": "Carrot rust fly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Carrot",
+    "raw_host_terms": [
+      "Carrot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-carrot-rust-fly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.660644+00:00"
+  },
+  {
+    "pest_id": "cutworm_and_armyworm",
+    "display_name": "Cutworm and armyworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Carrot",
+    "raw_host_terms": [
+      "Carrot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-cutworm-armyworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.660651+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Carrot",
+    "raw_host_terms": [
+      "Carrot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.660662+00:00"
+  },
+  {
+    "pest_id": "sixspotted_leafhopper",
+    "display_name": "Sixspotted leafhopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Carrot",
+    "raw_host_terms": [
+      "Carrot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-sixspotted-leafhopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.660671+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Carrot",
+    "raw_host_terms": [
+      "Carrot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.660679+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Carrot",
+    "raw_host_terms": [
+      "Carrot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.660688+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "celery"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Celery",
+    "raw_host_terms": [
+      "Celery"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.661362+00:00"
+  },
+  {
+    "pest_id": "carrot_rust_fly",
+    "display_name": "Carrot rust fly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "celery"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Celery",
+    "raw_host_terms": [
+      "Celery"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-carrot-rust-fly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.661376+00:00"
+  },
+  {
+    "pest_id": "european_earwig",
+    "display_name": "European earwig",
+    "pest_type": "insect",
+    "plants_affected": [
+      "celery"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Celery",
+    "raw_host_terms": [
+      "Celery"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-european-earwig",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.661387+00:00"
+  },
+  {
+    "pest_id": "lepidoptera_larvae",
+    "display_name": "Lepidoptera larvae",
+    "pest_type": null,
+    "plants_affected": [
+      "celery"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Celery",
+    "raw_host_terms": [
+      "Celery"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-lepidoptera-larvae",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.661398+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "celery"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Celery",
+    "raw_host_terms": [
+      "Celery"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.661407+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "chard",
+      "swiss"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Chard, Swiss",
+    "raw_host_terms": [
+      "Chard",
+      "Swiss"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.662274+00:00"
+  },
+  {
+    "pest_id": "armyworm_cutworm_and_looper",
+    "display_name": "Armyworm, cutworm, and looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "chard",
+      "swiss"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Chard, Swiss",
+    "raw_host_terms": [
+      "Chard",
+      "Swiss"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-armyworm-cutworm-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.662287+00:00"
+  },
+  {
+    "pest_id": "blister_beetle",
+    "display_name": "Blister beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "chard",
+      "swiss"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Chard, Swiss",
+    "raw_host_terms": [
+      "Chard",
+      "Swiss"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-blister-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.662295+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "chard",
+      "swiss"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Chard, Swiss",
+    "raw_host_terms": [
+      "Chard",
+      "Swiss"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.662302+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "chard",
+      "swiss"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Chard, Swiss",
+    "raw_host_terms": [
+      "Chard",
+      "Swiss"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.662309+00:00"
+  },
+  {
+    "pest_id": "leafminer",
+    "display_name": "Leafminer",
+    "pest_type": "insect",
+    "plants_affected": [
+      "chard",
+      "swiss"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Chard, Swiss",
+    "raw_host_terms": [
+      "Chard",
+      "Swiss"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-leafminer",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.662318+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "chard",
+      "swiss"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Chard, Swiss",
+    "raw_host_terms": [
+      "Chard",
+      "Swiss"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/chard-swiss-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.662327+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663303+00:00"
+  },
+  {
+    "pest_id": "armyworm_cutworm_and_looper",
+    "display_name": "Armyworm, cutworm, and looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-armyworm-cutworm-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663315+00:00"
+  },
+  {
+    "pest_id": "cabbage_maggot",
+    "display_name": "Cabbage maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-cabbage-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663326+00:00"
+  },
+  {
+    "pest_id": "diamondback_moth",
+    "display_name": "Diamondback moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-diamondback-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663335+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663342+00:00"
+  },
+  {
+    "pest_id": "imported_cabbageworm",
+    "display_name": "Imported cabbageworm",
+    "pest_type": null,
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-imported-cabbageworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663353+00:00"
+  },
+  {
+    "pest_id": "leafminer",
+    "display_name": "Leafminer",
+    "pest_type": "insect",
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-leafminer",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663362+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "collard",
+      "kale"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Collard and kale",
+    "raw_host_terms": [
+      "Collard",
+      "kale"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/collard-kale-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.663370+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664867+00:00"
+  },
+  {
+    "pest_id": "armyworm",
+    "display_name": "Armyworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-armyworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664880+00:00"
+  },
+  {
+    "pest_id": "corn_earworm",
+    "display_name": "Corn earworm",
+    "pest_type": null,
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-corn-earworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664892+00:00"
+  },
+  {
+    "pest_id": "corn_rootworm",
+    "display_name": "Corn rootworm (adult)",
+    "pest_type": null,
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-corn-rootworm-adult",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664903+00:00"
+  },
+  {
+    "pest_id": "corn_rootworm",
+    "display_name": "Corn rootworm (larvae)",
+    "pest_type": null,
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-corn-rootworm-larvae",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664912+00:00"
+  },
+  {
+    "pest_id": "cutworm",
+    "display_name": "Cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664920+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664929+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664938+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664946+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664955+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664964+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664973+00:00"
+  },
+  {
+    "pest_id": "western_bean_cutworm",
+    "display_name": "Western bean cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-western-bean-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664981+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "corn",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Corn, sweet",
+    "raw_host_terms": [
+      "Corn",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.664990+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666306+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666325+00:00"
+  },
+  {
+    "pest_id": "cutworm",
+    "display_name": "Cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666334+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666345+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666353+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666361+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666370+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666379+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666388+00:00"
+  },
+  {
+    "pest_id": "squash_bug",
+    "display_name": "Squash bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-squash-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666395+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666404+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Cucumber",
+    "raw_host_terms": [
+      "Cucumber"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666412+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "dill"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Dill",
+    "raw_host_terms": [
+      "Dill"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/dill-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.666808+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Eggplant",
+    "raw_host_terms": [
+      "Eggplant"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.667632+00:00"
+  },
+  {
+    "pest_id": "colorado_potato_beetle",
+    "display_name": "Colorado potato beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Eggplant",
+    "raw_host_terms": [
+      "Eggplant"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-colorado-potato-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.667648+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Eggplant",
+    "raw_host_terms": [
+      "Eggplant"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.667656+00:00"
+  },
+  {
+    "pest_id": "four_spotted_spider_mite",
+    "display_name": "Four-spotted Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Eggplant",
+    "raw_host_terms": [
+      "Eggplant"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-four-spotted-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.667666+00:00"
+  },
+  {
+    "pest_id": "whitefly",
+    "display_name": "Whitefly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Eggplant",
+    "raw_host_terms": [
+      "Eggplant"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-whitefly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.667675+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Eggplant",
+    "raw_host_terms": [
+      "Eggplant"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.667684+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "endive"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Endive (Escarole)",
+    "raw_host_terms": [
+      "Endive (Escarole)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.668296+00:00"
+  },
+  {
+    "pest_id": "beet_armyworm",
+    "display_name": "Beet armyworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "endive"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Endive (Escarole)",
+    "raw_host_terms": [
+      "Endive (Escarole)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-beet-armyworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.668311+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "endive"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Endive (Escarole)",
+    "raw_host_terms": [
+      "Endive (Escarole)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.668322+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "endive"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Endive (Escarole)",
+    "raw_host_terms": [
+      "Endive (Escarole)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/endive-escarole-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.668332+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "garlic"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Garlic",
+    "raw_host_terms": [
+      "Garlic"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669070+00:00"
+  },
+  {
+    "pest_id": "bulb_mite",
+    "display_name": "Bulb mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "garlic"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Garlic",
+    "raw_host_terms": [
+      "Garlic"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-bulb-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669089+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "garlic"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Garlic",
+    "raw_host_terms": [
+      "Garlic"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669101+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "garlic"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Garlic",
+    "raw_host_terms": [
+      "Garlic"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669110+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "garlic"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Garlic",
+    "raw_host_terms": [
+      "Garlic"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669118+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "horseradish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Horseradish",
+    "raw_host_terms": [
+      "Horseradish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669896+00:00"
+  },
+  {
+    "pest_id": "cabbage_flea_beetle",
+    "display_name": "Cabbage flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "horseradish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Horseradish",
+    "raw_host_terms": [
+      "Horseradish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-cabbage-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669909+00:00"
+  },
+  {
+    "pest_id": "cutworm",
+    "display_name": "Cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "horseradish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Horseradish",
+    "raw_host_terms": [
+      "Horseradish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669918+00:00"
+  },
+  {
+    "pest_id": "diamondback_moth",
+    "display_name": "Diamondback moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "horseradish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Horseradish",
+    "raw_host_terms": [
+      "Horseradish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-diamondback-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669927+00:00"
+  },
+  {
+    "pest_id": "imported_cabbageworm",
+    "display_name": "Imported cabbageworm",
+    "pest_type": null,
+    "plants_affected": [
+      "horseradish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Horseradish",
+    "raw_host_terms": [
+      "Horseradish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-imported-cabbageworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669938+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "horseradish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Horseradish",
+    "raw_host_terms": [
+      "Horseradish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.669947+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.670950+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_looper",
+    "display_name": "Armyworm and looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-armyworm-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.670963+00:00"
+  },
+  {
+    "pest_id": "cabbage_maggot",
+    "display_name": "Cabbage maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-cabbage-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.670973+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.670980+00:00"
+  },
+  {
+    "pest_id": "cutworm",
+    "display_name": "Cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.670988+00:00"
+  },
+  {
+    "pest_id": "diamondback_moth",
+    "display_name": "Diamondback moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-diamondback-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.670998+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671008+00:00"
+  },
+  {
+    "pest_id": "imported_cabbageworm",
+    "display_name": "Imported cabbageworm",
+    "pest_type": null,
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-imported-cabbageworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671017+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "kohlrabi"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Kohlrabi",
+    "raw_host_terms": [
+      "Kohlrabi"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/kohlrabi-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671040+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "leek",
+      "shallot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Leek and shallot",
+    "raw_host_terms": [
+      "Leek",
+      "shallot"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/leek-shallot-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671390+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lentil"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lentil",
+    "raw_host_terms": [
+      "Lentil"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671945+00:00"
+  },
+  {
+    "pest_id": "lygus_bug",
+    "display_name": "Lygus bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lentil"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lentil",
+    "raw_host_terms": [
+      "Lentil"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-lygus-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671957+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lentil"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lentil",
+    "raw_host_terms": [
+      "Lentil"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671966+00:00"
+  },
+  {
+    "pest_id": "western_yellowstriped_armyworm",
+    "display_name": "Western yellowstriped armyworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lentil"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lentil",
+    "raw_host_terms": [
+      "Lentil"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lentil-western-yellowstriped-armyworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.671973+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672858+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672870+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672877+00:00"
+  },
+  {
+    "pest_id": "european_earwig",
+    "display_name": "European earwig",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-european-earwig",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672886+00:00"
+  },
+  {
+    "pest_id": "lettuce_root_aphid",
+    "display_name": "Lettuce root aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-lettuce-root-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672892+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672901+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672910+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Lettuce",
+    "raw_host_terms": [
+      "Lettuce"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.672918+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.673950+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.673963+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.673971+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.673980+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.673988+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.673997+00:00"
+  },
+  {
+    "pest_id": "squash_bug",
+    "display_name": "Squash bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-squash-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.674005+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "melon_cantaloupe",
+      "melon",
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Melon (Cantaloupe, muskmelon, and watermelon)",
+    "raw_host_terms": [
+      "Melon (Cantaloupe",
+      "muskmelon",
+      "watermelon)"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/melon-cantaloupe-muskmelon-watermelon-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.674015+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675575+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_looper",
+    "display_name": "Armyworm and looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-armyworm-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675589+00:00"
+  },
+  {
+    "pest_id": "cabbage_maggot",
+    "display_name": "Cabbage maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-cabbage-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675599+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675612+00:00"
+  },
+  {
+    "pest_id": "cutworm",
+    "display_name": "Cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675621+00:00"
+  },
+  {
+    "pest_id": "diamondback_moth",
+    "display_name": "Diamondback moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-diamondback-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675629+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675636+00:00"
+  },
+  {
+    "pest_id": "imported_cabbageworm",
+    "display_name": "Imported cabbageworm",
+    "pest_type": null,
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-imported-cabbageworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675646+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "mustard_green"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Mustard greens",
+    "raw_host_terms": [
+      "Mustard greens"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/mustard-greens-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.675655+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "onion"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Onion",
+    "raw_host_terms": [
+      "Onion"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.676490+00:00"
+  },
+  {
+    "pest_id": "brown_wheat_mite",
+    "display_name": "Brown wheat mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "onion"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Onion",
+    "raw_host_terms": [
+      "Onion"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-brown-wheat-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.676505+00:00"
+  },
+  {
+    "pest_id": "bulb_mite",
+    "display_name": "Bulb mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "onion"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Onion",
+    "raw_host_terms": [
+      "Onion"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-bulb-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.676514+00:00"
+  },
+  {
+    "pest_id": "leafminer",
+    "display_name": "Leafminer",
+    "pest_type": "insect",
+    "plants_affected": [
+      "onion"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Onion",
+    "raw_host_terms": [
+      "Onion"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-leafminer",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.676523+00:00"
+  },
+  {
+    "pest_id": "onion_maggot_and_seedcorn_maggot",
+    "display_name": "Onion maggot and seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "onion"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Onion",
+    "raw_host_terms": [
+      "Onion"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-onion-maggot-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.676533+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "onion"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Onion",
+    "raw_host_terms": [
+      "Onion"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.676542+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "onion"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Onion",
+    "raw_host_terms": [
+      "Onion"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.676550+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "parsley"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Parsley",
+    "raw_host_terms": [
+      "Parsley"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsley-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.677196+00:00"
+  },
+  {
+    "pest_id": "armyworm_cutworm_and_looper",
+    "display_name": "Armyworm, cutworm, and looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "parsley"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Parsley",
+    "raw_host_terms": [
+      "Parsley"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsley-armyworm-cutworm-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.677208+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "parsnip"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Parsnip",
+    "raw_host_terms": [
+      "Parsnip"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.677833+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "parsnip"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Parsnip",
+    "raw_host_terms": [
+      "Parsnip"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.677844+00:00"
+  },
+  {
+    "pest_id": "carrot_rust_fly",
+    "display_name": "Carrot rust fly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "parsnip"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Parsnip",
+    "raw_host_terms": [
+      "Parsnip"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-carrot-rust-fly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.677853+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "parsnip"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Parsnip",
+    "raw_host_terms": [
+      "Parsnip"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.677860+00:00"
+  },
+  {
+    "pest_id": "leafhopper",
+    "display_name": "Leafhopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "parsnip"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Parsnip",
+    "raw_host_terms": [
+      "Parsnip"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-leafhopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.677868+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679128+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679145+00:00"
+  },
+  {
+    "pest_id": "grasshopper",
+    "display_name": "Grasshopper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-grasshopper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679159+00:00"
+  },
+  {
+    "pest_id": "leafminer",
+    "display_name": "Leafminer",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-leafminer",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679172+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679184+00:00"
+  },
+  {
+    "pest_id": "pea_leaf_weevil",
+    "display_name": "Pea leaf weevil",
+    "pest_type": null,
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-leaf-weevil",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679199+00:00"
+  },
+  {
+    "pest_id": "pea_moth",
+    "display_name": "Pea moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679211+00:00"
+  },
+  {
+    "pest_id": "pea_weevil",
+    "display_name": "Pea weevil",
+    "pest_type": null,
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-weevil",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679223+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679234+00:00"
+  },
+  {
+    "pest_id": "thrips",
+    "display_name": "Thrips",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-thrips",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679245+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pea",
+      "green",
+      "dry"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pea, green and dry",
+    "raw_host_terms": [
+      "Pea",
+      "green",
+      "dry"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.679256+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pepper",
+    "raw_host_terms": [
+      "Pepper"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.680248+00:00"
+  },
+  {
+    "pest_id": "armyworm_cutworm_and_looper",
+    "display_name": "Armyworm, cutworm, and looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pepper",
+    "raw_host_terms": [
+      "Pepper"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-armyworm-cutworm-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.680263+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pepper",
+    "raw_host_terms": [
+      "Pepper"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.680271+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pepper",
+    "raw_host_terms": [
+      "Pepper"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.680282+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pepper",
+    "raw_host_terms": [
+      "Pepper"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.680291+00:00"
+  },
+  {
+    "pest_id": "whitefly",
+    "display_name": "Whitefly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pepper",
+    "raw_host_terms": [
+      "Pepper"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-whitefly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.680299+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pepper",
+    "raw_host_terms": [
+      "Pepper"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.680307+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "potato",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Potato, sweet",
+    "raw_host_terms": [
+      "Potato",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/potato-sweet-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.681063+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "potato",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Potato, sweet",
+    "raw_host_terms": [
+      "Potato",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/potato-sweet-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.681079+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "potato",
+      "sweet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Potato, sweet",
+    "raw_host_terms": [
+      "Potato",
+      "sweet"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/potato-sweet-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.681088+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.681992+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682004+00:00"
+  },
+  {
+    "pest_id": "nitidulid_beetle",
+    "display_name": "Nitidulid beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-nitidulid-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682012+00:00"
+  },
+  {
+    "pest_id": "seedcorn_maggot",
+    "display_name": "Seedcorn maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-seedcorn-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682032+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682042+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682050+00:00"
+  },
+  {
+    "pest_id": "squash_bug",
+    "display_name": "Squash bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-squash-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682058+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "pumpkin",
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Pumpkin and squash",
+    "raw_host_terms": [
+      "Pumpkin",
+      "squash"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682066+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Radish",
+    "raw_host_terms": [
+      "Radish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682891+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Radish",
+    "raw_host_terms": [
+      "Radish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682903+00:00"
+  },
+  {
+    "pest_id": "cabbage_maggot",
+    "display_name": "Cabbage maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Radish",
+    "raw_host_terms": [
+      "Radish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-cabbage-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682912+00:00"
+  },
+  {
+    "pest_id": "diamondback_moth",
+    "display_name": "Diamondback moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Radish",
+    "raw_host_terms": [
+      "Radish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-diamondback-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682921+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Radish",
+    "raw_host_terms": [
+      "Radish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682928+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Radish",
+    "raw_host_terms": [
+      "Radish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682936+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Radish",
+    "raw_host_terms": [
+      "Radish"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/radish-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.682944+00:00"
+  },
+  {
+    "pest_id": "armyworm_cutworm_and_looper",
+    "display_name": "Armyworm, cutworm, and looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "rhubarb"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Rhubarb",
+    "raw_host_terms": [
+      "Rhubarb"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/rhubarb-armyworm-cutworm-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.683426+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "rhubarb"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Rhubarb",
+    "raw_host_terms": [
+      "Rhubarb"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/rhubarb-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.683442+00:00"
+  },
+  {
+    "pest_id": "slug",
+    "display_name": "Slug",
+    "pest_type": "mollusk",
+    "plants_affected": [
+      "rhubarb"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Rhubarb",
+    "raw_host_terms": [
+      "Rhubarb"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/rhubarb-slug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.683452+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "salsify"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Salsify",
+    "raw_host_terms": [
+      "Salsify"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/salsify-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.683937+00:00"
+  },
+  {
+    "pest_id": "armyworm",
+    "display_name": "Armyworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "salsify"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Salsify",
+    "raw_host_terms": [
+      "Salsify"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/salsify-armyworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.683953+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "salsify"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Salsify",
+    "raw_host_terms": [
+      "Salsify"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/salsify-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.683966+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685174+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685197+00:00"
+  },
+  {
+    "pest_id": "collembola",
+    "display_name": "Collembola (springtail)",
+    "pest_type": null,
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-collembola-springtail",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685210+00:00"
+  },
+  {
+    "pest_id": "cucumber_beetle",
+    "display_name": "Cucumber beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-cucumber-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685218+00:00"
+  },
+  {
+    "pest_id": "european_cranefly",
+    "display_name": "European cranefly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-european-cranefly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685226+00:00"
+  },
+  {
+    "pest_id": "garden_symphylan",
+    "display_name": "Garden symphylan",
+    "pest_type": null,
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-garden-symphylan",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685235+00:00"
+  },
+  {
+    "pest_id": "leafminer",
+    "display_name": "Leafminer",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-leafminer",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685243+00:00"
+  },
+  {
+    "pest_id": "looper",
+    "display_name": "Looper",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-looper",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685251+00:00"
+  },
+  {
+    "pest_id": "lygus_bug",
+    "display_name": "Lygus bug",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-lygus-bug",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685258+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Spinach",
+    "raw_host_terms": [
+      "Spinach"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.685266+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686289+00:00"
+  },
+  {
+    "pest_id": "armyworm_and_cutworm",
+    "display_name": "Armyworm and cutworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-armyworm-cutworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686314+00:00"
+  },
+  {
+    "pest_id": "colorado_potato_beetle",
+    "display_name": "Colorado potato beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-colorado-potato-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686324+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686333+00:00"
+  },
+  {
+    "pest_id": "spider_mite",
+    "display_name": "Spider mite",
+    "pest_type": "mite",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-spider-mite",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686347+00:00"
+  },
+  {
+    "pest_id": "tomato_fruitworm",
+    "display_name": "Tomato fruitworm (Corn earworm)",
+    "pest_type": null,
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-tomato-fruitworm-corn-earworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686362+00:00"
+  },
+  {
+    "pest_id": "tomato_hornworm",
+    "display_name": "Tomato hornworm",
+    "pest_type": null,
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-tomato-hornworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686376+00:00"
+  },
+  {
+    "pest_id": "whitefly",
+    "display_name": "Whitefly",
+    "pest_type": "insect",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-whitefly",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686387+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Tomato",
+    "raw_host_terms": [
+      "Tomato"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.686399+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "turnip_roots",
+      "tops",
+      "rutabaga"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Turnip (roots and tops) and rutabaga",
+    "raw_host_terms": [
+      "Turnip (roots",
+      "tops)",
+      "rutabaga"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687209+00:00"
+  },
+  {
+    "pest_id": "cabbage_maggot",
+    "display_name": "Cabbage maggot",
+    "pest_type": "insect",
+    "plants_affected": [
+      "turnip_roots",
+      "tops",
+      "rutabaga"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Turnip (roots and tops) and rutabaga",
+    "raw_host_terms": [
+      "Turnip (roots",
+      "tops)",
+      "rutabaga"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-cabbage-maggot",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687227+00:00"
+  },
+  {
+    "pest_id": "diamondback_moth",
+    "display_name": "Diamondback moth",
+    "pest_type": "insect",
+    "plants_affected": [
+      "turnip_roots",
+      "tops",
+      "rutabaga"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Turnip (roots and tops) and rutabaga",
+    "raw_host_terms": [
+      "Turnip (roots",
+      "tops)",
+      "rutabaga"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-diamondback-moth",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687237+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "turnip_roots",
+      "tops",
+      "rutabaga"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Turnip (roots and tops) and rutabaga",
+    "raw_host_terms": [
+      "Turnip (roots",
+      "tops)",
+      "rutabaga"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687244+00:00"
+  },
+  {
+    "pest_id": "wireworm",
+    "display_name": "Wireworm",
+    "pest_type": "insect",
+    "plants_affected": [
+      "turnip_roots",
+      "tops",
+      "rutabaga"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Turnip (roots and tops) and rutabaga",
+    "raw_host_terms": [
+      "Turnip (roots",
+      "tops)",
+      "rutabaga"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/turnip-roots-tops-rutabaga-wireworm",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687253+00:00"
+  },
+  {
+    "pest_id": "aphid",
+    "display_name": "Aphid",
+    "pest_type": "insect",
+    "plants_affected": [
+      "watercress"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Watercress",
+    "raw_host_terms": [
+      "Watercress"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/watercress-aphid",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687718+00:00"
+  },
+  {
+    "pest_id": "flea_beetle",
+    "display_name": "Flea beetle",
+    "pest_type": "insect",
+    "plants_affected": [
+      "watercress"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Watercress",
+    "raw_host_terms": [
+      "Watercress"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/watercress-flea-beetle",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687729+00:00"
+  },
+  {
+    "pest_id": "lepidoptera_larvae",
+    "display_name": "Lepidoptera larvae",
+    "pest_type": null,
+    "plants_affected": [
+      "watercress"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "Watercress",
+    "raw_host_terms": [
+      "Watercress"
+    ],
+    "source_name": "PNW Insect Management Handbook - Hosts and Pests of Vegetable Crops",
+    "source_id": "pnw_vegetable_hosts_pests",
+    "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+    "detail_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/watercress-lepidoptera-larvae",
+    "confidence": 0.82,
+    "extracted_at": "2026-06-20T04:53:00.687741+00:00"
+  }
+]

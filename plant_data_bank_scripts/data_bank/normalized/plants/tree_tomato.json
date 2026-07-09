@@ -1,0 +1,261 @@
+{
+  "plant_atom": "tree_tomato",
+  "identity": {
+    "common_name": "tree tomato",
+    "common_names": [
+      "Tree Tomato"
+    ],
+    "family": "Solanaceae",
+    "genus": "Solanum",
+    "scientific_name": "Cyphomandra betacea",
+    "synonyms": []
+  },
+  "classification": {
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "edible": true,
+    "edible_parts": [
+      "fruit"
+    ],
+    "growth_habit": null,
+    "life_cycle": "Perennial",
+    "life_cycle_context": null,
+    "use_categories": [
+      "fruit_crop",
+      "medicinal_plant"
+    ]
+  },
+  "growth": {
+    "climate_notes": null,
+    "growth_speed": "Low",
+    "light_notes": "Prefers a sunny position and does not grow well in shade.",
+    "rainfall_notes": null,
+    "soil_notes": "Succeeds in a sunny position in any well-drained soil[196, 200]. Prefers a light fertile soil[196]. Dislikes drought[196]. Plants are very prone to wind damage[196]. They fruit best with a temperature range of 16 - 22°c in the growing season[196]. The tree tomato is cultivated for its edible fruit in sub-tropical and tropical zones[46, 61], there are some named varieties[183]. It is not winter hardy in Britain, though it can be pot grown outdoors in the summer and brought into a warmer place for the winter[3]. It requires a minimum winter temperature of 10°c for best fruit production but it is hardy to about -2°c[3, 196]. Trees produce about 20 kg of fruit a year, yields of 15 - 17 tonnes per hectare are achieved in New Zealand[196]. Plants are probably insensitive to day-length[196]. Very fast growing, it starts to fruit within two years from seed[200] and reaches peak production in 3 - 4 years[196]. Trees are, however, short-lived - the life of a commercial plantation is about 8 years[196]. This species does not hybridize easily with other members of the genus[196]. Plants have a shallow spreading root system and resent surface hoeing, they are best given a good mulch[196]. Plants usually ripe their fruit over a period of time, though pruning methods can be used to produce a peak time of fruiting[196]. The leaves have a pungent smell[196]. Plants are subject to attacks by red spider mites.",
+    "soil_ph_max": null,
+    "soil_ph_min": null,
+    "soil_type": [
+      "heavy_clay",
+      "light_sandy",
+      "medium_loamy",
+      "well_drained"
+    ],
+    "sunlight": [
+      "Full sun",
+      "part shade",
+      "full_sun"
+    ],
+    "temperature_notes": null,
+    "water_need": "Average",
+    "water_notes": "Prefers moist soil."
+  },
+  "germination": {
+    "germination_days_max": null,
+    "germination_days_min": null,
+    "germination_light": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_methods": [
+      "Grafting Propagation",
+      "Air Layering Propagation",
+      "Cutting",
+      "Seed Propagation",
+      "cutting",
+      "seed"
+    ],
+    "propagation_notes": "Seed - sow spring in a greenhouse. The seed usually germinates within 4 weeks at 15°c[K], within 2 weeks at 25°c[164]. When they are large enough to handle, prick the seedlings out into individual pots and grow them on in the greenhouse for at least their first winter. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Cuttings of greenwood in a frame[200].",
+    "propagation_warning": null,
+    "sowing_depth_cm": null
+  },
+  "spacing": {
+    "plant_height_cm": null,
+    "root_depth_cm": null,
+    "spacing_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "cautions": "The unripe fruit is slightly toxic[200].",
+    "cultivation_notes": "Succeeds in a sunny position in any well-drained soil[196, 200]. Prefers a light fertile soil[196]. Dislikes drought[196]. Plants are very prone to wind damage[196]. They fruit best with a temperature range of 16 - 22°c in the growing season[196]. The tree tomato is cultivated for its edible fruit in sub-tropical and tropical zones[46, 61], there are some named varieties[183]. It is not winter hardy in Britain, though it can be pot grown outdoors in the summer and brought into a warmer place for the winter[3]. It requires a minimum winter temperature of 10°c for best fruit production but it is hardy to about -2°c[3, 196]. Trees produce about 20 kg of fruit a year, yields of 15 - 17 tonnes per hectare are achieved in New Zealand[196]. Plants are probably insensitive to day-length[196]. Very fast growing, it starts to fruit within two years from seed[200] and reaches peak production in 3 - 4 years[196]. Trees are, however, short-lived - the life of a commercial plantation is about 8 years[196]. This species does not hybridize easily with other members of the genus[196]. Plants have a shallow spreading root system and resent surface hoeing, they are best given a good mulch[196]. Plants usually ripe their fruit over a period of time, though pruning methods can be used to produce a peak time of fruiting[196]. The leaves have a pungent smell[196]. Plants are subject to attacks by red spider mites.",
+    "edible_uses_notes": "Edible Parts: Fruit Edible Uses: Fruit - raw or cooked[3, 46, 61]. The flavour can vary considerably from tree to tree, the best forms are juicy and sub-acid, they are eaten out of hand, added to salads, used in preserves, jams, jellies etc[183, 196]. The fruit contains about 150 IU vitamin A per 100g, 25mg vitamin C, it is rich in vitamin E and iron but low in carbohydrate[196]. Fruits are 4 - 10cm long and 3 - 5cm wide[196].",
+    "fertilizer_notes": null,
+    "nutrition_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Vitamin C None known",
+    "other_uses_notes": "None known",
+    "production_notes": null,
+    "pruning_notes": null,
+    "watering_interval_days": null,
+    "watering_notes": null
+  },
+  "biodiversity": {
+    "attracts_beneficial_insects": [
+      {
+        "confidence": 0.6,
+        "examples": [
+          "insects"
+        ],
+        "insect_group": "pollinators",
+        "notes": "PFAF states flowers are pollinated by insects.",
+        "source_name": "Plants For A Future"
+      }
+    ],
+    "biodiversity_notes": [],
+    "companions": [],
+    "conflicts": [],
+    "pest_confuser": false,
+    "pollinator_support": true,
+    "repels_pests": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "bacterial_wilt",
+      "early_blight",
+      "fusarium_wilt",
+      "late_blight",
+      "powdery_mildew"
+    ],
+    "known_pest_ids": [],
+    "treatment_notes": null
+  },
+  "field_sources": {
+    "biodiversity.attracts_beneficial_insects": "Plants For A Future",
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "biodiversity.pollinator_support": "Plants For A Future",
+    "care.cautions": "Plants For A Future",
+    "care.cultivation_notes": "Plants For A Future",
+    "care.edible_uses_notes": "Plants For A Future",
+    "care.nutrition_notes": "Plants For A Future",
+    "care.other_uses_notes": "Plants For A Future",
+    "classification.edible": "Plants For A Future",
+    "classification.edible_parts": "Plants For A Future",
+    "classification.life_cycle": "Perenual",
+    "classification.use_categories": "Plants For A Future",
+    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_notes": "Plants For A Future",
+    "growth.growth_speed": "Perenual",
+    "growth.light_notes": "Plants For A Future",
+    "growth.soil_notes": "Plants For A Future",
+    "growth.soil_type": "Plants For A Future",
+    "growth.sunlight": "Plants For A Future",
+    "growth.water_need": "Perenual",
+    "growth.water_notes": "Plants For A Future",
+    "identity.common_name": "local_seed",
+    "identity.common_names": "Plants For A Future",
+    "identity.family": "GBIF",
+    "identity.genus": "GBIF",
+    "identity.scientific_name": "local_seed"
+  },
+  "source_metadata": {
+    "last_merged_at": "2026-06-19T03:27:44.903603+00:00",
+    "sources": [
+      {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-19T03:27:07.198955+00:00",
+        "relevance_score": null,
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-19T03:27:37.341149+00:00",
+        "relevance_score": null,
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/api/v2/species-list",
+        "status": "ok",
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-19T03:27:44.677873+00:00",
+        "relevance_score": null,
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/api/v2/species/details/{id}",
+        "status": "ok",
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.8,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "pfaf_display_latin_name",
+          "pfaf_common_name",
+          "pfaf_family",
+          "pfaf_synonyms",
+          "edible_parts",
+          "use_categories",
+          "growth",
+          "propagation_methods",
+          "propagation_notes",
+          "edible_uses_notes",
+          "medicinal_notes",
+          "other_uses_notes",
+          "cultivation_notes",
+          "known_hazards",
+          "biodiversity"
+        ],
+        "last_verified_at": "2026-06-19T03:27:04.064716+00:00",
+        "relevance_score": 1.0,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Cyphomandra+betacea",
+        "status": "trusted_detail",
+        "trusted_detail": true
+      },
+      {
+        "confidence": 0.3,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "last_verified_at": "2026-06-19T03:27:04.562630+00:00",
+        "relevance_score": 0.05,
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=tree+tomato",
+        "status": "snapshot_only",
+        "trusted_detail": false
+      },
+      {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-19T03:26:06.096719+00:00",
+        "relevance_score": null,
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Cyphomandra+betacea",
+        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=Cyphomandra+betacea (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-19T03:26:33.117673+00:00",
+        "relevance_score": null,
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=tree+tomato",
+        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=tree+tomato (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "trusted_detail": null
+      },
+      {
+        "confidence": 0.3,
+        "fields_provided": [],
+        "last_verified_at": "2026-06-19T03:27:00.146616+00:00",
+        "relevance_score": null,
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=tree_tomato",
+        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=tree_tomato (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "trusted_detail": null
+      }
+    ]
+  },
+  "missing_fields": [
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm"
+  ]
+}

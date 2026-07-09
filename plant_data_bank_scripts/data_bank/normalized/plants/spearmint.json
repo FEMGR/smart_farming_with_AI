@@ -84,12 +84,6 @@
     "other_uses_notes": "Essential Repellent Strewing An essential oil is obtained from the whole plant, the yield is about 4K of oil from 1 tonne of leaves[46, 57]. The oil is used commercially as a food flavouring and oral hygiene preparation[238]. The plant repels insects and was formerly used as an strewing herb[14, 18, 20]. Rats and mice intensely dislike the smell of mint. The plant was therefore used in homes as a strewing herb and has also been spread in granaries to keep the rodents off the grain[244]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Mint species produce small flowers that are rich in nectar, attracting various pollinators, including bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The leaves of mint are edible and can be used as food for both humans and some wildlife. While mint plants do not typically provide nesting sites, their dense foliage can offer some shelter. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – Mint can provide habitat for invertebrates, and its foliage contributes to leaf litter. Mint species can spread and act as ground cover, which can help create a suitable environment for beneficial insects. 4. Pest Confuser (Smell): Yes – Mint has a strong aroma that can help deter certain pests, making it beneficial in companion planting and pest management strategies.",
     "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Condiment Tea Leaves - raw or cooked. A strong spearmint flavour, they are used as a flavouring in salads or cooked foods[2, 4, 5, 183]. The leaves are often used in 'mint sauce', which is used as a flavouring in meals[238]. A herb tea is made from the fresh or dried leaves[21, 183]. It has a very pleasant and refreshing taste of spearmint, leaving the mouth and digestive system feeling clean[K]. An essential oil from the leaves and flowers is used as a flavouring in sweets, ice cream, drinks etc[46, 57, 183]. A spearmint flavour[183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -134,6 +128,12 @@
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -276,7 +276,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

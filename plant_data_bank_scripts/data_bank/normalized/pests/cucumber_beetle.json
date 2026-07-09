@@ -1,0 +1,86 @@
+{
+  "pest_atom": "cucumber_beetle",
+  "name": "Cucumber beetle",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Cucumber beetle",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-cucumber-beetle",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Cucumber beetles overwinter as fertilized females and are active beginning in early spring. Adults lay eggs at the base of plants. Eggs hatch in 7 to 10 days, and larvae feed in roots for about 3 weeks before pupating in the soil. Adults emerge in 2 weeks and begin feeding on pollen, plant foliage, flowers, and pods. It takes 30 to 60 days to complete a life cycle. There are two generations a year.",
+  "description_damage": "The western spotted cucumber beetle is yellowish green, 0.25 inch in length, and has 11 black spots on its wing covers. Mature larvae are white and about 0.62 inch in length. The head and last abdominal segment are dark brown. A close relative, the western striped cucumber beetle, is yellowish and has three black lines down its back. Larvae live in the soil where they feed on roots, but adults are foliage and flower feeders. Cucumber beetle adults eat small holes in the leaves and flowers of many crops. They are especially damaging to snap beans, causing pods to be deformed. Larvae feed on roots and bore into the base of stems of corn, peas, and many other crop plants.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "stem_damage",
+    "root_damage",
+    "feeding_holes",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cucumber-beetle/198-16.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cucumber-beetle/198-16.jpg?itok=y7h6NCzZ",
+      "caption": "Western spotted cucumber beetle Diabrotica undecimpunctata undecimpunctata Mannerheim Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cucumber-beetle/26-116.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cucumber-beetle/26-116.jpg?itok=n5SW7H01",
+      "caption": "Western spotted cucumber beetle Diabrotica undecimpunctata undecimpunctata Mannerheim Adult female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cucumber-beetle/g20-66.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cucumber-beetle/g20-66.jpg?itok=kIdKxRp7",
+      "caption": "Western spotted cucumber beetle Diabrotica undecimpunctata undecimpunctata Mannerheim Immature on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cucumber-beetle/g304-16.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cucumber-beetle/g304-16.jpg?itok=Tu6k2Zi4",
+      "caption": "Western spotted cucumber beetle Diabrotica undecimpunctata undecimpunctata Mannerheim Adult female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.177518+00:00"
+}

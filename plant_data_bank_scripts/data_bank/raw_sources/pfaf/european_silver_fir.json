@@ -1,0 +1,230 @@
+{
+  "plant": {
+    "common_name": "European Silver Fir",
+    "confidence": 0.7,
+    "created_at": "2026-06-18T06:20:42.571350+00:00",
+    "genus": "Abies",
+    "plant_atom": "european_silver_fir",
+    "reason": "scientific_name_not_found_in_prolog",
+    "scientific_name": "Abies alba",
+    "source_file": "/home/graubo/PyCharmMiscProject/smart-farming-system/backend/cache/species_snapshots/1.json",
+    "source_name": "perenual_snapshot",
+    "status": "extraction_attempted"
+  },
+  "source": "Plants For A Future",
+  "snapshots": [
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Abies+alba",
+      "query": "Abies alba",
+      "status": "trusted_detail",
+      "fetched_at": "2026-06-19T03:27:01.522337+00:00",
+      "response_hash": "a9d1413f91d18b9a490d381188762dcedfc124f349a92329608a2e8ee7525321",
+      "parsed": {
+        "title": "Abies alba Silver Fir, Christmas Tree Fir, European Silver Fir, Silver PFAF Plant Database",
+        "trusted_detail": true,
+        "lookup_type": "scientific_exact",
+        "is_search_page": false,
+        "real_plant_page": true,
+        "relevance_score": 1.0,
+        "sections": {
+          "display_latin_name": "Abies alba - Mill.",
+          "common_name": "Silver Fir, Christmas Tree Fir, European Silver Fir, Silver",
+          "family": "Pinaceae",
+          "usda_hardiness": "5-8",
+          "known_hazards": "None known",
+          "habitats": "Forests in mountains, 1000 - 1600 metres.",
+          "range": "C. and S. Europe",
+          "summary": "Form: Columnar.",
+          "physical_characteristics": "Abies alba is an evergreen Tree growing to 45 m (147ft) by 15 m (49ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 4 and is not frost tender. It is in leaf all year, in flower from April to May, and the seeds ripen from September to October. The species is monoecious (individual flowers are either male or female, but both sexes can be found on the same plant) and is pollinated by Wind. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and can grow in heavy clay soil. Suitable pH: mildly acid and neutral soils. It can grow in full shade (deep woodland) semi-shade (light woodland) or no shade. It prefers moist soil. It cannot tolerate atmospheric pollution.",
+          "synonyms": "A. pectinata. A. picea.",
+          "plant_habitats": "Woodland Garden Canopy;",
+          "edible_uses": "Edible Parts: Inner bark Edible Uses: Inner bark - cooked. It is dried, ground into a powder and then used as a thickening in soups etc or mixed with cereals when making bread[105, 177].",
+          "medicinal_uses": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibiotic Antirheumatic Antiseptic Astringent Balsamic Diuretic Expectorant Vasoconstrictor Vulnerary The buds are antibiotic, antiseptic and balsamic[7]. The bark is antiseptic and astringent[7]. It can be harvested as required throughout the year[238]. The leaves are expectorant and a bronchial sedative[7]. They are best harvested in the spring and can be dried for later use[238]. The resin is antiseptic, balsamic, diuretic, eupeptic, expectorant, vasoconstrictor and vulnerary[7]. Both the leaves and the resin are common ingredients in remedies for colds and coughs, either taken internally or used as an inhalant[238]. The leaves and/or the resin are used in folk medicine to treat bronchitis, cystitis, leucorrhoea, ulcers and flatulent colic[268]. The resin is also used externally in bath extracts, rubbing oils etc for treating rheumatic pains and neuralgia[238]. Oil of Turpentine, which is obtained from the trunk of the tree, is occasionally used instead of the leaves or the resin. The oil is also rubefacient and can be applied externally in the treatment of neuralgia[268].",
+          "other_uses": "Essential Lacquer Paint Resin Tannin Wood An oleo-resin is obtained from blister-like swellings in the bark[64, 100]. It is harvested in the summer and used fresh, dried or distilled for oil[238]. The resin extracted from it is used in perfumery, medicine and for caulking ships[46, 61, 64, 100]. It is called 'Strasburg Turpentine'[46]. Oil of turpentine is an important solvent in the paint industry[238]. The residue, known as 'rosin oil', is used in making varnishes, lacquers and carbon black (for pigments and ink)[238]. Resin is tapped from trees about 60 - 80 years old in the spring and used for the distillation of oil[238]. An essential oil obtained from the leaves is used as a disinfectant and also in medicine and perfumery[46, 61]. It is a common ingredient in many bath products, giving them their familiar pine scent[7]. The bark is a source of tannin[7]. Wood - light, soft, durable, elastic. The timber of this tree is especially sought after for its lightness, it is used for construction, furniture, boxes, pulp etc[7, 46, 61, 89, 101].",
+          "special_uses": "Scented Plants",
+          "cultivation": "Landscape Uses:Screen, Specimen. Prefers a good moist but not water-logged soil[1] though it tolerates most soils except infertile sands and peats[11, 81]. Grows well in heavy clay soils. Prefers a slightly acid soil, with a pH down to about 5, and a north-facing slope[200]. Plants are very shade tolerant and this species has often been used to underplant in forests[11, 81], but growth is slower in dense shade[81]. Intolerant of atmospheric pollution[1]. Requires a generous rainfall and a sheltered position[11, 81]. Intolerant of windy sites[81]. The silver fir is a very hardy plant when dormant but it comes into growth in April and is then susceptible to damage by late frosts and aphis[185, 238]. This species is particularly subject to aphis infestation in many parts of the country[11], and is also prone to dieback and rust caused by fungal infections[238]. Trees are slow growing for the first few years but from the age of around 6 years growth accelerates and height increases of 1 metre a year are not uncommon[185]. Grows best in moist valleys in Scotland[11] and in S.W. England where it often self-sows. This species also thrives in E. Anglia[17]. Another report says that this species is not happy in the hot, dry, Lower Thames Valley, and does not thrive in many low-lying and frosty parts of southern England[11]. It has been planted as a timber tree in northern and western Europe[50]. It is also commonly used as a 'Christmas tree'[61, 200]. This tree is notably resistant to honey fungus[11, 81, 200]. Trees should be planted into their permanent positions when they are quite small, preferably between 30 and 90cm in height. Larger trees will check badly and hardly put on any growth for several years. This also badly affects root development and wind resistance[200]. Unlike most species of conifers, this tree can be coppiced and will regenerate from the stump[126]. Plants are strongly outbreeding, self-fertilized seed usually grows poorly[200]. They hybridize freely with other members of this genus[200]. The cultivar 'Pendula' used to be widely planted for ornament, shelter and timber but because it is now susceptible to damage by Adelges nordmannianae it is seldom planted. Research is going on (1975) to find provenances that are resistant[185]. Special Features:Not North American native, There are no flowers or blooms.",
+          "propagation": "Seed - sow early February in a greenhouse or outdoors in March[78]. Germination is often poor, usually taking about 6 - 8 weeks[78]. Stratification is said to produce a more even germination so it is probably best to sow the seed in a cold frame as soon as it is ripe in the autumn[80, 113]. The seed remains viable for up to 5 years if it is well stored[113]. When large enough to handle, prick the seedlings out into individual pots and grow them on for at least their first winter in pots. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Alternatively, if you have sufficient seed, it is possible to sow in an outdoor seedbed. One report says that it is best to grow the seedlings on in the shade at a density of about 550 plants per square metre[78] whilst another report says that they are best grown on in a sunny position[80].",
+          "other_names": null,
+          "native_range": "EUROPE: Austria, Switzerland, Czech Republic, Germany, Hungary, Poland, Slovakia, Ukraine, Albania, Bulgaria, Bosnia and Herzegovina, Greece, Croatia, Italy, North Macedonia, Montenegro, Romania, Serbia, Slovenia, Spain, France (incl. Corsica)",
+          "conservation_status": "IUCN Red List of Threatened Plants Status :"
+        },
+        "guessed_fields": {
+          "trusted_detail": true,
+          "lookup_type": "scientific_exact",
+          "relevance_score": 1.0,
+          "is_search_page": false,
+          "real_plant_page": true,
+          "identity": {
+            "common_name": "Christmas Tree Fir",
+            "scientific_name": "Abies alba",
+            "genus": "Abies",
+            "family": "Pinaceae",
+            "synonyms": [],
+            "common_names": [
+              "Christmas Tree Fir",
+              "European Silver Fir",
+              "Silver",
+              "Silver Fir"
+            ]
+          },
+          "pfaf_display_latin_name": "Abies alba - Mill.",
+          "pfaf_common_name": "Silver Fir, Christmas Tree Fir, European Silver Fir, Silver",
+          "pfaf_family": "Pinaceae",
+          "pfaf_synonyms": "A. pectinata. A. picea.",
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [
+            "medicinal_plant"
+          ],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [
+              "partial_shade"
+            ],
+            "soil_type": [
+              "heavy_clay",
+              "light_sandy",
+              "medium_loamy"
+            ],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": "moderate",
+            "growth_speed": "fast",
+            "soil_notes": "Landscape Uses:Screen, Specimen. Prefers a good moist but not water-logged soil[1] though it tolerates most soils except infertile sands and peats[11, 81]. Grows well in heavy clay soils. Prefers a slightly acid soil, with a pH down to about 5, and a north-facing slope[200]. Plants are very shade tolerant and this species has often been used to underplant in forests[11, 81], but growth is slower in dense shade[81]. Intolerant of atmospheric pollution[1]. Requires a generous rainfall and a sheltered position[11, 81]. Intolerant of windy sites[81]. The silver fir is a very hardy plant when dormant but it comes into growth in April and is then susceptible to damage by late frosts and aphis[185, 238]. This species is particularly subject to aphis infestation in many parts of the country[11], and is also prone to dieback and rust caused by fungal infections[238]. Trees are slow growing for the first few years but from the age of around 6 years growth accelerates and height increases of 1 metre a year are not uncommon[185]. Grows best in moist valleys in Scotland[11] and in S.W. England where it often self-sows. This species also thrives in E. Anglia[17]. Another report says that this species is not happy in the hot, dry, Lower Thames Valley, and does not thrive in many low-lying and frosty parts of southern England[11]. It has been planted as a timber tree in northern and western Europe[50]. It is also commonly used as a 'Christmas tree'[61, 200]. This tree is notably resistant to honey fungus[11, 81, 200]. Trees should be planted into their permanent positions when they are quite small, preferably between 30 and 90cm in height. Larger trees will check badly and hardly put on any growth for several years. This also badly affects root development and wind resistance[200]. Unlike most species of conifers, this tree can be coppiced and will regenerate from the stump[126]. Plants are strongly outbreeding, self-fertilized seed usually grows poorly[200]. They hybridize freely with other members of this genus[200]. The cultivar 'Pendula' used to be widely planted for ornament, shelter and timber but because it is now susceptible to damage by Adelges nordmannianae it is seldom planted. Research is going on (1975) to find provenances that are resistant[185]. Special Features:Not North American native, There are no flowers or blooms.",
+            "light_notes": null,
+            "water_notes": "Prefers moist soil.",
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [
+            "seed"
+          ],
+          "propagation_notes": "Seed - sow early February in a greenhouse or outdoors in March[78]. Germination is often poor, usually taking about 6 - 8 weeks[78]. Stratification is said to produce a more even germination so it is probably best to sow the seed in a cold frame as soon as it is ripe in the autumn[80, 113]. The seed remains viable for up to 5 years if it is well stored[113]. When large enough to handle, prick the seedlings out into individual pots and grow them on for at least their first winter in pots. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Alternatively, if you have sufficient seed, it is possible to sow in an outdoor seedbed. One report says that it is best to grow the seedlings on in the shade at a density of about 550 plants per square metre[78] whilst another report says that they are best grown on in a sunny position[80].",
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": "Form: Columnar.",
+          "edible_uses_notes": "Edible Parts: Inner bark Edible Uses: Inner bark - cooked. It is dried, ground into a powder and then used as a thickening in soups etc or mixed with cereals when making bread[105, 177].",
+          "medicinal_notes": "Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibiotic Antirheumatic Antiseptic Astringent Balsamic Diuretic Expectorant Vasoconstrictor Vulnerary The buds are antibiotic, antiseptic and balsamic[7]. The bark is antiseptic and astringent[7]. It can be harvested as required throughout the year[238]. The leaves are expectorant and a bronchial sedative[7]. They are best harvested in the spring and can be dried for later use[238]. The resin is antiseptic, balsamic, diuretic, eupeptic, expectorant, vasoconstrictor and vulnerary[7]. Both the leaves and the resin are common ingredients in remedies for colds and coughs, either taken internally or used as an inhalant[238]. The leaves and/or the resin are used in folk medicine to treat bronchitis, cystitis, leucorrhoea, ulcers and flatulent colic[268]. The resin is also used externally in bath extracts, rubbing oils etc for treating rheumatic pains and neuralgia[238]. Oil of Turpentine, which is obtained from the trunk of the tree, is occasionally used instead of the leaves or the resin. The oil is also rubefacient and can be applied externally in the treatment of neuralgia[268].",
+          "other_uses_notes": "Essential Lacquer Paint Resin Tannin Wood An oleo-resin is obtained from blister-like swellings in the bark[64, 100]. It is harvested in the summer and used fresh, dried or distilled for oil[238]. The resin extracted from it is used in perfumery, medicine and for caulking ships[46, 61, 64, 100]. It is called 'Strasburg Turpentine'[46]. Oil of turpentine is an important solvent in the paint industry[238]. The residue, known as 'rosin oil', is used in making varnishes, lacquers and carbon black (for pigments and ink)[238]. Resin is tapped from trees about 60 - 80 years old in the spring and used for the distillation of oil[238]. An essential oil obtained from the leaves is used as a disinfectant and also in medicine and perfumery[46, 61]. It is a common ingredient in many bath products, giving them their familiar pine scent[7]. The bark is a source of tannin[7]. Wood - light, soft, durable, elastic. The timber of this tree is especially sought after for its lightness, it is used for construction, furniture, boxes, pulp etc[7, 46, 61, 89, 101].",
+          "cultivation_notes": "Landscape Uses:Screen, Specimen. Prefers a good moist but not water-logged soil[1] though it tolerates most soils except infertile sands and peats[11, 81]. Grows well in heavy clay soils. Prefers a slightly acid soil, with a pH down to about 5, and a north-facing slope[200]. Plants are very shade tolerant and this species has often been used to underplant in forests[11, 81], but growth is slower in dense shade[81]. Intolerant of atmospheric pollution[1]. Requires a generous rainfall and a sheltered position[11, 81]. Intolerant of windy sites[81]. The silver fir is a very hardy plant when dormant but it comes into growth in April and is then susceptible to damage by late frosts and aphis[185, 238]. This species is particularly subject to aphis infestation in many parts of the country[11], and is also prone to dieback and rust caused by fungal infections[238]. Trees are slow growing for the first few years but from the age of around 6 years growth accelerates and height increases of 1 metre a year are not uncommon[185]. Grows best in moist valleys in Scotland[11] and in S.W. England where it often self-sows. This species also thrives in E. Anglia[17]. Another report says that this species is not happy in the hot, dry, Lower Thames Valley, and does not thrive in many low-lying and frosty parts of southern England[11]. It has been planted as a timber tree in northern and western Europe[50]. It is also commonly used as a 'Christmas tree'[61, 200]. This tree is notably resistant to honey fungus[11, 81, 200]. Trees should be planted into their permanent positions when they are quite small, preferably between 30 and 90cm in height. Larger trees will check badly and hardly put on any growth for several years. This also badly affects root development and wind resistance[200]. Unlike most species of conifers, this tree can be coppiced and will regenerate from the stump[126]. Plants are strongly outbreeding, self-fertilized seed usually grows poorly[200]. They hybridize freely with other members of this genus[200]. The cultivar 'Pendula' used to be widely planted for ornament, shelter and timber but because it is now susceptible to damage by Adelges nordmannianae it is seldom planted. Research is going on (1975) to find provenances that are resistant[185]. Special Features:Not North American native, There are no flowers or blooms.",
+          "known_hazards": "None known",
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Abies alba Silver Fir, Christmas Tree Fir, European Silver Fir, Silver PFAF Plant Database Follow Us: Abies alba - Mill. Common Name Silver Fir, Christmas Tree Fir, European Silver Fir, Silver Family Pinaceae USDA hardiness 5-8 Known Hazards None known Habitats Forests in mountains, 1000 - 1600 metres. Range C. and S. Europe Edibility Rating (2 of 5) Other Uses (4 of 5) Weed Potential No Medicinal Rating (3 of 5) Care (info) http://commons.wikimedia.org/wiki/User:Crusier Translate this page: Summary Form: Columnar. Physical Characteristics Abies alba is an evergreen Tree growing to 45 m (147ft) by 15 m (49ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 4 and is not frost tender. It is in leaf all year, in flower from April to May, and the seeds ripen from September to October. The species is monoecious (individual flowers are either male or female, but both sexes can be found on the same plant) and is pollinated by Wind. Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and can grow in heavy clay soil. Suitable pH: mildly acid and neutral soils. It can grow in full shade (deep woodland) semi-shade (light woodland) or no shade. It prefers moist soil. It cannot tolerate atmospheric pollution. UK Hardiness Map US Hardiness Map Synonyms A. pectinata. A. picea. Plant Habitats Woodland Garden Canopy; Edible Uses Edible Parts: Inner bark Edible Uses: Inner bark - cooked. It is dried, ground into a powder and then used as a thickening in soups etc or mixed with cereals when making bread[105, 177]. References More on Edible Uses Medicinal Uses Plants For A Future can not take any responsibility for any adverse effects from the use of plants. Always seek advice from a professional before using a plant medicinally. Antibiotic Antirheumatic Antiseptic Astringent Balsamic Diuretic Expectorant Vasoconstrictor Vulnerary The buds are antibiotic, antiseptic and balsamic[7]. The bark is antiseptic and astringent[7]. It can be harvested as required throughout the year[238]. The leaves are expectorant and a bronchial sedative[7]. They are best harvested in the spring and can be dried for later use[238]. The resin is antiseptic, balsamic, diuretic, eupeptic, expectorant, vasoconstrictor and vulnerary[7]. Both the leaves and the resin are common ingredients in remedies for colds and coughs, either taken internally or used as an inhalant[238]. The leaves and/or the resin are used in folk medicine to treat bronchitis, cystitis, leucorrhoea, ulcers and flatulent colic[268]. The resin is also used externally in bath extracts, rubbing oils etc for treating rheumatic pains and neuralgia[238]. Oil of Turpentine, which is obtained from the trunk of the tree, is occasionally used instead of the leaves or the resin. The oil is also rubefacient and can be applied externally in the treatment of neuralgia[268]. References More on Medicinal Uses The Bookshop: Edible Plant Books Our Latest books on Perennial Plants For Food Forests and Perma"
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tAbies alba Silver Fir, Christmas Tree Fir, European Silver Fir, Silver PFAF Plant Database\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" content=\"Abies alba is an evergreen Tree growing to 45 m (147ft) by 15 m (49ft) at a fast rate. See above for USDA hardiness. It is hardy to UK zone 4 and is not frost tender. It is in leaf all year, in flower from April to May, and the seeds ripen from September to October. The species is monoecious (individual flowers are either male or female, but both sexes can be found on the same plant) and is pollinated by Wind.  Suitable for: light (sandy), medium (loamy) and heavy (clay) soils and can grow in heavy clay soil. Suitable pH: mildly acid and neutral soils. It can grow in full shade (deep woodland) semi-shade (light woodland) or no shade. It prefers  moist soil. It cannot tolerate atmospheric pollution.\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./Plant.aspx?LatinName=Abies+alba\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKLTU0Njc1MjUwMA8WBB4Nc29ydERpcmVjdGlvbgUDYXNjHg5zb3J0RXhwcmVzc2lvbgUJTGF0aW5OYW1lFgJmD2QWBAIBD2QWAgIEDxYCHgdjb250ZW50BcMFQWJpZXMgYWxiYSBpcyBhbiBldmVyZ3JlZW4gVHJlZSBncm93aW5nIHRvIDQ1IG0gKDE0N2Z0KSBieSAxNSBtICg0OWZ0KSBhdCBhIGZhc3QgcmF0ZS4gU2VlIGFib3ZlIGZvciBVU0RBIGhhcmRpbmVzcy4gSXQgaXMgaGFyZHkgdG8gVUsgem9uZSA0IGFuZCBpcyBub3QgZnJvc3QgdGVuZGVyLiBJdCBpcyBpbiBsZWFmIGFsbCB5ZWFyLCBpbiBmbG93ZXIgZnJvbSBBcHJpbCB0byBNYXksIGFuZCB0aGUgc2VlZHMgcmlwZW4gZnJvbSBTZXB0ZW1iZXIgdG8gT2N0b2Jlci4gVGhlIHNwZWNpZXMgaXMgbW9ub2VjaW91cyAoaW5kaXZpZHVhbCBmbG93ZXJzIGFyZSBlaXRoZXIgbWFsZSBvciBmZW1hbGUsIGJ1dCBib3RoIHNleGVzIGNhbiBiZSBmb3VuZCBvbiB0aGUgc2FtZSBwbGFudCkgYW5kIGlzIHBvbGxpbmF0ZWQgYnkgV2luZC4gIFN1aXRhYmxlIGZvcjogbGlnaHQgKHNhbmR5KSwgbWVkaXVtIChsb2FteSkgYW5kIGhlYXZ5IChjbGF5KSBzb2lscyBhbmQgY2FuIGdyb3cgaW4gaGVhdnkgY2xheSBzb2lsLiBTdWl0YWJsZSBwSDogbWlsZGx5IGFjaWQgYW5kIG5ldXRyYWwgc29pbHMuIEl0IGNhbiBncm93IGluIGZ1bGwgc2hhZGUgKGRlZXAgd29vZGxhbmQpIHNlbWktc2hhZGUgKGxpZ2h0IHdvb2RsYW5kKSBvciBubyBzaGFkZS4gSXQgcHJlZmVycyAgbW9pc3Qgc29pbC4gSXQgY2Fubm90IHRvbGVyYXRlIGF0bW9zcGhlcmljIHBvbGx1dGlvbi5kAgMPZBYCAgMPZBZiAgEPDxYCHgRUZXh0BRJBYmllcyBhbGJhIC0gTWlsbC5kZAIDDw8WAh8DBTtTaWx2ZXIgRmlyLCBDaHJpc3RtYXMgVHJlZSBGaXIsIEV1cm9wZWFuIFNpbHZlciBGaXIsIFNpbHZlcmRkAgUPDxYCHwMFCFBpbmFjZWFlZGQCBw8PFgIfAwUDNS04ZGQCCw8PFgIfAwUKTm9uZSBrbm93bmRkAg0PDxYCHwMFKUZvcmVzdHMgaW4gbW91bnRhaW5zLCAxMDAwIC0gMTYwMCBtZXRyZXMuZGQCDw8PFgIfAwUQQy4gYW5kIFMuIEV1cm9wZWRkAhEPDxYCHghJbWFnZVVybAUraW1hZ2VzL1BGQUZfc2VhcmNoVjFiL1BGQUZfc2VhcmNoVjFiXzEwLmdpZmRkAhMPDxYCHwQFK2"
+    },
+    {
+      "source_name": "Plants For A Future",
+      "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=European+Silver+Fir",
+      "query": "Abies alba",
+      "status": "snapshot_only",
+      "fetched_at": "2026-06-19T03:27:02.516166+00:00",
+      "response_hash": "1b4b855651bdd150ccc17c2d740d558116c523dc8daacfad39eb8b1a75ef4de6",
+      "parsed": {
+        "title": "Plant Search Result",
+        "trusted_detail": false,
+        "lookup_type": "common_search_snapshot",
+        "is_search_page": false,
+        "real_plant_page": false,
+        "relevance_score": 0.05,
+        "sections": {
+          "display_latin_name": null,
+          "common_name": null,
+          "family": null,
+          "usda_hardiness": null,
+          "known_hazards": null,
+          "habitats": null,
+          "range": null,
+          "summary": null,
+          "physical_characteristics": null,
+          "synonyms": null,
+          "plant_habitats": null,
+          "edible_uses": null,
+          "medicinal_uses": null,
+          "other_uses": null,
+          "special_uses": null,
+          "cultivation": null,
+          "propagation": null,
+          "other_names": null,
+          "native_range": null,
+          "conservation_status": null
+        },
+        "guessed_fields": {
+          "trusted_detail": false,
+          "lookup_type": "common_search_snapshot",
+          "relevance_score": 0.05,
+          "is_search_page": false,
+          "real_plant_page": false,
+          "identity": {
+            "common_name": "European Silver Fir",
+            "scientific_name": "Abies alba",
+            "genus": "Abies",
+            "family": null,
+            "synonyms": [],
+            "common_names": []
+          },
+          "pfaf_display_latin_name": null,
+          "pfaf_common_name": null,
+          "pfaf_family": null,
+          "pfaf_synonyms": null,
+          "pfaf_other_names": null,
+          "edible_parts": [],
+          "use_categories": [],
+          "life_cycle": null,
+          "botanical_life_cycle": null,
+          "crop_life_cycle": null,
+          "life_cycle_context": null,
+          "growth": {
+            "sunlight": [],
+            "soil_type": [],
+            "soil_ph_min": null,
+            "soil_ph_max": null,
+            "water_need": null,
+            "growth_speed": null,
+            "soil_notes": null,
+            "light_notes": null,
+            "water_notes": null,
+            "temperature_notes": null,
+            "rainfall_notes": null
+          },
+          "propagation_methods": [],
+          "propagation_notes": null,
+          "germination_days_min": null,
+          "germination_days_max": null,
+          "sowing_depth_cm": null,
+          "summary_notes": null,
+          "edible_uses_notes": null,
+          "medicinal_notes": null,
+          "other_uses_notes": null,
+          "cultivation_notes": null,
+          "known_hazards": null,
+          "biodiversity": {
+            "companions": [],
+            "conflicts": [],
+            "repels_pests": [],
+            "attracts_beneficial_insects": [],
+            "pest_confuser": false,
+            "pollinator_support": false,
+            "biodiversity_notes": []
+          }
+        },
+        "page_text_excerpt": "Plant Search Result Follow Us: Now available: Food Forest Plants for Mediterranean Conditions 350+ Perennial Plants For Mediterranean and Drier Food Forests and Permaculture Gardens. [Paperback and eBook] This is the third in Plants For A Future's series of plant guides for food forests tailored to specific climate zones. Following volumes on temperate and tropical ecosystems, this book focuses on species suited to Mediterranean conditions—regions with hot, dry summers and cool, wet winters, often facing the added challenge of climate change. Read More Growth: S = slow M = medium F = fast. Soil: L = light (sandy) M = medium H = heavy (clay). pH: A = acid N = neutral B = basic (alkaline). Shade: F = full shade S = semi-shade N = no shade. Moisture: D = dry M = Moist We = wet Wa = water. Rating: 1 = Minor 5 = Great. If you are unsure of the spelling of a plant or would like a more detailed website search, please use the search box at the top of the page. Search by name: Plant Uses Edible Uses Medicinal Uses Other Plant uses Woodland Gardening Why Perennial Plants? Top Edible Plants Top Medicinal Plants Garden Design Habitats Translations Content Content Help Bookshop Support Us Blog Links Old Database Search Suppliers Contact About Us © 2010 , Plants For A Future. Plants For A Future is a charitable company limited by guarantee, registered in England and Wales. Charity No. 1057719, Company No. 3204567."
+      },
+      "raw_text_excerpt": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head id=\"Head1\"><title>\r\n\tPlant Search Result\r\n</title>\r\n\r\n    <!-- Required meta tags -->\r\n    <meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><meta id=\"description\" name=\"description\" /><meta id=\"keywords\" name=\"keywords\" />\r\n    <link href=\"https://www.jqueryscript.net/css/jquerysctipttop.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n    <!-- <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\" />-->\r\n\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\" />\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>\r\n    <!--  <link rel=\"stylesheet\" href=\"print.css\" type=\"text/css\" media=\"print\" />-->\r\n    <link href=\"../jquery/jquery.alerts.css\" rel=\"stylesheet\" /><link rel=\"SHORTCUT ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link rel=\"ICON\" href=\"../pfaf.ico\" type=\"image/x-icon\" /><link href=\"css/horMenu.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"css/stylesheet.css\" rel=\"stylesheet\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"css/boot.css\" />\r\n    <script src=\"../jquery/jquery-1.2.6.js\" type=\"text/javascript\"></script>\r\n\t\r\n<!-- HEAD: put this before the GTM script -->\r\n<script>\r\nwindow.dataLayer = window.dataLayer || [];\r\nfunction gtag(){ dataLayer.push(arguments); }\r\n\r\ngtag('consent', 'default', {\r\n  ad_storage: 'denied',\r\n  analytics_storage: 'denied',\r\n  ad_user_data: 'denied',\r\n  ad_personalization: 'denied',\r\n  wait_for_update: 500\r\n});\r\n</script>\r\n\r\n<!-- HEAD: restore GTM -->\r\n<script>\r\n(function(w,d,s,l,i){\r\n  w[l]=w[l]||[];\r\n  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});\r\n  var f=d.getElementsByTagName(s)[0],\r\n      j=d.createElement(s),\r\n      dl=l!='dataLayer' ? '&l='+l : '';\r\n  j.async=true;\r\n  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;\r\n  f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-N4MSH6BP');\r\n</script>\r\n\t\r\n  \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n    <form method=\"post\" action=\"./DatabaseSearhResult.aspx?SearchFor=European+Silver+Fir\" id=\"form2\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE5NzIyMjM0MDcPFgQeDXNvcnREaXJlY3Rpb24FA2FzYx4Oc29ydEV4cHJlc3Npb24FCUxhdGluTmFtZRYCZg9kFgICAw9kFgICAw9kFggCBw88KwARAgEQFgAWABYADBQrAABkAgkPPCsAEQIBEBYAFgAWAAwUKwAAZAILDzwrABECARAWABYAFgAMFCsAAGQCDQ88KwARAQwUKwAAZBgFBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRpbWdidG5TZWFyY2gFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZBZHZTZWFyY2gPZ2QFKWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZOYXRpdmVSZXN1bHRzD2dkBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2VXNlUmVzdWx0cw9nZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndnJlc3VsdHMPZ2R5hbX3+G0e+OMj3OSCh0Mqlk4D88YDlD53WZ5uQxrA6g==\" />\r\n\r\n\r\n<script src=\"/ScriptResource.axd?d=9YMmQW5B_j4942G_pfQXTnoU2gSUe3sxpHW6bHhCws21rrVesJB4-r31RQZsf9N4w70sSovLnk5zI78wNTKv5S2b4dXJEbGIOPVQA0vCNzfPViT6KDc54m1JF8gwoKRU1EiiKdSVRlRTWeXmcT8JbNcXuTQhBhieY_OOznWljoCgf8BScZSatlMu5PbYW_c30&amp;t=5c0e0825\" type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\" id=\"__VIEWSTATEGENERATOR\" value=\"C7892775\" />\r\n        \r\n\r\n  <!--       <div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n            <div class=\"container text-grey p-2\">\r\n                <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest Plants for Mediterranean Conditions</i> and our new <i>Native Plants Search</i> facility.  In the process more plants and searchable items have been added to our free to use database.  But our income has dropped and we’ve been dipping into our reserves. for some time.  So we’d really welcome more donations to stabilise our finances – please give what you can. <a href=\"cmspage.aspx?pageid=313\" title=\"Appeal\"><span class=\"btn btn-light btn-sm\">More >>></span></a></p>\r\n            </div>\r\n        </div>-->\r\n\r\n<!--  Rotating Banner every 24 hours using javascript-->\r\n<div id=\"banner\"></div>\r\n\r\n<script>\r\n(function() {\r\n  const banners = [\r\n    // Banner 1\r\n    `<div class=\"container-fluid\" style=\"background-color: #cfde67;\">\r\n        <div class=\"container text-grey p-2\">\r\n            <p>We need help! We’ve spent lots of resources producing our latest book <i>Food Forest "
+    }
+  ]
+}
