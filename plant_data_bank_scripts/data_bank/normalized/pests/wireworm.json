@@ -1,0 +1,84 @@
+{
+  "pest_atom": "wireworm",
+  "name": "Wireworm",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Wireworm",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-wireworm",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Wireworms require two to six years to mature. They overwinter 12 to 24 inches deep in the soil and return near the surface in spring to resume feeding. Mature larvae pupate in the soil, then develop into adults that will remain in the soil until the following spring, when they emerge, mate, and lay eggs. Because the female beetles fly very little, infestations do not spread rapidly from field to field. Soil temperature is important to wireworm development and control. Larvae start to move upward in the spring, when soil temperature at the 6 inch depth reaches 50°F. Later in the season, when temperatures reach 80°F and above, the larvae tend to move deeper than 6 inches, where most remain until the following spring.",
+  "description_damage": "Wireworms are the most important soil-dwelling pests infesting crops in the Pacific Northwest. The adults, known as click beetles or snapping beetles ( Elateridae family), do little or no damage. The larval or immature stages cause major damage to seedlings and the underground portions of many annual crops. The larvae are shiny white at first, but later become straw color or light brown. They look wiry and are about 1 inch in length when mature. Several kinds of wireworms are in the Pacific Northwest. Those causing the most damage in irrigated land are the Pacific Coast wireworm (Limonius canus) , the sugar beet wireworm (L. californicus) , the western field wireworm (L. infuscatus) , and the Columbia Basin wireworm (L. subauratus) . Of these Pacific Coast and sugar beet wireworms are the most common species. Land with annual rainfall less than 15 inches may be infested with the Great Basin wireworm (Ctenicera pruinina) . As a result, there may be serious damage when irrigated crops are grown on sagebrush or dry wheat land. This species tends to disappear after a few years of intensive irrigation, but may be replaced by the more serious Limonius species, which favor moist conditions. West of the Cascades, other species of wireworms, including Agriotes spp., are pests. No crop is immune to attack by wireworms, but these pests are most destructive on beans, corn, grain, potatoes, and other annual crops. Damage caused by wireworms in other crops includes failure of seeds to germinate (due to feeding on planted seeds) and death of young plants (due to root feeding). In potatoes, serious damage results from wireworms tunneling in tubers during feeding. In row crops, such as beans, corn, and sugar beets, infestation results in bare spots of fields, which is accompanied by dead or wilted young plants. Wireworms damage potatoes both near planting time (from damage to seed pieces) and during the growing season (from damage to developing tubers).",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "wilting",
+    "root_damage",
+    "feeding_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/303-142.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/303-142.jpg?itok=54tiWyu5",
+      "caption": "Sugarbeet wireworm Limonius californicus Mannerheim Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/34-162.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/34-162.jpg?itok=8nDHLzyz",
+      "caption": "Sugarbeet wireworm Limonius californicus Mannerheim Immature showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/312-153.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/312-153.jpg?itok=5tyivElb",
+      "caption": "Pacific coast wireworm Limonius canus LeConte Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-wireworm/302-173.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-wireworm/302-173.jpg?itok=xHn7RDdV",
+      "caption": "Pacific coast wireworm Limonius canus LeConte Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.335194+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "pest_atom": "pea_leaf_weevil",
+  "name": "Pea leaf weevil",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "bean",
+    "pea"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Bean, snap",
+      "pest_name_on_page": "Pea leaf weevil",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-pea-leaf-weevil"
+    },
+    {
+      "crop_heading": "Pea, green and dry",
+      "pest_name_on_page": "Pea leaf weevil",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-leaf-weevil"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-pea-leaf-weevil",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-leaf-weevil"
+  ],
+  "page_titles": [
+    "Bean, snap-Pea leaf weevil",
+    "Pea, green and dry-Pea leaf weevil"
+  ],
+  "description_damage": "Adults are grayish-brown, slender weevils about 0.19 inch long with a short snout. Wing covers are marked lengthwise by parallel striations. Larvae are small, C-shaped, legless, soft and fleshy, and up to 0.19 inch long. They are milky-white with a brown head. The pea leaf weevil can be confused easily with the sweet clover weevil. The pea leaf weevil has three light-colored, inconspicuous stripes that extend lengthwise down the thorax and often onto the wing covers. Sweet clover weevil does not have these stripes. The vegetable weevil, Listroderus difficilis is similarly brown with a colored 'V' on the wing covers but its range is presumed to not include the Pacific Northwest. Seedlings are very susceptible to injury and may be killed if the growing tip is damaged. Damage also may occur later in the year by larvae feeding on the roots of plants, particularly on root nodules. However, older plants-six or more expanded leaves with growing tips intact-are much less likely to suffer significant injury. Adults chew half-circle notches out of leaf margins, and larvae feed on rhizobial root nodules. Host plants include peas, alfalfa, clover, faba beans, and vetch. Adults are grayish-brown, slender weevils about 0.19 inch in length with a short snout. Wing covers are marked lengthwise by parallel striations. Larvae are small, C-shaped, legless, soft and fleshy, and up to 0.19 inch long. They are milky-white with a brown head. The pea leaf weevil can be confused easily with the sweet clover weevil. The pea leaf weevil has three light-color, inconspicuous stripes that extend lengthwise down the thorax and often onto the wing covers. Sweet clover weevils do not have these stripes. Adults chew half-circle notches out of leaf margins, and larvae feed on rhizobial root nodules. Seedlings are very susceptible to injury and may be killed if the growing tip is damaged. Damage also may occur later in the year by larvae feeding on the roots of plants, particularly on root nodules. However, older plants-six or more expanded leaves with growing tips intact-are much less likely to suffer significant injury. Host plants include peas, alfalfa, clover, faba beans, and vetch.",
+  "biology_life_history": "Adults overwinter under vegetation in old alfalfa and clover fields or in waste areas. Adults begin in mid-March on the coast and in mid-April to early May inland. Eggs are scattered on the soil surface near plants. Eggs hatch in 16 to 18 days, and larvae move into the soil to feed on root nodules. Larvae feed for 20 to 40 days, then pupate in the soil. Adults emerge in July and August and disperse to other legumes. They either feed or summer hibernate (aestivate) before overwintering. In coastal areas, there may be activity during mild weather in the fall and winter. There is one generation each year. Adults overwinter under vegetation in old alfalfa and clover fields or in waste areas. Adult activity and egg laying begin in mid March on the coast and in mid April to early May inland. Eggs are scattered on the soil surface near plants. Eggs hatch in 16 to 18 days and larvae move into the soil to feed on root nodules. Larvae feed for 20 to 40 days, then pupate in the soil. Adults emerge in July and August, disperse to other legumes, and either feed or summer hibernate (aestivate) before overwintering. In coastal areas, there may be activity during mild weather in the fall and winter. There is one generation each year.",
+  "monitoring": "Pea leaf weevils thrive under cool, wet conditions and become less of a problem as the weather warms. Sweeping can be used for sampling. Cone traps with aggregation pheromones also can be used. Economic damage can occur at densities as low as one-third adult weevil per seedling plant. Growing-point injury of 25% on seedling plants may be considered an action threshold. Pea weevils thrive under cool, wet conditions and become less of a problem as the weather warms. Damage to pea plants is more severe when growing conditions are cool and wet. Check emerging pea plantings by examining plants and rolling over dirt clods where adults may be hiding. Sweeping can be used for sampling adjacent fields where sufficient foliage has developed. Cone traps with aggregation pheromone also can be used. Economic damage can occur at densities as low as three-tenths adult weevils per seedling plant. Consider 25% growing-point injury on seedling plants an action threshold.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Latex-based formulations, such as Sevin XLR Plus, are less hazardous to bees.",
+      "alpha-cypermethrin (Fastac EC) at 0.017 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.075 lb ai/A per season.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.05 lb ai/A per season.",
+      "bifenthrin (Capture, Sniper) at 0.033 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.2 lb ai/A per season. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "bifenthrin (Sniper) at 0.08 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. bifenthrin/imidacloprid (Brigadier) at 0.0875 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.13 lb ai/A imidacloprid and 0.13 lb ai/A bifenthrin per season. Retreatment interval 7 days. bifenthrin/zeta-cypermethrin (Hero EW) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.266 lb/A per season.",
+      "carbaryl (Sevin XLR Plus) at 1.5 lb ai/A. PHI 3 days for succulents, 21 days for dried, 14 days for forage, 21 days for hay. REI 12 hr. Do not exceed 6 lb ai/A per season. Toxic in aquatic habitats.",
+      "cyfluthrin (Tombstone) at 0.038 to 0.05 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.1 lb ai/A per season. Do not feed vines or hay. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "esfenvalerate (Asana XL) at 0.025 to 0.05 lb ai/A. PHI 3 days for green peas, 21 days for dry peas. REI 12 hr. Application timing is critical to control. Do not feed treated vines to livestock. Do not exceed 0.2 lb ai/A (dry peas) or 0.1 lb ai/A (green peas) per season. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "phosmet (Imidan 70-W AG) at 0.70 to 1 lb ai/A. PHI 7 days for green peas or grazing, 10 days for cut hay. REI 5 days. Warning: Imidan residues can be highly hazardous to bees for up to 4 days. Do not use this material if blooming weeds are in the field edges or adjacent areas.",
+      "zeta-cypermethrin at 0.035 to 0.05 lb ai/A (Mustang). PHI 1 day for succulent peas, 21 days for dry peas. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.3 lb ai/A (Mustang) per season. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air. These products contain commonly used active ingredients for control of pea leaf weevil in dry and green pea. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "bifenthrin (often as a mix with",
+      "bifenthrin (usually as a mix with",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin) carbaryl",
+      "zeta-cypermethrin). carbaryl"
+    ],
+    "cultural": "Crop rotation and planting beans away from other legumes is useful. Irrigation and proper fertilization may help crops outgrow defoliation. Crop rotation and planting peas away from other legumes is useful. Irrigation and proper fertilization may help crops outgrow defoliation."
+  },
+  "damage_tags": [
+    "feeding_damage",
+    "leaf_damage",
+    "root_damage",
+    "seedling_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:55.304537+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.565052+00:00"
+}

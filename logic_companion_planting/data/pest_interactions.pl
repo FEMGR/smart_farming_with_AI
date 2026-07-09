@@ -23,37 +23,23 @@
 % and deterrent effects between plants, pests, and diseases, which are crucial for
 % generating effective companion planting strategies.
 %
-
 % ====================================================================================================
 % COMPANION PLANTING DATA (TRACEABLE)
 % Sources: attra, cornell, almanac, traditional
 % ====================================================================================================
 
 % =========================================================
-% PEST-PLANT INTERACTION DATA
-% =========================================================
-
-% --- Cabbage Pests ---
-
-% =========================================================
 % PEST AND BENEFICIAL INTERACTIONS BY PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
+% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
 % =========================================================
 
 % ---------------------------------------------------------
 % BASIL
 % ---------------------------------------------------------
-
-% =========================================================
-% PEST AND BENEFICIAL INTERACTIONS BY PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
-% =========================================================
-
-% ---------------------------------------------------------
-% BASIL
-% ---------------------------------------------------------
+deters(basil, flies, pfaf, medium).
 deters(basil, hornworm, cornell, high).
 deters(basil, hornworm, ua, high).
+deters(basil, mosquito, pfaf, medium).
 deters(basil, mosquito, ua, medium).
 
 % ---------------------------------------------------------
@@ -123,6 +109,16 @@ deters(onion, carrot_fly, ua, high).
 deters(onion, carrot_rust_fly, attra, high).
 
 % ---------------------------------------------------------
+% PARSLEY
+% ---------------------------------------------------------
+deters(parsley, mosquito, pfaf, medium).
+
+% ---------------------------------------------------------
+% PEPPERMINT
+% ---------------------------------------------------------
+deters(peppermint, insect_pests, pfaf, medium).
+
+% ---------------------------------------------------------
 % RADISH
 % ---------------------------------------------------------
 deters(radish, cucumber_beetle, attra, medium).
@@ -140,6 +136,16 @@ deters(rosemary, cabbage_moth, attra, high).
 deters(sage, cabbage_worm, traditional, high).
 
 % ---------------------------------------------------------
+% SOYBEAN
+% ---------------------------------------------------------
+deters(soybean, insects, pfaf, medium).
+
+% ---------------------------------------------------------
+% SPEARMINT
+% ---------------------------------------------------------
+deters(spearmint, insect_pests, pfaf, medium).
+
+% ---------------------------------------------------------
 % THYME
 % ---------------------------------------------------------
 deters(thyme, armyworm, attra, medium).
@@ -147,20 +153,7 @@ deters(thyme, armyworm, attra, medium).
 % ---------------------------------------------------------
 % TOMATO
 % ---------------------------------------------------------
+deters(tomato, ants, pfaf, medium).
 deters(tomato, asparagus_beetle, cornell, high).
-
-
-% =========================================================
-% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: pest_interactions
-% Review before editing manually.
-% =========================================================
-
-deters(basil, mosquito, pfaf, medium).
-deters(basil, flies, pfaf, medium).
-deters(parsley, mosquito, pfaf, medium).
-deters(peppermint, insect_pests, pfaf, medium).
-deters(soybean, insects, pfaf, medium).
-deters(spearmint, insect_pests, pfaf, medium).
 deters(tomato, insect_pests, pfaf, medium).
 deters(tomato, insects, pfaf, medium).
-deters(tomato, ants, pfaf, medium).

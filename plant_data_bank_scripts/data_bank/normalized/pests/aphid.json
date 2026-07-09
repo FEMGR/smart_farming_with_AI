@@ -1,0 +1,80 @@
+{
+  "pest_atom": "aphid",
+  "name": "Aphid",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Aphid",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-aphid",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": "Green peach aphid",
+      "scientific_name": "Myzus persicae",
+      "scientific_atom": "myzus_persicae"
+    },
+    {
+      "common_name": "Melon aphid",
+      "scientific_name": "Aphis gossypii",
+      "scientific_atom": "aphis_gossypii"
+    },
+    {
+      "common_name": "Potato aphid",
+      "scientific_name": "Macrosiphum euphorbiae",
+      "scientific_atom": "macrosiphum_euphorbiae"
+    }
+  ],
+  "scientific_names": [
+    "Myzus persicae",
+    "Aphis gossypii",
+    "Macrosiphum euphorbiae"
+  ],
+  "primary_scientific_name": "Myzus persicae",
+  "host_plants": [],
+  "includes_text": "Green peach aphid ( Myzus persicae ) Melon aphid ( Aphis gossypii ) Potato aphid ( Macrosiphum euphorbiae )",
+  "biology_life_history": "Most species of aphids have similar life cycles. Aphid females give birth to live offspring all year without mating. When vegetable crops are not available, aphids live on a wide variety of weed hosts. In summer and fall, aphids may produce winged females and, later, winged males. They mate and produce eggs for overwintering, especially in colder climates. Otherwise, adult aphids overwinter on crops, weeds, or trees. There may be as few as two generations (the green peach aphid) or as many as 16 generations each year, depending on the species and climate.",
+  "description_damage": "The green peach aphid is slender, dark green to yellow, and has no waxy bloom. Infestations may result in wilting. The melon aphid is variable in color but is often light green mottled with dark green. Unlike other aphids, it is able to tolerate hot weather. The potato aphid has both a pink and green form. It is a larger aphid. High potato aphid populations can distort leaves and stems, stunt plants, and cause necrotic spots on leaves. These aphids also secrete a large amount of honeydew that promotes development of sooty mold on foliage and fruit. In general, aphids damage plants by contaminating the harvested fruit with their presence; sucking plant sap, which causes heavily infested leaves to curl and stunts plants; excreting honeydew, which causes sticky, shiny leaves to turn black because of a sooty-mold growth; and spreading plant diseases such as alfalfa mosaic, tomato yellow top, and zucchini yellow mosaic (a large number of viruses are spread by aphids). Infestations frequently are localized, with heavily infested leaves curled downward.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "wilting",
+    "leaf_curling",
+    "stunting",
+    "necrosis",
+    "honeydew",
+    "sooty_mold",
+    "leaf_damage",
+    "stem_damage",
+    "fruit_damage",
+    "distortion",
+    "yellowing",
+    "virus_vector",
+    "disease_vector"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "includes"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-aphid/p6130430.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-aphid/p6130430.jpg?itok=Nn3B9O99",
+      "caption": "A colony of melon aphids, Aphis gossypii , on the underside of a watermelon leaf"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:52.762515+00:00"
+}

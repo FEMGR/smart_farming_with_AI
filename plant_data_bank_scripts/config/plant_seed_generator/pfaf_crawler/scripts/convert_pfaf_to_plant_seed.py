@@ -65,7 +65,6 @@ import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-
 DEFAULT_INPUT = Path("output/pfaf_edible_plants.json")
 DEFAULT_OUTPUT = Path("output/config/plants_seed.json")
 

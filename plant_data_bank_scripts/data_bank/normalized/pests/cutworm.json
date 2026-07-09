@@ -1,0 +1,96 @@
+{
+  "pest_atom": "cutworm",
+  "name": "Cutworm",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Cutworm",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-cutworm",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [
+    {
+      "common_name": null,
+      "scientific_name": "Agotis ipsilon",
+      "scientific_atom": "agotis_ipsilon"
+    },
+    {
+      "common_name": null,
+      "scientific_name": "Peridroma saucia",
+      "scientific_atom": "peridroma_saucia"
+    }
+  ],
+  "scientific_names": [
+    "Agotis ipsilon",
+    "Peridroma saucia"
+  ],
+  "primary_scientific_name": "Agotis ipsilon",
+  "host_plants": [],
+  "includes_text": "Black cutworm ( Agotis ipsilon ) Variegated cutworm ( Peridroma saucia )",
+  "biology_life_history": "During mild winters, the black cutworm overwinters in field debris and brush as a pupa. Otherwise, it flies in from warmer climates in late spring. The variegated cutworm overwinters in the soil or under trash as a partially mature larvae. Larvae begin feeding in early spring and may damage seedlings. They mature in late April and May and pupate in earthen cells in the soil. Adults emerge in late May and June. The black cutworm moth scatters eggs across the field. The variegated cutworm moth lays eggs in clusters on the undersides of leaves. Eggs hatch in 4 to 7 days, and larvae begin to feed on plant foliage. Larvae feed for 4 to 6 weeks, then pupate in the soil. The next generation of adults emerges in late August and lays eggs. These hatch into larvae which form the overwintering stage for the variegated cutworm. There are two generations each year.",
+  "description_damage": "The black cutworm moth is a uniform dark brown with a lighter irregular band near the wing tips and a distinct black dash. It has a wingspan of 1.5 to 2.12 inches in length. Eggs are white at first, later turning brown. Larvae are a uniform gray to nearly black, lighter underneath, ranging in size from 0.18 inch to 2 inches as they pass through up to nine instars. The pupa is dark brown and about 0.75 inch in length. Most feeding is at ground level. In the Willamette Valley, black cutworm is considered to be the most damaging cutworm species to vegetable crops. The last instar does by far the most feeding, though middle instars can cut down seedlings. Variegated cutworm moths are approximately 1 inch in length with a wingspan of 1.25 to 2 inches. They vary widely in coloration. Eggs are white to dull or off-white in color, and ribbed. They generally are deposited in massed rows on crop foliage but frequently are found on weeds. Larvae are brownish gray to grayish black and up to 1.75 inches in length when fully grown. Pupae are mahogany brown and about 0.75 inch in length. The variegated cutworm feeds readily on a wide variety of crops and climbs into the host plant to feed. Cutworms are most active and cause the most damage during spring and early summer months.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "feeding_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cutworm/g61-3011.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cutworm/g61-3011.jpg?itok=SVnxMVTn",
+      "caption": "Variegated cutworm Peridroma saucia Hubner Newly hatched on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cutworm/352-224.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cutworm/352-224.jpg?itok=1qQIr77y",
+      "caption": "Black cutworm Agrotis ipsilon Hugnagel Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cutworm/g55-290.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cutworm/g55-290.jpg?itok=d_dBqzv2",
+      "caption": "Variegated cutworm Peridroma saucia Hubner Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-cutworm/129-1011.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-cutworm/129-1011.jpg?itok=xKwx4sTb",
+      "caption": "Variegated cutworm Peridroma saucia Hubner Immature"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.253658+00:00"
+}

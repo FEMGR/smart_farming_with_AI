@@ -1,0 +1,74 @@
+{
+  "pest_atom": "corn_earworm",
+  "name": "Corn earworm",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Corn earworm",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-corn-earworm",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "Corn earworm overwinters as a pupa in the soil except in some areas in the north, where it is unable to survive the winter. Adults emerge in late May and June and begin laying eggs on suitable hosts. Egg laying occurs throughout the sweet corn growing year. Corn earworm moths are most active during evening and night. Although eggs are deposited on the foliage, fresh corn silk is the favorite site for egg deposition. Female moths lay their eggs singly. Eggs are white at first but develop a dark red or brown ring within 24 hr. Eggs hatch in 5 to 7 days. Larvae feed for 2 to 3 weeks before pupating in the soil. Adults emerge in about 2 weeks and lay eggs on corn silk or developing fruits. Moths move northward and establish infestations in areas where they cannot overwinter. The summer generations overlap, resulting in a regular and gradual build-up of the corn earworm population from the beginning to the end of the year. There are two to three generations each year.",
+  "description_damage": "Corn earworm moths are about 0.75 inch in length, robust, with a wingspan of 1 to 1.5 inches, and range from olive green to tan to dark reddish brown. Eggs are pale green at first, turning yellowish and finally gray. Young larvae are greenish with black heads and conspicuous black hairs on the body. Fully developed worms are about 1.5 inches in length and range in color from pale green or pinkish to brown. Pupae are about 0.75 inch in length and mahogany brown. They usually are 2 to 4 inches deep in the soil. Corn earworm is a major pest of sweet corn occurring at significant levels in most years, though it may not be treated for in commercial sweet corn for processing in some areas. The tip of the ear is cut off during the early stages of processing. The corn earworm may be present throughout the year but is most abundant during August and September. Larvae feed on leaves, tassels, the whorl, and within ears, but the ears are the preferred sites for corn earworm attack. Ear damage is characterized by extensive excrement at the ear tip. Young larvae feed on corn silks, clipping them off. Shortly thereafter, they feed their way into the ear where they remain, feeding in the tip area until they exit to pupate in the soil. First generation larvae may feed as \"budworms,\" damaging leaf whorls and newly forming ears (in Columbia Basin area).",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "feeding_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-corn-earworm/95-121.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-corn-earworm/95-121.jpg?itok=aGAyvoIu",
+      "caption": "Corn earworm Helicoverpa zea Boddie Immature showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-corn-earworm/g314-141.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-corn-earworm/g314-141.jpg?itok=7K9zEXb5",
+      "caption": "Corn earworm Helicoverpa zea Boddie Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-corn-earworm/30-14a1.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-corn-earworm/30-14a1.jpg?itok=DQ9ra31S",
+      "caption": "Corn earworm Helicoverpa zea Boddie Immature showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.102306+00:00"
+}

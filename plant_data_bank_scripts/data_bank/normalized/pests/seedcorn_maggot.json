@@ -1,0 +1,72 @@
+{
+  "pest_atom": "seedcorn_maggot",
+  "name": "Seedcorn maggot",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Seedcorn maggot",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-seedcorn-maggot",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "pnw_common_vegetable_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [],
+  "includes_text": "",
+  "biology_life_history": "The seedcorn maggot overwinters as a pupa in the soil. Adults emerge in early May and lay eggs singly or in clusters in the soil near plant stems. They prefer soils with high levels of organic matter. Eggs hatch in 7 to 10 days, and the larvae feed for 1 to 3 weeks on seeds and germinating seedlings. Then, they burrow into the soil to pupate. They emerge as adults in late June and early July. Adults lay eggs as before, and larvae feed to maturity and pupate in August to form the overwintering stage. Weather conditions are important in the development, activity, and abundance of the seedcorn maggot. Development is slowed greatly at average temperatures below 45°F or above 75°F. There may be as many as five generations each year.",
+  "description_damage": "The seedcorn maggot adult is a slender, light gray fly, about 0.19 inch in length. It looks much like a small housefly. The whitish eggs have slightly raised ridges running their length and width forming tiny rectangles. Larvae are about 0.25 inch in length, white to whitish yellow, cylindrical, and tapered, the smaller end in front. Pupae are small brown capsules. The seedcorn maggot is abundant during or following a wet cycle, primarily in spring, and is most common in fields containing a high amount of residue from a previous crop or where manure has been spread. Seedcorn maggots burrow into seeds and developing embryos in the ground, damaging and destroying seeds and creating sites for rot. They may spread bacterial soft rot.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": "",
+    "chemical_commercial": ""
+  },
+  "damage_tags": [
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-seedcorn-maggot/g31-181.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-seedcorn-maggot/g31-181.jpg?itok=ZlOnWtbc",
+      "caption": "Seedcorn maggot Delia platura Meigen Female adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-seedcorn-maggot/203-21.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-seedcorn-maggot/203-21.jpg?itok=0sKuLxlx",
+      "caption": "Seedcorn maggot Delia platura Meigen Immature showing damage"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-seedcorn-maggot/212-291.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-seedcorn-maggot/212-291.jpg?itok=aIIuHoCt",
+      "caption": "Seedcorn maggot Delia platura Meigen Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.906799+00:00"
+}

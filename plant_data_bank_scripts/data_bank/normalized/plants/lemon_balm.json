@@ -91,12 +91,6 @@
     "other_uses_notes": "Essential Pot-pourri Repellent Agroforestry uses: Lemon Balm is beneficial for attracting pollinators and can be used as a companion plant. Its aromatic foliage can help repel certain pests. Landscape Uses: Border, Container, Rock garden. The growing plant is said to repel flies and ants[14]. It is also rubbed on the skin as a repellent[238], though the essential oil would be more effective here[K]. An essential oil is obtained from the plant[100] (the exact part is not specified; it is probably the entire plant and especially the flowering stems). It is used medicinally. The whole plant is very pleasantly aromatic, the aroma lasting long after the plant has been harvested. It is, therefore, a very useful ingredient in pot-pourri[4]. A dynamic accumulator gathers minerals or nutrients from the soil and stores them in a more bioavailable form - used as fertilizer or to improve mulch. 1. Nectary - Flowers rich in nectar and pollen: Yes – Lemon Balm produces attractive flowers to pollinators, especially bees, providing a good nectar source. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – The leaves are edible and can be used in teas, salads, or flavouring. While it doesn’t produce significant fruit or seeds, its foliage can provide some cover for wildlife. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The dense growth habit of Lemon Balm can provide shelter for beneficial insects and invertebrates. It may also offer some overwintering sites due to its robust foliage. 4. Pest Confuser (Smell): Yes – The strong, lemony scent of Lemon Balm can help repel certain pests, acting as a natural pest confuser due to its aromatic properties.",
     "edible_uses_notes": "Edible Parts: Leaves Edible Uses: Condiment Tea Leaves - raw or cooked. A pleasant lemon-like aroma and flavour, they are used mainly as a flavouring in salads and cooked foods[5, 7, 8, 9, 14, 27, 183]. A lemon-flavoured tea can be made from the fresh or dried leaves[21, 183]. A bunch of the leaves can be added to china tea, much improving the flavour, the leaves are also added to fruit cups etc[4]. They are used as a flavouring in various alcoholic beverages including Chartreuse and Benedictine[238]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -118,6 +112,12 @@
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -258,7 +258,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

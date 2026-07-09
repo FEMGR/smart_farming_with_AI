@@ -85,12 +85,6 @@
     "other_uses_notes": "Cosmetic Dye Hair Polish Repellent Rust The juice of the plant is used as a moth repellent and can also be rubbed onto the skin to repel insects[7]. The plant juice can be used as a rust preventative on metals and as a polish for copper and glass[7]. A yellow-brown dye is obtained from the skins of the bulbs[141, 168]. Onion juice rubbed into the skin is said to promote the growth of hair and to be a remedy for baldness[7, 254]. It is also used as a cosmetic to get rid of freckles[7]. The growing plant is said to repel insects and moles[201]. A spray made by pouring enough boiling water to cover 1kg of chopped unpeeled onions is said to increase the resistance of other plants to diseases and parasites[201]. 1. Nectary - Flowers rich in nectar and pollen: Yes – Allium species produce flowers rich in nectar and pollen, attracting pollinators like bees and butterflies. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Allium species' bulbs, leaves, and flowers are edible and provide food for humans and wildlife. The leaf litter can also provide some habitat, though they are not typically used for nesting. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): No – While Allium plants can provide some ground cover, they are not specifically known for providing significant shelter or overwintering sites for invertebrates. 4. Pest Confuser (Smell): Yes – The strong aroma of Allium species can help deter pests, acting as a natural pest confuser due to their sulfur compounds.",
     "edible_uses_notes": "Edible Parts: Flowers Leaves Root Seed Edible Uses: Bulb - raw or cooked. A very versatile food, the bulb can be 10cm or more in diameter and is widely used in most countries of the world. Eaten raw, it can be sliced up and used in salads, sandwich fillings etc, it can be baked or boiled as a vegetable in its own right and is also commonly used as a flavouring in soups, stews and many other cooked dishes. Some cultivars have been selected for their smaller and often hotter bulbs and these are used for making pickles. Leaves - raw or cooked[2, 37]. There are some cultivars, the spring onions, that have been selected for their leaves and are used in salads whilst still young and actively growing - the bulb is much smaller than in other cultivars and is usually eaten with the leaves. By successional sowing, they can be available at any time of the year. Flowers - raw. Used as a garnish on salads. The flowers are somewhat dry and are less pleasant than many other species[K]. The seeds are sprouted and eaten. They have a delicious onion flavour[K]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [
       {
@@ -169,6 +163,34 @@
       "PFAF describes this plant as relevant to companion planting.",
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [
+      "bacterial_soft_rots",
+      "basal_rot",
+      "black_mold",
+      "blue_mold_rot",
+      "botrytis_bulb_rot",
+      "botrytis_leafspot",
+      "downy_mildew",
+      "leaf_blight",
+      "neck_rot",
+      "pink_root",
+      "purple_blotch",
+      "stemphylium_leaf_blight",
+      "white_rot"
+    ],
+    "known_pest_ids": [
+      "armyworm_and_cutworm",
+      "brown_wheat_mite",
+      "bulb_mite",
+      "leafminer",
+      "onion_maggot_and_seedcorn_maggot",
+      "thrips",
+      "wireworm"
+    ],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -308,7 +330,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

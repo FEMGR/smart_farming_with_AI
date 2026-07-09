@@ -87,12 +87,6 @@
     "other_uses_notes": "The seed yields a semi-drying oil which is a substitute for rapeseed oil[46 ]. It is rich in erucic acid[289 ]. It can also be used for lighting and burning with very little soot[114 ]. Eruca seed oil is mainly used in industries as a lubricant, for soap-making, as an illuminating agent, in massaging, in medicines and in cooking as a salad oil[289 ]. Erucic oil is sometimes used for adulterating rapeseed/mustard oil[289 ]. High erucic acid (HEA) oil has special properties which include: High smoke and flash points, oiliness and stability at high temperatures, ability to remain fluid at low temperatures and durability[289 ]. HEA oil is used to produce erucamide which is used as a slip additive in polythene and polypropylene, to reduce surface friction and prevent adhesion between film surfaces[289 ]. HEA oil is also used in printing inks, lubricants and has a range of other applications[289 ]. An essential oil from the leaves of Eruca sativa contains 67 volatile components, representing 96.52% of the oil. The oil is characterized by a high content of sulphur and nitrogen containing compounds[289 ].",
     "edible_uses_notes": "Young leaves - raw or cooked[2 , 27 , 33 , 34 , 74 ]. A distinct strongly spicy flavour[183 ], the taste is best from fast, well-grown plants[200 ]. A few leaves added to a salad are acceptable though the flavour is too strong for many tastes[K ]. Some people really like these leaves though most are not very keen[K ]. Older leaves that have become too hot to eat on their own can be pureed and added to soups etc[183 ]. In the milder areas of Britain it is possible to produce edible leaves all year round from successional sowings, especially if the winter crop is given some protection[K ]. Flowers - raw[52}. A similar taste to the leaves, they make a nice garnish on the salad bowl[183 ]. The seed yields a semi-drying oil[1 , 2 , 74 ]. Its use as a salad or cooking oil is limited because of its initial acridity; this acridity disappears after storing the oil for 6 months, it is then suitable for edible purposes[61 , 114 , 299 ] The oil can be used as a substitute for rapeseed oil[34 ]. It contains 32% fat, 27% protein[114 ]. It is known as 'jamba oil'[183 ]. A mustard is obtained from the seed[46 , 74 , 183 ]. The strong flavour comes from an essential oil that is contained within the oil of the seed[114 ]. The pungency of mustard develops when cold water is added to the ground-up seed - an enzyme (myrosin) acts on a glycoside (sinigrin) to produce a sulphur compound. The reaction takes 10 - 15 minutes. Mixing with hot water or vinegar, or adding salt, inhibits the enzyme and produces a mild bitter mustard[238 ]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -111,6 +105,12 @@
     "pollinator_support": true,
     "pest_confuser": false,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -249,7 +249,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

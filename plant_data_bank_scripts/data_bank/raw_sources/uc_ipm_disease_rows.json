@@ -1,0 +1,3431 @@
+[
+  {
+    "disease_id": "botrytis_rot",
+    "display_name": "Botrytis rot (gray mold)",
+    "pathogen_name": "Botrytis cinerea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "artichoke",
+    "raw_host_terms": [
+      "artichoke"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.975070+00:00"
+  },
+  {
+    "disease_id": "gray_mold",
+    "display_name": "Gray mold (Botrytis rot)",
+    "pathogen_name": "Botrytis cinerea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "artichoke",
+    "raw_host_terms": [
+      "artichoke"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.975319+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Leveillula taurica",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "artichoke"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "artichoke",
+    "raw_host_terms": [
+      "artichoke"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.975525+00:00"
+  },
+  {
+    "disease_id": "fusarium_wilt",
+    "display_name": "Fusarium wilt",
+    "pathogen_name": "Fusarium oxysporum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "asparagus",
+    "raw_host_terms": [
+      "asparagus"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.975729+00:00"
+  },
+  {
+    "disease_id": "phytophthora_crown_and_spear_rot",
+    "display_name": "Phytophthora crown and spear rot",
+    "pathogen_name": "Phytophthora spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "asparagus",
+    "raw_host_terms": [
+      "asparagus"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.975936+00:00"
+  },
+  {
+    "disease_id": "rust",
+    "display_name": "Rust",
+    "pathogen_name": "Puccinia asparagi",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "asparagus"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "asparagus",
+    "raw_host_terms": [
+      "asparagus"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.976140+00:00"
+  },
+  {
+    "disease_id": "avocado_root_rot",
+    "display_name": "Avocado root rot",
+    "pathogen_name": "Phytophthora cinnamomi",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "avocado"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "avocado",
+    "raw_host_terms": [
+      "avocado"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.976350+00:00"
+  },
+  {
+    "disease_id": "bacterial_canker",
+    "display_name": "Bacterial canker",
+    "pathogen_name": "Xanthomonas campestris",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "avocado"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "avocado",
+    "raw_host_terms": [
+      "avocado"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.976546+00:00"
+  },
+  {
+    "disease_id": "dothiorella_canker",
+    "display_name": "Dothiorella canker",
+    "pathogen_name": "Botryosphaeria spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "avocado"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "avocado",
+    "raw_host_terms": [
+      "avocado"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.976739+00:00"
+  },
+  {
+    "disease_id": "dothiorella_canker",
+    "display_name": "Dothiorella canker",
+    "pathogen_name": "Neofusicoccum spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "avocado"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "avocado",
+    "raw_host_terms": [
+      "avocado"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.976940+00:00"
+  },
+  {
+    "disease_id": "phytophthora_root_and_crown_rot",
+    "display_name": "Phytophthora root and crown rot",
+    "pathogen_name": "Phytophthora spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "avocado"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "avocado",
+    "raw_host_terms": [
+      "avocado"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.977153+00:00"
+  },
+  {
+    "disease_id": "sunblotch",
+    "display_name": "Sunblotch",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "avocado"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "avocado",
+    "raw_host_terms": [
+      "avocado"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.977341+00:00"
+  },
+  {
+    "disease_id": "verticillium_wilt",
+    "display_name": "Verticillium wilt",
+    "pathogen_name": "Verticillium dahliae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "avocado"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "avocado",
+    "raw_host_terms": [
+      "avocado"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.977535+00:00"
+  },
+  {
+    "disease_id": "bean_rust",
+    "display_name": "Bean rust",
+    "pathogen_name": "Uromyces phaseoli",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.977730+00:00"
+  },
+  {
+    "disease_id": "curly_top",
+    "display_name": "Curly top",
+    "pathogen_name": "Beet curly top virus (BCTV)",
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.977934+00:00"
+  },
+  {
+    "disease_id": "damping_off",
+    "display_name": "Damping off",
+    "pathogen_name": "Pythium spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.978154+00:00"
+  },
+  {
+    "disease_id": "damping_off",
+    "display_name": "Damping off",
+    "pathogen_name": "Rhizoctonia solani",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.978383+00:00"
+  },
+  {
+    "disease_id": "fusarium_root_rot",
+    "display_name": "Fusarium root rot",
+    "pathogen_name": "Fusarium solani",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.978590+00:00"
+  },
+  {
+    "disease_id": "mosaic_viruses",
+    "display_name": "Mosaic viruses",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.978785+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe polygoni",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.978980+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Sphaerotheca fuliginea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.979200+00:00"
+  },
+  {
+    "disease_id": "white_mold",
+    "display_name": "White mold",
+    "pathogen_name": "Sclerotinia sclerotiorum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "bean"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beans",
+    "raw_host_terms": [
+      "beans"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.979408+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe polygoni",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "beet"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "beet",
+    "raw_host_terms": [
+      "beet"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.979613+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Sphaerotheca fuliginea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "black_eyed_pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "black-eyed pea",
+    "raw_host_terms": [
+      "black-eyed pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.979832+00:00"
+  },
+  {
+    "disease_id": "bacterial_leaf_spot",
+    "display_name": "Bacterial leaf spot",
+    "pathogen_name": "Pseudomonas syringae",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "broccoli"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "broccoli",
+    "raw_host_terms": [
+      "broccoli"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.980045+00:00"
+  },
+  {
+    "disease_id": "bacterial_soft_rot",
+    "display_name": "Bacterial soft rot",
+    "pathogen_name": "Erwinia spp.",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "broccoli"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "broccoli",
+    "raw_host_terms": [
+      "broccoli"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.980243+00:00"
+  },
+  {
+    "disease_id": "phytophthora_root_rot",
+    "display_name": "Phytophthora root rot",
+    "pathogen_name": "Phytophthora megasperma",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "broccoli"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "broccoli",
+    "raw_host_terms": [
+      "broccoli"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.980443+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cruciferarum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "broccoli"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "broccoli",
+    "raw_host_terms": [
+      "broccoli"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.980640+00:00"
+  },
+  {
+    "disease_id": "black_blight",
+    "display_name": "Black blight (Ringspot)",
+    "pathogen_name": "Mycosphaerella brassicicola",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "brussels_sprout"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "brussel sprouts",
+    "raw_host_terms": [
+      "brussel sprouts"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.980851+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cruciferarum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "brussels_sprout"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "brussel sprouts",
+    "raw_host_terms": [
+      "brussel sprouts"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.981115+00:00"
+  },
+  {
+    "disease_id": "ringspot",
+    "display_name": "Ringspot (Black blight)",
+    "pathogen_name": "Mycosphaerella brassicicola",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "brussels_sprout"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "brussel sprouts",
+    "raw_host_terms": [
+      "brussel sprouts"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.981327+00:00"
+  },
+  {
+    "disease_id": "fusarium_wilt",
+    "display_name": "Fusarium wilt (yellows)",
+    "pathogen_name": "Fusarium oxysporum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cabbage"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cabbage",
+    "raw_host_terms": [
+      "cabbage"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.981525+00:00"
+  },
+  {
+    "disease_id": "yellows",
+    "display_name": "Yellows (Fusarium wilt)",
+    "pathogen_name": "Fusarium oxysporum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cabbage"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cabbage",
+    "raw_host_terms": [
+      "cabbage"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.981733+00:00"
+  },
+  {
+    "disease_id": "angular_leaf_spot",
+    "display_name": "Angular leaf spot",
+    "pathogen_name": "Pseudomonas syringae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cantaloupe"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cantaloupe",
+    "raw_host_terms": [
+      "cantaloupe"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.981938+00:00"
+  },
+  {
+    "disease_id": "curly_top",
+    "display_name": "Curly top",
+    "pathogen_name": "Beet curly top virus (BCTV)",
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "cantaloupe"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cantaloupe",
+    "raw_host_terms": [
+      "cantaloupe"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.982155+00:00"
+  },
+  {
+    "disease_id": "fusarium_wilt",
+    "display_name": "Fusarium wilt",
+    "pathogen_name": "Fusarium oxysporum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cantaloupe"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cantaloupe",
+    "raw_host_terms": [
+      "cantaloupe"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.982357+00:00"
+  },
+  {
+    "disease_id": "leaf_spot_angular",
+    "display_name": "Leaf spot, Angular",
+    "pathogen_name": "Pseudomonas syringae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cantaloupe"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cantaloupe",
+    "raw_host_terms": [
+      "cantaloupe"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.982561+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Sphaerotheca fuliginea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cantaloupe"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cantaloupe",
+    "raw_host_terms": [
+      "cantaloupe"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.982778+00:00"
+  },
+  {
+    "disease_id": "alternaria_leaf_blight",
+    "display_name": "Alternaria leaf blight",
+    "pathogen_name": "Alternaria dauci",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.983017+00:00"
+  },
+  {
+    "disease_id": "bacterial_soft_rot",
+    "display_name": "Bacterial soft rot",
+    "pathogen_name": "Erwinia carotovora",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.983251+00:00"
+  },
+  {
+    "disease_id": "beet_leafhopper_transmitted_virescence_agent",
+    "display_name": "Beet leafhopper transmitted virescence agent (BLTVA)",
+    "pathogen_name": "Beet leafhopper transmitted virescence agent (BLTVA)",
+    "pathogen_type": "phytoplasma",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.983541+00:00"
+  },
+  {
+    "disease_id": "bltva",
+    "display_name": "BLTVA (beet leafhopper transmitted virescence agent)",
+    "pathogen_name": "BLTVA (beet leafhopper transmitted virescence agent)",
+    "pathogen_type": "phytoplasma",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.983802+00:00"
+  },
+  {
+    "disease_id": "cavity_spot",
+    "display_name": "Cavity spot",
+    "pathogen_name": "Pythium violae",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.984007+00:00"
+  },
+  {
+    "disease_id": "cercospora_leaf_spot",
+    "display_name": "Cercospora leaf spot",
+    "pathogen_name": "Cercospora carotae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.984247+00:00"
+  },
+  {
+    "disease_id": "cottony_soft_rot",
+    "display_name": "Cottony soft rot (white mold)",
+    "pathogen_name": "Sclerotinia sclerotiorum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.984488+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_root_dieback",
+    "display_name": "Damping off and root dieback",
+    "pathogen_name": "Pythium spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.984700+00:00"
+  },
+  {
+    "disease_id": "leaf_spot_cercospora",
+    "display_name": "Leaf spot, Cercospora",
+    "pathogen_name": "Cercospora carotae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.984967+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe heraclei",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.985236+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe polygoni",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.985452+00:00"
+  },
+  {
+    "disease_id": "white_mold",
+    "display_name": "White mold (Cottony soft rot)",
+    "pathogen_name": "Sclerotinia sclerotiorum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "carrot"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "carrot",
+    "raw_host_terms": [
+      "carrot"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.985699+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cruciferarum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cauliflower"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cauliflower",
+    "raw_host_terms": [
+      "cauliflower"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.985936+00:00"
+  },
+  {
+    "disease_id": "clubroot",
+    "display_name": "Clubroot",
+    "pathogen_name": "Plasmodiophora brassicae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cabbage",
+      "broccoli",
+      "cauliflower",
+      "kale",
+      "brussels_sprout",
+      "bok_choy",
+      "turnip",
+      "radish"
+    ],
+    "plant_groups_affected": [
+      "cole_crop"
+    ],
+    "raw_host_text": "cole crops",
+    "raw_host_terms": [
+      "cole crops"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.986294+00:00"
+  },
+  {
+    "disease_id": "downy_mildew",
+    "display_name": "Downy mildew",
+    "pathogen_name": "Peronospora parasitica",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "cabbage",
+      "broccoli",
+      "cauliflower",
+      "kale",
+      "brussels_sprout",
+      "bok_choy",
+      "turnip",
+      "radish"
+    ],
+    "plant_groups_affected": [
+      "cole_crop"
+    ],
+    "raw_host_text": "cole crops",
+    "raw_host_terms": [
+      "cole crops"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.986619+00:00"
+  },
+  {
+    "disease_id": "lettuce_drop",
+    "display_name": "Lettuce drop (white mold)",
+    "pathogen_name": "Sclerotinia spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cabbage",
+      "broccoli",
+      "cauliflower",
+      "kale",
+      "brussels_sprout",
+      "bok_choy",
+      "turnip",
+      "radish"
+    ],
+    "plant_groups_affected": [
+      "cole_crop"
+    ],
+    "raw_host_text": "cole crops",
+    "raw_host_terms": [
+      "cole crops"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.986921+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cruciferarum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cabbage",
+      "broccoli",
+      "cauliflower",
+      "kale",
+      "brussels_sprout",
+      "bok_choy",
+      "turnip",
+      "radish"
+    ],
+    "plant_groups_affected": [
+      "cole_crop"
+    ],
+    "raw_host_text": "cole crops",
+    "raw_host_terms": [
+      "cole crops"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.987238+00:00"
+  },
+  {
+    "disease_id": "verticillium_wilt",
+    "display_name": "Verticillium wilt",
+    "pathogen_name": "Verticillium dahliae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cabbage",
+      "broccoli",
+      "cauliflower",
+      "kale",
+      "brussels_sprout",
+      "bok_choy",
+      "turnip",
+      "radish"
+    ],
+    "plant_groups_affected": [
+      "cole_crop"
+    ],
+    "raw_host_text": "cole crops",
+    "raw_host_terms": [
+      "cole crops"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.987542+00:00"
+  },
+  {
+    "disease_id": "white_mold",
+    "display_name": "White mold (lettuce drop)",
+    "pathogen_name": "Sclerotinia spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cabbage",
+      "broccoli",
+      "cauliflower",
+      "kale",
+      "brussels_sprout",
+      "bok_choy",
+      "turnip",
+      "radish"
+    ],
+    "plant_groups_affected": [
+      "cole_crop"
+    ],
+    "raw_host_text": "cole crops",
+    "raw_host_terms": [
+      "cole crops"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.987839+00:00"
+  },
+  {
+    "disease_id": "bacterial_soft_rot",
+    "display_name": "Bacterial soft rot",
+    "pathogen_name": "Erwinia spp.",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "corn"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "corn",
+    "raw_host_terms": [
+      "corn"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.988066+00:00"
+  },
+  {
+    "disease_id": "common_rust",
+    "display_name": "Common rust",
+    "pathogen_name": "Puccinia sorghi",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "corn"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "corn",
+    "raw_host_terms": [
+      "corn"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.988285+00:00"
+  },
+  {
+    "disease_id": "common_smut",
+    "display_name": "Common smut",
+    "pathogen_name": "Ustilago maydis",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "corn"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "corn",
+    "raw_host_terms": [
+      "corn"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.988483+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_seed_rots",
+    "display_name": "Damping off and seed rots",
+    "pathogen_name": "Pythium spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "corn"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "corn",
+    "raw_host_terms": [
+      "corn"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.988690+00:00"
+  },
+  {
+    "disease_id": "fusarium_ear_and_stalk_rot",
+    "display_name": "Fusarium ear and stalk rot",
+    "pathogen_name": "Fusarium spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "corn"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "corn",
+    "raw_host_terms": [
+      "corn"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.988914+00:00"
+  },
+  {
+    "disease_id": "head_smut",
+    "display_name": "Head smut",
+    "pathogen_name": "Sphacelotheca reiliana",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "corn"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "corn",
+    "raw_host_terms": [
+      "corn"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.989131+00:00"
+  },
+  {
+    "disease_id": "maize_dwarf_mosaic_virus",
+    "display_name": "Maize dwarf mosaic virus",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "corn"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "corn",
+    "raw_host_terms": [
+      "corn"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.989334+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cucumber",
+    "raw_host_terms": [
+      "cucumber"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.989536+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cucumber"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "cucumber",
+    "raw_host_terms": [
+      "cucumber"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.989737+00:00"
+  },
+  {
+    "disease_id": "downy_mildew",
+    "display_name": "Downy mildew",
+    "pathogen_name": "Pseudoperonospora cubensis",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.990004+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Sphaerotheca fuliginea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.990319+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Sphaerotheca fuliginea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.990584+00:00"
+  },
+  {
+    "disease_id": "root_rot",
+    "display_name": "Root rot",
+    "pathogen_name": "Phytophthora spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.990846+00:00"
+  },
+  {
+    "disease_id": "root_rot",
+    "display_name": "Root rot",
+    "pathogen_name": "Pythium spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.991121+00:00"
+  },
+  {
+    "disease_id": "verticillium_wilt",
+    "display_name": "Verticillium wilt",
+    "pathogen_name": "Verticillium dahliae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.991384+00:00"
+  },
+  {
+    "disease_id": "viruses",
+    "display_name": "Viruses",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.991649+00:00"
+  },
+  {
+    "disease_id": "white_mold",
+    "display_name": "White mold",
+    "pathogen_name": "Sclerotinia sclerotiorum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "cucumber",
+      "melon",
+      "cantaloupe",
+      "watermelon",
+      "squash",
+      "pumpkin"
+    ],
+    "plant_groups_affected": [
+      "cucurbit"
+    ],
+    "raw_host_text": "cucurbits",
+    "raw_host_terms": [
+      "cucurbits"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.991921+00:00"
+  },
+  {
+    "disease_id": "mosaic_viruses",
+    "display_name": "Mosaic viruses",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "eggplant",
+    "raw_host_terms": [
+      "eggplant"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.992165+00:00"
+  },
+  {
+    "disease_id": "phytophthora_root_and_crown_rot",
+    "display_name": "Phytophthora root and crown rot",
+    "pathogen_name": "Phytophthora capsici",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "eggplant",
+    "raw_host_terms": [
+      "eggplant"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.992377+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Leveillula taurica",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "eggplant",
+    "raw_host_terms": [
+      "eggplant"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.992579+00:00"
+  },
+  {
+    "disease_id": "verticillium_wilt",
+    "display_name": "Verticillium wilt",
+    "pathogen_name": "Verticillium dahliae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "eggplant"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "eggplant",
+    "raw_host_terms": [
+      "eggplant"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.992794+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "endive"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "endive",
+    "raw_host_terms": [
+      "endive"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.992996+00:00"
+  },
+  {
+    "disease_id": "big_vein",
+    "display_name": "Big vein",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.993227+00:00"
+  },
+  {
+    "disease_id": "botrytis_rot",
+    "display_name": "Botrytis rot (gray mold)",
+    "pathogen_name": "Botrytis cinerea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.993432+00:00"
+  },
+  {
+    "disease_id": "downy_mildew",
+    "display_name": "Downy mildew",
+    "pathogen_name": "Bremia lactucae",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.993631+00:00"
+  },
+  {
+    "disease_id": "gray_mold",
+    "display_name": "Gray mold (Botrytis rot)",
+    "pathogen_name": "Botrytis cinerea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.993833+00:00"
+  },
+  {
+    "disease_id": "lettuce_drop",
+    "display_name": "Lettuce drop (white mold)",
+    "pathogen_name": "Sclerotinia spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.994050+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.994252+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.994451+00:00"
+  },
+  {
+    "disease_id": "viruses",
+    "display_name": "Viruses",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.994645+00:00"
+  },
+  {
+    "disease_id": "white_mold",
+    "display_name": "White mold (lettuce drop)",
+    "pathogen_name": "Sclerotinia spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "lettuce"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "lettuce",
+    "raw_host_terms": [
+      "lettuce"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.994869+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "melon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "melon",
+    "raw_host_terms": [
+      "melon"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.995083+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Sphaerotheca fuliginea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "okra"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "okra",
+    "raw_host_terms": [
+      "okra"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.995283+00:00"
+  },
+  {
+    "disease_id": "bacterial_soft_rots",
+    "display_name": "Bacterial soft rots",
+    "pathogen_name": null,
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.995519+00:00"
+  },
+  {
+    "disease_id": "basal_rot",
+    "display_name": "Basal rot",
+    "pathogen_name": "Fusarium spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.995750+00:00"
+  },
+  {
+    "disease_id": "black_mold",
+    "display_name": "Black mold",
+    "pathogen_name": "Aspergillus niger",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.995981+00:00"
+  },
+  {
+    "disease_id": "blue_mold_rot",
+    "display_name": "Blue mold rot",
+    "pathogen_name": "Penicillium spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.996246+00:00"
+  },
+  {
+    "disease_id": "botrytis_bulb_rot",
+    "display_name": "Botrytis bulb rot (Neck rot)",
+    "pathogen_name": "Botrytis spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.996501+00:00"
+  },
+  {
+    "disease_id": "botrytis_leafspot",
+    "display_name": "Botrytis leafspot (leaf blight)",
+    "pathogen_name": "Botrytis spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.996738+00:00"
+  },
+  {
+    "disease_id": "downy_mildew",
+    "display_name": "Downy mildew",
+    "pathogen_name": "Peronospora destructor",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.996965+00:00"
+  },
+  {
+    "disease_id": "leaf_blight",
+    "display_name": "Leaf blight (Botrytis leafspot)",
+    "pathogen_name": "Botrytis spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.997217+00:00"
+  },
+  {
+    "disease_id": "neck_rot",
+    "display_name": "Neck rot (Botrytis bulb rot)",
+    "pathogen_name": "Botrytis spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.997450+00:00"
+  },
+  {
+    "disease_id": "pink_root",
+    "display_name": "Pink root",
+    "pathogen_name": "Phoma terrestris",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.997677+00:00"
+  },
+  {
+    "disease_id": "purple_blotch",
+    "display_name": "Purple blotch",
+    "pathogen_name": "Alternaria porri",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.997903+00:00"
+  },
+  {
+    "disease_id": "stemphylium_leaf_blight",
+    "display_name": "Stemphylium leaf blight",
+    "pathogen_name": "Stemphylium vesicarium",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.998154+00:00"
+  },
+  {
+    "disease_id": "white_rot",
+    "display_name": "White rot",
+    "pathogen_name": "Sclerotium cepivorum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "onion",
+      "garlic"
+    ],
+    "plant_groups_affected": [
+      "allium"
+    ],
+    "raw_host_text": "onions and garlic",
+    "raw_host_terms": [
+      "onions and garlic"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.998395+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe heraclei",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "parsley"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "parsley",
+    "raw_host_terms": [
+      "parsley"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.998599+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe heraclei",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "parsnip"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "parsnip",
+    "raw_host_terms": [
+      "parsnip"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.998797+00:00"
+  },
+  {
+    "disease_id": "ascochyta_blight",
+    "display_name": "Ascochyta blight",
+    "pathogen_name": "Ascochyta spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pea",
+    "raw_host_terms": [
+      "pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.998994+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_root_rot",
+    "display_name": "Damping off and root rot",
+    "pathogen_name": null,
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pea",
+    "raw_host_terms": [
+      "pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.999217+00:00"
+  },
+  {
+    "disease_id": "downy_mildew",
+    "display_name": "Downy mildew",
+    "pathogen_name": "Peronospora viciae f.sp. pisi",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pea",
+    "raw_host_terms": [
+      "pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.999572+00:00"
+  },
+  {
+    "disease_id": "fusarium_wilt",
+    "display_name": "Fusarium wilt",
+    "pathogen_name": "Fusarium oxysporum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pea",
+    "raw_host_terms": [
+      "pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:35.999777+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe pisi",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pea",
+    "raw_host_terms": [
+      "pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.000061+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe pisi",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pea",
+    "raw_host_terms": [
+      "pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.000387+00:00"
+  },
+  {
+    "disease_id": "virus_diseases",
+    "display_name": "Virus diseases",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "pea"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pea",
+    "raw_host_terms": [
+      "pea"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.000645+00:00"
+  },
+  {
+    "disease_id": "curly_top",
+    "display_name": "Curly top",
+    "pathogen_name": "Beet curly top virus (BCTV)",
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pepper",
+    "raw_host_terms": [
+      "pepper"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.000847+00:00"
+  },
+  {
+    "disease_id": "mosaic_viruses",
+    "display_name": "Mosaic viruses",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pepper",
+    "raw_host_terms": [
+      "pepper"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.001098+00:00"
+  },
+  {
+    "disease_id": "phytophthora_root_and_crown_rot",
+    "display_name": "Phytophthora root and crown rot",
+    "pathogen_name": "Phytophthora spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pepper",
+    "raw_host_terms": [
+      "pepper"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.001317+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Leveillula taurica",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pepper",
+    "raw_host_terms": [
+      "pepper"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.001549+00:00"
+  },
+  {
+    "disease_id": "spotted_wilt_virus",
+    "display_name": "Spotted wilt virus",
+    "pathogen_name": "Tomato spotted wilt virus",
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pepper",
+    "raw_host_terms": [
+      "pepper"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.001853+00:00"
+  },
+  {
+    "disease_id": "verticillium_wilt",
+    "display_name": "Verticillium wilt",
+    "pathogen_name": "Verticillium dahliae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pepper"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pepper",
+    "raw_host_terms": [
+      "pepper"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.002094+00:00"
+  },
+  {
+    "disease_id": "bacterial_ring_rot",
+    "display_name": "Bacterial ring rot",
+    "pathogen_name": "Clavibacter michiganensis",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.002296+00:00"
+  },
+  {
+    "disease_id": "bacterial_soft_rot_and_blackleg",
+    "display_name": "Bacterial soft rot and blackleg",
+    "pathogen_name": "Erwinia carotovora",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.002558+00:00"
+  },
+  {
+    "disease_id": "common_scab",
+    "display_name": "Common scab",
+    "pathogen_name": "Streptomyces spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.002780+00:00"
+  },
+  {
+    "disease_id": "curly_top",
+    "display_name": "Curly top",
+    "pathogen_name": "Beet curly top virus (BCTV)",
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.002992+00:00"
+  },
+  {
+    "disease_id": "early_blight",
+    "display_name": "Early blight",
+    "pathogen_name": "Alternaria solani",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.003205+00:00"
+  },
+  {
+    "disease_id": "late_blight",
+    "display_name": "Late blight",
+    "pathogen_name": "Phytophthora infestans",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.003404+00:00"
+  },
+  {
+    "disease_id": "mosaic_viruses",
+    "display_name": "Mosaic viruses",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.003598+00:00"
+  },
+  {
+    "disease_id": "potato_leafroll",
+    "display_name": "Potato leafroll",
+    "pathogen_name": "Potato leaf roll virus",
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.003797+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.003994+00:00"
+  },
+  {
+    "disease_id": "powdery_scab",
+    "display_name": "Powdery scab",
+    "pathogen_name": "Spongospora subterranea",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.004218+00:00"
+  },
+  {
+    "disease_id": "seed_piece_decay",
+    "display_name": "Seed piece decay",
+    "pathogen_name": "Erwinia carotovora",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.004419+00:00"
+  },
+  {
+    "disease_id": "seed_piece_decay",
+    "display_name": "Seed piece decay",
+    "pathogen_name": "Fusarium spp.",
+    "pathogen_type": "bacterial",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.004629+00:00"
+  },
+  {
+    "disease_id": "verticillium_wilt",
+    "display_name": "Verticillium wilt",
+    "pathogen_name": "Verticillium dahliae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "potato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "potato",
+    "raw_host_terms": [
+      "potato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.004840+00:00"
+  },
+  {
+    "disease_id": "fusarium_crown_and_foot_rot",
+    "display_name": "Fusarium crown and foot rot",
+    "pathogen_name": "Fusarium solani",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pumpkin"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pumpkin",
+    "raw_host_terms": [
+      "pumpkin"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.005064+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "pumpkin"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "pumpkin",
+    "raw_host_terms": [
+      "pumpkin"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.005261+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cruciferarum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "radicchio"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "radicchio",
+    "raw_host_terms": [
+      "radicchio"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.005473+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cruciferarum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "radish"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "radish",
+    "raw_host_terms": [
+      "radish"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.005674+00:00"
+  },
+  {
+    "disease_id": "downy_mildew",
+    "display_name": "Downy mildew",
+    "pathogen_name": "Peronospora farinosa",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "spinach",
+    "raw_host_terms": [
+      "spinach"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.005873+00:00"
+  },
+  {
+    "disease_id": "viruses",
+    "display_name": "Viruses",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "spinach"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "spinach",
+    "raw_host_terms": [
+      "spinach"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.006109+00:00"
+  },
+  {
+    "disease_id": "fusarium_crown_and_foot_rot",
+    "display_name": "Fusarium crown and foot rot",
+    "pathogen_name": "Fusarium solani",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "squash",
+    "raw_host_terms": [
+      "squash"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.006316+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cichoracearum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "squash"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "squash",
+    "raw_host_terms": [
+      "squash"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.006517+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Leveillula taurica",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomatillo"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomatillo",
+    "raw_host_terms": [
+      "tomatillo"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.006717+00:00"
+  },
+  {
+    "disease_id": "black_mold",
+    "display_name": "Black mold",
+    "pathogen_name": "Alternaria alternata",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.006912+00:00"
+  },
+  {
+    "disease_id": "buckeye",
+    "display_name": "Buckeye (Phytophthora root rot)",
+    "pathogen_name": "Phytophthora spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.007132+00:00"
+  },
+  {
+    "disease_id": "curly_top",
+    "display_name": "Curly top",
+    "pathogen_name": "Beet curly top virus (BCTV)",
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.007328+00:00"
+  },
+  {
+    "disease_id": "early_blight",
+    "display_name": "Early blight",
+    "pathogen_name": "Alternaria solani",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.007527+00:00"
+  },
+  {
+    "disease_id": "fusarium_wilt",
+    "display_name": "Fusarium wilt",
+    "pathogen_name": "Fusarium oxysporum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.007734+00:00"
+  },
+  {
+    "disease_id": "late_blight",
+    "display_name": "Late blight",
+    "pathogen_name": "Phytophthora infestans",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.007933+00:00"
+  },
+  {
+    "disease_id": "phytophthora_root_rot",
+    "display_name": "Phytophthora root rot (Buckeye)",
+    "pathogen_name": "Phytophthora spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.008153+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe lycopersici",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.008349+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Leveillula taurica",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.008544+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Leveillula taurica",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.008741+00:00"
+  },
+  {
+    "disease_id": "tobacco_mosaic_virus",
+    "display_name": "Tobacco mosaic virus",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.008941+00:00"
+  },
+  {
+    "disease_id": "tomato_spotted_wilt_virus",
+    "display_name": "Tomato spotted wilt virus",
+    "pathogen_name": null,
+    "pathogen_type": "viral",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.009161+00:00"
+  },
+  {
+    "disease_id": "verticillium_wilt",
+    "display_name": "Verticillium wilt",
+    "pathogen_name": "Verticillium dahliae",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.009368+00:00"
+  },
+  {
+    "disease_id": "white_mold",
+    "display_name": "White mold",
+    "pathogen_name": "Sclerotinia sclerotiorum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "tomato"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "tomato",
+    "raw_host_terms": [
+      "tomato"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.009581+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Erysiphe cruciferarum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "turnip"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "turnip",
+    "raw_host_terms": [
+      "turnip"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.009801+00:00"
+  },
+  {
+    "disease_id": "basal_stem_rots",
+    "display_name": "Basal stem rots",
+    "pathogen_name": "Mycosphaerella spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.010040+00:00"
+  },
+  {
+    "disease_id": "basal_stem_rots",
+    "display_name": "Basal stem rots",
+    "pathogen_name": "Phoma spp.",
+    "pathogen_type": "fungal",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.010266+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_seed_rots",
+    "display_name": "Damping off and seed rots",
+    "pathogen_name": "Fusarium spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.010490+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_seed_rots",
+    "display_name": "Damping off and seed rots",
+    "pathogen_name": "Phytophthora spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.010712+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_seed_rots",
+    "display_name": "Damping off and seed rots",
+    "pathogen_name": "Pythium spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.010952+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_seed_rots",
+    "display_name": "Damping off and seed rots",
+    "pathogen_name": "Rhizoctonia spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.011190+00:00"
+  },
+  {
+    "disease_id": "damping_off_and_seed_rots",
+    "display_name": "Damping off and seed rots",
+    "pathogen_name": "Thielaviopsis spp.",
+    "pathogen_type": "oomycete",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.011412+00:00"
+  },
+  {
+    "disease_id": "powdery_mildew",
+    "display_name": "Powdery mildew",
+    "pathogen_name": "Leveillula taurica",
+    "pathogen_type": "fungal",
+    "plants_affected": [],
+    "plant_groups_affected": [
+      "vegetables_and_melons"
+    ],
+    "raw_host_text": "various vegetables and melons",
+    "raw_host_terms": [
+      "various vegetables and melons"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.011625+00:00"
+  },
+  {
+    "disease_id": "fusarium_wilt",
+    "display_name": "Fusarium wilt",
+    "pathogen_name": "Fusarium oxysporum",
+    "pathogen_type": "fungal",
+    "plants_affected": [
+      "watermelon"
+    ],
+    "plant_groups_affected": [],
+    "raw_host_text": "watermelon",
+    "raw_host_terms": [
+      "watermelon"
+    ],
+    "source_name": "UC IPM - Diseases of vegetables and melons",
+    "source_id": "uc_ipm_vegetables_diseases",
+    "source_url": "https://ipm.ucanr.edu/PMG/diseases/diseases.vegies.html",
+    "detail_url": null,
+    "confidence": 0.88,
+    "extracted_at": "2026-06-20T04:12:36.011829+00:00"
+  }
+]

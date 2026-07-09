@@ -143,12 +143,6 @@
     "other_uses_notes": "Agroforestry uses: Figs can be used as shade trees and for erosion control. Their leaves can also provide ground cover. Landscape Uses: Container, Espalier, Specimen. Wood - pliable but porous and of little value[4, 89]. It is used for hoops, garlands, ornaments, etc[89]. When saturated with oil and covered with emery is used as a substitute for a hone[4]. 1. Nectary - Flowers rich in nectar and pollen: No – Fig flowers are enclosed inside the fruit (syconium), and while fig wasps pollinate them, they are not typically rich in nectar accessible to other pollinators. 2. Wildlife - Food (Fruit, Seeds, Leaf litter, Shelter, Nesting, Roosting): Yes – Figs produce edible fruits that are a valuable food source for birds, mammals, and insects. The dense foliage can provide shelter, nesting, and roosting sites for birds and small animals. Leaf litter also supports insect life. 3. Invertebrate Shelter (Overwintering sites, Leaf litter, Groundcover): Yes – The rough bark, dense foliage, and leaf litter offer shelter and overwintering sites for beneficial invertebrates. 4. Pest Confuser (Smell): No – Fig trees do not have a strong odor that functions as a pest confuser.",
     "edible_uses_notes": "Edible Parts: Fruit Sap Edible Uses: Curdling agent Fruit - raw or cooked[1, 3, 3, 4, 46]. Sweet and succulent, a fully ripe specimen is an exquisite fruit that almost literally melts in the mouth[K]. The fruit is often dried for later use[183] and this dried fruit is a major item of commerce. Figs are usually pear-shaped and up to 5cm in diameter[200]. A nutritional analysis is available[218]. The latex from the sap can be used to coagulate plant milks[183]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -159,6 +153,12 @@
     "biodiversity_notes": [
       "PFAF suggests aromatic leaves may mask plant scent and confuse pests."
     ]
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -297,7 +297,6 @@
   "missing_fields": [
     "classification.life_cycle",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

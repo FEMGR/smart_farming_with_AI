@@ -1,0 +1,85 @@
+{
+  "pest_atom": "european_earwig",
+  "name": "European earwig",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "celery",
+    "lettuce"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Celery",
+      "pest_name_on_page": "European earwig",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-european-earwig"
+    },
+    {
+      "crop_heading": "Lettuce",
+      "pest_name_on_page": "European earwig",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-european-earwig"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-european-earwig",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/lettuce-european-earwig"
+  ],
+  "page_titles": [
+    "Celery-European earwig",
+    "Lettuce-European earwig"
+  ],
+  "description_damage": "See: Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "If you are seeing damage to young shoots of vegetables or perennials, you can confirm the presence of earwigs in the garden by placing a sheet of corrugated cardboard, hollow bamboo cane, sections of old garden hose, or similar material that will provide shelter in the garden. Check the materials each morning for presence of the insects.",
+  "management": {
+    "biological": "Tachinid flies are predators of earwigs. They are dark brown with pinchers at the rear end. They often feed in blossoms.",
+    "cultural": "Cultivation of the soil in early spring in areas where earwigs are present will disturb nests and expose eggs to predators. Do not allow debris and decaying organic matter to accumulate in the garden. Starting vegetable gardens early will give young plants a chance to grow before nymphs become active. Homeowners: Earwigs can be trapped by using the monitoring techniques described above. Empty traps each morning into a pail of water topped with detergent. Earwigs are attracted strongly to fish oil and to some extent to vegetable oil. Insects can be trapped by filling shallow containers with the oil and burying it in soil up to its rim.",
+    "chemical_home": [
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "bifenthrin-Not registered for home use on celery in WA. carbaryl cyfluthrin malathion permethrin",
+      "plant-derived essential",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "zeta-cypermethrin). carbaryl cyfluthrin",
+      "gamma-cyhalothrin insecticidal",
+      "soap-Some formulations",
+      "OMRI-listed for organic use.",
+      "lambda-cyhalothrin malathion permethrin plant essential",
+      "oils (rosemary, etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "clothianidin (Belay) at 0.15 to 0.2 lb ai/A soil. PHI 21 days. REI 12 hr. One application as broadcast, narrow band,",
+      "in-furrow, as sidedress, seedling or transplant drench or through chemigation."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:32:59.110762+00:00"
+}

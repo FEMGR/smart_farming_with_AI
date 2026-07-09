@@ -1,0 +1,73 @@
+{
+  "pest_atom": "pea_moth",
+  "name": "Pea moth",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "pea"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Pea, green and dry",
+      "pest_name_on_page": "Pea moth",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-moth"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-moth"
+  ],
+  "page_titles": [
+    "Pea, green and dry-Pea moth"
+  ],
+  "description_damage": "The pea moth adult has a wingspan of about 0.5 inch, long antennae, and brownish gray wings with white and yellow spots in herringbone pattern. The larva is small, yellowish white, and about 0.5 inch long when full grown. It has a light brown head and short, sparse hairs. The pupa is dark brown and about 0.31 inch long with rows of spines. Hosts include peas, vetch, clover, and lentil. Larvae damage the crop by tunneling into pods and feeding on one or more seeds in the pod. Often up to six seeds are damaged, though only one or two severely. However, seeds perforations, the presence of caterpillars, and stains cause processors and the packing trade to reject consignments of attacked peas.",
+  "biology_life_history": "The pea moth overwinters as a caterpillar in a cocoon. Pupation begins in May in a slight cocoon just below the surface of the ground. Emergence and moth flight towards pea crops begins at the end of May, coinciding with the start of flowering, and continues until the end of July. The adult moth looks for sheltered places in dense vegetation to lay eggs. Egg laying occurs at intervals over 5 to 11 days after emergence. The female deposits 1 to 3 eggs on the stipules or the leaflets. Eggs hatch in 1 to 3 weeks, depending on the temperature. The emerging larvae go through a very short wandering stage (1 day) before penetrating a young pod. Larval development lasts 18 to 30 days. The larva then leaves the pod and migrates to the ground, where it spins a cocoon containing particles of soil, and hibernates. There is usually one generation per year.",
+  "monitoring": "In England, pheromone traps are used to monitor pea moth problems. Wait 10 to 15 days from the beginning of sustained moth catches until application of insecticide, to allow egg laying and hatching to take place.",
+  "management": {
+    "biological": "",
+    "cultural": "Tillage can destroy overwintering larvae. Disking the soil twice is often recommended. Destroy wild vetches and nearby weeds. Earlier crops may escape serious attack.",
+    "chemical_home": [
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. Bacillus thuringiensis var.",
+      "kurstaki ( Btk )-Some formulations are",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "zeta-cypermethrin).",
+      "capsaicin-Some formulations are",
+      "OMRI-listed for organic use. esfenvalerate",
+      "gamma-cyhalothrin-Not for use on dry peas. imidacloprid",
+      "kaolin-When applied as a spray to foliage and stems, it acts as a repellent to some insect pests. Some formulations are",
+      "OMRI-listed for organic use.",
+      "plant-derived essential",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "None registered."
+    ]
+  },
+  "damage_tags": [
+    "pod_damage",
+    "feeding_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:57.762535+00:00"
+}

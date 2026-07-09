@@ -1,0 +1,96 @@
+{
+  "pest_atom": "leafhopper",
+  "name": "Leafhopper",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "lima_bean",
+    "parsnip"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Bean, lima",
+      "pest_name_on_page": "Leafhopper",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-leafhopper"
+    },
+    {
+      "crop_heading": "Parsnip",
+      "pest_name_on_page": "Leafhopper",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-leafhopper"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-lima-leafhopper",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-leafhopper"
+  ],
+  "page_titles": [
+    "Bean, lima-Leafhopper",
+    "Parsnip-Leafhopper"
+  ],
+  "description_damage": "See: Common Pests of Vegetable Crops See Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "Leafhoppers are collected easily with sweep nets. Yellow sticky traps also are useful in monitoring. Leafhoppers are collected easily with sweep nets. Yellow sticky traps also can be used to monitor.",
+  "management": {
+    "biological": "",
+    "cultural": "Mulches of aluminum foil and straw help reduce disease incidence. Row covers also can be used on higher value crops. Destruction of weed species known to harbor aster yellows is also important. Destruction of weed species known to harbor aster yellows is important.",
+    "chemical_home": [
+      "azadirachtin (combined with pyrethrins)-Some formulations are",
+      "OMRI-listed for organic use. bifenthrin (usually combined with",
+      "zeta-cypermethrin) carbaryl imidacloprid malathion plant essential",
+      "oils (rosemary, etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin",
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. bifenthrin (often as a mix with",
+      "zeta-cypermethrin). capsaicin.-Some formulations are",
+      "OMRI-listed for organic use. carbaryl cyfluthrin imidacloprid",
+      "plant-derived essential",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "acephate (numerous products) at 0.5 to 1 lb ai/A. PHI 14 days, 1 day for lima beans harvested in succulent form. REI 24 hr. Do not feed treated vines. Do not exceed 2 lb ai/A per year.",
+      "acetamiprid (Assail 30SG) at 0.044 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Limit 3 applications per season. Do not exceed 0.3 lb ai/A per season.",
+      "bifenthrin (Capture, Sniper) at 0.025 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "cyfluthrin (Tombstone) at 0.01 to 0.015 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.06 lb ai/A per season. Do not graze livestock or harvest for vines for forage or hay.",
+      "dimethoate (numerous products) at 0.25 to 0.5 lb ai/A. PHI 0 days when harvested mechanically. REI 48 hr. Do not feed treated vines.",
+      "esfenvalerate (Asana XL) at 0.015 to 0.05 lb ai/A. PHI 21 days. REI 12 hr. Do not exceed 0.2 lb ai/A per season. Dry beans only.",
+      "flupyradifurone (Sivanto 200SL) at 7 to 10.5 fl oz/A. PHI 21 days. REI 4 hr. Do not exceed 0.365 lb ai/A per year. Minimum of 10 days between successive applications.",
+      "imidacloprid (Admire Pro) at 0.25 to 0.375 lb ai/A. Soil application only. PHI 21 days. REI 12 hr. Do not exceed 0.375 lb ai/A per season. Do not apply within 25 ft of aquatic habitat.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 7 days for green beans, 21 days for dry beans. REI 24 hr. Washington only.",
+      "alpha-cypermethrin (Fastac EC) at 0.012 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only. Chenopodium",
+      "ambrosioides (Requiem Prime) at 2 to 4 pints/A. PHI 0 days. REI 4 hr.",
+      "deltamethrin (Delta Gold) at 0.018 to 0.028 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 3 days. Do not exceed 0.14 lb ai/A per season.",
+      "flupyradifurone (Sivanto 200SL) at 0.09 to 0.14 lb ai/A. PHI 7 days. REI 4 hr. Retreatment interval 10 days. Do not exceed o.365 lb ai/A per season.",
+      "imidacloprid (Admire Pro) at 0.16 to 0.38 lb ai/A soil; 0.043 lb ai/A foliar. PHI 21 days soil; 7 days foliar. REI 12 hr. Do not exceed 0.38 lb ai/A soil or 0.13 lb ai/A foliar per season. Retreatment interval 5 days foliar.",
+      "malathion (Malathion 8 Flowable) at 1.25 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 7 days. Limit 3 treatments per year",
+      "sulfoxaflor (Transform WG) at 0.047 to 0.086 lb ai/A. PHI 7 days. REI 24 hr. Limit 4 treatments. Do not exceed 0.266 lb ai/A per year.",
+      "thiamethoxam (Actara) at 0.023 to 0.047 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.125 lb ai/A per season.",
+      "thiamethoxam (Platinum) at 0.078 to 0.188 lb ai/A. REI 12 hr. Apply to the soil as",
+      "in-furrow spray, band application, drench, shanked or with irrigation. Do not exceed 0.188 lb ai/A per season.",
+      "zeta-cypermethrin (Mustang) at 0.022 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.3 lb ai/A per year. These products contain commonly used active ingredients for control of leafhopper in parsnip. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:34:38.317599+00:00"
+}

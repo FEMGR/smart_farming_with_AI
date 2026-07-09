@@ -83,12 +83,6 @@
     "other_uses_notes": "Biomass Oil Oil The seeds yield a non-drying oil that has a wide range of uses including the manufacture of pharmaceuticals, soaps, cold creams, pomades and lubricants, paints, emulsions for insect control, and fuel for diesel engines[268, 269]. Peanut hulls are used for furfural, fuel, as a filler for fertilizers or for sweeping compounds[269].",
     "edible_uses_notes": "Edible Parts: Leaves Oil Oil Seed Seedpod Edible Uses: Coffee Oil Oil Seed - raw, cooked or ground into a powder. Peanuts are a staple food in many tropical zones and are widely exported to temperate area of the world. The seeds have a delicious nutty flavour and can be eaten on their own either raw or roasted[K]. The seeds are commonly ground up and used as peanut butter in sandwiches etc[269]. They can also be cooked in a variety of dishes and are also ground into a powder when they can be used with cereals to greatly improve the protein content of breads, cakes etc[K]. The seed is very rich in protein and oil, it is also a good source of minerals and vitamins, especially the B complex[200]. A nutritional analysis is available[218]. A non-drying edible oil is obtained from the seed[200]. This is one of the most commonly used edible oils is the world. It is similar in composition to olive oil and is often used in cooking, making margarines, salad oils etc[200]. The oilseed cake is said to be a good source of arginine and glutamic acid, used in treating mental deficiencies[269]. The roasted seed makes an excellent coffee substitute[7, 269]. Young pods may be consumed as a vegetable[269]. Young leaves and tips are suitable as a cooked green vegetable[269]. Javanese use the tips for lablab, and germinating seeds to make toge[269]."
   },
-  "pests_and_diseases": {
-    "known_pests": [],
-    "known_diseases": [],
-    "disease_notes": null,
-    "treatment_notes": null
-  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -107,6 +101,12 @@
     "pollinator_support": true,
     "pest_confuser": false,
     "biodiversity_notes": []
+  },
+  "pests_and_diseases": {
+    "disease_notes": null,
+    "known_disease_ids": [],
+    "known_pest_ids": [],
+    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -245,7 +245,6 @@
   },
   "missing_fields": [
     "germination.germination_days_min",
-    "germination.sowing_depth_cm",
-    "pests_and_diseases.known_diseases"
+    "germination.sowing_depth_cm"
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "pest_atom": "pea_weevil",
+  "name": "Pea weevil",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "pea"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Pea, green and dry",
+      "pest_name_on_page": "Pea weevil",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-weevil"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pea-green-dry-pea-weevil"
+  ],
+  "page_titles": [
+    "Pea, green and dry-Pea weevil"
+  ],
+  "description_damage": "The adult pea weevil is a chunky beetle about 0.19 inch in length with a short, broad snout. It is brown flecked with white, black, and gray patches. The top of the abdomen is exposed behind the wing covers. The larva is C-shaped, up to 0.25 inch long, legless, brown-headed, and cream-color. Adults feed on pea pollen, and the female lays eggs on developing pea pods. The larva burrows directly through the pod, where it feeds and develops in the developing pea seed. While one larva develops in a single seed, nearly every pea may be infested when populations are high.",
+  "biology_life_history": "Adults overwinter with peas primarily in storage but also in the field. The pea weevil emerges about when peas are blooming, feeding on flowers (pollen and petal), leaves, or pods. The elongated yellow eggs are laid on the outside of the pod singly or in pairs. Although one to a dozen eggs are laid per pod, only one larva develops per pea. Hatching is in 1 to 3 weeks. The larva burrows through into the pea and matures in 5 to 6 weeks. Infested peas \"heat,\" aiding larval development. Pupation takes about 2 weeks, late in summer. Adults may leave the pea immediately or stay inside it all winter. There is only one generation per year.",
+  "monitoring": "One weevil in 25 sweeps may result in 10% infested peas at harvest. Take samples along field margins, fence rows, and in the field. The most conservative approach is to apply appropriate insecticides at bloom prior to detecting adult pea weevils.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Insecticides must be applied soon after first blooms appear and before pods start to form. Additional applications may be needed to control migrating weevils.",
+      "Latex-based formulations such as Sevin XLR Plus are less hazardous to bees.",
+      "beta-cyfluthrin (Baythroid XL) at 0.019 to 0.025 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.05 lb ai/A per season.",
+      "bifenthrin (Capture, Sniper) at 0.033 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Succulents only. Do not exceed 0.2 lb ai/A per season. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "carbaryl (Sevin XLR Plus) at 1.5 lb ai/A. PHI 3 days for succulents, 21 days for dried, 14 days for forage, 21 days for hay. REI 12 hr. Do not exceed 6 lb ai/A per season. Toxic in aquatic habitats.",
+      "cyfluthrin (Tombstone) at 0.038 to 0.05 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 14 days. Do not exceed 0.1 lb ai/A per season. Do not feed vines or hay. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "esfenvalerate (Asana XL) at 0.025 to 0.05 lb ai/A. PHI 3 days for green peas, 21 days for dry peas. REI 12 hr. Do not exceed 0.2 lb ai/A (dry peas) or 0.1 lb ai/A (green peas) per season. Do not feed or graze treated vines. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air.",
+      "malathion (numerous products) at 0.94 to 2.5 lb ai/A. PHI 3 days. Do not graze or feed to livestock. REI 12 hr.",
+      "phosmet (Imidan 70-W AG) at 0.7 to 0.93 lb ai/A. PHI 7 days for green peas or grazing, 10 days for cut hay. REI 24 hr. Warning: Imidan residues can be highly hazardous to bees for up to 4 days. Do not use this material if blooming weeds are near field borders or adjacent areas.",
+      "zeta-cypermethrin at 0.035 to 0.05 lb ai/A (Mustang). PHI 1 day for succulent peas, 21 days for dry peas. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.3 lb ai/A (Mustang) per season. Do not apply within 25 ft of an aquatic habitat, 150 ft if applied by air. These products contain commonly used active ingredients for control of pea weevil in dry and green pea. There are other materials available. Please consult a licensed crop advisor for additional recommendations."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "acetamiprid-Do not use on green peas. bifenthrin (usually as a mix with",
+      "pyrethrins-Some formulations are",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin). carbaryl esfenvalerate"
+    ],
+    "cultural": "It is very important to destroy crop residues. Do not plant infested seed unless it is fumigated. Careful harvesting prevents shattering that can disperse weevils throughout fields. Destroy volunteer plants. Early planting and harvesting is also desirable."
+  },
+  "damage_tags": [
+    "pod_damage"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:36:00.055480+00:00",
+  "included_species": [],
+  "images": [],
+  "meta_dates": null,
+  "merged_from": {
+    "pests": false,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.565296+00:00"
+}

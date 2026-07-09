@@ -1,0 +1,190 @@
+{
+  "pest_atom": "whitefly",
+  "name": "Whitefly",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Whitefly",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-whitefly",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "bell_pepper",
+    "chili_pepper",
+    "eggplant",
+    "pepper",
+    "tomato"
+  ],
+  "includes_text": "",
+  "biology_life_history": "",
+  "description_damage": "Adult is white and very small; it looks like a miniature moth. They typically feed on the undersides of leaves, flying up in clouds when disturbed. Immature stages are flat, oval, white to greenish, and semitransparent. Eggs are white and laid singly on the lower leaf surface. Whiteflies feed by sucking sap from the plants. Damaged leaves wilt, turn yellow or brown, and may drop, all of which reduces photosynthetic area and weakens the plant. Plants may be stunted by severe infestations. Whiteflies also produce honeydew, which may attract ants or become covered with a growth of sooty mold.",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "Allow at least 7 days between applications. Brigade 2EC only for Oregon and Washington. bifenthrin/imidacloprid (Brigadier) at 0.08 to 0.15 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.24 lb ai/A imidacloprid and 0.2 lb ai/A bifenthrin. Retreatment interval 7 days. Do not graze treated areas or cut for feed. bifenthrin/zeta-cypermethrin (Hero EW) at 0.1 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A per season. chlorantraniliprole/thiamethoxam (Voliam Flexi) at 0.1 to 0.175 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season.",
+      "OMRI-listed for organic us.",
+      "OMRI-listed for organic use. chlorantraniliprole /thiamethoxam (Voliam Flexi) at 0.1 to 0.175 lb ai/A. PHI 1 day. REI 12 hr. Minimum of 5 days between applications. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season. Chromobacterium",
+      "acetamiprid (Assail 30SG) at 0.047 to 0.075 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A or four treatments per season.",
+      "acetamiprid (Assail 30SG) at 0.047 to 0.075 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A per season. Limit 4 treatments.",
+      "acetamiprid (Assail 30SG) at 0.047 to 0.075 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.3 lb ai/A per season. Limit four applications per season.",
+      "alpha-cypermethrin (Fastac EC) at 0.02 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only .",
+      "alpha-cypermethrin (Fastac EC) at 0.02 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.075 lb ai/A per season. Washington only.",
+      "beta-cyfluthrin or 0.24 lb ai/A imidacloprid per season.",
+      "beta-cyfluthrin or 0.24 lb ai/A imidacloprid per season. bifenthrin/Avermectin (Athena) at 0.09 to 0.12 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per season.",
+      "beta-cyfluthrin/imidacloprid (Leverage 360) at 0.096 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A",
+      "beta-cyfluthrin/imidacloprid (Leverage 360) at 0.096 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A",
+      "bifenthrin (Brigade 2EC, Sniper) at 0.033 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.2 lb ai/A per season.",
+      "bifenthrin (Brigade WSB) at 0.033 to 0.08 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 10 days. Limit 4 treatments. Do not exceed 0.32 lb ai/A per season. bifenthrin/Avermectin (Athena) at 0.09 to 0.12 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per season. bifenthrin/imidacloprid (Brigadier) at 0.08 to 0.15 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.24 lb ai/A imidacloprid and 0.4 lb ai/A bifenthrin per season. Retreatment interval 10 days. Do not graze livestock in treated areas or cut for feed. bifenthrin/zeta-cypermethrin (Hero EW) at 0.1 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.42 lb ai/A per season. Limit 4 treatments.",
+      "bifenthrin (Brigade WSB) at 0.033 to 0.1 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. Retreatment interval 7 days. bifenthrin/imidacloprid (Brigadier) at 0.08 to 0.15 lb ai/A. PHI 7 days. REI 12 hr. Do not exceed 0.2 lb ai/A imidacloprid and 0.2 lb ai/A bifenthrin. Retreatment interval 7 days. bifenthrin/zeta-cypermethrin (Hero EW) at 0.1 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A per season. Burkholderia spp. (Venerate XC) at 2 to 4 quarts/A product. PHI 0 days. REI 4 hr.",
+      "buprofezin (Talus 70DF) at 0.26 to 0.4 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 2 applications per growing cycle. Retreatment interval 5 days. Greenhouse only. chlorantraniliprole/thiamethoxam (Voliam Flexi) at 0.1 to 0.175 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season.",
+      "cyantraniliprole (Exirel) at 0.088 to 0.133 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days in field; 7 days in greenhouse. Do not exceed 0.4 lb ai/A per year.",
+      "cyantraniliprole (Exirel) at 0.088 to 0.133 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.4 lb ai/A per year. cyfluthrin/imidacloprid (Leverage 360) at 0.064 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A cyfluthrin or 0.24 lb ai/A imidacloprid per year.",
+      "cyantraniliprole (Verimark) at 0.088 to 0.130 lb ai/A at planting, drip chemigation or soil injection. PHI 1 day. REI 4 hr. Do not exceed 0.176 lb ai/A at planting or 2 drip chemigation or soil injections. Do not exceed 0.4 lb ai/A per season.",
+      "cyclaniliprole (Harvanta 50SL) at 0.036 to 0.054 lb ai/A. PHI 1 day. REI 4 hr. Limit 3 treatments. Do not exceed 0.16 lb ai/A per year. Retreatment interval 7 days. Suppression only.",
+      "cyclaniliprole (Harvanta 50SL) at 0.036 to 0.054 lb ai/A. PHI 1 day. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.16 lb ai/A per year. Suppression only. cyfluthrin/imidacloprid (Leverage 360) at 0.064 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.12 lb ai/A cyfluthrin or 0.24 lb ai/A imidacloprid per year.",
+      "dinotefuran (Scorpion 35SL) at 0.05 to 0.18 lb ai/A foliar and 0.23 to 0.27 lb ai/A for soil in Washington, at 0.23 to 0.33 lb ai/A soil in Oregon. PHI 1 day (foliar), 21 days (soil). REI 12 hr. Retreatment period 7 days. Do not exceed 0.266 lb ai/A (foliar) or 0.532 lb ai/A (soil) per season.",
+      "dinotefuran (Scorpion 35SL) at 0.05 to 0.18 lb ai/A foliar and 0.23 to 0.27 lb ai/A for soil in Washington, at 0.23 to 0.33 lb ai/A soil in Oregon. PHI 1 day foliar and 21 days soil. REI 12 hr. Retreatment interval days. Do not exceed per season 0.266 lb ai/A foliar or 0.536 lb ai/A for soil.",
+      "dinotefuran (Scorpion 35SL) at 0.05 to 0.18 lb ai/A foliar or 0.23 to 0.27 lb ai/A for soil. PHI 1 day foliar, or 21 days for soil. REI 12 hr. Do not exceed 0.266 lb ai/A foliar or 0.532 lb ai/A soil per season.",
+      "esfenvalerate (Asana XL) at 0.03 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.5 lb ai/A per season.",
+      "fenpyroximate (Miteus) at 1.25 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 2.5 lb ai/A per season. Limit 2 applications. Oregon and Idaho only. Suppression only.",
+      "flonicamid (Beleaf 50SG) at 0.089 to 0.133 lb ai/A. PHI 0 days. REI 12 hr. Do not exceed 0.267 lb ai/A or three applications per season. Retreatment interval 7 days. Suppresses greenhouse whiteflies.",
+      "flupyradifurone (Sivanto 200 SL) at 0.14 to 0.18 lb ai/A foliar; 0.27 to 0.37 lb ai/A soil. PHI 1 day foliar; 45 days soil. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.365 lb ai/A per season.",
+      "flupyradifurone (Sivanto 200SL) at 0.14 to 0.18 lb ai/A foliar, 0.27 to 0.37 lb ai/A soil. PHI 1 day foliar, 45 days soil. REI 4 hr. Foliar retreatment interval 7 days. Do not exceed 0.365 lb ai/A per season.",
+      "flupyradifurone (Sivanto 200SL) at 0.14 to 0.18 lb ai/A foliar; 0.27 to 0.37 lb ai/A soil. PHI 1 day foliar; 45 days soil. REI 4 hr. Retreatment interval 7 days. Do not exceed 0.365 lb ai/A per season.",
+      "imidacloprid (Admire Pro) at 0.021 lb ai/1,000 plants soil treatment in greenhouse or 0.016 lb ai/10,000 plants foliar treatment in planthouse. PHI 0 days. REI 12 hr. Limit one treatment per crop season.",
+      "imidacloprid (Admire Pro) at 0.25 to 0.38 lb ai/A soil or 0.047 to 0.079 lb ai/A foliar. PHI 0 foliar; 21 days soil. REI 12 hr. Retreatment interval 5 days foliar. Do not exceed 0.38 lb ai/A soil per application or 0.24 lb ai/A foliar per season.",
+      "imidacloprid (Admire Pro) at 0.25 to 0.38 lb ai/A soil, 0.0156 lb ai/10,000 plant in greenhouse and 0.047 to 0.079 lb ai/A foliar. PHI 0 days foliar; 21 days soil. REI 12 hr. Do not exceed 0.24 lb ai/A foliar or 0.38 lb ai/A soil per season. Limit 1 application greenhouse. Foliar retreatment interval 5 days.",
+      "imidacloprid (Admire Pro) at 0.25 to 0.5 lb ai/A soil, 0.047 to 0.079 lb ai/A foliar, 0.0156 lb ai/10,000 greenhouse plants. Retreatment interval 5 days. PHI 21 days soil; 0 days foliar. REI 12 hr. Do not exceed 0.5 lb ai/A soil per season or 0.24 lb ai/A foliar per season. Do not exceed 0.0156 lb ai/10,000 plants in planthouse.",
+      "in-furrow spray, band application, drench, shanked or with irrigation. Do not exceed 0.172 lb ai/A per season. thiamethoxam/chlorantraniliprole (Durivo) at 0.195 to 0.254 lb ai/A. PHI 30 days. REI 12 hr. Do not exceed 0.172 lb ai/A of thiamethoxam or 0.2 lb ai/A of chlorantraniliprole per season. These products contain commonly used active ingredients for control of whitefly in pepper. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "novaluron (Rimon 0.83EC) at 0.078 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.23 lb ai/A per season. Retreatment interval 7 days.",
+      "novaluron (Rimon 0.83EC) at 0.078 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.23 lb ai/A per season.",
+      "pymetrozine (Fulfill) at 0.086 ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.172 lb ai/A per season.",
+      "pymetrozine (Fulfill) at 0.086 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.172 lb ai/A per season.",
+      "pyrifluquinazon (PQZ Insecticide) at 0.035 to 0.047 lb ai/A. PHI 1 day. REI 12 hr. Limit 4 treatments. Retreatment interval 7 days. Do not exceed 0.14 lb ai/A per year. Apply by ground equipment.",
+      "pyriproxyfen (Knack) at 0.04 to 0.067 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.108 lb ai/A per season. Retreatment interval 14 days. 30 day plant back restriction.",
+      "pyriproxyfen (Knack) at 0.04 to 0.067 lb ai/A. PHI 14 days. REI 12 hr. Do not exceed 0.108 lb ai/A per season.",
+      "pyriproxyfen (Knack) at 0.04 to 0.067 lb ai/A. PHI 14 days. REI 12 hr. Do not exceed 0.108 lb ai/A per season. Retreatment interval 14 days.",
+      "spiromesifen (Oberon 2EC) at 0.11 to 0.13 lb ai/A PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.4 lb ai/A per season.",
+      "spiromesifen (Oberon 2SC) at 0.11 to 0.13 lb ai/A PHI 7 days. REI 12 hr. Retreatment interval 7 days. Limit 3 treatments in Washington and 2 in Idaho and Oregon per year. Do not exceed 0.4 lb ai/ A in Washington and 0.27 lb ai/A in Idaho and Oregon per season.",
+      "spiromesifen (Oberon 2SC) at 0.11 to 0.13 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.4 lb ai/A in Washington and 0.27 lb ai/A in Idaho and Oregon per season. Retreatment interval 7 days. Limit 3 treatments in Washington and 2 in Idaho and Oregon per season.",
+      "spirotetramat (Movento) at 0.06 to 0.08 lb ai/A. PHI 1 day. REI 24 hr. Retreatment interval 7 days. Do not exceed 0.16 lb ai/A per crop season.",
+      "subtsugae (Grandevo) at 0.6 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "sulfoxaflor (Closer SC) at 0.066 to 0.07 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.266 lb ai/A per year.",
+      "sulfoxaflor (Closer SC) at 0.066 to 0.07 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 7 days. Limit 4 treatments. Do not exceed 0.266 lb ai/A per year.",
+      "thiamethoxam (Actara) at 0.047 to 0.086 lb ai/A. PHI 0 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.172 lb ai/A per season.",
+      "thiamethoxam (Platinum) at 0.078 to 0.172 lb ai/A soil applied. PHI 30 days. REI 12 hr. Do not exceed 0.172 lb ai/A per season. thiamethoxam/chlorantraniliprole (Durivo) at 0.195 to 0.254 lb ai/A applied to the soil. PHI 30 days. REI 12 hr. Do not exceed 0.172 lb ai of thiamethoxam or 0.2 lb ai of chlorantraniliprole per acre per growing season. These products contain commonly used active ingredients for control of whitefly in tomato. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "thiamethoxam (Platinum) at 0.078 to 0.172 lb ai/A soil treatment. PHI 30 days. REI 12 hr. Do not exceed 0.172 lb ai/A per season.",
+      "thiamethoxam (Platinum) at 0.078 to 0.172 lb ai/A. PHI 30 days. REI 12 hr. Apply to the soil as"
+    ],
+    "chemical_home": [
+      "For best results, direct spray toward undersides of leaves. Read label application instructions carefully. acetamiprid",
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin (usually as a mix with",
+      "OMRI-listed for organic use. cyfluthrin deltamethrin esfenvalerate",
+      "OMRI-listed for organic use. imidacloprid",
+      "OMRI-listed for organic use. imidacloprid insecticidal",
+      "OMRI-listed for organic use. malathion permethrin",
+      "OMRI-listed for organic use. permethrin",
+      "Spray at 7-day intervals, several times if necessary. For best results, direct spray toward undersides of leaves. Read label application instructions carefully. acetamiprid",
+      "azadirachtin (neem oil)-Some formulations are",
+      "capsaicin-Some formulations are",
+      "gamma-cyhalothrin horticultural",
+      "kaolin-Applied as a spray to foliage, it acts as a repellent to some insect pests. Some formulations are",
+      "kaolin-When applied as a spray to foliage and stems, it acts as a repellent to some insect pests. Some formulations are",
+      "lambda-cyhalothrin malathion permethrin plant essential",
+      "oil-Some formulations",
+      "oil-Some formulations are",
+      "oils (rosemary, etc.)-Some formulations are",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "oils (rosemary, peppermint, thyme etc.)-Some formulations are",
+      "plant-derived essential",
+      "pyrethrins-Some formulations are",
+      "soap-May require several applications. Complete coverage, especially under leaves, is essential. Some formulations are",
+      "soap-Some formulations",
+      "zeta-cypermethrin",
+      "zeta-cypermethrin)."
+    ],
+    "cultural": "Inspect new plants before purchase: infestations often are introduced. Encourage natural enemies such as ladybird beetles, spiders, and parasitic wasps. Avoid use of broad-spectrum insecticides which reduce populations of these."
+  },
+  "damage_tags": [
+    "honeydew",
+    "leaf_damage",
+    "sooty_mold",
+    "stunting",
+    "wilting",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "includes",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-whitefly/g135-30.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-whitefly/g135-30.jpg?itok=wtiH3UDy",
+      "caption": "Greenhouse whitefly Trialeurodes vaporariorum Westwood Egg(s) on host"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-whitefly/g130-22.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-whitefly/g130-22.jpg?itok=iUiThJf0",
+      "caption": "Greenhouse whitefly Trialeurodes vaporariorum Westwood Adult egg(s) on host"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-whitefly/297-27.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-whitefly/297-27.jpg?itok=1LADws2y",
+      "caption": "Greenhouse whitefly Trialeurodes vaporariorum Westwood Immature pupa on host"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:54.270642+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Eggplant",
+      "pest_name_on_page": "Whitefly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-whitefly"
+    },
+    {
+      "crop_heading": "Pepper",
+      "pest_name_on_page": "Whitefly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-whitefly"
+    },
+    {
+      "crop_heading": "Tomato",
+      "pest_name_on_page": "Whitefly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-whitefly"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/eggplant-whitefly",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-whitefly",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/tomato-whitefly"
+  ],
+  "page_titles": [
+    "Eggplant-Whitefly",
+    "Pepper-Whitefly",
+    "Tomato-Whitefly"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.572698+00:00"
+}

@@ -21,6 +21,7 @@
   "taraxacum_officinale": "dandelion",
   "anethum_graveolens": "dill",
   "solanum_melongena": "eggplant",
+  "abies_alba": "european_silver_fir",
   "foeniculum_vulgare": "fennel",
   "ficus_carica": "fig",
   "alpinia_galanga": "galangal",
@@ -56,6 +57,7 @@
   "ipomoea_batatas": "sweet_potato",
   "thymus_vulgaris": "thyme",
   "solanum_lycopersicum": "tomato",
+  "cyphomandra_betacea": "tree_tomato",
   "curcuma_longa": "turmeric",
   "brassica_rapa_subsp_rapa": "turnip",
   "citrullus_lanatus": "watermelon"

@@ -16,7 +16,6 @@ import requests
 from common import RAW_DIR, ensure_dirs, load_plants, plant_filename, source_snapshot, write_json
 from source_parse_patch import is_search_page, page_text, source_relevance_score, title_text
 
-
 SOURCE_NAME = "Food Plants International"
 FPI_BASE = "https://foodplantsinternational.com"
 

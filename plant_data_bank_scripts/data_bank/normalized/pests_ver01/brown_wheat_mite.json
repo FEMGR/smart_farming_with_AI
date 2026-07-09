@@ -1,0 +1,60 @@
+{
+  "pest_atom": "brown_wheat_mite",
+  "name": "Brown wheat mite",
+  "pest_type": "mite",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "onion"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Onion",
+      "pest_name_on_page": "Brown wheat mite",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-brown-wheat-mite"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/onion-brown-wheat-mite"
+  ],
+  "page_titles": [
+    "Onion-Brown wheat mite"
+  ],
+  "description_damage": "The brown wheat mite is tiny, dark, and less than 0.03 inch in length, with front legs longer than the body. Feeding mottles the leaves, giving them a bronzed, silvery, or (later) scorched appearance. Host plants include cereals, onions, carrots, alfalfa, iris, and gladiolus.",
+  "biology_life_history": "",
+  "monitoring": "Chemical controls are not generally recommended. However, application of chemicals for aphid control may lead to a build-up of mites, leading to the occasional need for an acaricide.",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": [
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. insecticidal",
+      "soap-Some formulations are",
+      "OMRI-listed for organic use.",
+      "plant-derived essential",
+      "oils (rosemary, peppermint etc.)-Some formulations are",
+      "OMRI-listed for organic use. sulfur"
+    ],
+    "chemical_commercial": [
+      "sulfur (Microthiol Disperss) at 3 to 10 lb product/A. PHI 0 days. REI 24 hr."
+    ]
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "feeding_damage",
+    "silvering"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:30:54.586504+00:00"
+}

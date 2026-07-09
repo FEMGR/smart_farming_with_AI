@@ -1,0 +1,56 @@
+{
+  "pest_atom": "european_cranefly",
+  "name": "European cranefly",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "spinach"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Spinach",
+      "pest_name_on_page": "European cranefly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-european-cranefly"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-european-cranefly"
+  ],
+  "page_titles": [
+    "Spinach-European cranefly"
+  ],
+  "description_damage": "Small, gray-brown, worm-like larvae that develop a tough skin and are commonly called leatherjackets. They feed on clover and a number of vegetables. They are particularly damaging to seedling vegetables.",
+  "biology_life_history": "",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": [
+      "azadirachtin (neem oil) - Some formulations are",
+      "OMRI-listed for organic use. bifenthrin (as a mix with",
+      "zeta-cypermethrin). carbaryl cyfluthrin",
+      "plant-derived essential",
+      "oils (rosemary, peppermint, etc.)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": []
+  },
+  "damage_tags": [
+    "seedling_damage"
+  ],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:32:53.952037+00:00"
+}

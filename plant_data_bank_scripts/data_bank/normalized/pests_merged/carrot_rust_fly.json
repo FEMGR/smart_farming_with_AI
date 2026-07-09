@@ -1,0 +1,119 @@
+{
+  "pest_atom": "carrot_rust_fly",
+  "name": "Carrot rust fly",
+  "pest_type": "insect",
+  "page_title": "Vegetable crop pests-Carrot rust fly",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-carrot-rust-fly",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "carrot",
+    "celery",
+    "parsnip"
+  ],
+  "includes_text": "",
+  "biology_life_history": "The carrot rust fly overwinters as a larva in roots left in the field. These larvae pupate in February and March, and adults begin emerging in mid-April and continue until mid-June. Adults prefer to shelter in hedges. Eggs are laid on the soil surface or slightly below the surface at the base of plants. Larvae are present from June to mid-July and mature in about 30 days. Larvae feed on the taproot or side roots of the host plant. When mature, they leave the root and pupate nearby in the soil. The summer brood of flies emerges about mid-July, and larvae are present during August. Pupae from this brood can be found in mid-August to late September. The fall brood of flies emerges from late September to mid-October. Larvae enter roots from early October to early November. Larvae from this last brood overwinter in roots in the field.",
+  "description_damage": "Mature larvae are dusty, straw-color, maggot-like, and from 0.12 to 0.25 inch in length. Worms burrow into and through roots. Burrows often are filled with rust-red frass. Carrot rust fly adults are shiny black or dark brown with yellowish legs, a brownish head, and iridescent wings. They are about 0.25 inch in length with a 0.5-inch wingspan. Eggs are tiny and white. The legless larvae initially are colorless but become creamy white as they develop through three instars (growth stages). Pupae develop inside a yellowish-brown skin about 0.2 inch in length. The carrot rust fly is a major pest of carrots, but it also may infest parsnips, turnips, parsley, and celery. Hemlock, a related weed species, is known to be a host plant also. Damage is caused by larvae burrowing into the taproot. Young plants wilt and may die, but more often the plants are stunted temporarily and the carrots become bulbous, forked, and unmarketable. In addition, fungi and bacteria may invade the damaged tissue and cause severe rot at the crowns of the plants. On parsnips and celery, larvae more commonly are found nearer the crown and may burrow into the base of leaf stalks.",
+  "monitoring": "Yellow sticky traps can be used to monitor for carrot rust fly. In Ontario, Canada, an action threshold of one-tenth to two-tenths flies per trap per day is used. Degree-day accumulations have been calculated for carrot rust fly development. Begin monitoring carrots at the second leaf stage. Symptoms of larval attack are wilting and discolored (\"rusty\") foliage, especially in dry weather. Less severely damaged plants appear stunted. Orange or yellow sticky traps can be used to monitor for carrot rust fly. In Ontario, Canada, an action threshold of 0.1 to 0.2 flies per trap per day is used. Degree-day accumulations have been calculated for carrot rust fly development. Begin monitoring celery at the second-leaf stage. Symptoms of larval attack are wilting and discolored (\"rusty\") foliage, especially in dry weather. Less severely damaged plants appear stunted. Management-biological, cultural, tactical See: Carrot-Carrot Rust Fly Orange or yellow sticky traps can be used to monitor for carrot rust fly. In Ontario, Canada, an action threshold of one-tenth to two-tenths flies per trap per day is used. Degree-day accumulations have been calculated for carrot rust fly development. Begin monitoring at the second leaf stage. Symptoms of larval attack are wilting and discolored (\"rusty\") foliage, especially in dry weather. Less severely damaged plants appear stunted.",
+  "management": {
+    "biological": "",
+    "chemical_commercial": [
+      "None registered.",
+      "butoxide (Pyronyl Crop Spray) at 0.004 to 0.050 lb ai/A. PHI 0 days. REI 12 hr. Do not exceed 10 applications per season. Minimum retreatment interval 3 days.",
+      "clothianidin +",
+      "hopper-box or similar",
+      "imidacloprid (Sepresto 75 WS) at 0.06 to 0.12 oz formulated product/1,000 seeds. For use in commercial seed treaters only. Not for use in agricultural establishments in",
+      "on-farm seed treatment applicators",
+      "pyrethrins/piperonyl",
+      "used at planting. Regardless of the type of application (seed treatment, soil, or foliar), do not exceed 6 oz ai/A clothianidin or 8 oz ai/A imidacloprid per acre per season. Not registered for use in OR."
+    ],
+    "chemical_home": [
+      "No products are registered for control of this pest",
+      "No products are registered for control of this pest.",
+      "None registered."
+    ],
+    "cultural": "Rotating crops plays an important role in reducing populations of this pest. Destroy volunteer carrots and all umbelliferous plants, as they may serve as alternate hosts and possible sources of infestation. Early harvest helps control damage. If early harvest is not possible, harvest in blocks rather than selectively. Deep plowing in fall or spring can be helpful. Floating row covers work very well and may be cost effective on high value crops."
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "root_damage",
+    "stunting",
+    "wilting",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-carrot-rust-fly/526-30.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-carrot-rust-fly/526-30.jpg?itok=Ed3Z-BoM",
+      "caption": "Carrot rust fly Psila rosae Fabricius Adult"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-carrot-rust-fly/519-28.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-carrot-rust-fly/519-28.jpg?itok=3h2iP7EA",
+      "caption": "Carrot rust fly Psila rosae Fabricius Showing damage"
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-carrot-rust-fly/g169-1.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-carrot-rust-fly/g169-1.jpg?itok=4yBNVmMT",
+      "caption": "Carrot rust fly Psila rosae Fabricius Immature"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:52.983639+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Carrot",
+      "pest_name_on_page": "Carrot rust fly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-carrot-rust-fly"
+    },
+    {
+      "crop_heading": "Celery",
+      "pest_name_on_page": "Carrot rust fly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-carrot-rust-fly"
+    },
+    {
+      "crop_heading": "Parsnip",
+      "pest_name_on_page": "Carrot rust fly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-carrot-rust-fly"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-carrot-rust-fly",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-carrot-rust-fly",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-carrot-rust-fly"
+  ],
+  "page_titles": [
+    "Carrot-Carrot rust fly",
+    "Celery-Carrot rust fly",
+    "Parsnip-Carrot rust fly"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.541519+00:00"
+}

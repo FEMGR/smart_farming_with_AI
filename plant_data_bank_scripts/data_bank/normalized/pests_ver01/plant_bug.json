@@ -1,0 +1,69 @@
+{
+  "pest_atom": "plant_bug",
+  "name": "Stink bug and plant bug",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "bean"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Bean, snap",
+      "pest_name_on_page": "Stink bug and plant bug",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-stink-bug-plant-bug"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-stink-bug-plant-bug"
+  ],
+  "page_titles": [
+    "Bean, snap-Stink bug and plant bug"
+  ],
+  "description_damage": "Stink bugs and plant bugs are rarely a problem in snap beans and rarely require treatment. Adult stink bugs have shield-shaped bodies that are about 0.5 inch long and either brown or green with red, pink, or yellow markings. Barrel-shaped eggs are laid in clusters of about 14 eggs on leaves of broadleaf plants. Nymphs resemble adults in shape. Plant bug adults are black with a white stripe along the outer margin of the wings. The head is broader than the shoulders (prothorax) and the eyes are widely spaced on stalks. Nymphs are wingless, light gray, with mottled markings. Both stink bugs and plant bugs feed on blossoms and beans with piercing, sucking mouthparts. Damage is similar to that caused by lygus bugs. Outbreaks appear to be cyclical.",
+  "biology_life_history": "Stink bugs overwinter as adults under leaves and trash, in the crowns of plants, in clumps of grass, or in other protected places such as box piles and buildings. After mating, if suitable host plants are not present, adults travel to find suitable host plants. There are one to three overlapping generations each year. Adults seek overwintering sites before fall frosts. Plant bugs complete one generation each year.",
+  "monitoring": "Adult bugs often hide when approached, making them difficult to see. When feeding, stink bugs leave small drops of brown excrement. Begin monitoring after the weather has warmed up in March and look for overwintering bugs feeding on curly dock, common mullein, or other broadleaf plants.",
+  "management": {
+    "biological": "",
+    "cultural": "Clean cultivation in fall discourages overwintering bugs.",
+    "chemical_home": [
+      "Follow information given on the label about the timing and cutoff date for the particular vegetable you are spraying. acetamiprid",
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. bifenthrin (usually as a mix with",
+      "zeta-cypermethrin) carbaryl esfenvalerate",
+      "gamma-cyalothrin",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "alpha-cypermethrin (Fastac EC) at 0.02 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.075 lb ai/A per season.",
+      "bifenthrin (Sniper) at 0.033 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.2 lb ai/A per year. bifenthrin/zeta-cypermethrin (Hero EW) at 0.04 to 0.1 lb ai/A. PHI 3 days. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.266 lb/A per season. chlorantraniliprole/lambda-cyhalothrin (Besiege) at 0.06 to 0.1 lb/A. PHI 7 days. REI 24 hr. Retreatment interval 5 days. Do not exceed a total of 31.0 fl oz of Besiege or 0.12 lb ai of",
+      "lambda-cyhalothrin or 0.2 lb ai of chlorantraniliprole per acre per growing season. Do not graze livestock or harvest vines for forage or hay.",
+      "gamma-cyhalothrin (Declare) at 0.01 to 0.015 lb/A. PHI 7 days. REI 24 hr. Retreatment interval 5 days. Do not graze. Do not exceed 0.06 lb ai/A per season. Do not graze livestock in treated areas or harvest vines for forage or hay.",
+      "lambda-cyhalothrin (Warrior II) at 0.02 to 0.03 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 5 days. Do not exceed 0.12 lb ai/A per year. Do not graze livestock in treated areas or harvest vines for forage or hay.",
+      "naled (Dibrom 8) at 1.4 lb ai/A. PHI 1 day. REI 48 hr. Retreatment interval 7 days. Do not exceed 5 treatments per season.",
+      "sulfoxaflor (Transform WG) at 0.047 to 0.071 lb ai/A. PHI 7 days. REI 24 hr. Retreatment interval 14 days. Do not exceed two consecutive applications per crop. Do not exceed 0.266 lb ai/A per year.",
+      "zeta-cypermethrin (Mustang) at 0.04 to 0.05 lb/A. PHI 1 day. REI 12 hr. Do not make applications less than 5 days apart. Do not exceed 0.3 lb ai/A per season."
+    ]
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:36:02.476319+00:00"
+}

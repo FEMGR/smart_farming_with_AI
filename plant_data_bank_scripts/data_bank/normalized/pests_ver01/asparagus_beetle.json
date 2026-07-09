@@ -1,0 +1,75 @@
+{
+  "pest_atom": "asparagus_beetle",
+  "name": "Asparagus beetle",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "asparagus"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Asparagus",
+      "pest_name_on_page": "Asparagus beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-asparagus-beetle"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-asparagus-beetle"
+  ],
+  "page_titles": [
+    "Asparagus-Asparagus beetle"
+  ],
+  "description_damage": "Asparagus beetle larvae are dark green-gray grubs about 0.33 inch long when fully grown. Adults are blue-black beetles with a red section on their backs (prothorax). Their wing covers have yellow spots and red borders. Asparagus beetle adults injure plants by feeding on the tips of tender young shoots. After leaves come out, asparagus beetles and their larvae gnaw on the surface of the stems and defoliate ferns. If injury to the fern is severe, the crown is weakened, particularly if the asparagus stand is young.",
+  "biology_life_history": "Adults overwinter in plant debris along field margins and fence rows and in hollow stems of old asparagus plants. Adults emerge in spring and deposit eggs singly or in rows on the shoots of the asparagus, making them unmarketable. Eggs hatch in 7 to 10 days, and larvae begin feeding on the young shoots. Larvae feed for 2 to 3 weeks before burrowing into the soil and pupating. Adults emerge in 1 or 2 weeks and deposit eggs for another generation. The entire life cycle takes about a month. There may be two or three generations each year.",
+  "monitoring": "Monitor visually for adults early in the year. Populations tend to be clumped.",
+  "management": {
+    "biological": "Larvae of lady beetles and predaceous plant bugs may reduce the number of larvae. In British Columbia, a parasitic chalcid wasp is common and may be important in regulating the population.",
+    "cultural": "Where asparagus is cut for market, injury may be reduced by cutting the crop clean every 3 to 5 days. Destroy volunteer plants and remove plant debris around field margins. If beetles are feeding on spears early in the year, let some plants near the edge of the field produce fern growth to attract the beetles away from the spears. Treat these areas.",
+    "chemical_home": [
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "OMRI-listed for organic use. carbaryl insecticidal",
+      "soap-Some formulations",
+      "OMRI-listed for organic use.",
+      "kaolin-Applied as a spray to foliage and stems it acts as a repellent to some insect pests. Some formulations are",
+      "OMRI-listed for organic use. malathion permethrin",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use."
+    ],
+    "chemical_commercial": [
+      "acetamiprid (Assail 30 SG) at 0.047 to 0.1 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 10 days. Do not exceed 0.2 lb ai/A per season. Limit 2 treatments. Chromobacterium",
+      "subtsugae (Grandevo) at 0.6 to 0.9 lb ai/A per 100 gal. PHI 0 days. REI 4 hr.",
+      "OMRI-listed for organic use.",
+      "malathion (Fyfanon 8) at 1.25 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 2 treatments per season. Retreatment interval 7 days.",
+      "methomyl (Lannate SP) at 0.45 to 0.9 lb ai/A. PHI 1 day. REI 48 hr. Do not exceed 4.5 lb ai/A per year. Do not exceed 8 applications per year.",
+      "spinetoram (Radiant SC) at 0.0313 to 0.0625 lb ai/A postharvest. PHI 60 days. REI 4 hr. Retreatment interval 4 days. Do not exceed three applications or 0.188 lb ai/A per season. Follow resistance management procedures on the label. Ferns only.",
+      "spinosad (Success, Entrust SC) at 0.062 to 0.094 lb ai/A applied after harvest. PHI 60 days. REI 4 hr. Do not exceed three times per crop. Do not exceed 0.28 lb ai/A per crop. Do not feed treated ferns to",
+      "meat or dairy animals. Ferns only. Entrust SC is",
+      "OMRI-listed for organic use."
+    ]
+  },
+  "damage_tags": [
+    "leaf_damage",
+    "stem_damage",
+    "feeding_damage",
+    "yellowing"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:30:43.171866+00:00"
+}

@@ -1,0 +1,61 @@
+{
+  "pest_atom": "nitidulid_beetle",
+  "name": "Nitidulid beetle",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "bean",
+    "pumpkin",
+    "squash"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Bean, snap",
+      "pest_name_on_page": "Nitidulid beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-nitidulid-beetle"
+    },
+    {
+      "crop_heading": "Pumpkin and squash",
+      "pest_name_on_page": "Nitidulid beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-nitidulid-beetle"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-nitidulid-beetle",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pumpkin-squash-nitidulid-beetle"
+  ],
+  "page_titles": [
+    "Bean, snap-Nitidulid beetle",
+    "Pumpkin and squash-Nitidulid beetle"
+  ],
+  "description_damage": "Nitidulid beetles are rarely a pest of snap beans and rarely require treatment. Adult beetles are small and black. They infest blossoms from mid-July to mid-August. They may cause blossom drop, but control is unnecessary unless populations are very high. Nitidulid beetles are shiny black beetles about 0.19 inch long. The pollen-seeking adults damage flowers. Browned flowers are unattractive to pollinators.",
+  "biology_life_history": "",
+  "monitoring": "",
+  "management": {
+    "biological": "",
+    "cultural": "",
+    "chemical_home": [
+      "No products are registered for control of this pest.",
+      "None reistered."
+    ],
+    "chemical_commercial": [
+      "Most insecticides labeled for use on green beans for aphids or other pest of.beans reduce nitidulid beetle populations.",
+      "Effective chemicals previously used for control are no longer registered for use. pyrethrins/piperonyl",
+      "butoxide (Pyronyl Crop Spray) at 0.004 to 0.050 lb ai/A. PHI 0 days. REI 12 hr. Do not exceed 10 applications per season. Minimum retreatment interval 3 days."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:35:46.289704+00:00"
+}

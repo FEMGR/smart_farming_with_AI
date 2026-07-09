@@ -1,0 +1,71 @@
+{
+  "pest_atom": "cabbage_flea_beetle",
+  "name": "Cabbage flea beetle",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "horseradish"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Horseradish",
+      "pest_name_on_page": "Cabbage flea beetle",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-cabbage-flea-beetle"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/horseradish-cabbage-flea-beetle"
+  ],
+  "page_titles": [
+    "Horseradish-Cabbage flea beetle"
+  ],
+  "description_damage": "See: Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "Monitor fields for flea beetles soon after transplanting or as seedlings emerge. Flea beetles attacking the cotyledons of emerging broccoli seedlings can destroy a new planting in 24 hours. Treat for flea beetles when small holes show on transplants or on plants from seeded fields. Young plants (three to five leaves) often withstand flea beetle injury, but they may be killed if the weather is dry and windy. The percentage of plants affected and forecasted weather conditions will indicate the need to treat. When the flea beetles on seedlings are migrating from hosts outside of the field, most of the infestation will be localized within 200 feet of field borders. Check the distribution of leaf feeding to see if this is the case, and consider border treatments only. If high populations exist 1 to 2 weeks before harvest, and foliage is declining as a food source for the beetles, spot treat according to the flea beetle distribution.",
+  "management": {
+    "biological": "",
+    "cultural": "\"Trap crops\" such as radish or daikon may help lure flea beetles away from the main crop. This has not been tested in the Pacific Northwest. Floating row covers or other screening can be used to exclude the beetles during seedling establishment of high-value crops. Flea beetles can be vacuumed off foliage, but this must be repeated frequently. Reinvasion of plants can be rapid.",
+    "chemical_home": [
+      "azadirachtin (neem oil)-Some formulations are",
+      "OMRI-listed for organic use. bifentrhrin carbaryl cyfluthrin imidacloprid",
+      "kaolin-Applied as a spray to foliage, it acts as a repellent to some insect pests. Some formulations are",
+      "OMRI-listed for organic use. permethrin",
+      "pyrethrins-Some formulations are",
+      "OMRI-listed for organic use.",
+      "spinosad-Some formulations are",
+      "OMRI-listed for organic use.",
+      "zeta-cypermethrin"
+    ],
+    "chemical_commercial": [
+      "alpha-cypermethrin (Fastac EC) at 0.012 to 0.025 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 4 days. Do not exceed 0.075 lb ai/A per season. Washington only .",
+      "bifenthrin (Brigade 2EC, Sniper) at 0.08 to 0.1 lb ai/A. PHI 21 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.5 lb ai/A per season. Brigade 2EC only for Oregon and Washington.",
+      "cyantraniliprole (Exirel) at 0.088 to 0.133 lb ai/A PHI 1 day. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.4 lb ai/A per year.",
+      "deltamethrin (Delta Gold) at 0.018 to 0.028 lb ai/A. PHI 3 days. REI 12 hr. Do not exceed 0.14 lb ai/A per season. Retreatment interval 3 days.",
+      "imidacloprid (Admire Pro) at 0.16 to 0.38 lb ai/A soil and 0.043 lb ai/A foliar. PHI 21 days soil; 7 days foliar. REI 12 hr. Retreatment interval 5 days. Do not exceed 0.38 lb ai/A soil or 0.13 lb ai/A foliar per season.",
+      "malathion (Malathion 8 Flowable) at 1.25 lb ai/A. PHI 7 days. REI 24 hr. Limit 3 treatments per year. Retreatment interval 7 days.",
+      "spinetoram (Radiant SC) at 0.047 to 0.063 lb ai/A. PHI 3 days. REI 4 hr. Retreatment interval 4 days. Limit 4 applications per year. Do not exceed 0.219 lb ai/A per season. Follow resistance management procedures on the label. Suppression only.",
+      "spinosad (Success, Entrust SC) at 0.047 to 0.094 lb ai/A. PHI 3 days. REI 4 hr. Do not exceed 0.33 lb ai/A per season. Retreatment interval 5 days. Entrust SC is",
+      "OMRI-listed for organic use.",
+      "thiamethoxam (Actara) at 0.023 to 0.047 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.125 lb ai/A per season.",
+      "thiamethoxam (Platinum) at 0.078 to 0.188 lb ai/A. REI 12 hr. Do not exceed 0.188 lb ai/A per season. Apply to the soil as",
+      "in-furrow spray, band application, drench, shanked or with irrigation.",
+      "zeta-cypermethrin (Mustang) at 0.022 to 0.05 lb ai/A. PHI 1 day. REI 12 hr. Do not exceed 0.3 lb ai/A per year."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:31:05.206026+00:00"
+}

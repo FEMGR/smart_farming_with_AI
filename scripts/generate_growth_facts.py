@@ -23,7 +23,6 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 
-
 IOWA_URL = "https://yardandgarden.extension.iastate.edu/how-to/" "germination-requirements-annuals-and-vegetables"
 
 WISCONSIN_URL = "https://hort.extension.wisc.edu/articles/" "when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/"

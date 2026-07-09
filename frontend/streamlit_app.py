@@ -12,6 +12,7 @@ from pages.irrigation import render_irrigation
 from pages.locations import render_locations
 from pages.notifications import render_notifications
 from pages.overview import render_overview
+from pages.pest_query import render_pest_query
 from pages.plants import render_plants
 from pages.recommendations import render_recommendations
 from pages.signed_out import render_signed_out
@@ -49,6 +50,7 @@ def main() -> None:
             "Layout",
             "Notifications",
             "Species Lookup",
+            "Pest Query",
         ]
     )
 
@@ -78,6 +80,9 @@ def main() -> None:
 
     with tabs[8]:
         render_species_lookup()
+
+    with tabs[9]:
+        render_pest_query()
 
 
 if __name__ == "__main__":

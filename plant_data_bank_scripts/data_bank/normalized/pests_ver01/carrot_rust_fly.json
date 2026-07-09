@@ -1,0 +1,76 @@
+{
+  "pest_atom": "carrot_rust_fly",
+  "name": "Carrot rust fly",
+  "pest_type": "insect",
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "carrot",
+    "celery",
+    "parsnip"
+  ],
+  "source_pages": [
+    {
+      "crop_heading": "Carrot",
+      "pest_name_on_page": "Carrot rust fly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-carrot-rust-fly"
+    },
+    {
+      "crop_heading": "Celery",
+      "pest_name_on_page": "Carrot rust fly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-carrot-rust-fly"
+    },
+    {
+      "crop_heading": "Parsnip",
+      "pest_name_on_page": "Carrot rust fly",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-carrot-rust-fly"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-carrot-rust-fly",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/celery-carrot-rust-fly",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/parsnip-carrot-rust-fly"
+  ],
+  "page_titles": [
+    "Carrot-Carrot rust fly",
+    "Celery-Carrot rust fly",
+    "Parsnip-Carrot rust fly"
+  ],
+  "description_damage": "See: Common Pests of Vegetable Crops See Common Pests of Vegetable Crops",
+  "biology_life_history": "",
+  "monitoring": "Yellow sticky traps can be used to monitor for carrot rust fly. In Ontario, Canada, an action threshold of one-tenth to two-tenths flies per trap per day is used. Degree-day accumulations have been calculated for carrot rust fly development. Begin monitoring carrots at the second leaf stage. Symptoms of larval attack are wilting and discolored (\"rusty\") foliage, especially in dry weather. Less severely damaged plants appear stunted. Orange or yellow sticky traps can be used to monitor for carrot rust fly. In Ontario, Canada, an action threshold of 0.1 to 0.2 flies per trap per day is used. Degree-day accumulations have been calculated for carrot rust fly development. Begin monitoring celery at the second-leaf stage. Symptoms of larval attack are wilting and discolored (\"rusty\") foliage, especially in dry weather. Less severely damaged plants appear stunted. Management-biological, cultural, tactical See: Carrot-Carrot Rust Fly Orange or yellow sticky traps can be used to monitor for carrot rust fly. In Ontario, Canada, an action threshold of one-tenth to two-tenths flies per trap per day is used. Degree-day accumulations have been calculated for carrot rust fly development. Begin monitoring at the second leaf stage. Symptoms of larval attack are wilting and discolored (\"rusty\") foliage, especially in dry weather. Less severely damaged plants appear stunted.",
+  "management": {
+    "biological": "",
+    "cultural": "Rotating crops plays an important role in reducing populations of this pest. Destroy volunteer carrots and all umbelliferous plants, as they may serve as alternate hosts and possible sources of infestation. Early harvest helps control damage. If early harvest is not possible, harvest in blocks rather than selectively. Deep plowing in fall or spring can be helpful. Floating row covers work very well and may be cost effective on high value crops.",
+    "chemical_home": [
+      "No products are registered for control of this pest.",
+      "No products are registered for control of this pest",
+      "None registered."
+    ],
+    "chemical_commercial": [
+      "clothianidin +",
+      "imidacloprid (Sepresto 75 WS) at 0.06 to 0.12 oz formulated product/1,000 seeds. For use in commercial seed treaters only. Not for use in agricultural establishments in",
+      "hopper-box or similar",
+      "on-farm seed treatment applicators",
+      "used at planting. Regardless of the type of application (seed treatment, soil, or foliar), do not exceed 6 oz ai/A clothianidin or 8 oz ai/A imidacloprid per acre per season. Not registered for use in OR.",
+      "None registered.",
+      "pyrethrins/piperonyl",
+      "butoxide (Pyronyl Crop Spray) at 0.004 to 0.050 lb ai/A. PHI 0 days. REI 12 hr. Do not exceed 10 applications per season. Minimum retreatment interval 3 days."
+    ]
+  },
+  "damage_tags": [],
+  "raw_section_keys": [
+    "description_damage",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Hosts and Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests",
+  "latest_revision": "March 2026",
+  "data_origin": "pnw_vegetable_pest_profile",
+  "confidence": 0.9,
+  "extracted_at": "2026-06-22T04:31:28.679273+00:00"
+}

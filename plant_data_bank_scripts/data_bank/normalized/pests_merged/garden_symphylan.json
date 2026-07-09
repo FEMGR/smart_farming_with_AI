@@ -1,0 +1,202 @@
+{
+  "pest_atom": "garden_symphylan",
+  "name": "Garden symphylan",
+  "pest_type": "symphylan",
+  "page_title": "Vegetable crop pests-Garden symphylan",
+  "source_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable/vegetable-crop-garden-symphylan",
+  "source_name": "PNW Insect Management Handbook",
+  "source_section": "Common Pests of Vegetable Crops",
+  "source_index_url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/common-vegetable",
+  "data_origin": "merged_pnw_pest_profile",
+  "confidence": 0.95,
+  "included_species": [],
+  "scientific_names": [],
+  "primary_scientific_name": null,
+  "host_plants": [
+    "asparagus",
+    "bean",
+    "beet",
+    "bell_pepper",
+    "broccoli",
+    "brussels_sprout",
+    "cabbage",
+    "carrot",
+    "cauliflower",
+    "chili_pepper",
+    "corn",
+    "cucumber",
+    "garlic",
+    "pepper",
+    "rhubarb",
+    "spinach",
+    "sweet_corn"
+  ],
+  "includes_text": "",
+  "biology_life_history": "Eggs, nymphs, and adults can be found in any month of the year, but the majority of eggs are found during the early spring and fall. Nymphs and adults become active in the spring in the top 8 inches of soil. Eggs are laid in clusters of 4 to 25. Eggs hatch in about 40 days, and nymphs begin feeding on small roots. The total development time from egg to adult is about 5 months at 50°F. There are one or two generations each year. See: Biology and control of the garden symphylan",
+  "description_damage": "Garden symphylans are also called garden centipedes. When fully grown, they are not more than 0.32 inch in length, have 15 body segments, and 11 or 12 pairs of legs. They are slender, elongated, and white with prominent antennae. Symphylans may damage sprouting seeds, seedlings before or after emergence, or older plants. They feed primarily on root hairs and rootlets. Their ability to injure the crop decreases as plants get larger; however, their pitting of older roots may provide entry for pathogens. Transplants may be stunted by their feeding as new roots attempt to grow out of the transplant plug.",
+  "monitoring": "Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone. In Oregon, 10 to 20 symphylans per young bean plant were shown to affect plant growth. In general, preplant field evaluation for symphylans involves grid sampling at one acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. Many organisms prey on symphylans in the field, including true centipedes, predatory mites, predaceous ground beetles, and various fungi. However, little is known about their effect on symphylan populations. We do not have a specific threshold for symphylan in table beets for Oregon conditions. In general, field evaluation for symphylans involves grid sampling at one acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. Many organisms prey on symphylans in the field, including true centipedes, predatory mites, predaceous ground beetles, and various fungi. However, little is known about their effect on symphylan populations. We do not have a specific threshold for symphylan in broccoli, Brussels sprout, cabbage, or cauliflower for Oregon conditions. In general, field evaluation for symphylans involves grid sampling at one-acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone. In general, preplant field evaluation for symphylans involves grid sampling at one-acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. However, symphylans may cause cosmetic injury to carrots sold as fresh produce. Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone. In general, preplant field evaluation for symphylans involves grid sampling at one-acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. In Ohio, 50 to 100 symphylans per corn plant is considered damaging to early corn. Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone. In general, preplant field evaluation for symphylans involves grid sampling at one acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. In general, preplant field evaluation for symphylans involves grid sampling at one acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone. We do not have an action threshold for symphylans in peppers in Oregon. In general, preplant field evaluation for symphylans involves grid sampling at one acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample. Infested soil can be treated with insecticides, but the effect is limited because of symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone. In general, preplant field evaluation for symphylans involves grid sampling at one acre intervals, digging 6 x 6 x 12-inch holes (0.25 cubic foot), spreading and carefully examining the soil from the hole, and using an action threshold of 0.5 to 1 symphylans per sample.",
+  "management": {
+    "biological": "Many organisms prey on symphylans in the field, including true centipedes, predatory mites, predaceous ground beetles, and various fungi. However, little is known about their effect on symphylan populations. Many organisms prey on symphylans in the field, including true centipedes, predatory mites, predaceous ground beetles, and various fungi. Little is known about their effect on symphylan populations.",
+    "chemical_commercial": [
+      "Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone.",
+      "Infested soil can be treated with insecticides, but the effect is limited because of the symphylan's ability to migrate deep into the soil. Insecticides may help give the plants a chance to establish in a protected zone. Preplant application of diazinon for wireworm control may suppress symphylans.",
+      "No products are registered for control of this pest.",
+      "at-plant treatment. bifenthrin/Avermectin (Athena) at 0.06 to 0.12 lb ai/A at plant. PHI 40 days. REI 12 hr. Do not exceed 0.056 lb ai/A avermectin or 0.4 lb ai/A bifenthrin per year. Limit 2 treatments.",
+      "beta-cyfluthrin (Baythroid XL) at 0.022 lb ai/A. PHI 7 days. REI 12 hr. Retreatment interval 7 days. Do not exceed 0.132 lb ai/A per season. These products contain commonly used active ingredients for control of garden symphylan in pepper. There are other materials available. Please consult a licensed crop advisor for additional recommendations.",
+      "bifenthrin (Capture LFR) at 0.08 to 0.1 lb ai/A at plant",
+      "chlorethoxyfos/bifenthrin (Smart Choice 5G) at 3 to 3.5 oz 1,000 row ft. REI 48 hr, or 72 hr if annual rainfall is less than 25 inches.",
+      "chloropicrin (Telone II)-Preplant.",
+      "chloropicrin (Telone II)-Preplant. REI from the start of application until 5 days after application. Consult label.",
+      "chloropicrin (Telone)-Preplant.",
+      "dichloropropene (Telone II)-Preplant incorporation using broadcast application 9 to 12 gal/A.",
+      "ethoprop (Mocap 15G) at 0.063 to 0.125 lb ai/A at plant. Rates for Mocap depend upon row spacing. Refer to label. REI 48 hr, or 72 hr if annual rainfall is less than 25 inches. Apply as a band on row or closed seed furrow, or sidedress from planting to",
+      "ethoprop (Mocap 15G) at 0.9 to 1.4 lb product/1,000 row ft. Apply in 12- to 15-inch bands on the row. See label for adjustments based on specific row spacing. Do not place in contact with seed. Do not apply within 140 ft of aquatic habitat.",
+      "ethoprop (Mocap 15G)-Consult label. Cabbage only.",
+      "lay-by.",
+      "metam sodium (Metam CLR 42%). Preplant soil fumigant. Restricted use pesticide.",
+      "or at 0.04 to 0.08 lb ai/A as PPI. REI 12 hr. Do not exceed 0.1 lb ai/A per season as an",
+      "tolfenpyrad (Torac) at 0.17 to 0.21 lb ai/A. PHI 1 day. REI 12 hr. Retreatment interval 14 days. Limit 4 treatments. Do not exceed 0.42 lb/A per year. Ground application only."
+    ],
+    "chemical_home": [
+      "OMRI-listed for organic use.",
+      "OMRI-listed for organic use. bifenthrin cyfluthrin",
+      "OMRI-listed for organic use. cyfluthrin",
+      "OMRI-listed. bifenthrin",
+      "azadirachtin (as a mix with pyrethrins)-Some formulations are",
+      "bifenthrin cyfluthrin",
+      "bifenthrin cyfluthrin pyrethrins",
+      "bifenthrin-No registered bifenthrin products for carrot in WA. cyfluthrin",
+      "cyfluthrin",
+      "pyrethrins (often combined with other ingredients)-Some formulations are",
+      "pyrethrins-Some formulations are"
+    ],
+    "cultural": "Symphylan damage generally is associated with soils that are high in organic matter content and have good soil structure. Symphylans do not thrive in either compact or sandy soils, because these soils do not provide them with adequate tunnels for their movement (symphylans cannot make their own burrows). There is some evidence that packing down the soil surface after planting may reduce injury. Symphylan damage generally is associated with soils that are high in organic matter content and have good soil structure. Symphylans do not thrive in either compact or sandy soils, because these soils do not provide them with adequate tunnels for their movement (symphylans cannot make their own burrows). There is some evidence that packing down the soil surface after planting may reduce injury. There is some evidence that aggressive tillage, especially roto-tillage suppresses symphylan activity for the same reasons stated above. Flooding for 2 to 3 weeks has controlled symphylans in some situations but has been unsuccessful in others. Even in the best circumstances, flooding only reduces populations, and they can increase when conditions are again favorable. Effectiveness of rotations with non-host crops has not been studied. Symphylan damage generally is associated with soils that are high in organic matter content and have good soil structure. Symphylans do not thrive in either compact or sandy soils, because these soils do not provide them with adequate tunnels for their movement (symphylans cannot make their own burrows). There is some evidence that packing down the soil surface after planting may reduce injury. Flooding for 2 to 3 weeks has controlled symphylans in some situations but has been unsuccessful in others. Even in the best circumstances, flooding only reduces populations, and they can increase when conditions are again favorable. Effectiveness of rotations with non-host crops has not been studied. Symphylan damage generally is associated with soils that are high in organic matter content and have good soil structure. Symphylans do not thrive in either compact or sandy soils, because these soils do not provide them with adequate tunnels for their movement (symphylans cannot make their own burrows). There is some evidence that packing down the soil surface after planting may reduce injury. Flooding for 2 to 3 weeks has controlled symphylans in some situations but has been unsuccessful in others. Even in the best circumstances, flooding only reduces populations, and they can increase when conditions are again favorable. Effectiveness of rotations with non-host crops has not been established in Oregon. Symphylan damage generally is associated with soils that are high in organic matter content and have good soil structure. Symphylans do not thrive in either compact or sandy soils, because these soils do not provide them with adequate tunnels for their movement (symphylans cannot make their own burrows). There is some evidence that packing down the soil surface after planting may reduce injury. Flooding for 2 to 3 weeks has controlled symphylans in some situations but has been unsuccessful in others. Even in the best circumstances, flooding only reduces populations, and they can increase when conditions are again favorable. Effectiveness of rotations with nonhost crops has not been studied."
+  },
+  "damage_tags": [
+    "feeding_damage",
+    "leaf_mining",
+    "root_damage",
+    "stunting"
+  ],
+  "raw_section_keys": [
+    "biology_life_history",
+    "description_damage",
+    "management_biological",
+    "management_chemical_commercial",
+    "management_chemical_home",
+    "management_cultural",
+    "monitoring"
+  ],
+  "images": [
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-garden-symphylan/g272-96.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-garden-symphylan/g272-96.jpg?itok=bQykQeLG",
+      "caption": "Garden symphylan Scutigerella immaculata Newport Showing damage on roots"
+    },
+    {
+      "url": "https://oregondigital.org/sets/ken-gray",
+      "thumbnail_url": null,
+      "caption": null
+    },
+    {
+      "url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/insect/images/vegetable-crop-garden-symphylan/90-116.jpg",
+      "thumbnail_url": "https://pnwhandbooks.org/sites/pnwhandbooks/files/styles/page_thumbnail/public/insect/images/vegetable-crop-garden-symphylan/90-116.jpg?itok=g7K__LCB",
+      "caption": "Garden symphylan Scutigerella immaculata Newport Adult"
+    }
+  ],
+  "meta_dates": {
+    "published_time": "2015-10-29T16:19:34-07:00",
+    "modified_time": "2025-04-17T08:11:00-07:00",
+    "og_updated_time": "2025-04-17T08:11:00-07:00",
+    "dcterms_date": "2015-10-29T16:19-07:00"
+  },
+  "extracted_at": "2026-06-29T04:53:53.501049+00:00",
+  "source_pages": [
+    {
+      "crop_heading": "Asparagus",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-garden-symphylan"
+    },
+    {
+      "crop_heading": "Bean, snap",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-garden-symphylan"
+    },
+    {
+      "crop_heading": "Beet, table",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-garden-symphylan"
+    },
+    {
+      "crop_heading": "Broccoli, Brussels sprout, cabbage, cauliflower",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-garden-symphylan"
+    },
+    {
+      "crop_heading": "Carrot",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-garden-symphylan"
+    },
+    {
+      "crop_heading": "Corn, sweet",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-garden-symphylan"
+    },
+    {
+      "crop_heading": "Cucumber",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-garden-symphylan"
+    },
+    {
+      "crop_heading": "Garlic",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-garden-symphylan"
+    },
+    {
+      "crop_heading": "Pepper",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-garden-symphylan"
+    },
+    {
+      "crop_heading": "Rhubarb",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/rhubarb-garden-symphylan"
+    },
+    {
+      "crop_heading": "Spinach",
+      "pest_name_on_page": "Garden symphylan",
+      "url": "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-garden-symphylan"
+    }
+  ],
+  "detail_urls": [
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/asparagus-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/bean-snap-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/beet-table-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/broccoli-brussels-sprout-cabbage-cauliflower-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/carrot-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/corn-sweet-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/cucumber-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/garlic-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/pepper-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/rhubarb-garden-symphylan",
+    "https://pnwhandbooks.org/insect/vegetable/vegetable-pests/hosts-pests/spinach-garden-symphylan"
+  ],
+  "page_titles": [
+    "Asparagus-Garden symphylan",
+    "Bean, snap-Garden symphylan",
+    "Beet, table-Garden symphylan",
+    "Broccoli, Brussels sprout, cabbage, cauliflower-Garden symphylan",
+    "Carrot-Garden symphylan",
+    "Corn, sweet-Garden symphylan",
+    "Cucumber-Garden symphylan",
+    "Garlic-Garden symphylan",
+    "Pepper-Garden symphylan",
+    "Rhubarb-Garden symphylan",
+    "Spinach-Garden symphylan"
+  ],
+  "merged_from": {
+    "pests": true,
+    "pests_ver01": true
+  },
+  "merged_at": "2026-06-29T04:58:24.555384+00:00"
+}
