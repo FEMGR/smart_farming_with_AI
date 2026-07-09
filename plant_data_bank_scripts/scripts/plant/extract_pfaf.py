@@ -51,7 +51,6 @@ from source_parse_patch import (  # noqa: E402
     title_text,
 )
 
-
 PFAF_BASE = "https://pfaf.org"
 SOURCE_NAME = "Plants For A Future"
 

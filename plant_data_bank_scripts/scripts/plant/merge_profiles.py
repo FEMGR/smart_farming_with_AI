@@ -39,7 +39,6 @@ from common import (  # noqa: E402
 )
 from project_paths import PATHS  # noqa: E402
 
-
 # =========================================================
 # MERGE HELPERS
 # =========================================================
