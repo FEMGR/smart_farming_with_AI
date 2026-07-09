@@ -35,6 +35,7 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from project_paths import PATHS  # noqa: E402
+from common import read_json, write_json  # noqa: E402
 
 # =========================================================
 # GENERAL HELPERS
@@ -162,6 +163,84 @@ def save_json(path: Path, data: Any) -> None:
         json.dumps(data, indent=2, ensure_ascii=False, sort_keys=True),
         encoding="utf-8",
     )
+
+
+def get_path(data: Dict[str, Any], path: str) -> Any:
+    cursor: Any = data
+
+    for part in path.split("."):
+        if not isinstance(cursor, dict):
+            return None
+
+        cursor = cursor.get(part)
+
+    return cursor
+
+
+def set_path_if_blank(data: Dict[str, Any], path: str, value: Any, source: str) -> bool:
+    if value in (None, "", [], {}):
+        return False
+
+    parts = path.split(".")
+    cursor: Dict[str, Any] = data
+
+    for part in parts[:-1]:
+        child = cursor.setdefault(part, {})
+
+        if not isinstance(child, dict):
+            return False
+
+        cursor = child
+
+    key = parts[-1]
+
+    if cursor.get(key) not in (None, "", [], {}):
+        return False
+
+    cursor[key] = value
+    data.setdefault("field_sources", {})[path] = source
+    return True
+
+
+def extend_path_list(data: Dict[str, Any], path: str, values: List[Any], source: str) -> bool:
+    clean_values = [value for value in values if value not in (None, "", [], {})]
+
+    if not clean_values:
+        return False
+
+    parts = path.split(".")
+    cursor: Dict[str, Any] = data
+
+    for part in parts[:-1]:
+        child = cursor.setdefault(part, {})
+
+        if not isinstance(child, dict):
+            return False
+
+        cursor = child
+
+    key = parts[-1]
+    existing = cursor.get(key)
+
+    if existing in (None, "", {}):
+        existing_list: List[Any] = []
+    elif isinstance(existing, list):
+        existing_list = existing
+    else:
+        existing_list = [existing]
+
+    combined: List[Any] = []
+
+    for item in [*existing_list, *clean_values]:
+        if item not in combined:
+            combined.append(item)
+
+    if combined == existing_list:
+        return False
+
+    cursor[key] = combined
+    data.setdefault("field_sources", {})[path] = source
+    return True
 
 
 # =========================================================
@@ -777,6 +856,196 @@ def update_missing_seed(
 
 
 # =========================================================
+# NORMALIZED PROFILE MERGE
+# =========================================================
+
+
+def watering_interval_days(record: Dict[str, Any]) -> Optional[int]:
+    benchmark = record.get("watering_general_benchmark")
+
+    if not isinstance(benchmark, dict):
+        return None
+
+    value = clean_text(benchmark.get("value"))
+
+    if not value:
+        return None
+
+    numbers = [int(match) for match in re.findall(r"\d+", value)]
+
+    if not numbers:
+        return None
+
+    return max(1, round(sum(numbers) / len(numbers)))
+
+
+def perenual_profile_source(record: Dict[str, Any]) -> Dict[str, Any]:
+    source_file = record.get("source_file")
+    source_url = None
+
+    if record.get("perenual_id"):
+        source_url = f"https://perenual.com/plant-species-database-search-finder/species/{record['perenual_id']}"
+
+    return {
+        "source_name": "Perenual",
+        "source_url": source_url or source_file,
+        "status": "snapshot",
+        "trusted_detail": True,
+        "relevance_score": None,
+        "fields_provided": [
+            key
+            for key in [
+                "identity",
+                "classification.life_cycle",
+                "growth.sunlight",
+                "growth.water_need",
+                "growth.growth_speed",
+                "germination.propagation_methods",
+                "care.watering_interval_days",
+            ]
+            if key
+        ],
+        "confidence": record.get("confidence") or 0.70,
+        "last_verified_at": record.get("last_synced_at") or now_iso(),
+    }
+
+
+def add_profile_source(profile: Dict[str, Any], source: Dict[str, Any]) -> bool:
+    metadata = profile.setdefault("source_metadata", {})
+    sources = metadata.setdefault("sources", [])
+
+    if not isinstance(sources, list):
+        metadata["sources"] = []
+        sources = metadata["sources"]
+
+    marker = (source.get("source_name"), source.get("source_url"))
+
+    for existing in sources:
+        if not isinstance(existing, dict):
+            continue
+
+        if (existing.get("source_name"), existing.get("source_url")) == marker:
+            existing.update(source)
+            return True
+
+    sources.append(source)
+    return True
+
+
+def compute_profile_missing_fields(profile: Dict[str, Any]) -> None:
+    required_paths = [
+        "identity.scientific_name",
+        "identity.genus",
+        "identity.family",
+        "classification.edible_parts",
+        "classification.life_cycle",
+        "growth.sunlight",
+        "growth.water_need",
+        "growth.soil_notes",
+        "germination.propagation_methods",
+        "germination.germination_days_min",
+        "germination.sowing_depth_cm",
+    ]
+
+    missing = []
+
+    for path in required_paths:
+        if get_path(profile, path) in (None, "", [], {}):
+            missing.append(path)
+
+    known_diseases = get_path(profile, "pests_and_diseases.known_diseases")
+    known_disease_ids = get_path(profile, "pests_and_diseases.known_disease_ids")
+
+    if known_diseases in (None, "", [], {}) and known_disease_ids in (None, "", [], {}):
+        missing.append("pests_and_diseases.known_diseases")
+
+    profile["missing_fields"] = missing
+
+
+def merge_record_into_profile(profile: Dict[str, Any], record: Dict[str, Any]) -> bool:
+    changed = False
+    previous_missing_fields = list(profile.get("missing_fields") or [])
+
+    changed |= set_path_if_blank(profile, "identity.common_name", record.get("common_name"), "Perenual")
+    changed |= set_path_if_blank(profile, "identity.scientific_name", record.get("scientific_name"), "Perenual")
+    changed |= set_path_if_blank(profile, "identity.genus", record.get("genus"), "Perenual")
+    changed |= set_path_if_blank(profile, "identity.family", record.get("family"), "Perenual")
+
+    changed |= set_path_if_blank(profile, "classification.life_cycle", record.get("cycle"), "Perenual")
+    changed |= set_path_if_blank(profile, "classification.edible", record.get("cuisine"), "Perenual")
+
+    edible_parts = []
+    if record.get("edible_fruit") is True:
+        edible_parts.append("fruit")
+    if record.get("edible_leaf") is True:
+        edible_parts.append("leaf")
+
+    changed |= extend_path_list(profile, "classification.edible_parts", edible_parts, "Perenual")
+    changed |= extend_path_list(profile, "growth.sunlight", record.get("sunlight") or [], "Perenual")
+    changed |= extend_path_list(profile, "growth.soil_type", record.get("soil") or [], "Perenual")
+    changed |= set_path_if_blank(profile, "growth.water_need", record.get("watering"), "Perenual")
+    changed |= set_path_if_blank(profile, "growth.growth_speed", record.get("growth_rate"), "Perenual")
+    changed |= extend_path_list(profile, "germination.propagation_methods", record.get("propagation") or [], "Perenual")
+    changed |= set_path_if_blank(profile, "care.watering_interval_days", watering_interval_days(record), "Perenual")
+    changed |= set_path_if_blank(profile, "care.cultivation_notes", record.get("description"), "Perenual")
+
+    compute_profile_missing_fields(profile)
+
+    if profile.get("missing_fields") != previous_missing_fields:
+        changed = True
+
+    if changed:
+        add_profile_source(profile, perenual_profile_source(record))
+        profile.setdefault("source_metadata", {})["last_merged_at"] = now_iso()
+
+    return changed
+
+
+def update_normalized_profiles(
+    records: List[Dict[str, Any]],
+    normalized_dir: Path,
+) -> List[Path]:
+    updated_paths: List[Path] = []
+
+    for record in records:
+        plant_atom = record.get("plant_atom")
+
+        if not plant_atom:
+            continue
+
+        profile_path = normalized_dir / f"{plant_atom}.json"
+        profile = read_json(profile_path, default=None)
+
+        if not isinstance(profile, dict):
+            continue
+
+        if merge_record_into_profile(profile, record):
+            write_json(profile_path, profile)
+            updated_paths.append(profile_path)
+
+    return updated_paths
+
+
+def matched_normalized_profiles(records: List[Dict[str, Any]], normalized_dir: Path) -> List[Path]:
+    matched_paths: List[Path] = []
+    seen = set()
+
+    for record in records:
+        plant_atom = record.get("plant_atom")
+
+        if not plant_atom:
+            continue
+
+        profile_path = normalized_dir / f"{plant_atom}.json"
+
+        if profile_path.exists() and profile_path not in seen:
+            seen.add(profile_path)
+            matched_paths.append(profile_path)
+
+    return matched_paths
+
+
+# =========================================================
 # SCANNING
 # =========================================================
 
@@ -821,7 +1090,13 @@ def extract_records_from_snapshots(
 # =========================================================
 
 
-def print_summary(records: List[Dict[str, Any]], bank: Dict[str, Any], missing_seed: List[Dict[str, Any]]) -> None:
+def print_summary(
+    records: List[Dict[str, Any]],
+    bank: Dict[str, Any],
+    missing_seed: List[Dict[str, Any]],
+    matched_profiles: List[Path],
+    updated_profiles: List[Path],
+) -> None:
     known = [r for r in records if r.get("is_known_in_prolog") is True]
     missing = [r for r in records if r.get("is_known_in_prolog") is False]
 
@@ -832,6 +1107,8 @@ def print_summary(records: List[Dict[str, Any]], bank: Dict[str, Any], missing_s
     print(f"New missing candidates     : {len(missing)}")
     print(f"Total enriched bank records: {len(bank)}")
     print(f"Total missing seed records : {len(missing_seed)}")
+    print(f"Normalized profiles matched: {len(matched_profiles)}")
+    print(f"Normalized profiles updated: {len(updated_profiles)}")
     print("==========================================================")
     print("")
 
@@ -842,6 +1119,25 @@ def print_summary(records: List[Dict[str, Any]], bank: Dict[str, Any], missing_s
 
         if len(missing) > 30:
             print(f" ... and {len(missing) - 30} more")
+
+    if matched_profiles:
+        print("")
+        print("Matched normalized profiles:")
+        for path in matched_profiles[:30]:
+            status = "updated" if path in updated_profiles else "already current"
+            print(f" - {path.stem} | {status}")
+
+        if len(matched_profiles) > 30:
+            print(f" ... and {len(matched_profiles) - 30} more")
+
+    if updated_profiles:
+        print("")
+        print("Updated normalized profiles:")
+        for path in updated_profiles[:30]:
+            print(f" - {path.stem}")
+
+        if len(updated_profiles) > 30:
+            print(f" ... and {len(updated_profiles) - 30} more")
 
 
 # =========================================================
@@ -909,11 +1205,15 @@ def main() -> None:
 
     bank = update_enriched_bank(records, enriched_bank_path)
     missing_seed = update_missing_seed(records, missing_seed_path)
+    matched_profiles = matched_normalized_profiles(records, PATHS.normalized_plants)
+    updated_profiles = update_normalized_profiles(records, PATHS.normalized_plants)
 
-    print_summary(records, bank, missing_seed)
+    print_summary(records, bank, missing_seed, matched_profiles, updated_profiles)
 
     print(f"[OK] Updated enriched bank: {enriched_bank_path}")
     print(f"[OK] Updated missing seed : {missing_seed_path}")
+    print(f"[OK] Updated profiles     : {len(updated_profiles)}")
+    print("[INFO] Prolog files were not modified. Run the Prolog update step to append pending facts.")
 
 
 if __name__ == "__main__":

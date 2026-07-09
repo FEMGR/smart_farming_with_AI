@@ -4,7 +4,12 @@ import sys
 from pathlib import Path
 from urllib.parse import quote_plus
 from bs4 import BeautifulSoup
-from common import (
+
+SCRIPT_DIR = Path(__file__).resolve().parents[1]
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from common import (  # noqa: E402
     RAW_DIR,
     clean_text,
     ensure_dirs,
@@ -22,10 +27,6 @@ from common import (
     write_json,
 )  # noqa: E402
 from project_paths import PATHS  # noqa: E402
-
-SCRIPT_DIR = Path(__file__).resolve().parents[1]
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
 
 
 FPI_SOURCE_NAME = "Food Plants International"

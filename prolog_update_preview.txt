@@ -1,19 +1,25 @@
 # Prolog update preview
-Total missing facts: 70
+Total missing facts: 117
 
 No files were modified.
 Run again with --apply to append these facts.
 
 ## Summary
 
-Affected plants with pending facts: european_silver_fir, tree_tomato
+Affected plants with pending facts: broccoli, carrot, chive, cucumber, european_silver_fir, tree_tomato, turnip
 New plants in preview: european_silver_fir, tree_tomato
 
 ================================================================================
 logic_companion_planting/data/plant_fact.pl
-Missing facts: 12
+Missing facts: 22
 ================================================================================
 
+edible(broccoli, true).
+edible_part(broccoli, fruit).
+edible_part(broccoli, leaf).
+edible_part(carrot, leaf).
+edible(chive, true).
+edible_part(chive, leaf).
 plant(european_silver_fir).
 scientific_name(european_silver_fir, 'abies alba').
 use_category(european_silver_fir, medicinal_plant).
@@ -22,10 +28,14 @@ plant(tree_tomato).
 scientific_name(tree_tomato, 'cyphomandra betacea').
 edible(tree_tomato, true).
 edible_part(tree_tomato, fruit).
+edible_part(tree_tomato, leaf).
 use_category(tree_tomato, fruit_crop).
 use_category(tree_tomato, medicinal_plant).
 trait(tree_tomato, medicinal).
 trait(tree_tomato, pollinator_attractor).
+edible(turnip, true).
+edible_part(turnip, fruit).
+edible_part(turnip, leaf).
 
 ================================================================================
 logic_companion_planting/data/alias_fact.pl
@@ -49,16 +59,44 @@ family(european_silver_fir, pinaceae).
 taxonomy_confidence(european_silver_fir, high).
 taxonomy_source(european_silver_fir, 'GBIF / Plants For A Future').
 accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
-genus(tree_tomato, solanum).
+genus(tree_tomato, cyphomandra).
 family(tree_tomato, solanaceae).
 taxonomy_confidence(tree_tomato, high).
 taxonomy_source(tree_tomato, 'GBIF / Plants For A Future').
 
 ================================================================================
 logic_companion_planting/data/growth_facts.pl
-Missing facts: 43
+Missing facts: 80
 ================================================================================
 
+life_cycle(broccoli, annual).
+propagation_method(broccoli, seed_propagation).
+propagation_method(broccoli, cutting).
+propagation_method(broccoli, division).
+propagation_method(broccoli, layering_propagation).
+propagation_method(broccoli, grafting_propagation).
+sunlight(broccoli, full_sun).
+water_need(broccoli, average).
+growth_speed(broccoli, low).
+life_cycle(carrot, annual).
+propagation_method(carrot, seed_propagation).
+propagation_method(carrot, division).
+propagation_method(carrot, grafting_propagation).
+propagation_method(carrot, layering_propagation).
+propagation_method(carrot, cutting).
+growth_speed(carrot, high).
+life_cycle(chive, perennial).
+propagation_method(chive, seed_propagation).
+sunlight(chive, full_sun).
+sunlight(chive, part_shade).
+soil_type(chive, rocky).
+soil_type(chive, gravelly).
+soil_type(chive, dry).
+soil_type(chive, well_drained).
+water_need(chive, frequent).
+growth_speed(chive, high).
+propagation_method(cucumber, seed_propagation).
+growth_speed(cucumber, low).
 life_cycle(european_silver_fir, perennial).
 fact_scope(european_silver_fir, extracted_profile).
 accepted_scientific_name(european_silver_fir, 'Abies alba').
@@ -84,7 +122,7 @@ confidence(european_silver_fir, high).
 life_cycle(tree_tomato, perennial).
 fact_scope(tree_tomato, extracted_profile).
 accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
-genus(tree_tomato, solanum).
+genus(tree_tomato, cyphomandra).
 family(tree_tomato, solanaceae).
 propagation_method(tree_tomato, grafting_propagation).
 propagation_method(tree_tomato, air_layering_propagation).
@@ -102,6 +140,15 @@ growth_speed(tree_tomato, low).
 source_name(tree_tomato, 'Plants For A Future').
 source_url(tree_tomato, 'https://pfaf.org/user/Plant.aspx?LatinName=Cyphomandra+betacea').
 confidence(tree_tomato, high).
+life_cycle(turnip, annual).
+propagation_method(turnip, seed_propagation).
+propagation_method(turnip, grafting_propagation).
+propagation_method(turnip, layering_propagation).
+propagation_method(turnip, division).
+propagation_method(turnip, cutting).
+sunlight(turnip, full_sun).
+water_need(turnip, average).
+growth_speed(turnip, low).
 
 ================================================================================
 logic_companion_planting/data/interaction_support.pl

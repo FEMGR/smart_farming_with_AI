@@ -11,25 +11,30 @@
   "classification": {
     "botanical_life_cycle": null,
     "crop_life_cycle": null,
-    "edible": null,
-    "edible_parts": [],
+    "edible": true,
+    "edible_parts": [
+      "fruit",
+      "leaf"
+    ],
     "growth_habit": null,
-    "life_cycle": null,
+    "life_cycle": "annual",
     "life_cycle_context": null,
     "use_categories": []
   },
   "growth": {
     "climate_notes": null,
-    "growth_speed": null,
+    "growth_speed": "low",
     "light_notes": null,
     "rainfall_notes": null,
     "soil_notes": null,
     "soil_ph_max": null,
     "soil_ph_min": null,
     "soil_type": [],
-    "sunlight": [],
+    "sunlight": [
+      "full_sun"
+    ],
     "temperature_notes": null,
-    "water_need": null,
+    "water_need": "average",
     "water_notes": null
   },
   "germination": {
@@ -39,7 +44,13 @@
     "minimum_soil_temp_c": null,
     "optimum_soil_temp_c": null,
     "preferred_propagation_methods": [],
-    "propagation_methods": [],
+    "propagation_methods": [
+      "seed_propagation",
+      "grafting_propagation",
+      "layering_propagation",
+      "division",
+      "cutting"
+    ],
     "propagation_notes": null,
     "propagation_warning": null,
     "sowing_depth_cm": null
@@ -52,14 +63,14 @@
   },
   "care": {
     "cautions": null,
-    "cultivation_notes": null,
+    "cultivation_notes": "The turnip is an amazing vegetable species. It is scientifically known as Brassica rapa, and belongs to the Rapifera Group. It is an easy-to-grow, cool season plant and can easily be grown in most backyard gardens. Turnips are also an excellent source of fibre, vitamins, and minerals. They contain high levels of Vitamin C, and are an excellent source of calcium, potassium, and magnesium. The greens of the turnip are also highly nutritious and can be eaten boiled, steamed, or in salads. Additionally, the turnip is known for its mild and delicious taste, making it great for adding flavour to many meals.",
     "edible_uses_notes": null,
     "fertilizer_notes": null,
     "nutrition_notes": null,
     "other_uses_notes": null,
     "production_notes": null,
     "pruning_notes": null,
-    "watering_interval_days": null,
+    "watering_interval_days": 2,
     "watering_notes": null
   },
   "biodiversity": {
@@ -88,10 +99,19 @@
     "identity.common_name": "local_seed",
     "identity.family": "GBIF",
     "identity.genus": "GBIF",
-    "identity.scientific_name": "local_seed"
+    "identity.scientific_name": "local_seed",
+    "classification.life_cycle": "Perenual",
+    "classification.edible": "Perenual",
+    "classification.edible_parts": "Perenual",
+    "growth.sunlight": "Perenual",
+    "growth.water_need": "Perenual",
+    "growth.growth_speed": "Perenual",
+    "germination.propagation_methods": "Perenual",
+    "care.watering_interval_days": "Perenual",
+    "care.cultivation_notes": "Perenual"
   },
   "source_metadata": {
-    "last_merged_at": "2026-06-17T04:44:11.842978+00:00",
+    "last_merged_at": "2026-07-09T04:30:38.257988+00:00",
     "sources": [
       {
         "confidence": 0.3,
@@ -176,16 +196,29 @@
         "source_url": "https://foodplantsinternational.com/?s=turnip",
         "status": "ok",
         "trusted_detail": null
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/plant-species-database-search-finder/species/1333",
+        "status": "snapshot",
+        "trusted_detail": true,
+        "relevance_score": null,
+        "fields_provided": [
+          "identity",
+          "classification.life_cycle",
+          "growth.sunlight",
+          "growth.water_need",
+          "growth.growth_speed",
+          "germination.propagation_methods",
+          "care.watering_interval_days"
+        ],
+        "confidence": 0.88,
+        "last_verified_at": "2026-07-09T04:30:38.256501+00:00"
       }
     ]
   },
   "missing_fields": [
-    "classification.edible_parts",
-    "classification.life_cycle",
-    "growth.sunlight",
-    "growth.water_need",
     "growth.soil_notes",
-    "germination.propagation_methods",
     "germination.germination_days_min",
     "germination.sowing_depth_cm"
   ]

@@ -66,8 +66,7 @@
   "solanum": [
     "eggplant",
     "potato",
-    "tomato",
-    "tree_tomato"
+    "tomato"
   ],
   "abies": [
     "european_silver_fir"
@@ -149,6 +148,9 @@
   ],
   "thymus": [
     "thyme"
+  ],
+  "cyphomandra": [
+    "tree_tomato"
   ],
   "curcuma": [
     "turmeric"
