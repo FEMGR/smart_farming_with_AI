@@ -33,7 +33,7 @@
   },
   "growth": {
     "climate_notes": null,
-    "growth_speed": null,
+    "growth_speed": "low",
     "light_notes": "Prefers a sunny position and does not grow well in shade.",
     "rainfall_notes": null,
     "soil_notes": "Requires a rich, well-drained moisture retentive soil and a warm very sunny position[200]. A frost-tender plant, the cucumber is commonly cultivated for its edible fruit, there are many named varieties[46, 183]. Many of these varieties are only suitable for protected cropping in Britain though there are a number that have been specifically bred for cool temperate areas and these succeed outdoors in most summers[200]. Many of the cultivars, especially the greenhouse forms, should have their male flowers removed in order to prevent fertilization, since the fertilized fruits have a bitter taste. A number of cultivars have been developed that only produce female flowers[142]. Cucumbers make good companion plants for sweet corn, beans and sunflowers[18], but they dislike growing with potatoes and aromatic herbs[20]. The roots of cucumber plants secrete a substance that inhibits the growth of most weeds[201].",
@@ -60,7 +60,8 @@
     "optimum_soil_temp_c": null,
     "preferred_propagation_methods": [],
     "propagation_methods": [
-      "seed"
+      "seed",
+      "seed_propagation"
     ],
     "propagation_notes": "Seed - sow early to mid spring in a greenhouse in a rich soil. Germination should take place within 2 weeks. Sow 2 or 3 seeds per pot and thin out to the best plant. Grow them on fast and plant out after the last expected frosts, giving them cloche or frame protection for at least their first few weeks if you are trying them outdoors.",
     "propagation_warning": null,
@@ -81,7 +82,7 @@
     "other_uses_notes": "Cosmetic Oil Repellent Cucumber skins have been shown to repel cockroaches in laboratory experiments[218]. The fruit is applied to the skin as a cleansing cosmetic to soften and whiten it[4, 7, 238]. The juice is used in many beauty products[4, 7].",
     "production_notes": null,
     "pruning_notes": null,
-    "watering_interval_days": null,
+    "watering_interval_days": 4,
     "watering_notes": null
   },
   "biodiversity": {
@@ -148,7 +149,7 @@
     "classification.edible_parts": "Plants For A Future",
     "classification.life_cycle": "Plants For A Future",
     "classification.use_categories": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_methods": "Perenual",
     "germination.propagation_notes": "Plants For A Future",
     "growth.light_notes": "Plants For A Future",
     "growth.soil_notes": "Plants For A Future",
@@ -160,10 +161,12 @@
     "identity.common_names": "Plants For A Future",
     "identity.family": "GBIF",
     "identity.genus": "GBIF",
-    "identity.scientific_name": "local_seed"
+    "identity.scientific_name": "local_seed",
+    "growth.growth_speed": "Perenual",
+    "care.watering_interval_days": "Perenual"
   },
   "source_metadata": {
-    "last_merged_at": "2026-06-17T04:44:11.853662+00:00",
+    "last_merged_at": "2026-07-09T04:31:40.671628+00:00",
     "sources": [
       {
         "confidence": 0.3,
@@ -262,6 +265,24 @@
         "source_url": "https://foodplantsinternational.com/?s=cucumber",
         "status": "ok",
         "trusted_detail": null
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/plant-species-database-search-finder/species/2251",
+        "status": "snapshot",
+        "trusted_detail": true,
+        "relevance_score": null,
+        "fields_provided": [
+          "identity",
+          "classification.life_cycle",
+          "growth.sunlight",
+          "growth.water_need",
+          "growth.growth_speed",
+          "germination.propagation_methods",
+          "care.watering_interval_days"
+        ],
+        "confidence": 0.98,
+        "last_verified_at": "2026-07-09T04:31:40.661316+00:00"
       }
     ]
   },

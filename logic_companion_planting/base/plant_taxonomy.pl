@@ -2422,3 +2422,20 @@ taxonomy_source(zucchini, 'GBIF / Plants For A Future').
 :- multifile accepted_scientific_name/2.
 :- multifile family/2.
 :- multifile genus/2.
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_taxonomy
+% Review before editing manually.
+% =========================================================
+
+accepted_scientific_name(european_silver_fir, 'Abies alba').
+genus(european_silver_fir, abies).
+family(european_silver_fir, pinaceae).
+taxonomy_confidence(european_silver_fir, high).
+taxonomy_source(european_silver_fir, 'GBIF / Plants For A Future').
+accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
+genus(tree_tomato, cyphomandra).
+family(tree_tomato, solanaceae).
+taxonomy_confidence(tree_tomato, high).
+taxonomy_source(tree_tomato, 'GBIF / Plants For A Future').

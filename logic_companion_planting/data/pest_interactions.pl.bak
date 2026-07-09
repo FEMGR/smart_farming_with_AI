@@ -23,35 +23,10 @@
 % and deterrent effects between plants, pests, and diseases, which are crucial for
 % generating effective companion planting strategies.
 %
-
 % ====================================================================================================
 % COMPANION PLANTING DATA (TRACEABLE)
 % Sources: attra, cornell, almanac, traditional
 % ====================================================================================================
-
-% =========================================================
-% PEST-PLANT INTERACTION DATA
-% =========================================================
-
-% --- Cabbage Pests ---
-
-% =========================================================
-% PEST AND BENEFICIAL INTERACTIONS BY PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
-% =========================================================
-
-% ---------------------------------------------------------
-% BASIL
-% ---------------------------------------------------------
-
-% =========================================================
-% PEST AND BENEFICIAL INTERACTIONS BY PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/reorder_prolog_facts_by_plant.py
-% =========================================================
-
-% ---------------------------------------------------------
-% BASIL
-% ---------------------------------------------------------
 
 % =========================================================
 % PEST AND BENEFICIAL INTERACTIONS BY PLANT

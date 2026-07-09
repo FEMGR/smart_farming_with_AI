@@ -1450,3 +1450,32 @@ use_category(zucchini, oil_crop).
 use_category(zucchini, root_tuber_crop).
 trait(zucchini, medicinal).
 trait(zucchini, pollinator_attractor).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_fact
+% Review before editing manually.
+% =========================================================
+
+edible(broccoli, true).
+edible_part(broccoli, fruit).
+edible_part(broccoli, leaf).
+edible_part(carrot, leaf).
+edible(chive, true).
+edible_part(chive, leaf).
+plant(european_silver_fir).
+scientific_name(european_silver_fir, 'abies alba').
+use_category(european_silver_fir, medicinal_plant).
+trait(european_silver_fir, medicinal).
+plant(tree_tomato).
+scientific_name(tree_tomato, 'cyphomandra betacea').
+edible(tree_tomato, true).
+edible_part(tree_tomato, fruit).
+edible_part(tree_tomato, leaf).
+use_category(tree_tomato, fruit_crop).
+use_category(tree_tomato, medicinal_plant).
+trait(tree_tomato, medicinal).
+trait(tree_tomato, pollinator_attractor).
+edible(turnip, true).
+edible_part(turnip, fruit).
+edible_part(turnip, leaf).

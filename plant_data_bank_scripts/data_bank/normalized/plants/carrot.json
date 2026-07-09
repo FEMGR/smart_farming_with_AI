@@ -25,9 +25,10 @@
     ],
     "edible_parts": [
       "flower",
-      "root"
+      "root",
+      "leaf"
     ],
-    "life_cycle": null,
+    "life_cycle": "annual",
     "growth_habit": null,
     "botanical_life_cycle": null,
     "crop_life_cycle": null,
@@ -46,7 +47,7 @@
     ],
     "soil_ph_min": null,
     "soil_ph_max": null,
-    "growth_speed": null,
+    "growth_speed": "high",
     "climate_notes": null,
     "soil_notes": "Wild carrot is one of the best wild roots in temperate disturbed habitats when young, correctly identified, and gathered at the right stage. It combines high food quality with serious identification caution. In the Southwest US it is usually too uncommon to be a major resource, but as a species profile it remains essential because of its agricultural importance and because it teaches the crucial biennial root-harvest pattern shared by many edible plants. Growing Conditions: Wild carrot grows best in full sun and disturbed, well-drained ground, especially fields, roadsides, fence lines, and open meadows. Go Botany lists anthropogenic habitats, meadows, and fields among its common settings, which fits your description well. It tolerates poor soils but usually develops better roots in lighter, looser ground. Habitat & Range: It is now widespread across the United States, including all 50 states, it is much more common in the East than in the Southwest. Size & Landscape Performance: As a landscape plant, wild carrot is more often a self-sown meadow or roadside biennial than a deliberate ornamental, though its lace-like umbels can be visually attractive. In naturalistic plantings, it performs as a tall, airy second-year flower over a low, ferny rosette in the first year. Its main drawback in designed landscapes is its weediness and its resemblance to less welcome apiaceous volunteers. Cultivation (Horticulture): It is easy to grow from seed in open ground, but it is rarely worth cultivating for food when domestic carrots are available. It is more relevant in pollinator gardens, wildflower meadows, and educational plantings focused on crop ancestry. It should be handled with the same caution as any other self-seeding member of Apiaceae, where confusion with toxic relatives is possible. Pests & Problems: The greatest “problem” is not a pest but the rapid decline in root quality once flowering begins. In fields and disturbed places it can also behave as a persistent weed. Like other carrots, it may host insects and fungal issues, but for foragers the real challenge is finding clean, uncontaminated, correctly identified young plants. Its frequent occurrence in human-disturbed habitats, which reinforces the contamination concern. Identification & Habit: Wild carrot is a hirsute biennial with alternate, deeply pinnately dissected leaves and dense compound umbels of white flowers. The bracts and bractlets are usually well developed and pinnately divided into narrow segments. The fruits are strongly flattened and bristly, with barbed tips. Your source description is solid and matches the broader botanical treatment of the species. Pollinators: The broad, open umbels attract a wide range of small pollinators, especially flies, small native bees, beetles, and wasps. Like many open-umbel Apiaceae, it functions as a generalist insect resource rather than a specialist-pollinated plant. Wild carrot, now best referred to as Daucus carota, belongs to the parsley family (Apiaceae) and the genus Daucus. Common names include wild carrot and Queen Anne’s lace. It is a biennial herb introduced from Europe and Asia and is now widespread across North America. In practical garden terms it behaves well in roughly USDA Zones 3–9, depending on moisture and winter severity. First-year plants usually form low basal rosettes, while second-year flowering stems commonly reach about 30–120 cm tall, with a spread of roughly 20–45 cm for the leafy rosette and wider branching in flower. It is widespread in disturbed habitats, and the root is edible when young but quickly becomes woody with age. Prefers a sunny position and a well-drained neutral to alkaline soil[24, 238]. A good plant for the summer meadow[24], it is a food plant for caterpillars of the Swallow-tail Butterfly[200]. This species is the parent of the cultivated carrot[200]. It can act as an alternative host for pests and diseases of the cultivated carrots. The plant has become a pest weed in N. America, where it is spreading rapidly and crowding out native vegetation[274]. The whole plant, when bruised, gives off an aniseed-like scent[245]. Special Features: Edible, Not North American native, Naturalizing, Attracts butterflies, Suitable for cut flowers. In garden design, as well as the above-ground architecture of a plant, root structure considerations help in choosing plants that work together for their optimal soil requirements including nutrients and water. The root pattern is fleshy. Thick or swollen - fibrous or tap root [2-1].",
     "water_notes": "Prefers moist soil.",
@@ -56,7 +57,12 @@
   },
   "germination": {
     "propagation_methods": [
-      "seed"
+      "seed",
+      "seed_propagation",
+      "division",
+      "grafting_propagation",
+      "layering_propagation",
+      "cutting"
     ],
     "propagation_notes": "Propagation is by seed. As a biennial, it germinates and forms a root-and-rosette stage in the first season, then flowers and seeds in the second. It self-sows readily in suitable disturbed habitats. Seed - sow August/September or April in situ. The seed germinates better if it is given a period of cold stratification.",
     "germination_days_min": null,
@@ -75,7 +81,7 @@
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
+    "watering_interval_days": 4,
     "watering_notes": null,
     "pruning_notes": null,
     "fertilizer_notes": null,
@@ -127,10 +133,10 @@
     "identity.genus": "GBIF",
     "identity.family": "GBIF",
     "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Plants For A Future",
+    "classification.edible_parts": "Perenual",
     "classification.use_categories": "Plants For A Future",
     "classification.edible": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_methods": "Perenual",
     "germination.propagation_notes": "Plants For A Future",
     "growth.sunlight": "Plants For A Future",
     "growth.soil_type": "Plants For A Future",
@@ -144,7 +150,10 @@
     "care.other_uses_notes": "Plants For A Future",
     "care.edible_uses_notes": "Plants For A Future",
     "biodiversity.pollinator_support": "Plants For A Future",
-    "biodiversity.pest_confuser": "Plants For A Future"
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "classification.life_cycle": "Perenual",
+    "growth.growth_speed": "Perenual",
+    "care.watering_interval_days": "Perenual"
   },
   "source_metadata": {
     "sources": [
@@ -248,12 +257,29 @@
         ],
         "confidence": 0.3,
         "last_verified_at": "2026-06-17T04:29:17.188920+00:00"
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/plant-species-database-search-finder/species/2320",
+        "status": "snapshot",
+        "trusted_detail": true,
+        "relevance_score": null,
+        "fields_provided": [
+          "identity",
+          "classification.life_cycle",
+          "growth.sunlight",
+          "growth.water_need",
+          "growth.growth_speed",
+          "germination.propagation_methods",
+          "care.watering_interval_days"
+        ],
+        "confidence": 0.88,
+        "last_verified_at": "2026-07-09T04:31:40.661945+00:00"
       }
     ],
-    "last_merged_at": "2026-06-17T04:44:11.792796+00:00"
+    "last_merged_at": "2026-07-09T04:31:40.673210+00:00"
   },
   "missing_fields": [
-    "classification.life_cycle",
     "germination.germination_days_min",
     "germination.sowing_depth_cm"
   ]
