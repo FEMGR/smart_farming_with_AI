@@ -7,21 +7,21 @@ Reorder only rearranges existing facts; it does not add new plant facts.
 ## Summary
 
 Files checked: 16
-Files that would be reordered: 9
+Files that would be reordered: 1
 Skipped files: 0
 New plants added by reorder: (none)
-Plant groups present in files that would be reordered: allium_family, aphid, aphids, apple_scab, armyworm, artichoke_plume_moth, asparagus_beetle, basil, bean, bean_bush, bean_pole, beet_armyworm, beneficial_insect, berry, blight, blister_beetle, box_blight, box_tree_caterpillar, brassica_family, brown_wheat_mite, ... +132 more
+Plant groups present in files that would be reordered: aphid, armyworm, artichoke_plume_moth, asparagus_beetle, beet_armyworm, blister_beetle, brown_wheat_mite, bulb_mite, bumblebee, cabbage_flea_beetle, cabbage_maggot, cabbage_worm, carrot_rust_fly, collembola, colorado_potato_beetle, corn_earworm, corn_rootworm, cucumber_beetle, cutworm, delphastus_beetle, ... +46 more
 
 ================================================================================
 logic_companion_planting/base/insect_group.pl
-Status: would change
+Status: already ordered
 Facts: 91
 Plant groups: beneficial_insect, mite, mollusk, pest, pollinator, springtail, symphylan
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/insect_group_reordered_preview.pl
 
 ================================================================================
 logic_companion_planting/base/plant_group.pl
-Status: would change
+Status: already ordered
 Facts: 137
 Plant groups: allium_family, berry, brassica_family, flower, fruit, fruiting_crop, grain_crop, herb, leafy_green, legume_family, pepper_family, root_crop, spice, vegetable, vine, weed
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/plant_group_reordered_preview.pl
@@ -49,14 +49,14 @@ Preview: plant_data_bank_scripts/data_bank/prolog_preview/plant_taxonomy_reorder
 
 ================================================================================
 logic_companion_planting/base/soil_profile.pl
-Status: would change
+Status: already ordered
 Facts: 36
 Plant groups: chalky, clay, loamy, peaty, sandy, silty
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/soil_profile_reordered_preview.pl
 
 ================================================================================
 logic_companion_planting/base/weather_taxonomy.pl
-Status: would change
+Status: already ordered
 Facts: 33
 Plant groups: cloudy, cold, dry, hot, humid, mild, partly_cloudy, rainy, stormy, sunny, windy
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/weather_taxonomy_reordered_preview.pl
@@ -70,14 +70,14 @@ Preview: plant_data_bank_scripts/data_bank/prolog_preview/growth_facts_reordered
 
 ================================================================================
 logic_companion_planting/data/disease_fact.pl
-Status: would change
+Status: already ordered
 Facts: 164
 Plant groups: aphids, apple_scab, blight, box_blight, box_tree_caterpillar, conifers_pestalotiopsis_disease, downy_mildew, dutch_elm_disease, grapevine_diseases, honey_fungus, iris_diseases, laurel_leaf_diseases, lawn_rust_disease, lily_diseases, pear_rust, pear_scab, phytophthora_root_rot, plant_virus, powdery_mildew, rhododendron_diseases, ... +9 more
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/disease_fact_reordered_preview.pl
 
 ================================================================================
 logic_companion_planting/data/environment_fact.pl
-Status: would change
+Status: already ordered
 Facts: 77
 Plant groups: basil, bean, bean_bush, bean_pole, cabbage, carrot, cucumber, lettuce, onion, pepper, potato, spinach, tomato
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/environment_fact_reordered_preview.pl
@@ -98,7 +98,7 @@ Preview: plant_data_bank_scripts/data_bank/prolog_preview/interaction_support_re
 
 ================================================================================
 logic_companion_planting/data/layout_fact.pl
-Status: would change
+Status: already ordered
 Facts: 10
 Plant groups: bean_pole, cabbage, carrot, marigold, onion, pepper, radish, sage, tomato
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/layout_fact_reordered_preview.pl
@@ -119,7 +119,7 @@ Preview: plant_data_bank_scripts/data_bank/prolog_preview/sources_fact_reordered
 
 ================================================================================
 logic_companion_planting/data/weather_fact.pl
-Status: would change
+Status: already ordered
 Facts: 10
 Plant groups: today, tomorrow
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/weather_fact_reordered_preview.pl

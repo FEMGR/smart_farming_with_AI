@@ -24,96 +24,84 @@
 % WEATHER CONDITIONS
 % =========================================================
 
-weather_condition(sunny).
-weather_condition(partly_cloudy).
+% =========================================================
+% WEATHER TAXONOMY FACTS
+% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% CLOUDY
+% ---------------------------------------------------------
 weather_condition(cloudy).
-weather_condition(rainy).
-weather_condition(windy).
-weather_condition(stormy).
-weather_condition(hot).
-weather_condition(cold).
-weather_condition(mild).
-weather_condition(humid).
-weather_condition(dry).
-
-% =========================================================
-% WEATHER CHARACTERISTICS
-%
-% weather_characteristic(Condition, Factor, Level)
-%
-% Example:
-% weather_characteristic(hot, temperature, high).
-% =========================================================
-
-% -------------------------
-% Temperature
-% -------------------------
-
-weather_characteristic(hot, temperature, high).
-weather_characteristic(cold, temperature, low).
-weather_characteristic(mild, temperature, moderate).
-
-% -------------------------
-% Precipitation
-% -------------------------
-
-weather_characteristic(rainy, precipitation, moderate).
-weather_characteristic(stormy, precipitation, extreme).
-
-% -------------------------
-% Wind
-% -------------------------
-
-weather_characteristic(windy, wind, high).
-weather_characteristic(stormy, wind, extreme).
-
-% -------------------------
-% Humidity
-% -------------------------
-
-weather_characteristic(humid, humidity, high).
-weather_characteristic(dry, humidity, low).
-
-% -------------------------
-% Sunlight
-% -------------------------
-
-weather_characteristic(sunny, sunlight, high).
-weather_characteristic(partly_cloudy, sunlight, moderate).
 weather_characteristic(cloudy, sunlight, low).
 
-% =========================================================
-% WEATHER CATEGORIES
-%
-% weather_category(Condition, Category)
-% =========================================================
+% ---------------------------------------------------------
+% COLD
+% ---------------------------------------------------------
+weather_condition(cold).
+weather_characteristic(cold, temperature, low).
+weather_category(cold, extreme_weather).
 
-% -------------------------
-% Clear Weather
-% -------------------------
+% ---------------------------------------------------------
+% DRY
+% ---------------------------------------------------------
+weather_condition(dry).
+weather_characteristic(dry, humidity, low).
+weather_category(dry, dry_weather).
 
-weather_category(sunny, clear_weather).
+% ---------------------------------------------------------
+% HOT
+% ---------------------------------------------------------
+weather_condition(hot).
+weather_characteristic(hot, temperature, high).
+weather_category(hot, extreme_weather).
+
+% ---------------------------------------------------------
+% HUMID
+% ---------------------------------------------------------
+weather_condition(humid).
+weather_characteristic(humid, humidity, high).
+weather_category(humid, humid_weather).
+
+% ---------------------------------------------------------
+% MILD
+% ---------------------------------------------------------
+weather_condition(mild).
+weather_characteristic(mild, temperature, moderate).
+
+% ---------------------------------------------------------
+% PARTLY CLOUDY
+% ---------------------------------------------------------
+weather_condition(partly_cloudy).
+weather_characteristic(partly_cloudy, sunlight, moderate).
 weather_category(partly_cloudy, clear_weather).
 
-% -------------------------
-% Wet Weather
-% -------------------------
-
+% ---------------------------------------------------------
+% RAINY
+% ---------------------------------------------------------
+weather_condition(rainy).
+weather_characteristic(rainy, precipitation, moderate).
 weather_category(rainy, wet_weather).
+
+% ---------------------------------------------------------
+% STORMY
+% ---------------------------------------------------------
+weather_condition(stormy).
+weather_characteristic(stormy, precipitation, extreme).
+weather_characteristic(stormy, wind, extreme).
+weather_category(stormy, extreme_weather).
 weather_category(stormy, wet_weather).
 
-% -------------------------
-% Extreme Weather
-% -------------------------
+% ---------------------------------------------------------
+% SUNNY
+% ---------------------------------------------------------
+weather_condition(sunny).
+weather_characteristic(sunny, sunlight, high).
+weather_category(sunny, clear_weather).
 
-weather_category(stormy, extreme_weather).
-weather_category(hot, extreme_weather).
-weather_category(cold, extreme_weather).
+% ---------------------------------------------------------
+% WINDY
+% ---------------------------------------------------------
+weather_condition(windy).
+weather_characteristic(windy, wind, high).
 weather_category(windy, extreme_weather).
-
-% -------------------------
-% Humidity Categories
-% -------------------------
-
-weather_category(humid, humid_weather).
-weather_category(dry, dry_weather).

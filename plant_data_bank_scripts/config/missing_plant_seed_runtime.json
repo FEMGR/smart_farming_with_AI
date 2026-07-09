@@ -16,6 +16,7 @@
     "confidence": 0.7,
     "created_at": "2026-06-18T06:20:42.571379+00:00",
     "genus": "Cyphomandra",
+    "last_synced_at": "2026-07-09T04:11:29.329780+00:00",
     "plant_atom": "tree_tomato",
     "reason": "scientific_name_not_found_in_prolog",
     "scientific_name": "Cyphomandra betacea",

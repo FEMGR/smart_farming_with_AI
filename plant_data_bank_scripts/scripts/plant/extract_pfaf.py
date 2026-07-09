@@ -19,7 +19,12 @@ import sys
 import requests
 from pathlib import Path
 from urllib.parse import quote_plus
-from common import (
+
+SCRIPT_DIR = Path(__file__).resolve().parents[1]
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from common import (  # noqa: E402
     RAW_DIR,
     ensure_dirs,
     load_plants,
@@ -27,8 +32,8 @@ from common import (
     source_snapshot,
     write_json,
 )
-from project_paths import PATHS
-from source_parse_patch import (
+from project_paths import PATHS  # noqa: E402
+from source_parse_patch import (  # noqa: E402
     clean_text,
     extract_identity_from_pfaf_sections,
     extract_biodiversity_from_pfaf,
@@ -45,10 +50,6 @@ from source_parse_patch import (
     source_relevance_score,
     title_text,
 )
-
-SCRIPT_DIR = Path(__file__).resolve().parents[1]
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
 
 
 PFAF_BASE = "https://pfaf.org"

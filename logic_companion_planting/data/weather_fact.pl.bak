@@ -25,18 +25,25 @@
 % Example Weather Data
 % -------------------------
 
-current_weather(today, temperature, high).
+% =========================================================
+% WEATHER FACTS
+% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
+% =========================================================
+
+% ---------------------------------------------------------
+% TODAY
+% ---------------------------------------------------------
 current_weather(today, humidity, high).
-current_weather(today, wind, moderate).
-current_weather(today, sunlight, high).
 current_weather(today, precipitation, low).
+current_weather(today, sunlight, high).
+current_weather(today, temperature, high).
+current_weather(today, wind, moderate).
 
-% -------------------------
-% Example Future Forecast
-% -------------------------
-
-current_weather(tomorrow, temperature, moderate).
+% ---------------------------------------------------------
+% TOMORROW
+% ---------------------------------------------------------
 current_weather(tomorrow, humidity, moderate).
-current_weather(tomorrow, wind, high).
-current_weather(tomorrow, sunlight, low).
 current_weather(tomorrow, precipitation, high).
+current_weather(tomorrow, sunlight, low).
+current_weather(tomorrow, temperature, moderate).
+current_weather(tomorrow, wind, high).

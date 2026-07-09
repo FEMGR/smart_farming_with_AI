@@ -84,6 +84,12 @@
     "other_uses_notes": "Essential Lacquer Paint Resin Tannin Wood An oleo-resin is obtained from blister-like swellings in the bark[64, 100]. It is harvested in the summer and used fresh, dried or distilled for oil[238]. The resin extracted from it is used in perfumery, medicine and for caulking ships[46, 61, 64, 100]. It is called 'Strasburg Turpentine'[46]. Oil of turpentine is an important solvent in the paint industry[238]. The residue, known as 'rosin oil', is used in making varnishes, lacquers and carbon black (for pigments and ink)[238]. Resin is tapped from trees about 60 - 80 years old in the spring and used for the distillation of oil[238]. An essential oil obtained from the leaves is used as a disinfectant and also in medicine and perfumery[46, 61]. It is a common ingredient in many bath products, giving them their familiar pine scent[7]. The bark is a source of tannin[7]. Wood - light, soft, durable, elastic. The timber of this tree is especially sought after for its lightness, it is used for construction, furniture, boxes, pulp etc[7, 46, 61, 89, 101].",
     "edible_uses_notes": "Edible Parts: Inner bark Edible Uses: Inner bark - cooked. It is dried, ground into a powder and then used as a thickening in soups etc or mixed with cereals when making bread[105, 177]."
   },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
   "biodiversity": {
     "companions": [],
     "conflicts": [],
@@ -92,12 +98,6 @@
     "pollinator_support": false,
     "pest_confuser": false,
     "biodiversity_notes": []
-  },
-  "pests_and_diseases": {
-    "disease_notes": null,
-    "known_disease_ids": [],
-    "known_pest_ids": [],
-    "treatment_notes": null
   },
   "field_sources": {
     "identity.scientific_name": "local_seed",
@@ -133,7 +133,7 @@
         "relevance_score": null,
         "fields_provided": [],
         "confidence": 0.3,
-        "last_verified_at": "2026-06-19T03:27:05.976687+00:00"
+        "last_verified_at": "2026-07-09T04:22:00.544121+00:00"
       },
       {
         "source_name": "Perenual",
@@ -182,7 +182,7 @@
           "biodiversity"
         ],
         "confidence": 0.8,
-        "last_verified_at": "2026-06-19T03:27:01.522337+00:00"
+        "last_verified_at": "2026-07-09T04:21:55.430708+00:00"
       },
       {
         "source_name": "Plants For A Future",
@@ -198,44 +198,57 @@
           "biodiversity"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-06-19T03:27:02.516166+00:00"
+        "last_verified_at": "2026-07-09T04:21:56.085819+00:00"
       },
       {
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=Abies+alba",
-        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=Abies+alba (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "status": "ok",
         "trusted_detail": null,
         "relevance_score": null,
-        "fields_provided": [],
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
         "confidence": 0.3,
-        "last_verified_at": "2026-06-19T03:24:45.043205+00:00"
+        "last_verified_at": "2026-07-09T04:21:37.127688+00:00"
       },
       {
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=European+Silver+Fir",
-        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=European+Silver+Fir (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "status": "ok",
         "trusted_detail": null,
         "relevance_score": null,
-        "fields_provided": [],
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
         "confidence": 0.3,
-        "last_verified_at": "2026-06-19T03:25:12.053457+00:00"
+        "last_verified_at": "2026-07-09T04:21:40.290959+00:00"
       },
       {
         "source_name": "Food Plants International",
         "source_url": "https://foodplantsinternational.com/?s=european_silver_fir",
-        "status": "error: HTTPSConnectionPool(host='foodplantsinternational.com', port=443): Max retries exceeded with url: /?s=european_silver_fir (Caused by NewConnectionError(\"HTTPSConnection(host='foodplantsinternational.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+        "status": "ok",
         "trusted_detail": null,
         "relevance_score": null,
-        "fields_provided": [],
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
         "confidence": 0.3,
-        "last_verified_at": "2026-06-19T03:25:39.068744+00:00"
+        "last_verified_at": "2026-07-09T04:21:44.020650+00:00"
       }
     ],
-    "last_merged_at": "2026-06-19T03:27:44.902160+00:00"
+    "last_merged_at": "2026-07-09T04:22:26.532508+00:00"
   },
   "missing_fields": [
     "classification.edible_parts",
     "germination.germination_days_min",
-    "germination.sowing_depth_cm"
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
   ]
 }
