@@ -36,11 +36,14 @@ Best match selected or fallback returned
 
 # app/utils/species_matching.py
 import re
+from collections import Counter
 
 from rapidfuzz import fuzz
 from app.core.logger import setup_logger
 
 logger = setup_logger()
+
+_SCIENTIFIC_RANK_RE = re.compile(r"\b(?:var|subsp|ssp|spp|forma|f|cv)\.?(?=\s|$)", re.IGNORECASE)
 
 
 # Data cleaning & reformating
@@ -72,8 +75,21 @@ def _matches_any_name(value: str, names: list[str] | None) -> bool:
     return any(normalized_value == normalize_input(name) for name in names or [])
 
 
+def _primary_name(value):
+    if isinstance(value, list):
+        return value[0] if value else None
+    return value
+
+
+def _compact_list(values: list[str] | None, limit: int = 3) -> list[str]:
+    compacted = [str(value) for value in values or [] if value]
+    if len(compacted) <= limit:
+        return compacted
+    return [*compacted[:limit], f"+{len(compacted) - limit} more"]
+
+
 def _canonical_scientific_key(value: str | None) -> str:
-    value = normalize_input(value)
+    value = normalize_input(_primary_name(value))
     if not value:
         return ""
 
@@ -82,7 +98,7 @@ def _canonical_scientific_key(value: str | None) -> str:
     value = value.replace('"', " ")
     value = re.sub(r"\(([^)]*?)\s+group\)", r"\1", value)
     value = re.sub(r"\(([^)]*)\)", r"\1", value)
-    value = re.sub(r"\b(var\.?|subsp\.?|ssp\.?|spp\.?|forma|f\.|cv\.)\b", " ", value)
+    value = _SCIENTIFIC_RANK_RE.sub(" ", value)
     value = re.sub(r"[^a-z0-9]+", " ", value)
     return re.sub(r"\s+", " ", value).strip()
 
@@ -103,13 +119,8 @@ def _scientific_names_compatible(left: str | None, right: str | None) -> bool:
     left_genus = left_key.split()[0] if left_key.split() else ""
     right_genus = right_key.split()[0] if right_key.split() else ""
     genus_level_match = bool(left_genus and right_genus and left_genus == right_genus) and (len(left_key.split()) == 1 or len(right_key.split()) == 1)
-    return bool(
-        left_key == right_key
-        or left_key.startswith(right_key)
-        or right_key.startswith(left_key)
-        or (left_binomial and left_binomial == right_binomial)
-        or genus_level_match
-    )
+    scientific_prefix_match = left_key.startswith(f"{right_key} ") or right_key.startswith(f"{left_key} ")
+    return bool(left_key == right_key or scientific_prefix_match or (left_binomial and left_binomial == right_binomial) or genus_level_match)
 
 
 def _matches_any_scientific_name(value: str, names: list[str] | None) -> bool:
@@ -126,11 +137,11 @@ def normalize_candidate(c: dict, source: str):
     Standardizes candidates from both Cache (Objects) and API (Dicts).
     """
     # Handle scientific_name if it comes as a list from API
-    sci = c.get("scientific_name")
-    if isinstance(sci, list):
-        sci = sci[0] if sci else "Unknown"
-    elif not sci:
+    sci = _primary_name(c.get("scientific_name"))
+    if not sci:
         sci = "Unknown"
+
+    edible = c.get("edible", c.get("is_edible"))
 
     return {
         "id": c.get("id"),
@@ -138,11 +149,12 @@ def normalize_candidate(c: dict, source: str):
         "scientific_name": sci,
         "genus": c.get("genus") or _infer_genus(sci),
         "family": c.get("family"),
-        "edible": c.get("edible"),  # 👈 Added
+        "edible": edible,
+        "is_edible": edible,
         "is_fruit": c.get("is_fruit"),
         "is_veg": c.get("is_veg"),
         "type": c.get("type"),
-        "growth_rate": c.get("growth_rate"),  # 👈 Added
+        "growth_rate": c.get("growth_rate"),
         "source": source,
     }
 
@@ -158,7 +170,7 @@ def compute_match_score(
 ) -> int:
     query = normalize_input(query)
     commonName = normalize_input(candidate.get("common_name"))
-    raw_scientific_name = candidate.get("scientific_name")
+    raw_scientific_name = _primary_name(candidate.get("scientific_name"))
     scientificName = normalize_input(raw_scientific_name)
     genusName = normalize_input(candidate.get("genus"))
     familyName = normalize_input(candidate.get("family"))
@@ -223,7 +235,7 @@ def compute_match_score(
 
         #  Scenario B: User wants a flower
         elif p_type == "flower":
-            #  The "Maple Tree" Fix: Penalize if the user wants a flower but the API says it's a tree
+            # Penalize tree/crop matches when the user explicitly wants a flower.
             if "tree" in api_plant_type:
                 bonus -= 40
             elif candidate.get("is_fruit") or candidate.get("is_veg"):
@@ -262,6 +274,21 @@ def rank_species_matches(
     preferred_genus: str | None = None,
     preferred_family: str | None = None,
 ):
+    source_counts = Counter(c.get("source", "unknown") for c in candidates)
+    logger.info(
+        "species_matching.rank.start query=%r plant_type=%r candidates=%s "
+        "sources=%s preferred_common=%s preferred_scientific=%s "
+        "preferred_genus=%r preferred_family=%r",
+        query,
+        plant_type,
+        len(candidates),
+        dict(source_counts),
+        _compact_list(preferred_common_names),
+        _compact_list(preferred_scientific_names),
+        preferred_genus,
+        preferred_family,
+    )
+
     scored = []
 
     for c in candidates:
@@ -308,6 +335,12 @@ def rank_species_matches(
 
     exact_scientific_matches = [item for item in scored if item["exact_scientific_match"]]
     if exact_scientific_matches:
+        logger.info(
+            "species_matching.rank.exact_scientific_filter query=%r kept=%s discarded=%s",
+            query,
+            len(exact_scientific_matches),
+            len(scored) - len(exact_scientific_matches),
+        )
         scored = exact_scientific_matches
 
     scored.sort(
@@ -325,33 +358,92 @@ def rank_species_matches(
         reverse=True,
     )
 
-    # DEBUG
-    logger.info(f"\n[DEBUG] Ranking for query: '{query}'")
-    for s in scored[:5]:
-        logger.info(f"  → {s['common_name']} ({s['scientific_name']}) | score={s['score']} | {s['source']}")
+    top_matches = [
+        {
+            "id": match.get("id"),
+            "common_name": match.get("common_name"),
+            "scientific_name": match.get("scientific_name"),
+            "score": match.get("score"),
+            "source": match.get("source"),
+            "preferred_scientific_match": match.get("preferred_scientific_match"),
+            "preferred_common_match": match.get("preferred_common_match"),
+        }
+        for match in scored[:3]
+    ]
+    logger.info(
+        "species_matching.rank.done query=%r ranked=%s top=%s",
+        query,
+        len(scored),
+        top_matches,
+    )
 
     return scored
 
 
 # pick best (used for auto-selection)
 def select_best_match(query: str, candidates: list, threshold: int = 70, plant_type: str = None):
-    # The 'candidates' list is already expected to be ranked from suggest_species
-    ranked = candidates
-
-    if not ranked:
+    if not candidates:
+        logger.info(
+            "species_matching.select.no_candidates query=%r plant_type=%r threshold=%s",
+            query,
+            plant_type,
+            threshold,
+        )
         return None
+
+    if all("score" in candidate for candidate in candidates):
+        logger.info(
+            "species_matching.select.using_preranked query=%r candidates=%s threshold=%s",
+            query,
+            len(candidates),
+            threshold,
+        )
+        ranked = candidates
+    else:
+        logger.info(
+            "species_matching.select.ranking_raw_candidates query=%r candidates=%s plant_type=%r threshold=%s",
+            query,
+            len(candidates),
+            plant_type,
+            threshold,
+        )
+        ranked = rank_species_matches(query, candidates, plant_type=plant_type)
 
     best = ranked[0]
     score = best.get("score", 0)
 
-    logger.info(f"[DEBUG] Best match: {best['common_name']} (score={score})")
-
     if score >= threshold:
+        logger.info(
+            "species_matching.select.accepted query=%r id=%s common_name=%r scientific_name=%r score=%s source=%r reason=%r",
+            query,
+            best.get("id"),
+            best.get("common_name"),
+            best.get("scientific_name"),
+            score,
+            best.get("source"),
+            "threshold",
+        )
         return best
 
     if score >= 50 and len(query) > 5:
-        logger.info("[DEBUG] Using fallback match")
+        logger.info(
+            "species_matching.select.accepted query=%r id=%s common_name=%r scientific_name=%r score=%s source=%r reason=%r",
+            query,
+            best.get("id"),
+            best.get("common_name"),
+            best.get("scientific_name"),
+            score,
+            best.get("source"),
+            "long-query-fallback",
+        )
         return best
 
-    logger.info("[DEBUG] No confident match")
+    logger.info(
+        "species_matching.select.rejected query=%r best_common_name=%r best_scientific_name=%r score=%s threshold=%s",
+        query,
+        best.get("common_name"),
+        best.get("scientific_name"),
+        score,
+        threshold,
+    )
     return None
