@@ -28,7 +28,6 @@ from common import (  # noqa: E402
 )  # noqa: E402
 from project_paths import PATHS  # noqa: E402
 
-
 FPI_SOURCE_NAME = "Food Plants International"
 FPI_BASE = "https://foodplantsinternational.com"
 
