@@ -21,6 +21,7 @@
 % This file is consulted by the reasoning engine to understand the ecological roles of various
 % insects and their direct impact on plants, informing companion planting recommendations.
 %
+
 % =========================================================
 % INSECT FACTS
 % Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py

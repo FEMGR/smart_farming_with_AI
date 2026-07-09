@@ -21,7 +21,12 @@ import argparse
 import sys
 from pathlib import Path
 from typing import Any
-from common import (
+
+SCRIPT_DIR = Path(__file__).resolve().parents[1]
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from common import (  # noqa: E402
     NORMALIZED_DIR,
     RAW_DIR,
     canonical_profile_template,
@@ -32,11 +37,7 @@ from common import (
     utc_now,
     write_json,
 )
-from project_paths import PATHS
-
-SCRIPT_DIR = Path(__file__).resolve().parents[1]
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
+from project_paths import PATHS  # noqa: E402
 
 
 # =========================================================

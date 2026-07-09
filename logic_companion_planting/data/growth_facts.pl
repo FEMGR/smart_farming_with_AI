@@ -2421,3 +2421,90 @@ confidence(zucchini, high).
 :- multifile accepted_scientific_name/2.
 :- multifile family/2.
 :- multifile genus/2.
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: growth_facts
+% Review before editing manually.
+% =========================================================
+
+life_cycle(broccoli, annual).
+propagation_method(broccoli, seed_propagation).
+propagation_method(broccoli, cutting).
+propagation_method(broccoli, division).
+propagation_method(broccoli, layering_propagation).
+propagation_method(broccoli, grafting_propagation).
+sunlight(broccoli, full_sun).
+water_need(broccoli, average).
+growth_speed(broccoli, low).
+life_cycle(carrot, annual).
+propagation_method(carrot, seed_propagation).
+propagation_method(carrot, division).
+propagation_method(carrot, grafting_propagation).
+propagation_method(carrot, layering_propagation).
+propagation_method(carrot, cutting).
+growth_speed(carrot, high).
+life_cycle(chive, perennial).
+propagation_method(chive, seed_propagation).
+sunlight(chive, full_sun).
+sunlight(chive, part_shade).
+soil_type(chive, rocky).
+soil_type(chive, gravelly).
+soil_type(chive, dry).
+soil_type(chive, well_drained).
+water_need(chive, frequent).
+growth_speed(chive, high).
+propagation_method(cucumber, seed_propagation).
+growth_speed(cucumber, low).
+life_cycle(european_silver_fir, perennial).
+fact_scope(european_silver_fir, extracted_profile).
+accepted_scientific_name(european_silver_fir, 'Abies alba').
+genus(european_silver_fir, abies).
+family(european_silver_fir, pinaceae).
+propagation_method(european_silver_fir, cutting).
+propagation_method(european_silver_fir, grafting_propagation).
+propagation_method(european_silver_fir, layering_propagation).
+propagation_method(european_silver_fir, seed_propagation).
+propagation_method(european_silver_fir, air_layering_propagation).
+propagation_method(european_silver_fir, tissue_culture).
+propagation_method(european_silver_fir, seed).
+sunlight(european_silver_fir, full_sun).
+sunlight(european_silver_fir, partial_shade).
+soil_type(european_silver_fir, heavy_clay).
+soil_type(european_silver_fir, light_sandy).
+soil_type(european_silver_fir, medium_loamy).
+water_need(european_silver_fir, frequent).
+growth_speed(european_silver_fir, high).
+source_name(european_silver_fir, 'Plants For A Future').
+source_url(european_silver_fir, 'https://pfaf.org/user/Plant.aspx?LatinName=Abies+alba').
+confidence(european_silver_fir, high).
+life_cycle(tree_tomato, perennial).
+fact_scope(tree_tomato, extracted_profile).
+accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
+genus(tree_tomato, cyphomandra).
+family(tree_tomato, solanaceae).
+propagation_method(tree_tomato, grafting_propagation).
+propagation_method(tree_tomato, air_layering_propagation).
+propagation_method(tree_tomato, cutting).
+propagation_method(tree_tomato, seed_propagation).
+propagation_method(tree_tomato, seed).
+sunlight(tree_tomato, full_sun).
+sunlight(tree_tomato, part_shade).
+soil_type(tree_tomato, heavy_clay).
+soil_type(tree_tomato, light_sandy).
+soil_type(tree_tomato, medium_loamy).
+soil_type(tree_tomato, well_drained).
+water_need(tree_tomato, average).
+growth_speed(tree_tomato, low).
+source_name(tree_tomato, 'Plants For A Future').
+source_url(tree_tomato, 'https://pfaf.org/user/Plant.aspx?LatinName=Cyphomandra+betacea').
+confidence(tree_tomato, high).
+life_cycle(turnip, annual).
+propagation_method(turnip, seed_propagation).
+propagation_method(turnip, grafting_propagation).
+propagation_method(turnip, layering_propagation).
+propagation_method(turnip, division).
+propagation_method(turnip, cutting).
+sunlight(turnip, full_sun).
+water_need(turnip, average).
+growth_speed(turnip, low).
