@@ -46,6 +46,26 @@ DEFAULT_PLANT_TYPE = "vegetable"
 DEFAULT_WATERING_INTERVAL = 4
 
 # =========================================
+# DATA SOURCES
+# =========================================
+
+DATA_SOURCE_MANUAL = "manual"
+DATA_SOURCE_PERENUAL = "perenual"
+DATA_SOURCE_KNOWLEDGE_BASE = "knowledge_base"
+DATA_SOURCE_IMPORT = "import"
+DATA_SOURCE_SENSOR = "sensor"
+DATA_SOURCE_AI = "ai"
+
+PLANT_DATA_SOURCES = [
+    DATA_SOURCE_MANUAL,
+    DATA_SOURCE_PERENUAL,
+    DATA_SOURCE_KNOWLEDGE_BASE,
+    DATA_SOURCE_IMPORT,
+    DATA_SOURCE_SENSOR,
+    DATA_SOURCE_AI,
+]
+
+# =========================================
 # API SETTINGS
 # =========================================
 
@@ -79,7 +99,7 @@ MAX_CACHE_SIZE = 500
 
 SNAPSHOT_DIR = BASE_DIR / "backend" / "cache" / "species_snapshots"
 SNAPSHOT_MAX_AGE_HOURS = 5
-MAX_SNAPSHOT_FILES = 100
+MAX_SNAPSHOT_FILES = 500
 
 # =========================================
 # SPECIES SUGGESTION CACHE SETTINGS
@@ -87,4 +107,4 @@ MAX_SNAPSHOT_FILES = 100
 
 SUGGESTION_CACHE_FILE = BASE_DIR / "backend" / "temp" / "species_suggestions.json"
 SUGGESTION_MAX_AGE_SECONDS = 60 * 60 * 24
-MAX_SUGGESTION_ENTRIES = 100
+MAX_SUGGESTION_ENTRIES = 500

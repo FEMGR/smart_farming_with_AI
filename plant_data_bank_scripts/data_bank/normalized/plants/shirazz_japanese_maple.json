@@ -1,0 +1,186 @@
+{
+  "plant_atom": "shirazz_japanese_maple",
+  "identity": {
+    "common_name": "Shirazz Japanese Maple",
+    "scientific_name": "Acer palmatum 'Gwen's Rose Delight'",
+    "genus": "Acer",
+    "family": "Sapindaceae",
+    "synonyms": [],
+    "common_names": []
+  },
+  "classification": {
+    "edible": null,
+    "use_categories": [],
+    "edible_parts": [],
+    "life_cycle": null,
+    "growth_habit": null,
+    "botanical_life_cycle": null,
+    "crop_life_cycle": null,
+    "life_cycle_context": null
+  },
+  "growth": {
+    "sunlight": [],
+    "water_need": null,
+    "soil_type": [],
+    "soil_ph_min": null,
+    "soil_ph_max": null,
+    "growth_speed": null,
+    "climate_notes": null,
+    "soil_notes": null,
+    "water_notes": null,
+    "light_notes": null,
+    "temperature_notes": null,
+    "rainfall_notes": null
+  },
+  "germination": {
+    "propagation_methods": [],
+    "propagation_notes": null,
+    "germination_days_min": null,
+    "germination_days_max": null,
+    "germination_light": null,
+    "sowing_depth_cm": null,
+    "minimum_soil_temp_c": null,
+    "optimum_soil_temp_c": null,
+    "preferred_propagation_methods": [],
+    "propagation_warning": null
+  },
+  "spacing": {
+    "spacing_cm": null,
+    "root_depth_cm": null,
+    "plant_height_cm": null,
+    "spread_cm": null
+  },
+  "care": {
+    "watering_interval_days": null,
+    "watering_notes": null,
+    "pruning_notes": null,
+    "fertilizer_notes": null,
+    "cultivation_notes": null,
+    "production_notes": null,
+    "nutrition_notes": null,
+    "cautions": null,
+    "other_uses_notes": null,
+    "edible_uses_notes": null
+  },
+  "pests_and_diseases": {
+    "known_pests": [],
+    "known_diseases": [],
+    "disease_notes": null,
+    "treatment_notes": null
+  },
+  "biodiversity": {
+    "companions": [],
+    "conflicts": [],
+    "repels_pests": [],
+    "attracts_beneficial_insects": [],
+    "pollinator_support": null,
+    "pest_confuser": null,
+    "biodiversity_notes": []
+  },
+  "field_sources": {
+    "identity.scientific_name": "local_seed",
+    "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF"
+  },
+  "source_metadata": {
+    "sources": [
+      {
+        "source_name": "GBIF",
+        "source_url": "https://api.gbif.org/v1/species/match",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [],
+        "confidence": 0.3,
+        "last_verified_at": "2026-07-18T05:42:38.413220+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Acer+palmatum+%27Gwen%27s+Rose+Delight%27",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.2,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-07-18T05:42:29.507442+00:00"
+      },
+      {
+        "source_name": "Plants For A Future",
+        "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=Shirazz+Japanese+Maple",
+        "status": "snapshot_only",
+        "trusted_detail": false,
+        "relevance_score": 0.05,
+        "fields_provided": [
+          "lookup_type",
+          "real_plant_page",
+          "identity",
+          "growth",
+          "biodiversity"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-07-18T05:42:30.305060+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Acer+palmatum+%27Gwen%27s+Rose+Delight%27",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-07-18T05:41:58.638689+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=Shirazz+Japanese+Maple",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-07-18T05:42:01.885816+00:00"
+      },
+      {
+        "source_name": "Food Plants International",
+        "source_url": "https://foodplantsinternational.com/?s=shirazz_japanese_maple",
+        "status": "ok",
+        "trusted_detail": null,
+        "relevance_score": null,
+        "fields_provided": [
+          "edible_parts",
+          "use_categories",
+          "cultivation_notes"
+        ],
+        "confidence": 0.3,
+        "last_verified_at": "2026-07-18T05:42:05.289457+00:00"
+      }
+    ],
+    "last_merged_at": "2026-07-18T05:42:44.135424+00:00"
+  },
+  "missing_fields": [
+    "classification.edible_parts",
+    "classification.life_cycle",
+    "growth.sunlight",
+    "growth.water_need",
+    "growth.soil_notes",
+    "germination.propagation_methods",
+    "germination.germination_days_min",
+    "germination.sowing_depth_cm",
+    "pests_and_diseases.known_diseases"
+  ]
+}

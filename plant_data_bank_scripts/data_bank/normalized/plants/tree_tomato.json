@@ -3,7 +3,7 @@
   "identity": {
     "common_name": "tree tomato",
     "scientific_name": "Cyphomandra betacea",
-    "genus": "Cyphomandra",
+    "genus": "Solanum",
     "family": "Solanaceae",
     "synonyms": [],
     "common_names": [
@@ -17,8 +17,7 @@
       "medicinal_plant"
     ],
     "edible_parts": [
-      "fruit",
-      "leaf"
+      "fruit"
     ],
     "life_cycle": "Perennial",
     "growth_habit": null,
@@ -30,8 +29,7 @@
     "sunlight": [
       "Full sun",
       "part shade",
-      "full_sun",
-      "part_shade"
+      "full_sun"
     ],
     "water_need": "Average",
     "soil_type": [
@@ -57,10 +55,7 @@
       "Cutting",
       "Seed Propagation",
       "cutting",
-      "seed",
-      "grafting_propagation",
-      "air_layering_propagation",
-      "seed_propagation"
+      "seed"
     ],
     "propagation_notes": "Seed - sow spring in a greenhouse. The seed usually germinates within 4 weeks at 15°c[K], within 2 weeks at 25°c[164]. When they are large enough to handle, prick the seedlings out into individual pots and grow them on in the greenhouse for at least their first winter. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Cuttings of greenwood in a frame[200].",
     "germination_days_min": null,
@@ -79,7 +74,7 @@
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": 4,
+    "watering_interval_days": null,
     "watering_notes": null,
     "pruning_notes": null,
     "fertilizer_notes": null,
@@ -118,15 +113,15 @@
   "field_sources": {
     "identity.scientific_name": "local_seed",
     "identity.common_name": "local_seed",
+    "identity.genus": "GBIF",
+    "identity.family": "GBIF",
     "classification.life_cycle": "Perenual",
-    "growth.sunlight": "Perenual",
+    "growth.sunlight": "Plants For A Future",
     "growth.water_need": "Perenual",
-    "germination.propagation_methods": "Perenual",
+    "germination.propagation_methods": "Plants For A Future",
     "growth.growth_speed": "Perenual",
-    "identity.genus": "Plants For A Future",
-    "identity.family": "Plants For A Future",
     "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Perenual",
+    "classification.edible_parts": "Plants For A Future",
     "classification.use_categories": "Plants For A Future",
     "classification.edible": "Plants For A Future",
     "germination.propagation_notes": "Plants For A Future",
@@ -141,20 +136,19 @@
     "care.edible_uses_notes": "Plants For A Future",
     "biodiversity.attracts_beneficial_insects": "Plants For A Future",
     "biodiversity.pollinator_support": "Plants For A Future",
-    "biodiversity.pest_confuser": "Plants For A Future",
-    "care.watering_interval_days": "Perenual"
+    "biodiversity.pest_confuser": "Plants For A Future"
   },
   "source_metadata": {
     "sources": [
       {
         "source_name": "GBIF",
         "source_url": "https://api.gbif.org/v1/species/match",
-        "status": "error: HTTPSConnectionPool(host='api.gbif.org', port=443): Read timed out. (read timeout=25)",
+        "status": "ok",
         "trusted_detail": null,
         "relevance_score": null,
         "fields_provided": [],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:22:25.646829+00:00"
+        "last_verified_at": "2026-07-18T05:42:40.053741+00:00"
       },
       {
         "source_name": "Perenual",
@@ -203,7 +197,7 @@
           "biodiversity"
         ],
         "confidence": 0.8,
-        "last_verified_at": "2026-07-09T04:21:57.724968+00:00"
+        "last_verified_at": "2026-07-18T05:42:31.333255+00:00"
       },
       {
         "source_name": "Plants For A Future",
@@ -219,7 +213,7 @@
           "biodiversity"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:58.328275+00:00"
+        "last_verified_at": "2026-07-18T05:42:32.103721+00:00"
       },
       {
         "source_name": "Food Plants International",
@@ -233,7 +227,7 @@
           "cultivation_notes"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:47.327320+00:00"
+        "last_verified_at": "2026-07-18T05:42:08.594993+00:00"
       },
       {
         "source_name": "Food Plants International",
@@ -247,7 +241,7 @@
           "cultivation_notes"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:50.415976+00:00"
+        "last_verified_at": "2026-07-18T05:42:11.677399+00:00"
       },
       {
         "source_name": "Food Plants International",
@@ -261,28 +255,10 @@
           "cultivation_notes"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:53.494479+00:00"
-      },
-      {
-        "source_name": "Perenual",
-        "source_url": "https://perenual.com/plant-species-database-search-finder/species/2292",
-        "status": "snapshot",
-        "trusted_detail": true,
-        "relevance_score": null,
-        "fields_provided": [
-          "identity",
-          "classification.life_cycle",
-          "growth.sunlight",
-          "growth.water_need",
-          "growth.growth_speed",
-          "germination.propagation_methods",
-          "care.watering_interval_days"
-        ],
-        "confidence": 0.7,
-        "last_verified_at": "2026-07-09T04:31:40.661580+00:00"
+        "last_verified_at": "2026-07-18T05:42:14.765890+00:00"
       }
     ],
-    "last_merged_at": "2026-07-09T04:31:40.672456+00:00"
+    "last_merged_at": "2026-07-18T05:42:44.139205+00:00"
   },
   "missing_fields": [
     "germination.germination_days_min",

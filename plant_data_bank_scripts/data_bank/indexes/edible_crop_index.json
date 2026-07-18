@@ -78,6 +78,13 @@
       "root_tuber_crop"
     ]
   },
+  "broccoli": {
+    "edible_parts": [
+      "fruit",
+      "leaf"
+    ],
+    "use_categories": []
+  },
   "cabbage": {
     "edible_parts": [
       "leaf"
@@ -89,7 +96,8 @@
   "carrot": {
     "edible_parts": [
       "flower",
-      "root"
+      "root",
+      "leaf"
     ],
     "use_categories": [
       "culinary_herb",
@@ -110,6 +118,12 @@
       "repellent_plant",
       "root_tuber_crop"
     ]
+  },
+  "chive": {
+    "edible_parts": [
+      "leaf"
+    ],
+    "use_categories": []
   },
   "cucumber": {
     "edible_parts": [
@@ -526,6 +540,13 @@
       "fruit_crop",
       "medicinal_plant"
     ]
+  },
+  "turnip": {
+    "edible_parts": [
+      "fruit",
+      "leaf"
+    ],
+    "use_categories": []
   },
   "watermelon": {
     "edible_parts": [

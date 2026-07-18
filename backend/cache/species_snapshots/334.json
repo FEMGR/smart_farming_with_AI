@@ -1,0 +1,111 @@
+{
+  "id": 334,
+  "common_name": "Rose Marie Magnolia",
+  "scientific_name": [
+    "Magnolia 'Rose Marie'"
+  ],
+  "other_name": [
+    "Rosemarie Magnolia"
+  ],
+  "family": null,
+  "hybrid": null,
+  "authority": null,
+  "subspecies": null,
+  "cultivar": "Rose Marie",
+  "variety": null,
+  "species_epithet": "'Rose",
+  "genus": "Magnolia",
+  "origin": [
+    "China"
+  ],
+  "type": "tree",
+  "dimensions": [
+    {
+      "type": "Height",
+      "min_value": 20,
+      "max_value": 20,
+      "unit": "feet"
+    }
+  ],
+  "cycle": "Perennial",
+  "attracts": [],
+  "propagation": [
+    "Air Layering Propagation",
+    "Grafting Propagation",
+    "Cutting",
+    "Division",
+    "Seed Propagation"
+  ],
+  "hardiness": {
+    "min": "6",
+    "max": "6"
+  },
+  "hardiness_location": {
+    "full_url": "https://perenual.com/api/hardiness-map?species_id=334&size=og&key=sk-BO3069e45e3377a9916548",
+    "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=334&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+  },
+  "watering": "Minimum",
+  "watering_general_benchmark": {
+    "value": "\"7-10\"",
+    "unit": "days"
+  },
+  "plant_anatomy": [],
+  "sunlight": [
+    "full sun",
+    "part shade"
+  ],
+  "pruning_month": [
+    "March",
+    "April"
+  ],
+  "pruning_count": {
+    "amount": 1,
+    "interval": "yearly"
+  },
+  "seeds": false,
+  "maintenance": null,
+  "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=334&key=sk-BO3069e45e3377a9916548",
+  "soil": [],
+  "growth_rate": "Low",
+  "drought_tolerant": false,
+  "salt_tolerant": false,
+  "thorny": false,
+  "invasive": false,
+  "tropical": false,
+  "indoor": false,
+  "care_level": "Medium",
+  "pest_susceptibility": [],
+  "flowers": false,
+  "flowering_season": null,
+  "cones": false,
+  "fruits": false,
+  "edible_fruit": false,
+  "harvest_season": null,
+  "leaf": true,
+  "edible_leaf": false,
+  "cuisine": false,
+  "medicinal": false,
+  "poisonous_to_humans": false,
+  "poisonous_to_pets": false,
+  "description": "The Rose Marie Magnolia (Magnolia 'Rose Marie') is an incredible flower that is sure to draw attention to any garden. Its soft pink, red, or lavender flowers combined with its delicate scent produces a captivating display. It is also very low maintenance and tolerant of a variety of soil types. In addition, its dark green evergreen foliage provides interest all year long. The Rose Marie Magnolia is sure to be a show-stopping addition to any garden; its beauty and fragrance in the springtime bring the garden to life.",
+  "default_image": {
+    "license": 45,
+    "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+    "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/334_magnolia_rose_marie/og/Magnolia_C397_soulangeana_BW_1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260718%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260718T053141Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=8ac93199c1033c7f79790815d505870b17a3098bae4cf8e4c894806d3b4bc636",
+    "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/334_magnolia_rose_marie/regular/Magnolia_C397_soulangeana_BW_1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260718%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260718T053141Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=d3bb0b358cb98da0822e2f2c213331ac375a2afce014017fce74ff308a38efff",
+    "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/334_magnolia_rose_marie/medium/Magnolia_C397_soulangeana_BW_1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260718%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260718T053141Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=04548b9a156983b6dcfbc428aca0ab28017d3e7014bf2cf1681bd70d842a3cf5",
+    "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/334_magnolia_rose_marie/small/Magnolia_C397_soulangeana_BW_1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260718%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260718T053141Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=048ef9a1df12397f998c96d48522f6cbbf1949f225fe14a4262ae864a0ce5684",
+    "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/334_magnolia_rose_marie/thumbnail/Magnolia_C397_soulangeana_BW_1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260718%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260718T053141Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=737c3cb92718ca0d4f201a76c65196741baea7e2230a956fc130746b69fa45e6"
+  },
+  "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}
