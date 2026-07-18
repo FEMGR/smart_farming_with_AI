@@ -36,6 +36,7 @@ from datetime import datetime
 
 SOURCE_WEIGHTS = {
     "manual": 0.4,
+    "knowledge_base": 0.65,
     "perenual": 0.7,
     "import": 0.5,
     "sensor": 0.9,

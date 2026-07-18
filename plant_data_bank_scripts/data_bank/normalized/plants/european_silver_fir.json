@@ -133,7 +133,7 @@
         "relevance_score": null,
         "fields_provided": [],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:22:00.544121+00:00"
+        "last_verified_at": "2026-07-18T05:42:36.774162+00:00"
       },
       {
         "source_name": "Perenual",
@@ -182,7 +182,7 @@
           "biodiversity"
         ],
         "confidence": 0.8,
-        "last_verified_at": "2026-07-09T04:21:55.430708+00:00"
+        "last_verified_at": "2026-07-18T05:42:27.591723+00:00"
       },
       {
         "source_name": "Plants For A Future",
@@ -198,7 +198,7 @@
           "biodiversity"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:56.085819+00:00"
+        "last_verified_at": "2026-07-18T05:42:28.664877+00:00"
       },
       {
         "source_name": "Food Plants International",
@@ -212,7 +212,7 @@
           "cultivation_notes"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:37.127688+00:00"
+        "last_verified_at": "2026-07-18T05:41:49.103629+00:00"
       },
       {
         "source_name": "Food Plants International",
@@ -226,7 +226,7 @@
           "cultivation_notes"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:40.290959+00:00"
+        "last_verified_at": "2026-07-18T05:41:52.239247+00:00"
       },
       {
         "source_name": "Food Plants International",
@@ -240,10 +240,10 @@
           "cultivation_notes"
         ],
         "confidence": 0.3,
-        "last_verified_at": "2026-07-09T04:21:44.020650+00:00"
+        "last_verified_at": "2026-07-18T05:41:55.351480+00:00"
       }
     ],
-    "last_merged_at": "2026-07-09T04:22:26.532508+00:00"
+    "last_merged_at": "2026-07-18T05:42:44.131926+00:00"
   },
   "missing_fields": [
     "classification.edible_parts",

@@ -890,6 +890,15 @@ taxonomy_confidence(escarole, high).
 taxonomy_source(escarole, 'Kew POWO / USDA PLANTS / WFO cross-check').
 
 % ---------------------------------------------------------
+% EUROPEAN SILVER FIR
+% ---------------------------------------------------------
+accepted_scientific_name(european_silver_fir, 'Abies alba').
+genus(european_silver_fir, abies).
+family(european_silver_fir, pinaceae).
+taxonomy_confidence(european_silver_fir, high).
+taxonomy_source(european_silver_fir, 'GBIF / Plants For A Future').
+
+% ---------------------------------------------------------
 % FAVA BEAN
 % ---------------------------------------------------------
 accepted_scientific_name(fava_bean, 'Vicia faba').
@@ -1888,6 +1897,15 @@ taxonomy_source(rose, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(rose, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
 
 % ---------------------------------------------------------
+% ROSE MARIE MAGNOLIA
+% ---------------------------------------------------------
+accepted_scientific_name(rose_marie_magnolia, 'Magnolia \'Rose Marie\'').
+genus(rose_marie_magnolia, magnolia).
+family(rose_marie_magnolia, magnoliaceae).
+taxonomy_confidence(rose_marie_magnolia, high).
+taxonomy_source(rose_marie_magnolia, 'GBIF / Plants For A Future').
+
+% ---------------------------------------------------------
 % ROSEMARY
 % ---------------------------------------------------------
 accepted_scientific_name(rosemary, 'Salvia rosmarinus').
@@ -1970,6 +1988,15 @@ family(shallot, amaryllidaceae).
 taxonomy_confidence(shallot, medium).
 taxonomy_source(shallot, 'Kew POWO / USDA PLANTS cross-check').
 taxonomy_note(shallot, 'Common name is somewhat broad; scientific name/genus should be confirmed from Perenual scientific_name when available.').
+
+% ---------------------------------------------------------
+% SHIRAZZ JAPANESE MAPLE
+% ---------------------------------------------------------
+accepted_scientific_name(shirazz_japanese_maple, 'Acer palmatum \'Gwen\'s Rose Delight\'').
+genus(shirazz_japanese_maple, acer).
+family(shirazz_japanese_maple, sapindaceae).
+taxonomy_confidence(shirazz_japanese_maple, high).
+taxonomy_source(shirazz_japanese_maple, 'GBIF / Plants For A Future').
 
 % ---------------------------------------------------------
 % SHISO
@@ -2240,6 +2267,16 @@ taxonomy_source(tomato, 'GBIF / Plants For A Future').
 taxonomy_source(tomato, 'Kew POWO / USDA PLANTS cross-check').
 
 % ---------------------------------------------------------
+% TREE TOMATO
+% ---------------------------------------------------------
+accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
+genus(tree_tomato, cyphomandra).
+genus(tree_tomato, solanum).
+family(tree_tomato, solanaceae).
+taxonomy_confidence(tree_tomato, high).
+taxonomy_source(tree_tomato, 'GBIF / Plants For A Future').
+
+% ---------------------------------------------------------
 % TRUE GERANIUM
 % ---------------------------------------------------------
 accepted_scientific_name(true_geranium, 'Geranium spp.').
@@ -2422,20 +2459,3 @@ taxonomy_source(zucchini, 'GBIF / Plants For A Future').
 :- multifile accepted_scientific_name/2.
 :- multifile family/2.
 :- multifile genus/2.
-
-
-% =========================================================
-% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_taxonomy
-% Review before editing manually.
-% =========================================================
-
-accepted_scientific_name(european_silver_fir, 'Abies alba').
-genus(european_silver_fir, abies).
-family(european_silver_fir, pinaceae).
-taxonomy_confidence(european_silver_fir, high).
-taxonomy_source(european_silver_fir, 'GBIF / Plants For A Future').
-accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
-genus(tree_tomato, cyphomandra).
-family(tree_tomato, solanaceae).
-taxonomy_confidence(tree_tomato, high).
-taxonomy_source(tree_tomato, 'GBIF / Plants For A Future').

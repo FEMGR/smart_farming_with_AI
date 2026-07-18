@@ -1508,3 +1508,24 @@ alias('ozark melon', zucchini).
 alias('pumpkin', zucchini).
 alias('texas gourd', zucchini).
 alias('zucchini', zucchini).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: alias_fact
+% Review before editing manually.
+% =========================================================
+
+alias('christmas tree fir', european_silver_fir).
+alias('european silver fir', european_silver_fir).
+alias('silver', european_silver_fir).
+alias('silver fir', european_silver_fir).
+alias('tree tomato', tree_tomato).
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: alias_fact
+% Review before editing manually.
+% =========================================================
+
+alias('rose marie magnolia', rose_marie_magnolia).
+alias('shirazz japanese maple', shirazz_japanese_maple).

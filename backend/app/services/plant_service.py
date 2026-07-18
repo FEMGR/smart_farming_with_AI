@@ -35,6 +35,11 @@ Result returned to route
 
 from sqlalchemy.orm import Session, joinedload
 
+from app.core.constants import (
+    DATA_SOURCE_KNOWLEDGE_BASE,
+    DATA_SOURCE_MANUAL,
+    DATA_SOURCE_PERENUAL,
+)
 from app.core.exceptions import NotFoundError, PermissionDeniedError
 from app.core.logger import setup_logger
 from app.database.db import sync_postgres_sequence
@@ -133,6 +138,18 @@ def _apply_identity(plant: Plant, identity: PlantIdentity) -> None:
     plant.taxonomy_confidence = identity.taxonomy_confidence
 
 
+def _has_knowledge_base_identity(identity: PlantIdentity) -> bool:
+    return bool(identity.scientific_name and identity.taxonomy_confidence and identity.taxonomy_confidence != "user_override")
+
+
+def _data_source_for_identity(species_internal_id: int | None, identity: PlantIdentity) -> str:
+    if species_internal_id:
+        return DATA_SOURCE_PERENUAL
+    if _has_knowledge_base_identity(identity):
+        return DATA_SOURCE_KNOWLEDGE_BASE
+    return DATA_SOURCE_MANUAL
+
+
 def _canonical_scientific_override(value: str | None) -> str | None:
     value = str(value or "").strip()
     if not value:
@@ -210,7 +227,7 @@ def _identity_from_species_record(species_record: PlantSpeciesCache, fallback_na
         scientific_name=scientific_name or base_identity.scientific_name,
         alternate_scientific_names=base_identity.alternate_scientific_names,
         genus=genus or base_identity.genus,
-        family=family or base_identity.family,
+        family=family,
         taxonomy_confidence="perenual_selected",
         taxonomy_source=base_identity.taxonomy_source,
         taxonomy_note=base_identity.taxonomy_note,
@@ -246,6 +263,7 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
 
     if species_internal_id:
         species_record = db.query(PlantSpeciesCache).get(species_internal_id)
+        identity = _identity_from_species_record(species_record, stored_name)
         logger.info(f"[PLANT SERVICE] Linked '{stored_name}' → {species_record.scientific_name} (DB ID: {species_record.id})")
     elif identity.scientific_name:
         logger.info(
@@ -270,7 +288,7 @@ def create_plant(db: Session, plant: PlantCreate, user_id: int):
         bed_x=plant.bed_x,
         bed_y=plant.bed_y,
         planting_date=plant.planting_date,
-        data_source="perenual" if species_internal_id else "manual",
+        data_source=_data_source_for_identity(species_internal_id, identity),
         user_id=user_id,
         use_sensor=plant.use_sensor,
         watering_interval_days=final_interval,
@@ -439,7 +457,7 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
 
         if new_species_internal_id:
             plant.species_id = new_species_internal_id
-            plant.data_source = "perenual"
+            plant.data_source = DATA_SOURCE_PERENUAL
             # Optional: Sync watering interval if it was using defaults
             species_rec = db.query(PlantSpeciesCache).get(new_species_internal_id)
             if species_rec:
@@ -451,9 +469,8 @@ def update_plant(db: Session, plant_id: int, plant_update: PlantUpdate, user_id:
                     search_name,
                     identity.scientific_name,
                 )
-            # If name changed to something unmatchable, reset to manual
             plant.species_id = None
-            plant.data_source = "manual"
+            plant.data_source = _data_source_for_identity(None, identity)
 
     # Apply other fields
     for field, value in update_data.items():
@@ -529,7 +546,7 @@ def create_plant_with_species(db: Session, plant: PlantCreate, user_id: int, ext
         bed_x=plant.bed_x,
         bed_y=plant.bed_y,
         planting_date=plant.planting_date,
-        data_source="perenual",
+        data_source=DATA_SOURCE_PERENUAL,
         user_id=user_id,
         use_sensor=plant.use_sensor,
         watering_interval_days=species_record.watering_interval_days,

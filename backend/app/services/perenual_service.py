@@ -219,6 +219,9 @@ def _endpoint_backoff_remaining(url: str) -> float:
 
 
 def _perenual_request_block_reason(url: str, *, ignore_endpoint_backoff: bool = False) -> str | None:
+    if not PERENUAL_API_KEY:
+        return "Perenual API key is not configured"
+
     remaining = 0.0 if ignore_endpoint_backoff else _endpoint_backoff_remaining(url)
     if remaining > 0:
         endpoint = "details" if _is_details_url(url) else "species-list"
@@ -1421,7 +1424,12 @@ def resolve_species(
         if not species and best_match.get("_deferred_no_cache_fallback"):
             _skip_species_cache_without_details(best_match, "single-query deferred details unavailable")
 
-        if species and not _resolved_species_matches_preferred_scientific_identity(species, preferred_scientific_names):
+        if species and not _resolved_species_matches_preferred_scientific_identity(
+            species,
+            preferred_scientific_names,
+            selected_match=best_match,
+            preferred_common_names=preferred_common_names,
+        ):
             logger.warning(
                 "[SPECIES RESOLVE] Rejecting resolved species id=%s common=%s scientific=%s because it does not match preferred scientific identity %s.",
                 species.external_species_id,
@@ -1573,10 +1581,20 @@ def _candidate_matches_preferred_identity(
 def _resolved_species_matches_preferred_scientific_identity(
     species: PlantSpeciesCache,
     preferred_scientific_names: list[str] | None,
+    *,
+    selected_match: dict | None = None,
+    preferred_common_names: list[str] | None = None,
 ) -> bool:
     preferred_scientific_names = [name for name in preferred_scientific_names or [] if name]
     if not preferred_scientific_names:
         return True
+
+    if selected_match and selected_match.get("exact_common_match"):
+        selected_common = _normalized_name(selected_match.get("common_name"))
+        species_common = _normalized_name(species.common_name)
+        preferred_common_set = {_normalized_name(name) for name in preferred_common_names or [] if name}
+        if selected_common and species_common == selected_common and (not preferred_common_set or selected_common in preferred_common_set):
+            return True
 
     scientific_name = _normalized_name(species.scientific_name)
     if not scientific_name or scientific_name == "unknown":

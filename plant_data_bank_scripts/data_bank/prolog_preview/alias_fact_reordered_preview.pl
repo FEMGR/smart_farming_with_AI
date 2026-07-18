@@ -302,6 +302,14 @@ alias('eggplant', eggplant).
 alias('elderberry flower', elderflower).
 
 % ---------------------------------------------------------
+% EUROPEAN SILVER FIR
+% ---------------------------------------------------------
+alias('christmas tree fir', european_silver_fir).
+alias('european silver fir', european_silver_fir).
+alias('silver fir', european_silver_fir).
+alias('silver', european_silver_fir).
+
+% ---------------------------------------------------------
 % FENNEL
 % ---------------------------------------------------------
 alias('anethum dulce', fennel).
@@ -1254,6 +1262,11 @@ alias('raspberry', raspberry).
 alias('paddy', rice).
 
 % ---------------------------------------------------------
+% ROSE MARIE MAGNOLIA
+% ---------------------------------------------------------
+alias('rose marie magnolia', rose_marie_magnolia).
+
+% ---------------------------------------------------------
 % ROSEMARY
 % ---------------------------------------------------------
 alias('anthos', rosemary).
@@ -1287,6 +1300,11 @@ alias('true sage', sage).
 % SHALLOT
 % ---------------------------------------------------------
 alias('multiplier onion', shallot).
+
+% ---------------------------------------------------------
+% SHIRAZZ JAPANESE MAPLE
+% ---------------------------------------------------------
+alias('shirazz japanese maple', shirazz_japanese_maple).
 
 % ---------------------------------------------------------
 % SORGHUM
@@ -1469,6 +1487,11 @@ alias('tomato extract containing lycopene', tomato).
 alias('tomato', tomato).
 alias('tomato|thakkali', tomato).
 alias('tumatis.', tomato).
+
+% ---------------------------------------------------------
+% TREE TOMATO
+% ---------------------------------------------------------
+alias('tree tomato', tree_tomato).
 
 % ---------------------------------------------------------
 % TURMERIC

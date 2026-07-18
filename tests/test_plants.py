@@ -30,8 +30,9 @@ def test_create_plant(client, token):
 
     data = response.json()
 
-    # If the AI works, it should be perenual
-    assert data["data_source"] == "perenual"
+    assert data["data_source"] in {"knowledge_base", "perenual"}
+    if data["data_source"] == "knowledge_base":
+        assert data["species_id"] is None
     assert data["name"] == "Nasturtium"
 
 
