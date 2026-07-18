@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   FlatList,
   Dimensions,
+  RefreshControl,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SymbolView } from 'expo-symbols';
@@ -119,8 +120,9 @@ export default function HomeScreen() {
       <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
         <ScrollView
           contentContainerStyle={styles.scrollContainer}
-          refreshing={refreshing}
-          onRefresh={refreshAll}
+          refreshControl={
+            <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
+          }
         >
           {/* Header */}
           <View style={styles.header}>

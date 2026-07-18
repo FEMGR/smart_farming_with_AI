@@ -9,6 +9,7 @@ import {
   Modal,
   Switch,
   Alert,
+  RefreshControl,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SymbolView } from 'expo-symbols';
@@ -32,6 +33,7 @@ export default function PlantsScreen() {
     waterOne,
     loading,
     refreshAll,
+    refreshing,
   } = useData();
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -233,8 +235,9 @@ export default function PlantsScreen() {
         ) : filteredPlants.length === 0 ? (
           <ScrollView
             contentContainerStyle={styles.emptyContainer}
-            onRefresh={refreshAll}
-            refreshing={false}
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
+            }
           >
             <SymbolView name="leaf.fill" size={48} tintColor="#ccc" />
             <ThemedText themeColor="textSecondary" style={styles.emptyText}>
@@ -244,8 +247,9 @@ export default function PlantsScreen() {
         ) : (
           <ScrollView
             contentContainerStyle={styles.listContainer}
-            onRefresh={refreshAll}
-            refreshing={false}
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
+            }
           >
             {filteredPlants.map((plant) => {
               const location = locations.find((l) => l.id === plant.location_id);
@@ -371,7 +375,7 @@ export default function PlantsScreen() {
       >
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
-            <ThemedText type="subtitle">Add New Plant</ThemedText>
+            <ThemedText type="subtitle" style={styles.modalTitle}>Add New Plant</ThemedText>
             <TouchableOpacity onPress={() => setAddModalVisible(false)}>
               <SymbolView name="xmark" size={24} tintColor="#10B981" />
             </TouchableOpacity>
@@ -451,7 +455,7 @@ export default function PlantsScreen() {
             <View style={styles.switchRow}>
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Uses Soil Sensor</ThemedText>
-                <ThemedText type="small" themeColor="textSecondary">
+                <ThemedText type="small" style={styles.modalHelperText}>
                   Enable dynamic sensor reading overrides.
                 </ThemedText>
               </View>
@@ -471,7 +475,7 @@ export default function PlantsScreen() {
             <View style={styles.speciesCardHeader}>
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Perenual API Species ID</ThemedText>
-                <ThemedText type="small" themeColor="textSecondary">
+                <ThemedText type="small" style={styles.modalHelperText}>
                   Link with global Perenual database for enrichment.
                 </ThemedText>
               </View>
@@ -518,7 +522,7 @@ export default function PlantsScreen() {
       >
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
-            <ThemedText type="subtitle">Edit Plant Details</ThemedText>
+            <ThemedText type="subtitle" style={styles.modalTitle}>Edit Plant Details</ThemedText>
             <TouchableOpacity onPress={() => setEditModalVisible(false)}>
               <SymbolView name="xmark" size={24} tintColor="#10B981" />
             </TouchableOpacity>
@@ -855,11 +859,18 @@ const styles = StyleSheet.create({
   modalForm: {
     padding: Spacing.four,
   },
+  modalTitle: {
+    color: '#111827',
+  },
   fieldLabel: {
     fontSize: 14,
     fontWeight: 'bold',
     marginTop: Spacing.three,
     marginBottom: Spacing.one,
+    color: '#111827',
+  },
+  modalHelperText: {
+    color: '#6B7280',
   },
   input: {
     height: 48,

@@ -1,0 +1,108 @@
+digraph SmartFarmingArchitecture {
+  graph [
+    rankdir=LR,
+    bgcolor="white",
+    pad="0.35",
+    nodesep="0.65",
+    ranksep="0.9",
+    splines=ortho,
+    fontname="DejaVu Sans"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fontname="DejaVu Sans",
+    fontsize=18,
+    margin="0.18,0.12",
+    color="#2F3A45",
+    penwidth=1.4,
+    fillcolor="#F7F9FB"
+  ];
+
+  edge [
+    color="#52616F",
+    arrowsize=0.8,
+    penwidth=1.4,
+    fontname="DejaVu Sans",
+    fontsize=13
+  ];
+
+  subgraph cluster_clients {
+    label="Clients";
+    color="#8AA1B4";
+    penwidth=1.5;
+    style="rounded";
+    swagger [label="Swagger / OpenAPI\n/docs", fillcolor="#EAF3FF"];
+    streamlit [label="Streamlit Dashboard\nfrontend/", fillcolor="#EAF3FF"];
+    mobile [label="Expo Mobile App\nmobile/", fillcolor="#EAF3FF"];
+  }
+
+  subgraph cluster_api {
+    label="FastAPI Backend";
+    color="#8AA1B4";
+    penwidth=1.5;
+    style="rounded";
+    app [label="backend.main:app\nstartup + router registration", fillcolor="#EEF8F1"];
+    routes [label="API Routes\nAuth, Plants, Species, Locations\nIrrigation, Planning, Lifecycle\nProduction, Knowledge, Notifications", fillcolor="#EEF8F1"];
+    deps [label="Dependencies\nJWT current user\nDB sessions", fillcolor="#EEF8F1"];
+    schemas [label="Pydantic Schemas\nrequest / response contracts", fillcolor="#EEF8F1"];
+    services [label="Service Layer\nbusiness workflows", fillcolor="#EEF8F1"];
+  }
+
+  subgraph cluster_storage {
+    label="Persistence";
+    color="#8AA1B4";
+    penwidth=1.5;
+    style="rounded";
+    models [label="SQLAlchemy Models\nusers, plants, locations,\nplanning, lifecycle, production", fillcolor="#FFF7E6"];
+    postgres [label="PostgreSQL\napplication data", fillcolor="#FFF7E6"];
+    alembic [label="Alembic\nschema migrations", fillcolor="#FFF7E6"];
+  }
+
+  subgraph cluster_knowledge {
+    label="Knowledge and Enrichment";
+    color="#8AA1B4";
+    penwidth=1.5;
+    style="rounded";
+    prolog_service [label="Prolog Service Bridge\nswipl execution + parsing", fillcolor="#F4ECFF"];
+    prolog [label="logic_companion_planting/\nfacts, taxonomy, rules, layout", fillcolor="#F4ECFF"];
+    perenual [label="Perenual API\nspecies search + details", fillcolor="#F4ECFF"];
+    snapshots [label="Local Species Snapshots\nbackend/cache/species_snapshots", fillcolor="#F4ECFF"];
+    databank [label="Plant Data Bank Scripts\nextraction + Prolog exports", fillcolor="#F4ECFF"];
+  }
+
+  subgraph cluster_jobs {
+    label="Automation";
+    color="#8AA1B4";
+    penwidth=1.5;
+    style="rounded";
+    scheduler [label="APScheduler\n10-minute irrigation checks", fillcolor="#FFEFF1"];
+    notifications [label="Notification Service\nwatering reminders", fillcolor="#FFEFF1"];
+  }
+
+  swagger -> app;
+  streamlit -> app;
+  mobile -> app;
+
+  app -> routes;
+  routes -> deps;
+  routes -> schemas;
+  deps -> services;
+  schemas -> services;
+
+  services -> models;
+  models -> postgres;
+  alembic -> postgres;
+
+  services -> prolog_service;
+  prolog_service -> prolog;
+  services -> perenual;
+  services -> snapshots;
+  databank -> prolog;
+
+  app -> scheduler;
+  scheduler -> services;
+  services -> notifications;
+  notifications -> models;
+}

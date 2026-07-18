@@ -1,56 +1,110 @@
-# Welcome to your Expo app 👋
+# Smart Farming Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Expo React Native client for the Smart Urban Farming System backend.
 
-## Get started
+## Prerequisites
 
-1. Install dependencies
+- Node.js and npm
+- A running Smart Farming backend on port `8000`
+- Expo Go, an Android emulator, or a rebuilt Expo development build
 
-   ```bash
-   npm install
-   ```
+## 1. Start the Backend
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+From the repository root, start the FastAPI backend:
 
 ```bash
-npm run reset-project
+PYTHONPATH=backend uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Or use Docker from the `backend` directory:
 
-### Other setup steps
+```bash
+docker compose up --build
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Check that the API is reachable:
 
-## Learn more
+```bash
+curl http://localhost:8000/
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Expected response:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```json
+{"message":"Smart Farming API running"}
+```
 
-## Join the community
+## 2. Start the Mobile App
 
-Join our community of developers creating universal apps.
+From this `mobile` directory:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm install
+npx expo start
+```
+
+Then choose one:
+
+- Press `w` to test in a browser.
+- Press `a` to open an Android emulator.
+- Scan the QR code with Expo Go on a physical phone.
+- Use a rebuilt development build if you start Expo in development-build mode.
+
+## 3. Configure the API URL
+
+On the sign-in screen, tap the gear icon and set the backend URL.
+
+Use the URL that matches where the app is running:
+
+| Target | API URL |
+| --- | --- |
+| Web browser | `http://localhost:8000` |
+| Android emulator | `http://10.0.2.2:8000` |
+| iOS simulator | `http://localhost:8000` |
+| Physical phone | `http://YOUR_COMPUTER_LAN_IP:8000` |
+
+For a physical phone, find your computer IP with:
+
+```bash
+hostname -I
+```
+
+Example:
+
+```text
+http://192.168.1.25:8000
+```
+
+The phone and computer must be on the same Wi-Fi network. The backend must be started with `--host 0.0.0.0`, not only `127.0.0.1`.
+
+## 4. Test Register and Sign In
+
+1. Open the app.
+2. Tap the gear icon and save the correct API URL.
+3. Tap `Don't have an account? Register`.
+4. Enter a new email and password.
+5. Tap `Register`.
+
+Registration automatically signs you in after the backend creates the account. If it fails, the app shows the backend or network error on the form.
+
+To verify the backend directly:
+
+```bash
+curl -X POST http://localhost:8000/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"email":"test@example.com","password":"password123"}'
+```
+
+Then sign in:
+
+```bash
+curl -X POST http://localhost:8000/auth/login \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "username=test@example.com&password=password123"
+```
+
+## Common Issues
+
+- `Cannot reach API`: the backend is not running, the API URL is wrong, or a physical phone cannot reach your computer.
+- `Email already registered`: switch back to sign in or use another test email.
+- Development-build warning: rebuild the native development build after adding native packages like `expo-dev-client`, or press `s` in Expo CLI to switch to Expo Go.

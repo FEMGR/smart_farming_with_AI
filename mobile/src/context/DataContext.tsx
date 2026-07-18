@@ -52,7 +52,7 @@ interface DataContextType {
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 export function DataProvider({ children }: { children: React.ReactNode }) {
-  const { token } = useAuth();
+  const { token, logout } = useAuth();
   
   const [plants, setPlants] = useState<any[]>([]);
   const [locations, setLocations] = useState<any[]>([]);
@@ -94,6 +94,11 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
       setSections(fetchedSections || []);
       setSavedPlans(fetchedPlans || []);
     } catch (e) {
+      const message = e instanceof Error ? e.message : String(e);
+      if (message.includes('Invalid token') || message.includes('401')) {
+        await logout();
+        return;
+      }
       console.error('Failed to fetch smart farming data', e);
     } finally {
       setLoading(false);
