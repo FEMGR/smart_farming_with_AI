@@ -7,18 +7,22 @@ import {
   TabListProps,
 } from 'expo-router/ui';
 import { SymbolView } from 'expo-symbols';
-import { Pressable, useColorScheme, View, StyleSheet } from 'react-native';
+import { useState } from 'react';
+import { Pressable, useColorScheme, useWindowDimensions, View, StyleSheet } from 'react-native';
 
 import { ExternalLink } from './external-link';
 import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
+import { useAuth } from '@/context/AuthContext';
 
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 
+const COMPACT_NAV_WIDTH = 640;
+
 export default function AppTabs() {
   return (
-    <Tabs>
-      <TabSlot style={{ height: '100%' }} />
+    <Tabs style={styles.tabsRoot}>
+      <TabSlot style={styles.tabSlot} />
       <TabList asChild>
         <CustomTabList>
           <TabTrigger name="index" href="/" asChild>
@@ -57,14 +61,74 @@ export function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps
 }
 
 export function CustomTabList(props: TabListProps) {
+  const { logout } = useAuth();
   const scheme = useColorScheme();
+  const { width } = useWindowDimensions();
+  const [menuOpen, setMenuOpen] = useState(false);
   const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
+  const isCompact = width < COMPACT_NAV_WIDTH;
+
+  if (isCompact) {
+    return (
+      <View {...props} style={styles.tabListContainer}>
+        <ThemedView type="backgroundElement" style={styles.compactContainer}>
+          <ThemedText type="smallBold" style={styles.brandText}>
+            Smart Farming
+          </ThemedText>
+
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            onPress={() => setMenuOpen((open) => !open)}
+            style={({ pressed }) => [styles.menuButton, pressed && styles.pressed]}
+          >
+            <SymbolView
+              tintColor="#ECFEFF"
+              name="line.3.horizontal"
+              size={20}
+            />
+            <SymbolView
+              tintColor="#ECFEFF"
+              name={menuOpen ? 'chevron.up' : 'chevron.down'}
+              size={14}
+            />
+          </Pressable>
+        </ThemedView>
+
+        {menuOpen && (
+          <ThemedView type="backgroundElement" style={styles.dropdownMenu}>
+            <View style={styles.dropdownItems}>{props.children}</View>
+
+            <ExternalLink href="https://docs.expo.dev" asChild>
+              <Pressable style={styles.dropdownExternalPressable}>
+                <ThemedText type="link">Docs</ThemedText>
+                <SymbolView
+                  tintColor={colors.text}
+                  name={{ ios: 'arrow.up.right.square', web: 'link' }}
+                  size={12}
+                />
+              </Pressable>
+            </ExternalLink>
+
+            <Pressable style={styles.dropdownSignOutPressable} onPress={logout}>
+              <SymbolView
+                tintColor="#fff"
+                name="rectangle.portrait.and.arrow.right"
+                size={14}
+              />
+              <ThemedText style={styles.signOutText}>Sign Out</ThemedText>
+            </Pressable>
+          </ThemedView>
+        )}
+      </View>
+    );
+  }
 
   return (
     <View {...props} style={styles.tabListContainer}>
       <ThemedView type="backgroundElement" style={styles.innerContainer}>
         <ThemedText type="smallBold" style={styles.brandText}>
-          Expo Starter
+          Smart Farming
         </ThemedText>
 
         {props.children}
@@ -79,14 +143,32 @@ export function CustomTabList(props: TabListProps) {
             />
           </Pressable>
         </ExternalLink>
+
+        <Pressable style={styles.signOutPressable} onPress={logout}>
+          <SymbolView
+            tintColor="#fff"
+            name="rectangle.portrait.and.arrow.right"
+            size={14}
+          />
+          <ThemedText style={styles.signOutText}>Sign Out</ThemedText>
+        </Pressable>
       </ThemedView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  tabsRoot: {
+    flex: 1,
+    minHeight: '100%',
+  },
+  tabSlot: {
+    height: '100%',
+    paddingTop: 80,
+  },
   tabListContainer: {
     position: 'absolute',
+    top: 0,
     width: '100%',
     padding: Spacing.three,
     justifyContent: 'center',
@@ -97,6 +179,17 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.five,
     borderRadius: Spacing.five,
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexGrow: 1,
+    gap: Spacing.two,
+    maxWidth: MaxContentWidth,
+  },
+  compactContainer: {
+    paddingVertical: Spacing.two,
+    paddingLeft: Spacing.four,
+    paddingRight: Spacing.two,
+    borderRadius: Spacing.four,
     flexDirection: 'row',
     alignItems: 'center',
     flexGrow: 1,
@@ -114,11 +207,70 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     borderRadius: Spacing.three,
   },
+  menuButton: {
+    minWidth: 54,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    gap: Spacing.one,
+    paddingHorizontal: Spacing.two,
+    backgroundColor: 'rgba(4, 220, 187, 0.32)',
+  },
+  dropdownMenu: {
+    position: 'absolute',
+    top: 70,
+    left: Spacing.three,
+    right: Spacing.three,
+    maxWidth: MaxContentWidth,
+    alignSelf: 'center',
+    borderRadius: Spacing.four,
+    padding: Spacing.two,
+    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+  },
+  dropdownItems: {
+    gap: Spacing.one,
+  },
+  dropdownExternalPressable: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
+    paddingVertical: Spacing.two,
+    paddingHorizontal: Spacing.three,
+    marginTop: Spacing.one,
+  },
+  dropdownSignOutPressable: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: Spacing.one,
+    paddingVertical: Spacing.two,
+    paddingHorizontal: Spacing.three,
+    marginTop: Spacing.one,
+    borderRadius: Spacing.two,
+    backgroundColor: '#533441',
+  },
   externalPressable: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     gap: Spacing.one,
     marginLeft: Spacing.three,
+  },
+  signOutPressable: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
+    marginLeft: Spacing.one,
+    paddingVertical: Spacing.one,
+    paddingHorizontal: Spacing.three,
+    borderRadius: Spacing.three,
+    backgroundColor: '#533441',
+  },
+  signOutText: {
+    color: '#fff',
+    fontSize: 13,
+    fontWeight: '600',
   },
 });

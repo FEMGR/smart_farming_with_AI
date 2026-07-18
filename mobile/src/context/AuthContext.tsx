@@ -12,6 +12,14 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+function normalizeAuthError(error: unknown, baseUrl: string): Error {
+  const message = error instanceof Error ? error.message : String(error);
+  if (message.includes('Failed to fetch') || message.includes('Network request failed')) {
+    return new Error(`Cannot reach API at ${baseUrl}. Check that the backend is running and the API URL is reachable from this device.`);
+  }
+  return error instanceof Error ? error : new Error(message);
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [token, setTokenState] = useState<string | null>(null);
   const [email, setEmailState] = useState<string | null>(null);
@@ -36,9 +44,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const login = async (userEmail: string, pass: string) => {
-    setLoading(true);
+    const baseUrl = await getApiBaseUrl();
     try {
-      const baseUrl = await getApiBaseUrl();
       const response = await fetch(`${baseUrl}/auth/login`, {
         method: 'POST',
         headers: {
@@ -65,16 +72,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setTokenState(accessToken);
       setEmailState(userEmail);
     } catch (error) {
-      throw error;
-    } finally {
-      setLoading(false);
+      throw normalizeAuthError(error, baseUrl);
     }
   };
 
   const register = async (userEmail: string, pass: string) => {
-    setLoading(true);
+    const baseUrl = await getApiBaseUrl();
     try {
-      const baseUrl = await getApiBaseUrl();
       const response = await fetch(`${baseUrl}/auth/register`, {
         method: 'POST',
         headers: {
@@ -96,9 +100,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       // Automatically login after successful registration
       await login(userEmail, pass);
     } catch (error) {
-      throw error;
-    } finally {
-      setLoading(false);
+      throw normalizeAuthError(error, baseUrl);
     }
   };
 

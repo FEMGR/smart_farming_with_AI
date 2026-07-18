@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   Alert,
   Modal,
+  Platform,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SymbolView } from 'expo-symbols';
@@ -236,11 +237,18 @@ const styles = StyleSheet.create({
     maxWidth: 400,
     padding: Spacing.four,
     borderRadius: Spacing.four,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 8,
-    elevation: 3,
+    ...Platform.select({
+      web: {
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+      },
+      default: {
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowOffset: { width: 0, height: 2 },
+        shadowRadius: 8,
+        elevation: 3,
+      },
+    }),
   },
   formTitle: {
     fontSize: 18,
@@ -254,7 +262,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.three,
   },
   errorText: {
-    color: '#DC2626',
+    color: '#a10909',
     fontSize: 12,
     textAlign: 'center',
   },
@@ -271,7 +279,7 @@ const styles = StyleSheet.create({
   },
   button: {
     height: 48,
-    backgroundColor: '#10B981',
+    backgroundColor: '#216c53',
     borderRadius: Spacing.two,
     justifyContent: 'center',
     alignItems: 'center',
@@ -320,7 +328,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E5E7EB',
   },
   saveBtn: {
-    backgroundColor: '#10B981',
+    backgroundColor: '#40a583',
   },
   modalBtnText: {
     fontWeight: 'bold',
