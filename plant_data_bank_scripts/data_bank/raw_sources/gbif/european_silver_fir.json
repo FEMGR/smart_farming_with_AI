@@ -18,7 +18,7 @@
       "source_url": "https://api.gbif.org/v1/species/match",
       "query": "Abies alba",
       "status": "ok",
-      "fetched_at": "2026-07-09T04:22:00.544121+00:00",
+      "fetched_at": "2026-07-18T05:42:36.774162+00:00",
       "response_hash": "38fb858f57a8ce1272ebade615da9e9d2d805908cac4301c3009a694ac3f951f",
       "parsed": {
         "endpoint": "species/match",
