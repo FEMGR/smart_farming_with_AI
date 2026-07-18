@@ -7,10 +7,10 @@ Reorder only rearranges existing facts; it does not add new plant facts.
 ## Summary
 
 Files checked: 16
-Files that would be reordered: 1
+Files that would be reordered: 4
 Skipped files: 0
 New plants added by reorder: (none)
-Plant groups present in files that would be reordered: aphid, armyworm, artichoke_plume_moth, asparagus_beetle, beet_armyworm, blister_beetle, brown_wheat_mite, bulb_mite, bumblebee, cabbage_flea_beetle, cabbage_maggot, cabbage_worm, carrot_rust_fly, collembola, colorado_potato_beetle, corn_earworm, corn_rootworm, cucumber_beetle, cutworm, delphastus_beetle, ... +46 more
+Plant groups present in files that would be reordered: adzuki_bean, african_marigold, allspice, aloe_vera, amaranth, anise, annual_aster, annual_statice, apple, apricot, artichoke, artichokes, arugula, ash_gourd, asparagus, avocado, bachelor, bachelor_button, banana, barley, ... +282 more
 
 ================================================================================
 logic_companion_planting/base/insect_group.pl
@@ -28,23 +28,23 @@ Preview: plant_data_bank_scripts/data_bank/prolog_preview/plant_group_reordered_
 
 ================================================================================
 logic_companion_planting/data/plant_fact.pl
-Status: already ordered
-Facts: 797
-Plant groups: aloe_vera, amaranth, apple, artichoke, arugula, asparagus, barley, basil, bean_bush, bean_common, bean_pole, bee_balm, beet, beets, bell_pepper, bitter_melon, black_pepper, blackberry, blueberry, bok_choy, ... +131 more
+Status: would change
+Facts: 823
+Plant groups: aloe_vera, amaranth, apple, artichoke, arugula, asparagus, barley, basil, bean_bush, bean_common, bean_pole, bee_balm, beet, beets, bell_pepper, bitter_melon, black_pepper, blackberry, blueberry, bok_choy, ... +135 more
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/plant_fact_reordered_preview.pl
 
 ================================================================================
 logic_companion_planting/data/alias_fact.pl
-Status: already ordered
-Facts: 1067
-Plant groups: aloe_vera, apple, artichoke, artichokes, arugula, basil, bean_bush, bean_common, bean_pole, bee_balm, beets, bell_pepper, bitter_melon, black_pepper, blackberries, blackberry, bok_choy, broccoli, cabbage, calendula, ... +81 more
+Status: would change
+Facts: 1074
+Plant groups: aloe_vera, apple, artichoke, artichokes, arugula, basil, bean_bush, bean_common, bean_pole, bee_balm, beets, bell_pepper, bitter_melon, black_pepper, blackberries, blackberry, bok_choy, broccoli, cabbage, calendula, ... +85 more
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/alias_fact_reordered_preview.pl
 
 ================================================================================
 logic_companion_planting/base/plant_taxonomy.pl
-Status: already ordered
-Facts: 1390
-Plant groups: adzuki_bean, african_marigold, allspice, aloe_vera, amaranth, anise, apple, apricot, artichoke, arugula, ash_gourd, avocado, bachelor_button, banana, barley, basil, bay_laurel, bean_bush, bean_common, bean_pole, ... +224 more
+Status: would change
+Facts: 1411
+Plant groups: adzuki_bean, african_marigold, allspice, aloe_vera, amaranth, anise, apple, apricot, artichoke, arugula, ash_gourd, avocado, bachelor_button, banana, barley, basil, bay_laurel, bean_bush, bean_common, bean_pole, ... +228 more
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/plant_taxonomy_reordered_preview.pl
 
 ================================================================================
@@ -63,9 +63,9 @@ Preview: plant_data_bank_scripts/data_bank/prolog_preview/weather_taxonomy_reord
 
 ================================================================================
 logic_companion_planting/data/growth_facts.pl
-Status: already ordered
-Facts: 1941
-Plant groups: aloe_vera, annual_aster, annual_statice, apple, artichoke, arugula, asparagus, bachelor, basil, bean, bean_bush, bean_common, bean_pole, beans, beans_bush, beans_pole, beet, bell_pepper, bitter_melon, black_eyed_susan, ... +89 more
+Status: would change
+Facts: 2036
+Plant groups: aloe_vera, annual_aster, annual_statice, apple, artichoke, arugula, asparagus, bachelor, basil, bean, bean_bush, bean_common, bean_pole, beans, beans_bush, beans_pole, beet, bell_pepper, bitter_melon, black_eyed_susan, ... +93 more
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/growth_facts_reordered_preview.pl
 
 ================================================================================
@@ -84,7 +84,7 @@ Preview: plant_data_bank_scripts/data_bank/prolog_preview/environment_fact_reord
 
 ================================================================================
 logic_companion_planting/data/insect_fact.pl
-Status: would change
+Status: already ordered
 Facts: 844
 Plant groups: aphid, armyworm, artichoke_plume_moth, asparagus_beetle, beet_armyworm, blister_beetle, brown_wheat_mite, bulb_mite, bumblebee, cabbage_flea_beetle, cabbage_maggot, cabbage_worm, carrot_rust_fly, collembola, colorado_potato_beetle, corn_earworm, corn_rootworm, cucumber_beetle, cutworm, delphastus_beetle, ... +46 more
 Preview: plant_data_bank_scripts/data_bank/prolog_preview/insect_fact_reordered_preview.pl

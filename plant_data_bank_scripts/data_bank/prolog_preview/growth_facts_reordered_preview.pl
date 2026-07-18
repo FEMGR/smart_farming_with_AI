@@ -457,6 +457,7 @@ fact_scope(broccoli, extracted_profile).
 accepted_scientific_name(broccoli, 'Brassica oleracea var. italica').
 genus(broccoli, brassica).
 family(broccoli, brassicaceae).
+life_cycle(broccoli, annual).
 germination_days_min(broccoli, 4).
 germination_days_max(broccoli, 7).
 germination_light(broccoli, darkness_required).
@@ -464,6 +465,14 @@ stratification_required(broccoli, false).
 stratification_days_min(broccoli, 0).
 stratification_days_max(broccoli, 0).
 sowing_depth_cm(broccoli, 0.95).
+propagation_method(broccoli, cutting).
+propagation_method(broccoli, division).
+propagation_method(broccoli, grafting_propagation).
+propagation_method(broccoli, layering_propagation).
+propagation_method(broccoli, seed_propagation).
+sunlight(broccoli, full_sun).
+water_need(broccoli, average).
+growth_speed(broccoli, low).
 special_treatment(broccoli, cover_seed).
 special_treatment(broccoli, inferred_depth_from_1_4_to_1_2_inch).
 source_name(broccoli, 'Iowa State University Extension').
@@ -553,13 +562,20 @@ fact_scope(carrot, extracted_profile).
 accepted_scientific_name(carrot, 'Daucus carota').
 genus(carrot, daucus).
 family(carrot, apiaceae).
+life_cycle(carrot, annual).
+propagation_method(carrot, cutting).
+propagation_method(carrot, division).
+propagation_method(carrot, grafting_propagation).
+propagation_method(carrot, layering_propagation).
 propagation_method(carrot, seed).
+propagation_method(carrot, seed_propagation).
 sunlight(carrot, full_sun).
 soil_type(carrot, heavy_clay).
 soil_type(carrot, light_sandy).
 soil_type(carrot, medium_loamy).
 soil_type(carrot, well_drained).
 water_need(carrot, moderate).
+growth_speed(carrot, high).
 source_name(carrot, 'Plants For A Future').
 source_url(carrot, 'https://pfaf.org/user/Plant.aspx?LatinName=Daucus+carota').
 confidence(carrot, high).
@@ -706,6 +722,16 @@ fact_scope(chive, extracted_profile).
 accepted_scientific_name(chive, 'Allium schoenoprasum').
 genus(chive, allium).
 family(chive, amaryllidaceae).
+life_cycle(chive, perennial).
+propagation_method(chive, seed_propagation).
+sunlight(chive, full_sun).
+sunlight(chive, part_shade).
+soil_type(chive, dry).
+soil_type(chive, gravelly).
+soil_type(chive, rocky).
+soil_type(chive, well_drained).
+water_need(chive, frequent).
+growth_speed(chive, high).
 source_name(chive, 'Plants For A Future').
 source_url(chive, 'https://pfaf.org/user/Plant.aspx?LatinName=Allium+schoenoprasum').
 confidence(chive, high).
@@ -848,12 +874,14 @@ optimum_soil_temp_c(cucumber, 35.0).
 viable_temp_min_c(cucumber, 10.0).
 viable_temp_max_c(cucumber, 40.6).
 propagation_method(cucumber, seed).
+propagation_method(cucumber, seed_propagation).
 sunlight(cucumber, full_sun).
 soil_type(cucumber, heavy_clay).
 soil_type(cucumber, light_sandy).
 soil_type(cucumber, medium_loamy).
 soil_type(cucumber, well_drained).
 water_need(cucumber, moderate).
+growth_speed(cucumber, low).
 special_treatment(cucumber, cover_seed).
 special_treatment(cucumber, inferred_depth_from_1_4_to_1_2_inch).
 source_name(cucumber, 'Iowa State University Extension').
@@ -962,6 +990,32 @@ source_name(eggplant, 'Plants For A Future').
 source_url(eggplant, 'https://pfaf.org/user/Plant.aspx?LatinName=Solanum+melongena').
 source_url(eggplant, 'https://yardandgarden.extension.iastate.edu/how-to/germination-requirements-annuals-and-vegetables').
 confidence(eggplant, high).
+
+% ---------------------------------------------------------
+% EUROPEAN SILVER FIR
+% ---------------------------------------------------------
+fact_scope(european_silver_fir, extracted_profile).
+accepted_scientific_name(european_silver_fir, 'Abies alba').
+genus(european_silver_fir, abies).
+family(european_silver_fir, pinaceae).
+life_cycle(european_silver_fir, perennial).
+propagation_method(european_silver_fir, air_layering_propagation).
+propagation_method(european_silver_fir, cutting).
+propagation_method(european_silver_fir, grafting_propagation).
+propagation_method(european_silver_fir, layering_propagation).
+propagation_method(european_silver_fir, seed).
+propagation_method(european_silver_fir, seed_propagation).
+propagation_method(european_silver_fir, tissue_culture).
+sunlight(european_silver_fir, full_sun).
+sunlight(european_silver_fir, partial_shade).
+soil_type(european_silver_fir, heavy_clay).
+soil_type(european_silver_fir, light_sandy).
+soil_type(european_silver_fir, medium_loamy).
+water_need(european_silver_fir, frequent).
+growth_speed(european_silver_fir, high).
+source_name(european_silver_fir, 'Plants For A Future').
+source_url(european_silver_fir, 'https://pfaf.org/user/Plant.aspx?LatinName=Abies+alba').
+confidence(european_silver_fir, high).
 
 % ---------------------------------------------------------
 % FENNEL
@@ -1920,6 +1974,17 @@ source_url(red_salvia, 'https://yardandgarden.extension.iastate.edu/how-to/germi
 confidence(red_salvia, high).
 
 % ---------------------------------------------------------
+% ROSE MARIE MAGNOLIA
+% ---------------------------------------------------------
+fact_scope(rose_marie_magnolia, extracted_profile).
+accepted_scientific_name(rose_marie_magnolia, 'Magnolia \'Rose Marie\'').
+genus(rose_marie_magnolia, magnolia).
+family(rose_marie_magnolia, magnoliaceae).
+source_name(rose_marie_magnolia, 'Plants For A Future').
+source_url(rose_marie_magnolia, 'https://pfaf.org/user/Plant.aspx?LatinName=Magnolia+%27Rose+Marie%27').
+confidence(rose_marie_magnolia, high).
+
+% ---------------------------------------------------------
 % ROSEMARY
 % ---------------------------------------------------------
 fact_scope(rosemary, extracted_profile).
@@ -1950,6 +2015,17 @@ growth_speed(sage, fast).
 source_name(sage, 'Plants For A Future').
 source_url(sage, 'https://pfaf.org/user/Plant.aspx?LatinName=Salvia+officinalis').
 confidence(sage, high).
+
+% ---------------------------------------------------------
+% SHIRAZZ JAPANESE MAPLE
+% ---------------------------------------------------------
+fact_scope(shirazz_japanese_maple, extracted_profile).
+accepted_scientific_name(shirazz_japanese_maple, 'Acer palmatum \'Gwen\'s Rose Delight\'').
+genus(shirazz_japanese_maple, acer).
+family(shirazz_japanese_maple, sapindaceae).
+source_name(shirazz_japanese_maple, 'Plants For A Future').
+source_url(shirazz_japanese_maple, 'https://pfaf.org/user/Plant.aspx?LatinName=Acer+palmatum+%27Gwen%27s+Rose+Delight%27').
+confidence(shirazz_japanese_maple, high).
 
 % ---------------------------------------------------------
 % SNAPDRAGON
@@ -2255,6 +2331,32 @@ source_url(tomato, 'https://yardandgarden.extension.iastate.edu/how-to/germinati
 confidence(tomato, high).
 
 % ---------------------------------------------------------
+% TREE TOMATO
+% ---------------------------------------------------------
+fact_scope(tree_tomato, extracted_profile).
+accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
+genus(tree_tomato, cyphomandra).
+genus(tree_tomato, solanum).
+family(tree_tomato, solanaceae).
+life_cycle(tree_tomato, perennial).
+propagation_method(tree_tomato, air_layering_propagation).
+propagation_method(tree_tomato, cutting).
+propagation_method(tree_tomato, grafting_propagation).
+propagation_method(tree_tomato, seed).
+propagation_method(tree_tomato, seed_propagation).
+sunlight(tree_tomato, full_sun).
+sunlight(tree_tomato, part_shade).
+soil_type(tree_tomato, heavy_clay).
+soil_type(tree_tomato, light_sandy).
+soil_type(tree_tomato, medium_loamy).
+soil_type(tree_tomato, well_drained).
+water_need(tree_tomato, average).
+growth_speed(tree_tomato, low).
+source_name(tree_tomato, 'Plants For A Future').
+source_url(tree_tomato, 'https://pfaf.org/user/Plant.aspx?LatinName=Cyphomandra+betacea').
+confidence(tree_tomato, high).
+
+% ---------------------------------------------------------
 % TURMERIC
 % ---------------------------------------------------------
 fact_scope(turmeric, extracted_profile).
@@ -2273,6 +2375,7 @@ fact_scope(turnip, extracted_profile).
 accepted_scientific_name(turnip, 'Brassica rapa subsp. rapa').
 genus(turnip, brassica).
 family(turnip, brassicaceae).
+life_cycle(turnip, annual).
 stratification_required(turnip, false).
 stratification_days_min(turnip, 0).
 stratification_days_max(turnip, 0).
@@ -2280,6 +2383,14 @@ minimum_soil_temp_c(turnip, 10.0).
 optimum_soil_temp_c(turnip, 29.4).
 viable_temp_min_c(turnip, 4.4).
 viable_temp_max_c(turnip, 40.6).
+propagation_method(turnip, cutting).
+propagation_method(turnip, division).
+propagation_method(turnip, grafting_propagation).
+propagation_method(turnip, layering_propagation).
+propagation_method(turnip, seed_propagation).
+sunlight(turnip, full_sun).
+water_need(turnip, average).
+growth_speed(turnip, low).
 source_name(turnip, 'Plants For A Future').
 source_name(turnip, 'Wisconsin Horticulture Extension').
 source_url(turnip, 'https://hort.extension.wisc.edu/articles/when-is-the-right-time-to-plant-vegetable-seeds-check-soil-temperature/').

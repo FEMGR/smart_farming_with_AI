@@ -25,7 +25,9 @@ def test_create_plant_with_perenual_match(mock_search, client, token):
 
     data = response.json()
 
-    assert data["data_source"] == "perenual"
+    assert data["data_source"] == "knowledge_base"
+    assert data["species_id"] is None
+    assert data["scientific_name"] == "Tropaeolum majus"
 
 
 def test_plant_inherits_watering_from_species(client, token):

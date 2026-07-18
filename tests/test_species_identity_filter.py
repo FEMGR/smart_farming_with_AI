@@ -57,3 +57,41 @@ def test_resolved_species_scientific_identity_rejects_tree_tomato():
         species,
         ["Solanum lycopersicum", "Lycopersicon esculentum"],
     )
+
+
+def test_resolved_species_allows_exact_common_perenual_detail_when_taxonomy_guess_conflicts():
+    species = PlantSpeciesCache(
+        external_species_id="334",
+        common_name="Rose Marie Magnolia",
+        scientific_name="Magnolia 'Rose Marie'",
+    )
+
+    assert _resolved_species_matches_preferred_scientific_identity(
+        species,
+        ["Rosa spp."],
+        selected_match={
+            "common_name": "Rose Marie Magnolia",
+            "scientific_name": "Magnolia 'Rose Marie'",
+            "exact_common_match": True,
+        },
+        preferred_common_names=["Rose Marie Magnolia"],
+    )
+
+
+def test_resolved_species_still_rejects_non_exact_common_taxonomy_conflict():
+    species = PlantSpeciesCache(
+        external_species_id="2292",
+        common_name="tree tomato",
+        scientific_name="Cyphomandra betacea",
+    )
+
+    assert not _resolved_species_matches_preferred_scientific_identity(
+        species,
+        ["Solanum lycopersicum", "Lycopersicon esculentum"],
+        selected_match={
+            "common_name": "tree tomato",
+            "scientific_name": "Cyphomandra betacea",
+            "exact_common_match": False,
+        },
+        preferred_common_names=["tomato"],
+    )

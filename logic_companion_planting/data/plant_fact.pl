@@ -251,6 +251,9 @@ trait(borage, pollinator_attractor).
 % ---------------------------------------------------------
 plant(broccoli).
 scientific_name(broccoli, 'brassica oleracea var. italica').
+edible(broccoli, true).
+edible_part(broccoli, fruit).
+edible_part(broccoli, leaf).
 
 % ---------------------------------------------------------
 % BRUSSELS SPROUT
@@ -295,6 +298,7 @@ plant(carrot).
 scientific_name(carrot, 'daucus carota').
 edible(carrot, true).
 edible_part(carrot, flower).
+edible_part(carrot, leaf).
 edible_part(carrot, root).
 use_category(carrot, culinary_herb).
 use_category(carrot, medicinal_plant).
@@ -363,6 +367,8 @@ scientific_name(chili_pepper, 'capsicum annuum').
 % ---------------------------------------------------------
 plant(chive).
 scientific_name(chive, 'allium schoenoprasum').
+edible(chive, true).
+edible_part(chive, leaf).
 trait(chive, pest_repellent).
 
 % ---------------------------------------------------------
@@ -497,6 +503,14 @@ trait(eggplant, pollinator_attractor).
 % ---------------------------------------------------------
 plant(elderflower).
 scientific_name(elderflower, 'sambucus nigra').
+
+% ---------------------------------------------------------
+% EUROPEAN SILVER FIR
+% ---------------------------------------------------------
+plant(european_silver_fir).
+scientific_name(european_silver_fir, 'abies alba').
+use_category(european_silver_fir, medicinal_plant).
+trait(european_silver_fir, medicinal).
 
 % ---------------------------------------------------------
 % FENNEL
@@ -1094,6 +1108,12 @@ plant(rose).
 scientific_name(rose, 'rosa spp.').
 
 % ---------------------------------------------------------
+% ROSE MARIE MAGNOLIA
+% ---------------------------------------------------------
+plant(rose_marie_magnolia).
+scientific_name(rose_marie_magnolia, 'magnolia \'rose marie\'').
+
+% ---------------------------------------------------------
 % ROSEMARY
 % ---------------------------------------------------------
 plant(rosemary).
@@ -1137,6 +1157,12 @@ trait(sage, pollinator_attractor).
 % ---------------------------------------------------------
 plant(shallot).
 scientific_name(shallot, 'allium cepa var. aggregatum').
+
+% ---------------------------------------------------------
+% SHIRAZZ JAPANESE MAPLE
+% ---------------------------------------------------------
+plant(shirazz_japanese_maple).
+scientific_name(shirazz_japanese_maple, 'acer palmatum \'gwen\'s rose delight\'').
 
 % ---------------------------------------------------------
 % SORGHUM
@@ -1355,6 +1381,19 @@ trait(tomato, pest_repellent).
 trait(tomato, pollinator_attractor).
 
 % ---------------------------------------------------------
+% TREE TOMATO
+% ---------------------------------------------------------
+plant(tree_tomato).
+scientific_name(tree_tomato, 'cyphomandra betacea').
+edible(tree_tomato, true).
+edible_part(tree_tomato, fruit).
+edible_part(tree_tomato, leaf).
+use_category(tree_tomato, fruit_crop).
+use_category(tree_tomato, medicinal_plant).
+trait(tree_tomato, medicinal).
+trait(tree_tomato, pollinator_attractor).
+
+% ---------------------------------------------------------
 % TULIP
 % ---------------------------------------------------------
 plant(tulip).
@@ -1372,6 +1411,9 @@ trait(turmeric, pest_repellent).
 % ---------------------------------------------------------
 plant(turnip).
 scientific_name(turnip, 'brassica rapa subsp. rapa').
+edible(turnip, true).
+edible_part(turnip, fruit).
+edible_part(turnip, leaf).
 
 % ---------------------------------------------------------
 % VIBURNUM
@@ -1450,32 +1492,3 @@ use_category(zucchini, oil_crop).
 use_category(zucchini, root_tuber_crop).
 trait(zucchini, medicinal).
 trait(zucchini, pollinator_attractor).
-
-
-% =========================================================
-% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_fact
-% Review before editing manually.
-% =========================================================
-
-edible(broccoli, true).
-edible_part(broccoli, fruit).
-edible_part(broccoli, leaf).
-edible_part(carrot, leaf).
-edible(chive, true).
-edible_part(chive, leaf).
-plant(european_silver_fir).
-scientific_name(european_silver_fir, 'abies alba').
-use_category(european_silver_fir, medicinal_plant).
-trait(european_silver_fir, medicinal).
-plant(tree_tomato).
-scientific_name(tree_tomato, 'cyphomandra betacea').
-edible(tree_tomato, true).
-edible_part(tree_tomato, fruit).
-edible_part(tree_tomato, leaf).
-use_category(tree_tomato, fruit_crop).
-use_category(tree_tomato, medicinal_plant).
-trait(tree_tomato, medicinal).
-trait(tree_tomato, pollinator_attractor).
-edible(turnip, true).
-edible_part(turnip, fruit).
-edible_part(turnip, leaf).

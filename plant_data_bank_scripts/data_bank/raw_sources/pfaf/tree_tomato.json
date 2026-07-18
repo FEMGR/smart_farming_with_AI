@@ -4,7 +4,7 @@
     "confidence": 0.7,
     "created_at": "2026-06-18T06:20:42.571379+00:00",
     "genus": "Cyphomandra",
-    "last_synced_at": "2026-07-09T04:11:29.329780+00:00",
+    "last_synced_at": "2026-07-09T04:31:40.670154+00:00",
     "plant_atom": "tree_tomato",
     "reason": "scientific_name_not_found_in_prolog",
     "scientific_name": "Cyphomandra betacea",
@@ -19,8 +19,8 @@
       "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Cyphomandra+betacea",
       "query": "Cyphomandra betacea",
       "status": "trusted_detail",
-      "fetched_at": "2026-07-09T04:21:57.724968+00:00",
-      "response_hash": "7339b59cb2e5b704fba6b61d386047b64d17e639e82ad27c511276f4b0416f1a",
+      "fetched_at": "2026-07-18T05:42:31.333255+00:00",
+      "response_hash": "2b9f90a744b2d8bdcc6061fea1b1d4e90703ebae9958c8a1e4024eb79bc85d5b",
       "parsed": {
         "title": "Cyphomandra betacea Tree Tomato PFAF Plant Database",
         "trusted_detail": true,
@@ -145,7 +145,7 @@
       "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=tree+tomato",
       "query": "Cyphomandra betacea",
       "status": "snapshot_only",
-      "fetched_at": "2026-07-09T04:21:58.328275+00:00",
+      "fetched_at": "2026-07-18T05:42:32.103721+00:00",
       "response_hash": "f43e3b525a1ebaf022e79e8bd14bc0ee1eaed4582cd7a0f25cf4a44af026de9a",
       "parsed": {
         "title": "Plant Search Result",

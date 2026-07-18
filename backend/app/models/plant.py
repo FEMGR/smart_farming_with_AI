@@ -33,7 +33,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import relationship
 
-from app.core.constants import DEFAULT_PLANT_TYPE
+from app.core.constants import DATA_SOURCE_MANUAL, DEFAULT_PLANT_TYPE
 from app.database.db import Base
 
 
@@ -61,7 +61,7 @@ class Plant(Base):
     last_watered = Column(Date)
     # Metadata
     planting_date = Column(Date)
-    data_source = Column(String(50), default="manual")  # {"manual", "perenual", "import", "sensor", "ai"}
+    data_source = Column(String(50), default=DATA_SOURCE_MANUAL)  # See PLANT_DATA_SOURCES.
 
     # Stable local identity used by Prolog facts and timeline generation.
     plant_atom = Column(String(120), nullable=True, index=True)

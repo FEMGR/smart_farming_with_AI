@@ -18,8 +18,8 @@
       "source_url": "https://pfaf.org/user/Plant.aspx?LatinName=Abies+alba",
       "query": "Abies alba",
       "status": "trusted_detail",
-      "fetched_at": "2026-07-09T04:21:55.430708+00:00",
-      "response_hash": "c22f5f3093776093a520676ce0f24102adfc091bb6697090904865a00f34d568",
+      "fetched_at": "2026-07-18T05:42:27.591723+00:00",
+      "response_hash": "1ed1aa02d49b7239443439b61832d29d81882eb649b568e943758ad2822d00d4",
       "parsed": {
         "title": "Abies alba Silver Fir, Christmas Tree Fir, European Silver Fir, Silver PFAF Plant Database",
         "trusted_detail": true,
@@ -132,7 +132,7 @@
       "source_url": "https://pfaf.org/user/DatabaseSearhResult.aspx?SearchFor=European+Silver+Fir",
       "query": "Abies alba",
       "status": "snapshot_only",
-      "fetched_at": "2026-07-09T04:21:56.085819+00:00",
+      "fetched_at": "2026-07-18T05:42:28.664877+00:00",
       "response_hash": "c37f2791b8fdf90bab21b3f09cd5973cb335639628dce69aee0afa87d470c219",
       "parsed": {
         "title": "Plant Search Result",

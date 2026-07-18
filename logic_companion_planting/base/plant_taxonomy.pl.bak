@@ -2422,3 +2422,38 @@ taxonomy_source(zucchini, 'GBIF / Plants For A Future').
 :- multifile accepted_scientific_name/2.
 :- multifile family/2.
 :- multifile genus/2.
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_taxonomy
+% Review before editing manually.
+% =========================================================
+
+accepted_scientific_name(european_silver_fir, 'Abies alba').
+genus(european_silver_fir, abies).
+family(european_silver_fir, pinaceae).
+taxonomy_confidence(european_silver_fir, high).
+taxonomy_source(european_silver_fir, 'GBIF / Plants For A Future').
+accepted_scientific_name(tree_tomato, 'Cyphomandra betacea').
+genus(tree_tomato, cyphomandra).
+family(tree_tomato, solanaceae).
+taxonomy_confidence(tree_tomato, high).
+taxonomy_source(tree_tomato, 'GBIF / Plants For A Future').
+
+
+% =========================================================
+% AUTO-GENERATED FROM NORMALIZED PLANT PROFILES: plant_taxonomy
+% Review before editing manually.
+% =========================================================
+
+accepted_scientific_name(rose_marie_magnolia, 'Magnolia \'Rose Marie\'').
+genus(rose_marie_magnolia, magnolia).
+family(rose_marie_magnolia, magnoliaceae).
+taxonomy_confidence(rose_marie_magnolia, high).
+taxonomy_source(rose_marie_magnolia, 'GBIF / Plants For A Future').
+accepted_scientific_name(shirazz_japanese_maple, 'Acer palmatum \'Gwen\'s Rose Delight\'').
+genus(shirazz_japanese_maple, acer).
+family(shirazz_japanese_maple, sapindaceae).
+taxonomy_confidence(shirazz_japanese_maple, high).
+taxonomy_source(shirazz_japanese_maple, 'GBIF / Plants For A Future').
+genus(tree_tomato, solanum).
