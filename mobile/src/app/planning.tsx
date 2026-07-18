@@ -8,6 +8,7 @@ import {
   TextInput,
   Modal,
   Alert,
+  RefreshControl,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SymbolView } from 'expo-symbols';
@@ -31,6 +32,7 @@ export default function PlanningScreen() {
     getPolyculturePreview,
     loading,
     refreshAll,
+    refreshing,
   } = useData();
 
   const [activeTab, setActiveTab] = useState<'plans' | 'sections' | 'preview'>('plans');
@@ -311,8 +313,9 @@ export default function PlanningScreen() {
         ) : activeTab === 'plans' ? (
           <ScrollView
             contentContainerStyle={styles.scrollContent}
-            onRefresh={refreshAll}
-            refreshing={false}
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
+            }
           >
             {savedPlans.length === 0 ? (
               <View style={styles.empty}>
@@ -397,8 +400,9 @@ export default function PlanningScreen() {
         ) : activeTab === 'sections' ? (
           <ScrollView
             contentContainerStyle={styles.scrollContent}
-            onRefresh={refreshAll}
-            refreshing={false}
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
+            }
           >
             {sections.length === 0 ? (
               <View style={styles.empty}>
