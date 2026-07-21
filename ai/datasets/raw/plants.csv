@@ -1,0 +1,5 @@
+plant_id,plant_name,species,location,planting_date,growth_stage,health_status
+P001,Tomato A,Tomato,Bed-A,2026-06-01,Flowering,Healthy
+P002,Chili A,Chili,Bed-B,2026-06-15,Vegetative,Healthy
+P003,Lettuce A,Lettuce,Greenhouse,2026-07-01,Seedling,Healthy
+P004,Cucumber A,Cucumber,Bed-C,2026-05-20,Fruiting,Needs Monitoring
