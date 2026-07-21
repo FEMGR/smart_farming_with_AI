@@ -98,7 +98,7 @@ MAX_CACHE_SIZE = 500
 # =========================================
 
 SNAPSHOT_DIR = BASE_DIR / "backend" / "cache" / "species_snapshots"
-SNAPSHOT_MAX_AGE_HOURS = 5
+SNAPSHOT_MAX_AGE_HOURS = 24 * 30
 MAX_SNAPSHOT_FILES = 500
 
 # =========================================

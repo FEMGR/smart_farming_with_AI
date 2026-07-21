@@ -1,0 +1,5 @@
+timestamp,sensor_id,location,temperature_c,humidity_pct,soil_moisture_pct,light_lux,ph
+2026-07-19 08:00,S001,Bed-A,28.4,72,41,18500,6.5
+2026-07-19 09:00,S001,Bed-A,29.1,70,39,24300,6.5
+2026-07-19 10:00,S002,Bed-B,30.2,66,35,31200,6.7
+2026-07-19 11:00,S003,Greenhouse,27.5,78,55,12500,6.3
