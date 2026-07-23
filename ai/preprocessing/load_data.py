@@ -98,6 +98,49 @@ def load_parquet(filename: str) -> pd.DataFrame:
     return pd.read_parquet(build_path(filename))
 
 
+SUPPORTED_FILE_LOADERS = {
+    ".csv": load_csv,
+    ".xlsx": load_excel,
+    ".xls": load_excel,
+    ".json": load_json,
+    ".parquet": load_parquet,
+}
+
+DATASET_NAME_ALIASES = {
+    "sensor_readings": "sensor",
+}
+
+
+def get_dataset_name(path: Path, existing_names: set[str]) -> str:
+    """
+    Build a stable dataset name from a raw data file.
+    """
+
+    base_name = DATASET_NAME_ALIASES.get(path.stem, path.stem)
+
+    if base_name not in existing_names:
+        return base_name
+
+    dataset_name = f"{base_name}_{path.suffix.lstrip('.')}"
+    counter = 2
+
+    while dataset_name in existing_names:
+        dataset_name = f"{base_name}_{path.suffix.lstrip('.')}_{counter}"
+        counter += 1
+
+    return dataset_name
+
+
+def load_data_file(path: Path) -> pd.DataFrame:
+    """
+    Load one supported data file from ai/datasets/raw/.
+    """
+
+    loader = SUPPORTED_FILE_LOADERS[path.suffix.lower()]
+
+    return loader(path.name)
+
+
 # =====================================================
 # Database Loader
 # =====================================================
@@ -159,7 +202,7 @@ def load_sensor():
 
 def load_all_data() -> dict:
     """
-    Load all datasets required by the AI pipeline.
+    Load all supported datasets from ai/datasets/raw/.
 
     Returns
     -------
@@ -167,11 +210,20 @@ def load_all_data() -> dict:
         Dictionary of pandas DataFrames.
     """
 
-    return {
-        "sensor": load_csv("sensor_readings.csv"),
-        "weather": load_csv("weather.csv"),
-        "plants": load_csv("plants.csv"),
-    }
+    datasets = {}
+
+    for path in sorted(RAW_DATA_DIR.iterdir()):
+
+        if not path.is_file():
+            continue
+
+        if path.suffix.lower() not in SUPPORTED_FILE_LOADERS:
+            continue
+
+        dataset_name = get_dataset_name(path, set(datasets))
+        datasets[dataset_name] = load_data_file(path)
+
+    return datasets
 
 
 # =====================================================
