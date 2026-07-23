@@ -69,7 +69,7 @@ def fill_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     Median is usually preferred over the mean because
     it is less affected by extreme outliers.
     """
-
+    df = df.copy()
     numeric_columns = df.select_dtypes(include="number").columns
 
     df[numeric_columns] = df[numeric_columns].fillna(df[numeric_columns].mean())
@@ -152,6 +152,48 @@ def save_clean_data(df: pd.DataFrame) -> None:
     print(f"Cleaned dataset saved to:\n{OUTPUT_FILE}")
 
 
+def clean_all_data(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Execute the complete data cleaning pipeline.
+
+    The order of these operations is important:
+        1. Rename columns
+        2. Remove duplicate rows
+        3. Fill missing values
+        4. Remove invalid sensor values
+        5. Convert data types
+        6. Sort by timestamp
+        7. Reset the index
+
+    Returns
+    -------
+    pd.DataFrame
+        The cleaned DataFrame.
+    """
+    df = remove_duplicates(df)
+    df = fill_missing_values(df)
+    df = remove_invalid_sensor_values(df)
+    df = convert_timestamp_to_date(df)
+    df = rename_columns(df)
+    df = sort_by_timestamp(df)
+    df = reset_index(df)
+
+    return df
+
+
+def clean_all_datasets(datasets):
+    """
+    Clean every DataFrame stored in the dataset dictionary.
+    """
+
+    cleaned = {}
+
+    for name, df in datasets.items():
+        cleaned[name] = clean_all_data(df)
+
+    return cleaned
+
+
 # =====================================================
 # Main Pipeline
 # =====================================================
@@ -159,38 +201,19 @@ def save_clean_data(df: pd.DataFrame) -> None:
 
 def main():
     """
-    Execute the complete data-cleaning pipeline.
+    Load, clean, and save the sensor dataset.
     """
 
     print("Loading dataset...")
 
-    df = load_csv("sensor_readings_dirty.csv")
-    print(df.shape)
+    df = load_csv("sensor_readings.csv")
 
-    print("Removing duplicate rows...")
-    df = remove_duplicates(df)
-    print(df.shape)
+    print("Cleaning dataset...")
 
-    print("Filling missing values...")
-    df = fill_missing_values(df)
-
-    print("Removing invalid sensor values...")
-    df = remove_invalid_sensor_values(df)
-    print(df.shape)
-
-    print("Converting data types...")
-    df = convert_timestamp_to_date(df)
-
-    print("Renaming columns...")
-    df = rename_columns(df)
-
-    print("Sorting by timestamp...")
-    df = sort_by_timestamp(df)
-
-    print("Resetting index...")
-    df = reset_index(df)
+    df = clean_all_data(df)
 
     print("Saving cleaned dataset...")
+
     save_clean_data(df)
 
     print("Data cleaning completed successfully.")

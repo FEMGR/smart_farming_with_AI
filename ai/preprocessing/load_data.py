@@ -168,7 +168,7 @@ def load_all_data() -> dict:
     """
 
     return {
-        "sensor": load_csv("sensor_readings_dirty.csv"),
+        "sensor": load_csv("sensor_readings.csv"),
         "weather": load_csv("weather.csv"),
         "plants": load_csv("plants.csv"),
     }
