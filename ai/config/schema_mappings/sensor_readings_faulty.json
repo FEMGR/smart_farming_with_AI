@@ -1,0 +1,10 @@
+{
+    "date_time": "timestamp",
+    "id": "sensor_id",
+    "location": "location_id",
+    "temp_c": "temperature",
+    "humidity_pct": "humidity",
+    "soil_water": "soil_moisture",
+    "pH": "soil_ph",
+    "sunlight": "light"
+}

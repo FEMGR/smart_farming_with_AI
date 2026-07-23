@@ -28,7 +28,6 @@ import pandas as pd
 
 from load_data import load_csv
 
-
 # =====================================================
 # Project Paths
 # =====================================================
@@ -77,6 +76,32 @@ def fill_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def coerce_numeric_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Convert known measurement columns to numeric values.
+    """
+
+    df = df.copy()
+
+    numeric_columns = [
+        "temperature",
+        "humidity",
+        "soil_moisture",
+        "soil_ph",
+        "light",
+        "rainfall",
+        "rain_probability",
+        "wind_speed",
+    ]
+
+    for column in numeric_columns:
+
+        if column in df.columns:
+            df[column] = pd.to_numeric(df[column], errors="coerce")
+
+    return df
+
+
 def remove_invalid_sensor_values(df: pd.DataFrame) -> pd.DataFrame:
     """
     Remove impossible sensor values.
@@ -85,14 +110,20 @@ def remove_invalid_sensor_values(df: pd.DataFrame) -> pd.DataFrame:
     for your sensors.
     """
 
-    if "temperature_c" in df.columns:
-        df = df[(df["temperature_c"] >= -30) & (df["temperature_c"] <= 60)]
+    if "temperature" in df.columns:
+        df = df[df["temperature"].isna() | ((df["temperature"] >= -30) & (df["temperature"] <= 60))]
 
-    if "humidity_pct" in df.columns:
-        df = df[(df["humidity_pct"] >= 0) & (df["humidity_pct"] <= 100)]
+    if "humidity" in df.columns:
+        df = df[df["humidity"].isna() | ((df["humidity"] >= 0) & (df["humidity"] <= 100))]
 
-    if "soil_moisture_pct" in df.columns:
-        df = df[(df["soil_moisture_pct"] >= 0) & (df["soil_moisture_pct"] <= 100)]
+    if "soil_moisture" in df.columns:
+        df = df[df["soil_moisture"].isna() | ((df["soil_moisture"] >= 0) & (df["soil_moisture"] <= 100))]
+
+    if "soil_ph" in df.columns:
+        df = df[df["soil_ph"].isna() | ((df["soil_ph"] >= 0) & (df["soil_ph"] <= 14))]
+
+    if "light" in df.columns:
+        df = df[df["light"].isna() | (df["light"] >= 0)]
 
     return df
 
@@ -103,7 +134,8 @@ def convert_timestamp_to_date(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     if "timestamp" in df.columns:
-        df["timestamp"] = pd.to_datetime(df["timestamp"])
+        df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
+        df = df.dropna(subset=["timestamp"])
 
     return df
 
@@ -152,29 +184,25 @@ def save_clean_data(df: pd.DataFrame) -> None:
     print(f"Cleaned dataset saved to:\n{OUTPUT_FILE}")
 
 
-def clean_all_data(df: pd.DataFrame) -> pd.DataFrame:
+def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
     Execute the complete data cleaning pipeline.
 
     The order of these operations is important:
-        1. Rename columns
-        2. Remove duplicate rows
-        3. Fill missing values
-        4. Remove invalid sensor values
-        5. Convert data types
+        1. Remove duplicate rows
+        2. Convert measurement values
+        3. Convert timestamps
+        4. Remove invalid values
+        5. Fill missing values
         6. Sort by timestamp
-        7. Reset the index
-
-    Returns
-    -------
-    pd.DataFrame
-        The cleaned DataFrame.
+        7. Reset index
     """
+
     df = remove_duplicates(df)
-    df = fill_missing_values(df)
-    df = remove_invalid_sensor_values(df)
+    df = coerce_numeric_columns(df)
     df = convert_timestamp_to_date(df)
-    df = rename_columns(df)
+    df = remove_invalid_sensor_values(df)
+    df = fill_missing_values(df)
     df = sort_by_timestamp(df)
     df = reset_index(df)
 
@@ -189,7 +217,7 @@ def clean_all_datasets(datasets):
     cleaned = {}
 
     for name, df in datasets.items():
-        cleaned[name] = clean_all_data(df)
+        cleaned[name] = clean_dataframe(df)
 
     return cleaned
 
@@ -210,7 +238,7 @@ def main():
 
     print("Cleaning dataset...")
 
-    df = clean_all_data(df)
+    df = clean_dataframe(df)
 
     print("Saving cleaned dataset...")
 
