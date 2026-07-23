@@ -60,4 +60,4 @@ beautifulsoup4
 # AI
 # ===============================
 pandas
-sklearn
+scikit-learn
