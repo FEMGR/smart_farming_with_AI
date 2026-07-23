@@ -241,6 +241,8 @@ def normalize_sensor_data(df: pd.DataFrame, method: str = "minmax") -> pd.DataFr
         "temperature",
         "humidity",
         "soil_moisture",
+        "soil_ph",
+        "light",
         "light_intensity",
     ]
 

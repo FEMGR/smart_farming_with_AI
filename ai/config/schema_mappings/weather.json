@@ -1,0 +1,5 @@
+{
+    "date": "timestamp",
+    "humidity_pct": "humidity",
+    "rainfall_mm": "rainfall"
+}
