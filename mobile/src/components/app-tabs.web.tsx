@@ -6,9 +6,10 @@ import {
   TabTriggerSlotProps,
   TabListProps,
 } from 'expo-router/ui';
+import { usePathname } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
-import { useState } from 'react';
-import { Pressable, useColorScheme, useWindowDimensions, View, StyleSheet } from 'react-native';
+import { useState, useEffect, useRef } from 'react';
+import { Pressable, useColorScheme, useWindowDimensions, View, StyleSheet, Platform } from 'react-native';
 
 import { ExternalLink } from './external-link';
 import { ThemedText } from './themed-text';
@@ -67,6 +68,41 @@ export function CustomTabList(props: TabListProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
   const isCompact = width < COMPACT_NAV_WIDTH;
+  const buttonRef = useRef<any>(null);
+  const dropdownRef = useRef<any>(null);
+  const pathname = usePathname();
+
+  // Collapse menu when page path changes
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (Platform.OS !== 'web' || !menuOpen) return;
+
+    const handleOutsideClick = (e: MouseEvent) => {
+      // If the click is on the menu button itself, let onPress toggle handle it.
+      if (buttonRef.current && buttonRef.current.contains(e.target as Node)) {
+        return;
+      }
+
+      // If the click is inside the dropdown, defer setting menuOpen(false)
+      // to let navigation/link click handlers complete first.
+      if (dropdownRef.current && dropdownRef.current.contains(e.target as Node)) {
+        setTimeout(() => {
+          setMenuOpen(false);
+        }, 100);
+        return;
+      }
+
+      setMenuOpen(false);
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [menuOpen]);
 
   if (isCompact) {
     return (
@@ -77,6 +113,7 @@ export function CustomTabList(props: TabListProps) {
           </ThemedText>
 
           <Pressable
+            ref={buttonRef}
             accessibilityRole="button"
             accessibilityLabel={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             onPress={() => setMenuOpen((open) => !open)}
@@ -96,7 +133,7 @@ export function CustomTabList(props: TabListProps) {
         </ThemedView>
 
         {menuOpen && (
-          <ThemedView type="backgroundElement" style={styles.dropdownMenu}>
+          <ThemedView ref={dropdownRef} type="backgroundElement" style={styles.dropdownMenu}>
             <View style={styles.dropdownItems}>{props.children}</View>
 
             <ExternalLink href="https://docs.expo.dev" asChild>

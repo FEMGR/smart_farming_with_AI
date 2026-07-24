@@ -1,5 +1,20 @@
-plant_id,plant_name,species,location,planting_date,growth_stage,health_status
-P001,Tomato A,Tomato,Bed-A,2026-06-01,Flowering,Healthy
-P002,Chili A,Chili,Bed-B,2026-06-15,Vegetative,Healthy
-P003,Lettuce A,Lettuce,Greenhouse,2026-07-01,Seedling,Healthy
-P004,Cucumber A,Cucumber,Bed-C,2026-05-20,Fruiting,Needs Monitoring
+plant_id,location_id,species_id,plant_name,scientific_name,last_watered,watering_interval_days,recommended_soil,life_cycle,environment_type,plant_age_days,height_cm,growth_stage,propagation_method,pest_susceptibility,recommended_sunlight,is_sensor_enabled
+108,10,,raspberry,Rubus idaeus,2026-07-15T00:00:00,4,,,outdoor,,,,,,,False
+2,,1,cucumber,Cucumis sativus,,3,Well-drained,Annual,,,,,Seed Propagation,"Fungal leaf spot, Mites, Root rot, Thrips, Virus",full sun,False
+3,,2,chive,Allium schoenoprasum,,1,"Rocky, gravelly, dry, Well-drained",Perennial,,,,,Seed Propagation,"Rust, Thrips, Deer resistant, Rabbit resistant, Drought resistant","full sun, part shade",False
+88,,61,cabbage,Brassica oleracea var. capitata,,3,Well-drained,Annual,,,,,"Seed Propagation, Cutting, Layering Propagation, Division, Grafting Propagation",,full sun,False
+91,,63,Brussels sprout,Brassica oleracea var. gemmifera,,3,Well-drained,Annual,,,,,"Seed Propagation, Cutting, Layering Propagation, Division, Grafting Propagation",,full sun,False
+94,,65,chamomile,Matricaria chamomilla,,3,"Rocky, gravelly, dry, Well-drained",Herbaceous Perennial,,,,,Seed Propagation,"Pest resistant, Disease resistant, Drought resistant","Full sun, part shade",False
+95,,64,carrot,Daucus carota subsp. sativus,,3,Well-drained,Annual,,,,,"Seed Propagation, Division, Grafting Propagation, Layering Propagation, Cutting",,full sun,False
+96,,66,sapodila,Cyphomandra betacea,,3,Well-drained,Perennial,,,,,"Grafting Propagation, Air Layering Propagation, Cutting, Seed Propagation",,"Full sun, part shade",False
+98,,61,Cabbage,Brassica oleracea var. capitata,,3,Well-drained,Annual,,,,,"Seed Propagation, Cutting, Layering Propagation, Division, Grafting Propagation",,full sun,False
+99,,67,beet,Beta vulgaris,,3,Well-drained,Annual,,,,,"Seed Propagation, Cutting, Division, Layering Propagation",,"Full sun, part shade",False
+102,,68,Broccoli,Brassica oleracea var. italica,2026-07-09T00:00:00,3,Well-drained,Annual,,,,,"Seed Propagation, Cutting, Division, Layering Propagation, Grafting Propagation",,full sun,False
+103,,69,turnip,Brassica rapa subsp. rapa,,3,Well-drained,Annual,,,,,"Seed Propagation, Grafting Propagation, Layering Propagation, Division, Cutting",,full sun,False
+104,,,Sage,Salvia officinalis,,4,,,,,,,,,,False
+105,,,Mint,Mentha spp.,,4,,,,,,,,,,False
+106,,,Thyme,Thymus vulgaris,,4,,,,,,,,,,False
+107,,,Catnip,Nepeta cataria,,4,,,,,,,,,,False
+109,,,nasturtium,Tropaeolum majus,,4,,,,,,,,,,False
+110,,71,Rose Marie Magnolia,Magnolia 'Rose Marie',,7,Well-drained,Perennial,,,,,"Air Layering Propagation, Grafting Propagation, Cutting, Division, Seed Propagation",,"full sun, part shade",False
+111,,72,Shirazz Japanese Maple,Acer palmatum 'Gwen's Rose Delight',,3,Well-drained,Perennial,,,,,"Grafting Propagation, Cutting, Layering Propagation, Air Layering Propagation, Tissue Culture",,"full sun, part shade",False
