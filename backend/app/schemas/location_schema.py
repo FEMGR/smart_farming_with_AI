@@ -32,6 +32,8 @@ class LocationCreate(BaseModel):
     environment_type: Optional[str] = None  # indoor / outdoor / greenhouse
     width_m: Optional[float] = None
     length_m: Optional[float] = None
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
 
 
 # ===============================
@@ -43,6 +45,8 @@ class LocationUpdate(BaseModel):
     environment_type: Optional[str] = None
     width_m: Optional[float] = None
     length_m: Optional[float] = None
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
 
 
 # ===============================
@@ -55,6 +59,8 @@ class LocationResponse(BaseModel):
     environment_type: Optional[str]
     width_m: Optional[float]
     length_m: Optional[float]
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
     user_id: int
     created_at: datetime
 

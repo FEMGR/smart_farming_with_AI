@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SymbolView } from 'expo-symbols';
+import * as Location from 'expo-location';
 import { useData } from '@/context/DataContext';
 import { useAuth } from '@/context/AuthContext';
 import { ThemedText } from '@/components/themed-text';
@@ -57,6 +58,8 @@ export default function MoreScreen() {
   const [locEnv, setLocEnv] = useState('outdoor');
   const [locWidth, setLocWidth] = useState('5.0');
   const [locLength, setLocLength] = useState('5.0');
+  const [locLat, setLocLat] = useState('');
+  const [locLng, setLocLng] = useState('');
 
   // Edit Location Fields
   const [editLocName, setEditLocName] = useState('');
@@ -64,6 +67,10 @@ export default function MoreScreen() {
   const [editLocEnv, setEditLocEnv] = useState('outdoor');
   const [editLocWidth, setEditLocWidth] = useState('5.0');
   const [editLocLength, setEditLocLength] = useState('5.0');
+  const [editLocLat, setEditLocLat] = useState('');
+  const [editLocLng, setEditLocLng] = useState('');
+
+  const [gpsLoading, setGpsLoading] = useState(false);
 
   // Recommendation additions state
   const [selectedAddType, setSelectedAddType] = useState('vegetable');
@@ -84,6 +91,37 @@ export default function MoreScreen() {
     }
   }, [locations]);
 
+  const handleFetchCurrentLocation = async (isEdit: boolean) => {
+    setGpsLoading(true);
+    try {
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') {
+        Alert.alert('Permission Denied', 'Permission to access location was denied. Please enable location services in your system settings.');
+        return;
+      }
+
+      const pos = await Location.getCurrentPositionAsync({
+        accuracy: Location.Accuracy.Balanced,
+      });
+
+      if (pos && pos.coords) {
+        const latStr = String(pos.coords.latitude.toFixed(6));
+        const lngStr = String(pos.coords.longitude.toFixed(6));
+        if (isEdit) {
+          setEditLocLat(latStr);
+          setEditLocLng(lngStr);
+        } else {
+          setLocLat(latStr);
+          setLocLng(lngStr);
+        }
+      }
+    } catch (e: any) {
+      Alert.alert('Error', e.message || 'Failed to fetch device GPS location');
+    } finally {
+      setGpsLoading(false);
+    }
+  };
+
   const handleCreateLocation = async () => {
     if (!locName.trim()) {
       Alert.alert('Error', 'Location name is required');
@@ -97,10 +135,14 @@ export default function MoreScreen() {
         environment_type: locEnv,
         width_m: parseFloat(locWidth) || 5.0,
         length_m: parseFloat(locLength) || 5.0,
+        latitude: parseFloat(locLat) || null,
+        longitude: parseFloat(locLng) || null,
       });
       setAddLocVisible(false);
       setLocName('');
       setLocDesc('');
+      setLocLat('');
+      setLocLng('');
       Alert.alert('Success', 'Location created successfully');
     } catch (e: any) {
       Alert.alert('Error', e.message || 'Failed to create location');
@@ -122,6 +164,8 @@ export default function MoreScreen() {
         environment_type: editLocEnv,
         width_m: parseFloat(editLocWidth) || 5.0,
         length_m: parseFloat(editLocLength) || 5.0,
+        latitude: parseFloat(editLocLat) || null,
+        longitude: parseFloat(editLocLng) || null,
       });
       setEditLocVisible(false);
       Alert.alert('Success', 'Location updated successfully');
@@ -133,9 +177,26 @@ export default function MoreScreen() {
   };
 
   const handleDeleteLoc = (locId: number, name: string) => {
+    const message = `Are you sure you want to delete "${name}"? All plants in this location will lose their location ID.`;
+
+    if (Platform.OS === 'web') {
+      const confirmDelete = window.confirm(message);
+      if (confirmDelete) {
+        (async () => {
+          try {
+            await removeLocation(locId);
+            setEditLocVisible(false);
+          } catch (e: any) {
+            alert(e.message || 'Failed to delete location');
+          }
+        })();
+      }
+      return;
+    }
+
     Alert.alert(
       'Confirm Delete',
-      `Are you sure you want to delete "${name}"? All plants in this location will lose their location ID.`,
+      message,
       [
         { text: 'Cancel', style: 'cancel' },
         {
@@ -161,6 +222,8 @@ export default function MoreScreen() {
     setEditLocEnv(loc.environment_type || 'outdoor');
     setEditLocWidth(String(loc.width_m || 5.0));
     setEditLocLength(String(loc.length_m || 5.0));
+    setEditLocLat(loc.latitude ? String(loc.latitude) : '');
+    setEditLocLng(loc.longitude ? String(loc.longitude) : '');
     setEditLocVisible(true);
   };
 
@@ -335,14 +398,14 @@ export default function MoreScreen() {
               locations.map((loc) => (
                 <ThemedView key={loc.id} type="backgroundElement" style={styles.card}>
                   <View style={styles.cardHeader}>
-                    <View style={{ flex: 1 }}>
+                    <TouchableOpacity onPress={() => openEditLoc(loc)} style={{ flex: 1 }}>
                       <ThemedText type="smallBold" style={styles.locNameText}>
                         {loc.name}
                       </ThemedText>
                       <ThemedText themeColor="textSecondary" style={styles.locDescText}>
                         {loc.description || 'No description provided'}
                       </ThemedText>
-                    </View>
+                    </TouchableOpacity>
                     <TouchableOpacity onPress={() => openEditLoc(loc)} style={styles.editLocBtn}>
                       <SymbolView name="pencil" size={16} tintColor="#10B981" />
                     </TouchableOpacity>
@@ -372,6 +435,14 @@ export default function MoreScreen() {
                       </ThemedText>
                     </View>
                   </View>
+                  {loc.latitude !== null && loc.longitude !== null && loc.latitude !== undefined && loc.longitude !== undefined && (
+                    <View style={styles.locGpsDisplay}>
+                      <SymbolView name="location.fill" size={12} tintColor="#10B981" />
+                      <ThemedText themeColor="textSecondary" style={styles.locGpsDisplayText}>
+                        GPS: {Number(loc.latitude).toFixed(5)}, {Number(loc.longitude).toFixed(5)}
+                      </ThemedText>
+                    </View>
+                  )}
                 </ThemedView>
               ))
             )}
@@ -662,6 +733,46 @@ export default function MoreScreen() {
               </View>
             </View>
 
+            <View style={styles.formRow}>
+              <View style={{ flex: 1 }}>
+                <ThemedText style={styles.fieldLabel}>Latitude (optional)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  placeholder="e.g. 37.7749"
+                  placeholderTextColor="#888"
+                  value={locLat}
+                  onChangeText={setLocLat}
+                  keyboardType="numeric"
+                />
+              </View>
+              <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                <ThemedText style={styles.fieldLabel}>Longitude (optional)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  placeholder="e.g. -122.4194"
+                  placeholderTextColor="#888"
+                  value={locLng}
+                  onChangeText={setLocLng}
+                  keyboardType="numeric"
+                />
+              </View>
+            </View>
+
+            <TouchableOpacity
+              style={styles.gpsBtn}
+              onPress={() => handleFetchCurrentLocation(false)}
+              disabled={gpsLoading}
+            >
+              {gpsLoading ? (
+                <ActivityIndicator color="#10B981" />
+              ) : (
+                <>
+                  <SymbolView name="location.fill" size={16} tintColor="#10B981" />
+                  <ThemedText style={styles.gpsBtnText}>Use Current Location (GPS)</ThemedText>
+                </>
+              )}
+            </TouchableOpacity>
+
             <TouchableOpacity
               style={styles.submitBtn}
               onPress={handleCreateLocation}
@@ -751,6 +862,46 @@ export default function MoreScreen() {
                 />
               </View>
             </View>
+
+            <View style={styles.formRow}>
+              <View style={{ flex: 1 }}>
+                <ThemedText style={styles.fieldLabel}>Latitude (optional)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  placeholder="e.g. 37.7749"
+                  placeholderTextColor="#888"
+                  value={editLocLat}
+                  onChangeText={setEditLocLat}
+                  keyboardType="numeric"
+                />
+              </View>
+              <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                <ThemedText style={styles.fieldLabel}>Longitude (optional)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  placeholder="e.g. -122.4194"
+                  placeholderTextColor="#888"
+                  value={editLocLng}
+                  onChangeText={setEditLocLng}
+                  keyboardType="numeric"
+                />
+              </View>
+            </View>
+
+            <TouchableOpacity
+              style={styles.gpsBtn}
+              onPress={() => handleFetchCurrentLocation(true)}
+              disabled={gpsLoading}
+            >
+              {gpsLoading ? (
+                <ActivityIndicator color="#10B981" />
+              ) : (
+                <>
+                  <SymbolView name="location.fill" size={16} tintColor="#10B981" />
+                  <ThemedText style={styles.gpsBtnText}>Use Current Location (GPS)</ThemedText>
+                </>
+              )}
+            </TouchableOpacity>
 
             <TouchableOpacity
               style={styles.submitBtn}
@@ -1089,5 +1240,39 @@ const styles = StyleSheet.create({
   deleteBtn: {
     backgroundColor: '#EF4444',
     marginTop: Spacing.two,
+  },
+  gpsBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: '#10B981',
+    borderRadius: Spacing.two,
+    paddingVertical: Spacing.two,
+    marginTop: Spacing.two,
+    marginBottom: Spacing.one,
+    gap: Spacing.two,
+    backgroundColor: 'rgba(16, 185, 129, 0.05)',
+  },
+  gpsBtnText: {
+    color: '#10B981',
+    fontWeight: 'bold',
+    fontSize: 14,
+  },
+  locGpsDisplay: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: Spacing.two,
+    gap: Spacing.one,
+    backgroundColor: 'rgba(16, 185, 129, 0.05)',
+    paddingVertical: 4,
+    paddingHorizontal: Spacing.two,
+    borderRadius: Spacing.one,
+    alignSelf: 'flex-start',
+  },
+  locGpsDisplayText: {
+    fontSize: 11,
+    color: '#10B981',
+    fontWeight: '600',
   },
 });

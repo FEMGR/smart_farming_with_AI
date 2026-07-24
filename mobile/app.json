@@ -33,6 +33,12 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow the Smart Farming app to access your device's location to automatically determine GPS coordinates for your planting areas."
+        }
       ]
     ],
     "experiments": {
