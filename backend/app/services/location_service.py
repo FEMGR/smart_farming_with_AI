@@ -51,6 +51,8 @@ def create_location(db: Session, location: LocationCreate, user_id: int):
         environment_type=location.environment_type,
         width_m=location.width_m,
         length_m=location.length_m,
+        latitude=location.latitude,
+        longitude=location.longitude,
         user_id=user_id,
     )
 
