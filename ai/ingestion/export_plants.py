@@ -6,6 +6,7 @@ The exported CSV is intended as raw plant input for the AI pipeline. It keeps
 watering-derived features out of the extract; those belong in
 feature_engineering.py.
 """
+# ai/ingestion/export_plants.py
 
 from __future__ import annotations
 
@@ -35,6 +36,8 @@ PLANT_COLUMNS = [
     "recommended_soil",
     "life_cycle",
     "environment_type",
+    "latitude",
+    "longitude",
     "plant_age_days",
     "height_cm",
     "growth_stage",
@@ -51,6 +54,12 @@ INTEGER_COLUMNS = [
     "species_id",
     "watering_interval_days",
     "plant_age_days",
+]
+
+FLOAT_COLUMNS = [
+    "latitude",
+    "longitude",
+    "height_cm",
 ]
 
 
@@ -205,6 +214,10 @@ def normalize_dataframe_types(df: pd.DataFrame) -> pd.DataFrame:
     for column in INTEGER_COLUMNS:
         if column in df.columns:
             df[column] = pd.to_numeric(df[column], errors="coerce").astype("Int64")
+
+    for column in FLOAT_COLUMNS:
+        if column in df.columns:
+            df[column] = pd.to_numeric(df[column], errors="coerce")
 
     return df
 

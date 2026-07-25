@@ -1,3 +1,5 @@
 {
-    "location": "location_id"
+    "location": "location_id",
+    "latitude": "latitude",
+    "longitude": "longitude"
 }

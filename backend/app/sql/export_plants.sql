@@ -26,6 +26,8 @@ SELECT
     c.recommended_soil,
     c.life_cycle,
     l.environment_type,
+    l.latitude::float AS latitude,
+    l.longitude::float AS longitude,
     CASE
         WHEN p.planting_date IS NULL THEN NULL
         ELSE (CURRENT_DATE - p.planting_date)::integer

@@ -1238,7 +1238,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   deleteBtn: {
-    backgroundColor: '#EF4444',
+    backgroundColor: '#ba3434',
     marginTop: Spacing.two,
   },
   gpsBtn: {
