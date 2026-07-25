@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   View,
@@ -12,11 +12,14 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SymbolView } from 'expo-symbols';
 import { useData } from '@/context/DataContext';
+import { useTheme } from '@/hooks/use-theme';
+import { fetchCurrentWeather, WeatherData } from '@/services/weather';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
 
 export default function HomeScreen() {
+  const themeColors = useTheme();
   const {
     plants,
     locations,
@@ -27,6 +30,27 @@ export default function HomeScreen() {
     refreshAll,
     refreshing,
   } = useData();
+
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+  const [weatherLoading, setWeatherLoading] = useState(false);
+  const [weatherError, setWeatherError] = useState<string | null>(null);
+
+  const handleFetchWeather = async () => {
+    setWeatherLoading(true);
+    setWeatherError(null);
+    try {
+      const firstLoc = locations.find((l) => l.latitude && l.longitude);
+      const data = await fetchCurrentWeather(
+        firstLoc ? Number(firstLoc.latitude) : undefined,
+        firstLoc ? Number(firstLoc.longitude) : undefined
+      );
+      setWeather(data);
+    } catch (e: any) {
+      setWeatherError(e.message || 'Failed to fetch weather data');
+    } finally {
+      setWeatherLoading(false);
+    }
+  };
 
   const dueCrops = needsWater.filter((p) => p.needs_water);
   const unreadAlerts = notifications.filter((n) => !n.is_read);
@@ -179,6 +203,90 @@ export default function HomeScreen() {
               <ThemedText themeColor="textSecondary" style={styles.metricLabel}>
                 Alerts
               </ThemedText>
+            </ThemedView>
+          </View>
+
+          {/* Live Weather Section */}
+          <View style={styles.section}>
+            <ThemedView type="backgroundElement" style={styles.weatherCard}>
+              <View style={styles.weatherHeaderRow}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: Spacing.two, flex: 1 }}>
+                  <SymbolView
+                    name={weather ? (weather.iconName as any) : 'cloud.sun.fill'}
+                    size={28}
+                    tintColor={themeColors.primary}
+                  />
+                  <View style={{ flex: 1 }}>
+                    <ThemedText type="smallBold">Farm Weather & Vitals</ThemedText>
+                    <ThemedText themeColor="textSecondary" style={{ fontSize: 12 }}>
+                      {weather ? `${weather.locationName} • ${weather.updatedAt}` : 'Real-time Forecast'}
+                    </ThemedText>
+                  </View>
+                </View>
+
+                <TouchableOpacity
+                  style={[styles.fetchWeatherBtn, { backgroundColor: themeColors.primary }, weatherLoading && { opacity: 0.7 }]}
+                  onPress={handleFetchWeather}
+                  disabled={weatherLoading}
+                >
+                  {weatherLoading ? (
+                    <ActivityIndicator size="small" color="#fff" />
+                  ) : (
+                    <>
+                      <SymbolView name={weather ? 'arrow.clockwise' : 'cloud.sun.fill'} size={14} tintColor="#fff" />
+                      <ThemedText style={styles.fetchWeatherBtnText}>
+                        {weather ? 'Refresh' : 'Fetch Weather'}
+                      </ThemedText>
+                    </>
+                  )}
+                </TouchableOpacity>
+              </View>
+
+              {weatherError && (
+                <View style={styles.weatherErrorBox}>
+                  <ThemedText style={styles.weatherErrorText}>{weatherError}</ThemedText>
+                </View>
+              )}
+
+              {weather ? (
+                <View style={{ marginTop: Spacing.two }}>
+                  <View style={styles.weatherGrid}>
+                    <View style={styles.weatherStatItem}>
+                      <ThemedText type="subtitle" style={{ color: themeColors.primary, fontWeight: '700' }}>
+                        {weather.temperature}°C
+                      </ThemedText>
+                      <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
+                        {weather.condition}
+                      </ThemedText>
+                    </View>
+
+                    <View style={styles.weatherStatItem}>
+                      <ThemedText type="smallBold">
+                        {weather.highTemp !== undefined ? `${weather.highTemp}° / ${weather.lowTemp}°` : '--'}
+                      </ThemedText>
+                      <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
+                        High / Low
+                      </ThemedText>
+                    </View>
+
+                    <View style={styles.weatherStatItem}>
+                      <ThemedText type="smallBold">{weather.windspeed} km/h</ThemedText>
+                      <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
+                        Wind Speed
+                      </ThemedText>
+                    </View>
+                  </View>
+
+                  <View style={[styles.adviceBox, { backgroundColor: themeColors.surfaceSubtle }]}>
+                    <SymbolView name="lightbulb.fill" size={16} tintColor={themeColors.primary} />
+                    <ThemedText style={styles.adviceText}>{weather.farmingAdvice}</ThemedText>
+                  </View>
+                </View>
+              ) : !weatherLoading ? (
+                <ThemedText themeColor="textSecondary" style={styles.weatherPromptText}>
+                  Tap "Fetch Weather" to load current weather conditions and smart irrigation advice.
+                </ThemedText>
+              ) : null}
             </ThemedView>
           </View>
 
@@ -468,5 +576,72 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontWeight: 'bold',
     color: '#374151',
+  },
+  weatherCard: {
+    padding: Spacing.three,
+    borderRadius: Spacing.three,
+  },
+  weatherHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: Spacing.two,
+  },
+  fetchWeatherBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 8,
+    paddingHorizontal: Spacing.three,
+    borderRadius: Spacing.two,
+    gap: Spacing.one,
+  },
+  fetchWeatherBtnText: {
+    color: '#fff',
+    fontSize: 13,
+    fontWeight: 'bold',
+  },
+  weatherPromptText: {
+    marginTop: Spacing.two,
+    fontSize: 13,
+    lineHeight: 18,
+  },
+  weatherGrid: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    paddingVertical: Spacing.two,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderColor: 'rgba(128, 128, 128, 0.15)',
+    marginVertical: Spacing.two,
+  },
+  weatherStatItem: {
+    alignItems: 'center',
+  },
+  weatherStatLabel: {
+    fontSize: 11,
+    marginTop: 2,
+  },
+  adviceBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: Spacing.two,
+    borderRadius: Spacing.two,
+    gap: Spacing.two,
+  },
+  adviceText: {
+    fontSize: 12,
+    flex: 1,
+    fontWeight: '500',
+  },
+  weatherErrorBox: {
+    backgroundColor: '#FEE2E2',
+    padding: Spacing.two,
+    borderRadius: Spacing.one,
+    marginTop: Spacing.two,
+  },
+  weatherErrorText: {
+    color: '#EF4444',
+    fontSize: 12,
   },
 });

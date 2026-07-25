@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActivityIndicator, useColorScheme } from 'react-native';
+import { ActivityIndicator } from 'react-native';
 import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 
@@ -7,20 +7,21 @@ import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import AppTabs from '@/components/app-tabs';
 import { AuthProvider, useAuth } from '@/context/AuthContext';
 import { DataProvider } from '@/context/DataContext';
+import { ThemePreferenceProvider, useThemePreference } from '@/context/ThemeContext';
 import { AuthScreen } from '@/components/auth-screen';
 
 SplashScreen.preventAutoHideAsync();
 
 function MainAppShell() {
   const { token, loading } = useAuth();
-  const colorScheme = useColorScheme();
+  const { colorScheme, colors } = useThemePreference();
 
   if (loading) {
     return (
       <ActivityIndicator
         size="large"
-        color="#10B981"
-        style={{ flex: 1, justifyContent: 'center', backgroundColor: colorScheme === 'dark' ? '#000' : '#fff' }}
+        color={colors.primary}
+        style={{ flex: 1, justifyContent: 'center', backgroundColor: colors.background }}
       />
     );
   }
@@ -35,10 +36,12 @@ function MainAppShell() {
 
 export default function RootLayout() {
   return (
-    <AuthProvider>
-      <DataProvider>
-        <MainAppShell />
-      </DataProvider>
-    </AuthProvider>
+    <ThemePreferenceProvider>
+      <AuthProvider>
+        <DataProvider>
+          <MainAppShell />
+        </DataProvider>
+      </AuthProvider>
+    </ThemePreferenceProvider>
   );
 }

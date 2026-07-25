@@ -16,6 +16,8 @@ import { SymbolView } from 'expo-symbols';
 import * as Location from 'expo-location';
 import { useData } from '@/context/DataContext';
 import { useAuth } from '@/context/AuthContext';
+import { useThemePreference } from '@/context/ThemeContext';
+import { useTheme } from '@/hooks/use-theme';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
@@ -26,6 +28,8 @@ const ENVIRONMENT_TYPES = ["outdoor", "indoor", "greenhouse"];
 
 export default function MoreScreen() {
   const { logout, email } = useAuth();
+  const { themePreference, setThemePreference } = useThemePreference();
+  const themeColors = useTheme();
   const {
     locations,
     recommendations,
@@ -614,13 +618,103 @@ export default function MoreScreen() {
           <ScrollView contentContainerStyle={styles.scrollList}>
             {/* User details */}
             <ThemedView type="backgroundElement" style={styles.profileCard}>
-              <SymbolView name="person.crop.circle.fill" size={64} tintColor="#10B981" />
+              <SymbolView name="person.crop.circle.fill" size={64} tintColor={themeColors.primary} />
               <ThemedText type="subtitle" style={styles.profileEmail}>
                 {email || 'Signed In User'}
               </ThemedText>
               <ThemedText themeColor="textSecondary" style={styles.profileSub}>
                 Authorized Farmer
               </ThemedText>
+            </ThemedView>
+
+            {/* App Appearance & Theme Settings */}
+            <ThemedView type="backgroundElement" style={styles.card}>
+              <ThemedText type="smallBold" style={{ marginBottom: Spacing.one }}>
+                App Theme & Color Mode
+              </ThemedText>
+              <ThemedText type="small" themeColor="textSecondary" style={{ marginBottom: Spacing.three }}>
+                Switch between Soft Forest Light, Premium Dark, or System Default.
+              </ThemedText>
+
+              <View style={styles.themeSelectorRow}>
+                <TouchableOpacity
+                  style={[
+                    styles.themeOptionCard,
+                    themePreference === 'light' && {
+                      borderColor: themeColors.primary,
+                      backgroundColor: themeColors.surface,
+                      borderWidth: 2,
+                    },
+                  ]}
+                  onPress={() => setThemePreference('light')}
+                >
+                  <SymbolView
+                    name="sun.max.fill"
+                    size={24}
+                    tintColor={themePreference === 'light' ? themeColors.primary : themeColors.textSecondary}
+                  />
+                  <ThemedText
+                    style={[
+                      styles.themeOptionText,
+                      themePreference === 'light' && { fontWeight: 'bold', color: themeColors.primary },
+                    ]}
+                  >
+                    Light
+                  </ThemedText>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                  style={[
+                    styles.themeOptionCard,
+                    themePreference === 'dark' && {
+                      borderColor: themeColors.primary,
+                      backgroundColor: themeColors.surface,
+                      borderWidth: 2,
+                    },
+                  ]}
+                  onPress={() => setThemePreference('dark')}
+                >
+                  <SymbolView
+                    name="moon.stars.fill"
+                    size={24}
+                    tintColor={themePreference === 'dark' ? themeColors.primary : themeColors.textSecondary}
+                  />
+                  <ThemedText
+                    style={[
+                      styles.themeOptionText,
+                      themePreference === 'dark' && { fontWeight: 'bold', color: themeColors.primary },
+                    ]}
+                  >
+                    Dark
+                  </ThemedText>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                  style={[
+                    styles.themeOptionCard,
+                    themePreference === 'system' && {
+                      borderColor: themeColors.primary,
+                      backgroundColor: themeColors.surface,
+                      borderWidth: 2,
+                    },
+                  ]}
+                  onPress={() => setThemePreference('system')}
+                >
+                  <SymbolView
+                    name="gearshape.fill"
+                    size={24}
+                    tintColor={themePreference === 'system' ? themeColors.primary : themeColors.textSecondary}
+                  />
+                  <ThemedText
+                    style={[
+                      styles.themeOptionText,
+                      themePreference === 'system' && { fontWeight: 'bold', color: themeColors.primary },
+                    ]}
+                  >
+                    System
+                  </ThemedText>
+                </TouchableOpacity>
+              </View>
             </ThemedView>
 
             {/* Target Server Config */}
@@ -1274,5 +1368,25 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: '#10B981',
     fontWeight: '600',
+  },
+  themeSelectorRow: {
+    flexDirection: 'row',
+    gap: Spacing.two,
+    marginTop: Spacing.one,
+  },
+  themeOptionCard: {
+    flex: 1,
+    paddingVertical: Spacing.three,
+    paddingHorizontal: Spacing.two,
+    borderRadius: Spacing.two,
+    borderWidth: 1,
+    borderColor: 'rgba(128, 128, 128, 0.25)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: Spacing.one,
+  },
+  themeOptionText: {
+    fontSize: 13,
+    fontWeight: '500',
   },
 });

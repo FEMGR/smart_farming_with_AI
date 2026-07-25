@@ -6,6 +6,7 @@ The exported CSV is intended as raw plant input for the AI pipeline. It keeps
 watering-derived features out of the extract; those belong in
 feature_engineering.py.
 """
+
 # ai/ingestion/export_plants.py
 
 from __future__ import annotations
