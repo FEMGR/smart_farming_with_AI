@@ -1,3 +1,6 @@
 {
-    "rainfall": "mm"
+    "temperature": "C",
+    "rainfall": "mm",
+    "wind_speed": "km/h",
+    "soil_moisture": "%"
 }

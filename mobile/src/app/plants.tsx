@@ -10,6 +10,7 @@ import {
   Switch,
   Alert,
   RefreshControl,
+  Platform,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SymbolView } from 'expo-symbols';
@@ -133,23 +134,42 @@ export default function PlantsScreen() {
     }
   };
 
+  const deletePlantById = async (plantId: number) => {
+    setFormLoading(true);
+    try {
+      await removePlant(plantId);
+      setEditModalVisible(false);
+      setSelectedPlant(null);
+    } catch (e: any) {
+      if (Platform.OS === 'web') {
+        window.alert(e.message || 'Failed to delete plant');
+      } else {
+        Alert.alert('Error', e.message || 'Failed to delete plant');
+      }
+    } finally {
+      setFormLoading(false);
+    }
+  };
+
   const handleDeletePlant = (plantId: number, plantName: string) => {
+    const message = `Are you sure you want to delete "${plantName}"?`;
+
+    if (Platform.OS === 'web') {
+      if (window.confirm(message)) {
+        deletePlantById(plantId);
+      }
+      return;
+    }
+
     Alert.alert(
       'Confirm Delete',
-      `Are you sure you want to delete ${plantName}?`,
+      message,
       [
         { text: 'Cancel', style: 'cancel' },
         {
           text: 'Delete',
           style: 'destructive',
-          onPress: async () => {
-            try {
-              await removePlant(plantId);
-              setEditModalVisible(false);
-            } catch (e: any) {
-              Alert.alert('Error', e.message || 'Failed to delete plant');
-            }
-          },
+          onPress: () => deletePlantById(plantId),
         },
       ]
     );
@@ -624,10 +644,14 @@ export default function PlantsScreen() {
 
             <TouchableOpacity
               style={[styles.submitBtn, styles.deleteBtn]}
-              onPress={() => handleDeletePlant(selectedPlant.id, selectedPlant.name)}
-              disabled={formLoading}
+              onPress={() => selectedPlant && handleDeletePlant(selectedPlant.id, selectedPlant.name)}
+              disabled={formLoading || !selectedPlant}
             >
-              <ThemedText style={styles.submitBtnText}>Delete Plant</ThemedText>
+              {formLoading ? (
+                <ActivityIndicator color="#fff" />
+              ) : (
+                <ThemedText style={styles.submitBtnText}>Delete Plant</ThemedText>
+              )}
             </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
