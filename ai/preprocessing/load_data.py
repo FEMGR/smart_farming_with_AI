@@ -217,6 +217,9 @@ def load_all_data() -> dict:
         if not path.is_file():
             continue
 
+        if path.name == "weather.json":
+            continue
+
         if path.suffix.lower() not in SUPPORTED_FILE_LOADERS:
             continue
 
