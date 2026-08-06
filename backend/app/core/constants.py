@@ -98,7 +98,7 @@ MAX_CACHE_SIZE = 500
 # =========================================
 
 SNAPSHOT_DIR = BASE_DIR / "backend" / "cache" / "species_snapshots"
-SNAPSHOT_MAX_AGE_HOURS = 24 * 30
+SNAPSHOT_MAX_AGE_HOURS = 24 * 30 * 12
 MAX_SNAPSHOT_FILES = 500
 
 # =========================================
@@ -106,5 +106,5 @@ MAX_SNAPSHOT_FILES = 500
 # =========================================
 
 SUGGESTION_CACHE_FILE = BASE_DIR / "backend" / "temp" / "species_suggestions.json"
-SUGGESTION_MAX_AGE_SECONDS = 60 * 60 * 24
+SUGGESTION_MAX_AGE_SECONDS = 60 * 60 * 24 * 30
 MAX_SUGGESTION_ENTRIES = 500

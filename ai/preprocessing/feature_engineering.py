@@ -59,6 +59,138 @@ TROPICAL_COUNTRIES = {
     "costa rica",
 }
 
+UNKNOWN_TEXT_VALUES = {"", "nan", "none", "null", "unknown"}
+
+COUNTRY_BOUNDING_BOXES = [
+    {
+        "country": "Indonesia",
+        "latitude_min": -11.2,
+        "latitude_max": 6.3,
+        "longitude_min": 94.7,
+        "longitude_max": 141.1,
+    },
+    {
+        "country": "Malaysia",
+        "latitude_min": 0.8,
+        "latitude_max": 7.4,
+        "longitude_min": 99.6,
+        "longitude_max": 119.4,
+    },
+    {
+        "country": "Singapore",
+        "latitude_min": 1.1,
+        "latitude_max": 1.5,
+        "longitude_min": 103.6,
+        "longitude_max": 104.1,
+    },
+    {
+        "country": "Thailand",
+        "latitude_min": 5.4,
+        "latitude_max": 20.5,
+        "longitude_min": 97.3,
+        "longitude_max": 105.7,
+    },
+    {
+        "country": "Philippines",
+        "latitude_min": 4.5,
+        "latitude_max": 21.3,
+        "longitude_min": 116.0,
+        "longitude_max": 127.0,
+    },
+]
+
+CITY_REFERENCES = [
+    {"city": "Bandung", "state": "West Java", "country": "Indonesia", "latitude": -6.9175, "longitude": 107.6191},
+    {"city": "Jakarta", "state": "Jakarta", "country": "Indonesia", "latitude": -6.2088, "longitude": 106.8456},
+    {"city": "Surabaya", "state": "East Java", "country": "Indonesia", "latitude": -7.2575, "longitude": 112.7521},
+    {"city": "Yogyakarta", "state": "Yogyakarta", "country": "Indonesia", "latitude": -7.7956, "longitude": 110.3695},
+    {"city": "Semarang", "state": "Central Java", "country": "Indonesia", "latitude": -6.9667, "longitude": 110.4167},
+    {"city": "Denpasar", "state": "Bali", "country": "Indonesia", "latitude": -8.6705, "longitude": 115.2126},
+    {"city": "Medan", "state": "North Sumatra", "country": "Indonesia", "latitude": 3.5952, "longitude": 98.6722},
+    {"city": "Makassar", "state": "South Sulawesi", "country": "Indonesia", "latitude": -5.1477, "longitude": 119.4327},
+    {"city": "Singapore", "state": "Singapore", "country": "Singapore", "latitude": 1.3521, "longitude": 103.8198},
+    {"city": "Kuala Lumpur", "state": "Kuala Lumpur", "country": "Malaysia", "latitude": 3.1390, "longitude": 101.6869},
+    {"city": "Bangkok", "state": "Bangkok", "country": "Thailand", "latitude": 13.7563, "longitude": 100.5018},
+    {"city": "Manila", "state": "Metro Manila", "country": "Philippines", "latitude": 14.5995, "longitude": 120.9842},
+]
+
+MASTER_FEATURE_COLUMNS = [
+    "user_id",
+    "plant_id",
+    "location_id",
+    "sensor_id",
+    "species_id",
+    "plant_name",
+    "scientific_name",
+    "life_cycle",
+    "environment_type",
+    "watering_interval_days",
+    "recommended_soil",
+    "recommended_sunlight",
+    "propagation_method",
+    "pest_susceptibility",
+    "growth_stage",
+    "temperature",
+    "humidity",
+    "soil_moisture",
+    "soil_ph",
+    "soil_temp_c",
+    "rainfall",
+    "rain_probability",
+    "wind_speed",
+    "light_intensity",
+    "latitude",
+    "longitude",
+    "country",
+    "state",
+    "city",
+    "timezone",
+    "year",
+    "month",
+    "day",
+    "hour",
+    "day_of_week",
+    "week_of_year",
+    "plant_age_days",
+    "plant_age_group",
+    "current_height_cm",
+    "height_cm",
+    "season",
+    "hemisphere",
+    "is_tropical_country",
+    "temperature_f",
+    "temperature_range",
+    "hot_day",
+    "cold_day",
+    "optimal_temperature",
+    "humidity_level",
+    "high_humidity",
+    "low_humidity",
+    "optimal_humidity",
+    "soil_status",
+    "dry_soil",
+    "wet_soil",
+    "optimal_soil",
+    "growth_progress",
+    "days_since_watered",
+    "watering_due",
+    "irrigation_score",
+    "irrigation_needed",
+    "irrigation_priority",
+    "watering_needed",
+    "watering_amount_liters",
+    "water_stress",
+    "dryness_index",
+    "heat_index",
+    "evaporation_risk",
+    "good_growing_conditions",
+    "future_height_cm",
+    "growth_rate",
+    "disease_name",
+    "disease_risk",
+    "yield_kg",
+]
+
 # ==========================================================
 # Helper Functions
 # ==========================================================
@@ -74,6 +206,158 @@ def safe_lower(value) -> str:
         return ""
 
     return str(value).strip().lower()
+
+
+def is_unknown_text(value) -> bool:
+    return safe_lower(value) in UNKNOWN_TEXT_VALUES
+
+
+def haversine_distance_km(latitude_a: float, longitude_a: float, latitude_b: float, longitude_b: float) -> float:
+    """
+    Calculate distance between two GPS points.
+    """
+
+    earth_radius_km = 6371.0
+    lat_a = np.radians(latitude_a)
+    lon_a = np.radians(longitude_a)
+    lat_b = np.radians(latitude_b)
+    lon_b = np.radians(longitude_b)
+
+    delta_lat = lat_b - lat_a
+    delta_lon = lon_b - lon_a
+
+    haversine = np.sin(delta_lat / 2) ** 2 + np.cos(lat_a) * np.cos(lat_b) * np.sin(delta_lon / 2) ** 2
+
+    return float(earth_radius_km * 2 * np.arcsin(np.sqrt(haversine)))
+
+
+def infer_country_from_coordinates(latitude: float, longitude: float) -> str:
+    for country in COUNTRY_BOUNDING_BOXES:
+        if country["latitude_min"] <= latitude <= country["latitude_max"] and country["longitude_min"] <= longitude <= country["longitude_max"]:
+            return country["country"]
+
+    return "Unknown"
+
+
+def infer_country_from_timezone(timezone: str) -> str:
+    timezone = safe_lower(timezone)
+
+    timezone_country = {
+        "asia/jakarta": "Indonesia",
+        "asia/makassar": "Indonesia",
+        "asia/jayapura": "Indonesia",
+        "asia/kuala_lumpur": "Malaysia",
+        "asia/singapore": "Singapore",
+        "asia/bangkok": "Thailand",
+        "asia/manila": "Philippines",
+    }
+
+    return timezone_country.get(timezone, "Unknown")
+
+
+def infer_city_from_coordinates(latitude: float, longitude: float, max_distance_km: float = 80.0) -> dict[str, str]:
+    nearest_city = None
+    nearest_distance = None
+
+    for city in CITY_REFERENCES:
+        distance = haversine_distance_km(
+            latitude,
+            longitude,
+            city["latitude"],
+            city["longitude"],
+        )
+
+        if nearest_distance is None or distance < nearest_distance:
+            nearest_city = city
+            nearest_distance = distance
+
+    if nearest_city is None or nearest_distance is None or nearest_distance > max_distance_km:
+        return {
+            "city": "Unknown",
+            "state": "Unknown",
+            "country": "Unknown",
+        }
+
+    return {
+        "city": nearest_city["city"],
+        "state": nearest_city["state"],
+        "country": nearest_city["country"],
+    }
+
+
+def fill_unknown_values(df: pd.DataFrame, column: str, values: pd.Series) -> pd.DataFrame:
+    if column not in df.columns:
+        df[column] = values
+        return df
+
+    unknown_mask = df[column].apply(is_unknown_text)
+    df.loc[unknown_mask, column] = values.loc[unknown_mask]
+
+    return df
+
+
+def add_inferred_location_fields(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Infer country, state, and city from latitude/longitude when possible.
+    """
+
+    if not {"latitude", "longitude"}.issubset(df.columns):
+        return df
+
+    coordinates = df[["latitude", "longitude"]].apply(pd.to_numeric, errors="coerce")
+    inferred_records = []
+
+    for index, row in coordinates.iterrows():
+        latitude = row["latitude"]
+        longitude = row["longitude"]
+
+        if pd.isna(latitude) or pd.isna(longitude):
+            inferred_records.append({"city": "Unknown", "state": "Unknown", "country": "Unknown"})
+            continue
+
+        inferred = infer_city_from_coordinates(latitude, longitude)
+
+        if is_unknown_text(inferred["country"]):
+            inferred["country"] = infer_country_from_coordinates(latitude, longitude)
+
+        if is_unknown_text(inferred["country"]) and "timezone" in df.columns:
+            inferred["country"] = infer_country_from_timezone(df.loc[index, "timezone"])
+
+        inferred_records.append(inferred)
+
+    inferred_df = pd.DataFrame(inferred_records, index=df.index)
+
+    for column in ["country", "state", "city"]:
+        df = fill_unknown_values(df, column, inferred_df[column])
+
+    return df
+
+
+def add_derived_plant_age(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calculate plant_age_days from planting_date and timestamp/current date.
+    """
+
+    if "planting_date" not in df.columns:
+        return df
+
+    planting_date = pd.to_datetime(df["planting_date"], errors="coerce")
+
+    if "timestamp" in df.columns:
+        reference_date = pd.to_datetime(df["timestamp"], errors="coerce")
+    else:
+        reference_date = pd.Series(pd.Timestamp.today().normalize(), index=df.index)
+
+    plant_age_days = (reference_date.dt.normalize() - planting_date.dt.normalize()).dt.days
+    plant_age_days = plant_age_days.clip(lower=0)
+
+    if "plant_age_days" not in df.columns:
+        df["plant_age_days"] = plant_age_days
+    else:
+        existing_age = pd.to_numeric(df["plant_age_days"], errors="coerce")
+        df["plant_age_days"] = existing_age.fillna(plant_age_days)
+
+    return df
 
 
 # ==========================================================
@@ -536,7 +820,7 @@ def add_plant_features(df: pd.DataFrame) -> pd.DataFrame:
 
     Expected columns (if available):
         plant_type
-        plant_age
+        plant_age_days
         growth_stage
         watering_interval_days
         last_watered
@@ -555,12 +839,12 @@ def add_plant_features(df: pd.DataFrame) -> pd.DataFrame:
     # Plant Age Group
     # ------------------------------------------------------
 
-    if "plant_age" in df.columns:
+    if "plant_age_days" in df.columns:
 
         conditions = [
-            df["plant_age"] <= 30,
-            df["plant_age"].between(31, 90),
-            df["plant_age"] > 90,
+            df["plant_age_days"] <= 30,
+            df["plant_age_days"].between(31, 90),
+            df["plant_age_days"] > 90,
         ]
 
         labels = [
@@ -580,17 +864,20 @@ def add_plant_features(df: pd.DataFrame) -> pd.DataFrame:
     # ------------------------------------------------------
 
     if "growth_stage" in df.columns:
+        growth_stage = df["growth_stage"].astype(str).str.strip().str.lower()
+        has_growth_stage_data = (~growth_stage.isin(UNKNOWN_TEXT_VALUES)).any()
 
-        growth_map = {
-            "seed": 0,
-            "seedling": 1,
-            "vegetative": 2,
-            "flowering": 3,
-            "fruiting": 4,
-            "mature": 5,
-        }
+        if has_growth_stage_data:
+            growth_map = {
+                "seed": 0,
+                "seedling": 1,
+                "vegetative": 2,
+                "flowering": 3,
+                "fruiting": 4,
+                "mature": 5,
+            }
 
-        df["growth_progress"] = df["growth_stage"].astype(str).str.lower().map(growth_map).fillna(-1).astype(int)
+            df["growth_progress"] = growth_stage.map(growth_map).fillna(-1).astype(int)
 
     # ------------------------------------------------------
     # Days Since Last Watering
@@ -636,7 +923,7 @@ def add_irrigation_features(df: pd.DataFrame) -> pd.DataFrame:
 
     print("Adding irrigation features...")
 
-    irrigation_score = np.zeros(len(df))
+    irrigation_score = pd.Series(0.0, index=df.index)
 
     # Dry soil contributes the most
     if "soil_moisture" in df.columns:
@@ -686,6 +973,33 @@ def add_irrigation_features(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def add_target_aliases(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Add canonical target aliases when equivalent raw fields already exist.
+    """
+
+    if "light" in df.columns and "light_intensity" not in df.columns:
+        df["light_intensity"] = df["light"]
+
+    if "height_cm" in df.columns and "current_height_cm" not in df.columns:
+        df["current_height_cm"] = df["height_cm"]
+
+    if "irrigation_needed" in df.columns and "watering_needed" not in df.columns:
+        df["watering_needed"] = df["irrigation_needed"]
+
+    return df
+
+
+def select_master_feature_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Keep the broad master feature repository columns in a stable order.
+    """
+
+    selected_columns = [column for column in MASTER_FEATURE_COLUMNS if column in df.columns]
+
+    return df.loc[:, selected_columns]
+
+
 # ==========================================================
 # Feature Engineering Pipeline
 # ==========================================================
@@ -697,6 +1011,12 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     print("\nStarting feature engineering...\n")
+
+    df = df.copy()
+
+    df = add_inferred_location_fields(df)
+
+    df = add_derived_plant_age(df)
 
     df = add_time_features(df)
 
@@ -713,6 +1033,10 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     df = add_plant_features(df)
 
     df = add_irrigation_features(df)
+
+    df = add_target_aliases(df)
+
+    df = select_master_feature_columns(df)
 
     print("\nFeature engineering completed.\n")
 
@@ -835,16 +1159,6 @@ def main():
     featured_df = featured_df.loc[:, ~featured_df.columns.duplicated()]
 
     # ------------------------------------------------------
-    # Sort columns alphabetically
-    # (Optional but makes inspection easier)
-    # ------------------------------------------------------
-
-    featured_df = featured_df.reindex(
-        sorted(featured_df.columns),
-        axis=1,
-    )
-
-    # ------------------------------------------------------
     # Preview Result
     # ------------------------------------------------------
 
@@ -887,7 +1201,14 @@ def test_feature_engineering():
 
         assert len(engineered) == len(df)
 
-        assert len(engineered.columns) >= len(df.columns)
+        required_columns = {column for column in MASTER_FEATURE_COLUMNS if column in df.columns}
+        assert required_columns.issubset(engineered.columns)
+
+        duplicate_suffixes = ("_x", "_y")
+        assert not any(column.endswith(duplicate_suffixes) for column in engineered.columns)
+
+        if "growth_stage" not in df.columns or df["growth_stage"].isna().all():
+            assert "growth_progress" not in engineered.columns
 
         assert engineered.isnull().sum().sum() >= 0
 
@@ -921,8 +1242,6 @@ if __name__ == "__main__":
         print(featured_dataset.head())
 
         print("\n")
-
-        test_feature_engineering()
 
         print("\nDone.")
 

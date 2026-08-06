@@ -24,7 +24,8 @@
       "flower",
       "leaf",
       "root",
-      "seed"
+      "seed",
+      "fruit"
     ],
     "life_cycle": "perennial",
     "growth_habit": null,
@@ -44,7 +45,7 @@
     ],
     "soil_ph_min": null,
     "soil_ph_max": null,
-    "growth_speed": null,
+    "growth_speed": "high",
     "climate_notes": null,
     "soil_notes": "Prefers a sunny sheltered position in a rich light well-drained soil[1, 16]. Prefers a pH of at least 6.5[200]. Plants tolerate a pH in the range of 4.5 to 8.3. Onions are best grown in a Mediterranean climate, the hot dry summers ensuring that the bulbs are ripened fully[200]. For best growth, however, cool weather is desirable at the early stages of growth[200]. Plants are frost-tolerant but prolonged temperatures below 10°c cause the bulb to flower[200]. Optimum growth takes place at temperatures between 20 and 25°c[200]. Bulb formation takes place in response to long-day conditions[200]. Plants are perennial but the cultivated forms often die after flowering in their second year though they can perennate by means of off-sets[1]. The onion was one of the first plants to be cultivated for food and medicine[244]. It is very widely cultivated in most parts of the world for its edible bulb and leaves, there are many named varieties capable of supplying bulbs all the year round[200]. This species was derived in cultivation from A. oschaninii[203]. Most forms are grown mainly for their edible bulbs but a number of varieties, the spring onions and everlasting onions, have been selected for their edible leaves. There are several sub-species:- Allium cepa 'Perutile' is the everlasting onion with a growth habit similar to chives, it is usually evergreen and can supply fresh leaves all winter. Allium cepa aggregatum includes the shallot and the potato onion. These are true perennials, the bulb growing at or just below the surface of the ground and increasing by division. Plants can be divided annually when they die down in the summer to provide bulbs for eating and propagation. Allium cepa proliferum is the tree onion, it produces bulbils instead of flowers in the inflorescence. These bulbils have a nice strong onion flavour and can be used raw, cooked or pickled. Onions grow well with most plants, especially roses, carrots, beet and chamomile, but they inhibit the growth of legumes[18, 20, 54, 201]. This plant is a bad companion for alfalfa, each species negatively affecting the other[201]. Members of this genus are rarely if ever troubled by browsing deer[233]. Alliums are typically harvested in late spring to early summer, when the bulbs mature and the tops begin to yellow. Allium species typically flower in late spring to early summer, depending on the species and local climate conditions. Allium species generally have a moderate growth rate, with bulbs typically taking about 100 to 150 days from planting to harvest, depending on the variety and growing conditions.",
     "water_notes": "Prefers moist soil.",
@@ -55,7 +56,9 @@
   "germination": {
     "propagation_methods": [
       "bulb",
-      "seed"
+      "seed",
+      "seed_propagation",
+      "tissue_culture"
     ],
     "propagation_notes": "Seed. Early sowings can be made in February in a greenhouse to be planted out in late spring. The main sowing is made in March or April in an outdoor seedbed, this bed must be very well prepared. A sowing can also be made in an outdoor seedbed in August of winter hardy varieties (the Japanese onions are very popular for this). These overwinter and provide an early crop of onion bulbs in June of the following year. Onion sets can be planted in March or April. Sets are produced by sowing seed rather thickly in an outdoor seedbed in May or June. The soil should not be too rich and the seedlings will not grow very large in their first year. The plants will produce a small bulb about 1 - 2cm in diameter, this is harvested in late summer, stored in a cool frost-free place over winter and then planted out in April. A proportion of the bulbs will run quickly to seed but most should grow on to produce good sized bulbs.",
     "germination_days_min": null,
@@ -74,7 +77,7 @@
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
+    "watering_interval_days": 4,
     "watering_notes": null,
     "pruning_notes": null,
     "fertilizer_notes": null,
@@ -199,12 +202,12 @@
     "identity.family": "GBIF",
     "identity.synonyms": "Plants For A Future",
     "identity.common_names": "Plants For A Future",
-    "classification.edible_parts": "Plants For A Future",
+    "classification.edible_parts": "Perenual",
     "classification.use_categories": "Plants For A Future",
     "classification.life_cycle": "Plants For A Future",
     "classification.botanical_life_cycle": "Plants For A Future",
     "classification.edible": "Plants For A Future",
-    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_methods": "Perenual",
     "germination.propagation_notes": "Plants For A Future",
     "growth.sunlight": "Plants For A Future",
     "growth.soil_type": "Plants For A Future",
@@ -221,7 +224,9 @@
     "biodiversity.attracts_beneficial_insects": "Plants For A Future",
     "biodiversity.pollinator_support": "Plants For A Future",
     "biodiversity.pest_confuser": "Plants For A Future",
-    "biodiversity.biodiversity_notes": "Plants For A Future"
+    "biodiversity.biodiversity_notes": "Plants For A Future",
+    "growth.growth_speed": "Perenual",
+    "care.watering_interval_days": "Perenual"
   },
   "source_metadata": {
     "sources": [
@@ -324,9 +329,27 @@
         ],
         "confidence": 0.3,
         "last_verified_at": "2026-06-17T04:35:48.215842+00:00"
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/plant-species-database-search-finder/species/667",
+        "status": "snapshot",
+        "trusted_detail": true,
+        "relevance_score": null,
+        "fields_provided": [
+          "identity",
+          "classification.life_cycle",
+          "growth.sunlight",
+          "growth.water_need",
+          "growth.growth_speed",
+          "germination.propagation_methods",
+          "care.watering_interval_days"
+        ],
+        "confidence": 0.98,
+        "last_verified_at": "2026-07-31T05:39:30.433250+00:00"
       }
     ],
-    "last_merged_at": "2026-06-17T04:44:11.894298+00:00"
+    "last_merged_at": "2026-07-31T05:39:30.452954+00:00"
   },
   "missing_fields": [
     "germination.germination_days_min",

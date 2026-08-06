@@ -140,8 +140,7 @@ def create_mapping(df):
 
         elif choice == "e":
 
-            mapping = edit_mapping(df, mapping)
-
+            mapping, confidence = edit_mapping(df, mapping, confidence)
         else:
 
             raise KeyboardInterrupt("Mapping cancelled.")
@@ -183,42 +182,44 @@ def confirm_mapping():
             return choice
 
 
-def edit_mapping(df, mapping):
+def edit_mapping(df, mapping, confidence):
+    try:
+        canonical_list = list(CANONICAL_COLUMNS.keys())
 
-    canonical_list = list(CANONICAL_COLUMNS.keys())
+        print("\nFields")
+        for i, field in enumerate(canonical_list, start=1):
+            print(f"{i}. {field}")
 
-    print("\nFields")
+        selection = int(input("\nField to modify: "))
+        canonical = canonical_list[selection - 1]  # e.g., 'timestamp'
 
-    for i, field in enumerate(canonical_list, start=1):
+        # FIX: Safely remove old references to this canonical value
+        # without destroying other correct columns
+        for key in list(mapping.keys()):
+            if mapping[key] == canonical:
+                del mapping[key]
 
-        print(f"{i}. {field}")
+        print("\nColumns")
+        print("0. None")
+        for i, column in enumerate(df.columns, start=1):
+            print(f"{i}. {str(column)}")
 
-    selection = int(input("\nField to modify: "))
+        selected = int(input("Column: "))
 
-    canonical = canonical_list[selection - 1]
+        if selected == 0:
+            if canonical in confidence:
+                del confidence[canonical]
+        else:
+            chosen_column = df.columns[selected - 1]
 
-    print("\nColumns")
+            # Key is the original CSV column name, Value is the canonical name
+            mapping[chosen_column] = canonical
+            confidence[canonical] = 100.0
 
-    print("0. None")
+    except Exception as e:
+        print(f"\n[Warning] An error occurred during editing: {e}")
 
-    for i, column in enumerate(df.columns, start=1):
-
-        print(f"{i}. {column}")
-
-    selected = int(input("Column: "))
-
-    # Remove old mapping
-    for key in list(mapping.keys()):
-
-        if mapping[key] == canonical:
-
-            del mapping[key]
-
-    if selected != 0:
-
-        mapping[df.columns[selected - 1]] = canonical
-
-    return mapping
+    return mapping, confidence
 
 
 # -----------------------------------------------------

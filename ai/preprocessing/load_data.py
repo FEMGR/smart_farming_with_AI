@@ -1,34 +1,55 @@
 """
-Purpose
--------
-Load data from various sources and convert it into pandas DataFrames.
+Purpose: Load raw data from various sources and convert it into pandas DataFrames.
 
-This is the first step of the AI preprocessing pipeline.
-
-                load_data.py
-                     │
-      ┌──────────────┼──────────────┐
-      │              │              │
-      ▼              ▼              ▼
- load_csv()    load_database()   load_api()
-      │              │              │
-      └──────────────┼──────────────┘
-                     ▼
-               pandas DataFrame
-                     ▼
-             clean_data.py
-                     ▼
-             normalize.py
-                     ▼
-             merge_data.py
-                     ▼
-             train_model.py
+Raw Data
+    │
+    ▼
+load_data.py
+    │
+    ▼
+standardize_schema.py
+    │
+    ▼
+standardize_units.py
+    │
+    ▼
+clean_data.py
+    │
+    ▼
+normalize.py
+    │
+    ▼
+merge_data.py
+    │
+    ▼
+feature_engineering.py
+    │
+    ▼
+featured_data.csv      ← Master feature repository
+    │
+    ▼
+feature_selection.py
+    │
+    ├────────► irrigation_training.csv
+    ├────────► growth_training.csv
+    ├────────► disease_training.csv
+    └────────► yield_training.csv
+    │
+    ▼
+split_data.py
+    │
+    ▼
+train_model.py
+    │
+    ▼
+evaluate_model.py
 """
 
 # ai/prepocessing/load.py
 
 from pathlib import Path
 
+import json
 import pandas as pd
 import requests
 from sqlalchemy import create_engine
@@ -59,6 +80,15 @@ def build_path(filename: str) -> Path:
     """
 
     return RAW_DATA_DIR / filename
+
+
+def flatten_weather_json(path: Path) -> pd.DataFrame:
+    with open(path, "r", encoding="utf-8") as file:
+        data = json.load(file)
+
+    flat = pd.json_normalize(data)
+
+    return flat
 
 
 # =====================================================
@@ -110,6 +140,38 @@ DATASET_NAME_ALIASES = {
     "sensor_readings": "sensor",
 }
 
+# =====================================================
+# File Processors
+# =====================================================
+
+
+def process_csv(df: pd.DataFrame, path: Path) -> pd.DataFrame:
+    return df
+
+
+def process_excel(df: pd.DataFrame, path: Path) -> pd.DataFrame:
+    return df
+
+
+def process_parquet(df: pd.DataFrame, path: Path) -> pd.DataFrame:
+    return df
+
+
+def process_json(df: pd.DataFrame, path: Path) -> pd.DataFrame:
+    if path.name == "weather.json":
+        return flatten_weather_json(path)
+
+    return df
+
+
+SUPPORTED_FILE_PROCESSORS = {
+    ".csv": process_csv,
+    ".xlsx": process_excel,
+    ".xls": process_excel,
+    ".json": process_json,
+    ".parquet": process_parquet,
+}
+
 
 def get_dataset_name(path: Path, existing_names: set[str]) -> str:
     """
@@ -133,12 +195,17 @@ def get_dataset_name(path: Path, existing_names: set[str]) -> str:
 
 def load_data_file(path: Path) -> pd.DataFrame:
     """
-    Load one supported data file from ai/datasets/raw/.
+    Load a supported file and process it if necessary.
     """
 
-    loader = SUPPORTED_FILE_LOADERS[path.suffix.lower()]
+    suffix = path.suffix.lower()
 
-    return loader(path.name)
+    loader = SUPPORTED_FILE_LOADERS[suffix]
+    processor = SUPPORTED_FILE_PROCESSORS[suffix]
+
+    df = loader(path.name)
+
+    return processor(df, path)
 
 
 # =====================================================
@@ -203,11 +270,7 @@ def load_sensor():
 def load_all_data() -> dict:
     """
     Load all supported datasets from ai/datasets/raw/.
-
-    Returns
-    -------
-    dict
-        Dictionary of pandas DataFrames.
+    Returns: Dictionary of pandas DataFrames.
     """
 
     datasets = {}
@@ -217,14 +280,18 @@ def load_all_data() -> dict:
         if not path.is_file():
             continue
 
-        if path.name == "weather.json":
-            continue
+        suffix = path.suffix.lower()
 
-        if path.suffix.lower() not in SUPPORTED_FILE_LOADERS:
+        if suffix not in SUPPORTED_FILE_LOADERS:
             continue
 
         dataset_name = get_dataset_name(path, set(datasets))
-        datasets[dataset_name] = load_data_file(path)
+
+        try:
+            datasets[dataset_name] = load_data_file(path)
+
+        except Exception as error:
+            print(f"Skipping {path.name}: {error}")
 
     return datasets
 

@@ -1,0 +1,3054 @@
+"""
+generate_training_data.py
+"""
+
+from pathlib import Path
+from datetime import datetime, timedelta
+import random
+import math
+import logging
+import sys
+
+import numpy as np
+import pandas as pd
+
+# ==========================================================
+# Project Paths
+# ==========================================================
+
+# generate_training_data.py
+#        │
+#      training/
+#        │
+#        ai/
+#
+
+AI_FOLDER = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = AI_FOLDER.parent
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from ai.preprocessing.feature_selection import build_training_datasets
+
+RAW_DATA_DIR = AI_FOLDER / "datasets" / "raw"
+PROCESSED_DATA_DIR = AI_FOLDER / "datasets" / "processed"
+
+PLANTS_FILE = RAW_DATA_DIR / "plants.csv"
+SENSOR_FILE = RAW_DATA_DIR / "sensor_readings.csv"
+WEATHER_FILE = RAW_DATA_DIR / "weather.csv"
+
+OUTPUT_FEATURED_FILE = PROCESSED_DATA_DIR / "featured_data_generated.csv"
+
+LOG_FOLDER = AI_FOLDER / "logs"
+LOG_FOLDER.mkdir(parents=True, exist_ok=True)
+
+LOG_FILE = LOG_FOLDER / "generate_training_data.log"
+
+# ==========================================================
+# Logging
+# ==========================================================
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s",
+    handlers=[
+        logging.FileHandler(LOG_FILE),
+        logging.StreamHandler()
+    ]
+)
+
+logger = logging.getLogger(__name__)
+
+# ==========================================================
+# Random Seed
+# ==========================================================
+
+RANDOM_SEED = 42
+
+random.seed(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+
+# ==========================================================
+# Dataset Configuration
+# ==========================================================
+
+NUM_SIMULATION_DAYS = 365
+
+READING_INTERVAL_MINUTES = 60
+
+START_DATE = datetime(2026, 1, 1, 0, 0, 0)
+
+DEFAULT_TIMEZONE = "Asia/Jakarta"
+
+# ==========================================================
+# Environmental Ranges
+# ==========================================================
+
+TEMPERATURE_RANGE = (18.0, 36.0)
+
+HUMIDITY_RANGE = (40.0, 98.0)
+
+SOIL_MOISTURE_RANGE = (10.0, 80.0)
+
+SOIL_PH_RANGE = (5.0, 7.8)
+
+LIGHT_INTENSITY_RANGE = (0, 100000)
+
+RAINFALL_RANGE = (0.0, 60.0)
+
+RAIN_PROBABILITY_RANGE = (0, 100)
+
+WIND_SPEED_RANGE = (0.0, 30.0)
+
+# ==========================================================
+# Geographic Defaults
+# ==========================================================
+
+DEFAULT_LATITUDE = -6.9175
+DEFAULT_LONGITUDE = 107.6191
+
+LATITUDE_NOISE = 0.015
+LONGITUDE_NOISE = 0.015
+
+# ==========================================================
+# Plant Defaults
+# ==========================================================
+
+DEFAULT_WATERING_INTERVAL = 3
+
+DEFAULT_SOIL = "Well-drained"
+
+DEFAULT_LIFE_CYCLE = "Annual"
+
+DEFAULT_ENVIRONMENT = "outdoor"
+
+DEFAULT_SUNLIGHT = "full sun"
+
+DEFAULT_PROPAGATION = "Seed Propagation"
+
+DEFAULT_HEIGHT_CM = 5.0
+
+DEFAULT_PLANT_AGE = 1
+
+# ==========================================================
+# Growth Stages
+# ==========================================================
+
+GROWTH_STAGES = [
+    "Seed",
+    "Seedling",
+    "Vegetative",
+    "Flowering",
+    "Fruiting",
+    "Harvest"
+]
+
+# ==========================================================
+# Seasons
+# ==========================================================
+
+SEASON_BY_MONTH = {
+    1: "Wet",
+    2: "Wet",
+    3: "Wet",
+    4: "Transition",
+    5: "Dry",
+    6: "Dry",
+    7: "Dry",
+    8: "Dry",
+    9: "Transition",
+    10: "Wet",
+    11: "Wet",
+    12: "Wet"
+}
+
+# ==========================================================
+# Labels
+# ==========================================================
+
+WATERING_LABELS = {
+    True: "Yes",
+    False: "No"
+}
+
+logger.info("Configuration loaded successfully.")
+logger.info("Random seed = %s", RANDOM_SEED)
+logger.info("Simulation days = %s", NUM_SIMULATION_DAYS)
+logger.info("Reading interval = %s minutes", READING_INTERVAL_MINUTES)
+
+# ==========================================================
+# Helper Functions
+# ==========================================================
+
+def random_float(minimum: float, maximum: float, decimals: int = 2) -> float:
+    """
+    Generate a random floating-point number.
+    """
+    return round(random.uniform(minimum, maximum), decimals)
+
+
+def random_integer(minimum: int, maximum: int) -> int:
+    """
+    Generate a random integer.
+    """
+    return random.randint(minimum, maximum)
+
+
+def random_choice(options):
+    """
+    Return a random item from a sequence.
+    """
+    return random.choice(options)
+
+
+def safe_string(value, default=""):
+    """
+    Replace NaN or empty strings with a default value.
+    """
+    if pd.isna(value):
+        return default
+
+    value = str(value).strip()
+
+    if value == "":
+        return default
+
+    return value
+
+
+def safe_float(value, default=0.0):
+    """
+    Convert value to float safely.
+    """
+    try:
+        if pd.isna(value):
+            return default
+        return float(value)
+    except Exception:
+        return default
+
+
+def safe_int(value, default=0):
+    """
+    Convert value to integer safely.
+    """
+    try:
+        if pd.isna(value):
+            return default
+        return int(float(value))
+    except Exception:
+        return default
+
+
+def normalize_boolean(value):
+    """
+    Convert common boolean representations.
+    """
+    if pd.isna(value):
+        return False
+
+    if isinstance(value, bool):
+        return value
+
+    value = str(value).strip().lower()
+
+    return value in (
+        "true",
+        "1",
+        "yes",
+        "y",
+        "enabled",
+    )
+
+
+def create_timestamp_series():
+    """
+    Create every timestamp used during simulation.
+    """
+    total_minutes = NUM_SIMULATION_DAYS * 24 * 60
+
+    timestamps = []
+
+    current = START_DATE
+
+    while current < START_DATE + timedelta(minutes=total_minutes):
+        timestamps.append(current)
+        current += timedelta(minutes=READING_INTERVAL_MINUTES)
+
+    return timestamps
+
+
+def get_month(timestamp):
+    return timestamp.month
+
+
+def get_hour(timestamp):
+    return timestamp.hour
+
+
+def get_day(timestamp):
+    return timestamp.day
+
+
+def get_weekday(timestamp):
+    return timestamp.weekday()
+
+
+def get_year(timestamp):
+    return timestamp.year
+
+
+def get_season(timestamp):
+    """
+    Return Indonesian season.
+    """
+    return SEASON_BY_MONTH.get(timestamp.month, "Unknown")
+
+
+def calculate_growth_stage(age_days):
+    """
+    Estimate growth stage from plant age.
+    """
+    if age_days < 10:
+        return "Seed"
+
+    if age_days < 25:
+        return "Seedling"
+
+    if age_days < 60:
+        return "Vegetative"
+
+    if age_days < 90:
+        return "Flowering"
+
+    if age_days < 150:
+        return "Fruiting"
+
+    return "Harvest"
+
+
+def generate_latitude(latitude):
+    """
+    Add small GPS variation.
+    """
+    latitude = safe_float(latitude, DEFAULT_LATITUDE)
+
+    return round(
+        latitude + random.uniform(
+            -LATITUDE_NOISE,
+            LATITUDE_NOISE,
+        ),
+        6,
+    )
+
+
+def generate_longitude(longitude):
+    """
+    Add small GPS variation.
+    """
+    longitude = safe_float(longitude, DEFAULT_LONGITUDE)
+
+    return round(
+        longitude + random.uniform(
+            -LONGITUDE_NOISE,
+            LONGITUDE_NOISE,
+        ),
+        6,
+    )
+
+
+def progress(current, total):
+    """
+    Print progress percentage.
+    """
+    percent = (current / total) * 100
+
+    print(
+        f"\rProgress: {percent:6.2f}% ({current}/{total})",
+        end="",
+        flush=True,
+    )
+
+
+def validate_required_columns(df, required_columns):
+    """
+    Validate required columns.
+    """
+    missing = [
+        column
+        for column in required_columns
+        if column not in df.columns
+    ]
+
+    if missing:
+        raise ValueError(
+            f"Missing required columns: {missing}"
+        )
+
+
+def ensure_directory(path: Path):
+    """
+    Create directory if it does not exist.
+    """
+    path.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+
+def print_header(title):
+    """
+    Pretty console header.
+    """
+    print("\n" + "=" * 70)
+    print(title)
+    print("=" * 70)
+
+
+logger.info("Helper functions initialized.")
+
+# ==========================================================
+# Plants.csv Loading
+# ==========================================================
+
+PLANT_REQUIRED_COLUMNS = [
+    "user_id",
+    "plant_id",
+    "plant_name",
+    "scientific_name",
+]
+
+
+def load_plants() -> pd.DataFrame:
+    """
+    Load plants.csv and validate its schema.
+    """
+
+    if not PLANTS_FILE.exists():
+        raise FileNotFoundError(
+            f"plants.csv not found:\n{PLANTS_FILE}"
+        )
+
+    logger.info("Loading plants.csv")
+
+    plants = pd.read_csv(PLANTS_FILE)
+
+    validate_required_columns(
+        plants,
+        PLANT_REQUIRED_COLUMNS,
+    )
+
+    logger.info(
+        "Loaded %d plants.",
+        len(plants),
+    )
+
+    return plants
+
+
+# ==========================================================
+# Plant Data Preparation
+# ==========================================================
+
+def prepare_plants(plants: pd.DataFrame) -> pd.DataFrame:
+    """
+    Complete missing values before simulation.
+    """
+
+    plants = plants.copy()
+
+    if "species_id" not in plants.columns:
+        plants["species_id"] = np.nan
+
+    if "location_id" not in plants.columns:
+        plants["location_id"] = np.nan
+
+    if "watering_interval_days" not in plants.columns:
+        plants["watering_interval_days"] = DEFAULT_WATERING_INTERVAL
+
+    if "recommended_soil" not in plants.columns:
+        plants["recommended_soil"] = DEFAULT_SOIL
+
+    if "life_cycle" not in plants.columns:
+        plants["life_cycle"] = DEFAULT_LIFE_CYCLE
+
+    if "environment_type" not in plants.columns:
+        plants["environment_type"] = DEFAULT_ENVIRONMENT
+
+    if "recommended_sunlight" not in plants.columns:
+        plants["recommended_sunlight"] = DEFAULT_SUNLIGHT
+
+    if "propagation_method" not in plants.columns:
+        plants["propagation_method"] = DEFAULT_PROPAGATION
+
+    if "latitude" not in plants.columns:
+        plants["latitude"] = DEFAULT_LATITUDE
+
+    if "longitude" not in plants.columns:
+        plants["longitude"] = DEFAULT_LONGITUDE
+
+    if "plant_age_days" not in plants.columns:
+        plants["plant_age_days"] = DEFAULT_PLANT_AGE
+
+    if "height_cm" not in plants.columns:
+        plants["height_cm"] = DEFAULT_HEIGHT_CM
+
+    if "growth_stage" not in plants.columns:
+        plants["growth_stage"] = ""
+
+    if "is_sensor_enabled" not in plants.columns:
+        plants["is_sensor_enabled"] = False
+
+    plants["user_id"] = plants["user_id"].fillna(0).astype(int)
+
+    plants["plant_id"] = plants["plant_id"].fillna(0).astype(int)
+
+    plants["location_id"] = (
+        plants["location_id"]
+        .fillna(0)
+        .astype(int)
+    )
+
+    plants["species_id"] = (
+        plants["species_id"]
+        .fillna(-1)
+        .astype(int)
+    )
+
+    plants["plant_name"] = plants["plant_name"].apply(
+        lambda x: safe_string(x, "Unknown Plant")
+    )
+
+    plants["scientific_name"] = plants["scientific_name"].apply(
+        lambda x: safe_string(x, "Unknown Species")
+    )
+
+    plants["watering_interval_days"] = (
+        plants["watering_interval_days"]
+        .fillna(DEFAULT_WATERING_INTERVAL)
+        .astype(int)
+    )
+
+    plants["recommended_soil"] = plants["recommended_soil"].apply(
+        lambda x: safe_string(x, DEFAULT_SOIL)
+    )
+
+    plants["life_cycle"] = plants["life_cycle"].apply(
+        lambda x: safe_string(x, DEFAULT_LIFE_CYCLE)
+    )
+
+    plants["environment_type"] = plants["environment_type"].apply(
+        lambda x: safe_string(x, DEFAULT_ENVIRONMENT)
+    )
+
+    plants["recommended_sunlight"] = plants["recommended_sunlight"].apply(
+        lambda x: safe_string(x, DEFAULT_SUNLIGHT)
+    )
+
+    plants["propagation_method"] = plants["propagation_method"].apply(
+        lambda x: safe_string(x, DEFAULT_PROPAGATION)
+    )
+
+    plants["latitude"] = plants["latitude"].apply(
+        lambda x: safe_float(x, DEFAULT_LATITUDE)
+    )
+
+    plants["longitude"] = plants["longitude"].apply(
+        lambda x: safe_float(x, DEFAULT_LONGITUDE)
+    )
+
+    plants["plant_age_days"] = plants["plant_age_days"].apply(
+        lambda x: safe_int(x, DEFAULT_PLANT_AGE)
+    )
+
+    plants["height_cm"] = plants["height_cm"].apply(
+        lambda x: safe_float(x, DEFAULT_HEIGHT_CM)
+    )
+
+    plants["growth_stage"] = plants.apply(
+        lambda row: (
+            row["growth_stage"]
+            if safe_string(row["growth_stage"]) != ""
+            else calculate_growth_stage(
+                row["plant_age_days"]
+            )
+        ),
+        axis=1,
+    )
+
+    plants["is_sensor_enabled"] = plants[
+        "is_sensor_enabled"
+    ].apply(normalize_boolean)
+
+    logger.info("Plant preprocessing complete.")
+
+    return plants
+
+# ==========================================================
+# Plant Simulation Initialization
+# ==========================================================
+
+def initialize_plants(plants: pd.DataFrame) -> pd.DataFrame:
+    """
+    Prepare plants for simulation by generating missing values and
+    creating dynamic attributes used during dataset generation.
+    """
+
+    plants = plants.copy()
+
+    logger.info("Initializing plant simulation...")
+
+    # ------------------------------------------------------
+    # Species ID
+    # ------------------------------------------------------
+
+    next_species_id = 1000
+
+    for index, row in plants.iterrows():
+
+        if row["species_id"] <= 0:
+
+            plants.at[index, "species_id"] = next_species_id
+            next_species_id += 1
+
+    plants["species_id"] = plants["species_id"].astype(int)
+
+    # ------------------------------------------------------
+    # Location ID
+    # ------------------------------------------------------
+
+    next_location = 1
+
+    for index, row in plants.iterrows():
+
+        if row["location_id"] <= 0:
+
+            plants.at[index, "location_id"] = next_location
+            next_location += 1
+
+    plants["location_id"] = plants["location_id"].astype(int)
+
+    # ------------------------------------------------------
+    # GPS Coordinates
+    # ------------------------------------------------------
+
+    plants["latitude"] = plants["latitude"].apply(generate_latitude)
+    plants["longitude"] = plants["longitude"].apply(generate_longitude)
+
+    # ------------------------------------------------------
+    # Initial Plant Height
+    # ------------------------------------------------------
+
+    for index, row in plants.iterrows():
+
+        height = row["height_cm"]
+
+        if height <= 0:
+
+            age = row["plant_age_days"]
+
+            estimated_height = max(
+                3.0,
+                age * random.uniform(0.20, 0.80)
+            )
+
+            plants.at[index, "height_cm"] = round(
+                estimated_height,
+                2
+            )
+
+    # ------------------------------------------------------
+    # Growth Stage
+    # ------------------------------------------------------
+
+    plants["growth_stage"] = plants["plant_age_days"].apply(
+        calculate_growth_stage
+    )
+
+    # ------------------------------------------------------
+    # Daily Growth Rate
+    # ------------------------------------------------------
+
+    plants["daily_growth_cm"] = np.random.uniform(
+        0.05,
+        0.45,
+        len(plants)
+    ).round(3)
+
+    # ------------------------------------------------------
+    # Root Depth
+    # ------------------------------------------------------
+
+    plants["root_depth_cm"] = np.random.uniform(
+        8,
+        45,
+        len(plants)
+    ).round(2)
+
+    # ------------------------------------------------------
+    # Water Requirement Factor
+    # ------------------------------------------------------
+
+    plants["water_requirement_factor"] = np.random.uniform(
+        0.8,
+        1.3,
+        len(plants)
+    ).round(3)
+
+    # ------------------------------------------------------
+    # Health Score
+    # ------------------------------------------------------
+
+    plants["health_score"] = np.random.uniform(
+        85,
+        100,
+        len(plants)
+    ).round(2)
+
+    # ------------------------------------------------------
+    # Initial Water Stress
+    # ------------------------------------------------------
+
+    plants["water_stress"] = 0.0
+
+    # ------------------------------------------------------
+    # Initial Dryness Index
+    # ------------------------------------------------------
+
+    plants["dryness_index"] = 0.0
+
+    # ------------------------------------------------------
+    # Initial Heat Index
+    # ------------------------------------------------------
+
+    plants["heat_index"] = 0.0
+
+    # ------------------------------------------------------
+    # Initial Evaporation Risk
+    # ------------------------------------------------------
+
+    plants["evaporation_risk"] = 0.0
+
+    # ------------------------------------------------------
+    # Last Irrigation
+    # ------------------------------------------------------
+
+    plants["last_irrigation"] = START_DATE
+
+    # ------------------------------------------------------
+    # Watering Counter
+    # ------------------------------------------------------
+
+    plants["days_since_watering"] = np.random.randint(
+        0,
+        3,
+        len(plants)
+    )
+
+    # ------------------------------------------------------
+    # Sensor Assignment
+    # ------------------------------------------------------
+
+    sensor_ids = []
+
+    for _, row in plants.iterrows():
+
+        if row["is_sensor_enabled"]:
+
+            sensor_ids.append(
+                f"S{row['location_id']:03d}"
+            )
+
+        else:
+
+            sensor_ids.append(None)
+
+    plants["sensor_id"] = sensor_ids
+
+    # ------------------------------------------------------
+    # Simulation ID
+    # ------------------------------------------------------
+
+    plants["simulation_id"] = np.arange(
+        1,
+        len(plants) + 1
+    )
+
+    logger.info(
+        "%d plants initialized for simulation.",
+        len(plants)
+    )
+
+    return plants
+
+
+# ==========================================================
+# Load and Initialize Plants
+# ==========================================================
+
+def load_and_initialize_plants() -> pd.DataFrame:
+    """
+    Convenience function used by the simulation pipeline.
+    """
+
+    plants = load_plants()
+
+    plants = prepare_plants(plants)
+
+    plants = initialize_plants(plants)
+
+    logger.info("Plant dataset ready.")
+
+    return plants
+
+
+# ==========================================================
+# Preview Utility
+# ==========================================================
+
+def preview_plants(plants: pd.DataFrame, rows: int = 5):
+    """
+    Print a quick summary of the initialized plant dataset.
+    """
+
+    print_header("Initialized Plants")
+
+    print(plants.head(rows))
+
+    print("\nShape:", plants.shape)
+
+    print("\nColumns:")
+
+    for column in plants.columns:
+        print(f" - {column}")
+
+    print("\nMissing Values:")
+
+    print(plants.isnull().sum())
+
+
+logger.info("Plant initialization module loaded.")
+# ==========================================================
+# Weather Simulation
+# Part 2A.1
+# ==========================================================
+
+def day_of_year(timestamp: datetime) -> int:
+    """
+    Return day number (1-366).
+    """
+    return timestamp.timetuple().tm_yday
+
+
+def solar_cycle(hour: int) -> float:
+    """
+    Daily sunlight curve.
+
+    Returns
+    -------
+    0.0 (night)
+    ...
+    1.0 (midday)
+    """
+
+    sunrise = 6
+    sunset = 18
+
+    if hour < sunrise or hour > sunset:
+        return 0.0
+
+    angle = math.pi * (hour - sunrise) / (sunset - sunrise)
+
+    return math.sin(angle)
+
+
+def yearly_temperature_offset(timestamp: datetime) -> float:
+    """
+    Small yearly oscillation.
+
+    Indonesia has little seasonal variation,
+    so only ±2°C.
+    """
+
+    angle = (
+        2
+        * math.pi
+        * day_of_year(timestamp)
+        / 365
+    )
+
+    return math.sin(angle) * 2.0
+
+
+def daily_temperature(hour: int) -> float:
+    """
+    Daily temperature profile.
+
+    Coolest around 05:00
+    Warmest around 14:00
+    """
+
+    return (
+        25
+        + 6
+        * math.sin(
+            (hour - 8)
+            * math.pi
+            / 12
+        )
+    )
+
+
+def simulate_air_temperature(timestamp: datetime) -> float:
+    """
+    Simulate outdoor air temperature.
+    """
+
+    temp = (
+        daily_temperature(timestamp.hour)
+        + yearly_temperature_offset(timestamp)
+        + random.uniform(-0.8, 0.8)
+    )
+
+    return round(temp, 2)
+
+
+def simulate_relative_humidity(
+    air_temperature: float,
+) -> float:
+    """
+    Humidity decreases as temperature rises.
+    """
+
+    humidity = (
+        95
+        - (air_temperature - 18) * 2.1
+        + random.uniform(-4, 4)
+    )
+
+    humidity = max(35, min(100, humidity))
+
+    return round(humidity, 1)
+
+
+def simulate_soil_temperature(
+    air_temperature: float,
+) -> float:
+    """
+    Soil temperature changes more slowly
+    than air temperature.
+    """
+
+    soil = (
+        air_temperature
+        - random.uniform(0.5, 2.0)
+    )
+
+    return round(soil, 2)
+
+
+def simulate_wind_speed(
+    timestamp: datetime,
+) -> float:
+    """
+    Wind tends to be stronger
+    during the afternoon.
+    """
+
+    base = 2.5
+
+    if 11 <= timestamp.hour <= 17:
+        base += 2.5
+
+    wind = (
+        base
+        + random.uniform(0, 3)
+    )
+
+    return round(wind, 2)
+
+
+def simulate_rain_probability(
+    humidity: float,
+) -> float:
+    """
+    Estimate rain probability from humidity.
+    """
+
+    probability = (
+        humidity
+        - 55
+        + random.uniform(-8, 8)
+    )
+
+    probability = max(
+        0,
+        min(100, probability)
+    )
+
+    return round(probability, 1)
+
+
+def simulate_rainfall(
+    rain_probability: float,
+) -> float:
+    """
+    Generate rainfall amount.
+    """
+
+    if random.random() > rain_probability / 100:
+        return 0.0
+
+    rainfall = np.random.gamma(
+        shape=2.5,
+        scale=2.5,
+    )
+
+    rainfall = min(
+        rainfall,
+        RAINFALL_RANGE[1],
+    )
+
+    return round(rainfall, 2)
+
+
+def simulate_light_intensity(
+    timestamp: datetime,
+) -> int:
+    """
+    Simulate daylight intensity.
+    """
+
+    sun = solar_cycle(timestamp.hour)
+
+    intensity = (
+        100000
+        * sun
+        + random.uniform(
+            -2500,
+            2500,
+        )
+    )
+
+    intensity = max(
+        0,
+        intensity,
+    )
+
+    return int(intensity)
+
+
+def simulate_soil_moisture(
+    previous_soil_moisture: float,
+    rainfall: float,
+    air_temperature: float,
+) -> float:
+    """
+    Update soil moisture using rainfall
+    and evaporation.
+    """
+
+    moisture = previous_soil_moisture
+
+    moisture += rainfall * 1.8
+
+    evaporation = (
+        max(
+            air_temperature - 20,
+            0,
+        )
+        * 0.35
+    )
+
+    moisture -= evaporation
+
+    moisture += random.uniform(
+        -1,
+        1,
+    )
+
+    moisture = max(
+        SOIL_MOISTURE_RANGE[0],
+        moisture,
+    )
+
+    moisture = min(
+        SOIL_MOISTURE_RANGE[1],
+        moisture,
+    )
+
+    return round(moisture, 2)
+
+
+def simulate_soil_ph() -> float:
+    """
+    Soil pH changes slowly.
+    """
+
+    return round(
+        random.uniform(
+            6.0,
+            7.0,
+        ),
+        2,
+    )
+
+# ==========================================================
+# Weather Dataset Generation
+# Part 2A.2
+# ==========================================================
+
+def generate_weather_dataset() -> pd.DataFrame:
+    """
+    Generate hourly weather data for the entire simulation period.
+    """
+
+    logger.info("Generating weather dataset...")
+
+    timestamps = create_timestamp_series()
+
+    weather_rows = []
+
+    soil_moisture = 45.0
+
+    total = len(timestamps)
+
+    for index, timestamp in enumerate(timestamps, start=1):
+
+        progress(index, total)
+
+        air_temperature = simulate_air_temperature(timestamp)
+
+        humidity = simulate_relative_humidity(
+            air_temperature
+        )
+
+        soil_temperature = simulate_soil_temperature(
+            air_temperature
+        )
+
+        wind_speed = simulate_wind_speed(
+            timestamp
+        )
+
+        rain_probability = simulate_rain_probability(
+            humidity
+        )
+
+        rainfall = simulate_rainfall(
+            rain_probability
+        )
+
+        soil_moisture = simulate_soil_moisture(
+            soil_moisture,
+            rainfall,
+            air_temperature,
+        )
+
+        weather_rows.append(
+            {
+                "date": timestamp,
+                "air_temp_c": air_temperature,
+                "humidity_pct": humidity,
+                "rainfall_mm": rainfall,
+                "precipitation_probability": rain_probability,
+                "wind_kmh": wind_speed,
+                "soil_temp_c": soil_temperature,
+                "soil_moisture_pct": soil_moisture,
+                "latitude": DEFAULT_LATITUDE,
+                "longitude": DEFAULT_LONGITUDE,
+                "timezone": DEFAULT_TIMEZONE,
+            }
+        )
+
+    print()
+
+    weather = pd.DataFrame(weather_rows)
+
+    weather["date"] = pd.to_datetime(
+        weather["date"]
+    )
+
+    weather = weather.sort_values(
+        "date"
+    ).reset_index(drop=True)
+
+    logger.info(
+        "Weather dataset generated (%d rows).",
+        len(weather),
+    )
+
+    return weather
+
+
+# ==========================================================
+# Weather CSV Export
+# ==========================================================
+
+def save_weather_dataset(
+    weather: pd.DataFrame,
+    output_file=WEATHER_FILE,
+):
+    """
+    Save weather dataset to CSV.
+    """
+
+    ensure_directory(
+        output_file.parent
+    )
+
+    weather.to_csv(
+        output_file,
+        index=False,
+    )
+
+    logger.info(
+        "Weather CSV saved:\n%s",
+        output_file,
+    )
+
+
+# ==========================================================
+# Weather Statistics
+# ==========================================================
+
+def weather_statistics(
+    weather: pd.DataFrame,
+):
+    """
+    Print weather statistics.
+    """
+
+    print_header(
+        "Weather Statistics"
+    )
+
+    print(
+        weather.describe(
+            include="all"
+        )
+    )
+
+
+# ==========================================================
+# Weather Preview
+# ==========================================================
+
+def preview_weather(
+    weather: pd.DataFrame,
+    rows: int = 5,
+):
+    """
+    Display the first rows.
+    """
+
+    print_header(
+        "Weather Preview"
+    )
+
+    print(
+        weather.head(rows)
+    )
+
+    print()
+
+    print(
+        "Shape:",
+        weather.shape,
+    )
+
+    print()
+
+    print(
+        weather.dtypes
+    )
+
+
+# ==========================================================
+# Weather Validation
+# ==========================================================
+
+def validate_weather(
+    weather: pd.DataFrame,
+):
+    """
+    Validate generated weather data.
+    """
+
+    required = [
+        "date",
+        "air_temp_c",
+        "humidity_pct",
+        "rainfall_mm",
+        "precipitation_probability",
+        "wind_kmh",
+        "soil_temp_c",
+        "soil_moisture_pct",
+        "latitude",
+        "longitude",
+        "timezone",
+    ]
+
+    validate_required_columns(
+        weather,
+        required,
+    )
+
+    if weather.empty:
+        raise ValueError(
+            "Weather dataset is empty."
+        )
+
+    logger.info(
+        "Weather validation successful."
+    )
+
+
+# ==========================================================
+# Weather Pipeline
+# ==========================================================
+
+def build_weather_dataset():
+    """
+    Complete weather generation pipeline.
+    """
+
+    weather = generate_weather_dataset()
+
+    validate_weather(weather)
+
+    save_weather_dataset(weather)
+
+    preview_weather(weather)
+
+    weather_statistics(weather)
+
+    return weather
+
+
+logger.info(
+    "Weather simulation module initialized."
+)
+
+# ==========================================================
+# Sensor Simulation Helper Functions
+# Part 2B.1
+# ==========================================================
+
+def calculate_heat_index(
+    temperature: float,
+    humidity: float,
+) -> float:
+    """
+    Approximate heat index (°C).
+    """
+
+    hi = (
+        temperature
+        + (0.33 * humidity / 100 * 6.105)
+        - 4.0
+    )
+
+    return round(hi, 2)
+
+
+def calculate_water_stress(
+    soil_moisture: float,
+    air_temperature: float,
+    humidity: float,
+) -> float:
+    """
+    Water stress score (0-100).
+    Higher values indicate greater stress.
+    """
+
+    stress = 0.0
+
+    stress += max(0, 35 - soil_moisture) * 1.6
+    stress += max(0, air_temperature - 30) * 2.5
+    stress += max(0, 55 - humidity) * 0.8
+
+    stress = max(0, min(100, stress))
+
+    return round(stress, 2)
+
+
+def calculate_dryness_index(
+    soil_moisture: float,
+    rainfall: float,
+    wind_speed: float,
+) -> float:
+    """
+    Dryness index (0-100).
+    """
+
+    dryness = 100 - soil_moisture
+
+    dryness += wind_speed * 1.2
+    dryness -= rainfall * 2.0
+
+    dryness = max(0, min(100, dryness))
+
+    return round(dryness, 2)
+
+
+def calculate_evaporation_risk(
+    air_temperature: float,
+    humidity: float,
+    wind_speed: float,
+) -> float:
+    """
+    Evaporation risk (0-100).
+    """
+
+    risk = (
+        air_temperature * 2.0
+        - humidity * 0.45
+        + wind_speed * 2.5
+    )
+
+    risk = max(0, min(100, risk))
+
+    return round(risk, 2)
+
+
+def calculate_watering_needed(
+    soil_moisture: float,
+    water_stress: float,
+    dryness_index: float,
+) -> bool:
+    """
+    Determine whether irrigation is needed.
+    """
+
+    if soil_moisture < 30:
+        return True
+
+    if water_stress > 60:
+        return True
+
+    if dryness_index > 65:
+        return True
+
+    return False
+
+
+def update_plant_height(
+    height_cm: float,
+    daily_growth_cm: float,
+) -> float:
+    """
+    Simulate plant growth.
+    """
+
+    growth = daily_growth_cm * random.uniform(
+        0.8,
+        1.2,
+    )
+
+    return round(
+        height_cm + growth,
+        2,
+    )
+
+
+def update_plant_age(
+    age_days: int,
+) -> int:
+    """
+    Increase plant age.
+    """
+
+    return age_days + 1
+
+
+def update_growth_stage(
+    age_days: int,
+) -> str:
+    """
+    Determine growth stage from age.
+    """
+
+    return calculate_growth_stage(
+        age_days
+    )
+
+
+def sensor_temperature(
+    air_temperature: float,
+) -> float:
+    """
+    Sensor temperature includes
+    a small measurement error.
+    """
+
+    value = air_temperature + random.uniform(
+        -0.4,
+        0.4,
+    )
+
+    return round(value, 2)
+
+
+def sensor_humidity(
+    humidity: float,
+) -> float:
+    """
+    Simulated humidity reading.
+    """
+
+    value = humidity + random.uniform(
+        -2,
+        2,
+    )
+
+    value = max(0, min(100, value))
+
+    return round(value, 1)
+
+
+def sensor_soil_moisture(
+    soil_moisture: float,
+    water_requirement_factor: float,
+) -> float:
+    """
+    Plant-specific soil moisture.
+    """
+
+    value = (
+        soil_moisture
+        - random.uniform(0, 4)
+        * water_requirement_factor
+    )
+
+    value = max(5, min(100, value))
+
+    return round(value, 2)
+
+
+def sensor_soil_ph() -> float:
+    """
+    Simulate soil pH sensor.
+    """
+
+    return round(
+        random.uniform(
+            6.0,
+            7.2,
+        ),
+        2,
+    )
+
+
+def sensor_light_intensity(
+    weather_light: int,
+) -> int:
+    """
+    Simulate light sensor reading.
+    """
+
+    value = weather_light + random.randint(
+        -500,
+        500,
+    )
+
+    return max(
+        0,
+        value,
+    )
+
+
+def sensor_noise(
+    value: float,
+    percentage: float = 0.02,
+) -> float:
+    """
+    Apply generic sensor noise.
+    """
+
+    noise = value * random.uniform(
+        -percentage,
+        percentage,
+    )
+
+    return round(
+        value + noise,
+        2,
+    )
+
+
+logger.info(
+    "Sensor helper functions initialized."
+)
+
+# ==========================================================
+# Sensor Dataset Generation
+# Part 2B.2.1
+# ==========================================================
+
+def generate_sensor_dataset(
+    plants: pd.DataFrame,
+    weather: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Generate simulated sensor readings for every plant and timestamp.
+
+    Returns
+    -------
+    sensor_df
+        Simulated sensor readings.
+
+    updated_plants
+        Plant state after simulation.
+    """
+
+    logger.info("Generating sensor dataset...")
+
+    plants = plants.copy()
+
+    weather = weather.copy()
+
+    weather["date"] = pd.to_datetime(weather["date"])
+
+    weather_lookup = (
+        weather
+        .set_index("date")
+        .to_dict("index")
+    )
+
+    sensor_rows = []
+
+    timestamps = create_timestamp_series()
+
+    total_iterations = len(timestamps) * len(plants)
+
+    current_iteration = 0
+
+    for timestamp in timestamps:
+
+        weather_row = weather_lookup.get(timestamp)
+
+        if weather_row is None:
+            continue
+
+        weather_temperature = weather_row["air_temp_c"]
+        weather_humidity = weather_row["humidity_pct"]
+        weather_rainfall = weather_row["rainfall_mm"]
+        weather_probability = weather_row[
+            "precipitation_probability"
+        ]
+        weather_wind = weather_row["wind_kmh"]
+        weather_soil_temp = weather_row["soil_temp_c"]
+        weather_soil_moisture = weather_row[
+            "soil_moisture_pct"
+        ]
+
+        weather_light = simulate_light_intensity(
+            timestamp
+        )
+
+        for index, plant in plants.iterrows():
+
+            current_iteration += 1
+
+            progress(
+                current_iteration,
+                total_iterations,
+            )
+
+            # ------------------------------------------
+            # Plant growth
+            # ------------------------------------------
+
+            age_days = plant["plant_age_days"]
+
+            if timestamp.hour == 0:
+
+                age_days = update_plant_age(
+                    age_days
+                )
+
+                plants.at[
+                    index,
+                    "plant_age_days",
+                ] = age_days
+
+                plants.at[
+                    index,
+                    "growth_stage",
+                ] = update_growth_stage(
+                    age_days
+                )
+
+                new_height = update_plant_height(
+                    plant["height_cm"],
+                    plant["daily_growth_cm"],
+                )
+
+                plants.at[
+                    index,
+                    "height_cm",
+                ] = new_height
+
+            # ------------------------------------------
+            # Sensor measurements
+            # ------------------------------------------
+
+            air_temperature = sensor_temperature(
+                weather_temperature
+            )
+
+            humidity = sensor_humidity(
+                weather_humidity
+            )
+
+            soil_moisture = sensor_soil_moisture(
+                weather_soil_moisture,
+                plant[
+                    "water_requirement_factor"
+                ],
+            )
+
+            soil_ph = sensor_soil_ph()
+
+            light_intensity = sensor_light_intensity(
+                weather_light
+            )
+
+            # ------------------------------------------
+            # Derived features
+            # ------------------------------------------
+
+            heat_index = calculate_heat_index(
+                air_temperature,
+                humidity,
+            )
+
+            water_stress = calculate_water_stress(
+                soil_moisture,
+                air_temperature,
+                humidity,
+            )
+
+            dryness_index = calculate_dryness_index(
+                soil_moisture,
+                weather_rainfall,
+                weather_wind,
+            )
+
+            evaporation_risk = (
+                calculate_evaporation_risk(
+                    air_temperature,
+                    humidity,
+                    weather_wind,
+                )
+            )
+
+            watering_needed = (
+                calculate_watering_needed(
+                    soil_moisture,
+                    water_stress,
+                    dryness_index,
+                )
+            )
+
+            # ------------------------------------------
+            # Update plant state
+            # ------------------------------------------
+
+            plants.at[
+                index,
+                "water_stress",
+            ] = water_stress
+
+            plants.at[
+                index,
+                "dryness_index",
+            ] = dryness_index
+
+            plants.at[
+                index,
+                "heat_index",
+            ] = heat_index
+
+            plants.at[
+                index,
+                "evaporation_risk",
+            ] = evaporation_risk
+
+            if watering_needed:
+
+                plants.at[
+                    index,
+                    "days_since_watering",
+                ] = 0
+
+                plants.at[
+                    index,
+                    "last_irrigation",
+                ] = timestamp
+
+            # ------------------------------------------
+            # Create output row
+            # ------------------------------------------
+
+            sensor_rows.append(
+                {
+                    "timestamp": timestamp,
+                    "sensor_id": plant["sensor_id"],
+                    "location_id": plant["location_id"],
+
+                    "plant_id": plant["plant_id"],
+                    "species_id": plant["species_id"],
+                    "scientific_name": plant[
+                        "scientific_name"
+                    ],
+
+                    "temperature": air_temperature,
+                    "humidity": humidity,
+                    "soil_moisture": soil_moisture,
+                    "soil_ph": soil_ph,
+                    "light_intensity": light_intensity,
+
+                    "air_temp_c": weather_temperature,
+                    "soil_temp_c": weather_soil_temp,
+
+                    "rainfall": weather_rainfall,
+                    "rain_probability": weather_probability,
+                    "wind_speed": weather_wind,
+
+                    "season": get_season(timestamp),
+
+                    "year": timestamp.year,
+                    "month": timestamp.month,
+                    "day": timestamp.day,
+                    "hour": timestamp.hour,
+
+                    "latitude": plant["latitude"],
+                    "longitude": plant["longitude"],
+
+                    "plant_age_days": plants.at[
+                        index,
+                        "plant_age_days",
+                    ],
+
+                    "current_height_cm": plants.at[
+                        index,
+                        "height_cm",
+                    ],
+
+                    "growth_stage": plants.at[
+                        index,
+                        "growth_stage",
+                    ],
+
+                    "heat_index": heat_index,
+                    "water_stress": water_stress,
+                    "dryness_index": dryness_index,
+                    "evaporation_risk": evaporation_risk,
+
+                    "watering_needed": watering_needed,
+                }
+            )
+
+    print()
+
+    sensor_df = pd.DataFrame(sensor_rows)
+
+    logger.info(
+        "Sensor dataset generated (%d rows).",
+        len(sensor_df),
+    )
+
+    return sensor_df, plants
+
+
+# ==========================================================
+# Sensor Dataset Export & Validation
+# Part 2B.2.2
+# ==========================================================
+
+def validate_sensor_dataset(
+    sensor_df: pd.DataFrame,
+):
+    """
+    Validate generated sensor dataset.
+    """
+
+    required_columns = [
+        "timestamp",
+        "sensor_id",
+        "location_id",
+        "plant_id",
+        "species_id",
+        "scientific_name",
+        "temperature",
+        "humidity",
+        "soil_moisture",
+        "soil_ph",
+        "light_intensity",
+        "air_temp_c",
+        "soil_temp_c",
+        "rainfall",
+        "rain_probability",
+        "wind_speed",
+        "season",
+        "year",
+        "month",
+        "day",
+        "hour",
+        "latitude",
+        "longitude",
+        "plant_age_days",
+        "current_height_cm",
+        "growth_stage",
+        "heat_index",
+        "water_stress",
+        "dryness_index",
+        "evaporation_risk",
+        "watering_needed",
+    ]
+
+    validate_required_columns(
+        sensor_df,
+        required_columns,
+    )
+
+    if sensor_df.empty:
+        raise ValueError(
+            "Generated sensor dataset is empty."
+        )
+
+    logger.info(
+        "Sensor dataset validation passed."
+    )
+
+
+# ==========================================================
+# Save Dataset
+# ==========================================================
+
+def save_sensor_dataset(
+    sensor_df: pd.DataFrame,
+    output_file=SENSOR_FILE,
+):
+    """
+    Save the generated sensor dataset.
+    """
+
+    ensure_directory(
+        output_file.parent
+    )
+
+    sensor_df.to_csv(
+        output_file,
+        index=False,
+    )
+
+    logger.info(
+        "Sensor dataset saved:\n%s",
+        output_file,
+    )
+
+
+# ==========================================================
+# Preview Dataset
+# ==========================================================
+
+def preview_sensor_dataset(
+    sensor_df: pd.DataFrame,
+    rows: int = 5,
+):
+    """
+    Display the first rows.
+    """
+
+    print_header(
+        "Sensor Dataset Preview"
+    )
+
+    print(
+        sensor_df.head(rows)
+    )
+
+    print()
+
+    print(
+        "Shape:",
+        sensor_df.shape,
+    )
+
+    print()
+
+    print(
+        "Columns:"
+    )
+
+    for column in sensor_df.columns:
+        print(f" - {column}")
+
+
+# ==========================================================
+# Dataset Statistics
+# ==========================================================
+
+def sensor_statistics(
+    sensor_df: pd.DataFrame,
+):
+    """
+    Print summary statistics.
+    """
+
+    print_header(
+        "Sensor Dataset Statistics"
+    )
+
+    print(
+        sensor_df.describe(
+            include="all"
+        )
+    )
+
+    print()
+
+    print(
+        "Watering Needed Distribution"
+    )
+
+    print(
+        sensor_df[
+            "watering_needed"
+        ].value_counts()
+    )
+
+
+# ==========================================================
+# Final Cleanup
+# ==========================================================
+
+def finalize_sensor_dataset(
+    sensor_df: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Sort rows and optimize data types.
+    """
+
+    sensor_df = sensor_df.copy()
+
+    sensor_df["timestamp"] = pd.to_datetime(
+        sensor_df["timestamp"]
+    )
+
+    sensor_df = sensor_df.sort_values(
+        [
+            "timestamp",
+            "plant_id",
+        ]
+    ).reset_index(
+        drop=True
+    )
+
+    integer_columns = [
+        "location_id",
+        "plant_id",
+        "species_id",
+        "year",
+        "month",
+        "day",
+        "hour",
+        "plant_age_days",
+    ]
+
+    for column in integer_columns:
+
+        sensor_df[column] = (
+            sensor_df[column]
+            .fillna(0)
+            .astype(int)
+        )
+
+    sensor_df["watering_needed"] = (
+        sensor_df["watering_needed"]
+        .astype(bool)
+    )
+
+    logger.info(
+        "Sensor dataset finalized."
+    )
+
+    return sensor_df
+
+
+# ==========================================================
+# Complete Sensor Pipeline
+# ==========================================================
+
+def build_sensor_dataset(
+    plants: pd.DataFrame,
+    weather: pd.DataFrame,
+):
+    """
+    Complete sensor generation pipeline.
+    """
+
+    sensor_df, updated_plants = (
+        generate_sensor_dataset(
+            plants,
+            weather,
+        )
+    )
+
+    sensor_df = finalize_sensor_dataset(
+        sensor_df
+    )
+
+    validate_sensor_dataset(
+        sensor_df
+    )
+
+    save_sensor_dataset(
+        sensor_df
+    )
+
+    preview_sensor_dataset(
+        sensor_df
+    )
+
+    sensor_statistics(
+        sensor_df
+    )
+
+    logger.info(
+        "Sensor pipeline completed."
+    )
+
+    return (
+        sensor_df,
+        updated_plants,
+    )
+
+
+logger.info(
+    "Sensor dataset module initialized."
+)
+
+# ==========================================================
+# Feature Engineering Helper Functions
+# Part 3.1
+# ==========================================================
+
+def calculate_irrigation_score(
+    soil_moisture: float,
+    rainfall: float,
+    humidity: float,
+    temperature: float,
+) -> float:
+    """
+    Calculate irrigation score (0-100).
+    Higher values indicate better watering conditions.
+    """
+
+    score = 100.0
+
+    score -= max(0, 35 - soil_moisture) * 2.0
+    score += rainfall * 0.8
+    score += max(0, humidity - 60) * 0.20
+    score -= max(0, temperature - 30) * 2.0
+
+    score = max(0, min(100, score))
+
+    return round(score, 2)
+
+
+def calculate_age_group(
+    age_days: int,
+) -> str:
+    """
+    Convert plant age into categorical groups.
+    """
+
+    if age_days < 14:
+        return "Seed"
+
+    if age_days < 30:
+        return "Seedling"
+
+    if age_days < 60:
+        return "Young"
+
+    if age_days < 120:
+        return "Mature"
+
+    return "Old"
+
+
+def calculate_week_of_year(
+    timestamp: pd.Timestamp,
+) -> int:
+    """
+    ISO week number.
+    """
+
+    return int(
+        timestamp.isocalendar().week
+    )
+
+
+def calculate_day_of_week(
+    timestamp: pd.Timestamp,
+) -> int:
+    """
+    Monday = 0
+    Sunday = 6
+    """
+
+    return timestamp.weekday()
+
+
+def calculate_is_weekend(
+    timestamp: pd.Timestamp,
+) -> bool:
+    """
+    Weekend indicator.
+    """
+
+    return timestamp.weekday() >= 5
+
+
+def calculate_time_period(
+    hour: int,
+) -> str:
+    """
+    Convert hour into a readable period.
+    """
+
+    if 5 <= hour < 10:
+        return "Morning"
+
+    if 10 <= hour < 15:
+        return "Midday"
+
+    if 15 <= hour < 18:
+        return "Afternoon"
+
+    if 18 <= hour < 22:
+        return "Evening"
+
+    return "Night"
+
+
+def calculate_vpd(
+    temperature: float,
+    humidity: float,
+) -> float:
+    """
+    Vapor Pressure Deficit (kPa).
+
+    Useful feature for irrigation prediction.
+    """
+
+    saturation = (
+        0.6108
+        * math.exp(
+            (
+                17.27 * temperature
+            )
+            /
+            (
+                temperature + 237.3
+            )
+        )
+    )
+
+    actual = (
+        saturation
+        * humidity
+        / 100
+    )
+
+    vpd = saturation - actual
+
+    return round(vpd, 3)
+
+
+def calculate_dew_point(
+    temperature: float,
+    humidity: float,
+) -> float:
+    """
+    Estimate dew point temperature.
+    """
+
+    a = 17.27
+    b = 237.7
+
+    alpha = (
+        (
+            a * temperature
+        )
+        /
+        (
+            b + temperature
+        )
+    ) + math.log(humidity / 100)
+
+    dew = (
+        b * alpha
+    ) / (
+        a - alpha
+    )
+
+    return round(dew, 2)
+
+
+def calculate_growing_degree_days(
+    temperature: float,
+    base_temperature: float = 10,
+) -> float:
+    """
+    Growing Degree Days (GDD).
+    """
+
+    return round(
+        max(
+            0,
+            temperature - base_temperature,
+        ),
+        2,
+    )
+
+
+def normalize_percentage(
+    value: float,
+) -> float:
+    """
+    Normalize percentage values
+    into the range 0-1.
+    """
+
+    value = max(
+        0,
+        min(100, value),
+    )
+
+    return round(
+        value / 100,
+        4,
+    )
+
+
+def calculate_temperature_difference(
+    air_temp: float,
+    soil_temp: float,
+) -> float:
+    """
+    Air-soil temperature difference.
+    """
+
+    return round(
+        air_temp - soil_temp,
+        2,
+    )
+
+
+def calculate_water_balance(
+    rainfall: float,
+    evaporation_risk: float,
+) -> float:
+    """
+    Positive values indicate water gain.
+    Negative values indicate water loss.
+    """
+
+    balance = (
+        rainfall
+        - evaporation_risk * 0.10
+    )
+
+    return round(
+        balance,
+        2,
+    )
+
+
+def calculate_environment_stress(
+    heat_index: float,
+    water_stress: float,
+    dryness_index: float,
+) -> float:
+    """
+    Combined environmental stress score.
+    """
+
+    stress = (
+        heat_index * 0.30
+        + water_stress * 0.40
+        + dryness_index * 0.30
+    )
+
+    stress = max(
+        0,
+        min(100, stress),
+    )
+
+    return round(
+        stress,
+        2,
+    )
+
+
+logger.info(
+    "Feature engineering helper functions initialized."
+)
+
+# ==========================================================
+# Feature Engineering
+# Part 3.2
+# Merge Plants, Weather, and Sensor Data
+# ==========================================================
+
+FEATURE_COLUMNS = [
+    "plant_id",
+    "plant_name",
+    "species_id",
+    "scientific_name",
+    "location_id",
+    "temperature",
+    "humidity",
+    "soil_moisture",
+    "soil_ph",
+    "light_intensity",
+    "air_temp_c",
+    "soil_temp_c",
+    "rainfall",
+    "rain_probability",
+    "wind_speed",
+    "latitude",
+    "longitude",
+    "plant_age_days",
+    "current_height_cm",
+    "growth_stage",
+    "heat_index",
+    "water_stress",
+    "dryness_index",
+    "evaporation_risk",
+    "watering_needed",
+    "irrigation_score",
+    "environment_stress",
+    "water_balance",
+    "temperature_difference",
+    "vpd",
+    "dew_point",
+    "gdd",
+    "year",
+    "month",
+    "day",
+    "hour",
+    "week_of_year",
+    "day_of_week",
+    "is_weekend",
+    "time_period",
+    "season",
+    "plant_age_group",
+]
+
+
+# ==========================================================
+# Merge Datasets
+# ==========================================================
+
+def merge_datasets(
+    plants: pd.DataFrame,
+    weather: pd.DataFrame,
+    sensor_df: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Merge plants, weather, and sensor datasets.
+    """
+
+    logger.info("Merging datasets...")
+
+    plants = plants.copy()
+    weather = weather.copy()
+    sensor_df = sensor_df.copy()
+
+    weather["date"] = pd.to_datetime(
+        weather["date"]
+    )
+
+    sensor_df["timestamp"] = pd.to_datetime(
+        sensor_df["timestamp"]
+    )
+
+    featured = sensor_df.merge(
+
+        weather,
+
+        left_on="timestamp",
+        right_on="date",
+
+        how="left",
+
+        suffixes=(
+            "",
+            "_weather",
+        ),
+    )
+
+    featured = featured.merge(
+
+        plants,
+
+        on=[
+            "plant_id",
+            "species_id",
+        ],
+
+        how="left",
+
+        suffixes=(
+            "",
+            "_plant",
+        ),
+    )
+
+    logger.info(
+        "Merged dataset shape: %s",
+        featured.shape,
+    )
+
+    return featured
+
+
+# ==========================================================
+# Create Engineered Features
+# ==========================================================
+
+def engineer_features(
+    featured: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Generate additional AI features.
+    """
+
+    logger.info(
+        "Generating engineered features..."
+    )
+
+    featured = featured.copy()
+
+    featured["irrigation_score"] = featured.apply(
+
+        lambda row: calculate_irrigation_score(
+
+            row["soil_moisture"],
+
+            row["rainfall"],
+
+            row["humidity"],
+
+            row["temperature"],
+
+        ),
+
+        axis=1,
+
+    )
+
+    featured["plant_age_group"] = (
+
+        featured["plant_age_days"]
+
+        .apply(
+            calculate_age_group
+        )
+
+    )
+
+    featured["week_of_year"] = (
+
+        featured["timestamp"]
+
+        .apply(
+            calculate_week_of_year
+        )
+
+    )
+
+    featured["day_of_week"] = (
+
+        featured["timestamp"]
+
+        .apply(
+            calculate_day_of_week
+        )
+
+    )
+
+    featured["is_weekend"] = (
+
+        featured["timestamp"]
+
+        .apply(
+            calculate_is_weekend
+        )
+
+    )
+
+    featured["time_period"] = (
+
+        featured["hour"]
+
+        .apply(
+            calculate_time_period
+        )
+
+    )
+
+    featured["vpd"] = featured.apply(
+
+        lambda row:
+
+        calculate_vpd(
+
+            row["temperature"],
+
+            row["humidity"],
+
+        ),
+
+        axis=1,
+
+    )
+
+    featured["dew_point"] = featured.apply(
+
+        lambda row:
+
+        calculate_dew_point(
+
+            row["temperature"],
+
+            row["humidity"],
+
+        ),
+
+        axis=1,
+
+    )
+
+    featured["gdd"] = (
+
+        featured["temperature"]
+
+        .apply(
+            calculate_growing_degree_days
+        )
+
+    )
+
+    featured["temperature_difference"] = featured.apply(
+
+        lambda row:
+
+        calculate_temperature_difference(
+
+            row["temperature"],
+
+            row["soil_temp_c"],
+
+        ),
+
+        axis=1,
+
+    )
+
+    featured["water_balance"] = featured.apply(
+
+        lambda row:
+
+        calculate_water_balance(
+
+            row["rainfall"],
+
+            row["evaporation_risk"],
+
+        ),
+
+        axis=1,
+
+    )
+
+    featured["environment_stress"] = featured.apply(
+
+        lambda row:
+
+        calculate_environment_stress(
+
+            row["heat_index"],
+
+            row["water_stress"],
+
+            row["dryness_index"],
+
+        ),
+
+        axis=1,
+
+    )
+
+    logger.info(
+        "Feature engineering complete."
+    )
+
+    return featured
+
+
+# ==========================================================
+# Select Final Columns
+# ==========================================================
+
+def select_feature_columns(
+    featured: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Keep only columns required
+    for machine learning.
+    """
+
+    available = [
+
+        column
+
+        for column in FEATURE_COLUMNS
+
+        if column in featured.columns
+
+    ]
+
+    featured = featured[
+        available
+    ].copy()
+
+    logger.info(
+        "Selected %d ML features.",
+        len(available),
+    )
+
+    return featured
+
+
+logger.info(
+    "Dataset merge module initialized."
+)
+
+
+# ==========================================================
+# Featured Dataset Validation
+# Part 3.3
+# ==========================================================
+
+FEATURED_OUTPUT_FILE = (
+    PROCESSED_DATA_DIR /
+    "featured_data_generated.csv"
+)
+
+
+def validate_featured_dataset(
+    featured: pd.DataFrame,
+):
+    """
+    Validate featured dataset.
+    """
+
+    if featured.empty:
+        raise ValueError(
+            "Featured dataset is empty."
+        )
+
+    validate_required_columns(
+        featured,
+        FEATURE_COLUMNS,
+    )
+
+    logger.info(
+        "Featured dataset validation passed."
+    )
+
+
+# ==========================================================
+# Optimize Data Types
+# ==========================================================
+
+def optimize_featured_dataset(
+    featured: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Reduce memory usage.
+    """
+
+    featured = featured.copy()
+
+    int_columns = [
+        "plant_id",
+        "species_id",
+        "location_id",
+        "year",
+        "month",
+        "day",
+        "hour",
+        "week_of_year",
+        "day_of_week",
+        "plant_age_days",
+    ]
+
+    float_columns = [
+        "temperature",
+        "humidity",
+        "soil_moisture",
+        "soil_ph",
+        "air_temp_c",
+        "soil_temp_c",
+        "rainfall",
+        "rain_probability",
+        "wind_speed",
+        "heat_index",
+        "water_stress",
+        "dryness_index",
+        "evaporation_risk",
+        "irrigation_score",
+        "environment_stress",
+        "water_balance",
+        "temperature_difference",
+        "vpd",
+        "dew_point",
+        "gdd",
+        "current_height_cm",
+        "latitude",
+        "longitude",
+    ]
+
+    for column in int_columns:
+
+        if column in featured.columns:
+
+            featured[column] = (
+                featured[column]
+                .fillna(0)
+                .astype(np.int32)
+            )
+
+    for column in float_columns:
+
+        if column in featured.columns:
+
+            featured[column] = (
+                featured[column]
+                .astype(np.float32)
+            )
+
+    if "watering_needed" in featured.columns:
+
+        featured["watering_needed"] = (
+            featured["watering_needed"]
+            .astype(bool)
+        )
+
+    if "is_weekend" in featured.columns:
+
+        featured["is_weekend"] = (
+            featured["is_weekend"]
+            .astype(bool)
+        )
+
+    logger.info(
+        "Dataset optimization completed."
+    )
+
+    return featured
+
+
+# ==========================================================
+# Save Dataset
+# ==========================================================
+
+def save_featured_dataset(
+    featured: pd.DataFrame,
+    output_file=FEATURED_OUTPUT_FILE,
+):
+    """
+    Save featured dataset.
+    """
+
+    ensure_directory(
+        output_file.parent
+    )
+
+    featured.to_csv(
+        output_file,
+        index=False,
+    )
+
+    logger.info(
+        "Featured dataset saved:\n%s",
+        output_file,
+    )
+
+
+# ==========================================================
+# Preview Dataset
+# ==========================================================
+
+def preview_featured_dataset(
+    featured: pd.DataFrame,
+    rows: int = 10,
+):
+    """
+    Display first rows.
+    """
+
+    print_header(
+        "Featured Dataset Preview"
+    )
+
+    print(
+        featured.head(rows)
+    )
+
+    print()
+
+    print(
+        "Shape:",
+        featured.shape,
+    )
+
+    print()
+
+    print(
+        "Columns:"
+    )
+
+    for column in featured.columns:
+
+        print(
+            f" - {column}"
+        )
+
+
+# ==========================================================
+# Dataset Statistics
+# ==========================================================
+
+def feature_statistics(
+    featured: pd.DataFrame,
+):
+    """
+    Print dataset statistics.
+    """
+
+    print_header(
+        "Featured Dataset Statistics"
+    )
+
+    print(
+        featured.describe(
+            include="all"
+        )
+    )
+
+    print()
+
+    print(
+        "Missing Values"
+    )
+
+    print(
+        featured.isnull().sum()
+    )
+
+    print()
+
+    print(
+        "Watering Needed"
+    )
+
+    print(
+        featured[
+            "watering_needed"
+        ].value_counts()
+    )
+
+
+# ==========================================================
+# Complete Feature Pipeline
+# ==========================================================
+
+def build_featured_dataset():
+    """
+    Complete feature engineering pipeline.
+    """
+
+    logger.info(
+        "Building featured dataset..."
+    )
+
+    plants = (
+        load_and_initialize_plants()
+    )
+
+    weather = (
+        build_weather_dataset()
+    )
+
+    sensor_df, plants = (
+        build_sensor_dataset(
+            plants,
+            weather,
+        )
+    )
+
+    featured = merge_datasets(
+        plants,
+        weather,
+        sensor_df,
+    )
+
+    featured = engineer_features(
+        featured
+    )
+
+    featured = select_feature_columns(
+        featured
+    )
+
+    featured = optimize_featured_dataset(
+        featured
+    )
+
+    validate_featured_dataset(
+        featured
+    )
+
+    save_featured_dataset(
+        featured
+    )
+
+    preview_featured_dataset(
+        featured
+    )
+
+    feature_statistics(
+        featured
+    )
+
+    logger.info(
+        "Featured dataset successfully created."
+    )
+
+    return featured
+
+
+logger.info(
+    "Feature engineering pipeline initialized."
+)
