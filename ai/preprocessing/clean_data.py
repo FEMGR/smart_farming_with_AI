@@ -44,6 +44,16 @@ OUTPUT_FOLDER = AI_FOLDER / "datasets" / "processed"
 
 OUTPUT_FILE = OUTPUT_FOLDER / "cleaned_sensor_readings.csv"
 
+NON_IMPUTED_NUMERIC_COLUMNS = {
+    "user_id",
+    "plant_id",
+    "species_id",
+    "location_id",
+    "group_id",
+    "latitude",
+    "longitude",
+}
+
 
 # =====================================================
 # Cleaning Functions
@@ -51,25 +61,37 @@ OUTPUT_FILE = OUTPUT_FOLDER / "cleaned_sensor_readings.csv"
 
 
 def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Remove duplicated rows.
+    # Find any column that has been parsed into a Python list
+    # list_cols = [col for col in df.columns if df[col].apply(lambda x: isinstance(x, list)).any()]
+    # Find any column that has been parsed into a Python list (skipping datetime columns)
+    list_cols = [col for col in df.columns if not pd.api.types.is_datetime64_any_dtype(df[col]) and df[col].apply(lambda x: isinstance(x, list)).any()]
 
-    Duplicate rows may occur if a sensor sends the same
-    reading more than once.
-    """
+    if list_cols:
+        # Convert list columns to strings temporarily to allow deduplication
+        df_copy = df.copy()
+        for col in list_cols:
+            df_copy[col] = df_copy[col].astype(str)
+
+        # Get the indices of the unique rows
+        unique_indices = df_copy.drop_duplicates().index
+
+        # Return the original data (keeping actual lists intact) at those unique indices
+        return df.loc[unique_indices]
+
+    # If no lists are found, run normally
 
     return df.drop_duplicates()
 
 
 def fill_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Fill missing numeric values using the median.
+    Fill missing numeric measurements using the mean.
 
-    Median is usually preferred over the mean because
-    it is less affected by extreme outliers.
+    Identifier and coordinate fields are join keys. Filling those values would
+    attach unrelated rows to the same plant/location during merging.
     """
     df = df.copy()
-    numeric_columns = df.select_dtypes(include="number").columns
+    numeric_columns = [column for column in df.select_dtypes(include="number").columns if column not in NON_IMPUTED_NUMERIC_COLUMNS]
 
     df[numeric_columns] = df[numeric_columns].fillna(df[numeric_columns].mean())
 
@@ -134,7 +156,10 @@ def convert_timestamp_to_date(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     if "timestamp" in df.columns:
-        df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
+        try:
+            df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce", format="mixed")
+        except TypeError:
+            df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
         df = df.dropna(subset=["timestamp"])
 
     return df
@@ -172,6 +197,36 @@ def reset_index(df: pd.DataFrame) -> pd.DataFrame:
     return df.reset_index(drop=True)
 
 
+def clean_weather_data(df):
+
+    df = remove_duplicates(df)
+
+    df = coerce_numeric_columns(df)
+
+    df = convert_timestamp_to_date(df)
+
+    df = fill_missing_values(df)
+
+    df = sort_by_timestamp(df)
+
+    df = reset_index(df)
+
+    return df
+
+
+def clean_plant_data(df):
+
+    df = remove_duplicates(df)
+
+    df = convert_timestamp_to_date(df)
+
+    df = fill_missing_values(df)
+
+    df = reset_index(df)
+
+    return df
+
+
 def save_clean_data(df: pd.DataFrame) -> None:
     """
     Save the cleaned dataset.
@@ -187,21 +242,23 @@ def save_clean_data(df: pd.DataFrame) -> None:
 def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
     Execute the complete data cleaning pipeline.
-
-    The order of these operations is important:
-        1. Remove duplicate rows
-        2. Convert measurement values
-        3. Convert timestamps
-        4. Remove invalid values
-        5. Fill missing values
-        6. Sort by timestamp
-        7. Reset index
     """
 
     df = remove_duplicates(df)
     df = coerce_numeric_columns(df)
     df = convert_timestamp_to_date(df)
+
+    print("\nBefore validation")
+    print(df.shape)
+
+    if "temperature" in df.columns:
+        print(df["temperature"].describe())
+
     df = remove_invalid_sensor_values(df)
+
+    print("\nAfter validation")
+    print(df.shape)
+
     df = fill_missing_values(df)
     df = sort_by_timestamp(df)
     df = reset_index(df)
@@ -217,7 +274,23 @@ def clean_all_datasets(datasets):
     cleaned = {}
 
     for name, df in datasets.items():
-        cleaned[name] = clean_dataframe(df)
+
+        print(f"\n===== Cleaning {name} =====")
+        print("Initial:", df.shape)
+
+        if name == "sensor":
+            cleaned[name] = clean_dataframe(df)
+
+        elif name in ("weather", "weather_json"):
+            cleaned[name] = clean_weather_data(df)
+
+        elif name == "plants":
+            cleaned[name] = clean_plant_data(df)
+
+        else:
+            cleaned[name] = df.copy()
+
+        print("Final:", cleaned[name].shape)
 
     return cleaned
 

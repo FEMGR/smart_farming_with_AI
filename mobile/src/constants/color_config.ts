@@ -229,7 +229,7 @@ export const lightTheme: ThemeColors = {
   warning: '#E0A534',
   warningBackground: '#FFFAEB',
   warningText: '#7F5812',
-  error: '#D54B44',
+  error: '#70120d',
   errorBackground: '#FFF2F0',
   errorText: '#893337',
   info: '#4A90A6',
@@ -294,7 +294,7 @@ export const darkTheme: ThemeColors = {
   error: '#E56D63',
   errorBackground: 'rgba(229, 109, 99, 0.15)',
   errorText: '#F08B81',
-  info: '#6BA3B6',
+  info: '#2f7e98',
   infoBackground: 'rgba(107, 163, 182, 0.15)',
   infoText: '#A8C9B0',
 
@@ -316,7 +316,7 @@ export const darkTheme: ThemeColors = {
   // Domain Specific (Care Actions)
   careWater: '#5FA79A',
   careFertilize: '#9BB896',
-  carePrune: '#B39BD8',
+  carePrune: '#371c65',
   careHarvest: '#81B28A',
 };
 

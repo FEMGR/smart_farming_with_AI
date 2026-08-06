@@ -33,13 +33,13 @@ PLANT_COLUMNS = [
     "plant_name",
     "scientific_name",
     "last_watered",
+    "planting_date",
     "watering_interval_days",
     "recommended_soil",
     "life_cycle",
     "environment_type",
     "latitude",
     "longitude",
-    "plant_age_days",
     "height_cm",
     "growth_stage",
     "propagation_method",
@@ -54,7 +54,6 @@ INTEGER_COLUMNS = [
     "location_id",
     "species_id",
     "watering_interval_days",
-    "plant_age_days",
 ]
 
 FLOAT_COLUMNS = [

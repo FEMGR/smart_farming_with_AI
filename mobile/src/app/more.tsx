@@ -568,7 +568,7 @@ export default function MoreScreen() {
                               Supports: {item.supports?.join(', ')}
                             </ThemedText>
                             <ThemedText type="small" themeColor="textSecondary">
-                              Confidence Score: {item.confidence?.toFixed(1) || item.average_score?.toFixed(1) || 'N/A'}
+                              Confidence Score: {item.confidence !== undefined ? Number(item.confidence).toFixed(1) : item.average_score !== undefined ? Number(item.average_score).toFixed(1) : 'N/A'}
                             </ThemedText>
                           </View>
                         </TouchableOpacity>
@@ -757,8 +757,8 @@ export default function MoreScreen() {
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
             <ThemedText type="subtitle">Add Location</ThemedText>
-            <TouchableOpacity onPress={() => setAddLocVisible(false)}>
-              <SymbolView name="xmark" size={24} tintColor="#10B981" />
+            <TouchableOpacity onPress={() => setAddLocVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
@@ -867,17 +867,26 @@ export default function MoreScreen() {
               )}
             </TouchableOpacity>
 
-            <TouchableOpacity
-              style={styles.submitBtn}
-              onPress={handleCreateLocation}
-              disabled={actionLoading}
-            >
-              {actionLoading ? (
-                <ActivityIndicator color="#fff" />
-              ) : (
-                <ThemedText style={styles.submitBtnText}>Create Location</ThemedText>
-              )}
-            </TouchableOpacity>
+            <View style={styles.modalButtonGroup}>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.cancelBtn]}
+                onPress={() => setAddLocVisible(false)}
+                disabled={actionLoading}
+              >
+                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                onPress={handleCreateLocation}
+                disabled={actionLoading}
+              >
+                {actionLoading ? (
+                  <ActivityIndicator color="#fff" />
+                ) : (
+                  <ThemedText style={styles.submitBtnText}>Create Location</ThemedText>
+                )}
+              </TouchableOpacity>
+            </View>
           </ScrollView>
         </SafeAreaView>
       </Modal>
@@ -891,8 +900,8 @@ export default function MoreScreen() {
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
             <ThemedText type="subtitle">Edit Location</ThemedText>
-            <TouchableOpacity onPress={() => setEditLocVisible(false)}>
-              <SymbolView name="xmark" size={24} tintColor="#10B981" />
+            <TouchableOpacity onPress={() => setEditLocVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
@@ -909,6 +918,8 @@ export default function MoreScreen() {
               style={[styles.input, { height: 80, paddingTop: 10 }]}
               multiline
               numberOfLines={3}
+              placeholder="e.g. Sunny east-facing balcony."
+              placeholderTextColor="#888"
               value={editLocDesc}
               onChangeText={setEditLocDesc}
             />
@@ -997,17 +1008,26 @@ export default function MoreScreen() {
               )}
             </TouchableOpacity>
 
-            <TouchableOpacity
-              style={styles.submitBtn}
-              onPress={handleUpdateLocation}
-              disabled={actionLoading}
-            >
-              {actionLoading ? (
-                <ActivityIndicator color="#fff" />
-              ) : (
-                <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
-              )}
-            </TouchableOpacity>
+            <View style={styles.modalButtonGroup}>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.cancelBtn]}
+                onPress={() => setEditLocVisible(false)}
+                disabled={actionLoading}
+              >
+                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                onPress={handleUpdateLocation}
+                disabled={actionLoading}
+              >
+                {actionLoading ? (
+                  <ActivityIndicator color="#fff" />
+                ) : (
+                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                )}
+              </TouchableOpacity>
+            </View>
 
             <TouchableOpacity
               style={[styles.submitBtn, styles.deleteBtn]}
@@ -1388,5 +1408,34 @@ const styles = StyleSheet.create({
   themeOptionText: {
     fontSize: 13,
     fontWeight: '500',
+  },
+  modalButtonGroup: {
+    flexDirection: 'row',
+    gap: Spacing.two,
+    marginTop: Spacing.four,
+  },
+  primarySubmitBtn: {
+    flex: 1,
+    marginTop: 0,
+  },
+  cancelBtn: {
+    backgroundColor: '#F3F4F6',
+    borderWidth: 1,
+    borderColor: '#D1D5DB',
+    flex: 1,
+    marginTop: 0,
+  },
+  cancelBtnText: {
+    color: '#374151',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  closeHeaderBtn: {
+    padding: Spacing.one,
+  },
+  closeHeaderText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#6B7280',
   },
 });

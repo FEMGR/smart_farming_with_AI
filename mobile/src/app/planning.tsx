@@ -28,6 +28,8 @@ export default function PlanningScreen() {
     addSection,
     editSection,
     removeSection,
+    editLocation,
+    removeLocation,
     removePolyculturePlan,
     getPolyculturePreview,
     loading,
@@ -41,6 +43,17 @@ export default function PlanningScreen() {
   const [sectionModalVisible, setSectionModalVisible] = useState(false);
   const [editSectionModalVisible, setEditSectionModalVisible] = useState(false);
   const [selectedSection, setSelectedSection] = useState<any>(null);
+
+  // Form Location States
+  const [editLocModalVisible, setEditLocModalVisible] = useState(false);
+  const [selectedLoc, setSelectedLoc] = useState<any>(null);
+  const [editLocName, setEditLocName] = useState('');
+  const [editLocDesc, setEditLocDesc] = useState('');
+  const [editLocEnv, setEditLocEnv] = useState('outdoor');
+  const [editLocWidth, setEditLocWidth] = useState('5.0');
+  const [editLocLength, setEditLocLength] = useState('5.0');
+  const [editLocLat, setEditLocLat] = useState('');
+  const [editLocLng, setEditLocLng] = useState('');
 
   // New Section Fields
   const [secName, setSecName] = useState('');
@@ -165,6 +178,69 @@ export default function PlanningScreen() {
     setEditSecLength(String(sec.length_m || 3.0));
     setEditSecLocationId(sec.location_id || (locations[0]?.id || null));
     setEditSectionModalVisible(true);
+  };
+
+  const openEditLocation = (loc: any) => {
+    if (!loc) return;
+    setSelectedLoc(loc);
+    setEditLocName(loc.name || '');
+    setEditLocDesc(loc.description || '');
+    setEditLocEnv(loc.environment_type || 'outdoor');
+    setEditLocWidth(String(loc.width_m || 5.0));
+    setEditLocLength(String(loc.length_m || 5.0));
+    setEditLocLat(loc.latitude ? String(loc.latitude) : '');
+    setEditLocLng(loc.longitude ? String(loc.longitude) : '');
+    setEditLocModalVisible(true);
+  };
+
+  const handleUpdateLocation = async () => {
+    if (!selectedLoc || !editLocName.trim()) {
+      Alert.alert('Error', 'Location name is required');
+      return;
+    }
+    setActionLoading(true);
+    try {
+      await editLocation(selectedLoc.id, {
+        name: editLocName.trim(),
+        description: editLocDesc.trim() || null,
+        environment_type: editLocEnv,
+        width_m: parseFloat(editLocWidth) || 5.0,
+        length_m: parseFloat(editLocLength) || 5.0,
+        latitude: parseFloat(editLocLat) || null,
+        longitude: parseFloat(editLocLng) || null,
+      });
+      setEditLocModalVisible(false);
+      Alert.alert('Success', 'Location updated successfully');
+    } catch (e: any) {
+      Alert.alert('Error', e.message || 'Failed to update location');
+    } finally {
+      setActionLoading(false);
+    }
+  };
+
+  const handleDeleteLocation = (locId: number, name: string) => {
+    Alert.alert(
+      'Delete Location',
+      `Are you sure you want to delete "${name}"?`,
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Delete',
+          style: 'destructive',
+          onPress: async () => {
+            setActionLoading(true);
+            try {
+              await removeLocation(locId);
+              setEditLocModalVisible(false);
+            } catch (e: any) {
+              Alert.alert('Error', e.message || 'Failed to delete location');
+            } finally {
+              setActionLoading(false);
+            }
+          },
+        },
+      ]
+    );
   };
 
   const handleGeneratePreview = async () => {
@@ -418,12 +494,20 @@ export default function PlanningScreen() {
                   <ThemedView key={sec.id} type="backgroundElement" style={styles.card}>
                     <View style={styles.cardHeader}>
                       <View style={{ flex: 1 }}>
-                        <ThemedText type="smallBold" style={styles.sectionTitleText}>
-                          {sec.name}
-                        </ThemedText>
-                        <ThemedText themeColor="textSecondary" style={styles.sectionLocText}>
-                          Location: {loc?.name || `ID ${sec.location_id}`}
-                        </ThemedText>
+                        <TouchableOpacity onPress={() => openEditSection(sec)} activeOpacity={0.7}>
+                          <ThemedText type="smallBold" style={styles.sectionTitleText}>
+                            {sec.name}
+                          </ThemedText>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                          onPress={() => loc && openEditLocation(loc)}
+                          activeOpacity={0.7}
+                          style={styles.locationLinkBtn}
+                        >
+                          <ThemedText themeColor="textSecondary" style={styles.sectionLocText}>
+                            Location: <ThemedText style={styles.locNameHighlight}>{loc?.name || `ID ${sec.location_id}`}</ThemedText> ✎
+                          </ThemedText>
+                        </TouchableOpacity>
                       </View>
                       <TouchableOpacity onPress={() => openEditSection(sec)} style={styles.editSecBtn}>
                         <SymbolView name="pencil" size={16} tintColor="#10B981" />
@@ -449,7 +533,7 @@ export default function PlanningScreen() {
                         <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
                           Area
                         </ThemedText>
-                        <ThemedText type="smallBold">{sec.area_m2?.toFixed(1)} m²</ThemedText>
+                        <ThemedText type="smallBold">{Number(sec.area_m2 || 0).toFixed(1)} m²</ThemedText>
                       </View>
                     </View>
                   </ThemedView>
@@ -602,8 +686,8 @@ export default function PlanningScreen() {
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
             <ThemedText type="subtitle">Create Farm Section</ThemedText>
-            <TouchableOpacity onPress={() => setSectionModalVisible(false)}>
-              <SymbolView name="xmark" size={24} tintColor="#10B981" />
+            <TouchableOpacity onPress={() => setSectionModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
@@ -684,17 +768,26 @@ export default function PlanningScreen() {
               </View>
             </View>
 
-            <TouchableOpacity
-              style={styles.submitBtn}
-              onPress={handleCreateSection}
-              disabled={actionLoading}
-            >
-              {actionLoading ? (
-                <ActivityIndicator color="#fff" />
-              ) : (
-                <ThemedText style={styles.submitBtnText}>Create Section</ThemedText>
-              )}
-            </TouchableOpacity>
+            <View style={styles.modalButtonGroup}>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.cancelBtn]}
+                onPress={() => setSectionModalVisible(false)}
+                disabled={actionLoading}
+              >
+                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                onPress={handleCreateSection}
+                disabled={actionLoading}
+              >
+                {actionLoading ? (
+                  <ActivityIndicator color="#fff" />
+                ) : (
+                  <ThemedText style={styles.submitBtnText}>Create Section</ThemedText>
+                )}
+              </TouchableOpacity>
+            </View>
           </ScrollView>
         </SafeAreaView>
       </Modal>
@@ -708,8 +801,8 @@ export default function PlanningScreen() {
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
             <ThemedText type="subtitle">Edit Farm Section</ThemedText>
-            <TouchableOpacity onPress={() => setEditSectionModalVisible(false)}>
-              <SymbolView name="xmark" size={24} tintColor="#10B981" />
+            <TouchableOpacity onPress={() => setEditSectionModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
@@ -788,17 +881,26 @@ export default function PlanningScreen() {
               </View>
             </View>
 
-            <TouchableOpacity
-              style={styles.submitBtn}
-              onPress={handleUpdateSection}
-              disabled={actionLoading}
-            >
-              {actionLoading ? (
-                <ActivityIndicator color="#fff" />
-              ) : (
-                <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
-              )}
-            </TouchableOpacity>
+            <View style={styles.modalButtonGroup}>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.cancelBtn]}
+                onPress={() => setEditSectionModalVisible(false)}
+                disabled={actionLoading}
+              >
+                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                onPress={handleUpdateSection}
+                disabled={actionLoading}
+              >
+                {actionLoading ? (
+                  <ActivityIndicator color="#fff" />
+                ) : (
+                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                )}
+              </TouchableOpacity>
+            </View>
 
             <TouchableOpacity
               style={[styles.submitBtn, styles.deleteBtn]}
@@ -806,6 +908,140 @@ export default function PlanningScreen() {
               disabled={actionLoading}
             >
               <ThemedText style={styles.submitBtnText}>Delete Section</ThemedText>
+            </TouchableOpacity>
+          </ScrollView>
+        </SafeAreaView>
+      </Modal>
+
+      {/* Edit Location Modal */}
+      <Modal
+        visible={editLocModalVisible}
+        animationType="slide"
+        onRequestClose={() => setEditLocModalVisible(false)}
+      >
+        <SafeAreaView style={styles.modalContainer}>
+          <View style={styles.modalHeader}>
+            <ThemedText type="subtitle">Edit Location</ThemedText>
+            <TouchableOpacity onPress={() => setEditLocModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
+            </TouchableOpacity>
+          </View>
+
+          <ScrollView contentContainerStyle={styles.modalForm}>
+            <ThemedText style={styles.fieldLabel}>Location Name *</ThemedText>
+            <TextInput
+              style={styles.input}
+              value={editLocName}
+              onChangeText={setEditLocName}
+            />
+
+            <ThemedText style={styles.fieldLabel}>Description</ThemedText>
+            <TextInput
+              style={[styles.input, { height: 80, paddingTop: 10 }]}
+              multiline
+              numberOfLines={3}
+              placeholder="e.g. Sunny east-facing balcony."
+              placeholderTextColor="#888"
+              value={editLocDesc}
+              onChangeText={setEditLocDesc}
+            />
+
+            <ThemedText style={styles.fieldLabel}>Environment</ThemedText>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.horizontalSelect}>
+              {['outdoor', 'greenhouse', 'indoor', 'hydroponic'].map((env) => (
+                <TouchableOpacity
+                  key={env}
+                  style={[
+                    styles.typeOption,
+                    editLocEnv === env && styles.typeOptionSelected,
+                  ]}
+                  onPress={() => setEditLocEnv(env)}
+                >
+                  <ThemedText
+                    style={[
+                      styles.typeOptionText,
+                      editLocEnv === env && { color: '#fff', fontWeight: 'bold' },
+                    ]}
+                  >
+                    {env}
+                  </ThemedText>
+                </TouchableOpacity>
+              ))}
+            </ScrollView>
+
+            <View style={styles.formRow}>
+              <View style={{ flex: 1 }}>
+                <ThemedText style={styles.fieldLabel}>Width (meters)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  value={editLocWidth}
+                  onChangeText={setEditLocWidth}
+                  keyboardType="numeric"
+                />
+              </View>
+              <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                <ThemedText style={styles.fieldLabel}>Length (meters)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  value={editLocLength}
+                  onChangeText={setEditLocLength}
+                  keyboardType="numeric"
+                />
+              </View>
+            </View>
+
+            <View style={styles.formRow}>
+              <View style={{ flex: 1 }}>
+                <ThemedText style={styles.fieldLabel}>Latitude (optional)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  placeholder="e.g. 37.7749"
+                  placeholderTextColor="#888"
+                  value={editLocLat}
+                  onChangeText={setEditLocLat}
+                  keyboardType="numeric"
+                />
+              </View>
+              <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                <ThemedText style={styles.fieldLabel}>Longitude (optional)</ThemedText>
+                <TextInput
+                  style={styles.input}
+                  placeholder="e.g. -122.4194"
+                  placeholderTextColor="#888"
+                  value={editLocLng}
+                  onChangeText={setEditLocLng}
+                  keyboardType="numeric"
+                />
+              </View>
+            </View>
+
+            <View style={styles.modalButtonGroup}>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.cancelBtn]}
+                onPress={() => setEditLocModalVisible(false)}
+                disabled={actionLoading}
+              >
+                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                onPress={handleUpdateLocation}
+                disabled={actionLoading}
+              >
+                {actionLoading ? (
+                  <ActivityIndicator color="#fff" />
+                ) : (
+                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                )}
+              </TouchableOpacity>
+            </View>
+
+            <TouchableOpacity
+              style={[styles.submitBtn, styles.deleteBtn]}
+              onPress={() => selectedLoc && handleDeleteLocation(selectedLoc.id, selectedLoc.name)}
+              disabled={actionLoading}
+            >
+              <ThemedText style={styles.submitBtnText}>Delete Location</ThemedText>
             </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
@@ -1102,5 +1338,42 @@ const styles = StyleSheet.create({
   secMultiBtnText: {
     fontSize: 13,
     color: '#333',
+  },
+  modalButtonGroup: {
+    flexDirection: 'row',
+    gap: Spacing.two,
+    marginTop: Spacing.four,
+  },
+  primarySubmitBtn: {
+    flex: 1,
+    marginTop: 0,
+  },
+  cancelBtn: {
+    backgroundColor: '#F3F4F6',
+    borderWidth: 1,
+    borderColor: '#D1D5DB',
+    flex: 1,
+    marginTop: 0,
+  },
+  cancelBtnText: {
+    color: '#374151',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  closeHeaderBtn: {
+    padding: Spacing.one,
+  },
+  closeHeaderText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#6B7280',
+  },
+  locationLinkBtn: {
+    marginTop: 2,
+    alignSelf: 'flex-start',
+  },
+  locNameHighlight: {
+    color: '#10B981',
+    fontWeight: '600',
   },
 });

@@ -116,7 +116,7 @@ export default function SpeciesSearchScreen() {
                         <ThemedText style={styles.badgeText}>{species.source || 'perenual'}</ThemedText>
                       </View>
                       <View style={[styles.badge, { backgroundColor: 'rgba(59, 130, 246, 0.1)' }]}>
-                        <ThemedText style={styles.badgeText}>score {species.score?.toFixed(1) || '0.0'}</ThemedText>
+                        <ThemedText style={styles.badgeText}>score {Number(species.score || 0).toFixed(1)}</ThemedText>
                       </View>
                       <View style={[styles.badge, { backgroundColor: 'rgba(139, 92, 246, 0.1)' }]}>
                         <ThemedText style={styles.badgeText}>{species.plant_type || 'unknown'}</ThemedText>

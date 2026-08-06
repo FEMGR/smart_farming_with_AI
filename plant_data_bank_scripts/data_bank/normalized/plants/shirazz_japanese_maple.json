@@ -9,22 +9,25 @@
     "common_names": []
   },
   "classification": {
-    "edible": null,
+    "edible": false,
     "use_categories": [],
     "edible_parts": [],
-    "life_cycle": null,
+    "life_cycle": "perennial",
     "growth_habit": null,
     "botanical_life_cycle": null,
     "crop_life_cycle": null,
     "life_cycle_context": null
   },
   "growth": {
-    "sunlight": [],
-    "water_need": null,
+    "sunlight": [
+      "full_sun",
+      "part_shade"
+    ],
+    "water_need": "average",
     "soil_type": [],
     "soil_ph_min": null,
     "soil_ph_max": null,
-    "growth_speed": null,
+    "growth_speed": "low",
     "climate_notes": null,
     "soil_notes": null,
     "water_notes": null,
@@ -33,7 +36,13 @@
     "rainfall_notes": null
   },
   "germination": {
-    "propagation_methods": [],
+    "propagation_methods": [
+      "grafting_propagation",
+      "cutting",
+      "layering_propagation",
+      "air_layering_propagation",
+      "tissue_culture"
+    ],
     "propagation_notes": null,
     "germination_days_min": null,
     "germination_days_max": null,
@@ -51,11 +60,11 @@
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
+    "watering_interval_days": 2,
     "watering_notes": null,
     "pruning_notes": null,
     "fertilizer_notes": null,
-    "cultivation_notes": null,
+    "cultivation_notes": "The Shirazz Japanese Maple (Acer palmatum 'Gwen's Rose Delight') is an amazing tree with beautiful foliage. The spring leaves come out a unique unique mix of purplish-red shades. It then transitions to a lush green in the summer, turning again to scarlet red and vibrant oranges in the fall. This Japanese Maple grows perfectly in the filtered shade of tall evergreens and makes an impressive statement in a landscape. It is easy to care for and its small size makes it easy to incorporate into any garden.",
     "production_notes": null,
     "nutrition_notes": null,
     "cautions": null,
@@ -81,7 +90,15 @@
     "identity.scientific_name": "local_seed",
     "identity.common_name": "local_seed",
     "identity.genus": "GBIF",
-    "identity.family": "GBIF"
+    "identity.family": "GBIF",
+    "classification.life_cycle": "Perenual",
+    "classification.edible": "Perenual",
+    "growth.sunlight": "Perenual",
+    "growth.water_need": "Perenual",
+    "growth.growth_speed": "Perenual",
+    "germination.propagation_methods": "Perenual",
+    "care.watering_interval_days": "Perenual",
+    "care.cultivation_notes": "Perenual"
   },
   "source_metadata": {
     "sources": [
@@ -168,17 +185,31 @@
         ],
         "confidence": 0.3,
         "last_verified_at": "2026-07-18T05:42:05.289457+00:00"
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/plant-species-database-search-finder/species/58",
+        "status": "snapshot",
+        "trusted_detail": true,
+        "relevance_score": null,
+        "fields_provided": [
+          "identity",
+          "classification.life_cycle",
+          "growth.sunlight",
+          "growth.water_need",
+          "growth.growth_speed",
+          "germination.propagation_methods",
+          "care.watering_interval_days"
+        ],
+        "confidence": 0.88,
+        "last_verified_at": "2026-07-31T05:39:30.432933+00:00"
       }
     ],
-    "last_merged_at": "2026-07-18T05:42:44.135424+00:00"
+    "last_merged_at": "2026-07-31T05:39:30.450977+00:00"
   },
   "missing_fields": [
     "classification.edible_parts",
-    "classification.life_cycle",
-    "growth.sunlight",
-    "growth.water_need",
     "growth.soil_notes",
-    "germination.propagation_methods",
     "germination.germination_days_min",
     "germination.sowing_depth_cm",
     "pests_and_diseases.known_diseases"

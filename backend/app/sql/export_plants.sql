@@ -22,16 +22,13 @@ SELECT
     p.name AS plant_name,
     COALESCE(NULLIF(p.scientific_name, ''), c.scientific_name, p.name) AS scientific_name,
     p.last_watered::timestamp AS last_watered,
+    p.planting_date,
     COALESCE(p.watering_interval_days, c.watering_interval_days) AS watering_interval_days,
     c.recommended_soil,
     c.life_cycle,
     l.environment_type,
     l.latitude::float AS latitude,
     l.longitude::float AS longitude,
-    CASE
-        WHEN p.planting_date IS NULL THEN NULL
-        ELSE (CURRENT_DATE - p.planting_date)::integer
-    END AS plant_age_days,
     COALESCE(lgs.height_cm, lpg.height_cm) AS height_cm,
     COALESCE(lgs.growth_stage, lpg.growth_stage) AS growth_stage,
     c.propagation_method,
