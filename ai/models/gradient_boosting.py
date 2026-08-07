@@ -8,7 +8,6 @@ from typing import Any
 
 from sklearn.ensemble import GradientBoostingClassifier, GradientBoostingRegressor
 
-
 DEFAULT_CLASSIFIER_PARAMS: dict[str, Any] = {
     "n_estimators": 200,
     "learning_rate": 0.05,

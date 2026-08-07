@@ -9,7 +9,6 @@ from typing import Any
 
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 
-
 DEFAULT_CLASSIFIER_PARAMS: dict[str, Any] = {
     "n_estimators": 300,
     "max_depth": None,

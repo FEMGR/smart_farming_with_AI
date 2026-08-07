@@ -35,7 +35,6 @@ from ai.tasks.growth_prediction.config import (  # noqa: E402
     TEST_SIZE,
 )
 
-
 MODEL_BUILDERS = {
     "random_forest": build_random_forest_model,
 }

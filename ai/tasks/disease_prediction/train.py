@@ -35,7 +35,6 @@ from ai.tasks.disease_prediction.config import (  # noqa: E402
     TEST_SIZE,
 )
 
-
 MODEL_BUILDERS = {
     "xgboost": build_xgboost_model,
 }
