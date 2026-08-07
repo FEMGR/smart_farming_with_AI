@@ -37,7 +37,6 @@ from ai.tasks.irrigation_prediction.config import (  # noqa: E402
     TEST_SIZE,
 )
 
-
 MODEL_BUILDERS = {
     "random_forest": build_random_forest_model,
     "xgboost": build_xgboost_model,
