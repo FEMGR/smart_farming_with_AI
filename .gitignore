@@ -42,4 +42,7 @@ htmlcov/
 logic_companion_planting/bin/
 *.qlf
 
-
+# ML trained model artifacts
+ai/artifacts/
+*.pkl
+*.joblib
