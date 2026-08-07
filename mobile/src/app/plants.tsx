@@ -396,8 +396,8 @@ export default function PlantsScreen() {
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
             <ThemedText type="subtitle" style={styles.modalTitle}>Add New Plant</ThemedText>
-            <TouchableOpacity onPress={() => setAddModalVisible(false)}>
-              <SymbolView name="xmark" size={24} tintColor="#10B981" />
+            <TouchableOpacity onPress={() => setAddModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
@@ -519,17 +519,26 @@ export default function PlantsScreen() {
               onChangeText={setSpeciesId}
             />
 
-            <TouchableOpacity
-              style={styles.submitBtn}
-              onPress={handleCreatePlant}
-              disabled={formLoading}
-            >
-              {formLoading ? (
-                <ActivityIndicator color="#fff" />
-              ) : (
-                <ThemedText style={styles.submitBtnText}>Create Plant</ThemedText>
-              )}
-            </TouchableOpacity>
+            <View style={styles.modalButtonGroup}>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.cancelBtn]}
+                onPress={() => setAddModalVisible(false)}
+                disabled={formLoading}
+              >
+                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                onPress={handleCreatePlant}
+                disabled={formLoading}
+              >
+                {formLoading ? (
+                  <ActivityIndicator color="#fff" />
+                ) : (
+                  <ThemedText style={styles.submitBtnText}>Create Plant</ThemedText>
+                )}
+              </TouchableOpacity>
+            </View>
           </ScrollView>
         </SafeAreaView>
       </Modal>
@@ -543,8 +552,8 @@ export default function PlantsScreen() {
         <SafeAreaView style={styles.modalContainer}>
           <View style={styles.modalHeader}>
             <ThemedText type="subtitle" style={styles.modalTitle}>Edit Plant Details</ThemedText>
-            <TouchableOpacity onPress={() => setEditModalVisible(false)}>
-              <SymbolView name="xmark" size={24} tintColor="#10B981" />
+            <TouchableOpacity onPress={() => setEditModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
+              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
@@ -616,6 +625,9 @@ export default function PlantsScreen() {
             <View style={styles.switchRow}>
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Uses Soil Sensor</ThemedText>
+                <ThemedText type="small" style={styles.modalHelperText}>
+                  Enable dynamic sensor reading overrides.
+                </ThemedText>
               </View>
               <Switch value={editUseSensor} onValueChange={setEditUseSensor} trackColor={{ true: '#10B981' }} />
             </View>
@@ -630,17 +642,26 @@ export default function PlantsScreen() {
               onChangeText={setEditWateringInterval}
             />
 
-            <TouchableOpacity
-              style={styles.submitBtn}
-              onPress={handleUpdatePlant}
-              disabled={formLoading}
-            >
-              {formLoading ? (
-                <ActivityIndicator color="#fff" />
-              ) : (
-                <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
-              )}
-            </TouchableOpacity>
+            <View style={styles.modalButtonGroup}>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.cancelBtn]}
+                onPress={() => setEditModalVisible(false)}
+                disabled={formLoading}
+              >
+                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                onPress={handleUpdatePlant}
+                disabled={formLoading}
+              >
+                {formLoading ? (
+                  <ActivityIndicator color="#fff" />
+                ) : (
+                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                )}
+              </TouchableOpacity>
+            </View>
 
             <TouchableOpacity
               style={[styles.submitBtn, styles.deleteBtn]}
@@ -973,5 +994,34 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#D97706',
     marginVertical: Spacing.one,
+  },
+  modalButtonGroup: {
+    flexDirection: 'row',
+    gap: Spacing.two,
+    marginTop: Spacing.four,
+  },
+  primarySubmitBtn: {
+    flex: 1,
+    marginTop: 0,
+  },
+  cancelBtn: {
+    backgroundColor: '#F3F4F6',
+    borderWidth: 1,
+    borderColor: '#D1D5DB',
+    flex: 1,
+    marginTop: 0,
+  },
+  cancelBtnText: {
+    color: '#374151',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  closeHeaderBtn: {
+    padding: Spacing.one,
+  },
+  closeHeaderText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#6B7280',
   },
 });

@@ -1,0 +1,126 @@
+{
+  "id": 667,
+  "common_name": "onion",
+  "scientific_name": [
+    "Allium cepa"
+  ],
+  "other_name": [
+    "spring onion",
+    "shallot"
+  ],
+  "family": "Amaryllidaceae",
+  "hybrid": null,
+  "authority": null,
+  "subspecies": null,
+  "cultivar": null,
+  "variety": null,
+  "species_epithet": "cepa",
+  "genus": "Allium",
+  "origin": [
+    "Not known in wild"
+  ],
+  "type": "Bulb",
+  "dimensions": [
+    {
+      "type": null,
+      "min_value": 1,
+      "max_value": 1.5,
+      "unit": "feet"
+    }
+  ],
+  "cycle": "Perennial",
+  "attracts": [],
+  "propagation": [
+    "Seed Propagation",
+    "Tissue Culture"
+  ],
+  "hardiness": {
+    "min": "5",
+    "max": "10"
+  },
+  "hardiness_location": {
+    "full_url": "https://perenual.com/api/hardiness-map?species_id=667&size=og&key=sk-BO3069e45e3377a9916548",
+    "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=667&size=og&key=sk-BO3069e45e3377a9916548'></iframe>"
+  },
+  "watering": "Average",
+  "watering_general_benchmark": {
+    "value": "\"3-5\"",
+    "unit": "days"
+  },
+  "plant_anatomy": [
+    {
+      "part": "leaves",
+      "color": [
+        "green"
+      ]
+    },
+    {
+      "part": "bulbs",
+      "color": [
+        "white"
+      ]
+    }
+  ],
+  "sunlight": [
+    "full sun"
+  ],
+  "pruning_month": [
+    "May",
+    "June",
+    "July",
+    "August"
+  ],
+  "pruning_count": [],
+  "seeds": true,
+  "maintenance": "Moderate",
+  "care_guides": "http://perenual.com/api/species-care-guide-list?species_id=667&key=sk-BO3069e45e3377a9916548",
+  "soil": [],
+  "growth_rate": "High",
+  "drought_tolerant": false,
+  "salt_tolerant": true,
+  "thorny": false,
+  "invasive": false,
+  "tropical": false,
+  "indoor": true,
+  "care_level": "Medium",
+  "pest_susceptibility": [
+    "Diptera - true flies",
+    " Rust",
+    "  Pest resistant",
+    " Deer resistant",
+    " Rabbit resistant "
+  ],
+  "flowers": true,
+  "flowering_season": null,
+  "cones": false,
+  "fruits": true,
+  "edible_fruit": true,
+  "harvest_season": "Fall",
+  "leaf": true,
+  "edible_leaf": true,
+  "cuisine": true,
+  "medicinal": true,
+  "poisonous_to_humans": false,
+  "poisonous_to_pets": false,
+  "description": "Onion (Allium cepa) is an amazing and versatile vegetable that has been used in cooking for centuries. Its taste is powerful yet complex, and it adds flavor and texture to many dishes. Onions are incredibly nutritious and are packed with essential vitamins and minerals including vitamin C, folate, iron, and potassium. Not only that, but onions may also have antiseptic, antibiotic, and antioxidant properties. They are an excellent source of dietary fiber and possess anti-inflammatory compounds. Onions are easy to grow in any garden, and they come in a variety of sizes, shapes and colors, making them a unique and beautiful ornamental plant. Its versatility in cooking, nutritional content, and medicinal properties combined with its decorative appearance make the onion a truly remarkable species.",
+  "default_image": {
+    "license": 4,
+    "license_name": "Attribution License",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "original_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/667_allium_cepa/og/24466615444_a161c175d3_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260731%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T042906Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=a09463f6857f5ee713be8496bda87b57d69f681d4ad0e5535563e4bd542f4aed",
+    "regular_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/667_allium_cepa/regular/24466615444_a161c175d3_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260731%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T042906Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=a2fb593190943b6942216e43ecbe148f19b5deec943f8a9c706b07f2761e4e33",
+    "medium_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/667_allium_cepa/medium/24466615444_a161c175d3_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260731%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T042906Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=6058db20aa9cc0c5a942b4ce0ab17396df245b0d687d5e96cdce12a3e5383d55",
+    "small_url": "https://s3.us-central-1.wasabisys.com/perenual/species_image/667_allium_cepa/small/24466615444_a161c175d3_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260731%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T042906Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=551c9c2d2a367fc1e4555a1ef996d4bb83acd86d21030a69198ce064fe94f4e9",
+    "thumbnail": "https://s3.us-central-1.wasabisys.com/perenual/species_image/667_allium_cepa/thumbnail/24466615444_a161c175d3_b.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0MPGHU7CIPXNPMVWMXUW%2F20260731%2Fus-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T042906Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=397a3d692156f82e41b5b2ed4d5d3e1544b018cddf44f9551fff5aee2d6a53dc"
+  },
+  "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringQuality": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPeriod": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringAvgVolumeRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringDepthRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringBasedTemperature": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xWateringPhLevel": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xSunlightDuration": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xTemperatureTolence": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry",
+  "xPlantSpacingRequirement": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}

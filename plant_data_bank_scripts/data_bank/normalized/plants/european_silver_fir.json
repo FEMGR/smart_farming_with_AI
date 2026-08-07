@@ -14,7 +14,7 @@
     ]
   },
   "classification": {
-    "edible": null,
+    "edible": false,
     "use_categories": [
       "medicinal_plant"
     ],
@@ -28,7 +28,8 @@
   "growth": {
     "sunlight": [
       "full sun",
-      "partial_shade"
+      "partial_shade",
+      "full_sun"
     ],
     "water_need": "Frequent",
     "soil_type": [
@@ -54,7 +55,13 @@
       "Seed Propagation",
       "Air Layering Propagation",
       "Tissue Culture",
-      "seed"
+      "seed",
+      "cutting",
+      "grafting_propagation",
+      "layering_propagation",
+      "seed_propagation",
+      "air_layering_propagation",
+      "tissue_culture"
     ],
     "propagation_notes": "Seed - sow early February in a greenhouse or outdoors in March[78]. Germination is often poor, usually taking about 6 - 8 weeks[78]. Stratification is said to produce a more even germination so it is probably best to sow the seed in a cold frame as soon as it is ripe in the autumn[80, 113]. The seed remains viable for up to 5 years if it is well stored[113]. When large enough to handle, prick the seedlings out into individual pots and grow them on for at least their first winter in pots. Plant them out into their permanent positions in late spring or early summer, after the last expected frosts. Alternatively, if you have sufficient seed, it is possible to sow in an outdoor seedbed. One report says that it is best to grow the seedlings on in the shade at a density of about 550 plants per square metre[78] whilst another report says that they are best grown on in a sunny position[80].",
     "germination_days_min": null,
@@ -73,7 +80,7 @@
     "spread_cm": null
   },
   "care": {
-    "watering_interval_days": null,
+    "watering_interval_days": 8,
     "watering_notes": null,
     "pruning_notes": null,
     "fertilizer_notes": null,
@@ -105,9 +112,9 @@
     "identity.genus": "GBIF",
     "identity.family": "GBIF",
     "classification.life_cycle": "Perenual",
-    "growth.sunlight": "Plants For A Future",
+    "growth.sunlight": "Perenual",
     "growth.water_need": "Perenual",
-    "germination.propagation_methods": "Plants For A Future",
+    "germination.propagation_methods": "Perenual",
     "growth.growth_speed": "Perenual",
     "identity.common_names": "Plants For A Future",
     "classification.use_categories": "Plants For A Future",
@@ -121,7 +128,9 @@
     "care.other_uses_notes": "Plants For A Future",
     "care.edible_uses_notes": "Plants For A Future",
     "biodiversity.pollinator_support": "Plants For A Future",
-    "biodiversity.pest_confuser": "Plants For A Future"
+    "biodiversity.pest_confuser": "Plants For A Future",
+    "classification.edible": "Perenual",
+    "care.watering_interval_days": "Perenual"
   },
   "source_metadata": {
     "sources": [
@@ -241,9 +250,27 @@
         ],
         "confidence": 0.3,
         "last_verified_at": "2026-07-18T05:41:55.351480+00:00"
+      },
+      {
+        "source_name": "Perenual",
+        "source_url": "https://perenual.com/plant-species-database-search-finder/species/1",
+        "status": "snapshot",
+        "trusted_detail": true,
+        "relevance_score": null,
+        "fields_provided": [
+          "identity",
+          "classification.life_cycle",
+          "growth.sunlight",
+          "growth.water_need",
+          "growth.growth_speed",
+          "germination.propagation_methods",
+          "care.watering_interval_days"
+        ],
+        "confidence": 0.98,
+        "last_verified_at": "2026-07-31T05:39:30.426824+00:00"
       }
     ],
-    "last_merged_at": "2026-07-18T05:42:44.131926+00:00"
+    "last_merged_at": "2026-07-31T05:39:30.441720+00:00"
   },
   "missing_fields": [
     "classification.edible_parts",

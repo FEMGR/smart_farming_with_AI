@@ -1,0 +1,5 @@
+date,condition,air_temp_c,humidity_pct,rainfall_mm,wind_kmh,uv_index
+2026-07-19,Sunny,31.5,68,0,12,9
+2026-07-20,Partly Cloudy,30.8,70,1.2,10,8
+2026-07-21,Rain,28.9,88,18.4,15,4
+2026-07-22,Cloudy,29.7,81,3.1,8,5
