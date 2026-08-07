@@ -42,4 +42,9 @@ htmlcov/
 logic_companion_planting/bin/
 *.qlf
 
+# Generated ML artifacts
+ai/artifacts/
 
+# Serialized ML models
+*.pkl
+*.joblib
