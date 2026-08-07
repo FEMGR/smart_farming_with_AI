@@ -1,4 +1,4 @@
-"""Train the irrigation Random Forest model using the shared ML pipeline."""
+"""Train the irrigation XGBoost model using the shared ML pipeline."""
 
 from pathlib import Path
 import sys
@@ -11,9 +11,9 @@ from ai.tasks.irrigation_prediction.train import train_selected_model  # noqa: E
 
 
 def train():
-    """Compatibility entry point for the Random Forest-only training command."""
+    """Compatibility entry point for the XGBoost-only training command."""
 
-    return train_selected_model("random_forest")
+    return train_selected_model("xgboost")
 
 
 if __name__ == "__main__":
