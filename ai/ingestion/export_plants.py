@@ -22,8 +22,12 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.engine import URL, make_url
 from sqlalchemy.exc import OperationalError, SQLAlchemyError
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-RAW_DATA_DIR = PROJECT_ROOT / "ai" / "datasets" / "raw"
+from ai.core.constants import (
+    FLOAT_COLUMNS,
+    INTEGER_COLUMNS,
+    PROJECT_ROOT,
+    RAW_DATA_DIR,
+)
 
 PLANT_COLUMNS = [
     "user_id",
@@ -45,21 +49,6 @@ PLANT_COLUMNS = [
     "propagation_method",
     "pest_susceptibility",
     "recommended_sunlight",
-    "is_sensor_enabled",
-]
-
-INTEGER_COLUMNS = [
-    "user_id",
-    "plant_id",
-    "location_id",
-    "species_id",
-    "watering_interval_days",
-]
-
-FLOAT_COLUMNS = [
-    "latitude",
-    "longitude",
-    "height_cm",
 ]
 
 

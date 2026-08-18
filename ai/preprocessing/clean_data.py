@@ -21,12 +21,12 @@ After cleaning, the dataset should have:
     ✓ Saved to the processed dataset folder
 """
 
-# ai/prepocessing/clean_data.py
+import sys
+import pandas as pd
 from pathlib import Path
 
-import pandas as pd
-
-from load_data import load_csv
+from ai.preprocessing.load_data import load_csv
+from ai.core.file_prompter import choose_input_file, generate_output_filename
 
 # =====================================================
 # Project Paths
@@ -37,23 +37,15 @@ from load_data import load_csv
 # preprocessing/
 #      │
 # ai/
-AI_FOLDER = Path(__file__).resolve().parent.parent
+from ai.core.constants import (
+    CLEAN_DATA_OUTPUT_FILE as OUTPUT_FILE,
+    CLEAN_DATA_OUTPUT_FOLDER as OUTPUT_FOLDER,
+    NON_IMPUTED_NUMERIC_COLUMNS,
+)
 
-# ai/datasets/processed/
-OUTPUT_FOLDER = AI_FOLDER / "datasets" / "processed"
-
-OUTPUT_FILE = OUTPUT_FOLDER / "cleaned_sensor_readings.csv"
-
-NON_IMPUTED_NUMERIC_COLUMNS = {
-    "user_id",
-    "plant_id",
-    "species_id",
-    "location_id",
-    "group_id",
-    "latitude",
-    "longitude",
-}
-
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 # =====================================================
 # Cleaning Functions
@@ -304,19 +296,23 @@ def main():
     """
     Load, clean, and save the sensor dataset.
     """
+    input_file = choose_input_file()
+    output_file = generate_output_filename(input_file=input_file)
 
     print("Loading dataset...")
 
     df = load_csv("sensor_readings.csv")
+    df_external = pd.read_csv(input_file)
 
     print("Cleaning dataset...")
 
     df = clean_dataframe(df)
+    df_external = clean_dataframe(df_external)
 
     print("Saving cleaned dataset...")
 
     save_clean_data(df)
-
+    df_external.to_csv(output_file, index=False)
     print("Data cleaning completed successfully.")
 
 

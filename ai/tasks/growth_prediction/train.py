@@ -20,23 +20,25 @@ from ai.core.ml.model_io import save_model, save_preprocessing_artifacts  # noqa
 from ai.core.ml.preprocessing import PreprocessingConfig, preprocess_dataset  # noqa: E402
 from ai.core.ml.splitting import SplitConfig  # noqa: E402
 from ai.core.ml.training import get_model_params, train_model  # noqa: E402
+from ai.models.pytorch_mlp import build_model as build_pytorch_mlp_model  # noqa: E402
 from ai.models.random_forest import build_model as build_random_forest_model  # noqa: E402
-from ai.tasks.growth_prediction.config import (  # noqa: E402
-    ARTIFACT_DIR,
-    DATASET_PATH,
-    MODEL_ORDER,
-    MODELS,
-    PROBLEM_TYPE,
-    RANDOM_STATE,
-    TARGET_CANDIDATES,
-    TARGET_COLUMN,
-    TASK_LABEL,
-    TASK_NAME,
-    TEST_SIZE,
+from ai.core.constants import (  # noqa: E402
+    GROWTH_ARTIFACT_DIR as ARTIFACT_DIR,
+    GROWTH_DATASET_PATH as DATASET_PATH,
+    GROWTH_MODEL_ORDER as MODEL_ORDER,
+    GROWTH_MODELS as MODELS,
+    GROWTH_PROBLEM_TYPE as PROBLEM_TYPE,
+    GROWTH_RANDOM_STATE as RANDOM_STATE,
+    GROWTH_TARGET_CANDIDATES as TARGET_CANDIDATES,
+    GROWTH_TARGET_COLUMN as TARGET_COLUMN,
+    GROWTH_TASK_LABEL as TASK_LABEL,
+    GROWTH_TASK_NAME as TASK_NAME,
+    GROWTH_TEST_SIZE as TEST_SIZE,
 )
 
 MODEL_BUILDERS = {
     "random_forest": build_random_forest_model,
+    "pytorch_mlp": build_pytorch_mlp_model,
 }
 
 

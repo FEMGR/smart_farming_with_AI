@@ -12,20 +12,20 @@ This script orchestrates the downstream preprocessing steps:
 """
 
 from __future__ import annotations
-from generate_training_data import generate_all
+
+import sys
+
+import pandas as pd
 from feature_engineering import engineer_features, save_featured_dataset
 from feature_selection import split_training_sets
 from merge_data import merge_all_data, save_merged_data
 from preprocess_data import preprocess_all_data
 
-from pathlib import Path
-import sys
-
-import pandas as pd
-
-AI_FOLDER = Path(__file__).resolve().parent.parent
-DATA_GENERATION_DIR = Path(__file__).resolve().parent
-PREPROCESSING_DIR = AI_FOLDER / "preprocessing"
+from ai.core.constants import (
+    DATA_GENERATION_DIR,
+    PREPROCESSING_DIR,
+)
+from generate_training_data import generate_all
 
 if str(DATA_GENERATION_DIR) not in sys.path:
     sys.path.insert(0, str(DATA_GENERATION_DIR))

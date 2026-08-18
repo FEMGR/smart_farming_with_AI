@@ -47,26 +47,27 @@ evaluate_model.py
 
 # ai/prepocessing/load.py
 
+import json
 from pathlib import Path
 
-import json
 import pandas as pd
 import requests
 from sqlalchemy import create_engine
-
-# -----------------------------------------------------
-# Locate the AI dataset folder
-# -----------------------------------------------------
 
 # load_data.py
 #     │
 # preprocessing/
 #     │
 # ai/
-AI_FOLDER = Path(__file__).resolve().parent.parent
+from ai.core.constants import (
+    DATASET_NAME_ALIASES,
+    RAW_DATA_DIR,
+)
 
-# ai/datasets/raw/
-RAW_DATA_DIR = AI_FOLDER / "datasets" / "raw"
+
+# -----------------------------------------------------
+# Locate the AI dataset folder
+# -----------------------------------------------------
 
 
 # =====================================================
@@ -74,10 +75,14 @@ RAW_DATA_DIR = AI_FOLDER / "datasets" / "raw"
 # =====================================================
 
 
-def build_path(filename: str) -> Path:
+def build_path(filename: str | Path) -> Path:
     """
     Build the full path to a file stored in ai/datasets/raw/.
+    If the path exists directly or is a file, return it as-is.
     """
+    path = Path(filename)
+    if path.is_file():
+        return path
 
     return RAW_DATA_DIR / filename
 
@@ -96,7 +101,7 @@ def flatten_weather_json(path: Path) -> pd.DataFrame:
 # =====================================================
 
 
-def load_csv(filename: str) -> pd.DataFrame:
+def load_csv(filename: str | Path) -> pd.DataFrame:
     """
     Load a CSV file.
     """
@@ -104,7 +109,7 @@ def load_csv(filename: str) -> pd.DataFrame:
     return pd.read_csv(build_path(filename))
 
 
-def load_excel(filename: str) -> pd.DataFrame:
+def load_excel(filename: str | Path) -> pd.DataFrame:
     """
     Load an Excel file.
     """
@@ -112,7 +117,7 @@ def load_excel(filename: str) -> pd.DataFrame:
     return pd.read_excel(build_path(filename))
 
 
-def load_json(filename: str) -> pd.DataFrame:
+def load_json(filename: str | Path) -> pd.DataFrame:
     """
     Load a JSON file.
     """
@@ -120,7 +125,7 @@ def load_json(filename: str) -> pd.DataFrame:
     return pd.read_json(build_path(filename))
 
 
-def load_parquet(filename: str) -> pd.DataFrame:
+def load_parquet(filename: str | Path) -> pd.DataFrame:
     """
     Load a Parquet file.
     """
@@ -136,9 +141,6 @@ SUPPORTED_FILE_LOADERS = {
     ".parquet": load_parquet,
 }
 
-DATASET_NAME_ALIASES = {
-    "sensor_readings": "sensor",
-}
 
 # =====================================================
 # File Processors
@@ -200,10 +202,13 @@ def load_data_file(path: Path) -> pd.DataFrame:
 
     suffix = path.suffix.lower()
 
+    if suffix not in SUPPORTED_FILE_LOADERS:
+        raise ValueError(f"Unsupported file extension: {suffix}")
+
     loader = SUPPORTED_FILE_LOADERS[suffix]
     processor = SUPPORTED_FILE_PROCESSORS[suffix]
 
-    df = loader(path.name)
+    df = loader(path)
 
     return processor(df, path)
 

@@ -61,7 +61,10 @@ def predict_with_confidence(
     result: dict[str, Any] = {"predictions": _to_list(output_predictions)}
 
     if hasattr(model, "predict_proba"):
-        result["probabilities"] = _to_list(model.predict_proba(X))
+        try:
+            result["probabilities"] = _to_list(model.predict_proba(X))
+        except AttributeError:
+            pass
     elif hasattr(model, "decision_function"):
         result["scores"] = _to_list(model.decision_function(X))
 

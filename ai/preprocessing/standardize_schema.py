@@ -13,46 +13,22 @@ again.
 
 # ai/prepocessing/standardize_schema.py
 
-from pathlib import Path
 import json
-from rapidfuzz import fuzz
+
 import pandas as pd
+from rapidfuzz import fuzz
+
+from ai.core.constants import (
+    AUTO_ACCEPT_THRESHOLD as AUTO_ACCEPT,
+    CANONICAL_COLUMNS,
+    MAPPING_DIR,
+    REVIEW_THRESHOLD as REVIEW,
+)
+
 
 # -----------------------------------------------------
 # Mapping folder
 # -----------------------------------------------------
-
-AI_FOLDER = Path(__file__).resolve().parent.parent
-
-MAPPING_DIR = AI_FOLDER / "config" / "schema_mappings"
-MAPPING_DIR.mkdir(parents=True, exist_ok=True)
-
-
-# -----------------------------------------------------
-# Canonical columns
-# -----------------------------------------------------
-
-CANONICAL_COLUMNS = {
-    "timestamp": ["timestamp", "datetime", "date_time", "date", "time", "recorded_at", "created_at"],
-    "sensor_id": ["id", "sensor", "sensor_id", "device_id"],
-    "group_id": ["group", "group_id", "bed_id", "zone_id"],
-    "location_id": ["location", "location_id", "field_id"],
-    "latitude": ["latitude", "lat"],
-    "longitude": ["longitude", "lon", "lng"],
-    "country": ["country"],
-    "city": ["city", "town"],
-    "temperature": ["temperature", "temp", "temp_c", "temperature_c", "air_temperature"],
-    "humidity": ["humidity", "humidity_pct", "relative_humidity", "rh"],
-    "rainfall": ["rain", "rainfall", "precipitation"],
-    "rain_probability": ["rain_probability", "pop", "precip_probability"],
-    "wind_speed": ["wind", "wind_speed"],
-    "soil_moisture": ["soil_moisture", "soil_moisture_pct", "soil_water", "soil_water_pct", "moisture"],
-    "soil_ph": ["ph", "soil_ph"],
-    "light": ["light", "light_lux", "sunlight", "lux", "illumination"],
-}
-
-AUTO_ACCEPT = 95
-REVIEW = 80
 
 
 def detect_columns(df):
@@ -223,19 +199,73 @@ def edit_mapping(df, mapping, confidence):
 
 
 # -----------------------------------------------------
+# Prompt Previous Mapping
+# -----------------------------------------------------
+
+
+def prompt_existing_mapping(df: pd.DataFrame, mapping: dict, api_name: str) -> dict:
+    """
+    Prompt the user to review, edit, or re-detect an existing saved schema mapping.
+    """
+    confidence = {canonical: 100.0 for canonical in mapping.values()}
+
+    print("\n" + "=" * 60)
+    print(f"Existing Schema Mapping Found for '{api_name}'")
+    print("=" * 60)
+
+    while True:
+        print_summary(mapping, confidence)
+
+        print("\nOptions for existing mapping:")
+        print(" [Y] Accept and use existing mapping")
+        print(" [E] Edit mapping")
+        print(" [R] Re-detect columns from scratch")
+        print(" [C] Cancel")
+
+        choice = input("\nSelect an option [Y/e/r/c]: ").strip().lower()
+
+        if choice in ("", "y", "yes"):
+            print(f"\nUsing schema mapping for '{api_name}'.")
+            return mapping
+
+        elif choice in ("e", "edit"):
+            mapping, confidence = edit_mapping(df, mapping, confidence)
+            save_mapping(mapping, api_name)
+            print(f"\nSaved updated schema mapping for '{api_name}'.")
+
+        elif choice in ("r", "redetect", "re-detect"):
+            mapping = create_mapping(df)
+            save_mapping(mapping, api_name)
+            return mapping
+
+        elif choice in ("c", "cancel"):
+            raise KeyboardInterrupt("Schema standardization cancelled.")
+
+        else:
+            print("Invalid selection. Please choose Y, E, R, or C.")
+
+
+# -----------------------------------------------------
 # Standardization
 # -----------------------------------------------------
 
 
-def standardize_schema(df: pd.DataFrame, api_name: str):
-
+def standardize_schema(df: pd.DataFrame, api_name: str, interactive: bool = True):
+    """
+    Standardize schema by mapping dataset columns to canonical names.
+    Prompts the user to review or edit existing mappings if present in interactive mode.
+    """
     mapping = load_mapping(api_name)
 
     if mapping is None:
-
-        mapping = create_mapping(df)
-
-        save_mapping(mapping, api_name)
+        if interactive:
+            mapping = create_mapping(df)
+            save_mapping(mapping, api_name)
+        else:
+            mapping, _ = detect_columns(df)
+    else:
+        if interactive:
+            mapping = prompt_existing_mapping(df, mapping, api_name)
 
     df = df.rename(columns=mapping)
     df.attrs["schema_mapping"] = mapping
@@ -263,7 +293,7 @@ def print_summary(mapping, confidence):
 
             original = next(key for key, value in mapping.items() if value == canonical)
 
-            score = confidence[canonical]
+            score = confidence.get(canonical, 100.0)
 
             status = "✓"
 

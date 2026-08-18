@@ -16,44 +16,29 @@ merge_data.py
 train_model.py
 """
 
-# ai/prepocessing/merge_data.py
+import sys
 from pathlib import Path
 
 import pandas as pd
-
-# =====================================================
-# Project Paths
-# =====================================================
 
 # clean_data.py
 #      │
 # preprocessing/
 #      │
 # ai/
-AI_FOLDER = Path(__file__).resolve().parent.parent
-
-# ai/datasets/processed/
-OUTPUT_FOLDER = AI_FOLDER / "datasets" / "processed"
-
-OUTPUT_FILE = OUTPUT_FOLDER / "merged_data.csv"
+from ai.core.constants import (
+    CANONICAL_DUPLICATE_COLUMNS,
+    MERGE_DATA_OUTPUT_FILE as OUTPUT_FILE,
+    MERGE_DATA_OUTPUT_FOLDER as OUTPUT_FOLDER,
+)
 
 # =====================================================
-# Merge Functions
+# Project Paths
 # =====================================================
 
-
-CANONICAL_DUPLICATE_COLUMNS = {
-    "temperature": ["temperature_x", "temperature_y"],
-    "humidity": ["humidity_x", "humidity_y"],
-    "soil_moisture": ["soil_moisture_x", "soil_moisture_y"],
-    "latitude": ["latitude_x", "latitude_y"],
-    "longitude": ["longitude_x", "longitude_y"],
-    "year": ["year_x", "year_y"],
-    "month": ["month_x", "month_y"],
-    "day": ["day_x", "day_y"],
-    "hour": ["hour_x", "hour_y"],
-    "weekday": ["weekday_x", "weekday_y"],
-}
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 
 def normalize_location_id(series: pd.Series) -> pd.Series:
@@ -199,7 +184,7 @@ def preview_dataset(df: pd.DataFrame) -> None:
 
 if __name__ == "__main__":
 
-    from preprocess_data import preprocess_all_data
+    from ai.preprocessing.preprocess_data import preprocess_all_data
 
     datasets = preprocess_all_data()
 
