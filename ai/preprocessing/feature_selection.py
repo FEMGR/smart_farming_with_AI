@@ -11,120 +11,16 @@ from pathlib import Path
 
 import pandas as pd
 
+from ai.core.constants import (
+    DATABASE_IDENTIFIER_COLUMNS,
+    FEATURE_SEL_INPUT_FILE as INPUT_FILE,
+    TRAINING_DATASETS,
+)
+
+
 # ==========================================================
 # Project Paths
 # ==========================================================
-
-AI_FOLDER = Path(__file__).resolve().parent.parent
-PROCESSED_DATA_DIR = AI_FOLDER / "datasets" / "processed"
-
-INPUT_FILE = PROCESSED_DATA_DIR / "featured_data.csv"
-
-DATABASE_IDENTIFIER_COLUMNS = {
-    "plant_id",
-    "location_id",
-    "user_id",
-    "sensor_id",
-}
-
-TRAINING_DATASETS = {
-    "irrigation": {
-        "output_file": PROCESSED_DATA_DIR / "irrigation_training.csv",
-        "features": [
-            "species_id",
-            "scientific_name",
-            "life_cycle",
-            "environment_type",
-            "watering_interval_days",
-            "recommended_soil",
-            "recommended_sunlight",
-            "temperature",
-            "humidity",
-            "soil_moisture",
-            "soil_ph",
-            "rainfall",
-            "rain_probability",
-            "wind_speed",
-            "season",
-            "month",
-            "hour",
-            "plant_age_days",
-            "latitude",
-            "longitude",
-            "heat_index",
-            "water_stress",
-            "dryness_index",
-            "evaporation_risk",
-        ],
-        "target_candidates": [
-            "watering_needed",
-            "watering_amount_liters",
-        ],
-    },
-    "growth": {
-        "output_file": PROCESSED_DATA_DIR / "growth_training.csv",
-        "features": [
-            "species_id",
-            "scientific_name",
-            "life_cycle",
-            "recommended_soil",
-            "recommended_sunlight",
-            "plant_age_days",
-            "current_height_cm",
-            "temperature",
-            "humidity",
-            "soil_moisture",
-            "rainfall",
-            "season",
-        ],
-        "target_candidates": [
-            "future_height_cm",
-            "growth_rate",
-        ],
-    },
-    "disease": {
-        "output_file": PROCESSED_DATA_DIR / "disease_training.csv",
-        "features": [
-            "species_id",
-            "scientific_name",
-            "life_cycle",
-            "pest_susceptibility",
-            "temperature",
-            "humidity",
-            "soil_moisture",
-            "soil_ph",
-            "rainfall",
-            "wind_speed",
-            "heat_index",
-            "water_stress",
-            "dryness_index",
-            "evaporation_risk",
-        ],
-        "target_candidates": [
-            "disease_name",
-            "disease_risk",
-        ],
-    },
-    "yield": {
-        "output_file": PROCESSED_DATA_DIR / "yield_training.csv",
-        "features": [
-            "species_id",
-            "scientific_name",
-            "life_cycle",
-            "plant_age_days",
-            "current_height_cm",
-            "temperature",
-            "humidity",
-            "soil_moisture",
-            "rainfall",
-            "season",
-            "watering_interval_days",
-        ],
-        "target_candidates": [
-            "yield_kg",
-        ],
-    },
-}
 
 
 def selected_target_column(df: pd.DataFrame, target_candidates: list[str]) -> str | None:

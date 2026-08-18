@@ -1,4 +1,4 @@
-"""Train, evaluate, compare, and persist disease prediction models."""
+"""Train, evaluate, compare, and persist yield prediction models."""
 
 from __future__ import annotations
 
@@ -20,30 +20,31 @@ from ai.core.ml.model_io import save_model, save_preprocessing_artifacts  # noqa
 from ai.core.ml.preprocessing import PreprocessingConfig, preprocess_dataset  # noqa: E402
 from ai.core.ml.splitting import SplitConfig  # noqa: E402
 from ai.core.ml.training import get_model_params, train_model  # noqa: E402
+from ai.models.gradient_boosting import build_model as build_gradient_boosting_model  # noqa: E402
 from ai.models.pytorch_mlp import build_model as build_pytorch_mlp_model  # noqa: E402
-from ai.models.xgboost import build_model as build_xgboost_model  # noqa: E402
-from ai.core.constants import (  # noqa: E402
-    DISEASE_ARTIFACT_DIR as ARTIFACT_DIR,
-    DISEASE_DATASET_PATH as DATASET_PATH,
-    DISEASE_MODEL_ORDER as MODEL_ORDER,
-    DISEASE_MODELS as MODELS,
-    DISEASE_PROBLEM_TYPE as PROBLEM_TYPE,
-    DISEASE_RANDOM_STATE as RANDOM_STATE,
-    DISEASE_TARGET_CANDIDATES as TARGET_CANDIDATES,
-    DISEASE_TARGET_COLUMN as TARGET_COLUMN,
-    DISEASE_TASK_LABEL as TASK_LABEL,
-    DISEASE_TASK_NAME as TASK_NAME,
-    DISEASE_TEST_SIZE as TEST_SIZE,
+from ai.tasks.yield_prediction.config import (  # noqa: E402
+    ARTIFACT_DIR,
+    DATASET_PATH,
+    MODEL_ORDER,
+    MODELS,
+    PROBLEM_TYPE,
+    RANDOM_STATE,
+    TARGET_CANDIDATES,
+    TARGET_COLUMN,
+    TASK_LABEL,
+    TASK_NAME,
+    TEST_SIZE,
 )
 
+
 MODEL_BUILDERS = {
-    "xgboost": build_xgboost_model,
+    "gradient_boosting": build_gradient_boosting_model,
     "pytorch_mlp": build_pytorch_mlp_model,
 }
 
 
 def train_all_models() -> dict[str, Any]:
-    """Train configured disease models and save the best available model."""
+    """Train configured yield models and save the best available model."""
 
     print("=" * 60)
     print(f"{TASK_LABEL} Training")
@@ -88,20 +89,20 @@ def train_all_models() -> dict[str, Any]:
 
 
 def train_selected_model(model_name: str) -> dict[str, Any]:
-    """Train and evaluate one configured disease model."""
+    """Train and evaluate one configured yield model."""
 
     data = prepare_training_data()
     model_config = MODELS.get(model_name)
     if model_config is None:
-        raise ValueError(f"Unknown disease model: {model_name}")
+        raise ValueError(f"Unknown yield model: {model_name}")
     if not model_config.get("enabled", True):
-        raise ValueError(f"Disease model is not enabled yet: {model_name}")
+        raise ValueError(f"Yield model is not enabled yet: {model_name}")
 
     return train_and_evaluate_model(model_name, data)
 
 
 def prepare_training_data() -> dict[str, Any]:
-    """Load disease_training.csv and run shared preprocessing/splitting."""
+    """Load yield_training.csv and run shared preprocessing/splitting."""
 
     print("\nLoading dataset...")
     df = load_dataset(DATASET_PATH, required_columns=[TARGET_COLUMN])
@@ -120,7 +121,7 @@ def prepare_training_data() -> dict[str, Any]:
         split_config=SplitConfig(
             test_size=TEST_SIZE,
             random_state=RANDOM_STATE,
-            stratify=PROBLEM_TYPE == "classification",
+            stratify=False,
         ),
     )
 
@@ -132,10 +133,10 @@ def prepare_training_data() -> dict[str, Any]:
 
 
 def train_and_evaluate_model(model_name: str, data: dict[str, Any]) -> dict[str, Any]:
-    """Train, evaluate, and save one disease model."""
+    """Train, evaluate, and save one yield model."""
 
     if model_name not in MODELS:
-        raise ValueError(f"Unknown disease model: {model_name}")
+        raise ValueError(f"Unknown yield model: {model_name}")
     if model_name not in MODEL_BUILDERS:
         raise ValueError(f"No model builder registered for: {model_name}")
 
@@ -244,7 +245,7 @@ def compare_models(
     """Compare trained model metrics and include skipped future models."""
 
     if not results:
-        raise ValueError("No trained disease model results to compare.")
+        raise ValueError("No trained yield model results to compare.")
 
     greater_is_better = results[0]["greater_is_better"]
     best_result = sorted(
@@ -276,7 +277,7 @@ def compare_models(
 
 
 def save_best_model(best_result: dict[str, Any]) -> Path:
-    """Save a stable copy of the best disease model and its artifacts."""
+    """Save a stable copy of the best yield model and its artifacts."""
 
     best_dir = ARTIFACT_DIR / "best_model"
     best_dir.mkdir(parents=True, exist_ok=True)

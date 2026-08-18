@@ -83,6 +83,7 @@ class ProjectPaths:
 
         PATHS.project_root
         PATHS.backend
+        PATHS.ai
         PATHS.species_snapshots
         PATHS.logic_companion
         PATHS.data_bank_scripts
@@ -93,6 +94,10 @@ class ProjectPaths:
     @property
     def backend(self) -> Path:
         return self.project_root / "backend"
+
+    @property
+    def ai(self) -> Path:
+        return self.project_root / "ai"
 
     @property
     def backend_app(self) -> Path:

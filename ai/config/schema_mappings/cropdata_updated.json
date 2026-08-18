@@ -1,0 +1,5 @@
+{
+    "temp": "temperature",
+    "humidity": "humidity",
+    "MOI": "soil_moisture"
+}

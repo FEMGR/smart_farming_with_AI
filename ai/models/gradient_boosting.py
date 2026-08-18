@@ -8,19 +8,10 @@ from typing import Any
 
 from sklearn.ensemble import GradientBoostingClassifier, GradientBoostingRegressor
 
-DEFAULT_CLASSIFIER_PARAMS: dict[str, Any] = {
-    "n_estimators": 200,
-    "learning_rate": 0.05,
-    "max_depth": 3,
-    "random_state": 42,
-}
-
-DEFAULT_REGRESSOR_PARAMS: dict[str, Any] = {
-    "n_estimators": 200,
-    "learning_rate": 0.05,
-    "max_depth": 3,
-    "random_state": 42,
-}
+from ai.core.constants import (
+    DEFAULT_GB_CLASSIFIER_PARAMS as DEFAULT_CLASSIFIER_PARAMS,
+    DEFAULT_GB_REGRESSOR_PARAMS as DEFAULT_REGRESSOR_PARAMS,
+)
 
 
 def build_classifier(params: dict[str, Any] | None = None) -> GradientBoostingClassifier:

@@ -14,182 +14,24 @@ from typing import Optional
 import numpy as np
 import pandas as pd
 
-# ==========================================================
-# Project Paths
-# ==========================================================
-
 # feature_engineering.py
 #        │
 # preprocessing/
 #        │
-# ai/
+from ai.core.constants import (
+    CITY_REFERENCES,
+    COUNTRY_BOUNDING_BOXES,
+    FEATURE_ENG_INPUT_FILE as INPUT_FILE,
+    FEATURE_ENG_OUTPUT_FILE as OUTPUT_FILE,
+    MASTER_FEATURE_COLUMNS,
+    TROPICAL_COUNTRIES,
+    UNKNOWN_TEXT_VALUES,
+)
 
-AI_FOLDER = Path(__file__).resolve().parent.parent
-
-PROCESSED_DATA_DIR = AI_FOLDER / "datasets" / "processed"
-
-INPUT_FILE = PROCESSED_DATA_DIR / "merged_data.csv"
-OUTPUT_FILE = PROCESSED_DATA_DIR / "featured_data.csv"
 
 # ==========================================================
-# Countries that generally use Tropical Wet / Dry seasons
+# Project Paths
 # ==========================================================
-
-TROPICAL_COUNTRIES = {
-    "indonesia",
-    "malaysia",
-    "singapore",
-    "brunei",
-    "philippines",
-    "thailand",
-    "vietnam",
-    "cambodia",
-    "laos",
-    "myanmar",
-    "timor-leste",
-    "papua new guinea",
-    "ecuador",
-    "colombia",
-    "brazil",
-    "kenya",
-    "uganda",
-    "tanzania",
-    "nigeria",
-    "ghana",
-    "costa rica",
-}
-
-UNKNOWN_TEXT_VALUES = {"", "nan", "none", "null", "unknown"}
-
-COUNTRY_BOUNDING_BOXES = [
-    {
-        "country": "Indonesia",
-        "latitude_min": -11.2,
-        "latitude_max": 6.3,
-        "longitude_min": 94.7,
-        "longitude_max": 141.1,
-    },
-    {
-        "country": "Malaysia",
-        "latitude_min": 0.8,
-        "latitude_max": 7.4,
-        "longitude_min": 99.6,
-        "longitude_max": 119.4,
-    },
-    {
-        "country": "Singapore",
-        "latitude_min": 1.1,
-        "latitude_max": 1.5,
-        "longitude_min": 103.6,
-        "longitude_max": 104.1,
-    },
-    {
-        "country": "Thailand",
-        "latitude_min": 5.4,
-        "latitude_max": 20.5,
-        "longitude_min": 97.3,
-        "longitude_max": 105.7,
-    },
-    {
-        "country": "Philippines",
-        "latitude_min": 4.5,
-        "latitude_max": 21.3,
-        "longitude_min": 116.0,
-        "longitude_max": 127.0,
-    },
-]
-
-CITY_REFERENCES = [
-    {"city": "Bandung", "state": "West Java", "country": "Indonesia", "latitude": -6.9175, "longitude": 107.6191},
-    {"city": "Jakarta", "state": "Jakarta", "country": "Indonesia", "latitude": -6.2088, "longitude": 106.8456},
-    {"city": "Surabaya", "state": "East Java", "country": "Indonesia", "latitude": -7.2575, "longitude": 112.7521},
-    {"city": "Yogyakarta", "state": "Yogyakarta", "country": "Indonesia", "latitude": -7.7956, "longitude": 110.3695},
-    {"city": "Semarang", "state": "Central Java", "country": "Indonesia", "latitude": -6.9667, "longitude": 110.4167},
-    {"city": "Denpasar", "state": "Bali", "country": "Indonesia", "latitude": -8.6705, "longitude": 115.2126},
-    {"city": "Medan", "state": "North Sumatra", "country": "Indonesia", "latitude": 3.5952, "longitude": 98.6722},
-    {"city": "Makassar", "state": "South Sulawesi", "country": "Indonesia", "latitude": -5.1477, "longitude": 119.4327},
-    {"city": "Singapore", "state": "Singapore", "country": "Singapore", "latitude": 1.3521, "longitude": 103.8198},
-    {"city": "Kuala Lumpur", "state": "Kuala Lumpur", "country": "Malaysia", "latitude": 3.1390, "longitude": 101.6869},
-    {"city": "Bangkok", "state": "Bangkok", "country": "Thailand", "latitude": 13.7563, "longitude": 100.5018},
-    {"city": "Manila", "state": "Metro Manila", "country": "Philippines", "latitude": 14.5995, "longitude": 120.9842},
-]
-
-MASTER_FEATURE_COLUMNS = [
-    "user_id",
-    "plant_id",
-    "location_id",
-    "sensor_id",
-    "species_id",
-    "plant_name",
-    "scientific_name",
-    "life_cycle",
-    "environment_type",
-    "watering_interval_days",
-    "recommended_soil",
-    "recommended_sunlight",
-    "propagation_method",
-    "pest_susceptibility",
-    "growth_stage",
-    "temperature",
-    "humidity",
-    "soil_moisture",
-    "soil_ph",
-    "soil_temp_c",
-    "rainfall",
-    "rain_probability",
-    "wind_speed",
-    "light_intensity",
-    "latitude",
-    "longitude",
-    "country",
-    "state",
-    "city",
-    "timezone",
-    "year",
-    "month",
-    "day",
-    "hour",
-    "day_of_week",
-    "week_of_year",
-    "plant_age_days",
-    "plant_age_group",
-    "current_height_cm",
-    "height_cm",
-    "season",
-    "hemisphere",
-    "is_tropical_country",
-    "temperature_f",
-    "temperature_range",
-    "hot_day",
-    "cold_day",
-    "optimal_temperature",
-    "humidity_level",
-    "high_humidity",
-    "low_humidity",
-    "optimal_humidity",
-    "soil_status",
-    "dry_soil",
-    "wet_soil",
-    "optimal_soil",
-    "growth_progress",
-    "days_since_watered",
-    "watering_due",
-    "irrigation_score",
-    "irrigation_needed",
-    "irrigation_priority",
-    "watering_needed",
-    "watering_amount_liters",
-    "water_stress",
-    "dryness_index",
-    "heat_index",
-    "evaporation_risk",
-    "good_growing_conditions",
-    "future_height_cm",
-    "growth_rate",
-    "disease_name",
-    "disease_risk",
-    "yield_kg",
-]
 
 # ==========================================================
 # Helper Functions

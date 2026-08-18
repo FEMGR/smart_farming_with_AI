@@ -19,99 +19,20 @@ and BEFORE clean_data.py.
 
 # ai/prepocessing/standardize_units.py
 
-from pathlib import Path
 import json
 import re
 
 import pandas as pd
 
+from ai.core.constants import (
+    UNIT_CONVERSIONS as CONVERSIONS,
+    UNIT_FOLDER,
+)
+
+
 # =====================================================
 # Configuration
 # =====================================================
-
-AI_FOLDER = Path(__file__).resolve().parent.parent
-
-CONFIG_FOLDER = AI_FOLDER / "config"
-
-UNIT_FOLDER = CONFIG_FOLDER / "unit_mappings"
-
-UNIT_FOLDER.mkdir(parents=True, exist_ok=True)
-
-
-# =====================================================
-# Unit conversion functions
-# =====================================================
-
-
-def fahrenheit_to_celsius(series):
-    return (series - 32) * 5 / 9
-
-
-def kelvin_to_celsius(series):
-    return series - 273.15
-
-
-def inch_to_mm(series):
-    return series * 25.4
-
-
-def cm_to_mm(series):
-    return series * 10
-
-
-def mph_to_ms(series):
-    return series * 0.44704
-
-
-def kmh_to_ms(series):
-    return series / 3.6
-
-
-def pa_to_hpa(series):
-    return series / 100
-
-
-def atm_to_hpa(series):
-    return series * 1013.25
-
-
-def feet_to_meter(series):
-    return series * 0.3048
-
-
-# =====================================================
-# Conversion table
-# =====================================================
-
-CONVERSIONS = {
-    "temperature": {
-        "C": lambda x: x,
-        "F": fahrenheit_to_celsius,
-        "K": kelvin_to_celsius,
-    },
-    "rainfall": {
-        "mm": lambda x: x,
-        "cm": cm_to_mm,
-        "inch": inch_to_mm,
-    },
-    "wind_speed": {
-        "m/s": lambda x: x,
-        "km/h": kmh_to_ms,
-        "mph": mph_to_ms,
-    },
-    "pressure": {
-        "hPa": lambda x: x,
-        "Pa": pa_to_hpa,
-        "atm": atm_to_hpa,
-    },
-    "distance": {
-        "m": lambda x: x,
-        "ft": feet_to_meter,
-    },
-    "soil_moisture": {
-        "%": lambda x: x,
-    },
-}
 
 
 def normalize_column_name(column_name):
@@ -239,42 +160,93 @@ def load_unit_mapping(source_name):
 
 
 # =====================================================
+# Expected Units Metadata & Display
+# =====================================================
+
+EXPECTED_UNITS_INFO = {
+    "temperature": {
+        "target": "C",
+        "labels": {"C": "Celsius (°C)", "F": "Fahrenheit (°F)", "K": "Kelvin (K)"},
+    },
+    "rainfall": {
+        "target": "mm",
+        "labels": {"mm": "Millimeters (mm)", "cm": "Centimeters (cm)", "inch": "Inches (in)"},
+    },
+    "wind_speed": {
+        "target": "m/s",
+        "labels": {"m/s": "Meters/second (m/s)", "km/h": "Kilometers/hour (km/h)", "mph": "Miles/hour (mph)"},
+    },
+    "pressure": {
+        "target": "hPa",
+        "labels": {"hPa": "Hectopascals (hPa)", "Pa": "Pascals (Pa)", "atm": "Atmospheres (atm)"},
+    },
+    "distance": {
+        "target": "m",
+        "labels": {"m": "Meters (m)", "ft": "Feet (ft)"},
+    },
+    "soil_moisture": {
+        "target": "%",
+        "labels": {"%": "Percentage (%)"},
+    },
+}
+
+
+def print_expected_units_banner() -> None:
+    print("\n" + "=" * 60)
+    print("SPECIFY MEASUREMENT UNITS")
+    print("=================================================")
+    print("Supported & Accepted Units for Standardized Conversion:")
+    for col, info in EXPECTED_UNITS_INFO.items():
+        options = list(CONVERSIONS.get(col, {}).keys())
+        labels = info.get("labels", {})
+        accepted_str = ", ".join([labels.get(u, u) for u in options])
+        target_str = labels.get(info.get("target", ""), info.get("target", ""))
+        print(f"  • {col:15} : Accepted [{accepted_str}] -> Target [{target_str}]")
+    print("=================================================")
+
+
+# =====================================================
 # Ask user
 # =====================================================
 
 
-def ask_unit(column_name):
-
+def ask_unit(column_name: str) -> str | None:
     if column_name not in CONVERSIONS:
         return None
 
-    print(f"\nColumn : {column_name}")
-
     options = list(CONVERSIONS[column_name].keys())
+    info = EXPECTED_UNITS_INFO.get(column_name, {})
+    labels = info.get("labels", {})
+    target = info.get("target", options[0] if options else "")
+
+    accepted_labels_str = ", ".join([labels.get(u, u) for u in options])
+
+    print("\n" + "-" * 50)
+    print(f"Column        : {column_name}")
+    print(f"Accepted units: {accepted_labels_str}")
+    if target:
+        print(f"Target unit   : {labels.get(target, target)}")
+    print("-" * 50)
 
     for i, unit in enumerate(options, start=1):
+        label = labels.get(unit, unit)
+        print(f"  {i}. {label} [{unit}]")
 
-        print(f"{i}. {unit}")
+    accepted_inputs = ", ".join([f"{i} or '{u}'" for i, u in enumerate(options, start=1)])
 
     while True:
-
-        choice = input("Current unit : ").strip()
+        choice = input(f"\nSpecify current unit ({accepted_inputs}): ").strip()
 
         if choice.isdigit():
-
             selected_index = int(choice)
-
             if 1 <= selected_index <= len(options):
-
                 return options[selected_index - 1]
 
         for unit in options:
-
             if choice.lower() == unit.lower():
-
                 return unit
 
-        print("Invalid choice.")
+        print(f"Invalid choice. Please enter a valid number (1-{len(options)}) " f"or unit symbol ({', '.join(options)}).")
 
 
 # =====================================================
@@ -282,21 +254,24 @@ def ask_unit(column_name):
 # =====================================================
 
 
-def create_unit_mapping(df):
-
+def create_unit_mapping(df: pd.DataFrame) -> dict:
     units = {}
 
-    print("\nSpecify the units of each measurement.\n")
+    print_expected_units_banner()
 
     for column in df.columns:
-
         if column in CONVERSIONS:
-
             inferred_unit = infer_unit(df, column)
 
             if inferred_unit is not None:
-                print(f"\nColumn : {column}")
-                print(f"Detected unit : {inferred_unit}")
+                info = EXPECTED_UNITS_INFO.get(column, {})
+                labels = info.get("labels", {})
+                target = info.get("target", "")
+                print(f"\nColumn        : {column}")
+                print(f"Detected unit : {labels.get(inferred_unit, inferred_unit)} [{inferred_unit}]")
+                print(f"Accepted units: {', '.join([labels.get(u, u) for u in CONVERSIONS[column]])}")
+                if target:
+                    print(f"Target unit   : {labels.get(target, target)}")
                 units[column] = inferred_unit
                 continue
 
@@ -305,15 +280,56 @@ def create_unit_mapping(df):
     return units
 
 
+def prompt_existing_unit_mapping(df: pd.DataFrame, units: dict, source_name: str) -> dict:
+    print("\n" + "=" * 60)
+    print(f"Existing Unit Mapping Found for '{source_name}'")
+    print("=" * 60)
+
+    for col, unit in units.items():
+        info = EXPECTED_UNITS_INFO.get(col, {})
+        labels = info.get("labels", {})
+        unit_label = labels.get(unit, unit)
+        target = info.get("target", "")
+        target_label = labels.get(target, target)
+        print(f"  • {col:15} : {unit_label} [{unit}] -> Target [{target_label}]")
+
+    print("=" * 60)
+    print("Options:")
+    print(" [Y] Accept and use existing unit mapping")
+    print(" [E] Edit unit mapping")
+    print(" [C] Cancel")
+
+    while True:
+        choice = input("\nSelect an option [Y/e/c]: ").strip().lower()
+
+        if choice in ("", "y", "yes"):
+            print(f"\nUsing existing unit mapping for '{source_name}'.")
+            return units
+
+        elif choice in ("e", "edit"):
+            units = {}
+            print_expected_units_banner()
+            for column in df.columns:
+                if column in CONVERSIONS:
+                    units[column] = ask_unit(column)
+            save_unit_mapping(units, source_name)
+            print(f"\nSaved updated unit mapping for '{source_name}'.")
+            return units
+
+        elif choice in ("c", "cancel"):
+            raise KeyboardInterrupt("Unit standardization cancelled.")
+
+        else:
+            print("Invalid selection. Please choose Y, E, or C.")
+
+
 # =====================================================
 # Convert dataframe
 # =====================================================
 
 
-def convert_units(df, units):
-
+def convert_units(df: pd.DataFrame, units: dict) -> pd.DataFrame:
     for column, unit in units.items():
-
         if column not in df.columns:
             continue
 
@@ -333,22 +349,28 @@ def convert_units(df, units):
 # =====================================================
 
 
-def standardize_units(df, source_name):
-
+def standardize_units(df: pd.DataFrame, source_name: str, interactive: bool = True) -> pd.DataFrame:
     units = load_unit_mapping(source_name)
 
     if units is None:
-
-        units = create_unit_mapping(df)
-
-        save_unit_mapping(units, source_name)
+        if interactive:
+            units = create_unit_mapping(df)
+            save_unit_mapping(units, source_name)
+        else:
+            units = {}
+            for column in df.columns:
+                if column in CONVERSIONS:
+                    inferred = infer_unit(df, column)
+                    units[column] = inferred if inferred else list(CONVERSIONS[column].keys())[0]
+            save_unit_mapping(units, source_name)
 
     else:
-
         units, changed = reconcile_unit_mapping(df, units)
 
         if changed:
             save_unit_mapping(units, source_name)
+        elif interactive:
+            units = prompt_existing_unit_mapping(df, units, source_name)
 
     df = convert_units(df, units)
 

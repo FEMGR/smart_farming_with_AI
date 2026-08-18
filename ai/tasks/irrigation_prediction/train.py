@@ -21,26 +21,28 @@ from ai.core.ml.preprocessing import PreprocessingConfig, preprocess_dataset  # 
 from ai.core.ml.splitting import SplitConfig  # noqa: E402
 from ai.core.ml.training import get_model_params, train_model  # noqa: E402
 from ai.models.gradient_boosting import build_model as build_gradient_boosting_model  # noqa: E402
+from ai.models.pytorch_mlp import build_model as build_pytorch_mlp_model  # noqa: E402
 from ai.models.random_forest import build_model as build_random_forest_model  # noqa: E402
 from ai.models.xgboost import build_model as build_xgboost_model  # noqa: E402
-from ai.tasks.irrigation_prediction.config import (  # noqa: E402
-    ARTIFACT_DIR,
-    DATASET_PATH,
-    MODEL_ORDER,
-    MODELS,
-    PROBLEM_TYPE,
-    RANDOM_STATE,
-    TARGET_CANDIDATES,
-    TARGET_COLUMN,
-    TASK_LABEL,
-    TASK_NAME,
-    TEST_SIZE,
+from ai.core.constants import (  # noqa: E402
+    IRRIGATION_ARTIFACT_DIR as ARTIFACT_DIR,
+    IRRIGATION_DATASET_PATH as DATASET_PATH,
+    IRRIGATION_MODEL_ORDER as MODEL_ORDER,
+    IRRIGATION_MODELS as MODELS,
+    IRRIGATION_PROBLEM_TYPE as PROBLEM_TYPE,
+    IRRIGATION_RANDOM_STATE as RANDOM_STATE,
+    IRRIGATION_TARGET_CANDIDATES as TARGET_CANDIDATES,
+    IRRIGATION_TARGET_COLUMN as TARGET_COLUMN,
+    IRRIGATION_TASK_LABEL as TASK_LABEL,
+    IRRIGATION_TASK_NAME as TASK_NAME,
+    IRRIGATION_TEST_SIZE as TEST_SIZE,
 )
 
 MODEL_BUILDERS = {
     "random_forest": build_random_forest_model,
     "xgboost": build_xgboost_model,
     "gradient_boosting": build_gradient_boosting_model,
+    "pytorch_mlp": build_pytorch_mlp_model,
 }
 
 

@@ -13,111 +13,23 @@ selection are handled by ai/data_generation/generate_training_pipeline.py.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-from datetime import datetime, timedelta
-from pathlib import Path
 import math
 import random
+from datetime import datetime, timedelta
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-AI_FOLDER = Path(__file__).resolve().parent.parent
-RAW_DATA_DIR = AI_FOLDER / "datasets" / "raw"
-
-PLANTS_FILE = RAW_DATA_DIR / "plants.csv"
-WEATHER_FILE = RAW_DATA_DIR / "weather.csv"
-SENSOR_FILE = RAW_DATA_DIR / "sensor_readings.csv"
-
-RANDOM_SEED = 42
-DEFAULT_START = datetime(2026, 1, 1, 0, 0, 0)
-DEFAULT_DAYS = 45
-DEFAULT_INTERVAL_HOURS = 3
-DEFAULT_TIMEZONE = "Asia/Jakarta"
-
-
-@dataclass(frozen=True)
-class SpeciesTemplate:
-    plant_name: str
-    scientific_name: str
-    life_cycle: str
-    environment_type: str
-    watering_interval_days: int
-    recommended_soil: str
-    recommended_sunlight: str
-    propagation_method: str
-    pest_susceptibility: str
-    base_growth_cm_per_day: float
-    base_yield_kg: float
-
-
-SPECIES_TEMPLATES = [
-    SpeciesTemplate(
-        "tomato",
-        "Solanum lycopersicum",
-        "Annual",
-        "outdoor",
-        2,
-        "Well-drained loam",
-        "full sun",
-        "Seed Propagation",
-        "aphid, whitefly, leaf spot",
-        0.42,
-        3.8,
-    ),
-    SpeciesTemplate(
-        "cabbage",
-        "Brassica oleracea var. capitata",
-        "Annual",
-        "outdoor",
-        3,
-        "Fertile well-drained soil",
-        "full sun",
-        "Seed Propagation",
-        "cabbage worm, aphid, flea beetle",
-        0.28,
-        2.4,
-    ),
-    SpeciesTemplate(
-        "lettuce",
-        "Lactuca sativa",
-        "Annual",
-        "outdoor",
-        2,
-        "Moist well-drained soil",
-        "partial shade",
-        "Seed Propagation",
-        "aphid, downy mildew",
-        0.24,
-        0.7,
-    ),
-    SpeciesTemplate(
-        "chili pepper",
-        "Capsicum annuum",
-        "Perennial",
-        "outdoor",
-        3,
-        "Sandy loam",
-        "full sun",
-        "Seed Propagation",
-        "thrips, mite, anthracnose",
-        0.31,
-        1.6,
-    ),
-    SpeciesTemplate(
-        "basil",
-        "Ocimum basilicum",
-        "Annual",
-        "outdoor",
-        2,
-        "Rich well-drained soil",
-        "full sun",
-        "Seed Propagation, Cutting",
-        "aphid, fungal leaf spot",
-        0.35,
-        0.5,
-    ),
-]
+from ai.core.constants import (
+    DATA_GEN_DEFAULT_DAYS as DEFAULT_DAYS,
+    DATA_GEN_DEFAULT_INTERVAL_HOURS as DEFAULT_INTERVAL_HOURS,
+    DATA_GEN_DEFAULT_START as DEFAULT_START,
+    DATA_GEN_DEFAULT_TIMEZONE as DEFAULT_TIMEZONE,
+    DATA_GEN_RANDOM_SEED as RANDOM_SEED,
+    RAW_DATA_DIR,
+    SPECIES_TEMPLATES,
+)
 
 
 def reset_random_seed(seed: int = RANDOM_SEED) -> None:

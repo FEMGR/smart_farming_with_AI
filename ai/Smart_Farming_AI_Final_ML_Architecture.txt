@@ -1,0 +1,715 @@
+SMART FARMING AI — FINAL ML ARCHITECTURE
+===============================================
+
+Purpose
+-------
+This document defines the final architecture for the machine-learning
+prediction layer of the Smart Urban Farming System.
+
+The architecture separates:
+
+1. WHAT is being predicted
+   -> task-specific configuration and task entry points
+
+2. HOW machine learning is performed
+   -> shared ML infrastructure under core/ml/
+
+This avoids duplicating preprocessing, splitting, evaluation, model saving,
+metadata handling, and prediction logic for every prediction task.
+
+
+FINAL PROJECT STRUCTURE
+-----------------------
+
+ai/
+│
+├── core/
+│   └── ml/
+│       ├── data_loader.py
+│       ├── preprocessing.py
+│       ├── splitting.py
+│       ├── training.py
+│       ├── evaluation.py
+│       ├── prediction.py
+│       ├── model_io.py
+│       ├── metadata.py
+│       └── feature_importance.py
+│
+├── models/
+│   ├── random_forest.py
+│   ├── xgboost.py
+│   ├── gradient_boosting.py
+│   └── pytorch_mlp.py
+│
+└── tasks/
+    ├── irrigation_prediction/
+    │   ├── config.py
+    │   └── train.py
+    │
+    ├── growth_prediction/
+    │   ├── config.py
+    │   └── train.py
+    │
+    ├── disease_prediction/
+    │   ├── config.py
+    │   └── train.py
+    │
+    └── yield_prediction/
+        ├── config.py
+        └── train.py
+
+
+DATA PIPELINE
+-------------
+
+The existing feature/data preparation pipeline remains responsible for
+creating the master feature repository and task-specific datasets.
+
+Raw data
+   |
+   +--> plants.csv
+   +--> sensor_readings.csv
+   +--> weather.csv
+   |
+   v
+Preprocessing / feature engineering
+   |
+   v
+featured_data.csv
+   |
+   v
+feature_selection.py
+   |
+   +--> irrigation_training.csv
+   +--> growth_training.csv
+   +--> disease_training.csv
+   +--> yield_training.csv
+   |
+   v
+Shared ML core
+   |
+   +--> preprocessing
+   +--> splitting
+   +--> model training
+   +--> evaluation
+   +--> artifact saving
+   |
+   v
+Trained models
+   |
+   v
+Prediction / API integration
+
+
+TASKS AND MODELS
+----------------
+
+Irrigation prediction
+Dataset:
+    irrigation_training.csv
+
+Models:
+    XGBoost
+    Random Forest
+    PyTorch MLP
+
+Typical target:
+    watering_needed
+    or another irrigation target configured by the task
+
+Problem type:
+    Classification when predicting whether watering is needed.
+    Regression when predicting watering amount.
+
+Growth prediction
+Dataset:
+    growth_training.csv
+
+Models:
+    Random Forest
+    PyTorch MLP
+
+Typical targets:
+    future_height_cm
+    growth_rate
+
+Problem type:
+    Usually regression.
+
+Disease risk prediction
+Dataset:
+    disease_training.csv
+
+Models:
+    XGBoost
+    PyTorch MLP
+
+Possible targets:
+    disease_risk
+    disease_name
+
+Problem type:
+    Classification or regression depending on the selected target.
+
+Yield prediction
+Dataset:
+    yield_training.csv
+
+Models:
+    Gradient Boosting
+    PyTorch MLP
+
+Typical target:
+    yield_kg
+
+Problem type:
+    Usually regression.
+
+
+CORE/ML FILE RESPONSIBILITIES
+-----------------------------
+
+core/ml/data_loader.py
+~~~~~~~~~~~~~~~~~~~~~~
+Responsible for loading training datasets.
+
+Responsibilities:
+- Load CSV/data files.
+- Validate that the dataset exists.
+- Return pandas DataFrames.
+- Provide basic dataset validation.
+- Keep file-loading logic out of individual model scripts.
+
+It should NOT:
+- Train a model.
+- Calculate model metrics.
+- Contain task-specific feature lists.
+
+
+core/ml/preprocessing.py
+~~~~~~~~~~~~~~~~~~~~~~~~
+Responsible for preparing feature data before model training.
+
+Responsibilities:
+- Separate features (X) and target (y).
+- Handle missing values.
+- Encode categorical features when required.
+- Convert data into model-compatible numeric form.
+- Fit preprocessing transformations on training data.
+- Save/return preprocessing artifacts required for inference.
+
+Important:
+This file must be model-agnostic and task-agnostic.
+
+It should receive configuration such as:
+- target column
+- problem type
+- categorical columns
+- numeric columns
+- preprocessing strategy
+
+It must NOT contain irrigation-specific target candidates such as
+"watering_needed" directly.
+
+
+core/ml/splitting.py
+~~~~~~~~~~~~~~~~~~~
+Responsible for dividing data into training/validation/test sets.
+
+Responsibilities:
+- Train/test split.
+- Optional validation split.
+- Reproducible random seed.
+- Stratification for classification where appropriate.
+- Support task-specific split configuration.
+
+Important:
+If a task later uses time-series data, this module should support a
+time-aware split instead of randomly mixing future observations into
+training data.
+
+
+core/ml/training.py
+~~~~~~~~~~~~~~~~~~~
+Responsible for the common model-training orchestration.
+
+Responsibilities:
+- Receive prepared X/y data.
+- Receive a model instance.
+- Call the model's training interface.
+- Handle common training configuration.
+- Return the trained model.
+- Record basic training information.
+
+For scikit-learn-compatible models such as:
+- Random Forest
+- Gradient Boosting
+- XGBoost
+
+the common operation is essentially:
+    model.fit(X_train, y_train)
+
+PyTorch should have a specialized training implementation because its
+training loop is fundamentally different.
+
+
+core/ml/evaluation.py
+~~~~~~~~~~~~~~~~~~~~~
+Responsible for evaluating trained models.
+
+For classification:
+- Accuracy
+- Precision
+- Recall
+- F1 score
+- ROC-AUC when applicable
+- Confusion matrix
+- Classification report
+
+For regression:
+- MAE
+- MSE
+- RMSE
+- R-squared
+
+The evaluator should determine the appropriate metrics from the task/model
+configuration rather than duplicating evaluation code in each prediction
+task.
+
+Results should be saved in a common format so models can be compared later.
+
+
+core/ml/prediction.py
+~~~~~~~~~~~~~~~~~~~~~
+Responsible for the common prediction/inference workflow.
+
+Responsibilities:
+- Load preprocessing artifacts.
+- Apply exactly the same preprocessing used during training.
+- Prepare new input data.
+- Pass processed data to the trained model.
+- Return predictions.
+- Optionally return prediction probabilities/confidence where supported.
+
+This is important because inference must use the same transformations
+learned during training.
+
+
+core/ml/model_io.py
+~~~~~~~~~~~~~~~~~~~
+Responsible for model and artifact persistence.
+
+Responsibilities:
+- Save trained models.
+- Load trained models.
+- Save preprocessing artifacts.
+- Load preprocessing artifacts.
+- Manage model directories.
+- Keep serialization details out of task scripts.
+
+For scikit-learn/XGBoost models, joblib or an appropriate model-specific
+serialization method can be used.
+
+PyTorch models should use the appropriate PyTorch model/state-dict
+serialization approach.
+
+
+core/ml/metadata.py
+~~~~~~~~~~~~~~~~~~~
+Responsible for recording information about a trained model.
+
+Metadata should include information such as:
+- task name
+- algorithm
+- problem type
+- target column
+- feature columns
+- training row count
+- validation/test row count
+- training timestamp
+- model configuration/version
+- preprocessing configuration/version
+
+This allows the system to know what a saved model represents without
+opening the model itself.
+
+
+core/ml/feature_importance.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Responsible for extracting and saving feature importance where the selected
+model supports it.
+
+Examples:
+- Random Forest feature_importances_
+- Gradient Boosting feature_importances_
+- XGBoost feature importance
+
+Possible output:
+    feature_importance.csv
+
+PyTorch MLP does not have a native tree-style feature_importances_ attribute,
+so it should use a separate interpretability method if feature importance is
+required.
+
+
+MODELS FILE RESPONSIBILITIES
+----------------------------
+
+models/random_forest.py
+~~~~~~~~~~~~~~~~~~~~~~~
+Contains Random Forest model construction/configuration.
+
+Responsibilities:
+- Build RandomForestClassifier.
+- Build RandomForestRegressor.
+- Define default hyperparameters.
+- Return a model instance to the shared training pipeline.
+
+It should NOT:
+- Load irrigation_training.csv.
+- Perform task-specific preprocessing.
+- Calculate evaluation metrics.
+
+
+models/xgboost.py
+~~~~~~~~~~~~~~~~~
+Contains XGBoost model construction/configuration.
+
+Responsibilities:
+- Build XGBClassifier.
+- Build XGBRegressor.
+- Define default XGBoost hyperparameters.
+- Return model instances to the shared training pipeline.
+
+It should NOT:
+- Know specifically about irrigation or disease.
+- Load task datasets.
+- Duplicate preprocessing.
+
+
+models/gradient_boosting.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Contains Gradient Boosting model construction/configuration.
+
+Responsibilities:
+- Build classifier/regressor as required.
+- Define model defaults.
+- Return model instances to the shared training pipeline.
+
+
+models/pytorch_mlp.py
+~~~~~~~~~~~~~~~~~~~~~
+Contains the PyTorch MLP architecture.
+
+Responsibilities:
+- Define neural-network architecture.
+- Configure input/output dimensions.
+- Define layers and activation functions.
+- Return an initialized PyTorch model.
+
+The actual PyTorch training loop belongs in a PyTorch-specific trainer,
+rather than pretending PyTorch behaves exactly like scikit-learn.
+
+
+PYTORCH SPECIALIZATION
+----------------------
+
+Because PyTorch training differs from scikit-learn/XGBoost, a future
+structure can contain:
+
+core/
+└── ml/
+    └── pytorch/
+        ├── dataset.py
+        ├── trainer.py
+        └── model_io.py
+
+The shared pipeline should still provide:
+- loading
+- preprocessing
+- splitting
+- evaluation
+- metadata
+- common prediction concepts
+
+But PyTorch gets its own:
+- Dataset/DataLoader handling
+- training loop
+- optimizer
+- loss function
+- epochs
+- backpropagation
+- checkpointing
+
+
+TASK CONFIGURATION FILES
+------------------------
+
+tasks/irrigation_prediction/config.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Defines what irrigation prediction means.
+
+Example configuration:
+
+    TASK_CONFIG = {
+        "name": "irrigation_prediction",
+        "dataset": "irrigation_training.csv",
+        "target": "watering_needed",
+        "problem_type": "classification",
+        "models": [
+            "random_forest",
+            "xgboost",
+            "pytorch_mlp",
+        ],
+    }
+
+The configuration may also define:
+- feature columns
+- categorical columns
+- split strategy
+- evaluation metrics
+- model-specific parameters
+
+
+tasks/growth_prediction/config.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Defines:
+- dataset: growth_training.csv
+- target: future_height_cm or growth_rate
+- problem type
+- selected models
+- task-specific feature/preprocessing settings
+
+
+tasks/disease_prediction/config.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Defines:
+- dataset: disease_training.csv
+- target
+- problem type
+- selected models
+- task-specific feature/preprocessing settings
+
+
+tasks/yield_prediction/config.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Defines:
+- dataset: yield_training.csv
+- target: yield_kg
+- problem type
+- selected models
+- task-specific feature/preprocessing settings
+
+
+TASK train.py FILES
+-------------------
+
+Each task's train.py should be a thin orchestration layer.
+
+Example:
+
+tasks/irrigation_prediction/train.py
+
+Responsibilities:
+1. Load irrigation task configuration.
+2. Select the requested model(s).
+3. Ask core/ml/data_loader.py to load the dataset.
+4. Ask core/ml/preprocessing.py to preprocess it.
+5. Ask core/ml/splitting.py to split it.
+6. Build the selected model from models/.
+7. Ask core/ml/training.py to train it.
+8. Ask core/ml/evaluation.py to evaluate it.
+9. Ask core/ml/model_io.py to save it.
+10. Ask core/ml/metadata.py to save metadata.
+11. Save feature importance where supported.
+
+The growth, disease, and yield train.py files follow the same pattern.
+
+The task files should contain task configuration, not duplicated ML
+infrastructure.
+
+
+MODEL COMPARISON
+----------------
+
+The architecture should make model comparison straightforward.
+
+For example:
+
+Irrigation:
+    Random Forest
+        vs
+    XGBoost
+        vs
+    PyTorch MLP
+
+All models should use:
+- the same task dataset
+- the same target
+- the same feature definitions
+- the same train/test methodology
+- compatible preprocessing
+- the same evaluation criteria
+
+This makes the comparison meaningful.
+
+A future compare_models.py can read standardized evaluation files such as:
+
+    evaluation/
+        irrigation/
+            random_forest_metrics.json
+            xgboost_metrics.json
+            pytorch_mlp_metrics.json
+
+and produce a comparison table.
+
+
+ARTIFACT STRUCTURE
+------------------
+
+A possible trained-model structure is:
+
+ai/
+└── artifacts/
+    ├── irrigation/
+    │   ├── random_forest/
+    │   │   ├── model.pkl
+    │   │   ├── preprocessing.pkl
+    │   │   ├── metadata.json
+    │   │   ├── metrics.json
+    │   │   └── feature_importance.csv
+    │   │
+    │   ├── xgboost/
+    │   │   └── ...
+    │   │
+    │   └── pytorch_mlp/
+    │       └── ...
+    │
+    ├── growth/
+    │   └── ...
+    │
+    ├── disease/
+    │   └── ...
+    │
+    └── yield/
+        └── ...
+
+
+KEY DESIGN RULES
+----------------
+
+1. Do not duplicate preprocessing for every task.
+
+2. Do not duplicate evaluation for every task.
+
+3. Do not put task-specific targets into core/ml/preprocessing.py.
+
+4. Do not make model files responsible for loading datasets.
+
+5. Keep task configuration under tasks/.
+
+6. Keep generic ML infrastructure under core/ml/.
+
+7. Keep model construction under models/.
+
+8. Keep trained artifacts separate from source code.
+
+9. Use identical preprocessing/splitting/evaluation rules when comparing
+   different algorithms for the same task.
+
+10. Keep PyTorch-specific training logic separate where its training loop
+    differs from scikit-learn-style models.
+
+
+RESPONSIBILITY SUMMARY
+----------------------
+
+                    WHAT?                  HOW?
+
+tasks/              Task definition       --
+                    Target                --
+                    Dataset               --
+                    Problem type          --
+                    Selected models       --
+
+models/             --                     Model architecture
+                                           Hyperparameters
+
+core/ml/            --                     Data loading
+                                           Preprocessing
+                                           Splitting
+                                           Training
+                                           Evaluation
+                                           Prediction
+                                           Saving
+                                           Metadata
+
+
+FINAL CONCEPTUAL FLOW
+---------------------
+
+                    featured_data.csv
+                           |
+                           v
+                   feature_selection.py
+                           |
+        +------------------+------------------+
+        |                  |                  |
+        v                  v                  v
+ irrigation_training   growth_training   disease_training
+        |                  |                  |
+        |                  |                  |
+        +------------------+------------------+
+                           |
+                           v
+                    Task configuration
+                           |
+                           v
+                     core/ml pipeline
+                           |
+             +-------------+-------------+
+             |             |             |
+             v             v             v
+        Random Forest   XGBoost     PyTorch MLP
+             |             |             |
+             +-------------+-------------+
+                           |
+                           v
+                       Evaluation
+                           |
+                           v
+                  Saved model + metadata
+                           |
+                           v
+                       Prediction
+                           |
+                           v
+                 FastAPI / application
+
+
+IMPORTANT CURRENT-PIPELINE NOTE
+--------------------------------
+
+The task-specific CSVs are already being produced from the master
+featured_data.csv by feature selection.
+
+Therefore:
+
+    feature_selection.py
+        = decides which columns belong to each ML objective
+
+while:
+
+    core/ml/preprocessing.py
+        = prepares those selected columns for machine learning
+
+These are different responsibilities and should remain separate.
+
+The current sample data also shows why a sufficiently large and varied
+training dataset is needed. The sample plants include multiple species and
+different plant attributes, while the sample sensor and weather data contain
+timestamped environmental measurements. These sources need to be correctly
+joined before generating a useful training dataset.
+
+
+END

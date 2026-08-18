@@ -8,11 +8,10 @@ import csv
 import json
 from pathlib import Path
 
-AI_FOLDER = Path(__file__).resolve().parent.parent
-RAW_DATA_DIR = AI_FOLDER / "datasets" / "raw"
-
-DEFAULT_INPUT_FILE = RAW_DATA_DIR / "weather.json"
-DEFAULT_OUTPUT_FILE = RAW_DATA_DIR / "weather.csv"
+from ai.core.constants import (
+    DEFAULT_WEATHER_INPUT_FILE as DEFAULT_INPUT_FILE,
+    DEFAULT_WEATHER_OUTPUT_FILE as DEFAULT_OUTPUT_FILE,
+)
 
 
 def load_weather_json(path: Path = DEFAULT_INPUT_FILE) -> dict:

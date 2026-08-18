@@ -9,24 +9,10 @@ from typing import Any
 
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 
-DEFAULT_CLASSIFIER_PARAMS: dict[str, Any] = {
-    "n_estimators": 300,
-    "max_depth": None,
-    "min_samples_split": 2,
-    "min_samples_leaf": 1,
-    "random_state": 42,
-    "n_jobs": -1,
-    "class_weight": "balanced",
-}
-
-DEFAULT_REGRESSOR_PARAMS: dict[str, Any] = {
-    "n_estimators": 300,
-    "max_depth": None,
-    "min_samples_split": 2,
-    "min_samples_leaf": 1,
-    "random_state": 42,
-    "n_jobs": -1,
-}
+from ai.core.constants import (
+    DEFAULT_RF_CLASSIFIER_PARAMS as DEFAULT_CLASSIFIER_PARAMS,
+    DEFAULT_RF_REGRESSOR_PARAMS as DEFAULT_REGRESSOR_PARAMS,
+)
 
 
 def build_classifier(params: dict[str, Any] | None = None) -> RandomForestClassifier:

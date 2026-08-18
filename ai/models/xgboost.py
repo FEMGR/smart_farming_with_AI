@@ -16,28 +16,10 @@ else:
     _IMPORT_ERROR = None
 
 
-DEFAULT_CLASSIFIER_PARAMS: dict[str, Any] = {
-    "n_estimators": 300,
-    "max_depth": 6,
-    "learning_rate": 0.05,
-    "subsample": 0.8,
-    "colsample_bytree": 0.8,
-    "random_state": 42,
-    "objective": "binary:logistic",
-    "eval_metric": "logloss",
-    "n_jobs": -1,
-}
-
-DEFAULT_REGRESSOR_PARAMS: dict[str, Any] = {
-    "n_estimators": 300,
-    "max_depth": 6,
-    "learning_rate": 0.05,
-    "subsample": 0.8,
-    "colsample_bytree": 0.8,
-    "random_state": 42,
-    "objective": "reg:squarederror",
-    "n_jobs": -1,
-}
+from ai.core.constants import (
+    DEFAULT_XGB_CLASSIFIER_PARAMS as DEFAULT_CLASSIFIER_PARAMS,
+    DEFAULT_XGB_REGRESSOR_PARAMS as DEFAULT_REGRESSOR_PARAMS,
+)
 
 
 def build_classifier(params: dict[str, Any] | None = None):
