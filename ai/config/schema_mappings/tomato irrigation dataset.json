@@ -1,0 +1,7 @@
+{
+    "Temperature [_ C] ": "temperature",
+    "Humidity [%]": "humidity",
+    "Wind Speed": "wind_speed",
+    "Soil moisture": "soil_moisture",
+    "pH": "soil_ph"
+}

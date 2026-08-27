@@ -15,9 +15,12 @@ import { useData } from '@/context/DataContext';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 
 export default function CareScreen() {
+  const colors = useTheme();
   const {
+    plants,
     needsWater,
     notifications,
     locations,
@@ -29,11 +32,84 @@ export default function CareScreen() {
     refreshing,
   } = useData();
 
-  const [activeSegment, setActiveSegment] = useState<'irrigation' | 'notifications'>('irrigation');
+  const [expandedSection, setExpandedSection] = useState<string | null>('due');
   const [actionLoading, setActionLoading] = useState(false);
 
   const duePlants = needsWater.filter((p) => p.needs_water);
-  const currentPlants = needsWater.filter((p) => !p.needs_water);
+  const currentPlants = plants.filter(
+    (p) => !duePlants.some((d) => (d.plant_id ?? d.id) === p.id)
+  );
+
+  const totalCareTasks = plants.length || needsWater.length || 0;
+  const finishedCareTasks = Math.max(0, totalCareTasks - duePlants.length);
+  const careProgress = totalCareTasks === 0 ? 1 : Math.min(1, Math.max(0, finishedCareTasks / totalCareTasks));
+
+  const totalNotis = notifications.length || 1;
+  const readNotis = notifications.filter((n) => n.is_read).length;
+  const notiProgress = Math.min(1, Math.max(0, readNotis / totalNotis));
+
+  const renderAccordionHeader = (
+    id: string,
+    title: string,
+    dueText: string,
+    finishedCount: number,
+    totalCount: number,
+    progress: number
+  ) => {
+    const isOpen = expandedSection === id;
+    const progressPercent = Math.round(progress * 100);
+
+    return (
+      <TouchableOpacity
+        activeOpacity={0.8}
+        onPress={() => setExpandedSection(isOpen ? null : id)}
+        style={[
+          styles.accordionHeaderCard,
+          {
+            backgroundColor: isOpen ? colors.badgeSuccessBackground : colors.backgroundElement,
+            borderColor: colors.border,
+          },
+          isOpen && styles.accordionHeaderCardActive,
+        ]}
+      >
+        <View style={styles.accordionHeaderLeft}>
+          <ThemedText type="smallBold" style={styles.accordionTitleText}>
+            {title}
+          </ThemedText>
+        </View>
+
+        <View style={styles.accordionHeaderRight}>
+          <View style={styles.accordionMetaColumn}>
+            <ThemedText themeColor="textSecondary" style={styles.accordionDueText}>
+              {dueText}
+            </ThemedText>
+            <View style={styles.accordionProgressRow}>
+              <View style={[styles.accordionProgressBarTrack, { backgroundColor: colors.disabled }]}>
+                <View
+                  style={[
+                    styles.accordionProgressBarFill,
+                    { width: `${progressPercent}%`, backgroundColor: colors.emerald },
+                  ]}
+                />
+              </View>
+              <ThemedText themeColor="textSecondary" style={styles.accordionRatioText}>
+                {`${finishedCount}/${totalCount} (${progressPercent}%)`}
+              </ThemedText>
+            </View>
+          </View>
+
+          <View style={styles.arrowIconWrapper}>
+            <SymbolView
+              name={isOpen ? 'chevron.up' : 'chevron.down'}
+              size={18}
+              tintColor={colors.emerald}
+            />
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  };
+
 
   const handleWaterAll = async () => {
     if (duePlants.length === 0) {
@@ -41,9 +117,27 @@ export default function CareScreen() {
       return;
     }
 
+    const message = `Are you sure you want to mark all ${duePlants.length} due plants as watered?`;
+
+    if (Platform.OS === 'web') {
+      if (typeof window !== 'undefined' && window.confirm(message)) {
+        setActionLoading(true);
+        try {
+          const res = await waterAll();
+          const count = res?.count || duePlants.length;
+          Alert.alert('Success', `${count} plant(s) watered. All due tasks are now cleared.`);
+        } catch (e: any) {
+          Alert.alert('Error', e.message || 'Failed to water all due plants');
+        } finally {
+          setActionLoading(false);
+        }
+      }
+      return;
+    }
+
     Alert.alert(
       'Water All Due',
-      `Are you sure you want to mark all ${duePlants.length} due plants as watered?`,
+      message,
       [
         { text: 'Cancel', style: 'cancel' },
         {
@@ -133,171 +227,167 @@ export default function CareScreen() {
               Manage irrigation and review alert history
             </ThemedText>
           </View>
-          <TouchableOpacity onPress={refreshAll} style={styles.refreshBtn}>
-            <SymbolView name="arrow.clockwise" size={20} tintColor="#10B981" />
-          </TouchableOpacity>
-        </View>
-
-        {/* Segmented Controller */}
-        <View style={styles.segmentedContainer}>
-          <TouchableOpacity
-            style={[styles.segmentBtn, activeSegment === 'irrigation' && styles.segmentBtnActive]}
-            onPress={() => setActiveSegment('irrigation')}
-          >
-            <SymbolView
-              name="drop.fill"
-              size={14}
-              tintColor={activeSegment === 'irrigation' ? '#10B981' : '#888'}
-            />
-            <ThemedText style={[styles.segmentText, activeSegment === 'irrigation' && styles.segmentTextActive]}>
-              Irrigation ({duePlants.length} Due)
-            </ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.segmentBtn, activeSegment === 'notifications' && styles.segmentBtnActive]}
-            onPress={() => setActiveSegment('notifications')}
-          >
-            <SymbolView
-              name="bell.fill"
-              size={14}
-              tintColor={activeSegment === 'notifications' ? '#10B981' : '#888'}
-            />
-            <ThemedText style={[styles.segmentText, activeSegment === 'notifications' && styles.segmentTextActive]}>
-              Alerts ({notifications.filter((n) => !n.is_read).length} New)
-            </ThemedText>
+          <TouchableOpacity onPress={refreshAll} style={[styles.refreshBtn, { backgroundColor: colors.badgeSuccessBackground }]}>
+            <SymbolView name="arrow.clockwise" size={20} tintColor={colors.emerald} />
           </TouchableOpacity>
         </View>
 
         {/* List Content */}
         {loading && needsWater.length === 0 ? (
           <View style={styles.center}>
-            <ActivityIndicator size="large" color="#10B981" />
-          </View>
-        ) : activeSegment === 'irrigation' ? (
-          <View style={{ flex: 1 }}>
-            {/* Quick Actions for Irrigation */}
-            <View style={styles.careActionsRow}>
-              <TouchableOpacity style={styles.careActionBtn} onPress={refreshAll}>
-                <SymbolView name="arrow.clockwise" size={14} tintColor="#10B981" />
-                <ThemedText style={styles.careActionText}>Check status</ThemedText>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={[styles.careActionBtn, styles.waterAllBtn]}
-                onPress={handleWaterAll}
-                disabled={actionLoading}
-              >
-                <SymbolView name="drop.fill" size={14} tintColor="#fff" />
-                <ThemedText style={[styles.careActionText, { color: '#fff' }]}>Water all due</ThemedText>
-              </TouchableOpacity>
-            </View>
-
-            <ScrollView
-              contentContainerStyle={styles.scrollList}
-              refreshControl={
-                <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
-              }
-            >
-              {/* Due Category */}
-              <ThemedText type="smallBold" style={styles.categoryTitle}>
-                Due for Watering ({duePlants.length})
-              </ThemedText>
-              {duePlants.length === 0 ? (
-                <ThemedView type="backgroundElement" style={styles.emptyCard}>
-                  <SymbolView name="checkmark.seal.fill" size={32} tintColor="#10B981" />
-                  <ThemedText themeColor="textSecondary">All plants are current and watered.</ThemedText>
-                </ThemedView>
-              ) : (
-                duePlants.map((plant) => (
-                  <ThemedView key={`due-${plant.plant_id}`} type="backgroundElement" style={styles.careCard}>
-                    <View style={{ flex: 1 }}>
-                      <ThemedText type="smallBold">{plant.name}</ThemedText>
-                      <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
-                        Interval: {plant.watering_interval_days || 4} days · Last watered: {formatDate(plant.last_watered)}
-                      </ThemedText>
-                    </View>
-                    <TouchableOpacity
-                      style={styles.waterOneBtn}
-                      onPress={() => handleWaterOne(plant.plant_id, plant.name)}
-                      disabled={actionLoading}
-                    >
-                      <SymbolView name="drop.fill" size={12} tintColor="#fff" />
-                      <ThemedText style={styles.waterOneBtnText}>Water</ThemedText>
-                    </TouchableOpacity>
-                  </ThemedView>
-                ))
-              )}
-
-              {/* Current Category */}
-              {currentPlants.length > 0 && (
-                <>
-                  <ThemedText type="smallBold" style={[styles.categoryTitle, { marginTop: Spacing.four }]}>
-                    Hydrated / Current ({currentPlants.length})
-                  </ThemedText>
-                  {currentPlants.map((plant) => (
-                    <ThemedView key={`current-${plant.plant_id}`} type="backgroundElement" style={[styles.careCard, { opacity: 0.7 }]}>
-                      <View style={{ flex: 1 }}>
-                        <ThemedText type="smallBold">{plant.name}</ThemedText>
-                        <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
-                          Hydrated · Last watered: {formatDate(plant.last_watered)}
-                        </ThemedText>
-                      </View>
-                      <SymbolView name="checkmark.circle.fill" size={20} tintColor="#10B981" />
-                    </ThemedView>
-                  ))}
-                </>
-              )}
-            </ScrollView>
+            <ActivityIndicator size="large" color={colors.emerald} />
           </View>
         ) : (
-          /* ALERTS (NOTIFICATIONS) VIEW */
           <ScrollView
             contentContainerStyle={styles.scrollList}
             refreshControl={
               <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
             }
           >
-            {notifications.length === 0 ? (
-              <View style={styles.empty}>
-                <SymbolView name="bell.slash.fill" size={48} tintColor="#ccc" />
-                <ThemedText themeColor="textSecondary" style={styles.emptyText}>
-                  No notifications or alerts.
-                </ThemedText>
-              </View>
-            ) : (
-              notifications.map((noti) => (
-                <ThemedView
-                  key={noti.id}
-                  type="backgroundElement"
-                  style={[styles.notiCard, !noti.is_read && styles.notiUnread]}
-                >
-                  <View style={styles.notiContent}>
-                    <View style={styles.notiHeader}>
-                      <ThemedText type="smallBold" style={styles.notiMsg}>
-                        {noti.message}
-                      </ThemedText>
-                      <View style={[styles.badge, noti.is_read ? styles.badgeRead : styles.badgeUnread]}>
-                        <ThemedText style={styles.badgeText}>{noti.is_read ? 'Read' : 'New'}</ThemedText>
-                      </View>
-                    </View>
-                    
-                    <ThemedText themeColor="textSecondary" style={styles.notiMeta}>
-                      {getNotificationLocLabel(noti)} • {formatDate(noti.created_at)}
-                    </ThemedText>
+            {/* Accordion 1: Due for Watering */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'due',
+                'Watering Tasks (Due)',
+                `Due: ${duePlants.length} pending`,
+                finishedCareTasks,
+                totalCareTasks,
+                careProgress
+              )}
+
+              {expandedSection === 'due' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  <View style={styles.careActionsRow}>
+                    <TouchableOpacity style={[styles.careActionBtn, { borderColor: colors.emerald }]} onPress={refreshAll}>
+                      <SymbolView name="arrow.clockwise" size={14} tintColor={colors.emerald} />
+                      <ThemedText style={[styles.careActionText, { color: colors.emerald }]}>Check status</ThemedText>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                      style={[styles.careActionBtn, styles.waterAllBtn, { backgroundColor: colors.careWater, borderColor: colors.careWater }]}
+                      onPress={handleWaterAll}
+                      disabled={actionLoading}
+                    >
+                      <SymbolView name="drop.fill" size={14} tintColor={colors.textInverse} />
+                      <ThemedText style={[styles.careActionText, { color: colors.textInverse }]}>Water all due</ThemedText>
+                    </TouchableOpacity>
                   </View>
 
-                  {!noti.is_read && (
-                    <TouchableOpacity
-                      style={styles.markReadBtn}
-                      onPress={() => handleMarkRead(noti.id)}
-                    >
-                      <SymbolView name="checkmark" size={14} tintColor="#10B981" />
-                      <ThemedText style={styles.markReadText}>Mark read</ThemedText>
-                    </TouchableOpacity>
+                  {duePlants.length === 0 ? (
+                    <ThemedView type="backgroundElement" style={styles.emptyCard}>
+                      <SymbolView name="checkmark.seal.fill" size={32} tintColor={colors.emerald} />
+                      <ThemedText themeColor="textSecondary">All plants are current and watered.</ThemedText>
+                    </ThemedView>
+                  ) : (
+                    duePlants.map((plant) => (
+                      <ThemedView key={`due-${plant.plant_id}`} type="backgroundElement" style={styles.careCard}>
+                        <View style={{ flex: 1 }}>
+                          <ThemedText type="smallBold">{plant.name}</ThemedText>
+                          <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
+                            Interval: {plant.watering_interval_days || 4} days · Last watered: {formatDate(plant.last_watered)}
+                          </ThemedText>
+                        </View>
+                        <TouchableOpacity
+                          style={[styles.waterOneBtn, { backgroundColor: colors.careWater }]}
+                          onPress={() => handleWaterOne(plant.plant_id, plant.name)}
+                          disabled={actionLoading}
+                        >
+                          <SymbolView name="drop.fill" size={12} tintColor={colors.textInverse} />
+                          <ThemedText style={[styles.waterOneBtnText, { color: colors.textInverse }]}>Water</ThemedText>
+                        </TouchableOpacity>
+                      </ThemedView>
+                    ))
                   )}
-                </ThemedView>
-              ))
-            )}
+                </View>
+              )}
+            </View>
+
+            {/* Accordion 2: Hydrated / Current */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'current',
+                'Hydrated & Current Crops',
+                `Current: ${currentPlants.length} plants`,
+                currentPlants.length,
+                totalCareTasks,
+                currentPlants.length > 0 ? 1.0 : 0.0
+              )}
+
+              {expandedSection === 'current' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  {currentPlants.length === 0 ? (
+                    <ThemedView type="backgroundElement" style={styles.emptyCard}>
+                      <ThemedText themeColor="textSecondary">No plants currently marked as hydrated.</ThemedText>
+                    </ThemedView>
+                  ) : (
+                    currentPlants.map((plant) => (
+                      <ThemedView key={`cur-${plant.plant_id}`} type="backgroundElement" style={styles.careCard}>
+                        <View style={{ flex: 1 }}>
+                          <ThemedText type="smallBold">{plant.name}</ThemedText>
+                          <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
+                            Last watered: {formatDate(plant.last_watered)}
+                          </ThemedText>
+                        </View>
+                      </ThemedView>
+                    ))
+                  )}
+                </View>
+              )}
+            </View>
+
+            {/* Accordion 3: Alerts & Notifications */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'notifications',
+                'Alerts & Care History',
+                `Alerts: ${notifications.filter((n) => !n.is_read).length} unread`,
+                readNotis,
+                totalNotis,
+                notiProgress
+              )}
+
+              {expandedSection === 'notifications' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  {notifications.length === 0 ? (
+                    <ThemedView type="backgroundElement" style={styles.emptyCard}>
+                      <SymbolView name="bell.slash.fill" size={32} tintColor={colors.placeholder} />
+                      <ThemedText themeColor="textSecondary">No notifications or alerts.</ThemedText>
+                    </ThemedView>
+                  ) : (
+                    notifications.map((noti) => (
+                      <ThemedView
+                        key={`noti-full-${noti.id}`}
+                        type="backgroundElement"
+                        style={[styles.notiCard, !noti.is_read && { borderLeftWidth: 4, borderLeftColor: colors.badgeErrorText }]}
+                      >
+                        <View style={styles.notiContent}>
+                          <View style={styles.notiHeader}>
+                            <ThemedText type="smallBold" style={styles.notiMsg}>
+                              {noti.message}
+                            </ThemedText>
+                            <View style={[styles.badge, noti.is_read ? { backgroundColor: colors.disabled } : { backgroundColor: colors.badgeErrorBackground }]}>
+                              <ThemedText style={[styles.badgeText, { color: noti.is_read ? colors.textSecondary : colors.badgeErrorText }]}>{noti.is_read ? 'READ' : 'NEW'}</ThemedText>
+                            </View>
+                          </View>
+                          <ThemedText themeColor="textSecondary" style={styles.notiMeta}>
+                            {getNotificationLocLabel(noti)} · {formatDate(noti.created_at)}
+                          </ThemedText>
+                        </View>
+
+                        {!noti.is_read && (
+                          <TouchableOpacity
+                            style={[styles.markReadBtn, { borderTopColor: colors.divider }]}
+                            onPress={() => handleMarkRead(noti.id)}
+                          >
+                            <SymbolView name="checkmark.circle.fill" size={14} tintColor={colors.emerald} />
+                            <ThemedText style={[styles.markReadText, { color: colors.emerald }]}>Mark as Read</ThemedText>
+                          </TouchableOpacity>
+                        )}
+                      </ThemedView>
+                    ))
+                  )}
+                </View>
+              )}
+            </View>
           </ScrollView>
         )}
       </SafeAreaView>
@@ -334,11 +424,9 @@ const styles = StyleSheet.create({
   refreshBtn: {
     padding: Spacing.two,
     borderRadius: 20,
-    backgroundColor: 'rgba(16, 185, 129, 0.1)',
   },
   segmentedContainer: {
     flexDirection: 'row',
-    backgroundColor: 'rgba(0,0,0,0.05)',
     borderRadius: Spacing.two,
     marginHorizontal: Spacing.three,
     marginBottom: Spacing.three,
@@ -357,13 +445,11 @@ const styles = StyleSheet.create({
     gap: Spacing.one,
   },
   segmentBtnActive: {
-    backgroundColor: '#fff',
     ...Platform.select({
       web: {
         boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
       },
       default: {
-        shadowColor: '#000',
         shadowOpacity: 0.1,
         shadowOffset: { width: 0, height: 1 },
         shadowRadius: 2,
@@ -373,10 +459,8 @@ const styles = StyleSheet.create({
   },
   segmentText: {
     fontSize: 13,
-    color: '#666',
   },
   segmentTextActive: {
-    color: '#10B981',
     fontWeight: 'bold',
   },
   careActionsRow: {
@@ -395,19 +479,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
-    borderColor: '#10B981',
     borderRadius: Spacing.two,
     paddingVertical: Spacing.two,
     gap: Spacing.one,
   },
-  waterAllBtn: {
-    backgroundColor: '#06B6D4',
-    borderColor: '#06B6D4',
-  },
+  waterAllBtn: {},
   careActionText: {
     fontSize: 13,
     fontWeight: 'bold',
-    color: '#10B981',
   },
   scrollList: {
     paddingHorizontal: Spacing.three,
@@ -440,14 +519,12 @@ const styles = StyleSheet.create({
   waterOneBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#06B6D4',
     paddingVertical: Spacing.one,
     paddingHorizontal: Spacing.three,
     borderRadius: Spacing.two,
     gap: Spacing.half,
   },
   waterOneBtnText: {
-    color: '#fff',
     fontSize: 12,
     fontWeight: 'bold',
   },
@@ -466,10 +543,6 @@ const styles = StyleSheet.create({
     padding: Spacing.three,
     borderRadius: Spacing.three,
     marginBottom: Spacing.three,
-  },
-  notiUnread: {
-    borderLeftWidth: 4,
-    borderLeftColor: '#EF4444',
   },
   notiContent: {
     flex: 1,
@@ -493,22 +566,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     borderRadius: 6,
   },
-  badgeRead: {
-    backgroundColor: '#E5E7EB',
-  },
-  badgeUnread: {
-    backgroundColor: '#FEE2E2',
-  },
   badgeText: {
     fontSize: 9,
     fontWeight: 'bold',
-    color: '#374151',
   },
   markReadBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     borderTopWidth: 1,
-    borderTopColor: 'rgba(0,0,0,0.05)',
     marginTop: Spacing.two,
     paddingTop: Spacing.two,
     gap: Spacing.one,
@@ -516,6 +581,64 @@ const styles = StyleSheet.create({
   markReadText: {
     fontSize: 12,
     fontWeight: 'bold',
-    color: '#10B981',
+  },
+  accordionHeaderCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: Spacing.three,
+    borderRadius: Spacing.three,
+    borderWidth: 1,
+  },
+  accordionHeaderCardActive: {
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderBottomWidth: 0,
+  },
+  accordionHeaderLeft: {
+    flex: 1.1,
+    paddingRight: Spacing.two,
+  },
+  accordionTitleText: {
+    fontSize: 15,
+  },
+  accordionHeaderRight: {
+    flex: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: Spacing.two,
+  },
+  accordionMetaColumn: {
+    alignItems: 'flex-end',
+  },
+  accordionDueText: {
+    fontSize: 11,
+    fontWeight: '600',
+    marginBottom: 2,
+  },
+  accordionProgressRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
+  },
+  accordionProgressBarTrack: {
+    width: 60,
+    height: 6,
+    backgroundColor: 'rgba(128, 128, 128, 0.2)',
+    borderRadius: 3,
+    overflow: 'hidden',
+  },
+  accordionProgressBarFill: {
+    height: '100%',
+    borderRadius: 3,
+  },
+  accordionRatioText: {
+    fontSize: 10,
+    fontWeight: '500',
+  },
+  arrowIconWrapper: {
+    padding: Spacing.one,
   },
 });
+

@@ -19,10 +19,12 @@ import { useData } from '@/context/DataContext';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 
 const PLANT_TYPES = ["vegetable", "fruit", "flower", "herb", "evergreen", "succulent", "spice", "onion"];
 
 export default function PlantsScreen() {
+  const colors = useTheme();
   const router = useRouter();
   const {
     plants,
@@ -37,7 +39,65 @@ export default function PlantsScreen() {
     refreshing,
   } = useData();
 
+  const [expandedSection, setExpandedSection] = useState<string | null>('list');
   const [searchQuery, setSearchQuery] = useState('');
+
+
+  const renderAccordionHeader = (
+    id: string,
+    title: string,
+    dueText: string,
+    finishedCount: number,
+    totalCount: number,
+    progress: number
+  ) => {
+    const isOpen = expandedSection === id;
+    const progressPercent = Math.round(progress * 100);
+
+    return (
+      <TouchableOpacity
+        activeOpacity={0.8}
+        onPress={() => setExpandedSection(isOpen ? null : id)}
+        style={[styles.accordionHeaderCard, isOpen && styles.accordionHeaderCardActive]}
+      >
+        <View style={styles.accordionHeaderLeft}>
+          <ThemedText type="smallBold" style={styles.accordionTitleText}>
+            {title}
+          </ThemedText>
+        </View>
+
+        <View style={styles.accordionHeaderRight}>
+          <View style={styles.accordionMetaColumn}>
+            <ThemedText themeColor="textSecondary" style={styles.accordionDueText}>
+              {dueText}
+            </ThemedText>
+            <View style={styles.accordionProgressRow}>
+              <View style={[styles.accordionProgressBarTrack, { backgroundColor: colors.disabled }]}>
+                <View
+                  style={[
+                    styles.accordionProgressBarFill,
+                    { width: `${progressPercent}%`, backgroundColor: colors.emerald },
+                  ]}
+                />
+              </View>
+              <ThemedText themeColor="textSecondary" style={styles.accordionRatioText}>
+                {`${finishedCount}/${totalCount} (${progressPercent}%)`}
+              </ThemedText>
+            </View>
+          </View>
+
+          <View style={styles.arrowIconWrapper}>
+            <SymbolView
+              name={isOpen ? 'chevron.up' : 'chevron.down'}
+              size={18}
+              tintColor={colors.emerald}
+            />
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  };
+
   
   // Forms states
   const [addModalVisible, setAddModalVisible] = useState(false);
@@ -226,21 +286,21 @@ export default function PlantsScreen() {
             </ThemedText>
           </View>
           <TouchableOpacity
-            style={styles.addButton}
+            style={[styles.addButton, { backgroundColor: colors.emerald }]}
             onPress={() => setAddModalVisible(true)}
           >
-            <SymbolView name="plus" size={16} tintColor="#fff" />
-            <ThemedText style={styles.addButtonText}>Add Plant</ThemedText>
+            <SymbolView name="plus" size={16} tintColor={colors.textInverse} />
+            <ThemedText style={[styles.addButtonText, { color: colors.textInverse }]}>Add Plant</ThemedText>
           </TouchableOpacity>
         </View>
 
         {/* Search */}
         <View style={styles.searchContainer}>
-          <SymbolView name="magnifyingglass" size={18} tintColor="#888" style={styles.searchIcon} />
+          <SymbolView name="magnifyingglass" size={18} tintColor={colors.placeholder} style={styles.searchIcon} />
           <TextInput
-            style={styles.searchInput}
+            style={[styles.searchInput, { color: colors.text }]}
             placeholder="Search by name, type, scientific name..."
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.placeholder}
             value={searchQuery}
             onChangeText={setSearchQuery}
             autoCapitalize="none"
@@ -250,7 +310,7 @@ export default function PlantsScreen() {
         {/* Plants List */}
         {loading && plants.length === 0 ? (
           <View style={styles.center}>
-            <ActivityIndicator size="large" color="#10B981" />
+            <ActivityIndicator size="large" color={colors.emerald} />
           </View>
         ) : filteredPlants.length === 0 ? (
           <ScrollView
@@ -259,7 +319,7 @@ export default function PlantsScreen() {
               <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
             }
           >
-            <SymbolView name="leaf.fill" size={48} tintColor="#ccc" />
+            <SymbolView name="leaf.fill" size={48} tintColor={colors.placeholder} />
             <ThemedText themeColor="textSecondary" style={styles.emptyText}>
               No plants found. Try adding a new plant!
             </ThemedText>
@@ -347,8 +407,8 @@ export default function PlantsScreen() {
                       ))}
                       {warnings.map((warn: string, index: number) => (
                         <View key={`warn-${index}`} style={styles.warningRow}>
-                          <SymbolView name="exclamationmark.triangle.fill" size={12} tintColor="#EF4444" />
-                          <ThemedText style={styles.warningText}>{warn}</ThemedText>
+                          <SymbolView name="exclamationmark.triangle.fill" size={12} tintColor={colors.badgeErrorText} />
+                          <ThemedText style={[styles.warningText, { color: colors.badgeErrorText }]}>{warn}</ThemedText>
                         </View>
                       ))}
                     </View>
@@ -357,27 +417,27 @@ export default function PlantsScreen() {
                   {/* Quick Action Buttons */}
                   <View style={styles.actionsRow}>
                     <TouchableOpacity
-                      style={[styles.actionBtn, styles.waterBtn]}
+                      style={[styles.actionBtn, styles.waterBtn, { backgroundColor: colors.careWater }]}
                       onPress={() => waterOne(plant.id)}
                     >
-                      <SymbolView name="drop.fill" size={14} tintColor="#fff" />
-                      <ThemedText style={styles.btnTextWhite}>Water</ThemedText>
+                      <SymbolView name="drop.fill" size={14} tintColor={colors.textInverse} />
+                      <ThemedText style={[styles.btnTextWhite, { color: colors.textInverse }]}>Water</ThemedText>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                      style={[styles.actionBtn, styles.dupBtn]}
+                      style={[styles.actionBtn, styles.dupBtn, { backgroundColor: colors.blue }]}
                       onPress={() => handleDuplicate(plant.id)}
                     >
-                      <SymbolView name="doc.on.doc.fill" size={14} tintColor="#fff" />
-                      <ThemedText style={styles.btnTextWhite}>Duplicate</ThemedText>
+                      <SymbolView name="doc.on.doc.fill" size={14} tintColor={colors.textInverse} />
+                      <ThemedText style={[styles.btnTextWhite, { color: colors.textInverse }]}>Duplicate</ThemedText>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                      style={[styles.actionBtn, styles.editBtn]}
+                      style={[styles.actionBtn, styles.editBtn, { backgroundColor: colors.carePrune }]}
                       onPress={() => openEditModal(plant)}
                     >
-                      <SymbolView name="pencil" size={14} tintColor="#fff" />
-                      <ThemedText style={styles.btnTextWhite}>Edit</ThemedText>
+                      <SymbolView name="pencil" size={14} tintColor={colors.textInverse} />
+                      <ThemedText style={[styles.btnTextWhite, { color: colors.textInverse }]}>Edit</ThemedText>
                     </TouchableOpacity>
                   </View>
                 </ThemedView>
@@ -404,18 +464,18 @@ export default function PlantsScreen() {
           <ScrollView contentContainerStyle={styles.modalForm}>
             <ThemedText style={styles.fieldLabel}>Plant Name *</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. Cherry Tomato"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={name}
               onChangeText={setName}
             />
 
             <ThemedText style={styles.fieldLabel}>Scientific Name Override</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. Solanum lycopersicum"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={speciesName}
               onChangeText={setSpeciesName}
             />
@@ -427,14 +487,15 @@ export default function PlantsScreen() {
                   key={type}
                   style={[
                     styles.typeOption,
-                    plantType === type && styles.typeOptionSelected,
+                    { borderColor: colors.border },
+                    plantType === type && { backgroundColor: colors.emerald, borderColor: colors.emerald },
                   ]}
                   onPress={() => setPlantType(type)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      plantType === type && { color: '#fff', fontWeight: 'bold' },
+                      plantType === type && { color: colors.textInverse, fontWeight: 'bold' },
                     ]}
                   >
                     {type}
@@ -455,14 +516,15 @@ export default function PlantsScreen() {
                     key={loc.id}
                     style={[
                       styles.typeOption,
-                      locationId === loc.id && styles.typeOptionSelected,
+                      { borderColor: colors.border },
+                      locationId === loc.id && { backgroundColor: colors.emerald, borderColor: colors.emerald },
                     ]}
                     onPress={() => setLocationId(loc.id)}
                   >
                     <ThemedText
                       style={[
                         styles.typeOptionText,
-                        locationId === loc.id && { color: '#fff', fontWeight: 'bold' },
+                        locationId === loc.id && { color: colors.textInverse, fontWeight: 'bold' },
                       ]}
                     >
                       {loc.name}
@@ -479,14 +541,14 @@ export default function PlantsScreen() {
                   Enable dynamic sensor reading overrides.
                 </ThemedText>
               </View>
-              <Switch value={useSensor} onValueChange={setUseSensor} trackColor={{ true: '#10B981' }} />
+              <Switch value={useSensor} onValueChange={setUseSensor} trackColor={{ true: colors.emerald }} />
             </View>
 
             <ThemedText style={styles.fieldLabel}>Watering Interval (Days)</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. 5"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               keyboardType="number-pad"
               value={wateringInterval}
               onChangeText={setWateringInterval}
@@ -506,14 +568,14 @@ export default function PlantsScreen() {
                   router.push('/species-search');
                 }}
               >
-                <SymbolView name="magnifyingglass" size={14} tintColor="#10B981" />
-                <ThemedText style={styles.searchLinkText}>Search ID</ThemedText>
+                <SymbolView name="magnifyingglass" size={14} tintColor={colors.emerald} />
+                <ThemedText style={[styles.searchLinkText, { color: colors.emerald }]}>Search ID</ThemedText>
               </TouchableOpacity>
             </View>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. 1 (Set 0 to skip)"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               keyboardType="number-pad"
               value={speciesId}
               onChangeText={setSpeciesId}
@@ -521,21 +583,21 @@ export default function PlantsScreen() {
 
             <View style={styles.modalButtonGroup}>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.cancelBtn]}
+                style={[styles.submitBtn, { backgroundColor: colors.disabled }]}
                 onPress={() => setAddModalVisible(false)}
                 disabled={formLoading}
               >
-                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.cancelBtnText, { color: colors.textSecondary }]}>Cancel</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                style={[styles.submitBtn, { backgroundColor: colors.emerald }]}
                 onPress={handleCreatePlant}
                 disabled={formLoading}
               >
                 {formLoading ? (
-                  <ActivityIndicator color="#fff" />
+                  <ActivityIndicator color={colors.textInverse} />
                 ) : (
-                  <ThemedText style={styles.submitBtnText}>Create Plant</ThemedText>
+                  <ThemedText style={[styles.submitBtnText, { color: colors.textInverse }]}>Create Plant</ThemedText>
                 )}
               </TouchableOpacity>
             </View>
@@ -560,18 +622,18 @@ export default function PlantsScreen() {
           <ScrollView contentContainerStyle={styles.modalForm}>
             <ThemedText style={styles.fieldLabel}>Plant Name *</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. Cherry Tomato"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={editName}
               onChangeText={setEditName}
             />
 
             <ThemedText style={styles.fieldLabel}>Scientific Name Override</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. Solanum lycopersicum"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={editSpeciesName}
               onChangeText={setEditSpeciesName}
             />
@@ -583,14 +645,15 @@ export default function PlantsScreen() {
                   key={type}
                   style={[
                     styles.typeOption,
-                    editPlantType === type && styles.typeOptionSelected,
+                    { borderColor: colors.border },
+                    editPlantType === type && { backgroundColor: colors.emerald, borderColor: colors.emerald },
                   ]}
                   onPress={() => setEditPlantType(type)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      editPlantType === type && { color: '#fff', fontWeight: 'bold' },
+                      editPlantType === type && { color: colors.textInverse, fontWeight: 'bold' },
                     ]}
                   >
                     {type}
@@ -606,14 +669,15 @@ export default function PlantsScreen() {
                   key={loc.id}
                   style={[
                     styles.typeOption,
-                    editLocationId === loc.id && styles.typeOptionSelected,
+                    { borderColor: colors.border },
+                    editLocationId === loc.id && { backgroundColor: colors.emerald, borderColor: colors.emerald },
                   ]}
                   onPress={() => setEditLocationId(loc.id)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      editLocationId === loc.id && { color: '#fff', fontWeight: 'bold' },
+                      editLocationId === loc.id && { color: colors.textInverse, fontWeight: 'bold' },
                     ]}
                   >
                     {loc.name}
@@ -629,14 +693,14 @@ export default function PlantsScreen() {
                   Enable dynamic sensor reading overrides.
                 </ThemedText>
               </View>
-              <Switch value={editUseSensor} onValueChange={setEditUseSensor} trackColor={{ true: '#10B981' }} />
+              <Switch value={editUseSensor} onValueChange={setEditUseSensor} trackColor={{ true: colors.emerald }} />
             </View>
 
             <ThemedText style={styles.fieldLabel}>Watering Interval (Days)</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. 5"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               keyboardType="number-pad"
               value={editWateringInterval}
               onChangeText={setEditWateringInterval}
@@ -644,34 +708,34 @@ export default function PlantsScreen() {
 
             <View style={styles.modalButtonGroup}>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.cancelBtn]}
+                style={[styles.submitBtn, { backgroundColor: colors.disabled }]}
                 onPress={() => setEditModalVisible(false)}
                 disabled={formLoading}
               >
-                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.cancelBtnText, { color: colors.textSecondary }]}>Cancel</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                style={[styles.submitBtn, { backgroundColor: colors.emerald }]}
                 onPress={handleUpdatePlant}
                 disabled={formLoading}
               >
                 {formLoading ? (
-                  <ActivityIndicator color="#fff" />
+                  <ActivityIndicator color={colors.textInverse} />
                 ) : (
-                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                  <ThemedText style={[styles.submitBtnText, { color: colors.textInverse }]}>Save Changes</ThemedText>
                 )}
               </TouchableOpacity>
             </View>
 
             <TouchableOpacity
-              style={[styles.submitBtn, styles.deleteBtn]}
+              style={[styles.submitBtn, { backgroundColor: colors.badgeErrorBackground }]}
               onPress={() => selectedPlant && handleDeletePlant(selectedPlant.id, selectedPlant.name)}
               disabled={formLoading || !selectedPlant}
             >
               {formLoading ? (
-                <ActivityIndicator color="#fff" />
+                <ActivityIndicator color={colors.badgeErrorText} />
               ) : (
-                <ThemedText style={styles.submitBtnText}>Delete Plant</ThemedText>
+                <ThemedText style={[styles.submitBtnText, { color: colors.badgeErrorText }]}>Delete Plant</ThemedText>
               )}
             </TouchableOpacity>
           </ScrollView>
@@ -1024,4 +1088,66 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#6B7280',
   },
+  accordionHeaderCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: Spacing.three,
+    backgroundColor: 'rgba(0, 0, 0, 0.03)',
+    borderRadius: Spacing.three,
+    borderWidth: 1,
+    borderColor: 'rgba(128, 128, 128, 0.15)',
+  },
+  accordionHeaderCardActive: {
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderBottomWidth: 0,
+    backgroundColor: 'rgba(16, 185, 129, 0.08)',
+  },
+  accordionHeaderLeft: {
+    flex: 1.1,
+    paddingRight: Spacing.two,
+  },
+  accordionTitleText: {
+    fontSize: 15,
+  },
+  accordionHeaderRight: {
+    flex: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: Spacing.two,
+  },
+  accordionMetaColumn: {
+    alignItems: 'flex-end',
+  },
+  accordionDueText: {
+    fontSize: 11,
+    fontWeight: '600',
+    marginBottom: 2,
+  },
+  accordionProgressRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
+  },
+  accordionProgressBarTrack: {
+    width: 60,
+    height: 6,
+    backgroundColor: 'rgba(128, 128, 128, 0.2)',
+    borderRadius: 3,
+    overflow: 'hidden',
+  },
+  accordionProgressBarFill: {
+    height: '100%',
+    borderRadius: 3,
+  },
+  accordionRatioText: {
+    fontSize: 10,
+    fontWeight: '500',
+  },
+  arrowIconWrapper: {
+    padding: Spacing.one,
+  },
 });
+

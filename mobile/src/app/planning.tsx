@@ -17,9 +17,11 @@ import { useData } from '@/context/DataContext';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function PlanningScreen() {
+  const colors = useTheme();
   const router = useRouter();
   const {
     locations,
@@ -37,7 +39,69 @@ export default function PlanningScreen() {
     refreshing,
   } = useData();
 
-  const [activeTab, setActiveTab] = useState<'plans' | 'sections' | 'preview'>('plans');
+  const [expandedSection, setExpandedSection] = useState<string | null>('plans');
+
+  const renderAccordionHeader = (
+    id: string,
+    title: string,
+    dueText: string,
+    finishedCount: number,
+    totalCount: number,
+    progress: number
+  ) => {
+    const isOpen = expandedSection === id;
+    const progressPercent = Math.round(progress * 100);
+
+    return (
+      <TouchableOpacity
+        activeOpacity={0.8}
+        onPress={() => setExpandedSection(isOpen ? null : id)}
+        style={[
+          styles.accordionHeaderCard,
+          {
+            backgroundColor: isOpen ? colors.badgeSuccessBackground : colors.backgroundElement,
+            borderColor: colors.border,
+          },
+          isOpen && styles.accordionHeaderCardActive,
+        ]}
+      >
+        <View style={styles.accordionHeaderLeft}>
+          <ThemedText type="smallBold" style={styles.accordionTitleText}>
+            {title}
+          </ThemedText>
+        </View>
+
+        <View style={styles.accordionHeaderRight}>
+          <View style={styles.accordionMetaColumn}>
+            <ThemedText themeColor="textSecondary" style={styles.accordionDueText}>
+              {dueText}
+            </ThemedText>
+            <View style={styles.accordionProgressRow}>
+              <View style={[styles.accordionProgressBarTrack, { backgroundColor: colors.disabled }]}>
+                <View
+                  style={[
+                    styles.accordionProgressBarFill,
+                    { width: `${progressPercent}%`, backgroundColor: colors.emerald },
+                  ]}
+                />
+              </View>
+              <ThemedText themeColor="textSecondary" style={styles.accordionRatioText}>
+                {`${finishedCount}/${totalCount} (${progressPercent}%)`}
+              </ThemedText>
+            </View>
+          </View>
+
+          <View style={styles.arrowIconWrapper}>
+            <SymbolView
+              name={isOpen ? 'chevron.up' : 'chevron.down'}
+              size={18}
+              tintColor={colors.emerald}
+            />
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  };
 
   // Form Section States
   const [sectionModalVisible, setSectionModalVisible] = useState(false);
@@ -276,11 +340,10 @@ export default function PlanningScreen() {
       if (variations > 0) payload.plant_variations_per_group = variations;
 
       const previewResult = await getPolyculturePreview(payload);
-      
-      // Save payload and result temporarily in AsyncStorage to pass to preview screen
+
       await AsyncStorage.setItem('pending_preview_payload', JSON.stringify(payload));
       await AsyncStorage.setItem('pending_preview_result', JSON.stringify(previewResult));
-      
+
       router.push('/plan-preview');
     } catch (e: any) {
       Alert.alert('Error', e.message || 'Failed to generate preview');
@@ -340,339 +403,342 @@ export default function PlanningScreen() {
               Polyculture production planning
             </ThemedText>
           </View>
-          {activeTab === 'sections' && (
-            <TouchableOpacity
-              style={styles.addButton}
-              onPress={() => setSectionModalVisible(true)}
-            >
-              <SymbolView name="plus" size={16} tintColor="#fff" />
-              <ThemedText style={styles.addButtonText}>Add Section</ThemedText>
-            </TouchableOpacity>
-          )}
-        </View>
-
-        {/* Tab Segment Selector */}
-        <View style={styles.tabBar}>
           <TouchableOpacity
-            style={[styles.tabItem, activeTab === 'plans' && styles.tabItemActive]}
-            onPress={() => setActiveTab('plans')}
+            style={styles.addButton}
+            onPress={() => setSectionModalVisible(true)}
           >
-            <ThemedText style={[styles.tabLabel, activeTab === 'plans' && styles.tabLabelActive]}>
-              Saved Plans
-            </ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.tabItem, activeTab === 'sections' && styles.tabItemActive]}
-            onPress={() => setActiveTab('sections')}
-          >
-            <ThemedText style={[styles.tabLabel, activeTab === 'sections' && styles.tabLabelActive]}>
-              Sections
-            </ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.tabItem, activeTab === 'preview' && styles.tabItemActive]}
-            onPress={() => setActiveTab('preview')}
-          >
-            <ThemedText style={[styles.tabLabel, activeTab === 'preview' && styles.tabLabelActive]}>
-              Preview Generator
-            </ThemedText>
+            <SymbolView name="plus" size={16} tintColor="#fff" />
+            <ThemedText style={styles.addButtonText}>Add Section</ThemedText>
           </TouchableOpacity>
         </View>
 
-        {/* Tab Contents */}
         {loading ? (
           <View style={styles.center}>
             <ActivityIndicator size="large" color="#10B981" />
           </View>
-        ) : activeTab === 'plans' ? (
+        ) : (
           <ScrollView
             contentContainerStyle={styles.scrollContent}
             refreshControl={
               <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
             }
           >
-            {savedPlans.length === 0 ? (
-              <View style={styles.empty}>
-                <SymbolView name="calendar.badge.plus" size={48} tintColor="#ccc" />
-                <ThemedText themeColor="textSecondary" style={styles.emptyText}>
-                  No saved polyculture plans yet. Use the preview generator to create one!
-                </ThemedText>
-              </View>
-            ) : (
-              savedPlans.map((plan) => (
-                <ThemedView key={plan.id} type="backgroundElement" style={styles.card}>
-                  <View style={styles.cardHeader}>
-                    <View style={{ flex: 1 }}>
-                      <ThemedText type="smallBold" style={styles.planName}>
-                        {plan.name || 'Polyculture Plan'}
-                      </ThemedText>
-                      <ThemedText themeColor="textSecondary" style={styles.planCombo}>
-                        {getCropsComboText(plan)}
-                      </ThemedText>
-                    </View>
-                    <TouchableOpacity
-                      onPress={() => handleDeletePlan(plan.id, plan.name)}
-                      style={styles.deletePlanBtn}
-                    >
-                      <SymbolView name="trash.fill" size={16} tintColor="#EF4444" />
-                    </TouchableOpacity>
-                  </View>
+            {/* Item 1: Saved Polyculture Plans */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'plans',
+                'Saved Polyculture Plans',
+                `Saved: ${savedPlans.length} plans`,
+                savedPlans.length,
+                savedPlans.length || 1,
+                1.0
+              )}
 
-                  <View style={styles.planDetailsGrid}>
-                    <View style={styles.detailBox}>
-                      <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                        Status
+              {expandedSection === 'plans' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  {savedPlans.length === 0 ? (
+                    <View style={styles.empty}>
+                      <SymbolView name="calendar.badge.plus" size={48} tintColor={colors.placeholder} />
+                      <ThemedText themeColor="textSecondary" style={styles.emptyText}>
+                        No saved polyculture plans yet. Use the preview generator to create one!
                       </ThemedText>
-                      <ThemedText type="smallBold">{plan.status}</ThemedText>
                     </View>
-                    <View style={styles.detailBox}>
-                      <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                        Harvest Int.
-                      </ThemedText>
-                      <ThemedText type="smallBold">{plan.desired_harvest_interval_days} days</ThemedText>
-                    </View>
-                    <View style={styles.detailBox}>
-                      <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                        Groups
-                      </ThemedText>
-                      <ThemedText type="smallBold">{plan.group_count}</ThemedText>
-                    </View>
-                  </View>
+                  ) : (
+                    savedPlans.map((plan) => (
+                      <ThemedView key={plan.id} type="backgroundElement" style={styles.card}>
+                        <View style={styles.cardHeader}>
+                          <View style={{ flex: 1 }}>
+                            <ThemedText type="smallBold" style={styles.planName}>
+                              {plan.name || 'Polyculture Plan'}
+                            </ThemedText>
+                            <ThemedText themeColor="textSecondary" style={styles.planCombo}>
+                              {getCropsComboText(plan)}
+                            </ThemedText>
+                          </View>
+                          <TouchableOpacity
+                            onPress={() => handleDeletePlan(plan.id, plan.name)}
+                            style={styles.deletePlanBtn}
+                          >
+                            <SymbolView name="trash.fill" size={16} tintColor={colors.badgeErrorText} />
+                          </TouchableOpacity>
+                        </View>
 
-                  {/* Render groups */}
-                  {(plan.groups || []).map((g: any, index: number) => (
-                    <View key={`g-${index}`} style={styles.groupSubCard}>
-                      <ThemedText type="smallBold" style={styles.groupSubTitle}>
-                        Group {g.group_id} - {g.section_name || 'Not assigned'}
-                      </ThemedText>
-                      <ThemedText type="small" themeColor="textSecondary">
-                        Allocated: {g.allocated_area_m2} m²
-                      </ThemedText>
-                      <ThemedText type="small" style={styles.cropsLabel}>
-                        Crops: {g.main_crops?.join(', ')}
-                      </ThemedText>
+                        <View style={styles.planDetailsGrid}>
+                          <View style={styles.detailBox}>
+                            <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                              Status
+                            </ThemedText>
+                            <ThemedText type="smallBold">{plan.status}</ThemedText>
+                          </View>
+                          <View style={styles.detailBox}>
+                            <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                              Harvest Int.
+                            </ThemedText>
+                            <ThemedText type="smallBold">{plan.desired_harvest_interval_days} days</ThemedText>
+                          </View>
+                          <View style={styles.detailBox}>
+                            <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                              Groups
+                            </ThemedText>
+                            <ThemedText type="smallBold">{plan.group_count}</ThemedText>
+                          </View>
+                        </View>
 
-                      {/* Batches/Timelines */}
-                      {g.batches && g.batches.length > 0 && (
-                        <View style={styles.batchesContainer}>
-                          {g.batches.map((b: any, bIdx: number) => (
-                            <View key={`b-${bIdx}`} style={styles.batchRow}>
-                              <ThemedText style={styles.batchIdx}>Batch {b.batch_number}: </ThemedText>
-                              <ThemedText style={styles.batchDates}>
-                                {b.seed_start_date} → {b.expected_harvest_date}
+                        {(plan.groups || []).map((g: any, index: number) => (
+                          <View key={`g-${index}`} style={styles.groupSubCard}>
+                            <ThemedText type="smallBold" style={styles.groupSubTitle}>
+                              Group {g.group_id} - {g.section_name || 'Not assigned'}
+                            </ThemedText>
+                            <ThemedText type="small" themeColor="textSecondary">
+                              Allocated: {g.allocated_area_m2} m²
+                            </ThemedText>
+                            <ThemedText type="small" style={styles.cropsLabel}>
+                              Crops: {g.main_crops?.join(', ')}
+                            </ThemedText>
+
+                            {g.batches && g.batches.length > 0 && (
+                              <View style={styles.batchesContainer}>
+                                {g.batches.map((b: any, bIdx: number) => (
+                                  <View key={`b-${bIdx}`} style={styles.batchRow}>
+                                    <ThemedText style={styles.batchIdx}>Batch {b.batch_number}: </ThemedText>
+                                    <ThemedText style={styles.batchDates}>
+                                      {b.seed_start_date} → {b.expected_harvest_date}
+                                    </ThemedText>
+                                  </View>
+                                ))}
+                              </View>
+                            )}
+                          </View>
+                        ))}
+                      </ThemedView>
+                    ))
+                  )}
+                </View>
+              )}
+            </View>
+
+            {/* Item 2: Farm Sections */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'sections',
+                'Farm Sections & Capacity',
+                `Sections: ${sections.length} active`,
+                sections.length,
+                sections.length || 1,
+                1.0
+              )}
+
+              {expandedSection === 'sections' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  {sections.length === 0 ? (
+                    <View style={styles.empty}>
+                      <SymbolView name="square.grid.2x2.fill" size={48} tintColor={colors.placeholder} />
+                      <ThemedText themeColor="textSecondary" style={styles.emptyText}>
+                        No farm sections created. Click '+' at the top right to create one!
+                      </ThemedText>
+                    </View>
+                  ) : (
+                    sections.map((sec) => {
+                      const loc = locations.find((l) => l.id === sec.location_id);
+                      return (
+                        <ThemedView key={sec.id} type="backgroundElement" style={styles.card}>
+                          <View style={styles.cardHeader}>
+                            <View style={{ flex: 1 }}>
+                              <TouchableOpacity onPress={() => openEditSection(sec)} activeOpacity={0.7}>
+                                <ThemedText type="smallBold" style={styles.sectionTitleText}>
+                                  {sec.name}
+                                </ThemedText>
+                              </TouchableOpacity>
+                              <TouchableOpacity
+                                onPress={() => loc && openEditLocation(loc)}
+                                activeOpacity={0.7}
+                                style={styles.locationLinkBtn}
+                              >
+                                <ThemedText themeColor="textSecondary" style={styles.sectionLocText}>
+                                  Location: <ThemedText style={styles.locNameHighlight}>{loc?.name || `ID ${sec.location_id}`}</ThemedText> ✎
+                                </ThemedText>
+                              </TouchableOpacity>
+                            </View>
+                            <TouchableOpacity onPress={() => openEditSection(sec)} style={styles.editSecBtn}>
+                              <SymbolView name="pencil" size={16} tintColor={colors.emerald} />
+                            </TouchableOpacity>
+                          </View>
+
+                          <View style={styles.secDetailsGrid}>
+                            <View style={styles.detailBox}>
+                              <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                                Type
+                              </ThemedText>
+                              <ThemedText type="smallBold">{sec.section_type}</ThemedText>
+                            </View>
+                            <View style={styles.detailBox}>
+                              <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                                Dimensions
+                              </ThemedText>
+                              <ThemedText type="smallBold">
+                                {sec.width_m} m x {sec.length_m} m
                               </ThemedText>
                             </View>
-                          ))}
-                        </View>
-                      )}
-                    </View>
-                  ))}
-                </ThemedView>
-              ))
-            )}
-          </ScrollView>
-        ) : activeTab === 'sections' ? (
-          <ScrollView
-            contentContainerStyle={styles.scrollContent}
-            refreshControl={
-              <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
-            }
-          >
-            {sections.length === 0 ? (
-              <View style={styles.empty}>
-                <SymbolView name="square.grid.2x2.fill" size={48} tintColor="#ccc" />
-                <ThemedText themeColor="textSecondary" style={styles.emptyText}>
-                  No farm sections created. Click '+' at the top right to create one!
-                </ThemedText>
-              </View>
-            ) : (
-              sections.map((sec) => {
-                const loc = locations.find((l) => l.id === sec.location_id);
-                return (
-                  <ThemedView key={sec.id} type="backgroundElement" style={styles.card}>
-                    <View style={styles.cardHeader}>
-                      <View style={{ flex: 1 }}>
-                        <TouchableOpacity onPress={() => openEditSection(sec)} activeOpacity={0.7}>
-                          <ThemedText type="smallBold" style={styles.sectionTitleText}>
-                            {sec.name}
-                          </ThemedText>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                          onPress={() => loc && openEditLocation(loc)}
-                          activeOpacity={0.7}
-                          style={styles.locationLinkBtn}
-                        >
-                          <ThemedText themeColor="textSecondary" style={styles.sectionLocText}>
-                            Location: <ThemedText style={styles.locNameHighlight}>{loc?.name || `ID ${sec.location_id}`}</ThemedText> ✎
-                          </ThemedText>
-                        </TouchableOpacity>
-                      </View>
-                      <TouchableOpacity onPress={() => openEditSection(sec)} style={styles.editSecBtn}>
-                        <SymbolView name="pencil" size={16} tintColor="#10B981" />
-                      </TouchableOpacity>
-                    </View>
+                            <View style={styles.detailBox}>
+                              <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                                Area
+                              </ThemedText>
+                              <ThemedText type="smallBold">{Number(sec.area_m2 || 0).toFixed(1)} m²</ThemedText>
+                            </View>
+                          </View>
+                        </ThemedView>
+                      );
+                    })
+                  )}
+                </View>
+              )}
+            </View>
 
-                    <View style={styles.secDetailsGrid}>
-                      <View style={styles.detailBox}>
-                        <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                          Type
-                        </ThemedText>
-                        <ThemedText type="smallBold">{sec.section_type}</ThemedText>
-                      </View>
-                      <View style={styles.detailBox}>
-                        <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                          Dimensions
-                        </ThemedText>
-                        <ThemedText type="smallBold">
-                          {sec.width_m} m x {sec.length_m} m
-                        </ThemedText>
-                      </View>
-                      <View style={styles.detailBox}>
-                        <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                          Area
-                        </ThemedText>
-                        <ThemedText type="smallBold">{Number(sec.area_m2 || 0).toFixed(1)} m²</ThemedText>
-                      </View>
-                    </View>
-                  </ThemedView>
-                );
-              })
-            )}
-          </ScrollView>
-        ) : (
-          /* PREVIEW GENERATOR FORM */
-          <ScrollView contentContainerStyle={styles.scrollForm}>
-            <ThemedText style={styles.fieldLabel}>Select Location</ThemedText>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.horizontalSelect}>
-              {locations.map((loc) => (
-                <TouchableOpacity
-                  key={loc.id}
-                  style={[
-                    styles.typeOption,
-                    previewLocId === loc.id && styles.typeOptionSelected,
-                  ]}
-                  onPress={() => setPreviewLocId(loc.id)}
-                >
-                  <ThemedText
-                    style={[
-                      styles.typeOptionText,
-                      previewLocId === loc.id && { color: '#fff', fontWeight: 'bold' },
-                    ]}
-                  >
-                    {loc.name}
-                  </ThemedText>
-                </TouchableOpacity>
-              ))}
-            </ScrollView>
+            {/* Item 3: Preview Generator */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'preview',
+                'Polyculture Plan Generator & Preview',
+                'Interactive Generator',
+                1,
+                1,
+                1.0
+              )}
 
-            <ThemedText style={styles.fieldLabel}>Select Sections to Include</ThemedText>
-            {sections.filter((s) => s.location_id === previewLocId).length === 0 ? (
-              <ThemedText themeColor="textSecondary" style={styles.warnText}>
-                No sections available in this location. Please create a section first.
-              </ThemedText>
-            ) : (
-              <View style={styles.multiselectGrid}>
-                {sections
-                  .filter((s) => s.location_id === previewLocId)
-                  .map((s) => {
-                    const isSelected = previewSecIds.includes(s.id);
-                    return (
+              {expandedSection === 'preview' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  <ThemedText style={styles.fieldLabel}>Select Location</ThemedText>
+                  <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.horizontalSelect}>
+                    {locations.map((loc) => (
                       <TouchableOpacity
-                        key={s.id}
+                        key={loc.id}
                         style={[
-                          styles.secMultiBtn,
-                          isSelected && styles.secMultiBtnSelected,
+                          styles.typeOption,
+                          previewLocId === loc.id && styles.typeOptionSelected,
                         ]}
-                        onPress={() => toggleSectionSelection(s.id)}
+                        onPress={() => setPreviewLocId(loc.id)}
                       >
-                        <SymbolView
-                          name={isSelected ? 'checkmark.square.fill' : 'square'}
-                          size={14}
-                          tintColor={isSelected ? '#fff' : '#888'}
-                        />
                         <ThemedText
                           style={[
-                            styles.secMultiBtnText,
-                            isSelected && { color: '#fff', fontWeight: 'bold' },
+                            styles.typeOptionText,
+                            previewLocId === loc.id && { color: '#fff', fontWeight: 'bold' },
                           ]}
                         >
-                          {s.name} ({s.area_m2}m²)
+                          {loc.name}
                         </ThemedText>
                       </TouchableOpacity>
-                    );
-                  })}
-              </View>
-            )}
+                    ))}
+                  </ScrollView>
 
-            <ThemedText style={styles.fieldLabel}>Intended Crop Mix (Comma separated)</ThemedText>
-            <TextInput
-              style={[styles.input, styles.multilineInput]}
-              multiline
-              numberOfLines={3}
-              value={cropsText}
-              onChangeText={setCropsText}
-            />
+                  <ThemedText style={styles.fieldLabel}>Select Sections to Include</ThemedText>
+                  {sections.filter((s) => s.location_id === previewLocId).length === 0 ? (
+                    <ThemedText themeColor="textSecondary" style={styles.warnText}>
+                      No sections available in this location. Please create a section first.
+                    </ThemedText>
+                  ) : (
+                    <View style={styles.multiselectGrid}>
+                      {sections
+                        .filter((s) => s.location_id === previewLocId)
+                        .map((s) => {
+                          const isSelected = previewSecIds.includes(s.id);
+                          return (
+                            <TouchableOpacity
+                              key={s.id}
+                              style={[
+                                styles.secMultiBtn,
+                                isSelected && styles.secMultiBtnSelected,
+                              ]}
+                              onPress={() => toggleSectionSelection(s.id)}
+                            >
+                              <SymbolView
+                                name={isSelected ? 'checkmark.square.fill' : 'square'}
+                                size={14}
+                                tintColor={isSelected ? '#fff' : '#888'}
+                              />
+                              <ThemedText
+                                style={[
+                                  styles.secMultiBtnText,
+                                  isSelected && { color: '#fff', fontWeight: 'bold' },
+                                ]}
+                              >
+                                {s.name} ({s.area_m2}m²)
+                              </ThemedText>
+                            </TouchableOpacity>
+                          );
+                        })}
+                    </View>
+                  )}
 
-            <View style={styles.formRow}>
-              <View style={{ flex: 1 }}>
-                <ThemedText style={styles.fieldLabel}>Start Date</ThemedText>
-                <TextInput
-                  style={styles.input}
-                  value={startDate}
-                  onChangeText={setStartDate}
-                  placeholder="YYYY-MM-DD"
-                />
-              </View>
-              <View style={{ flex: 1, marginLeft: Spacing.two }}>
-                <ThemedText style={styles.fieldLabel}>Harvest Interval (Days)</ThemedText>
-                <TextInput
-                  style={styles.input}
-                  value={harvestInterval}
-                  onChangeText={setHarvestInterval}
-                  keyboardType="number-pad"
-                />
-              </View>
-            </View>
+                  <ThemedText style={styles.fieldLabel}>Intended Crop Mix (Comma separated)</ThemedText>
+                  <TextInput
+                    style={[styles.input, styles.multilineInput]}
+                    multiline
+                    numberOfLines={3}
+                    value={cropsText}
+                    onChangeText={setCropsText}
+                  />
 
-            <View style={styles.formRow}>
-              <View style={{ flex: 1 }}>
-                <ThemedText style={styles.fieldLabel}>Harvest Batches</ThemedText>
-                <TextInput
-                  style={styles.input}
-                  value={batchesWanted}
-                  onChangeText={setBatchesWanted}
-                  keyboardType="number-pad"
-                  placeholder="0 for auto"
-                />
-              </View>
-              <View style={{ flex: 1, marginLeft: Spacing.two }}>
-                <ThemedText style={styles.fieldLabel}>Variations per Group</ThemedText>
-                <TextInput
-                  style={styles.input}
-                  value={variationsPerGroup}
-                  onChangeText={setVariationsPerGroup}
-                  keyboardType="number-pad"
-                  placeholder="2"
-                />
-              </View>
-            </View>
+                  <View style={styles.formRow}>
+                    <View style={{ flex: 1 }}>
+                      <ThemedText style={styles.fieldLabel}>Start Date</ThemedText>
+                      <TextInput
+                        style={styles.input}
+                        value={startDate}
+                        onChangeText={setStartDate}
+                        placeholder="YYYY-MM-DD"
+                      />
+                    </View>
+                    <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                      <ThemedText style={styles.fieldLabel}>Harvest Interval (Days)</ThemedText>
+                      <TextInput
+                        style={styles.input}
+                        value={harvestInterval}
+                        onChangeText={setHarvestInterval}
+                        keyboardType="number-pad"
+                      />
+                    </View>
+                  </View>
 
-            <TouchableOpacity
-              style={styles.submitBtn}
-              onPress={handleGeneratePreview}
-              disabled={actionLoading}
-            >
-              {actionLoading ? (
-                <ActivityIndicator color="#fff" />
-              ) : (
-                <>
-                  <SymbolView name="wand.and.stars" size={16} tintColor="#fff" style={{ marginRight: 6 }} />
-                  <ThemedText style={styles.submitBtnText}>Generate Polyculture Preview</ThemedText>
-                </>
+                  <View style={styles.formRow}>
+                    <View style={{ flex: 1 }}>
+                      <ThemedText style={styles.fieldLabel}>Harvest Batches</ThemedText>
+                      <TextInput
+                        style={styles.input}
+                        value={batchesWanted}
+                        onChangeText={setBatchesWanted}
+                        keyboardType="number-pad"
+                        placeholder="0 for auto"
+                      />
+                    </View>
+                    <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                      <ThemedText style={styles.fieldLabel}>Variations per Group</ThemedText>
+                      <TextInput
+                        style={styles.input}
+                        value={variationsPerGroup}
+                        onChangeText={setVariationsPerGroup}
+                        keyboardType="number-pad"
+                        placeholder="2"
+                      />
+                    </View>
+                  </View>
+
+                  <TouchableOpacity
+                    style={styles.submitBtn}
+                    onPress={handleGeneratePreview}
+                    disabled={actionLoading}
+                  >
+                    {actionLoading ? (
+                      <ActivityIndicator color="#fff" />
+                    ) : (
+                      <>
+                        <SymbolView name="wand.and.stars" size={16} tintColor="#fff" style={{ marginRight: 6 }} />
+                        <ThemedText style={styles.submitBtnText}>Generate Polyculture Preview</ThemedText>
+                      </>
+                    )}
+                  </TouchableOpacity>
+                </View>
               )}
-            </TouchableOpacity>
+            </View>
           </ScrollView>
         )}
       </SafeAreaView>
@@ -1090,43 +1156,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
   },
-  tabBar: {
-    flexDirection: 'row',
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(0,0,0,0.08)',
-    marginHorizontal: Spacing.three,
-    marginBottom: Spacing.three,
-    maxWidth: MaxContentWidth,
-    alignSelf: 'center',
-    width: '90%',
-  },
-  tabItem: {
-    flex: 1,
-    paddingVertical: Spacing.two,
-    alignItems: 'center',
-    borderBottomWidth: 2,
-    borderBottomColor: 'transparent',
-  },
-  tabItemActive: {
-    borderBottomColor: '#10B981',
-  },
-  tabLabel: {
-    fontSize: 14,
-    color: '#888',
-  },
-  tabLabelActive: {
-    color: '#10B981',
-    fontWeight: 'bold',
-  },
   scrollContent: {
     paddingHorizontal: Spacing.three,
-    paddingBottom: BottomTabInset + Spacing.four,
-    maxWidth: MaxContentWidth,
-    alignSelf: 'center',
-    width: '100%',
-  },
-  scrollForm: {
-    paddingHorizontal: Spacing.four,
     paddingBottom: BottomTabInset + Spacing.four,
     maxWidth: MaxContentWidth,
     alignSelf: 'center',
@@ -1244,28 +1275,19 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.three,
     borderRadius: Spacing.two,
-    backgroundColor: '#f0f0f0',
     borderWidth: 1,
-    borderColor: '#ccc',
   },
-  typeOptionSelected: {
-    backgroundColor: '#10B981',
-    borderColor: '#10B981',
-  },
+  typeOptionSelected: {},
   typeOptionText: {
     fontSize: 14,
-    color: '#333',
   },
   input: {
     height: 48,
     borderWidth: 1,
-    borderColor: '#ccc',
     borderRadius: Spacing.two,
     paddingHorizontal: Spacing.three,
     marginBottom: Spacing.two,
     fontSize: 16,
-    color: '#000',
-    backgroundColor: '#f9f9f9',
   },
   multilineInput: {
     height: 80,
@@ -1277,7 +1299,6 @@ const styles = StyleSheet.create({
   },
   submitBtn: {
     height: 48,
-    backgroundColor: '#10B981',
     borderRadius: Spacing.two,
     justifyContent: 'center',
     alignItems: 'center',
@@ -1285,13 +1306,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   submitBtnText: {
-    color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
   },
   modalContainer: {
     flex: 1,
-    backgroundColor: '#fff',
   },
   modalHeader: {
     flexDirection: 'row',
@@ -1299,18 +1318,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: Spacing.four,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
   },
   modalForm: {
     padding: Spacing.four,
   },
   deleteBtn: {
-    backgroundColor: '#EF4444',
     marginTop: Spacing.two,
   },
   warnText: {
     fontSize: 12,
-    color: '#D97706',
     marginVertical: Spacing.one,
   },
   multiselectGrid: {
@@ -1326,18 +1342,12 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.three,
     borderRadius: Spacing.two,
-    backgroundColor: '#f0f0f0',
     borderWidth: 1,
-    borderColor: '#ccc',
     gap: Spacing.one,
   },
-  secMultiBtnSelected: {
-    backgroundColor: '#10B981',
-    borderColor: '#10B981',
-  },
+  secMultiBtnSelected: {},
   secMultiBtnText: {
     fontSize: 13,
-    color: '#333',
   },
   modalButtonGroup: {
     flexDirection: 'row',
@@ -1349,14 +1359,11 @@ const styles = StyleSheet.create({
     marginTop: 0,
   },
   cancelBtn: {
-    backgroundColor: '#F3F4F6',
     borderWidth: 1,
-    borderColor: '#D1D5DB',
     flex: 1,
     marginTop: 0,
   },
   cancelBtnText: {
-    color: '#374151',
     fontSize: 16,
     fontWeight: '600',
   },
@@ -1366,14 +1373,70 @@ const styles = StyleSheet.create({
   closeHeaderText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#6B7280',
   },
   locationLinkBtn: {
     marginTop: 2,
     alignSelf: 'flex-start',
   },
   locNameHighlight: {
-    color: '#10B981',
     fontWeight: '600',
+  },
+  accordionHeaderCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: Spacing.three,
+    borderRadius: Spacing.three,
+    borderWidth: 1,
+  },
+  accordionHeaderCardActive: {
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderBottomWidth: 0,
+  },
+  accordionHeaderLeft: {
+    flex: 1.1,
+    paddingRight: Spacing.two,
+  },
+  accordionTitleText: {
+    fontSize: 15,
+  },
+  accordionHeaderRight: {
+    flex: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: Spacing.two,
+  },
+  accordionMetaColumn: {
+    alignItems: 'flex-end',
+  },
+  accordionDueText: {
+    fontSize: 11,
+    fontWeight: '600',
+    marginBottom: 2,
+  },
+  accordionProgressRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
+  },
+  accordionProgressBarTrack: {
+    width: 60,
+    height: 6,
+    backgroundColor: 'rgba(128, 128, 128, 0.2)',
+    borderRadius: 3,
+    overflow: 'hidden',
+  },
+  accordionProgressBarFill: {
+    height: '100%',
+    borderRadius: 3,
+  },
+  accordionRatioText: {
+    fontSize: 10,
+    fontWeight: '500',
+  },
+  arrowIconWrapper: {
+    padding: Spacing.one,
   },
 });

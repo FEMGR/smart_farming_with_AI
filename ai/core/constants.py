@@ -236,6 +236,10 @@ CITY_REFERENCES = [
 ]
 
 MASTER_FEATURE_COLUMNS = [
+    "dataset_source",
+    "dataset_origin",
+    "model_version",
+    "timestamp",
     "user_id",
     "plant_id",
     "location_id",
@@ -319,6 +323,17 @@ DATABASE_IDENTIFIER_COLUMNS = {
     "user_id",
     "sensor_id",
 }
+
+MODEL_TRACE_COLUMNS = {
+    "timestamp",
+    "dataset_source",
+    "dataset_origin",
+    "data_source",
+    "source_name",
+    "model_version",
+}
+
+NON_MODEL_FEATURE_COLUMNS = DATABASE_IDENTIFIER_COLUMNS | MODEL_TRACE_COLUMNS
 
 TRAINING_DATASETS = {
     "irrigation": {
@@ -453,6 +468,48 @@ CANONICAL_COLUMNS = {
         "created_at",
     ],
     "sensor_id": ["id", "sensor", "sensor_id", "device_id"],
+    "plant_id": ["plant_id", "plant id"],
+    "species_id": ["species_id", "species id"],
+    "plant_name": [
+        "plant_name",
+        "plant name",
+        "plant",
+        "crop_name",
+        "crop name",
+        "crop_id",
+        "crop id",
+        "crop",
+    ],
+    "scientific_name": [
+        "scientific_name",
+        "scientific name",
+        "botanical_name",
+        "botanical name",
+        "latin_name",
+        "latin name",
+    ],
+    "life_cycle": ["life_cycle", "life cycle", "lifecycle"],
+    "growth_stage": [
+        "growth_stage",
+        "growth stage",
+        "seedling_stage",
+        "seedling stage",
+        "stage",
+    ],
+    "recommended_soil": [
+        "recommended_soil",
+        "recommended soil",
+        "soil_type",
+        "soil type",
+        "soil",
+    ],
+    "recommended_sunlight": [
+        "recommended_sunlight",
+        "recommended sunlight",
+        "sunlight",
+        "sun_exposure",
+        "sun exposure",
+    ],
     "group_id": ["group", "group_id", "bed_id", "zone_id"],
     "location_id": ["location", "location_id", "field_id"],
     "latitude": ["latitude", "lat"],
@@ -476,9 +533,27 @@ CANONICAL_COLUMNS = {
         "soil_water",
         "soil_water_pct",
         "moisture",
+        "moi",
     ],
     "soil_ph": ["ph", "soil_ph"],
     "light": ["light", "light_lux", "sunlight", "lux", "illumination"],
+    "watering_needed": [
+        "watering_needed",
+        "watering needed",
+        "irrigation_needed",
+        "irrigation needed",
+        "needs_water",
+        "needs water",
+        "result",
+    ],
+    "watering_amount_liters": [
+        "watering_amount_liters",
+        "watering amount liters",
+        "water_amount",
+        "water amount",
+        "irrigation_amount",
+        "irrigation amount",
+    ],
 }
 
 AUTO_ACCEPT_THRESHOLD = 95

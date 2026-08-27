@@ -41,6 +41,7 @@ It only handles file selection and output-file naming.
 
 # ai/core/file_prompter.py
 
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -75,6 +76,16 @@ SUPPORTED_EXTENSIONS = {
     ".xls",
     ".json",
     ".parquet",
+}
+
+FILENAME_PHASES = {
+    "cleaned",
+    "merged",
+    "featured",
+    "selected",
+    "standardized",
+    "normalized",
+    "preprocessed",
 }
 
 
@@ -490,6 +501,33 @@ def confirm_overwrite(file_path: Path) -> bool:
         print("Please enter Y or N.")
 
 
+def prompt_menu_choice(prompt: str = "Choose an option: ") -> str | None:
+    """
+    Read a menu choice and return None when the user interrupts input.
+    """
+
+    try:
+        return input(prompt).strip()
+    except KeyboardInterrupt:
+        print("\nOperation cancelled.")
+        return None
+
+
+def pause_for_user(prompt: str = "\nPress Enter to continue...") -> bool:
+    """
+    Pause after an interactive action.
+
+    Returns False when the user interrupts the pause.
+    """
+
+    try:
+        input(prompt)
+        return True
+    except KeyboardInterrupt:
+        print("\nOperation cancelled.")
+        return False
+
+
 # ==========================================================
 # Choose Output File
 # ==========================================================
@@ -590,6 +628,60 @@ def generate_output_filename(
 
         if not confirm_overwrite(output_file):
             raise FileExistsError(f"Output file already exists and overwrite was declined:\n" f"{output_file}")
+
+    return output_file
+
+
+def strip_existing_phase_prefix(stem: str) -> str:
+    """
+    Remove leading date and pipeline phase prefixes from a dataset filename.
+
+    Examples
+    --------
+    20260821_cleaned_cropdata_updated
+        -> cropdata_updated
+
+    20260821_cleaned_20260821_cleaned_cropdata_updated
+        -> cropdata_updated
+    """
+
+    parts = stem.split("_")
+
+    while parts:
+        if re.fullmatch(r"\d{8}", parts[0]):
+            parts = parts[1:]
+            continue
+
+        if parts[0] in FILENAME_PHASES:
+            parts = parts[1:]
+            continue
+
+        break
+
+    return "_".join(parts) if parts else stem
+
+
+def generate_phase_output_filename(
+    input_file: Path,
+    phase: str,
+    directory: Path = PROCESSED_DATA_DIR,
+) -> Path:
+    """
+    Generate an automatic output filename for a specific pipeline phase.
+
+    Format:
+        YYYYMMDD_<phase>_<base_filename>
+    """
+
+    directory.mkdir(parents=True, exist_ok=True)
+
+    current_date = datetime.now().strftime("%Y%m%d")
+    base_stem = strip_existing_phase_prefix(input_file.stem)
+    filename = f"{current_date}_{phase}_{base_stem}{input_file.suffix}"
+    output_file = directory / filename
+
+    if output_file.exists() and not confirm_overwrite(output_file):
+        raise FileExistsError(f"Output file already exists and overwrite was declined:\n{output_file}")
 
     return output_file
 

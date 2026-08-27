@@ -8,16 +8,14 @@ that helps machine learning models make better predictions.
 
 # ai/prepocessing/feature_engineering.py
 
+import argparse
+import sys
 from pathlib import Path
-from typing import Optional
+from typing import Callable, Optional
 
 import numpy as np
 import pandas as pd
 
-# feature_engineering.py
-#        │
-# preprocessing/
-#        │
 from ai.core.constants import (
     CITY_REFERENCES,
     COUNTRY_BOUNDING_BOXES,
@@ -27,11 +25,25 @@ from ai.core.constants import (
     TROPICAL_COUNTRIES,
     UNKNOWN_TEXT_VALUES,
 )
-
+from ai.core.file_prompter import (
+    PROCESSED_DATA_DIR,
+    choose_input_file,
+    generate_phase_output_filename,
+    pause_for_user,
+    prompt_menu_choice,
+)
+from ai.core.file_status import write_dataframe_csv_with_status
+from ai.preprocessing.load_data import load_data_file
+from plant_data_bank_scripts.scripts.project_paths import PATHS
+from ai.core.menu_runner import MenuItem, MenuRunner
 
 # ==========================================================
 # Project Paths
 # ==========================================================
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 # ==========================================================
 # Helper Functions
@@ -177,7 +189,7 @@ def add_inferred_location_fields(df: pd.DataFrame) -> pd.DataFrame:
 
 def add_derived_plant_age(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Calculate plant_age_days from planting_date and timestamp/current date.
+    Calculate plant_age_days from planting_date and timestamp when both exist.
     """
 
     if "planting_date" not in df.columns:
@@ -185,10 +197,13 @@ def add_derived_plant_age(df: pd.DataFrame) -> pd.DataFrame:
 
     planting_date = pd.to_datetime(df["planting_date"], errors="coerce")
 
-    if "timestamp" in df.columns:
-        reference_date = pd.to_datetime(df["timestamp"], errors="coerce")
-    else:
-        reference_date = pd.Series(pd.Timestamp.today().normalize(), index=df.index)
+    if "timestamp" not in df.columns:
+        return df
+
+    reference_date = pd.to_datetime(df["timestamp"], errors="coerce")
+
+    if reference_date.notna().sum() == 0:
+        return df
 
     plant_age_days = (reference_date.dt.normalize() - planting_date.dt.normalize()).dt.days
     plant_age_days = plant_age_days.clip(lower=0)
@@ -208,22 +223,7 @@ def add_derived_plant_age(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def detect_hemisphere(latitude: Optional[float]) -> str:
-    """
-    Detect hemisphere from latitude.
-
-    Parameters
-    ----------
-    latitude : float
-
-    Returns
-    -------
-    str
-
-    Northern
-    Southern
-    Equator
-    Unknown
-    """
+    """Detect hemisphere from a single latitude value."""
 
     if latitude is None or pd.isna(latitude):
         return "Unknown"
@@ -237,97 +237,85 @@ def detect_hemisphere(latitude: Optional[float]) -> str:
     return "Equator"
 
 
+def detect_hemisphere_series(latitude: pd.Series) -> pd.Series:
+    """Vectorized hemisphere detection for latitude series."""
+
+    conditions = [
+        latitude.isna(),
+        latitude > 1,
+        latitude < -1,
+        (latitude >= -1) & (latitude <= 1),
+    ]
+
+    choices = ["Unknown", "Northern", "Southern", "Equator"]
+
+    return pd.Series(np.select(conditions, choices, default="Unknown"), index=latitude.index)
+
+
 # ==========================================================
 # Season Detection
 # ==========================================================
 
 
-def determine_season(row: pd.Series) -> str:
+def determine_season(df: pd.DataFrame) -> pd.Series:
+    """Vectorized agricultural season determination for an entire DataFrame.
+
+    Priority:
+    1. Tropical Country check -> Wet/Dry season
+    2. GPS Latitude / Hemisphere -> Seasonal determination
+    3. Default -> Northern Hemisphere logic
     """
-    Determine agricultural season.
+    months = df["month"]
 
-    Priority
+    # Extract or create fallback Series for optional columns
+    latitude = df["latitude"] if "latitude" in df.columns else pd.Series(np.nan, index=df.index)
+    country = df["country"].fillna("").astype(str).str.lower() if "country" in df.columns else pd.Series("", index=df.index)
 
-    1. GPS latitude
-    2. Country
-    3. Default northern hemisphere
+    hemisphere = detect_hemisphere_series(latitude)
 
-    Tropical countries use Wet/Dry season.
+    # Boolean Masks
+    is_tropical = country.isin(TROPICAL_COUNTRIES)
+    is_northern = (hemisphere == "Northern") | (hemisphere == "Unknown")
+    is_southern = hemisphere == "Southern"
 
-    Others use Spring/Summer/Autumn/Winter.
-    """
+    # Season Conditions
+    wet_months = months.isin([11, 12, 1, 2, 3, 4])
+    winter_months = months.isin([12, 1, 2])
+    spring_months = months.isin([3, 4, 5])
+    summer_months = months.isin([6, 7, 8])
+    autumn_months = months.isin([9, 10, 11])
 
-    month = row["month"]
+    # Ordered Conditions (Priority matters: Tropical checked first)
+    conditions = [
+        # 1. Tropical Countries
+        is_tropical & wet_months,
+        is_tropical & ~wet_months,
+        # 2. Northern Hemisphere (and Default fallback)
+        is_northern & winter_months,
+        is_northern & spring_months,
+        is_northern & summer_months,
+        is_northern & autumn_months,
+        # 3. Southern Hemisphere
+        is_southern & winter_months,
+        is_southern & spring_months,
+        is_southern & summer_months,
+        is_southern & autumn_months,
+    ]
 
-    latitude = row.get("latitude", np.nan)
+    choices = [
+        "Wet",
+        "Dry",
+        "Winter",
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Summer",
+        "Autumn",
+        "Winter",
+        "Spring",
+    ]
 
-    country = safe_lower(row.get("country", ""))
-
-    hemisphere = detect_hemisphere(latitude)
-
-    # ------------------------------------------------------
-    # Tropical countries
-    # ------------------------------------------------------
-
-    if country in TROPICAL_COUNTRIES:
-
-        # Simple tropical approximation
-        # Wet : November -> April
-        # Dry : May -> October
-
-        if month in [11, 12, 1, 2, 3, 4]:
-            return "Wet"
-
-        return "Dry"
-
-    # ------------------------------------------------------
-    # Northern Hemisphere
-    # ------------------------------------------------------
-
-    if hemisphere == "Northern":
-
-        if month in [12, 1, 2]:
-            return "Winter"
-
-        if month in [3, 4, 5]:
-            return "Spring"
-
-        if month in [6, 7, 8]:
-            return "Summer"
-
-        return "Autumn"
-
-    # ------------------------------------------------------
-    # Southern Hemisphere
-    # ------------------------------------------------------
-
-    if hemisphere == "Southern":
-
-        if month in [12, 1, 2]:
-            return "Summer"
-
-        if month in [3, 4, 5]:
-            return "Autumn"
-
-        if month in [6, 7, 8]:
-            return "Winter"
-
-        return "Spring"
-
-    # ------------------------------------------------------
-    # Unknown latitude
-    # ------------------------------------------------------
-
-    if month in [12, 1, 2]:
-        return "Winter"
-
-    if month in [3, 4, 5]:
-        return "Spring"
-
-    if month in [6, 7, 8]:
-        return "Summer"
-
-    return "Autumn"
+    return pd.Series(np.select(conditions, choices, default="Unknown"), index=df.index)
 
 
 # ==========================================================
@@ -335,35 +323,32 @@ def determine_season(row: pd.Series) -> str:
 # ==========================================================
 
 
-def add_time_features(df: pd.DataFrame) -> pd.DataFrame:
+def add_time_features(df: pd.DataFrame, time_col: str = "timestamp") -> pd.DataFrame:
     """
-    Create useful time-based features.
+    Create useful time-based features when a parseable timestamp exists.
     """
+    if time_col not in df.columns:
+        print(f"Skipping time features: '{time_col}' column not found.")
+        return df
 
-    print("Adding time features...")
+    print(f"Adding time features from '{time_col}'...")
 
-    if "timestamp" not in df.columns:
-        raise ValueError("Dataset must contain a 'timestamp' column.")
+    df = df.copy()
+    df[time_col] = pd.to_datetime(df[time_col], errors="coerce")
 
-    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    if df[time_col].notna().sum() == 0:
+        print(f"Skipping time features: '{time_col}' has no valid timestamp values.")
+        return df
 
-    df["year"] = df["timestamp"].dt.year
-
-    df["month"] = df["timestamp"].dt.month
-
-    df["day"] = df["timestamp"].dt.day
-
-    df["hour"] = df["timestamp"].dt.hour
-
-    df["day_of_week"] = df["timestamp"].dt.dayofweek
-
-    df["week_of_year"] = df["timestamp"].dt.isocalendar().week.astype(int)
-
-    df["quarter"] = df["timestamp"].dt.quarter
-
+    df["year"] = df[time_col].dt.year
+    df["month"] = df[time_col].dt.month
+    df["day"] = df[time_col].dt.day
+    df["hour"] = df[time_col].dt.hour
+    df["day_of_week"] = df[time_col].dt.dayofweek
+    df["week_of_year"] = df[time_col].dt.isocalendar().week.astype("Int64")
+    df["quarter"] = df[time_col].dt.quarter
     df["is_weekend"] = df["day_of_week"].isin([5, 6]).astype(int)
-
-    df["season"] = df.apply(determine_season, axis=1)
+    df["season"] = determine_season(df)
 
     return df
 
@@ -730,9 +715,11 @@ def add_plant_features(df: pd.DataFrame) -> pd.DataFrame:
         "timestamp",
     }.issubset(df.columns):
 
-        df["last_watered"] = pd.to_datetime(df["last_watered"])
+        timestamp = pd.to_datetime(df["timestamp"], errors="coerce")
+        df["last_watered"] = pd.to_datetime(df["last_watered"], errors="coerce")
 
-        df["days_since_watered"] = (df["timestamp"] - df["last_watered"]).dt.days
+        if timestamp.notna().any():
+            df["days_since_watered"] = (timestamp - df["last_watered"]).dt.days
 
     # ------------------------------------------------------
     # Watering Due
@@ -898,17 +885,11 @@ def save_featured_dataset(
     Save engineered dataset to CSV.
     """
 
-    output_file.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    df.to_csv(
+    write_dataframe_csv_with_status(
+        df,
         output_file,
-        index=False,
+        description="featured dataset",
     )
-
-    print(f"\nDataset saved to:\n{output_file}")
 
 
 # ==========================================================
@@ -947,86 +928,164 @@ def preview_featured_dataset(
 
 
 # ==========================================================
-# Main Program
+# Workflows
 # ==========================================================
 
 
-def main():
+def process_feature_engineering_file(input_file: Path, output_file: Path = OUTPUT_FILE) -> pd.DataFrame:
     """
-    Execute the complete feature engineering pipeline.
+    Load input dataset file, apply feature engineering, save, and preview output.
     """
-
-    print("=" * 60)
-    print("SMART FARMING FEATURE ENGINEERING")
-    print("=" * 60)
-
-    # ------------------------------------------------------
-    # Check input file
-    # ------------------------------------------------------
-
-    if not INPUT_FILE.exists():
-        raise FileNotFoundError(f"\nInput file not found:\n{INPUT_FILE}")
-
-    print(f"\nLoading dataset:\n{INPUT_FILE}")
-
-    # ------------------------------------------------------
-    # Load merged dataset
-    # ------------------------------------------------------
-
-    df = pd.read_csv(INPUT_FILE)
+    print(f"\nLoading dataset:\n{input_file}")
+    df = load_data_file(input_file)
 
     print(f"\nOriginal Shape: {df.shape}")
 
-    # ------------------------------------------------------
-    # Ensure timestamp is datetime
-    # ------------------------------------------------------
-
     if "timestamp" in df.columns:
-
         df["timestamp"] = pd.to_datetime(
             df["timestamp"],
             errors="coerce",
         )
 
-    # ------------------------------------------------------
-    # Run Feature Engineering
-    # ------------------------------------------------------
-
     featured_df = engineer_features(df)
-
-    # ------------------------------------------------------
-    # Remove duplicated columns (if any)
-    # ------------------------------------------------------
-
     featured_df = featured_df.loc[:, ~featured_df.columns.duplicated()]
 
-    # ------------------------------------------------------
-    # Preview Result
-    # ------------------------------------------------------
-
     preview_featured_dataset(featured_df)
-
-    # ------------------------------------------------------
-    # Save Dataset
-    # ------------------------------------------------------
-
-    save_featured_dataset(featured_df)
+    save_featured_dataset(featured_df, output_file=output_file)
 
     print("\nFeature engineering completed successfully!")
-
     return featured_df
 
 
+# =========================================================
+# MENU & WORKFLOW DRIVER
+# =========================================================
+
+
+def feature_engineering_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[pd.DataFrame]:
+    """
+    Prompt user to select a custom dataset file via file_prompter and engineer features.
+    """
+    if dry_run:
+        print("[DRY RUN] Would select a custom file via file_prompter and engineer features.")
+        return None
+
+    try:
+        input_file = choose_input_file(directory=PROCESSED_DATA_DIR)
+        output_file = generate_phase_output_filename(input_file=input_file, phase="featured")
+    except KeyboardInterrupt:
+        print("\nFile selection cancelled.")
+        return None
+    except (FileNotFoundError, FileExistsError) as error:
+        print(f"\nError: {error}")
+        return None
+
+    print(f"\nSelected Input File : {input_file}")
+    print(f"Target Output File  : {output_file}")
+
+    return process_feature_engineering_file(input_file=input_file, output_file=output_file)
+
+
+def feature_engineering_default_data(dry_run: bool = False, interactive: bool = True) -> Optional[pd.DataFrame]:
+    """
+    Run feature engineering on default merged dataset file.
+    """
+    if dry_run:
+        print(f"[DRY RUN] Would process default merged dataset: {INPUT_FILE}")
+        return None
+
+    if not INPUT_FILE.exists():
+        print(f"\nError: Input file not found:\n{INPUT_FILE}")
+        return None
+
+    return process_feature_engineering_file(input_file=INPUT_FILE, output_file=OUTPUT_FILE)
+
+
+def interactive_loop(dry_run: bool = False) -> None:
+    PATHS.ensure_dirs()
+
+    menu = MenuRunner(
+        title="Feature Engineering Menu",
+        items=[
+            MenuItem(
+                key="1",
+                label="Feature engineering on custom file (using file_prompter)",
+                action=feature_engineering_custom_data,
+            ),
+            MenuItem(
+                key="2",
+                label="Feature engineering on default merged data (original process)",
+                action=feature_engineering_default_data,
+            ),
+            MenuItem(
+                key="0",
+                label="Exit",
+                action=lambda dry_run: None,
+            ),
+        ],
+        prompt_func=prompt_menu_choice,
+        pause_func=pause_for_user,
+        notes=[
+            "Option 1 lets you pick a specific file via file_prompter.",
+            "Option 2 runs feature engineering on default merged dataset.",
+        ],
+    )
+
+    menu.run(dry_run=dry_run)
+
+
+def run_non_interactive(command: str, dry_run: bool = False) -> None:
+    shortcuts: dict[str, Callable[[bool], None]] = {
+        "custom": lambda dry_run: feature_engineering_custom_data(dry_run=dry_run, interactive=False),
+        "default": lambda dry_run: feature_engineering_default_data(dry_run=dry_run, interactive=False),
+    }
+
+    action = shortcuts.get(command)
+
+    if not action:
+        print(f"Unknown command: {command}")
+        print("")
+        print("Available commands:")
+        for key in shortcuts:
+            print(f" - {key}")
+        sys.exit(1)
+
+    PATHS.ensure_dirs()
+    action(dry_run)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Interactive manager for Feature Engineering")
+
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print commands without executing them where supported.",
+    )
+
+    parser.add_argument(
+        "--command",
+        choices=[
+            "custom",
+            "default",
+        ],
+        help="Run a workflow directly without opening the menu.",
+    )
+
+    args = parser.parse_args()
+
+    if args.command:
+        run_non_interactive(args.command, dry_run=args.dry_run)
+    else:
+        interactive_loop(dry_run=args.dry_run)
+
+
+"""
 # ==========================================================
 # Testing Utilities
 # ==========================================================
 
-
 def test_feature_engineering():
-    """
-    Basic test to verify that the feature engineering
-    pipeline runs successfully.
-    """
 
     print("\nRunning feature engineering tests...")
 
@@ -1066,29 +1125,7 @@ def test_feature_engineering():
 
         raise e
 
-
-# ==========================================================
-# Script Entry Point
-# ==========================================================
+"""
 
 if __name__ == "__main__":
-
-    try:
-
-        featured_dataset = main()
-
-        print("\n" + "=" * 60)
-        print("ENGINEERED DATASET PREVIEW")
-        print("=" * 60)
-
-        print(featured_dataset.head())
-
-        print("\n")
-
-        print("\nDone.")
-
-    except Exception as e:
-
-        print("\nAn error occurred during feature engineering.")
-
-        print(e)
+    main()

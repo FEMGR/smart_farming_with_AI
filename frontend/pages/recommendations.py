@@ -56,14 +56,16 @@ from utils.recommendation_helpers import (
 
 
 def render_recommendations() -> None:
-    st.subheader("Companion Planting")
+    st.subheader("Companion Planting & Recommendations")
 
-    # Recommendation generation depends on the current plant list.
     plants = st.session_state.get("plants", [])
 
     if not plants:
         st.info("Add plants before generating recommendations.")
         return
+
+    if "recs_expanded_accordion" not in st.session_state:
+        st.session_state["recs_expanded_accordion"] = "highest"
 
     if st.button("Generate recommendations", width="content"):
         try:
@@ -78,7 +80,7 @@ def render_recommendations() -> None:
     recommendations = st.session_state.get("recommendations")
 
     if not recommendations:
-        st.caption("Run the recommendation engine to analyze your current plants.")
+        st.caption("Run the recommendation engine above to analyze companion planting rules for your current crops.")
         return
 
     generated_for = st.session_state.get("recommendations_generated_for")
@@ -89,171 +91,233 @@ def render_recommendations() -> None:
     suggestions = recommendations.get("new_companion_suggestions") or {}
     good_suggestions = suggestions.get("suggest_good") or {}
     bad_suggestions = suggestions.get("suggest_bad") or {}
+    ranked_suggestions = aggregate_companion_suggestions(good_suggestions)
 
-    if len(plants) < 2:
-        st.info("You have one plant, so there are no existing plant pairs to compare yet. " "Suggested companion additions are shown below.")
+    accordion_items = [
+        {
+            "id": "highest",
+            "title": "Highest Value Additions",
+            "due": f"Suggested: {len(ranked_suggestions)} additions",
+            "finished_count": len(ranked_suggestions),
+            "total_count": len(ranked_suggestions) or 1,
+            "progress": 1.0,
+            "type": "highest",
+        },
+        {
+            "id": "by_plant",
+            "title": "Suggested Additions By Plant",
+            "due": f"Plant rules: {len(good_suggestions)} matched",
+            "finished_count": len(good_suggestions),
+            "total_count": len(good_suggestions) or 1,
+            "progress": 1.0,
+            "type": "by_plant",
+        },
+        {
+            "id": "avoid",
+            "title": "Avoid Adding (Incompatible)",
+            "due": f"Avoid: {len(bad_suggestions)} warnings",
+            "finished_count": len(bad_suggestions),
+            "total_count": len(bad_suggestions) or 1,
+            "progress": 1.0,
+            "type": "avoid",
+        },
+        {
+            "id": "existing",
+            "title": "Existing Plant Pair Interactions",
+            "due": "Active Pair Matrix",
+            "finished_count": len(interactions.get("recommended", [])),
+            "total_count": len(interactions.get("recommended", [])) + len(interactions.get("avoid", [])) or 1,
+            "progress": 1.0,
+            "type": "existing",
+        },
+    ]
 
-    with st.expander("Highest Value Additions", expanded=True):
-        ranked_suggestions = aggregate_companion_suggestions(good_suggestions)
+    for item in accordion_items:
+        sec_id = item["id"]
+        is_open = st.session_state.get("recs_expanded_accordion") == sec_id
+        arrow_icon = "▲" if is_open else "▼"
 
-        if not ranked_suggestions:
-            st.caption("No ranked additions were suggested.")
+        st.markdown('<div class="farm-panel" style="margin-bottom: 12px; padding: 16px;">', unsafe_allow_html=True)
+        col_title, col_due, col_progress, col_arrow = st.columns([3, 2, 4, 1])
 
-        selected_location_id = None
-        selected_type = "vegetable"
+        with col_title:
+            st.markdown(f"### {item['title']}")
 
-        if ranked_suggestions:
-            location_labels, location_ids = location_options()
-            control_cols = st.columns([1, 1, 1])
-            selected_type = control_cols[0].selectbox("Type for added plants", PLANT_TYPES, key="suggested_add_type")
-            selected_location = control_cols[1].selectbox("Location for added plants", location_labels, key="suggested_add_location")
-            selected_location_id = location_ids[selected_location]
+        with col_due:
+            st.markdown(f"**Deadline / Status:**<br>`{item['due']}`", unsafe_allow_html=True)
 
-        existing_names = {plant_name_key(plant.get("name", "")) for plant in plants}
-        selected_plants = []
+        with col_progress:
+            st.markdown(f"**Tasks:** {item['finished_count']} / {item['total_count']} ({int(item['progress'] * 100)}%)")
+            st.progress(item["progress"])
 
-        for item in ranked_suggestions:
-            with st.container(border=True):
-                plant_label = display_plant_name(item["plant"])
-                supports = ", ".join(display_plant_name(name) for name in item["supports"])
-                sources = ", ".join(source.upper() for source in item["sources"])
-                purposes = ", ".join(purpose.replace("_", " ").title() for purpose in item["purposes"])
-                already_added = plant_name_key(item["plant"]) in existing_names
-
-                cols = st.columns([0.2, 3])
-
-                checked = cols[0].checkbox(
-                    "Add",
-                    key=f"add_suggestion_{item['plant']}",
-                    label_visibility="collapsed",
-                    disabled=already_added,
-                )
-
-                cols[1].write(f"**{plant_label}**")
-                cols[1].caption(f"Supports {item['support_count']} existing plant(s): {supports}")
-
-                st.markdown(
-                    f'<span class="status-pill">avg score {item["average_score"]:.1f}</span>'
-                    f'<span class="status-pill">{purposes}</span>'
-                    f'<span class="status-pill">{sources}</span>',
-                    unsafe_allow_html=True,
-                )
-
-                if already_added:
-                    st.caption("Already in your plant list.")
-                elif checked:
-                    selected_plants.append(item["plant"])
-
-        if ranked_suggestions:
-            if st.button("Add selected plants", width="stretch", disabled=not selected_plants):
-                added = []
-                errors = []
-
-                for plant_name in selected_plants:
-                    try:
-                        create_plant(
-                            {
-                                "name": display_plant_name(plant_name),
-                                "plant_type": selected_type,
-                                "location_id": selected_location_id,
-                                "use_sensor": False,
-                            }
-                        )
-                        added.append(display_plant_name(plant_name))
-                    except RuntimeError as exc:
-                        errors.append(f"{display_plant_name(plant_name)}: {exc}")
-
-                refresh_data(show_errors=True)
-
-                if added:
-                    st.success(f"Added {len(added)} plant(s): {', '.join(added)}")
-
-                if errors:
-                    st.error("\\n".join(errors))
-
+        with col_arrow:
+            if st.button(arrow_icon, key=f"btn_acc_rec_{sec_id}", help=f"Toggle {item['title']}"):
+                if is_open:
+                    st.session_state["recs_expanded_accordion"] = None
+                else:
+                    st.session_state["recs_expanded_accordion"] = sec_id
                 st.rerun()
 
-    with st.expander("Suggested Additions By Plant", expanded=False):
-        if not good_suggestions:
-            st.caption("No companion additions were suggested.")
+        if is_open:
+            st.divider()
+            if item["type"] == "highest":
+                if not ranked_suggestions:
+                    st.caption("No ranked additions were suggested.")
+                else:
+                    location_labels, location_ids = location_options()
+                    control_cols = st.columns([1, 1, 1])
+                    selected_type = control_cols[0].selectbox("Type for added plants", PLANT_TYPES, key="suggested_add_type")
+                    selected_location = control_cols[1].selectbox("Location for added plants", location_labels, key="suggested_add_location")
+                    selected_location_id = location_ids[selected_location]
 
-        for plant_name, items in good_suggestions.items():
-            seen = set()
+                    existing_names = {plant_name_key(plant.get("name", "")) for plant in plants}
+                    selected_plants = []
 
-            with st.container(border=True):
-                st.write(f"**For {plant_name.replace('_', ' ').title()}**")
+                    for sug_item in ranked_suggestions:
+                        with st.container(border=True):
+                            plant_label = display_plant_name(sug_item["plant"])
+                            supports = ", ".join(display_plant_name(name) for name in sug_item["supports"])
+                            sources = ", ".join(source.upper() for source in sug_item["sources"])
+                            purposes = ", ".join(purpose.replace("_", " ").title() for purpose in sug_item["purposes"])
+                            already_added = plant_name_key(sug_item["plant"]) in existing_names
 
-                for item in items:
-                    companion = item.get("plant")
+                            cols = st.columns([0.2, 3])
 
-                    if not companion or companion in seen:
-                        continue
+                            checked = cols[0].checkbox(
+                                "Add",
+                                key=f"add_suggestion_{sug_item['plant']}",
+                                label_visibility="collapsed",
+                                disabled=already_added,
+                            )
 
-                    seen.add(companion)
+                            cols[1].write(f"**{plant_label}**")
+                            cols[1].caption(f"Supports {sug_item['support_count']} existing plant(s): {supports}")
 
-                    label = companion.replace("_", " ").title()
-                    reason = item.get("description") or "Companion planting support"
-                    confidence = item.get("confidence")
-                    confidence_text = f" · score {confidence:g}" if isinstance(confidence, (int, float)) else ""
+                            st.markdown(
+                                f'<span class="status-pill">avg score {sug_item["average_score"]:.1f}</span>'
+                                f'<span class="status-pill">{purposes}</span>'
+                                f'<span class="status-pill">{sources}</span>',
+                                unsafe_allow_html=True,
+                            )
 
-                    st.markdown(
-                        f'<span class="status-pill">{label}</span> '
-                        f'<span class="farm-subtle">{recommendation_purpose(item)} · {reason}{confidence_text}</span>',
-                        unsafe_allow_html=True,
-                    )
+                            if already_added:
+                                st.caption("Already in your plant list.")
+                            elif checked:
+                                selected_plants.append(sug_item["plant"])
 
-    if bad_suggestions:
-        with st.expander("Avoid Adding", expanded=False):
-            for plant_name, items in bad_suggestions.items():
-                seen = set()
+                    if st.button("Add selected plants", width="stretch", disabled=not selected_plants):
+                        added = []
+                        errors = []
 
-                with st.container(border=True):
-                    st.write(f"**Near {plant_name.replace('_', ' ').title()}**")
+                        for plant_name in selected_plants:
+                            try:
+                                create_plant(
+                                    {
+                                        "name": display_plant_name(plant_name),
+                                        "plant_type": selected_type,
+                                        "location_id": selected_location_id,
+                                        "use_sensor": False,
+                                    }
+                                )
+                                added.append(display_plant_name(plant_name))
+                            except RuntimeError as exc:
+                                errors.append(f"{display_plant_name(plant_name)}: {exc}")
 
-                    for item in items:
-                        avoid_plant = item.get("plant")
+                        refresh_data(show_errors=True)
 
-                        if not avoid_plant or avoid_plant in seen:
-                            continue
+                        if added:
+                            st.success(f"Added {len(added)} plant(s): {', '.join(added)}")
 
-                        seen.add(avoid_plant)
+                        if errors:
+                            st.error("\n".join(errors))
 
-                        st.markdown(
-                            f'<span class="status-pill">{avoid_plant.replace("_", " ").title()}</span>',
-                            unsafe_allow_html=True,
-                        )
+                        st.rerun()
 
-    with st.expander("Existing Plant Pairs", expanded=False):
-        rec_col, avoid_col = st.columns(2)
+            elif item["type"] == "by_plant":
+                if not good_suggestions:
+                    st.caption("No companion additions were suggested.")
+                else:
+                    for plant_name, items in good_suggestions.items():
+                        seen = set()
 
-        with rec_col:
-            st.markdown("##### Recommended")
-            items = interactions.get("recommended", [])
+                        with st.container(border=True):
+                            st.write(f"**For {plant_name.replace('_', ' ').title()}**")
 
-            if not items:
-                st.caption("No recommended pairs found.")
+                            for g_item in items:
+                                companion = g_item.get("plant")
 
-            for item in items:
-                with st.container(border=True):
-                    st.write(f"**{item.get('pair')}**")
-                    st.caption(item.get("description") or "Recommended by rules.")
-                    st.markdown(
-                        f'<span class="status-pill">{recommendation_purpose(item)}</span>',
-                        unsafe_allow_html=True,
-                    )
+                                if not companion or companion in seen:
+                                    continue
 
-        with avoid_col:
-            st.markdown("##### Avoid")
-            items = interactions.get("avoid", [])
+                                seen.add(companion)
 
-            if not items:
-                st.caption("No avoid pairs found.")
+                                label = companion.replace("_", " ").title()
+                                reason = g_item.get("description") or "Companion planting support"
+                                confidence = g_item.get("confidence")
+                                confidence_text = f" · score {confidence:g}" if isinstance(confidence, (int, float)) else ""
 
-            for item in items:
-                with st.container(border=True):
-                    st.write(f"**{item.get('pair')}**")
-                    st.caption(item.get("description") or "Avoided by rules.")
-                    st.markdown(
-                        f'<span class="status-pill">{recommendation_purpose(item)}</span>',
-                        unsafe_allow_html=True,
-                    )
+                                st.markdown(
+                                    f'<span class="status-pill">{label}</span> '
+                                    f'<span class="farm-subtle">{recommendation_purpose(g_item)} · {reason}{confidence_text}</span>',
+                                    unsafe_allow_html=True,
+                                )
+
+            elif item["type"] == "avoid":
+                if not bad_suggestions:
+                    st.caption("No incompatible plants recorded for your current selection.")
+                else:
+                    for plant_name, items in bad_suggestions.items():
+                        seen = set()
+
+                        with st.container(border=True):
+                            st.write(f"**Near {plant_name.replace('_', ' ').title()}**")
+
+                            for b_item in items:
+                                avoid_plant = b_item.get("plant")
+
+                                if not avoid_plant or avoid_plant in seen:
+                                    continue
+
+                                seen.add(avoid_plant)
+
+                                st.markdown(
+                                    f'<span class="status-pill">{avoid_plant.replace("_", " ").title()}</span>',
+                                    unsafe_allow_html=True,
+                                )
+
+            elif item["type"] == "existing":
+                rec_col, avoid_col = st.columns(2)
+
+                with rec_col:
+                    st.markdown("##### Recommended Pairs")
+                    ex_items = interactions.get("recommended", [])
+
+                    if not ex_items:
+                        st.caption("No recommended pairs found.")
+
+                    for ex_item in ex_items:
+                        with st.container(border=True):
+                            st.write(f"**{ex_item.get('pair')}**")
+                            st.caption(ex_item.get("description") or "Recommended by rules.")
+                            st.markdown(
+                                f'<span class="status-pill">{recommendation_purpose(ex_item)}</span>',
+                                unsafe_allow_html=True,
+                            )
+
+                with avoid_col:
+                    st.markdown("##### Avoid Pairs")
+                    ex_items = interactions.get("avoid", [])
+
+                    if not ex_items:
+                        st.caption("No avoid pairs found.")
+
+                    for ex_item in ex_items:
+                        with st.container(border=True):
+                            st.write(f"**{ex_item.get('pair')}**")
+                            st.caption(ex_item.get("description") or "Avoided by rules.")
+                            st.markdown(
+                                f'<span class="status-pill">{recommendation_purpose(ex_item)}</span>',
+                                unsafe_allow_html=True,
+                            )
+
+        st.markdown("</div>", unsafe_allow_html=True)

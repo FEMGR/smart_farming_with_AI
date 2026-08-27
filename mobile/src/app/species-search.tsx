@@ -17,8 +17,10 @@ import { useData } from '@/context/DataContext';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 
 export default function SpeciesSearchScreen() {
+  const colors = useTheme();
   const router = useRouter();
   const { searchSpecies } = useData();
   const [query, setQuery] = useState('');
@@ -53,7 +55,7 @@ export default function SpeciesSearchScreen() {
         {/* Header */}
         <View style={styles.header}>
           <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-            <SymbolView name="chevron.left" size={24} tintColor="#10B981" />
+            <SymbolView name="chevron.left" size={24} tintColor={colors.emerald} />
           </TouchableOpacity>
           <ThemedText type="subtitle" style={styles.title}>
             Species Lookup
@@ -63,27 +65,27 @@ export default function SpeciesSearchScreen() {
         {/* Input */}
         <View style={styles.searchBar}>
           <TextInput
-            style={styles.searchInput}
+            style={[styles.searchInput, { color: colors.text, backgroundColor: colors.inputBackground, borderColor: colors.inputBorder }]}
             placeholder="Search by common or scientific name..."
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.placeholder}
             value={query}
             onChangeText={setQuery}
             onSubmitEditing={handleSearch}
             autoCapitalize="none"
           />
-          <TouchableOpacity style={styles.searchBtn} onPress={handleSearch}>
-            <SymbolView name="magnifyingglass" size={18} tintColor="#fff" />
+          <TouchableOpacity style={[styles.searchBtn, { backgroundColor: colors.emerald }]} onPress={handleSearch}>
+            <SymbolView name="magnifyingglass" size={18} tintColor={colors.textInverse} />
           </TouchableOpacity>
         </View>
 
         {/* Results */}
         {loading ? (
           <View style={styles.center}>
-            <ActivityIndicator size="large" color="#10B981" />
+            <ActivityIndicator size="large" color={colors.emerald} />
           </View>
         ) : results.length === 0 ? (
           <View style={styles.empty}>
-            <SymbolView name="magnifyingglass" size={48} tintColor="#ccc" />
+            <SymbolView name="magnifyingglass" size={48} tintColor={colors.placeholder} />
             <ThemedText themeColor="textSecondary" style={styles.emptyText}>
               {query ? 'No species matches found.' : 'Enter a query to search Perenual API.'}
             </ThemedText>

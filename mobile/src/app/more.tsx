@@ -44,7 +44,70 @@ export default function MoreScreen() {
     refreshing,
   } = useData();
 
-  const [activeSegment, setActiveSegment] = useState<'locations' | 'recommendations' | 'settings'>('locations');
+  const [expandedSection, setExpandedSection] = useState<string | null>('locations');
+
+  const renderAccordionHeader = (
+    id: string,
+    title: string,
+    dueText: string,
+    finishedCount: number,
+    totalCount: number,
+    progress: number
+  ) => {
+    const isOpen = expandedSection === id;
+    const progressPercent = Math.round(progress * 100);
+
+    return (
+      <TouchableOpacity
+        activeOpacity={0.8}
+        onPress={() => setExpandedSection(isOpen ? null : id)}
+        style={[
+          styles.accordionHeaderCard,
+          {
+            backgroundColor: isOpen ? themeColors.badgeSuccessBackground : themeColors.backgroundElement,
+            borderColor: themeColors.border,
+          },
+          isOpen && styles.accordionHeaderCardActive,
+        ]}
+      >
+        <View style={styles.accordionHeaderLeft}>
+          <ThemedText type="smallBold" style={styles.accordionTitleText}>
+            {title}
+          </ThemedText>
+        </View>
+
+        <View style={styles.accordionHeaderRight}>
+          <View style={styles.accordionMetaColumn}>
+            <ThemedText themeColor="textSecondary" style={styles.accordionDueText}>
+              {dueText}
+            </ThemedText>
+            <View style={styles.accordionProgressRow}>
+              <View style={[styles.accordionProgressBarTrack, { backgroundColor: themeColors.disabled }]}>
+                <View
+                  style={[
+                    styles.accordionProgressBarFill,
+                    { width: `${progressPercent}%`, backgroundColor: themeColors.emerald },
+                  ]}
+                />
+              </View>
+              <ThemedText themeColor="textSecondary" style={styles.accordionRatioText}>
+                {`${finishedCount}/${totalCount} (${progressPercent}%)`}
+              </ThemedText>
+            </View>
+          </View>
+
+          <View style={styles.arrowIconWrapper}>
+            <SymbolView
+              name={isOpen ? 'chevron.up' : 'chevron.down'}
+              size={18}
+              tintColor={themeColors.emerald}
+            />
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  };
+
   const [actionLoading, setActionLoading] = useState(false);
   const [recsLoading, setRecsLoading] = useState(false);
 
@@ -282,7 +345,7 @@ export default function MoreScreen() {
 
     setActionLoading(false);
     setSelectedRecCrops([]);
-    clearRecommendations(); // clear old recommendations so user runs again
+    clearRecommendations();
 
     if (added.length > 0) {
       Alert.alert('Success', `Added ${added.length} plant(s): ${added.join(', ')}`);
@@ -311,7 +374,7 @@ export default function MoreScreen() {
         list.push(item);
       });
     });
-    return list.slice(0, 10); // show top 10
+    return list.slice(0, 10);
   };
 
   const rankedAdditions = getRankedAdditions();
@@ -329,421 +392,422 @@ export default function MoreScreen() {
               Locations, companion rules, and profile
             </ThemedText>
           </View>
-          <View style={styles.headerActions}>
-            {activeSegment === 'locations' && (
-              <TouchableOpacity
-                style={styles.addButton}
-                onPress={() => setAddLocVisible(true)}
-              >
-                <SymbolView name="plus" size={16} tintColor="#fff" />
-                <ThemedText style={styles.addButtonText}>Add Location</ThemedText>
-              </TouchableOpacity>
-            )}
+            <View style={styles.headerActions}>
+            <TouchableOpacity
+              style={[styles.addButton, { backgroundColor: themeColors.emerald }]}
+              onPress={() => setAddLocVisible(true)}
+            >
+              <SymbolView name="plus" size={16} tintColor={themeColors.textInverse} />
+              <ThemedText style={[styles.addButtonText, { color: themeColors.textInverse }]}>Add Location</ThemedText>
+            </TouchableOpacity>
             <TouchableOpacity
               accessibilityLabel="Sign out"
-              style={styles.headerLogoutBtn}
+              style={[styles.headerLogoutBtn, { backgroundColor: themeColors.badgeErrorBackground }]}
               onPress={logout}
             >
-              <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor="#fff" />
+              <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor={themeColors.badgeErrorText} />
             </TouchableOpacity>
           </View>
         </View>
 
-        {/* Segment selector */}
-        <View style={styles.segmentedContainer}>
-          <TouchableOpacity
-            style={[styles.segmentBtn, activeSegment === 'locations' && styles.segmentBtnActive]}
-            onPress={() => setActiveSegment('locations')}
-          >
-            <ThemedText style={[styles.segmentText, activeSegment === 'locations' && styles.segmentTextActive]}>
-              Locations
-            </ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.segmentBtn, activeSegment === 'recommendations' && styles.segmentBtnActive]}
-            onPress={() => setActiveSegment('recommendations')}
-          >
-            <ThemedText style={[styles.segmentText, activeSegment === 'recommendations' && styles.segmentTextActive]}>
-              Companions
-            </ThemedText>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.segmentBtn, activeSegment === 'settings' && styles.segmentBtnActive]}
-            onPress={() => setActiveSegment('settings')}
-          >
-            <ThemedText style={[styles.segmentText, activeSegment === 'settings' && styles.segmentTextActive]}>
-              Profile
-            </ThemedText>
-          </TouchableOpacity>
-        </View>
-
-        {/* Content list */}
         {loading ? (
           <View style={styles.center}>
-            <ActivityIndicator size="large" color="#10B981" />
+            <ActivityIndicator size="large" color={themeColors.emerald} />
           </View>
-        ) : activeSegment === 'locations' ? (
+        ) : (
           <ScrollView
             contentContainerStyle={styles.scrollList}
             refreshControl={
               <RefreshControl refreshing={refreshing} onRefresh={refreshAll} />
             }
           >
-            {locations.length === 0 ? (
-              <View style={styles.empty}>
-                <SymbolView name="mappin.slash" size={48} tintColor="#ccc" />
-                <ThemedText themeColor="textSecondary" style={styles.emptyText}>
-                  No growing locations set up. Click '+' to add one!
-                </ThemedText>
-              </View>
-            ) : (
-              locations.map((loc) => (
-                <ThemedView key={loc.id} type="backgroundElement" style={styles.card}>
-                  <View style={styles.cardHeader}>
-                    <TouchableOpacity onPress={() => openEditLoc(loc)} style={{ flex: 1 }}>
-                      <ThemedText type="smallBold" style={styles.locNameText}>
-                        {loc.name}
-                      </ThemedText>
-                      <ThemedText themeColor="textSecondary" style={styles.locDescText}>
-                        {loc.description || 'No description provided'}
-                      </ThemedText>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => openEditLoc(loc)} style={styles.editLocBtn}>
-                      <SymbolView name="pencil" size={16} tintColor="#10B981" />
-                    </TouchableOpacity>
-                  </View>
+            {/* Item 1: Locations */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'locations',
+                'Farm Locations',
+                `Locations: ${locations.length} active`,
+                locations.length,
+                locations.length || 1,
+                1.0
+              )}
 
-                  <View style={styles.locDetailsGrid}>
-                    <View style={styles.detailBox}>
-                      <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                        Environment
-                      </ThemedText>
-                      <ThemedText type="smallBold">{loc.environment_type}</ThemedText>
-                    </View>
-                    <View style={styles.detailBox}>
-                      <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                        Size
-                      </ThemedText>
-                      <ThemedText type="smallBold">
-                        {loc.width_m} m x {loc.length_m} m
+              {expandedSection === 'locations' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  {locations.length === 0 ? (
+                    <View style={styles.empty}>
+                      <SymbolView name="mappin.slash" size={48} tintColor={themeColors.placeholder} />
+                      <ThemedText themeColor="textSecondary" style={styles.emptyText}>
+                        No growing locations set up. Click '+' to add one!
                       </ThemedText>
                     </View>
-                    <View style={styles.detailBox}>
-                      <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
-                        Area
-                      </ThemedText>
-                      <ThemedText type="smallBold">
-                        {(Number(loc.width_m || 0) * Number(loc.length_m || 0)).toFixed(1)} m²
-                      </ThemedText>
-                    </View>
-                  </View>
-                  {loc.latitude !== null && loc.longitude !== null && loc.latitude !== undefined && loc.longitude !== undefined && (
-                    <View style={styles.locGpsDisplay}>
-                      <SymbolView name="location.fill" size={12} tintColor="#10B981" />
-                      <ThemedText themeColor="textSecondary" style={styles.locGpsDisplayText}>
-                        GPS: {Number(loc.latitude).toFixed(5)}, {Number(loc.longitude).toFixed(5)}
-                      </ThemedText>
-                    </View>
-                  )}
-                </ThemedView>
-              ))
-            )}
-          </ScrollView>
-        ) : activeSegment === 'recommendations' ? (
-          /* COMPANION PLANTING SECTION */
-          <ScrollView contentContainerStyle={styles.scrollList}>
-            {!recommendations ? (
-              <View style={styles.empty}>
-                <SymbolView name="sparkles" size={48} tintColor="#ccc" />
-                <ThemedText themeColor="textSecondary" style={styles.emptyText}>
-                  Generate companion recommendations using Prolog rules analysis.
-                </ThemedText>
-                <TouchableOpacity
-                  style={styles.runRecsBtn}
-                  onPress={handleRunRecs}
-                  disabled={recsLoading}
-                >
-                  {recsLoading ? (
-                    <ActivityIndicator color="#fff" />
                   ) : (
-                    <>
-                      <SymbolView name="wand.and.stars" size={16} tintColor="#fff" />
-                      <ThemedText style={styles.runRecsBtnText}>Generate Recommendations</ThemedText>
-                    </>
-                  )}
-                </TouchableOpacity>
-              </View>
-            ) : (
-              <View>
-                {/* Header Controls for additions */}
-                <ThemedView type="backgroundElement" style={styles.recsAddHeaderCard}>
-                  <ThemedText type="smallBold" style={{ marginBottom: Spacing.two }}>
-                    Highest Value Additions (Checked Additions)
-                  </ThemedText>
+                    locations.map((loc) => (
+                      <ThemedView key={loc.id} type="backgroundElement" style={styles.card}>
+                        <View style={styles.cardHeader}>
+                          <TouchableOpacity onPress={() => openEditLoc(loc)} style={{ flex: 1 }}>
+                            <ThemedText type="smallBold" style={styles.locNameText}>
+                              {loc.name}
+                            </ThemedText>
+                            <ThemedText themeColor="textSecondary" style={styles.locDescText}>
+                              {loc.description || 'No description provided'}
+                            </ThemedText>
+                          </TouchableOpacity>
+                          <TouchableOpacity onPress={() => openEditLoc(loc)} style={styles.editLocBtn}>
+                            <SymbolView name="pencil" size={16} tintColor={themeColors.emerald} />
+                          </TouchableOpacity>
+                        </View>
 
-                  <ThemedText style={styles.fieldLabel}>Type for added plants</ThemedText>
-                  <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalSelectorScroll}>
-                    {PLANT_TYPES.map((type) => (
-                      <TouchableOpacity
-                        key={type}
-                        style={[
-                          styles.smallTypeOption,
-                          selectedAddType === type && styles.smallTypeOptionActive,
-                        ]}
-                        onPress={() => setSelectedAddType(type)}
-                      >
-                        <ThemedText style={[styles.smallTypeOptionText, selectedAddType === type && { color: '#fff' }]}>
-                          {type}
-                        </ThemedText>
-                      </TouchableOpacity>
-                    ))}
-                  </ScrollView>
-
-                  <ThemedText style={styles.fieldLabel}>Location for added plants</ThemedText>
-                  <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalSelectorScroll}>
-                    {locations.map((loc) => (
-                      <TouchableOpacity
-                        key={loc.id}
-                        style={[
-                          styles.smallTypeOption,
-                          selectedAddLocId === loc.id && styles.smallTypeOptionActive,
-                        ]}
-                        onPress={() => setSelectedAddLocId(loc.id)}
-                      >
-                        <ThemedText style={[styles.smallTypeOptionText, selectedAddLocId === loc.id && { color: '#fff' }]}>
-                          {loc.name}
-                        </ThemedText>
-                      </TouchableOpacity>
-                    ))}
-                  </ScrollView>
-
-                  <TouchableOpacity
-                    style={[styles.runRecsBtn, { alignSelf: 'stretch', marginTop: Spacing.three }]}
-                    onPress={handleAddSelectedRecs}
-                    disabled={selectedRecCrops.length === 0 || actionLoading}
-                  >
-                    <ThemedText style={styles.runRecsBtnText}>
-                      Add Selected Plants ({selectedRecCrops.length})
-                    </ThemedText>
-                  </TouchableOpacity>
-
-                  <TouchableOpacity
-                    style={[styles.runRecsBtn, { alignSelf: 'stretch', marginTop: Spacing.two, backgroundColor: '#6B7280' }]}
-                    onPress={clearRecommendations}
-                  >
-                    <ThemedText style={styles.runRecsBtnText}>Reset / Clear Analysis</ThemedText>
-                  </TouchableOpacity>
-                </ThemedView>
-
-                {/* Ranked Additions List */}
-                <ThemedText type="smallBold" style={styles.categoryTitle}>
-                  Add Companion Suggestions
-                </ThemedText>
-
-                {rankedAdditions.length === 0 ? (
-                  <ThemedText themeColor="textSecondary" style={{ marginBottom: Spacing.three }}>
-                    No suggestions.
-                  </ThemedText>
-                ) : (
-                  rankedAdditions.map((item: any) => {
-                    const isChecked = selectedRecCrops.includes(item.plant);
-                    return (
-                      <ThemedView key={item.plant} type="backgroundElement" style={styles.recItemCard}>
-                        <TouchableOpacity
-                          style={styles.checkboxLine}
-                          onPress={() => toggleRecCropSelection(item.plant)}
-                        >
-                          <SymbolView
-                            name={isChecked ? 'checkmark.square.fill' : 'square'}
-                            size={20}
-                            tintColor={isChecked ? '#10B981' : '#888'}
-                          />
-                          <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                        <View style={styles.locDetailsGrid}>
+                          <View style={styles.detailBox}>
+                            <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                              Environment
+                            </ThemedText>
+                            <ThemedText type="smallBold">{loc.environment_type}</ThemedText>
+                          </View>
+                          <View style={styles.detailBox}>
+                            <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                              Size
+                            </ThemedText>
                             <ThemedText type="smallBold">
-                              {String(item.plant).replace('_', ' ').replace(/\b\w/g, (l) => l.toUpperCase())}
-                            </ThemedText>
-                            <ThemedText type="small" themeColor="textSecondary">
-                              Supports: {item.supports?.join(', ')}
-                            </ThemedText>
-                            <ThemedText type="small" themeColor="textSecondary">
-                              Confidence Score: {item.confidence !== undefined ? Number(item.confidence).toFixed(1) : item.average_score !== undefined ? Number(item.average_score).toFixed(1) : 'N/A'}
+                              {loc.width_m} m x {loc.length_m} m
                             </ThemedText>
                           </View>
+                          <View style={styles.detailBox}>
+                            <ThemedText themeColor="textSecondary" style={styles.detailLabel}>
+                              Area
+                            </ThemedText>
+                            <ThemedText type="smallBold">
+                              {(Number(loc.width_m || 0) * Number(loc.length_m || 0)).toFixed(1)} m²
+                            </ThemedText>
+                          </View>
+                        </View>
+                        {loc.latitude !== null && loc.longitude !== null && loc.latitude !== undefined && loc.longitude !== undefined && (
+                          <View style={styles.locGpsDisplay}>
+                            <SymbolView name="location.fill" size={12} tintColor="#10B981" />
+                            <ThemedText themeColor="textSecondary" style={styles.locGpsDisplayText}>
+                              GPS: {Number(loc.latitude).toFixed(5)}, {Number(loc.longitude).toFixed(5)}
+                            </ThemedText>
+                          </View>
+                        )}
+                      </ThemedView>
+                    ))
+                  )}
+                </View>
+              )}
+            </View>
+
+            {/* Item 2: Companion Recommendations */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'recommendations',
+                'Companion Recommendations',
+                'Companion Rules',
+                recommendations ? 1 : 0,
+                1,
+                recommendations ? 1.0 : 0.0
+              )}
+
+              {expandedSection === 'recommendations' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  {!recommendations ? (
+                    <View style={styles.empty}>
+                      <SymbolView name="sparkles" size={48} tintColor="#ccc" />
+                      <ThemedText themeColor="textSecondary" style={styles.emptyText}>
+                        Generate companion recommendations using Prolog rules analysis.
+                      </ThemedText>
+                      <TouchableOpacity
+                        style={styles.runRecsBtn}
+                        onPress={handleRunRecs}
+                        disabled={recsLoading}
+                      >
+                        {recsLoading ? (
+                          <ActivityIndicator color="#fff" />
+                        ) : (
+                          <>
+                            <SymbolView name="wand.and.stars" size={16} tintColor="#fff" />
+                            <ThemedText style={styles.runRecsBtnText}>Generate Recommendations</ThemedText>
+                          </>
+                        )}
+                      </TouchableOpacity>
+                    </View>
+                  ) : (
+                    <View>
+                      <ThemedView type="backgroundElement" style={styles.recsAddHeaderCard}>
+                        <ThemedText type="smallBold" style={{ marginBottom: Spacing.two }}>
+                          Highest Value Additions (Checked Additions)
+                        </ThemedText>
+
+                        <ThemedText style={styles.fieldLabel}>Type for added plants</ThemedText>
+                        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalSelectorScroll}>
+                          {PLANT_TYPES.map((type) => (
+                            <TouchableOpacity
+                              key={type}
+                              style={[
+                                styles.smallTypeOption,
+                                selectedAddType === type && styles.smallTypeOptionActive,
+                              ]}
+                              onPress={() => setSelectedAddType(type)}
+                            >
+                              <ThemedText style={[styles.smallTypeOptionText, selectedAddType === type && { color: '#fff' }]}>
+                                {type}
+                              </ThemedText>
+                            </TouchableOpacity>
+                          ))}
+                        </ScrollView>
+
+                        <ThemedText style={styles.fieldLabel}>Location for added plants</ThemedText>
+                        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalSelectorScroll}>
+                          {locations.map((loc) => (
+                            <TouchableOpacity
+                              key={loc.id}
+                              style={[
+                                styles.smallTypeOption,
+                                selectedAddLocId === loc.id && styles.smallTypeOptionActive,
+                              ]}
+                              onPress={() => setSelectedAddLocId(loc.id)}
+                            >
+                              <ThemedText style={[styles.smallTypeOptionText, selectedAddLocId === loc.id && { color: '#fff' }]}>
+                                {loc.name}
+                              </ThemedText>
+                            </TouchableOpacity>
+                          ))}
+                        </ScrollView>
+
+                        <TouchableOpacity
+                          style={[styles.runRecsBtn, { alignSelf: 'stretch', marginTop: Spacing.three }]}
+                          onPress={handleAddSelectedRecs}
+                          disabled={selectedRecCrops.length === 0 || actionLoading}
+                        >
+                          <ThemedText style={styles.runRecsBtnText}>
+                            Add Selected Plants ({selectedRecCrops.length})
+                          </ThemedText>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity
+                          style={[styles.runRecsBtn, { alignSelf: 'stretch', marginTop: Spacing.two, backgroundColor: '#6B7280' }]}
+                          onPress={clearRecommendations}
+                        >
+                          <ThemedText style={styles.runRecsBtnText}>Reset / Clear Analysis</ThemedText>
                         </TouchableOpacity>
                       </ThemedView>
-                    );
-                  })
-                )}
 
-                {/* Avoid Recommendations */}
-                {Object.keys(badSuggestions).length > 0 && (
-                  <>
-                    <ThemedText type="smallBold" style={[styles.categoryTitle, { color: '#EF4444' }]}>
-                      Avoid Adding
-                    </ThemedText>
-                    {Object.entries(badSuggestions).map(([pName, items]: any) => (
-                      <ThemedView key={`avoid-${pName}`} type="backgroundElement" style={styles.recItemCard}>
-                        <ThemedText type="smallBold">Near {pName}</ThemedText>
-                        <ThemedText type="small" style={{ color: '#EF4444', marginTop: 2 }}>
-                          Avoid: {items.map((i: any) => i.plant).join(', ')}
+                      <ThemedText type="smallBold" style={styles.categoryTitle}>
+                        Add Companion Suggestions
+                      </ThemedText>
+
+                      {rankedAdditions.length === 0 ? (
+                        <ThemedText themeColor="textSecondary" style={{ marginBottom: Spacing.three }}>
+                          No suggestions.
                         </ThemedText>
-                      </ThemedView>
-                    ))}
-                  </>
-                )}
+                      ) : (
+                        rankedAdditions.map((item: any) => {
+                          const isChecked = selectedRecCrops.includes(item.plant);
+                          return (
+                            <ThemedView key={item.plant} type="backgroundElement" style={styles.recItemCard}>
+                              <TouchableOpacity
+                                style={styles.checkboxLine}
+                                onPress={() => toggleRecCropSelection(item.plant)}
+                              >
+                                <SymbolView
+                                  name={isChecked ? 'checkmark.square.fill' : 'square'}
+                                  size={20}
+                                  tintColor={isChecked ? '#10B981' : '#888'}
+                                />
+                                <View style={{ flex: 1, marginLeft: Spacing.two }}>
+                                  <ThemedText type="smallBold">
+                                    {String(item.plant).replace('_', ' ').replace(/\b\w/g, (l) => l.toUpperCase())}
+                                  </ThemedText>
+                                  <ThemedText type="small" themeColor="textSecondary">
+                                    Supports: {item.supports?.join(', ')}
+                                  </ThemedText>
+                                  <ThemedText type="small" themeColor="textSecondary">
+                                    Confidence Score: {item.confidence !== undefined ? Number(item.confidence).toFixed(1) : item.average_score !== undefined ? Number(item.average_score).toFixed(1) : 'N/A'}
+                                  </ThemedText>
+                                </View>
+                              </TouchableOpacity>
+                            </ThemedView>
+                          );
+                        })
+                      )}
 
-                {/* Existing Plant Pairs Recommendations */}
-                {interactions.recommended?.length > 0 && (
-                  <>
-                    <ThemedText type="smallBold" style={styles.categoryTitle}>
-                      Existing Plant Pairs
+                      {Object.keys(badSuggestions).length > 0 && (
+                        <>
+                          <ThemedText type="smallBold" style={[styles.categoryTitle, { color: '#EF4444' }]}>
+                            Avoid Adding
+                          </ThemedText>
+                          {Object.entries(badSuggestions).map(([pName, items]: any) => (
+                            <ThemedView key={`avoid-${pName}`} type="backgroundElement" style={styles.recItemCard}>
+                              <ThemedText type="smallBold">Near {pName}</ThemedText>
+                              <ThemedText type="small" style={{ color: '#EF4444', marginTop: 2 }}>
+                                Avoid: {items.map((i: any) => i.plant).join(', ')}
+                              </ThemedText>
+                            </ThemedView>
+                          ))}
+                        </>
+                      )}
+
+                      {interactions.recommended?.length > 0 && (
+                        <>
+                          <ThemedText type="smallBold" style={styles.categoryTitle}>
+                            Existing Plant Pairs
+                          </ThemedText>
+                          {interactions.recommended.map((item: any, idx: number) => (
+                            <ThemedView key={`pair-${idx}`} type="backgroundElement" style={styles.recItemCard}>
+                              <ThemedText type="smallBold">{item.pair}</ThemedText>
+                              <ThemedText type="small" themeColor="textSecondary">
+                                {item.description || 'Recommended matching compatibilities.'}
+                              </ThemedText>
+                            </ThemedView>
+                          ))}
+                        </>
+                      )}
+                    </View>
+                  )}
+                </View>
+              )}
+            </View>
+
+            {/* Item 3: Profile & Settings */}
+            <View style={{ marginBottom: Spacing.three }}>
+              {renderAccordionHeader(
+                'settings',
+                'Profile & App Settings',
+                'Configuration',
+                1,
+                1,
+                1.0
+              )}
+
+              {expandedSection === 'settings' && (
+                <View style={{ paddingTop: Spacing.two }}>
+                  <ThemedView type="backgroundElement" style={styles.profileCard}>
+                    <SymbolView name="person.crop.circle.fill" size={64} tintColor={themeColors.primary} />
+                    <ThemedText type="subtitle" style={styles.profileEmail}>
+                      {email || 'Signed In User'}
                     </ThemedText>
-                    {interactions.recommended.map((item: any, idx: number) => (
-                      <ThemedView key={`pair-${idx}`} type="backgroundElement" style={styles.recItemCard}>
-                        <ThemedText type="smallBold">{item.pair}</ThemedText>
-                        <ThemedText type="small" themeColor="textSecondary">
-                          {item.description || 'Recommended matching compatibilities.'}
+                    <ThemedText themeColor="textSecondary" style={styles.profileSub}>
+                      Authorized Farmer
+                    </ThemedText>
+                  </ThemedView>
+
+                  <ThemedView type="backgroundElement" style={styles.card}>
+                    <ThemedText type="smallBold" style={{ marginBottom: Spacing.one }}>
+                      App Theme & Color Mode
+                    </ThemedText>
+                    <ThemedText type="small" themeColor="textSecondary" style={{ marginBottom: Spacing.three }}>
+                      Switch between Soft Forest Light, Premium Dark, or System Default.
+                    </ThemedText>
+
+                    <View style={styles.themeSelectorRow}>
+                      <TouchableOpacity
+                        style={[
+                          styles.themeOptionCard,
+                          themePreference === 'light' && {
+                            borderColor: themeColors.primary,
+                            backgroundColor: themeColors.surface,
+                            borderWidth: 2,
+                          },
+                        ]}
+                        onPress={() => setThemePreference('light')}
+                      >
+                        <SymbolView
+                          name="sun.max.fill"
+                          size={24}
+                          tintColor={themePreference === 'light' ? themeColors.primary : themeColors.textSecondary}
+                        />
+                        <ThemedText
+                          style={[
+                            styles.themeOptionText,
+                            themePreference === 'light' && { fontWeight: 'bold', color: themeColors.primary },
+                          ]}
+                        >
+                          Light
                         </ThemedText>
-                      </ThemedView>
-                    ))}
-                  </>
-                )}
-              </View>
-            )}
-          </ScrollView>
-        ) : (
-          /* PROFILE & CONFIGURATION SETTINGS SECTION */
-          <ScrollView contentContainerStyle={styles.scrollList}>
-            {/* User details */}
-            <ThemedView type="backgroundElement" style={styles.profileCard}>
-              <SymbolView name="person.crop.circle.fill" size={64} tintColor={themeColors.primary} />
-              <ThemedText type="subtitle" style={styles.profileEmail}>
-                {email || 'Signed In User'}
-              </ThemedText>
-              <ThemedText themeColor="textSecondary" style={styles.profileSub}>
-                Authorized Farmer
-              </ThemedText>
-            </ThemedView>
+                      </TouchableOpacity>
 
-            {/* App Appearance & Theme Settings */}
-            <ThemedView type="backgroundElement" style={styles.card}>
-              <ThemedText type="smallBold" style={{ marginBottom: Spacing.one }}>
-                App Theme & Color Mode
-              </ThemedText>
-              <ThemedText type="small" themeColor="textSecondary" style={{ marginBottom: Spacing.three }}>
-                Switch between Soft Forest Light, Premium Dark, or System Default.
-              </ThemedText>
+                      <TouchableOpacity
+                        style={[
+                          styles.themeOptionCard,
+                          themePreference === 'dark' && {
+                            borderColor: themeColors.primary,
+                            backgroundColor: themeColors.surface,
+                            borderWidth: 2,
+                          },
+                        ]}
+                        onPress={() => setThemePreference('dark')}
+                      >
+                        <SymbolView
+                          name="moon.stars.fill"
+                          size={24}
+                          tintColor={themePreference === 'dark' ? themeColors.primary : themeColors.textSecondary}
+                        />
+                        <ThemedText
+                          style={[
+                            styles.themeOptionText,
+                            themePreference === 'dark' && { fontWeight: 'bold', color: themeColors.primary },
+                          ]}
+                        >
+                          Dark
+                        </ThemedText>
+                      </TouchableOpacity>
 
-              <View style={styles.themeSelectorRow}>
-                <TouchableOpacity
-                  style={[
-                    styles.themeOptionCard,
-                    themePreference === 'light' && {
-                      borderColor: themeColors.primary,
-                      backgroundColor: themeColors.surface,
-                      borderWidth: 2,
-                    },
-                  ]}
-                  onPress={() => setThemePreference('light')}
-                >
-                  <SymbolView
-                    name="sun.max.fill"
-                    size={24}
-                    tintColor={themePreference === 'light' ? themeColors.primary : themeColors.textSecondary}
-                  />
-                  <ThemedText
-                    style={[
-                      styles.themeOptionText,
-                      themePreference === 'light' && { fontWeight: 'bold', color: themeColors.primary },
-                    ]}
-                  >
-                    Light
-                  </ThemedText>
-                </TouchableOpacity>
+                      <TouchableOpacity
+                        style={[
+                          styles.themeOptionCard,
+                          themePreference === 'system' && {
+                            borderColor: themeColors.primary,
+                            backgroundColor: themeColors.surface,
+                            borderWidth: 2,
+                          },
+                        ]}
+                        onPress={() => setThemePreference('system')}
+                      >
+                        <SymbolView
+                          name="gearshape.fill"
+                          size={24}
+                          tintColor={themePreference === 'system' ? themeColors.primary : themeColors.textSecondary}
+                        />
+                        <ThemedText
+                          style={[
+                            styles.themeOptionText,
+                            themePreference === 'system' && { fontWeight: 'bold', color: themeColors.primary },
+                          ]}
+                        >
+                          System
+                        </ThemedText>
+                      </TouchableOpacity>
+                    </View>
+                  </ThemedView>
 
-                <TouchableOpacity
-                  style={[
-                    styles.themeOptionCard,
-                    themePreference === 'dark' && {
-                      borderColor: themeColors.primary,
-                      backgroundColor: themeColors.surface,
-                      borderWidth: 2,
-                    },
-                  ]}
-                  onPress={() => setThemePreference('dark')}
-                >
-                  <SymbolView
-                    name="moon.stars.fill"
-                    size={24}
-                    tintColor={themePreference === 'dark' ? themeColors.primary : themeColors.textSecondary}
-                  />
-                  <ThemedText
-                    style={[
-                      styles.themeOptionText,
-                      themePreference === 'dark' && { fontWeight: 'bold', color: themeColors.primary },
-                    ]}
-                  >
-                    Dark
-                  </ThemedText>
-                </TouchableOpacity>
+                  <ThemedView type="backgroundElement" style={styles.card}>
+                    <ThemedText type="smallBold" style={{ marginBottom: Spacing.two }}>
+                      API Connection Settings
+                    </ThemedText>
+                    <ThemedText type="small" themeColor="textSecondary" style={{ marginBottom: Spacing.two }}>
+                      Specify local server address. Falling back to default if empty.
+                    </ThemedText>
+                    <TextInput
+                      style={styles.input}
+                      value={apiUrl}
+                      onChangeText={setApiUrl}
+                      placeholder="http://10.0.2.2:8000"
+                      placeholderTextColor="#888"
+                      autoCapitalize="none"
+                      autoCorrect={false}
+                    />
+                    <TouchableOpacity style={styles.saveUrlBtn} onPress={handleSaveApiUrl}>
+                      <ThemedText style={{ color: '#fff', fontWeight: 'bold' }}>Save Server URL</ThemedText>
+                    </TouchableOpacity>
+                  </ThemedView>
 
-                <TouchableOpacity
-                  style={[
-                    styles.themeOptionCard,
-                    themePreference === 'system' && {
-                      borderColor: themeColors.primary,
-                      backgroundColor: themeColors.surface,
-                      borderWidth: 2,
-                    },
-                  ]}
-                  onPress={() => setThemePreference('system')}
-                >
-                  <SymbolView
-                    name="gearshape.fill"
-                    size={24}
-                    tintColor={themePreference === 'system' ? themeColors.primary : themeColors.textSecondary}
-                  />
-                  <ThemedText
-                    style={[
-                      styles.themeOptionText,
-                      themePreference === 'system' && { fontWeight: 'bold', color: themeColors.primary },
-                    ]}
-                  >
-                    System
-                  </ThemedText>
-                </TouchableOpacity>
-              </View>
-            </ThemedView>
-
-            {/* Target Server Config */}
-            <ThemedView type="backgroundElement" style={styles.card}>
-              <ThemedText type="smallBold" style={{ marginBottom: Spacing.two }}>
-                API Connection Settings
-              </ThemedText>
-              <ThemedText type="small" themeColor="textSecondary" style={{ marginBottom: Spacing.two }}>
-                Specify local server address. Falling back to default if empty.
-              </ThemedText>
-              <TextInput
-                style={styles.input}
-                value={apiUrl}
-                onChangeText={setApiUrl}
-                placeholder="http://10.0.2.2:8000"
-                placeholderTextColor="#888"
-                autoCapitalize="none"
-                autoCorrect={false}
-              />
-              <TouchableOpacity style={styles.saveUrlBtn} onPress={handleSaveApiUrl}>
-                <ThemedText style={{ color: '#fff', fontWeight: 'bold' }}>Save Server URL</ThemedText>
-              </TouchableOpacity>
-            </ThemedView>
-
-            {/* Sign out */}
-            <TouchableOpacity style={styles.logoutBtn} onPress={logout}>
-              <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor="#fff" />
-              <ThemedText style={styles.logoutBtnText}>Sign Out from Farm</ThemedText>
-            </TouchableOpacity>
+                  <TouchableOpacity style={styles.logoutBtn} onPress={logout}>
+                    <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor="#fff" />
+                    <ThemedText style={styles.logoutBtnText}>Sign Out from Farm</ThemedText>
+                  </TouchableOpacity>
+                </View>
+              )}
+            </View>
           </ScrollView>
         )}
       </SafeAreaView>
@@ -1096,47 +1160,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#EF4444',
   },
-  segmentedContainer: {
-    flexDirection: 'row',
-    backgroundColor: 'rgba(0,0,0,0.05)',
-    borderRadius: Spacing.two,
-    marginHorizontal: Spacing.three,
-    marginBottom: Spacing.three,
-    padding: 2,
-    maxWidth: MaxContentWidth,
-    alignSelf: 'center',
-    width: '90%',
-  },
-  segmentBtn: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: Spacing.two,
-    borderRadius: Spacing.two,
-  },
-  segmentBtnActive: {
-    backgroundColor: '#fff',
-    ...Platform.select({
-      web: {
-        boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
-      },
-      default: {
-        shadowColor: '#000',
-        shadowOpacity: 0.1,
-        shadowOffset: { width: 0, height: 1 },
-        shadowRadius: 2,
-        elevation: 1,
-      },
-    }),
-  },
-  segmentText: {
-    fontSize: 13,
-    color: '#666',
-  },
-  segmentTextActive: {
-    color: '#10B981',
-    fontWeight: 'bold',
-  },
   scrollList: {
     paddingHorizontal: Spacing.three,
     paddingBottom: BottomTabInset + Spacing.four,
@@ -1352,7 +1375,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   deleteBtn: {
-    backgroundColor: '#ba3434',
+    backgroundColor: '#6c0404',
     marginTop: Spacing.two,
   },
   gpsBtn: {
@@ -1360,7 +1383,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
-    borderColor: '#10B981',
+    borderColor: '#4d987f',
     borderRadius: Spacing.two,
     paddingVertical: Spacing.two,
     marginTop: Spacing.two,
@@ -1437,5 +1460,66 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: '#6B7280',
+  },
+  accordionHeaderCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: Spacing.three,
+    backgroundColor: 'rgba(0, 0, 0, 0.03)',
+    borderRadius: Spacing.three,
+    borderWidth: 1,
+    borderColor: 'rgba(128, 128, 128, 0.15)',
+  },
+  accordionHeaderCardActive: {
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderBottomWidth: 0,
+    backgroundColor: 'rgba(16, 185, 129, 0.08)',
+  },
+  accordionHeaderLeft: {
+    flex: 1.1,
+    paddingRight: Spacing.two,
+  },
+  accordionTitleText: {
+    fontSize: 15,
+  },
+  accordionHeaderRight: {
+    flex: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: Spacing.two,
+  },
+  accordionMetaColumn: {
+    alignItems: 'flex-end',
+  },
+  accordionDueText: {
+    fontSize: 11,
+    fontWeight: '600',
+    marginBottom: 2,
+  },
+  accordionProgressRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
+  },
+  accordionProgressBarTrack: {
+    width: 60,
+    height: 6,
+    backgroundColor: 'rgba(128, 128, 128, 0.2)',
+    borderRadius: 3,
+    overflow: 'hidden',
+  },
+  accordionProgressBarFill: {
+    height: '100%',
+    borderRadius: 3,
+  },
+  accordionRatioText: {
+    fontSize: 10,
+    fontWeight: '500',
+  },
+  arrowIconWrapper: {
+    padding: Spacing.one,
   },
 });

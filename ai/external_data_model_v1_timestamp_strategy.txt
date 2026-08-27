@@ -1,0 +1,332 @@
+Smart Farming AI — External Data and Timestamp Strategy
+===============================================================
+
+Purpose
+-------
+Define how external real-world datasets and timestamps will be used for
+the initial irrigation ML model and for later improvement using data
+collected by the Smart Farming System.
+
+1. External datasets: Model v1
+------------------------------
+
+Use real external datasets from sources such as Kaggle and Mendeley as
+the primary training data for Model v1.
+
+Reason:
+- They contain real observations rather than mocked/generated data.
+- They provide useful relationships between environmental conditions,
+  plant characteristics, and irrigation-related outcomes.
+- They do not need to contain timestamps to be useful for initial model
+  training.
+
+Model v1 concept:
+
+    Real external datasets
+        Kaggle + Mendeley
+              |
+              v
+        Preprocessing
+              |
+              v
+        Feature engineering
+              |
+              v
+        Model v1
+
+
+2. Timestamp is optional for feature engineering
+-------------------------------------------------
+
+Do NOT require every dataset to contain a timestamp.
+
+If a dataset has a timestamp:
+- Parse and validate it.
+- Use it when temporal information is needed.
+- Use it to align/merge sensor, weather, and other time-dependent data.
+- Optionally derive temporal features such as:
+    - year
+    - month
+    - day
+    - hour
+    - day_of_week
+    - week_of_year
+    - season
+
+If a dataset has no timestamp:
+- Do not invent a timestamp merely to make the dataset compatible.
+- Continue preprocessing and training using the features that are
+  actually available.
+
+The raw timestamp should normally NOT be passed directly to the ML
+model as a feature.
+
+
+3. Timestamp has two different roles
+-------------------------------------
+
+A. Data processing / operational role
+   Timestamp is important for:
+   - merging sensor and weather observations
+   - aligning observations in real time
+   - determining when an observation occurred
+   - creating temporal features
+
+B. ML feature role
+   Timestamp itself is normally not a direct ML feature.
+   Instead, useful temporal information can be extracted from it.
+
+Therefore:
+
+    timestamp
+        |
+        +--> merge/alignment
+        |
+        +--> temporal feature engineering
+                    |
+                    +--> hour
+                    +--> month
+                    +--> season
+                    +--> day_of_week
+                    |
+                    v
+              model features
+
+
+4. Initial Model v1 feature strategy
+-------------------------------------
+
+For Model v1, prioritize features that are available across the
+external datasets.
+
+Examples:
+- temperature
+- humidity
+- soil moisture
+- soil pH
+- rainfall
+- wind speed
+- plant species
+- plant characteristics
+- soil characteristics
+- other relevant environmental variables
+
+Timestamp-derived features should be optional rather than mandatory.
+
+This allows datasets without timestamps to remain usable.
+
+
+5. Real-time application data
+-----------------------------
+
+The Smart Farming System already produces timestamped sensor and weather
+data.
+
+Example:
+
+    timestamp
+    temperature
+    humidity
+    soil_moisture
+    rainfall
+    wind_speed
+    ...
+
+Timestamp will therefore be used by the application for:
+- matching sensor readings with weather observations
+- chronological analysis
+- real-time prediction
+- calculating temporal features when appropriate
+
+
+6. Future local data collection
+--------------------------------
+
+After deployment, the system will collect real-world data from its own
+environment.
+
+The collected data should be kept separately at first.
+
+Do NOT immediately mix new local data into the training dataset.
+
+First use the local data to independently evaluate Model v1.
+
+Concept:
+
+    Model v1
+       |
+       v
+    Local real-world data
+       |
+       v
+    Independent evaluation
+       |
+       +--> Good performance: continue monitoring
+       |
+       +--> Poor performance: consider model improvement
+
+
+7. Model v2 / later retraining
+-------------------------------
+
+Once enough representative local data has been collected, it can be
+combined with the external training data to create a later model version.
+
+Concept:
+
+    External real-world data
+             +
+    Local real-world data
+             |
+             v
+          Model v2
+
+The local dataset should represent different:
+- plant species
+- environmental conditions
+- soil moisture conditions
+- weather conditions
+- irrigation outcomes
+- time periods
+
+Do not use an arbitrary row count such as 1,000 as an absolute
+requirement. The quality and diversity of the observations matter more
+than the number alone.
+
+
+8. Avoiding overfitting
+-----------------------
+
+Adding local data does NOT automatically cause overtraining or
+overfitting.
+
+The main concern is overfitting if the model learns the peculiarities
+of a small or unrepresentative local dataset.
+
+To reduce this risk:
+- Keep an independent test set.
+- Evaluate Model v1 on local data before retraining.
+- Keep external and local datasets identifiable by source.
+- Compare Model v1 and Model v2 using the same evaluation metrics.
+- Use representative local data rather than only data from one plant,
+  one short period, or one environmental condition.
+- Monitor for changes in data distribution (data drift).
+
+
+9. Future temporal features
+----------------------------
+
+Once the system has collected enough timestamped observations, temporal
+patterns can become useful.
+
+Possible future features include:
+
+- soil_moisture_change_1h
+- soil_moisture_change_3h
+- soil_moisture_change_6h
+- temperature_change
+- rainfall_last_6h
+- average_temperature_last_6h
+- recent humidity trend
+
+These features require timestamped historical observations.
+
+They can allow a future model to learn not only the current condition,
+but also how the environment is changing over time.
+
+
+10. Recommended pipeline
+-------------------------
+
+Initial stage:
+
+    External real datasets
+            |
+            v
+    Schema standardization
+            |
+            v
+    Unit standardization
+            |
+            v
+    Data cleaning
+            |
+            v
+    Feature engineering
+       (timestamp optional)
+            |
+            v
+    Feature selection
+            |
+            v
+        Model v1
+
+
+Operational stage:
+
+    Sensor data + Weather data
+              |
+          timestamp
+              |
+              v
+       Merge / alignment
+              |
+              v
+       Feature engineering
+              |
+              v
+       Model v1 prediction
+
+
+Improvement stage:
+
+    Model v1
+       |
+       v
+    Local real-world data
+       |
+       v
+    Independent evaluation
+       |
+       v
+    Representative local dataset
+       +
+    External training data
+       |
+       v
+    Model v2
+
+
+Key implementation rules
+------------------------
+
+1. External Kaggle/Mendeley datasets are used for initial Model v1
+   training because they contain real data.
+
+2. A timestamp is OPTIONAL for datasets entering the training pipeline.
+
+3. Never invent timestamps simply to satisfy the pipeline.
+
+4. Timestamp should be used when needed for merging, real-time
+   alignment, chronological analysis, or temporal feature engineering.
+
+5. Do not normally use the raw timestamp itself as an ML feature.
+
+6. Timestamp-derived features such as hour, month, and season are
+   optional and should only be created when a timestamp exists.
+
+7. Keep the timestamp available in operational datasets even if it is
+   not selected as an ML feature.
+
+8. When the deployed system begins collecting real data, evaluate Model
+   v1 against that local data before retraining.
+
+9. Later local data can be incorporated into Model v2 together with the
+   external datasets.
+
+10. More data does not automatically mean overfitting. Monitor model
+    performance, test on independent data, and ensure local data is
+    representative.
+
+11. Keep dataset source and model version traceable so experiments can
+    be reproduced and compared.

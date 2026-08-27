@@ -1,0 +1,5 @@
+{
+    "temperature": "C",
+    "soil_moisture": "%",
+    "wind_speed": "m/s"
+}

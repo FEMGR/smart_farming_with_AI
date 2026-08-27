@@ -31,6 +31,8 @@ export default function HomeScreen() {
     refreshing,
   } = useData();
 
+  const [expandedSection, setExpandedSection] = useState<string | null>('watering');
+
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [weatherLoading, setWeatherLoading] = useState(false);
   const [weatherError, setWeatherError] = useState<string | null>(null);
@@ -55,6 +57,21 @@ export default function HomeScreen() {
   const dueCrops = needsWater.filter((p) => p.needs_water);
   const unreadAlerts = notifications.filter((n) => !n.is_read);
 
+  // Calculations for progress & finished ratio
+  const totalWaterTasks = plants.length || needsWater.length || 0;
+  const finishedWaterTasks = Math.max(0, totalWaterTasks - dueCrops.length);
+  const waterProgress = totalWaterTasks === 0 ? 1 : Math.min(1, Math.max(0, finishedWaterTasks / totalWaterTasks));
+
+  const totalNotis = notifications.length || 1;
+  const readNotis = notifications.filter((n) => n.is_read).length;
+  const notiProgress = Math.min(1, Math.max(0, readNotis / totalNotis));
+
+  const positionedPlantsCount = plants.filter(
+    (p) => p.bed_x !== null && p.bed_y !== null && p.bed_x !== undefined && p.bed_y !== undefined
+  ).length;
+  const totalPlantsCount = plants.length || 1;
+  const layoutProgress = Math.min(1, Math.max(0, positionedPlantsCount / totalPlantsCount));
+
   const formatDate = (dateStr?: string) => {
     if (!dateStr) return 'Never';
     try {
@@ -63,6 +80,68 @@ export default function HomeScreen() {
     } catch {
       return dateStr;
     }
+  };
+
+  const renderAccordionHeader = (
+    id: string,
+    title: string,
+    dueText: string,
+    finishedCount: number,
+    totalCount: number,
+    progress: number
+  ) => {
+    const isOpen = expandedSection === id;
+    const progressPercent = Math.round(progress * 100);
+
+    return (
+      <TouchableOpacity
+        activeOpacity={0.8}
+        onPress={() => setExpandedSection(isOpen ? null : id)}
+        style={[
+          styles.accordionHeaderCard,
+          {
+            backgroundColor: isOpen ? themeColors.badgeSuccessBackground : themeColors.backgroundElement,
+            borderColor: themeColors.border,
+          },
+          isOpen && styles.accordionHeaderCardActive,
+        ]}
+      >
+        <View style={styles.accordionHeaderLeft}>
+          <ThemedText type="smallBold" style={styles.accordionTitleText}>
+            {title}
+          </ThemedText>
+        </View>
+
+        <View style={styles.accordionHeaderRight}>
+          <View style={styles.accordionMetaColumn}>
+            <ThemedText themeColor="textSecondary" style={styles.accordionDueText}>
+              {dueText}
+            </ThemedText>
+            <View style={styles.accordionProgressRow}>
+              <View style={[styles.accordionProgressBarTrack, { backgroundColor: themeColors.disabled }]}>
+                <View
+                  style={[
+                    styles.accordionProgressBarFill,
+                    { width: `${progressPercent}%`, backgroundColor: themeColors.emerald },
+                  ]}
+                />
+              </View>
+              <ThemedText themeColor="textSecondary" style={styles.accordionRatioText}>
+                {`${finishedCount}/${totalCount} (${progressPercent}%)`}
+              </ThemedText>
+            </View>
+          </View>
+
+          <View style={styles.arrowIconWrapper}>
+            <SymbolView
+              name={isOpen ? 'chevron.up' : 'chevron.down'}
+              size={18}
+              tintColor={themeColors.emerald}
+            />
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
   };
 
   // Render Saved Layout Grid Matrix
@@ -74,7 +153,7 @@ export default function HomeScreen() {
     if (positionedPlants.length === 0) {
       return (
         <ThemedView type="backgroundElement" style={styles.emptyGridCard}>
-          <SymbolView name="grid" size={32} tintColor="#888" />
+          <SymbolView name="grid" size={32} tintColor={themeColors.placeholder} />
           <ThemedText themeColor="textSecondary" style={styles.emptyGridText}>
             No plants assigned to layout positions yet.
           </ThemedText>
@@ -107,7 +186,9 @@ export default function HomeScreen() {
                   key={`cell-${x}-${y}`}
                   style={[
                     styles.gridCell,
-                    plant ? styles.gridCellOccupied : styles.gridCellEmpty,
+                    plant
+                      ? { backgroundColor: themeColors.badgeSuccessBackground, borderWidth: 1.5, borderColor: themeColors.emerald }
+                      : { backgroundColor: themeColors.backgroundElement, borderWidth: 1, borderColor: themeColors.border },
                   ]}
                 >
                   {plant ? (
@@ -134,7 +215,7 @@ export default function HomeScreen() {
   if (loading && plants.length === 0) {
     return (
       <ThemedView style={styles.center}>
-        <ActivityIndicator size="large" color="#10B981" />
+        <ActivityIndicator size="large" color={themeColors.emerald} />
       </ThemedView>
     );
   }
@@ -158,15 +239,15 @@ export default function HomeScreen() {
                 Live farm vitals and alerts
               </ThemedText>
             </View>
-            <TouchableOpacity onPress={refreshAll} style={styles.refreshButton}>
-              <SymbolView name="arrow.clockwise" size={20} tintColor="#10B981" />
+            <TouchableOpacity onPress={refreshAll} style={[styles.refreshButton, { backgroundColor: themeColors.badgeSuccessBackground }]}>
+              <SymbolView name="arrow.clockwise" size={20} tintColor={themeColors.emerald} />
             </TouchableOpacity>
           </View>
 
           {/* Quick Metrics Grid */}
           <View style={styles.metricsGrid}>
             <ThemedView type="backgroundElement" style={styles.metricCard}>
-              <SymbolView name="leaf" size={24} tintColor="#10B981" />
+              <SymbolView name="leaf" size={24} tintColor={themeColors.emerald} />
               <ThemedText type="subtitle" style={styles.metricValue}>
                 {plants.length}
               </ThemedText>
@@ -176,7 +257,7 @@ export default function HomeScreen() {
             </ThemedView>
 
             <ThemedView type="backgroundElement" style={styles.metricCard}>
-              <SymbolView name="mappin.and.ellipse" size={24} tintColor="#3B82F6" />
+              <SymbolView name="mappin.and.ellipse" size={24} tintColor={themeColors.blue} />
               <ThemedText type="subtitle" style={styles.metricValue}>
                 {locations.length}
               </ThemedText>
@@ -186,7 +267,7 @@ export default function HomeScreen() {
             </ThemedView>
 
             <ThemedView type="backgroundElement" style={styles.metricCard}>
-              <SymbolView name="drop.fill" size={24} tintColor="#06B6D4" />
+              <SymbolView name="drop.fill" size={24} tintColor={themeColors.cyan} />
               <ThemedText type="subtitle" style={styles.metricValue}>
                 {dueCrops.length}
               </ThemedText>
@@ -196,7 +277,7 @@ export default function HomeScreen() {
             </ThemedView>
 
             <ThemedView type="backgroundElement" style={styles.metricCard}>
-              <SymbolView name="bell.badge.fill" size={24} tintColor="#EF4444" />
+              <SymbolView name="bell.badge.fill" size={24} tintColor={themeColors.badgeErrorText} />
               <ThemedText type="subtitle" style={styles.metricValue}>
                 {unreadAlerts.length}
               </ThemedText>
@@ -206,177 +287,212 @@ export default function HomeScreen() {
             </ThemedView>
           </View>
 
-          {/* Live Weather Section */}
+          {/* Accordion Item 1: Watering Queue */}
           <View style={styles.section}>
-            <ThemedView type="backgroundElement" style={styles.weatherCard}>
-              <View style={styles.weatherHeaderRow}>
-                <View style={{ flexDirection: 'row', alignItems: 'center', gap: Spacing.two, flex: 1 }}>
-                  <SymbolView
-                    name={weather ? (weather.iconName as any) : 'cloud.sun.fill'}
-                    size={28}
-                    tintColor={themeColors.primary}
-                  />
-                  <View style={{ flex: 1 }}>
-                    <ThemedText type="smallBold">Farm Weather & Vitals</ThemedText>
-                    <ThemedText themeColor="textSecondary" style={{ fontSize: 12 }}>
-                      {weather ? `${weather.locationName} • ${weather.updatedAt}` : 'Real-time Forecast'}
-                    </ThemedText>
-                  </View>
-                </View>
+            {renderAccordionHeader(
+              'watering',
+              'Watering Queue',
+              `Due: ${dueCrops.length} pending`,
+              finishedWaterTasks,
+              totalWaterTasks,
+              waterProgress
+            )}
 
-                <TouchableOpacity
-                  style={[styles.fetchWeatherBtn, { backgroundColor: themeColors.primary }, weatherLoading && { opacity: 0.7 }]}
-                  onPress={handleFetchWeather}
-                  disabled={weatherLoading}
-                >
-                  {weatherLoading ? (
-                    <ActivityIndicator size="small" color="#fff" />
-                  ) : (
-                    <>
-                      <SymbolView name={weather ? 'arrow.clockwise' : 'cloud.sun.fill'} size={14} tintColor="#fff" />
-                      <ThemedText style={styles.fetchWeatherBtnText}>
-                        {weather ? 'Refresh' : 'Fetch Weather'}
-                      </ThemedText>
-                    </>
-                  )}
-                </TouchableOpacity>
+            {expandedSection === 'watering' && (
+              <View style={styles.accordionContentContainer}>
+                {dueCrops.length === 0 ? (
+                  <ThemedView type="backgroundElement" style={styles.emptyCard}>
+                    <SymbolView name="checkmark.circle.fill" size={24} tintColor={themeColors.emerald} />
+                    <ThemedText themeColor="textSecondary" style={styles.emptyText}>
+                      All plants are hydrated. No due tasks!
+                    </ThemedText>
+                  </ThemedView>
+                ) : (
+                  dueCrops.slice(0, 6).map((item) => (
+                    <ThemedView
+                      key={`due-${item.plant_id}`}
+                      type="backgroundElement"
+                      style={styles.queueItem}
+                    >
+                      <View style={{ flex: 1 }}>
+                        <ThemedText type="smallBold">{item.name}</ThemedText>
+                        <ThemedText themeColor="textSecondary" style={styles.queueSub}>
+                          Last watered: {formatDate(item.last_watered)}
+                        </ThemedText>
+                      </View>
+                      <TouchableOpacity
+                        style={[styles.waterButton, { backgroundColor: themeColors.careWater }]}
+                        onPress={() => waterOne(item.plant_id)}
+                      >
+                        <SymbolView name="drop.fill" size={14} tintColor={themeColors.textInverse} />
+                        <ThemedText style={[styles.waterButtonText, { color: themeColors.textInverse }]}>Water</ThemedText>
+                      </TouchableOpacity>
+                    </ThemedView>
+                  ))
+                )}
               </View>
-
-              {weatherError && (
-                <View style={styles.weatherErrorBox}>
-                  <ThemedText style={styles.weatherErrorText}>{weatherError}</ThemedText>
-                </View>
-              )}
-
-              {weather ? (
-                <View style={{ marginTop: Spacing.two }}>
-                  <View style={styles.weatherGrid}>
-                    <View style={styles.weatherStatItem}>
-                      <ThemedText type="subtitle" style={{ color: themeColors.primary, fontWeight: '700' }}>
-                        {weather.temperature}°C
-                      </ThemedText>
-                      <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
-                        {weather.condition}
-                      </ThemedText>
-                    </View>
-
-                    <View style={styles.weatherStatItem}>
-                      <ThemedText type="smallBold">
-                        {weather.highTemp !== undefined ? `${weather.highTemp}° / ${weather.lowTemp}°` : '--'}
-                      </ThemedText>
-                      <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
-                        High / Low
-                      </ThemedText>
-                    </View>
-
-                    <View style={styles.weatherStatItem}>
-                      <ThemedText type="smallBold">{weather.windspeed} km/h</ThemedText>
-                      <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
-                        Wind Speed
-                      </ThemedText>
-                    </View>
-                  </View>
-
-                  <View style={[styles.adviceBox, { backgroundColor: themeColors.surfaceSubtle }]}>
-                    <SymbolView name="lightbulb.fill" size={16} tintColor={themeColors.primary} />
-                    <ThemedText style={styles.adviceText}>{weather.farmingAdvice}</ThemedText>
-                  </View>
-                </View>
-              ) : !weatherLoading ? (
-                <ThemedText themeColor="textSecondary" style={styles.weatherPromptText}>
-                  Tap "Fetch Weather" to load current weather conditions and smart irrigation advice.
-                </ThemedText>
-              ) : null}
-            </ThemedView>
-          </View>
-
-          {/* Watering Queue */}
-          <View style={styles.section}>
-            <View style={styles.sectionHeader}>
-              <ThemedText type="smallBold" style={styles.sectionTitle}>
-                Watering Queue
-              </ThemedText>
-              {dueCrops.length > 6 && (
-                <ThemedText themeColor="textSecondary" type="small">
-                  showing top 6
-                </ThemedText>
-              )}
-            </View>
-
-            {dueCrops.length === 0 ? (
-              <ThemedView type="backgroundElement" style={styles.emptyCard}>
-                <SymbolView name="checkmark.circle.fill" size={24} tintColor="#10B981" />
-                <ThemedText themeColor="textSecondary" style={styles.emptyText}>
-                  All plants are hydrated. No due tasks!
-                </ThemedText>
-              </ThemedView>
-            ) : (
-              dueCrops.slice(0, 6).map((item) => (
-                <ThemedView
-                  key={`due-${item.plant_id}`}
-                  type="backgroundElement"
-                  style={styles.queueItem}
-                >
-                  <View style={{ flex: 1 }}>
-                    <ThemedText type="smallBold">{item.name}</ThemedText>
-                    <ThemedText themeColor="textSecondary" style={styles.queueSub}>
-                      Last watered: {formatDate(item.last_watered)}
-                    </ThemedText>
-                  </View>
-                  <TouchableOpacity
-                    style={styles.waterButton}
-                    onPress={() => waterOne(item.plant_id)}
-                  >
-                    <SymbolView name="drop.fill" size={14} tintColor="#fff" />
-                    <ThemedText style={styles.waterButtonText}>Water</ThemedText>
-                  </TouchableOpacity>
-                </ThemedView>
-              ))
             )}
           </View>
 
-          {/* Saved Layout Visual Grid */}
+          {/* Accordion Item 2: Recent Notifications */}
           <View style={styles.section}>
-            <ThemedText type="smallBold" style={styles.sectionTitle}>
-              Saved Bed Layout
-            </ThemedText>
-            {renderLayoutGrid()}
+            {renderAccordionHeader(
+              'notifications',
+              'Recent Notifications',
+              `Alerts: ${unreadAlerts.length} unread`,
+              readNotis,
+              totalNotis,
+              notiProgress
+            )}
+
+            {expandedSection === 'notifications' && (
+              <View style={styles.accordionContentContainer}>
+                {notifications.length === 0 ? (
+                  <ThemedView type="backgroundElement" style={styles.emptyCard}>
+                    <SymbolView name="envelope.open.fill" size={24} tintColor={themeColors.placeholder} />
+                    <ThemedText themeColor="textSecondary" style={styles.emptyText}>
+                      No notifications.
+                    </ThemedText>
+                  </ThemedView>
+                ) : (
+                  notifications.slice(0, 5).map((noti) => (
+                    <ThemedView
+                      key={`noti-${noti.id}`}
+                      type="backgroundElement"
+                      style={[styles.notiItem, !noti.is_read && { borderLeftWidth: 4, borderLeftColor: themeColors.badgeErrorText }]}
+                    >
+                      <View style={styles.notiHeaderLine}>
+                        <ThemedText type="smallBold" style={{ flex: 1 }}>
+                          {noti.message}
+                        </ThemedText>
+                        <View style={[styles.statusBadge, noti.is_read ? { backgroundColor: themeColors.disabled } : { backgroundColor: themeColors.badgeErrorBackground }]}>
+                          <ThemedText style={[styles.statusBadgeText, { color: noti.is_read ? themeColors.textSecondary : themeColors.badgeErrorText }]}>
+                            {noti.is_read ? 'Read' : 'New'}
+                          </ThemedText>
+                        </View>
+                      </View>
+                      <ThemedText themeColor="textSecondary" style={styles.notiTime}>
+                        {formatDate(noti.created_at)}
+                      </ThemedText>
+                    </ThemedView>
+                  ))
+                )}
+              </View>
+            )}
           </View>
 
-          {/* Recent Notifications */}
+          {/* Accordion Item 3: Saved Layout */}
           <View style={styles.section}>
-            <ThemedText type="smallBold" style={styles.sectionTitle}>
-              Recent Notifications
-            </ThemedText>
-            {notifications.length === 0 ? (
-              <ThemedView type="backgroundElement" style={styles.emptyCard}>
-                <SymbolView name="envelope.open.fill" size={24} tintColor="#888" />
-                <ThemedText themeColor="textSecondary" style={styles.emptyText}>
-                  No notifications.
-                </ThemedText>
-              </ThemedView>
-            ) : (
-              notifications.slice(0, 5).map((noti) => (
-                <ThemedView
-                  key={`noti-${noti.id}`}
-                  type="backgroundElement"
-                  style={[styles.notiItem, !noti.is_read && styles.notiUnread]}
-                >
-                  <View style={styles.notiHeaderLine}>
-                    <ThemedText type="smallBold" style={{ flex: 1 }}>
-                      {noti.message}
-                    </ThemedText>
-                    <View style={[styles.statusBadge, noti.is_read ? styles.badgeRead : styles.badgeUnread]}>
-                      <ThemedText style={styles.statusBadgeText}>
-                        {noti.is_read ? 'Read' : 'New'}
-                      </ThemedText>
+            {renderAccordionHeader(
+              'layout',
+              'Saved Bed Layout',
+              `Placed: ${positionedPlantsCount}`,
+              positionedPlantsCount,
+              totalPlantsCount,
+              layoutProgress
+            )}
+
+            {expandedSection === 'layout' && (
+              <View style={styles.accordionContentContainer}>
+                {renderLayoutGrid()}
+              </View>
+            )}
+          </View>
+
+          {/* Accordion Item 4: Farm Weather & Vitals */}
+          <View style={styles.section}>
+            {renderAccordionHeader(
+              'weather',
+              'Farm Weather & Vitals',
+              weather ? `${weather.temperature}°C · ${weather.condition}` : 'Forecast ready',
+              weather ? 1 : 0,
+              1,
+              weather ? 1 : 0
+            )}
+
+            {expandedSection === 'weather' && (
+              <View style={styles.accordionContentContainer}>
+                <ThemedView type="backgroundElement" style={styles.weatherCard}>
+                  <View style={styles.weatherHeaderRow}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', gap: Spacing.two, flex: 1 }}>
+                      <SymbolView
+                        name={weather ? (weather.iconName as any) : 'cloud.sun.fill'}
+                        size={28}
+                        tintColor={themeColors.primary}
+                      />
+                      <View style={{ flex: 1 }}>
+                        <ThemedText type="smallBold">Farm Weather & Vitals</ThemedText>
+                        <ThemedText themeColor="textSecondary" style={{ fontSize: 12 }}>
+                          {weather ? `${weather.locationName} • ${weather.updatedAt}` : 'Real-time Forecast'}
+                        </ThemedText>
+                      </View>
                     </View>
+
+                    <TouchableOpacity
+                      style={[styles.fetchWeatherBtn, { backgroundColor: themeColors.primary }, weatherLoading && { opacity: 0.7 }]}
+                      onPress={handleFetchWeather}
+                      disabled={weatherLoading}
+                    >
+                      {weatherLoading ? (
+                        <ActivityIndicator size="small" color={themeColors.textInverse} />
+                      ) : (
+                        <>
+                          <SymbolView name={weather ? 'arrow.clockwise' : 'cloud.sun.fill'} size={14} tintColor={themeColors.textInverse} />
+                          <ThemedText style={[styles.fetchWeatherBtnText, { color: themeColors.textInverse }]}>
+                            {weather ? 'Refresh' : 'Fetch Weather'}
+                          </ThemedText>
+                        </>
+                      )}
+                    </TouchableOpacity>
                   </View>
-                  <ThemedText themeColor="textSecondary" style={styles.notiTime}>
-                    {formatDate(noti.created_at)}
-                  </ThemedText>
+
+                  {weatherError && (
+                    <View style={styles.weatherErrorBox}>
+                      <ThemedText style={styles.weatherErrorText}>{weatherError}</ThemedText>
+                    </View>
+                  )}
+
+                  {weather ? (
+                    <View style={{ marginTop: Spacing.two }}>
+                      <View style={styles.weatherGrid}>
+                        <View style={styles.weatherStatItem}>
+                          <ThemedText type="subtitle" style={{ color: themeColors.primary, fontWeight: '700' }}>
+                            {weather.temperature}°C
+                          </ThemedText>
+                          <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
+                            {weather.condition}
+                          </ThemedText>
+                        </View>
+
+                        <View style={styles.weatherStatItem}>
+                          <ThemedText type="smallBold">
+                            {weather.highTemp !== undefined ? `${weather.highTemp}° / ${weather.lowTemp}°` : '--'}
+                          </ThemedText>
+                          <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
+                            High / Low
+                          </ThemedText>
+                        </View>
+
+                        <View style={styles.weatherStatItem}>
+                          <ThemedText type="smallBold">{weather.windspeed} km/h</ThemedText>
+                          <ThemedText themeColor="textSecondary" style={styles.weatherStatLabel}>
+                            Wind Speed
+                          </ThemedText>
+                        </View>
+                      </View>
+
+                      <View style={[styles.adviceBox, { backgroundColor: themeColors.surfaceSubtle }]}>
+                        <SymbolView name="lightbulb.fill" size={16} tintColor={themeColors.primary} />
+                        <ThemedText style={styles.adviceText}>{weather.farmingAdvice}</ThemedText>
+                      </View>
+                    </View>
+                  ) : !weatherLoading ? (
+                    <ThemedText themeColor="textSecondary" style={styles.weatherPromptText}>
+                      Tap "Fetch Weather" to load current weather conditions and smart irrigation advice.
+                    </ThemedText>
+                  ) : null}
                 </ThemedView>
-              ))
+              </View>
             )}
           </View>
         </ScrollView>
@@ -644,4 +760,77 @@ const styles = StyleSheet.create({
     color: '#EF4444',
     fontSize: 12,
   },
+  accordionHeaderCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: Spacing.three,
+    backgroundColor: 'rgba(0, 0, 0, 0.03)',
+    borderRadius: Spacing.three,
+    borderWidth: 1,
+    borderColor: 'rgba(128, 128, 128, 0.15)',
+  },
+  accordionHeaderCardActive: {
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderBottomWidth: 0,
+    backgroundColor: 'rgba(16, 185, 129, 0.08)',
+  },
+  accordionHeaderLeft: {
+    flex: 1.1,
+    paddingRight: Spacing.two,
+  },
+  accordionTitleText: {
+    fontSize: 15,
+  },
+  accordionHeaderRight: {
+    flex: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: Spacing.two,
+  },
+  accordionMetaColumn: {
+    alignItems: 'flex-end',
+  },
+  accordionDueText: {
+    fontSize: 11,
+    fontWeight: '600',
+    marginBottom: 2,
+  },
+  accordionProgressRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
+  },
+  accordionProgressBarTrack: {
+    width: 60,
+    height: 6,
+    backgroundColor: 'rgba(128, 128, 128, 0.2)',
+    borderRadius: 3,
+    overflow: 'hidden',
+  },
+  accordionProgressBarFill: {
+    height: '100%',
+    borderRadius: 3,
+  },
+  accordionRatioText: {
+    fontSize: 10,
+    fontWeight: '500',
+  },
+  arrowIconWrapper: {
+    padding: Spacing.one,
+  },
+  accordionContentContainer: {
+    paddingTop: Spacing.two,
+    paddingHorizontal: Spacing.two,
+    paddingBottom: Spacing.two,
+    borderBottomLeftRadius: Spacing.three,
+    borderBottomRightRadius: Spacing.three,
+    borderWidth: 1,
+    borderColor: 'rgba(128, 128, 128, 0.15)',
+    borderTopWidth: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.01)',
+  },
 });
+

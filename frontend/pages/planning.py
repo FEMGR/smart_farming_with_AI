@@ -128,19 +128,81 @@ def add_selected_plants_to_preview(selected_additions: list[str]) -> None:
 
 
 def render_planning_page():
-    st.title("Polyculture Production Planning")
+    st.subheader("Polyculture Production Planning")
+    st.caption("Plan compatible crop groups, assign them to farm sections, preview timelines, and confirm production batches.")
 
-    st.caption("Plan compatible crop groups, assign them to farm sections, " "preview timelines, and confirm production batches.")
+    if "planning_expanded_accordion" not in st.session_state:
+        st.session_state["planning_expanded_accordion"] = "saved"
 
-    tab_saved, tab_sections, tab_preview = st.tabs(["Saved Plans", "Farm Sections", "Polyculture Preview"])
+    plans = planning_api.get_polyculture_plans() or []
+    sections = planning_api.get_sections() or []
 
-    with tab_saved:
-        render_saved_plans_tab()
+    accordion_items = [
+        {
+            "id": "saved",
+            "title": "Saved Polyculture Plans",
+            "due": f"Saved: {len(plans)} plans",
+            "finished_count": len(plans),
+            "total_count": len(plans) or 1,
+            "progress": 1.0,
+            "type": "saved",
+        },
+        {
+            "id": "sections",
+            "title": "Farm Sections & Allocation",
+            "due": f"Sections: {len(sections)} active",
+            "finished_count": len(sections),
+            "total_count": len(sections) or 1,
+            "progress": 1.0,
+            "type": "sections",
+        },
+        {
+            "id": "preview",
+            "title": "Polyculture Plan Generator & Preview",
+            "due": "Interactive Planner",
+            "finished_count": 1,
+            "total_count": 1,
+            "progress": 1.0,
+            "type": "preview",
+        },
+    ]
 
-    with tab_sections:
-        render_sections_tab()
-    with tab_preview:
-        render_polyculture_preview_tab()
+    for item in accordion_items:
+        sec_id = item["id"]
+        is_open = st.session_state.get("planning_expanded_accordion") == sec_id
+        arrow_icon = "▲" if is_open else "▼"
+
+        st.markdown('<div class="farm-panel" style="margin-bottom: 12px; padding: 16px;">', unsafe_allow_html=True)
+        col_title, col_due, col_progress, col_arrow = st.columns([3, 2, 4, 1])
+
+        with col_title:
+            st.markdown(f"### {item['title']}")
+
+        with col_due:
+            st.markdown(f"**Deadline / Status:**<br>`{item['due']}`", unsafe_allow_html=True)
+
+        with col_progress:
+            st.markdown(f"**Tasks:** {item['finished_count']} / {item['total_count']} ({int(item['progress'] * 100)}%)")
+            st.progress(item["progress"])
+
+        with col_arrow:
+            if st.button(arrow_icon, key=f"btn_acc_plan_{sec_id}", help=f"Toggle {item['title']}"):
+                if is_open:
+                    st.session_state["planning_expanded_accordion"] = None
+                else:
+                    st.session_state["planning_expanded_accordion"] = sec_id
+                st.rerun()
+
+        if is_open:
+            st.divider()
+            if item["type"] == "saved":
+                render_saved_plans_tab()
+            elif item["type"] == "sections":
+                render_sections_tab()
+            elif item["type"] == "preview":
+                render_polyculture_preview_tab()
+
+        st.markdown("</div>", unsafe_allow_html=True)
 
 
 def render_saved_plans_tab():

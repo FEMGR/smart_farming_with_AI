@@ -2,11 +2,22 @@
 
 from __future__ import annotations
 
-from pathlib import Path
+import argparse
 import json
 import shutil
 import sys
-from typing import Any
+from pathlib import Path
+from typing import Any, Callable, Optional
+import pandas as pd
+
+from ai.core.constants import (
+    FEATURE_ENG_INPUT_FILE as INPUT_FILE,
+    FEATURE_ENG_OUTPUT_FILE as OUTPUT_FILE,
+)
+from ai.core.file_prompter import choose_input_file, generate_phase_output_filename, prompt_menu_choice, pause_for_user, PROCESSED_DATA_DIR
+from ai.core.menu_runner import MenuRunner, MenuItem
+from ai.preprocessing.feature_engineering import process_feature_engineering_file
+from plant_data_bank_scripts.scripts.project_paths import PATHS
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 if str(PROJECT_ROOT) not in sys.path:
@@ -326,6 +337,129 @@ def _make_json_safe(value):
     if isinstance(value, Path):
         return str(value)
     return value
+
+
+# =========================================================
+# MENU & WORKFLOW DRIVER
+# =========================================================
+
+
+def train_using_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[pd.DataFrame]:
+    """
+    Prompt user to select a custom dataset file via file_prompter and engineer features.
+    """
+    if dry_run:
+        print("[DRY RUN] Would select a custom file via file_prompter and engineer features.")
+        return None
+
+    try:
+        input_file = choose_input_file(directory=PROCESSED_DATA_DIR)
+        output_file = generate_phase_output_filename(input_file=input_file, phase="featured")
+    except KeyboardInterrupt:
+        print("\nFile selection cancelled.")
+        return None
+    except (FileNotFoundError, FileExistsError) as error:
+        print(f"\nError: {error}")
+        return None
+
+    print(f"\nSelected Input File : {input_file}")
+    print(f"Target Output File  : {output_file}")
+
+    return process_feature_engineering_file(input_file=input_file, output_file=output_file)
+
+
+def train_using_default_data(dry_run: bool = False, interactive: bool = True) -> Optional[pd.DataFrame]:
+    """
+    Run feature engineering on default merged dataset file.
+    """
+    if dry_run:
+        print(f"[DRY RUN] Would process default merged dataset: {INPUT_FILE}")
+        return None
+
+    if not INPUT_FILE.exists():
+        print(f"\nError: Input file not found:\n{INPUT_FILE}")
+        return None
+
+    return process_feature_engineering_file(input_file=INPUT_FILE, output_file=OUTPUT_FILE)
+
+
+def interactive_loop(dry_run: bool = False) -> None:
+    PATHS.ensure_dirs()
+
+    menu = MenuRunner(
+        title="Disease Training Menu",
+        items=[
+            MenuItem(
+                key="1",
+                label="Train using custom file (using file_prompter)",
+                action=train_using_custom_data,
+            ),
+            MenuItem(
+                key="2",
+                label="Train using default merged data (original process)",
+                action=train_using_default_data,
+            ),
+            MenuItem(
+                key="0",
+                label="Exit",
+                action=lambda dry_run: None,
+            ),
+        ],
+        prompt_func=prompt_menu_choice,
+        pause_func=pause_for_user,
+        notes=[
+            "Option 1 lets you pick a specific file for training.",
+            "Option 2 runs train using default merged dataset.",
+        ],
+    )
+
+    menu.run(dry_run=dry_run)
+
+
+def run_non_interactive(command: str, dry_run: bool = False) -> None:
+    shortcuts: dict[str, Callable[[bool], None]] = {
+        "custom": lambda dry_run: train_using_custom_data(dry_run=dry_run, interactive=False),
+        "default": lambda dry_run: train_using_default_data(dry_run=dry_run, interactive=False),
+    }
+
+    action = shortcuts.get(command)
+
+    if not action:
+        print(f"Unknown command: {command}")
+        print("")
+        print("Available commands:")
+        for key in shortcuts:
+            print(f" - {key}")
+        sys.exit(1)
+
+    PATHS.ensure_dirs()
+    action(dry_run)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Interactive manager for Training")
+
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print commands without executing them where supported.",
+    )
+
+    parser.add_argument(
+        "--command",
+        choices=[
+            "custom",
+            "default",
+        ],
+        help="Run a workflow directly without opening the menu.",
+    )
+
+    args = parser.parse_args()
+
+    if args.command:
+        run_non_interactive(args.command, dry_run=args.dry_run)
+    else:
+        interactive_loop(dry_run=args.dry_run)
 
 
 if __name__ == "__main__":

@@ -4,6 +4,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from ai.core.file_status import write_dataframe_csv_with_status
+
 
 def get_feature_importance(
     model,
@@ -35,9 +37,11 @@ def save_feature_importance(
     """Save feature importance as CSV."""
 
     output_path = Path(path)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    importance.to_csv(output_path, index=False)
-    return output_path
+    return write_dataframe_csv_with_status(
+        importance,
+        output_path,
+        description="feature importance",
+    )
 
 
 def extract_and_save_feature_importance(

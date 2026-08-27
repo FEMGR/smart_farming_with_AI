@@ -120,12 +120,12 @@ export function CustomTabList(props: TabListProps) {
             style={({ pressed }) => [styles.menuButton, pressed && styles.pressed]}
           >
             <SymbolView
-              tintColor="#ECFEFF"
+              tintColor={colors.textInverse}
               name="line.3.horizontal"
               size={20}
             />
             <SymbolView
-              tintColor="#ECFEFF"
+              tintColor={colors.textInverse}
               name={menuOpen ? 'chevron.up' : 'chevron.down'}
               size={14}
             />
@@ -170,24 +170,25 @@ export function CustomTabList(props: TabListProps) {
 
         {props.children}
 
-        <ExternalLink href="https://docs.expo.dev" asChild>
-          <Pressable style={styles.externalPressable}>
-            <ThemedText type="link">Docs</ThemedText>
-            <SymbolView
-              tintColor={colors.text}
-              name={{ ios: 'arrow.up.right.square', web: 'link' }}
-              size={12}
-            />
-          </Pressable>
+        <ExternalLink href="https://docs.expo.dev" style={styles.externalPressable}>
+          <ThemedText type="link">Docs</ThemedText>
+          <SymbolView
+            tintColor={colors.text}
+            name="link"
+            size={12}
+          />
         </ExternalLink>
 
-        <Pressable style={styles.signOutPressable} onPress={logout}>
+        <Pressable
+          style={[styles.signOutPressable, { backgroundColor: colors.errorBackground }]}
+          onPress={logout}
+        >
+          <ThemedText style={{ color: colors.errorText, fontWeight: 'bold', fontSize: 13 }}>Sign Out</ThemedText>
           <SymbolView
-            tintColor="#fff"
+            tintColor={colors.errorText}
             name="rectangle.portrait.and.arrow.right"
             size={14}
           />
-          <ThemedText style={styles.signOutText}>Sign Out</ThemedText>
         </Pressable>
       </ThemedView>
     </View>
@@ -286,7 +287,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     marginTop: Spacing.one,
     borderRadius: Spacing.two,
-    backgroundColor: '#533441',
   },
   externalPressable: {
     flexDirection: 'row',
@@ -303,10 +303,8 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.one,
     paddingHorizontal: Spacing.three,
     borderRadius: Spacing.three,
-    backgroundColor: '#533441',
   },
   signOutText: {
-    color: '#fff',
     fontSize: 13,
     fontWeight: '600',
   },

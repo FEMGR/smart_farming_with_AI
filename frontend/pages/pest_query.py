@@ -100,42 +100,103 @@ def _render_sources(records: list[dict[str, Any]]) -> None:
 
 
 def render_pest_query() -> None:
-    st.subheader("Pest Query")
+    st.subheader("Pest Diagnostics & Knowledge Base")
 
-    query = st.text_input("Search pest", placeholder="aphids, thrips, flea beetles, spider mites")
+    if "pest_expanded_accordion" not in st.session_state:
+        st.session_state["pest_expanded_accordion"] = "search"
 
-    if not query:
-        st.caption("Search a pest name to query the Prolog knowledge base and matched plant database records.")
-        return
+    query = st.session_state.get("pest_search_query", "")
 
-    try:
-        with st.spinner("Querying pest knowledge..."):
-            profile = get_pest_profile(query)
-    except RuntimeError as exc:
-        st.error(str(exc))
-        return
+    accordion_items = [
+        {
+            "id": "search",
+            "title": "Pest & Symptom Query",
+            "due": f"Query: '{query}'" if query else "Ready to Search",
+            "finished_count": 1 if query else 0,
+            "total_count": 1,
+            "progress": 1.0 if query else 0.0,
+            "type": "search",
+        },
+        {
+            "id": "profile",
+            "title": "Pest Profile & Guidelines",
+            "due": "Diagnostic Results",
+            "finished_count": 1,
+            "total_count": 1,
+            "progress": 1.0,
+            "type": "profile",
+        },
+    ]
 
-    pest_name = profile.get("pest") or _display_name(query)
-    normalized = profile.get("normalized_pest")
+    for item in accordion_items:
+        sec_id = item["id"]
+        is_open = st.session_state.get("pest_expanded_accordion") == sec_id
+        arrow_icon = "▲" if is_open else "▼"
 
-    st.write(f"**{pest_name}**")
-    if normalized:
-        st.markdown(f'<span class="status-pill">atom {normalized}</span>', unsafe_allow_html=True)
+        st.markdown('<div class="farm-panel" style="margin-bottom: 12px; padding: 16px;">', unsafe_allow_html=True)
+        col_title, col_due, col_progress, col_arrow = st.columns([3, 2, 4, 1])
 
-    deterrents = profile.get("deterrents") or []
-    hosts = profile.get("hosts") or []
-    predators = profile.get("predators") or []
-    symptoms = profile.get("damage_symptoms") or []
-    sources = profile.get("sources") or []
+        with col_title:
+            st.markdown(f"### {item['title']}")
 
-    metric_cols = st.columns(4)
-    metric_cols[0].metric("Deterrents", len(deterrents))
-    metric_cols[1].metric("Host plants", len(hosts))
-    metric_cols[2].metric("Predators", len(predators))
-    metric_cols[3].metric("Symptoms", len(symptoms))
+        with col_due:
+            st.markdown(f"**Deadline / Status:**<br>`{item['due']}`", unsafe_allow_html=True)
 
-    _render_plant_records("Deterrent Plants", deterrents, "No deterrent plants are recorded for this pest.")
-    _render_plant_records("Host Plants", hosts, "No host plants are recorded for this pest.")
-    _render_predators(predators)
-    _render_damage_symptoms(symptoms)
-    _render_sources(sources)
+        with col_progress:
+            st.markdown(f"**Tasks:** {item['finished_count']} / {item['total_count']} ({int(item['progress'] * 100)}%)")
+            st.progress(item["progress"])
+
+        with col_arrow:
+            if st.button(arrow_icon, key=f"btn_acc_pest_{sec_id}", help=f"Toggle {item['title']}"):
+                if is_open:
+                    st.session_state["pest_expanded_accordion"] = None
+                else:
+                    st.session_state["pest_expanded_accordion"] = sec_id
+                st.rerun()
+
+        if is_open:
+            st.divider()
+            if item["type"] == "search":
+                new_query = st.text_input("Search pest", value=query, placeholder="aphids, thrips, flea beetles, spider mites")
+                if new_query != query:
+                    st.session_state["pest_search_query"] = new_query
+                    st.session_state["pest_expanded_accordion"] = "profile"
+                    st.rerun()
+            elif item["type"] == "profile":
+                if not query:
+                    st.caption("Search a pest name in the query section above.")
+                else:
+                    try:
+                        with st.spinner("Querying pest knowledge..."):
+                            profile = get_pest_profile(query)
+                    except RuntimeError as exc:
+                        st.error(str(exc))
+                        profile = {}
+
+                    if profile:
+                        pest_name = profile.get("pest") or _display_name(query)
+                        normalized = profile.get("normalized_pest")
+
+                        st.write(f"**{pest_name}**")
+                        if normalized:
+                            st.markdown(f'<span class="status-pill">atom {normalized}</span>', unsafe_allow_html=True)
+
+                        deterrents = profile.get("deterrents") or []
+                        hosts = profile.get("hosts") or []
+                        predators = profile.get("predators") or []
+                        symptoms = profile.get("damage_symptoms") or []
+                        sources = profile.get("sources") or []
+
+                        metric_cols = st.columns(4)
+                        metric_cols[0].metric("Deterrents", len(deterrents))
+                        metric_cols[1].metric("Host plants", len(hosts))
+                        metric_cols[2].metric("Predators", len(predators))
+                        metric_cols[3].metric("Symptoms", len(symptoms))
+
+                        _render_plant_records("Deterrent Plants", deterrents, "No deterrent plants are recorded for this pest.")
+                        _render_plant_records("Host Plants", hosts, "No host plants are recorded for this pest.")
+                        _render_predators(predators)
+                        _render_damage_symptoms(symptoms)
+                        _render_sources(sources)
+
+        st.markdown("</div>", unsafe_allow_html=True)

@@ -24,6 +24,7 @@ from ai.core.constants import (
     MAPPING_DIR,
     REVIEW_THRESHOLD as REVIEW,
 )
+from ai.core.file_status import write_json_with_status
 
 
 # -----------------------------------------------------
@@ -59,6 +60,34 @@ def detect_columns(df):
             confidence[canonical] = best_score
 
     return mapping, confidence
+
+
+def augment_mapping(
+    existing_mapping: dict,
+    detected_mapping: dict,
+    detected_confidence: dict,
+) -> tuple[dict, dict, bool]:
+    """
+    Add newly detected mappings without overriding saved user choices.
+    """
+
+    mapping = existing_mapping.copy()
+    confidence = {canonical: 100.0 for canonical in mapping.values()}
+    changed = False
+    mapped_columns = set(mapping)
+    mapped_canonicals = set(mapping.values())
+
+    for source_column, canonical in detected_mapping.items():
+        if source_column in mapped_columns or canonical in mapped_canonicals:
+            continue
+
+        mapping[source_column] = canonical
+        confidence[canonical] = detected_confidence.get(canonical, 100.0)
+        mapped_columns.add(source_column)
+        mapped_canonicals.add(canonical)
+        changed = True
+
+    return mapping, confidence, changed
 
 
 # -----------------------------------------------------
@@ -131,8 +160,12 @@ def save_mapping(mapping: dict, api_name: str):
 
     path = MAPPING_DIR / f"{api_name}.json"
 
-    with open(path, "w") as file:
-        json.dump(mapping, file, indent=4)
+    write_json_with_status(
+        mapping,
+        path,
+        description="schema mapping",
+        indent=4,
+    )
 
 
 def load_mapping(api_name: str):
@@ -256,14 +289,24 @@ def standardize_schema(df: pd.DataFrame, api_name: str, interactive: bool = True
     Prompts the user to review or edit existing mappings if present in interactive mode.
     """
     mapping = load_mapping(api_name)
+    detected_mapping, detected_confidence = detect_columns(df)
 
     if mapping is None:
         if interactive:
             mapping = create_mapping(df)
             save_mapping(mapping, api_name)
         else:
-            mapping, _ = detect_columns(df)
+            mapping = detected_mapping
     else:
+        mapping, confidence, changed = augment_mapping(
+            mapping,
+            detected_mapping,
+            detected_confidence,
+        )
+
+        if changed:
+            save_mapping(mapping, api_name)
+
         if interactive:
             mapping = prompt_existing_mapping(df, mapping, api_name)
 
