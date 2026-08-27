@@ -29,7 +29,6 @@ from ai.core.ml.metadata import load_metadata  # noqa: E402
 from ai.core.ml.model_io import load_model, load_preprocessing_artifacts  # noqa: E402
 from ai.core.ml.prediction import predict_with_confidence  # noqa: E402
 
-
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 
 TASK_ALIASES = {

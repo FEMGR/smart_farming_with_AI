@@ -26,7 +26,6 @@ from ai.core.constants import (
 )
 from ai.core.file_status import write_json_with_status
 
-
 # -----------------------------------------------------
 # Mapping folder
 # -----------------------------------------------------
