@@ -44,7 +44,6 @@ from ai.preprocessing.standardize_units import standardize_units
 from ai.preprocessing.clean_data import clean_dataframe
 from ai.preprocessing.normalize import normalize_dataframe, normalize_sensor_data
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))

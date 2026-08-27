@@ -46,7 +46,6 @@ from ai.core.constants import (  # noqa: E402
     YIELD_TASK_NAME,
 )
 
-
 MODEL_SELECTION_DIR = ARTIFACTS_DIR / "model_selection"
 STANDARDIZED_RESULTS_FILE = MODEL_SELECTION_DIR / "standardized_evaluation_results.json"
 STANDARDIZED_RESULTS_CSV = MODEL_SELECTION_DIR / "standardized_evaluation_results.csv"

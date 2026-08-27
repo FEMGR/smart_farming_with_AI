@@ -19,7 +19,6 @@ else:
 from ai.core.ml.pytorch.dataset import make_data_loader
 from ai.core.ml.pytorch.training import PyTorchTrainingConfig, train_pytorch_model
 
-
 DEFAULT_CLASSIFIER_PARAMS: dict[str, Any] = {
     "hidden_layers": (64, 32),
     "dropout": 0.10,

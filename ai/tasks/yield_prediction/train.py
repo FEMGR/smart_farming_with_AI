@@ -36,7 +36,6 @@ from ai.tasks.yield_prediction.config import (  # noqa: E402
     TEST_SIZE,
 )
 
-
 MODEL_BUILDERS = {
     "gradient_boosting": build_gradient_boosting_model,
     "pytorch_mlp": build_pytorch_mlp_model,
