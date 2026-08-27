@@ -9,6 +9,8 @@ import math
 
 import numpy as np
 
+from ai.core.file_status import write_json_with_status
+
 
 def create_model_metadata(
     task_name: str,
@@ -53,10 +55,12 @@ def save_metadata(metadata: dict[str, Any], path: str | Path) -> Path:
     """Save model metadata as JSON."""
 
     metadata_path = Path(path)
-    metadata_path.parent.mkdir(parents=True, exist_ok=True)
-    with metadata_path.open("w", encoding="utf-8") as file:
-        json.dump(_make_json_safe(metadata), file, indent=4)
-    return metadata_path
+    return write_json_with_status(
+        _make_json_safe(metadata),
+        metadata_path,
+        description="model metadata",
+        indent=4,
+    )
 
 
 def load_metadata(path: str | Path) -> dict[str, Any]:

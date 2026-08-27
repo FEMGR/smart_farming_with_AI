@@ -103,6 +103,45 @@ export const stoneGray = {
   900: '#1F2A22',
 } as const;
 
+export const emerald = {
+  50: '#ECFDF5',
+  100: '#D1FAE5',
+  200: '#A7F3D0',
+  300: '#6EE7B7',
+  400: '#34D399',
+  500: '#10B981',
+  600: '#059669',
+  700: '#047857',
+  800: '#065F46',
+  900: '#064E3B',
+} as const;
+
+export const blue = {
+  50: '#EFF6FF',
+  100: '#DBEAFE',
+  200: '#BFDBFE',
+  300: '#93C5FD',
+  400: '#60A5FA',
+  500: '#3B82F6',
+  600: '#2563EB',
+  700: '#1D4ED8',
+  800: '#1E40AF',
+  900: '#1E3A8A',
+} as const;
+
+export const cyan = {
+  50: '#ECFEFF',
+  100: '#CFFAFE',
+  200: '#A5F3FC',
+  300: '#67E8F9',
+  400: '#22D3EE',
+  500: '#06B6D4',
+  600: '#0891B2',
+  700: '#0E7490',
+  800: '#155E75',
+  900: '#164E63',
+} as const;
+
 export const common = {
   white: '#FFFFFF',
   black: '#0D0D0D',
@@ -119,12 +158,12 @@ export const palette = {
   amber,
   terracotta,
   stoneGray,
+  emerald,
+  blue,
+  cyan,
   common,
 
   // Compatibility Aliases
-  emerald: forestGreen,
-  blue: mossGreen,
-  cyan: sage,
   purple: { 50: '#F5F3FF', 100: '#EDE9FE', 500: '#8E7CC3', 600: '#371c65', 700: '#6D28D9' },
   red: terracotta,
   gray: stoneGray,
@@ -152,13 +191,16 @@ export interface ThemeColors {
   textMuted: string;
   textInverse: string;
 
-  // Brand Colors
+  // Brand & Palette Colors
   primary: string;
   secondary: string;
   accent: string;
   primaryLight: string;
   primaryDark: string;
   tint: string;
+  emerald: string;
+  blue: string;
+  cyan: string;
 
   // Status Colors
   success: string;
@@ -173,6 +215,14 @@ export interface ThemeColors {
   info: string;
   infoBackground: string;
   infoText: string;
+
+  // Badges & Tag Highlights
+  badgeSuccessBackground: string;
+  badgeSuccessText: string;
+  badgeWarningBackground: string;
+  badgeWarningText: string;
+  badgeErrorBackground: string;
+  badgeErrorText: string;
 
   // Interactive & Controls
   borderFocus: string;
@@ -214,13 +264,16 @@ export const lightTheme: ThemeColors = {
   textMuted: '#8C958F',
   textInverse: '#FFFFFF',
 
-  // Brand Colors
+  // Brand & Palette Colors
   primary: '#4F7C59',
   secondary: '#6FB872',
   accent: '#7FA18A',
   primaryLight: '#E6FEE8',
   primaryDark: '#33553A',
   tint: '#4F7C59',
+  emerald: '#10B981',
+  blue: '#3B82F6',
+  cyan: '#06B6D4',
 
   // Status Colors
   success: '#4F7C59',
@@ -235,6 +288,14 @@ export const lightTheme: ThemeColors = {
   info: '#4A90A6',
   infoBackground: '#F2F4F1',
   infoText: '#35443A',
+
+  // Badges & Tag Highlights
+  badgeSuccessBackground: 'rgba(16, 185, 129, 0.1)',
+  badgeSuccessText: '#10B981',
+  badgeWarningBackground: '#FEF3C7',
+  badgeWarningText: '#D97706',
+  badgeErrorBackground: '#FEE2E2',
+  badgeErrorText: '#EF4444',
 
   // Interactive & Controls
   borderFocus: '#4F7C59',
@@ -252,7 +313,7 @@ export const lightTheme: ThemeColors = {
   tabBarBorder: '#E2E7E1',
 
   // Domain Specific (Care Actions)
-  careWater: '#5FA79A',
+  careWater: '#06B6D4',
   careFertilize: '#7FA18A',
   carePrune: '#8E7CC3',
   careHarvest: '#6FB872',
@@ -276,13 +337,16 @@ export const darkTheme: ThemeColors = {
   textMuted: '#6D776F',
   textInverse: '#0E1411',
 
-  // Brand Colors
+  // Brand & Palette Colors
   primary: '#81B28A',
   secondary: '#9BB896',
   accent: '#A8C9B0',
   primaryLight: 'rgba(127, 162, 138, 0.15)',
   primaryDark: '#4F7C59',
   tint: '#81B28A',
+  emerald: '#81B28A',
+  blue: '#60A5FA',
+  cyan: '#22D3EE',
 
   // Status Colors
   success: '#81B28A',
@@ -297,6 +361,14 @@ export const darkTheme: ThemeColors = {
   info: '#2f7e98',
   infoBackground: 'rgba(107, 163, 182, 0.15)',
   infoText: '#A8C9B0',
+
+  // Badges & Tag Highlights
+  badgeSuccessBackground: 'rgba(129, 178, 138, 0.15)',
+  badgeSuccessText: '#81B28A',
+  badgeWarningBackground: 'rgba(224, 165, 52, 0.15)',
+  badgeWarningText: '#FAD67A',
+  badgeErrorBackground: 'rgba(229, 109, 99, 0.15)',
+  badgeErrorText: '#F08B81',
 
   // Interactive & Controls
   borderFocus: '#81B28A',
@@ -314,9 +386,9 @@ export const darkTheme: ThemeColors = {
   tabBarBorder: '#1F2621',
 
   // Domain Specific (Care Actions)
-  careWater: '#5FA79A',
+  careWater: '#22D3EE',
   careFertilize: '#9BB896',
-  carePrune: '#371c65',
+  carePrune: '#8E7CC3',
   careHarvest: '#81B28A',
 };
 

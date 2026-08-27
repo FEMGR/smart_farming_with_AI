@@ -2,7 +2,6 @@
 
 from pathlib import Path
 from typing import Any
-import json
 
 import numpy as np
 from sklearn.metrics import (
@@ -17,6 +16,8 @@ from sklearn.metrics import (
     recall_score,
     roc_auc_score,
 )
+
+from ai.core.file_status import write_json_with_status
 
 
 def evaluate_model(
@@ -77,10 +78,12 @@ def save_metrics(metrics: dict[str, Any], path: str | Path) -> Path:
     """Save metrics as JSON."""
 
     metrics_path = Path(path)
-    metrics_path.parent.mkdir(parents=True, exist_ok=True)
-    with metrics_path.open("w", encoding="utf-8") as file:
-        json.dump(_make_json_safe(metrics), file, indent=4)
-    return metrics_path
+    return write_json_with_status(
+        _make_json_safe(metrics),
+        metrics_path,
+        description="model metrics",
+        indent=4,
+    )
 
 
 def _classification_roc_auc(model, X_test, y_test) -> float | None:

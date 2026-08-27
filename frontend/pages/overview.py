@@ -48,10 +48,8 @@ def _has_saved_layout_position(plant: dict) -> bool:
     return plant.get("group_id") is not None and plant.get("bed_x") is not None and plant.get("bed_y") is not None
 
 
-def _render_saved_layout(plants: list[dict]) -> None:
+def _render_saved_layout_content(plants: list[dict]) -> None:
     saved_plants = [plant for plant in plants if _has_saved_layout_position(plant)]
-
-    st.subheader("Saved Layout")
 
     if not saved_plants:
         st.caption("No saved layout positions yet.")
@@ -81,51 +79,114 @@ def render_overview() -> None:
     notifications = st.session_state.get("notifications", [])
     needs_water = st.session_state.get("needs_water", [])
 
+    if "overview_expanded_accordion" not in st.session_state:
+        st.session_state["overview_expanded_accordion"] = "watering"
+
     metric_cols = st.columns(4)
     metric_cols[0].metric("Plants", len(plants))
     metric_cols[1].metric("Locations", len(locations))
     metric_cols[2].metric("Need Water", len([p for p in needs_water if p.get("needs_water")]))
     metric_cols[3].metric("Unread Alerts", len([n for n in notifications if not n.get("is_read")]))
 
-    st.subheader("Today")
-    left, right = st.columns([1.2, 1])
+    st.subheader("Overview Accordion Dashboard")
 
-    with left:
-        st.markdown('<div class="farm-panel">', unsafe_allow_html=True)
-        st.markdown("#### Watering Queue")
+    due_plants = [plant for plant in needs_water if plant.get("needs_water")]
+    total_water_tasks = len(needs_water) or len(plants) or 1
+    finished_water_tasks = max(0, total_water_tasks - len(due_plants))
+    water_progress = min(1.0, max(0.0, finished_water_tasks / total_water_tasks))
 
-        due = [plant for plant in needs_water if plant.get("needs_water")]
+    unread_notifications = [n for n in notifications if not n.get("is_read")]
+    total_notifications = len(notifications) or 1
+    read_notifications = total_notifications - len(unread_notifications)
+    notification_progress = min(1.0, max(0.0, read_notifications / total_notifications))
 
-        if not due:
-            st.caption("No plants are currently due for watering.")
+    saved_plants = [plant for plant in plants if _has_saved_layout_position(plant)]
+    total_plants = len(plants) or 1
+    layout_progress = min(1.0, max(0.0, len(saved_plants) / total_plants))
 
-        for item in due[:6]:
-            cols = st.columns([2, 1])
-            cols[0].write(f"**{item.get('name')}**")
-            cols[0].caption(f"Last watered: {format_date(item.get('last_watered'))}")
+    accordion_items = [
+        {
+            "id": "watering",
+            "title": "Watering Queue",
+            "due": f"Due Today: {len(due_plants)} pending",
+            "finished_count": finished_water_tasks,
+            "total_count": total_water_tasks,
+            "progress": water_progress,
+            "type": "watering",
+        },
+        {
+            "id": "notifications",
+            "title": "Recent Notifications",
+            "due": f"Alerts: {len(unread_notifications)} unread",
+            "finished_count": read_notifications,
+            "total_count": total_notifications,
+            "progress": notification_progress,
+            "type": "notifications",
+        },
+        {
+            "id": "layout",
+            "title": "Saved Bed Layout",
+            "due": "Active Layout",
+            "finished_count": len(saved_plants),
+            "total_count": total_plants,
+            "progress": layout_progress,
+            "type": "layout",
+        },
+    ]
 
-            if cols[1].button("Water", key=f"overview_water_{item['plant_id']}", width="stretch"):
-                try:
-                    water_plant(item["plant_id"])
-                    refresh_data(show_errors=True)
-                    st.rerun()
-                except RuntimeError as exc:
-                    st.error(str(exc))
+    for item in accordion_items:
+        sec_id = item["id"]
+        is_open = st.session_state.get("overview_expanded_accordion") == sec_id
+        arrow_icon = "▲" if is_open else "▼"
+
+        st.markdown('<div class="farm-panel" style="margin-bottom: 12px; padding: 16px;">', unsafe_allow_html=True)
+        col_title, col_due, col_progress, col_arrow = st.columns([3, 2, 4, 1])
+
+        with col_title:
+            st.markdown(f"### {item['title']}")
+
+        with col_due:
+            st.markdown(f"**Deadline / Due:**<br>`{item['due']}`", unsafe_allow_html=True)
+
+        with col_progress:
+            st.markdown(f"**Tasks:** {item['finished_count']} / {item['total_count']} finished ({int(item['progress'] * 100)}%)")
+            st.progress(item["progress"])
+
+        with col_arrow:
+            if st.button(arrow_icon, key=f"btn_acc_{sec_id}", help=f"Toggle {item['title']}"):
+                if is_open:
+                    st.session_state["overview_expanded_accordion"] = None
+                else:
+                    st.session_state["overview_expanded_accordion"] = sec_id
+                st.rerun()
+
+        if is_open:
+            st.divider()
+            if item["type"] == "watering":
+                if not due_plants:
+                    st.caption("No plants are currently due for watering.")
+                else:
+                    for item_plant in due_plants[:6]:
+                        cols = st.columns([2, 1])
+                        cols[0].write(f"**{item_plant.get('name')}**")
+                        cols[0].caption(f"Last watered: {format_date(item_plant.get('last_watered'))}")
+
+                        if cols[1].button("Water", key=f"overview_water_{item_plant['plant_id']}", width="stretch"):
+                            try:
+                                water_plant(item_plant["plant_id"])
+                                refresh_data(show_errors=True)
+                                st.rerun()
+                            except RuntimeError as exc:
+                                st.error(str(exc))
+            elif item["type"] == "notifications":
+                if not notifications:
+                    st.caption("No notifications yet.")
+                else:
+                    for notification in notifications[:5]:
+                        status = "Unread" if not notification.get("is_read") else "Read"
+                        st.write(f"**[{status}]** {notification.get('message', '')}")
+                        st.caption(f"Timestamp: {format_date(notification.get('created_at'))}")
+            elif item["type"] == "layout":
+                _render_saved_layout_content(plants)
 
         st.markdown("</div>", unsafe_allow_html=True)
-
-    with right:
-        st.markdown('<div class="farm-panel">', unsafe_allow_html=True)
-        st.markdown("#### Recent Notifications")
-
-        if not notifications:
-            st.caption("No notifications yet.")
-
-        for notification in notifications[:5]:
-            status = "Unread" if not notification.get("is_read") else "Read"
-            st.write(f"**{status}**")
-            st.caption(notification.get("message", ""))
-
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    _render_saved_layout(plants)

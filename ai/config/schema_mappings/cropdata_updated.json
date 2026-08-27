@@ -1,5 +1,9 @@
 {
     "temp": "temperature",
     "humidity": "humidity",
-    "MOI": "soil_moisture"
+    "MOI": "soil_moisture",
+    "Seedling Stage": "growth_stage",
+    "soil_type": "recommended_soil",
+    "result": "watering_needed",
+    "crop ID": "plant_name"
 }

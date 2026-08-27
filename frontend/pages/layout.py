@@ -76,16 +76,9 @@ def _render_saved_layout_table(plants: list[dict]) -> None:
 
 def render_layout() -> None:
     """
-    Renders the plant layout management page.
-
-    This page allows users to:
-    - View their current saved plant layout.
-    - Assign positions and groups to unassigned plants.
-    - Manually adjust positions or clear saved positions for existing plants.
-    - Clear all saved layout positions.
-    - Save a generated layout from the recommendations as fixed positions.
+    Renders the plant layout management page with accordion list structure.
     """
-    st.subheader("Plant Layout")
+    st.subheader("Plant Layout Management")
 
     plants = st.session_state.get("plants", [])
     recommendations = st.session_state.get("recommendations")
@@ -94,158 +87,238 @@ def render_layout() -> None:
         st.info("Add plants to see and manage your layout.")
         return
 
-    # Filter plants into locked, unassigned, and assigned
+    if "layout_expanded_accordion" not in st.session_state:
+        st.session_state["layout_expanded_accordion"] = "grid"
+
     locked_plants = [p for p in plants if p.get("bed_x") is not None and p.get("bed_y") is not None]
     unassigned_plants = [p for p in plants if p.get("bed_x") is None or p.get("bed_y") is None]
 
-    st.markdown("#### Current Saved Planting Layout")
-    _render_saved_layout_table(plants)
+    total_plants = len(plants) or 1
+    placed_count = len(locked_plants)
+    placed_ratio = min(1.0, max(0.0, placed_count / total_plants))
 
-    st.markdown("#### Unassigned Plants")
-    if unassigned_plants:
-        for plant in unassigned_plants:
-            with st.container(border=True):
-                st.write(f"**{plant_display_name(plant)}**")
-                st.caption(f"ID: {plant.get('id')}")
+    accordion_items = [
+        {
+            "id": "grid",
+            "title": "Saved Bed Layout Grid Matrix",
+            "due": f"Placed: {placed_count} plants",
+            "finished_count": placed_count,
+            "total_count": total_plants,
+            "progress": placed_ratio,
+            "type": "grid",
+        },
+        {
+            "id": "unassigned",
+            "title": "Unassigned Plant Positions",
+            "due": f"Unassigned: {len(unassigned_plants)} plants",
+            "finished_count": total_plants - len(unassigned_plants),
+            "total_count": total_plants,
+            "progress": 1.0 - (len(unassigned_plants) / total_plants),
+            "type": "unassigned",
+        },
+        {
+            "id": "locked",
+            "title": "Manual Adjustments (Locked Plants)",
+            "due": f"Locked: {len(locked_plants)} positions",
+            "finished_count": len(locked_plants),
+            "total_count": total_plants,
+            "progress": placed_ratio,
+            "type": "locked",
+        },
+        {
+            "id": "actions",
+            "title": "Global Layout Actions",
+            "due": "Layout Controls",
+            "finished_count": 1,
+            "total_count": 1,
+            "progress": 1.0,
+            "type": "actions",
+        },
+    ]
 
-                with st.expander("Assign Position"):
-                    cols = st.columns(2)
-                    # Display 1-indexed, save 0-indexed
-                    new_x_input = cols[0].number_input("Bed X (1-indexed)", min_value=1, value=(plant.get("bed_x") or 0) + 1, key=f"unassigned_x_{plant['id']}")
-                    new_y_input = cols[1].number_input("Row Y (1-indexed)", min_value=1, value=(plant.get("bed_y") or 0) + 1, key=f"unassigned_y_{plant['id']}")
+    for item in accordion_items:
+        sec_id = item["id"]
+        is_open = st.session_state.get("layout_expanded_accordion") == sec_id
+        arrow_icon = "▲" if is_open else "▼"
 
-                    group_options = recommended_group_options_for_plant(plant, recommendations)
-                    group_labels = [opt["label"] for opt in group_options]
-                    group_ids = {opt["label"]: opt["group_id"] for opt in group_options}
+        st.markdown('<div class="farm-panel" style="margin-bottom: 12px; padding: 16px;">', unsafe_allow_html=True)
+        col_title, col_due, col_progress, col_arrow = st.columns([3, 2, 4, 1])
 
-                    selected_group_label = st.selectbox(
-                        "Assign to Group (optional)",
-                        ["None"] + group_labels,
-                        key=f"unassigned_group_{plant['id']}",
-                        help="Assigning to a group helps the layout engine place compatible plants together.",
-                    )
-                    new_group_id = group_ids.get(selected_group_label) if selected_group_label != "None" else None
+        with col_title:
+            st.markdown(f"### {item['title']}")
 
-                    if st.button("Save Position", key=f"save_unassigned_{plant['id']}"):
-                        try:
-                            update_plant(
-                                plant["id"],
-                                {
-                                    "bed_x": new_x_input - 1,  # Convert back to 0-indexed
-                                    "bed_y": new_y_input - 1,  # Convert back to 0-indexed
-                                    "group_id": new_group_id,
-                                },
-                            )
-                            invalidate_recommendations()
-                            refresh_data(show_errors=True)
-                            st.rerun()
-                        except RuntimeError as exc:
-                            st.error(str(exc))
-    else:
-        st.caption("All plants are assigned a position or are part of a generated layout.")
+        with col_due:
+            st.markdown(f"**Deadline / Status:**<br>`{item['due']}`", unsafe_allow_html=True)
 
-    st.markdown("#### Manual Adjustments (Locked Plants)")
-    if locked_plants:
-        for plant in locked_plants:
-            with st.container(border=True):
-                bed = int(plant["bed_x"]) + 1
-                row = int(plant["bed_y"]) + 1
-                st.write(f"**{plant_display_name(plant)}** at Bed {bed}, Row {row}")
-                st.caption(f"ID: {plant.get('id')}")
+        with col_progress:
+            st.markdown(f"**Tasks:** {item['finished_count']} / {item['total_count']} ({int(item['progress'] * 100)}%)")
+            st.progress(item["progress"])
 
-                with st.expander("Adjust Position / Clear"):
-                    cols = st.columns(2)
-                    # Display 1-indexed, save 0-indexed
-                    new_x_input = cols[0].number_input("Bed X (1-indexed)", min_value=1, value=(plant.get("bed_x") or 0) + 1, key=f"locked_x_{plant['id']}")
-                    new_y_input = cols[1].number_input("Row Y (1-indexed)", min_value=1, value=(plant.get("bed_y") or 0) + 1, key=f"locked_y_{plant['id']}")
-
-                    group_options = recommended_group_options_for_plant(plant, recommendations)
-                    group_labels = [opt["label"] for opt in group_options]
-                    group_ids = {opt["label"]: opt["group_id"] for opt in group_options}
-
-                    current_group_label = "None"
-                    if plant.get("group_id"):
-                        for opt in group_options:
-                            if opt["group_id"] == plant["group_id"]:
-                                current_group_label = opt["label"]
-                                break
-                        if current_group_label == "None":  # If current group is not in recommended options
-                            current_group_label = f"Group {plant['group_id']} (current)"
-                            group_labels.insert(0, current_group_label)
-                            group_ids[current_group_label] = plant["group_id"]
-
-                    selected_group_label = st.selectbox(
-                        "Assign to Group (optional)",
-                        ["None"] + group_labels,
-                        index=group_labels.index(current_group_label) + 1 if current_group_label != "None" else 0,
-                        key=f"locked_group_{plant['id']}",
-                        help="Assigning to a group helps the layout engine place compatible plants together.",
-                    )
-                    new_group_id = group_ids.get(selected_group_label) if selected_group_label != "None" else None
-
-                    if st.button("Update Position", key=f"update_locked_{plant['id']}"):
-                        try:
-                            update_plant(
-                                plant["id"],
-                                {
-                                    "bed_x": new_x_input - 1,  # Convert back to 0-indexed
-                                    "bed_y": new_y_input - 1,  # Convert back to 0-indexed
-                                    "group_id": new_group_id,
-                                },
-                            )
-                            invalidate_recommendations()
-                            refresh_data(show_errors=True)
-                            st.rerun()
-                        except RuntimeError as exc:
-                            st.error(str(exc))
-
-                    if st.button("Clear Saved Position", key=f"clear_locked_{plant['id']}"):
-                        try:
-                            update_plant(
-                                plant["id"],
-                                {
-                                    "bed_x": None,
-                                    "bed_y": None,
-                                    "group_id": None,
-                                },
-                            )
-                            invalidate_recommendations()
-                            refresh_data(show_errors=True)
-                            st.rerun()
-                        except RuntimeError as exc:
-                            st.error(str(exc))
-    else:
-        st.caption("No plants with locked positions to adjust.")
-
-    st.markdown("#### Layout Actions")
-    col1, col2 = st.columns(2)
-    if col1.button("Clear All Saved Layouts", help="This will remove all bed_x and bed_y assignments from all plants."):
-        try:
-            for plant in plants:
-                if plant.get("bed_x") is not None or plant.get("bed_y") is not None or plant.get("group_id") is not None:
-                    update_plant(plant["id"], {"bed_x": None, "bed_y": None, "group_id": None})
-            invalidate_recommendations()
-            refresh_data(show_errors=True)
-            st.success("All saved layout positions cleared.")
-            st.rerun()
-        except RuntimeError as exc:
-            st.error(str(exc))
-
-    if col2.button("Save Generated Layout", help="This will save the last generated layout positions as fixed positions for your plants."):
-        if recommendations and recommendations.get("layout"):
-            try:
-                layout_placements = recommendations["layout"].get("placements", [])
-                for placement in layout_placements:
-                    plant_id = placement["plant_id"]
-                    x = placement["x"]
-                    y = placement["y"]
-                    group_id = placement["group_id"]
-                    update_plant(plant_id, {"bed_x": x, "bed_y": y, "group_id": group_id})
-                invalidate_recommendations()
-                refresh_data(show_errors=True)
-                st.success("Generated layout saved as fixed positions.")
+        with col_arrow:
+            if st.button(arrow_icon, key=f"btn_acc_lay_{sec_id}", help=f"Toggle {item['title']}"):
+                if is_open:
+                    st.session_state["layout_expanded_accordion"] = None
+                else:
+                    st.session_state["layout_expanded_accordion"] = sec_id
                 st.rerun()
-            except RuntimeError as exc:
-                st.error(str(exc))
-        else:
-            st.warning("No generated layout available to save.")
+
+        if is_open:
+            st.divider()
+            if item["type"] == "grid":
+                _render_saved_layout_table(plants)
+            elif item["type"] == "unassigned":
+                if unassigned_plants:
+                    for plant in unassigned_plants:
+                        with st.container(border=True):
+                            st.write(f"**{plant_display_name(plant)}**")
+                            st.caption(f"ID: {plant.get('id')}")
+
+                            with st.expander("Assign Position"):
+                                cols = st.columns(2)
+                                new_x_input = cols[0].number_input(
+                                    "Bed X (1-indexed)", min_value=1, value=(plant.get("bed_x") or 0) + 1, key=f"unassigned_x_{plant['id']}"
+                                )
+                                new_y_input = cols[1].number_input(
+                                    "Row Y (1-indexed)", min_value=1, value=(plant.get("bed_y") or 0) + 1, key=f"unassigned_y_{plant['id']}"
+                                )
+
+                                group_options = recommended_group_options_for_plant(plant, recommendations)
+                                group_labels = [opt["label"] for opt in group_options]
+                                group_ids = {opt["label"]: opt["group_id"] for opt in group_options}
+
+                                selected_group_label = st.selectbox(
+                                    "Assign to Group (optional)",
+                                    ["None"] + group_labels,
+                                    key=f"unassigned_group_{plant['id']}",
+                                    help="Assigning to a group helps the layout engine place compatible plants together.",
+                                )
+                                new_group_id = group_ids.get(selected_group_label) if selected_group_label != "None" else None
+
+                                if st.button("Save Position", key=f"save_unassigned_{plant['id']}"):
+                                    try:
+                                        update_plant(
+                                            plant["id"],
+                                            {
+                                                "bed_x": new_x_input - 1,
+                                                "bed_y": new_y_input - 1,
+                                                "group_id": new_group_id,
+                                            },
+                                        )
+                                        invalidate_recommendations()
+                                        refresh_data(show_errors=True)
+                                        st.rerun()
+                                    except RuntimeError as exc:
+                                        st.error(str(exc))
+                else:
+                    st.caption("All plants are assigned a position or are part of a generated layout.")
+
+            elif item["type"] == "locked":
+                if locked_plants:
+                    for plant in locked_plants:
+                        with st.container(border=True):
+                            bed = int(plant["bed_x"]) + 1
+                            row = int(plant["bed_y"]) + 1
+                            st.write(f"**{plant_display_name(plant)}** at Bed {bed}, Row {row}")
+                            st.caption(f"ID: {plant.get('id')}")
+
+                            with st.expander("Adjust Position / Clear"):
+                                cols = st.columns(2)
+                                new_x_input = cols[0].number_input(
+                                    "Bed X (1-indexed)", min_value=1, value=(plant.get("bed_x") or 0) + 1, key=f"locked_x_{plant['id']}"
+                                )
+                                new_y_input = cols[1].number_input(
+                                    "Row Y (1-indexed)", min_value=1, value=(plant.get("bed_y") or 0) + 1, key=f"locked_y_{plant['id']}"
+                                )
+
+                                group_options = recommended_group_options_for_plant(plant, recommendations)
+                                group_labels = [opt["label"] for opt in group_options]
+                                group_ids = {opt["label"]: opt["group_id"] for opt in group_options}
+
+                                current_group_label = "None"
+                                if plant.get("group_id"):
+                                    for opt in group_options:
+                                        if opt["group_id"] == plant["group_id"]:
+                                            current_group_label = opt["label"]
+                                            break
+                                    if current_group_label == "None":
+                                        current_group_label = f"Group {plant['group_id']} (current)"
+                                        group_labels.insert(0, current_group_label)
+                                        group_ids[current_group_label] = plant["group_id"]
+
+                                selected_group_label = st.selectbox(
+                                    "Assign to Group (optional)",
+                                    ["None"] + group_labels,
+                                    index=group_labels.index(current_group_label) + 1 if current_group_label != "None" else 0,
+                                    key=f"locked_group_{plant['id']}",
+                                    help="Assigning to a group helps the layout engine place compatible plants together.",
+                                )
+                                new_group_id = group_ids.get(selected_group_label) if selected_group_label != "None" else None
+
+                                if st.button("Update Position", key=f"update_locked_{plant['id']}"):
+                                    try:
+                                        update_plant(
+                                            plant["id"],
+                                            {
+                                                "bed_x": new_x_input - 1,
+                                                "bed_y": new_y_input - 1,
+                                                "group_id": new_group_id,
+                                            },
+                                        )
+                                        invalidate_recommendations()
+                                        refresh_data(show_errors=True)
+                                        st.rerun()
+                                    except RuntimeError as exc:
+                                        st.error(str(exc))
+
+                                if st.button("Clear Saved Position", key=f"clear_locked_{plant['id']}"):
+                                    try:
+                                        update_plant(
+                                            plant["id"],
+                                            {
+                                                "bed_x": None,
+                                                "bed_y": None,
+                                                "group_id": None,
+                                            },
+                                        )
+                                        invalidate_recommendations()
+                                        refresh_data(show_errors=True)
+                                        st.rerun()
+                                    except RuntimeError as exc:
+                                        st.error(str(exc))
+                else:
+                    st.caption("No plants with locked positions to adjust.")
+
+            elif item["type"] == "actions":
+                col1, col2 = st.columns(2)
+                if col1.button("Clear All Saved Layouts", help="This will remove all bed_x and bed_y assignments from all plants."):
+                    try:
+                        for plant in plants:
+                            if plant.get("bed_x") is not None or plant.get("bed_y") is not None or plant.get("group_id") is not None:
+                                update_plant(plant["id"], {"bed_x": None, "bed_y": None, "group_id": None})
+                        invalidate_recommendations()
+                        refresh_data(show_errors=True)
+                        st.success("All saved layout positions cleared.")
+                        st.rerun()
+                    except RuntimeError as exc:
+                        st.error(str(exc))
+
+                if col2.button("Save Generated Layout", help="This will save the last generated layout positions as fixed positions for your plants."):
+                    if recommendations and recommendations.get("layout"):
+                        try:
+                            layout_placements = recommendations["layout"].get("placements", [])
+                            for placement in layout_placements:
+                                plant_id = placement["plant_id"]
+                                x = placement["x"]
+                                y = placement["y"]
+                                group_id = placement["group_id"]
+                                update_plant(plant_id, {"bed_x": x, "bed_y": y, "group_id": group_id})
+                            invalidate_recommendations()
+                            refresh_data(show_errors=True)
+                            st.success("Generated layout saved as fixed positions.")
+                            st.rerun()
+                        except RuntimeError as exc:
+                            st.error(str(exc))
+                    else:
+                        st.warning("No generated layout available to save.")
+
+        st.markdown("</div>", unsafe_allow_html=True)

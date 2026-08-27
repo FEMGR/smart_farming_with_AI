@@ -123,5 +123,40 @@
         "family": "Amaryllidaceae"
       }
     ]
+  },
+  "eggplant": {
+    "timestamp": 1787640385.1021051,
+    "suggestions": [
+      {
+        "id": 7405,
+        "common_name": "eggplant",
+        "scientific_name": "Solanum melongena",
+        "type": null,
+        "is_fruit": null,
+        "is_veg": null,
+        "genus": "Solanum",
+        "family": "Solanaceae"
+      },
+      {
+        "id": 7406,
+        "common_name": "eggplant",
+        "scientific_name": "Solanum melongena 'Aswad'",
+        "type": null,
+        "is_fruit": null,
+        "is_veg": null,
+        "genus": "Solanum",
+        "family": "Solanaceae"
+      },
+      {
+        "id": 7407,
+        "common_name": "eggplant",
+        "scientific_name": "Solanum melongena 'Patio Baby'",
+        "type": null,
+        "is_fruit": null,
+        "is_veg": null,
+        "genus": "Solanum",
+        "family": "Solanaceae"
+      }
+    ]
   }
 }

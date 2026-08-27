@@ -22,15 +22,9 @@ After cleaning, the dataset should have:
 """
 
 import sys
-import pandas as pd
 from pathlib import Path
 
-from ai.preprocessing.load_data import load_csv
-from ai.core.file_prompter import choose_input_file, generate_output_filename
-
-# =====================================================
-# Project Paths
-# =====================================================
+import pandas as pd
 
 # clean_data.py
 #      │
@@ -39,9 +33,15 @@ from ai.core.file_prompter import choose_input_file, generate_output_filename
 # ai/
 from ai.core.constants import (
     CLEAN_DATA_OUTPUT_FILE as OUTPUT_FILE,
-    CLEAN_DATA_OUTPUT_FOLDER as OUTPUT_FOLDER,
     NON_IMPUTED_NUMERIC_COLUMNS,
 )
+from ai.core.file_prompter import choose_input_file, generate_output_filename
+from ai.core.file_status import write_dataframe_csv_with_status
+from ai.preprocessing.load_data import load_csv
+
+# =====================================================
+# Project Paths
+# =====================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -131,7 +131,7 @@ def remove_invalid_sensor_values(df: pd.DataFrame) -> pd.DataFrame:
         df = df[df["humidity"].isna() | ((df["humidity"] >= 0) & (df["humidity"] <= 100))]
 
     if "soil_moisture" in df.columns:
-        df = df[df["soil_moisture"].isna() | ((df["soil_moisture"] >= 0) & (df["soil_moisture"] <= 100))]
+        df = df[df["soil_moisture"].isna() | ((df["soil_moisture"] >= 0) & (df["soil_moisture"] <= 1023))]
 
     if "soil_ph" in df.columns:
         df = df[df["soil_ph"].isna() | ((df["soil_ph"] >= 0) & (df["soil_ph"] <= 14))]
@@ -144,7 +144,10 @@ def remove_invalid_sensor_values(df: pd.DataFrame) -> pd.DataFrame:
 
 def convert_timestamp_to_date(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Convert columns into the correct data types.
+    Parse timestamp when present without requiring every row to have one.
+
+    External training datasets may not contain timestamps, and invalid
+    timestamp values should not make otherwise useful observations disappear.
     """
 
     if "timestamp" in df.columns:
@@ -152,7 +155,6 @@ def convert_timestamp_to_date(df: pd.DataFrame) -> pd.DataFrame:
             df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce", format="mixed")
         except TypeError:
             df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
-        df = df.dropna(subset=["timestamp"])
 
     return df
 
@@ -224,11 +226,11 @@ def save_clean_data(df: pd.DataFrame) -> None:
     Save the cleaned dataset.
     """
 
-    OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
-
-    df.to_csv(OUTPUT_FILE, index=False)
-
-    print(f"Cleaned dataset saved to:\n{OUTPUT_FILE}")
+    write_dataframe_csv_with_status(
+        df,
+        OUTPUT_FILE,
+        description="cleaned dataset",
+    )
 
 
 def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
@@ -296,8 +298,15 @@ def main():
     """
     Load, clean, and save the sensor dataset.
     """
-    input_file = choose_input_file()
-    output_file = generate_output_filename(input_file=input_file)
+    try:
+        input_file = choose_input_file()
+        output_file = generate_output_filename(input_file=input_file)
+    except KeyboardInterrupt:
+        print("\nFile selection cancelled.")
+        return
+    except (FileNotFoundError, FileExistsError) as error:
+        print(f"\nError: {error}")
+        return
 
     print("Loading dataset...")
 
@@ -312,7 +321,11 @@ def main():
     print("Saving cleaned dataset...")
 
     save_clean_data(df)
-    df_external.to_csv(output_file, index=False)
+    write_dataframe_csv_with_status(
+        df_external,
+        output_file,
+        description="cleaned external dataset",
+    )
     print("Data cleaning completed successfully.")
 
 

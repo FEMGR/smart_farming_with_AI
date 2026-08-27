@@ -15,9 +15,11 @@ import { useAuth } from '@/context/AuthContext';
 import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
 import { Spacing } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 import { getApiBaseUrl, setApiBaseUrl } from '@/services/api';
 
 export function AuthScreen() {
+  const colors = useTheme();
   const { login, register } = useAuth();
   
   const [isLogin, setIsLogin] = useState(true);
@@ -79,11 +81,11 @@ export function AuthScreen() {
           style={styles.settingsBtn}
           onPress={() => setConfigVisible(true)}
         >
-          <SymbolView name="gearshape.fill" size={24} tintColor="#10B981" />
+          <SymbolView name="gearshape.fill" size={24} tintColor={colors.emerald} />
         </TouchableOpacity>
 
         <View style={styles.header}>
-          <SymbolView name="leaf.fill" size={64} tintColor="#10B981" />
+          <SymbolView name="leaf.fill" size={64} tintColor={colors.emerald} />
           <ThemedText type="subtitle" style={styles.title}>
             Smart Farming
           </ThemedText>
@@ -98,15 +100,15 @@ export function AuthScreen() {
           </ThemedText>
 
           {errorMsg && (
-            <ThemedView style={styles.errorContainer}>
-              <ThemedText style={styles.errorText}>{errorMsg}</ThemedText>
+            <ThemedView style={[styles.errorContainer, { backgroundColor: colors.badgeErrorBackground }]}>
+              <ThemedText style={[styles.errorText, { color: colors.badgeErrorText }]}>{errorMsg}</ThemedText>
             </ThemedView>
           )}
 
           <TextInput
-            style={styles.input}
+            style={[styles.input, { backgroundColor: colors.inputBackground, borderColor: colors.inputBorder, color: colors.text }]}
             placeholder="Email address"
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.placeholder}
             value={email}
             onChangeText={setEmail}
             autoCapitalize="none"
@@ -114,9 +116,9 @@ export function AuthScreen() {
           />
 
           <TextInput
-            style={styles.input}
+            style={[styles.input, { backgroundColor: colors.inputBackground, borderColor: colors.inputBorder, color: colors.text }]}
             placeholder="Password"
-            placeholderTextColor="#888"
+            placeholderTextColor={colors.placeholder}
             value={password}
             onChangeText={setPassword}
             secureTextEntry
@@ -124,14 +126,14 @@ export function AuthScreen() {
           />
 
           <TouchableOpacity
-            style={styles.button}
+            style={[styles.button, { backgroundColor: colors.primary }]}
             onPress={handleAuth}
             disabled={authLoading}
           >
             {authLoading ? (
-              <ActivityIndicator color="#fff" />
+              <ActivityIndicator color={colors.textInverse} />
             ) : (
-              <ThemedText style={styles.buttonText}>
+              <ThemedText style={[styles.buttonText, { color: colors.textInverse }]}>
                 {isLogin ? 'Sign In' : 'Register'}
               </ThemedText>
             )}
@@ -171,9 +173,9 @@ export function AuthScreen() {
             </ThemedText>
 
             <TextInput
-              style={styles.input}
+              style={[styles.input, { backgroundColor: colors.inputBackground, borderColor: colors.inputBorder, color: colors.text }]}
               placeholder="http://10.0.2.2:8000"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={apiUrl}
               onChangeText={setApiUrl}
               autoCapitalize="none"
@@ -182,17 +184,17 @@ export function AuthScreen() {
 
             <View style={styles.modalActions}>
               <TouchableOpacity
-                style={[styles.modalBtn, styles.cancelBtn]}
+                style={[styles.modalBtn, { backgroundColor: colors.disabled }]}
                 onPress={() => setConfigVisible(false)}
               >
-                <ThemedText style={styles.modalBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.modalBtnText, { color: colors.textSecondary }]}>Cancel</ThemedText>
               </TouchableOpacity>
 
               <TouchableOpacity
-                style={[styles.modalBtn, styles.saveBtn]}
+                style={[styles.modalBtn, { backgroundColor: colors.primary }]}
                 onPress={handleSaveUrl}
               >
-                <ThemedText style={[styles.modalBtnText, { color: '#fff' }]}>
+                <ThemedText style={[styles.modalBtnText, { color: colors.textInverse }]}>
                   Save
                 </ThemedText>
               </TouchableOpacity>

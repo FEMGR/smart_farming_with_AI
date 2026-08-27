@@ -28,6 +28,7 @@ from ai.core.constants import (
     UNIT_CONVERSIONS as CONVERSIONS,
     UNIT_FOLDER,
 )
+from ai.core.file_status import write_json_with_status
 
 
 # =====================================================
@@ -143,8 +144,12 @@ def save_unit_mapping(units, source_name):
 
     path = UNIT_FOLDER / f"{source_name}.json"
 
-    with open(path, "w") as file:
-        json.dump(units, file, indent=4)
+    write_json_with_status(
+        units,
+        path,
+        description="unit mapping",
+        indent=4,
+    )
 
 
 def load_unit_mapping(source_name):

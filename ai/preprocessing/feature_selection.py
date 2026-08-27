@@ -7,20 +7,35 @@ This script does not create new features. It only selects relevant columns from
 featured_data.csv and writes one training CSV per model objective.
 """
 
+import argparse
+import sys
 from pathlib import Path
+from typing import Callable, Optional
 
 import pandas as pd
-
 from ai.core.constants import (
-    DATABASE_IDENTIFIER_COLUMNS,
     FEATURE_SEL_INPUT_FILE as INPUT_FILE,
+    NON_MODEL_FEATURE_COLUMNS,
     TRAINING_DATASETS,
 )
+from ai.core.file_prompter import (
+    PROCESSED_DATA_DIR,
+    choose_input_file,
+    generate_phase_output_filename,
+    pause_for_user,
+    prompt_menu_choice,
+)
+from ai.core.file_status import write_dataframe_csv_with_status
+from plant_data_bank_scripts.scripts.project_paths import PATHS
 
 
 # ==========================================================
 # Project Paths
 # ==========================================================
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 
 def selected_target_column(df: pd.DataFrame, target_candidates: list[str]) -> str | None:
@@ -40,12 +55,12 @@ def select_training_columns(df: pd.DataFrame, config: dict) -> tuple[pd.DataFram
     Select model-specific feature columns and one available target column.
     """
 
-    feature_columns = [column for column in config["features"] if column in df.columns and column not in DATABASE_IDENTIFIER_COLUMNS]
+    feature_columns = [column for column in config["features"] if column in df.columns and column not in NON_MODEL_FEATURE_COLUMNS]
 
     target_column = selected_target_column(df, config["target_candidates"])
     selected_columns = feature_columns.copy()
 
-    if target_column is not None and target_column not in DATABASE_IDENTIFIER_COLUMNS:
+    if target_column is not None and target_column not in NON_MODEL_FEATURE_COLUMNS:
         selected_columns.append(target_column)
 
     missing_columns = [column for column in [*config["features"], *config["target_candidates"]] if column not in df.columns]
@@ -54,8 +69,11 @@ def select_training_columns(df: pd.DataFrame, config: dict) -> tuple[pd.DataFram
 
 
 def save_training_dataset(df: pd.DataFrame, output_file: Path) -> None:
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(output_file, index=False)
+    write_dataframe_csv_with_status(
+        df,
+        output_file,
+        description="training dataset",
+    )
 
 
 def build_training_datasets(featured_df: pd.DataFrame) -> dict[str, pd.DataFrame]:
@@ -88,6 +106,7 @@ def build_training_datasets(featured_df: pd.DataFrame) -> dict[str, pd.DataFrame
 def split_training_sets(
     featured_df: pd.DataFrame | None = None,
     input_file: Path = INPUT_FILE,
+    selected_output_file: Path | None = None,
 ) -> dict[str, pd.DataFrame]:
     """
     Load the master feature repository and write task-specific training CSVs.
@@ -99,11 +118,174 @@ def split_training_sets(
 
         featured_df = pd.read_csv(input_file)
 
+    if selected_output_file is not None:
+        write_dataframe_csv_with_status(
+            featured_df,
+            selected_output_file,
+            description="selected feature repository",
+        )
+
     return build_training_datasets(featured_df)
 
 
-def main() -> dict[str, pd.DataFrame]:
-    return split_training_sets()
+# ==========================================================
+# Pipeline Workflows
+# ==========================================================
+
+
+def feature_selection_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[dict[str, pd.DataFrame]]:
+    """
+    Prompt user to select a feature-engineered dataset file via file_prompter and build training datasets.
+    """
+    if dry_run:
+        print("[DRY RUN] Would select a custom dataset file via file_prompter and run feature selection.")
+        return None
+
+    try:
+        input_file = choose_input_file(directory=PROCESSED_DATA_DIR)
+        output_file = generate_phase_output_filename(input_file=input_file, phase="selected")
+    except KeyboardInterrupt:
+        print("\nFile selection cancelled.")
+        return None
+    except (FileNotFoundError, FileExistsError) as error:
+        print(f"\nError: {error}")
+        return None
+
+    print(f"\nSelected Input File: {input_file}")
+    print(f"Selected Output File: {output_file}")
+    training_sets = split_training_sets(input_file=input_file, selected_output_file=output_file)
+
+    print("\nCustom feature selection completed successfully!")
+    return training_sets
+
+
+def feature_selection_default_data(dry_run: bool = False, interactive: bool = True) -> Optional[dict[str, pd.DataFrame]]:
+    """
+    Run feature selection on default featured dataset file.
+    """
+    if dry_run:
+        print(f"[DRY RUN] Would process default feature repository dataset: {INPUT_FILE}")
+        return None
+
+    if not INPUT_FILE.exists():
+        print(f"\nError: Input file not found:\n{INPUT_FILE}")
+        return None
+
+    training_sets = split_training_sets(input_file=INPUT_FILE)
+
+    print("\nDefault feature selection completed successfully!")
+    return training_sets
+
+
+# =========================================================
+# MENU
+# =========================================================
+
+MENU: dict[str, tuple[str, Callable[[bool], None]]] = {
+    "1": ("Feature selection on custom file (using file_prompter)", feature_selection_custom_data),
+    "2": ("Feature selection on default featured data (original process)", feature_selection_default_data),
+    "0": ("Exit", lambda dry_run: None),
+}
+
+
+def print_menu(dry_run: bool) -> None:
+    print("")
+    print("=================================================")
+    print("Feature Selection Menu")
+    print("=================================================")
+
+    for key, (label, _) in MENU.items():
+        print(f"{key}. {label}")
+
+    print("")
+    print("Note: Option 1 lets you pick a specific dataset file via file_prompter.")
+    print("      Option 2 runs feature selection on default featured dataset.")
+    print("=================================================")
+
+
+def pause() -> None:
+    pause_for_user()
+
+
+def interactive_loop(dry_run: bool = False) -> None:
+    PATHS.ensure_dirs()
+
+    while True:
+        print_menu(dry_run)
+        choice = prompt_menu_choice()
+
+        if choice is None:
+            return
+
+        if choice == "0":
+            print("Goodbye.")
+            return
+
+        menu_item = MENU.get(choice)
+
+        if not menu_item:
+            print("Invalid option.")
+            if not pause_for_user():
+                return
+            continue
+
+        label, action = menu_item
+
+        print("")
+        print(f"Selected: {label}")
+
+        action(dry_run)
+
+        if not pause_for_user():
+            return
+
+
+def run_non_interactive(command: str, dry_run: bool = False) -> None:
+    shortcuts: dict[str, Callable[[bool], None]] = {
+        "custom": lambda dry_run: feature_selection_custom_data(dry_run=dry_run, interactive=False),
+        "default": lambda dry_run: feature_selection_default_data(dry_run=dry_run, interactive=False),
+    }
+
+    action = shortcuts.get(command)
+
+    if not action:
+        print(f"Unknown command: {command}")
+        print("")
+        print("Available commands:")
+        for key in shortcuts:
+            print(f" - {key}")
+        sys.exit(1)
+
+    PATHS.ensure_dirs()
+    action(dry_run)
+
+
+def main() -> Optional[dict[str, pd.DataFrame]]:
+    parser = argparse.ArgumentParser(description="Interactive manager for Feature Selection")
+
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print commands without executing them where supported.",
+    )
+
+    parser.add_argument(
+        "--command",
+        choices=[
+            "custom",
+            "default",
+        ],
+        help="Run a workflow directly without opening the menu.",
+    )
+
+    args = parser.parse_args()
+
+    if args.command:
+        run_non_interactive(args.command, dry_run=args.dry_run)
+        return None
+    else:
+        interactive_loop(dry_run=args.dry_run)
+        return None
 
 
 if __name__ == "__main__":

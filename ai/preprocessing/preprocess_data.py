@@ -29,7 +29,14 @@ import argparse
 import sys
 from pathlib import Path
 from typing import Callable, Optional
-from ai.core.file_prompter import choose_input_file, generate_output_filename
+
+from ai.core.file_prompter import (
+    choose_input_file,
+    generate_output_filename,
+    pause_for_user,
+    prompt_menu_choice,
+)
+from ai.core.file_status import write_dataframe_csv_with_status
 from ai.preprocessing.load_data import load_all_data, load_data_file, get_dataset_name
 from plant_data_bank_scripts.scripts.project_paths import PATHS
 from ai.preprocessing.standardize_schema import standardize_schema
@@ -48,6 +55,22 @@ def is_sensor_dataset(source_name: str) -> bool:
     Return True for raw files that contain sensor readings.
     """
     return source_name == "sensor" or source_name.startswith("sensor_readings")
+
+
+def infer_dataset_origin(source_name: str) -> str:
+    """
+    Keep external and local/application observations traceable.
+    """
+
+    external_markers = ("kaggle", "mendeley", "cropdata", "tomato irrigation")
+
+    if any(marker in source_name.lower() for marker in external_markers):
+        return "external"
+
+    if source_name in {"sensor", "weather", "plants"}:
+        return "local"
+
+    return "unknown"
 
 
 # =====================================================
@@ -77,6 +100,10 @@ def preprocess_dataframe(df: pd.DataFrame, source_name: str, interactive: bool =
     """
 
     print(f"\nPreprocessing: {source_name}")
+
+    df = df.copy()
+    df["dataset_source"] = source_name
+    df["dataset_origin"] = infer_dataset_origin(source_name)
 
     # Step 1
     df = standardize_schema(df, source_name, interactive=interactive)
@@ -111,14 +138,13 @@ def preprocess_custom_data(dry_run: bool = False, interactive: bool = True) -> O
 
     try:
         input_file = choose_input_file()
+        output_file = generate_output_filename(input_file=input_file)
     except KeyboardInterrupt:
         print("\nFile selection cancelled.")
         return None
-    except FileNotFoundError as error:
+    except (FileNotFoundError, FileExistsError) as error:
         print(f"\nError: {error}")
         return None
-
-    output_file = generate_output_filename(input_file=input_file)
 
     print(f"\nSelected Input File : {input_file}")
     print(f"Target Output File  : {output_file}")
@@ -128,8 +154,11 @@ def preprocess_custom_data(dry_run: bool = False, interactive: bool = True) -> O
 
     processed_df = preprocess_dataframe(df, source_name, interactive=interactive)
 
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    processed_df.to_csv(output_file, index=False)
+    write_dataframe_csv_with_status(
+        processed_df,
+        output_file,
+        description="preprocessed dataset",
+    )
 
     print("\nSingle file preprocessing completed successfully!")
     print(f"Processed dataset saved to:\n  {output_file}")
@@ -192,7 +221,7 @@ def print_menu(dry_run: bool) -> None:
 
 
 def pause() -> None:
-    input("\nPress Enter to continue...")
+    pause_for_user()
 
 
 def interactive_loop(dry_run: bool = False) -> None:
@@ -200,7 +229,10 @@ def interactive_loop(dry_run: bool = False) -> None:
 
     while True:
         print_menu(dry_run)
-        choice = input("Choose an option: ").strip()
+        choice = prompt_menu_choice()
+
+        if choice is None:
+            return
 
         if choice == "0":
             print("Goodbye.")
@@ -210,7 +242,8 @@ def interactive_loop(dry_run: bool = False) -> None:
 
         if not menu_item:
             print("Invalid option.")
-            pause()
+            if not pause_for_user():
+                return
             continue
 
         label, action = menu_item
@@ -220,7 +253,8 @@ def interactive_loop(dry_run: bool = False) -> None:
 
         action(dry_run)
 
-        pause()
+        if not pause_for_user():
+            return
 
 
 def run_non_interactive(command: str, dry_run: bool = False) -> None:

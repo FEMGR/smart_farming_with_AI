@@ -15,9 +15,11 @@ import { useData } from '@/context/DataContext';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function PlanPreviewScreen() {
+  const colors = useTheme();
   const router = useRouter();
   const { confirmPolyculture, getPolyculturePreview } = useData();
 
@@ -118,7 +120,7 @@ export default function PlanPreviewScreen() {
   if (loading) {
     return (
       <ThemedView style={styles.center}>
-        <ActivityIndicator size="large" color="#10B981" />
+        <ActivityIndicator size="large" color={colors.emerald} />
       </ThemedView>
     );
   }
@@ -135,7 +137,7 @@ export default function PlanPreviewScreen() {
         {/* Header */}
         <View style={styles.header}>
           <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-            <SymbolView name="chevron.left" size={24} tintColor="#10B981" />
+            <SymbolView name="chevron.left" size={24} tintColor={colors.emerald} />
           </TouchableOpacity>
           <View>
             <ThemedText type="subtitle" style={styles.title}>
@@ -150,13 +152,13 @@ export default function PlanPreviewScreen() {
         <ScrollView contentContainerStyle={styles.scrollContent}>
           {/* Warnings Banner */}
           {warnings.length > 0 && (
-            <ThemedView style={styles.warningBanner}>
+            <ThemedView style={[styles.warningBanner, { backgroundColor: colors.badgeErrorBackground, borderColor: colors.badgeErrorText }]}>
               <View style={styles.warningTitleLine}>
-                <SymbolView name="exclamationmark.triangle.fill" size={16} tintColor="#DC2626" />
-                <ThemedText style={styles.warningTitle}>Planning Warnings</ThemedText>
+                <SymbolView name="exclamationmark.triangle.fill" size={16} tintColor={colors.badgeErrorText} />
+                <ThemedText style={[styles.warningTitle, { color: colors.badgeErrorText }]}>Planning Warnings</ThemedText>
               </View>
               {warnings.map((warn: string, i: number) => (
-                <ThemedText key={`warn-${i}`} style={styles.warningText}>
+                <ThemedText key={`warn-${i}`} style={[styles.warningText, { color: colors.badgeErrorText }]}>
                   • {warn}
                 </ThemedText>
               ))}
@@ -165,10 +167,10 @@ export default function PlanPreviewScreen() {
 
           {/* Suggested Sections */}
           {suggestedSections.length > 0 && (
-            <ThemedView style={styles.suggestionBanner}>
+            <ThemedView style={[styles.suggestionBanner, { backgroundColor: colors.infoBackground, borderColor: colors.info }]}>
               <View style={styles.suggestionTitleLine}>
-                <SymbolView name="info.circle.fill" size={16} tintColor="#2563EB" />
-                <ThemedText style={styles.suggestionTitle}>Suggested Additional Sections</ThemedText>
+                <SymbolView name="info.circle.fill" size={16} tintColor={colors.info} />
+                <ThemedText style={[styles.suggestionTitle, { color: colors.infoText }]}>Suggested Additional Sections</ThemedText>
               </View>
               {suggestedSections.map((sec: any, i: number) => (
                 <ThemedText key={`sec-${i}`} style={styles.suggestionText}>
@@ -323,12 +325,12 @@ export default function PlanPreviewScreen() {
                             <SymbolView
                               name={isChecked ? 'checkmark.circle.fill' : 'circle'}
                               size={14}
-                              tintColor={isChecked ? '#fff' : '#10B981'}
+                              tintColor={isChecked ? colors.textInverse : colors.emerald}
                             />
                             <ThemedText
                               style={[
                                 styles.additionOptionText,
-                                isChecked && { color: '#fff', fontWeight: 'bold' },
+                                isChecked && { color: colors.textInverse, fontWeight: 'bold' },
                               ]}
                             >
                               {item.plant}
@@ -339,12 +341,12 @@ export default function PlanPreviewScreen() {
                     </View>
 
                     <TouchableOpacity
-                      style={styles.regenerateBtn}
+                      style={[styles.regenerateBtn, { backgroundColor: colors.blue }]}
                       onPress={() => handleRegenerate(group.group_id)}
                       disabled={additions.length === 0 || confirmLoading}
                     >
-                      <SymbolView name="arrow.clockwise" size={12} tintColor="#fff" />
-                      <ThemedText style={styles.regenerateBtnText}>Add & Regenerate</ThemedText>
+                      <SymbolView name="arrow.clockwise" size={12} tintColor={colors.textInverse} />
+                      <ThemedText style={[styles.regenerateBtnText, { color: colors.textInverse }]}>Add & Regenerate</ThemedText>
                     </TouchableOpacity>
                   </View>
                 )}
@@ -358,24 +360,24 @@ export default function PlanPreviewScreen() {
               Confirm and Save Plan
             </ThemedText>
             <TextInput
-              style={styles.input}
+              style={[styles.input, { color: colors.text, borderColor: colors.border }]}
               placeholder="e.g. Summer Tomato Plan"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={planName}
               onChangeText={setPlanName}
             />
 
             <TouchableOpacity
-              style={styles.confirmBtn}
+              style={[styles.confirmBtn, { backgroundColor: colors.emerald }]}
               onPress={handleConfirmPlan}
               disabled={confirmLoading}
             >
               {confirmLoading ? (
-                <ActivityIndicator color="#fff" />
+                <ActivityIndicator color={colors.textInverse} />
               ) : (
                 <>
-                  <SymbolView name="checkmark.circle" size={16} tintColor="#fff" style={{ marginRight: 6 }} />
-                  <ThemedText style={styles.confirmBtnText}>Save Polyculture Plan</ThemedText>
+                  <SymbolView name="checkmark.circle" size={16} tintColor={colors.textInverse} style={{ marginRight: 6 }} />
+                  <ThemedText style={[styles.confirmBtnText, { color: colors.textInverse }]}>Save Polyculture Plan</ThemedText>
                 </>
               )}
             </TouchableOpacity>

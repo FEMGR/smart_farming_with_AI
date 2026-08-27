@@ -45,52 +45,105 @@ def render_species_lookup() -> None:
     Renders the species lookup page, allowing users to search for plant species
     and view suggestions.
     """
-    st.subheader("Species Lookup")
+    st.subheader("Species Lookup & Discovery")
 
-    query = st.text_input("Search species", placeholder="tomato, basil, lettuce")
+    if "species_expanded_accordion" not in st.session_state:
+        st.session_state["species_expanded_accordion"] = "search"
 
-    if not query:
-        st.caption("Search by common or scientific name.")
-        return
+    query = st.session_state.get("species_search_query", "")
 
-    try:
-        # Fetch species suggestions from the backend API
-        suggestions = suggest_species(query)
-    except RuntimeError as exc:
-        st.error(str(exc))
-        return
+    accordion_items = [
+        {
+            "id": "search",
+            "title": "Species Search Query",
+            "due": f"Query: '{query}'" if query else "Ready to Search",
+            "finished_count": 1 if query else 0,
+            "total_count": 1,
+            "progress": 1.0 if query else 0.0,
+            "type": "search",
+        },
+        {
+            "id": "results",
+            "title": "Matching Species Results",
+            "due": "Live Results",
+            "finished_count": 1,
+            "total_count": 1,
+            "progress": 1.0,
+            "type": "results",
+        },
+    ]
 
-    if not suggestions:
-        st.info("No species suggestions found.")
-        return
+    for item in accordion_items:
+        sec_id = item["id"]
+        is_open = st.session_state.get("species_expanded_accordion") == sec_id
+        arrow_icon = "▲" if is_open else "▼"
 
-    # Display each species suggestion in a container
-    for species in suggestions:
-        with st.container(border=True):
-            cols = st.columns([1, 3, 1])
-            thumbnail = species.get("thumbnail_url")
+        st.markdown('<div class="farm-panel" style="margin-bottom: 12px; padding: 16px;">', unsafe_allow_html=True)
+        col_title, col_due, col_progress, col_arrow = st.columns([3, 2, 4, 1])
 
-            # Display thumbnail image if available
-            if thumbnail:
-                cols[0].image(thumbnail, width="stretch")
-            else:
-                cols[0].caption("No image")
+        with col_title:
+            st.markdown(f"### {item['title']}")
 
-            # Display common and scientific names
-            cols[1].write(f"**{species.get('common_name') or 'Unknown common name'}**")
-            cols[1].caption(species.get("scientific_name") or "Unknown scientific name")
+        with col_due:
+            st.markdown(f"**Deadline / Status:**<br>`{item['due']}`", unsafe_allow_html=True)
 
-            # Display status pills for source, score, and plant type
-            cols[1].markdown(
-                " ".join(
-                    [
-                        f'<span class="status-pill">{species.get("source", "source")}</span>',
-                        f'<span class="status-pill">score {species.get("score", 0):.2f}</span>',
-                        f'<span class="status-pill">{species.get("plant_type") or "type unknown"}</span>',
-                    ]
-                ),
-                unsafe_allow_html=True,
-            )
+        with col_progress:
+            st.markdown(f"**Tasks:** {item['finished_count']} / {item['total_count']} ({int(item['progress'] * 100)}%)")
+            st.progress(item["progress"])
 
-            # Display species ID
-            cols[2].write(f"ID `{species.get('id')}`")
+        with col_arrow:
+            if st.button(arrow_icon, key=f"btn_acc_spec_{sec_id}", help=f"Toggle {item['title']}"):
+                if is_open:
+                    st.session_state["species_expanded_accordion"] = None
+                else:
+                    st.session_state["species_expanded_accordion"] = sec_id
+                st.rerun()
+
+        if is_open:
+            st.divider()
+            if item["type"] == "search":
+                new_query = st.text_input("Search species", value=query, placeholder="tomato, basil, lettuce")
+                if new_query != query:
+                    st.session_state["species_search_query"] = new_query
+                    st.session_state["species_expanded_accordion"] = "results"
+                    st.rerun()
+            elif item["type"] == "results":
+                if not query:
+                    st.caption("Enter a search term in the query section above.")
+                else:
+                    try:
+                        suggestions = suggest_species(query)
+                    except RuntimeError as exc:
+                        st.error(str(exc))
+                        suggestions = []
+
+                    if not suggestions:
+                        st.info("No species suggestions found.")
+                    else:
+                        for species in suggestions:
+                            with st.container(border=True):
+                                cols = st.columns([1, 3, 1])
+                                thumbnail = species.get("thumbnail_url")
+
+                                if thumbnail:
+                                    cols[0].image(thumbnail, width="stretch")
+                                else:
+                                    cols[0].caption("No image")
+
+                                cols[1].write(f"**{species.get('common_name') or 'Unknown common name'}**")
+                                cols[1].caption(species.get("scientific_name") or "Unknown scientific name")
+
+                                cols[1].markdown(
+                                    " ".join(
+                                        [
+                                            f'<span class="status-pill">{species.get("source", "source")}</span>',
+                                            f'<span class="status-pill">score {species.get("score", 0):.2f}</span>',
+                                            f'<span class="status-pill">{species.get("plant_type") or "type unknown"}</span>',
+                                        ]
+                                    ),
+                                    unsafe_allow_html=True,
+                                )
+
+                                cols[2].write(f"ID `{species.get('id')}`")
+
+        st.markdown("</div>", unsafe_allow_html=True)
