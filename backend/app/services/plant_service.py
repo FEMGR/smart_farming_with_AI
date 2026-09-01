@@ -114,7 +114,7 @@ def _attach_metadata(plant: Plant):
         # Column name should be 'scientific_name'
         plant.species_name = plant.species.scientific_name if plant.species else "Unknown"
 
-        # Ensure plant_type is never None for the frontend
+        # Ensure plant_type is never None for the frontend_streamlit
         if not plant.plant_type:
             plant.plant_type = "vegetable"
     return plant

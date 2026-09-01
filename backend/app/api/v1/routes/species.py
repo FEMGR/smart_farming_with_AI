@@ -16,7 +16,7 @@ Architecture Role:
 
 Layer Interaction:
 - Communicates with: Services (perenual_service), Database (via dependency)
-- Called by: Client applications (frontend, API consumers)
+- Called by: Client applications (frontend_streamlit, API consumers)
 
 Data Flow:
 User sends species query (e.g., search input)

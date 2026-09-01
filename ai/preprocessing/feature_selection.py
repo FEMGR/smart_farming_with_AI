@@ -7,6 +7,8 @@ This script does not create new features. It only selects relevant columns from
 featured_data.csv and writes one training CSV per model objective.
 """
 
+# ai/preprocessing/feature_selection.py
+
 import argparse
 import sys
 from pathlib import Path
@@ -25,8 +27,9 @@ from ai.core.file_prompter import (
     pause_for_user,
     prompt_menu_choice,
 )
+from ai.core.menu_runner import MenuItem, MenuRunner
 from ai.core.file_status import write_dataframe_csv_with_status
-from plant_data_bank_scripts.scripts.project_paths import PATHS
+from data_bank.scripts.project_paths import PATHS
 
 # ==========================================================
 # Project Paths
@@ -127,9 +130,9 @@ def split_training_sets(
     return build_training_datasets(featured_df)
 
 
-# ==========================================================
-# Pipeline Workflows
-# ==========================================================
+# =========================================================
+# MENU & WORKFLOW DRIVER
+# =========================================================
 
 
 def feature_selection_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[dict[str, pd.DataFrame]]:
@@ -142,7 +145,7 @@ def feature_selection_custom_data(dry_run: bool = False, interactive: bool = Tru
 
     try:
         input_file = choose_input_file(directory=PROCESSED_DATA_DIR)
-        output_file = generate_phase_output_filename(input_file=input_file, phase="selected")
+        output_file = generate_phase_output_filename(input_file=input_file, phase="feature_selection")
     except KeyboardInterrupt:
         print("\nFile selection cancelled.")
         return None
@@ -176,67 +179,37 @@ def feature_selection_default_data(dry_run: bool = False, interactive: bool = Tr
     return training_sets
 
 
-# =========================================================
-# MENU
-# =========================================================
-
-MENU: dict[str, tuple[str, Callable[[bool], None]]] = {
-    "1": ("Feature selection on custom file (using file_prompter)", feature_selection_custom_data),
-    "2": ("Feature selection on default featured data (original process)", feature_selection_default_data),
-    "0": ("Exit", lambda dry_run: None),
-}
-
-
-def print_menu(dry_run: bool) -> None:
-    print("")
-    print("=================================================")
-    print("Feature Selection Menu")
-    print("=================================================")
-
-    for key, (label, _) in MENU.items():
-        print(f"{key}. {label}")
-
-    print("")
-    print("Note: Option 1 lets you pick a specific dataset file via file_prompter.")
-    print("      Option 2 runs feature selection on default featured dataset.")
-    print("=================================================")
-
-
-def pause() -> None:
-    pause_for_user()
-
-
 def interactive_loop(dry_run: bool = False) -> None:
     PATHS.ensure_dirs()
 
-    while True:
-        print_menu(dry_run)
-        choice = prompt_menu_choice()
+    menu = MenuRunner(
+        title="Feature Selection Menu",
+        items=[
+            MenuItem(
+                key="1",
+                label="Feature Selection on custom file (using file_prompter)",
+                action=feature_selection_custom_data,
+            ),
+            MenuItem(
+                key="2",
+                label="Feature Selection on default merged data (original process)",
+                action=feature_selection_default_data,
+            ),
+            MenuItem(
+                key="0",
+                label="Exit",
+                action=lambda dry_run: None,
+            ),
+        ],
+        prompt_func=prompt_menu_choice,
+        pause_func=pause_for_user,
+        notes=[
+            "Option 1 lets you pick a specific file via file_prompter.",
+            "Option 2 runs feature engineering on default merged dataset.",
+        ],
+    )
 
-        if choice is None:
-            return
-
-        if choice == "0":
-            print("Goodbye.")
-            return
-
-        menu_item = MENU.get(choice)
-
-        if not menu_item:
-            print("Invalid option.")
-            if not pause_for_user():
-                return
-            continue
-
-        label, action = menu_item
-
-        print("")
-        print(f"Selected: {label}")
-
-        action(dry_run)
-
-        if not pause_for_user():
-            return
+    menu.run(dry_run=dry_run)
 
 
 def run_non_interactive(command: str, dry_run: bool = False) -> None:

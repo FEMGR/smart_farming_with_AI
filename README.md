@@ -79,8 +79,8 @@ smart-farming-system/
 │   │   └── workers/                  # Background scheduler
 │   ├── cache/species_snapshots/      # Local species detail snapshots
 │   └── docker-compose.yml            # Backend/PostgreSQL compose file
-├── frontend/                         # Streamlit dashboard
-├── mobile/                           # Expo React Native client
+├── frontend_react_native/                         # Streamlit dashboard
+├── frontend_streamlit/                           # Expo React Native client
 ├── logic_companion_planting/         # Prolog facts, rules, taxonomy, and loader
 ├── plant_data_bank_scripts/          # Data bank extraction, enrichment, and Prolog export scripts
 ├── docs/                             # Architecture and technology documentation
@@ -216,13 +216,13 @@ Plants can still be created manually when no confident species match is found.
 Start the FastAPI backend first, then run the dashboard from the repository root:
 
 ```bash
-streamlit run frontend/streamlit_app.py
+streamlit run frontend_streamlit/streamlit_app.py
 ```
 
 The dashboard uses `http://127.0.0.1:8000` by default. To point it at a different backend:
 
 ```bash
-SMART_FARMING_API_URL=http://localhost:8000 streamlit run frontend/streamlit_app.py
+SMART_FARMING_API_URL=http://localhost:8000 streamlit run frontend_streamlit/streamlit_app.py
 ```
 
 Authenticated dashboard tabs currently cover overview, plants, locations, irrigation, recommendations, planning, layout, notifications, species lookup, and pest query.
@@ -238,7 +238,7 @@ PYTHONPATH=backend uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 Then start Expo:
 
 ```bash
-cd mobile
+cd frontend_react_native
 npm install
 npx expo start
 ```

@@ -1,25 +1,26 @@
 """Train, evaluate, compare, and persist irrigation prediction models."""
 
+# ai/tasks/irrigation_prediction.py
+
 from __future__ import annotations
 
-from pathlib import Path
+import argparse
 import json
 import shutil
 import sys
-from typing import Any
+from pathlib import Path
+from typing import Any, Callable, Optional
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
-
+from data_bank.scripts.project_paths import PATHS
 from ai.core.ml.data_loader import load_dataset  # noqa: E402
-from ai.core.ml.evaluation import evaluate_model, save_metrics  # noqa: E402
+from ai.core.ml.evaluation import evaluate_model, save_metrics, print_evaluation_summary  # noqa: E402
 from ai.core.ml.feature_importance import extract_and_save_feature_importance  # noqa: E402
 from ai.core.ml.metadata import create_model_metadata, save_metadata  # noqa: E402
 from ai.core.ml.model_io import save_model, save_preprocessing_artifacts  # noqa: E402
 from ai.core.ml.preprocessing import PreprocessingConfig, preprocess_dataset  # noqa: E402
 from ai.core.ml.splitting import SplitConfig  # noqa: E402
 from ai.core.ml.training import get_model_params, train_model  # noqa: E402
+
 from ai.models.gradient_boosting import build_model as build_gradient_boosting_model  # noqa: E402
 from ai.models.pytorch_mlp import build_model as build_pytorch_mlp_model  # noqa: E402
 from ai.models.random_forest import build_model as build_random_forest_model  # noqa: E402
@@ -37,6 +38,18 @@ from ai.core.constants import (  # noqa: E402
     IRRIGATION_TASK_NAME as TASK_NAME,
     IRRIGATION_TEST_SIZE as TEST_SIZE,
 )
+from ai.core.file_prompter import (
+    PROCESSED_DATA_DIR,
+    choose_input_file,
+    pause_for_user,
+    prompt_menu_choice,
+)
+from ai.core.menu_runner import MenuItem, MenuRunner
+
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 
 MODEL_BUILDERS = {
     "random_forest": build_random_forest_model,
@@ -46,14 +59,44 @@ MODEL_BUILDERS = {
 }
 
 
-def train_all_models() -> dict[str, Any]:
+def prepare_training_data(dataset_path: Path = DATASET_PATH) -> dict[str, Any]:
+    """Load specified dataset (or default) and run shared preprocessing/splitting."""
+
+    print(f"\nLoading dataset: {dataset_path}")
+    df = load_dataset(dataset_path, required_columns=[TARGET_COLUMN])
+    print(f"Rows    : {len(df)}")
+    print(f"Columns : {len(df.columns)}")
+
+    print("\nPreprocessing with shared ML core...")
+    data = preprocess_dataset(
+        df,
+        config=PreprocessingConfig(
+            target_column=TARGET_COLUMN,
+            target_candidates=TARGET_CANDIDATES,
+            problem_type=PROBLEM_TYPE,
+        ),
+        split_config=SplitConfig(
+            test_size=TEST_SIZE,
+            random_state=RANDOM_STATE,
+            stratify=PROBLEM_TYPE == "classification",
+        ),
+    )
+
+    print(f"Problem Type : {data['problem_type']}")
+    print(f"Target       : {data['target']}")
+    print(f"Features     : {len(data['features'])}")
+
+    return data
+
+
+def train_all_models(dataset_path: Path = DATASET_PATH) -> dict[str, Any]:
     """Train configured irrigation models and save the best model."""
 
     print("=" * 60)
     print(f"{TASK_LABEL} Training")
     print("=" * 60)
 
-    data = prepare_training_data()
+    data = prepare_training_data(dataset_path=dataset_path)
     results = []
 
     for model_name in MODEL_ORDER:
@@ -82,42 +125,11 @@ def train_all_models() -> dict[str, Any]:
     }
 
 
-def train_selected_model(model_name: str) -> dict[str, Any]:
+def train_selected_model(model_name: str, dataset_path: Path = DATASET_PATH) -> dict[str, Any]:
     """Train and evaluate one configured irrigation model."""
 
-    data = prepare_training_data()
+    data = prepare_training_data(dataset_path=dataset_path)
     return train_and_evaluate_model(model_name, data)
-
-
-def prepare_training_data() -> dict[str, Any]:
-    """Load irrigation_training.csv and run shared preprocessing/splitting."""
-
-    print("\nLoading dataset...")
-    df = load_dataset(DATASET_PATH, required_columns=[TARGET_COLUMN])
-    print(f"Rows    : {len(df)}")
-    print(f"Columns : {len(df.columns)}")
-    print(f"Dataset : {DATASET_PATH}")
-
-    print("\nPreprocessing with shared ML core...")
-    data = preprocess_dataset(
-        df,
-        config=PreprocessingConfig(
-            target_column=TARGET_COLUMN,
-            target_candidates=TARGET_CANDIDATES,
-            problem_type=PROBLEM_TYPE,
-        ),
-        split_config=SplitConfig(
-            test_size=TEST_SIZE,
-            random_state=RANDOM_STATE,
-            stratify=PROBLEM_TYPE == "classification",
-        ),
-    )
-
-    print(f"Problem Type : {data['problem_type']}")
-    print(f"Target       : {data['target']}")
-    print(f"Features     : {len(data['features'])}")
-
-    return data
 
 
 def train_and_evaluate_model(model_name: str, data: dict[str, Any]) -> dict[str, Any]:
@@ -147,12 +159,19 @@ def train_and_evaluate_model(model_name: str, data: dict[str, Any]) -> dict[str,
         data["y_train"],
     )
 
+    # Compute test set evaluation metrics and cross-validation
     metrics = evaluate_model(
         training_result.model,
         data["X_test"],
         data["y_test"],
         data["problem_type"],
+        X_train=data["X_train"],
+        y_train=data["y_train"],
     )
+
+    # Print formatted evaluation summary to terminal
+    print_evaluation_summary(metrics, model_name=algorithm, problem_type=data["problem_type"])
+
     primary_metric = select_primary_metric(data["problem_type"], model_config)
     primary_metric_value = metrics[primary_metric]
 
@@ -195,8 +214,7 @@ def train_and_evaluate_model(model_name: str, data: dict[str, Any]) -> dict[str,
     )
     metadata_path = save_metadata(metadata, artifact_dir / "metadata.json")
 
-    print(f"{algorithm} {primary_metric}: {primary_metric_value:.4f}")
-    print(f"Artifacts: {artifact_dir}")
+    print(f"Artifacts saved to: {artifact_dir}")
 
     return {
         "model_name": model_name,
@@ -302,5 +320,125 @@ def _make_json_safe(value):
     return value
 
 
+# =========================================================
+# MENU & WORKFLOW DRIVER
+# =========================================================
+
+
+def train_irrigation_using_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[dict[str, Any]]:
+    """
+    Prompt user to select a feature-engineered dataset file via file_prompter and run model training.
+    """
+    if dry_run:
+        print("[DRY RUN] Would prompt for a custom dataset file and run model training.")
+        return None
+
+    try:
+        input_file = choose_input_file(directory=PROCESSED_DATA_DIR)
+    except KeyboardInterrupt:
+        print("\nFile selection cancelled.")
+        return None
+    except (FileNotFoundError, FileExistsError) as error:
+        print(f"\nError: {error}")
+        return None
+
+    print(f"\nSelected Input File: {input_file}")
+    return train_all_models(dataset_path=input_file)
+
+
+def train_irrigation_using_default_data(dry_run: bool = False, interactive: bool = True) -> Optional[dict[str, Any]]:
+    """
+    Run irrigation model training using default dataset path.
+    """
+    if dry_run:
+        print(f"[DRY RUN] Would train models using default dataset: {DATASET_PATH}")
+        return None
+
+    if not DATASET_PATH.exists():
+        print(f"\nError: Default dataset file not found: {DATASET_PATH}")
+        return None
+
+    return train_all_models(dataset_path=DATASET_PATH)
+
+
+def interactive_loop(dry_run: bool = False) -> None:
+    PATHS.ensure_dirs()
+
+    menu = MenuRunner(
+        title="Irrigation Training Menu",
+        items=[
+            MenuItem(
+                key="1",
+                label="Irrigation training using custom file (using file_prompter)",
+                action=train_irrigation_using_custom_data,
+            ),
+            MenuItem(
+                key="2",
+                label="Irrigation training using default merged data (original process)",
+                action=train_irrigation_using_default_data,
+            ),
+            MenuItem(
+                key="0",
+                label="Exit",
+                action=lambda dry_run: None,
+            ),
+        ],
+        prompt_func=prompt_menu_choice,
+        pause_func=pause_for_user,
+        notes=[
+            "Option 1 lets you pick a specific file via file_prompter.",
+            "Option 2 runs training on the default dataset.",
+        ],
+    )
+
+    menu.run(dry_run=dry_run)
+
+
+def run_non_interactive(command: str, dry_run: bool = False) -> None:
+    shortcuts: dict[str, Callable[[bool], None]] = {
+        "custom": lambda dry_run: train_irrigation_using_custom_data(dry_run=dry_run, interactive=False),
+        "default": lambda dry_run: train_irrigation_using_default_data(dry_run=dry_run, interactive=False),
+    }
+
+    action = shortcuts.get(command)
+
+    if not action:
+        print(f"Unknown command: {command}")
+        print("")
+        print("Available commands:")
+        for key in shortcuts:
+            print(f" - {key}")
+        sys.exit(1)
+
+    PATHS.ensure_dirs()
+    action(dry_run)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Interactive manager for Irrigation Model Training")
+
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print commands without executing them where supported.",
+    )
+
+    parser.add_argument(
+        "--command",
+        choices=[
+            "custom",
+            "default",
+        ],
+        help="Run a workflow directly without opening the menu.",
+    )
+
+    args = parser.parse_args()
+
+    if args.command:
+        run_non_interactive(args.command, dry_run=args.dry_run)
+    else:
+        interactive_loop(dry_run=args.dry_run)
+
+
 if __name__ == "__main__":
-    train_all_models()
+    main()

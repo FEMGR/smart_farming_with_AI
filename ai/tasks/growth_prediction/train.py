@@ -1,5 +1,7 @@
 """Train, evaluate, compare, and persist growth prediction models."""
 
+# ai/tasks/growth_prediction.py
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -7,10 +9,6 @@ import json
 import shutil
 import sys
 from typing import Any
-
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
 
 from ai.core.ml.data_loader import load_dataset  # noqa: E402
 from ai.core.ml.evaluation import evaluate_model, save_metrics  # noqa: E402
@@ -35,6 +33,11 @@ from ai.core.constants import (  # noqa: E402
     GROWTH_TASK_NAME as TASK_NAME,
     GROWTH_TEST_SIZE as TEST_SIZE,
 )
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 MODEL_BUILDERS = {
     "random_forest": build_random_forest_model,

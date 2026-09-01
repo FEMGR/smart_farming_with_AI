@@ -4,7 +4,7 @@ import importlib.util
 import sys
 from pathlib import Path
 
-MODULE_PATH = Path(__file__).resolve().parents[1] / "plant_data_bank_scripts" / "scripts" / "prolog" / "reorder_prolog_facts_by_plant.py"
+MODULE_PATH = Path(__file__).resolve().parents[1] / "data_bank" / "scripts" / "prolog" / "reorder_prolog_facts_by_plant.py"
 
 spec = importlib.util.spec_from_file_location("reorder_prolog_facts_by_plant", MODULE_PATH)
 reorder = importlib.util.module_from_spec(spec)
@@ -22,7 +22,7 @@ def test_reorder_text_is_idempotent_after_generated_preamble_comments():
 
 % =========================================================
 % PLANT FACTS BY PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
+% Auto-organized by data_bank/scripts/prolog/reorder_prolog_facts_by_plant.py
 % =========================================================
 
 % ---------------------------------------------------------
@@ -31,7 +31,7 @@ def test_reorder_text_is_idempotent_after_generated_preamble_comments():
 
 % =========================================================
 % PLANT FACTS BY PLANT
-% Auto-organized by plant_data_bank_scripts/scripts/prolog/reorder_prolog_facts_by_plant.py
+% Auto-organized by data_bank/scripts/prolog/reorder_prolog_facts_by_plant.py
 % =========================================================
 
 % ---------------------------------------------------------
