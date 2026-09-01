@@ -19,7 +19,7 @@ def get_weather(
     longitude: float = Query(..., ge=-180, le=180),
 ):
     """
-    Return weather data for coordinates supplied by the frontend.
+    Return weather data for coordinates supplied by the frontend_streamlit.
     """
 
     return _fetch_weather_or_raise(latitude=latitude, longitude=longitude)
@@ -28,7 +28,7 @@ def get_weather(
 @router.post("/current")
 def post_weather(request: WeatherRequest):
     """
-    Return weather data for coordinates supplied by the frontend.
+    Return weather data for coordinates supplied by the frontend_streamlit.
     """
 
     return _fetch_weather_or_raise(latitude=request.latitude, longitude=request.longitude)

@@ -35,7 +35,7 @@ from ai.core.file_prompter import (
 )
 from ai.core.file_status import write_dataframe_csv_with_status
 from ai.preprocessing.load_data import load_data_file
-from plant_data_bank_scripts.scripts.project_paths import PATHS
+from data_bank.scripts.project_paths import PATHS
 
 # =====================================================
 # Project Paths

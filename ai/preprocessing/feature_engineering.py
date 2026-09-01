@@ -32,10 +32,10 @@ from ai.core.file_prompter import (
     pause_for_user,
     prompt_menu_choice,
 )
+from ai.core.menu_runner import MenuItem, MenuRunner
 from ai.core.file_status import write_dataframe_csv_with_status
 from ai.preprocessing.load_data import load_data_file
-from plant_data_bank_scripts.scripts.project_paths import PATHS
-from ai.core.menu_runner import MenuItem, MenuRunner
+from data_bank.scripts.project_paths import PATHS
 
 # ==========================================================
 # Project Paths

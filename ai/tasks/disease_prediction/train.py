@@ -1,7 +1,8 @@
 """Train, evaluate, compare, and persist disease prediction models."""
 
-from __future__ import annotations
+# ai/tasks/disease_prediction.py
 
+from __future__ import annotations
 import argparse
 import json
 import shutil
@@ -17,11 +18,8 @@ from ai.core.constants import (
 from ai.core.file_prompter import choose_input_file, generate_phase_output_filename, prompt_menu_choice, pause_for_user, PROCESSED_DATA_DIR
 from ai.core.menu_runner import MenuRunner, MenuItem
 from ai.preprocessing.feature_engineering import process_feature_engineering_file
-from plant_data_bank_scripts.scripts.project_paths import PATHS
+from data_bank.scripts.project_paths import PATHS
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
 
 from ai.core.ml.data_loader import load_dataset  # noqa: E402
 from ai.core.ml.evaluation import evaluate_model, save_metrics  # noqa: E402
@@ -46,6 +44,10 @@ from ai.core.constants import (  # noqa: E402
     DISEASE_TASK_NAME as TASK_NAME,
     DISEASE_TEST_SIZE as TEST_SIZE,
 )
+
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 MODEL_BUILDERS = {
     "xgboost": build_xgboost_model,

@@ -1,5 +1,13 @@
 {
     "location": "location_id",
     "latitude": "latitude",
-    "longitude": "longitude"
+    "longitude": "longitude",
+    "plant_id": "plant_id",
+    "species_id": "species_id",
+    "plant_name": "plant_name",
+    "scientific_name": "scientific_name",
+    "life_cycle": "life_cycle",
+    "growth_stage": "growth_stage",
+    "recommended_soil": "recommended_soil",
+    "recommended_sunlight": "recommended_sunlight"
 }

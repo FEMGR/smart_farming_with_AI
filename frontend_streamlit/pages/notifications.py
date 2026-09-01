@@ -1,0 +1,160 @@
+"""
+Frontend page for displaying and managing user notifications.
+
+Key Point:
+Allows users to view a list of their notifications and mark them as read.
+
+Responsibilities:
+- Fetch and display all notifications for the current user.
+- Show notification details including type, message, and creation date.
+- Provide a button to mark unread notifications as read.
+- Trigger data refresh upon marking a notification as read.
+
+Architecture Role:
+- User interface component for notification management.
+- Interacts with the backend API to update notification status.
+
+Layer Interaction:
+- Communicates with: Streamlit (UI rendering), API (notifications.py for backend calls), State management (for data refresh).
+- Called by: Streamlit application routing.
+
+Data Flow:
+User navigates to notifications page
+        ↓
+Frontend fetches notifications from session state
+        ↓
+Notifications are displayed in a list
+        ↓
+User clicks "Mark read" for an unread notification
+        ↓
+API call to `mark_notification_read`
+        ↓
+Backend updates notification status in the database
+        ↓
+Frontend receives response, refreshes local data, and re-renders
+"""
+
+# frontend_streamlit/pages/notifications.py
+
+
+import streamlit as st
+
+from api.notifications import mark_notification_read
+from state import refresh_data
+from utils.formatting import format_date
+
+
+def _notification_location_label(notification: dict) -> str:
+    plant = notification.get("plant") or {}
+    bed_x = plant.get("bed_x")
+    bed_y = plant.get("bed_y")
+    location = plant.get("location") or {}
+    location_name = location.get("name")
+
+    parts = []
+    if bed_x is not None and bed_y is not None:
+        parts.append(f"Bed {int(bed_x) + 1} Row {int(bed_y) + 1}")
+
+    if location_name:
+        parts.append(location_name)
+
+    if parts:
+        return " • ".join(parts)
+
+    return notification.get("type", "notification").title()
+
+
+def render_notifications() -> None:
+    """
+    Renders the notifications page, displaying a list of user notifications
+    and allowing them to be marked as read.
+    """
+    st.subheader("Notifications Management")
+
+    if "notifications_expanded_accordion" not in st.session_state:
+        st.session_state["notifications_expanded_accordion"] = "unread"
+
+    notifications = st.session_state.get("notifications", [])
+    unread = [n for n in notifications if not n.get("is_read")]
+    read = [n for n in notifications if n.get("is_read")]
+
+    total_notis = len(notifications) or 1
+    read_count = len(read)
+    read_ratio = min(1.0, max(0.0, read_count / total_notis))
+
+    accordion_items = [
+        {
+            "id": "unread",
+            "title": "Unread Alerts",
+            "due": f"Unread: {len(unread)} pending",
+            "finished_count": read_count,
+            "total_count": total_notis,
+            "progress": read_ratio,
+            "type": "unread",
+        },
+        {
+            "id": "all",
+            "title": "All Notifications History",
+            "due": f"Total: {len(notifications)} notifications",
+            "finished_count": len(notifications),
+            "total_count": total_notis,
+            "progress": 1.0,
+            "type": "all",
+        },
+    ]
+
+    for item in accordion_items:
+        sec_id = item["id"]
+        is_open = st.session_state.get("notifications_expanded_accordion") == sec_id
+        arrow_icon = "▲" if is_open else "▼"
+
+        st.markdown('<div class="farm-panel" style="margin-bottom: 12px; padding: 16px;">', unsafe_allow_html=True)
+        col_title, col_due, col_progress, col_arrow = st.columns([3, 2, 4, 1])
+
+        with col_title:
+            st.markdown(f"### {item['title']}")
+
+        with col_due:
+            st.markdown(f"**Deadline / Status:**<br>`{item['due']}`", unsafe_allow_html=True)
+
+        with col_progress:
+            st.markdown(f"**Tasks:** {item['finished_count']} / {item['total_count']} ({int(item['progress'] * 100)}%)")
+            st.progress(item["progress"])
+
+        with col_arrow:
+            if st.button(arrow_icon, key=f"btn_acc_noti_{sec_id}", help=f"Toggle {item['title']}"):
+                if is_open:
+                    st.session_state["notifications_expanded_accordion"] = None
+                else:
+                    st.session_state["notifications_expanded_accordion"] = sec_id
+                st.rerun()
+
+        if is_open:
+            st.divider()
+            target_list = unread if item["type"] == "unread" else notifications
+            if not target_list:
+                st.info("No notifications in this list.")
+            else:
+                for notification in target_list:
+                    with st.container(border=True):
+                        cols = st.columns([3, 1, 1])
+
+                        cols[0].write(f"**{notification.get('message', '')}**")
+                        cols[0].caption(_notification_location_label(notification))
+
+                        cols[1].write("Unread" if not notification.get("is_read") else "Read")
+                        cols[1].caption(format_date(notification.get("created_at")))
+
+                        if not notification.get("is_read") and cols[2].button(
+                            "Mark read",
+                            key=f"read_{notification['id']}",
+                            width="stretch",
+                        ):
+                            try:
+                                mark_notification_read(notification["id"])
+                                refresh_data(show_errors=True)
+                                st.rerun()
+                            except RuntimeError as exc:
+                                st.error(str(exc))
+
+        st.markdown("</div>", unsafe_allow_html=True)

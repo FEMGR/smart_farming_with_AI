@@ -31,14 +31,16 @@ from pathlib import Path
 from typing import Callable, Optional
 
 from ai.core.file_prompter import (
+    RAW_DATA_DIR,
     choose_input_file,
-    generate_output_filename,
+    generate_phase_output_filename,
     pause_for_user,
     prompt_menu_choice,
 )
+from ai.core.menu_runner import MenuItem, MenuRunner
 from ai.core.file_status import write_dataframe_csv_with_status
 from ai.preprocessing.load_data import load_all_data, load_data_file, get_dataset_name
-from plant_data_bank_scripts.scripts.project_paths import PATHS
+from data_bank.scripts.project_paths import PATHS
 from ai.preprocessing.standardize_schema import standardize_schema
 from ai.preprocessing.standardize_units import standardize_units
 from ai.preprocessing.clean_data import clean_dataframe
@@ -126,6 +128,11 @@ def preprocess_dataframe(df: pd.DataFrame, source_name: str, interactive: bool =
     return df
 
 
+# =========================================================
+# MENU & WORKFLOW DRIVER
+# =========================================================
+
+
 def preprocess_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[pd.DataFrame]:
     """
     Prompt the user to select one file via file_prompter, preprocess it,
@@ -136,8 +143,8 @@ def preprocess_custom_data(dry_run: bool = False, interactive: bool = True) -> O
         return None
 
     try:
-        input_file = choose_input_file()
-        output_file = generate_output_filename(input_file=input_file)
+        input_file = choose_input_file(directory=RAW_DATA_DIR)
+        output_file = generate_phase_output_filename(input_file=input_file, phase="preprocessed")
     except KeyboardInterrupt:
         print("\nFile selection cancelled.")
         return None
@@ -165,11 +172,6 @@ def preprocess_custom_data(dry_run: bool = False, interactive: bool = True) -> O
     return processed_df
 
 
-# =====================================================
-# Preprocess every dataset
-# =====================================================
-
-
 def preprocess_all_data(dry_run: bool = False, interactive: bool = True) -> dict[str, pd.DataFrame]:
     """
     Load and preprocess every dataset in raw data folder (original process).
@@ -193,67 +195,37 @@ def preprocess_all_data(dry_run: bool = False, interactive: bool = True) -> dict
     return processed
 
 
-# =========================================================
-# MENU
-# =========================================================
-
-MENU: dict[str, tuple[str, Callable[[bool], None]]] = {
-    "1": ("Preprocess single file (using file_prompter)", preprocess_custom_data),
-    "2": ("Preprocess all raw data (original process)", preprocess_all_data),
-    "0": ("Exit", lambda dry_run: None),
-}
-
-
-def print_menu(dry_run: bool) -> None:
-    print("")
-    print("=================================================")
-    print("Preprocessing Menu")
-    print("=================================================")
-
-    for key, (label, _) in MENU.items():
-        print(f"{key}. {label}")
-
-    print("")
-    print("Note: Option 1 lets you pick a specific file via file_prompter.")
-    print("      Option 2 runs regular raw data processing across all datasets.")
-    print("=================================================")
-
-
-def pause() -> None:
-    pause_for_user()
-
-
 def interactive_loop(dry_run: bool = False) -> None:
     PATHS.ensure_dirs()
 
-    while True:
-        print_menu(dry_run)
-        choice = prompt_menu_choice()
+    menu = MenuRunner(
+        title="Preprocessing Menu",
+        items=[
+            MenuItem(
+                key="1",
+                label="Preprocessing on a custom file (using file_prompter)",
+                action=preprocess_custom_data,
+            ),
+            MenuItem(
+                key="2",
+                label="Preprocessing on default datasets (original process)",
+                action=preprocess_all_data,
+            ),
+            MenuItem(
+                key="0",
+                label="Exit",
+                action=lambda dry_run: None,
+            ),
+        ],
+        prompt_func=prompt_menu_choice,
+        pause_func=pause_for_user,
+        notes=[
+            "Option 1 lets you pick a specific file via file_prompter.",
+            "Option 2 runs feature engineering on default merged dataset.",
+        ],
+    )
 
-        if choice is None:
-            return
-
-        if choice == "0":
-            print("Goodbye.")
-            return
-
-        menu_item = MENU.get(choice)
-
-        if not menu_item:
-            print("Invalid option.")
-            if not pause_for_user():
-                return
-            continue
-
-        label, action = menu_item
-
-        print("")
-        print(f"Selected: {label}")
-
-        action(dry_run)
-
-        if not pause_for_user():
-            return
+    menu.run(dry_run=dry_run)
 
 
 def run_non_interactive(command: str, dry_run: bool = False) -> None:
