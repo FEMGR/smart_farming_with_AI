@@ -34,14 +34,14 @@ if str(PROJECT_ROOT) not in sys.path:
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 
 TASK_ALIASES = {
-    "irrigation": "irrigration_prediction",
+    "irrigation": "irrigation_prediction",
     "growth": "growth_prediction",
     "disease": "disease_prediction",
     "yield": "yield_prediction",
 }
 
 SUPPORTED_TASKS = (
-    "irrigration_prediction",
+    "irrigation_prediction",
     "growth_prediction",
     "disease_prediction",
     "yield_prediction",

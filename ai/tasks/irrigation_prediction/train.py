@@ -1,6 +1,6 @@
 """Train, evaluate, compare, and persist irrigation prediction models."""
 
-# ai/tasks/irrigration_prediction/train.py
+# ai/tasks/irrigation_prediction/train.py
 
 from __future__ import annotations
 

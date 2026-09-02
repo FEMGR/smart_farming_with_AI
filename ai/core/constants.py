@@ -790,9 +790,9 @@ SPECIES_TEMPLATES = [
 # =============================================================================
 
 # Irrigation Prediction Task
-IRRIGATION_TASK_NAME = "irrigration_prediction"
+IRRIGATION_TASK_NAME = "irrigation_prediction"
 IRRIGATION_TASK_LABEL = "Irrigation Prediction"
-IRRIGATION_TASK_FOLDER = AI_FOLDER / "tasks" / "irrigration_prediction"
+IRRIGATION_TASK_FOLDER = AI_FOLDER / "tasks" / "irrigation_prediction"
 IRRIGATION_DATASET_PATH = PROCESSED_DATA_DIR / "irrigation_training.csv"
 IRRIGATION_ARTIFACT_DIR = ARTIFACTS_DIR / IRRIGATION_TASK_NAME
 IRRIGATION_TARGET_COLUMN = "watering_needed"
