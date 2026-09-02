@@ -5,6 +5,8 @@ feature names used during training, applies saved preprocessing artifacts, and
 generates predictions from trained model artifacts.
 """
 
+# ai/inference/prediction_layer.py
+
 from __future__ import annotations
 
 from dataclasses import dataclass, asdict
@@ -16,11 +18,6 @@ import sys
 
 import pandas as pd
 import requests
-
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
-
 from ai.core.constants import (  # noqa: E402
     ARTIFACTS_DIR,
     TROPICAL_COUNTRIES,
@@ -28,6 +25,11 @@ from ai.core.constants import (  # noqa: E402
 from ai.core.ml.metadata import load_metadata  # noqa: E402
 from ai.core.ml.model_io import load_model, load_preprocessing_artifacts  # noqa: E402
 from ai.core.ml.prediction import predict_with_confidence  # noqa: E402
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 

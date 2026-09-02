@@ -31,7 +31,6 @@ Models (database structure)
 Database Layer (db.py)
         ↓
 PostgreSQL
-
 """
 
 # backend/main.py
@@ -39,12 +38,21 @@ PostgreSQL
 from contextlib import asynccontextmanager
 from pathlib import Path
 import sys
-
 from fastapi import FastAPI
 
+# ===============================
+# PATH RESOLUTION (MUST BE FIRST)
+# ===============================
 backend_dir = Path(__file__).resolve().parent
+project_root = backend_dir.parent
+
 if str(backend_dir) not in sys.path:
     sys.path.insert(0, str(backend_dir))
+
+# Add top-level project root so imports like `from ai...` resolve correctly
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
 
 # ===============================
 # FORCE MODEL REGISTRATION
@@ -52,7 +60,20 @@ if str(backend_dir) not in sys.path:
 # Ensures SQLAlchemy detects all tables
 
 import app.models as _models  # noqa: F401,E402
-from app.api.v1.routes import plants, auth, locations, irrigation, notifications, species, planning, lifecycle, production, knowledge, weather  # noqa: E402
+from app.api.v1.routes import (  # noqa: E402
+    auth,
+    irrigation,
+    knowledge,
+    lifecycle,
+    locations,
+    notifications,
+    planning,
+    plants,
+    prediction,  # <--- Registered Prediction Router
+    production,
+    species,
+    weather,
+)
 from app.core.error_handler import add_exception_handlers  # noqa: E402
 from app.core.logger import setup_logger  # noqa: E402
 from app.database.db import Base, SessionLocal, engine, sync_all_postgres_id_sequences  # noqa: E402
@@ -95,7 +116,7 @@ logger.info("Starting Smart Farming API")
 # ===============================
 # DATABASE INIT
 # ===============================
-logger.info(f"Using DB: {engine.url}")  # Corrected to f-string
+logger.info(f"Using DB: {engine.url}")
 Base.metadata.create_all(bind=engine)
 
 # ===============================
@@ -111,6 +132,7 @@ app.include_router(production.router)
 app.include_router(irrigation.router)
 app.include_router(knowledge.router)
 app.include_router(weather.router)
+app.include_router(prediction.router)  # <--- Included Router
 app.include_router(notifications.router, prefix="/notifications", tags=["Notifications"])
 
 # ===============================

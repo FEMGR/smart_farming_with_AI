@@ -1,6 +1,6 @@
 """Train, evaluate, compare, and persist irrigation prediction models."""
 
-# ai/tasks/irrigation_prediction.py
+# ai/tasks/irrigation_prediction/train.py
 
 from __future__ import annotations
 
@@ -100,7 +100,7 @@ def train_all_models(dataset_path: Path = DATASET_PATH) -> dict[str, Any]:
     results = []
 
     for model_name in MODEL_ORDER:
-        results.append(train_and_evaluate_model(model_name, data))
+        results.append(train_and_evaluate_model(model_name=model_name, data=data, dataset_path=dataset_path))
 
     comparison = compare_models(results)
     best_result = comparison["best_model"]
@@ -132,7 +132,7 @@ def train_selected_model(model_name: str, dataset_path: Path = DATASET_PATH) -> 
     return train_and_evaluate_model(model_name, data)
 
 
-def train_and_evaluate_model(model_name: str, data: dict[str, Any]) -> dict[str, Any]:
+def train_and_evaluate_model(model_name: str, data: dict[str, Any], dataset_path: Path = DATASET_PATH) -> dict[str, Any]:
     """Train, evaluate, and save one model."""
 
     if model_name not in MODELS:
@@ -202,7 +202,7 @@ def train_and_evaluate_model(model_name: str, data: dict[str, Any]) -> dict[str,
         metrics=metrics,
         extra={
             "model_name": model_name,
-            "dataset": str(DATASET_PATH),
+            "dataset": str(dataset_path),
             "primary_metric": primary_metric,
             "primary_metric_value": primary_metric_value,
             "training": {
