@@ -154,31 +154,48 @@ def train_vision_model(
 
     # ------------------- 0. RESUME CHECKPOINT LOADING -------------------
     if resume_checkpoint_path and resume_checkpoint_path.exists():
-        print(f"\n[RESUMING] Found existing checkpoint at: {resume_checkpoint_path}")
+        # Load raw metadata/checkpoint dictionary without applying state_dict yet
+        checkpoint_data = torch.load(resume_checkpoint_path, map_location=device)
 
-        # Use central checkpoint loader
-        loaded_data = load_checkpoint(
-            model=model,
-            path=resume_checkpoint_path,
-            optimizer=optimizer,
-            scheduler=scheduler if scheduler else None,
-            device=device,
-        )
+        # Check if final linear layer shape matches current num_classes
+        saved_out_features = checkpoint_data["model_state_dict"]["fc.1.weight"].shape[0]
+
+        if saved_out_features != num_classes:
+            print(
+                f"[WARNING] Class count mismatch! Checkpoint expects {saved_out_features} classes, "
+                f"but current dataset has {num_classes} classes. Starting fresh training..."
+            )
+            # Skip resuming or remove obsolete checkpoint
+            loaded_data = None
+        else:
+            # Use central checkpoint loader
+            loaded_data = load_checkpoint(
+                model=model,
+                path=resume_checkpoint_path,
+                optimizer=optimizer,
+                scheduler=scheduler if scheduler else None,
+                device=device,
+            )
 
         # Restore epoch and custom evaluation metrics from saved metadata
-        start_epoch = loaded_data.get("epoch", 0) + 1
-        metrics = loaded_data.get("metrics", {})
+        start_epoch = 1  # Default starting epoch for fresh training
 
-        history = metrics.get("history", history)
-        best_checkpoint_val_loss = metrics.get("best_checkpoint_val_loss", float("inf"))
-        best_checkpoint_val_acc = metrics.get("best_checkpoint_val_acc", 0.0)
-        best_checkpoint_val_f1 = metrics.get("best_checkpoint_val_f1", 0.0)
-        best_loss_epoch = metrics.get("best_loss_epoch", 0)
-        max_val_acc = metrics.get("max_val_acc", 0.0)
-        best_acc_epoch = metrics.get("best_acc_epoch", 0)
-        last_confusion_matrix = metrics.get("last_confusion_matrix", [])
+        if loaded_data:
+            start_epoch = loaded_data.get("epoch", 0) + 1
+            metrics = loaded_data.get("metrics", {})
 
-        print(f"[RESUMED] Successfully restored states! Resuming training from Epoch {start_epoch}/{cfg.epochs}...\n")
+            history = metrics.get("history", history)
+            best_checkpoint_val_loss = metrics.get("best_checkpoint_val_loss", float("inf"))
+            best_checkpoint_val_acc = metrics.get("best_checkpoint_val_acc", 0.0)
+            best_checkpoint_val_f1 = metrics.get("best_checkpoint_val_f1", 0.0)
+            best_loss_epoch = metrics.get("best_loss_epoch", 0)
+            max_val_acc = metrics.get("max_val_acc", 0.0)
+            best_acc_epoch = metrics.get("best_acc_epoch", 0)
+            last_confusion_matrix = metrics.get("last_confusion_matrix", [])
+
+            print(f"[RESUMED] Successfully restored states! Resuming training from Epoch {start_epoch}/{cfg.epochs}...\n")
+        else:
+            print(f"[TRAINING] Starting fresh training from Epoch 1/{cfg.epochs}...")
 
     try:
         for epoch in range(start_epoch, cfg.epochs + 1):

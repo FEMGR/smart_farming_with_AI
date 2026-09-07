@@ -27,7 +27,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 # Task Configurations
-DEFAULT_DATA_DIR = PROJECT_ROOT / "ai" / "datasets" / "raw" / "image" / "PlantDiseaseDetectionDataset"
+DEFAULT_DATA_DIR = PROJECT_ROOT / "ai" / "datasets" / "raw" / "image" / "PlantLeafImageDataset"
 ARTIFACT_DIR = PROJECT_ROOT / "ai" / "artifacts" / "plant_identification"
 TASK_NAME = "plant_identification"
 TASK_LABEL = "Plant Species Identification Vision Pipeline"
