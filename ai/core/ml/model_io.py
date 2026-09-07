@@ -26,7 +26,6 @@ import joblib
 
 from ai.core.file_status import write_joblib_with_status
 
-
 try:
     import torch
     from torch import nn
