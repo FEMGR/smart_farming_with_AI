@@ -1,5 +1,7 @@
 """Common training helpers for scikit-learn-compatible models."""
 
+# ai/core/ml/training.py
+
 from dataclasses import dataclass, field
 from datetime import datetime
 from time import perf_counter

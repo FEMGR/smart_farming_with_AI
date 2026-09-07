@@ -12,7 +12,7 @@ import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import LabelEncoder
 
-from ai.core.ml.splitting import SplitConfig, split_dataset
+from ai.core.tabular.splitting import SplitConfig, split_dataset
 
 
 @dataclass(frozen=True)

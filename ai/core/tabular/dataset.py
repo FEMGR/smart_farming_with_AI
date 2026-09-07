@@ -1,8 +1,10 @@
 """Dataset handling for PyTorch tabular models."""
 
-from typing import Literal
+# ai/core/tabular/dataset.py
 
+from typing import Literal
 import numpy as np
+from ai.core.ml.pytorch.device import ensure_torch_available
 
 try:
     import torch
@@ -17,13 +19,6 @@ else:
 
 
 ProblemType = Literal["classification", "regression"]
-
-
-def ensure_torch_available() -> None:
-    """Raise a clear error when PyTorch is not installed."""
-
-    if _IMPORT_ERROR is not None:
-        raise ImportError("PyTorch is required for the MLP model. Install torch in the project environment.") from _IMPORT_ERROR
 
 
 class TabularDataset(Dataset):
@@ -52,7 +47,7 @@ class TabularDataset(Dataset):
         return self.X[index], self.y[index]
 
 
-def make_data_loader(
+def create_dataloaders(
     X,
     y,
     problem_type: ProblemType,

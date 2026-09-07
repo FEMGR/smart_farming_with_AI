@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Callable, Optional
 
 from data_bank.scripts.project_paths import PATHS
-from ai.core.ml.data_loader import load_dataset  # noqa: E402
+from ai.core.tabular.data_loader import load_dataset  # noqa: E402
 from ai.core.ml.evaluation import evaluate_model, print_evaluation_summary, save_metrics  # noqa: E402
 from ai.core.ml.feature_importance import extract_and_save_feature_importance  # noqa: E402
 from ai.core.ml.metadata import create_model_metadata, save_metadata  # noqa: E402
 from ai.core.ml.model_io import save_model, save_preprocessing_artifacts  # noqa: E402
-from ai.core.ml.preprocessing import PreprocessingConfig, preprocess_dataset  # noqa: E402
-from ai.core.ml.splitting import SplitConfig  # noqa: E402
+from ai.core.tabular.preprocessing import PreprocessingConfig, preprocess_dataset  # noqa: E402
+from ai.core.tabular.splitting import SplitConfig  # noqa: E402
 from ai.core.ml.training import get_model_params, train_model  # noqa: E402
 
 from ai.models.gradient_boosting import build_model as build_gradient_boosting_model  # noqa: E402

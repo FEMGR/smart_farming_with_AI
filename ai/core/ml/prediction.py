@@ -1,12 +1,12 @@
 """Shared prediction and inference helpers."""
 
-# ai/core.ml/prediction.py
+# ai/core/ml/prediction.py
 
 from typing import Any
 
 import pandas as pd
 
-from ai.core.ml.preprocessing import PreprocessingArtifacts, inverse_transform_target, transform_features
+from ai.core.tabular.preprocessing import PreprocessingArtifacts, inverse_transform_target, transform_features
 
 
 def prepare_input(
