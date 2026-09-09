@@ -31,13 +31,13 @@ from ai.core.file_prompter import (
     prompt_menu_choice,
 )
 from ai.core.menu_runner import MenuItem, MenuRunner
-from ai.core.ml.data_loader import load_dataset  # noqa: E402
+from ai.core.tabular.data_loader import load_dataset  # noqa: E402
 from ai.core.ml.evaluation import evaluate_model, print_evaluation_summary, save_metrics  # noqa: E402
 from ai.core.ml.feature_importance import extract_and_save_feature_importance  # noqa: E402
 from ai.core.ml.metadata import create_model_metadata, save_metadata  # noqa: E402
 from ai.core.ml.model_io import save_model, save_preprocessing_artifacts  # noqa: E402
-from ai.core.ml.preprocessing import PreprocessingConfig, preprocess_dataset  # noqa: E402
-from ai.core.ml.splitting import SplitConfig  # noqa: E402
+from ai.core.tabular.preprocessing import PreprocessingConfig, preprocess_dataset  # noqa: E402
+from ai.core.tabular.splitting import SplitConfig  # noqa: E402
 from ai.core.ml.training import get_model_params, train_model  # noqa: E402
 from ai.models.pytorch_mlp import build_model as build_pytorch_mlp_model  # noqa: E402
 from ai.models.random_forest import build_model as build_random_forest_model  # noqa: E402

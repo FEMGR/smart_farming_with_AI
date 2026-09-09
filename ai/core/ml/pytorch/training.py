@@ -1,9 +1,16 @@
 """Training loop for PyTorch tabular models."""
 
+# ai/core/ml/pytorch/training.py
+
 from dataclasses import dataclass, field
 from datetime import datetime
 from time import perf_counter
 from typing import Any, Literal
+
+from ai.core.ml.pytorch.device import (
+    ensure_torch_available,
+    resolve_device,
+)
 
 try:
     import torch
@@ -37,22 +44,6 @@ class PyTorchTrainingResult:
     finished_at: str
     duration_seconds: float
     history: dict[str, list[float]] = field(default_factory=dict)
-
-
-def ensure_torch_available() -> None:
-    """Raise a clear error when PyTorch is not installed."""
-
-    if _IMPORT_ERROR is not None:
-        raise ImportError("PyTorch is required for MLP training. Install torch in the project environment.") from _IMPORT_ERROR
-
-
-def resolve_device(device: str | None = None):
-    """Resolve the requested training device."""
-
-    ensure_torch_available()
-    if device:
-        return torch.device(device)
-    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def train_pytorch_model(

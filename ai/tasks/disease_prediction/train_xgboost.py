@@ -1,5 +1,7 @@
 """Train the disease XGBoost model using the shared ML pipeline."""
 
+# ai/tasks/disease_prediction/train_xgboost.py
+
 from pathlib import Path
 import sys
 

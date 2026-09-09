@@ -1,5 +1,7 @@
 """Model metadata creation and JSON persistence."""
 
+# ai/core/metadata.py
+
 from dataclasses import asdict, is_dataclass
 from datetime import datetime
 from pathlib import Path
@@ -25,6 +27,8 @@ def create_model_metadata(
     preprocessing_config: dict[str, Any] | None = None,
     metrics: dict[str, Any] | None = None,
     model_version: str | None = None,
+    checkpoint_metric: str | None = "min_val_loss",
+    selection_metric: str | None = "max_val_acc",
     extra: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Build standardized metadata for a trained model."""
@@ -40,6 +44,10 @@ def create_model_metadata(
         "testing_rows": test_rows,
         "created": datetime.now().isoformat(),
         "model_version": model_version,
+        "model_selection": {
+            "checkpoint_metric": checkpoint_metric,
+            "selection_metric": selection_metric,
+        },
         "model_params": model_params or {},
         "preprocessing_config": preprocessing_config or {},
         "metrics": metrics or {},

@@ -1,0 +1,27 @@
+/smart-farming-system/ai
+├── models/
+│   └── vision/
+│       ├── cnn.py            <-- PyTorch Model Architectures (Custom CNN)
+│       ├── resnet.py         <-- ResNet Backbone Definitions
+│       └── vit.py            <-- Vision Transformer Definitions
+├── core/
+│   ├── vision/
+│   │   ├── dataset.py        <-- PyTorch Image Dataset & DataLoader factories
+│   │   ├── transforms.py     <-- Train / Val torchvision transforms
+│   │   ├── augmentation.py   <-- Custom field/lighting augmentations
+│   │   ├── prediction.py     <-- Single / Batch image inference parsing (load_image)
+│   │   └── visualization.py  <-- Plotting predictions / confusion matrices
+│   └── ml/
+│       └── pytorch/          <-- Generic PyTorch loops, device resolution, checkpoints
+├── tasks/
+│   ├── disease_detection/    <-- Image-based task (e.g., Leaf Blight detection)
+│   │   ├── config.py         <-- Hyperparameters & paths
+│   │   └── train.py          <-- Task execution entry point
+│   ├── pest_detection/       <-- Image-based task (e.g., Insect counting)
+│   │   └── train.py
+│   └── plant_identification/ <-- Image-based task (e.g., Crop species identification)
+│       └── train.py
+└── artifacts/
+    ├── disease_detection/    <-- Saved .pth weights & metrics JSON
+    ├── pest_detection/
+    └── plant_identification/

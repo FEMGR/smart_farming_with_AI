@@ -17,7 +17,6 @@ from app.api.v1.routes import (
     production,
     species,
     weather,
-    prediction,
 )
 """
 api_router = APIRouter()

@@ -16,7 +16,7 @@ except ImportError as exc:  # pragma: no cover - exercised only without torch in
 else:
     _IMPORT_ERROR = None
 
-from ai.core.ml.pytorch.dataset import make_data_loader
+from ai.core.tabular.dataset import create_dataloaders
 from ai.core.ml.pytorch.training import PyTorchTrainingConfig, train_pytorch_model
 
 DEFAULT_CLASSIFIER_PARAMS: dict[str, Any] = {
@@ -160,7 +160,7 @@ class PyTorchMLPEstimator:
             random_state=self.random_state,
             device=self.device,
         )
-        train_loader = make_data_loader(
+        train_loader = create_dataloaders(
             X_scaled,
             y_train,
             self.problem_type,

@@ -65,3 +65,7 @@ joblib
 xgboost
 numpy
 torch
+torchvision
+pillow
+matplotlib
+tqdm
