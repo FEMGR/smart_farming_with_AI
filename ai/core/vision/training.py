@@ -10,7 +10,7 @@ from datetime import datetime
 from pathlib import Path
 from time import perf_counter
 from typing import Dict, List, Optional, Union
-
+import sys
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -153,22 +153,41 @@ def train_vision_model(
     best_acc_epoch = 0
 
     # ------------------- 0. RESUME CHECKPOINT LOADING -------------------
+    loaded_data = None
     if resume_checkpoint_path and resume_checkpoint_path.exists():
-        # Load raw metadata/checkpoint dictionary without applying state_dict yet
+        # Load raw metadata/checkpoint dictionary to inspect shapes
         checkpoint_data = torch.load(resume_checkpoint_path, map_location=device)
+        model_state = checkpoint_data.get("model_state_dict", {})
 
-        # Check if final linear layer shape matches current num_classes
-        saved_out_features = checkpoint_data["model_state_dict"]["fc.1.weight"].shape[0]
+        # Dynamically locate the final output layer across different model architectures
+        saved_out_features = None
+        for key in ["fc.1.weight", "fc.weight", "classifier.6.weight", "heads.head.weight", "head.weight"]:
+            if key in model_state:
+                saved_out_features = model_state[key].shape[0]
+                break
 
-        if saved_out_features != num_classes:
-            print(
-                f"[WARNING] Class count mismatch! Checkpoint expects {saved_out_features} classes, "
-                f"but current dataset has {num_classes} classes. Starting fresh training..."
-            )
-            # Skip resuming or remove obsolete checkpoint
-            loaded_data = None
+        # Check for class count mismatch
+        if saved_out_features is not None and saved_out_features != num_classes:
+            print("\n" + "=" * 60)
+            print(" ⚠️  CHECKPOINT CONFLICT DETECTED")
+            print("=" * 60)
+            print(f" Saved checkpoint expects : {saved_out_features} class(es)")
+            print(f" Current dataset has      : {num_classes} class(es)")
+            print(f" Path: {resume_checkpoint_path}")
+            print("=" * 60)
+            print(" [1] Overwrite old checkpoint and start fresh training")
+            print(" [2] Abort training (keep existing checkpoint safely on disk)")
+
+            choice = input("\nSelect an option (1/2): ").strip()
+
+            if choice == "1":
+                print("\n[INFO] Starting fresh training. Old checkpoint will be replaced upon epoch completion.")
+                loaded_data = None
+            else:
+                print("\n[CANCELLED] Training aborted to preserve existing checkpoint.")
+                sys.exit(0)
         else:
-            # Use central checkpoint loader
+            # Shapes match (or unknown layer format), proceed with central loader
             loaded_data = load_checkpoint(
                 model=model,
                 path=resume_checkpoint_path,
@@ -176,7 +195,6 @@ def train_vision_model(
                 scheduler=scheduler if scheduler else None,
                 device=device,
             )
-
         # Restore epoch and custom evaluation metrics from saved metadata
         start_epoch = 1  # Default starting epoch for fresh training
 
