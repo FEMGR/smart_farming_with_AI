@@ -11,7 +11,7 @@ export const TOOLTIP_NOTES = {
   // Location Actions
   addLocation: 'Create',
   editLocation: 'Edit',
-  useGps: 'GPSy',
+  useGps: 'GPS',
 
   // Plant Actions
   addPlant: 'Add New',

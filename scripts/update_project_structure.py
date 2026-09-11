@@ -1,6 +1,6 @@
 """
 Script for automatically detecting the structure of
-the whole project and updating the README.md file 
+the whole project and updating the README.md file
 """
 
 # script/update_project_structure.py
