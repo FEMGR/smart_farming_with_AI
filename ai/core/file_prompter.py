@@ -549,7 +549,7 @@ def get_timestamped_artifact_dir(
     model_name: str,
     base_artifact_dir: Path = ARTIFACTS_DIR,
 ) -> Path:
-    current_date = datetime.now().strftime("%Y%m%d")
+    # current_date = datetime.now().strftime("%Y%m%d")
     dataset_path = Path(data_dir)
 
     # If path ends in 'train' or 'val', step up to the root dataset folder name
@@ -558,7 +558,8 @@ def get_timestamped_artifact_dir(
     else:
         dataset_stem = dataset_path.stem
 
-    artifact_dir = base_artifact_dir / f"{current_date}_{dataset_stem}" / model_name
+    # artifact_dir = base_artifact_dir / f"{current_date}_{dataset_stem}" / model_name
+    artifact_dir = base_artifact_dir / f"{dataset_stem}" / model_name
     artifact_dir.mkdir(parents=True, exist_ok=True)
     return artifact_dir
 

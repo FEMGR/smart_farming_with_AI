@@ -1,5 +1,6 @@
 """Reusable machine-learning utilities for Smart Farming AI tasks."""
 
+"""
 from ai.core.tabular.data_loader import load_dataset, validate_dataset
 from ai.core.ml.evaluation import evaluate_model
 from ai.core.ml.model_io import load_model, load_preprocessing_artifacts, save_model, save_preprocessing_artifacts
@@ -27,3 +28,4 @@ __all__ = [
     "transform_features",
     "validate_dataset",
 ]
+"""

@@ -2,13 +2,13 @@
 
 ## Overview
 
-The Smart Urban Farming system is a layered, API-driven application for plant management, irrigation support, companion planting, production planning, lifecycle tracking, and pest knowledge lookup.
+The Smart Urban Farming system is a comprehensive, layered, and API-driven ecosystem for plant management, AI-powered computer vision & predictive modeling, companion planting logic, knowledge engineering, production planning, and automated irrigation workflows.
 
-The backend is the composition root. It exposes a FastAPI API, persists application state in PostgreSQL, enriches species data from Perenual and local caches, delegates companion and ecological reasoning to SWI-Prolog, and runs scheduled irrigation checks through APScheduler.
+The backend acts as the composition root, exposing a FastAPI REST API, persisting application state in PostgreSQL, executing ML inference pipelines, enriching plant species data via local data banks and external caches, delegating companion and ecological reasoning to SWI-Prolog, and running background workflows through APScheduler.
 
 ## Current Architecture
 
-![System Architecture](SystemArchitecture.png)
+![System Architecture](/home/graubo/PyCharmMiscProject/smart-farming-system/docs/2026_09_SystemArchitecture.jpeg)
 
 ## Components
 
@@ -17,18 +17,20 @@ The backend is the composition root. It exposes a FastAPI API, persists applicat
 3. Service layer
 4. PostgreSQL database
 5. Prolog knowledge base
-6. External and local species data
-7. Background scheduler
+6. AI & Machine Learning Engine
+7. External and local species data
+8. Background scheduler
 
 ## Client Applications
 
 The system currently has three primary client surfaces:
 
-- Swagger/OpenAPI at `/docs` for direct API inspection and testing
+- Swagger/OpenAPI at `/backend/app/api` for direct API inspection and testing
 - Streamlit dashboard in `frontend/streamlit_app.py`
 - Expo React Native mobile client in `mobile/`
 
 All clients communicate with the FastAPI backend over HTTP. Authenticated workflows use JWT bearer tokens issued by the backend.
+
 
 ## Backend API
 
@@ -42,19 +44,6 @@ Responsibilities:
 - Initialize SQLAlchemy models and database connectivity
 - Load local plant taxonomy and growth facts on startup
 - Start and stop the background scheduler through the lifespan hook
-
-Route groups currently cover:
-
-- Auth
-- Plants
-- Species
-- Locations
-- Irrigation
-- Notifications
-- Planning and polyculture
-- Lifecycle events and growth snapshots
-- Production harvests and yield summaries
-- Pest knowledge
 
 ## Layered Backend Design
 
@@ -72,6 +61,40 @@ Service layer
 SQLAlchemy models / Prolog bridge / external data clients
     |
 PostgreSQL / Prolog knowledge base / Perenual / local snapshots
+```
+
+## AI & Predictive Pipeline (`ai/`)
+
+The system includes a dedicated ML/AI workspace handling multi-modal tasks (Vision, Tabular, Data Generation).
+
+### Workflow:
+1. **Ingestion & Generation (`ai/ingestion/`, `ai/data_generation/`)**: Ingests multi-source raw agricultural data and generates synthetic augmentation samples where needed.
+2. **Preprocessing (`ai/preprocessing/parser/`)**: Cleans, parses, and normalizes input data, placing formatted output into `ai/datasets/processed/`.
+3. **Experiments & Training (`ai/experiments/`, `ai/training/`)**: Reads from `datasets/processed/` to conduct training runs across core ML frameworks (`ai/core/ml/`, `ai/core/tabular/`, `ai/core/vision/`).
+4. **Model Artifacts (`ai/saved_models/`, `ai/artifacts/`)**: Trained model checkpoints are stored upon evaluation.
+5. **Task Execution (`ai/tasks/`, `ai/inference/`)**: Exposes domain-specific tasks utilized by the backend:
+   - Crop Recommendation
+   - Disease Detection & Prediction
+   - Growth & Yield Prediction
+   - Irrigation Requirement Prediction
+   - Pest Detection
+   - Plant Identification
+
+```text
+[ Raw Data / Ingestion ]
+           │
+           ▼
+ [ Preprocessing / Parser ]
+           │
+           ▼
+  [ Processed Datasets ] ───► [ Experiments & Training ]
+                                         │
+                                         ▼
+                                 [ Saved Models ]
+                                         │
+                                         ▼
+                             [ Task Inference Services ]
+
 ```
 
 Key principles:

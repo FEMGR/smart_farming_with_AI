@@ -22,6 +22,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, BottomTabInset, MaxContentWidth } from '@/constants/theme';
 import { getApiBaseUrl, setApiBaseUrl } from '@/services/api';
+import { Tooltip } from '@/components/ui/tooltip';
 
 const PLANT_TYPES = ["vegetable", "fruit", "flower", "herb", "evergreen", "succulent", "spice", "onion"];
 const ENVIRONMENT_TYPES = ["outdoor", "indoor", "greenhouse"];
@@ -393,20 +394,24 @@ export default function MoreScreen() {
             </ThemedText>
           </View>
             <View style={styles.headerActions}>
-            <TouchableOpacity
-              style={[styles.addButton, { backgroundColor: themeColors.emerald }]}
-              onPress={() => setAddLocVisible(true)}
-            >
-              <SymbolView name="plus" size={16} tintColor={themeColors.textInverse} />
-              <ThemedText style={[styles.addButtonText, { color: themeColors.textInverse }]}>Add Location</ThemedText>
-            </TouchableOpacity>
-            <TouchableOpacity
-              accessibilityLabel="Sign out"
-              style={[styles.headerLogoutBtn, { backgroundColor: themeColors.badgeErrorBackground }]}
-              onPress={logout}
-            >
-              <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor={themeColors.badgeErrorText} />
-            </TouchableOpacity>
+            <Tooltip id="addLocation" align="right" position="bottom">
+              <TouchableOpacity
+                style={[styles.addButton, { backgroundColor: themeColors.emerald }]}
+                onPress={() => setAddLocVisible(true)}
+              >
+                <SymbolView name="plus" size={16} tintColor={themeColors.textInverse} />
+                <ThemedText style={[styles.addButtonText, { color: themeColors.textInverse }]}>Add Location</ThemedText>
+              </TouchableOpacity>
+            </Tooltip>
+            <Tooltip id="signOut" align="right" position="bottom">
+              <TouchableOpacity
+                accessibilityLabel="Sign out"
+                style={[styles.headerLogoutBtn, { backgroundColor: themeColors.badgeErrorBackground }]}
+                onPress={logout}
+              >
+                <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor={themeColors.badgeErrorText} />
+              </TouchableOpacity>
+            </Tooltip>
           </View>
         </View>
 
@@ -788,11 +793,18 @@ export default function MoreScreen() {
                       Specify local server address. Falling back to default if empty.
                     </ThemedText>
                     <TextInput
-                      style={styles.input}
+                      style={[
+                        styles.input,
+                        {
+                          backgroundColor: themeColors.inputBackground,
+                          borderColor: themeColors.inputBorder,
+                          color: themeColors.text,
+                        },
+                      ]}
                       value={apiUrl}
                       onChangeText={setApiUrl}
                       placeholder="http://10.0.2.2:8000"
-                      placeholderTextColor="#888"
+                      placeholderTextColor={themeColors.placeholder}
                       autoCapitalize="none"
                       autoCorrect={false}
                     />
@@ -801,10 +813,12 @@ export default function MoreScreen() {
                     </TouchableOpacity>
                   </ThemedView>
 
-                  <TouchableOpacity style={styles.logoutBtn} onPress={logout}>
-                    <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor="#fff" />
-                    <ThemedText style={styles.logoutBtnText}>Sign Out from Farm</ThemedText>
-                  </TouchableOpacity>
+                  <Tooltip id="signOut" position="top">
+                    <TouchableOpacity style={styles.logoutBtn} onPress={logout}>
+                      <SymbolView name="rectangle.portrait.and.arrow.right" size={18} tintColor="#fff" />
+                      <ThemedText style={styles.logoutBtnText}>Sign Out from Farm</ThemedText>
+                    </TouchableOpacity>
+                  </Tooltip>
                 </View>
               )}
             </View>
@@ -818,31 +832,46 @@ export default function MoreScreen() {
         animationType="slide"
         onRequestClose={() => setAddLocVisible(false)}
       >
-        <SafeAreaView style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
+        <SafeAreaView style={[styles.modalContainer, { backgroundColor: themeColors.background }]}>
+          <View style={[styles.modalHeader, { borderBottomColor: themeColors.border }]}>
             <ThemedText type="subtitle">Add Location</ThemedText>
             <TouchableOpacity onPress={() => setAddLocVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
-              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
+              <ThemedText style={[styles.closeHeaderText, { color: themeColors.textSecondary }]}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
           <ScrollView contentContainerStyle={styles.modalForm}>
             <ThemedText style={styles.fieldLabel}>Location Name *</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[
+                styles.input,
+                {
+                  backgroundColor: themeColors.inputBackground,
+                  borderColor: themeColors.inputBorder,
+                  color: themeColors.text,
+                },
+              ]}
               placeholder="e.g. Balcony, Greenhouse shelf, Backyard"
-              placeholderTextColor="#888"
+              placeholderTextColor={themeColors.placeholder}
               value={locName}
               onChangeText={setLocName}
             />
 
             <ThemedText style={styles.fieldLabel}>Description</ThemedText>
             <TextInput
-              style={[styles.input, { height: 80, paddingTop: 10 }]}
+              style={[
+                styles.input,
+                { height: 80, paddingTop: 10 },
+                {
+                  backgroundColor: themeColors.inputBackground,
+                  borderColor: themeColors.inputBorder,
+                  color: themeColors.text,
+                },
+              ]}
               multiline
               numberOfLines={3}
               placeholder="e.g. Sunny east-facing balcony."
-              placeholderTextColor="#888"
+              placeholderTextColor={themeColors.placeholder}
               value={locDesc}
               onChangeText={setLocDesc}
             />
@@ -854,14 +883,18 @@ export default function MoreScreen() {
                   key={env}
                   style={[
                     styles.typeOption,
-                    locEnv === env && styles.typeOptionSelected,
+                    {
+                      backgroundColor: locEnv === env ? themeColors.primary : themeColors.backgroundElement,
+                      borderColor: locEnv === env ? themeColors.primary : themeColors.border,
+                    },
                   ]}
                   onPress={() => setLocEnv(env)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      locEnv === env && { color: '#fff', fontWeight: 'bold' },
+                      { color: locEnv === env ? themeColors.textInverse : themeColors.text },
+                      locEnv === env && { fontWeight: 'bold' },
                     ]}
                   >
                     {env}
@@ -874,7 +907,14 @@ export default function MoreScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Width (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   value={locWidth}
                   onChangeText={setLocWidth}
                   keyboardType="numeric"
@@ -883,7 +923,14 @@ export default function MoreScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Length (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   value={locLength}
                   onChangeText={setLocLength}
                   keyboardType="numeric"
@@ -895,9 +942,16 @@ export default function MoreScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Latitude (optional)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   placeholder="e.g. 37.7749"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={themeColors.placeholder}
                   value={locLat}
                   onChangeText={setLocLat}
                   keyboardType="numeric"
@@ -906,9 +960,16 @@ export default function MoreScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Longitude (optional)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   placeholder="e.g. -122.4194"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={themeColors.placeholder}
                   value={locLng}
                   onChangeText={setLocLng}
                   keyboardType="numeric"
@@ -917,37 +978,50 @@ export default function MoreScreen() {
             </View>
 
             <TouchableOpacity
-              style={styles.gpsBtn}
+              style={[
+                styles.gpsBtn,
+                {
+                  borderColor: themeColors.emerald,
+                  backgroundColor: themeColors.primaryLight,
+                },
+              ]}
               onPress={() => handleFetchCurrentLocation(false)}
               disabled={gpsLoading}
             >
               {gpsLoading ? (
-                <ActivityIndicator color="#10B981" />
+                <ActivityIndicator color={themeColors.emerald} />
               ) : (
                 <>
-                  <SymbolView name="location.fill" size={16} tintColor="#10B981" />
-                  <ThemedText style={styles.gpsBtnText}>Use Current Location (GPS)</ThemedText>
+                  <SymbolView name="location.fill" size={16} tintColor={themeColors.emerald} />
+                  <ThemedText style={[styles.gpsBtnText, { color: themeColors.emerald }]}>Use Current Location (GPS)</ThemedText>
                 </>
               )}
             </TouchableOpacity>
 
             <View style={styles.modalButtonGroup}>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.cancelBtn]}
+                style={[
+                  styles.submitBtn,
+                  styles.cancelBtn,
+                  {
+                    backgroundColor: themeColors.backgroundElement,
+                    borderColor: themeColors.border,
+                  },
+                ]}
                 onPress={() => setAddLocVisible(false)}
                 disabled={actionLoading}
               >
-                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.cancelBtnText, { color: themeColors.text }]}>Cancel</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                style={[styles.submitBtn, styles.primarySubmitBtn, { backgroundColor: themeColors.primary }]}
                 onPress={handleCreateLocation}
                 disabled={actionLoading}
               >
                 {actionLoading ? (
                   <ActivityIndicator color="#fff" />
                 ) : (
-                  <ThemedText style={styles.submitBtnText}>Create Location</ThemedText>
+                  <ThemedText style={[styles.submitBtnText, { color: themeColors.textInverse }]}>Create Location</ThemedText>
                 )}
               </TouchableOpacity>
             </View>
@@ -961,29 +1035,44 @@ export default function MoreScreen() {
         animationType="slide"
         onRequestClose={() => setEditLocVisible(false)}
       >
-        <SafeAreaView style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
+        <SafeAreaView style={[styles.modalContainer, { backgroundColor: themeColors.background }]}>
+          <View style={[styles.modalHeader, { borderBottomColor: themeColors.border }]}>
             <ThemedText type="subtitle">Edit Location</ThemedText>
             <TouchableOpacity onPress={() => setEditLocVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
-              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
+              <ThemedText style={[styles.closeHeaderText, { color: themeColors.textSecondary }]}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
           <ScrollView contentContainerStyle={styles.modalForm}>
             <ThemedText style={styles.fieldLabel}>Location Name *</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[
+                styles.input,
+                {
+                  backgroundColor: themeColors.inputBackground,
+                  borderColor: themeColors.inputBorder,
+                  color: themeColors.text,
+                },
+              ]}
               value={editLocName}
               onChangeText={setEditLocName}
             />
 
             <ThemedText style={styles.fieldLabel}>Description</ThemedText>
             <TextInput
-              style={[styles.input, { height: 80, paddingTop: 10 }]}
+              style={[
+                styles.input,
+                { height: 80, paddingTop: 10 },
+                {
+                  backgroundColor: themeColors.inputBackground,
+                  borderColor: themeColors.inputBorder,
+                  color: themeColors.text,
+                },
+              ]}
               multiline
               numberOfLines={3}
               placeholder="e.g. Sunny east-facing balcony."
-              placeholderTextColor="#888"
+              placeholderTextColor={themeColors.placeholder}
               value={editLocDesc}
               onChangeText={setEditLocDesc}
             />
@@ -995,14 +1084,18 @@ export default function MoreScreen() {
                   key={env}
                   style={[
                     styles.typeOption,
-                    editLocEnv === env && styles.typeOptionSelected,
+                    {
+                      backgroundColor: editLocEnv === env ? themeColors.primary : themeColors.backgroundElement,
+                      borderColor: editLocEnv === env ? themeColors.primary : themeColors.border,
+                    },
                   ]}
                   onPress={() => setEditLocEnv(env)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      editLocEnv === env && { color: '#fff', fontWeight: 'bold' },
+                      { color: editLocEnv === env ? themeColors.textInverse : themeColors.text },
+                      editLocEnv === env && { fontWeight: 'bold' },
                     ]}
                   >
                     {env}
@@ -1015,7 +1108,14 @@ export default function MoreScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Width (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   value={editLocWidth}
                   onChangeText={setEditLocWidth}
                   keyboardType="numeric"
@@ -1024,7 +1124,14 @@ export default function MoreScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Length (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   value={editLocLength}
                   onChangeText={setEditLocLength}
                   keyboardType="numeric"
@@ -1036,9 +1143,16 @@ export default function MoreScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Latitude (optional)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   placeholder="e.g. 37.7749"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={themeColors.placeholder}
                   value={editLocLat}
                   onChangeText={setEditLocLat}
                   keyboardType="numeric"
@@ -1047,9 +1161,16 @@ export default function MoreScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Longitude (optional)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: themeColors.inputBackground,
+                      borderColor: themeColors.inputBorder,
+                      color: themeColors.text,
+                    },
+                  ]}
                   placeholder="e.g. -122.4194"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={themeColors.placeholder}
                   value={editLocLng}
                   onChangeText={setEditLocLng}
                   keyboardType="numeric"
@@ -1058,47 +1179,64 @@ export default function MoreScreen() {
             </View>
 
             <TouchableOpacity
-              style={styles.gpsBtn}
+              style={[
+                styles.gpsBtn,
+                {
+                  borderColor: themeColors.emerald,
+                  backgroundColor: themeColors.primaryLight,
+                },
+              ]}
               onPress={() => handleFetchCurrentLocation(true)}
               disabled={gpsLoading}
             >
               {gpsLoading ? (
-                <ActivityIndicator color="#10B981" />
+                <ActivityIndicator color={themeColors.emerald} />
               ) : (
                 <>
-                  <SymbolView name="location.fill" size={16} tintColor="#10B981" />
-                  <ThemedText style={styles.gpsBtnText}>Use Current Location (GPS)</ThemedText>
+                  <SymbolView name="location.fill" size={16} tintColor={themeColors.emerald} />
+                  <ThemedText style={[styles.gpsBtnText, { color: themeColors.emerald }]}>Use Current Location (GPS)</ThemedText>
                 </>
               )}
             </TouchableOpacity>
 
             <View style={styles.modalButtonGroup}>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.cancelBtn]}
+                style={[
+                  styles.submitBtn,
+                  styles.cancelBtn,
+                  {
+                    backgroundColor: themeColors.backgroundElement,
+                    borderColor: themeColors.border,
+                  },
+                ]}
                 onPress={() => setEditLocVisible(false)}
                 disabled={actionLoading}
               >
-                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.cancelBtnText, { color: themeColors.text }]}>Cancel</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                style={[styles.submitBtn, styles.primarySubmitBtn, { backgroundColor: themeColors.primary }]}
                 onPress={handleUpdateLocation}
                 disabled={actionLoading}
               >
                 {actionLoading ? (
                   <ActivityIndicator color="#fff" />
                 ) : (
-                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                  <ThemedText style={[styles.submitBtnText, { color: themeColors.textInverse }]}>Save Changes</ThemedText>
                 )}
               </TouchableOpacity>
             </View>
 
             <TouchableOpacity
-              style={[styles.submitBtn, styles.deleteBtn]}
+              style={[
+                styles.submitBtn,
+                styles.deleteBtn,
+                { backgroundColor: themeColors.errorBackground, borderColor: themeColors.error },
+              ]}
               onPress={() => handleDeleteLoc(selectedLoc.id, selectedLoc.name)}
               disabled={actionLoading}
             >
-              <ThemedText style={styles.submitBtnText}>Delete Location</ThemedText>
+              <ThemedText style={[styles.submitBtnText, { color: themeColors.errorText }]}>Delete Location</ThemedText>
             </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
@@ -1291,13 +1429,10 @@ const styles = StyleSheet.create({
   input: {
     height: 48,
     borderWidth: 1,
-    borderColor: '#ccc',
     borderRadius: Spacing.two,
     paddingHorizontal: Spacing.three,
     marginBottom: Spacing.two,
     fontSize: 16,
-    color: '#000',
-    backgroundColor: '#f9f9f9',
   },
   saveUrlBtn: {
     backgroundColor: '#10B981',
@@ -1323,7 +1458,6 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     flex: 1,
-    backgroundColor: '#fff',
   },
   modalHeader: {
     flexDirection: 'row',
@@ -1331,7 +1465,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: Spacing.four,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
   },
   modalForm: {
     padding: Spacing.four,
@@ -1346,17 +1479,11 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.three,
     borderRadius: Spacing.two,
-    backgroundColor: '#f0f0f0',
     borderWidth: 1,
-    borderColor: '#ccc',
   },
-  typeOptionSelected: {
-    backgroundColor: '#10B981',
-    borderColor: '#10B981',
-  },
+  typeOptionSelected: {},
   typeOptionText: {
     fontSize: 14,
-    color: '#333',
   },
   formRow: {
     flexDirection: 'row',
@@ -1375,7 +1502,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   deleteBtn: {
-    backgroundColor: '#6c0404',
     marginTop: Spacing.two,
   },
   gpsBtn: {
@@ -1383,16 +1509,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
-    borderColor: '#4d987f',
     borderRadius: Spacing.two,
     paddingVertical: Spacing.two,
     marginTop: Spacing.two,
     marginBottom: Spacing.one,
     gap: Spacing.two,
-    backgroundColor: 'rgba(16, 185, 129, 0.05)',
   },
   gpsBtnText: {
-    color: '#10B981',
     fontWeight: 'bold',
     fontSize: 14,
   },
@@ -1401,7 +1524,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: Spacing.two,
     gap: Spacing.one,
-    backgroundColor: 'rgba(16, 185, 129, 0.05)',
     paddingVertical: 4,
     paddingHorizontal: Spacing.two,
     borderRadius: Spacing.one,
@@ -1409,7 +1531,6 @@ const styles = StyleSheet.create({
   },
   locGpsDisplayText: {
     fontSize: 11,
-    color: '#10B981',
     fontWeight: '600',
   },
   themeSelectorRow: {
@@ -1423,7 +1544,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.two,
     borderRadius: Spacing.two,
     borderWidth: 1,
-    borderColor: 'rgba(128, 128, 128, 0.25)',
     alignItems: 'center',
     justifyContent: 'center',
     gap: Spacing.one,
@@ -1442,14 +1562,11 @@ const styles = StyleSheet.create({
     marginTop: 0,
   },
   cancelBtn: {
-    backgroundColor: '#F3F4F6',
     borderWidth: 1,
-    borderColor: '#D1D5DB',
     flex: 1,
     marginTop: 0,
   },
   cancelBtnText: {
-    color: '#374151',
     fontSize: 16,
     fontWeight: '600',
   },
@@ -1459,7 +1576,6 @@ const styles = StyleSheet.create({
   closeHeaderText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#6B7280',
   },
   accordionHeaderCard: {
     flexDirection: 'row',

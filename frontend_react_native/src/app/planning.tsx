@@ -646,19 +646,23 @@ export default function PlanningScreen() {
                               key={s.id}
                               style={[
                                 styles.secMultiBtn,
-                                isSelected && styles.secMultiBtnSelected,
+                                {
+                                  backgroundColor: isSelected ? colors.primary : colors.backgroundElement,
+                                  borderColor: isSelected ? colors.primary : colors.border,
+                                },
                               ]}
                               onPress={() => toggleSectionSelection(s.id)}
                             >
                               <SymbolView
                                 name={isSelected ? 'checkmark.square.fill' : 'square'}
                                 size={14}
-                                tintColor={isSelected ? '#fff' : '#888'}
+                                tintColor={isSelected ? colors.textInverse : colors.primary}
                               />
                               <ThemedText
                                 style={[
                                   styles.secMultiBtnText,
-                                  isSelected && { color: '#fff', fontWeight: 'bold' },
+                                  { color: isSelected ? colors.textInverse : colors.text },
+                                  isSelected && { fontWeight: 'bold' },
                                 ]}
                               >
                                 {s.name} ({s.area_m2}m²)
@@ -671,30 +675,55 @@ export default function PlanningScreen() {
 
                   <ThemedText style={styles.fieldLabel}>Intended Crop Mix (Comma separated)</ThemedText>
                   <TextInput
-                    style={[styles.input, styles.multilineInput]}
+                    style={[
+                      styles.input,
+                      styles.multilineInput,
+                      {
+                        backgroundColor: colors.inputBackground,
+                        borderColor: colors.inputBorder,
+                        color: colors.text,
+                      },
+                    ]}
                     multiline
                     numberOfLines={3}
                     value={cropsText}
                     onChangeText={setCropsText}
+                    placeholderTextColor={colors.placeholder}
                   />
 
                   <View style={styles.formRow}>
                     <View style={{ flex: 1 }}>
                       <ThemedText style={styles.fieldLabel}>Start Date</ThemedText>
                       <TextInput
-                        style={styles.input}
+                        style={[
+                          styles.input,
+                          {
+                            backgroundColor: colors.inputBackground,
+                            borderColor: colors.inputBorder,
+                            color: colors.text,
+                          },
+                        ]}
                         value={startDate}
                         onChangeText={setStartDate}
                         placeholder="YYYY-MM-DD"
+                        placeholderTextColor={colors.placeholder}
                       />
                     </View>
                     <View style={{ flex: 1, marginLeft: Spacing.two }}>
                       <ThemedText style={styles.fieldLabel}>Harvest Interval (Days)</ThemedText>
                       <TextInput
-                        style={styles.input}
+                        style={[
+                          styles.input,
+                          {
+                            backgroundColor: colors.inputBackground,
+                            borderColor: colors.inputBorder,
+                            color: colors.text,
+                          },
+                        ]}
                         value={harvestInterval}
                         onChangeText={setHarvestInterval}
                         keyboardType="number-pad"
+                        placeholderTextColor={colors.placeholder}
                       />
                     </View>
                   </View>
@@ -703,21 +732,37 @@ export default function PlanningScreen() {
                     <View style={{ flex: 1 }}>
                       <ThemedText style={styles.fieldLabel}>Harvest Batches</ThemedText>
                       <TextInput
-                        style={styles.input}
+                        style={[
+                          styles.input,
+                          {
+                            backgroundColor: colors.inputBackground,
+                            borderColor: colors.inputBorder,
+                            color: colors.text,
+                          },
+                        ]}
                         value={batchesWanted}
                         onChangeText={setBatchesWanted}
                         keyboardType="number-pad"
                         placeholder="0 for auto"
+                        placeholderTextColor={colors.placeholder}
                       />
                     </View>
                     <View style={{ flex: 1, marginLeft: Spacing.two }}>
                       <ThemedText style={styles.fieldLabel}>Variations per Group</ThemedText>
                       <TextInput
-                        style={styles.input}
+                        style={[
+                          styles.input,
+                          {
+                            backgroundColor: colors.inputBackground,
+                            borderColor: colors.inputBorder,
+                            color: colors.text,
+                          },
+                        ]}
                         value={variationsPerGroup}
                         onChangeText={setVariationsPerGroup}
                         keyboardType="number-pad"
                         placeholder="2"
+                        placeholderTextColor={colors.placeholder}
                       />
                     </View>
                   </View>
@@ -749,20 +794,27 @@ export default function PlanningScreen() {
         animationType="slide"
         onRequestClose={() => setSectionModalVisible(false)}
       >
-        <SafeAreaView style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
+        <SafeAreaView style={[styles.modalContainer, { backgroundColor: colors.background }]}>
+          <View style={[styles.modalHeader, { borderBottomColor: colors.border }]}>
             <ThemedText type="subtitle">Create Farm Section</ThemedText>
             <TouchableOpacity onPress={() => setSectionModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
-              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
+              <ThemedText style={[styles.closeHeaderText, { color: colors.textSecondary }]}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
           <ScrollView contentContainerStyle={styles.modalForm}>
             <ThemedText style={styles.fieldLabel}>Section Name *</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[
+                styles.input,
+                {
+                  backgroundColor: colors.inputBackground,
+                  borderColor: colors.inputBorder,
+                  color: colors.text,
+                },
+              ]}
               placeholder="e.g. Bed A, Row 1, Greenhouse Shelf B"
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={secName}
               onChangeText={setSecName}
             />
@@ -774,14 +826,18 @@ export default function PlanningScreen() {
                   key={loc.id}
                   style={[
                     styles.typeOption,
-                    secLocationId === loc.id && styles.typeOptionSelected,
+                    {
+                      backgroundColor: secLocationId === loc.id ? colors.primary : colors.backgroundElement,
+                      borderColor: secLocationId === loc.id ? colors.primary : colors.border,
+                    },
                   ]}
                   onPress={() => setSecLocationId(loc.id)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      secLocationId === loc.id && { color: '#fff', fontWeight: 'bold' },
+                      { color: secLocationId === loc.id ? colors.textInverse : colors.text },
+                      secLocationId === loc.id && { fontWeight: 'bold' },
                     ]}
                   >
                     {loc.name}
@@ -797,14 +853,18 @@ export default function PlanningScreen() {
                   key={type}
                   style={[
                     styles.typeOption,
-                    secType === type && styles.typeOptionSelected,
+                    {
+                      backgroundColor: secType === type ? colors.primary : colors.backgroundElement,
+                      borderColor: secType === type ? colors.primary : colors.border,
+                    },
                   ]}
                   onPress={() => setSecType(type)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      secType === type && { color: '#fff', fontWeight: 'bold' },
+                      { color: secType === type ? colors.textInverse : colors.text },
+                      secType === type && { fontWeight: 'bold' },
                     ]}
                   >
                     {type}
@@ -817,7 +877,14 @@ export default function PlanningScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Width (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   value={secWidth}
                   onChangeText={setSecWidth}
                   keyboardType="numeric"
@@ -826,7 +893,14 @@ export default function PlanningScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Length (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   value={secLength}
                   onChangeText={setSecLength}
                   keyboardType="numeric"
@@ -836,21 +910,28 @@ export default function PlanningScreen() {
 
             <View style={styles.modalButtonGroup}>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.cancelBtn]}
+                style={[
+                  styles.submitBtn,
+                  styles.cancelBtn,
+                  {
+                    backgroundColor: colors.backgroundElement,
+                    borderColor: colors.border,
+                  },
+                ]}
                 onPress={() => setSectionModalVisible(false)}
                 disabled={actionLoading}
               >
-                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.cancelBtnText, { color: colors.text }]}>Cancel</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                style={[styles.submitBtn, styles.primarySubmitBtn, { backgroundColor: colors.primary }]}
                 onPress={handleCreateSection}
                 disabled={actionLoading}
               >
                 {actionLoading ? (
                   <ActivityIndicator color="#fff" />
                 ) : (
-                  <ThemedText style={styles.submitBtnText}>Create Section</ThemedText>
+                  <ThemedText style={[styles.submitBtnText, { color: colors.textInverse }]}>Create Section</ThemedText>
                 )}
               </TouchableOpacity>
             </View>
@@ -864,18 +945,25 @@ export default function PlanningScreen() {
         animationType="slide"
         onRequestClose={() => setEditSectionModalVisible(false)}
       >
-        <SafeAreaView style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
+        <SafeAreaView style={[styles.modalContainer, { backgroundColor: colors.background }]}>
+          <View style={[styles.modalHeader, { borderBottomColor: colors.border }]}>
             <ThemedText type="subtitle">Edit Farm Section</ThemedText>
             <TouchableOpacity onPress={() => setEditSectionModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
-              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
+              <ThemedText style={[styles.closeHeaderText, { color: colors.textSecondary }]}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
           <ScrollView contentContainerStyle={styles.modalForm}>
             <ThemedText style={styles.fieldLabel}>Section Name *</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[
+                styles.input,
+                {
+                  backgroundColor: colors.inputBackground,
+                  borderColor: colors.inputBorder,
+                  color: colors.text,
+                },
+              ]}
               value={editSecName}
               onChangeText={setEditSecName}
             />
@@ -887,14 +975,18 @@ export default function PlanningScreen() {
                   key={loc.id}
                   style={[
                     styles.typeOption,
-                    editSecLocationId === loc.id && styles.typeOptionSelected,
+                    {
+                      backgroundColor: editSecLocationId === loc.id ? colors.primary : colors.backgroundElement,
+                      borderColor: editSecLocationId === loc.id ? colors.primary : colors.border,
+                    },
                   ]}
                   onPress={() => setEditSecLocationId(loc.id)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      editSecLocationId === loc.id && { color: '#fff', fontWeight: 'bold' },
+                      { color: editSecLocationId === loc.id ? colors.textInverse : colors.text },
+                      editSecLocationId === loc.id && { fontWeight: 'bold' },
                     ]}
                   >
                     {loc.name}
@@ -910,14 +1002,18 @@ export default function PlanningScreen() {
                   key={type}
                   style={[
                     styles.typeOption,
-                    editSecType === type && styles.typeOptionSelected,
+                    {
+                      backgroundColor: editSecType === type ? colors.primary : colors.backgroundElement,
+                      borderColor: editSecType === type ? colors.primary : colors.border,
+                    },
                   ]}
                   onPress={() => setEditSecType(type)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      editSecType === type && { color: '#fff', fontWeight: 'bold' },
+                      { color: editSecType === type ? colors.textInverse : colors.text },
+                      editSecType === type && { fontWeight: 'bold' },
                     ]}
                   >
                     {type}
@@ -930,7 +1026,14 @@ export default function PlanningScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Width (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   value={editSecWidth}
                   onChangeText={setEditSecWidth}
                   keyboardType="numeric"
@@ -939,7 +1042,14 @@ export default function PlanningScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Length (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   value={editSecLength}
                   onChangeText={setEditSecLength}
                   keyboardType="numeric"
@@ -949,31 +1059,42 @@ export default function PlanningScreen() {
 
             <View style={styles.modalButtonGroup}>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.cancelBtn]}
+                style={[
+                  styles.submitBtn,
+                  styles.cancelBtn,
+                  {
+                    backgroundColor: colors.backgroundElement,
+                    borderColor: colors.border,
+                  },
+                ]}
                 onPress={() => setEditSectionModalVisible(false)}
                 disabled={actionLoading}
               >
-                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.cancelBtnText, { color: colors.text }]}>Cancel</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                style={[styles.submitBtn, styles.primarySubmitBtn, { backgroundColor: colors.primary }]}
                 onPress={handleUpdateSection}
                 disabled={actionLoading}
               >
                 {actionLoading ? (
                   <ActivityIndicator color="#fff" />
                 ) : (
-                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                  <ThemedText style={[styles.submitBtnText, { color: colors.textInverse }]}>Save Changes</ThemedText>
                 )}
               </TouchableOpacity>
             </View>
 
             <TouchableOpacity
-              style={[styles.submitBtn, styles.deleteBtn]}
+              style={[
+                styles.submitBtn,
+                styles.deleteBtn,
+                { backgroundColor: colors.errorBackground, borderColor: colors.error },
+              ]}
               onPress={() => handleDeleteSection(selectedSection.id, selectedSection.name)}
               disabled={actionLoading}
             >
-              <ThemedText style={styles.submitBtnText}>Delete Section</ThemedText>
+              <ThemedText style={[styles.submitBtnText, { color: colors.errorText }]}>Delete Section</ThemedText>
             </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
@@ -985,29 +1106,44 @@ export default function PlanningScreen() {
         animationType="slide"
         onRequestClose={() => setEditLocModalVisible(false)}
       >
-        <SafeAreaView style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
+        <SafeAreaView style={[styles.modalContainer, { backgroundColor: colors.background }]}>
+          <View style={[styles.modalHeader, { borderBottomColor: colors.border }]}>
             <ThemedText type="subtitle">Edit Location</ThemedText>
             <TouchableOpacity onPress={() => setEditLocModalVisible(false)} style={styles.closeHeaderBtn} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}>
-              <ThemedText style={styles.closeHeaderText}>✕</ThemedText>
+              <ThemedText style={[styles.closeHeaderText, { color: colors.textSecondary }]}>✕</ThemedText>
             </TouchableOpacity>
           </View>
 
           <ScrollView contentContainerStyle={styles.modalForm}>
             <ThemedText style={styles.fieldLabel}>Location Name *</ThemedText>
             <TextInput
-              style={styles.input}
+              style={[
+                styles.input,
+                {
+                  backgroundColor: colors.inputBackground,
+                  borderColor: colors.inputBorder,
+                  color: colors.text,
+                },
+              ]}
               value={editLocName}
               onChangeText={setEditLocName}
             />
 
             <ThemedText style={styles.fieldLabel}>Description</ThemedText>
             <TextInput
-              style={[styles.input, { height: 80, paddingTop: 10 }]}
+              style={[
+                styles.input,
+                { height: 80, paddingTop: 10 },
+                {
+                  backgroundColor: colors.inputBackground,
+                  borderColor: colors.inputBorder,
+                  color: colors.text,
+                },
+              ]}
               multiline
               numberOfLines={3}
               placeholder="e.g. Sunny east-facing balcony."
-              placeholderTextColor="#888"
+              placeholderTextColor={colors.placeholder}
               value={editLocDesc}
               onChangeText={setEditLocDesc}
             />
@@ -1019,14 +1155,18 @@ export default function PlanningScreen() {
                   key={env}
                   style={[
                     styles.typeOption,
-                    editLocEnv === env && styles.typeOptionSelected,
+                    {
+                      backgroundColor: editLocEnv === env ? colors.primary : colors.backgroundElement,
+                      borderColor: editLocEnv === env ? colors.primary : colors.border,
+                    },
                   ]}
                   onPress={() => setEditLocEnv(env)}
                 >
                   <ThemedText
                     style={[
                       styles.typeOptionText,
-                      editLocEnv === env && { color: '#fff', fontWeight: 'bold' },
+                      { color: editLocEnv === env ? colors.textInverse : colors.text },
+                      editLocEnv === env && { fontWeight: 'bold' },
                     ]}
                   >
                     {env}
@@ -1039,7 +1179,14 @@ export default function PlanningScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Width (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   value={editLocWidth}
                   onChangeText={setEditLocWidth}
                   keyboardType="numeric"
@@ -1048,7 +1195,14 @@ export default function PlanningScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Length (meters)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   value={editLocLength}
                   onChangeText={setEditLocLength}
                   keyboardType="numeric"
@@ -1060,9 +1214,16 @@ export default function PlanningScreen() {
               <View style={{ flex: 1 }}>
                 <ThemedText style={styles.fieldLabel}>Latitude (optional)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   placeholder="e.g. 37.7749"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={colors.placeholder}
                   value={editLocLat}
                   onChangeText={setEditLocLat}
                   keyboardType="numeric"
@@ -1071,9 +1232,16 @@ export default function PlanningScreen() {
               <View style={{ flex: 1, marginLeft: Spacing.two }}>
                 <ThemedText style={styles.fieldLabel}>Longitude (optional)</ThemedText>
                 <TextInput
-                  style={styles.input}
+                  style={[
+                    styles.input,
+                    {
+                      backgroundColor: colors.inputBackground,
+                      borderColor: colors.inputBorder,
+                      color: colors.text,
+                    },
+                  ]}
                   placeholder="e.g. -122.4194"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={colors.placeholder}
                   value={editLocLng}
                   onChangeText={setEditLocLng}
                   keyboardType="numeric"
@@ -1083,31 +1251,42 @@ export default function PlanningScreen() {
 
             <View style={styles.modalButtonGroup}>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.cancelBtn]}
+                style={[
+                  styles.submitBtn,
+                  styles.cancelBtn,
+                  {
+                    backgroundColor: colors.backgroundElement,
+                    borderColor: colors.border,
+                  },
+                ]}
                 onPress={() => setEditLocModalVisible(false)}
                 disabled={actionLoading}
               >
-                <ThemedText style={styles.cancelBtnText}>Cancel</ThemedText>
+                <ThemedText style={[styles.cancelBtnText, { color: colors.text }]}>Cancel</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.submitBtn, styles.primarySubmitBtn]}
+                style={[styles.submitBtn, styles.primarySubmitBtn, { backgroundColor: colors.primary }]}
                 onPress={handleUpdateLocation}
                 disabled={actionLoading}
               >
                 {actionLoading ? (
                   <ActivityIndicator color="#fff" />
                 ) : (
-                  <ThemedText style={styles.submitBtnText}>Save Changes</ThemedText>
+                  <ThemedText style={[styles.submitBtnText, { color: colors.textInverse }]}>Save Changes</ThemedText>
                 )}
               </TouchableOpacity>
             </View>
 
             <TouchableOpacity
-              style={[styles.submitBtn, styles.deleteBtn]}
+              style={[
+                styles.submitBtn,
+                styles.deleteBtn,
+                { backgroundColor: colors.errorBackground, borderColor: colors.error },
+              ]}
               onPress={() => selectedLoc && handleDeleteLocation(selectedLoc.id, selectedLoc.name)}
               disabled={actionLoading}
             >
-              <ThemedText style={styles.submitBtnText}>Delete Location</ThemedText>
+              <ThemedText style={[styles.submitBtnText, { color: colors.errorText }]}>Delete Location</ThemedText>
             </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
