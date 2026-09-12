@@ -14,6 +14,8 @@ from typing import Any, Optional, Dict
 from ai.core.file_prompter import (
     pause_for_user,
     prompt_menu_choice,
+    choose_directory,
+    get_timestamped_artifact_dir,
 )
 from ai.core.file_status import write_json_with_status
 from ai.core.menu_runner import MenuItem, MenuRunner
@@ -28,6 +30,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 # Task Configurations
 DEFAULT_DATA_DIR = PROJECT_ROOT / "ai" / "datasets" / "raw" / "image" / "PlantLeafImageDataset"
+CUSTOM_DATA_DIR = PROJECT_ROOT / "ai" / "datasets" / "raw" / "image"
 ARTIFACT_DIR = PROJECT_ROOT / "ai" / "artifacts" / "plant_identification"
 TASK_NAME = "plant_identification"
 TASK_LABEL = "Plant Species Identification Vision Pipeline"
@@ -71,17 +74,13 @@ def prepare_vision_data(data_dir: Path = DEFAULT_DATA_DIR, batch_size: int = 32,
     """Load plant species image dataset directory structure into PyTorch DataLoaders."""
 
     # Check if user passed base folder or 'train' subfolder directly
-    resolved_dir = data_dir
+    resolved_dir = Path(data_dir)
     if not (resolved_dir / "train").exists() and not (resolved_dir / "valid").exists():
         if resolved_dir.name == "train" and resolved_dir.parent.exists():
             resolved_dir = resolved_dir.parent  # Fall back to parent folder
 
     if not resolved_dir.exists():
-        raise FileNotFoundError(
-            f"Image dataset directory not found at: {resolved_dir}\n"
-            f"Please ensure the Kaggle dataset is unzipped at:\n"
-            f"  {PROJECT_ROOT}/ai/datasets/raw/image/PlantDiseaseDetectionDataset/"
-        )
+        raise FileNotFoundError(f"Image dataset directory not found at: {resolved_dir}\n" f"Please ensure the dataset exists at:\n" f"  {resolved_dir}")
 
     print(f"\nLoading vision dataset from: {resolved_dir}")
     train_loader, val_loader, class_to_idx = create_dataloaders(
@@ -110,17 +109,53 @@ def train_and_evaluate_model(
     data: dict[str, Any],
     epochs: int = 20,
     learning_rate: float = 1e-3,
-) -> dict[str, Any]:
-    """Train, evaluate, and serialize artifacts with lifecycle status tracking."""
+    skip_if_completed: bool = True,
+) -> dict[str, Any] | None:
+    """Train, evaluate, and serialize artifacts with lifecycle status tracking using timestamped dataset artifact paths."""
     if model_name not in VISION_MODELS:
         raise ValueError(f"Unknown vision model: {model_name}")
 
     model_config = VISION_MODELS[model_name]
     algorithm = model_config["algorithm"]
-    artifact_dir = ARTIFACT_DIR / model_name
-    artifact_dir.mkdir(parents=True, exist_ok=True)
+
+    # 0. Generate timestamped, dataset-scoped artifact directory
+    artifact_dir = get_timestamped_artifact_dir(
+        data_dir=data["data_dir"],
+        model_name=model_name,
+        base_artifact_dir=ARTIFACT_DIR,
+    )
 
     metadata_path = artifact_dir / "metadata.json"
+
+    # --- SKIP LOGIC START ---
+    if skip_if_completed and metadata_path.exists():
+        try:
+            with open(metadata_path, "r") as f:
+                existing_meta = json.load(f)
+            if existing_meta.get("status") == "completed":
+                print(f"\n[SKIPPED] {model_name} is already trained and completed in {artifact_dir}")
+                metrics_path = artifact_dir / "metrics.json"
+                with open(metrics_path, "r") as f:
+                    metrics = json.load(f)
+
+                primary_metric = VISION_MODELS[model_name].get("primary_metric", "val_acc")
+                return {
+                    "model_name": model_name,
+                    "algorithm": VISION_MODELS[model_name]["algorithm"],
+                    "model": None,
+                    "artifact_dir": artifact_dir,
+                    "model_path": artifact_dir / "best_vision_model.pth",
+                    "class_map_path": artifact_dir / "class_map.json",
+                    "metrics_path": metrics_path,
+                    "metadata_path": metadata_path,
+                    "metrics": metrics,
+                    "primary_metric": primary_metric,
+                    "primary_metric_value": metrics.get(primary_metric, 0.0),
+                    "greater_is_better": VISION_MODELS[model_name].get("greater_is_better", True),
+                }
+        except Exception:
+            pass  # If metadata is unreadable, re-run training
+    # --- SKIP LOGIC END ---
 
     # 1. Write initial "in_progress" status metadata
     initial_metadata = {
@@ -130,6 +165,7 @@ def train_and_evaluate_model(
         "model_name": model_name,
         "num_classes": data["num_classes"],
         "dataset_path": str(data["data_dir"]),
+        "artifact_dir": str(artifact_dir),
         "training": {
             "epochs_planned": epochs,
             "learning_rate": learning_rate,
@@ -145,6 +181,8 @@ def train_and_evaluate_model(
 
     print("\n" + "-" * 60)
     print(f"Training {algorithm}")
+    print(f"Dataset : {Path(data['data_dir']).name}")
+    print(f"Output  : {artifact_dir}")
     print("-" * 60)
 
     # 2. Instantiate and run training loop with exception tracking
@@ -173,6 +211,17 @@ def train_and_evaluate_model(
             indent=4,
         )
         raise error
+
+    # Handle cancellation or early exit without raising an uncaught exception
+    if training_result is None:
+        initial_metadata["status"] = "cancelled"
+        write_json_with_status(
+            initial_metadata,
+            metadata_path,
+            description=f"{algorithm} metadata [cancelled]",
+            indent=4,
+        )
+        return None
 
     # 3. Compile Evaluation Metrics
     metrics = {
@@ -214,6 +263,7 @@ def train_and_evaluate_model(
         "model_name": model_name,
         "num_classes": data["num_classes"],
         "dataset_path": str(data["data_dir"]),
+        "artifact_dir": str(artifact_dir),
         "primary_metric": primary_metric,
         "primary_metric_value": metrics[primary_metric],
         "metrics": metrics,
@@ -234,7 +284,15 @@ def train_and_evaluate_model(
         indent=4,
     )
 
-    model_path = training_result.best_model_path or (artifact_dir / "best_vision_model.pth")
+    # 7. Select best model path dynamically based on configured primary metric
+    if primary_metric == "val_acc":
+        model_path = training_result.best_acc_model_path or training_result.best_loss_model_path
+    else:
+        model_path = training_result.best_loss_model_path or training_result.best_acc_model_path
+
+    # Fallback default if neither path was set on the dataclass
+    if not model_path or not model_path.exists():
+        model_path = artifact_dir / "best_vision_model.pth"
 
     return {
         "model_name": model_name,
@@ -261,7 +319,7 @@ def train_selected_model(model_name: str, data_dir: Path = DEFAULT_DATA_DIR) -> 
         raise ValueError(f"Vision model is not enabled yet: {model_name}")
 
     # 1. CHECK FOR PAUSED CHECKPOINT BEFORE DATASET LOADING
-    artifact_dir = Path("artifacts/plant_identification") / model_name
+    artifact_dir = ARTIFACT_DIR / model_name
     checkpoint_file = artifact_dir / "training_checkpoint.pth"
 
     if checkpoint_file.exists():
@@ -433,6 +491,28 @@ def _make_json_safe(value: Any) -> Any:
 # =========================================================
 
 
+def train_using_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[dict[str, Any]]:
+    """Prompt user to select a dataset directory via file_prompter and run model training."""
+    if dry_run:
+        print("[DRY RUN] Would prompt for a custom dataset directory and run model training.")
+        return None
+
+    # Safe fallback resolution for search directory
+    search_dir = CUSTOM_DATA_DIR if (CUSTOM_DATA_DIR and CUSTOM_DATA_DIR.exists()) else DEFAULT_DATA_DIR.parent
+
+    try:
+        input_directory = choose_directory(default_base_dir=search_dir, prompt_label="Select Custom Dataset Directory")
+    except KeyboardInterrupt:
+        print("\nDirectory selection cancelled.")
+        return None
+    except (FileNotFoundError, FileExistsError) as error:
+        print(f"\nError: {error}")
+        return None
+
+    print(f"\nSelected Input Directory: {input_directory}")
+    return train_all_models(data_dir=input_directory)
+
+
 def interactive_loop(dry_run: bool = False) -> None:
     menu = MenuRunner(
         title="Plant Identification Vision Training Menu",
@@ -446,6 +526,11 @@ def interactive_loop(dry_run: bool = False) -> None:
                 key="2",
                 label="Train Selected Model (ResNet-18)",
                 action=lambda dry_run: train_selected_model("resnet18", data_dir=DEFAULT_DATA_DIR) if not dry_run else None,
+            ),
+            MenuItem(
+                key="3",
+                label="Train Models using Custom Dataset Directory/File",
+                action=lambda dry_run: train_using_custom_data(dry_run=dry_run),
             ),
             MenuItem(
                 key="0",

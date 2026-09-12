@@ -1,129 +1,4 @@
 {
-  "blueberry": {
-    "timestamp": 1785471876.3648715,
-    "suggestions": [
-      {
-        "id": 277,
-        "common_name": "Japanese Blueberry Tree",
-        "scientific_name": "Elaeocarpus decipiens",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Elaeocarpus",
-        "family": null
-      },
-      {
-        "id": 1170,
-        "common_name": "false indigo",
-        "scientific_name": "Baptisia 'Blueberry Sundae'",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Baptisia",
-        "family": "Fabaceae"
-      },
-      {
-        "id": 4504,
-        "common_name": "common juniper",
-        "scientific_name": "Juniperus communis var. depressa 'AmiDak' BLUEBERRY DELIGHT",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Juniperus",
-        "family": "Cupressaceae"
-      },
-      {
-        "id": 6552,
-        "common_name": "Indian hawthorn",
-        "scientific_name": "Rhaphiolepis umbellata 'Blueberry Muffin'",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Rhaphiolepis",
-        "family": "Rosaceae"
-      },
-      {
-        "id": 8037,
-        "common_name": "highbush blueberry",
-        "scientific_name": "Vaccinium 'Blue Jay'",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Vaccinium",
-        "family": "Ericaceae"
-      }
-    ]
-  },
-  "garlic": {
-    "timestamp": 1785472024.5856824,
-    "suggestions": [
-      {
-        "id": 678,
-        "common_name": "German garlic",
-        "scientific_name": "Allium lusitanicum",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Allium",
-        "family": "Amaryllidaceae"
-      },
-      {
-        "id": 680,
-        "common_name": "golden garlic",
-        "scientific_name": "Allium moly",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Allium",
-        "family": "Amaryllidaceae"
-      },
-      {
-        "id": 682,
-        "common_name": "garlic",
-        "scientific_name": "Allium sativum 'Inchelium Red'",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Allium",
-        "family": "Amaryllidaceae"
-      },
-      {
-        "id": 683,
-        "common_name": "garlic",
-        "scientific_name": "Allium sativum 'Music'",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Allium",
-        "family": "Amaryllidaceae"
-      },
-      {
-        "id": 684,
-        "common_name": "garlic",
-        "scientific_name": "Allium sativum 'Spanish Roja'",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Allium",
-        "family": "Amaryllidaceae"
-      }
-    ]
-  },
-  "shallot": {
-    "timestamp": 1785472139.5486243,
-    "suggestions": [
-      {
-        "id": 667,
-        "common_name": "onion",
-        "scientific_name": "Allium cepa",
-        "type": null,
-        "is_fruit": null,
-        "is_veg": null,
-        "genus": "Allium",
-        "family": "Amaryllidaceae"
-      }
-    ]
-  },
   "eggplant": {
     "timestamp": 1787640385.1021051,
     "suggestions": [
@@ -156,6 +31,21 @@
         "is_veg": null,
         "genus": "Solanum",
         "family": "Solanaceae"
+      }
+    ]
+  },
+  "arugula": {
+    "timestamp": 1789104083.6817005,
+    "suggestions": [
+      {
+        "id": 2795,
+        "common_name": "arugula",
+        "scientific_name": "Eruca versicaria subsp. sativa",
+        "type": null,
+        "is_fruit": null,
+        "is_veg": null,
+        "genus": "Eruca",
+        "family": "Brassicaceae"
       }
     ]
   }

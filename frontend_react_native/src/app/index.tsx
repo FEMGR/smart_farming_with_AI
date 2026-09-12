@@ -308,27 +308,30 @@ export default function HomeScreen() {
                     </ThemedText>
                   </ThemedView>
                 ) : (
-                  dueCrops.slice(0, 6).map((item) => (
-                    <ThemedView
-                      key={`due-${item.plant_id}`}
-                      type="backgroundElement"
-                      style={styles.queueItem}
-                    >
-                      <View style={{ flex: 1 }}>
-                        <ThemedText type="smallBold">{item.name}</ThemedText>
-                        <ThemedText themeColor="textSecondary" style={styles.queueSub}>
-                          Last watered: {formatDate(item.last_watered)}
-                        </ThemedText>
-                      </View>
-                      <TouchableOpacity
-                        style={[styles.waterButton, { backgroundColor: themeColors.careWater }]}
-                        onPress={() => waterOne(item.plant_id)}
+                  dueCrops.slice(0, 6).map((item, index) => {
+                    const plantId = item.plant_id ?? item.id;
+                    return (
+                      <ThemedView
+                        key={`due-${plantId ?? index}`}
+                        type="backgroundElement"
+                        style={styles.queueItem}
                       >
-                        <SymbolView name="drop.fill" size={14} tintColor={themeColors.textInverse} />
-                        <ThemedText style={[styles.waterButtonText, { color: themeColors.textInverse }]}>Water</ThemedText>
-                      </TouchableOpacity>
-                    </ThemedView>
-                  ))
+                        <View style={{ flex: 1 }}>
+                          <ThemedText type="smallBold">{item.name}</ThemedText>
+                          <ThemedText themeColor="textSecondary" style={styles.queueSub}>
+                            Last watered: {formatDate(item.last_watered)}
+                          </ThemedText>
+                        </View>
+                        <TouchableOpacity
+                          style={[styles.waterButton, { backgroundColor: themeColors.careWater }]}
+                          onPress={() => waterOne(plantId)}
+                        >
+                          <SymbolView name="drop.fill" size={14} tintColor={themeColors.textInverse} />
+                          <ThemedText style={[styles.waterButtonText, { color: themeColors.textInverse }]}>Water</ThemedText>
+                        </TouchableOpacity>
+                      </ThemedView>
+                    );
+                  })
                 )}
               </View>
             )}

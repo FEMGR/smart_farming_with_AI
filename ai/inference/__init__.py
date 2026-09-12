@@ -1,5 +1,6 @@
 """Prediction/inference layer for trained Smart Farming AI models."""
 
+"""
 from ai.inference.prediction_layer import (
     PredictionLayer,
     PredictionResult,
@@ -23,3 +24,4 @@ __all__ = [
     "VisionPredictionResult",
     "predict_vision_task",
 ]
+"""

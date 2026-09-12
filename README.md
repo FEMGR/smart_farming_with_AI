@@ -29,7 +29,7 @@ GitHub: https://github.com/xueshuijing/Smart_Urban_Farming_System
 
 ## Architecture
 
-![System Architecture](docs/SystemArchitecture.png)
+![System Architecture](/home/graubo/PyCharmMiscProject/smart-farming-system/docs/2026_09_SystemArchitecture.jpeg)
 
 The system is organized around a layered API backend with separate clients and knowledge/data subsystems:
 
@@ -65,30 +65,59 @@ Additional documentation:
 
 ```text
 smart-farming-system/
+├── .streamlit/
+├── ai/
+│   ├── artifacts/
+│   ├── config/
+│   ├── core/
+│   ├── data_generation/
+│   ├── datasets/
+│   ├── evaluation/
+│   ├── experiments/
+│   ├── inference/
+│   ├── ingestion/
+│   ├── models/
+│   ├── notebooks/
+│   ├── preprocessing/
+│   ├── saved_models/
+│   ├── tasks/
+│   └── training/
 ├── backend/
-│   ├── main.py                       # FastAPI application entry point
-│   ├── alembic/                      # Database migrations
+│   ├── alembic/
 │   ├── app/
-│   │   ├── api/                      # API dependencies and v1 routes
-│   │   ├── core/                     # Config, constants, security, logging, errors
-│   │   ├── database/                 # SQLAlchemy engine/session setup
-│   │   ├── models/                   # SQLAlchemy models
-│   │   ├── schemas/                  # Pydantic schemas
-│   │   ├── services/                 # Business logic and Prolog bridge
-│   │   ├── utils/                    # Normalization, matching, reliability helpers
-│   │   └── workers/                  # Background scheduler
-│   ├── cache/species_snapshots/      # Local species detail snapshots
-│   └── docker-compose.yml            # Backend/PostgreSQL compose file
-├── frontend_react_native/                         # Streamlit dashboard
-├── frontend_streamlit/                           # Expo React Native client
-├── logic_companion_planting/         # Prolog facts, rules, taxonomy, and loader
-├── plant_data_bank_scripts/          # Data bank extraction, enrichment, and Prolog export scripts
-├── docs/                             # Architecture and technology documentation
-├── scripts/                          # Data backfill and conversion utilities
-├── tests/                            # Automated tests and fixtures
-├── requirements.txt
-├── pyproject.toml
-└── README.md
+│   ├── cache/
+│   └── temp/
+├── data_bank/
+│   ├── config/
+│   ├── data_bank/
+│   ├── scripts/
+│   └── unused/
+├── docs/
+├── frontend_react_native/
+│   ├── .claude/
+│   ├── .expo/
+│   ├── assets/
+│   ├── scripts/
+│   └── src/
+├── frontend_streamlit/
+│   ├── .streamlit/
+│   ├── api/
+│   ├── components/
+│   ├── pages/
+│   ├── theme/
+│   └── utils/
+├── logic_companion_planting/
+│   ├── .settings/
+│   ├── base/
+│   ├── bin/
+│   ├── data/
+│   ├── rules/
+│   └── src/
+├── logs/
+├── scripts/
+└── tests/
+    ├── fixtures/
+    └── utils/
 ```
 
 ## Prerequisites

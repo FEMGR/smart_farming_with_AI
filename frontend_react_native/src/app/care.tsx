@@ -278,24 +278,27 @@ export default function CareScreen() {
                       <ThemedText themeColor="textSecondary">All plants are current and watered.</ThemedText>
                     </ThemedView>
                   ) : (
-                    duePlants.map((plant) => (
-                      <ThemedView key={`due-${plant.plant_id}`} type="backgroundElement" style={styles.careCard}>
-                        <View style={{ flex: 1 }}>
-                          <ThemedText type="smallBold">{plant.name}</ThemedText>
-                          <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
-                            Interval: {plant.watering_interval_days || 4} days · Last watered: {formatDate(plant.last_watered)}
-                          </ThemedText>
-                        </View>
-                        <TouchableOpacity
-                          style={[styles.waterOneBtn, { backgroundColor: colors.careWater }]}
-                          onPress={() => handleWaterOne(plant.plant_id, plant.name)}
-                          disabled={actionLoading}
-                        >
-                          <SymbolView name="drop.fill" size={12} tintColor={colors.textInverse} />
-                          <ThemedText style={[styles.waterOneBtnText, { color: colors.textInverse }]}>Water</ThemedText>
-                        </TouchableOpacity>
-                      </ThemedView>
-                    ))
+                    duePlants.map((plant, index) => {
+                      const plantId = plant.plant_id ?? plant.id;
+                      return (
+                        <ThemedView key={`due-${plantId ?? index}`} type="backgroundElement" style={styles.careCard}>
+                          <View style={{ flex: 1 }}>
+                            <ThemedText type="smallBold">{plant.name}</ThemedText>
+                            <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
+                              Interval: {plant.watering_interval_days || 4} days · Last watered: {formatDate(plant.last_watered)}
+                            </ThemedText>
+                          </View>
+                          <TouchableOpacity
+                            style={[styles.waterOneBtn, { backgroundColor: colors.careWater }]}
+                            onPress={() => handleWaterOne(plantId, plant.name)}
+                            disabled={actionLoading}
+                          >
+                            <SymbolView name="drop.fill" size={12} tintColor={colors.textInverse} />
+                            <ThemedText style={[styles.waterOneBtnText, { color: colors.textInverse }]}>Water</ThemedText>
+                          </TouchableOpacity>
+                        </ThemedView>
+                      );
+                    })
                   )}
                 </View>
               )}
@@ -319,16 +322,19 @@ export default function CareScreen() {
                       <ThemedText themeColor="textSecondary">No plants currently marked as hydrated.</ThemedText>
                     </ThemedView>
                   ) : (
-                    currentPlants.map((plant) => (
-                      <ThemedView key={`cur-${plant.plant_id}`} type="backgroundElement" style={styles.careCard}>
-                        <View style={{ flex: 1 }}>
-                          <ThemedText type="smallBold">{plant.name}</ThemedText>
-                          <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
-                            Last watered: {formatDate(plant.last_watered)}
-                          </ThemedText>
-                        </View>
-                      </ThemedView>
-                    ))
+                    currentPlants.map((plant, index) => {
+                      const plantId = plant.id ?? plant.plant_id;
+                      return (
+                        <ThemedView key={`cur-${plantId ?? index}`} type="backgroundElement" style={styles.careCard}>
+                          <View style={{ flex: 1 }}>
+                            <ThemedText type="smallBold">{plant.name}</ThemedText>
+                            <ThemedText themeColor="textSecondary" style={styles.careCardSub}>
+                              Last watered: {formatDate(plant.last_watered)}
+                            </ThemedText>
+                          </View>
+                        </ThemedView>
+                      );
+                    })
                   )}
                 </View>
               )}
