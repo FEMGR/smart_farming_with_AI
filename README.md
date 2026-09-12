@@ -68,37 +68,87 @@ smart-farming-system/
 ├── .streamlit/
 ├── ai/
 │   ├── artifacts/
+│   │   ├── disease_prediction/
+│   │   ├── growth_prediction/
+│   │   ├── irrigation_prediction/
+│   │   ├── model_selection/
+│   │   ├── plant_identification/
+│   │   └── yield_prediction/
 │   ├── config/
+│   │   ├── schema_mappings/
+│   │   └── unit_mappings/
 │   ├── core/
+│   │   ├── ml/
+│   │   ├── tabular/
+│   │   └── vision/
 │   ├── data_generation/
 │   ├── datasets/
+│   │   ├── processed/
+│   │   └── raw/
 │   ├── evaluation/
 │   ├── experiments/
 │   ├── inference/
 │   ├── ingestion/
 │   ├── models/
+│   │   └── vision/
 │   ├── notebooks/
 │   ├── preprocessing/
+│   │   └── parser/
 │   ├── saved_models/
 │   ├── tasks/
+│   │   ├── crop_recommendation/
+│   │   ├── disease_detection/
+│   │   ├── disease_prediction/
+│   │   ├── growth_prediction/
+│   │   ├── irrigation_prediction/
+│   │   ├── pest_detection/
+│   │   ├── plant_identification/
+│   │   └── yield_prediction/
 │   └── training/
 ├── backend/
 │   ├── alembic/
+│   │   └── versions/
 │   ├── app/
+│   │   ├── api/
+│   │   ├── core/
+│   │   ├── database/
+│   │   ├── models/
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   ├── sql/
+│   │   ├── utils/
+│   │   └── workers/
 │   ├── cache/
+│   │   └── species_snapshots/
 │   └── temp/
 ├── data_bank/
 │   ├── config/
-│   ├── data_bank/
-│   ├── scripts/
-│   └── unused/
+│   │   └── plant_seed_generator/
+│   └── data_bank/
+│       ├── exports/
+│       ├── indexes/
+│       ├── manual_sources/
+│       ├── normalized/
+│       ├── prolog_preview/
+│       └── raw_sources/
 ├── docs/
 ├── frontend_react_native/
 │   ├── .claude/
 │   ├── .expo/
+│   │   ├── dev/
+│   │   ├── static-tmp/
+│   │   ├── types/
+│   │   └── web/
 │   ├── assets/
-│   ├── scripts/
+│   │   ├── expo.icon/
+│   │   └── images/
 │   └── src/
+│       ├── app/
+│       ├── components/
+│       ├── constants/
+│       ├── context/
+│       ├── hooks/
+│       └── services/
 ├── frontend_streamlit/
 │   ├── .streamlit/
 │   ├── api/
@@ -114,7 +164,6 @@ smart-farming-system/
 │   ├── rules/
 │   └── src/
 ├── logs/
-├── scripts/
 └── tests/
     ├── fixtures/
     └── utils/

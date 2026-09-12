@@ -44,13 +44,6 @@ VISION_MODELS = {
         "primary_metric": "val_acc",
         "greater_is_better": True,
     },
-    "resnet50": {
-        "algorithm": "ResNet-50",
-        "builder": lambda num_classes: build_resnet(num_classes=num_classes, variant="resnet50", pretrained=True),
-        "enabled": True,
-        "primary_metric": "val_acc",
-        "greater_is_better": True,
-    },
     "custom_cnn": {
         "algorithm": "Custom PlantCNN",
         "builder": lambda num_classes: build_custom_cnn(num_classes=num_classes),
@@ -65,9 +58,16 @@ VISION_MODELS = {
         "primary_metric": "val_acc",
         "greater_is_better": True,
     },
+    "resnet50": {
+        "algorithm": "ResNet-50",
+        "builder": lambda num_classes: build_resnet(num_classes=num_classes, variant="resnet50", pretrained=True),
+        "enabled": True,
+        "primary_metric": "val_acc",
+        "greater_is_better": True,
+    },
 }
 
-MODEL_ORDER = ["resnet18", "resnet50", "custom_cnn", "vit_b_16"]
+MODEL_ORDER = ["resnet18", "custom_cnn", "vit_b_16"]
 
 
 def prepare_vision_data(data_dir: Path = DEFAULT_DATA_DIR, batch_size: int = 32, img_size: int = 224) -> dict[str, Any]:
@@ -524,8 +524,8 @@ def interactive_loop(dry_run: bool = False) -> None:
             ),
             MenuItem(
                 key="2",
-                label="Train Selected Model (ResNet-18)",
-                action=lambda dry_run: train_selected_model("resnet18", data_dir=DEFAULT_DATA_DIR) if not dry_run else None,
+                label="Train Selected Model (ResNet-50)",
+                action=lambda dry_run: train_selected_model("resnet50", data_dir=DEFAULT_DATA_DIR) if not dry_run else None,
             ),
             MenuItem(
                 key="3",
