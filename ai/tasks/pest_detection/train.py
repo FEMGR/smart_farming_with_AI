@@ -9,12 +9,15 @@ import json
 import shutil
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Dict, Optional
 
 from ai.core.file_prompter import (
+    choose_directory,
+    get_timestamped_artifact_dir,
     pause_for_user,
     prompt_menu_choice,
 )
+from ai.core.file_status import write_json_with_status
 from ai.core.menu_runner import MenuItem, MenuRunner
 from ai.core.vision.dataset import create_dataloaders
 from ai.core.vision.training import VisionTrainingConfig, train_vision_model
@@ -26,8 +29,9 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 # Task Configurations
-DEFAULT_DATA_DIR = PROJECT_ROOT / "datasets" / "raw" / "pest_images"
-ARTIFACT_DIR = PROJECT_ROOT / "artifacts" / "pest_detection"
+DEFAULT_DATA_DIR = PROJECT_ROOT / "ai" / "datasets" / "raw" / "image" / "PestImageDataset"
+CUSTOM_DATA_DIR = PROJECT_ROOT / "ai" / "datasets" / "raw" / "image"
+ARTIFACT_DIR = PROJECT_ROOT / "ai" / "artifacts" / "pest_detection"
 TASK_NAME = "pest_detection"
 TASK_LABEL = "Pest Detection Vision Pipeline"
 
@@ -36,13 +40,6 @@ VISION_MODELS = {
     "resnet18": {
         "algorithm": "ResNet-18",
         "builder": lambda num_classes: build_resnet(num_classes=num_classes, variant="resnet18", pretrained=True),
-        "enabled": True,
-        "primary_metric": "val_acc",
-        "greater_is_better": True,
-    },
-    "resnet50": {
-        "algorithm": "ResNet-50",
-        "builder": lambda num_classes: build_resnet(num_classes=num_classes, variant="resnet50", pretrained=True),
         "enabled": True,
         "primary_metric": "val_acc",
         "greater_is_better": True,
@@ -61,19 +58,33 @@ VISION_MODELS = {
         "primary_metric": "val_acc",
         "greater_is_better": True,
     },
+    "resnet50": {
+        "algorithm": "ResNet-50",
+        "builder": lambda num_classes: build_resnet(num_classes=num_classes, variant="resnet50", pretrained=True),
+        "enabled": True,
+        "primary_metric": "val_acc",
+        "greater_is_better": True,
+    },
 }
 
-MODEL_ORDER = ["resnet18", "resnet50", "custom_cnn", "vit_b_16"]
+MODEL_ORDER = ["resnet18", "custom_cnn", "vit_b_16"]
 
 
 def prepare_vision_data(data_dir: Path = DEFAULT_DATA_DIR, batch_size: int = 32, img_size: int = 224) -> dict[str, Any]:
     """Load pest image dataset directory structure into PyTorch DataLoaders."""
-    if not data_dir.exists():
-        raise FileNotFoundError(f"Image dataset directory not found at: {data_dir}")
 
-    print(f"\nLoading vision dataset from: {data_dir}")
+    # Check if user passed base folder or 'train' subfolder directly
+    resolved_dir = Path(data_dir)
+    if not (resolved_dir / "train").exists() and not (resolved_dir / "valid").exists():
+        if resolved_dir.name == "train" and resolved_dir.parent.exists():
+            resolved_dir = resolved_dir.parent  # Fall back to parent folder
+
+    if not resolved_dir.exists():
+        raise FileNotFoundError(f"Image dataset directory not found at: {resolved_dir}\n" f"Please ensure the dataset exists at:\n" f"  {resolved_dir}")
+
+    print(f"\nLoading vision dataset from: {resolved_dir}")
     train_loader, val_loader, class_to_idx = create_dataloaders(
-        data_dir=str(data_dir),
+        data_dir=str(resolved_dir),
         batch_size=batch_size,
         img_size=img_size,
     )
@@ -89,7 +100,7 @@ def prepare_vision_data(data_dir: Path = DEFAULT_DATA_DIR, batch_size: int = 32,
         "class_to_idx": class_to_idx,
         "idx_to_class": idx_to_class,
         "num_classes": len(class_to_idx),
-        "data_dir": data_dir,
+        "data_dir": resolved_dir,
     }
 
 
@@ -98,38 +109,121 @@ def train_and_evaluate_model(
     data: dict[str, Any],
     epochs: int = 20,
     learning_rate: float = 1e-3,
-) -> dict[str, Any]:
-    """Train, evaluate, and serialize artifacts for a single vision model architecture."""
+    skip_if_completed: bool = True,
+) -> dict[str, Any] | None:
+    """Train, evaluate, and serialize artifacts with lifecycle status tracking using timestamped dataset artifact paths."""
     if model_name not in VISION_MODELS:
         raise ValueError(f"Unknown vision model: {model_name}")
 
     model_config = VISION_MODELS[model_name]
     algorithm = model_config["algorithm"]
-    artifact_dir = ARTIFACT_DIR / model_name
-    artifact_dir.mkdir(parents=True, exist_ok=True)
+
+    # 0. Generate timestamped, dataset-scoped artifact directory
+    artifact_dir = get_timestamped_artifact_dir(
+        data_dir=data["data_dir"],
+        model_name=model_name,
+        base_artifact_dir=ARTIFACT_DIR,
+    )
+
+    metadata_path = artifact_dir / "metadata.json"
+
+    # --- SKIP LOGIC START ---
+    if skip_if_completed and metadata_path.exists():
+        try:
+            with open(metadata_path, "r") as f:
+                existing_meta = json.load(f)
+            if existing_meta.get("status") == "completed":
+                print(f"\n[SKIPPED] {model_name} is already trained and completed in {artifact_dir}")
+                metrics_path = artifact_dir / "metrics.json"
+                with open(metrics_path, "r") as f:
+                    metrics = json.load(f)
+
+                primary_metric = VISION_MODELS[model_name].get("primary_metric", "val_acc")
+                return {
+                    "model_name": model_name,
+                    "algorithm": VISION_MODELS[model_name]["algorithm"],
+                    "model": None,
+                    "artifact_dir": artifact_dir,
+                    "model_path": artifact_dir / "best_vision_model.pth",
+                    "class_map_path": artifact_dir / "class_map.json",
+                    "metrics_path": metrics_path,
+                    "metadata_path": metadata_path,
+                    "metrics": metrics,
+                    "primary_metric": primary_metric,
+                    "primary_metric_value": metrics.get(primary_metric, 0.0),
+                    "greater_is_better": VISION_MODELS[model_name].get("greater_is_better", True),
+                }
+        except Exception:
+            pass  # If metadata is unreadable, re-run training
+    # --- SKIP LOGIC END ---
+
+    # 1. Write initial "in_progress" status metadata
+    initial_metadata = {
+        "status": "in_progress",
+        "task_name": TASK_NAME,
+        "algorithm": algorithm,
+        "model_name": model_name,
+        "num_classes": data["num_classes"],
+        "dataset_path": str(data["data_dir"]),
+        "artifact_dir": str(artifact_dir),
+        "training": {
+            "epochs_planned": epochs,
+            "learning_rate": learning_rate,
+            "batch_size": data["train_loader"].batch_size,
+        },
+    }
+    write_json_with_status(
+        initial_metadata,
+        metadata_path,
+        description=f"{algorithm} metadata [in_progress]",
+        indent=4,
+    )
 
     print("\n" + "-" * 60)
     print(f"Training {algorithm}")
+    print(f"Dataset : {Path(data['data_dir']).name}")
+    print(f"Output  : {artifact_dir}")
     print("-" * 60)
 
-    # Instantiate model architecture
+    # 2. Instantiate and run training loop with exception tracking
     model = model_config["builder"](num_classes=data["num_classes"])
-
-    # Configure and run training loop
     config = VisionTrainingConfig(
         epochs=epochs,
         learning_rate=learning_rate,
         checkpoint_dir=artifact_dir,
     )
 
-    training_result = train_vision_model(
-        model=model,
-        train_loader=data["train_loader"],
-        val_loader=data["val_loader"],
-        config=config,
-    )
+    try:
+        training_result = train_vision_model(
+            model=model,
+            train_loader=data["train_loader"],
+            val_loader=data["val_loader"],
+            config=config,
+        )
+    except Exception as error:
+        # Mark metadata as failed if training crashes or is interrupted
+        initial_metadata["status"] = "failed"
+        initial_metadata["error"] = str(error)
+        write_json_with_status(
+            initial_metadata,
+            metadata_path,
+            description=f"{algorithm} metadata [failed]",
+            indent=4,
+        )
+        raise error
 
-    # Compile Evaluation Metrics
+    # Handle cancellation or early exit without raising an uncaught exception
+    if training_result is None:
+        initial_metadata["status"] = "cancelled"
+        write_json_with_status(
+            initial_metadata,
+            metadata_path,
+            description=f"{algorithm} metadata [cancelled]",
+            indent=4,
+        )
+        return None
+
+    # 3. Compile Evaluation Metrics
     metrics = {
         "val_loss": round(training_result.best_checkpoint_val_loss, 4),
         "val_acc": round(training_result.best_checkpoint_val_acc, 4),
@@ -142,31 +236,35 @@ def train_and_evaluate_model(
     primary_metric = model_config.get("primary_metric", "val_acc")
     primary_metric_value = metrics[primary_metric]
 
-    # Save Metrics JSON
-    metrics_path = artifact_dir / "metrics.json"
-    with open(metrics_path, "w", encoding="utf-8") as f:
-        json.dump(metrics, f, indent=4)
+    # 4. Save Metrics JSON using status helper
+    metrics_path = write_json_with_status(
+        metrics,
+        artifact_dir / "metrics.json",
+        description=f"{algorithm} metrics",
+        indent=4,
+    )
 
-    # Save Class Map Artifact
-    class_map_path = artifact_dir / "class_map.json"
-    with open(class_map_path, "w", encoding="utf-8") as f:
-        json.dump(
-            {
-                "class_to_idx": data["class_to_idx"],
-                "idx_to_class": data["idx_to_class"],
-            },
-            f,
-            indent=4,
-        )
+    # 5. Save Class Map Artifact using status helper
+    class_map_path = write_json_with_status(
+        {
+            "class_to_idx": data["class_to_idx"],
+            "idx_to_class": data["idx_to_class"],
+        },
+        artifact_dir / "class_map.json",
+        description=f"{algorithm} class map",
+        indent=4,
+    )
 
-    # Save Complete Model Metadata
-    metadata = {
+    # 6. Mark Metadata status as "completed"
+    final_metadata = {
+        "status": "completed",
         "task_name": TASK_NAME,
         "algorithm": algorithm,
         "model_name": model_name,
         "num_classes": data["num_classes"],
         "dataset_path": str(data["data_dir"]),
-        "primary_metric": primary_metric,  # "val_f1" or "val_acc"
+        "artifact_dir": str(artifact_dir),
+        "primary_metric": primary_metric,
         "primary_metric_value": metrics[primary_metric],
         "metrics": metrics,
         "evaluation": {
@@ -179,12 +277,22 @@ def train_and_evaluate_model(
         },
     }
 
-    metadata_path = artifact_dir / "metadata.json"
-    with open(metadata_path, "w", encoding="utf-8") as f:
-        json.dump(metadata, f, indent=4)
+    write_json_with_status(
+        final_metadata,
+        metadata_path,
+        description=f"{algorithm} metadata [completed]",
+        indent=4,
+    )
 
-    model_path = training_result.best_model_path or (artifact_dir / "best_vision_model.pth")
-    print(f"Model & Artifacts saved to: {artifact_dir}")
+    # 7. Select best model path dynamically based on configured primary metric
+    if primary_metric == "val_acc":
+        model_path = training_result.best_acc_model_path or training_result.best_loss_model_path
+    else:
+        model_path = training_result.best_loss_model_path or training_result.best_acc_model_path
+
+    # Fallback default if neither path was set on the dataclass
+    if not model_path or not model_path.exists():
+        model_path = artifact_dir / "best_vision_model.pth"
 
     return {
         "model_name": model_name,
@@ -202,16 +310,52 @@ def train_and_evaluate_model(
     }
 
 
-def train_selected_model(model_name: str, data_dir: Path = DEFAULT_DATA_DIR) -> dict[str, Any]:
-    """Train and evaluate a single configured vision model."""
-    data = prepare_vision_data(data_dir=data_dir)
+def train_selected_model(model_name: str, data_dir: Path = DEFAULT_DATA_DIR) -> Optional[Dict[str, Any]]:
+    """Train and evaluate a single configured vision model with pause/resume support."""
     model_config = VISION_MODELS.get(model_name)
     if model_config is None:
         raise ValueError(f"Unknown vision model: {model_name}")
     if not model_config.get("enabled", True):
         raise ValueError(f"Vision model is not enabled yet: {model_name}")
 
-    return train_and_evaluate_model(model_name, data)
+    # 1. CHECK FOR PAUSED CHECKPOINT BEFORE DATASET LOADING
+    artifact_dir = ARTIFACT_DIR / model_name
+    checkpoint_file = artifact_dir / "training_checkpoint.pth"
+
+    if checkpoint_file.exists():
+        print("\n" + "=" * 60)
+        print(f" ⏸️ PAUSED SESSION DETECTED FOR [{model_name.upper()}]")
+        print(f" Checkpoint: {checkpoint_file}")
+        print("=" * 60)
+        print(" [1] Resume previous training session")
+        print(" [2] Start fresh (overwrite existing checkpoint)")
+        print(" [3] Delete checkpoint and return to main menu")
+        print("=" * 60)
+
+        choice = input("Select an option (1-3) [default: 1]: ").strip()
+
+        if choice == "2":
+            print(f"\n[INFO] Overwriting checkpoint. Starting fresh training for {model_name}...")
+            checkpoint_file.unlink(missing_ok=True)
+        elif choice == "3":
+            print("\n[INFO] Checkpoint removed. Returning to main menu...")
+            checkpoint_file.unlink(missing_ok=True)
+            return None
+        else:
+            print(f"\n[INFO] Resuming training session for {model_name}...")
+
+    # 2. PREPARE DATASET
+    data = prepare_vision_data(data_dir=data_dir)
+
+    # 3. RUN TRAINING LOOP (CATCH CTRL+C GRACEFULLY)
+    try:
+        return train_and_evaluate_model(model_name, data)
+    except KeyboardInterrupt:
+        print("\n" + "=" * 60)
+        print(f" ⏸️ [PAUSED] Training session for [{model_name}] saved.")
+        print(f" Returning to menu. Re-select [{model_name}] anytime to resume.")
+        print("=" * 60 + "\n")
+        return None
 
 
 def train_all_models(data_dir: Path = DEFAULT_DATA_DIR) -> dict[str, Any]:
@@ -347,6 +491,28 @@ def _make_json_safe(value: Any) -> Any:
 # =========================================================
 
 
+def train_using_custom_data(dry_run: bool = False, interactive: bool = True) -> Optional[dict[str, Any]]:
+    """Prompt user to select a dataset directory via file_prompter and run model training."""
+    if dry_run:
+        print("[DRY RUN] Would prompt for a custom dataset directory and run model training.")
+        return None
+
+    # Safe fallback resolution for search directory
+    search_dir = CUSTOM_DATA_DIR if (CUSTOM_DATA_DIR and CUSTOM_DATA_DIR.exists()) else DEFAULT_DATA_DIR.parent
+
+    try:
+        input_directory = choose_directory(default_base_dir=search_dir, prompt_label="Select Custom Dataset Directory")
+    except KeyboardInterrupt:
+        print("\nDirectory selection cancelled.")
+        return None
+    except (FileNotFoundError, FileExistsError) as error:
+        print(f"\nError: {error}")
+        return None
+
+    print(f"\nSelected Input Directory: {input_directory}")
+    return train_all_models(data_dir=input_directory)
+
+
 def interactive_loop(dry_run: bool = False) -> None:
     menu = MenuRunner(
         title="Pest Detection Vision Training Menu",
@@ -358,8 +524,13 @@ def interactive_loop(dry_run: bool = False) -> None:
             ),
             MenuItem(
                 key="2",
-                label="Train Selected Model (ResNet-18)",
-                action=lambda dry_run: train_selected_model("resnet18", data_dir=DEFAULT_DATA_DIR) if not dry_run else None,
+                label="Train Selected Model (ResNet-50)",
+                action=lambda dry_run: train_selected_model("resnet50", data_dir=DEFAULT_DATA_DIR) if not dry_run else None,
+            ),
+            MenuItem(
+                key="3",
+                label="Train Models using Custom Dataset Directory/File",
+                action=lambda dry_run: train_using_custom_data(dry_run=dry_run),
             ),
             MenuItem(
                 key="0",

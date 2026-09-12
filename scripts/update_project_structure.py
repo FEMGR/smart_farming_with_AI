@@ -22,6 +22,8 @@ IGNORE_NAMES = {
     ".github",
     ".agents",
     ".codex",
+    "unused",
+    "scripts",
     "__pycache__",
     ".pytest_cache",
     ".venv",
